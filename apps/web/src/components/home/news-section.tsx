@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { FadeIn } from "./animations/fade-in";
+import { FadeIn } from "../animations/fade-in";
 
 const newsItems = [
   {

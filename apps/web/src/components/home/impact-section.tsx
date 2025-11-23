@@ -4,47 +4,47 @@ import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion, useInView, AnimatePresence } from "motion/react";
 
-// --- Dummy Data ---
+// --- STRATEGY-ALIGNED DATA ---
 const IMPACT_DATA = [
   {
     id: 1,
-    title: "Learning With Purpose",
+    title: "Innovation & Research",
     description:
-      "For generations, we have prepared visionary leaders ready to meet the future head-on. Our curriculum is not just about absorbing knowledge, but about questioning the status quo. We equip our students to ask big questions, expand their minds, and advance society—driving progress long beyond their time here.",
+      "Our faculty are not just teachers; they are pioneers. With 100% of our core faculty holding PhDs from premier institutions, we lead the way in groundbreaking research. From advanced materials to sustainable energy, our labs are where the future is forged.",
     stats: [
-      { value: "76", label: "Top 10 UG Programs" },
-      { value: "170+", label: "Areas of Study" },
-      { value: "18:1", label: "Student-Faculty Ratio" },
+      { value: "100%", label: "PhD Qualified Faculty" },
+      { value: "400+", label: "Patents Filed" },
+      { value: "50+", label: "Active Research Labs" },
     ],
-    cta: "Explore Degree Programs",
-    image: "/story1.jpg", // Replace with your actual image paths
-    color: "bg-orange-50", // Optional subtle tint for text background
+    cta: "Meet Our Faculty",
+    image: "/story2.jpg",
+    color: "bg-orange-50",
   },
   {
     id: 2,
-    title: "Big Ideas. Bigger Impact.",
+    title: "World-Class Infrastructure",
     description:
-      "From advancing health care to redefining sustainable energy, our researchers tackle the most important challenges of our time. Breakthrough discoveries transform lives across the state and around the world. We believe that research is the engine of the future.",
+      "Spread across a lush, 200-acre green campus, the Institute offers a vibrant ecosystem for learning and living. Our state-of-the-art libraries, hostels, and sports complexes provide the perfect backdrop for a holistic educational journey.",
     stats: [
-      { value: "1,291", label: "Patents (Last 10 Yrs)" },
-      { value: "$1.14B", label: "Research Expenditures" },
-      { value: "4,660", label: "Sponsored Projects" },
+      { value: "200", label: "Acres of Green Campus" },
+      { value: "24/7", label: "Library Access" },
+      { value: "12", label: "Sports Complexes" },
     ],
-    cta: "Research Initiatives",
-    image: "/story2.jpg",
+    cta: "Virtual Campus Tour",
+    image: "/story1.jpg",
     color: "bg-white",
   },
   {
     id: 3,
-    title: "The Institute Experience",
+    title: "Success Stories",
     description:
-      "The experience here is bold, ambitious, and forward-looking. Students engage in hands-on research, solve real-world problems, and create their own paths in a city built on creativity and commerce. It is more than a degree; it is a lifelong network of excellence.",
+      "Our legacy is defined by the success of our graduates. With a vast global network of alumni leading top organizations and a stellar placement record, we ensure that every student is career-ready from day one.",
     stats: [
-      { value: "#1", label: "Public University in Region" },
-      { value: "92%", label: "Post-Grad Employment" },
-      { value: "500k", label: "Alumni Network" },
+      { value: "96%", label: "Placement Rate" },
+      { value: "50k+", label: "Strong Alumni Network" },
+      { value: "150+", label: "Startups Incubated" },
     ],
-    cta: "Admissions & Aid",
+    cta: "Placement Records",
     image: "/story3.jpg",
     color: "bg-stone-50",
   },
@@ -53,7 +53,6 @@ const IMPACT_DATA = [
 // --- Components ---
 
 export function ImpactSection() {
-  // Track which section is currently in view to update the sticky image
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -70,7 +69,6 @@ export function ImpactSection() {
               transition={{ duration: 0.7, ease: "easeInOut" }}
               className="absolute inset-0 w-full h-full"
             >
-              {/* Image */}
               <Image
                 src={IMPACT_DATA[activeIndex].image}
                 alt={IMPACT_DATA[activeIndex].title}
@@ -78,14 +76,10 @@ export function ImpactSection() {
                 className="object-cover opacity-90"
                 priority
               />
-
-              {/* Overlay Gradient for Formal Look */}
               <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/10" />
-
-              {/* Optional: Overlay Text or Chapter Number */}
               <div className="absolute bottom-12 left-12 text-white/80 z-10">
                 <p className="uppercase tracking-[0.2em] text-sm font-medium">
-                  Chapter 0{activeIndex + 1}
+                  Focus Area 0{activeIndex + 1}
                 </p>
               </div>
             </motion.div>
@@ -108,7 +102,6 @@ export function ImpactSection() {
   );
 }
 
-// --- Sub-Component: Text Block ---
 function TextBlock({
   item,
   index,
@@ -118,11 +111,9 @@ function TextBlock({
   index: number;
   setActiveIndex: (i: number) => void;
 }) {
-  // useInView hook detects when this specific block enters the viewport
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "-50% 0px -50% 0px" });
 
-  // Update the parent state when this block is in the center of the screen
   useEffect(() => {
     if (isInView) {
       setActiveIndex(index);
@@ -134,7 +125,6 @@ function TextBlock({
       ref={ref}
       className={`min-h-screen flex flex-col justify-center px-6 py-20 md:px-16 ${item.color}`}
     >
-      {/* Mobile Image (Visible only on small screens) */}
       <div className="lg:hidden mb-8 relative h-64 w-full rounded-lg overflow-hidden shadow-md">
         <Image
           src={item.image}
@@ -150,25 +140,21 @@ function TextBlock({
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        {/* Formal Eyebrow Text */}
         <div className="flex items-center gap-3 mb-6">
           <span className="h-px w-12 bg-orange-600/60"></span>
           <span className="text-orange-700 uppercase tracking-widest text-xs font-bold">
-            Impact Area 0{index + 1}
+            Key Pillar 0{index + 1}
           </span>
         </div>
 
-        {/* Title */}
         <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6 leading-tight">
           {item.title}
         </h2>
 
-        {/* Body Text */}
         <p className="text-lg text-gray-600 leading-relaxed mb-10 font-light">
           {item.description}
         </p>
 
-        {/* Stats Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-4 border-t border-gray-200 pt-8 mb-10">
           {item.stats.map((stat, i) => (
             <div key={i} className="flex flex-col">
@@ -182,7 +168,6 @@ function TextBlock({
           ))}
         </div>
 
-        {/* CTA Button */}
         <a
           href="#"
           className="group inline-flex items-center gap-2 text-orange-700 font-semibold transition-colors hover:text-orange-900"
