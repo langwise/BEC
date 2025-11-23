@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Menu, ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { Menu, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,8 +10,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+} from "@/components/ui/navigation-menu";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navigationData = [
   {
@@ -53,7 +53,10 @@ const navigationData = [
       {
         title: "Governing Bodies",
         items: [
-          { title: "Board of Governors", href: "/administration/governing/board" },
+          {
+            title: "Board of Governors",
+            href: "/administration/governing/board",
+          },
           { title: "The Senate", href: "/administration/governing/senate" },
         ],
       },
@@ -77,8 +80,14 @@ const navigationData = [
         items: [
           { title: "UG Programmes", href: "/academics/programmes/ug" },
           { title: "PG Programmes", href: "/academics/programmes/pg" },
-          { title: "PhD Research Programmes", href: "/academics/programmes/phd" },
-          { title: "M.Tech Research Programmes", href: "/academics/programmes/mtech" },
+          {
+            title: "PhD Research Programmes",
+            href: "/academics/programmes/phd",
+          },
+          {
+            title: "M.Tech Research Programmes",
+            href: "/academics/programmes/mtech",
+          },
         ],
       },
       { title: "Curriculum", href: "/academics/curriculum" },
@@ -100,7 +109,10 @@ const navigationData = [
           { title: "PwD", href: "/facilities/grievances/pwd" },
           { title: "SC/ST", href: "/facilities/grievances/scst" },
           { title: "OBC", href: "/facilities/grievances/obc" },
-          { title: "Internal Complaints", href: "/facilities/grievances/internal" },
+          {
+            title: "Internal Complaints",
+            href: "/facilities/grievances/internal",
+          },
         ],
       },
     ],
@@ -146,10 +158,10 @@ const navigationData = [
       { title: "Alumni Startups", href: "/alumni/startups" },
     ],
   },
-]
+];
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-muted">
@@ -161,8 +173,12 @@ export function Header() {
               UI
             </div>
             <div className="hidden md:block">
-              <div className="text-sm font-bold text-foreground leading-tight">University Institute</div>
-              <div className="text-xs text-muted-foreground">Excellence in Education</div>
+              <div className="text-sm font-bold text-foreground leading-tight">
+                University Institute
+              </div>
+              <div className="text-xs text-muted-foreground">
+                Excellence in Education
+              </div>
             </div>
           </div>
 
@@ -172,14 +188,18 @@ export function Header() {
               {navigationData.map((item) =>
                 item.items ? (
                   <NavigationMenuItem key={item.title}>
-                    <NavigationMenuTrigger className="text-sm font-medium">{item.title}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-sm font-medium">
+                      {item.title}
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                         {item.items.map((subItem) => (
                           <li key={subItem.title}>
                             {subItem.items ? (
                               <div className="space-y-1">
-                                <div className="text-sm font-semibold text-foreground">{subItem.title}</div>
+                                <div className="text-sm font-semibold text-foreground">
+                                  {subItem.title}
+                                </div>
                                 <ul className="space-y-1 ml-2">
                                   {subItem.items.map((nestedItem) => (
                                     <li key={nestedItem.title}>
@@ -198,7 +218,9 @@ export function Header() {
                                 href={subItem.href}
                                 className="block select-none space-y-1 rounded p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                               >
-                                <div className="text-sm font-medium leading-none">{subItem.title}</div>
+                                <div className="text-sm font-medium leading-none">
+                                  {subItem.title}
+                                </div>
                               </NavigationMenuLink>
                             )}
                           </li>
@@ -215,7 +237,7 @@ export function Header() {
                       {item.title}
                     </NavigationMenuLink>
                   </NavigationMenuItem>
-                ),
+                )
               )}
             </NavigationMenuList>
           </NavigationMenu>
@@ -228,7 +250,10 @@ export function Header() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] overflow-y-auto">
+            <SheetContent
+              side="right"
+              className="w-[300px] overflow-y-auto px-4"
+            >
               <nav className="flex flex-col gap-4 mt-8">
                 {navigationData.map((item) => (
                   <div key={item.title}>
@@ -290,5 +315,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
