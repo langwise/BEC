@@ -1,14 +1,14 @@
 import { Header } from "@/components/header";
-import { NewsSection } from "@/components/news-section";
-import { ProgrammesSection } from "@/components/programmes-section";
-import { StatsSection } from "@/components/stats-section";
+import { NewsSection } from "@/components/home/news-section";
+import { ProgrammesSection } from "@/components/home/programmes-section";
+import { StatsSection } from "@/components/home/stats-section";
 import { Footer } from "@/components/footer";
-import Image from "next/image";
-import { ParallaxVideo } from "@/components/parallax-video";
-import { ImpactSection } from "@/components/impact-section";
-import { Introduction } from "@/components/introduction";
-import { Information } from "@/components/Information";
-import { Hero } from "@/components/hero";
+import { ParallaxVideo } from "@/components/home/parallax-video";
+import { ImpactSection } from "@/components/home/impact-section";
+import { Introduction } from "@/components/home/introduction";
+import { Information } from "@/components/home/Information";
+import { Hero } from "@/components/home/hero";
+import { CampusLifeSection } from "@/components/home/campus-life-section";
 
 export default function Home() {
   return (
@@ -20,9 +20,15 @@ export default function Home() {
         <Hero />
         <Information />
         <Introduction />
-        <ImpactSection />
-        <StatsSection />
+        {/* Announcements and Events */}
         <NewsSection />
+        {/* Quick quantitative highlights (PhD faculty, placements) */}
+        <StatsSection />
+        {/* Deep dive into Research, Infrastructure, Alumni */}
+        <ImpactSection />
+        {/* Student clubs and Social Media */}
+        <CampusLifeSection />
+        {/* Academic Offerings Summary */}
         <ProgrammesSection />
       </main>
 

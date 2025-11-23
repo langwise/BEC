@@ -15,10 +15,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navigationData = [
   {
-    title: "Home",
-    href: "/",
-  },
-  {
     title: "Institute",
     items: [
       { title: "About Us", href: "/institute/about" },
@@ -80,14 +76,8 @@ const navigationData = [
         items: [
           { title: "UG Programmes", href: "/academics/programmes/ug" },
           { title: "PG Programmes", href: "/academics/programmes/pg" },
-          {
-            title: "PhD Research Programmes",
-            href: "/academics/programmes/phd",
-          },
-          {
-            title: "M.Tech Research Programmes",
-            href: "/academics/programmes/mtech",
-          },
+          { title: "PhD Research", href: "/academics/programmes/phd" },
+          { title: "M.Tech Research", href: "/academics/programmes/mtech" },
         ],
       },
       { title: "Curriculum", href: "/academics/curriculum" },
@@ -143,7 +133,7 @@ const navigationData = [
       {
         title: "Anti Ragging",
         items: [
-          { title: "Anti Ragging", href: "/student-life/anti-ragging/info" },
+          { title: "Info", href: "/student-life/anti-ragging/info" },
           { title: "Contact", href: "/student-life/anti-ragging/contact" },
         ],
       },
@@ -168,7 +158,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center bg-primary text-primary-foreground font-bold text-xl">
               UI
             </div>
@@ -180,65 +170,54 @@ export function Header() {
                 Excellence in Education
               </div>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList>
-              {navigationData.map((item) =>
-                item.items ? (
-                  <NavigationMenuItem key={item.title}>
-                    <NavigationMenuTrigger className="text-sm font-medium">
-                      {item.title}
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                        {item.items.map((subItem) => (
-                          <li key={subItem.title}>
-                            {subItem.items ? (
-                              <div className="space-y-1">
-                                <div className="text-sm font-semibold text-foreground">
-                                  {subItem.title}
-                                </div>
-                                <ul className="space-y-1 ml-2">
-                                  {subItem.items.map((nestedItem) => (
-                                    <li key={nestedItem.title}>
-                                      <NavigationMenuLink
-                                        href={nestedItem.href}
-                                        className="block select-none rounded p-2 text-sm leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                      >
-                                        {nestedItem.title}
-                                      </NavigationMenuLink>
-                                    </li>
-                                  ))}
-                                </ul>
+              {navigationData.map((item) => (
+                <NavigationMenuItem key={item.title}>
+                  <NavigationMenuTrigger className="text-sm font-medium bg-transparent">
+                    {item.title}
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                      {item.items.map((subItem) => (
+                        <li key={subItem.title}>
+                          {subItem.items ? (
+                            <div className="space-y-1">
+                              <div className="text-sm font-semibold text-foreground px-2">
+                                {subItem.title}
                               </div>
-                            ) : (
-                              <NavigationMenuLink
-                                href={subItem.href}
-                                className="block select-none space-y-1 rounded p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              >
-                                <div className="text-sm font-medium leading-none">
-                                  {subItem.title}
-                                </div>
-                              </NavigationMenuLink>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
-                ) : (
-                  <NavigationMenuItem key={item.title}>
-                    <NavigationMenuLink
-                      href={item.href}
-                      className="group inline-flex h-10 w-max items-center justify-center rounded px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
-                    >
-                      {item.title}
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                )
-              )}
+                              <ul className="space-y-1 ml-2 border-l border-muted pl-2">
+                                {subItem.items.map((nestedItem) => (
+                                  <li key={nestedItem.title}>
+                                    <NavigationMenuLink
+                                      href={nestedItem.href}
+                                      className="block select-none rounded p-1.5 text-sm leading-none no-underline outline-none transition-colors hover:text-primary text-muted-foreground"
+                                    >
+                                      {nestedItem.title}
+                                    </NavigationMenuLink>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ) : (
+                            <NavigationMenuLink
+                              href={subItem.href}
+                              className="block select-none rounded p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                {subItem.title}
+                              </div>
+                            </NavigationMenuLink>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              ))}
             </NavigationMenuList>
           </NavigationMenu>
 
@@ -254,59 +233,58 @@ export function Header() {
               side="right"
               className="w-[300px] overflow-y-auto px-4"
             >
-              <nav className="flex flex-col gap-4 mt-8">
+              <div className="mt-6 mb-6">
+                <a
+                  href="/"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="font-bold text-lg"
+                >
+                  University Institute
+                </a>
+              </div>
+              <nav className="flex flex-col gap-1">
                 {navigationData.map((item) => (
-                  <div key={item.title}>
-                    {item.items ? (
-                      <details className="group">
-                        <summary className="flex items-center justify-between cursor-pointer font-medium text-foreground py-2">
-                          {item.title}
-                          <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180" />
-                        </summary>
-                        <div className="ml-4 mt-2 space-y-2">
-                          {item.items.map((subItem) => (
-                            <div key={subItem.title}>
-                              {subItem.items ? (
-                                <details className="group/nested">
-                                  <summary className="flex items-center justify-between cursor-pointer text-sm text-muted-foreground py-1">
-                                    {subItem.title}
-                                    <ChevronDown className="h-3 w-3 transition-transform group-open/nested:rotate-180" />
-                                  </summary>
-                                  <div className="ml-4 mt-1 space-y-1">
-                                    {subItem.items.map((nestedItem) => (
-                                      <a
-                                        key={nestedItem.title}
-                                        href={nestedItem.href}
-                                        className="block text-sm text-muted-foreground hover:text-primary py-1"
-                                        onClick={() => setMobileMenuOpen(false)}
-                                      >
-                                        {nestedItem.title}
-                                      </a>
-                                    ))}
-                                  </div>
-                                </details>
-                              ) : (
-                                <a
-                                  href={subItem.href}
-                                  className="block text-sm text-muted-foreground hover:text-primary py-1"
-                                  onClick={() => setMobileMenuOpen(false)}
-                                >
-                                  {subItem.title}
-                                </a>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      </details>
-                    ) : (
-                      <a
-                        href={item.href}
-                        className="block font-medium text-foreground py-2 hover:text-primary"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
+                  <div key={item.title} className="border-b border-muted py-2">
+                    <details className="group">
+                      <summary className="flex items-center justify-between cursor-pointer font-medium text-foreground py-2 hover:text-primary transition-colors">
                         {item.title}
-                      </a>
-                    )}
+                        <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180" />
+                      </summary>
+                      <div className="ml-4 mt-2 space-y-2 pb-2">
+                        {item.items.map((subItem) => (
+                          <div key={subItem.title}>
+                            {subItem.items ? (
+                              <details className="group/nested">
+                                <summary className="flex items-center justify-between cursor-pointer text-sm text-muted-foreground py-1 hover:text-foreground">
+                                  {subItem.title}
+                                  <ChevronDown className="h-3 w-3 transition-transform group-open/nested:rotate-180" />
+                                </summary>
+                                <div className="ml-4 mt-1 space-y-1 border-l pl-2">
+                                  {subItem.items.map((nestedItem) => (
+                                    <a
+                                      key={nestedItem.title}
+                                      href={nestedItem.href}
+                                      className="block text-sm text-muted-foreground hover:text-primary py-1"
+                                      onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                      {nestedItem.title}
+                                    </a>
+                                  ))}
+                                </div>
+                              </details>
+                            ) : (
+                              <a
+                                href={subItem.href}
+                                className="block text-sm text-muted-foreground hover:text-primary py-1"
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                {subItem.title}
+                              </a>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </details>
                   </div>
                 ))}
               </nav>

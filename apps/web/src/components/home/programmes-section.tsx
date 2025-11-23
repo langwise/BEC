@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { GraduationCap, BookOpen, FlaskConical, Users } from "lucide-react";
 import { motion, Variants } from "motion/react";
-import { FadeIn } from "./animations/fade-in";
+import { FadeIn } from "../animations/fade-in";
 
 const programmes = [
   {
