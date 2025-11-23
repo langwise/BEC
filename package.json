@@ -1,0 +1,17 @@
+{
+  "name": "bec-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "start": "turbo run start"
+  },
+  "devDependencies": {
+    "turbo": "^2.6.1"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
