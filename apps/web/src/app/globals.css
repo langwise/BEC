@@ -10,13 +10,13 @@
   --card-foreground: oklch(0.205 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.205 0 0);
-  --primary: oklch(0.485 0.178 45.5); /* Burnt Orange #bf5700 */
+  --primary: oklch(0.5778 0.1545 49.2); /* Burnt Orange #bf5700 */
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.287 0.012 254.6); /* Dark blue-gray #333f48 */
   --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.885 0.007 93.4); /* Light beige #d6d2c4 */
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.649 0.151 68.9); /* Secondary orange #f8971f */
+  --accent: oklch(64.09% 0.16272 50.956); /* Secondary orange #f8971f */
   --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);

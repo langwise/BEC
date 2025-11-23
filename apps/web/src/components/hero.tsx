@@ -1,36 +1,31 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-
 export function Hero() {
   return (
-    <section className="relative w-full h-[600px] bg-secondary overflow-hidden">
-      <div className="absolute inset-0">
-        <img src="/modern-university-campus.png" alt="Campus hero" className="w-full h-full object-cover opacity-40" />
-      </div>
-      <div className="relative container mx-auto px-4 h-full flex items-center">
-        <div className="max-w-2xl space-y-6">
-          <h1 className="text-5xl md:text-6xl font-bold text-white text-balance leading-tight">
-            Excellence in Education & Research
-          </h1>
-          <p className="text-xl text-white/90 text-pretty leading-relaxed">
-            Shaping future leaders through innovation, dedication, and academic excellence. Join us in our mission to
-            create a better tomorrow.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Explore Programmes
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-white/10 backdrop-blur-sm text-white border-white hover:bg-white/20"
-            >
-              Campus Tour
-            </Button>
-          </div>
+    // Added [clip-path:inset(0)] here.
+    // This constrains the 'fixed' image child to only be visible
+    // within the bounds of this specific div.
+    <div className="box-border block">
+      <h2
+        className="sticky text-white font-black uppercase text-[40px] md:text-[80px] container mx-auto px-3 leading-[0.85] z-2"
+        style={{
+          top: "calc(((100vh - 380px) / 2) + 50px)",
+        }}
+      >
+        What
+        <br /> starts <br />
+        here <br />
+        changes
+        <br /> the <br />
+        world
+      </h2>
+      <div className="h-[150vh] box-border block">
+        <div className="fixed inset-0 -z-2">
+          <img
+            alt="background"
+            className="object-cover -inset-9999 m-auto h-full p-0 min-w-full"
+            src="https://www.utexas.edu/sites/default/files/homepage-parallax-background-image.jpg"
+          />
         </div>
       </div>
-    </section>
-  )
+    </div>
+  );
 }
