@@ -123,3 +123,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Navigation Menu Enhancements */
+@layer components {
+  /* Smooth viewport transitions */
+  [data-slot="navigation-menu-viewport"] {
+    transition: width 200ms ease, height 200ms ease;
+  }
+}

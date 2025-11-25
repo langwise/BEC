@@ -8,7 +8,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { GraduationCap, BookOpen, FlaskConical, Users } from "lucide-react";
-import { motion, Variants } from "motion/react";
+import { motion, Variants, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
 import { FadeIn } from "../animations/fade-in";
 
 const programmes = [
@@ -16,28 +17,28 @@ const programmes = [
     icon: GraduationCap,
     title: "Undergraduate Programmes",
     description:
-      "World-class UG programmes across multiple disciplines preparing students for successful careers.",
-    count: "25+ Programmes",
+      "B.E. programmes in Civil, Mechanical, Electrical, CSE, ECE, ISE and more, preparing students for successful engineering careers.",
+    count: "7+ B.E. Programmes",
   },
   {
     icon: BookOpen,
     title: "Postgraduate Programmes",
     description:
-      "Advanced PG programmes fostering specialization and research excellence in diverse fields.",
-    count: "40+ Programmes",
+      "M.Tech, MBA, and MCA programmes fostering specialization and research excellence across diverse fields.",
+    count: "M.Tech, MBA, MCA",
   },
   {
     icon: FlaskConical,
     title: "Research Programmes",
     description:
-      "PhD and M.Tech research opportunities driving innovation and discovery in cutting-edge areas.",
-    count: "15+ Research Areas",
+      "PhD and M.Tech research opportunities driving innovation with ₹3.40 crores in research grants and 35+ industry partnerships.",
+    count: "Multiple Research Areas",
   },
   {
     icon: Users,
     title: "Student Community",
     description:
-      "Vibrant campus life with diverse activities, clubs, and opportunities for holistic development.",
+      "Vibrant campus life with diverse activities, clubs, and opportunities for holistic development on our 93-acre campus.",
     count: "5000+ Students",
   },
 ];
@@ -58,14 +59,30 @@ const cardVariants: Variants = {
 };
 
 export function ProgrammesSection() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  
+  // Parallax effect: Moves background image at slower rate than scroll
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+
   return (
-    <section className="py-24 bg-stone-50/50 border-t border-stone-200">
-      <div className="container mx-auto px-4">
+    <section ref={ref} className="relative py-24 border-t border-stone-200 overflow-hidden">
+      {/* Background image with parallax effect */}
+      <motion.div 
+        className="absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat"
+      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <FadeIn className="text-center mb-16" direction="up">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 drop-shadow-lg">
             Academic Excellence
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/95 text-lg max-w-2xl mx-auto leading-relaxed drop-shadow-md">
             Discover our comprehensive range of academic programmes designed to
             nurture talent and inspire innovation.
           </p>

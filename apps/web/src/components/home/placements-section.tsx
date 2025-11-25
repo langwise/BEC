@@ -1,61 +1,79 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
 import { FadeIn } from "../animations/fade-in";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const placementStats = [
   {
-    value: "2225+",
-    label: "Recruiters hired BEC students",
+    value: "96%",
+    label: "Placement Record",
     bgColor: "bg-stone-100",
   },
   {
-    value: "6000+",
-    label: "Offers from Fortune 500 companies",
+    value: "₹ 3.14 Lac",
+    label: "Average Package",
     bgColor: "bg-stone-100",
   },
   {
-    value: "₹ 10.23 Lac",
-    label: "Average salary of top 25% placed students",
+    value: "50k+",
+    label: "Alumni Worldwide",
     bgColor: "bg-stone-100",
   },
   {
-    value: "400+",
-    label: "Recruiters of IITs/IIMs/NITs also hire from BEC",
+    value: "35+",
+    label: "Industry MoUs",
     bgColor: "bg-stone-100",
   },
 ];
 
 const topRecruiters = [
-  { name: "Google", logo: "/story1.jpg" },
-  { name: "Bosch", logo: "/story2.jpg" },
-  { name: "Adobe", logo: "/story3.jpg" },
-  { name: "Microsoft", logo: "/story1.jpg" },
-  { name: "Cisco", logo: "/story2.jpg" },
-  { name: "Autodesk", logo: "/story3.jpg" },
-  { name: "Cognizant", logo: "/story1.jpg" },
-  { name: "Amazon", logo: "/story2.jpg" },
+  { name: "Wipro", logo: "/logos/adobe.svg" },
+  { name: "HCL", logo: "/logos/apple.svg" },
+  { name: "Tech Mahindra", logo: "/logos/google.svg" },
+  { name: "Microsoft", logo: "/logos/microsoft.svg" },
+  { name: "IBM", logo: "/logos/ibm.svg" },
+  { name: "Adobe", logo: "/logos/adobe.svg" },
+  { name: "Apple", logo: "/logos/apple.svg" },
+  { name: "Google", logo: "/logos/google.svg" },
 ];
 
 export function PlacementsSection() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  
+  // Parallax effect: Moves background image at slower rate than scroll
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+
   return (
-    <section className="py-16 lg:py-24 bg-stone-50/30">
-      <div className="container mx-auto px-4 lg:px-6 max-w-[1400px]">
+    <section ref={ref} className="relative py-16 lg:py-24 border-t border-stone-200 overflow-hidden">
+      {/* Background image with parallax effect */}
+      <motion.div 
+        className="absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat"
+      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40" />
+      
+      <div className="container mx-auto px-4 lg:px-6 max-w-[1400px] relative z-10">
         {/* Header */}
         <FadeIn className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-xs md:text-sm uppercase tracking-[0.2em] text-muted-foreground font-medium">
+            <span className="text-xs md:text-sm uppercase tracking-[0.2em] text-white/80 font-medium">
               Placements & Careers
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-8 max-w-3xl">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-8 max-w-3xl drop-shadow-lg">
             Glance at the top companies hiring from BEC
           </h2>
           <Button
             variant="outline"
-            className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold px-8 py-6 text-base transition-all duration-300"
+            className="border-2 border-white !text-white !bg-transparent hover:!bg-white hover:!text-gray-900 font-semibold px-8 py-6 text-base transition-all duration-300"
+            style={{ color: 'white', backgroundColor: 'transparent' }}
           >
             View Placements
           </Button>
@@ -72,7 +90,7 @@ export function PlacementsSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className={`${stat.bgColor} p-8 rounded-sm hover:shadow-lg transition-shadow duration-300`}
+                  className={`bg-white/95 backdrop-blur-sm p-8 rounded-sm hover:shadow-xl transition-shadow duration-300 border border-white/20`}
                 >
                   <div className="space-y-4">
                     <h3 className="text-3xl lg:text-4xl font-bold text-gray-900">
@@ -94,7 +112,7 @@ export function PlacementsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white p-8 lg:p-12 rounded-sm border border-stone-200"
+            className="bg-white/95 backdrop-blur-sm p-8 lg:p-12 rounded-sm border border-white/20 shadow-lg"
           >
             <div className="grid grid-cols-2 gap-8 lg:gap-12">
               {topRecruiters.map((company, index) => (

@@ -10,20 +10,21 @@ export function Hero() {
           top: "calc(((100vh - 380px) / 2) + 50px)",
         }}
       >
-        What
-        <br /> starts <br />
-        here <br />
-        changes
-        <br /> the <br />
-        world
+        Building
+        <br /> Excellence <br />
+        Here <br />
+        Since <br />
+        1963
       </h2>
       <div className="h-[150vh] box-border block">
         <div className="fixed inset-0 -z-2">
           <img
             alt="background"
             className="object-cover -inset-9999 m-auto h-full p-0 min-w-full"
-            src="https://www.utexas.edu/sites/default/files/homepage-parallax-background-image.jpg"
+            src="/homepage-parallax-background-image.jpg"
           />
+          {/* Orange tint overlay */}
+          <div className="absolute inset-0 bg-linear-to-b from-orange-500/20 via-orange-400/20 to-orange-500/30" />
         </div>
       </div>
     </div>
