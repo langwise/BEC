@@ -2,10 +2,11 @@
 
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 export function ParallaxVideo() {
   const ref = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const { scrollY } = useScroll();
 
   // Parallax effect: Moves video down at 50% speed of scroll
@@ -24,19 +25,20 @@ export function ParallaxVideo() {
           className="absolute inset-0 w-full h-full hidden md:block"
         >
           <video
+            ref={videoRef}
             autoPlay
             muted
             loop
             playsInline
             className="w-full h-full object-cover opacity-80"
-            src="/hero-loop-1920x1080.mp4"
+            src="/hero-video.mp4"
           />
         </motion.div>
 
         {/* Fallback / Mobile Image */}
         <div className="absolute inset-0 md:hidden">
           <Image
-            src="https://www.utexas.edu/sites/default/files/hero_video/homepage-video-still-image-1920.jpg"
+            src="/homepage-video-still-image-1920.jpg"
             alt="Hero Background"
             fill
             className="object-cover opacity-80"
