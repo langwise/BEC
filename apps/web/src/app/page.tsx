@@ -1,4 +1,6 @@
-import { Header } from "@/components/header";
+"use client";
+
+import dynamic from "next/dynamic";
 import { NewsSection } from "@/components/home/news-section";
 import { ProgrammesSection } from "@/components/home/programmes-section";
 import { StatsSection } from "@/components/home/stats-section";
@@ -12,6 +14,13 @@ import { CampusLifeSection } from "@/components/home/campus-life-section";
 import { SocialMediaSidebar } from "@/components/home/social-media-sidebar";
 import { EventsSection } from "@/components/home/events-section";
 import { PlacementsSection } from "@/components/home/placements-section";
+
+const Header = dynamic(
+  () => import("@/components/header").then((m) => m.Header),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   return (
