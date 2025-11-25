@@ -3,48 +3,56 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { useState } from "react";
+import Link from "next/link";
 
 const newsItems = [
   {
-    title: "GLP-1 medications may only temporarily suppress brain activity involved in 'food noise'",
+    title:
+      "GLP-1 medications may only temporarily suppress brain activity involved in 'food noise'",
     category: "HEALTH & MEDICINE",
-    description: "New research reveals insights into how GLP-1 medications affect brain activity related to food cravings and appetite regulation.",
+    description:
+      "New research reveals insights into how GLP-1 medications affect brain activity related to food cravings and appetite regulation.",
     image: "/story1.jpg",
     date: { month: "JAN", day: "10", year: "2025" },
     featured: true,
-    categoryColor: "text-red-700"
+    categoryColor: "text-red-700",
   },
   {
     title: "Understanding the climate record through objects",
     category: "NATURAL SCIENCES",
-    description: "Researchers explore how historical artifacts provide crucial data about past climate patterns.",
+    description:
+      "Researchers explore how historical artifacts provide crucial data about past climate patterns.",
     image: "/story2.jpg",
     date: { month: "JAN", day: "08", year: "2025" },
-    categoryColor: "text-blue-700"
+    categoryColor: "text-blue-700",
   },
   {
-    title: "Air travel quandary: Gad Allon and Megan Ryerson on challenges and solutions",
+    title:
+      "Air travel quandary: Gad Allon and Megan Ryerson on challenges and solutions",
     category: "SOCIAL SCIENCES",
-    description: "Experts discuss the complexities of modern air travel and potential solutions for improvement.",
+    description:
+      "Experts discuss the complexities of modern air travel and potential solutions for improvement.",
     image: "/story3.jpg",
     date: { month: "JAN", day: "05", year: "2025" },
-    categoryColor: "text-orange-700"
+    categoryColor: "text-orange-700",
   },
   {
     title: "Penn fourth-year Florence Onyiuke named a 2026 Rhodes Scholar",
     category: "GLOBAL",
-    description: "Outstanding student achievement recognized with prestigious international scholarship.",
+    description:
+      "Outstanding student achievement recognized with prestigious international scholarship.",
     image: "/story1.jpg",
     date: { month: "DEC", day: "28", year: "2024" },
-    categoryColor: "text-teal-700"
+    categoryColor: "text-teal-700",
   },
   {
     title: "Processing grief through goats and accessibility",
     category: "HEALTH & MEDICINE",
-    description: "Innovative therapy approaches combine animal interaction with mental health treatment.",
+    description:
+      "Innovative therapy approaches combine animal interaction with mental health treatment.",
     image: "/story2.jpg",
     date: { month: "DEC", day: "20", year: "2024" },
-    categoryColor: "text-red-700"
+    categoryColor: "text-red-700",
   },
 ];
 
@@ -53,8 +61,7 @@ function NewsCard({ item, featured, delay }: any) {
 
   if (featured) {
     return (
-      <motion.a
-        href="#"
+      <motion.button
         className="group block h-full"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -70,17 +77,19 @@ function NewsCard({ item, featured, delay }: any) {
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            />
+            <motion.div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             {/* Calendar Badge */}
             <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg overflow-hidden w-16">
               <div className="bg-primary text-white text-center py-1">
                 <span className="text-xs font-bold">{item.date.month}</span>
               </div>
               <div className="text-center py-2">
-                <span className="text-2xl font-bold text-gray-900 block leading-none">{item.date.day}</span>
-                <span className="text-xs text-gray-600 block mt-1">{item.date.year}</span>
+                <span className="text-2xl font-bold text-gray-900 block leading-none">
+                  {item.date.day}
+                </span>
+                <span className="text-xs text-gray-600 block mt-1">
+                  {item.date.year}
+                </span>
               </div>
             </div>
           </div>
@@ -96,21 +105,33 @@ function NewsCard({ item, featured, delay }: any) {
               {item.title}
             </h3>
             <div className="h-0.5 w-12 bg-primary mb-4 group-hover:w-20 transition-all duration-500" />
-            <a href="#" className="inline-flex items-center gap-2 text-primary font-semibold text-sm group/link">
+            <Link
+              href="#"
+              className="inline-flex items-center gap-2 text-primary font-semibold text-sm group/link"
+            >
               Read more
-              <svg className="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg
+                className="w-4 h-4 transition-transform group-hover/link:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
-            </a>
+            </Link>
           </div>
         </article>
-      </motion.a>
+      </motion.button>
     );
   }
 
   return (
-    <motion.a
-      href="#"
+    <motion.button
       className="group block h-full"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -126,17 +147,19 @@ function NewsCard({ item, featured, delay }: any) {
             fill
             className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-95"
           />
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-          />
+          <motion.div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           {/* Calendar Badge */}
           <div className="absolute top-3 right-3 bg-white rounded-md shadow-lg overflow-hidden w-14">
             <div className="bg-primary text-white text-center py-0.5">
               <span className="text-[10px] font-bold">{item.date.month}</span>
             </div>
             <div className="text-center py-1.5">
-              <span className="text-xl font-bold text-gray-900 block leading-none">{item.date.day}</span>
-              <span className="text-[10px] text-gray-600 block mt-0.5">{item.date.year}</span>
+              <span className="text-xl font-bold text-gray-900 block leading-none">
+                {item.date.day}
+              </span>
+              <span className="text-[10px] text-gray-600 block mt-0.5">
+                {item.date.year}
+              </span>
             </div>
           </div>
         </div>
@@ -152,15 +175,28 @@ function NewsCard({ item, featured, delay }: any) {
             {item.title}
           </h3>
           <div className="h-0.5 w-8 bg-primary mb-3 group-hover:w-16 transition-all duration-500" />
-          <a href="#" className="inline-flex items-center gap-2 text-primary font-semibold text-sm group/link">
+          <Link
+            href="#"
+            className="inline-flex items-center gap-2 text-primary font-semibold text-sm group/link"
+          >
             Read more
-            <svg className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg
+              className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
-          </a>
+          </Link>
         </div>
       </article>
-    </motion.a>
+    </motion.button>
   );
 }
 
@@ -181,13 +217,23 @@ export function NewsSection() {
             </h2>
           </div>
           <div className="h-1 w-16 bg-primary mt-3" />
-          
+
           {/* Topics Dropdown Placeholder */}
           <div className="mt-6 flex justify-end">
             <div className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors cursor-pointer">
               Topics
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </div>
           </div>
@@ -228,7 +274,7 @@ export function NewsSection() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <a
+          <Link
             href="#"
             className="group inline-flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-sm hover:gap-4 transition-all duration-300"
           >
@@ -248,7 +294,7 @@ export function NewsSection() {
                 d="M9 5l7 7-7 7"
               />
             </motion.svg>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
