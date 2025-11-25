@@ -8,26 +8,25 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "University Institute | Home",
+  title: "Basaveshwar Engineering College | Home",
   description:
-    "Leading institute for higher education, research and innovation",
+    "Basaveshwar Engineering College (Autonomous) Bagalkot",
   generator: "v0.app",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
+        url: "/logo.png",
+        type: "image/png",
+        sizes: "32x32",
       },
       {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/logo.png",
+        type: "image/png",
+        sizes: "16x16",
       },
     ],
-    apple: "/apple-icon.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 

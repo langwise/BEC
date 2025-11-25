@@ -9,19 +9,19 @@ const lifeHighlights = [
   {
     title: "Student Clubs",
     description: "50+ technical and cultural clubs fostering creativity.",
-    image: "/story1.jpg",
+    image: "https://images.pexels.com/photos/6146987/pexels-photo-6146987.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
     className: "md:col-span-2 md:row-span-2",
   },
   {
     title: "Sports Excellence",
     description: "State-of-the-art complexes for holistic development.",
-    image: "/story2.jpg",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&q=80&fit=crop",
     className: "md:col-span-1 md:row-span-1",
   },
   {
     title: "Cultural Fests",
     description: "Celebrating diversity and talent year-round.",
-    image: "/story3.jpg",
+    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1920&q=80&fit=crop",
     className: "md:col-span-1 md:row-span-1",
   },
 ];
@@ -32,12 +32,12 @@ export function CampusLifeSection() {
       <div className="container mx-auto px-4">
         <FadeIn className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-            Life at Institute
+            Life at BEC
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Beyond the classrooms, we offer a vibrant campus life powered by
+            Beyond the classrooms, BEC offers a vibrant campus life powered by
             student-led clubs, massive cultural fests, and a tight-knit
-            community.
+            community on our 93-acre green campus.
           </p>
         </FadeIn>
 
@@ -79,28 +79,28 @@ export function CampusLifeSection() {
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full h-12 w-12 border-2 hover:border-primary hover:text-primary"
+              className="rounded-full h-12 w-12 border-2 hover:border-primary"
             >
               <Instagram className="h-5 w-5" />
             </Button>
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full h-12 w-12 border-2 hover:border-primary hover:text-primary"
+              className="rounded-full h-12 w-12 border-2 hover:border-primary"
             >
               <Twitter className="h-5 w-5" />
             </Button>
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full h-12 w-12 border-2 hover:border-primary hover:text-primary"
+              className="rounded-full h-12 w-12 border-2 hover:border-primary"
             >
               <Linkedin className="h-5 w-5" />
             </Button>
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full h-12 w-12 border-2 hover:border-primary hover:text-primary"
+              className="rounded-full h-12 w-12 border-2 hover:border-primary"
             >
               <Facebook className="h-5 w-5" />
             </Button>

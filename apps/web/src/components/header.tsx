@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, ChevronDown } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -156,70 +157,98 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-muted">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex min-h-20 items-center justify-between py-3">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center bg-primary text-primary-foreground font-bold text-xl">
-              UI
+          <a href="/" className="flex items-center shrink-0">
+            <div className="shrink-0">
+              <img
+                src="/logo.jpg"
+                alt="Logo"
+                className="object-contain h-14 w-auto px-3"
+              />
             </div>
-            <div className="hidden md:block">
-              <div className="text-sm font-bold text-foreground leading-tight">
-                University Institute
+            <div className="hidden whitespace-nowrap flex-col items-center">
+              <div className="text-3xl font-bold text-foreground">
+                BEC
               </div>
-              <div className="text-xs text-muted-foreground">
-                Excellence in Education
+              <div className="text-[8px] text-muted-foreground">
+                (Autonomous) Bagalkot
               </div>
             </div>
           </a>
 
           {/* Desktop Navigation */}
-          <NavigationMenu className="hidden lg:flex">
-            <NavigationMenuList>
-              {navigationData.map((item) => (
-                <NavigationMenuItem key={item.title}>
-                  <NavigationMenuTrigger className="text-sm font-medium bg-transparent">
-                    {item.title}
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                      {item.items.map((subItem) => (
-                        <li key={subItem.title}>
-                          {subItem.items ? (
-                            <div className="space-y-1">
-                              <div className="text-sm font-semibold text-foreground px-2">
-                                {subItem.title}
-                              </div>
-                              <ul className="space-y-1 ml-2 border-l border-muted pl-2">
-                                {subItem.items.map((nestedItem) => (
-                                  <li key={nestedItem.title}>
-                                    <NavigationMenuLink
-                                      href={nestedItem.href}
-                                      className="block select-none rounded p-1.5 text-sm leading-none no-underline outline-none transition-colors hover:text-primary text-muted-foreground"
-                                    >
-                                      {nestedItem.title}
-                                    </NavigationMenuLink>
-                                  </li>
+          <nav className="hidden lg:flex relative">
+            <NavigationMenu>
+              <NavigationMenuList className="gap-0.5">
+                {navigationData.map((item) => (
+                  <NavigationMenuItem key={item.title}>
+                    <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:bg-accent/50 data-[state=open]:bg-accent/70 transition-all duration-150 h-12 px-4 py-2">
+                      {item.title}
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="w-[800px] p-6">
+                        {/* Separate regular items from grouped items */}
+                        <div className="space-y-6">
+                          {/* Regular menu items in a grid */}
+                          {item.items.filter(subItem => !subItem.items).length > 0 && (
+                            <div className="grid grid-cols-3 gap-3">
+                              {item.items
+                                .filter(subItem => !subItem.items)
+                                .map((subItem) => (
+                                  <NavigationMenuLink
+                                    key={subItem.title}
+                                    href={subItem.href}
+                                    className="group block select-none rounded-md p-4 leading-none no-underline outline-none transition-colors duration-150 hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                  >
+                                    <div className="text-sm font-medium leading-tight">
+                                      {subItem.title}
+                                    </div>
+                                  </NavigationMenuLink>
                                 ))}
-                              </ul>
                             </div>
-                          ) : (
-                            <NavigationMenuLink
-                              href={subItem.href}
-                              className="block select-none rounded p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                {subItem.title}
-                              </div>
-                            </NavigationMenuLink>
                           )}
-                        </li>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
+
+                          {/* Separator if both types exist */}
+                          {item.items.filter(subItem => !subItem.items).length > 0 && 
+                           item.items.filter(subItem => subItem.items).length > 0 && (
+                            <div className="border-t border-muted" />
+                          )}
+
+                          {/* Grouped items (with sub-sub-items) */}
+                          {item.items.filter(subItem => subItem.items).length > 0 && (
+                            <div className="grid grid-cols-2 gap-8">
+                              {item.items
+                                .filter((subItem): subItem is typeof subItem & { items: NonNullable<typeof subItem.items> } => !!subItem.items)
+                                .map((subItem) => (
+                                  <div key={subItem.title} className="space-y-3">
+                                    <div className="text-sm font-semibold text-foreground px-4 py-2 bg-muted/50 rounded-md">
+                                      {subItem.title}
+                                    </div>
+                                    <ul className="space-y-1.5">
+                                      {subItem.items.map((nestedItem) => (
+                                        <li key={nestedItem.title}>
+                                          <NavigationMenuLink
+                                            href={nestedItem.href}
+                                            className="block select-none rounded-md px-4 py-2.5 text-sm leading-tight no-underline outline-none transition-colors duration-150 hover:bg-accent hover:text-accent-foreground text-muted-foreground"
+                                          >
+                                            {nestedItem.title}
+                                          </NavigationMenuLink>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                ))}
+              </NavigationMenuList>
+            </NavigationMenu>
+          </nav>
 
           {/* Mobile Menu Button */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -239,7 +268,7 @@ export function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="font-bold text-lg"
                 >
-                  University Institute
+                  BEC Bagalkot
                 </a>
               </div>
               <nav className="flex flex-col gap-1">

@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
-import { motion, useInView, AnimatePresence } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 // --- STRATEGY-ALIGNED DATA ---
 const IMPACT_DATA = [
@@ -13,25 +13,25 @@ const IMPACT_DATA = [
       "Our faculty are not just teachers; they are pioneers. With 100% of our core faculty holding PhDs from premier institutions, we lead the way in groundbreaking research. From advanced materials to sustainable energy, our labs are where the future is forged.",
     stats: [
       { value: "100%", label: "PhD Qualified Faculty" },
-      { value: "400+", label: "Patents Filed" },
-      { value: "50+", label: "Active Research Labs" },
+      { value: "₹ 3.40 Cr", label: "Research Grants" },
+      { value: "35+", label: "Industry MoUs" },
     ],
     cta: "Meet Our Faculty",
-    image: "/story2.jpg",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1920&q=80&fit=crop",
     color: "bg-orange-50",
   },
   {
     id: 2,
     title: "World-Class Infrastructure",
     description:
-      "Spread across a lush, 200-acre green campus, the Institute offers a vibrant ecosystem for learning and living. Our state-of-the-art libraries, hostels, and sports complexes provide the perfect backdrop for a holistic educational journey.",
+      "Spread across a lush, 93.18-acre green campus, the Institute offers a vibrant ecosystem for learning and living. Our state-of-the-art libraries with 1.40 lakh volumes, hostels, and sports complexes provide the perfect backdrop for a holistic educational journey.",
     stats: [
-      { value: "200", label: "Acres of Green Campus" },
-      { value: "24/7", label: "Library Access" },
-      { value: "12", label: "Sports Complexes" },
+      { value: "93.18", label: "Acres of Green Campus" },
+      { value: "1.40L+", label: "Library Volumes" },
+      { value: "1 Gbps", label: "Wi-Fi Connectivity" },
     ],
     cta: "Virtual Campus Tour",
-    image: "/story1.jpg",
+    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80&fit=crop",
     color: "bg-white",
   },
   {
@@ -42,48 +42,79 @@ const IMPACT_DATA = [
     stats: [
       { value: "96%", label: "Placement Rate" },
       { value: "50k+", label: "Strong Alumni Network" },
-      { value: "150+", label: "Startups Incubated" },
+      { value: "₹ 3.14 Lac", label: "Average Package" },
     ],
     cta: "Placement Records",
-    image: "/story3.jpg",
+    image: "https://images.pexels.com/photos/33654591/pexels-photo-33654591.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
     color: "bg-stone-50",
   },
 ];
 
 // --- Components ---
 
+function ScrollImage({
+  item,
+  index,
+  targetRef,
+}: {
+  item: (typeof IMPACT_DATA)[0];
+  index: number;
+  targetRef: React.RefObject<HTMLDivElement | null>;
+}) {
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end", "start start"],
+  });
+
+  // First image stays at 0, others scroll from 100% to 0
+  const y = useTransform(
+    scrollYProgress,
+    [0, 1],
+    index === 0 ? ["0%", "0%"] : ["100%", "0%"]
+  );
+
+  return (
+    <motion.div
+      style={{ y }}
+      className="absolute inset-0 w-full h-full"
+    >
+      <Image
+        src={item.image}
+        alt={item.title}
+        fill
+        className="object-cover"
+        priority={index === 0}
+      />
+      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/10" />
+      <div className="absolute bottom-12 left-12 text-white/80 z-10">
+        <p className="uppercase tracking-[0.2em] text-sm font-medium">
+          Focus Area 0{index + 1}
+        </p>
+      </div>
+    </motion.div>
+  );
+}
+
 export function ImpactSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  // Create individual refs for each text block
+  const ref0 = useRef<HTMLDivElement>(null);
+  const ref1 = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLDivElement>(null);
+  const refs = [ref0, ref1, ref2];
 
   return (
     <section className="relative w-full">
       <div className="flex flex-col lg:flex-row">
         {/* LEFT COLUMN: Sticky Image (Desktop) */}
         <div className="hidden lg:block lg:w-1/2 sticky top-0 h-screen overflow-hidden bg-gray-900">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={IMPACT_DATA[activeIndex].id}
-              initial={{ opacity: 0, scale: 1.05 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.7, ease: "easeInOut" }}
-              className="absolute inset-0 w-full h-full"
-            >
-              <Image
-                src={IMPACT_DATA[activeIndex].image}
-                alt={IMPACT_DATA[activeIndex].title}
-                fill
-                className="object-cover opacity-90"
-                priority
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/10" />
-              <div className="absolute bottom-12 left-12 text-white/80 z-10">
-                <p className="uppercase tracking-[0.2em] text-sm font-medium">
-                  Focus Area 0{activeIndex + 1}
-                </p>
-              </div>
-            </motion.div>
-          </AnimatePresence>
+          {IMPACT_DATA.map((item, index) => (
+            <ScrollImage
+              key={item.id}
+              item={item}
+              index={index}
+              targetRef={refs[index]}
+            />
+          ))}
         </div>
 
         {/* RIGHT COLUMN: Scrolling Text Content */}
@@ -93,7 +124,7 @@ export function ImpactSection() {
               key={item.id}
               item={item}
               index={index}
-              setActiveIndex={setActiveIndex}
+              ref={refs[index]}
             />
           ))}
         </div>
@@ -102,24 +133,13 @@ export function ImpactSection() {
   );
 }
 
-function TextBlock({
-  item,
-  index,
-  setActiveIndex,
-}: {
-  item: (typeof IMPACT_DATA)[0];
-  index: number;
-  setActiveIndex: (i: number) => void;
-}) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "-50% 0px -50% 0px" });
-
-  useEffect(() => {
-    if (isInView) {
-      setActiveIndex(index);
-    }
-  }, [isInView, index, setActiveIndex]);
-
+const TextBlock = React.forwardRef<
+  HTMLDivElement,
+  {
+    item: (typeof IMPACT_DATA)[0];
+    index: number;
+  }
+>(({ item, index }, ref) => {
   return (
     <div
       ref={ref}
@@ -184,4 +204,6 @@ function TextBlock({
       </motion.div>
     </div>
   );
-}
+});
+
+TextBlock.displayName = "TextBlock";

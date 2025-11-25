@@ -8,49 +8,49 @@ import Link from "next/link";
 const newsItems = [
   {
     title:
-      "GLP-1 medications may only temporarily suppress brain activity involved in 'food noise'",
-    category: "HEALTH & MEDICINE",
+      "BEC Achieves NAAC 'A' Grade Accreditation and NBA Recognition",
+    category: "ACHIEVEMENTS",
     description:
-      "New research reveals insights into how GLP-1 medications affect brain activity related to food cravings and appetite regulation.",
-    image: "/story1.jpg",
-    date: { month: "JAN", day: "10", year: "2025" },
+      "Basaveshwar Engineering College receives prestigious NAAC 'A' grade accreditation and NBA recognition, reaffirming our commitment to academic excellence and quality education.",
+    image: "/modern-university-campus.png",
+    date: { month: "JAN", day: "15", year: "2025" },
     featured: true,
     categoryColor: "text-red-700",
   },
   {
-    title: "Understanding the climate record through objects",
-    category: "NATURAL SCIENCES",
+    title: "BEC Secures ₹3.40 Crores in Research Grants",
+    category: "RESEARCH",
     description:
-      "Researchers explore how historical artifacts provide crucial data about past climate patterns.",
-    image: "/story2.jpg",
-    date: { month: "JAN", day: "08", year: "2025" },
+      "College receives significant research funding, strengthening our position as a leading research institution with 35+ industry MoUs and active research centers.",
+    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1920&q=80&fit=crop",
+    date: { month: "JAN", day: "12", year: "2025" },
     categoryColor: "text-blue-700",
   },
   {
     title:
-      "Air travel quandary: Gad Allon and Megan Ryerson on challenges and solutions",
-    category: "SOCIAL SCIENCES",
+      "96% Placement Record: BEC Students Excel in Campus Placements",
+    category: "PLACEMENTS",
     description:
-      "Experts discuss the complexities of modern air travel and potential solutions for improvement.",
-    image: "/story3.jpg",
-    date: { month: "JAN", day: "05", year: "2025" },
+      "Outstanding placement season with top recruiters including Wipro, HCL, and Tech Mahindra, with average package of ₹3.14 LPA.",
+    image: "https://images.pexels.com/photos/31956991/pexels-photo-31956991.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+    date: { month: "JAN", day: "08", year: "2025" },
     categoryColor: "text-orange-700",
   },
   {
-    title: "Penn fourth-year Florence Onyiuke named a 2026 Rhodes Scholar",
-    category: "GLOBAL",
+    title: "BEC Ranked in NIRF 201-250 Band",
+    category: "RANKINGS",
     description:
-      "Outstanding student achievement recognized with prestigious international scholarship.",
-    image: "/story1.jpg",
+      "College achieves recognition in National Institutional Ranking Framework, showcasing excellence in engineering education and research.",
+    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1920&q=80&fit=crop",
     date: { month: "DEC", day: "28", year: "2024" },
     categoryColor: "text-teal-700",
   },
   {
-    title: "Processing grief through goats and accessibility",
-    category: "HEALTH & MEDICINE",
+    title: "New State-of-the-Art Laboratories Inaugurated",
+    category: "INFRASTRUCTURE",
     description:
-      "Innovative therapy approaches combine animal interaction with mental health treatment.",
-    image: "/story2.jpg",
+      "BEC enhances its infrastructure with modern laboratories and 1 Gbps Wi-Fi connectivity, providing students with cutting-edge learning facilities.",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&q=80&fit=crop",
     date: { month: "DEC", day: "20", year: "2024" },
     categoryColor: "text-red-700",
   },

@@ -77,10 +77,10 @@ export function SocialMediaSidebar() {
                   initial={{ x: 100 }}
                   animate={{ x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className={`${social.color} text-white p-4 transition-all duration-300 flex items-center justify-center group relative`}
+                  className={`${social.color} text-white p-2 transition-all duration-300 flex items-center justify-center group relative`}
                   aria-label={social.name}
                 >
-                  <Icon className="h-5 w-5" />
+                  <Icon className="size-5" />
                   
                   {/* Tooltip */}
                   <span className="absolute right-full mr-2 px-3 py-1.5 bg-gray-900 text-white text-sm font-medium rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">

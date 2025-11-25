@@ -6,7 +6,7 @@ const stats = [
   { value: "100%", label: "PhD Qualified Faculty" },
   { value: "96%", label: "Placement Record" },
   { value: "50k+", label: "Alumni Worldwide" },
-  { value: "200+", label: "Acres Green Campus" },
+  { value: "93+", label: "Acres Green Campus" },
 ];
 
 export function StatsSection() {

@@ -15,10 +15,10 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="font-bold text-lg mb-4">University Institute</h3>
+            <h3 className="font-bold text-lg mb-4">Basaveshwar Engineering College</h3>
             <p className="text-secondary-foreground/80 text-sm leading-relaxed mb-4">
-              A premier institution dedicated to excellence in education,
-              research, and innovation.
+              A premier technical institution established in 1963, dedicated to excellence in education,
+              research, and innovation. Accredited by NBA and NAAC with 'A' grade.
             </p>
             <div className="flex gap-3">
               <a
@@ -169,19 +169,19 @@ export function Footer() {
               <li className="flex gap-2">
                 <MapPin className="h-5 w-5 shrink-0 text-primary" />
                 <span className="text-secondary-foreground/80">
-                  123 University Road, Campus City, State 123456
+                  S. Nijalingappa Vidyanagar, Bagalkot - 587102, Karnataka, India
                 </span>
               </li>
               <li className="flex gap-2">
                 <Phone className="h-5 w-5 shrink-0 text-primary" />
                 <span className="text-secondary-foreground/80">
-                  +1 (555) 123-4567
+                  +91-8354-234060 / 234204
                 </span>
               </li>
               <li className="flex gap-2">
                 <Mail className="h-5 w-5 shrink-0 text-primary" />
                 <span className="text-secondary-foreground/80">
-                  info@university.edu
+                  principal@becbgk.edu
                 </span>
               </li>
             </ul>
@@ -190,7 +190,7 @@ export function Footer() {
 
         <div className="border-t border-secondary-foreground/20 mt-10 pt-8 text-center text-sm text-secondary-foreground/70">
           <p>
-            &copy; {new Date().getFullYear()} University Institute. All rights
+            &copy; {new Date().getFullYear()} Basaveshwar Engineering College (Autonomous), Bagalkot. All rights
             reserved.
           </p>
         </div>
