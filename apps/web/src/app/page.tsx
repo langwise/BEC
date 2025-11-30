@@ -24,10 +24,9 @@ const Header = dynamic(
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <Header />
+    <main>
       <SocialMediaSidebar />
-      <main className="relative [clip-path:inset(0)]">
+      <div className="relative [clip-path:inset(0)]">
         <ParallaxVideo />
         <Hero />
         <Information />
@@ -44,9 +43,7 @@ export default function Home() {
         <CampusLifeSection />
         {/* Academic Offerings Summary */}
         <ProgrammesSection />
-      </main>
-
-      <Footer />
-    </div>
+      </div>
+    </main>
   );
 }
