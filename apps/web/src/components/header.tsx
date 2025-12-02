@@ -75,10 +75,11 @@ const navigationData = [
       {
         title: "Programmes",
         items: [
-          { title: "UG Programmes", href: "/academics/programmes/ug" },
-          { title: "PG Programmes", href: "/academics/programmes/pg" },
-          { title: "PhD Research", href: "/academics/programmes/phd" },
-          { title: "M.Tech Research", href: "/academics/programmes/mtech" },
+          { title: "Under Graduate/BE", href: "/academics/programmes/ug" },
+          { title: "Post Graduate/M.Tech", href: "/academics/programmes/pg" },
+          { title: "MBA", href: "/academics/programmes/mba" },
+          { title: "MCA", href: "/academics/programmes/mca" },
+          { title: "M.Sc.(Engg.)/Ph.D", href: "/academics/programmes/phd" },
         ],
       },
       { title: "Curriculum", href: "/academics/curriculum" },
