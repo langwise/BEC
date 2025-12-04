@@ -16,7 +16,11 @@ interface ProgrammePlacementProps {
   industries: string[];
 }
 
-export function ProgrammePlacement({ stats, topRecruiters, industries }: ProgrammePlacementProps) {
+export function ProgrammePlacement({
+  stats,
+  topRecruiters,
+  industries,
+}: ProgrammePlacementProps) {
   return (
     <section className="py-20 bg-stone-50">
       <div className="container mx-auto px-4">
@@ -33,7 +37,8 @@ export function ProgrammePlacement({ stats, topRecruiters, industries }: Program
               Placements & Careers
             </h2>
             <p className="text-lg text-gray-600">
-              Exceptional career opportunities with top companies across industries
+              Exceptional career opportunities with top companies across
+              industries
             </p>
           </motion.div>
 
@@ -46,20 +51,36 @@ export function ProgrammePlacement({ stats, topRecruiters, industries }: Program
             className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
           >
             <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-stone-200">
-              <div className="text-4xl font-bold text-primary mb-2">{stats.rate}</div>
-              <div className="text-sm text-gray-600 uppercase tracking-wide">Placement Rate</div>
+              <div className="text-4xl font-bold text-primary mb-2">
+                {stats.rate}
+              </div>
+              <div className="text-sm text-gray-600 uppercase tracking-wide">
+                Placement Rate
+              </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-stone-200">
-              <div className="text-4xl font-bold text-primary mb-2">{stats.average}</div>
-              <div className="text-sm text-gray-600 uppercase tracking-wide">Average Package</div>
+              <div className="text-4xl font-bold text-primary mb-2">
+                {stats.average}
+              </div>
+              <div className="text-sm text-gray-600 uppercase tracking-wide">
+                Average Package
+              </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-stone-200">
-              <div className="text-4xl font-bold text-primary mb-2">{stats.highest}</div>
-              <div className="text-sm text-gray-600 uppercase tracking-wide">Highest Package</div>
+              <div className="text-4xl font-bold text-primary mb-2">
+                {stats.highest}
+              </div>
+              <div className="text-sm text-gray-600 uppercase tracking-wide">
+                Highest Package
+              </div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-stone-200">
-              <div className="text-4xl font-bold text-primary mb-2">{stats.companies}</div>
-              <div className="text-sm text-gray-600 uppercase tracking-wide">Companies</div>
+              <div className="text-4xl font-bold text-primary mb-2">
+                {stats.companies}
+              </div>
+              <div className="text-sm text-gray-600 uppercase tracking-wide">
+                Companies
+              </div>
             </div>
           </motion.div>
 
@@ -76,7 +97,9 @@ export function ProgrammePlacement({ stats, topRecruiters, industries }: Program
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Building2 className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Top Recruiters</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  Top Recruiters
+                </h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {topRecruiters.map((company, index) => (
@@ -106,7 +129,9 @@ export function ProgrammePlacement({ stats, topRecruiters, industries }: Program
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <Briefcase className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Industry Sectors</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  Industry Sectors
+                </h3>
               </div>
               <div className="space-y-3">
                 {industries.map((industry, index) => (
@@ -118,7 +143,7 @@ export function ProgrammePlacement({ stats, topRecruiters, industries }: Program
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 bg-stone-50 rounded-lg hover:bg-stone-100 transition-colors"
                   >
-                    <TrendingUp className="w-5 h-5 text-primary flex-shrink-0" />
+                    <TrendingUp className="w-5 h-5 text-primary shrink-0" />
                     <span className="text-gray-700">{industry}</span>
                   </motion.div>
                 ))}
