@@ -40,7 +40,8 @@ export function PhDProcedures({
               Research Centers
             </h2>
             <p className="text-lg text-gray-600 text-center mb-12">
-              Research Programs leading to Ph.D./M.Sc.(Engg.) are available in the following departments
+              Research Programs leading to Ph.D./M.Sc.(Engg.) are available in
+              the following departments
             </p>
 
             <div className="bg-stone-50 rounded-xl shadow-sm border border-stone-200 overflow-hidden">
@@ -86,10 +87,10 @@ export function PhDProcedures({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12 bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-8 border border-primary/20"
+            className="mb-12 bg-linear-to-br from-primary/5 to-primary/10 rounded-xl p-8 border border-primary/20"
           >
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+              <div className="shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Download className="w-6 h-6 text-primary" />
               </div>
               <div className="flex-1">
@@ -97,7 +98,8 @@ export function PhDProcedures({
                   Application Form
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Application form for Ph.D. Admission to VTU shall be downloaded from the University Website{" "}
+                  Application form for Ph.D. Admission to VTU shall be
+                  downloaded from the University Website{" "}
                   <a
                     href="https://www.vtu.ac.in"
                     target="_blank"
@@ -106,12 +108,19 @@ export function PhDProcedures({
                   >
                     www.vtu.ac.in
                   </a>
-                  . Duly filled in applications along with online payment for Rs 1500/- receipt and necessary enclosures should be sent to:
+                  . Duly filled in applications along with online payment for Rs
+                  1500/- receipt and necessary enclosures should be sent to:
                 </p>
                 <div className="bg-white p-4 rounded-lg border border-stone-200">
-                  <p className="font-semibold text-gray-900 mb-1">The Registrar</p>
-                  <p className="text-sm text-gray-700">Visvesvaraya Technological University</p>
-                  <p className="text-sm text-gray-700">"Jnana Sangama", Belagavi - 590018</p>
+                  <p className="font-semibold text-gray-900 mb-1">
+                    The Registrar
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    Visvesvaraya Technological University
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    "Jnana Sangama", Belagavi - 590018
+                  </p>
                 </div>
               </div>
             </div>
@@ -144,7 +153,7 @@ export function PhDProcedures({
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     className="flex items-start gap-3"
                   >
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-700">{item}</span>
                   </motion.li>
                 ))}
@@ -177,7 +186,7 @@ export function PhDProcedures({
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     className="flex items-start gap-3"
                   >
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-700">{item}</span>
                   </motion.li>
                 ))}

@@ -32,7 +32,11 @@ interface ProgrammeAdmissionProps {
 }
 
 // 'fees' is REMOVED from the component function signature
-export function ProgrammeAdmission({ eligibility, entrance, contact }: ProgrammeAdmissionProps) {
+export function ProgrammeAdmission({
+  eligibility,
+  entrance,
+  contact,
+}: ProgrammeAdmissionProps) {
   return (
     <section className="py-20 bg-stone-50">
       <div className="container mx-auto px-4">
@@ -49,7 +53,8 @@ export function ProgrammeAdmission({ eligibility, entrance, contact }: Programme
               Admissions
             </h2>
             <p className="text-lg text-gray-600">
-              Complete information about eligibility, entrance exams, and admission process
+              Complete information about eligibility, entrance exams, and
+              admission process
             </p>
           </motion.div>
 
@@ -66,11 +71,16 @@ export function ProgrammeAdmission({ eligibility, entrance, contact }: Programme
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <GraduationCap className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">{eligibility.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  {eligibility.title}
+                </h3>
               </div>
               <ul className="space-y-3">
                 {eligibility.criteria.map((criterion, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-700">
+                  <li
+                    key={index}
+                    className="flex items-start gap-3 text-gray-700"
+                  >
                     <span className="text-primary mt-1">•</span>
                     <span>{criterion}</span>
                   </li>
@@ -90,12 +100,16 @@ export function ProgrammeAdmission({ eligibility, entrance, contact }: Programme
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <FileCheck className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">{entrance.title}</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  {entrance.title}
+                </h3>
               </div>
               <div className="space-y-4">
                 {entrance.exams.map((exam, index) => (
                   <div key={index} className="border-l-4 border-primary pl-4">
-                    <h4 className="font-semibold text-gray-900 mb-1">{exam.name}</h4>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      {exam.name}
+                    </h4>
                     <p className="text-sm text-gray-600">{exam.description}</p>
                   </div>
                 ))}
@@ -112,20 +126,22 @@ export function ProgrammeAdmission({ eligibility, entrance, contact }: Programme
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="bg-gradient-to-br from-primary to-primary/80 p-8 rounded-xl text-white"
+            className="bg-linear-to-br from-primary to-primary/80 p-8 rounded-xl text-white"
           >
-            <h3 className="text-2xl font-bold mb-8 text-center">Contact for Admissions</h3>
+            <h3 className="text-2xl font-bold mb-8 text-center">
+              Contact for Admissions
+            </h3>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Central Office */}
               <div className="space-y-4">
                 <h4 className="font-bold text-lg">{contact.central.name}</h4>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
                     <span className="text-sm">{contact.central.address}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 flex-shrink-0" />
+                    <Phone className="w-5 h-5 shrink-0" />
                     <span className="text-sm">{contact.central.phone}</span>
                   </div>
                 </div>
@@ -136,11 +152,11 @@ export function ProgrammeAdmission({ eligibility, entrance, contact }: Programme
                 <h4 className="font-bold text-lg">{contact.admission.name}</h4>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 shrink-0 mt-0.5" />
                     <span className="text-sm">{contact.admission.address}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 flex-shrink-0" />
+                    <Phone className="w-5 h-5 shrink-0" />
                     <span className="text-sm">{contact.admission.phone}</span>
                   </div>
                 </div>

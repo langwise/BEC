@@ -48,7 +48,9 @@ export function ProgrammeFAQ({ faqs }: ProgrammeFAQProps) {
                 className="bg-stone-50 rounded-xl overflow-hidden border border-stone-200"
               >
                 <button
-                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
                   className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-stone-100 transition-colors"
                 >
                   <span className="font-semibold text-gray-900 pr-4">
@@ -56,7 +58,7 @@ export function ProgrammeFAQ({ faqs }: ProgrammeFAQProps) {
                   </span>
                   <ChevronDown
                     className={cn(
-                      "w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300",
+                      "w-5 h-5 text-primary shrink-0 transition-transform duration-300",
                       openIndex === index && "rotate-180"
                     )}
                   />

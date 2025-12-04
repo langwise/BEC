@@ -15,19 +15,19 @@ interface ProgrammeHeroProps {
   }>;
 }
 
-export function ProgrammeHero({ title, subtitle, description, image, stats }: ProgrammeHeroProps) {
+export function ProgrammeHero({
+  title,
+  subtitle,
+  description,
+  image,
+  stats,
+}: ProgrammeHeroProps) {
   return (
     <section className="relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
+        <Image src={image} alt={title} fill className="object-cover" priority />
+        <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/40" />
       </div>
 
       {/* Content */}
@@ -57,9 +57,16 @@ export function ProgrammeHero({ title, subtitle, description, image, stats }: Pr
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             {stats.map((stat, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-lg">
-                <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-sm text-white/80 uppercase tracking-wide">{stat.label}</div>
+              <div
+                key={index}
+                className="bg-white/10 backdrop-blur-sm border border-white/20 p-6 rounded-lg"
+              >
+                <div className="text-3xl font-bold text-white mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-white/80 uppercase tracking-wide">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </motion.div>

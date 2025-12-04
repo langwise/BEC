@@ -10,7 +10,11 @@ interface ProgrammeCurriculumProps {
   outcomes: string[];
 }
 
-export function ProgrammeCurriculum({ structure, features, outcomes }: ProgrammeCurriculumProps) {
+export function ProgrammeCurriculum({
+  structure,
+  features,
+  outcomes,
+}: ProgrammeCurriculumProps) {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -58,7 +62,7 @@ export function ProgrammeCurriculum({ structure, features, outcomes }: Programme
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 bg-white rounded-lg"
                   >
-                    <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
                     <span className="text-gray-700">{feature}</span>
                   </motion.div>
                 ))}
@@ -91,7 +95,7 @@ export function ProgrammeCurriculum({ structure, features, outcomes }: Programme
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 bg-white rounded-lg"
                   >
-                    <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
                     <span className="text-gray-700">{outcome}</span>
                   </motion.div>
                 ))}
