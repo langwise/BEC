@@ -21,7 +21,8 @@ const socialLinks = [
     name: "Instagram",
     icon: Instagram,
     url: "#",
-    color: "bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-90",
+    color:
+      "bg-linear-to-br from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-90",
   },
   {
     name: "LinkedIn",
@@ -45,7 +46,7 @@ export function SocialMediaSidebar() {
       // Show social sidebar after scrolling past hero section (approximately 100vh)
       const heroHeight = window.innerHeight;
       const scrollPosition = window.scrollY;
-      
+
       setIsVisible(scrollPosition > heroHeight);
     };
 
@@ -81,7 +82,7 @@ export function SocialMediaSidebar() {
                   aria-label={social.name}
                 >
                   <Icon className="size-5" />
-                  
+
                   {/* Tooltip */}
                   <span className="absolute right-full mr-2 px-3 py-1.5 bg-gray-900 text-white text-sm font-medium rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
                     {social.name}

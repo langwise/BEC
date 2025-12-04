@@ -13,7 +13,11 @@ interface ProgrammeOverviewProps {
   }>;
 }
 
-export function ProgrammeOverview({ description, highlights, disciplines }: ProgrammeOverviewProps) {
+export function ProgrammeOverview({
+  description,
+  highlights,
+  disciplines,
+}: ProgrammeOverviewProps) {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -48,7 +52,7 @@ export function ProgrammeOverview({ description, highlights, disciplines }: Prog
               <ul className="space-y-4">
                 {highlights.map((highlight, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
                       <Check className="w-4 h-4 text-primary" />
                     </div>
                     <span className="text-gray-700">{highlight}</span>

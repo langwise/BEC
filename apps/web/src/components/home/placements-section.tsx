@@ -5,40 +5,7 @@ import { useRef } from "react";
 import { FadeIn } from "../animations/fade-in";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-
-const placementStats = [
-  {
-    value: "96%",
-    label: "Placement Record",
-    bgColor: "bg-stone-100",
-  },
-  {
-    value: "₹ 3.14 Lac",
-    label: "Average Package",
-    bgColor: "bg-stone-100",
-  },
-  {
-    value: "50k+",
-    label: "Alumni Worldwide",
-    bgColor: "bg-stone-100",
-  },
-  {
-    value: "35+",
-    label: "Industry MoUs",
-    bgColor: "bg-stone-100",
-  },
-];
-
-const topRecruiters = [
-  { name: "Wipro", logo: "/logos/adobe.svg" },
-  { name: "HCL", logo: "/logos/apple.svg" },
-  { name: "Tech Mahindra", logo: "/logos/google.svg" },
-  { name: "Microsoft", logo: "/logos/microsoft.svg" },
-  { name: "IBM", logo: "/logos/ibm.svg" },
-  { name: "Adobe", logo: "/logos/adobe.svg" },
-  { name: "Apple", logo: "/logos/apple.svg" },
-  { name: "Google", logo: "/logos/google.svg" },
-];
+import { placementStats, topRecruiters } from "@/data/home/placements";
 
 export function PlacementsSection() {
   const ref = useRef(null);
@@ -46,19 +13,20 @@ export function PlacementsSection() {
     target: ref,
     offset: ["start end", "end start"],
   });
-  
+
   // Parallax effect: Moves background image at slower rate than scroll
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
-    <section ref={ref} className="relative py-16 lg:py-24 border-t border-stone-200 overflow-hidden">
+    <section
+      ref={ref}
+      className="relative py-16 lg:py-24 border-t border-stone-200 overflow-hidden"
+    >
       {/* Background image with parallax effect */}
-      <motion.div 
-        className="absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat"
-      />
+      <motion.div className="absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat" />
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-black/40" />
-      
+
       <div className="container mx-auto px-4 lg:px-6 max-w-[1400px] relative z-10">
         {/* Header */}
         <FadeIn className="mb-12">
@@ -72,8 +40,8 @@ export function PlacementsSection() {
           </h2>
           <Button
             variant="outline"
-            className="border-2 border-white !text-white !bg-transparent hover:!bg-white hover:!text-gray-900 font-semibold px-8 py-6 text-base transition-all duration-300"
-            style={{ color: 'white', backgroundColor: 'transparent' }}
+            className="border-2 border-white text-white! bg-transparent! hover:bg-white! hover:text-gray-900! font-semibold px-8 py-6 text-base transition-all duration-300"
+            style={{ color: "white", backgroundColor: "transparent" }}
           >
             View Placements
           </Button>
@@ -175,7 +143,8 @@ export function PlacementsSection() {
                 Ready to Start Your Career Journey?
               </h3>
               <p className="text-white/90 text-lg">
-                Join our placement preparation programs and career development workshops
+                Join our placement preparation programs and career development
+                workshops
               </p>
             </div>
             <Button
