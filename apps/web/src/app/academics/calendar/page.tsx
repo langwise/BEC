@@ -1,0 +1,222 @@
+// src/app/academics/calendar/page.tsx
+"use client";
+
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { AcademicCalendarSection } from "@/components/academics/academic-calendar-section";
+
+const calendarData = {
+  currentYear: "2024-25",
+  calendars: [
+    {
+      id: 1,
+      title: "Academic Calendar, Even Semester (IV, VI & VIII Sem BE) 2024-25",
+      semester: "Even Semester",
+      programmes: ["IV Sem BE", "VI Sem BE", "VIII Sem BE"],
+      year: "2024-25",
+      pdfUrl: "/Documents/Academic Calender,Odd Semester IV,VI,VIII UG 20250215_13320622.pdf",
+      featured: true,
+    },
+    {
+      id: 2,
+      title: "Academic Calendar, Odd Semester (I, III, V, VII Sem BE & I, III PG) 2024-25",
+      semester: "Odd Semester",
+      programmes: ["I Sem BE", "III Sem BE", "V Sem BE", "VII Sem BE", "I Sem PG", "III Sem PG"],
+      year: "2024-25",
+      pdfUrl: "/Documents/Academic Calender,Odd Semester I,III,V,VII UG & I,III PG20250215_13292427.pdf",
+      featured: true,
+    },
+    {
+      id: 3,
+      title: "2023-24 Odd VII Sem B.E. Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["VII Sem BE"],
+      year: "2023-24",
+      pdfUrl: "/Documents/calander of events/Calendar of Events BE VII sem 2023-24.pdf",
+      featured: false,
+    },
+    {
+      id: 4,
+      title: "2023-24 Odd I Sem B.E. Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["I Sem BE"],
+      year: "2023-24",
+      pdfUrl: "/Documents/calander of events/Calendar of Events BE I sem 2023-24.pdf",
+      featured: false,
+    },
+    {
+      id: 5,
+      title: "2023-24 Odd III and V Sem B.E. Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["III Sem BE", "V Sem BE"],
+      year: "2023-24",
+      pdfUrl: "/Documents/calander of events/Calendar of Events BE III and V sem 2023-24.pdf",
+      featured: false,
+    },
+    {
+      id: 6,
+      title: "2023-24 Odd III Sem M.Tech and MBA Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["III Sem M.Tech", "III Sem MBA"],
+      year: "2023-24",
+      pdfUrl: "/Documents/calander of events/Calendar of Events III sem M.Tech MBA.pdf",
+      featured: false,
+    },
+    {
+      id: 7,
+      title: "2022-23 Even II and IV Sem B.E. Calendar of Events",
+      semester: "Even Semester",
+      programmes: ["II Sem BE", "IV Sem BE"],
+      year: "2022-23",
+      pdfUrl: "/Documents/calander of events/2022-23_Even_II_and_IV_Sem_B.E._Calender_of_Events.pdf",
+      featured: false,
+    },
+    {
+      id: 8,
+      title: "2022-23 Even IV Semester MBA and M.Tech Calendar of Events",
+      semester: "Even Semester",
+      programmes: ["IV Sem MBA", "IV Sem M.Tech"],
+      year: "2022-23",
+      pdfUrl: "/Documents/calander of events/2022-23_Even_IV__Semester_MBA_and_M.Tech_Calender_of_Events.pdf",
+      featured: false,
+    },
+    {
+      id: 9,
+      title: "2022-23 Even VI and VIII Sem B.E. Calendar of Events",
+      semester: "Even Semester",
+      programmes: ["VI Sem BE", "VIII Sem BE"],
+      year: "2022-23",
+      pdfUrl: "/Documents/calander of events/2022-23_Even_VI_and_VIII_Sem_B.E._Calender_of_Events.pdf",
+      featured: false,
+    },
+    {
+      id: 10,
+      title: "2022-23 Odd V/VII Semester B.E Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["V Sem BE", "VII Sem BE"],
+      year: "2022-23",
+      pdfUrl: "/Documents/calander of events/4.pdf",
+      featured: false,
+    },
+    {
+      id: 11,
+      title: "2022-23 Odd III Semester B.E Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["III Sem BE"],
+      year: "2022-23",
+      pdfUrl: "/Documents/calander of events/2.pdf",
+      featured: false,
+    },
+    {
+      id: 12,
+      title: "2022-23 Odd Semester M.Tech/MBA Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["M.Tech", "MBA"],
+      year: "2022-23",
+      pdfUrl: "/Documents/calander of events/Academi Calendar MBA Mtech odd Sem 2022-23.pdf",
+      featured: false,
+    },
+    {
+      id: 13,
+      title: "2022-23 Odd I Semester B.E Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["I Sem BE"],
+      year: "2022-23",
+      pdfUrl: "/Documents/calander of events/1.pdf",
+      featured: false,
+    },
+    {
+      id: 14,
+      title: "2021-22 Odd V/VII B.E, III Semester MBA Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["V Sem BE", "VII Sem BE", "III Sem MBA"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/12.pdf",
+      featured: false,
+    },
+    {
+      id: 15,
+      title: "2021-22 Odd III Semester B.E Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["III Sem BE"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/11.pdf",
+      featured: false,
+    },
+    {
+      id: 16,
+      title: "2021-22 Odd III Semester M.Tech Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["III Sem M.Tech"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/13.pdf",
+      featured: false,
+    },
+    {
+      id: 17,
+      title: "2021-22 Odd I Semester B.E Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["I Sem BE"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/10.pdf",
+      featured: false,
+    },
+    {
+      id: 18,
+      title: "2021-22 Odd I Semester M.Tech / MBA Calendar of Events",
+      semester: "Odd Semester",
+      programmes: ["I Sem M.Tech", "I Sem MBA"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/14.pdf",
+      featured: false,
+    },
+    {
+      id: 19,
+      title: "2021-22 Even VI/VIII B.E, IV Semester MBA Calendar of Events",
+      semester: "Even Semester",
+      programmes: ["VI Sem BE", "VIII Sem BE", "IV Sem MBA"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/9.pdf",
+      featured: false,
+    },
+    {
+      id: 20,
+      title: "2021-22 Even IV Semester B.E Calendar of Events",
+      semester: "Even Semester",
+      programmes: ["IV Sem BE"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/6.21_22_Even_IV_Calendar of Events-5.pdf",
+      featured: false,
+    },
+    {
+      id: 21,
+      title: "2021-22 Even II Semester B.E Calendar of Events",
+      semester: "Even Semester",
+      programmes: ["II Sem BE"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/5.21_22_Even_II_Calendar of Events-4.pdf",
+      featured: false,
+    },
+    {
+      id: 22,
+      title: "2021-22 Even II Semester M.Tech / MBA Calendar of Events",
+      semester: "Even Semester",
+      programmes: ["II Sem M.Tech", "II Sem MBA"],
+      year: "2021-22",
+      pdfUrl: "/Documents/calander of events/15.pdf",
+      featured: false,
+    },
+  ],
+};
+
+export default function AcademicCalendarPage() {
+  return (
+    <div className="min-h-screen bg-stone-50">
+      <Header />
+      <main>
+        <AcademicCalendarSection data={calendarData} />
+      </main>
+      <Footer />
+    </div>
+  );
+}
