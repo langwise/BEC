@@ -136,11 +136,38 @@ export const navigationData: NavigationItem[] = [
     ],
   },
 
+  // {
+  //   title: "Alumni",
+  //   items: [
+  //     { title: "Notable Alumni", href: "/alumni/notable" },
+  //     { title: "Alumni Startups", href: "/alumni/startups" },
+  //   ],
+  // },
+
   {
-    title: "Alumni",
+    title: "Placements",
     items: [
-      { title: "Notable Alumni", href: "/alumni/notable" },
-      { title: "Alumni Startups", href: "/alumni/startups" },
+      { title: "Home", href: "/placements" },
+      {
+        title: "Placement Policy",
+        href: "/placements/policy", // PDF route (or direct PDF if needed)
+      },
+      { title: "Facilities", href: "/placements/facilities" },
+      {
+        title: "Placement Process & Calendar",
+        href: "/placements/process-calendar",
+      },
+      {
+        title: "Brochure",
+        href: "/placements/brochure", // modal can be handled at page level
+      },
+      { title: "Our Recruiters", href: "/placements/recruiters" },
+      { title: "Why Recruit", href: "/placements/why-recruit" },
+      { title: "MoUs", href: "/placements/mous" },
+      {
+        title: "Contact Us",
+        href: "/placements/contact", // modal / page
+      },
     ],
   },
 ];

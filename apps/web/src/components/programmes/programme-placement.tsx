@@ -22,7 +22,7 @@ export function ProgrammePlacement({
   industries,
 }: ProgrammePlacementProps) {
   return (
-    <section className="py-20 bg-stone-50">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -54,31 +54,31 @@ export function ProgrammePlacement({
               <div className="text-4xl font-bold text-primary mb-2">
                 {stats.rate}
               </div>
-              <div className="text-sm text-gray-600 uppercase tracking-wide">
+              <div className="text-sm text-muted-foreground uppercase tracking-wide">
                 Placement Rate
               </div>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-stone-200">
+            <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-border">
               <div className="text-4xl font-bold text-primary mb-2">
                 {stats.average}
               </div>
-              <div className="text-sm text-gray-600 uppercase tracking-wide">
+              <div className="text-sm text-muted-foreground uppercase tracking-wide">
                 Average Package
               </div>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-stone-200">
+            <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-border">
               <div className="text-4xl font-bold text-primary mb-2">
                 {stats.highest}
               </div>
-              <div className="text-sm text-gray-600 uppercase tracking-wide">
+              <div className="text-sm text-muted-foreground uppercase tracking-wide">
                 Highest Package
               </div>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-stone-200">
+            <div className="bg-white p-6 rounded-xl shadow-sm text-center border border-border">
               <div className="text-4xl font-bold text-primary mb-2">
                 {stats.companies}
               </div>
-              <div className="text-sm text-gray-600 uppercase tracking-wide">
+              <div className="text-sm text-muted-foreground uppercase tracking-wide">
                 Companies
               </div>
             </div>
@@ -91,7 +91,7 @@ export function ProgrammePlacement({
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white p-8 rounded-xl shadow-sm border border-stone-200"
+              className="bg-white p-8 rounded-xl shadow-sm border border-border"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -109,7 +109,7 @@ export function ProgrammePlacement({
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
-                    className="p-3 bg-stone-50 rounded-lg text-center text-sm font-medium text-gray-700 hover:bg-stone-100 transition-colors"
+                    className="p-3 bg-muted rounded-lg text-center text-sm font-medium text-foreground hover:bg-primary/5 transition-colors"
                   >
                     {company}
                   </motion.div>
@@ -123,7 +123,7 @@ export function ProgrammePlacement({
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white p-8 rounded-xl shadow-sm border border-stone-200"
+              className="bg-white p-8 rounded-xl shadow-sm border border-border"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -141,10 +141,10 @@ export function ProgrammePlacement({
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
-                    className="flex items-center gap-3 p-4 bg-stone-50 rounded-lg hover:bg-stone-100 transition-colors"
+                    className="flex items-center gap-3 p-4 bg-muted rounded-lg hover:bg-primary/5 transition-colors"
                   >
                     <TrendingUp className="w-5 h-5 text-primary shrink-0" />
-                    <span className="text-gray-700">{industry}</span>
+                    <span className="text-foreground">{industry}</span>
                   </motion.div>
                 ))}
               </div>

@@ -22,7 +22,7 @@ interface ProgrammeFeeTableProps {
 
 export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTableProps) {
   return (
-    <section className="py-20 bg-stone-50">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -46,7 +46,7 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden mb-8"
+            className="bg-white rounded-xl shadow-sm border border-border overflow-hidden mb-8"
           >
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -68,7 +68,7 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
                     )}
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-stone-200">
+                <tbody className="divide-y divide-border">
                   {feeCategories.map((category, index) => (
                     <motion.tr
                       key={index}
@@ -76,7 +76,7 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: index * 0.1 }}
-                      className="hover:bg-stone-50 transition-colors"
+                      className="hover:bg-primary/5 transition-colors"
                     >
                       <td className="px-6 py-4 text-sm font-semibold text-gray-900">
                         {category.quota}
@@ -106,7 +106,7 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white rounded-xl shadow-sm border border-stone-200 p-8"
+              className="bg-white rounded-xl shadow-sm border border-border p-8"
             >
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-6 h-6 text-primary" />
@@ -121,7 +121,7 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
                     href={doc.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-between p-4 border border-stone-200 rounded-lg hover:border-primary hover:bg-stone-50 transition-all group"
+                    className="flex items-center justify-between p-4 border border-border rounded-lg hover:border-primary hover:bg-primary/5 transition-all group"
                   >
                     <span className="text-sm font-medium text-gray-700 group-hover:text-primary">
                       {doc.title}

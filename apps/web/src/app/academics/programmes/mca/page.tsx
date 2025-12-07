@@ -1,168 +1,162 @@
-// src/app/academics/programmes/mca/page.tsx
 "use client";
 
-import { ProgrammeLayout } from "@/components/programmes/programme-layout";
-import { ProgrammeHero } from "@/components/programmes/programme-hero";
-import { ProgrammeOverview } from "@/components/programmes/programme-overview";
-import { ProgrammeAdmission } from "@/components/programmes/programme-admission";
-import { ProgrammeFeeTable } from "@/components/programmes/programme-fee-table";
-import { ProgrammeCurriculum } from "@/components/programmes/programme-curriculum";
-import { ProgrammePlacement } from "@/components/programmes/programme-placement";
-import { ProgrammeFAQ } from "@/components/programmes/programme-faq";
+import { PageHeader } from "@/components/placements/page-header";
+import { CheckCircle2, GraduationCap, Building2, Wallet, Code2, Cpu } from "lucide-react";
+import { FadeIn } from "@/components/animations/fade-in";
 
 const mcaData = {
-  title: "MCA",
-  subtitle: "Master of Computer Applications",
+  title: "Master of Computer Applications (MCA)",
   description: "Master the art of software development and application design with our comprehensive MCA programme focused on cutting-edge technologies.",
-  hero: {
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&q=80&fit=crop",
-    stats: [
-      { value: "2 Years", label: "Duration" },
-      { value: "60", label: "Intake" },
-      { value: "98%", label: "Placement Rate" },
-      { value: "₹4.8L", label: "Avg. Package" },
-    ],
-  },
-  overview: {
-    description: "The MCA programme at BEC is designed to develop skilled IT professionals capable of designing, developing, and managing software applications. With a perfect blend of theoretical concepts and hands-on practical training, our graduates are industry-ready from day one.",
-    highlights: [
+  highlights: [
       "Latest Technology Stack",
       "Industry-Certified Faculty",
-      "Project-Based Learning",
       "Cloud & DevOps Training",
       "Coding Competitions & Hackathons",
+      "Project-Based Learning",
       "100% Placement Assistance",
-    ],
-    disciplines: [
-      { name: "Software Engineering", code: "SE" },
-      { name: "Web Technologies", code: "WT" },
-      { name: "Data Science & AI", code: "DS" },
-      { name: "Cloud Computing", code: "CC" },
-      { name: "Mobile Application Development", code: "MAD" },
-      { name: "Cybersecurity", code: "CS" },
-    ],
-  },
-  admission: {
-    eligibility: {
-      title: "Academic Eligibility",
-      criteria: [
-        "Bachelor's degree in any discipline from a recognized university",
-        "Minimum 50% aggregate marks in all years (rounding-off aggregate percent is not permitted)",
-        "For SC/ST/Category-I candidates from Karnataka: 45% marks (rounding-off aggregate percent is not permitted)",
-        "Valid score in PGCET/KMAT or equivalent entrance exam",
-      ],
-    },
-    entrance: {
-      title: "Entrance Examinations",
-      exams: [
-        { name: "PGCET", description: "Post Graduate Common Entrance Test - Karnataka" },
-        { name: "KMAT", description: "Karnataka Management Aptitude Test" },
-        { name: "Institute Entrance", description: "For Management Quota candidates" },
-      ],
-    },
-    contact: {
-      central: {
-        name: "Central Office",
-        address: "B.V.V. Sangah, Bagalkote – 587 101",
-        phone: "08354-220689, 220702",
-      },
-      admission: {
-        name: "Admission Section",
-        address: "Basaveshwar Engineering College, Vidyagiri, Bagalkote – 587 102",
-        phone: "9902684833",
-      },
-    },
-  },
-  feeStructure: {
-    feeCategories: [
-      {
-        quota: "Government Quota",
-        courseType: "Un-Aided Courses",
-        description: "VTU Fees + College Other Fees",
-        amount: "Rs. 55,000 (to be paid at KEA)",
-      },
-      {
-        quota: "Management Quota",
-        courseType: "Unaided Courses",
-        description: "Management Fees + VTU Fees + College Other Fees",
-      },
-    ],
-    documents: [],
-  },
-  curriculum: {
-    structure: "The MCA programme spans 2 years (4 semesters) with intensive coding practice, project work, and industry exposure through internships.",
-    features: [
-      "Programming Languages (Java, Python, C++)",
-      "Database Management Systems",
-      "Web Development & Frameworks",
-      "Mobile App Development",
-      "Cloud Computing & DevOps",
-      "Machine Learning & AI Basics",
-      "Software Project Management",
-      "Capstone Project",
-    ],
-    outcomes: [
-      "Proficiency in multiple programming languages",
-      "Full-stack development capabilities",
-      "Database design and management skills",
-      "Understanding of software development lifecycle",
-      "Cloud deployment and DevOps knowledge",
-      "Problem-solving and algorithmic thinking",
-    ],
-  },
-  placement: {
-    stats: {
-      rate: "98%",
-      average: "₹4.8 Lakhs",
-      highest: "₹14+ Lakhs",
-      companies: "85+",
-    },
-    topRecruiters: [
-      "Wipro", "Infosys", "TCS", "Cognizant", "Accenture", "Tech Mahindra",
-      "HCL", "IBM", "Amazon", "Microsoft", "Google", "Flipkart", "Oracle",
-    ],
-    industries: [
-      "Software Development",
-      "IT Services & Consulting",
-      "E-commerce & Internet",
-      "Banking & Financial Technology",
-      "Product Companies",
-    ],
-  },
-  faqs: [
-    {
-      question: "What is the duration of the MCA programme?",
-      answer: "MCA is a 2-year full-time programme divided into 4 semesters.",
-    },
-    {
-      question: "What is the eligibility criteria?",
-      answer: "Bachelor's degree in any discipline with minimum 50% marks (45% for SC/ST/Category-I). Rounding-off aggregate percent is not permitted.",
-    },
-    {
-      question: "Which entrance exam is required for MCA?",
-      answer: "PGCET or KMAT scores are accepted. We also conduct entrance exam for management quota candidates.",
-    },
-    {
-      question: "What programming languages are taught?",
-      answer: "The curriculum covers Java, Python, C++, JavaScript, and emerging technologies like cloud computing and AI/ML.",
-    },
-    {
-      question: "What is the placement record for MCA?",
-      answer: "MCA has an excellent placement record of 98% with average package of ₹4.8 lakhs and highest reaching ₹14+ lakhs.",
-    },
   ],
+  disciplines: [
+      "Software Engineering",
+      "Web Technologies",
+      "Data Science & AI",
+      "Cloud Computing",
+      "Mobile App Development",
+      "Cybersecurity",
+  ],
+  admission: {
+    eligibility: [
+        "Bachelor's degree with minimum 50% aggregate (45% for SC/ST/Category-I)",
+        "Valid score in PGCET/KMAT or equivalent entrance exam",
+    ],
+    exams: [
+        { name: "PGCET", description: "Karnataka State Entrance" },
+        { name: "KMAT", description: "Management Aptitude Test" },
+        { name: "Institute Entrance", description: "For Mgmt Quota" },
+    ]
+  },
+  fees: [
+      { quota: "Government Quota", type: "Un-Aided", desc: "Rs. 55,000 (at KEA) + VTU + College Fees" },
+      { quota: "Management Quota", type: "Unaided", desc: "Mgmt Fees + VTU + College Fees" },
+  ]
 };
+
+function SectionHeader({ icon: Icon, title }: { icon: any, title: string }) {
+    return (
+        <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Icon className="w-5 h-5 text-primary" />
+            </div>
+            <h2 className="text-2xl font-bold text-gray-900 tracking-tight">{title}</h2>
+        </div>
+    )
+}
 
 export default function MCAProgrammePage() {
   return (
-    <ProgrammeLayout currentProgramme="mca">
-      <ProgrammeHero {...mcaData.hero} title={mcaData.title} subtitle={mcaData.subtitle} description={mcaData.description} />
-      <ProgrammeOverview {...mcaData.overview} />
-      <ProgrammeAdmission {...mcaData.admission} />
-      <ProgrammeFeeTable {...mcaData.feeStructure} />
-      <ProgrammeCurriculum {...mcaData.curriculum} />
-      <ProgrammePlacement {...mcaData.placement} />
-      <ProgrammeFAQ faqs={mcaData.faqs} />
-    </ProgrammeLayout>
+    <div className="space-y-16">
+      <PageHeader
+        title={mcaData.title}
+        description={mcaData.description}
+      />
+
+      {/* Overview & Highlights */}
+      <section className="space-y-8">
+        <div className="prose prose-lg prose-orange max-w-none text-gray-600">
+            <p>
+                The MCA programme at BEC is designed to develop skilled IT professionals capable of designing, developing, and managing software applications. With a perfect blend of theoretical concepts and hands-on practical training, our graduates are industry-ready from day one.
+            </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-4">
+            {mcaData.highlights.map((item, idx) => (
+                <div key={idx} className="flex items-center gap-3 p-4 bg-white border border-gray-100 rounded-xl shadow-xs">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                    <span className="font-medium text-gray-700">{item}</span>
+                </div>
+            ))}
+        </div>
+      </section>
+
+      {/* Focus Areas */}
+      <section>
+          <SectionHeader icon={Code2} title="Key Focus Areas" />
+          <div className="grid md:grid-cols-3 gap-4">
+              {mcaData.disciplines.map((dept, idx) => (
+                  <FadeIn key={idx} delay={idx * 0.05}>
+                    <div className="p-4 rounded-lg bg-white border border-gray-100 text-gray-800 font-medium hover:border-primary/40 hover:text-primary transition-all duration-300 shadow-sm flex items-center gap-3">
+                        <Cpu className="w-4 h-4 text-gray-400 group-hover:text-primary" />
+                        {dept}
+                    </div>
+                  </FadeIn>
+              ))}
+          </div>
+      </section>
+
+      {/* Admission */}
+      <section className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+          <SectionHeader icon={Building2} title="Admission Process" />
+          
+          <div className="space-y-8">
+            <div>
+                <ul className="space-y-3">
+                    {mcaData.admission.eligibility.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3 text-sm text-gray-600">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                            {item}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+                {mcaData.admission.exams.map((exam, idx) => (
+                    <div key={idx} className="px-4 py-2 rounded-full bg-gray-50 border border-gray-200 text-sm font-semibold text-gray-700">
+                        {exam.name}
+                    </div>
+                ))}
+            </div>
+          </div>
+      </section>
+
+      {/* Fees */}
+      <section>
+          <SectionHeader icon={Wallet} title="Fee Structure" />
+          <div className="overflow-hidden rounded-xl border border-gray-200">
+              <table className="w-full text-sm text-left">
+                  <thead className="bg-gray-50 text-gray-900 font-semibold border-b border-gray-200">
+                      <tr>
+                          <th className="px-6 py-4">Quota</th>
+                          <th className="px-6 py-4">Type</th>
+                          <th className="px-6 py-4">Details</th>
+                      </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100 bg-white">
+                      {mcaData.fees.map((fee, idx) => (
+                          <tr key={idx} className="hover:bg-gray-50/50">
+                              <td className="px-6 py-4 font-medium text-gray-900">{fee.quota}</td>
+                              <td className="px-6 py-4 text-gray-600">{fee.type}</td>
+                              <td className="px-6 py-4 text-gray-600">{fee.desc}</td>
+                          </tr>
+                      ))}
+                  </tbody>
+              </table>
+          </div>
+      </section>
+
+      {/* Stats */}
+      <section className="grid md:grid-cols-4 gap-4">
+            {[
+                { label: "Placement Rate", value: "98%" },
+                { label: "Avg Package", value: "₹4.8L" },
+                { label: "High Package", value: "₹14L+" },
+                { label: "Recruiters", value: "85+" },
+            ].map((stat, idx) => (
+                <div key={idx} className="p-6 rounded-2xl bg-white border border-gray-100 text-center">
+                    <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                    <div className="text-xs text-gray-500 uppercase tracking-wider">{stat.label}</div>
+                </div>
+            ))}
+        </section>
+    </div>
   );
 }

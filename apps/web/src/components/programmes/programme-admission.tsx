@@ -38,7 +38,7 @@ export function ProgrammeAdmission({
   contact,
 }: ProgrammeAdmissionProps) {
   return (
-    <section className="py-20 bg-stone-50">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -65,7 +65,7 @@ export function ProgrammeAdmission({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white p-8 rounded-xl shadow-sm border border-stone-200"
+              className="bg-white p-8 rounded-xl shadow-sm border border-border"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -94,7 +94,7 @@ export function ProgrammeAdmission({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white p-8 rounded-xl shadow-sm border border-stone-200"
+              className="bg-white p-8 rounded-xl shadow-sm border border-border"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -167,7 +167,7 @@ export function ProgrammeAdmission({
               <Button
                 variant="secondary"
                 size="lg"
-                className="bg-white text-primary hover:bg-stone-100"
+                className="bg-white text-primary hover:bg-primary/5"
               >
                 Apply Now
               </Button>
