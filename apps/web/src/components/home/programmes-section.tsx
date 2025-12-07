@@ -11,6 +11,7 @@ import { motion, Variants, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { FadeIn } from "../animations/fade-in";
 import { programmes } from "@/data/home/programme";
+import { Button } from "@/components/ui/button";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -40,22 +41,43 @@ export function ProgrammesSection() {
   return (
     <section
       ref={ref}
-      className="relative py-24 border-t border-stone-200 overflow-hidden"
+      className="relative py-16 lg:py-20 border-t border-stone-200 overflow-hidden"
     >
       {/* Background image with parallax effect */}
-      <motion.div className="absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat" />
+      <motion.div
+        className="absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat"
+        style={{
+          y,
+          backgroundImage:
+            "linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.55) 100%), url('/homepage-video-still-image-1920.jpg')",
+        }}
+      />
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/30" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <FadeIn className="text-center mb-16" direction="up">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 drop-shadow-lg">
-            Academic Excellence
-          </h2>
-          <p className="text-white/95 text-lg max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-            Discover our comprehensive range of academic programmes designed to
-            nurture talent and inspire innovation.
-          </p>
+        <FadeIn className="mb-10" direction="up">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-2 rounded-sm bg-white/10 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur">
+                Academic Excellence
+              </div>
+              <div className="space-y-2">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-white drop-shadow-lg leading-tight">
+                  Programmes that shape future-ready graduates
+                </h2>
+                <p className="text-white/90 text-base md:text-lg max-w-2xl leading-relaxed drop-shadow-md">
+                  Explore degrees that balance strong foundations with hands-on learning across disciplines.
+                </p>
+              </div>
+            </div>
+            <Button
+              variant="secondary"
+              className="bg-white text-primary hover:bg-stone-100 font-semibold px-5 py-3 text-sm md:text-base self-start"
+            >
+              View all programmes
+            </Button>
+          </div>
         </FadeIn>
 
         <motion.div
@@ -69,22 +91,27 @@ export function ProgrammesSection() {
             const Icon = programme.icon;
             return (
               <motion.div key={index} variants={cardVariants}>
-                <Card className="h-full text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-stone-100 bg-white">
-                  <CardHeader>
-                    <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/5 text-primary group-hover:bg-primary/10 transition-colors">
-                      <Icon className="h-8 w-8" />
+                <Card className="h-full text-left hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-stone-100 bg-white">
+                  <CardHeader className="space-y-4">
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <Icon className="h-6 w-6" />
+                      </div>
+                      <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                        {programme.count}
+                      </span>
                     </div>
                     <CardTitle className="text-xl font-serif">
                       {programme.title}
                     </CardTitle>
-                    <CardDescription className="text-primary font-semibold mt-2">
-                      {programme.count}
+                    <CardDescription className="text-sm text-gray-600 leading-relaxed">
+                      {programme.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-500 leading-relaxed text-sm">
-                      {programme.description}
-                    </p>
+                  <CardContent className="pt-0">
+                    <Button variant="link" className="px-0 text-primary font-semibold">
+                      View details
+                    </Button>
                   </CardContent>
                 </Card>
               </motion.div>

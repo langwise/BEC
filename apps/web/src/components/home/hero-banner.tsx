@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 export function HeroBanner() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
+  const [headerHeight, setHeaderHeight] = React.useState(80); // fallback matches header min height
 
   React.useEffect(() => {
     if (!api) return;
@@ -36,8 +37,27 @@ export function HeroBanner() {
     return () => clearInterval(interval);
   }, [api]);
 
+  // Sync hero height to fill viewport minus fixed header
+  React.useEffect(() => {
+    const measure = () => {
+      const header = document.querySelector("header");
+      if (!header) return;
+      const { height } = header.getBoundingClientRect();
+      setHeaderHeight(Math.max(0, Math.round(height)));
+    };
+
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
+
+  const heroHeight = `calc(100vh - ${headerHeight}px)`;
+
   return (
-    <div className="relative w-full h-[calc(100vh-46px)] bg-black overflow-hidden group">
+    <div
+      className="relative w-full bg-black overflow-hidden group"
+      style={{ height: heroHeight }}
+    >
       <Carousel
         setApi={setApi}
         className="w-full h-full"
@@ -45,11 +65,12 @@ export function HeroBanner() {
           loop: true,
         }}
       >
-        <CarouselContent className="h-full min-h-[calc(100vh-46px)] ml-0">
+        <CarouselContent className="h-full ml-0" style={{ minHeight: heroHeight }}>
           {heroSlides.map((slide, index) => (
             <CarouselItem
               key={slide.id}
-              className="pl-0 h-full min-h-[calc(100vh-46px)] relative"
+              className="pl-0 h-full relative"
+              style={{ minHeight: heroHeight }}
             >
               {/* Image Background */}
               <div className="absolute inset-0 w-full h-full">
