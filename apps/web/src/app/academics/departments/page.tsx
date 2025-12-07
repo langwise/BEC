@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ChevronRight, GraduationCap } from "lucide-react";
+import { ChevronRight, GraduationCap, ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { PageHeader } from "@/components/placements/page-header"; // Reusing the header component
 
 // Department Data
 const departmentsData = {
@@ -43,89 +45,69 @@ function slugify(text: string) {
     .replace(/^-+|-+$/g, "");
 }
 
-// ---------------- COMPONENTS ----------------
-
-// Category Header Badge
-function CategoryBadge({ label }: { label: string }) {
-  return (
-    <div className="inline-flex items-center gap-2 px-6 py-2 bg-white shadow-md rounded-full border border-gray-200">
-      <span className="w-3 h-3 rounded-full bg-primary"></span>
-      <p className="text-lg font-semibold text-gray-700 tracking-wide">
-        {label}
-      </p>
-    </div>
-  );
-}
-
-// Department Card
-function DepartmentCard({ name, type, index }: any) {
+function DepartmentCard({ name, type, index }: { name: string, type: string, index: number }) {
   const url = `/academics/departments/${type}/${slugify(name)}`;
 
   return (
-    <motion.a
-      href={url}
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05 }}
-      whileHover={{ scale: 1.03, y: -6 }}
-      className="group block bg-white/70 backdrop-blur-xl border border-gray-200 rounded-3xl p-6 
-      hover:shadow-2xl hover:border-primary/40 transition-all duration-300"
     >
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <div
-            className="w-12 h-12 rounded-2xl bg-primary/10 flex justify-center items-center 
-          group-hover:bg-primary/20 transition-colors"
-          >
-            <GraduationCap className="w-6 h-6 text-primary" />
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors">
-            {name}
-          </h3>
+        <Link
+        href={url}
+        className="group block h-full bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg hover:border-primary/30 transition-all duration-300 relative overflow-hidden"
+        >
+        <div className="absolute top-0 right-0 w-24 h-24 bg-orange-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110" />
+        
+        <div className="relative z-10">
+            <div className="w-12 h-12 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <GraduationCap className="w-6 h-6" />
+            </div>
+            
+            <h3 className="text-lg font-bold text-gray-900 mb-2 pr-4 group-hover:text-primary transition-colors">
+                {name}
+            </h3>
+            
+            <div className="flex items-center text-sm text-gray-500 font-medium group-hover:text-primary transition-colors mt-4">
+                View Details <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+            </div>
         </div>
-        <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all" />
-      </div>
-    </motion.a>
+        </Link>
+    </motion.div>
   );
 }
 
-// ---------------- MAIN PAGE ----------------
+function SectionTitle({ children }: { children: React.ReactNode }) {
+    return (
+        <div className="flex items-center gap-4 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 tracking-tight">{children}</h2>
+            <div className="h-px flex-1 bg-gray-100"></div>
+        </div>
+    )
+}
 
 export default function DepartmentsPage() {
-  const totalDepartments =
-    departmentsData.ug.length +
-    departmentsData.regular.length +
-    departmentsData.pg.length;
+  const totalDepartments = departmentsData.ug.length + departmentsData.regular.length + departmentsData.pg.length;
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100">
-      {/* HERO SECTION */}
-      <section className="relative bg-linear-to-r from-primary to-primary/80 text-white py-20">
-        <div className="absolute inset-0 opacity-10 bg-[url('/pattern.svg')] bg-cover"></div>
-        <div className="container mx-auto px-6 lg:px-12 max-w-7xl relative">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-              Explore Our Departments
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl">
-              Discover diverse programs in engineering, sciences, and management
-              – each designed to empower future innovators and leaders.
-            </p>
-          </motion.div>
+    <div className="min-h-screen bg-linear-to-br from-orange-50 via-white to-slate-50 relative">
+        {/* Background Decorations */}
+        <div className="fixed inset-0 pointer-events-none z-0">
+            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-orange-100/30 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2" />
         </div>
-      </section>
 
-      {/* MAIN CONTENT */}
-      <div className="container mx-auto px-6 lg:px-12 max-w-7xl py-16">
+      <div className="container mx-auto px-4 py-12 lg:py-16 relative z-10">
+        <PageHeader 
+            title="Explore Our Departments" 
+            description="Discover diverse programs in engineering, sciences, and management – each designed to empower future innovators and leaders."
+        />
+
         {/* UG */}
-        <section className="mb-20">
-          <CategoryBadge label="Undergraduate Programs (UG)" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <section className="mb-16">
+          <SectionTitle>Undergraduate Programs (UG)</SectionTitle>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {departmentsData.ug.map((dept, index) => (
               <DepartmentCard key={index} name={dept} type="ug" index={index} />
             ))}
@@ -133,9 +115,9 @@ export default function DepartmentsPage() {
         </section>
 
         {/* Regular */}
-        <section className="mb-20">
-          <CategoryBadge label="Science & Humanities" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <section className="mb-16">
+            <SectionTitle>Science & Humanities</SectionTitle>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {departmentsData.regular.map((dept, index) => (
               <DepartmentCard
                 key={index}
@@ -148,9 +130,9 @@ export default function DepartmentsPage() {
         </section>
 
         {/* PG */}
-        <section className="mb-20">
-          <CategoryBadge label="Postgraduate Programs (PG)" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <section className="mb-16">
+            <SectionTitle>Postgraduate Programs (PG)</SectionTitle>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {departmentsData.pg.map((dept, index) => (
               <DepartmentCard key={index} name={dept} type="pg" index={index} />
             ))}
@@ -162,26 +144,28 @@ export default function DepartmentsPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white/80 backdrop-blur-xl border border-gray-200 rounded-3xl p-12 shadow-xl"
+          className="bg-white rounded-3xl p-12 border border-orange-100 shadow-sm relative overflow-hidden"
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-10">
+             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
+             
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 text-center gap-10 divide-y md:divide-y-0 md:divide-x divide-gray-100">
             <div>
-              <p className="text-6xl font-bold text-primary">
+              <p className="text-5xl font-bold text-primary mb-2">
                 {totalDepartments}
               </p>
-              <p className="text-gray-700 text-lg mt-2">Total Departments</p>
+              <p className="text-gray-600 font-medium">Total Departments</p>
             </div>
-            <div>
-              <p className="text-6xl font-bold text-primary">
+            <div className="pt-8 md:pt-0">
+              <p className="text-5xl font-bold text-primary mb-2">
                 {departmentsData.ug.length}
               </p>
-              <p className="text-gray-700 text-lg mt-2">UG Programs</p>
+              <p className="text-gray-600 font-medium">UG Programs</p>
             </div>
-            <div>
-              <p className="text-6xl font-bold text-primary">
+            <div className="pt-8 md:pt-0">
+              <p className="text-5xl font-bold text-primary mb-2">
                 {departmentsData.pg.length}
               </p>
-              <p className="text-gray-700 text-lg mt-2">PG Programs</p>
+              <p className="text-gray-600 font-medium">PG Programs</p>
             </div>
           </div>
         </motion.section>

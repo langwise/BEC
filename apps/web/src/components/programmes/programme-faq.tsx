@@ -45,13 +45,13 @@ export function ProgrammeFAQ({ faqs }: ProgrammeFAQProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="bg-stone-50 rounded-xl overflow-hidden border border-stone-200"
+                className="bg-muted rounded-xl overflow-hidden border border-border"
               >
                 <button
                   onClick={() =>
                     setOpenIndex(openIndex === index ? null : index)
                   }
-                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-stone-100 transition-colors"
+                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-primary/5 transition-colors"
                 >
                   <span className="font-semibold text-gray-900 pr-4">
                     {faq.question}

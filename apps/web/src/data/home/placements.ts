@@ -2,22 +2,22 @@ export const placementStats = [
   {
     value: "96%",
     label: "Placement Record",
-    bgColor: "bg-stone-100",
+    bgColor: "bg-muted",
   },
   {
     value: "₹ 3.14 Lac",
     label: "Average Package",
-    bgColor: "bg-stone-100",
+    bgColor: "bg-muted",
   },
   {
     value: "50k+",
     label: "Alumni Worldwide",
-    bgColor: "bg-stone-100",
+    bgColor: "bg-muted",
   },
   {
     value: "35+",
     label: "Industry MoUs",
-    bgColor: "bg-stone-100",
+    bgColor: "bg-muted",
   },
 ];
 

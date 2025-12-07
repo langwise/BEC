@@ -42,7 +42,7 @@ export function ProgrammeCurriculum({
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-stone-50 p-8 rounded-xl"
+              className="bg-muted p-8 rounded-xl"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">

@@ -75,7 +75,7 @@ export function ProgrammeOverview({
                 {disciplines.map((discipline, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-4 bg-stone-50 rounded-lg hover:bg-stone-100 transition-colors"
+                    className="flex items-center justify-between p-4 bg-muted rounded-lg hover:bg-primary/5 transition-colors"
                   >
                     <span className="font-medium text-gray-800">
                       {discipline.name}

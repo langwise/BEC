@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 import {
   Home,
   GraduationCap,
@@ -28,35 +29,47 @@ export default function DepartmentSidebar() {
   const [active, setActive] = useState("home");
 
   return (
-    <aside className="w-full lg:w-64 bg-primary text-white shrink-0 lg:min-h-screen">
-      <div className="lg:sticky lg:top-0">
-        <div className="p-6 border-b border-white/10">
-          <h2 className="text-lg font-bold">Navigation</h2>
-        </div>
-
-        <nav>
+    <aside className="w-full lg:w-64 shrink-0">
+      <div className="sticky top-24">
+        <h2 className="text-sm font-bold uppercase tracking-wider text-primary mb-4 px-2">
+            Department Menu
+        </h2>
+        
+        <nav className="flex flex-col space-y-1">
           {menuItems.map((item, index) => {
             const Icon = item.icon;
+            const isActive = active === item.id;
+            
             return (
               <motion.button
                 key={item.id}
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.05 }}
+                transition={{ delay: index * 0.03 }}
                 onClick={() => setActive(item.id)}
-                className={`w-full text-left px-6 py-3 flex items-center gap-3 transition-all duration-300 border-l-4 
-                ${
-                  active === item.id
-                    ? "bg-white/20 border-secondary"
-                    : "border-transparent hover:bg-white/10 hover:border-white/30"
-                }`}
+                className={cn(
+                  "group flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 w-full text-left",
+                  isActive
+                    ? "bg-primary text-white shadow-md shadow-orange-200"
+                    : "text-gray-600 hover:bg-orange-50 hover:text-primary"
+                )}
               >
-                <Icon className="w-4 h-4" />
-                <span className="text-sm font-medium">{item.label}</span>
+                <div className="flex items-center gap-3">
+                    <Icon className={cn("w-4 h-4", isActive ? "text-white" : "text-gray-400 group-hover:text-primary")} />
+                    <span>{item.label}</span>
+                </div>
+                {isActive && (
+                  <motion.div
+                    layoutId="dept-nav-indicator"
+                    className="w-1.5 h-1.5 rounded-full bg-white"
+                  />
+                )}
               </motion.button>
             );
           })}
         </nav>
+
+        {/* Quick Contact / Info Card could go here similar to Placements */}
       </div>
     </aside>
   );
