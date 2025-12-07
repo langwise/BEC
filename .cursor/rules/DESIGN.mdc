@@ -1,0 +1,63 @@
+---
+alwaysApply: true
+---
+
+# BEC Web Design Guide
+Visual and interaction rules to keep the site consistent. Reference this for color, type, layout, components, imagery, and motion.
+
+## Mobile First
+- Always design and code the website mobile first.
+
+## Brand Palette (OKLCH tokens in `globals.css`)
+- Primary: Burnt orange `--primary` (accent and CTAs), foreground on white.
+- Secondary: Dark blue-gray `--secondary` for nav, text accents.
+- Accent: Secondary orange `--accent` for highlights and hovers.
+- Surface: `--background`/`--card` is white; dark mode uses `--background` dark.
+- Borders: `--border` soft neutral for separators.
+- Destructive: `--destructive` for warnings only.
+- Charts: `--chart-1`…`--chart-5` reserved for data viz.
+
+## Typography
+- Sans: Geist (`--font-sans`) for all text; Mono reserved for code snippets only.
+- Headings: Uppercase, tight leading for hero statements; otherwise sentence case.
+- Body: Use `text-foreground`; keep comfortable line height (`leading-relaxed` on paragraphs).
+- Emphasis: Prefer weight changes over color. Avoid underlines except for links.
+
+## Layout and Spacing
+- Grid: Constrain content with `container mx-auto px-4`; allow widescreen hero visuals edge-to-edge when needed.
+- Rhythm: Use consistent vertical spacing steps (e.g., 8/12/16/24/32px translated to Tailwind spacing). Avoid mixing arbitrary values unless for hero art direction.
+- Cards/blocks: Zero-radius by default (`--radius: 0`). Apply subtle shadow sparingly; rely on contrast and spacing.
+- Sections: Each home section should be visually distinct via spacing, background tint, or imagery—no heavy borders.
+
+## Components (shadcn/ui + Tailwind)
+- Buttons: Use primary for CTAs, secondary/ghost for navigation or tertiary actions. Keep ample padding and clear hover states.
+- Navigation: Desktop uses shadcn navigation-menu with hover panels; mobile uses sheet/drawer. Maintain keyboard focus styles.
+- Links: Underline on hover; use accent color for emphasis only when link density is low.
+- Chips/badges: Use muted backgrounds with foreground text for categorization, not primary.
+
+## Imagery and Media
+- Hero: Parallax video for desktop, still image fallback for mobile. Always apply a dark or warm overlay for text readability.
+- Photography: Prefer campus life and people-centric shots. Maintain consistent color warmth; avoid clashing filters.
+- Logos: Use `/logo.png` or `/logo.jpg` on light backgrounds; add subtle drop or contrast outline on busy imagery if required.
+
+## Motion and Interaction
+- Parallax: Keep current 50% scroll speed; ensure text remains readable.
+- Entrance/hover: Use small translate/opacity changes; keep durations short (150–250ms) and ease-out.
+- Avoid motion that hides essential content; ensure focus states are always visible even when animated.
+
+## Accessibility and Contrast
+- Maintain contrast using palette tokens; avoid custom colors outside token set.
+- Provide meaningful `alt` text on images and videos. Do not use text baked into images for essential content.
+- Respect focus outlines from shadcn/ui; never remove them.
+
+## Responsive Behavior
+- Mobile-first: Ensure layouts stack cleanly; generous tap targets for nav and CTAs.
+- Desktop: Use breathing room; avoid cramming columns. Keep hero typography large and bold.
+- Breakpoints: Continue using `md`/`lg` patterns already present in hero and nav; verify readability at each step.
+
+## Content Tone
+- Confident, institutional, and clear. Short headlines; supportive subcopy. Avoid marketing fluff.
+
+## Usage Notes
+- When creating new sections, start with existing home section patterns for spacing, headings, and background treatments.
+- Reuse tokens and components before introducing new styles. If a new pattern is needed, add the style to this guide. 
