@@ -8,7 +8,7 @@ import { lifeHighlights } from "@/data/home/campus";
 
 export function CampusLifeSection() {
   return (
-    <section className="py-24 bg-stone-50">
+    <section className="py-16 lg:py-20 bg-stone-50">
       <div className="container mx-auto px-4">
         <FadeIn className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
