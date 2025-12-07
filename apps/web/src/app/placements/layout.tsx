@@ -34,6 +34,9 @@ export default function PlacementsLayout({
               </h2>
               <nav className="flex flex-col space-y-1">
                 {placementNav.map((item) => {
+                  // Skip if item is a group (no href)
+                  if (!("href" in item)) return null;
+                  
                   const isActive = pathname === item.href;
                   return (
                     <Link
