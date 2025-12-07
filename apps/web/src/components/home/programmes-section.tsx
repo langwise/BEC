@@ -7,77 +7,43 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { motion, Variants, useScroll, useTransform } from "motion/react";
-import { useRef } from "react";
+import { motion, Variants } from "motion/react";
 import { FadeIn } from "../animations/fade-in";
 import { programmes } from "@/data/home/programme";
 import { Button } from "@/components/ui/button";
+import { ArrowRight, GraduationCap } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15, // Delay between each card
+      staggerChildren: 0.1,
     },
   },
 };
 
 const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
 export function ProgrammesSection() {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-
-  // Parallax effect: Moves background image at slower rate than scroll
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-
   return (
-    <section
-      ref={ref}
-      className="relative py-16 lg:py-20 border-t border-stone-200 overflow-hidden"
-    >
-      {/* Background image with parallax effect */}
-      <motion.div
-        className="absolute inset-0 w-full h-[120%] bg-cover bg-center bg-no-repeat"
-        style={{
-          y,
-          backgroundImage:
-            "linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.55) 100%), url('/homepage-video-still-image-1920.jpg')",
-        }}
-      />
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/30" />
-
-      <div className="container mx-auto px-4 relative z-10">
-        <FadeIn className="mb-10" direction="up">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-            <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 rounded-sm bg-white/10 px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/90 backdrop-blur">
-                Academic Excellence
-              </div>
-              <div className="space-y-2">
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-white drop-shadow-lg leading-tight">
-                  Programmes that shape future-ready graduates
-                </h2>
-                <p className="text-white/90 text-base md:text-lg max-w-2xl leading-relaxed drop-shadow-md">
-                  Explore degrees that balance strong foundations with hands-on learning across disciplines.
-                </p>
-              </div>
-            </div>
-            <Button
-              variant="secondary"
-              className="bg-white text-primary hover:bg-stone-100 font-semibold px-5 py-3 text-sm md:text-base self-start"
-            >
-              View all programmes
-            </Button>
-          </div>
+    <section className="py-20 lg:py-24 bg-white border-t border-stone-50">
+      <div className="container mx-auto px-4 max-w-[1400px]">
+        
+        <FadeIn className="text-center max-w-3xl mx-auto mb-16">
+           <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-6">
+               <GraduationCap className="w-6 h-6" />
+           </div>
+           
+           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+              World-Class Academic Programmes
+           </h2>
+           <p className="text-lg text-gray-600 leading-relaxed font-medium">
+              Choose from a wide range of industry-aligned programmes designed to shape future leaders and innovators.
+           </p>
         </FadeIn>
 
         <motion.div
@@ -91,33 +57,42 @@ export function ProgrammesSection() {
             const Icon = programme.icon;
             return (
               <motion.div key={index} variants={cardVariants}>
-                <Card className="h-full text-left hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-stone-100 bg-white">
-                  <CardHeader className="space-y-4">
-                    <div className="flex items-center justify-between gap-3">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
-                        <Icon className="h-6 w-6" />
+                <Card className="h-full border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group bg-stone-50/30">
+                  <CardHeader className="space-y-6">
+                    <div className="flex items-center justify-between">
+                      <div className="w-14 h-14 rounded-2xl bg-white border border-gray-100 flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="h-7 w-7 text-primary" />
                       </div>
-                      <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                      <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wide">
                         {programme.count}
                       </span>
                     </div>
-                    <CardTitle className="text-xl font-serif">
-                      {programme.title}
-                    </CardTitle>
-                    <CardDescription className="text-sm text-gray-600 leading-relaxed">
-                      {programme.description}
-                    </CardDescription>
+                    
+                    <div>
+                        <CardTitle className="text-xl font-bold tracking-tight text-gray-900 group-hover:text-primary transition-colors">
+                        {programme.title}
+                        </CardTitle>
+                        <CardDescription className="text-sm font-medium text-gray-500 mt-2 leading-relaxed">
+                        {programme.description}
+                        </CardDescription>
+                    </div>
                   </CardHeader>
-                  <CardContent className="pt-0">
-                    <Button variant="link" className="px-0 text-primary font-semibold">
-                      View details
-                    </Button>
+                  <CardContent>
+                     <div className="flex items-center text-sm font-bold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-4 group-hover:translate-x-0">
+                         View Details <ArrowRight className="w-4 h-4 ml-2" />
+                     </div>
                   </CardContent>
                 </Card>
               </motion.div>
             );
           })}
         </motion.div>
+
+        <div className="mt-12 text-center">
+            <Button className="h-12 px-8 rounded-full font-bold shadow-lg shadow-orange-100 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                View All Departments
+            </Button>
+        </div>
       </div>
     </section>
   );

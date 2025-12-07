@@ -13,7 +13,7 @@ interface ProgrammeLayoutProps {
 
 export function ProgrammeLayout({ children, currentProgramme }: ProgrammeLayoutProps) {
   return (
-    <div className="min-h-screen bg-stone-50">
+    <div className="min-h-screen bg-background">
       <Header />
       <ProgrammeNav currentProgramme={currentProgramme} />
       <main>{children}</main>
