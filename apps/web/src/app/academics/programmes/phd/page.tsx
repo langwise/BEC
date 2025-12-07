@@ -1,192 +1,151 @@
-// src/app/academics/programmes/phd/page.tsx
 "use client";
 
-import { ProgrammeLayout } from "@/components/programmes/programme-layout";
-import { ProgrammeHero } from "@/components/programmes/programme-hero";
-import { ProgrammeOverview } from "@/components/programmes/programme-overview";
-import { ProgrammeAdmission } from "@/components/programmes/programme-admission";
-import { PhDProcedures } from "@/components/programmes/phd-procedures";
-import { ProgrammeCurriculum } from "@/components/programmes/programme-curriculum";
-import { ProgrammePlacement } from "@/components/programmes/programme-placement";
-import { ProgrammeFAQ } from "@/components/programmes/programme-faq";
+import { PageHeader } from "@/components/placements/page-header";
+import { CheckCircle2, GraduationCap, Building2, Beaker, FileText, Microscope } from "lucide-react";
+import { FadeIn } from "@/components/animations/fade-in";
 
 const phdData = {
-  title: "M.Sc.(Engg.)/Ph.D",
-  subtitle: "Research Programmes",
+  title: "M.Sc. (Engg.) & Ph.D",
   description: "Embark on a journey of advanced research and innovation with our doctoral and M.Sc. Engineering programmes across multiple disciplines.",
-  hero: {
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1920&q=80&fit=crop",
-    stats: [
-      { value: "9", label: "Research Centers" },
-      { value: "3-6 Yrs", label: "Duration" },
-      { value: "₹3.40 Cr", label: "Research Funds" },
-      { value: "35+", label: "Industry MoUs" },
-    ],
-  },
-  overview: {
-    description: "BEC offers M.Sc.(Engg.) and Ph.D programmes in 9 recognized research centers with state-of-the-art facilities. With ₹3.40 crores in research grants and 35+ industry collaborations, we provide an excellent ecosystem for cutting-edge research and innovation.",
-    highlights: [
+  highlights: [
       "9 VTU Recognized Research Centers",
       "100% PhD Qualified Supervisors",
       "Advanced Research Facilities",
       "Industry-Sponsored Research Projects",
       "Publication Support & Guidance",
       "International Collaboration Opportunities",
-    ],
-    disciplines: [
-      { name: "Civil Engineering", code: "CE" },
-      { name: "Computer Science and Engineering", code: "CSE" },
-      { name: "Electronics and Communication Engineering", code: "ECE" },
-      { name: "Electrical and Electronics Engineering", code: "EEE" },
-      { name: "Bio-Technology", code: "BT" },
-      { name: "Mechanical Engineering", code: "ME" },
-      { name: "Physics (M.Sc. Engg.)", code: "PHY" },
-      { name: "Information Science and Engineering", code: "ISE" },
-    ],
-  },
+  ],
+  centers: [
+      "Civil Engineering",
+      "Computer Science & Engineering",
+      "Electronics & Communication Engineering",
+      "Electrical & Electronics Engineering",
+      "Bio-Technology",
+      "Mechanical Engineering",
+      "Physics (M.Sc. Engg.)",
+      "Information Science & Engineering",
+  ],
   admission: {
-    eligibility: {
-      title: "Academic Eligibility",
-      criteria: [
+    eligibility: [
         "Ph.D: M.E./M.Tech/M.Sc.(Engg.) with minimum 55% (50% for SC/ST/OBC)",
         "M.Sc.(Engg.): B.E./B.Tech with minimum 55% (50% for SC/ST/OBC)",
         "Valid GATE/NET/SLET score (preferred)",
-        "Research proposal in area of specialization",
-      ],
-    },
-    entrance: {
-      title: "Selection Process",
-      exams: [
-        { name: "Research Entrance Test", description: "Written test conducted by BEC" },
-        { name: "Interview", description: "Technical interview with research committee" },
-        { name: "GATE/NET Exemption", description: "Direct interview for qualified candidates" },
-      ],
-    },
-    contact: {
-      central: {
-        name: "Research & Development Cell",
-        address: "Basaveshwar Engineering College, Vidyagiri, Bagalkot – 587 102",
-        phone: "08354-234060, 234204",
-      },
-      admission: {
-        name: "Ph.D Coordinator",
-        address: "R&D Section, BEC Campus",
-        phone: "Contact through central office",
-      },
-    },
-  },
-  procedures: {
-    availableBranches: [
-      { slNo: 1, branch: "CIVIL ENGINEERING" },
-      { slNo: 2, branch: "COMPUTER SCIENCE AND ENGINEERING" },
-      { slNo: 3, branch: "ELECTRONICS AND COMMUNICATION ENGINEERING" },
-      { slNo: 4, branch: "ELECTRICAL AND ELECTRONICS ENGINEERING" },
-      { slNo: 5, branch: "BIOTECHNOLOGY" },
-      { slNo: 6, branch: "MECHANICAL ENGINEERING" },
-      { slNo: 7, branch: "PHYSICS (M.Sc. (Engg.))" },
-      { slNo: 8, branch: "INFORMATION SCIENCE AND ENGINEERING" },
     ],
-    registrationProcedure: [
-      "Registration form for Ph.D./M.Sc. hardcopy",
-      "NOC from the organization (for part time Ph.D.)",
-      "Candidate Bio data",
-      "SSLC, UG, PG marks cards",
-      "Guide Bio data",
-      "UG, PG, Ph.D. Certificates of Guide",
-      "Co-Guide Bio data",
-      "UG, PG, Ph.D. Certificates of Co-Guide",
-      "Caste Certificate if any",
-      "Synopsis",
-      "Online Fee Receipt",
-    ],
-    admissionProcedure: [
-      "Acceptance letter to Principal",
-      "Acceptance letter to Registrar VTU",
-      "SIT Application Form",
-      "SSLC, UG & PG Certificates",
-      "VTU Office Order",
-      "Online Fee Receipt",
-      "BEC College Fee Paid Receipt",
-    ],
-  },
-  curriculum: {
-    structure: "Ph.D programme spans 3-6 years with coursework, comprehensive examination, research work, and thesis defense. M.Sc.(Engg.) is typically 2 years with coursework and dissertation.",
-    features: [
-      "Advanced Coursework (for Ph.D)",
-      "Research Methodology Training",
-      "Literature Review & Survey",
-      "Experimental/Theoretical Research",
-      "Publication in Peer-Reviewed Journals",
-      "Conference Presentations",
-      "Thesis Writing & Defense",
-      "Teaching Assistantship Opportunities",
-    ],
-    outcomes: [
-      "Expert knowledge in specialized research area",
-      "Independent research capabilities",
-      "Publication in reputed journals and conferences",
-      "Critical thinking and analytical skills",
-      "Contribution to scientific knowledge",
-      "Preparation for academic and R&D careers",
-    ],
-  },
-  placement: {
-    stats: {
-      rate: "85%",
-      average: "₹6-8 Lakhs",
-      highest: "₹15+ Lakhs",
-      companies: "40+",
-    },
-    topRecruiters: [
-      "Research Institutions", "ISRO", "DRDO", "BARC", "Universities",
-      "IITs", "NITs", "Core Engineering R&D", "Product Companies", "PSUs",
-    ],
-    industries: [
-      "Research & Development",
-      "Higher Education & Academia",
-      "Defense & Aerospace",
-      "Core Engineering Industries",
-      "Product Development Companies",
-    ],
-  },
-  faqs: [
-    {
-      question: "What is the duration of Ph.D programme?",
-      answer: "Ph.D programme typically takes 3-6 years depending on full-time or part-time enrollment and research progress.",
-    },
-    {
-      question: "Is fellowship available for Ph.D students?",
-      answer: "Yes, fellowships are available for eligible candidates through various schemes like AICTE, UGC, and sponsored research projects.",
-    },
-    {
-      question: "How many research centers does BEC have?",
-      answer: "BEC has 9 VTU recognized research centers across various engineering disciplines including Physics (M.Sc. Engg.).",
-    },
-    {
-      question: "Can working professionals pursue Ph.D?",
-      answer: "Yes, we offer part-time Ph.D programmes specifically designed for working professionals with NOC from their organization.",
-    },
-    {
-      question: "What research facilities are available?",
-      answer: "BEC has Central Research Facility with advanced equipment, laboratories, computational facilities, and access to research databases with ₹3.40 crores in funding.",
-    },
-    {
-      question: "How to apply for Ph.D admission?",
-      answer: "Download application form from VTU website (www.vtu.ac.in), pay Rs. 1500/- online, and submit with necessary documents to VTU Registrar.",
-    },
-  ],
+    exams: [
+        { name: "Research Entrance Test", description: "Written test by BEC/VTU" },
+        { name: "Interview", description: "Research Committee Interview" },
+        { name: "GATE/NET Exempt", description: "Direct Interview" },
+    ]
+  }
 };
+
+function SectionHeader({ icon: Icon, title }: { icon: any, title: string }) {
+    return (
+        <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Icon className="w-5 h-5 text-primary" />
+            </div>
+            <h2 className="text-2xl font-bold text-gray-900 tracking-tight">{title}</h2>
+        </div>
+    )
+}
 
 export default function PhDProgrammePage() {
   return (
-    <ProgrammeLayout currentProgramme="phd">
-      <ProgrammeHero {...phdData.hero} title={phdData.title} subtitle={phdData.subtitle} description={phdData.description} />
-      <ProgrammeOverview {...phdData.overview} />
-      <ProgrammeAdmission {...phdData.admission} />
-      <PhDProcedures {...phdData.procedures} />
-      <ProgrammeCurriculum {...phdData.curriculum} />
-      <ProgrammePlacement {...phdData.placement} />
-      <ProgrammeFAQ faqs={phdData.faqs} />
-    </ProgrammeLayout>
+    <div className="space-y-16">
+      <PageHeader
+        title={phdData.title}
+        description={phdData.description}
+      />
+
+      {/* Overview & Highlights */}
+      <section className="space-y-8">
+        <div className="prose prose-lg prose-orange max-w-none text-gray-600">
+            <p>
+                BEC offers M.Sc.(Engg.) and Ph.D programmes in 9 recognized research centers with state-of-the-art facilities. With ₹3.40 crores in research grants and 35+ industry collaborations, we provide an excellent ecosystem for cutting-edge research and innovation.
+            </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-4">
+            {phdData.highlights.map((item, idx) => (
+                <div key={idx} className="flex items-center gap-3 p-4 bg-white border border-gray-100 rounded-xl shadow-xs">
+                    <CheckCircle2 className="w-5 h-5 text-primary shrink-0" />
+                    <span className="font-medium text-gray-700">{item}</span>
+                </div>
+            ))}
+        </div>
+      </section>
+
+      {/* Research Centers */}
+      <section>
+          <SectionHeader icon={Microscope} title="Recognized Research Centers" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4">
+              {phdData.centers.map((center, idx) => (
+                  <FadeIn key={idx} delay={idx * 0.05}>
+                    <div className="p-4 rounded-lg bg-orange-50/50 border border-orange-100 text-gray-800 font-medium flex items-center gap-3 hover:bg-white hover:shadow-sm transition-all">
+                        <Beaker className="w-4 h-4 text-primary" />
+                        {center}
+                    </div>
+                  </FadeIn>
+              ))}
+          </div>
+      </section>
+
+      {/* Admission */}
+      <section className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+          <SectionHeader icon={Building2} title="Admission & Selection" />
+          
+          <div className="space-y-8">
+            <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Eligibility</h3>
+                <ul className="space-y-3">
+                    {phdData.admission.eligibility.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-3 text-sm text-gray-600">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                            {item}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            <div className="grid sm:grid-cols-3 gap-4">
+                {phdData.admission.exams.map((exam, idx) => (
+                    <div key={idx} className="p-4 rounded-lg bg-gray-50 border border-gray-100">
+                        <div className="font-bold text-primary mb-1">{exam.name}</div>
+                        <div className="text-xs text-gray-500">{exam.description}</div>
+                    </div>
+                ))}
+            </div>
+          </div>
+      </section>
+
+      {/* Docs / Procedure */}
+      <section>
+          <SectionHeader icon={FileText} title="Application Procedure" />
+          <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 text-sm text-gray-700 space-y-4">
+              <p>
+                  <strong>How to Apply:</strong> Download application form from VTU website (www.vtu.ac.in), pay Rs. 1500/- online, and submit with necessary documents to VTU Registrar.
+              </p>
+              <p>
+                  <strong>Documents Required:</strong> SSLC, UG, PG Marks Cards, NOC (for Part-time), Synopsis, Guide Consent, and Online Fee Receipt.
+              </p>
+          </div>
+      </section>
+
+         {/* Stats */}
+         <section className="grid md:grid-cols-4 gap-4">
+           {[
+               { label: "Research Centers", value: "9" },
+               { label: "Research Grants", value: "₹3.4Cr" },
+               { label: "Duration", value: "3-6 Yrs" },
+               { label: "Industry MoUs", value: "35+" },
+           ].map((stat, idx) => (
+               <div key={idx} className="p-6 rounded-2xl bg-white border border-gray-100 text-center">
+                   <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                   <div className="text-xs text-gray-500 uppercase tracking-wider">{stat.label}</div>
+               </div>
+           ))}
+       </section>
+    </div>
   );
 }
