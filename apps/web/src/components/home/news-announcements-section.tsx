@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { ArrowRight, ChevronLeft, ChevronRight, Pin } from "lucide-react";
 import { newsData } from "@/data/home/news-section";
 import { announcementsData } from "@/data/home/announcement";
+import { cn } from "@/lib/utils";
 
 export function NewsAnnouncementsSection() {
   const [current, setCurrent] = useState(0);
@@ -61,71 +62,77 @@ export function NewsAnnouncementsSection() {
   }, [announcementIndex, slidingAnnouncements, slidingCount]);
 
   return (
-    <section className="py-14 lg:py-20 bg-gray-50">
+    <section className="py-20 bg-stone-50/50">
       <div className="container mx-auto px-4 lg:px-6 max-w-[1400px]">
         {/* Section Header */}
-        <div className="flex items-center justify-between mb-6 lg:mb-8">
+        <div className="flex items-end justify-between mb-10 text-gray-900">
           <div>
-            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">
+            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mb-2">
               News & Announcements
             </h2>
-            <p className="text-sm text-gray-600">
-              Latest stories and important updates at a glance.
+            <p className="text-gray-600 font-medium max-w-md">
+              Stay updated with the latest happenings, achievements, and notices from the campus.
             </p>
           </div>
           <a
             href="#"
-            className="hidden lg:inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all"
+            className="hidden lg:inline-flex items-center gap-2 text-primary font-bold text-sm tracking-wide uppercase hover:gap-3 transition-all"
           >
-            View All
+            All Updates
             <ArrowRight className="h-4 w-4" />
           </a>
         </div>
 
-        <div className="grid gap-6 lg:gap-8 lg:grid-cols-[1.7fr_1fr] lg:items-start">
-          {/* Left: Top News */}
-          <div className="w-full">
-            <div className="relative overflow-hidden rounded-lg bg-white border border-gray-200 shadow-sm">
-              <div className="relative w-full aspect-4/3 sm:aspect-video lg:aspect-5/3 min-h-[300px] sm:min-h-[400px]">
+        <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-stretch">
+          {/* Left: Top News Carousel */}
+          <div className="w-full relative group">
+            <div className="relative h-full overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white hover:shadow-md transition-shadow duration-300">
+                {/* Image */}
+              <div className="relative w-full h-[450px]">
                 <Image
                   src={topNews.image}
                   alt={topNews.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-                  <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.18em] text-white/80 mb-3">
-                    <span className="px-2 py-1 rounded-full bg-white/20 border border-white/20">
-                      {topNews.category}
-                    </span>
-                    <span>
-                      {topNews.date.day} {topNews.date.month} {topNews.date.year}
-                    </span>
-                  </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 leading-tight drop-shadow line-clamp-2">
-                    {topNews.title}
-                  </h3>
-                  <p className="text-white/90 text-sm sm:text-base max-w-3xl leading-relaxed line-clamp-3">
-                    {topNews.description}
-                  </p>
-                  <div className="mt-4 inline-flex items-center gap-2 text-white font-semibold text-sm hover:gap-3 transition-all cursor-pointer">
-                    Read story
-                    <ChevronRight className="h-4 w-4" />
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                
+                {/* Content Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10 flex flex-col justify-end">
+                    <div className="flex items-center gap-3 mb-4">
+                        <span className="px-3 py-1 rounded-full bg-primary text-white text-[11px] font-bold uppercase tracking-wider">
+                            {topNews.category}
+                        </span>
+                        <span className="text-white/80 text-xs font-semibold uppercase tracking-wider">
+                             {topNews.date.day} {topNews.date.month} {topNews.date.year}
+                        </span>
+                    </div>
+
+                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3 leading-tight">
+                        {topNews.title}
+                    </h3>
+
+                    <p className="text-white/90 text-sm lg:text-base leading-relaxed line-clamp-2 max-w-2xl mb-6">
+                        {topNews.description}
+                    </p>
+
+                     <button className="flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all self-start">
+                        Read Full Story <ChevronRight className="w-4 h-4" />
+                     </button>
                 </div>
               </div>
 
               {/* Indicators */}
-              <div className="absolute bottom-4 right-4 flex items-center gap-2 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-full">
+              <div className="absolute top-6 right-6 flex items-center gap-1.5 bg-black/30 backdrop-blur-md px-3 py-1.5 rounded-full z-10">
                 {newsData.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrent(index)}
-                    className={`h-2 rounded-full transition-all duration-300 ${
-                      current === index ? "w-6 bg-white" : "w-2 bg-white/50"
-                    }`}
+                    className={cn(
+                        "h-1.5 rounded-full transition-all duration-300",
+                        current === index ? "w-6 bg-white" : "w-1.5 bg-white/40 hover:bg-white/60"
+                    )}
                     aria-label={`Show story ${index + 1}`}
                   />
                 ))}
@@ -133,98 +140,61 @@ export function NewsAnnouncementsSection() {
             </div>
           </div>
 
-          {/* Right: Announcements list */}
-          <div className="w-full">
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-5 sm:p-6 flex flex-col">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  Announcements
-                </h3>
-                <a
-                  href="#"
-                  className="text-primary text-sm font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all"
-                >
-                  View all
-                  <ChevronRight className="h-4 w-4" />
-                </a>
+          {/* Right: Announcements Panel */}
+          <div className="w-full flex flex-col h-full bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
+              <div className="p-6 border-b border-gray-50 flex items-center justify-between">
+                  <h3 className="font-bold text-xl tracking-tight text-gray-900">Latest Notices</h3>
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
               </div>
 
-              <div className="space-y-3 flex-1 flex flex-col min-h-0">
-                {/* Pinned */}
-                <div className="space-y-2 flex-shrink-0">
-                  {pinnedList.map((item) => (
-                    <div
-                      key={item.id}
-                      className="group rounded-md px-3 py-3 bg-primary/5 border border-primary/15 hover:bg-primary/10 transition-colors"
-                    >
-                      <div className="flex items-start gap-3">
-                        <Pin className="h-4 w-4 text-primary mt-0.5 fill-primary shrink-0" />
-                        <div className="flex flex-col gap-1 min-w-0 flex-1">
-                          <span className="text-[10px] uppercase tracking-wide text-gray-500">
-                            {item.date}
-                          </span>
-                          <p className="text-sm font-semibold text-gray-900 leading-snug group-hover:text-primary transition-colors line-clamp-2">
-                            {item.title}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+              <div className="p-6 flex-1 flex flex-col gap-6">
+                 {/* Pinned List */}
+                 <div className="space-y-3">
+                     {pinnedList.map((item) => (
+                         <div key={item.id} className="p-4 rounded-xl bg-orange-50/80 border border-orange-100 flex items-start gap-3 transition-colors hover:bg-orange-50">
+                             <Pin className="w-4 h-4 text-primary fill-primary mt-1 shrink-0" />
+                             <div>
+                                 <p className="text-sm font-semibold text-gray-900 leading-snug mb-1">{item.title}</p>
+                                 <p className="text-[10px] uppercase tracking-wider text-primary/80 font-bold">{item.date}</p>
+                             </div>
+                         </div>
+                     ))}
+                 </div>
 
-                {/* Sliding list */}
-                <div className="relative flex-1 min-h-[200px] sm:min-h-[240px] overflow-hidden mt-2">
-                  <AnimatePresence mode="wait">
-                    <motion.div
-                      key={announcementIndex}
-                      initial={{ x: 60, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{ x: -60, opacity: 0 }}
-                      transition={{ duration: 0.4, ease: "easeOut" }}
-                      className="rounded-md border border-gray-200 bg-gray-50/80 h-full p-4 flex flex-col justify-between"
-                    >
-                      <div className="space-y-4 flex-1">
-                        {currentAnnouncements.map((item) => (
-                          <div key={item.id} className="flex flex-col gap-2">
-                            <span className="text-[10px] uppercase tracking-wide text-gray-500">
-                              {item.date}
-                            </span>
-                            <p className="text-sm sm:text-base font-semibold text-gray-900 leading-snug line-clamp-2">
-                              {item.title}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="flex items-center justify-end gap-2 pt-4 mt-auto border-t border-gray-200">
-                        <button
-                          aria-label="Previous announcement"
-                          onClick={() =>
-                            setAnnouncementIndex((prev) =>
-                              (prev - 1 + slidingAnnouncements.length) %
-                              slidingAnnouncements.length
-                            )
-                          }
-                          className="h-8 w-8 inline-flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 hover:border-primary hover:text-primary hover:bg-primary/5 transition-colors"
+                 {/* Divider */}
+                 <div className="h-px bg-gray-50 w-full" />
+
+                 {/* Slider */}
+                 <div className="relative flex-1 overflow-hidden min-h-[160px]">
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={announcementIndex}
+                            initial={{ y: 20, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            exit={{ y: -20, opacity: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="space-y-4 absolute inset-0"
                         >
-                          <ChevronLeft className="h-4 w-4" />
-                        </button>
-                        <button
-                          aria-label="Next announcement"
-                          onClick={() =>
-                            setAnnouncementIndex(
-                              (prev) => (prev + 1) % slidingAnnouncements.length
-                            )
-                          }
-                          className="h-8 w-8 inline-flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-700 hover:border-primary hover:text-primary hover:bg-primary/5 transition-colors"
-                        >
-                          <ChevronRight className="h-4 w-4" />
-                        </button>
-                      </div>
-                    </motion.div>
-                  </AnimatePresence>
-                </div>
+                            {currentAnnouncements.map((item) => (
+                                <div key={item.id} className="group">
+                                    <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1 group-hover:text-primary transition-colors">{item.date}</p>
+                                    <p className="text-sm text-gray-700 font-medium leading-relaxed group-hover:text-gray-900 transition-colors line-clamp-2">{item.title}</p>
+                                </div>
+                            ))}
+                        </motion.div>
+                    </AnimatePresence>
+                 </div>
               </div>
-            </div>
+            
+             {/* Controls */}
+             <div className="p-4 bg-gray-50 border-t border-gray-100 flex justify-end gap-2">
+                 <button onClick={() => setAnnouncementIndex((p) => (p - 1 + slidingAnnouncements.length) % slidingAnnouncements.length)} className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-primary hover:border-primary transition-all">
+                     <ChevronLeft className="w-4 h-4" />
+                 </button>
+                 <button onClick={() => setAnnouncementIndex((p) => (p + 1) % slidingAnnouncements.length)} className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-primary hover:border-primary transition-all">
+                     <ChevronRight className="w-4 h-4" />
+                 </button>
+             </div>
           </div>
         </div>
       </div>

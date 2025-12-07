@@ -81,17 +81,17 @@ export function HeroBanner() {
                   className="object-cover"
                   priority={index === 0}
                 />
-                {/* Gradient Overlay for Text Readability */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/10" />
+                {/* Modern Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
               </div>
 
               {/* Text Content */}
               <div className="absolute inset-0 flex flex-col justify-end pb-24 md:pb-32 container mx-auto px-4 md:px-6">
-                <div className="max-w-4xl space-y-4 animate-in fade-in slide-in-from-bottom-8 duration-700">
-                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white uppercase tracking-tight">
+                <div className="max-w-4xl space-y-5 animate-in fade-in slide-in-from-bottom-8 duration-700">
+                  <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.1]">
                     {slide.title}
                   </h2>
-                  <p className="text-lg md:text-2xl text-gray-200 max-w-2xl font-light leading-relaxed">
+                  <p className="text-lg md:text-2xl text-white/90 max-w-2xl font-medium leading-relaxed drop-shadow-md">
                     {slide.description}
                   </p>
                 </div>

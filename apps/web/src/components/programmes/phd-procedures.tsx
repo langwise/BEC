@@ -44,7 +44,7 @@ export function PhDProcedures({
               the following departments
             </p>
 
-            <div className="bg-stone-50 rounded-xl shadow-sm border border-stone-200 overflow-hidden">
+            <div className="bg-muted rounded-xl shadow-sm border border-border overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead className="bg-primary text-white">
@@ -57,7 +57,7 @@ export function PhDProcedures({
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-stone-200 bg-white">
+                  <tbody className="divide-y divide-border bg-white">
                     {availableBranches.map((branch, index) => (
                       <motion.tr
                         key={index}
@@ -65,7 +65,7 @@ export function PhDProcedures({
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: index * 0.05 }}
-                        className="hover:bg-stone-50 transition-colors"
+                        className="hover:bg-primary/5 transition-colors"
                       >
                         <td className="px-6 py-4 text-sm font-semibold text-gray-900">
                           {branch.slNo}
@@ -111,7 +111,7 @@ export function PhDProcedures({
                   . Duly filled in applications along with online payment for Rs
                   1500/- receipt and necessary enclosures should be sent to:
                 </p>
-                <div className="bg-white p-4 rounded-lg border border-stone-200">
+                <div className="bg-white p-4 rounded-lg border border-border">
                   <p className="font-semibold text-gray-900 mb-1">
                     The Registrar
                   </p>
@@ -133,7 +133,7 @@ export function PhDProcedures({
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white rounded-xl shadow-sm border border-stone-200 p-8"
+              className="bg-white rounded-xl shadow-sm border border-border p-8"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -166,7 +166,7 @@ export function PhDProcedures({
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white rounded-xl shadow-sm border border-stone-200 p-8"
+              className="bg-white rounded-xl shadow-sm border border-border p-8"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">

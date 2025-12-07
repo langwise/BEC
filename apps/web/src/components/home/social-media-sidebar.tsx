@@ -9,32 +9,31 @@ const socialLinks = [
     name: "Facebook",
     icon: Facebook,
     url: "#",
-    color: "bg-[#3b5998] hover:bg-[#2d4373]",
+    color: "bg-white text-muted-foreground hover:bg-primary hover:text-primary-foreground border-b border-border last:border-0",
   },
   {
     name: "Twitter",
     icon: Twitter,
     url: "#",
-    color: "bg-[#1DA1F2] hover:bg-[#0d8bd9]",
+    color: "bg-white text-muted-foreground hover:bg-primary hover:text-primary-foreground border-b border-border last:border-0",
   },
   {
     name: "Instagram",
     icon: Instagram,
     url: "#",
-    color:
-      "bg-linear-to-br from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:opacity-90",
+    color: "bg-white text-muted-foreground hover:bg-primary hover:text-primary-foreground border-b border-border last:border-0",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
     url: "#",
-    color: "bg-[#0077b5] hover:bg-[#005885]",
+    color: "bg-white text-muted-foreground hover:bg-primary hover:text-primary-foreground border-b border-border last:border-0",
   },
   {
     name: "YouTube",
     icon: Youtube,
     url: "#",
-    color: "bg-[#FF0000] hover:bg-[#cc0000]",
+    color: "bg-white text-muted-foreground hover:bg-primary hover:text-primary-foreground border-b border-border last:border-0",
   },
 ];
 
@@ -78,7 +77,7 @@ export function SocialMediaSidebar() {
                   initial={{ x: 100 }}
                   animate={{ x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className={`${social.color} text-white p-2 transition-all duration-300 flex items-center justify-center group relative`}
+                  className={`${social.color} p-2 transition-all duration-300 flex items-center justify-center group relative`}
                   aria-label={social.name}
                 >
                   <Icon className="size-5" />

@@ -32,7 +32,7 @@ At BEC, promoting academic excellence, discipline, and strong practical exposure
   return (
     <section
       ref={ref}
-      className="relative py-24 lg:py-36 bg-linear-to-br from-slate-50 via-blue-50/30 to-white overflow-hidden"
+      className="relative py-24 lg:py-36 bg-linear-to-br from-background via-orange-50/30 to-white overflow-hidden"
     >
       {/* Animated Background Elements */}
       <motion.div
@@ -117,7 +117,7 @@ At BEC, promoting academic excellence, discipline, and strong practical exposure
           >
             <div className="bg-white p-8 lg:p-12 shadow-lg border border-gray-100 relative overflow-hidden">
               {/* Decorative Gradient Blob */}
-              <div className="absolute -top-24 -right-24 w-64 h-64 bg-linear-to-br from-blue-100 to-indigo-100 rounded-full blur-3xl opacity-30" />
+              <div className="absolute -top-24 -right-24 w-64 h-64 bg-linear-to-br from-orange-100 to-orange-50 rounded-full blur-3xl opacity-30" />
 
               <div className="relative text-base lg:text-lg text-gray-700 leading-relaxed space-y-5">
                 {director.message
