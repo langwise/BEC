@@ -3,10 +3,10 @@
 import dynamic from "next/dynamic";
 import { ProgrammesSection } from "@/components/home/programmes-section";
 import { StatsSection } from "@/components/home/stats-section";
-import { ParallaxVideo } from "@/components/home/parallax-video";
+// import { ParallaxVideo } from "@/components/home/parallax-video";
 import { ImpactSection } from "@/components/home/impact-section";
-import { Information } from "@/components/home/Information";
-import { Hero } from "@/components/home/hero";
+// import { Hero } from "@/components/home/hero";
+import { HeroBanner } from "@/components/home/hero-banner";
 import { CampusLifeSection } from "@/components/home/campus-life-section";
 import { SocialMediaSidebar } from "@/components/home/social-media-sidebar";
 import { EventsSection } from "@/components/home/events-section";
@@ -27,9 +27,9 @@ export default function Home() {
     <main>
       <SocialMediaSidebar />
       <div className="relative [clip-path:inset(0)]">
-        <ParallaxVideo />
-        <Hero />
-        <Information />
+        {/* <ParallaxVideo /> */}
+        {/* <Hero /> */}
+        <HeroBanner />
         {/* <Introduction /> */}
         {/* Announcements and Events */}
         {/* <NewsSection /> */}
