@@ -103,14 +103,66 @@ export const navigationData: NavigationItem[] = [
   {
     title: "Research",
     items: [
-      { title: "Overview", href: "/research/overview" },
-      { title: "Research Areas", href: "/research/areas" },
-      { title: "Centres", href: "/research/centres" },
+      { title: "About Research", href: "/research/about" },
+      {
+        title: "Research Centres",
+        items: [
+          { title: "Biotechnology", href: "/research/centres/biotech" },
+          { title: "Civil Engg.", href: "/research/centres/civil" },
+          { title: "Computer Science", href: "/research/centres/cs" },
+          { title: "Electronics & Comm.", href: "/research/centres/ec" },
+          { title: "Electrical & Electronics", href: "/research/centres/ee" },
+          { title: "Industrial & Production", href: "/research/centres/ip" },
+          { title: "Information Science", href: "/research/centres/is" },
+          { title: "Mechanical", href: "/research/centres/mechanical" },
+          { title: "Physics", href: "/research/centres/physics" },
+          { title: "MBA", href: "/research/centres/mba" },
+        ],
+      },
+      {
+        title: "Lab's with Industries",
+        items: [
+          { title: "Bosch Rexroth", href: "/research/labs/bosch" },
+          { title: "MEMS Design", href: "/research/labs/mems" },
+          { title: "Nokia", href: "/research/labs/nokia" },
+          { title: "SCADA Lab", href: "/research/labs/scada" },
+          { title: "Renewable Energy", href: "/research/labs/renewable" },
+          { title: "Intel Intelligent Lab", href: "/research/labs/intel" },
+          { title: "Materials Lab", href: "/research/labs/materials" },
+          { title: "Multimedia Lab", href: "/research/labs/multimedia" },
+          { title: "Bio-diesel", href: "/research/labs/biodiesel" },
+        ],
+      },
+      {
+        title: "Centres of Excellence",
+        href: "/research/centres-of-excellence",
+      },
+      { title: "Patents", href: "/research/patents" },
       { title: "Sponsored Research", href: "/research/sponsored" },
-      { title: "PhD Scheme", href: "/research/phd-scheme" },
-      { title: "Publications", href: "/research/publications" },
-      { title: "Research Facility", href: "/research/facility" },
-      { title: "Institutional Relations", href: "/research/relations" },
+      { title: "BEC Guidelines", href: "/research/guidelines" },
+      { title: "Research Policy", href: "/research/policy" },
+      {
+        title: "Research Committees",
+        items: [
+          {
+            title: "Advisory Committee",
+            href: "/research/committees/advisory",
+          },
+          { title: "Ethics Committee", href: "/research/committees/ethics" },
+          { title: "Review Committee", href: "/research/committees/review" },
+        ],
+      },
+      {
+        title: "Scopus Publications",
+        items: [
+          { title: "2022-2023", href: "/research/scopus/2022-2023" },
+          { title: "2021-2022", href: "/research/scopus/2021-2022" },
+          { title: "2020-2021", href: "/research/scopus/2020-2021" },
+          { title: "2019-2020", href: "/research/scopus/2019-2020" },
+          { title: "2018-2019", href: "/research/scopus/2018-2019" },
+          { title: "2017-2018", href: "/research/scopus/2017-2018" },
+        ],
+      },
     ],
   },
 
