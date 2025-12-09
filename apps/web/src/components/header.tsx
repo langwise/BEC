@@ -52,7 +52,7 @@ export function Header() {
                     </NavigationMenuTrigger>
 
                     <NavigationMenuContent>
-                      <div className="w-[800px] p-6 space-y-6">
+                      <div className="w-[800px] p-6 space-y-6 max-h-[70vh] overflow-y-auto">
                         {/* Flat links */}
                         {item.items?.some(isLink) && (
                           <div className="grid grid-cols-3 gap-3">
