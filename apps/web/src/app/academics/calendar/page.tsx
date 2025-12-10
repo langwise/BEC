@@ -1,8 +1,6 @@
 // src/app/academics/calendar/page.tsx
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { AcademicCalendarSection } from "@/components/academics/academic-calendar-section";
 
 const calendarData = {
@@ -212,11 +210,9 @@ const calendarData = {
 export default function AcademicCalendarPage() {
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
       <main>
         <AcademicCalendarSection data={calendarData} />
       </main>
-      <Footer />
     </div>
   );
 }

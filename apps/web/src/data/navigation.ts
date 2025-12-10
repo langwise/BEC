@@ -154,14 +154,7 @@ export const navigationData: NavigationItem[] = [
       },
       {
         title: "Scopus Publications",
-        items: [
-          { title: "2022-2023", href: "/research/scopus/2022-2023" },
-          { title: "2021-2022", href: "/research/scopus/2021-2022" },
-          { title: "2020-2021", href: "/research/scopus/2020-2021" },
-          { title: "2019-2020", href: "/research/scopus/2019-2020" },
-          { title: "2018-2019", href: "/research/scopus/2018-2019" },
-          { title: "2017-2018", href: "/research/scopus/2017-2018" },
-        ],
+        href: "/research/scopus",
       },
     ],
   },
