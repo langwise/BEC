@@ -1,14 +1,106 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
 import { navigationData } from "@/data/navigation";
+import { ChevronDown, ChevronRight } from "lucide-react";
 
 // Extract research navigation items
 const researchNav =
     navigationData.find((item) => item.title === "Research")?.items || [];
+
+function SidebarNavItem({ item, pathname }: { item: any; pathname: string }) {
+    const hasChildren = "items" in item && item.items && item.items.length > 0;
+
+    // Check if any child is active to initialize open state
+    const isChildActive = hasChildren && item.items.some((child: any) => pathname === child.href);
+    const [isOpen, setIsOpen] = useState(isChildActive);
+
+    if ("href" in item) {
+        const isActive = pathname === item.href;
+        return (
+            <div key={item.href}>
+                <Link
+                    href={item.href}
+                    className={cn(
+                        "group flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200",
+                        isActive
+                            ? "bg-primary text-white shadow-md shadow-orange-200"
+                            : "text-gray-600 hover:bg-orange-50 hover:text-primary"
+                    )}
+                >
+                    {item.title}
+                    {isActive && (
+                        <motion.div
+                            layoutId="research-nav-indicator"
+                            className="w-1.5 h-1.5 rounded-full bg-white"
+                        />
+                    )}
+                </Link>
+            </div>
+        );
+    } else {
+        // Section Header (Group) with Dropdown
+        return (
+            <div key={item.title} className="mt-4 first:mt-0">
+                <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="w-full flex items-center justify-between px-4 py-2 group cursor-pointer"
+                >
+                    <div className="text-xs font-bold uppercase tracking-wider text-gray-500 group-hover:text-primary transition-colors">
+                        {item.title}
+                    </div>
+                    {hasChildren && (
+                        <ChevronDown
+                            className={cn(
+                                "w-4 h-4 text-gray-400 transition-transform duration-200",
+                                !isOpen && "-rotate-90"
+                            )}
+                        />
+                    )}
+                </button>
+
+                <AnimatePresence>
+                    {hasChildren && isOpen && (
+                        <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="overflow-hidden"
+                        >
+                            <div className="flex flex-col space-y-1 mt-1 mb-2">
+                                {item.items.map((subItem: any) => {
+                                    const isSubActive = pathname === subItem.href;
+                                    return (
+                                        <Link
+                                            key={subItem.href}
+                                            href={subItem.href}
+                                            className={cn(
+                                                "group flex items-center justify-between px-4 py-2.5 mx-2 rounded-md text-sm transition-all duration-200 pl-6",
+                                                isSubActive
+                                                    ? "bg-orange-50 text-primary font-medium"
+                                                    : "text-gray-600 hover:bg-orange-50/50 hover:text-primary"
+                                            )}
+                                        >
+                                            <span className="truncate">{subItem.title}</span>
+                                            {isSubActive && (
+                                                <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                                            )}
+                                        </Link>
+                                    );
+                                })}
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+            </div>
+        )
+    }
+}
 
 export default function ResearchLayout({
     children,
@@ -34,37 +126,9 @@ export default function ResearchLayout({
                                 Research
                             </h2>
                             <nav className="flex flex-col space-y-1">
-                                {researchNav.map((item) => {
-                                    if ("href" in item) {
-                                        const isActive = pathname === item.href;
-                                        return (
-                                            <Link
-                                                key={item.href}
-                                                href={item.href}
-                                                className={cn(
-                                                    "group flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200",
-                                                    isActive
-                                                        ? "bg-primary text-white shadow-md shadow-orange-200"
-                                                        : "text-gray-600 hover:bg-orange-50 hover:text-primary"
-                                                )}
-                                            >
-                                                {item.title}
-                                                {isActive && (
-                                                    <motion.div
-                                                        layoutId="research-nav-indicator"
-                                                        className="w-1.5 h-1.5 rounded-full bg-white"
-                                                    />
-                                                )}
-                                            </Link>
-                                        );
-                                    } else {
-                                        return (
-                                            <div key={item.title} className="px-4 py-2 mt-2">
-                                                <div className="text-xs font-semibold text-gray-400 capitalize">{item.title}</div>
-                                            </div>
-                                        )
-                                    }
-                                })}
+                                {researchNav.map((item, index) => (
+                                    <SidebarNavItem key={index} item={item} pathname={pathname} />
+                                ))}
                             </nav>
 
                             {/* Quick Contact Card */}

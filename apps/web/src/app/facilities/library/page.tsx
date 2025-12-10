@@ -1,14 +1,12 @@
 // File: src/app/facilities/library/page.tsx
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { 
-  BookOpen, 
-  Users, 
-  Building2, 
-  Globe, 
-  Link as LinkIcon, 
+import {
+  BookOpen,
+  Users,
+  Building2,
+  Globe,
+  Link as LinkIcon,
   Phone,
   Mail,
   MapPin,
@@ -95,8 +93,7 @@ const libraryServices = [
 export default function LibraryPage() {
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
-      
+
       {/* Hero Section */}
       <section className="relative h-[400px] bg-gradient-to-br from-primary via-primary/90 to-accent overflow-hidden">
         <div className="absolute inset-0 bg-[url('/section_2_diagonals.svg')] opacity-10 bg-cover bg-center"></div>
@@ -243,7 +240,6 @@ export default function LibraryPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }
