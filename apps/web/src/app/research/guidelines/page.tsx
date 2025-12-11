@@ -3,55 +3,62 @@
 import { PageHeader } from "@/components/placements/page-header";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { CheckCircle, Info, ChevronRight, FileText } from "lucide-react";
+import { CheckCircle, Info, ChevronRight, FileText, UserCheck, ShieldCheck, Users, GraduationCap, Mic2 } from "lucide-react";
+import { motion } from "motion/react";
 
 export default function GuidelinesPage() {
     return (
-        <div className="space-y-12">
+        <div className="space-y-16 max-w-5xl mx-auto">
             <PageHeader
                 title="Regulations for Research Promotion"
                 description="Comprehensive guidelines and objectives for research activities, scholars, and committees at BEC."
             />
 
-            <div className="space-y-8">
+            <div className="space-y-12">
                 {/* 1. Objectives */}
-                <section id="objectives">
-                    <Card className="border-orange-100 shadow-sm">
-                        <CardHeader className="bg-orange-50/50 border-b border-orange-100">
-                            <CardTitle className="flex items-center text-xl font-bold text-gray-900">
-                                <span className="bg-orange-100 text-orange-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
-                                Objectives
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6">
-                            <ul className="space-y-3">
+                <motion.section
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 }}
+                    id="objectives"
+                >
+                    <Card className="border-orange-100 shadow-lg overflow-hidden">
+                        <div className="bg-gradient-to-r from-orange-50 to-white px-8 py-6 border-b border-orange-100 flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xl shadow-sm">1</div>
+                            <h2 className="text-2xl font-bold text-slate-900">Objectives</h2>
+                        </div>
+                        <CardContent className="p-8">
+                            <div className="grid md:grid-cols-2 gap-6">
                                 {[
                                     "To promote research and inculcate research culture.",
                                     "To increase the number of publications in peer reviewed journals and enhance the quality of research.",
                                     "To enhance financial support from various funding agencies",
                                     "To promote interdisciplinary research activities",
                                 ].map((item, index) => (
-                                    <li key={index} className="flex items-start text-gray-700">
+                                    <div key={index} className="flex items-start p-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-orange-200 transition-colors">
                                         <CheckCircle className="w-5 h-5 text-orange-500 mr-3 shrink-0 mt-0.5" />
-                                        <span>{item}</span>
-                                    </li>
+                                        <span className="text-slate-700 font-medium leading-relaxed">{item}</span>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </CardContent>
                     </Card>
-                </section>
+                </motion.section>
 
                 {/* 2. Guidelines for Research Centres */}
-                <section id="research-centres">
-                    <Card className="border-orange-100 shadow-sm">
-                        <CardHeader className="bg-orange-50/50 border-b border-orange-100">
-                            <CardTitle className="flex items-center text-xl font-bold text-gray-900">
-                                <span className="bg-orange-100 text-orange-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
-                                Guidelines for Research Centres
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6">
-                            <ul className="space-y-4">
+                <motion.section
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    id="research-centres"
+                >
+                    <Card className="border-slate-100 shadow-lg overflow-hidden">
+                        <div className="bg-gradient-to-r from-amber-50 to-white px-8 py-6 border-b border-amber-100 flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-xl shadow-sm">2</div>
+                            <h2 className="text-2xl font-bold text-slate-900">Guidelines for Research Centres</h2>
+                        </div>
+                        <CardContent className="p-8">
+                            <ul className="grid gap-4">
                                 {[
                                     "Notifications/advertisements of various funding proposals should be tracked/pursued by the HOD.",
                                     "The faculty members and research scholars should be motivated to apply for the research funding.",
@@ -64,207 +71,170 @@ export default function GuidelinesPage() {
                                     "A copy of attendance and other research related data of each month should be submitted to Dean (R&D) in the first week of the following month.",
                                     "All the documents and communications by the research scholars with the college and affiliated university should be maintained in the department/research centre.",
                                 ].map((item, index) => (
-                                    <li key={index} className="flex items-start text-gray-700 group">
-                                        <span className="w-2 h-2 bg-orange-300 rounded-full mt-2 mr-3 group-hover:bg-orange-500 transition-colors shrink-0" />
-                                        <span>{item}</span>
+                                    <li key={index} className="flex items-start text-slate-700 group md:items-center p-2 hover:bg-slate-50 rounded-lg transition-colors">
+                                        <span className="w-1.5 h-1.5 bg-amber-300 rounded-full mt-2 md:mt-0 mr-4 group-hover:bg-amber-500 transition-colors shrink-0" />
+                                        <span className="text-sm md:text-base leading-relaxed">{item}</span>
                                     </li>
                                 ))}
                             </ul>
                         </CardContent>
                     </Card>
-                </section>
+                </motion.section>
 
                 {/* 3. Guidelines for Research Scholars */}
-                <section id="research-scholars">
-                    <Card className="border-orange-100 shadow-sm overflow-hidden">
-                        <CardHeader className="bg-orange-50/50 border-b border-orange-100">
-                            <CardTitle className="flex items-center text-xl font-bold text-gray-900">
-                                <span className="bg-orange-100 text-orange-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
-                                Guidelines for Research Scholars
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
+                <motion.section
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    id="research-scholars"
+                >
+                    <Card className="border-slate-100 shadow-lg overflow-hidden">
+                        <div className="bg-gradient-to-r from-orange-50 to-white px-8 py-6 border-b border-orange-100 flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center font-bold text-xl shadow-sm">3</div>
+                            <h2 className="text-2xl font-bold text-slate-900">Guidelines for Research Scholars</h2>
+                        </div>
+                        <CardContent className="p-8 space-y-8">
                             {/* General Points */}
-                            <ul className="space-y-3">
-                                {[
-                                    "The deadlines as laid by the affiliating university for coursework, comprehensive viva voce, synopsis and thesis submission are to be strictly adhered.",
-                                    "Half-yearly progress review meetings by the doctoral review committee should be conducted once in every six months compulsorily, preferably within the dates prescribed by the University.",
-                                    "No request for extension of any of these deadlines will be entertained/forwarded except for genuine reasons and is completely at the discretion of the Principal, BEC.",
-                                    "The research scholar is expected to assist the guide to submit minimum of one research proposal for funding during his Ph.D. tenure, preferably after completion of the comprehensive exam.",
-                                    "Full-time scholars should apply for leave and seek prior permission of Guide and HOD, subjected to condition that, maximum of 15 days of leave per year.",
-                                    "All the documents seeking the approval/signature of the Principal should have a covering letter addressed to the Principal, duly forwarded by Guide, HOD, and Dean R&D.",
-                                    "All the communications to the VTU/outside the college should have a covering letter addressed to the concerned authority by the Principal, or duly forwarded by the Principal.",
-                                ].map((item, index) => (
-                                    <li key={index} className="flex items-start text-gray-700">
-                                        <ChevronRight className="w-4 h-4 text-orange-400 mr-2 shrink-0 mt-1" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <Separator className="bg-orange-100" />
+                            <div className="bg-slate-50/50 rounded-2xl p-6 border border-slate-100">
+                                <h4 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                                    <ShieldCheck className="w-5 h-5 text-orange-500" />
+                                    General Obligations
+                                </h4>
+                                <ul className="space-y-3">
+                                    {[
+                                        "Deadlines for coursework, viva voce, synopsis & thesis must be strictly adhered to.",
+                                        "Half-yearly progress review meetings by DRC must be conducted every six months.",
+                                        "No extension of deadlines without genuine reasons and Principal's discretion.",
+                                        "Scholars must assist guides in submitting at least one research proposal for funding.",
+                                        "Leave limited to 15 days/year (Full-time); prior permission required.",
+                                        "All documents to Principal must be forwarded by Guide, HOD, and Dean R&D.",
+                                    ].map((item, index) => (
+                                        <li key={index} className="flex items-start text-slate-600 text-sm">
+                                            <ChevronRight className="w-4 h-4 text-orange-300 mr-2 shrink-0 mt-0.5" />
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
 
                             <div className="grid md:grid-cols-2 gap-6">
-                                <div className="bg-orange-50/30 p-5 rounded-lg border border-orange-100">
-                                    <h4 className="font-bold text-gray-900 mb-3 flex items-center">
-                                        <span className="w-2 h-6 bg-orange-400 rounded-sm mr-2"></span>
-                                        Part-time Research Scholars
+                                {/* Part Time */}
+                                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                                    <h4 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                                        <Users className="w-5 h-5 text-amber-500" />
+                                        Part-time Scholars
                                     </h4>
-                                    <ul className="space-y-3 text-sm text-gray-700">
-                                        <li className="flex items-start">
-                                            <span className="mr-2 text-orange-500">•</span>
-                                            Have to be present at least for 15 days in the research centre during each semester, preferably before the doctoral committee review presentation.
+                                    <ul className="space-y-4 text-sm text-slate-600">
+                                        <li className="flex gap-3">
+                                            <div className="w-6 h-6 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-xs font-bold shrink-0">1</div>
+                                            <span className="leading-relaxed">Present at least 15 days/semester in research centre, before review.</span>
                                         </li>
-                                        <li className="flex items-start">
-                                            <span className="mr-2 text-orange-500">•</span>
-                                            Have to sign in the attendance register and give biometric during their visit to the research centre.
+                                        <li className="flex gap-3">
+                                            <div className="w-6 h-6 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-xs font-bold shrink-0">2</div>
+                                            <span className="leading-relaxed">Sign attendance & biometric during visits.</span>
                                         </li>
-                                        <li className="flex items-start">
-                                            <span className="mr-2 text-orange-500">•</span>
-                                            If employed, produce NOC and willingness from employer to provide minimum one month leave per year. (VTU PhD regulations 2017)
+                                        <li className="flex gap-3">
+                                            <div className="w-6 h-6 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-xs font-bold shrink-0">3</div>
+                                            <span className="leading-relaxed">Provide Employer NOC & willingness for 1 month leave/year.</span>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div className="bg-orange-50/30 p-5 rounded-lg border border-orange-100">
-                                    <h4 className="font-bold text-gray-900 mb-3 flex items-center">
-                                        <span className="w-2 h-6 bg-orange-400 rounded-sm mr-2"></span>
-                                        Full-time Research Scholars
+                                {/* Full Time */}
+                                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                                    <h4 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                                        <GraduationCap className="w-5 h-5 text-orange-500" />
+                                        Full-time Scholars
                                     </h4>
-                                    <ul className="space-y-3 text-sm text-gray-700">
-                                        <li className="flex items-start">
-                                            <span className="mr-2 text-orange-500">•</span>
-                                            Sign in attendance register and give biometric on all working days.
+                                    <ul className="space-y-4 text-sm text-slate-600">
+                                        <li className="flex gap-3">
+                                            <div className="w-6 h-6 rounded-full bg-orange-50 text-orange-600 flex items-center justify-center text-xs font-bold shrink-0">1</div>
+                                            <span className="leading-relaxed">Daily attendance & biometric on all working days.</span>
                                         </li>
-                                        <li className="flex items-start">
-                                            <span className="mr-2 text-orange-500">•</span>
-                                            If employed, produce NOC and 3 years study leave; cannot take other full-time jobs.
+                                        <li className="flex gap-3">
+                                            <div className="w-6 h-6 rounded-full bg-orange-50 text-orange-600 flex items-center justify-center text-xs font-bold shrink-0">2</div>
+                                            <span className="leading-relaxed">Provide NOC & 3 years study leave if employed. No other jobs allowed.</span>
                                         </li>
-                                        <li className="flex items-start">
-                                            <span className="mr-2 text-orange-500">•</span>
-                                            If unemployed, can apply for scholarships/fellowships with intimation to Institute/University.
+                                        <li className="flex gap-3">
+                                            <div className="w-6 h-6 rounded-full bg-orange-50 text-orange-600 flex items-center justify-center text-xs font-bold shrink-0">3</div>
+                                            <span className="leading-relaxed">Unemployed can apply for scholarships with intimation.</span>
                                         </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 text-sm text-gray-700 space-y-2">
-                                <p className="font-semibold text-gray-900 mb-2">Additional Requirements for Scholars:</p>
-                                <p>• Submit thesis within 6 years from registration.</p>
-                                <p>• Compulsory publication of at least two journal papers (Scopus/Web of Science) for approval.</p>
-                                <p>• Affiliation must be mentioned as "BEC" in publications.</p>
-                                <p>• Faculty registered for Ph.D. outside BEC must also mention BEC affiliation and present work progress every six months.</p>
-                                <p>• Enclose all relevant documents (registration, coursework, comprehensive etc.) when seeking permission for final thesis submission.</p>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </section>
-
-                {/* 4. Guidelines for DRC members & Meetings */}
-                <section id="drc-guidelines">
-                    <Card className="border-orange-100 shadow-sm">
-                        <CardHeader className="bg-orange-50/50 border-b border-orange-100">
-                            <CardTitle className="flex items-center text-xl font-bold text-gray-900">
-                                <span className="bg-orange-100 text-orange-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">4-5</span>
-                                Guidelines for Doctoral Review Committee (DRC)
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 space-y-6">
-                            <div>
-                                <h4 className="font-bold text-gray-800 mb-3">Committee Formation & Members</h4>
-                                <ul className="space-y-2 text-gray-700 list-disc list-inside marker:text-orange-400">
-                                    <li>List of at least 4 external experts (one from IIT/NIT) submitted to Principal.</li>
-                                    <li>Principal approves/suggests experts.</li>
-                                    <li>Guides must ensure all DRC members are present during presentations.</li>
-                                    <li>If HOD cannot attend, a senior faculty must be nominated.</li>
-                                    <li>If HOD/Principal is supervisor, appropriate senior faculty/Dean (R&D) substitutes as Chair/Head.</li>
-                                    <li>HOD/Guide ensures significant faculty and student presence (25% faculty, 50% students) during presentations.</li>
-                                </ul>
-                            </div>
-
-                            <Separator />
-
-                            <div>
-                                <h4 className="font-bold text-gray-800 mb-3">Conduction of Meetings</h4>
-                                <p className="text-gray-600 mb-3 text-sm">Scholar applies for review with 6-month progress report at least 3 days in advance, comprising:</p>
-                                <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
-                                    <ul className="list-disc list-inside space-y-1 marker:text-gray-400">
-                                        <li>Objectives & Brief Review</li>
-                                        <li>Work Progress since last meeting</li>
-                                        <li>Methodology, Results, Discussion</li>
-                                        <li>Future work plan</li>
-                                    </ul>
-                                    <ul className="list-disc list-inside space-y-1 marker:text-gray-400">
-                                        <li>List of papers communicated/published</li>
-                                        <li>Conference presentations</li>
-                                        <li>Copies of accepted papers</li>
-                                        <li>Attendance copy</li>
                                     </ul>
                                 </div>
                             </div>
                         </CardContent>
                     </Card>
-                </section>
+                </motion.section>
 
-                {/* 6-7. Viva-voce & Seminars */}
-                <section id="viva-seminars">
-                    <Card className="border-orange-100 shadow-sm">
-                        <CardHeader className="bg-orange-50/50 border-b border-orange-100">
-                            <CardTitle className="flex items-center text-xl font-bold text-gray-900">
-                                <span className="bg-orange-100 text-orange-600 w-8 h-8 rounded-full flex items-center justify-center mr-3 text-sm">6-7</span>
-                                Comprehensive Viva-Voce & Open Seminars
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 grid md:grid-cols-2 gap-8">
+                {/* 4. DRC & Meetings */}
+                <motion.section
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    id="drc-guidelines"
+                >
+                    <Card className="border-slate-100 shadow-lg overflow-hidden">
+                        <div className="bg-gradient-to-r from-amber-50 to-white px-8 py-6 border-b border-amber-100 flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-xl shadow-sm">4</div>
+                            <h2 className="text-2xl font-bold text-slate-900">Doctoral Review Committee (DRC)</h2>
+                        </div>
+                        <CardContent className="p-8 grid md:grid-cols-2 gap-8">
                             <div>
-                                <h4 className="font-bold text-lg text-gray-800 mb-3">Comprehensive Viva-Voce</h4>
-                                <ul className="space-y-2 text-gray-700 list-disc list-inside marker:text-orange-400 text-sm">
-                                    <li>Scholar informs Head of institution for readiness.</li>
-                                    <li>Guide invites 1-2 experts.</li>
-                                    <li>Report format: Work completed, Suggestions, Recommendations.</li>
-                                    <li>Online presentations require examiner consent letter/email.</li>
+                                <h4 className="font-bold text-slate-800 mb-4 pb-2 border-b border-slate-100">Committee Formation</h4>
+                                <ul className="space-y-3 text-slate-600 text-sm">
+                                    <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 shrink-0" />4 external experts (one IIT/NIT) list submitted to Principal.</li>
+                                    <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 shrink-0" />Principal approves experts.</li>
+                                    <li className="flex gap-2"><div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 shrink-0" />Significant faculty/student presence (25% / 50%) required.</li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 className="font-bold text-lg text-gray-800 mb-3">Open Seminars & Colloquium</h4>
-                                <ul className="space-y-2 text-gray-700 list-disc list-inside marker:text-orange-400 text-sm">
-                                    <li>Apply stating readiness with report signed by Guide.</li>
-                                    <li>Complete work presented in pre-submission colloquium.</li>
-                                    <li>Committee approval sought for thesis submission.</li>
+                                <h4 className="font-bold text-slate-800 mb-4 pb-2 border-b border-slate-100">Meeting Protocols</h4>
+                                <p className="text-slate-500 text-sm mb-3 font-medium">Scholar must apply 3 days in advance with:</p>
+                                <ul className="grid grid-cols-1 gap-2 text-slate-600 text-xs font-mono bg-slate-50 p-4 rounded-lg">
+                                    <li>[ ] Objectives & Review</li>
+                                    <li>[ ] Work Progress Report</li>
+                                    <li>[ ] Methodology & Results</li>
+                                    <li>[ ] Publications List</li>
+                                    <li>[ ] Future Plans</li>
                                 </ul>
                             </div>
                         </CardContent>
                     </Card>
-                </section>
+                </motion.section>
 
-                {/* 8. Summary */}
-                <section id="summary">
-                    <div className="bg-gray-900 text-white rounded-xl p-8 shadow-lg">
-                        <div className="flex items-center mb-6">
-                            <Info className="w-6 h-6 text-orange-400 mr-3" />
-                            <h3 className="text-2xl font-bold">Summary</h3>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div>
-                                <h4 className="text-orange-200 font-semibold mb-3 uppercase tracking-wider text-sm">Objectives</h4>
-                                <ul className="space-y-2 text-gray-300">
-                                    <li>• Bring discipline & accountability.</li>
-                                    <li>• Promote research culture & interdisciplinary work.</li>
-                                    <li>• Maintain ethics and integrity.</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 className="text-orange-200 font-semibold mb-3 uppercase tracking-wider text-sm">Mandates</h4>
-                                <ul className="space-y-2 text-gray-300">
-                                    <li>• Compulsory application for research funding.</li>
-                                    <li>• Minimum 2 peer-reviewed publications (Scopus/Web of Science).</li>
-                                    <li>• Monthly submission of attendance database to Dean R&D.</li>
-                                </ul>
-                            </div>
-                        </div>
+                {/* 5. Viva & Seminars */}
+                <motion.section
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    id="viva-seminars"
+                >
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <Card className="bg-slate-900 text-white border-none shadow-xl">
+                            <CardContent className="p-8 flex flex-col items-center text-center">
+                                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur">
+                                    <Mic2 className="w-8 h-8 text-orange-200" />
+                                </div>
+                                <h4 className="text-xl font-bold mb-4">Comprehensive Viva-Voce</h4>
+                                <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                                    Scholar informs readiness. Guide invites experts. Report focuses on work completed and recommendations.
+                                </p>
+                            </CardContent>
+                        </Card>
+
+                        <Card className="bg-orange-600 text-white border-none shadow-xl">
+                            <CardContent className="p-8 flex flex-col items-center text-center">
+                                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur">
+                                    <Users className="w-8 h-8 text-orange-100" />
+                                </div>
+                                <h4 className="text-xl font-bold mb-4">Open Seminars & Colloquium</h4>
+                                <p className="text-orange-50 text-sm leading-relaxed mb-6">
+                                    Pre-submission colloquium presenting complete work. Committee approval required for final thesis submission.
+                                </p>
+                            </CardContent>
+                        </Card>
                     </div>
-                </section>
-
+                </motion.section>
             </div>
         </div>
     );

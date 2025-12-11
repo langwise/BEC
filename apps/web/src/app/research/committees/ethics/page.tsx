@@ -2,40 +2,15 @@
 
 import { PageHeader } from "@/components/placements/page-header";
 import { motion } from "motion/react";
-import { User2, CheckCircle2 } from "lucide-react";
+import { User2, CheckCircle2, Scale, Shield, ChevronRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-// Data extracted from the image
 const committeeMembers = [
-    {
-        name: "Dr. S. S. Injaganeri",
-        designation: "Principal",
-        affiliation: "BEC Bagalkote",
-        role: "Chairman",
-    },
-    {
-        name: "Dr. Veena S. Soraganvi",
-        designation: "Dean (R&D)",
-        affiliation: "BEC Bagalkote",
-        role: "Member",
-    },
-    {
-        name: "Dr. P. N. Kulkarni",
-        designation: "Dean (Academic)",
-        affiliation: "BEC Bagalkote",
-        role: "Member",
-    },
-    {
-        name: "Dr. Bharti S. Meti",
-        designation: "Professor & Head",
-        affiliation: "Biotechnology",
-        role: "Member",
-    },
-    {
-        name: "Dr. S. G. Kambalimath",
-        designation: "Assoc. Professor",
-        affiliation: "ECE Dept. BEC Bagalkote",
-        role: "Member Secretary",
-    },
+    { name: "Dr. S. S. Injaganeri", designation: "Principal", affiliation: "BEC Bagalkote", role: "Chairman", bg: "bg-orange-50", color: "text-orange-600" },
+    { name: "Dr. Veena S. Soraganvi", designation: "Dean (R&D)", affiliation: "BEC Bagalkote", role: "Member", bg: "bg-slate-50", color: "text-slate-600" },
+    { name: "Dr. P. N. Kulkarni", designation: "Dean (Academic)", affiliation: "BEC Bagalkote", role: "Member", bg: "bg-slate-50", color: "text-slate-600" },
+    { name: "Dr. Bharti S. Meti", designation: "Professor & Head", affiliation: "Biotechnology", role: "Member", bg: "bg-slate-50", color: "text-slate-600" },
+    { name: "Dr. S. G. Kambalimath", designation: "Assoc. Professor", affiliation: "ECE Dept. BEC Bagalkote", role: "Member Secretary", bg: "bg-amber-50", color: "text-amber-600" },
 ];
 
 const rolesAndResponsibilities = [
@@ -50,75 +25,86 @@ const rolesAndResponsibilities = [
 
 export default function EthicsCommitteePage() {
     return (
-        <div className="space-y-12 max-w-7xl mx-auto">
-            {/* Header Section */}
-            <PageHeader
-                title="Research Ethics Committee"
-                description="Upholding integrity, protecting rights, and ensuring ethical standards in all research endeavors."
-            />
+        <div className="space-y-12">
+            {/* Header */}
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-orange-600 to-amber-600 p-10 text-white shadow-xl">
+                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-white/20 rounded-full blur-3xl animate-pulse" />
+                <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="relative z-10 text-center"
+                >
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs font-semibold uppercase tracking-wider mb-4">
+                        <Scale className="w-4 h-4" />
+                        Integrity & Compliance
+                    </div>
+                    <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">Research Ethics Committee</h1>
+                    <p className="text-orange-50 max-w-2xl mx-auto text-lg">
+                        Upholding integrity, protecting rights, and ensuring ethical standards in all research endeavors.
+                    </p>
+                </motion.div>
+            </div>
 
             {/* Members Grid */}
             <section>
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-                >
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
                     {committeeMembers.map((member, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-white rounded-xl shadow-sm border border-orange-100 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow duration-300 group"
+                            className="group h-full"
                         >
-                            {/* Image Placeholder */}
-                            <div className="w-24 h-24 rounded-full bg-orange-50 mb-4 flex items-center justify-center border-2 border-orange-100 group-hover:border-primary transition-colors duration-300">
-                                <User2 className="w-10 h-10 text-orange-300 group-hover:text-primary transition-colors" />
-                            </div>
+                            <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 flex flex-col items-center text-center hover:shadow-xl hover:shadow-orange-100/50 hover:border-orange-100 transition-all duration-300 h-full relative overflow-hidden">
+                                <div className="absolute top-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
 
-                            <h3 className="font-bold text-lg text-gray-900 mb-1">{member.name}</h3>
-                            <div className="text-primary font-medium text-sm mb-2">{member.designation}</div>
-                            <div className="text-gray-500 text-sm mb-4">{member.affiliation}</div>
+                                <div className={cn("w-20 h-20 rounded-2xl mb-6 flex items-center justify-center transition-all duration-300 group-hover:scale-110", member.bg)}>
+                                    <User2 className={cn("w-10 h-10 transition-colors", member.color)} />
+                                </div>
 
-                            <div className="mt-auto pt-4 border-t border-gray-100 w-full">
-                                <span className="inline-block px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-semibold">
-                                    {member.role}
-                                </span>
+                                <h3 className="font-bold text-xl text-slate-900 mb-2 group-hover:text-orange-700 transition-colors">{member.name}</h3>
+                                <div className="text-slate-600 font-medium text-sm mb-1">{member.designation}</div>
+                                <div className="text-slate-400 text-sm mb-6">{member.affiliation}</div>
+
+                                <div className="mt-auto w-full pt-6 border-t border-slate-100">
+                                    <span className="inline-flex items-center px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-bold uppercase tracking-wider group-hover:bg-orange-50 group-hover:text-orange-800 transition-colors">
+                                        {member.role}
+                                    </span>
+                                </div>
                             </div>
                         </motion.div>
                     ))}
-                </motion.div>
+                </div>
             </section>
 
-            {/* Roles & Responsibilities */}
-            <section className="bg-white rounded-2xl p-8 border border-orange-100 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-orange-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-50" />
+            {/* Responsibilities */}
+            <section className="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-orange-50/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                <div className="relative z-10 max-w-4xl mx-auto">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                        <Shield className="w-6 h-6 text-orange-600" />
+                        Committee Mandate
+                    </h2>
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-8 relative z-10 flex items-center gap-3">
-                    <span className="w-1 h-8 bg-primary rounded-full"></span>
-                    Roles and Responsibilities
-                </h2>
-
-                <div className="grid gap-4 relative z-10">
-                    {rolesAndResponsibilities.map((role, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.3 + (index * 0.05) }}
-                            className="flex items-start gap-4 p-4 rounded-lg hover:bg-orange-50/50 transition-colors duration-200"
-                        >
-                            <div className="mt-1 shrink-0">
-                                <CheckCircle2 className="w-5 h-5 text-primary" />
-                            </div>
-                            <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                                {role}
-                            </p>
-                        </motion.div>
-                    ))}
+                    <div className="space-y-4">
+                        {rolesAndResponsibilities.map((role, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.3 + (index * 0.05) }}
+                                className="flex gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-orange-100 transition-colors"
+                            >
+                                <div className="shrink-0 mt-0.5">
+                                    <CheckCircle2 className="w-5 h-5 text-orange-500" />
+                                </div>
+                                <p className="text-slate-700 leading-relaxed text-sm md:text-base">
+                                    {role}
+                                </p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </section>
         </div>
