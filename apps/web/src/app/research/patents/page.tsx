@@ -2,8 +2,9 @@
 
 import { PageHeader } from "@/components/placements/page-header";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, CheckCircle, Clock, FileText, Info } from "lucide-react";
+import { motion } from "motion/react";
+import { Calendar, CheckCircle, Clock, FileText, Info, Award, Ribbon, Scroll } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function PatentsPage() {
     const patents = [
@@ -63,76 +64,113 @@ export default function PatentsPage() {
         },
     ];
 
-    const getStatusColor = (status: string) => {
-        if (status.includes("granted") || status.includes("In force")) return "bg-green-100 text-green-700 border-green-200";
-        if (status.includes("Waiting") || status.includes("Filed") || status.includes("Published")) return "bg-blue-50 text-blue-700 border-blue-200";
-        return "bg-gray-100 text-gray-700 border-gray-200";
-    };
-
-    const getStatusIcon = (status: string) => {
-        if (status.includes("granted") || status.includes("In force")) return <CheckCircle className="w-3 h-3 mr-1" />;
-        if (status.includes("Waiting") || status.includes("Filed") || status.includes("Published")) return <Clock className="w-3 h-3 mr-1" />;
-        return <Info className="w-3 h-3 mr-1" />;
+    const getStatusConfig = (status: string) => {
+        if (status.includes("granted") || status.includes("In force")) return { color: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: Award };
+        if (status.includes("Waiting") || status.includes("Filed") || status.includes("Published")) return { color: "bg-blue-50 text-blue-700 border-blue-200", icon: Clock };
+        return { color: "bg-slate-100 text-slate-700 border-slate-200", icon: Info };
     };
 
     return (
-        <div className="space-y-12">
-            <PageHeader
-                title="Patents"
-                description="Innovation and intellectual property contributions from our research community."
-            />
+        <div className="space-y-16">
+            {/* Hero Section */}
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8 md:p-12 text-white shadow-2xl">
+                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-orange-500/10 rounded-full blur-3xl" />
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="relative z-10"
+                >
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-orange-200 text-xs font-semibold uppercase tracking-wider mb-6">
+                        <Ribbon className="w-4 h-4" />
+                        Intellectual Property
+                    </div>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Patents & Innovation</h1>
+                    <p className="text-slate-400 max-w-2xl text-lg leading-relaxed">
+                        Celebrating the inventive spirit of our research community through awarded patents and published discoveries.
+                    </p>
+                </motion.div>
+            </div>
 
+            {/* Patents Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {patents.map((patent, index) => (
-                    <Card key={index} className="flex flex-col h-full border-orange-100 hover:border-orange-200 hover:shadow-md transition-all duration-300">
-                        <CardHeader className="bg-orange-50/50 border-b border-orange-50 pb-4">
-                            <div className="flex flex-wrap items-start justify-between gap-3">
-                                <Badge variant="outline" className="bg-white text-orange-600 border-orange-200 font-medium">
-                                    {patent.type} Patent
-                                </Badge>
-                                <Badge variant="secondary" className={`flex items-center ${getStatusColor(patent.status)}`}>
-                                    {getStatusIcon(patent.status)}
-                                    {patent.status}
-                                </Badge>
-                            </div>
-                            <CardTitle className="text-lg font-bold text-gray-900 leading-snug mt-3 min-h-[3.5rem] flex items-center">
-                                {patent.title}
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="pt-6 flex-grow flex flex-col gap-4">
-                            <div className="grid grid-cols-2 gap-4 text-sm">
-                                <div>
-                                    <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1">Application No.</p>
-                                    <div className="flex items-center text-gray-800 font-medium">
-                                        <FileText className="w-4 h-4 mr-2 text-orange-400" />
-                                        {patent.appNo}
+                {patents.map((patent, index) => {
+                    const statusConfig = getStatusConfig(patent.status);
+                    const StatusIcon = statusConfig.icon;
+                    const isGranted = patent.status.includes("granted") || patent.status.includes("In force");
+
+                    return (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.1 }}
+                            className="h-full"
+                        >
+                            <div className={cn(
+                                "group h-full relative bg-white rounded-2xl border transition-all duration-300 flex flex-col hover:shadow-xl overflow-hidden",
+                                isGranted ? "border-emerald-100/50 hover:border-emerald-300" : "border-slate-200 hover:border-blue-300"
+                            )}>
+                                {/* Texture Background */}
+                                <div className="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none" />
+
+                                {isGranted && (
+                                    <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-bl-full -mr-10 -mt-10 blur-xl group-hover:bg-emerald-500/20 transition-colors" />
+                                )}
+
+                                <div className="p-8 relative z-10 flex flex-col h-full">
+                                    {/* Top Metadata */}
+                                    <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+                                        <Badge variant="secondary" className="bg-slate-50 text-slate-600 border-slate-200 font-medium px-3 py-1.5">
+                                            {patent.type} Patent
+                                        </Badge>
+                                        <Badge className={cn("px-3 py-1.5 flex items-center gap-1.5", statusConfig.color)}>
+                                            <StatusIcon className="w-3.5 h-3.5" />
+                                            {patent.status}
+                                        </Badge>
+                                    </div>
+
+                                    {/* Scroll Icon for decoration - subtle */}
+                                    <div className="absolute top-8 right-8 text-slate-100 group-hover:text-slate-200 transition-colors pointer-events-none">
+                                        <Scroll className="w-16 h-16" />
+                                    </div>
+
+                                    {/* Title */}
+                                    <h3 className="text-xl font-bold text-slate-900 mb-6 leading-snug group-hover:text-amber-700 transition-colors pr-8">
+                                        {patent.title}
+                                    </h3>
+
+                                    {/* Details */}
+                                    <div className="mt-auto space-y-4 pt-6 border-t border-slate-100 border-dashed">
+                                        <div className="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <p className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">Application No</p>
+                                                <p className="text-slate-700 font-mono text-sm">{patent.appNo}</p>
+                                            </div>
+                                            <div className="text-right">
+                                                <p className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">Filing Date</p>
+                                                <p className="text-slate-700 font-medium text-sm">{patent.dateApp}</p>
+                                            </div>
+                                        </div>
+
+                                        {isGranted && (
+                                            <div className="bg-emerald-50/50 rounded-lg p-3 border border-emerald-100 flex items-center justify-between">
+                                                <span className="text-emerald-700 text-xs font-bold uppercase">Awarded On</span>
+                                                <span className="text-emerald-800 font-bold">{patent.dateAward}</span>
+                                            </div>
+                                        )}
+
+                                        {patent.remarks && patent.remarks !== "-" && (
+                                            <div>
+                                                <p className="text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">Details / People</p>
+                                                <p className="text-slate-600 text-sm leading-relaxed">{patent.remarks}</p>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
-                                <div>
-                                    <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1">Filing Date</p>
-                                    <div className="flex items-center text-gray-800 font-medium">
-                                        <Calendar className="w-4 h-4 mr-2 text-orange-400" />
-                                        {patent.dateApp}
-                                    </div>
-                                </div>
                             </div>
-
-                            {patent.dateAward && patent.dateAward !== "-" && (
-                                <div className="bg-green-50 p-3 rounded-lg border border-green-100 mt-2">
-                                    <p className="text-green-700 text-xs font-bold uppercase tracking-wider mb-1">Awarded On</p>
-                                    <p className="font-semibold text-green-900">{patent.dateAward}</p>
-                                </div>
-                            )}
-
-                            {(patent.remarks && patent.remarks !== "-") && (
-                                <div className="mt-auto pt-4 border-t border-gray-100">
-                                    <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-1">Remarks / Details</p>
-                                    <p className="text-sm text-gray-700 italic leading-relaxed">{patent.remarks}</p>
-                                </div>
-                            )}
-                        </CardContent>
-                    </Card>
-                ))}
+                        </motion.div>
+                    );
+                })}
             </div>
         </div>
     );
