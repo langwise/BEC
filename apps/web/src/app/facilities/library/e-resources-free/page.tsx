@@ -1,7 +1,7 @@
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+
+
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -99,14 +99,14 @@ export default function EResourcesFreePage() {
 
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
-      
-      <LibraryBreadcrumb 
+
+
+      <LibraryBreadcrumb
         items={[
           { label: "Facilities", href: "/facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "E-Resources (Free)" }
-        ]} 
+        ]}
       />
 
       <LibraryPageHeader
@@ -127,13 +127,13 @@ export default function EResourcesFreePage() {
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
                   <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                    Explore our curated collection of free online resources, open-access journals, and educational 
-                    platforms. These resources are freely accessible to everyone and provide valuable learning materials 
+                    Explore our curated collection of free online resources, open-access journals, and educational
+                    platforms. These resources are freely accessible to everyone and provide valuable learning materials
                     across various disciplines.
                   </p>
                   <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded-r">
                     <p className="text-sm text-green-900">
-                      <strong>Open Access:</strong> All resources listed here are freely accessible without any 
+                      <strong>Open Access:</strong> All resources listed here are freely accessible without any
                       subscription. However, some platforms may require free registration.
                     </p>
                   </div>
@@ -150,7 +150,7 @@ export default function EResourcesFreePage() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }

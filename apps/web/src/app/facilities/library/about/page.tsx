@@ -1,8 +1,8 @@
 // File: src/app/facilities/library/about/page.tsx
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+
+
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -12,14 +12,14 @@ import { BookOpen, Target, Eye, Award, ChevronRight } from "lucide-react";
 export default function AboutLibraryPage() {
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
-      
-      <LibraryBreadcrumb 
+
+
+      <LibraryBreadcrumb
         items={[
           { label: "Facilities", href: "/facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "About" }
-        ]} 
+        ]}
       />
 
       <LibraryPageHeader
@@ -44,23 +44,23 @@ export default function AboutLibraryPage() {
                   <div className="prose prose-lg max-w-none">
                     <div className="bg-stone-50 border-l-4 border-primary p-6 rounded-r-lg mb-6">
                       <p className="text-lg text-gray-700 leading-relaxed mb-0">
-                        The Central Library at Basaveshwar Engineering College serves as the academic heart of the institution, 
-                        supporting teaching, learning, and research activities. Established alongside the college in 1963, 
-                        the library has grown into a comprehensive information resource center with over <strong>1,40,000 volumes</strong> 
+                        The Central Library at Basaveshwar Engineering College serves as the academic heart of the institution,
+                        supporting teaching, learning, and research activities. Established alongside the college in 1963,
+                        the library has grown into a comprehensive information resource center with over <strong>1,40,000 volumes</strong>
                         covering diverse engineering disciplines and allied sciences.
                       </p>
                     </div>
 
                     <p className="text-gray-700 leading-relaxed mb-4">
-                      Our library is committed to providing state-of-the-art facilities and resources to students, faculty, 
-                      and researchers. With a perfect blend of traditional print resources and modern digital collections, 
-                      we ensure that our users have access to the latest information and knowledge resources essential for 
+                      Our library is committed to providing state-of-the-art facilities and resources to students, faculty,
+                      and researchers. With a perfect blend of traditional print resources and modern digital collections,
+                      we ensure that our users have access to the latest information and knowledge resources essential for
                       academic excellence.
                     </p>
 
                     <p className="text-gray-700 leading-relaxed">
-                      The library operates with a user-centric approach, offering personalized services and maintaining 
-                      extended hours to accommodate the diverse needs of our academic community. Our collection is 
+                      The library operates with a user-centric approach, offering personalized services and maintaining
+                      extended hours to accommodate the diverse needs of our academic community. Our collection is
                       continuously updated to reflect current trends in engineering education and research.
                     </p>
                   </div>
@@ -78,8 +78,8 @@ export default function AboutLibraryPage() {
                       <h2 className="text-2xl font-bold text-gray-900">Our Vision</h2>
                     </div>
                     <p className="text-gray-700 leading-relaxed">
-                      To be recognized as a premier library and information center that fosters innovation, 
-                      supports research excellence, and cultivates lifelong learning habits among students 
+                      To be recognized as a premier library and information center that fosters innovation,
+                      supports research excellence, and cultivates lifelong learning habits among students
                       and faculty through world-class resources and services.
                     </p>
                   </div>
@@ -122,7 +122,7 @@ export default function AboutLibraryPage() {
                     <Award className="h-8 w-8 text-primary" />
                     Key Features & Services
                   </h2>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     {[
                       {
@@ -171,7 +171,7 @@ export default function AboutLibraryPage() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }
