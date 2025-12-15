@@ -1,7 +1,7 @@
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+
+
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -12,14 +12,14 @@ import { Button } from "@/components/ui/button";
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
-      
-      <LibraryBreadcrumb 
+
+
+      <LibraryBreadcrumb
         items={[
           { label: "Facilities", href: "/facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "Contact" }
-        ]} 
+        ]}
       />
 
       <LibraryPageHeader
@@ -175,7 +175,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }

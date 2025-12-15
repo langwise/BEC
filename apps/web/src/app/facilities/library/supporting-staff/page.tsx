@@ -1,7 +1,7 @@
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+
+
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -37,14 +37,14 @@ export default function SupportingStaffPage() {
 
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
-      
-      <LibraryBreadcrumb 
+
+
+      <LibraryBreadcrumb
         items={[
           { label: "Facilities", href: "/facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "Supporting Staff" }
-        ]} 
+        ]}
       />
 
       <LibraryPageHeader
@@ -65,7 +65,7 @@ export default function SupportingStaffPage() {
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    Our supporting staff plays a crucial role in maintaining the day-to-day operations of the library. 
+                    Our supporting staff plays a crucial role in maintaining the day-to-day operations of the library.
                     They assist in book circulation, shelving, maintenance, and providing general support to library users.
                   </p>
                 </div>
@@ -81,7 +81,7 @@ export default function SupportingStaffPage() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }
