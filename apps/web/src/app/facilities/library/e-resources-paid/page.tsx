@@ -1,7 +1,7 @@
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+
+
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -71,14 +71,14 @@ export default function EResourcesPaidPage() {
 
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
-      
-      <LibraryBreadcrumb 
+
+
+      <LibraryBreadcrumb
         items={[
           { label: "Facilities", href: "/facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "E-Resources (Paid)" }
-        ]} 
+        ]}
       />
 
       <LibraryPageHeader
@@ -99,13 +99,13 @@ export default function EResourcesPaidPage() {
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
                   <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                    The library subscribes to various premium e-resources providing access to millions of research 
-                    articles, journals, and databases. These resources are accessible on campus through IP-based 
+                    The library subscribes to various premium e-resources providing access to millions of research
+                    articles, journals, and databases. These resources are accessible on campus through IP-based
                     authentication.
                   </p>
                   <div className="bg-orange-50 border-l-4 border-orange-600 p-4 rounded-r">
                     <p className="text-sm text-orange-900">
-                      <strong>Access Note:</strong> All paid e-resources are accessible within the campus network. 
+                      <strong>Access Note:</strong> All paid e-resources are accessible within the campus network.
                       For remote access, please contact the library for VPN credentials.
                     </p>
                   </div>
@@ -122,7 +122,7 @@ export default function EResourcesPaidPage() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }

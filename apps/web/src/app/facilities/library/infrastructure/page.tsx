@@ -1,7 +1,7 @@
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+
+
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -55,14 +55,14 @@ export default function InfrastructurePage() {
 
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
-      
-      <LibraryBreadcrumb 
+
+
+      <LibraryBreadcrumb
         items={[
           { label: "Facilities", href: "/facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "Infrastructure" }
-        ]} 
+        ]}
       />
 
       <LibraryPageHeader
@@ -83,9 +83,9 @@ export default function InfrastructurePage() {
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    The Central Library building is spread across two floors with modern infrastructure 
-                    designed to provide an excellent learning environment. The library features state-of-the-art 
-                    facilities including spacious reading halls, digital library section, group study rooms, 
+                    The Central Library building is spread across two floors with modern infrastructure
+                    designed to provide an excellent learning environment. The library features state-of-the-art
+                    facilities including spacious reading halls, digital library section, group study rooms,
                     and advanced technological support.
                   </p>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-stone-200">
@@ -148,7 +148,7 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }
