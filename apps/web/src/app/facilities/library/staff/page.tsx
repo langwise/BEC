@@ -1,7 +1,7 @@
 "use client";
 
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+
+
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -39,14 +39,14 @@ export default function StaffProfilePage() {
 
   return (
     <div className="min-h-screen bg-stone-50">
-      <Header />
-      
-      <LibraryBreadcrumb 
+
+
+      <LibraryBreadcrumb
         items={[
           { label: "Facilities", href: "/facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "Staff Profile" }
-        ]} 
+        ]}
       />
 
       <LibraryPageHeader
@@ -67,8 +67,8 @@ export default function StaffProfilePage() {
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    Our library team comprises highly qualified and experienced professionals dedicated to 
-                    providing excellent library services. Each member brings unique expertise and commitment 
+                    Our library team comprises highly qualified and experienced professionals dedicated to
+                    providing excellent library services. Each member brings unique expertise and commitment
                     to supporting the academic and research needs of our community.
                   </p>
                 </div>
@@ -84,7 +84,7 @@ export default function StaffProfilePage() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }

@@ -122,7 +122,7 @@ export default function BiotechResearchPage() {
         <div className="lg:col-span-8 space-y-8">
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
@@ -216,31 +216,31 @@ export default function BiotechResearchPage() {
           <table className="w-full min-w-[1400px] text-left border-collapse">
             <thead>
               <tr className="bg-slate-50/50 border-b border-slate-100">
-                <th className="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap w-16">Sl.</th>
-                <th className="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Scholar Name</th>
-                <th className="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Guide</th>
-                <th className="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Co-Guide</th>
-                <th className="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">USN</th>
-                <th className="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider min-w-[400px]">Research Title</th>
-                <th className="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">Status</th>
-                <th className="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">Remarks</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap w-16">Sl.</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Scholar Name</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Guide</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Co-Guide</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">USN</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider min-w-[400px]">Research Title</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">Status</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap">Remarks</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {scholars.map((scholar) => (
                 <tr key={scholar.usn} className="hover:bg-slate-50/80 transition-colors">
-                  <td className="p-4 text-sm font-medium text-slate-500 whitespace-nowrap">{scholar.slNo}</td>
-                  <td className="p-4 text-sm font-bold text-slate-900 whitespace-nowrap">{scholar.name}</td>
-                  <td className="p-4 text-sm text-slate-600 whitespace-nowrap">{scholar.guide}</td>
-                  <td className="p-4 text-sm text-slate-600 whitespace-nowrap">{scholar.coGuide}</td>
-                  <td className="p-4 text-sm font-mono text-slate-500 whitespace-nowrap">{scholar.usn}</td>
-                  <td className="p-4 text-sm text-slate-700 leading-relaxed">{scholar.title}</td>
-                  <td className="p-4 whitespace-nowrap">
+                  <td className="p-3 md:p-4 text-sm font-medium text-slate-500 whitespace-nowrap">{scholar.slNo}</td>
+                  <td className="p-3 md:p-4 text-sm font-bold text-slate-900 whitespace-nowrap">{scholar.name}</td>
+                  <td className="p-3 md:p-4 text-sm text-slate-600 whitespace-nowrap">{scholar.guide}</td>
+                  <td className="p-3 md:p-4 text-sm text-slate-600 whitespace-nowrap">{scholar.coGuide}</td>
+                  <td className="p-3 md:p-4 text-sm font-mono text-slate-500 whitespace-nowrap">{scholar.usn}</td>
+                  <td className="p-3 md:p-4 text-sm text-slate-700 leading-relaxed">{scholar.title}</td>
+                  <td className="p-3 md:p-4 whitespace-nowrap">
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                       {scholar.status}
                     </span>
                   </td>
-                  <td className="p-4 text-sm text-slate-600 whitespace-nowrap">
+                  <td className="p-3 md:p-4 text-sm text-slate-600 whitespace-nowrap">
                     <span className={cn("inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium",
                       scholar.remarks === "Thesis submitted" ? "bg-green-100 text-green-800" :
                         scholar.remarks === "Fresh registration" ? "bg-purple-100 text-purple-800" :

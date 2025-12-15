@@ -95,12 +95,12 @@ export default function LibraryPage() {
     <div className="min-h-screen bg-stone-50">
 
       {/* Hero Section */}
-      <section className="relative h-[400px] bg-gradient-to-br from-primary via-primary/90 to-accent overflow-hidden">
+      <section className="relative h-[400px] bg-gradient-to-br from-orange-600 via-amber-600 to-orange-700 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/section_2_diagonals.svg')] opacity-10 bg-cover bg-center"></div>
         <div className="container mx-auto px-4 h-full flex items-center relative z-10">
           <FadeIn className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <BookOpen className="h-12 w-12 text-white" />
+              <BookOpen className="h-12 w-12 text-white/90" />
               <h1 className="text-5xl md:text-6xl font-serif font-bold text-white">
                 Central Library
               </h1>
