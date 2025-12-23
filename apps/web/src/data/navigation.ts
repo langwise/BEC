@@ -4,6 +4,7 @@ export const navigationData: NavigationItem[] = [
   {
     title: "Institute",
     items: [
+      { title: "About Sangha", href: "/institute/about-sangha" },
       { title: "About Us", href: "/institute/about" },
       { title: "Awards & Recognitions", href: "/institute/awards" },
       {
@@ -17,6 +18,7 @@ export const navigationData: NavigationItem[] = [
       {
         title: "Campus",
         items: [
+          { title: "Infrastructure", href: "/institute/campus/infrastructure" },
           { title: "How To Reach", href: "/institute/campus/reach" },
           { title: "Working Hours", href: "/institute/campus/hours" },
           { title: "Campus Amenities", href: "/institute/campus/amenities" },
