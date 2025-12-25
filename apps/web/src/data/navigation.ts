@@ -62,7 +62,9 @@ export const navigationData: NavigationItem[] = [
   {
     title: "Academics",
     items: [
+      { title: "Examinations", href: "/academics/examinations" },
       { title: "Academic Office", href: "/academics/office" },
+      { title: "Syllabus", href: "/academics/syllabus" },
       {
         title: "Programmes",
         items: [
@@ -77,6 +79,9 @@ export const navigationData: NavigationItem[] = [
       { title: "Academic Calendar", href: "/academics/calendar" },
       { title: "Departments", href: "/academics/departments" },
       { title: "Convocation", href: "/academics/convocation" },
+      { title: "Documents to Submit", href: "/academics/documents" },
+      { title: "Scholarship Details", href: "/academics/scholarships" },
+      { title: "Hostel Admissions", href: "/academics/hostel" },
     ],
   },
 
