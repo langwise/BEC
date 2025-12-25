@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { PageHeader } from "@/components/placements/page-header";
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -69,9 +70,11 @@ export default function MindhogPage() {
                         <Button className="bg-purple-600 hover:bg-purple-700 text-white shadow-lg shadow-purple-200">
                             Join Mindhog
                         </Button>
-                        <Button variant="outline">
-                            View Activities
-                        </Button>
+                        <Link href="/student-life/activities">
+                            <Button variant="outline">
+                                View Activities
+                            </Button>
+                        </Link>
                     </div>
                 </div>
 
