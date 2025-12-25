@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { PageHeader } from "@/components/placements/page-header";
 import { motion } from "motion/react";
 import {
@@ -117,9 +118,11 @@ export default function StudentLifeOverviewPage() {
                             Basaveshwar Engineering College provides a holistic environment where students thrive not just in classrooms but in every aspect of life. From our sprawling 93-acre green campus to state-of-the-art recreational facilities, BEC is a home away from home.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Button className="bg-orange-600 hover:bg-orange-700 text-white rounded-full px-8">
-                                Explore Hostels
-                            </Button>
+                            <Link href="/student-life/hostels">
+                                <Button className="bg-orange-600 hover:bg-orange-700 text-white rounded-full px-8">
+                                    Explore Hostels
+                                </Button>
+                            </Link>
                             <Button variant="outline" className="rounded-full px-8">
                                 Virtual Tour
                             </Button>

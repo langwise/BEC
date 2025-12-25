@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { PageHeader } from "@/components/placements/page-header";
 import { motion } from "motion/react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -142,9 +143,11 @@ export default function ActivitiesPage() {
                         <p className="text-slate-300 leading-relaxed mb-8">
                             Mindhog is the heart of student creativity at BEC. From coding marathons to musical jam sessions, it's where passions are discovered and talents are honed. Every week features a new activity led by student clubs.
                         </p>
-                        <Button className="bg-purple-600 hover:bg-purple-700 text-white">
-                            Explor Mindhog Clubs
-                        </Button>
+                        <Link href="/student-life/mindhog">
+                            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+                                Explore Mindhog Clubs
+                            </Button>
+                        </Link>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
