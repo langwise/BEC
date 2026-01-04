@@ -12,22 +12,51 @@ import {
   FileText,
   Building2,
   Clipboard,
+  Book,
+  Target,
+  Eye,
+  LucideIcon,
 } from "lucide-react";
 
-const menuItems = [
-  { id: "home", label: "Home", icon: Home },
-  { id: "about", label: "About Department", icon: GraduationCap },
-  { id: "faculty", label: "Teaching Faculty", icon: Users },
-  { id: "staff", label: "Supporting Staff", icon: UsersRound },
-  { id: "timetable", label: "Time Table", icon: Calendar },
-  { id: "syllabus", label: "Scheme & Syllabus", icon: FileText },
-  { id: "infrastructure", label: "Infrastructure", icon: Building2 },
-  { id: "board", label: "Board of Studies", icon: Clipboard },
+// Map string identifiers to icon components
+const iconMap: Record<string, LucideIcon> = {
+  "home": Home,
+  "graduation-cap": GraduationCap,
+  "users": Users,
+  "users-round": UsersRound,
+  "calendar": Calendar,
+  "file-text": FileText,
+  "building-2": Building2,
+  "clipboard": Clipboard,
+  "book": Book,
+  "target": Target,
+  "eye": Eye,
+};
+
+interface SidebarItem {
+    id: string;
+    label: string;
+    icon: string;
+}
+
+interface DepartmentSidebarProps {
+    items?: SidebarItem[];
+    activeId: string;
+    onSelect: (id: string) => void;
+}
+
+const defaultItems: SidebarItem[] = [
+  { id: "home", label: "Home", icon: "home" },
+  { id: "about", label: "About Department", icon: "graduation-cap" },
+  { id: "faculty", label: "Teaching Faculty", icon: "users" },
+  { id: "staff", label: "Supporting Staff", icon: "users-round" },
+  { id: "timetable", label: "Time Table", icon: "calendar" },
+  { id: "syllabus", label: "Scheme & Syllabus", icon: "file-text" },
+  { id: "infrastructure", label: "Infrastructure", icon: "building-2" },
+  { id: "board", label: "Board of Studies", icon: "clipboard" },
 ];
 
-export default function DepartmentSidebar() {
-  const [active, setActive] = useState("home");
-
+export default function DepartmentSidebar({ items = defaultItems, activeId, onSelect }: DepartmentSidebarProps) {
   return (
     <aside className="w-full lg:w-64 shrink-0">
       <div className="sticky top-24">
@@ -36,9 +65,9 @@ export default function DepartmentSidebar() {
         </h2>
         
         <nav className="flex flex-col space-y-1">
-          {menuItems.map((item, index) => {
-            const Icon = item.icon;
-            const isActive = active === item.id;
+          {items.map((item, index) => {
+            const Icon = iconMap[item.icon] || Home; // Fallback to Home if icon not found
+            const isActive = activeId === item.id;
             
             return (
               <motion.button
@@ -46,7 +75,7 @@ export default function DepartmentSidebar() {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.03 }}
-                onClick={() => setActive(item.id)}
+                onClick={() => onSelect(item.id)}
                 className={cn(
                   "group flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 w-full text-left",
                   isActive
