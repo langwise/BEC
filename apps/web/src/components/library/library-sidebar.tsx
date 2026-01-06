@@ -3,13 +3,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { 
-  BookOpen, 
-  Users, 
-  Building2, 
-  Globe, 
-  Link as LinkIcon, 
-  Phone 
+import {
+  BookOpen,
+  Users,
+  Building2,
+  Globe,
+  Link as LinkIcon,
+  Phone,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -66,7 +66,7 @@ export function LibrarySidebar() {
 
   return (
     <aside className="bg-white border border-stone-200 rounded-lg overflow-hidden sticky top-24">
-      <div className="bg-gradient-to-r from-primary to-accent p-4">
+      <div className="bg-linear-to-r from-primary to-accent p-4">
         <h3 className="text-lg font-bold text-white">Library Navigation</h3>
       </div>
       <nav className="p-2">
@@ -74,7 +74,7 @@ export function LibrarySidebar() {
           {libraryLinks.map((link) => {
             const Icon = link.icon;
             const isActive = pathname === link.href;
-            
+
             return (
               <li key={link.href}>
                 <Link
@@ -86,7 +86,7 @@ export function LibrarySidebar() {
                       : "text-gray-700 hover:bg-stone-50 hover:text-primary"
                   )}
                 >
-                  <Icon className="h-4 w-4 flex-shrink-0" />
+                  <Icon className="h-4 w-4 shrink-0" />
                   <span>{link.label}</span>
                 </Link>
               </li>
