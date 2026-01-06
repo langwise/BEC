@@ -7,32 +7,20 @@ const socialLinks = [
   {
     name: "Facebook",
     icon: Facebook,
-    url: "#",
+    url: "https://www.facebook.com/BEC1963",
     color: "bg-[#1877F2] text-white",
   },
   {
     name: "Twitter",
     icon: Twitter,
-    url: "#",
+    url: "https://x.com/1963Bec",
     color: "bg-[#1DA1F2] text-white",
   },
   {
     name: "Instagram",
     icon: Instagram,
-    url: "#",
+    url: "https://www.instagram.com/becbgk_official/",
     color: "bg-[#E4405F] text-white",
-  },
-  {
-    name: "LinkedIn",
-    icon: Linkedin,
-    url: "#",
-    color: "bg-[#0A66C2] text-white",
-  },
-  {
-    name: "YouTube",
-    icon: Youtube,
-    url: "#",
-    color: "bg-[#FF0000] text-white",
   },
 ];
 

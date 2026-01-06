@@ -6,7 +6,9 @@ import {
   Mail,
   Phone,
   MapPin,
+  Instagram,
 } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -15,40 +17,36 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Basaveshwar Engineering College</h3>
+            <h3 className="font-bold text-lg mb-4">
+              Basaveshwar Engineering College
+            </h3>
             <p className="text-secondary-foreground/80 text-sm leading-relaxed mb-4">
-              A premier technical institution established in 1963, dedicated to excellence in education,
-              research, and innovation. Accredited by NBA and NAAC with 'A' grade.
+              A premier technical institution established in 1963, dedicated to
+              excellence in education, research, and innovation. Accredited by
+              NBA and NAAC with 'A' grade.
             </p>
             <div className="flex gap-3">
-              <a
-                href="#"
+              <Link
+                href="https://www.facebook.com/BEC1963"
                 className="hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="https://x.com/1963Bec"
                 className="hover:text-primary transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="https://www.instagram.com/becbgk_official/"
                 className="hover:text-primary transition-colors"
-                aria-label="LinkedIn"
+                aria-label="Instagram"
               >
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="hover:text-primary transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="h-5 w-5" />
-              </a>
+                <Instagram className="h-5 w-5" />
+              </Link>
             </div>
           </div>
 
@@ -57,52 +55,52 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
+                <Link
                   href="/institute/about"
                   className="hover:text-primary transition-colors"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/academics/programmes"
                   className="hover:text-primary transition-colors"
                 >
                   Programmes
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/administration"
+                <Link
+                  href="/administration/governance"
                   className="hover:text-primary transition-colors"
                 >
                   Administration
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/research"
+                <Link
+                  href="/research/about"
                   className="hover:text-primary transition-colors"
                 >
                   Research
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/student-life"
+                <Link
+                  href="/student-life/overview"
                   className="hover:text-primary transition-colors"
                 >
                   Student Life
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/alumni"
                   className="hover:text-primary transition-colors"
                 >
                   Alumni
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -112,52 +110,52 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
+                <Link
                   href="/academics/calendar"
                   className="hover:text-primary transition-colors"
                 >
                   Academic Calendar
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/facilities/library"
                   className="hover:text-primary transition-colors"
                 >
                   Library
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/institute/campus"
+                <Link
+                  href="/facilities/amenities"
                   className="hover:text-primary transition-colors"
                 >
                   Campus
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/facilities"
+                <Link
+                  href="/facilities/library"
                   className="hover:text-primary transition-colors"
                 >
                   Facilities
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/institute/contact"
                   className="hover:text-primary transition-colors"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/administration/disclosures/rti"
                   className="hover:text-primary transition-colors"
                 >
                   RTI
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -169,7 +167,8 @@ export function Footer() {
               <li className="flex gap-2">
                 <MapPin className="h-5 w-5 shrink-0 text-primary" />
                 <span className="text-secondary-foreground/80">
-                  S. Nijalingappa Vidyanagar, Bagalkot - 587102, Karnataka, India
+                  S. Nijalingappa Vidyanagar, Bagalkot - 587102, Karnataka,
+                  India
                 </span>
               </li>
               <li className="flex gap-2">
@@ -190,8 +189,8 @@ export function Footer() {
 
         <div className="border-t border-secondary-foreground/20 mt-10 pt-8 text-center text-sm text-secondary-foreground/70">
           <p>
-            &copy; {new Date().getFullYear()} Basaveshwar Engineering College (Autonomous), Bagalkot. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Basaveshwar Engineering College
+            (Autonomous), Bagalkot. All rights reserved.
           </p>
         </div>
       </div>

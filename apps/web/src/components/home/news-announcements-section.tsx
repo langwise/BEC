@@ -42,9 +42,7 @@ export function NewsAnnouncementsSection() {
   useEffect(() => {
     if (!announcementsData.length) return;
     const id = setInterval(() => {
-      setAnnouncementIndex(
-        (prev) => (prev + 1) % announcementsData.length
-      );
+      setAnnouncementIndex((prev) => (prev + 1) % announcementsData.length);
     }, 6000);
     return () => clearInterval(id);
   }, []);
@@ -71,7 +69,8 @@ export function NewsAnnouncementsSection() {
               News & Announcements
             </h2>
             <p className="text-gray-600 font-medium max-w-md">
-              Stay updated with the latest happenings, achievements, and notices from the campus.
+              Stay updated with the latest happenings, achievements, and notices
+              from the campus.
             </p>
           </div>
           <a
@@ -87,7 +86,7 @@ export function NewsAnnouncementsSection() {
           {/* Left: Top News Carousel */}
           <div className="w-full relative group">
             <div className="relative h-full overflow-hidden rounded-2xl border border-gray-100 shadow-sm bg-white hover:shadow-md transition-shadow duration-300">
-                {/* Image */}
+              {/* Image */}
               <div className="relative w-full h-[450px]">
                 <Image
                   src={topNews.image}
@@ -96,30 +95,31 @@ export function NewsAnnouncementsSection() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-                
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent" />
+
                 {/* Content Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10 flex flex-col justify-end">
-                    <div className="flex items-center gap-3 mb-4">
-                        <span className="px-3 py-1 rounded-full bg-primary text-white text-[11px] font-bold uppercase tracking-wider">
-                            {topNews.category}
-                        </span>
-                        <span className="text-white/80 text-xs font-semibold uppercase tracking-wider">
-                             {topNews.date.day} {topNews.date.month} {topNews.date.year}
-                        </span>
-                    </div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="px-3 py-1 rounded-full bg-primary text-white text-[11px] font-bold uppercase tracking-wider">
+                      {topNews.category}
+                    </span>
+                    <span className="text-white/80 text-xs font-semibold uppercase tracking-wider">
+                      {topNews.date.day} {topNews.date.month}{" "}
+                      {topNews.date.year}
+                    </span>
+                  </div>
 
-                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3 leading-tight">
-                        {topNews.title}
-                    </h3>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-white mb-3 leading-tight">
+                    {topNews.title}
+                  </h3>
 
-                    <p className="text-white/90 text-sm lg:text-base leading-relaxed line-clamp-2 max-w-2xl mb-6">
-                        {topNews.description}
-                    </p>
+                  <p className="text-white/90 text-sm lg:text-base leading-relaxed line-clamp-2 max-w-2xl mb-6">
+                    {topNews.description}
+                  </p>
 
-                     <button className="flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all self-start">
-                        Read Full Story <ChevronRight className="w-4 h-4" />
-                     </button>
+                  <button className="flex items-center gap-2 text-white font-bold text-sm hover:gap-3 transition-all self-start">
+                    Read Full Story <ChevronRight className="w-4 h-4" />
+                  </button>
                 </div>
               </div>
 
@@ -130,8 +130,10 @@ export function NewsAnnouncementsSection() {
                     key={index}
                     onClick={() => setCurrent(index)}
                     className={cn(
-                        "h-1.5 rounded-full transition-all duration-300",
-                        current === index ? "w-6 bg-white" : "w-1.5 bg-white/40 hover:bg-white/60"
+                      "h-1.5 rounded-full transition-all duration-300",
+                      current === index
+                        ? "w-6 bg-white"
+                        : "w-1.5 bg-white/40 hover:bg-white/60"
                     )}
                     aria-label={`Show story ${index + 1}`}
                   />
@@ -142,59 +144,88 @@ export function NewsAnnouncementsSection() {
 
           {/* Right: Announcements Panel */}
           <div className="w-full flex flex-col h-full bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden">
-              <div className="p-6 border-b border-gray-50 flex items-center justify-between">
-                  <h3 className="font-bold text-xl tracking-tight text-gray-900">Latest Notices</h3>
-                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            <div className="p-6 border-b border-gray-50 flex items-center justify-between">
+              <h3 className="font-bold text-xl tracking-tight text-gray-900">
+                Latest Notices
+              </h3>
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            </div>
+
+            <div className="p-6 flex-1 flex flex-col gap-6">
+              {/* Pinned List */}
+              <div className="space-y-3">
+                {pinnedList.map((item) => (
+                  <div
+                    key={item.id}
+                    className="p-4 rounded-xl bg-orange-50/80 border border-orange-100 flex items-start gap-3 transition-colors hover:bg-orange-50"
+                  >
+                    <Pin className="w-4 h-4 text-primary fill-primary mt-1 shrink-0" />
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900 leading-snug mb-1">
+                        {item.title}
+                      </p>
+                      <p className="text-[10px] uppercase tracking-wider text-primary/80 font-bold">
+                        {item.date}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
 
-              <div className="p-6 flex-1 flex flex-col gap-6">
-                 {/* Pinned List */}
-                 <div className="space-y-3">
-                     {pinnedList.map((item) => (
-                         <div key={item.id} className="p-4 rounded-xl bg-orange-50/80 border border-orange-100 flex items-start gap-3 transition-colors hover:bg-orange-50">
-                             <Pin className="w-4 h-4 text-primary fill-primary mt-1 shrink-0" />
-                             <div>
-                                 <p className="text-sm font-semibold text-gray-900 leading-snug mb-1">{item.title}</p>
-                                 <p className="text-[10px] uppercase tracking-wider text-primary/80 font-bold">{item.date}</p>
-                             </div>
-                         </div>
-                     ))}
-                 </div>
+              {/* Divider */}
+              <div className="h-px bg-gray-50 w-full" />
 
-                 {/* Divider */}
-                 <div className="h-px bg-gray-50 w-full" />
-
-                 {/* Slider */}
-                 <div className="relative flex-1 overflow-hidden min-h-[160px]">
-                    <AnimatePresence mode="wait">
-                        <motion.div
-                            key={announcementIndex}
-                            initial={{ y: 20, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: -20, opacity: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="space-y-4 absolute inset-0"
-                        >
-                            {currentAnnouncements.map((item) => (
-                                <div key={item.id} className="group">
-                                    <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1 group-hover:text-primary transition-colors">{item.date}</p>
-                                    <p className="text-sm text-gray-700 font-medium leading-relaxed group-hover:text-gray-900 transition-colors line-clamp-2">{item.title}</p>
-                                </div>
-                            ))}
-                        </motion.div>
-                    </AnimatePresence>
-                 </div>
+              {/* Slider */}
+              <div className="relative flex-1 overflow-hidden min-h-[160px]">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={announcementIndex}
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -20, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="space-y-4 absolute inset-0"
+                  >
+                    {currentAnnouncements.map((item) => (
+                      <div key={item.id} className="group">
+                        <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-1 group-hover:text-primary transition-colors">
+                          {item.date}
+                        </p>
+                        <p className="text-sm text-gray-700 font-medium leading-relaxed group-hover:text-gray-900 transition-colors line-clamp-2">
+                          {item.title}
+                        </p>
+                      </div>
+                    ))}
+                  </motion.div>
+                </AnimatePresence>
               </div>
-            
-             {/* Controls */}
-             <div className="p-4 bg-gray-50 border-t border-gray-100 flex justify-end gap-2">
-                 <button onClick={() => setAnnouncementIndex((p) => (p - 1 + slidingAnnouncements.length) % slidingAnnouncements.length)} className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-primary hover:border-primary transition-all">
-                     <ChevronLeft className="w-4 h-4" />
-                 </button>
-                 <button onClick={() => setAnnouncementIndex((p) => (p + 1) % slidingAnnouncements.length)} className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-primary hover:border-primary transition-all">
-                     <ChevronRight className="w-4 h-4" />
-                 </button>
-             </div>
+            </div>
+
+            {/* Controls */}
+            <div className="p-4 bg-gray-50 border-t border-gray-100 flex justify-end gap-2">
+              <button
+                onClick={() =>
+                  setAnnouncementIndex(
+                    (p) =>
+                      (p - 1 + slidingAnnouncements.length) %
+                      slidingAnnouncements.length
+                  )
+                }
+                className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-primary hover:border-primary transition-all"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() =>
+                  setAnnouncementIndex(
+                    (p) => (p + 1) % slidingAnnouncements.length
+                  )
+                }
+                className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:text-primary hover:border-primary transition-all"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

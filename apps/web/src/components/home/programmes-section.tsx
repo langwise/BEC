@@ -12,6 +12,7 @@ import { FadeIn } from "../animations/fade-in";
 import { programmes } from "@/data/home/programme";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, GraduationCap } from "lucide-react";
+import Link from "next/link";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -32,18 +33,18 @@ export function ProgrammesSection() {
   return (
     <section className="py-20 lg:py-24 bg-white border-t border-stone-50">
       <div className="container mx-auto px-4 max-w-[1400px]">
-        
         <FadeIn className="text-center max-w-3xl mx-auto mb-16">
-           <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-6">
-               <GraduationCap className="w-6 h-6" />
-           </div>
-           
-           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-              World-Class Academic Programmes
-           </h2>
-           <p className="text-lg text-gray-600 leading-relaxed font-medium">
-              Choose from a wide range of industry-aligned programmes designed to shape future leaders and innovators.
-           </p>
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-6">
+            <GraduationCap className="w-6 h-6" />
+          </div>
+
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+            World-Class Academic Programmes
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed font-medium">
+            Choose from a wide range of industry-aligned programmes designed to
+            shape future leaders and innovators.
+          </p>
         </FadeIn>
 
         <motion.div
@@ -51,7 +52,7 @@ export function ProgrammesSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
         >
           {programmes.map((programme, index) => {
             const Icon = programme.icon;
@@ -67,20 +68,20 @@ export function ProgrammesSection() {
                         {programme.count}
                       </span>
                     </div>
-                    
+
                     <div>
-                        <CardTitle className="text-xl font-bold tracking-tight text-gray-900 group-hover:text-primary transition-colors">
+                      <CardTitle className="text-xl font-bold tracking-tight text-gray-900 group-hover:text-primary transition-colors">
                         {programme.title}
-                        </CardTitle>
-                        <CardDescription className="text-sm font-medium text-gray-500 mt-2 leading-relaxed">
+                      </CardTitle>
+                      <CardDescription className="text-sm font-medium text-gray-500 mt-2 leading-relaxed">
                         {programme.description}
-                        </CardDescription>
+                      </CardDescription>
                     </div>
                   </CardHeader>
                   <CardContent>
-                     <div className="flex items-center text-sm font-bold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-4 group-hover:translate-x-0">
-                         View Details <ArrowRight className="w-4 h-4 ml-2" />
-                     </div>
+                    <div className="flex items-center text-sm font-bold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-4 group-hover:translate-x-0">
+                      View Details <ArrowRight className="w-4 h-4 ml-2" />
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -89,9 +90,12 @@ export function ProgrammesSection() {
         </motion.div>
 
         <div className="mt-12 text-center">
-            <Button className="h-12 px-8 rounded-full font-bold shadow-lg shadow-orange-100 hover:shadow-xl hover:-translate-y-0.5 transition-all">
-                View All Departments
-            </Button>
+          <Button
+            asChild
+            className="h-12 px-8 rounded-full font-bold shadow-lg shadow-orange-100 hover:shadow-xl hover:-translate-y-0.5 transition-all"
+          >
+            <Link href="/academics/departments">View All Departments</Link>
+          </Button>
         </div>
       </div>
     </section>

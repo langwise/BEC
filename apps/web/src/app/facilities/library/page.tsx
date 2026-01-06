@@ -11,7 +11,7 @@ import {
   Mail,
   MapPin,
   Clock,
-  ChevronRight
+  ChevronRight,
 } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 import Link from "next/link";
@@ -27,88 +27,100 @@ const libraryServices = [
   {
     icon: BookOpen,
     title: "About Library",
-    description: "Learn about our rich collection, history, and mission to support academic excellence.",
+    description:
+      "Learn about our rich collection, history, and mission to support academic excellence.",
     href: "/facilities/library/about",
     color: "text-blue-600",
-    bgColor: "bg-blue-50"
+    bgColor: "bg-blue-50",
   },
   {
     icon: Users,
     title: "Staff Profile",
-    description: "Meet our dedicated team of library professionals committed to serving you.",
+    description:
+      "Meet our dedicated team of library professionals committed to serving you.",
     href: "/facilities/library/staff",
     color: "text-green-600",
-    bgColor: "bg-green-50"
+    bgColor: "bg-green-50",
   },
   {
     icon: Users,
     title: "Supporting Staff",
-    description: "Our support team ensuring smooth library operations and services.",
+    description:
+      "Our support team ensuring smooth library operations and services.",
     href: "/facilities/library/supporting-staff",
     color: "text-purple-600",
-    bgColor: "bg-purple-50"
+    bgColor: "bg-purple-50",
   },
   {
     icon: Building2,
     title: "Infrastructure Facility",
-    description: "Explore our modern facilities designed for optimal learning and research.",
+    description:
+      "Explore our modern facilities designed for optimal learning and research.",
     href: "/facilities/library/infrastructure",
     color: "text-orange-600",
-    bgColor: "bg-orange-50"
+    bgColor: "bg-orange-50",
   },
   {
     icon: Globe,
     title: "E-Resources (Paid)",
-    description: "Access premium digital databases, journals, and research materials.",
+    description:
+      "Access premium digital databases, journals, and research materials.",
     href: "/facilities/library/e-resources-paid",
     color: "text-red-600",
-    bgColor: "bg-red-50"
+    bgColor: "bg-red-50",
   },
   {
     icon: Globe,
     title: "E-Resources (Free)",
-    description: "Discover free online resources and open-access academic materials.",
+    description:
+      "Discover free online resources and open-access academic materials.",
     href: "/facilities/library/e-resources-free",
     color: "text-teal-600",
-    bgColor: "bg-teal-50"
+    bgColor: "bg-teal-50",
   },
   {
     icon: LinkIcon,
     title: "Useful Links",
-    description: "Quick access to important library resources and external databases.",
+    description:
+      "Quick access to important library resources and external databases.",
     href: "/facilities/library/useful-links",
     color: "text-indigo-600",
-    bgColor: "bg-indigo-50"
+    bgColor: "bg-indigo-50",
   },
   {
     icon: Phone,
     title: "Contact Information",
-    description: "Get in touch with our library team for assistance and inquiries.",
+    description:
+      "Get in touch with our library team for assistance and inquiries.",
     href: "/facilities/library/contact",
     color: "text-pink-600",
-    bgColor: "bg-pink-50"
+    bgColor: "bg-pink-50",
   },
 ];
 
 export default function LibraryPage() {
   return (
     <div className="min-h-screen bg-stone-50">
-
       {/* Hero Section */}
-      <section className="relative h-[400px] bg-gradient-to-br from-orange-600 via-amber-600 to-orange-700 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/section_2_diagonals.svg')] opacity-10 bg-cover bg-center"></div>
-        <div className="container mx-auto px-4 h-full flex items-center relative z-10">
-          <FadeIn className="max-w-3xl">
-            <div className="flex items-center gap-3 mb-4">
-              <BookOpen className="h-12 w-12 text-white/90" />
-              <h1 className="text-5xl md:text-6xl font-serif font-bold text-white">
-                Central Library
-              </h1>
-            </div>
-            <p className="text-xl text-white/90 leading-relaxed">
-              A gateway to knowledge and innovation, supporting academic excellence since 1963
+
+      <section className="relative overflow-hidden border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#f97316_0%,transparent_35%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,#0f172a_0%,transparent_28%)]" />
+        </div>
+        <div className="relative container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+            Facilities · Library
+          </p>
+          <div className="mt-4 space-y-4 max-w-3xl">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
+              Central Library
+            </h1>
+            <p className="text-base md:text-lg leading-relaxed text-gray-700">
+              A gateway to knowledge and innovation, supporting academic
+              excellence since 1963
             </p>
-          </FadeIn>
+          </div>
         </div>
       </section>
 
@@ -140,7 +152,8 @@ export default function LibraryPage() {
               Explore Library Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Access comprehensive resources and services designed to support your academic journey
+              Access comprehensive resources and services designed to support
+              your academic journey
             </p>
           </FadeIn>
 
@@ -151,7 +164,9 @@ export default function LibraryPage() {
                 <FadeIn key={index} delay={index * 0.05}>
                   <Link href={service.href}>
                     <div className="group h-full bg-white rounded-lg border border-stone-200 hover:border-primary hover:shadow-xl transition-all duration-300 overflow-hidden">
-                      <div className={`${service.bgColor} p-6 flex items-center justify-center transition-transform duration-300 group-hover:scale-105`}>
+                      <div
+                        className={`${service.bgColor} p-6 flex items-center justify-center transition-transform duration-300 group-hover:scale-105`}
+                      >
                         <Icon className={`h-12 w-12 ${service.color}`} />
                       </div>
                       <div className="p-6">
@@ -177,7 +192,7 @@ export default function LibraryPage() {
           <FadeIn delay={0.4}>
             <div className="grid md:grid-cols-3 gap-6">
               {/* Library Hours */}
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white rounded-lg p-8">
+              <div className="bg-linear-to-br from-blue-600 to-blue-700 text-white rounded-lg p-8">
                 <Clock className="h-10 w-10 mb-4 opacity-90" />
                 <h3 className="text-xl font-bold mb-4">Library Hours</h3>
                 <div className="space-y-2 text-sm">
@@ -197,40 +212,52 @@ export default function LibraryPage() {
               </div>
 
               {/* Contact Info */}
-              <div className="bg-gradient-to-br from-orange-600 to-orange-700 text-white rounded-lg p-8">
+              <div className="bg-linear-to-br from-orange-600 to-orange-700 text-white rounded-lg p-8">
                 <Phone className="h-10 w-10 mb-4 opacity-90" />
                 <h3 className="text-xl font-bold mb-4">Contact Us</h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
-                    <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 opacity-75" />
+                    <Phone className="h-4 w-4 mt-0.5 shrink-0 opacity-75" />
                     <span>+91-8354-234060</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 opacity-75" />
+                    <Mail className="h-4 w-4 mt-0.5 shrink-0 opacity-75" />
                     <span>library@becbgk.edu</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 opacity-75" />
+                    <MapPin className="h-4 w-4 mt-0.5 shrink-0 opacity-75" />
                     <span>Central Library Building, BEC Campus</span>
                   </div>
                 </div>
               </div>
 
               {/* Quick Links */}
-              <div className="bg-gradient-to-br from-green-600 to-green-700 text-white rounded-lg p-8">
+              <div className="bg-linear-to-br from-green-600 to-green-700 text-white rounded-lg p-8">
                 <LinkIcon className="h-10 w-10 mb-4 opacity-90" />
                 <h3 className="text-xl font-bold mb-4">Quick Access</h3>
                 <div className="space-y-2 text-sm">
-                  <a href="#" className="block hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  <a
+                    href="#"
+                    className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
+                  >
                     → Online Catalog (OPAC)
                   </a>
-                  <a href="#" className="block hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  <a
+                    href="#"
+                    className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
+                  >
                     → Reserve a Book
                   </a>
-                  <a href="#" className="block hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  <a
+                    href="#"
+                    className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
+                  >
                     → Renew Books
                   </a>
-                  <a href="#" className="block hover:underline opacity-90 hover:opacity-100 transition-opacity">
+                  <a
+                    href="#"
+                    className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
+                  >
                     → Digital Library
                   </a>
                 </div>
@@ -239,7 +266,6 @@ export default function LibraryPage() {
           </FadeIn>
         </div>
       </section>
-
     </div>
   );
 }
