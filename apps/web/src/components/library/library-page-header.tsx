@@ -11,28 +11,32 @@ interface LibraryPageHeaderProps {
   bgGradient?: string;
 }
 
-export function LibraryPageHeader({ 
-  icon: Icon, 
-  title, 
+export function LibraryPageHeader({
+  icon: Icon,
+  title,
   subtitle,
-  bgGradient = "from-primary to-accent"
+  bgGradient = "from-primary to-accent",
 }: LibraryPageHeaderProps) {
   return (
-    <section className={`bg-gradient-to-r ${bgGradient} py-16`}>
-      <div className="container mx-auto px-4">
-        <FadeIn>
-          <div className="flex items-center gap-4 mb-4">
-            <Icon className="h-12 w-12 text-white" />
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white">
-              {title}
-            </h1>
-          </div>
+    <section className="relative overflow-hidden border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50">
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#f97316_0%,transparent_35%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,#0f172a_0%,transparent_28%)]" />
+      </div>
+      <div className="relative container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+          Facilities · Library
+        </p>
+        <div className="mt-4 space-y-4 max-w-3xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
+            {title}
+          </h1>
           {subtitle && (
-            <p className="text-xl text-white/90 max-w-3xl">
+            <p className="text-base md:text-lg leading-relaxed text-gray-700">
               {subtitle}
             </p>
           )}
-        </FadeIn>
+        </div>
       </div>
     </section>
   );
