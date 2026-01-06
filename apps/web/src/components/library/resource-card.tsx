@@ -22,7 +22,7 @@ export function ResourceCard({
   logo,
   type = "free",
   category,
-  index = 0
+  index = 0,
 }: ResourceCardProps) {
   const isPaid = type === "paid";
 
@@ -35,18 +35,23 @@ export function ResourceCard({
       className="group bg-white rounded-lg border border-stone-200 hover:border-primary hover:shadow-lg transition-all duration-300 overflow-hidden"
     >
       {/* Logo/Header Section */}
-      <div className={`h-32 flex items-center justify-center p-6 ${isPaid ? 'bg-gradient-to-br from-orange-50 to-red-50' : 'bg-gradient-to-br from-green-50 to-teal-50'}`}>
+      <div
+        className={`h-32 flex items-center justify-center p-6 ${
+          isPaid
+            ? "bg-linear-to-br from-orange-50 to-red-50"
+            : "bg-linear-to-br from-green-50 to-teal-50"
+        }`}
+      >
         {logo ? (
           <div className="relative w-full h-full">
-            <Image
-              src={logo}
-              alt={name}
-              fill
-              className="object-contain"
-            />
+            <Image src={logo} alt={name} fill className="object-contain" />
           </div>
         ) : (
-          <div className={`text-4xl font-bold ${isPaid ? 'text-orange-600' : 'text-green-600'}`}>
+          <div
+            className={`text-4xl font-bold ${
+              isPaid ? "text-orange-600" : "text-green-600"
+            }`}
+          >
             {name.substring(0, 3).toUpperCase()}
           </div>
         )}
@@ -59,18 +64,20 @@ export function ResourceCard({
             {name}
           </h3>
           {isPaid ? (
-            <Lock className="h-5 w-5 text-orange-600 flex-shrink-0" />
+            <Lock className="h-5 w-5 text-orange-600 shrink-0" />
           ) : (
-            <Unlock className="h-5 w-5 text-green-600 flex-shrink-0" />
+            <Unlock className="h-5 w-5 text-green-600 shrink-0" />
           )}
         </div>
 
         {category && (
-          <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3 ${
-            isPaid 
-              ? 'bg-orange-100 text-orange-700' 
-              : 'bg-green-100 text-green-700'
-          }`}>
+          <span
+            className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3 ${
+              isPaid
+                ? "bg-orange-100 text-orange-700"
+                : "bg-green-100 text-green-700"
+            }`}
+          >
             {category}
           </span>
         )}
@@ -85,9 +92,9 @@ export function ResourceCard({
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex items-center gap-2 text-sm font-semibold transition-all ${
-              isPaid 
-                ? 'text-orange-600 hover:text-orange-700 hover:gap-3' 
-                : 'text-green-600 hover:text-green-700 hover:gap-3'
+              isPaid
+                ? "text-orange-600 hover:text-orange-700 hover:gap-3"
+                : "text-green-600 hover:text-green-700 hover:gap-3"
             }`}
           >
             Access Resource

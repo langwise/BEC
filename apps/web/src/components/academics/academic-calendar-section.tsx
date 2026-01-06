@@ -3,7 +3,13 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Calendar, Download, FileText, Filter, ChevronDown } from "lucide-react";
+import {
+  Calendar,
+  Download,
+  FileText,
+  Filter,
+  ChevronDown,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -24,33 +30,39 @@ interface AcademicCalendarSectionProps {
   };
 }
 
-export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) {
+export function AcademicCalendarSection({
+  data,
+}: AcademicCalendarSectionProps) {
   const [selectedYear, setSelectedYear] = useState<string>("All");
   const [selectedSemester, setSelectedSemester] = useState<string>("All");
   const [showFilters, setShowFilters] = useState(false);
 
   // Get unique years and semesters
-  const years = ["All", ...Array.from(new Set(data.calendars.map(cal => cal.year)))];
+  const years = [
+    "All",
+    ...Array.from(new Set(data.calendars.map((cal) => cal.year))),
+  ];
   const semesters = ["All", "Odd Semester", "Even Semester"];
 
   // Filter calendars
-  const filteredCalendars = data.calendars.filter(calendar => {
+  const filteredCalendars = data.calendars.filter((calendar) => {
     const yearMatch = selectedYear === "All" || calendar.year === selectedYear;
-    const semesterMatch = selectedSemester === "All" || calendar.semester === selectedSemester;
+    const semesterMatch =
+      selectedSemester === "All" || calendar.semester === selectedSemester;
     return yearMatch && semesterMatch;
   });
 
-  const featuredCalendars = filteredCalendars.filter(cal => cal.featured);
-  const archivedCalendars = filteredCalendars.filter(cal => !cal.featured);
+  const featuredCalendars = filteredCalendars.filter((cal) => cal.featured);
+  const archivedCalendars = filteredCalendars.filter((cal) => !cal.featured);
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[50vh] min-h-[400px] flex items-center overflow-hidden bg-gradient-to-br from-primary via-primary/90 to-primary/80">
+      <section className="relative h-[50vh] min-h-[400px] flex items-center overflow-hidden bg-linear-to-br from-primary via-primary/90 to-primary/80">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('/pattern.svg')] bg-repeat opacity-20"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -68,7 +80,8 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
               Academic Calendar
             </h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              Access semester-wise academic calendars, important dates, examination schedules, and events for all programmes
+              Access semester-wise academic calendars, important dates,
+              examination schedules, and events for all programmes
             </p>
           </motion.div>
         </div>
@@ -80,9 +93,11 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <Filter className="w-5 h-5 text-gray-600" />
-              <span className="font-semibold text-gray-900">Filter Calendars</span>
+              <span className="font-semibold text-gray-900">
+                Filter Calendars
+              </span>
             </div>
-            
+
             <div className="flex flex-wrap gap-3">
               {/* Year Filter */}
               <div className="relative">
@@ -91,8 +106,10 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
                   onChange={(e) => setSelectedYear(e.target.value)}
                   className="appearance-none bg-stone-50 border border-stone-300 rounded-lg px-4 py-2 pr-10 text-sm font-medium text-gray-700 hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer"
                 >
-                  {years.map(year => (
-                    <option key={year} value={year}>{year}</option>
+                  {years.map((year) => (
+                    <option key={year} value={year}>
+                      {year}
+                    </option>
                   ))}
                 </select>
                 <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
@@ -105,8 +122,10 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
                   onChange={(e) => setSelectedSemester(e.target.value)}
                   className="appearance-none bg-stone-50 border border-stone-300 rounded-lg px-4 py-2 pr-10 text-sm font-medium text-gray-700 hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer"
                 >
-                  {semesters.map(semester => (
-                    <option key={semester} value={semester}>{semester}</option>
+                  {semesters.map((semester) => (
+                    <option key={semester} value={semester}>
+                      {semester}
+                    </option>
                   ))}
                 </select>
                 <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
@@ -145,12 +164,19 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                 Current Academic Calendars
               </h2>
-              <p className="text-gray-600">Academic year {data.currentYear} - Active calendars</p>
+              <p className="text-gray-600">
+                Academic year {data.currentYear} - Active calendars
+              </p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-6">
               {featuredCalendars.map((calendar, index) => (
-                <CalendarCard key={calendar.id} calendar={calendar} index={index} featured={true} />
+                <CalendarCard
+                  key={calendar.id}
+                  calendar={calendar}
+                  index={index}
+                  featured={true}
+                />
               ))}
             </div>
           </div>
@@ -171,12 +197,19 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                 Previous Academic Calendars
               </h2>
-              <p className="text-gray-600">Archived calendars from previous academic years</p>
+              <p className="text-gray-600">
+                Archived calendars from previous academic years
+              </p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {archivedCalendars.map((calendar, index) => (
-                <CalendarCard key={calendar.id} calendar={calendar} index={index} featured={false} />
+                <CalendarCard
+                  key={calendar.id}
+                  calendar={calendar}
+                  index={index}
+                  featured={false}
+                />
               ))}
             </div>
           </div>
@@ -188,8 +221,12 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
         <section className="py-20 text-center">
           <div className="container mx-auto px-4">
             <FileText className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">No calendars found</h3>
-            <p className="text-gray-600 mb-6">Try adjusting your filters to see more results</p>
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              No calendars found
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Try adjusting your filters to see more results
+            </p>
             <Button
               onClick={() => {
                 setSelectedYear("All");
@@ -217,7 +254,8 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
               Need Help with Academic Calendar?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              For any queries regarding academic schedules, examination dates, or events, please contact the Controller of Examinations
+              For any queries regarding academic schedules, examination dates,
+              or events, please contact the Controller of Examinations
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="mailto:coe@becbgk.edu">
@@ -238,7 +276,15 @@ export function AcademicCalendarSection({ data }: AcademicCalendarSectionProps) 
   );
 }
 
-function CalendarCard({ calendar, index, featured }: { calendar: CalendarItem; index: number; featured: boolean }) {
+function CalendarCard({
+  calendar,
+  index,
+  featured,
+}: {
+  calendar: CalendarItem;
+  index: number;
+  featured: boolean;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -275,7 +321,9 @@ function CalendarCard({ calendar, index, featured }: { calendar: CalendarItem; i
             <span className="text-gray-600">{calendar.semester}</span>
           </div>
           <div className="text-sm">
-            <span className="font-semibold text-gray-700 block mb-2">Programmes:</span>
+            <span className="font-semibold text-gray-700 block mb-2">
+              Programmes:
+            </span>
             <div className="flex flex-wrap gap-2">
               {calendar.programmes.map((programme, idx) => (
                 <span

@@ -38,7 +38,7 @@ export function FacultyCard({ profile }: FacultyCardProps) {
     <Dialog>
       <DialogTrigger asChild>
         <Card className="hover:shadow-lg transition-all cursor-pointer group border-stone-200 overflow-hidden bg-white">
-          <div className="h-1.5 bg-gradient-to-r from-orange-500 to-amber-500 w-full" />
+          <div className="h-1.5 bg-linear-to-r from-orange-500 to-amber-500 w-full" />
           <CardHeader className="flex flex-row gap-4 items-start pb-4">
             <div className="w-16 h-16 rounded-full bg-stone-100 flex items-center justify-center border border-stone-200 shrink-0 overflow-hidden shadow-sm">
               {basicInfo.profilePhotoUrl ? (
@@ -447,7 +447,7 @@ export function FacultyCard({ profile }: FacultyCardProps) {
                       {profile.research.researchInterests.map((interest, i) => (
                         <Badge
                           key={i}
-                          className="px-3 py-1.5 text-sm font-medium bg-gradient-to-r from-orange-50 to-amber-50 text-orange-900 hover:from-orange-100 hover:to-amber-100 border-orange-100"
+                          className="px-3 py-1.5 text-sm font-medium bg-linear-to-r from-orange-50 to-amber-50 text-orange-900 hover:from-orange-100 hover:to-amber-100 border-orange-100"
                         >
                           {interest}
                         </Badge>

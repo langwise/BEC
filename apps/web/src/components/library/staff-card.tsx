@@ -22,7 +22,7 @@ export function StaffCard({
   email,
   phone,
   image = "/placeholder-avatar.jpg",
-  index = 0
+  index = 0,
 }: StaffCardProps) {
   return (
     <motion.div
@@ -32,22 +32,13 @@ export function StaffCard({
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="bg-white rounded-lg border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow duration-300"
     >
-      <div className="relative h-64 bg-gradient-to-br from-primary/10 to-accent/10">
-        <Image
-          src={image}
-          alt={name}
-          fill
-          className="object-cover"
-        />
+      <div className="relative h-64 bg-linear-to-br from-primary/10 to-accent/10">
+        <Image src={image} alt={name} fill className="object-cover" />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 mb-1">
-          {name}
-        </h3>
-        <p className="text-primary font-semibold mb-3">
-          {designation}
-        </p>
-        
+        <h3 className="text-xl font-bold text-gray-900 mb-1">{name}</h3>
+        <p className="text-primary font-semibold mb-3">{designation}</p>
+
         {qualification && (
           <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
             <GraduationCap className="h-4 w-4 text-primary" />
@@ -59,7 +50,7 @@ export function StaffCard({
           {email && (
             <div className="flex items-center gap-2 text-sm">
               <Mail className="h-4 w-4 text-gray-400" />
-              <a 
+              <a
                 href={`mailto:${email}`}
                 className="text-gray-600 hover:text-primary transition-colors"
               >
@@ -70,7 +61,7 @@ export function StaffCard({
           {phone && (
             <div className="flex items-center gap-2 text-sm">
               <Phone className="h-4 w-4 text-gray-400" />
-              <a 
+              <a
                 href={`tel:${phone}`}
                 className="text-gray-600 hover:text-primary transition-colors"
               >

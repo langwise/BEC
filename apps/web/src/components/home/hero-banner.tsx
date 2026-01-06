@@ -65,7 +65,10 @@ export function HeroBanner() {
           loop: true,
         }}
       >
-        <CarouselContent className="h-full ml-0" style={{ minHeight: heroHeight }}>
+        <CarouselContent
+          className="h-full ml-0"
+          style={{ minHeight: heroHeight }}
+        >
           {heroSlides.map((slide, index) => (
             <CarouselItem
               key={slide.id}
@@ -82,7 +85,7 @@ export function HeroBanner() {
                   priority={index === 0}
                 />
                 {/* Modern Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/10" />
               </div>
 
               {/* Text Content */}
@@ -114,7 +117,9 @@ export function HeroBanner() {
               onClick={() => api?.scrollTo(index)}
               className={cn(
                 "h-1.5 rounded-full transition-all duration-300",
-                current === index ? "w-8 bg-white" : "w-2 bg-white/40 hover:bg-white/60"
+                current === index
+                  ? "w-8 bg-white"
+                  : "w-2 bg-white/40 hover:bg-white/60"
               )}
               aria-label={`Go to slide ${index + 1}`}
             />
