@@ -135,7 +135,7 @@ export default function HostelPage() {
             <Table>
               <TableHeader>
                 <TableRow className="bg-orange-50/50 hover:bg-orange-50/50">
-                  <TableHead className="w-[100px] font-bold text-gray-900 border-b border-orange-100">
+                  <TableHead className="w-[100px] font-bold text-gray-900 border-b border-orange-100 hidden md:table-cell">
                     Sl. No.
                   </TableHead>
                   <TableHead className="font-bold text-gray-900 border-b border-orange-100">
@@ -169,7 +169,7 @@ export default function HostelPage() {
                     key={item.id}
                     className="hover:bg-orange-50/30 transition-colors border-b border-stone-100 last:border-0"
                   >
-                    <TableCell className="font-medium text-gray-500">
+                    <TableCell className="font-medium text-gray-500 hidden md:table-cell">
                       {item.id}
                     </TableCell>
                     <TableCell className="font-semibold text-gray-900">

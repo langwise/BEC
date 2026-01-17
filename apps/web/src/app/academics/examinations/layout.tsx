@@ -33,7 +33,7 @@ export default function ExaminationsLayout({ children }: { children: React.React
     return (
         <div className="min-h-screen bg-linear-to-br from-orange-50 via-white to-slate-50 relative">
             {/* Background Decorations */}
-            <div className="fixed inset-0 pointer-events-none z-0">
+            <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
                 <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-orange-100/40 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2" />
             </div>
 

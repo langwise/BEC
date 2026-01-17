@@ -21,7 +21,7 @@ export default function DocumentsPage() {
     return (
         <div className="min-h-screen bg-linear-to-br from-orange-50 via-white to-slate-50 relative pb-12">
             {/* Background Decorations */}
-            <div className="fixed inset-0 pointer-events-none z-0">
+            <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/20 rounded-full blur-3xl translate-y-1/2 translate-x-1/2" />
             </div>
 
@@ -62,7 +62,7 @@ export default function DocumentsPage() {
                                     <Table>
                                         <TableHeader>
                                             <TableRow className="bg-stone-50 hover:bg-stone-50">
-                                                <TableHead className="w-[80px] text-center font-bold text-gray-700">Sl. No.</TableHead>
+                                                <TableHead className="w-[80px] text-center font-bold text-gray-700 hidden md:table-cell">Sl. No.</TableHead>
                                                 <TableHead className="font-bold text-gray-700">Original Documents</TableHead>
                                                 <TableHead className="font-bold text-gray-700">3 sets Xerox copies of documents</TableHead>
                                             </TableRow>
@@ -70,10 +70,10 @@ export default function DocumentsPage() {
                                         <TableBody>
                                             {documentsData.map((doc) => (
                                                 <TableRow key={doc.id} className="hover:bg-stone-50/50 transition-colors">
-                                                    <TableCell className="text-center font-medium text-gray-500">{doc.id}</TableCell>
+                                                    <TableCell className="text-center font-medium text-gray-500 hidden md:table-cell">{doc.id}</TableCell>
                                                     <TableCell className="font-medium text-gray-900">
                                                         <div className="flex items-start gap-3">
-                                                            <CheckCircle2 className="w-4 h-4 text-green-600 mt-1 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                                            <CheckCircle2 className="w-4 h-4 text-green-600 mt-1 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity hidden md:block" />
                                                             {doc.original}
                                                         </div>
                                                     </TableCell>

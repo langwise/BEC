@@ -216,7 +216,7 @@ export default function BiotechResearchPage() {
           <table className="w-full min-w-[1400px] text-left border-collapse">
             <thead>
               <tr className="bg-slate-50/50 border-b border-slate-100">
-                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap w-16">Sl.</th>
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap w-16 hidden md:table-cell">Sl.</th>
                 <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Scholar Name</th>
                 <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Guide</th>
                 <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">Co-Guide</th>
@@ -229,7 +229,7 @@ export default function BiotechResearchPage() {
             <tbody className="divide-y divide-slate-100">
               {scholars.map((scholar) => (
                 <tr key={scholar.usn} className="hover:bg-slate-50/80 transition-colors">
-                  <td className="p-3 md:p-4 text-sm font-medium text-slate-500 whitespace-nowrap">{scholar.slNo}</td>
+                  <td className="p-3 md:p-4 text-sm font-medium text-slate-500 whitespace-nowrap hidden md:table-cell">{scholar.slNo}</td>
                   <td className="p-3 md:p-4 text-sm font-bold text-slate-900 whitespace-nowrap">{scholar.name}</td>
                   <td className="p-3 md:p-4 text-sm text-slate-600 whitespace-nowrap">{scholar.guide}</td>
                   <td className="p-3 md:p-4 text-sm text-slate-600 whitespace-nowrap">{scholar.coGuide}</td>

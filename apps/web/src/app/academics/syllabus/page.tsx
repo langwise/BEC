@@ -99,8 +99,8 @@ export default function SyllabusPage() {
   return (
     <div className="min-h-screen bg-linear-to-br from-orange-50 via-white to-slate-50 relative pb-12">
       {/* Background Decorations */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-100/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2" />
       </div>
 
       <div className="container mx-auto px-4 py-12 lg:py-16 relative z-10 space-y-12">

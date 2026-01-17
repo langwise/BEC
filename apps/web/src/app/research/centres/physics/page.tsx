@@ -206,7 +206,7 @@ export default function PhysicsResearchPage() {
           <table className="w-full min-w-[1000px] text-left border-collapse">
             <thead>
               <tr className="bg-slate-50/50 border-b border-slate-100">
-                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap w-16">
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap w-16 hidden md:table-cell">
                   Sl.
                 </th>
                 <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">
@@ -226,7 +226,7 @@ export default function PhysicsResearchPage() {
                   key={index}
                   className="hover:bg-slate-50/80 transition-colors"
                 >
-                  <td className="p-3 md:p-4 text-sm font-medium text-slate-500 whitespace-nowrap">
+                  <td className="p-3 md:p-4 text-sm font-medium text-slate-500 whitespace-nowrap hidden md:table-cell">
                     {scholar.slNo}
                   </td>
                   <td className="p-3 md:p-4 text-sm font-bold text-slate-900 whitespace-nowrap">

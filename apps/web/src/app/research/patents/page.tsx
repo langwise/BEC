@@ -11,7 +11,7 @@ import {
   Info,
   Award,
   Ribbon,
-  Scroll,
+
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -169,10 +169,7 @@ export default function PatentsPage() {
                     </Badge>
                   </div>
 
-                  {/* Scroll Icon for decoration - subtle */}
-                  <div className="absolute top-8 right-8 text-slate-100 group-hover:text-slate-200 transition-colors pointer-events-none">
-                    <Scroll className="w-16 h-16" />
-                  </div>
+
 
                   {/* Title */}
                   <h3 className="text-xl font-bold text-slate-900 mb-6 leading-snug group-hover:text-amber-700 transition-colors pr-8">

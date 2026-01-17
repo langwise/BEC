@@ -304,7 +304,7 @@ export default function IPResearchPage() {
           <table className="w-full min-w-[1400px] text-left border-collapse">
             <thead>
               <tr className="bg-slate-50/50 border-b border-slate-100">
-                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap w-16">
+                <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap w-16 hidden md:table-cell">
                   Sl.
                 </th>
                 <th className="p-3 md:p-4 text-xs font-bold text-slate-500 uppercase tracking-wider whitespace-nowrap min-w-[200px]">
@@ -336,7 +336,7 @@ export default function IPResearchPage() {
                   key={scholar.usn || index}
                   className="hover:bg-slate-50/80 transition-colors"
                 >
-                  <td className="p-3 md:p-4 text-sm font-medium text-slate-500 whitespace-nowrap">
+                  <td className="p-3 md:p-4 text-sm font-medium text-slate-500 whitespace-nowrap hidden md:table-cell">
                     {scholar.slNo}
                   </td>
                   <td className="p-3 md:p-4 text-sm font-bold text-slate-900 whitespace-nowrap">
@@ -361,8 +361,8 @@ export default function IPResearchPage() {
                         scholar.status.toLowerCase().includes("completed")
                           ? "bg-green-100 text-green-800"
                           : scholar.status.toLowerCase().includes("submitted")
-                          ? "bg-blue-100 text-blue-800"
-                          : "bg-orange-100 text-orange-800"
+                            ? "bg-blue-100 text-blue-800"
+                            : "bg-orange-100 text-orange-800"
                       )}
                     >
                       {scholar.status}
