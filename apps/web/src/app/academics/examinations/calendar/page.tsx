@@ -49,22 +49,22 @@ export default function CalendarPage() {
                                 key={idx}
                                 href={item.link}
                                 target="_blank"
-                                className="flex items-center justify-between p-4 bg-white rounded-xl border border-stone-200 hover:border-primary hover:shadow-md transition-all group"
+                                className="flex items-start md:items-center justify-between gap-4 p-4 bg-white rounded-xl border border-stone-200 hover:border-primary hover:shadow-md transition-all group w-full min-w-0"
                             >
-                                <div className="flex items-center gap-3">
-                                    <div className="p-2 bg-blue-50 text-primary rounded-lg group-hover:bg-primary group-hover:text-white transition-colors">
+                                <div className="flex items-start md:items-center gap-3 min-w-0 flex-1">
+                                    <div className="p-2 bg-blue-50 text-primary rounded-lg group-hover:bg-primary group-hover:text-white transition-colors shrink-0 mt-0.5 md:mt-0">
                                         <Calendar className="w-5 h-5" />
                                     </div>
-                                    <span className="font-medium text-gray-700 group-hover:text-primary transition-colors flex items-center gap-2">
-                                        {item.title}
+                                    <div className="font-medium text-gray-700 group-hover:text-primary transition-colors flex flex-col md:flex-row md:items-center gap-2 min-w-0">
+                                        <span className="break-words">{item.title}</span>
                                         {item.isNew && (
-                                            <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800 animate-pulse">
+                                            <span className="inline-flex w-fit items-center px-2 py-0.5 rounded text-xs font-medium bg-red-100 text-red-800 animate-pulse">
                                                 New
                                             </span>
                                         )}
-                                    </span>
+                                    </div>
                                 </div>
-                                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-primary" />
+                                <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-primary shrink-0 mt-1 md:mt-0" />
                             </Link>
                         ))}
                     </div>

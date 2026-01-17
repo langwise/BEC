@@ -13,7 +13,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
 import { navigationData } from "@/data/navigation";
 import { NavigationItem } from "@/types/navigation";
@@ -121,7 +121,7 @@ export function Header() {
               side="right"
               className="w-[300px] px-4 overflow-y-auto"
             >
-              <div className="mt-6 mb-6 font-bold text-lg">BEC Bagalkot</div>
+              <SheetTitle className="mt-6 mb-6 font-bold text-lg">BEC Bagalkot</SheetTitle>
 
               <nav className="flex flex-col gap-1">
                 {navigationData.map((item) => (

@@ -170,11 +170,11 @@ export default function AchievementsPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="rounded-3xl bg-slate-900 p-8 lg:p-12 relative overflow-hidden text-white"
+        className="rounded-3xl bg-slate-900 p-6 lg:p-12 relative overflow-hidden text-white"
       >
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
         <div className="relative z-10">
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 lg:items-center">
             <div className="space-y-6 flex-1">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-300 text-xs font-bold uppercase tracking-wider border border-yellow-500/30">
                 <Trophy className="w-4 h-4" />
@@ -189,22 +189,22 @@ export default function AchievementsPage() {
                 Zonal Trophies**, BEC students consistently prove their mettle
                 on national and state platforms.
               </p>
-              <div className="flex gap-4">
-                <div className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl">
-                  <div className="text-2xl font-bold text-white">19</div>
-                  <div className="text-xs text-slate-400 uppercase">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full">
+                <div className="px-2 py-3 sm:px-4 bg-white/5 border border-white/10 rounded-xl text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-white">19</div>
+                  <div className="text-[10px] sm:text-xs text-slate-400 uppercase truncate">
                     Srishti Prizes
                   </div>
                 </div>
-                <div className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl">
-                  <div className="text-2xl font-bold text-white">9.0+</div>
-                  <div className="text-xs text-slate-400 uppercase">
+                <div className="px-2 py-3 sm:px-4 bg-white/5 border border-white/10 rounded-xl text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-white">9.0+</div>
+                  <div className="text-[10px] sm:text-xs text-slate-400 uppercase truncate">
                     Top CGPA
                   </div>
                 </div>
-                <div className="px-4 py-3 bg-white/5 border border-white/10 rounded-xl">
-                  <div className="text-2xl font-bold text-white">615</div>
-                  <div className="text-xs text-slate-400 uppercase">
+                <div className="px-2 py-3 sm:px-4 bg-white/5 border border-white/10 rounded-xl text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-white">615</div>
+                  <div className="text-[10px] sm:text-xs text-slate-400 uppercase truncate">
                     Graduates (2022)
                   </div>
                 </div>
@@ -238,17 +238,17 @@ export default function AchievementsPage() {
         transition={{ delay: 0.3 }}
       >
         <Tabs defaultValue="technical" className="w-full">
-          <div className="flex justify-center mb-8">
-            <TabsList className="bg-white border border-slate-200 p-1 rounded-full shadow-sm">
+          <div className="flex justify-center mb-8 px-4">
+            <TabsList className="bg-white border border-slate-200 p-1 rounded-full shadow-sm h-auto flex flex-nowrap justify-center w-full sm:w-auto">
               <TabsTrigger
                 value="technical"
-                className="rounded-full px-6 py-2 data-[state=active]:bg-orange-600 data-[state=active]:text-white"
+                className="rounded-full px-1 py-2 sm:px-6 text-[10px] xs:text-xs sm:text-sm flex-1 sm:flex-none data-[state=active]:bg-orange-600 data-[state=active]:text-white whitespace-nowrap text-center tracking-tight"
               >
                 Technical & Research
               </TabsTrigger>
               <TabsTrigger
                 value="sports"
-                className="rounded-full px-6 py-2 data-[state=active]:bg-orange-600 data-[state=active]:text-white"
+                className="rounded-full px-1 py-2 sm:px-6 text-[10px] xs:text-xs sm:text-sm flex-1 sm:flex-none data-[state=active]:bg-orange-600 data-[state=active]:text-white whitespace-nowrap text-center tracking-tight"
               >
                 Sports & Games
               </TabsTrigger>

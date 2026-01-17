@@ -22,7 +22,7 @@ export default function ScholarshipsPage() {
     return (
         <div className="min-h-screen bg-linear-to-br from-orange-50 via-white to-slate-50 relative pb-12">
             {/* Background Decorations */}
-            <div className="fixed inset-0 pointer-events-none z-0">
+            <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/20 rounded-full blur-3xl translate-y-1/2 translate-x-1/2" />
             </div>
 
@@ -59,7 +59,7 @@ export default function ScholarshipsPage() {
                                         <Table>
                                             <TableHeader>
                                                 <TableRow className="bg-stone-50 hover:bg-stone-50 text-base">
-                                                    <TableHead className="w-[80px] text-center font-bold text-gray-700">Sl. No.</TableHead>
+                                                    <TableHead className="w-[80px] text-center font-bold text-gray-700 hidden md:table-cell">Sl. No.</TableHead>
                                                     <TableHead className="font-bold text-gray-700 min-w-[250px]">Particulars</TableHead>
                                                     <TableHead className="font-bold text-gray-700 min-w-[300px]">Department</TableHead>
                                                     <TableHead className="font-bold text-gray-700 min-w-[200px]">Website</TableHead>
@@ -68,7 +68,7 @@ export default function ScholarshipsPage() {
                                             <TableBody>
                                                 {scholarshipData.map((item) => (
                                                     <TableRow key={item.id} className="hover:bg-stone-50/50 transition-colors">
-                                                        <TableCell className="text-center font-medium text-gray-500">{item.id}</TableCell>
+                                                        <TableCell className="text-center font-medium text-gray-500 hidden md:table-cell">{item.id}</TableCell>
                                                         <TableCell className="font-medium text-gray-900">
                                                             {item.particulars}
                                                         </TableCell>

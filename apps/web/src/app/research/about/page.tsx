@@ -255,7 +255,7 @@ export default function AboutResearchPage() {
           <Table>
             <TableHeader>
               <TableRow className="bg-slate-50 hover:bg-slate-50 border-b border-slate-200">
-                <TableHead className="w-[80px] font-bold text-slate-600">
+                <TableHead className="w-[80px] font-bold text-slate-600 hidden md:table-cell">
                   ID
                 </TableHead>
                 <TableHead className="font-bold text-slate-600">
@@ -281,7 +281,7 @@ export default function AboutResearchPage() {
                   key={row.id}
                   className="hover:bg-orange-50/30 transition-colors"
                 >
-                  <TableCell className="font-medium text-slate-400">
+                  <TableCell className="font-medium text-slate-400 hidden md:table-cell">
                     {row.id}
                   </TableCell>
                   <TableCell className="font-semibold text-slate-700">

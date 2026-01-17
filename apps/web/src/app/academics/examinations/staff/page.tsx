@@ -52,7 +52,7 @@ export default function ExamStaffPage() {
                                 <table className="w-full text-sm text-left">
                                     <thead className="bg-blue-50/50 text-gray-700 font-semibold border-b border-stone-100">
                                         <tr>
-                                            <th className="px-6 py-4 w-16 text-center">Sl. No.</th>
+                                            <th className="px-6 py-4 w-16 text-center hidden md:table-cell">Sl. No.</th>
                                             <th className="px-6 py-4">Name of the Staff</th>
                                             <th className="px-6 py-4 text-right">Position</th>
                                         </tr>
@@ -60,7 +60,7 @@ export default function ExamStaffPage() {
                                     <tbody className="divide-y divide-stone-100">
                                         {staffList.map((staff) => (
                                             <tr key={staff.sl} className="hover:bg-blue-50/30 transition-colors">
-                                                <td className="px-6 py-4 text-center font-medium text-gray-500">{staff.sl}</td>
+                                                <td className="px-6 py-4 text-center font-medium text-gray-500 hidden md:table-cell">{staff.sl}</td>
                                                 <td className="px-6 py-4 font-medium text-gray-900">{staff.name}</td>
                                                 <td className="px-6 py-4 text-right text-gray-600 border-l border-dashed border-stone-100">
                                                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700">
