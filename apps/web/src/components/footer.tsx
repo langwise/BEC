@@ -78,14 +78,14 @@ export function Footer() {
                   Administration
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/research/about"
                   className="hover:text-primary transition-colors"
                 >
                   Research
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/student-life/overview"
