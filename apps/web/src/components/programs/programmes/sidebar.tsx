@@ -16,31 +16,31 @@ const programmes = [
   { 
     id: "ug", 
     label: "Under Graduate (B.E.)", 
-    href: "/academics/programmes/ug",
+    href: "/programs/programmes/ug",
     icon: GraduationCap 
   },
   { 
     id: "pg", 
     label: "Post Graduate (M.Tech)", 
-    href: "/academics/programmes/pg",
+    href: "/programs/programmes/pg",
     icon: BookOpen
   },
   { 
     id: "mba", 
     label: "MBA", 
-    href: "/academics/programmes/mba",
+    href: "/programs/programmes/mba",
     icon: Briefcase
   },
   { 
     id: "mca", 
     label: "MCA", 
-    href: "/academics/programmes/mca",
+    href: "/programs/programmes/mca",
     icon: Code2
   },
   { 
     id: "phd", 
     label: "M.Sc. (Engg.) / Ph.D", 
-    href: "/academics/programmes/phd",
+    href: "/programs/programmes/phd",
     icon: Microscope
   },
 ];

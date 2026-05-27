@@ -1,7 +1,7 @@
-// src/app/academics/calendar/page.tsx
+// src/app/programs/calendar/page.tsx
 "use client";
 
-import { AcademicCalendarSection } from "@/components/academics/academic-calendar-section";
+import { AcademicCalendarSection } from "@/components/programs/academic-calendar-section";
 
 const calendarData = {
   currentYear: "2024-25",

@@ -1,6 +1,6 @@
 "use client";
 
-import ProgrammesSidebar from "@/components/academics/programmes/sidebar";
+import ProgrammesSidebar from "@/components/programs/programmes/sidebar";
 
 export default function ProgrammesLayout({
   children,
