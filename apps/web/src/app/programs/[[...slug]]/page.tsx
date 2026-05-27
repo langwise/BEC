@@ -10,23 +10,23 @@ import {
 
 type Params = { slug?: string[] };
 
-export default function AcademicsCatchAll({ params }: { params: Params }) {
+export default function ProgramsCatchAll({ params }: { params: Params }) {
   const slug = params.slug ?? [];
   const path = slug.join("/");
-  const title = formatTitle(slug) || "Academics";
+  const title = formatTitle(slug) || "Programs";
 
   return (
     <main className="bg-background text-foreground">
       <header className="border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50">
         <div className="container mx-auto max-w-6xl px-4 lg:px-6 py-12 space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
-            Academics
+            Programs
           </p>
           <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight">
             {title}
           </h1>
           <p className="text-base text-gray-700 leading-relaxed max-w-3xl">
-            Placeholder academic page to keep navigation working while content is prepared.
+            Placeholder program page to keep navigation working while content is prepared.
           </p>
         </div>
       </header>
@@ -38,11 +38,11 @@ export default function AcademicsCatchAll({ params }: { params: Params }) {
               Content coming soon
             </CardTitle>
             <CardDescription className="text-sm text-gray-700">
-              Academic details will be added based on official sources.
+              Program details will be added based on official sources.
             </CardDescription>
           </CardHeader>
           <CardContent className="text-sm text-gray-700 leading-relaxed">
-            You reached: <span className="font-semibold">{`/academics/${path}`}</span>
+            You reached: <span className="font-semibold">{`/programs/${path}`}</span>
           </CardContent>
         </Card>
       </section>

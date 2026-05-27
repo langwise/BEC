@@ -94,7 +94,7 @@ export function ProgrammesSection() {
             asChild
             className="h-12 px-8 rounded-full font-bold shadow-lg shadow-orange-100 hover:shadow-xl hover:-translate-y-0.5 transition-all"
           >
-            <Link href="/academics/departments">View All Departments</Link>
+            <Link href="/programs/departments">View All Departments</Link>
           </Button>
         </div>
       </div>

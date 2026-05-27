@@ -12,7 +12,7 @@ export const deans: Dean[] = [
     role: "Dean Academic",
     email: "deanac@becbgk.edu",
     placeholder: true,
-    focus: "Academics & curriculum",
+    focus: "Programs & curriculum",
   },
   {
     role: "Dean Placement & Training",

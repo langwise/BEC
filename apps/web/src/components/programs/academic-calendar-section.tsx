@@ -1,4 +1,4 @@
-// src/components/academics/academic-calendar-section.tsx
+// src/components/programs/academic-calendar-section.tsx
 "use client";
 
 import { useState } from "react";
@@ -263,7 +263,7 @@ export function AcademicCalendarSection({
                   Contact COE
                 </Button>
               </a>
-              <a href="/academics/departments">
+              <a href="/programs/departments">
                 <Button variant="outline" size="lg">
                   View Departments
                 </Button>

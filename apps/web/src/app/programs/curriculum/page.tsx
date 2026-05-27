@@ -212,7 +212,7 @@ export default function CurriculumPage() {
                                     ))}
                                 </div>
                                 <div className="mt-8 text-center">
-                                    <Link href="/academics/departments" className="text-primary font-medium hover:underline inline-flex items-center gap-2">
+                                    <Link href="/programs/departments" className="text-primary font-medium hover:underline inline-flex items-center gap-2">
                                         View schemes for all 11 departments <BookOpen className="w-4 h-4" />
                                     </Link>
                                 </div>
