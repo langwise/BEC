@@ -1,20 +1,14 @@
 import { NavigationItem } from "@/types/navigation";
 
 export const navigationData: NavigationItem[] = [
+  // 1. Institute (About Us)
   {
     title: "Institute",
     items: [
       { title: "About Sangha", href: "/institute/about-sangha" },
       { title: "About Us", href: "/institute/about" },
       { title: "Awards & Recognitions", href: "/institute/awards" },
-      {
-        title: "History",
-        items: [
-          { title: "Former Principals", href: "/institute/history/principals" },
-          { title: "Former Directors", href: "/institute/history/directors" },
-          { title: "Milestones", href: "/institute/history/milestones" },
-        ],
-      },
+      { title: "History & Milestones", href: "/institute/history" },
       {
         title: "Campus",
         items: [
@@ -32,6 +26,7 @@ export const navigationData: NavigationItem[] = [
     ],
   },
 
+  // 2. Administration (Governance)
   {
     title: "Administration",
     items: [
@@ -59,54 +54,34 @@ export const navigationData: NavigationItem[] = [
     ],
   },
 
+  // 3. Programs (Programmes)
   {
-    title: "Academics",
+    title: "Programs",
     items: [
-      { title: "Examinations", href: "/academics/examinations" },
-      { title: "Academic Office", href: "/academics/office" },
-      { title: "Syllabus", href: "/academics/syllabus" },
+      { title: "Examinations", href: "/programs/examinations" },
+      { title: "Academic Office", href: "/programs/office" },
+      { title: "Syllabus", href: "/programs/syllabus" },
       {
         title: "Programmes",
         items: [
-          { title: "Under Graduate/BE", href: "/academics/programmes/ug" },
-          { title: "Post Graduate/M.Tech", href: "/academics/programmes/pg" },
-          { title: "MBA", href: "/academics/programmes/mba" },
-          { title: "MCA", href: "/academics/programmes/mca" },
-          { title: "M.Sc.(Engg.)/Ph.D", href: "/academics/programmes/phd" },
+          { title: "Under Graduate/BE", href: "/programs/programmes/ug" },
+          { title: "Post Graduate/M.Tech", href: "/programs/programmes/pg" },
+          { title: "MBA", href: "/programs/programmes/mba" },
+          { title: "MCA", href: "/programs/programmes/mca" },
+          { title: "M.Sc.(Engg.)/Ph.D", href: "/programs/programmes/phd" },
         ],
       },
-      { title: "Curriculum", href: "/academics/curriculum" },
-      { title: "Academic Calendar", href: "/academics/calendar" },
-      { title: "Departments", href: "/academics/departments" },
-      { title: "Convocation", href: "/academics/convocation" },
-      { title: "Documents to Submit", href: "/academics/documents" },
-      { title: "Scholarship Details", href: "/academics/scholarships" },
-      { title: "Hostel Admissions", href: "/academics/hostel" },
+      { title: "Curriculum", href: "/programs/curriculum" },
+      { title: "Academic Calendar", href: "/programs/calendar" },
+      { title: "Departments", href: "/programs/departments" },
+      { title: "Convocation", href: "/programs/convocation" },
+      { title: "Documents to Submit", href: "/programs/documents" },
+      { title: "Scholarship Details", href: "/programs/scholarships" },
+      { title: "Hostel Admissions", href: "/programs/hostel" },
     ],
   },
 
-  {
-    title: "Facilities",
-    items: [
-      { title: "Library", href: "/facilities/library" },
-      { title: "Central Research Facility", href: "/facilities/research" },
-      { title: "Guest House", href: "/facilities/guesthouse" },
-      { title: "Campus Amenities", href: "/facilities/amenities" },
-      {
-        title: "Grievances",
-        items: [
-          { title: "PwD", href: "/facilities/grievances/pwd" },
-          { title: "SC/ST", href: "/facilities/grievances/scst" },
-          { title: "OBC", href: "/facilities/grievances/obc" },
-          {
-            title: "Internal Complaints",
-            href: "/facilities/grievances/internal",
-          },
-        ],
-      },
-    ],
-  },
-
+  // 4. Research
   {
     title: "Research",
     items: [
@@ -166,6 +141,58 @@ export const navigationData: NavigationItem[] = [
     ],
   },
 
+  // 5. Facilities (Infrastructure)
+  {
+    title: "Facilities",
+    items: [
+      { title: "Library", href: "/facilities/library" },
+      { title: "Central Research Facility", href: "/facilities/research" },
+      { title: "Guest House", href: "/facilities/guesthouse" },
+      { title: "Campus Amenities", href: "/facilities/amenities" },
+      {
+        title: "Grievances",
+        items: [
+          { title: "PwD", href: "/facilities/grievances/pwd" },
+          { title: "SC/ST", href: "/facilities/grievances/scst" },
+          { title: "OBC", href: "/facilities/grievances/obc" },
+          {
+            title: "Internal Complaints",
+            href: "/facilities/grievances/internal",
+          },
+        ],
+      },
+    ],
+  },
+
+  // 6. Placements
+  {
+    title: "Placements",
+    items: [
+      { title: "Home", href: "/placements" },
+      {
+        title: "Placement Policy",
+        href: "/placements/policy",
+      },
+      { title: "Facilities", href: "/placements/facilities" },
+      {
+        title: "Placement Process & Calendar",
+        href: "/placements/process-calendar",
+      },
+      {
+        title: "Brochure",
+        href: "/placements/brochure",
+      },
+      { title: "Our Recruiters", href: "/placements/recruiters" },
+      { title: "Why Recruit", href: "/placements/why-recruit" },
+      { title: "MoUs", href: "/placements/mous" },
+      {
+        title: "Contact Us",
+        href: "/placements/contact",
+      },
+    ],
+  },
+
+  // 7. Student Life
   {
     title: "Student Life",
     items: [
@@ -188,41 +215,6 @@ export const navigationData: NavigationItem[] = [
       { title: "Alumni", href: "/student-life/alumni" },
       { title: "BEC-FM Radio", href: "/student-life/bec-fm" },
       { title: "Achievements", href: "/student-life/achievements" },
-    ],
-  },
-
-  // {
-  //   title: "Alumni",
-  //   items: [
-  //     { title: "Notable Alumni", href: "/alumni/notable" },
-  //     { title: "Alumni Startups", href: "/alumni/startups" },
-  //   ],
-  // },
-
-  {
-    title: "Placements",
-    items: [
-      { title: "Home", href: "/placements" },
-      {
-        title: "Placement Policy",
-        href: "/placements/policy", // PDF route (or direct PDF if needed)
-      },
-      { title: "Facilities", href: "/placements/facilities" },
-      {
-        title: "Placement Process & Calendar",
-        href: "/placements/process-calendar",
-      },
-      {
-        title: "Brochure",
-        href: "/placements/brochure", // modal can be handled at page level
-      },
-      { title: "Our Recruiters", href: "/placements/recruiters" },
-      { title: "Why Recruit", href: "/placements/why-recruit" },
-      { title: "MoUs", href: "/placements/mous" },
-      {
-        title: "Contact Us",
-        href: "/placements/contact", // modal / page
-      },
     ],
   },
 ];

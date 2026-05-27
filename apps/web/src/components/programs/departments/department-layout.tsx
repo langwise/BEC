@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import DepartmentSidebar from "@/components/academics/departments/sidebar";
+import DepartmentSidebar from "@/components/programs/departments/sidebar";
 import { DepartmentData } from "@/data/department/department";
-import ContentSection from "@/components/academics/departments/content";
+import ContentSection from "@/components/programs/departments/content";
 import { CheckCircle2 } from "lucide-react";
-import { FacultyCard } from "@/components/academics/faculty/faculty-card";
+import { FacultyCard } from "@/components/programs/faculty/faculty-card";
 import { motion, AnimatePresence } from "motion/react";
 
 interface DepartmentLayoutProps {

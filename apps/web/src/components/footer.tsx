@@ -64,7 +64,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/academics/programmes"
+                  href="/programs/programmes"
                   className="hover:text-primary transition-colors"
                 >
                   Programmes
@@ -111,7 +111,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/academics/calendar"
+                  href="/programs/calendar"
                   className="hover:text-primary transition-colors"
                 >
                   Academic Calendar

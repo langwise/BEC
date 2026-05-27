@@ -4,30 +4,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
-import {
-    Building2,
-    Users,
-    FileText,
-    Calendar,
-    Clock,
-    GraduationCap,
-    CheckCircle2,
-    Phone
-} from "lucide-react";
+import { Home, Building2, Phone, GraduationCap } from "lucide-react";
 
-// Define navigation items for the sidebar
-const examNav = [
-    { title: "About Examination Section", href: "/academics/examinations", icon: Building2 },
-    { title: "BEC Exam Staff", href: "/academics/examinations/staff", icon: Users },
-    { title: "BEC Rules and Regulations", href: "/academics/examinations/rules", icon: FileText },
-    { title: "Calendar of Events", href: "/academics/examinations/calendar", icon: Calendar },
-    { title: "SEE Time Table", href: "/academics/examinations/timetable", icon: Clock },
-    { title: "Results", href: "/academics/examinations/results", icon: GraduationCap },
-    { title: "Academic Verification", href: "/academics/examinations/verification", icon: CheckCircle2 },
-    { title: "Contact Information", href: "/academics/examinations/contact", icon: Phone },
+const hostelNav = [
+    { title: "About Hostel", href: "/programs/hostel", icon: Home },
+    { title: "Sir M. Visvesavaraya Block", href: "/programs/hostel/v-block", icon: Building2 },
+    { title: "Netaji Block", href: "/programs/hostel/netaji-block", icon: Building2 },
+    { title: "Malaprabha Ladies Hostel", href: "/programs/hostel/malaprabha-block", icon: Building2 },
+    { title: "PG Boys Hostel", href: "/programs/hostel/pg-block", icon: Building2 },
+    { title: "Contact Information", href: "/programs/hostel/contact", icon: Phone },
 ];
 
-export default function ExaminationsLayout({ children }: { children: React.ReactNode }) {
+export default function HostelLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
     const pathname = usePathname();
 
     return (
@@ -44,10 +36,10 @@ export default function ExaminationsLayout({ children }: { children: React.React
                         <div className="sticky top-24 space-y-8">
                             <div>
                                 <h2 className="text-sm font-bold uppercase tracking-wider text-primary mb-4 px-2">
-                                    Examinations
+                                    Hostel Admissions
                                 </h2>
                                 <nav className="flex flex-col space-y-1">
-                                    {examNav.map((item) => {
+                                    {hostelNav.map((item) => {
                                         const isActive = pathname === item.href;
                                         return (
                                             <Link
@@ -66,7 +58,7 @@ export default function ExaminationsLayout({ children }: { children: React.React
                                                 </div>
                                                 {isActive && (
                                                     <motion.div
-                                                        layoutId="exam-nav-indicator"
+                                                        layoutId="hostel-nav-indicator"
                                                         className="w-1.5 h-1.5 rounded-full bg-white"
                                                     />
                                                 )}
@@ -76,21 +68,25 @@ export default function ExaminationsLayout({ children }: { children: React.React
                                 </nav>
                             </div>
 
-                            {/* Quick Contact Card */}
-                            <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm relative overflow-hidden">
+                            {/* Quick Info Card */}
+                            <div className="p-6 rounded-2xl bg-white border border-orange-100 shadow-sm relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-24 h-24 bg-orange-50 rounded-bl-full -mr-4 -mt-4 opacity-50" />
                                 <h3 className="text-sm font-bold text-gray-900 mb-2 relative z-10">
-                                    Contact Exam Section
+                                    Warden's Office
                                 </h3>
-                                <p className="text-sm text-gray-600 mb-4 relative z-10">
-                                    For queries related to exams, results, and documents.
+                                <p className="text-xs text-gray-600 mb-4 leading-relaxed relative z-10">
+                                    For inquiries regarding hostel admissions and facilities.
                                 </p>
-                                <Link
-                                    href="/academics/examinations/contact"
-                                    className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors relative z-10"
-                                >
-                                    Contact Details &rarr;
-                                </Link>
+                                <div className="space-y-3 text-xs relative z-10">
+                                    <div className="flex items-start gap-2 text-gray-700">
+                                        <span className="font-semibold text-primary shrink-0">Chief Warden:</span>
+                                        <span>Dr. B. R. Hiremath<br />Principal</span>
+                                    </div>
+                                    <div className="flex items-start gap-2 text-gray-700">
+                                        <Phone className="w-3 h-3 text-primary mt-0.5" />
+                                        <span>+91 94486 93600<br />(Dr. P. L. Timmanagoudar)</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
