@@ -81,7 +81,8 @@ export const navigationData: NavigationItem[] = [
     ],
   },
 
-  // 4. Research
+  // 4. Research (Commented out to remove from website navigation)
+  /*
   {
     title: "Research",
     items: [
@@ -140,6 +141,7 @@ export const navigationData: NavigationItem[] = [
       },
     ],
   },
+  */
 
   // 5. Facilities (Infrastructure)
   {
