@@ -9,11 +9,11 @@ interface ProgrammeNavProps {
 }
 
 const programmes = [
-  { id: "ug", label: "Under Graduate/BE", href: "/academics/programmes/ug" },
-  { id: "pg", label: "Post Graduate/M.Tech", href: "/academics/programmes/pg" },
-  { id: "mba", label: "MBA", href: "/academics/programmes/mba" },
-  { id: "mca", label: "MCA", href: "/academics/programmes/mca" },
-  { id: "phd", label: "M.Sc.(Engg.)/Ph.D", href: "/academics/programmes/phd" },
+  { id: "ug", label: "Under Graduate/BE", href: "/programs/programmes/ug" },
+  { id: "pg", label: "Post Graduate/M.Tech", href: "/programs/programmes/pg" },
+  { id: "mba", label: "MBA", href: "/programs/programmes/mba" },
+  { id: "mca", label: "MCA", href: "/programs/programmes/mca" },
+  { id: "phd", label: "M.Sc.(Engg.)/Ph.D", href: "/programs/programmes/phd" },
 ];
 
 export function ProgrammeNav({ currentProgramme }: ProgrammeNavProps) {
