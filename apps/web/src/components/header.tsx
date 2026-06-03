@@ -11,7 +11,10 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+
+import { cn } from "@/lib/utils";
 
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
@@ -47,7 +50,19 @@ export function Header() {
               <NavigationMenuList className="gap-0.5">
                 {navigationData.map((item: NavigationItem) => (
                   <NavigationMenuItem key={item.title}>
-                    <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:bg-accent/50 h-12 px-4">
+                    {!item.items && item.href ? (
+                      <a
+                        href={item.href}
+                        className={cn(
+                          navigationMenuTriggerStyle(),
+                          "h-12 bg-transparent"
+                        )}
+                      >
+                        {item.title}
+                      </a>
+                    ) : (
+                      <>
+                    <NavigationMenuTrigger className="text-sm font-medium bg-transparent h-12 px-4">
                       {item.title}
                     </NavigationMenuTrigger>
 
@@ -60,7 +75,7 @@ export function Header() {
                               <NavigationMenuLink
                                 key={link.title}
                                 href={link.href}
-                                className="block rounded-md p-4 hover:bg-accent"
+                                className="block rounded-md p-4 hover:bg-white hover:text-primary transition-colors"
                               >
                                 <div className="text-sm font-medium">
                                   {link.title}
@@ -90,7 +105,7 @@ export function Header() {
                                     <li key={nested.title}>
                                       <NavigationMenuLink
                                         href={nested.href}
-                                        className="block rounded-md px-4 py-2.5 text-sm hover:bg-accent"
+                                        className="block rounded-md px-4 py-2.5 text-sm hover:bg-white hover:text-primary transition-colors"
                                       >
                                         {nested.title}
                                       </NavigationMenuLink>
@@ -103,6 +118,8 @@ export function Header() {
                         )}
                       </div>
                     </NavigationMenuContent>
+                      </>
+                    )}
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
@@ -126,6 +143,15 @@ export function Header() {
               <nav className="flex flex-col gap-1">
                 {navigationData.map((item) => (
                   <div key={item.title} className="border-b border-muted py-2">
+                    {!item.items && item.href ? (
+                      <a
+                        href={item.href}
+                        className="block py-2 font-medium hover:text-primary"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.title}
+                      </a>
+                    ) : (
                     <details className="group">
                       <summary className="flex items-center justify-between cursor-pointer py-2 font-medium">
                         {item.title}
@@ -168,6 +194,7 @@ export function Header() {
                         ))}
                       </div>
                     </details>
+                    )}
                   </div>
                 ))}
               </nav>

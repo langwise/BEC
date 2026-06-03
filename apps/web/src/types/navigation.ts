@@ -12,5 +12,6 @@ export type NavigationItemChild = NavigationSubItem | NavigationGroup;
 
 export interface NavigationItem {
   title: string;
+  href?: string;
   items?: NavigationItemChild[];
 }

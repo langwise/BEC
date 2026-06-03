@@ -22,12 +22,12 @@ export const placementStats = [
 ];
 
 export const topRecruiters = [
-  { name: "Wipro", logo: "/logos/adobe.svg" },
-  { name: "HCL", logo: "/logos/apple.svg" },
-  { name: "Tech Mahindra", logo: "/logos/google.svg" },
-  { name: "Microsoft", logo: "/logos/microsoft.svg" },
-  { name: "IBM", logo: "/logos/ibm.svg" },
-  { name: "Adobe", logo: "/logos/adobe.svg" },
-  { name: "Apple", logo: "/logos/apple.svg" },
-  { name: "Google", logo: "/logos/google.svg" },
+  { name: "Wipro", domain: "wipro.com" },
+  { name: "HCL", domain: "hcltech.com" },
+  { name: "Tech Mahindra", domain: "techmahindra.com" },
+  { name: "Microsoft", domain: "microsoft.com" },
+  { name: "IBM", domain: "ibm.com" },
+  { name: "Adobe", domain: "adobe.com" },
+  { name: "Apple", domain: "apple.com" },
+  { name: "Google", domain: "google.com" },
 ];

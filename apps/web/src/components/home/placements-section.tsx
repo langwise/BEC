@@ -2,7 +2,7 @@
 
 import { FadeIn } from "../animations/fade-in";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { BrandLogo } from "@/components/placements/brand-logo";
 import { placementStats, topRecruiters } from "@/data/home/placements";
 import { ArrowRight, Briefcase } from "lucide-react";
 import Link from "next/link";
@@ -41,14 +41,14 @@ export function PlacementsSection() {
                 asChild
                 className="h-12 px-8 rounded-full text-base font-bold shadow-lg shadow-orange-200 hover:shadow-xl hover:-translate-y-0.5 transition-all"
               >
-                <Link href="/placements/brochure">Placement Report</Link>
+                <Link href="/placements">Placement Brochure</Link>
               </Button>
               <Button
                 asChild
                 variant="outline"
                 className="h-12 px-8 rounded-full text-base font-bold border-gray-200 hover:bg-gray-50 hover:text-primary"
               >
-                <Link href="/placements/recruiters">Our Recruiters</Link>
+                <Link href="/placements#recruiters">Our Recruiters</Link>
               </Button>
             </FadeIn>
 
@@ -79,7 +79,7 @@ export function PlacementsSection() {
                   Top Recruiters
                 </h3>
                 <Link
-                  href="/placements/recruiters"
+                  href="/placements#recruiters"
                   className="text-sm font-bold text-primary flex items-center gap-1 hover:gap-2 transition-all"
                 >
                   View All <ArrowRight className="w-4 h-4" />
@@ -90,13 +90,13 @@ export function PlacementsSection() {
                 {topRecruiters.map((company, index) => (
                   <div
                     key={index}
-                    className="aspect-video relative grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
+                    className="aspect-video grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
                   >
-                    <Image
-                      src={company.logo}
-                      alt={company.name}
-                      fill
-                      className="object-contain"
+                    <BrandLogo
+                      name={company.name}
+                      domain={company.domain}
+                      className="max-h-10 w-auto max-w-[120px]"
+                      monogramClassName="h-12 w-12 text-lg"
                     />
                   </div>
                 ))}

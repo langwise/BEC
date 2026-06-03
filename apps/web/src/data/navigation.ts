@@ -169,29 +169,7 @@ export const navigationData: NavigationItem[] = [
   // 6. Placements
   {
     title: "Placements",
-    items: [
-      { title: "Home", href: "/placements" },
-      {
-        title: "Placement Policy",
-        href: "/placements/policy",
-      },
-      { title: "Facilities", href: "/placements/facilities" },
-      {
-        title: "Placement Process & Calendar",
-        href: "/placements/process-calendar",
-      },
-      {
-        title: "Brochure",
-        href: "/placements/brochure",
-      },
-      { title: "Our Recruiters", href: "/placements/recruiters" },
-      { title: "Why Recruit", href: "/placements/why-recruit" },
-      { title: "MoUs", href: "/placements/mous" },
-      {
-        title: "Contact Us",
-        href: "/placements/contact",
-      },
-    ],
+    href: "/placements",
   },
 
   // 7. Student Life
