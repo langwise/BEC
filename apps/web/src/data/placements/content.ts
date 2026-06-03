@@ -1,4 +1,45 @@
 export const placementContent = {
+  brochureHref: "/placement-brochure.pdf",
+  recruiterFormSrc: "",
+  accreditation: [
+    { label: "NIRF", value: "150–250 band", note: "Rank band, last 4 years" },
+    { label: "NBA", value: "100% UG", note: "& 50% of PG programs accredited" },
+    { label: "NAAC", value: "'A' Grade", note: "3.34 on a 4-point scale" },
+    { label: "AICTE–CII", value: "Gold", note: "Industry-linked survey category" },
+  ],
+  officers: [
+    {
+      name: "Dr. Shankar Kambalimath",
+      role: "Dean, Career Guidance & Placement",
+      scope: "Recruiters",
+      email: "becplacement@gmail.com",
+      phone: "8904095779",
+    },
+    {
+      name: "Dr. Santosh B. Kumbalavati",
+      role: "Assistant Placement Officer",
+      scope: "Internship providers",
+      phone: "9986339066",
+    },
+    {
+      name: "Prof. Brijmohan A. Vyas",
+      role: "Assistant Placement Officer",
+      scope: "PG & UG students",
+      phone: "9743391794",
+    },
+    {
+      name: "Prof. Ramesh Baragani",
+      role: "Assistant Placement Officer",
+      scope: "Training providers",
+      phone: "7204313650",
+    },
+    {
+      name: "Prof. Rajshekhar Malagihal",
+      role: "Assistant Placement Officer",
+      scope: "Training providers",
+      phone: "8884561762",
+    },
+  ],
   home: {
     title: "Training and Placement Cell",
     subtitle: "Basaveshwar Engineering College, Bagalkote",
