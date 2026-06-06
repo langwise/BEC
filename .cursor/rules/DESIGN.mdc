@@ -35,6 +35,14 @@ Visual and interaction rules to keep the site consistent. Reference this for col
 - Links: Underline on hover; use accent color for emphasis only when link density is low.
 - Chips/badges: Use muted backgrounds with foreground text for categorization, not primary.
 
+### Shared building blocks (`src/components/common/`) — reuse these, don't re-roll
+Canonical patterns; any new page must use them so every listing looks identical.
+- **`SectionHeading`** — every section title (optional uppercase eyebrow + `h2` + supporting paragraph). Don't hand-write `<h2>` heading blocks.
+- **`PersonCard` / `PersonGrid`** — the one card for every person on the site (leadership, deans, officers, HODs, Board of Governors, Sangha, faculty). Uniform `aspect-4/3` photo (initials fallback when no photo), name, optional description line, `badges` (`primary` tone for the role; `muted`/`outline` for status like "To confirm"/"Awaiting update"), optional email. Photos are R2 URLs via `asset()`.
+- **`FilterChips`** — single-select category/segment filtering that wraps cleanly (e.g. Board of Governors by category, gallery filters). Use this, **not** the `Tabs` primitive, for many wrapping filters; reserve `Tabs` for a small fixed segmented control.
+- **`LeadershipMessage`** — full layout for any "message from a leader" page (Principal, Chairman, Director…): standard eyebrow/title header, sticky portrait + name card with optional pull-quote, body paragraphs, optional achievements panel, and a signature block. Pass the message as a string (blank lines = paragraphs). Don't re-create bespoke message-page layouts.
+- Cards use `rounded-sm` + `border-stone-200` + subtle `shadow-sm`; people grids are `sm:grid-cols-2 lg:grid-cols-3`. Match this for any new directory/listing.
+
 ## Imagery and Media
 - Hero: Parallax video for desktop, still image fallback for mobile. Always apply a dark or warm overlay for text readability.
 - Photography: Prefer campus life and people-centric shots. Maintain consistent color warmth; avoid clashing filters.
