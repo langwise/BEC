@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FadeIn } from "../animations/fade-in";
 import { Instagram, Twitter, Linkedin, Facebook, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { lifeHighlights } from "@/data/home/campus";
+import { campusHighlights as lifeHighlights } from "@/content/home";
 import Link from "next/link";
 
 export function CampusLifeSection() {
