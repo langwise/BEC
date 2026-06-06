@@ -13,65 +13,12 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
+import { aboutContent } from "@/content/home";
 
-const aboutSlides = [
-  {
-    id: 1,
-    text: (
-      <>
-        <p className="mb-4">
-          <span className="font-semibold text-foreground">
-            Basaveshwar Engineering College, Bagalkote (BEC)
-          </span>{" "}
-          – a crown jewel in the highly respected and renowned 120-year-old
-          Basaveshwar Veerashaiva Vidya Vardhak Sangha (B. V. V. S.) – is a
-          premier technical institution in North Karnataka. Started in 1963, it
-          has grown into a center of excellence with 11 UG, 6 PG, and 10
-          Research Centers recognized by VTU.
-        </p>
-        <p>
-          BEC is a government-aided institution recognized by AICTE, New Delhi
-          and accredited by NAAC with 'A' grade. It is permanently affiliated to
-          VTU, Belagavi.
-        </p>
-      </>
-    ),
-  },
-  {
-    id: 2,
-    text: (
-      <>
-        <p className="mb-4">
-          The college boasts state-of-the-art facilities across a vast 93-acre
-          campus. Our legacy spans over 20,000+ alumni who now hold leadership
-          positions in top MNCs and organizations globally.
-        </p>
-        <p>
-          With a highly qualified faculty of over 180 (55% holding PhDs) and
-          supported by 200 staff members, we offer an unbeatable academic
-          ambience and superior education quality for our 3500+ students.
-        </p>
-      </>
-    ),
-  },
-  {
-    id: 3,
-    text: (
-      <>
-        <p>
-          We provide a holistic learning environment with spacious hostels,
-          campus-wide high-speed WiFi, a well-stocked digital and print library,
-          and advanced computer labs.
-        </p>
-        <p className="mt-4">
-          Life at BEC is vibrant with multiple hygienic canteens and electric
-          buggies for easy campus commuting, making it one of the best places to
-          teach and learn.
-        </p>
-      </>
-    ),
-  },
-];
+const aboutSlides = aboutContent.slides.map((paragraphs, index) => ({
+  id: index + 1,
+  paragraphs,
+}));
 
 export function AboutSection() {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -98,16 +45,16 @@ export function AboutSection() {
             className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[400px] lg:min-h-full group"
           >
             <Image
-              src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop"
+              src={aboutContent.image}
               alt="BEC Campus"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute bottom-8 left-8 text-white max-w-sm">
-              <div className="text-4xl font-bold mb-2">1963</div>
+              <div className="text-4xl font-bold mb-2">{aboutContent.established}</div>
               <p className="text-white/80 font-medium tracking-wide border-l-4 border-primary pl-4">
-                Year of Establishment
+                {aboutContent.establishedLabel}
               </p>
             </div>
           </motion.div>
@@ -138,7 +85,11 @@ export function AboutSection() {
                   <CarouselItem key={slide.id}>
                     <div className="pr-4 md:pr-12">
                       <div className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                        {slide.text}
+                        {slide.paragraphs.map((paragraph, index) => (
+                          <p key={index} className={index > 0 ? "mt-4" : ""}>
+                            {paragraph}
+                          </p>
+                        ))}
                       </div>
                     </div>
                   </CarouselItem>

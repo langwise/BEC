@@ -10,7 +10,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
-import { heroSlides } from "@/data/home/hero-slides";
+import { heroSlides } from "@/content/home";
 import { cn } from "@/lib/utils";
 
 export function HeroBanner() {

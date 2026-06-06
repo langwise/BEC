@@ -1,0 +1,69 @@
+{
+  "$schema": "./home.schema.json",
+  "hero": [
+    {
+      "image": "institute/group-photos/cine1579.webp",
+      "title": "World-Class Infrastructure",
+      "description": "Experience a campus designed for innovation and growth."
+    },
+    {
+      "image": "institute/group-photos/cine1604.webp",
+      "title": "Cutting-Edge Research",
+      "description": "Pioneering solutions for tomorrow's challenges."
+    },
+    {
+      "image": "institute/group-photos/cine1627.webp",
+      "title": "Knowledge Hub",
+      "description": "Access to vast resources and a quiet place to focus."
+    },
+    {
+      "image": "facilities/general/cine1255.webp",
+      "title": "Celebrating Excellence",
+      "description": "Shaping the leaders of the future."
+    },
+    {
+      "image": "student-life/cultural/cine0157.webp",
+      "title": "Vibrant Community",
+      "description": "Join a network of diverse and talented individuals."
+    }
+  ],
+  "about": {
+    "image": "facilities/general/cine1256.webp",
+    "established": "1963",
+    "establishedLabel": "Year of Establishment",
+    "slides": [
+      [
+        "Basaveshwar Engineering College, Bagalkote (BEC) – a crown jewel in the highly respected and renowned 120-year-old Basaveshwar Veerashaiva Vidya Vardhak Sangha (B. V. V. S.) – is a premier technical institution in North Karnataka. Started in 1963, it has grown into a center of excellence with 11 UG, 6 PG, and 10 Research Centers recognized by VTU.",
+        "BEC is a government-aided institution recognized by AICTE, New Delhi and accredited by NAAC with 'A' grade. It is permanently affiliated to VTU, Belagavi."
+      ],
+      [
+        "The college boasts state-of-the-art facilities across a vast 93-acre campus. Our legacy spans over 20,000+ alumni who now hold leadership positions in top MNCs and organizations globally.",
+        "With a highly qualified faculty of over 180 (55% holding PhDs) and supported by 200 staff members, we offer an unbeatable academic ambience and superior education quality for our 3500+ students."
+      ],
+      [
+        "We provide a holistic learning environment with spacious hostels, campus-wide high-speed WiFi, a well-stocked digital and print library, and advanced computer labs.",
+        "Life at BEC is vibrant with multiple hygienic canteens and electric buggies for easy campus commuting, making it one of the best places to teach and learn."
+      ]
+    ]
+  },
+  "campusLife": [
+    {
+      "image": "student-life/clubs/cine1910.webp",
+      "title": "Student Clubs",
+      "description": "50+ technical and cultural clubs fostering creativity.",
+      "className": "md:col-span-2 md:row-span-2"
+    },
+    {
+      "image": "student-life/sports/cine0040.webp",
+      "title": "Sports Excellence",
+      "description": "State-of-the-art complexes for holistic development.",
+      "className": "md:col-span-1 md:row-span-1"
+    },
+    {
+      "image": "student-life/cultural/cine0167.webp",
+      "title": "Cultural Fests",
+      "description": "Celebrating diversity and talent year-round.",
+      "className": "md:col-span-1 md:row-span-1"
+    }
+  ]
+}
