@@ -1,18 +1,25 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import { orgChartLevels } from "@/data/governance/org-chart";
 import {
   BogMember,
   bogLastUpdated,
   bogMembers,
-} from "@/data/governance/bog-members";
-import { deans } from "@/data/governance/deans";
-import { departmentHods } from "@/data/governance/hods";
-import { orgChartLevels } from "@/data/governance/org-chart";
+  deans,
+  hods,
+  officers,
+  principal,
+  sangha,
+} from "@/content/governance";
 import { BogGrid, bogCategoryLabels } from "@/components/governance/bog-grid";
 import { DeansGrid } from "@/components/governance/deans-grid";
+import { FilterChips } from "@/components/common/filter-chips";
+import { PersonCard, PersonGrid } from "@/components/common/person-card";
+import { SectionHeading } from "@/components/common/section-heading";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -21,12 +28,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
 
 const governanceLinks = [
   {
@@ -53,11 +54,26 @@ const governanceLinks = [
 
 const anchorNav = [
   { id: "overview", label: "Overview" },
-  { id: "deans", label: "Deans" },
+  { id: "leadership", label: "Leadership" },
+  { id: "deans", label: "Deans & Officers" },
+  { id: "sangha", label: "B.V.V. Sangha" },
   { id: "bog", label: "Board of Governors" },
   { id: "org-chart", label: "Organization Chart" },
   { id: "hods", label: "HOD Directory" },
   { id: "documents", label: "Documents" },
+];
+
+// Build the Board-of-Governors filter chips from the categories actually present,
+// so empty categories never show a chip that yields an empty grid.
+const bogFilterOptions = [
+  { value: "all" as const, label: "All", count: bogMembers.length },
+  ...(Object.keys(bogCategoryLabels) as BogMember["category"][])
+    .filter((category) => bogMembers.some((m) => m.category === category))
+    .map((category) => ({
+      value: category,
+      label: bogCategoryLabels[category],
+      count: bogMembers.filter((m) => m.category === category).length,
+    })),
 ];
 
 export default function GovernancePage() {
@@ -196,19 +212,103 @@ export default function GovernancePage() {
       </section>
 
       <section
-        id="deans"
-        className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-6"
+        id="leadership"
+        className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
       >
-        <div className="space-y-2">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-            Deans
-          </h2>
-          <p className="text-base text-gray-700 leading-relaxed">
-            Academic and administrative portfolios. Official names will be updated; contact
-            emails are provided where available.
-          </p>
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6 grid gap-8 md:grid-cols-[0.8fr_1.2fr] items-center">
+          <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
+            <Image
+              src={principal.photo}
+              alt={principal.name}
+              fill
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+          <div className="space-y-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+              Leadership
+            </p>
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+              {principal.name}
+            </h2>
+            <Badge className="rounded-sm bg-primary text-white">
+              {principal.role}
+            </Badge>
+            <p className="text-base leading-relaxed text-gray-700">
+              The Principal serves as Member Secretary to the Board of Governors and leads
+              the institution&apos;s academic and administrative execution alongside the Deans,
+              Controller of Examinations, and Heads of Department.
+            </p>
+            {principal.email ? (
+              <Link
+                href={`mailto:${principal.email}`}
+                className="inline-flex text-primary text-sm font-semibold hover:underline underline-offset-4"
+              >
+                {principal.email}
+              </Link>
+            ) : null}
+          </div>
         </div>
-        <DeansGrid deans={deans} />
+      </section>
+
+      <section
+        id="deans"
+        className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-10"
+      >
+        <div className="space-y-6">
+          <SectionHeading
+            title="Deans"
+            description="Academic and administrative portfolios steering curriculum, placements, research, and quality."
+          />
+          <DeansGrid deans={deans} />
+        </div>
+
+        <div className="space-y-6">
+          <SectionHeading
+            title="Key officers"
+            description="Statutory and support functions essential to day-to-day operations."
+          />
+          <DeansGrid deans={officers} />
+        </div>
+      </section>
+
+      <section
+        id="sangha"
+        className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-8"
+      >
+        <SectionHeading
+          eyebrow="Parent Trust"
+          title="B.V.V. Sangha leadership"
+          description={sangha.intro}
+        />
+
+        <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
+          <Image
+            src={sangha.groupPhoto}
+            alt="B.V.V. Sangha leadership"
+            fill
+            sizes="(max-width: 1152px) 100vw, 1152px"
+            className="object-cover"
+          />
+        </div>
+
+        <PersonGrid>
+          {sangha.members.map((member) => (
+            <PersonCard
+              key={member.name}
+              photo={member.photo}
+              name={member.name}
+              badges={[
+                { label: member.role, tone: "primary" },
+                ...(member.verify
+                  ? [{ label: "To confirm", tone: "muted" as const }]
+                  : []),
+              ]}
+            />
+          ))}
+        </PersonGrid>
       </section>
 
       <section
@@ -216,65 +316,28 @@ export default function GovernancePage() {
         className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
       >
         <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div className="space-y-2">
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                Board of Governors
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Official BoG composition sourced from becbgk.edu. Filter by category to skim
-                core members, nominees, invitees, and student representatives.
-              </p>
-              <p className="text-xs text-gray-500">{bogLastUpdated}</p>
-            </div>
-            <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.14em]">
-              <Badge variant="secondary" className="rounded-sm">
-                VTU & UGC nominees included
-              </Badge>
-              <Badge variant="outline" className="rounded-sm">
-                Student invitees listed
-              </Badge>
-            </div>
+          <SectionHeading
+            title="Board of Governors"
+            description="Official BoG composition sourced from becbgk.edu. Filter by category to skim core members, nominees, invitees, and student representatives."
+          />
+          <p className="text-xs text-gray-500">{bogLastUpdated}</p>
+
+          <div className="rounded-sm border border-stone-200 bg-white p-3 shadow-sm md:p-4">
+            <FilterChips
+              aria-label="Filter Board of Governors by category"
+              options={bogFilterOptions}
+              value={activeCategory}
+              onChange={setActiveCategory}
+            />
           </div>
 
-          <Tabs
-            value={activeCategory}
-            onValueChange={(value) =>
-              setActiveCategory(value as "all" | BogMember["category"])
+          <BogGrid
+            members={
+              activeCategory === "all"
+                ? bogMembers
+                : bogMembers.filter((member) => member.category === activeCategory)
             }
-            className="w-full"
-          >
-            <TabsList className="flex w-full flex-wrap gap-2 rounded-sm bg-white p-2 shadow-sm">
-              <TabsTrigger
-                value="all"
-                className="rounded-sm px-3 py-2 text-sm font-medium data-[state=active]:bg-primary data-[state=active]:text-white"
-              >
-                All ({bogMembers.length})
-              </TabsTrigger>
-              {Object.entries(bogCategoryLabels).map(([id, label]) => (
-                <TabsTrigger
-                  key={id}
-                  value={id}
-                  className="rounded-sm px-3 py-2 text-sm font-medium data-[state=active]:bg-primary data-[state=active]:text-white"
-                >
-                  {label}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-            <TabsContent value="all" className="mt-6">
-              <BogGrid members={bogMembers} />
-            </TabsContent>
-            {Object.keys(bogCategoryLabels).map((id) => {
-              const membersForCategory = bogMembers.filter(
-                (member) => member.category === (id as BogMember["category"]),
-              );
-              return (
-                <TabsContent key={id} value={id} className="mt-6">
-                  <BogGrid members={membersForCategory} />
-                </TabsContent>
-              );
-            })}
-          </Tabs>
+          />
         </div>
       </section>
 
@@ -332,52 +395,27 @@ export default function GovernancePage() {
         className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
       >
         <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
-          <div className="space-y-2">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-              HOD directory
-            </h2>
-            <p className="text-base text-gray-700 leading-relaxed">
-              Department heads as published on the main site will be populated here. Placeholder
-              rows indicate data to be confirmed from department pages.
-            </p>
-          </div>
+          <SectionHeading
+            title="HOD directory"
+            description="Heads of Department across all programmes. Cards awaiting an update will be confirmed from the department pages."
+          />
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {departmentHods.map((hod) => (
-              <Card key={hod.department} className="rounded-sm border-stone-200 shadow-sm">
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-lg font-semibold text-gray-900">
-                    {hod.department}
-                  </CardTitle>
-                  <CardDescription className="text-sm text-gray-600">
-                    {hod.placeholder ? "Official HOD details will be published soon." : hod.title}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2 text-sm text-gray-800">
-                  {hod.name ? (
-                    <div className="flex items-center gap-2">
-                      <Badge variant="secondary" className="rounded-sm">
-                        HOD
-                      </Badge>
-                      <span className="font-medium">{hod.name}</span>
-                    </div>
-                  ) : (
-                    <Badge variant="outline" className="rounded-sm text-xs">
-                      Awaiting update
-                    </Badge>
-                  )}
-                  {hod.email ? (
-                    <Link
-                      href={`mailto:${hod.email}`}
-                      className="text-primary hover:underline underline-offset-4"
-                    >
-                      {hod.email}
-                    </Link>
-                  ) : null}
-                </CardContent>
-              </Card>
+          <PersonGrid>
+            {hods.map((hod) => (
+              <PersonCard
+                key={hod.department}
+                photo={hod.photo}
+                name={hod.name || hod.department}
+                description={hod.name ? hod.department : undefined}
+                email={hod.email}
+                badges={[
+                  hod.name
+                    ? { label: "Head of Department", tone: "muted" }
+                    : { label: "Awaiting update", tone: "outline" },
+                ]}
+              />
             ))}
-          </div>
+          </PersonGrid>
         </div>
       </section>
 

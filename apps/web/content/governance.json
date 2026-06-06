@@ -1,0 +1,259 @@
+{
+  "$schema": "./governance.schema.json",
+  "principal": {
+    "name": "Dr. B. R. Hiremath",
+    "role": "Principal & Member Secretary",
+    "photo": "governance/principal/dr-b-r-hiremath.webp",
+    "email": "principal@becbgk.edu"
+  },
+  "deans": [
+    {
+      "role": "Dean Academic",
+      "name": "Dr. P. N. Kulkarni",
+      "photo": "governance/deans/dr-p-n-kulkarni.webp",
+      "email": "deanac@becbgk.edu",
+      "focus": "Programs & curriculum"
+    },
+    {
+      "role": "Dean Placement & Training",
+      "name": "Dr. S. G. Kambalimath",
+      "photo": "governance/deans/dr-shankar-kambalimath.webp",
+      "email": "placement@becbgk.edu",
+      "focus": "Career services & placements"
+    },
+    {
+      "role": "Dean Research & Development",
+      "name": "Dr. Bharati S. Meti",
+      "photo": "governance/deans/dr-bharati-s-meti.webp",
+      "email": "deanrd@becbgk.edu",
+      "focus": "Research, innovation, consultancy",
+      "verify": true
+    },
+    {
+      "role": "Dean Quality Assurance",
+      "name": "Dr. Mahabaleshwar S. K.",
+      "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
+      "focus": "Accreditation & quality systems",
+      "verify": true
+    }
+  ],
+  "officers": [
+    {
+      "role": "Controller of Examinations",
+      "name": "Dr. Chandrashekhar K.",
+      "photo": "governance/hod/coe/dr-chandrashekhar-k.webp",
+      "focus": "Examinations & evaluation"
+    },
+    {
+      "role": "Librarian",
+      "name": "Dr. Shreekant G. Karkun",
+      "photo": "governance/hod/librarian/dr-shreekant-g-karkun.webp",
+      "focus": "Central library & digital resources"
+    },
+    {
+      "role": "Admission Section In-charge",
+      "name": "Dr. S. G. Kumbalavati",
+      "photo": "governance/admission-staff/dr-s-g-kumbalavati.webp",
+      "focus": "Admissions & student intake",
+      "verify": true
+    }
+  ],
+  "hods": [
+    {
+      "department": "Artificial Intelligence & Machine Learning",
+      "name": "Dr. B. M. Reshmi",
+      "photo": "governance/hod/aiml/dr-b-m-reshmi.webp"
+    },
+    {
+      "department": "Biotechnology",
+      "name": "Dr. Bharati S. Meti",
+      "photo": "governance/hod/biotechnology/dr-bharati-s-meti.webp"
+    },
+    {
+      "department": "Chemistry",
+      "name": "Dr. S. K. Patil",
+      "photo": "governance/hod/chemistry/dr-s-k-patil.webp"
+    },
+    {
+      "department": "Civil Engineering",
+      "name": "Dr. S. H. Sanni",
+      "photo": "governance/hod/civil/dr-s-h-sanni.webp"
+    },
+    {
+      "department": "Computer Science & Engineering",
+      "name": "Dr. V. B. Pagi",
+      "photo": "governance/hod/cse/dr-v-b-pagi.webp"
+    },
+    {
+      "department": "Electronics & Communication Engineering",
+      "name": "Dr. Mahabaleshwar S. K.",
+      "photo": "governance/hod/ece/dr-mahabaleshwar-s-k.webp"
+    },
+    {
+      "department": "Electrical & Electronics Engineering",
+      "name": "Dr. R. L. Naik",
+      "photo": "governance/hod/eee/dr-r-l-naik.webp"
+    },
+    {
+      "department": "Electronics & Computer Engineering",
+      "name": "Dr. C. L. Chayalakshmi",
+      "photo": "governance/hod/ecs/dr-c-l-chayalakshmi.webp"
+    },
+    {
+      "department": "Industrial & Production Engineering",
+      "name": "Dr. C. M. Javalagi",
+      "photo": "governance/hod/ip/dr-c-m-javalagi.webp"
+    },
+    {
+      "department": "Information Science & Engineering",
+      "name": "Dr. Lokesh B. Bhajantri",
+      "photo": "governance/hod/ise/dr-lokesh-b-bhajantri.webp"
+    },
+    {
+      "department": "Mechanical Engineering",
+      "name": "Dr. Vinay V. Kuppast",
+      "photo": "governance/hod/mechanical/dr-vinay-v-kuppast.webp"
+    },
+    {
+      "department": "Mathematics",
+      "name": "Dr. S. V. Gurushanthanavar",
+      "photo": "governance/hod/maths/dr-s-v-gurushanthanavar.webp"
+    },
+    {
+      "department": "Humanities",
+      "name": "Dr. B. G. Hokarani",
+      "photo": "governance/hod/hss/dr-b-g-hokarani.webp"
+    },
+    {
+      "department": "MBA",
+      "name": "Dr. Vinod S. Puranik",
+      "photo": "governance/hod/mba/dr-vinod-s-puranik.webp"
+    },
+    {
+      "department": "MCA",
+      "name": "Sri S. M. Magi",
+      "photo": "governance/hod/mca/sri-s-m-magi.webp"
+    },
+    {
+      "department": "Automobile Engineering",
+      "placeholder": true
+    },
+    {
+      "department": "Physics",
+      "placeholder": true
+    }
+  ],
+  "sangha": {
+    "intro": "Basaveshwar Veerashaiva Vidya Vardhak Sangha (B.V.V. Sangha), established in 1906, is the parent trust that runs BEC and 120+ institutions across north Karnataka under the philosophy “Work is Worship”.",
+    "groupPhoto": "governance/sangha/group-photo.webp",
+    "members": [
+      {
+        "name": "Shri Omkar",
+        "role": "B.V.V. Sangha Office Bearer",
+        "photo": "governance/sangha/shri-omkar.webp",
+        "verify": true
+      },
+      {
+        "name": "Sri Mahesh N. Athani",
+        "role": "B.V.V. Sangha Office Bearer",
+        "photo": "governance/sangha/sri-mahesh-n-athani.webp",
+        "verify": true
+      },
+      {
+        "name": "Dr. Vijayakumar S. Katagihallimath",
+        "role": "B.V.V. Sangha Office Bearer",
+        "photo": "governance/sangha/dr-vijayakumar-s-katagihallimath.webp",
+        "verify": true
+      }
+    ]
+  },
+  "bogLastUpdated": "Based on becbgk.edu/BOG Members (retrieved Dec 7, 2025)",
+  "bog": [
+    {
+      "name": "Prof. S. R. Gudisagar",
+      "role": "Chairman",
+      "affiliation": "Development Officer, B.V.V Sangha",
+      "category": "chair"
+    },
+    {
+      "name": "Prof. N. G. Karur",
+      "role": "Member",
+      "affiliation": "Administrative Officer, B.V.V Sangha",
+      "category": "sangha"
+    },
+    {
+      "name": "Sri. Shivaram G. Hegade",
+      "role": "Member",
+      "affiliation": "Chartered Accountant",
+      "category": "industry"
+    },
+    {
+      "name": "Dr. B. R. Srinivasmurthy",
+      "role": "Member",
+      "affiliation": "Emeritus Professor, IISc Bangalore",
+      "category": "academia"
+    },
+    {
+      "name": "Dr. Krishna Venkatesh",
+      "role": "Member",
+      "affiliation": "VTU Nominee",
+      "category": "nominee"
+    },
+    {
+      "name": "Prof. ShyamSundar Patnaik",
+      "role": "Member",
+      "affiliation": "UGC Nominee",
+      "category": "nominee"
+    },
+    {
+      "name": "Dr. L. S. Ganesh",
+      "role": "Invitee",
+      "affiliation": "Professor, DMS, IIT Madras Chennai",
+      "category": "invitee"
+    },
+    {
+      "name": "Dr. V. B. Pagi",
+      "role": "Member",
+      "affiliation": "Professor, Department of Computer Science Engineering, BEC",
+      "category": "faculty",
+      "photo": "governance/hod/cse/dr-v-b-pagi.webp"
+    },
+    {
+      "name": "Dr. C. M. Veerendrakumar",
+      "role": "Member",
+      "affiliation": "Associate Professor, Department of Automobile Engineering, BEC",
+      "category": "faculty"
+    },
+    {
+      "name": "Prof. T. G. Seetharam",
+      "role": "Invitee",
+      "affiliation": "Director, IIT Guwahati",
+      "category": "invitee"
+    },
+    {
+      "name": "DTE State Govt., Govt. of Karnataka, Bangalore",
+      "role": "Member",
+      "affiliation": "Directorate of Technical Education Nominee",
+      "category": "government"
+    },
+    {
+      "name": "Dr. B. R. Hiremath",
+      "role": "Ex-officio Member Secretary",
+      "affiliation": "Principal, Basaveshwar Engineering College, Bagalkot",
+      "category": "member-secretary",
+      "photo": "governance/principal/dr-b-r-hiremath.webp"
+    },
+    {
+      "name": "M. Tech. Students – 2 Nos.",
+      "role": "Invitee",
+      "affiliation": "Postgraduate student representatives",
+      "category": "students"
+    },
+    {
+      "name": "B.E. Students – 2 Nos.",
+      "role": "Invitee",
+      "affiliation": "Undergraduate student representatives",
+      "category": "students"
+    }
+  ]
+}
