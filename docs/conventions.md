@@ -13,7 +13,7 @@ Never write a raw URL (`becbgk.edu/...`, `/Documents/...`, a Drive link) into a 
 
 ```ts
 import { asset } from "@/lib/assets";
-profilePhotoUrl: asset("governance/hods/cse-hod.jpg")
+photo: asset("departments/cse/faculty/veerappa-b-pagi.webp")
 ```
 
 `asset(key)` resolves the key against the generated manifest → R2 URL (with a `/public/` fallback during transition). To add a new asset, run the pipeline ([asset-pipeline.md](asset-pipeline.md)); don't reference files that aren't in the manifest.
@@ -26,7 +26,9 @@ Edit `data/department/department.ts`. Build pages from the existing `sections[]`
 
 ## People / faculty
 
-Use `FacultyProfile` (`types/faculty.ts`). Most fields are optional — fill what you have. Photo = `basicInfo.profilePhotoUrl` (an `asset()` key). Where individual data is missing, pull from the current live site (per stakeholder note in [context.md](context.md)).
+Two distinct kinds of "person":
+- **Governance people** (leadership, deans, HoDs, BoG, Sangha) live in `data/governance/*` and render with the shared `PersonCard`/`PersonGrid`.
+- **Department faculty** live in `content/faculty.json` keyed by department slug — minimal records `{ name, designation, photo?, cv? }` where `photo`/`cv` are R2 asset keys. `src/content/faculty.ts` resolves them to `FacultyMember`; `FacultyCard` shows a photo card that opens the profile/CV PDF in a modal. We no longer transcribe per-faculty detail — see [faculty-extraction.md](faculty-extraction.md).
 
 ## Pages & routes
 

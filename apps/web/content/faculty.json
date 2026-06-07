@@ -1,0 +1,124 @@
+{
+  "$schema": "./faculty.schema.json",
+  "departments": {
+    "computer-science-and-engg": [
+      {
+        "name": "Dr. Veerappa B. Pagi",
+        "designation": "Professor & Head",
+        "photo": "departments/cse/faculty/veerappa-b-pagi.webp",
+        "cv": "departments/cse/faculty/cv/veerappa-b-pagi.pdf"
+      },
+      {
+        "name": "Dr. S. V. Saboji",
+        "designation": "Professor",
+        "photo": "departments/cse/faculty/s-v-saboji.webp",
+        "cv": "departments/cse/faculty/cv/s-v-saboji.pdf"
+      },
+      {
+        "name": "Smt. V. B. Hunagund",
+        "designation": "Associate Professor",
+        "photo": "departments/cse/faculty/v-b-hunagund.webp",
+        "cv": "departments/cse/faculty/cv/v-b-hunagund.pdf"
+      },
+      {
+        "name": "Smt. Kamala S. Patil",
+        "designation": "Associate Professor (Selection Grade)",
+        "photo": "departments/cse/faculty/kamala-s-patil.webp",
+        "cv": "departments/cse/faculty/cv/kamala-s-patil.pdf"
+      },
+      {
+        "name": "Dr. Vilas Naik",
+        "designation": "Associate Professor",
+        "photo": "departments/cse/faculty/vilas-naik.webp",
+        "cv": "departments/cse/faculty/cv/vilas-naik.pdf"
+      },
+      {
+        "name": "Prof. J. M. Hurakadli",
+        "designation": "Associate Professor",
+        "photo": "departments/cse/faculty/j-m-hurakadli.webp",
+        "cv": "departments/cse/faculty/cv/j-m-hurakadli.pdf"
+      },
+      {
+        "name": "Dr. Vasudha Bonal",
+        "designation": "Associate Professor",
+        "photo": "departments/cse/faculty/vasudha-bonal.webp",
+        "cv": "departments/cse/faculty/cv/vasudha-bonal.pdf"
+      },
+      {
+        "name": "Dr. M. G. Kambalimath",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/m-g-kambalimath.webp",
+        "cv": "departments/cse/faculty/cv/m-g-kambalimath.pdf"
+      },
+      {
+        "name": "Dr. G. B. Chittapur",
+        "designation": "Assistant Professor (Senior Scale)",
+        "photo": "departments/cse/faculty/g-b-chittapur.webp",
+        "cv": "departments/cse/faculty/cv/g-b-chittapur.pdf"
+      },
+      {
+        "name": "Smt. S. N. Benkikeri",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/s-n-benkikeri.webp",
+        "cv": "departments/cse/faculty/cv/s-n-benkikeri.pdf"
+      },
+      {
+        "name": "Smt. Smita Gour",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/smita-gour.webp",
+        "cv": "departments/cse/faculty/cv/smita-gour.pdf"
+      },
+      {
+        "name": "Smt. S. P. Madhavanavar",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/s-p-madhavanavar.webp",
+        "cv": "departments/cse/faculty/cv/s-p-madhavanavar.pdf"
+      },
+      {
+        "name": "Smt. Smita K.",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/smita-k.webp"
+      },
+      {
+        "name": "Ms. J. S. Mulimani",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/j-s-mulimani.webp",
+        "cv": "departments/cse/faculty/cv/j-s-mulimani.pdf"
+      },
+      {
+        "name": "Sri. P. B. Madhavanavar",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/p-b-madhavanavar.webp",
+        "cv": "departments/cse/faculty/cv/p-b-madhavanavar.pdf"
+      },
+      {
+        "name": "Sri. B. S. Malapur",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/b-s-malapur.webp",
+        "cv": "departments/cse/faculty/cv/b-s-malapur.pdf"
+      },
+      {
+        "name": "Smt. S. R. Karjol",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/s-r-karjol.webp",
+        "cv": "departments/cse/faculty/cv/s-r-karjol.pdf"
+      },
+      {
+        "name": "Smt. Shama P. S.",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/shama-p-s.webp",
+        "cv": "departments/cse/faculty/cv/shama-p-s.pdf"
+      },
+      {
+        "name": "Smt. Pradnya Rama",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/pradnya-rama.webp"
+      },
+      {
+        "name": "Smt. Netra Yaradoni",
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/netra-yaradoni.webp"
+      }
+    ]
+  }
+}

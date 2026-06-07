@@ -22,13 +22,12 @@ Folder `data/governance/`:
 | `org-chart.ts` | Organizational chart structure |
 
 - Rendered on `app/administration/governance/page.tsx` (anchors `#deans`, `#bog`, `#hods`, `#org-chart`) via `components/governance/deans-grid.tsx` & `bog-grid.tsx`.
-- **Full faculty profiles** use `types/faculty.ts` → `FacultyProfile` (basicInfo, contact, education, publications, etc.). Photo field = `basicInfo.profilePhotoUrl` (R2 URL via `asset()`).
+- **Department faculty** are minimal records in `content/faculty.json` (keyed by dept slug: `{ name, designation, photo?, cv? }`, R2 asset keys); `src/content/faculty.ts` resolves them to `FacultyMember` (`types/faculty.ts`) and `FacultyCard` opens the profile/CV PDF in a modal. See [faculty-extraction.md](faculty-extraction.md).
 
 ## Departments
 
 - **File:** `data/department/department.ts` — each department is a `DepartmentData` with `name`, `tagline`, `overview`, `vision`, `mission`, `highlights`, `sidebar`, and a `sections[]` array.
 - **Section types:** `content` | `faculty-list` | `stats` | `gallery` — a discriminated union; the page renderer switches on `section.type`. Reuse these instead of inventing layout.
-- Sample shape in `data/department/dummy-data.ts`.
 - **Routes:** listing at `app/programs/departments/`, dynamic detail at `app/programs/departments/[type]/[slug]/`.
 
 ## Home

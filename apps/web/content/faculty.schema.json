@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BEC faculty content",
+  "description": "Faculty directory keyed by department URL slug. Each entry is a minimal record: identity + a link to the full profile/CV PDF on R2. src/content/faculty.ts resolves the photo and cv asset keys to public URLs. Only `name` and `designation` are required.",
+  "type": "object",
+  "required": ["departments"],
+  "additionalProperties": false,
+  "$defs": {
+    "faculty": {
+      "type": "object",
+      "required": ["name", "designation"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "designation": { "type": "string", "description": "e.g. \"Professor & Head\", \"Associate Professor\", \"Assistant Professor\"." },
+        "photo": {
+          "allOf": [{ "$ref": "./_schema/asset-keys.json" }],
+          "description": "Portrait asset key on R2 (autocompletes). Omit until a photo is uploaded; the card falls back to initials."
+        },
+        "cv": {
+          "allOf": [{ "$ref": "./_schema/asset-keys.json" }],
+          "description": "Full profile / CV PDF asset key on R2 (autocompletes). Omit if no profile PDF is available; the card then has no modal."
+        }
+      }
+    }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "departments": {
+      "type": "object",
+      "description": "Map of department URL slug -> faculty[].",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "$ref": "#/$defs/faculty" }
+      }
+    }
+  }
+}

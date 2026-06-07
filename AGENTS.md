@@ -24,7 +24,8 @@ pnpm lint           # eslint
 | Change | Edit | Read first |
 |--------|------|-----------|
 | Top nav / menu items | `apps/web/src/data/navigation.ts` (+ `src/types/navigation.ts`) | [content-model](docs/content-model.md#navigation) |
-| Faculty / HoD / Dean / BoG person | `apps/web/src/data/governance/*`, type in `src/types/faculty.ts` | [content-model](docs/content-model.md#people--governance) |
+| HoD / Dean / BoG / leadership person | `apps/web/src/data/governance/*` (renders with `PersonCard`) | [content-model](docs/content-model.md#people--governance) |
+| Department faculty (photo + CV PDF) | `apps/web/content/faculty.json` (keyed by dept slug) | [faculty-extraction](docs/faculty-extraction.md) |
 | A department page | `apps/web/src/data/department/department.ts` (section-based) | [conventions](docs/conventions.md#departments) |
 | Home page sections | `apps/web/src/data/home/*` | [content-model](docs/content-model.md#home) |
 | Placements page | `apps/web/src/data/placements/content.ts` | [content-model](docs/content-model.md#placements) |

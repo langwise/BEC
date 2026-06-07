@@ -36,3 +36,9 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# Local source data — scraped site mirror + provided department docs/images.
+# These are the raw inputs (GBs of binaries); images/PDFs are uploaded to R2 and
+# referenced via asset(). Nothing under here should ever be committed.
+/data/
+/optimized-and-html/

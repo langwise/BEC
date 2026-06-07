@@ -6,7 +6,7 @@ import { DepartmentData } from "@/data/department/department";
 import ContentSection from "@/components/programs/departments/content";
 import { CheckCircle2 } from "lucide-react";
 import { FacultyCard } from "@/components/programs/faculty/faculty-card";
-import { motion, AnimatePresence } from "motion/react";
+import { PhotoGallery } from "@/components/common/photo-gallery";
 
 interface DepartmentLayoutProps {
   dept: DepartmentData;
@@ -20,6 +20,16 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     if (activeTab === "home") {
         return (
             <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                {dept.quickStats && dept.quickStats.length > 0 && (
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        {dept.quickStats.map((stat, i) => (
+                            <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm text-center">
+                                <p className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</p>
+                                <p className="text-xs uppercase tracking-wider text-gray-500 mt-1">{stat.label}</p>
+                            </div>
+                        ))}
+                    </div>
+                )}
                 <ContentSection
                     title={dept.overview.title}
                     content={dept.overview.content}
@@ -58,6 +68,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                 <ContentSection
                     title={dept.mission.title}
                     content={dept.mission.content}
+                    items={dept.mission.items}
                     icon={dept.mission.icon}
                 />
             </div>
@@ -75,6 +86,8 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     <ContentSection
                         title={activeSection.title}
                         content={activeSection.content}
+                        items={activeSection.items}
+                        groups={activeSection.groups}
                         icon={activeSection.icon || "file-text"}
                     />
                  </div>
@@ -84,21 +97,43 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
              return (
                  <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
                      <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
-                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
                          {activeSection.faculty.map((member, fIndex) => (
-                             <FacultyCard key={fIndex} profile={member} />
+                             <FacultyCard key={fIndex} member={member} />
                          ))}
                      </div>
                  </div>
              )
          }
-         // Add stats, gallery etc handlers here
+         if (activeSection.type === "gallery") {
+             return (
+                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                     <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
+                     <PhotoGallery images={activeSection.images} />
+                 </div>
+             )
+         }
+         if (activeSection.type === "stats") {
+             return (
+                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                     <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
+                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                         {activeSection.stats.map((stat, i) => (
+                             <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm text-center">
+                                 <p className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</p>
+                                 <p className="text-xs uppercase tracking-wider text-gray-500 mt-1">{stat.label}</p>
+                             </div>
+                         ))}
+                     </div>
+                 </div>
+             )
+         }
     }
 
     // 4. FALLBACK
     return (
         <div className="p-12 text-center bg-white rounded-2xl border border-dashed border-gray-200">
-            <p className="text-gray-500">Content for <span className="font-semibold text-gray-700">"{activeTab}"</span> will be updated soon.</p>
+            <p className="text-gray-500">Content for <span className="font-semibold text-gray-700">&ldquo;{activeTab}&rdquo;</span> will be updated soon.</p>
         </div>
     )
   }
