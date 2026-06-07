@@ -1,0 +1,159 @@
+{
+  "$schema": "./departments.schema.json",
+  "departments": {
+    "ai-and-ml": {
+      "name": "Artificial Intelligence & Machine Learning",
+      "assetSlug": "aiml"
+    },
+    "automobile-engg": {
+      "name": "Automobile Engineering"
+    },
+    "biotechnology": {
+      "name": "Biotechnology",
+      "assetSlug": "biotechnology"
+    },
+    "civil-engg": {
+      "name": "Civil Engineering",
+      "assetSlug": "civil"
+    },
+    "computer-science-and-engg": {
+      "name": "Computer Science & Engineering",
+      "assetSlug": "cse",
+      "tagline": "A Centre of Excellence in IT education, research and innovation since 1983.",
+      "established": "1983",
+      "intake": "180",
+      "overview": "The Department of Computer Science and Engineering was established in 1983. It offers an under-graduate programme (B.E.) in Computer Science and Engineering with an intake of 180 students, along with M.Sc. (Engineering by Research) and Ph.D. programmes. The department has highly qualified and well-experienced faculty committed to imparting quality technical education in IT and research. Its primary objectives include developing innovative skills, enriching academics through quality teaching-learning processes, building student confidence and inculcating entrepreneurial abilities — producing professionals with ethical values and societal concern.",
+      "vision": "To be a Centre of Excellence in IT education, research and innovation, crafting competent professionals catering to the needs of society with moral and ethical values.",
+      "mission": [
+        "To produce competent IT professionals committed to lifelong learning.",
+        "To promote interdisciplinary research for addressing societal needs.",
+        "To inculcate leadership qualities and entrepreneurial abilities with moral and ethical values.",
+        "To instill environmental consciousness through teaching-learning processes."
+      ],
+      "programsOffered": [
+        "B.E. — Computer Science & Engineering",
+        "M.Sc. (Engineering by Research)",
+        "Ph.D. (VTU and QIP)"
+      ],
+      "peos": [
+        { "code": "PEO1", "text": "Provide a strong educational foundation in mathematics, science, basic engineering and Computer Science." },
+        { "code": "PEO2", "text": "Develop proficiency with an ability to solve a wide range of computational problems in industry, government or other work environments." },
+        { "code": "PEO3", "text": "Inculcate professionalism by infusing leadership qualities, team spirit, effective communication skills, high ethical values and empathy for the needs of society." },
+        { "code": "PEO4", "text": "Encourage students towards higher studies, research activities and entrepreneurial skills for lifelong learning." }
+      ],
+      "psos": [
+        { "code": "PSO1", "text": "Inculcate analytical, logical, programming and managerial abilities." },
+        { "code": "PSO2", "text": "Apply Software Engineering principles and practices to provide software solutions." },
+        { "code": "PSO3", "text": "Design and develop computational systems for real-life applications." }
+      ],
+      "highlights": [
+        "Established in 1983 with a sanctioned B.E. intake of 180 students.",
+        "18 Ph.D.s awarded under departmental guidance; 20 research scholars currently registered.",
+        "10 VTU-recognized research supervisors across pattern recognition, image processing, IoT and network security.",
+        "Dedicated research labs in multimedia & vision computing, wireless & mobile computing and data mining.",
+        "Active student forum (FOCUS) and industry MoUs with Infosys, IBM, Philips and C-DAC."
+      ],
+      "researchAreas": [
+        { "supervisor": "Dr. V. B. Pagi", "area": "Pattern Recognition", "university": "VTU" },
+        { "supervisor": "Dr. S. V. Saboji", "area": "Wireless Mobile Networks", "university": "VTU" },
+        { "supervisor": "Dr. Vilas Naik", "area": "Video Processing", "university": "VTU" },
+        { "supervisor": "Dr. G. B. Chittapur", "area": "Digital Forensics", "university": "VTU" },
+        { "supervisor": "Dr. S. P. Bangarshetti", "area": "Image Processing", "university": "VTU" },
+        { "supervisor": "Dr. L. B. Bhajantri", "area": "Wireless Sensor Networks", "university": "VTU" },
+        { "supervisor": "Dr. S. R. Patil", "area": "Pattern Recognition", "university": "VTU" },
+        { "supervisor": "Dr. Anil Devangavi", "area": "Vehicular and Mobile Networks", "university": "VTU" },
+        { "supervisor": "Dr. B. M. Reshmi", "area": "Medical Image Processing", "university": "VTU" },
+        { "supervisor": "Dr. V. C. Kagawade", "area": "Image Processing", "university": "VTU" }
+      ],
+      "labs": [
+        { "name": "Multimedia, Vision Computing and Intelligent Systems Lab", "description": "Develops algorithms and systems for processing and understanding multimedia data including images, video and audio." },
+        { "name": "Wireless and Mobile Computing Lab", "description": "Builds practical understanding of wireless communication and mobile computing, with hands-on design and analysis of mobile networks." },
+        { "name": "Data Mining and Information Systems Lab", "description": "Develops and refines techniques for extracting useful knowledge from large datasets for better decision-making and insights." },
+        { "name": "Learning Resources Lab", "description": "Supports student learning through hands-on activities, experimentation and the application of knowledge." },
+        { "name": "Named computing labs — Dijkstra, Charles Babbage, Kernighan & Ritchie, Kalpana Chawla, Alan Turing & C. V. Raman", "description": "Modern computing labs equipped with 12th–14th Gen Intel Core i5/i7 HP desktops, multimedia projectors and air-conditioning." }
+      ],
+      "activities": [
+        { "title": "UTKARSHA-2k25 — college-level cultural event", "date": "Mar 2025" },
+        { "title": "Workshop on Design Thinking, Critical Thinking and Innovative Thinking (IIC)", "date": "Feb 2025" },
+        { "title": "TechIgnite-2 — technical event series (Tech-Trivia, Capture the Flag, Algo Auction, Decode Escape)", "date": "Nov–Dec 2024" },
+        { "title": "Talk on Cyber Security by Mr. Nikhil Inganal, Threat Hunters LLP", "date": "Dec 2024" },
+        { "title": "Infosys SEP (Springboard Enablement Programme)", "date": "Jul 2024" },
+        { "title": "Workshop on Blockchain Technology", "date": "Jun 2022" },
+        { "title": "Online Alumni Meet — 141 registered, 99 attended from across the world (incl. USA & UK)", "date": "Apr 2021" }
+      ],
+      "associations": [
+        {
+          "name": "FOCUS — Forum of Computer Science Students",
+          "about": "A student association of UG and PG students that aids overall personality development. Run by the students and monitored by faculty, it organizes curricular, extra-curricular and socio-cultural activities and technical events exposing students to state-of-the-art tools and technologies.",
+          "coordinators": ["Dr. V. B. Pagi", "Dr. Mahantesh G. Kambalimath"]
+        }
+      ],
+      "contact": {
+        "name": "Dr. V. B. Pagi",
+        "designation": "Professor & Head, Computer Science & Engineering",
+        "phone": "+91-9342647100",
+        "email": "bechodcse1983@gmail.com"
+      }
+    },
+    "electronics-and-communication-engg": {
+      "name": "Electronics & Communication Engineering",
+      "assetSlug": "ece"
+    },
+    "electrical-and-electronics-engg": {
+      "name": "Electrical & Electronics Engineering",
+      "assetSlug": "eee"
+    },
+    "electronics-and-computer-engg": {
+      "name": "Electronics & Computer Engineering",
+      "assetSlug": "ecs"
+    },
+    "industrial-and-production-engg": {
+      "name": "Industrial & Production Engineering",
+      "assetSlug": "ip"
+    },
+    "information-science-and-engg": {
+      "name": "Information Science & Engineering",
+      "assetSlug": "ise"
+    },
+    "mechanical-engg": {
+      "name": "Mechanical Engineering",
+      "assetSlug": "mechanical"
+    },
+    "physics": {
+      "name": "Physics",
+      "assetSlug": "physics"
+    },
+    "chemistry": {
+      "name": "Chemistry",
+      "assetSlug": "chemistry"
+    },
+    "mathematics": {
+      "name": "Mathematics",
+      "assetSlug": "maths"
+    },
+    "humanities": {
+      "name": "Humanities & Social Sciences",
+      "assetSlug": "hss"
+    },
+    "environmental-engg": {
+      "name": "Environmental Engineering"
+    },
+    "geo-technical-engg": {
+      "name": "Geo-Technical Engineering"
+    },
+    "structural-engg": {
+      "name": "Structural Engineering"
+    },
+    "machine-design": {
+      "name": "Machine Design"
+    },
+    "mca": {
+      "name": "Master of Computer Applications (MCA)",
+      "assetSlug": "mca"
+    },
+    "mba": {
+      "name": "Master of Business Administration (MBA)",
+      "assetSlug": "mba"
+    }
+  }
+}

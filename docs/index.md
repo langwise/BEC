@@ -8,6 +8,7 @@ Knowledge base for the Basaveshwar Engineering College (BEC) website. The root [
 | [content-model.md](content-model.md) | Map of where every kind of content lives (nav, people, departments, home, placements, alumni, gallery) |
 | [conventions.md](conventions.md) | How to add content & code: data-file patterns, naming, asset usage, component reuse, pages/routes |
 | [asset-pipeline.md](asset-pipeline.md) | How images/PDFs flow: scrape → R2 → manifest → `asset()` helper. Read before touching any asset |
+| [faculty-extraction.md](faculty-extraction.md) | Faculty section: photos + CV PDFs → R2 → `faculty.json`. Run per department |
 | [plan.md](plan.md) | The dated action plan to ship by 2026-06-15 |
 | [progress.md](progress.md) | Living page-by-page build status — what's done, missing, and to improve |
 

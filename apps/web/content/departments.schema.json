@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BEC departments content",
+  "description": "Per-department content keyed by the URL slug used in /programs/departments/<type>/<slug>. Only `name` is required; fill the rest as content arrives. Departments with just `name` + `assetSlug` still render (overview placeholder + photo gallery).",
+  "type": "object",
+  "required": ["departments"],
+  "additionalProperties": false,
+  "$defs": {
+    "codedItem": {
+      "type": "object",
+      "description": "A labelled statement, e.g. a PEO or PSO.",
+      "required": ["code", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "type": "string", "description": "Short label, e.g. \"PSO1\"." },
+        "text": { "type": "string" }
+      }
+    }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "departments": {
+      "type": "object",
+      "description": "Map of URL slug -> department content.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "description": "Full display name." },
+          "tagline": { "type": "string", "description": "One-line subtitle shown under the page title." },
+          "assetSlug": {
+            "type": "string",
+            "description": "R2 folder under departments/<assetSlug>/ whose photos build the Infrastructure gallery. Omit if no photos exist yet."
+          },
+          "established": { "type": "string", "description": "Year the department was established, e.g. \"1983\"." },
+          "intake": { "type": "string", "description": "Sanctioned UG intake, e.g. \"180\"." },
+          "overview": { "type": "string", "description": "Department overview paragraph (Home tab)." },
+          "vision": { "type": "string", "description": "Vision statement (About tab)." },
+          "mission": {
+            "type": "array",
+            "description": "Mission points (About tab), one per bullet.",
+            "items": { "type": "string" }
+          },
+          "programsOffered": {
+            "type": "array",
+            "description": "Programs the department offers (B.E., M.Tech, Ph.D., ...).",
+            "items": { "type": "string" }
+          },
+          "peos": {
+            "type": "array",
+            "description": "Programme Educational Objectives.",
+            "items": { "$ref": "#/$defs/codedItem" }
+          },
+          "psos": {
+            "type": "array",
+            "description": "Programme Specific Outcomes.",
+            "items": { "$ref": "#/$defs/codedItem" }
+          },
+          "highlights": {
+            "type": "array",
+            "description": "Short bullet highlights shown on the Home tab.",
+            "items": { "type": "string" }
+          },
+          "researchAreas": {
+            "type": "array",
+            "description": "Research supervisors and their areas of specialization.",
+            "items": {
+              "type": "object",
+              "required": ["supervisor", "area"],
+              "additionalProperties": false,
+              "properties": {
+                "supervisor": { "type": "string" },
+                "area": { "type": "string" },
+                "university": { "type": "string" }
+              }
+            }
+          },
+          "labs": {
+            "type": "array",
+            "description": "Research / specialized laboratories.",
+            "items": {
+              "type": "object",
+              "required": ["name"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" }
+              }
+            }
+          },
+          "activities": {
+            "type": "array",
+            "description": "Recent events, workshops, talks and department activities.",
+            "items": {
+              "type": "object",
+              "required": ["title"],
+              "additionalProperties": false,
+              "properties": {
+                "title": { "type": "string" },
+                "date": { "type": "string", "description": "Free-text date, e.g. \"Mar 2025\"." },
+                "description": { "type": "string" }
+              }
+            }
+          },
+          "associations": {
+            "type": "array",
+            "description": "Student forums / professional associations run by the department.",
+            "items": {
+              "type": "object",
+              "required": ["name"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string" },
+                "about": { "type": "string" },
+                "coordinators": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
+          "contact": {
+            "type": "object",
+            "description": "Head of Department / department contact shown on the page.",
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "designation": { "type": "string" },
+              "phone": { "type": "string" },
+              "email": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

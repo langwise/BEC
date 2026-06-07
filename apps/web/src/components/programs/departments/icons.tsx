@@ -1,10 +1,34 @@
 "use client";
 
-import { BookOpen, Eye, Target, Lightbulb } from "lucide-react";
+import {
+  BookOpen,
+  Eye,
+  Target,
+  Lightbulb,
+  FlaskConical,
+  Phone,
+  Calendar,
+  FileText,
+  Building2,
+  Users,
+  UsersRound,
+  GraduationCap,
+  Clipboard,
+  type LucideIcon,
+} from "lucide-react";
 
-export const iconMap: Record<string, any> = {
+export const iconMap: Record<string, LucideIcon> = {
   book: BookOpen,
   eye: Eye,
   target: Target,
   bulb: Lightbulb,
+  flask: FlaskConical,
+  phone: Phone,
+  calendar: Calendar,
+  "file-text": FileText,
+  "building-2": Building2,
+  users: Users,
+  "users-round": UsersRound,
+  "graduation-cap": GraduationCap,
+  clipboard: Clipboard,
 };

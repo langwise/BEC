@@ -28,7 +28,7 @@ Deferred (NOT in this window): a code formatter (Prettier/Biome).
 ## Stakeholders / source of truth
 
 - Content is supplied to the Website Development Team (WDT); per-department links get shared with **Department Coordinators** after launch for review/updates.
-- High-res photos (leadership, deans, HoDs, faculty group/infra) come from Prof. Prashanth & Prof. Sangmesh, with captions. Individual faculty info, where photos lack data, is taken from the **current live site**.
+- High-res photos (leadership, deans, HoDs, faculty group/infra) come from Prof. Prashanth & Prof. Sangmesh, with captions. Department faculty are shown as a photo + their provided profile/CV PDF (converted to PDF if needed, linked from R2) — we no longer transcribe individual faculty detail.
 
 ## Sitemap decisions already made
 
@@ -39,6 +39,6 @@ Deferred (NOT in this window): a code formatter (Prettier/Biome).
 
 ## Known gotchas
 
-- Faculty photo field is `BasicInfo.profilePhotoUrl` (not `photo`). See `src/types/faculty.ts`.
+- Department faculty are minimal records in `content/faculty.json` (`{ name, designation, photo?, cv? }` — R2 asset keys), resolved to `FacultyMember` (`photoUrl`/`cvUrl`) in `src/content/faculty.ts`. See [faculty-extraction.md](faculty-extraction.md).
 - Many routes are `[[...slug]]` catch-alls rendering "content coming soon" — they prevent 404s but aren't real pages. Replace with a real `page.tsx` only where content exists; leave the catch-all otherwise.
 - `next.config.ts` uses `images.unoptimized: true` and only allow-lists a few remote hosts — add the R2 host before referencing R2 images.
