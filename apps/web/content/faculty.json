@@ -119,6 +119,609 @@
         "designation": "Assistant Professor",
         "photo": "departments/cse/faculty/netra-yaradoni.webp"
       }
+    ],
+    "ai-and-ml": [
+      {
+        "name": "Dr. Anil D. Devanagavi",
+        "designation": "Professor & Head"
+      },
+      {
+        "name": "Dr. B. M. Reshmi",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. Vishwanath Kagawade",
+        "designation": "Associate Professor",
+        "cv": "departments/aiml/faculty/cv/vishwanath-kagawade.pdf",
+        "photo": "departments/aiml/faculty/vishwanath-kagawade.webp"
+      },
+      {
+        "name": "Anita G Kori",
+        "designation": "Assistant Professor",
+        "cv": "departments/aiml/faculty/cv/anita-g-kori.pdf",
+        "photo": "departments/aiml/faculty/anita-g-kori.webp"
+      },
+      {
+        "name": "Jayasheela D Kallaganiger",
+        "designation": "Assistant Professor",
+        "cv": "departments/aiml/faculty/cv/jayasheela-d-kallaganiger.pdf",
+        "photo": "departments/aiml/faculty/jayasheela-d-kallaganiger.webp"
+      },
+      {
+        "name": "Lakshmi P Kolur",
+        "designation": "Assistant Professor",
+        "cv": "departments/aiml/faculty/cv/lakshmi-p-kolur.pdf",
+        "photo": "departments/aiml/faculty/lakshmi-p-kolur.webp"
+      },
+      {
+        "name": "Laxmi Muttappanavar",
+        "designation": "Assistant Professor",
+        "cv": "departments/aiml/faculty/cv/laxmi-muttappanavar.pdf",
+        "photo": "departments/aiml/faculty/laxmi-muttappanavar.webp"
+      }
+    ],
+    "automobile-engg": [
+      {
+        "name": "Dr. Vijaykumar G. Akkimardi",
+        "designation": "Professor and Head",
+        "cv": "departments/au/faculty/cv/vijaykumar-g-akkimardi.pdf",
+        "photo": "departments/au/faculty/vijaykumar-g-akkimardi.webp"
+      },
+      {
+        "name": "Dr Devanand D Chillal",
+        "designation": "Associate Professor",
+        "cv": "departments/au/faculty/cv/devanand-d-chillal.pdf",
+        "photo": "departments/au/faculty/devanand-d-chillal.webp"
+      },
+      {
+        "name": "Dr Veerendrakumar C M",
+        "designation": "Associate Professor",
+        "cv": "departments/au/faculty/cv/veerendrakumar-c-m.pdf",
+        "photo": "departments/au/faculty/veerendrakumar-c-m.webp"
+      }
+    ],
+    "electronics-and-computer-engg": [
+      {
+        "name": "Dr. Chayalakshmi C. L.",
+        "designation": "Associate Professor and Head",
+        "cv": "departments/ecs/faculty/cv/chayalakshmi-c-l.pdf",
+        "photo": "departments/ecs/faculty/chayalakshmi-c-l.webp"
+      },
+      {
+        "name": "Krishnamurthy Bhat",
+        "designation": "Professor",
+        "cv": "departments/ecs/faculty/cv/krishnamurthy-bhat.pdf",
+        "photo": "departments/ecs/faculty/krishnamurthy-bhat.webp"
+      },
+      {
+        "name": "Prof. R. S. Allurkar",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. Manjula Sutagundar",
+        "designation": "Assistant Professor",
+        "cv": "departments/ecs/faculty/cv/manjula-sutagundar.pdf",
+        "photo": "departments/ecs/faculty/manjula-sutagundar.webp"
+      },
+      {
+        "name": "Dr. Santosh B. K.",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. M. G. Kambalimath",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Poorna Bhagavati",
+        "designation": "Assistant Professor"
+      }
+    ],
+    "electrical-and-electronics-engg": [
+      {
+        "name": "Dr. Raghuram L. Naik",
+        "designation": "Associate Professor & HoD"
+      },
+      {
+        "name": "Dr. Suresh H. Jangamashetti",
+        "designation": "Professor"
+      },
+      {
+        "name": "Dr. Basangouda Ronad",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. D. S. Jangamshetti",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. G. Suchitra",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. Mahantesh L. Chikkadesai",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. R. G. Patil",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. R. S. Allurkar",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. Sangamesh Y. Goudappanavar",
+        "designation": "Assistant Professor",
+        "cv": "departments/eee/faculty/cv/sangamesh-y-goudappanavar.pdf",
+        "photo": "departments/eee/faculty/sangamesh-y-goudappanavar.webp"
+      },
+      {
+        "name": "Prof. Apoorva Kulkarni",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Basavaraj S. Hadapad",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Nanda P.",
+        "designation": "Assistant Professor (Selection Grade)"
+      },
+      {
+        "name": "Prof. S. G. Nayak",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. S. M. Iddalagi",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. S. S. Rathod",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Santoshkumar S. Kandagal",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Shashidhar M. Patil",
+        "designation": "Assistant Professor (Selection Grade)"
+      },
+      {
+        "name": "Smt. Sunita Tambakad",
+        "designation": "Assistant Professor"
+      }
+    ],
+    "mathematics": [
+      {
+        "name": "Dr Vidya M Shettar",
+        "designation": "Associate Professor & HOD",
+        "cv": "departments/maths/faculty/cv/vidya-m-shettar.pdf",
+        "photo": "departments/maths/faculty/vidya-m-shettar.webp"
+      },
+      {
+        "name": "Dr. S. S. Benchalli",
+        "designation": "Professor & Head"
+      },
+      {
+        "name": "Dr Mahadev Biradar",
+        "designation": "Associate Professor",
+        "cv": "departments/maths/faculty/cv/mahadev-biradar.pdf",
+        "photo": "departments/maths/faculty/mahadev-biradar.webp"
+      },
+      {
+        "name": "Dr. K.Rama Prasad",
+        "designation": "Associate Professor",
+        "cv": "departments/maths/faculty/cv/k-rama-prasad.pdf",
+        "photo": "departments/maths/faculty/k-rama-prasad.webp"
+      },
+      {
+        "name": "Dr. S.V.Gurushantanavar",
+        "designation": "Associate Professor",
+        "cv": "departments/maths/faculty/cv/s-v-gurushantanavar.pdf",
+        "photo": "departments/maths/faculty/s-v-gurushantanavar.webp"
+      },
+      {
+        "name": "Dr. Anand H Agadi",
+        "designation": "Assistant Professor",
+        "cv": "departments/maths/faculty/cv/anand-h-agadi.pdf",
+        "photo": "departments/maths/faculty/anand-h-agadi.webp"
+      },
+      {
+        "name": "Prof. Ishwar Maharudrappa",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. V M Pudakalkatti",
+        "designation": "Assistant Professor",
+        "cv": "departments/maths/faculty/cv/v-m-pudakalkatti.pdf",
+        "photo": "departments/maths/faculty/v-m-pudakalkatti.webp"
+      }
+    ],
+    "physics": [
+      {
+        "name": "Dr. Jayashri G. Ghantimath",
+        "designation": "Professor & Head"
+      },
+      {
+        "name": "Prof. Ratnaprabha. P. Araganji.",
+        "designation": "Associate Professor and HoD",
+        "cv": "departments/physics/faculty/cv/ratnaprabha-p-araganji.pdf",
+        "photo": "departments/physics/faculty/ratnaprabha-p-araganji.webp"
+      },
+      {
+        "name": "Dr. K. Chandrasekhar",
+        "designation": "Professor",
+        "cv": "departments/physics/faculty/cv/k-chandrasekhar.pdf",
+        "photo": "departments/physics/faculty/k-chandrasekhar.webp"
+      },
+      {
+        "name": "Shriram S. Bopardekar",
+        "designation": "Associate Professor",
+        "cv": "departments/physics/faculty/cv/shriram-s-bopardekar.pdf",
+        "photo": "departments/physics/faculty/shriram-s-bopardekar.webp"
+      }
+    ],
+    "civil-engg": [
+      {
+        "name": "Dr. Santhosh M. Malkapur",
+        "designation": "Professor",
+        "cv": "departments/civil/faculty/cv/santhosh-m-malkapur.pdf",
+        "photo": "departments/civil/faculty/santhosh-m-malkapur.webp"
+      },
+      {
+        "name": "Dr. Adarsh S. Chatra",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/adarsh-s-chatra.pdf",
+        "photo": "departments/civil/faculty/adarsh-s-chatra.webp"
+      },
+      {
+        "name": "Dr. P. G. Rakaraddi",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/p-g-rakaraddi.pdf",
+        "photo": "departments/civil/faculty/p-g-rakaraddi.webp"
+      },
+      {
+        "name": "Dr. Shankar H. Sanni",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/shankar-h-sanni.pdf",
+        "photo": "departments/civil/faculty/shankar-h-sanni.webp"
+      },
+      {
+        "name": "Dr. Shreeshail Heggond",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/shreeshail-heggond.pdf",
+        "photo": "departments/civil/faculty/shreeshail-heggond.webp"
+      },
+      {
+        "name": "Dr.Basappa. Meti",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/basappa-meti.pdf",
+        "photo": "departments/civil/faculty/basappa-meti.webp"
+      },
+      {
+        "name": "Dr.Gangadhar.B.Megeri",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/gangadhar-b-megeri.pdf",
+        "photo": "departments/civil/faculty/gangadhar-b-megeri.webp"
+      },
+      {
+        "name": "Mahantesh M. Hanamasagar",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/mahantesh-m-hanamasagar.pdf",
+        "photo": "departments/civil/faculty/mahantesh-m-hanamasagar.webp"
+      },
+      {
+        "name": "Mr. B. S. Haravi",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Sunilkumar.M. Kalagudi",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/sunilkumar-m-kalagudi.pdf",
+        "photo": "departments/civil/faculty/sunilkumar-m-kalagudi.webp"
+      },
+      {
+        "name": "Basavanagouda A Patil",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/basavanagouda-a-patil.pdf",
+        "photo": "departments/civil/faculty/basavanagouda-a-patil.webp"
+      },
+      {
+        "name": "Dr. Jayalatha N A",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/jayalatha-n-a.pdf",
+        "photo": "departments/civil/faculty/jayalatha-n-a.webp"
+      },
+      {
+        "name": "Dr. Srinivas F. Chitragar",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/srinivas-f-chitragar.pdf",
+        "photo": "departments/civil/faculty/srinivas-f-chitragar.webp"
+      },
+      {
+        "name": "Geetanjali Patil",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/geetanjali-patil.pdf",
+        "photo": "departments/civil/faculty/geetanjali-patil.webp"
+      },
+      {
+        "name": "Gururaj Bandihal",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/gururaj-bandihal.pdf",
+        "photo": "departments/civil/faculty/gururaj-bandihal.webp"
+      },
+      {
+        "name": "Manjunath Munenakoppa",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/manjunath-munenakoppa.pdf"
+      },
+      {
+        "name": "Mr. D. B. Sajjanar",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Mr. Kiran Koraddi",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Mr. Kushnappa K",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Mr. Shashikant A Kambali",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/shashikant-a-kambali.pdf",
+        "photo": "departments/civil/faculty/shashikant-a-kambali.webp"
+      },
+      {
+        "name": "Prakash S Bangarashetti",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/prakash-s-bangarashetti.pdf",
+        "photo": "departments/civil/faculty/prakash-s-bangarashetti.webp"
+      },
+      {
+        "name": "Ramesh Baragani",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/ramesh-baragani.pdf",
+        "photo": "departments/civil/faculty/ramesh-baragani.webp"
+      },
+      {
+        "name": "Seema Shringeri",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/seema-shringeri.pdf",
+        "photo": "departments/civil/faculty/seema-shringeri.webp"
+      },
+      {
+        "name": "Shrishail B Chiniwalar",
+        "designation": "Assistant Professor",
+        "cv": "departments/civil/faculty/cv/shrishail-b-chiniwalar.pdf",
+        "photo": "departments/civil/faculty/shrishail-b-chiniwalar.webp"
+      }
+    ],
+    "electronics-and-communication-engg": [
+      {
+        "name": "Dr. Jayashree D. Mallapur",
+        "designation": "Professor and Head",
+        "cv": "departments/ece/faculty/cv/jayashree-d-mallapur.pdf",
+        "photo": "departments/ece/faculty/jayashree-d-mallapur.webp"
+      },
+      {
+        "name": "Dr. B. G. Sheeparamattil",
+        "designation": "Professor"
+      },
+      {
+        "name": "Dr. P. N. Kulkarni",
+        "designation": "Professor"
+      },
+      {
+        "name": "Dr. Sarojini B. K.",
+        "designation": "Professor",
+        "cv": "departments/ece/faculty/cv/sarojini-b-k.pdf",
+        "photo": "departments/ece/faculty/sarojini-b-k.webp"
+      },
+      {
+        "name": "Prof. S. M. Iddalagi",
+        "designation": "Professor"
+      },
+      {
+        "name": "Dr. Ashok V. Sutagundar",
+        "designation": "Associate Professor",
+        "cv": "departments/ece/faculty/cv/ashok-v-sutagundar.pdf",
+        "photo": "departments/ece/faculty/ashok-v-sutagundar.webp"
+      },
+      {
+        "name": "Dr. K. Nagarathna Rajur",
+        "designation": "Associate Professor",
+        "cv": "departments/ece/faculty/cv/k-nagarathna-rajur.pdf",
+        "photo": "departments/ece/faculty/k-nagarathna-rajur.webp"
+      },
+      {
+        "name": "Dr. Mahabaleshwar S. Kakkasageri",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. S. G. Kambalimath",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Basavaraj M. Angadi",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/basavaraj-m-angadi.pdf",
+        "photo": "departments/ece/faculty/basavaraj-m-angadi.webp"
+      },
+      {
+        "name": "Dr. Ajayakumar C. Katageri",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/ajayakumar-c-katageri.pdf",
+        "photo": "departments/ece/faculty/ajayakumar-c-katageri.webp"
+      },
+      {
+        "name": "Dr. Anand H Unnibhavi",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/anand-h-unnibhavi.pdf",
+        "photo": "departments/ece/faculty/anand-h-unnibhavi.webp"
+      },
+      {
+        "name": "Dr. Kirankumar B. Balavalad",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/kirankumar-b-balavalad.pdf",
+        "photo": "departments/ece/faculty/kirankumar-b-balavalad.webp"
+      },
+      {
+        "name": "Dr. Mamata J. Sataraddi",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/mamata-j-sataraddi.pdf",
+        "photo": "departments/ece/faculty/mamata-j-sataraddi.webp"
+      },
+      {
+        "name": "Dr. Rajani S. Pujar",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/rajani-s-pujar.pdf",
+        "photo": "departments/ece/faculty/rajani-s-pujar.webp"
+      },
+      {
+        "name": "Dr. Sharanappa P. H.",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/sharanappa-p-h.pdf",
+        "photo": "departments/ece/faculty/sharanappa-p-h.webp"
+      },
+      {
+        "name": "Dr. Somu P. Parande",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/somu-p-parande.pdf",
+        "photo": "departments/ece/faculty/somu-p-parande.webp"
+      },
+      {
+        "name": "Dr. V. S. Jigajinni",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Mallikarjun Aralimarad",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/mallikarjun-aralimarad.pdf",
+        "photo": "departments/ece/faculty/mallikarjun-aralimarad.webp"
+      },
+      {
+        "name": "Prof. P. M. Chanal",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. S. R. Bharamagoudar",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. S. V. Hanji",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Shridevi C Hiremath.",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/shridevi-c-hiremath.pdf",
+        "photo": "departments/ece/faculty/shridevi-c-hiremath.webp"
+      },
+      {
+        "name": "Supriya B Harlapur",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/supriya-b-harlapur.pdf",
+        "photo": "departments/ece/faculty/supriya-b-harlapur.webp"
+      },
+      {
+        "name": "B Veeresh",
+        "designation": "Department",
+        "cv": "departments/ece/faculty/cv/b-veeresh.pdf",
+        "photo": "departments/ece/faculty/b-veeresh.webp"
+      }
+    ],
+    "chemistry": [
+      {
+        "name": "Dr. P. L. Timmanagoudar",
+        "designation": "Professor & Head"
+      },
+      {
+        "name": "Dr. S. K. Patil",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. V. R. Kattimani",
+        "designation": "Assistant Professor (Selection Grade)"
+      },
+      {
+        "name": "Miss L. P. Channapagol",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Sri A. B. Kirasur",
+        "designation": "Assistant Professor"
+      }
+    ],
+    "mba": [
+      {
+        "name": "Dr. Vinod S. Puranik",
+        "designation": "Professor & Head"
+      },
+      {
+        "name": "Dr. Rashmi R. Hunnur",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. Vijay Joshi",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. Brijmohan A. Vyas",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Dr. R. B. Tapashetti",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Anita R. Naik",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Madhuri S. Kasat",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Vaibhav Deshpande",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Vijayalaxmi C. Patil",
+        "designation": "Assistant Professor"
+      }
+    ],
+    "mca": [
+      {
+        "name": "Prof. S. M. Magi",
+        "designation": "Assistant Professor & Head"
+      },
+      {
+        "name": "Prof. Shrinivas S. Gujarathi",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. Abhishek S. Hebballi",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. C. M. Jangin",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. M. H. Shirur",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Sudha K. S.",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Smt. Karuna B. Kurbet",
+        "designation": "Assistant Professor"
+      }
     ]
   }
 }

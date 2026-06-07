@@ -3,10 +3,126 @@
   "departments": {
     "ai-and-ml": {
       "name": "Artificial Intelligence & Machine Learning",
-      "assetSlug": "aiml"
+      "assetSlug": "aiml",
+      "tagline": "Competent, socially and ethically responsible professionals in AI & Machine Learning through education, research and innovation.",
+      "overview": "The department stands tall in both infrastructure and qualified, committed faculty. Housed in a picturesque building with a seminar hall, department library, faculty rooms and four computer laboratories equipped with 150+ state-of-the-art systems, it offers a pervasive, high-quality wired and Wi-Fi network and a wide range of application software (from databases and DTP to 3D animation and multimedia tools). The faculty pursue research in areas including Artificial Intelligence, Machine Learning, Vehicular Ad-hoc Networks (VANET), Image Processing, Computer Networks, Mobile Computing, Natural Language Processing and Pattern Recognition, and have published books and papers in refereed journals and reputed conferences. The department has attracted more than ₹1.11 crore in sponsored infrastructure and research funding, and regularly conducts faculty, student and other development programmes.",
+      "vision": "To develop competent, social and ethically responsible professionals in Artificial Intelligence and Machine Learning through excellence in education, research and innovation.",
+      "mission": [
+        "Develop globally competent AIML professionals to address real-world problems.",
+        "Imbibe moral and socio-ethical values.",
+        "Cultivate a multidisciplinary environment that encourages collaboration and lifelong learning.",
+        "Foster a culture of research, innovation and entrepreneurship."
+      ],
+      "programsOffered": [
+        "B.E. — Artificial Intelligence & Machine Learning"
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "Apply the fundamentals of mathematics, science and engineering to understand, analyze and develop AI-based complex systems."
+        },
+        {
+          "code": "PSO2",
+          "text": "Exhibit proficiency in artificial intelligence and machine learning to provide solutions to real-world problems across society."
+        },
+        {
+          "code": "PSO3",
+          "text": "Demonstrate the ability to lead and work toward an innovative career path and engage in lifelong learning with moral values."
+        }
+      ],
+      "highlights": [
+        "Four computer laboratories equipped with 150+ state-of-the-art systems and high-speed wired/Wi-Fi networking.",
+        "Research strengths in AI, Machine Learning, VANET, Image Processing, NLP and Pattern Recognition.",
+        "More than ₹1.11 crore received in sponsored infrastructure and research funding.",
+        "Regular faculty, student and skill-development programmes in Information Technology."
+      ],
+      "labs": [
+        {
+          "name": "Computer Laboratories",
+          "description": "Four laboratories with 150+ systems running Windows, Linux and Solaris, plus a broad suite of application and multimedia software including 3D Max."
+        }
+      ]
     },
     "automobile-engg": {
-      "name": "Automobile Engineering"
+      "name": "Automobile Engineering",
+      "assetSlug": "au",
+      "tagline": "Academic excellence in automobile engineering through quality education and a research mindset for a sustainable future.",
+      "established": "2024",
+      "intake": "30",
+      "overview": "BVV Sangha's Basaveshwar Engineering College re-established the Automobile Engineering department in 2024-25 to develop automotive-specialized professionals in North Karnataka. With a sanctioned intake of 30 students and a carpet area of 11,000 sq. ft., the department houses dedicated laboratories — Automotive CAD, Automobile Servicing, Automobile Reconditioning, Automobile Scanning, Automotive Electrical & Electronics, and Vehicle Testing. With faculty averaging over 25 years of teaching experience and Ph.D.s across diverse research areas, the department has more than 50 national/international publications and well-qualified technical staff. It plans student SAE activities such as SUPRA, BAJA, EFFICYCLE and GO-KART, and has initiated revenue-generation activities including a motor-vehicle driving school and third-party inspection.",
+      "vision": "To achieve academic excellence in the realm of automobile engineering by fostering quality education and a research mindset for a sustainable future.",
+      "mission": [
+        "Develop outstanding professionals in automobile engineering for future needs.",
+        "Cultivate a culture of research and entrepreneurship by promoting collaboration and extension programmes for societal needs.",
+        "Instil moral values and ecological awareness through outreach programmes."
+      ],
+      "programsOffered": [
+        "B.E. — Automobile Engineering"
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "Prepare students with knowledge in basic science and engineering to meet global challenges."
+        },
+        {
+          "code": "PEO2",
+          "text": "Develop students in automotive engineering, thermal, design, manufacturing and autotronics in line with present technology."
+        },
+        {
+          "code": "PEO3",
+          "text": "Develop students as entrepreneurs and encourage them to pursue higher education and research in relevant areas."
+        }
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "Apply basic engineering knowledge with modern computing tools to solve problems in design, production and servicing domains."
+        },
+        {
+          "code": "PSO2",
+          "text": "Mould and develop engineers to serve industry as professionals or entrepreneurs."
+        },
+        {
+          "code": "PSO3",
+          "text": "Prepare engineers to undertake research and higher learning."
+        }
+      ],
+      "highlights": [
+        "Re-established in 2024-25 with a sanctioned intake of 30 and an 11,000 sq. ft. facility.",
+        "Six dedicated laboratories including Automotive CAD, Servicing, Reconditioning, Scanning, Electrical & Electronics and Vehicle Testing.",
+        "Faculty averaging 25+ years of teaching experience with 50+ national/international publications.",
+        "Planned SAE student activities (SUPRA, BAJA, EFFICYCLE, GO-KART) and revenue-generation initiatives."
+      ],
+      "labs": [
+        {
+          "name": "Automotive CAD Lab"
+        },
+        {
+          "name": "Automobile Servicing Lab"
+        },
+        {
+          "name": "Automobile Reconditioning Lab"
+        },
+        {
+          "name": "Automobile Scanning Lab"
+        },
+        {
+          "name": "Automotive Electrical & Electronics Lab"
+        },
+        {
+          "name": "Vehicle Testing Lab"
+        }
+      ],
+      "activities": [
+        {
+          "title": "Academic counselling of first-year students and Parents' meet"
+        }
+      ],
+      "contact": {
+        "name": "Dr. V. G. Akkimardi",
+        "designation": "Professor & Head",
+        "phone": "+91-9448311580"
+      }
     },
     "biotechnology": {
       "name": "Biotechnology",
@@ -14,7 +130,90 @@
     },
     "civil-engg": {
       "name": "Civil Engineering",
-      "assetSlug": "civil"
+      "assetSlug": "civil",
+      "tagline": "A centre of excellence in teaching, research and innovation, shaping globally competent civil engineers for a sustainable society.",
+      "established": "1963",
+      "intake": "120",
+      "overview": "The Civil Engineering Department is one of the pioneering departments since the inception of the college in 1963. It is engaged in imparting quality education and producing outstanding graduates through qualified faculty and state-of-the-art infrastructure. The department offers a 4-year B.E. (intake 120) and 2-year M.Tech. programmes in Environmental Engineering, Geo-Technical Engineering and Structural Engineering (intake 18 each). It has been recognised as a Research Centre by VTU since 2003 and as a QIP Research Centre (Ph.D.) by AICTE, New Delhi since 2012, and is a State Resource Centre for training in Earthquake Engineering under NPCBEERM. The department has organised conferences, seminars and workshops, fetched research grants worth ₹163 lakhs, and provides consultancy services for various government and private agencies.",
+      "vision": "To be a centre of excellence in teaching, research and innovation, shaping globally competent civil engineers toward the sustainable development of society.",
+      "mission": [
+        "Provide a student-centric learning environment, cultivating critical thinking and problem-solving skills in aspiring civil engineers.",
+        "Promote collaborative research and innovation to address societal and industrial challenges.",
+        "Imbibe a strong sense of ethics, social responsibility and environmental consciousness.",
+        "Encourage entrepreneurship and provide comprehensive consultancy services."
+      ],
+      "programsOffered": [
+        "B.E. — Civil Engineering",
+        "M.Tech. — Environmental, Geo-Technical and Structural Engineering",
+        "Ph.D. — Civil Engineering (VTU and QIP)"
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "Apply civil engineering principles to design sustainable infrastructure, utilizing modern tools and ensuring safety."
+        },
+        {
+          "code": "PEO2",
+          "text": "Possess strong communication and teamwork skills to collaborate effectively in diverse environments."
+        },
+        {
+          "code": "PEO3",
+          "text": "Engage in continuous professional development, upholding ethical practices and adapting to evolving technologies as responsible leaders in civil engineering."
+        }
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "Develop skills in surveying and structural design for diverse civil engineering structures."
+        },
+        {
+          "code": "PSO2",
+          "text": "Specialize in foundation and superstructure engineering for residential, commercial, public, industrial buildings and infrastructure projects."
+        },
+        {
+          "code": "PSO3",
+          "text": "Gain expertise in water management and environmental engineering to create sustainable solutions for water systems and environmental challenges."
+        }
+      ],
+      "highlights": [
+        "A pioneering department since the college's inception in 1963, with a B.E. intake of 120.",
+        "Recognised as a VTU Research Centre (2003) and an AICTE QIP Ph.D. Research Centre (2012).",
+        "State Resource Centre for Earthquake Engineering training under NPCBEERM.",
+        "Research grants worth ₹163 lakhs and active consultancy for government and private agencies."
+      ],
+      "labs": [
+        {
+          "name": "Structural Engineering Lab"
+        },
+        {
+          "name": "Geo-Technical Engineering Lab"
+        },
+        {
+          "name": "Environmental Engineering Lab"
+        }
+      ],
+      "associations": [
+        {
+          "name": "Association of Civil Engineering",
+          "about": "Every student and faculty member of the department is a member of the association, which conducts technical events, seminars, presentations, project exhibitions and sports activities through the year, providing a platform for students to organise events and inculcate self-learning."
+        }
+      ],
+      "contact": {
+        "name": "M. M. Hanamasagar",
+        "designation": "Associate Professor & Head",
+        "phone": "+91-9448816909",
+        "email": "mmhcv@becbgk.edu"
+      },
+      "documents": [
+        {
+          "title": "Syllabus (AY 2024-25)",
+          "file": "departments/civil/docs/syllabus-2024-25.pdf"
+        },
+        {
+          "title": "Board of Studies — Proceedings",
+          "file": "departments/civil/docs/bos.pdf"
+        }
+      ]
     },
     "computer-science-and-engg": {
       "name": "Computer Science & Engineering",
@@ -36,15 +235,36 @@
         "Ph.D. (VTU and QIP)"
       ],
       "peos": [
-        { "code": "PEO1", "text": "Provide a strong educational foundation in mathematics, science, basic engineering and Computer Science." },
-        { "code": "PEO2", "text": "Develop proficiency with an ability to solve a wide range of computational problems in industry, government or other work environments." },
-        { "code": "PEO3", "text": "Inculcate professionalism by infusing leadership qualities, team spirit, effective communication skills, high ethical values and empathy for the needs of society." },
-        { "code": "PEO4", "text": "Encourage students towards higher studies, research activities and entrepreneurial skills for lifelong learning." }
+        {
+          "code": "PEO1",
+          "text": "Provide a strong educational foundation in mathematics, science, basic engineering and Computer Science."
+        },
+        {
+          "code": "PEO2",
+          "text": "Develop proficiency with an ability to solve a wide range of computational problems in industry, government or other work environments."
+        },
+        {
+          "code": "PEO3",
+          "text": "Inculcate professionalism by infusing leadership qualities, team spirit, effective communication skills, high ethical values and empathy for the needs of society."
+        },
+        {
+          "code": "PEO4",
+          "text": "Encourage students towards higher studies, research activities and entrepreneurial skills for lifelong learning."
+        }
       ],
       "psos": [
-        { "code": "PSO1", "text": "Inculcate analytical, logical, programming and managerial abilities." },
-        { "code": "PSO2", "text": "Apply Software Engineering principles and practices to provide software solutions." },
-        { "code": "PSO3", "text": "Design and develop computational systems for real-life applications." }
+        {
+          "code": "PSO1",
+          "text": "Inculcate analytical, logical, programming and managerial abilities."
+        },
+        {
+          "code": "PSO2",
+          "text": "Apply Software Engineering principles and practices to provide software solutions."
+        },
+        {
+          "code": "PSO3",
+          "text": "Design and develop computational systems for real-life applications."
+        }
       ],
       "highlights": [
         "Established in 1983 with a sanctioned B.E. intake of 180 students.",
@@ -54,38 +274,117 @@
         "Active student forum (FOCUS) and industry MoUs with Infosys, IBM, Philips and C-DAC."
       ],
       "researchAreas": [
-        { "supervisor": "Dr. V. B. Pagi", "area": "Pattern Recognition", "university": "VTU" },
-        { "supervisor": "Dr. S. V. Saboji", "area": "Wireless Mobile Networks", "university": "VTU" },
-        { "supervisor": "Dr. Vilas Naik", "area": "Video Processing", "university": "VTU" },
-        { "supervisor": "Dr. G. B. Chittapur", "area": "Digital Forensics", "university": "VTU" },
-        { "supervisor": "Dr. S. P. Bangarshetti", "area": "Image Processing", "university": "VTU" },
-        { "supervisor": "Dr. L. B. Bhajantri", "area": "Wireless Sensor Networks", "university": "VTU" },
-        { "supervisor": "Dr. S. R. Patil", "area": "Pattern Recognition", "university": "VTU" },
-        { "supervisor": "Dr. Anil Devangavi", "area": "Vehicular and Mobile Networks", "university": "VTU" },
-        { "supervisor": "Dr. B. M. Reshmi", "area": "Medical Image Processing", "university": "VTU" },
-        { "supervisor": "Dr. V. C. Kagawade", "area": "Image Processing", "university": "VTU" }
+        {
+          "supervisor": "Dr. V. B. Pagi",
+          "area": "Pattern Recognition",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. S. V. Saboji",
+          "area": "Wireless Mobile Networks",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Vilas Naik",
+          "area": "Video Processing",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. G. B. Chittapur",
+          "area": "Digital Forensics",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. S. P. Bangarshetti",
+          "area": "Image Processing",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. L. B. Bhajantri",
+          "area": "Wireless Sensor Networks",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. S. R. Patil",
+          "area": "Pattern Recognition",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Anil Devangavi",
+          "area": "Vehicular and Mobile Networks",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. B. M. Reshmi",
+          "area": "Medical Image Processing",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. V. C. Kagawade",
+          "area": "Image Processing",
+          "university": "VTU"
+        }
       ],
       "labs": [
-        { "name": "Multimedia, Vision Computing and Intelligent Systems Lab", "description": "Develops algorithms and systems for processing and understanding multimedia data including images, video and audio." },
-        { "name": "Wireless and Mobile Computing Lab", "description": "Builds practical understanding of wireless communication and mobile computing, with hands-on design and analysis of mobile networks." },
-        { "name": "Data Mining and Information Systems Lab", "description": "Develops and refines techniques for extracting useful knowledge from large datasets for better decision-making and insights." },
-        { "name": "Learning Resources Lab", "description": "Supports student learning through hands-on activities, experimentation and the application of knowledge." },
-        { "name": "Named computing labs — Dijkstra, Charles Babbage, Kernighan & Ritchie, Kalpana Chawla, Alan Turing & C. V. Raman", "description": "Modern computing labs equipped with 12th–14th Gen Intel Core i5/i7 HP desktops, multimedia projectors and air-conditioning." }
+        {
+          "name": "Multimedia, Vision Computing and Intelligent Systems Lab",
+          "description": "Develops algorithms and systems for processing and understanding multimedia data including images, video and audio."
+        },
+        {
+          "name": "Wireless and Mobile Computing Lab",
+          "description": "Builds practical understanding of wireless communication and mobile computing, with hands-on design and analysis of mobile networks."
+        },
+        {
+          "name": "Data Mining and Information Systems Lab",
+          "description": "Develops and refines techniques for extracting useful knowledge from large datasets for better decision-making and insights."
+        },
+        {
+          "name": "Learning Resources Lab",
+          "description": "Supports student learning through hands-on activities, experimentation and the application of knowledge."
+        },
+        {
+          "name": "Named computing labs — Dijkstra, Charles Babbage, Kernighan & Ritchie, Kalpana Chawla, Alan Turing & C. V. Raman",
+          "description": "Modern computing labs equipped with 12th–14th Gen Intel Core i5/i7 HP desktops, multimedia projectors and air-conditioning."
+        }
       ],
       "activities": [
-        { "title": "UTKARSHA-2k25 — college-level cultural event", "date": "Mar 2025" },
-        { "title": "Workshop on Design Thinking, Critical Thinking and Innovative Thinking (IIC)", "date": "Feb 2025" },
-        { "title": "TechIgnite-2 — technical event series (Tech-Trivia, Capture the Flag, Algo Auction, Decode Escape)", "date": "Nov–Dec 2024" },
-        { "title": "Talk on Cyber Security by Mr. Nikhil Inganal, Threat Hunters LLP", "date": "Dec 2024" },
-        { "title": "Infosys SEP (Springboard Enablement Programme)", "date": "Jul 2024" },
-        { "title": "Workshop on Blockchain Technology", "date": "Jun 2022" },
-        { "title": "Online Alumni Meet — 141 registered, 99 attended from across the world (incl. USA & UK)", "date": "Apr 2021" }
+        {
+          "title": "UTKARSHA-2k25 — college-level cultural event",
+          "date": "Mar 2025"
+        },
+        {
+          "title": "Workshop on Design Thinking, Critical Thinking and Innovative Thinking (IIC)",
+          "date": "Feb 2025"
+        },
+        {
+          "title": "TechIgnite-2 — technical event series (Tech-Trivia, Capture the Flag, Algo Auction, Decode Escape)",
+          "date": "Nov–Dec 2024"
+        },
+        {
+          "title": "Talk on Cyber Security by Mr. Nikhil Inganal, Threat Hunters LLP",
+          "date": "Dec 2024"
+        },
+        {
+          "title": "Infosys SEP (Springboard Enablement Programme)",
+          "date": "Jul 2024"
+        },
+        {
+          "title": "Workshop on Blockchain Technology",
+          "date": "Jun 2022"
+        },
+        {
+          "title": "Online Alumni Meet — 141 registered, 99 attended from across the world (incl. USA & UK)",
+          "date": "Apr 2021"
+        }
       ],
       "associations": [
         {
           "name": "FOCUS — Forum of Computer Science Students",
           "about": "A student association of UG and PG students that aids overall personality development. Run by the students and monitored by faculty, it organizes curricular, extra-curricular and socio-cultural activities and technical events exposing students to state-of-the-art tools and technologies.",
-          "coordinators": ["Dr. V. B. Pagi", "Dr. Mahantesh G. Kambalimath"]
+          "coordinators": [
+            "Dr. V. B. Pagi",
+            "Dr. Mahantesh G. Kambalimath"
+          ]
         }
       ],
       "contact": {
@@ -93,15 +392,174 @@
         "designation": "Professor & Head, Computer Science & Engineering",
         "phone": "+91-9342647100",
         "email": "bechodcse1983@gmail.com"
-      }
+      },
+      "documents": [
+        {
+          "title": "First Year Syllabus (2023-24)",
+          "file": "departments/cse/docs/syllabus-1st-year-2023-24.pdf"
+        },
+        {
+          "title": "3rd & 4th Semester Syllabus (2023-24 Batch)",
+          "file": "departments/cse/docs/syllabus-3-4-sem-2023-24.pdf"
+        },
+        {
+          "title": "3rd–8th Semester Syllabus (2022-23 Batch)",
+          "file": "departments/cse/docs/syllabus-3-8-sem-2022-23.pdf"
+        },
+        {
+          "title": "3rd–8th Semester Syllabus (2021-22 Batch)",
+          "file": "departments/cse/docs/syllabus-3-8-sem-2021-22.pdf"
+        },
+        {
+          "title": "Board of Studies — Proceedings (2024-25)",
+          "file": "departments/cse/docs/bos-2024-25.pdf"
+        }
+      ]
     },
     "electronics-and-communication-engg": {
       "name": "Electronics & Communication Engineering",
-      "assetSlug": "ece"
+      "assetSlug": "ece",
+      "tagline": "Excellence in electronics & communication engineering through quality education and research.",
+      "established": "1985",
+      "overview": "The Department of Electronics and Communication (E&C) Engineering was established in 1985. It offers an undergraduate programme in Electronics and Communication Engineering along with Ph.D. programmes in cutting-edge areas such as VLSI Design, Digital Signal Processing, Wireless Networking, MEMS and Speech Signal Processing. Recognised as a Quality Improvement Programme (QIP) centre by the Government of India, the department has a strong legacy in research and development — particularly in communications, signal processing, microelectronics and RF/photonics. It hosts well-equipped laboratories spanning digital electronics, advanced digital communication, microwave communication, microprocessors and microcontrollers, and computer networks, along with an exclusive computing facility running industry-standard tools such as CADENCE VLSI, ECAD and VHDL simulation/synthesis packages. The department regularly organises seminars, workshops and training programmes under initiatives like TEQIP, ACME and AICTE, and has executed several AICTE-sponsored projects to strengthen its laboratory and research capabilities.",
+      "vision": "To achieve excellence in electronics and communication engineering through quality education and research for developing competent professionals.",
+      "mission": [
+        "Foster a dynamic teaching and learning process.",
+        "Encourage research through innovation and collaboration.",
+        "Imbibe moral, ethical values and social responsibilities."
+      ],
+      "programsOffered": [
+        "B.E. — Electronics & Communication Engineering",
+        "Ph.D. — Electronics & Communication Engineering"
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "Lead a successful career by solving complex engineering problems of society and industry."
+        },
+        {
+          "code": "PEO2",
+          "text": "Excel in academia, industry and entrepreneurship, and engage in research and lifelong learning."
+        },
+        {
+          "code": "PEO3",
+          "text": "Work effectively as individuals in multidisciplinary environments with high integrity, ethics, human values and societal responsibilities."
+        },
+        {
+          "code": "PEO4",
+          "text": "Exhibit strong leadership, communication and teamwork skills to succeed in dynamic professional environments and contribute to global challenges."
+        }
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "Analyze and design systems for electronics, communication and signal processing applications."
+        },
+        {
+          "code": "PSO2",
+          "text": "Use domain-specific tools for design, analysis, synthesis and validation of VLSI and embedded systems."
+        },
+        {
+          "code": "PSO3",
+          "text": "Demonstrate conceptual knowledge of the architecture, design, analysis and simulation of computer networking and applications."
+        }
+      ],
+      "highlights": [
+        "Established in 1985 with a Ph.D. research centre recognised under the Government of India QIP scheme.",
+        "Research strengths in communications, signal processing, microelectronics and RF/photonics.",
+        "Exclusive computing facility with CADENCE VLSI, ECAD and VHDL simulation/synthesis tools.",
+        "Executed several AICTE-sponsored projects to augment laboratory and research infrastructure.",
+        "Active skill development through seminars, workshops and training under TEQIP, ACME and AICTE."
+      ],
+      "labs": [
+        {
+          "name": "Digital Electronics Lab",
+          "description": "Foundational lab for digital design and logic experimentation."
+        },
+        {
+          "name": "Advanced Digital Communication Lab",
+          "description": "Experiments in modern digital and wireless communication systems."
+        },
+        {
+          "name": "Microwave Communication Lab",
+          "description": "Microwave and RF communication measurements and experiments."
+        },
+        {
+          "name": "Microprocessor & Microcontroller Lab",
+          "description": "Embedded systems programming on microprocessor and microcontroller platforms."
+        },
+        {
+          "name": "Computer Networks Lab",
+          "description": "Networking protocols, configuration and performance analysis."
+        },
+        {
+          "name": "Computing Facility",
+          "description": "State-of-the-art systems with industry-standard EDA tools — CADENCE VLSI, ECAD and VHDL simulation/synthesis packages."
+        }
+      ],
+      "associations": [
+        {
+          "name": "ACME — Association for Communication and Modern Electronics",
+          "about": "The department's professional body, which organises seminars, workshops and technical events for students and faculty."
+        }
+      ],
+      "contact": {
+        "name": "Dr. (Smt.) J. D. Mallapur",
+        "designation": "Professor & Head",
+        "email": "jdmece@gmail.com"
+      }
     },
     "electrical-and-electronics-engg": {
       "name": "Electrical & Electronics Engineering",
-      "assetSlug": "eee"
+      "assetSlug": "eee",
+      "tagline": "Academic excellence, research and innovation in electrical & electronics engineering to meet energy, industrial and societal needs.",
+      "established": "1963",
+      "overview": "The Electrical and Electronics Engineering department was started with the inception of the college in 1963 and offers undergraduate, postgraduate and research programmes. It has well-equipped laboratories with state-of-the-art equipment and dedicated, qualified staff. The department has specialized faculty in Power Systems, Machines, Drives and Power Electronics, Renewable Energy Sources, Instrumentation, Signal Processing, HVDC and FACTS, and Power & Energy Systems. It is accredited by NBA and is a recognised Research Centre of VTU, Belagavi, offering a PG in Power & Energy Systems, Ph.D. and M.Sc. (Engg.) by research. Over the years the department has received 150+ lakhs in R&D grants and produced four Ph.D.s, 75+ M.Techs and 90+ technical publications. Two new research labs in Renewable Energy and SCADA were established with support from VGST (Govt. of Karnataka) and World Bank TEQIP-II grants, and the department has MoUs with three companies.",
+      "vision": "To be in the global forefront of academic excellence, research and innovation in electrical and electronics engineering to influence and meet energy, environment, industrial and societal needs.",
+      "mission": [
+        "Practice dynamic teaching-learning processes adapting to ongoing global technological developments in electrical and electronics engineering.",
+        "Engage in national/international industry and institute collaborations for higher studies, research, development and innovation.",
+        "Carry out inter-disciplinary projects, skill-development activities and field visits to imbibe real-life experiences in students.",
+        "Render empathetic services to resolve energy, ecology and environmental issues."
+      ],
+      "programsOffered": [
+        "B.E. — Electrical & Electronics Engineering",
+        "M.Tech. — Power & Energy Systems",
+        "Ph.D. and M.Sc. (Engg.) by Research (VTU and QIP)"
+      ],
+      "highlights": [
+        "Established in 1963; NBA-accredited and a recognised VTU Research Centre.",
+        "Specialized faculty across Power Systems, Drives & Power Electronics, Renewable Energy, Instrumentation, Signal Processing and HVDC/FACTS.",
+        "150+ lakhs in R&D grants; four Ph.D.s, 75+ M.Techs and 90+ technical publications produced.",
+        "New Renewable Energy and SCADA research labs funded by VGST and World Bank TEQIP-II; MoUs with three companies."
+      ],
+      "labs": [
+        {
+          "name": "Electrical Machines Lab"
+        },
+        {
+          "name": "High Voltage Engineering Lab"
+        },
+        {
+          "name": "Power System Lab"
+        },
+        {
+          "name": "Microcontrollers Lab"
+        },
+        {
+          "name": "Power System Protection Lab"
+        },
+        {
+          "name": "Renewable Energy Lab"
+        },
+        {
+          "name": "SCADA Lab"
+        },
+        {
+          "name": "Computer Centre",
+          "description": "State-of-the-art systems with AutoCAD, MATLAB, Mi-Power, Windographer and Code Composer Studio."
+        }
+      ]
     },
     "electronics-and-computer-engg": {
       "name": "Electronics & Computer Engineering",
@@ -121,11 +579,56 @@
     },
     "physics": {
       "name": "Physics",
-      "assetSlug": "physics"
+      "assetSlug": "physics",
+      "tagline": "A centre of excellence for education and research in physics.",
+      "established": "1963",
+      "overview": "The Physics department was started with the inception of the college in 1963 and has well-equipped laboratories. Students excel under the guidance of qualified and dedicated staff, and faculty and student development programmes are organised regularly. The department has been a recognised Research Centre of VTU, Belagavi since 2013, with research focused on material science and magnetoelectric composites. At present four faculty and four supporting staff work in the department, actively engaged in teaching undergraduate students and pursuing research.",
+      "vision": "To be recognized as a centre of excellence for education and research in the field of physics.",
+      "mission": [
+        "Pursue excellence by imparting education in physics through a student-centric, dynamic teaching-learning process.",
+        "Carry out innovative, cutting-edge research in physics for industrial and societal needs."
+      ],
+      "programsOffered": [
+        "Ph.D. — Physics (VTU Research Centre)"
+      ],
+      "highlights": [
+        "Established in 1963; a recognised VTU Research Centre since 2013.",
+        "Research focus on material science and magnetoelectric composites.",
+        "Qualified faculty supporting undergraduate engineering physics and research."
+      ],
+      "contact": {
+        "name": "Prof. Ratnaprabha P. Araganji",
+        "designation": "Associate Professor & Head",
+        "phone": "+91-9448248434",
+        "email": "rpaph@becbgk.edu"
+      }
     },
     "chemistry": {
       "name": "Chemistry",
-      "assetSlug": "chemistry"
+      "assetSlug": "chemistry",
+      "tagline": "Foundational chemistry for engineering — teaching, research and innovation.",
+      "overview": "The Department of Chemistry places a strong emphasis on understanding the structure and properties of atoms and molecules, and on using this understanding to predict and interpret the behaviour of matter. Many chemistry concepts are fundamental to engineering, and the department offers stream-wise Applied Chemistry courses for the Computer Science, Electrical, Civil and Mechanical engineering streams.",
+      "vision": "To be recognized as a premier technical institute committed to developing exemplary professionals, offering research-based innovative solutions and inspiring inventions for holistic socio-economic development.",
+      "mission": [
+        "Pursue excellence through student-centric, dynamic teaching-learning processes, encouraging freedom of inquiry and openness to change.",
+        "Carry out innovative, cutting-edge research and transfer technology for industrial and societal needs.",
+        "Imbibe moral and ethical values and develop compassionate human professionals."
+      ],
+      "highlights": [
+        "Teaches Applied Chemistry across the CSE, EEE, Civil and Mechanical engineering streams.",
+        "Research-oriented faculty supporting the first-year engineering curriculum."
+      ],
+      "labs": [
+        {
+          "name": "Chemistry Laboratory"
+        }
+      ],
+      "contact": {
+        "name": "Dr. S. K. Patil",
+        "designation": "Associate Professor & Head",
+        "phone": "+91-9448766350",
+        "email": "sunilkumar.kp1971@gmail.com"
+      }
     },
     "mathematics": {
       "name": "Mathematics",
@@ -149,11 +652,121 @@
     },
     "mca": {
       "name": "Master of Computer Applications (MCA)",
-      "assetSlug": "mca"
+      "assetSlug": "mca",
+      "tagline": "Educate and empower students for the IT profession with techno-social values.",
+      "overview": "The MCA programme is a two-year course offered within the autonomous framework granted to the college by VTU and UGC in 2007. The department offers a student-friendly learning atmosphere, a syllabus framed in consultation with industry experts, a software development cell that lets students experience live projects, and state-of-the-art computing laboratories built on open-source technologies.",
+      "vision": "Educate and empower students for the IT profession with techno-social values.",
+      "mission": [
+        "Impart quality IT education and encourage students to showcase the best of their abilities.",
+        "Strengthen technical skills and imbibe moral and ethical values beneficial to society.",
+        "Produce graduates who accomplish the best professional standards."
+      ],
+      "programsOffered": [
+        "MCA — Master of Computer Applications (2-year)"
+      ],
+      "highlights": [
+        "Part of the college's autonomous status granted by VTU and UGC in 2007.",
+        "Software development cell for live, industry-style projects.",
+        "State-of-the-art computing laboratories built on open-source technologies.",
+        "Syllabus framed in consultation with industry experts."
+      ],
+      "labs": [
+        {
+          "name": "Computing Laboratories",
+          "description": "State-of-the-art labs built on open-source technologies."
+        },
+        {
+          "name": "Software Development Cell",
+          "description": "Enables students to experience and build live projects."
+        }
+      ],
+      "associations": [
+        {
+          "name": "Computer Society of India (CSI) — Student Chapter",
+          "about": "Student chapter that organises technical and professional activities for MCA students."
+        }
+      ],
+      "activities": [
+        {
+          "title": "Ms. Ganga Bilagi — University Blue (2024-25) and Best Women Cricketer, Session 12, Ijere Academy Hubli"
+        },
+        {
+          "title": "Students placed as interns at QSpiders"
+        }
+      ],
+      "contact": {
+        "name": "Mrs. Sudha K. S.",
+        "designation": "Assistant Professor & Head",
+        "phone": "+91-9900490012",
+        "email": "hodmc@becbgk.edu"
+      },
+      "documents": [
+        {
+          "title": "Syllabus, Sem I–IV (2023-24)",
+          "file": "departments/mca/docs/syllabus-1-4-sem-2023-24.pdf"
+        },
+        {
+          "title": "Scheme (2024-25)",
+          "file": "departments/mca/docs/scheme-2024-25.pdf"
+        }
+      ]
     },
     "mba": {
       "name": "Master of Business Administration (MBA)",
-      "assetSlug": "mba"
+      "assetSlug": "mba",
+      "tagline": "A centre of excellence in management education, research and entrepreneurship for a sustainable future.",
+      "established": "2009",
+      "intake": "60",
+      "overview": "The Department of Management Studies was established at Basaveshwar Engineering College in 2009 to impart quality management education. It offers a two-year full-time MBA programme with an intake of 60 students spread over four semesters. The programme is autonomous, affiliated to VTU, Belagavi and approved by AICTE, New Delhi. The department is equipped with the necessary infrastructure, and its faculty are drawn from different specializations with varied experience. Practical labs such as a Presentation Lab and a Business Analytics Lab give students hands-on exposure to the presentation, communication, technical and analytical skills required of today's and tomorrow's managers.",
+      "vision": "To be a centre of excellence in management education, research and entrepreneurship for a sustainable future.",
+      "mission": [
+        "Provide quality education in management to meet future talent requirements.",
+        "Nurture a culture of research and entrepreneurship for a sustainable future.",
+        "Imbibe moral and ethical values."
+      ],
+      "programsOffered": [
+        "MBA — Master of Business Administration (2-year, full-time)",
+        "Ph.D. — Management (VTU)"
+      ],
+      "highlights": [
+        "Established in 2009; an autonomous programme affiliated to VTU and approved by AICTE, with an intake of 60.",
+        "Specializations in Marketing, Finance, Human Resources, Operations and Business Analytics.",
+        "Dedicated Presentation Lab and Business Analytics Lab for practical exposure.",
+        "Guided by core values of ethics, integrity, empathy and mutual respect."
+      ],
+      "labs": [
+        {
+          "name": "Presentation Lab"
+        },
+        {
+          "name": "Business Analytics Lab"
+        }
+      ],
+      "associations": [
+        {
+          "name": "BEMSA — BEC Management Students Association",
+          "about": "Established in 2009, BEMSA brings students onto a common platform to share ideas and experiences and to organise executive meets, student and personality development programmes, sports and cultural events, improving communication, managerial, presentation and teamwork skills."
+        }
+      ],
+      "contact": {
+        "name": "Dr. Vinod S. Puranik",
+        "designation": "Professor & Head",
+        "email": "vinodpuranik36@gmail.com"
+      },
+      "documents": [
+        {
+          "title": "Scheme & Syllabus, Sem 1–4 (2024-25 Batch)",
+          "file": "departments/mba/docs/scheme-syllabus-2024-25.pdf"
+        },
+        {
+          "title": "Scheme & Syllabus, Year I–II (2023-24 Batch)",
+          "file": "departments/mba/docs/scheme-syllabus-2023-24.pdf"
+        },
+        {
+          "title": "Board of Studies — 16th Proceedings",
+          "file": "departments/mba/docs/bos-16th.pdf"
+        }
+      ]
     }
   }
 }

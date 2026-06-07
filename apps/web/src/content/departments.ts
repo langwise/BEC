@@ -1,5 +1,5 @@
 import data from "@content/departments.json";
-import { assetsUnder } from "@/lib/assets";
+import { asset, assetsUnder } from "@/lib/assets";
 
 export type CodedItem = { code: string; text: string };
 
@@ -21,6 +21,7 @@ export type DepartmentContent = {
   activities?: { title: string; date?: string; description?: string }[];
   associations?: { name: string; about?: string; coordinators?: string[] }[];
   contact?: { name?: string; designation?: string; phone?: string; email?: string };
+  documents?: { title: string; file: string }[];
 };
 
 /** Back-compat alias — the minimal shape older callers relied on. */
@@ -42,6 +43,25 @@ export function getDepartmentMeta(slug: string): DepartmentMeta | undefined {
  * All R2 photo URLs for a department's folder (departments/<assetSlug>/),
  * sorted by key. Empty when the department has no photos yet.
  */
+/**
+ * Resolve curriculum/syllabus documents to { title, url }, keeping only those
+ * whose file actually exists on R2 (absolute URL). A missing key would otherwise
+ * resolve to a same-origin path that loads our own 404 page.
+ */
+export function resolveDocuments(
+  docs?: { title: string; file: string }[],
+): { title: string; url: string }[] {
+  if (!docs?.length) return [];
+  return docs
+    .map((d) => ({ title: d.title, url: asset(d.file) }))
+    .filter((d) => d.url.startsWith("http"));
+}
+
 export function getDepartmentGallery(assetSlug?: string): string[] {
-  return assetSlug ? assetsUnder(`departments/${assetSlug}/`) : [];
+  if (!assetSlug) return [];
+  // Scene/infrastructure photos only — exclude the faculty/ subtree (portraits +
+  // CV PDFs) and any non-image assets.
+  return assetsUnder(`departments/${assetSlug}/`).filter(
+    (url) => !url.includes("/faculty/") && /\.(webp|jpe?g|png)$/i.test(url),
+  );
 }
