@@ -22,49 +22,48 @@ Members without a `cv` render as a static (non-clickable) row.
   `photo`/`cv` keys to public URLs and returns `FacultyMember[]`.
 - `apps/web/src/types/faculty.ts` — the `FacultyMember` shape.
 
-## Adding a department
+## Adding a department — `scripts/build-faculty.mjs`
 
-The source profiles live in `data/new-provided/<DEPT>/` — usually a
-"Faculty directory with Photo-brief profiles" folder of per-faculty `.pdf`,
-`.doc` and `.docx` files. Steps:
+The provided "Faculty Profile" docs follow a consistent BEC template (a `Name` /
+`Designation` block, then `Contact Details`, with one embedded portrait). One
+script does the whole department: it parses name + designation, converts each doc
+to PDF (the CV), and pulls the embedded portrait out of that PDF → WebP. No
+manual photo↔name mapping needed — the photo lives inside each person's own doc.
 
-1. **Identify** which file belongs to which faculty member. Filenames are often
-   initials or site codes (`TCS016.pdf`, `TMCA003-VBH.pdf`); when unclear, read
-   the first lines: `pdftotext file.pdf -` or `textutil -convert txt -stdout file.doc`.
+**One-time:** `brew install --cask libreoffice` (doc→PDF). `sips`, `cwebp`,
+`pdfimages`, `pdftotext`, `textutil` are already on macOS / via poppler+webp.
 
-2. **Convert** any `.doc`/`.docx` to PDF with LibreOffice (one-time install:
-   `brew install --cask libreoffice`):
+```bash
+cd apps/web
 
-   ```bash
-   /Applications/LibreOffice.app/Contents/MacOS/soffice \
-     --headless --convert-to pdf --outdir <tmp> "<file.doc>"
-   ```
+# Dry run — parse + stage to a tmp dir, print entries, NO write/upload:
+node scripts/build-faculty.mjs <dept-slug> <assetSlug> "<source-dir>" --stage /tmp/bec-fac
 
-   PDFs are used as-is.
+# Real run — also write content/faculty.json[<dept-slug>]:
+node scripts/build-faculty.mjs <dept-slug> <assetSlug> "<source-dir>" --write --stage /tmp/bec-fac
+```
 
-3. **Stage** each file as `<root>/departments/<slug>/faculty/cv/<name-slug>.pdf`,
-   using the **same `name-slug` as the portrait** (e.g. portrait
-   `departments/cse/faculty/veerappa-b-pagi.webp` → cv
-   `departments/cse/faculty/cv/veerappa-b-pagi.pdf`).
+- `<dept-slug>` = URL slug from `content/departments.json`; `<assetSlug>` = the R2
+  folder (e.g. `cse`, `civil`, `ece`).
+- `<source-dir>` = the folder of per-faculty `.doc/.docx/.pdf` profiles (point it
+  at the dept's "Faculty Profile" folder; dept profiles / templates / syllabi are
+  auto-skipped — a file only counts if it has `Contact Details` + a `Designation`).
+- The console prints `ok <slug> [designation] cv:y/N photo:y/N` per person and a
+  list of skipped files with the reason — **eyeball the skips** for any real
+  faculty missed (rare: a typo'd designation or an unusual template).
 
-4. **Upload** (never `--prune` — it deletes bucket keys not in the staging dir):
+Then upload everything staged and refresh the schema (run once after all depts):
 
-   ```bash
-   cd apps/web
-   node scripts/upload-assets.mjs <root>          # PDFs get application/pdf
-   node scripts/build-content-schema.mjs          # refresh asset-keys.json
-   ```
+```bash
+node scripts/upload-assets.mjs /tmp/bec-fac   # never --prune; PDFs get application/pdf
+node scripts/build-content-schema.mjs         # refresh asset-keys.json
+pnpm build                                    # type-check
+```
 
-5. **Wire** the `cv` (and `photo`) keys into `content/faculty.json` for that
-   department, then `pnpm build` to type-check.
+Spot-check a few portraits before committing (some source photos are stored
+rotated — same EXIF gotcha as elsewhere; flag those for manual rotation).
+Faculty without an extractable portrait keep their `cv` and fall back to initials.
 
-Faculty without a profile PDF simply omit `cv` — the card stays static (no modal).
-
-CSE is the worked reference (20 faculty, 17 with CV PDFs).
-
-## Portraits
-
-Portraits follow the standard image pipeline (`convert-images.mjs` →
-`upload-assets.mjs`) and live at `departments/<slug>/faculty/<name-slug>.webp`.
-If a profile doc embeds the portrait, extract it with `pdfimages` /
-`data/scraped/scripts/extract_doc_media.py`, then convert + upload as usual.
+**Status:** CSE was the hand-built reference (20 faculty); AIML, Automobile, ECS,
+EEE, Maths, Physics, Civil, and ECE were built with this script. MBA / MCA /
+Chemistry have no per-faculty profile docs (department-level data only).

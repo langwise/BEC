@@ -127,6 +127,19 @@
               "phone": { "type": "string" },
               "email": { "type": "string" }
             }
+          },
+          "documents": {
+            "type": "array",
+            "description": "Curriculum / syllabus PDFs (Scheme & Syllabus, BoS, course plans). Rendered as the 'Curriculum & Syllabus' download section.",
+            "items": {
+              "type": "object",
+              "required": ["title", "file"],
+              "additionalProperties": false,
+              "properties": {
+                "title": { "type": "string" },
+                "file": { "allOf": [{ "$ref": "./_schema/asset-keys.json" }], "description": "PDF asset key on R2 (autocompletes)." }
+              }
+            }
           }
         }
       }

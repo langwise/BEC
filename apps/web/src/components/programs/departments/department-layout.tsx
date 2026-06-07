@@ -4,7 +4,7 @@ import { useState } from "react";
 import DepartmentSidebar from "@/components/programs/departments/sidebar";
 import { DepartmentData } from "@/data/department/department";
 import ContentSection from "@/components/programs/departments/content";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, FileText, Download } from "lucide-react";
 import { FacultyCard } from "@/components/programs/faculty/faculty-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 
@@ -100,6 +100,32 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
                          {activeSection.faculty.map((member, fIndex) => (
                              <FacultyCard key={fIndex} member={member} />
+                         ))}
+                     </div>
+                 </div>
+             )
+         }
+         if (activeSection.type === "documents") {
+             return (
+                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                     <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
+                     <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                         {activeSection.documents.map((doc, i) => (
+                             <a
+                                 key={i}
+                                 href={doc.url}
+                                 target="_blank"
+                                 rel="noreferrer"
+                                 className="group flex items-center gap-3 rounded-md border border-stone-200 bg-white p-4 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
+                             >
+                                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-orange-50 text-primary">
+                                     <FileText className="h-5 w-5" />
+                                 </span>
+                                 <span className="min-w-0 flex-1 text-sm font-medium text-gray-900 group-hover:text-primary">
+                                     {doc.title}
+                                 </span>
+                                 <Download className="h-4 w-4 shrink-0 text-stone-400 group-hover:text-primary" />
+                             </a>
                          ))}
                      </div>
                  </div>

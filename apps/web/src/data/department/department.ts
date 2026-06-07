@@ -2,6 +2,7 @@ import { FacultyMember } from "@/types/faculty";
 import {
   getDepartmentContent,
   getDepartmentGallery,
+  resolveDocuments,
   type DepartmentContent,
 } from "@/content/departments";
 import { getDepartmentFaculty } from "@/content/faculty";
@@ -33,6 +34,7 @@ export type DepartmentSection =
       icon?: string;
     }
   | { id?: string; type: "faculty-list"; title: string; faculty: FacultyMember[] }
+  | { id?: string; type: "documents"; title: string; icon?: string; documents: { title: string; url: string }[] }
   | { id?: string; type: "stats"; title: string; stats: { label: string; value: string; icon?: string }[] }
   | { id?: string; type: "gallery"; title: string; images: { src: string; alt: string }[] };
 
@@ -95,6 +97,12 @@ function buildSections(slug: string, content: DepartmentContent): DepartmentSect
         items: content.psos.map((p) => `${p.code}: ${p.text}`),
       });
     sections.push({ id: "academics", type: "content", title: "Academics", icon: "book", groups });
+  }
+
+  // Curriculum & syllabus documents (R2 PDFs)
+  const documents = resolveDocuments(content.documents);
+  if (documents.length) {
+    sections.push({ id: "curriculum", type: "documents", title: "Curriculum & Syllabus", icon: "file-text", documents });
   }
 
   // Faculty
@@ -178,6 +186,7 @@ export function getDepartmentData(_type: string, slug: string): DepartmentData {
     sidebar.push({ id: "about", label: "About Department", icon: "graduation-cap" });
   const sectionLabels: Record<string, { label: string; icon: string }> = {
     academics: { label: "Academics", icon: "file-text" },
+    curriculum: { label: "Curriculum", icon: "file-text" },
     faculty: { label: "Teaching Faculty", icon: "users" },
     research: { label: "Research & Labs", icon: "clipboard" },
     activities: { label: "Activities", icon: "calendar" },
