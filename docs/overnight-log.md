@@ -730,3 +730,41 @@ Each flagship/curate page had every chosen image **viewed** by a fresh-context s
   - Did not embed the full ~25-member committee or ~42-member squad to keep the existing 3-card layout intact (no redesign); only the most authoritative leadership/contact points were wired.
 - **Build risk:** low
 
+---
+
+## FOLLOW-UP (2026-06-08): Department PDFs → R2 + wire (clears the Workflow-B "stripped documents[]/cv" debt)
+
+### Dept document + CV PDFs uploaded to R2 and wired — 85 objects, 31 documents + 54 CVs
+- **Files:** `content/departments.json` (added `documents[]` to 7 depts), `content/faculty.json` (added 54 `cv` keys), `src/data/asset-manifest.ts` (632→717, auto-regen), `content/_schema/asset-keys.json` (auto-regen).
+- **Before:** Workflow B filled the 7 name-only depts but **stripped** every `documents[]` entry and faculty `cv` because the source PDFs (syllabus/BoS/scheme/CV) lived only in the local scrape, not on R2 — schema requires a real asset key, so wiring them then would have produced broken links.
+- **Changed:**
+  - Staged the PDFs from `data/scraped/site/becbgk.edu/<DEPT>/{Documents,CV,...}` into `data/_r2-pdf-staging/<key>` and uploaded via `scripts/upload-assets.mjs` (idempotent; md5/size match). Manifest + schema enum regenerated from the full bucket.
+  - Key convention follows the established civil/cse/ece pattern: documents = `departments/<assetSlug>/docs/<slug>.pdf`; CVs = `departments/<assetSlug>/faculty/cv/<slug>.pdf` (`slug` strips honorifics Dr/Prof/Smt/Sri/Mr/Mrs/Ms/Miss then hyphenates).
+  - assetSlug map: biotechnology→`biotechnology`, electronics-and-computer-engg→`ecs`, industrial-and-production-engg→`ip`, information-science-and-engg→`ise`, mechanical-engg→`mechanical`, mathematics→`maths`, humanities→`hss`.
+  - Wire step (`/tmp/wire-dept-pdfs.mjs`) **aborts if any planned key is absent from the regenerated manifest** → guaranteed no broken links. `documents[]`: biotechnology 4, ecs 3, ip 5, ise 4, mechanical 8, maths 4, hss 3 (31 total). `cv`: biotech 7, ip 3, ise 17, hss 2, ecs 2, maths 2, mechanical 21 (54 total), matched by exact roster name.
+- **Sources:** `data/scraped/site/becbgk.edu/{BT,PG_BT,ECS,IPE,ISE,ME,PG_ME,MATHS,HSS}/…` (274 dept PDFs present locally — no live scrape needed). R2 bucket `bec-assets` (now 717 objects / 251.3 MB / 2.5% of the 10 GB free tier — [[r2-never-billed]] honoured, only optimized PDFs uploaded). 3 sample new keys spot-checked → HTTP 200 `application/pdf`.
+- **Why:** Clears the single largest flagged follow-up; the 7 merged departments now have real, downloadable syllabus/BoS/scheme documents and faculty CVs instead of empty arrays. Diff is purely additive (documents appended after `contact`; cv appended per faculty).
+- **Flags:**
+  - **ISE SAR (NBA Self-Assessment Report) dropped** — 41 MB internal accreditation doc, too heavy for a low-network audience; ISE keeps 4 documents instead of 5. (Total staged dropped 80.9 MB → 38.3 MB.)
+  - **Mechanical: 3 CVs not wired** — Vivekanand B. S. (initials "BSV" ambiguous vs roster), R. S. Matti and R. A. Patil (no matching CV file in scrape). 21/24 wired via unique TME-ID+initials match.
+  - **HSS: Shanta B. Basanagoudar CV not wired** — `S.R.B.pdf` is not a clean name match (Workflow-B already flagged a name discrepancy). Hokarani CV: chose the explicitly-named `Faculty profile Dr.B.G.H.pdf` over the generic `Faculty Profile.pdf`.
+  - Legacy-convention CV keys proposed by the Workflow-B agents (e.g. `departments/ipe/cv/…` without `/faculty/`, assetSlug "ipe" vs real "ip") were **not** used — re-derived to the established manifest convention.
+
+### Home stats reconciliation — verified-only figures across home + history/programmes
+- **Files:** `src/components/home/stats-section.tsx`, `src/data/home/programme.ts`, `src/data/home/impace-section.ts`, `src/data/home/placements.ts`, `src/app/institute/history/page.tsx`, `src/app/programs/programmes/ug/page.tsx`, `src/app/programs/programmes/pg/page.tsx`.
+- **Before:** Home stats band and several home/history/programme cards carried inflated, unsourced figures that contradicted the canonical institute set in `content/home.json` + `institute/about/page.tsx`: 5000+ students, 350+ faculty, 100% qualified faculty, 7+ UG, 8+ PG, "Multi" research, 50k+ alumni; home impact/placements 50k+ alumni + "100% PhD faculty"; history "15,000+ Global Alumni"; programmes pages "100% PhD Qualified Faculty".
+- **Changed (all → the verified canonical set: 3,500+ students · 180+ faculty · 55% PhDs · 11 UG · 6 PG · 10 research centres · 93+ acres · 20,000+ alumni):**
+  - `stats-section.tsx` 8 cards: 5000+→3,500+ students; 350+→180+ faculty; 100% Qualified→55% Faculty with PhDs; 7+→11 UG; 8+→6 PG; Multi→10 Research Centres; 93+ acres (kept, verified); 50k+→20,000+ alumni.
+  - `programme.ts`: "7+ B.E. Programmes"→"11 B.E. Programmes"; "5000+ Students"→"3,500+ Students".
+  - `impace-section.ts`: "100% of our core faculty holding PhDs" prose → "more than half"; stat 100%→55% PhD faculty; 50k+→20,000+ alumni.
+  - `placements.ts`: 50k+→20,000+ alumni. `history/page.tsx`: 15,000+→20,000+ alumni.
+  - `programmes/ug/page.tsx`: "100% PhD Qualified Faculty" highlight → "PhD-Qualified Faculty". `programmes/pg/page.tsx`: PhD Faculty stat 100%→55%.
+- **Sources:** `content/home.json` ("faculty of over 180 (55% holding PhDs)… 200 staff… 3500+ students… 20,000+ alumni… 11 UG, 6 PG, and 10 Research Centers recognized by VTU") and `institute/about/page.tsx` stats array (1963 · 93 Acres · 20,000+ alumni · 3,500+ students · 180+ faculty/55% PhDs · 10 research centers) — the site's already-source-verified institute set. Live becbgk.edu cross-check (WebFetch homepage + WebSearch): est. 1963, 93.18 acres, NIRF-ranked, "9 UG & 8 PG programmes" (2021 copy, since superseded), BECAA "500+ members" (association membership ≠ total alumni) — live site publishes no hard student/faculty/total-alumni counter, so the canonical content-layer set is authoritative.
+- **Why:** Directive C ("pull it from existing live website, and use only verified ones"). Home was the lone surface still showing inflated marketing numbers; now every student/faculty/alumni/programme figure across home + history + programmes traces to the verified institute set and the site no longer contradicts itself.
+- **Flags:**
+  - **`institute/about-sangha/page.tsx` "50k+ Students" left untouched** — that card describes the **parent B.V.V.S. Sangha** (1906 · 120+ institutes · 50k+ students · 600+ acres), an aggregate across 120+ institutions, NOT BEC. Different entity; not in scope. (Sangha figures themselves are unverified to a hard source — separate follow-up if needed.)
+  - **`programmes/phd/page.tsx` "100% PhD Qualified Supervisors" left as-is** — contextually accurate (VTU research supervisors must hold PhDs); not the institute-wide-faculty claim.
+  - **Research-centre count discrepancy (9 vs 10):** `programmes/phd/page.tsx` says "9 VTU Recognized Research Centers" while `home.json`/`about` say 10. Pre-existing, outside the alumni/faculty/student family — flagged for a supervised follow-up, not changed here.
+  - Programme counts use the content-layer 11 UG / 6 PG (matches `ug/page.tsx` "across 11 disciplines" + home.json) over the stale 2021 live "9 UG & 8 PG".
+- **Build risk:** none — `pnpm build` green (11.7s, full route tree intact).
+

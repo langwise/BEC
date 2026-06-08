@@ -10,7 +10,7 @@ export const placementStats = [
     bgColor: "bg-muted",
   },
   {
-    value: "50k+",
+    value: "20,000+",
     label: "Alumni Worldwide",
     bgColor: "bg-muted",
   },

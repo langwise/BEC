@@ -6,7 +6,7 @@ export const programmes = [
     title: "Undergraduate Programmes",
     description:
       "B.E. programmes in Civil, Mechanical, Electrical, CSE, ECE, ISE and more, preparing students for successful engineering careers.",
-    count: "7+ B.E. Programmes",
+    count: "11 B.E. Programmes",
   },
   {
     icon: BookOpen,
@@ -27,6 +27,6 @@ export const programmes = [
     title: "Student Community",
     description:
       "Vibrant campus life with diverse activities, clubs, and opportunities for holistic development on our 93-acre campus.",
-    count: "5000+ Students",
+    count: "3,500+ Students",
   },
 ];

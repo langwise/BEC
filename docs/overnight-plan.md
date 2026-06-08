@@ -36,7 +36,7 @@ Backlink + placeholder purge:
 - ✅ Governance backlinks: `administration/governance/page.tsx` → 2 PDFs swapped to `asset()` (mandatory-disclosure, ac-members), 2 dead `.php` links removed
 - ✅ Governance data: `content/governance.json` found **already populated** (15 named HODs + photos, deans, officers; Automobile/Physics HOD correctly blank; a few `verify:true`). `data/governance/*.ts` are stale (only feed the intentional "coming soon" catch-all) → left as-is. 🚩 Senate roster still blocked.
 - ✅ Merge Workflow-B department JSON (done)
-- 🔎 Home stats reconcile (home 5000+/350+ vs institute 3500+/180+) — deferred to supervised pass (judgment, not autonomous)
+- ✅ Home stats reconcile (home 5000+/350+/50k+/100% vs verified 3500+/180+/20,000+/55%) — done 2026-06-08: aligned `stats-section.tsx` + `programme.ts` + home `impace-section.ts`/`placements.ts` + `history` + `programmes/{ug,pg}` to the canonical `home.json`/`about` set. Sangha "50k+" + phd "100% supervisors" left as-is (different scope). See log.
 
 ## Finalize (after both workflows return) — ✅ done
 - ✅ Merged dept JSON; wrote all 28 per-page log entries + 7 dept entries to `overnight-log.md`
@@ -49,7 +49,8 @@ Backlink + placeholder purge:
 - **Chairman** confirmed identity + name (image backlinked, name unverified)
 - **7 exam timetable PDFs** not found in scrape (2021-22 EVEN II/IV; 2022-23 BE I/III/V/VII; 2023-24 BE I/VII; 2024-25 odd 1st sem)
 - **Physics & Automobile HODs** (no provided portrait → blank in governance.json)
-- **Department PDFs not on R2** (syllabus/BoS/CV PDFs for the 7 merged depts) — source paths gathered; upload + wire as a follow-up
+- ✅ ~~Department PDFs not on R2~~ — **done 2026-06-08**: 85 objects uploaded, 31 `documents[]` + 54 faculty `cv` wired (manifest 632→717; R2 at 2.5% of free tier). New flags from this pass: ISE SAR (41 MB) dropped; Mechanical 3 CVs unwired (Vivekanand B. S. ambiguous, R. S. Matti + R. A. Patil no file); HSS Shanta B. Basanagoudar CV unwired (no clean name match). See log.
+- 🔎 **Research-centre count 9 vs 10** — `programmes/phd/page.tsx` says "9 VTU Recognized Research Centers"; `home.json`/`about` say 10. Pick one in a supervised pass.
 - **Dept roster confirmations:** IPE (Dundur/Puranik retired?), ISE (B. M. Reshmi + 3 extra CVs), Biotech (M.Tech Food Biotech closed 2024), ECS vision says "Instrumentation" (likely typo), Maths/HSS service-dept fields (no PEO/PSO by design)
 
 ## Snapshot (morning)

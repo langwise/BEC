@@ -3,14 +3,14 @@
 import { FadeIn } from "../animations/fade-in";
 
 const stats = [
-  { value: "5000+", label: "Students on Campus" },
-  { value: "350+", label: "Faculty Members" },
-  { value: "100%", label: "Qualified & Experienced Faculty" },
-  { value: "7+", label: "Undergraduate Programmes" },
-  { value: "8+", label: "Postgraduate Programmes" },
-  { value: "Multi", label: "PhD & Research Disciplines" },
-  { value: "93+", label: "Acres of Infrastructure" },
-  { value: "50k+", label: "Alumni Worldwide" },
+  { value: "3,500+", label: "Students on Campus" },
+  { value: "180+", label: "Faculty Members" },
+  { value: "55%", label: "Faculty with PhDs" },
+  { value: "11", label: "Undergraduate Programmes" },
+  { value: "6", label: "Postgraduate Programmes" },
+  { value: "10", label: "Research Centres" },
+  { value: "93+", label: "Acres of Campus" },
+  { value: "20,000+", label: "Alumni Worldwide" },
 ];
 
 export function StatsSection() {
