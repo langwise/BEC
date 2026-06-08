@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { orgChartLevels } from "@/data/governance/org-chart";
+import { asset } from "@/lib/assets";
 import {
   BogMember,
   bogLastUpdated,
@@ -31,23 +32,13 @@ import {
 
 const governanceLinks = [
   {
-    label: "BoG Members (becbgk.edu)",
-    href: "https://www.becbgk.edu/BOG%20Members.php",
-    description: "Official Board of Governors list published on becbgk.edu.",
-  },
-  {
-    label: "Governance (becbgk.edu)",
-    href: "https://www.becbgk.edu/Governance.php",
-    description: "Governing Council listing from the main site.",
-  },
-  {
-    label: "Mandatory Disclosure",
-    href: "https://www.becbgk.edu/Documents/Mandatory_Disclosure/Mandatory_Disclosure.pdf",
+    label: "Mandatory Disclosure (PDF)",
+    href: asset("documents/disclosures/mandatory-disclosure.pdf"),
     description: "Statutory disclosure including organization details.",
   },
   {
     label: "Academic Council Members (PDF)",
-    href: "https://www.becbgk.edu/Documents/AC%20Members.pdf",
+    href: asset("documents/misc/ac-members.pdf"),
     description: "Academic Council composition from the official PDF.",
   },
 ];

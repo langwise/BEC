@@ -4,6 +4,8 @@ import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
 import { LibrarySidebar } from "@/components/library/library-sidebar";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset } from "@/lib/assets";
 import {
   Building2,
   Wifi,
@@ -14,7 +16,15 @@ import {
   AirVent,
   Shield,
 } from "lucide-react";
-import Image from "next/image";
+
+const spaceImages = [
+  { src: asset("facilities/library/cine1235.webp"), alt: "Reading hall with study tables" },
+  { src: asset("facilities/library/cine1239.webp"), alt: "Students studying in the reading hall" },
+  { src: asset("facilities/library/cine1145.webp"), alt: "Book stacks in the Central Library" },
+  { src: asset("facilities/library/cine1131.webp"), alt: "Digital library section with computer terminals" },
+  { src: asset("facilities/library/cine1178.webp"), alt: "Student using the book scanning station" },
+  { src: asset("facilities/library/cine1216.webp"), alt: "Student reading newspapers at the periodicals stand" },
+];
 
 export default function InfrastructurePage() {
   const facilities = [
@@ -129,6 +139,15 @@ export default function InfrastructurePage() {
                       <div className="text-sm text-gray-600">Internet</div>
                     </div>
                   </div>
+                </div>
+              </FadeIn>
+
+              <FadeIn delay={0.15}>
+                <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
+                  <h2 className="text-2xl font-serif font-bold text-gray-900 mb-6">
+                    A Glimpse Inside
+                  </h2>
+                  <PhotoGallery images={spaceImages} />
                 </div>
               </FadeIn>
 

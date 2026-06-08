@@ -1,10 +1,20 @@
 "use client";
 
 import { PageHeader } from "@/components/placements/page-header";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset, assetsUnder } from "@/lib/assets";
+import Image from "next/image";
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Bed, Users, ShieldCheck, Wifi, Utensils, BookOpen, UserCheck, Phone } from "lucide-react";
+import { Bed, Users, ShieldCheck, Utensils, BookOpen, UserCheck, Phone } from "lucide-react";
+
+const girlsHostelImages = assetsUnder("facilities/hostels/girls/").map(
+    (src, index) => ({
+        src,
+        alt: `Malaprabha Ladies Hostel at Basaveshwar Engineering College ${index + 1}`,
+    }),
+);
 
 const hostelBlocks = [
     {
@@ -67,6 +77,22 @@ export default function HostelsPage() {
                 title="Student Accommodation"
                 description="A home away from home. Safe, comfortable, and vibrant living spaces facilitating holistic growth."
             />
+
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.05 }}
+                className="relative aspect-16/9 sm:aspect-21/9 w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100"
+            >
+                <Image
+                    src={asset("facilities/hostels/girls/cine0602.webp")}
+                    alt="Residential room at the Malaprabha Ladies Hostel, Basaveshwar Engineering College"
+                    fill
+                    priority
+                    sizes="(max-width: 1280px) 100vw, 1280px"
+                    className="object-cover"
+                />
+            </motion.div>
 
             {/* Overview Stats */}
             <motion.div
@@ -233,6 +259,19 @@ export default function HostelsPage() {
                         </CardContent>
                     </Card>
                 </div>
+            </motion.div>
+
+            {/* Gallery */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+            >
+                <div className="mb-4 md:mb-6">
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-900">Inside the Malaprabha Ladies Hostel</h2>
+                    <p className="text-sm md:text-base text-slate-600">A look at the residential rooms, study spaces and mess at the girls&apos; hostel.</p>
+                </div>
+                <PhotoGallery images={girlsHostelImages} />
             </motion.div>
         </div>
     );

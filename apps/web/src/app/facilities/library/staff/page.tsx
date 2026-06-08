@@ -12,28 +12,24 @@ import { Users } from "lucide-react";
 export default function StaffProfilePage() {
   const staffMembers = [
     {
-      name: "Dr. (Mrs.) Rekha Shahapurkar",
+      name: "Dr. Shreekant G. Karkun",
       designation: "Librarian",
-      qualification: "M.A, M.Lib.Sc., Ph.D.",
-      email: "librarian@becbgk.edu",
-      phone: "+91-8354-234060",
-      image: "/staff/librarian.jpg"
+      email: "library@becbgk.edu",
+      phone: "+91-94485-14872"
     },
     {
-      name: "Mrs. Sandhya Bagali",
+      name: "Mr. Subhas C. Mahendrakar",
       designation: "Assistant Librarian",
-      qualification: "M.A., M.Lib.Sc.",
-      email: "asst.librarian@becbgk.edu",
-      phone: "+91-8354-234061",
-      image: "/staff/asst-librarian.jpg"
+      email: "scmlb@becbgk.edu"
     },
     {
-      name: "Mr. Prakash Naik",
-      designation: "Technical Assistant",
-      qualification: "B.Lib.Sc.",
-      email: "tech.lib@becbgk.edu",
-      phone: "+91-8354-234062",
-      image: "/staff/tech-assistant.jpg"
+      name: "Mr. Gurunath B. Goudar",
+      designation: "Assistant Librarian",
+      email: "gbglb@becbgk.edu"
+    },
+    {
+      name: "Ms. Deepa M. Kolli",
+      designation: "Assistant Librarian"
     }
   ];
 

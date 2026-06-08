@@ -1,23 +1,16 @@
 "use client";
 
 import { FadeIn } from "@/components/animations/fade-in";
+import { asset } from "@/lib/assets";
 import { Clock, Download } from "lucide-react";
 import Link from "next/link";
 
 const timetables = [
-    { title: "1_2024-25 EVEN_4_ 6_ 8_SEMESTER TIME TABLE", link: "https://becbgk.edu/EXAM/Documents1/1_2024-25%20EVEN_4_%206_%208_SEMESTER%20TIME%20TABLE.pdf", isNew: true },
-    { title: "2_2024-25 ODD_I SEM PG", link: "https://becbgk.edu/EXAM/Documents1/2_2024-25%20ODD_I%20SEM%20PG.pdf", isNew: true },
-    { title: "3_2024-25 ODD_3 SEM PG", link: "https://becbgk.edu/EXAM/Documents1/3_2024-25%20ODD_3%20SEM%20PG.pdf", isNew: true },
-    { title: "4_2024-25 ODD_MAKE UP_1_ 3_ 5_ 7 SEM", link: "https://becbgk.edu/EXAM/Documents1/4_2024-25%20ODD_MAKE%20UP_1_%203_%205_%207%20SEM.pdf", isNew: true },
-    { title: "5_2024_25_odd_1st_sem Regular & Re-appear", link: "https://becbgk.edu/EXAM/Documents1/5_2024_25_odd_1st_sem_Regular_and_Re-appear.pdf", isNew: true },
-    { title: "Time Table for BE I/II Semester SEE Examinations, Feb/March - 2025", link: "https://becbgk.edu/EXAM/Documents/BE.%20I%20Sem%20SEE%20TIMETABLE.pdf", isNew: true },
-    { title: "2023-2024 BE VII Semester TIME TABLE", link: "https://becbgk.edu/EXAM/Documents/2023-24_BE_VII_Semester_TIMETABLE.pdf" },
-    { title: "2023-2024 BE I Semester TIME TABLE", link: "https://becbgk.edu/EXAM/Documents/2023-24_BE_I_Semester_TIMETABLE.pdf" },
-    { title: "2022-2023 BE V and VII Semester TIME TABLE", link: "https://becbgk.edu/EXAM/Documents/2022-23_BE_V_and_VII_Semester_TIMETABLE.pdf" },
-    { title: "2022-2023 BE III Semester, M.Tech III Semester & MBA III Semester TIME TABLE", link: "https://becbgk.edu/EXAM/Documents/2022-23_BE_III_Semester_TIMETABLE.pdf" },
-    { title: "2022-2023 BE I Semester TIME TABLE", link: "https://becbgk.edu/EXAM/Documents/2022-23_BE_I_Semester_TIMETABLE.pdf" },
-    { title: "2021-2022-EVEN II Semester TIME TABLE", link: "https://becbgk.edu/EXAM/Documents/2021-22_EVEN_II_Semester_TIMETABLE.pdf" },
-    { title: "2021-2022-EVEN IV Semester TIME TABLE", link: "https://becbgk.edu/EXAM/Documents/2021-22_EVEN_IV_Semester_TIMETABLE.pdf" },
+    { title: "1_2024-25 EVEN_4_ 6_ 8_SEMESTER TIME TABLE", link: asset("documents/exam/1-2024-25-even-4-6-8-semester-time-table.pdf"), isNew: true },
+    { title: "2_2024-25 ODD_I SEM PG", link: asset("documents/exam/2-2024-25-odd-i-sem-pg.pdf"), isNew: true },
+    { title: "3_2024-25 ODD_3 SEM PG", link: asset("documents/exam/3-2024-25-odd-3-sem-pg.pdf"), isNew: true },
+    { title: "4_2024-25 ODD_MAKE UP_1_ 3_ 5_ 7 SEM", link: asset("documents/exam/4-2024-25-odd-make-up-1-3-5-7-sem.pdf"), isNew: true },
+    { title: "Time Table for BE I/II Semester SEE Examinations, Feb/March - 2025", link: asset("documents/exam/be-i-sem-see-timetable.pdf"), isNew: true },
 ];
 
 export default function TimeTablePage() {

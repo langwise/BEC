@@ -1,6 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { PageHeader } from "@/components/placements/page-header";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset, assetsUnder } from "@/lib/assets";
 import { motion } from "motion/react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -12,9 +15,17 @@ import {
   Mic2,
   Music4,
   Signal,
+  Users,
 } from "lucide-react";
 import { useState, useRef } from "react";
 import { Badge } from "@/components/ui/badge";
+
+const galleryImages = assetsUnder("student-life/bec-fm/").map(
+  (src, index) => ({
+    src,
+    alt: `BEC Dhwani 90.4 FM community radio studio at Basaveshwar Engineering College ${index + 1}`,
+  }),
+);
 
 export default function BECFMPage() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -34,9 +45,20 @@ export default function BECFMPage() {
   return (
     <div className="space-y-12">
       <PageHeader
-        title="BEC-FM Radio"
-        description="Radio Basava Taranga - The voice of the campus. Tuning into innovation and culture."
+        title="BEC Dhwani 90.4 FM"
+        description="The community radio station of Basaveshwar Engineering College — the voice of the campus and its neighbouring communities."
       />
+
+      <div className="relative aspect-21/9 w-full overflow-hidden rounded-2xl border border-stone-200 shadow-sm">
+        <Image
+          src={asset("student-life/bec-fm/cine0978.webp")}
+          alt="A radio jockey on air at the BEC Dhwani 90.4 FM studio, Basaveshwar Engineering College"
+          fill
+          priority
+          sizes="(max-width: 1024px) 100vw, 1100px"
+          className="object-cover"
+        />
+      </div>
 
       <div className="grid lg:grid-cols-12 gap-12 items-center">
         {/* Visualizer / Player Section */}
@@ -78,17 +100,18 @@ export default function BECFMPage() {
                 <div className="space-y-2">
                   <div className="flex items-center justify-center md:justify-start gap-2 text-orange-400 font-bold uppercase tracking-widest text-xs">
                     <Signal className="w-4 h-4" />
-                    90.4 MHz Frequency
+                    90.4 FM Community Radio
                   </div>
                   <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
-                    Basava Taranga
+                    BEC Dhwani
                   </h2>
                   <p className="text-slate-400 text-base md:text-lg">
-                    Broadcasting knowledge, culture, and campus vibes 24/7.
+                    Broadcasting knowledge, culture, and campus voices from
+                    Basaveshwar Engineering College.
                   </p>
                 </div>
 
-                {/* Audio Element (Hidden source for now, placeholder URL) */}
+                {/* External Zeno.fm live stream — verify station ownership/URL before launch */}
                 <audio
                   ref={audioRef}
                   src="https://stream.zeno.fm/kvm0549y31zuv"
@@ -135,18 +158,18 @@ export default function BECFMPage() {
         <div className="lg:col-span-12 grid md:grid-cols-3 gap-6">
           {[
             {
-              title: "Community Focus",
-              desc: "Empowering the local community with educational content.",
+              title: "Community Radio",
+              desc: "A community radio station serving the campus and the surrounding region with locally relevant programming.",
               icon: Users,
             },
             {
-              title: "Student RJs",
-              desc: "Run by students, giving voice to young talent.",
+              title: "Campus Voices",
+              desc: "An on-air platform for students, faculty and the wider college community to share and create content.",
               icon: Mic2,
             },
             {
-              title: "Diverse Content",
-              desc: "From agriculture tips to tech trends and classical music.",
+              title: "On-Air Studio",
+              desc: "A dedicated broadcast and recording studio equipped for live shows and produced segments.",
               icon: Radio,
             },
           ].map((item, i) => (
@@ -173,9 +196,20 @@ export default function BECFMPage() {
           ))}
         </div>
       </div>
+
+      {/* Studio Gallery */}
+      <section className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">
+            Inside the Studio
+          </h2>
+          <p className="text-slate-500 max-w-2xl">
+            A look inside the BEC Dhwani broadcast and recording studio on the
+            Basaveshwar Engineering College campus.
+          </p>
+        </div>
+        <PhotoGallery images={galleryImages} />
+      </section>
     </div>
   );
 }
-
-// Helper icon
-import { Users } from "lucide-react";

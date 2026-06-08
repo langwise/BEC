@@ -1,19 +1,26 @@
 "use client";
 
-import { PageHeader } from "@/components/placements/page-header";
+import Image from "next/image";
 import { motion } from "motion/react";
 import {
   Settings,
   Cpu,
   Wind,
-  Activity,
   Zap,
   CheckCircle2,
   ChevronRight,
   Factory,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset, assetsUnder } from "@/lib/assets";
+
+const galleryImages = assetsUnder("research/labs/bosch/").map(
+  (src, index) => ({
+    src,
+    alt: `Bosch Rexroth Centre for Industrial Automation at Basaveshwar Engineering College ${index + 1}`,
+  }),
+);
 
 const labFeatures = [
   {
@@ -66,6 +73,15 @@ export default function BoschLabPage() {
     <div className="space-y-12">
       {/* Hero Section */}
       <div className="relative overflow-hidden rounded-3xl bg-linear-to-r from-orange-600 to-amber-600 text-white shadow-xl">
+        <Image
+          src={asset("research/labs/bosch/cine0843.webp")}
+          alt="Bosch Rexroth Centre for Industrial Automation laboratory at Basaveshwar Engineering College"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-25"
+        />
+        <div className="absolute inset-0 bg-linear-to-r from-orange-600/90 to-amber-600/80" />
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-white/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-orange-900/20 rounded-full blur-3xl" />
 
@@ -177,6 +193,19 @@ export default function BoschLabPage() {
           </motion.div>
         </div>
       </div>
+
+      {/* Laboratory Gallery */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
+        <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+          <span className="w-1.5 h-8 bg-orange-600 rounded-full" />
+          Laboratory Gallery
+        </h2>
+        <PhotoGallery images={galleryImages} />
+      </motion.div>
     </div>
   );
 }

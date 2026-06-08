@@ -2,6 +2,7 @@
 "use client";
 
 import { AcademicCalendarSection } from "@/components/programs/academic-calendar-section";
+import { asset } from "@/lib/assets";
 
 const calendarData = {
   currentYear: "2024-25",
@@ -12,7 +13,7 @@ const calendarData = {
       semester: "Even Semester",
       programmes: ["IV Sem BE", "VI Sem BE", "VIII Sem BE"],
       year: "2024-25",
-      pdfUrl: "/Documents/Academic Calender,Odd Semester IV,VI,VIII UG 20250215_13320622.pdf",
+      pdfUrl: asset("documents/calendar/academic-calender-odd-semester-iv-vi-viii-ug-20250215-13320622.pdf"),
       featured: true,
     },
     {
@@ -21,7 +22,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["I Sem BE", "III Sem BE", "V Sem BE", "VII Sem BE", "I Sem PG", "III Sem PG"],
       year: "2024-25",
-      pdfUrl: "/Documents/Academic Calender,Odd Semester I,III,V,VII UG & I,III PG20250215_13292427.pdf",
+      pdfUrl: asset("documents/calendar/academic-calender-odd-semester-i-iii-v-vii-ug-i-iii-pg20250215-13292427.pdf"),
       featured: true,
     },
     {
@@ -30,7 +31,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["VII Sem BE"],
       year: "2023-24",
-      pdfUrl: "/Documents/calander of events/Calendar of Events BE VII sem 2023-24.pdf",
+      pdfUrl: asset("documents/calendar/calendar-of-events-be-vii-sem-2023-24.pdf"),
       featured: false,
     },
     {
@@ -39,7 +40,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["I Sem BE"],
       year: "2023-24",
-      pdfUrl: "/Documents/calander of events/Calendar of Events BE I sem 2023-24.pdf",
+      pdfUrl: asset("documents/calendar/calendar-of-events-be-i-sem-2023-24.pdf"),
       featured: false,
     },
     {
@@ -48,7 +49,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["III Sem BE", "V Sem BE"],
       year: "2023-24",
-      pdfUrl: "/Documents/calander of events/Calendar of Events BE III and V sem 2023-24.pdf",
+      pdfUrl: asset("documents/calendar/calendar-of-events-be-iii-and-v-sem-2023-24.pdf"),
       featured: false,
     },
     {
@@ -57,7 +58,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["III Sem M.Tech", "III Sem MBA"],
       year: "2023-24",
-      pdfUrl: "/Documents/calander of events/Calendar of Events III sem M.Tech MBA.pdf",
+      pdfUrl: asset("documents/calendar/calendar-of-events-iii-sem-m-tech-mba.pdf"),
       featured: false,
     },
     {
@@ -66,7 +67,7 @@ const calendarData = {
       semester: "Even Semester",
       programmes: ["II Sem BE", "IV Sem BE"],
       year: "2022-23",
-      pdfUrl: "/Documents/calander of events/2022-23_Even_II_and_IV_Sem_B.E._Calender_of_Events.pdf",
+      pdfUrl: asset("documents/calendar/2022-23-even-ii-and-iv-sem-b-e-calender-of-events.pdf"),
       featured: false,
     },
     {
@@ -75,7 +76,7 @@ const calendarData = {
       semester: "Even Semester",
       programmes: ["IV Sem MBA", "IV Sem M.Tech"],
       year: "2022-23",
-      pdfUrl: "/Documents/calander of events/2022-23_Even_IV__Semester_MBA_and_M.Tech_Calender_of_Events.pdf",
+      pdfUrl: asset("documents/calendar/2022-23-even-iv-semester-mba-and-m-tech-calender-of-events.pdf"),
       featured: false,
     },
     {
@@ -84,7 +85,7 @@ const calendarData = {
       semester: "Even Semester",
       programmes: ["VI Sem BE", "VIII Sem BE"],
       year: "2022-23",
-      pdfUrl: "/Documents/calander of events/2022-23_Even_VI_and_VIII_Sem_B.E._Calender_of_Events.pdf",
+      pdfUrl: asset("documents/calendar/2022-23-even-vi-and-viii-sem-b-e-calender-of-events.pdf"),
       featured: false,
     },
     {
@@ -93,7 +94,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["V Sem BE", "VII Sem BE"],
       year: "2022-23",
-      pdfUrl: "/Documents/calander of events/4.pdf",
+      pdfUrl: asset("documents/calendar/4.pdf"),
       featured: false,
     },
     {
@@ -102,7 +103,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["III Sem BE"],
       year: "2022-23",
-      pdfUrl: "/Documents/calander of events/2.pdf",
+      pdfUrl: asset("documents/calendar/2.pdf"),
       featured: false,
     },
     {
@@ -111,7 +112,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["M.Tech", "MBA"],
       year: "2022-23",
-      pdfUrl: "/Documents/calander of events/Academi Calendar MBA Mtech odd Sem 2022-23.pdf",
+      pdfUrl: asset("documents/calendar/academi-calendar-mba-mtech-odd-sem-2022-23.pdf"),
       featured: false,
     },
     {
@@ -120,7 +121,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["I Sem BE"],
       year: "2022-23",
-      pdfUrl: "/Documents/calander of events/1.pdf",
+      pdfUrl: asset("documents/calendar/1.pdf"),
       featured: false,
     },
     {
@@ -129,7 +130,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["V Sem BE", "VII Sem BE", "III Sem MBA"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/12.pdf",
+      pdfUrl: asset("documents/calendar/12.pdf"),
       featured: false,
     },
     {
@@ -138,7 +139,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["III Sem BE"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/11.pdf",
+      pdfUrl: asset("documents/calendar/11.pdf"),
       featured: false,
     },
     {
@@ -147,7 +148,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["III Sem M.Tech"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/13.pdf",
+      pdfUrl: asset("documents/calendar/13.pdf"),
       featured: false,
     },
     {
@@ -156,7 +157,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["I Sem BE"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/10.pdf",
+      pdfUrl: asset("documents/calendar/10.pdf"),
       featured: false,
     },
     {
@@ -165,7 +166,7 @@ const calendarData = {
       semester: "Odd Semester",
       programmes: ["I Sem M.Tech", "I Sem MBA"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/14.pdf",
+      pdfUrl: asset("documents/calendar/14.pdf"),
       featured: false,
     },
     {
@@ -174,7 +175,7 @@ const calendarData = {
       semester: "Even Semester",
       programmes: ["VI Sem BE", "VIII Sem BE", "IV Sem MBA"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/9.pdf",
+      pdfUrl: asset("documents/calendar/9.pdf"),
       featured: false,
     },
     {
@@ -183,7 +184,7 @@ const calendarData = {
       semester: "Even Semester",
       programmes: ["IV Sem BE"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/6.21_22_Even_IV_Calendar of Events-5.pdf",
+      pdfUrl: asset("documents/calendar/6-21-22-even-iv-calendar-of-events-5.pdf"),
       featured: false,
     },
     {
@@ -192,7 +193,7 @@ const calendarData = {
       semester: "Even Semester",
       programmes: ["II Sem BE"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/5.21_22_Even_II_Calendar of Events-4.pdf",
+      pdfUrl: asset("documents/calendar/5-21-22-even-ii-calendar-of-events-4.pdf"),
       featured: false,
     },
     {
@@ -201,7 +202,7 @@ const calendarData = {
       semester: "Even Semester",
       programmes: ["II Sem M.Tech", "II Sem MBA"],
       year: "2021-22",
-      pdfUrl: "/Documents/calander of events/15.pdf",
+      pdfUrl: asset("documents/calendar/15.pdf"),
       featured: false,
     },
   ],

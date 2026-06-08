@@ -9,36 +9,6 @@ import { Link as LinkIcon, ExternalLink } from "lucide-react";
 export default function UsefulLinksPage() {
   const linkCategories = [
     {
-      category: "Library Services",
-      links: [
-        {
-          name: "Online Catalog (OPAC)",
-          url: "#",
-          description: "Search library books and materials online",
-        },
-        {
-          name: "Digital Library",
-          url: "#",
-          description: "Access digital collections and e-books",
-        },
-        {
-          name: "Institutional Repository",
-          url: "#",
-          description: "Research publications and theses",
-        },
-        {
-          name: "Reserve a Book",
-          url: "#",
-          description: "Book reservation system",
-        },
-        {
-          name: "Renew Books",
-          url: "#",
-          description: "Extend your book loan period",
-        },
-      ],
-    },
-    {
       category: "Academic Resources",
       links: [
         {

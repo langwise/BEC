@@ -12,26 +12,40 @@ import { Users } from "lucide-react";
 export default function SupportingStaffPage() {
   const supportStaff = [
     {
-      name: "Mr. Basavaraj Patil",
-      designation: "Library Assistant",
-      email: "lib.assistant1@becbgk.edu",
-      image: "/staff/assistant1.jpg"
+      name: "Mrs. Meribegum P. Wanti",
+      designation: "SDA"
     },
     {
-      name: "Mrs. Sunita Kamat",
-      designation: "Library Assistant",
-      email: "lib.assistant2@becbgk.edu",
-      image: "/staff/assistant2.jpg"
+      name: "Mr. Basayya I. Ganachari",
+      designation: "Mechanic"
     },
     {
-      name: "Mr. Ravi Kumar",
-      designation: "Library Attendant",
-      image: "/staff/attendant1.jpg"
+      name: "Mr. S. F. Madiwalar",
+      designation: "SDA"
     },
     {
-      name: "Mr. Manjunath Desai",
-      designation: "Library Attendant",
-      image: "/staff/attendant2.jpg"
+      name: "Mr. Vittal Y. Ajjodi",
+      designation: "Helper"
+    },
+    {
+      name: "Mr. Shivayya A. Hirehal",
+      designation: "Helper"
+    },
+    {
+      name: "Mr. Manikesh G. Kaladagi",
+      designation: "Attender"
+    },
+    {
+      name: "Mr. M. G. Pindarki",
+      designation: "Peon"
+    },
+    {
+      name: "Mr. A. C. Karibhavi",
+      designation: "Helper"
+    },
+    {
+      name: "Mr. A. S. Naragund",
+      designation: "Peon"
     }
   ];
 

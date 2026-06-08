@@ -1,6 +1,9 @@
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Wifi, Monitor, BookOpen, Warehouse, Building, Mic, Stethoscope, Store, Podcast } from "lucide-react";
+import { Wifi, Monitor, BookOpen, Warehouse, Building, Stethoscope, Store, Podcast } from "lucide-react";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset } from "@/lib/assets";
 
 export default function InfrastructurePage() {
   const facilities = [
@@ -64,6 +67,33 @@ export default function InfrastructurePage() {
     "Geotechnical Engineering and Structural Engineering Laboratory",
   ];
 
+  const campusAmenities = [
+    {
+      src: asset("facilities/general/cine1260.webp"),
+      alt: "Cooperative store and book stall on the BEC campus",
+    },
+    {
+      src: asset("facilities/general/cine1256.webp"),
+      alt: "Campus Hospital at Basaveshwar Engineering College",
+    },
+    {
+      src: asset("facilities/general/cine1255.webp"),
+      alt: "India Post office on the BEC campus",
+    },
+    {
+      src: asset("facilities/general/cine1257.webp"),
+      alt: "Campus store and refreshment stall at Basaveshwar Engineering College",
+    },
+    {
+      src: asset("facilities/general/cine0364.webp"),
+      alt: "Bank of Baroda ATM facility on campus",
+    },
+    {
+      src: asset("facilities/general/cine0366.webp"),
+      alt: "On-campus banking and ATM lobby",
+    },
+  ];
+
   return (
     <main className="bg-background text-foreground">
       <section className="relative overflow-hidden border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50 py-14 md:py-18">
@@ -81,6 +111,19 @@ export default function InfrastructurePage() {
           <p className="mt-4 text-lg text-gray-700 max-w-2xl leading-relaxed">
             A 93-acre green campus equipped with modern laboratories, digital classrooms, and comprehensive amenities to support holistic learning and research.
           </p>
+
+          <div className="mt-10 overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 shadow-sm">
+            <div className="relative aspect-16/9">
+              <Image
+                src={asset("institute/group-photos/cine1643.webp")}
+                alt="The main building of Basaveshwar Engineering College on its 93-acre campus"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 1152px"
+                className="object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -125,6 +168,18 @@ export default function InfrastructurePage() {
             ))}
           </div>
         </div>
+      </section>
+
+       <section className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6">
+        <div className="mb-8">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+            Campus Amenities
+          </h2>
+          <p className="mt-2 text-gray-600">
+            Everyday conveniences within the campus — a clinic, banks, a cooperative store, a post office, and more.
+          </p>
+        </div>
+        <PhotoGallery images={campusAmenities} />
       </section>
 
        <section className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6">

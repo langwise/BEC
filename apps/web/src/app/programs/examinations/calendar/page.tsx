@@ -1,32 +1,21 @@
 "use client";
 
 import { FadeIn } from "@/components/animations/fade-in";
+import { asset } from "@/lib/assets";
 import { Calendar, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const events = [
-    { title: "Academic Calender, Even Semester (IV, VI & VIII Sem BE) 2024-25", link: "https://becbgk.edu/EXAM/Documents/Academic%20Calender,Odd%20Semester%20IV,VI,VIII%20UG%2020250215_13320622.pdf", isNew: true },
-    { title: "Academic Calender, Odd Semester (I Sem BE), 2024-25", link: "https://becbgk.edu/EXAM/Documents/Academic%20Calender,Odd%20Semester%20I,III,V,VII%20UG%20&%20I,III%20PG20250215_13292427.pdf", isNew: true },
-    { title: "2023-24 Odd VII_Sem_B.E._Calender_of_Events", link: "https://becbgk.edu/EXAM/Documents/calander%20of%20events/Calendar%20of%20Events%20BE%20VII%20sem%202023-24.pdf" },
-    { title: "2023-24 Odd I_Sem_B.E._Calender_of_Events", link: "https://becbgk.edu/EXAM/Documents/calander%20of%20events/Calendar%20of%20Events%20BE%20I%20sem%202023-24.pdf" },
-    { title: "2023-24 Odd III and V Sem_B.E._Calender_of_Events", link: "#" },
-    { title: "2023-24 Odd III Sem M.Tech and MBA Calender_of_Events", link: "#" },
-    { title: "2022-23 Even II_and_IV_Sem_B.E._Calender_of_Events", link: "#" },
-    { title: "2022-23 Even IV_Semester_MBA_and_M.Tech_Calender_of_Events", link: "#" },
-    { title: "2022-23 Even VI_and_VIII_Sem_B.E._Calender_of_Events", link: "#" },
-    { title: "2022-23 Odd V/VII Semester B.E Calendar of Events", link: "#" },
-    { title: "2022-23 Odd III Semester B.E Calendar of Events", link: "#" },
-    { title: "2022-23 Odd Semester M.Tech/MBA Calendar of Events", link: "#" },
-    { title: "2022-23 Odd I Semester B.E Calendar of Events", link: "#" },
-    { title: "2021-22 Odd V/VII B.E , III Semester MBA Calendar of Events", link: "#" },
-    { title: "2021-22 Odd III Semester B.E Calendar of Events", link: "#" },
-    { title: "2021-22 Odd III Semester M.Tech Calendar of Events", link: "#" },
-    { title: "2021-22 Odd I Semester B.E Calendar of Events", link: "#" },
-    { title: "2021-22 Odd I Semester M.Tech / MBA Calendar of Events", link: "#" },
-    { title: "2021-22 Even VI/VIII B.E , IV Semester MBA Calendar of Events", link: "#" },
-    { title: "2021-22 Even IV Semester B.E Calendar of Events", link: "#" },
-    { title: "2021-22 Even II Semester B.E Calendar of Events", link: "#" },
-    { title: "2021-22 Even II Semester M.Tech / MBA Calendar of Events", link: "#" },
+    { title: "Academic Calender, Even Semester (IV, VI & VIII Sem BE) 2024-25", link: asset("documents/calendar/academic-calender-odd-semester-iv-vi-viii-ug-20250215-13320622.pdf"), isNew: true },
+    { title: "Academic Calender, Odd Semester (I Sem BE), 2024-25", link: asset("documents/calendar/academic-calender-odd-semester-i-iii-v-vii-ug-i-iii-pg20250215-13292427.pdf"), isNew: true },
+    { title: "2023-24 Odd VII_Sem_B.E._Calender_of_Events", link: asset("documents/calendar/calendar-of-events-be-vii-sem-2023-24.pdf") },
+    { title: "2023-24 Odd I_Sem_B.E._Calender_of_Events", link: asset("documents/calendar/calendar-of-events-be-i-sem-2023-24.pdf") },
+    { title: "2023-24 Odd III and V Sem_B.E._Calender_of_Events", link: asset("documents/calendar/calendar-of-events-be-iii-and-v-sem-2023-24.pdf") },
+    { title: "2023-24 Odd III Sem M.Tech and MBA Calender_of_Events", link: asset("documents/calendar/calendar-of-events-iii-sem-m-tech-mba.pdf") },
+    { title: "2022-23 Even II_and_IV_Sem_B.E._Calender_of_Events", link: asset("documents/calendar/2022-23-even-ii-and-iv-sem-b-e-calender-of-events.pdf") },
+    { title: "2022-23 Even IV_Semester_MBA_and_M.Tech_Calender_of_Events", link: asset("documents/calendar/2022-23-even-iv-semester-mba-and-m-tech-calender-of-events.pdf") },
+    { title: "2022-23 Even VI_and_VIII_Sem_B.E._Calender_of_Events", link: asset("documents/calendar/2022-23-even-vi-and-viii-sem-b-e-calender-of-events.pdf") },
+    { title: "2022-23 Odd Semester M.Tech/MBA Calendar of Events", link: asset("documents/calendar/academi-calendar-mba-mtech-odd-sem-2022-23.pdf") },
 ];
 
 export default function CalendarPage() {

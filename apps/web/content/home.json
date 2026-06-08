@@ -2,24 +2,24 @@
   "$schema": "./home.schema.json",
   "hero": [
     {
-      "image": "institute/group-photos/cine1579.webp",
+      "image": "institute/group-photos/cine1641.webp",
       "title": "World-Class Infrastructure",
       "description": "Experience a campus designed for innovation and growth."
     },
     {
-      "image": "institute/group-photos/cine1604.webp",
+      "image": "research/labs/robotics/cine0884.webp",
       "title": "Cutting-Edge Research",
       "description": "Pioneering solutions for tomorrow's challenges."
     },
     {
-      "image": "institute/group-photos/cine1627.webp",
+      "image": "facilities/library/cine1235.webp",
       "title": "Knowledge Hub",
       "description": "Access to vast resources and a quiet place to focus."
     },
     {
-      "image": "facilities/general/cine1255.webp",
+      "image": "institute/group-photos/cine1614.webp",
       "title": "Celebrating Excellence",
-      "description": "Shaping the leaders of the future."
+      "description": "Honouring the leadership and mentors who shape generations."
     },
     {
       "image": "student-life/cultural/cine0157.webp",
@@ -28,7 +28,7 @@
     }
   ],
   "about": {
-    "image": "facilities/general/cine1256.webp",
+    "image": "institute/group-photos/cine1583.webp",
     "established": "1963",
     "establishedLabel": "Year of Establishment",
     "slides": [
@@ -60,7 +60,7 @@
       "className": "md:col-span-1 md:row-span-1"
     },
     {
-      "image": "student-life/cultural/cine0167.webp",
+      "image": "student-life/cultural/cine0200.webp",
       "title": "Cultural Fests",
       "description": "Celebrating diversity and talent year-round.",
       "className": "md:col-span-1 md:row-span-1"
