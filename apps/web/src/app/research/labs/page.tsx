@@ -12,6 +12,7 @@ import {
     Network,
     Zap,
     Monitor,
+    Bot,
     ChevronRight
 } from "lucide-react";
 
@@ -72,6 +73,14 @@ export default function ResearchLabsPage() {
             description: "Innovation in mobile technologies, 5G networks, and wireless communication applications.",
             color: "text-cyan-600",
             bgColor: "bg-cyan-50"
+        },
+        {
+            title: "Robotics",
+            href: "/research/labs/robotics",
+            icon: Bot,
+            description: "Centre of Excellence in Robotics with articulated, SCARA, and modular robots and VR-assisted programming.",
+            color: "text-indigo-600",
+            bgColor: "bg-indigo-50"
         },
         {
             title: "Renewable Energy",

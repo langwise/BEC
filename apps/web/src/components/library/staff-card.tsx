@@ -15,13 +15,24 @@ interface StaffCardProps {
   index?: number;
 }
 
+function getInitials(name: string) {
+  return name
+    .replace(/\b(Dr|Mr|Mrs|Ms|Shri|Smt|Prof)\.?\b/gi, "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? "")
+    .join("");
+}
+
 export function StaffCard({
   name,
   designation,
   qualification,
   email,
   phone,
-  image = "/placeholder-avatar.jpg",
+  image,
   index = 0,
 }: StaffCardProps) {
   return (
@@ -33,7 +44,15 @@ export function StaffCard({
       className="bg-white rounded-lg border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow duration-300"
     >
       <div className="relative h-64 bg-linear-to-br from-primary/10 to-accent/10">
-        <Image src={image} alt={name} fill className="object-cover" />
+        {image ? (
+          <Image src={image} alt={name} fill className="object-cover" />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center">
+            <span className="flex h-24 w-24 items-center justify-center rounded-full bg-white/70 text-3xl font-bold text-primary shadow-sm">
+              {getInitials(name)}
+            </span>
+          </div>
+        )}
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-900 mb-1">{name}</h3>

@@ -5,7 +5,9 @@ import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
 import { LibrarySidebar } from "@/components/library/library-sidebar";
+import { asset } from "@/lib/assets";
 import { BookOpen, Target, Eye, Award, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutLibraryPage() {
   return (
@@ -34,6 +36,19 @@ export default function AboutLibraryPage() {
 
             {/* Main Content */}
             <div className="lg:col-span-3">
+              {/* Feature image */}
+              <FadeIn delay={0.05}>
+                <div className="relative aspect-16/9 overflow-hidden rounded-lg border border-stone-200 mb-8">
+                  <Image
+                    src={asset("facilities/library/cine1239.webp")}
+                    alt="Students studying in the Central Library reading hall"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 900px"
+                    className="object-cover"
+                  />
+                </div>
+              </FadeIn>
+
               {/* Introduction */}
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">

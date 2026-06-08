@@ -15,6 +15,21 @@ import {
     Laptop,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset, assetsUnder } from "@/lib/assets";
+
+const heroImage = asset("student-life/cultural/cine0225.webp");
+
+const activityGallery = [
+    ...assetsUnder("student-life/cultural/").map((src) => ({
+        src,
+        alt: "Cultural performances and student talent at BEC",
+    })),
+    ...assetsUnder("student-life/engineers-arena/").map((src) => ({
+        src,
+        alt: "Students at the Engineers' Arena, BEC",
+    })),
+];
 
 const recurringEvents = [
     {
@@ -81,7 +96,10 @@ export default function ActivitiesPage() {
                 transition={{ delay: 0.1 }}
                 className="relative rounded-3xl overflow-hidden bg-linear-to-r from-violet-600 to-indigo-600 text-white shadow-2xl"
             >
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-overlay" />
+                <div
+                    className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay"
+                    style={{ backgroundImage: `url('${heroImage}')` }}
+                />
                 <div className="relative z-10 p-6 md:p-12 flex flex-col items-start gap-4 md:gap-6">
                     <div className="bg-white/20 backdrop-blur-md px-3 py-1 md:px-4 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest border border-white/20">
                         Highlight
@@ -96,10 +114,11 @@ export default function ActivitiesPage() {
                         </p>
                     </div>
                     <Button
+                        asChild
                         size="lg"
                         className="bg-white text-violet-600 hover:bg-violet-50 font-bold border-none text-sm md:text-base h-10 md:h-11 px-6"
                     >
-                        View Past Gallery
+                        <a href="#gallery">View Past Gallery</a>
                     </Button>
                 </div>
             </motion.div>
@@ -172,7 +191,7 @@ export default function ActivitiesPage() {
                         <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Life at Mindhog</h2>
                         <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-6 md:mb-8">
                             Mindhog is the heart of student creativity at BEC. From coding
-                            marathons to musical jam sessions, it's where passions are
+                            marathons to musical jam sessions, it’s where passions are
                             discovered and talents are honed. Every week features a new
                             activity led by student clubs.
                         </p>
@@ -199,6 +218,21 @@ export default function ActivitiesPage() {
                     </div>
                 </div>
             </motion.section>
+
+            {/* Photo Gallery */}
+            <section id="gallery" className="scroll-mt-24">
+                <div className="mb-6 md:mb-8">
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-900">
+                        Campus Life in Pictures
+                    </h2>
+                    <p className="mt-2 text-sm md:text-base text-slate-600 max-w-2xl leading-relaxed">
+                        Moments from cultural performances and gatherings at the
+                        Engineers&apos; Arena that capture the energy of student
+                        life at BEC.
+                    </p>
+                </div>
+                <PhotoGallery images={activityGallery} />
+            </section>
         </div>
     );
 }

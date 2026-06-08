@@ -14,6 +14,9 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset } from "@/lib/assets";
+import Image from "next/image";
 import Link from "next/link";
 
 const libraryStats = [
@@ -98,6 +101,15 @@ const libraryServices = [
   },
 ];
 
+const galleryImages = [
+  { src: asset("facilities/library/cine1145.webp"), alt: "Book stacks in the Central Library" },
+  { src: asset("facilities/library/cine1235.webp"), alt: "Reading hall with study tables" },
+  { src: asset("facilities/library/cine1239.webp"), alt: "Students studying in the reading hall" },
+  { src: asset("facilities/library/cine1207.webp"), alt: "Students reading at a library table" },
+  { src: asset("facilities/library/cine1131.webp"), alt: "Digital library section with computer terminals" },
+  { src: asset("facilities/library/cine1216.webp"), alt: "Student browsing newspapers at the periodicals stand" },
+];
+
 export default function LibraryPage() {
   return (
     <div className="min-h-screen bg-stone-50">
@@ -109,17 +121,31 @@ export default function LibraryPage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,#0f172a_0%,transparent_28%)]" />
         </div>
         <div className="relative container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
-            Facilities · Library
-          </p>
-          <div className="mt-4 space-y-4 max-w-3xl">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
-              Central Library
-            </h1>
-            <p className="text-base md:text-lg leading-relaxed text-gray-700">
-              A gateway to knowledge and innovation, supporting academic
-              excellence since 1963
-            </p>
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+                Facilities · Library
+              </p>
+              <div className="mt-4 space-y-4 max-w-3xl">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
+                  Central Library
+                </h1>
+                <p className="text-base md:text-lg leading-relaxed text-gray-700">
+                  A gateway to knowledge and innovation, supporting academic
+                  excellence since 1963
+                </p>
+              </div>
+            </div>
+            <div className="relative aspect-4/3 overflow-hidden rounded-lg border border-stone-200 shadow-sm">
+              <Image
+                src={asset("facilities/library/cine1145.webp")}
+                alt="Book stacks at the BEC Central Library"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 560px"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -236,32 +262,73 @@ export default function LibraryPage() {
                 <LinkIcon className="h-10 w-10 mb-4 opacity-90" />
                 <h3 className="text-xl font-bold mb-4">Quick Access</h3>
                 <div className="space-y-2 text-sm">
-                  <a
-                    href="#"
+                  <Link
+                    href="/facilities/library/e-resources-paid"
                     className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
                   >
-                    → Online Catalog (OPAC)
-                  </a>
-                  <a
-                    href="#"
+                    → E-Resources (Paid)
+                  </Link>
+                  <Link
+                    href="/facilities/library/e-resources-free"
                     className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
                   >
-                    → Reserve a Book
-                  </a>
-                  <a
-                    href="#"
+                    → E-Resources (Free)
+                  </Link>
+                  <Link
+                    href="/facilities/library/useful-links"
                     className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
                   >
-                    → Renew Books
-                  </a>
-                  <a
-                    href="#"
+                    → Useful Links
+                  </Link>
+                  <Link
+                    href="/facilities/library/infrastructure"
                     className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
                   >
-                    → Digital Library
-                  </a>
+                    → Infrastructure
+                  </Link>
                 </div>
               </div>
+            </div>
+          </FadeIn>
+
+          {/* Librarian */}
+          <FadeIn delay={0.45}>
+            <div className="mt-12 bg-white rounded-lg border border-stone-200 overflow-hidden md:flex">
+              <div className="relative md:w-2/5 aspect-4/3 md:aspect-auto">
+                <Image
+                  src={asset("facilities/library/dr-shreekant-g-karkun.webp")}
+                  alt="Dr. Shreekant G. Karkun, Librarian"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-8 md:w-3/5 flex flex-col justify-center">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary mb-2">
+                  From the Librarian
+                </p>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  Dr. Shreekant G. Karkun
+                </h3>
+                <p className="text-primary font-semibold mb-4">Librarian</p>
+                <p className="text-gray-600 leading-relaxed">
+                  The Central Library is committed to supporting the teaching,
+                  learning, and research needs of our students, faculty, and
+                  researchers through a rich collection of print and digital
+                  resources, modern infrastructure, and dedicated professional
+                  services.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Gallery */}
+          <FadeIn delay={0.5}>
+            <div className="mt-12">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-6">
+                Inside the Library
+              </h2>
+              <PhotoGallery images={galleryImages} />
             </div>
           </FadeIn>
         </div>

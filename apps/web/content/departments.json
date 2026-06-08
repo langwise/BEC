@@ -126,7 +126,117 @@
     },
     "biotechnology": {
       "name": "Biotechnology",
-      "assetSlug": "biotechnology"
+      "assetSlug": "biotechnology",
+      "tagline": "A centre for academic excellence in biotechnology and innovative research for a sustainable future.",
+      "established": "2002",
+      "intake": "30",
+      "overview": "The Department of Biotechnology was established in 2002 and is engaged in effective teaching-learning, basic research and technology-based training and service to society. It offers a 4-year B.E. in Biotechnology (intake 30) and is supported by well-equipped independent laboratories, classrooms, a seminar hall and library. The department has been recognised as an R&D (Ph.D.) Research Centre by VTU Belagavi since 2011, with six faculty holding Ph.D. degrees and active research in food processing, biofuels technology, bioremediation, fermentation technology and molecular biology. It hosts a Bioenergy Research, Information and Demonstration Centre (BRIDC) in association with KSBDB and a Food Testing Laboratory supported by KITS, Government of Karnataka, and partners with industry to provide students opportunities for internships and projects.",
+      "vision": "To be a centre for academic excellence in biotechnology and innovative research for a sustainable future.",
+      "mission": [
+        "Develop technically competent and ethically oriented professionals.",
+        "Promote collaborations with academia, industries and research institutes for societal needs.",
+        "Strengthen the culture of research, innovation, entrepreneurship and environmental consciousness."
+      ],
+      "programsOffered": [
+        "B.E. — Biotechnology",
+        "Ph.D. — Biotechnology (VTU Research Centre)"
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "Graduates will apply fundamental knowledge of biological sciences and engineering principles to solve problems in biotechnology and allied fields."
+        },
+        {
+          "code": "PEO2",
+          "text": "Graduates will excel and succeed in industry, research and technical professions through global and rigorous education."
+        },
+        {
+          "code": "PEO3",
+          "text": "Graduates will exhibit good scientific and engineering logic to comprehend, analyze, design and create novel products as well as solutions for real-time problems."
+        },
+        {
+          "code": "PEO4",
+          "text": "Graduates will exhibit professionalism, ethical attitude, oral and written communication skills, teamwork, lifelong learning and ethical values for a successful professional career."
+        }
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "Graduates will be able to develop competency in applying engineering principles to environment, agriculture and healthcare systems."
+        },
+        {
+          "code": "PSO2",
+          "text": "Graduates will be able to design, optimize and manage bioprocesses for the development of bio-based products, ensuring quality, safety and regulatory compliance in the industries."
+        },
+        {
+          "code": "PSO3",
+          "text": "Graduates will be able to integrate bioethics, entrepreneurship and environmental awareness to enhance technical skills in biotechnology applications."
+        }
+      ],
+      "highlights": [
+        "Established in 2002 with a B.E. intake of 30; NBA-accredited UG programme.",
+        "Recognised as a VTU R&D (Ph.D.) Research Centre since 2011, with six Ph.D.-holding faculty and Ph.D.s awarded.",
+        "Hosts a Bioenergy Research, Information and Demonstration Centre (BRIDC) in association with KSBDB, Government of Karnataka.",
+        "Operates a Food Testing Laboratory and a poly-house with raceway ponds, supporting start-ups, patents and product development.",
+        "Research focus areas: food processing, biofuels technology, solid waste management and bioremediation, fermentation technology, and molecular biology and bioinformatics."
+      ],
+      "labs": [
+        {
+          "name": "Biochemistry Laboratory"
+        },
+        {
+          "name": "Microbiology Laboratory"
+        },
+        {
+          "name": "Molecular Biology & Genetic Engineering Laboratory"
+        },
+        {
+          "name": "Immunotechnology Laboratory"
+        },
+        {
+          "name": "Biokinetics & Enzyme Technology Laboratory"
+        },
+        {
+          "name": "Upstream Process & Bioseparation Techniques Laboratory"
+        },
+        {
+          "name": "Unit Operations Laboratory"
+        },
+        {
+          "name": "Heat & Mass Transfer Laboratory"
+        },
+        {
+          "name": "Bioinformatics Laboratory"
+        },
+        {
+          "name": "Biostatistics and Tools Laboratory"
+        },
+        {
+          "name": "Extraction Methods and Herbal Products Laboratory"
+        },
+        {
+          "name": "Analysis of Dairy Products Laboratory"
+        },
+        {
+          "name": "Food Testing Laboratory"
+        }
+      ],
+      "associations": [
+        {
+          "name": "Microbiologists Society, India",
+          "about": "A professional association started in the department in 2020 that sponsors and supports students to conduct conferences, seminars, symposia, exhibitions and lectures, and encourages research in microbiology. All faculty are life members and around 80% of students are members."
+        },
+        {
+          "name": "BT-Zillion",
+          "about": "The department's student association, established in 2007, through which students organise extracurricular and co-curricular activities, participate in technical workshops, seminars and conferences, and conduct an annual intra-college technical fest."
+        }
+      ],
+      "contact": {
+        "name": "Dr. Bharati S. Meti",
+        "designation": "Professor & Head",
+        "phone": "+91-9448972628",
+        "email": "bsmbt@becbgk.edu"
+      }
     },
     "civil-engg": {
       "name": "Civil Engineering",
@@ -563,19 +673,306 @@
     },
     "electronics-and-computer-engg": {
       "name": "Electronics & Computer Engineering",
-      "assetSlug": "ecs"
+      "assetSlug": "ecs",
+      "tagline": "An interdisciplinary department blending electronics engineering and computer science to design, develop and integrate innovative technologies.",
+      "established": "2024",
+      "intake": "60",
+      "overview": "Electronics and Computer Engineering blends electronic engineering with computer science to design, develop and integrate innovative technologies across hardware, software and IT. Established in the academic year 2024-25, the department offers a 4-year B.E. programme with an intake of 60 students, taught by highly qualified faculty whose average teaching experience is 27 years. It is housed in a spacious new building with well-equipped IoT and computer laboratories of more than 60 computers, faculty rooms and a department office, all served by pervasive high-quality wired and Wi-Fi networks. The department aims to impart engineering education that meets the needs of society, industry and research, developing professionals with ethical values and societal concern who are equipped for both electronics/electrical industries and software companies.",
+      "vision": "To be a recognized leader in the Instrumentation discipline by creating a good platform of learning and research with commitments to socio-economic development.",
+      "mission": [
+        "To achieve academic excellence.",
+        "To create a research environment.",
+        "To interact with industry for mutual benefit.",
+        "To serve the community for socio-economic development."
+      ],
+      "programsOffered": [
+        "B.E. — Electronics & Computer Engineering"
+      ],
+      "highlights": [
+        "Newly established in the academic year 2024-25 with a sanctioned B.E. intake of 60 students.",
+        "Highly qualified faculty with an average teaching experience of 27 years.",
+        "Housed in a spacious new building with well-equipped IoT and computer laboratories of more than 60 computers.",
+        "Pervasive, high-quality wired and Wi-Fi networking across the department.",
+        "Graduates are suited to electronics/electrical industries as well as software companies, broadening career opportunities."
+      ],
+      "labs": [
+        {
+          "name": "Analog and Digital Electronics Lab"
+        },
+        {
+          "name": "Microprocessors and Microcontrollers Lab"
+        },
+        {
+          "name": "Embedded Systems Lab"
+        },
+        {
+          "name": "VLSI Design Lab"
+        },
+        {
+          "name": "Communication Systems Lab"
+        },
+        {
+          "name": "IoT Laboratory"
+        },
+        {
+          "name": "Computer Laboratory"
+        }
+      ],
+      "associations": [
+        {
+          "name": "O-TEC",
+          "about": "The department's student association, which organises workshops, hackathons and technical competitions to foster hands-on learning and professional development."
+        }
+      ],
+      "contact": {
+        "name": "Dr. Chayalakshmi C. L.",
+        "designation": "Associate Professor & Head",
+        "phone": "+91-9902678858",
+        "email": "hodei@becbgk.edu"
+      }
     },
     "industrial-and-production-engg": {
       "name": "Industrial & Production Engineering",
-      "assetSlug": "ip"
+      "assetSlug": "ip",
+      "tagline": "A centre of excellence in Industrial and Production Engineering education, research and practice, shaping globally competent leaders for manufacturing and service industries.",
+      "established": "1984",
+      "intake": "30",
+      "overview": "The Department of Industrial & Production Engineering was established in 1984 with an initial intake of 30 students. It prepares leaders capable of managing manufacturing and service-industry operations across the two domains of Industrial Engineering and Production Engineering. Students gain exposure to modern manufacturing technologies including CAD/CAM, CAE, FMS, CIM and additive manufacturing, alongside management concepts taught through practical case studies, supported by fully doctorate-qualified faculty, well-equipped laboratories and experienced technical staff. The department has been a recognised research centre since 2008, with 13 candidates awarded Ph.D. to date.",
+      "vision": "To be recognized and respected as a centre of excellence in Industrial and Production Engineering education, research and practice.",
+      "mission": [
+        "To prepare globally competent professionals in the field of Industrial and Production Engineering by imparting total quality technical education and training, to make them leaders in industry and community.",
+        "To develop research interest and provide the necessary support for pursuing it.",
+        "To disseminate knowledge to society."
+      ],
+      "programsOffered": [
+        "B.E. — Industrial & Production Engineering",
+        "M.Sc. (Engineering) by Research — Industrial & Production Engineering",
+        "Ph.D. — Industrial & Production Engineering"
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "To equip students for a successful career in manufacturing, services and R&D, addressing worldwide industrial demands."
+        },
+        {
+          "code": "PEO2",
+          "text": "To inculcate professional skills among students in the design, manufacturing, maintenance, quality, computational and software aspects of products and services."
+        },
+        {
+          "code": "PEO3",
+          "text": "To imbibe knowledge that enables students to acquire the inputs required to become competent industrial engineers and managers in contemporary industries."
+        },
+        {
+          "code": "PEO4",
+          "text": "To encourage students' lifelong-learning skills, entrepreneurial ability, innovation, communication, ethical practices and life skills."
+        },
+        {
+          "code": "PEO5",
+          "text": "To strengthen students' knowledge in multi-disciplinary areas of engineering."
+        }
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "IPE graduates will competently design, implement, enhance and oversee systems and activities within the manufacturing and service sectors."
+        },
+        {
+          "code": "PSO2",
+          "text": "Graduates apply industrial engineering expertise to construct mathematical models and examine practical organizational challenges, producing viable interventions."
+        },
+        {
+          "code": "PSO3",
+          "text": "Graduates demonstrate professional competency in industrial environments or entrepreneurial ventures by integrating manufacturing and management methodologies."
+        }
+      ],
+      "highlights": [
+        "Established in 1984; among the few dedicated Industrial & Production Engineering programmes in the region.",
+        "Recognised research centre since 2008 with major research areas in manufacturing, design, management, industrial engineering and materials science; 13 Ph.D.s awarded to date.",
+        "Fully doctorate-qualified faculty with expertise spanning CAD/CAM, CAE, FMS, CIM and additive manufacturing.",
+        "Funded projects from AICTE and TEQIP including Modelling and Optimization of Additive Manufacturing (₹34.5 lakhs, TEQIP) and Management Science & Advanced Machining Science Laboratories (₹28.76 lakhs, TEQIP)."
+      ],
+      "labs": [
+        {
+          "name": "Advanced Machining Science Laboratory"
+        },
+        {
+          "name": "Management Science Laboratory"
+        }
+      ],
+      "associations": [
+        {
+          "name": "PIESA — Production and Industrial Engineering Students' Association",
+          "about": "The department's student association, planned and executed by student members, that organises and promotes participation in competitions, paper presentations within and outside the college, industrial visits, and technical talks by industry and academic experts, creating opportunities for students to showcase their talents and develop the skills needed to become leaders in industry."
+        }
+      ],
+      "contact": {
+        "name": "Dr. C. M. Javalagi",
+        "designation": "Professor & Head",
+        "phone": "+91-9448751788",
+        "email": "hodip@becbgk.edu"
+      }
     },
     "information-science-and-engg": {
       "name": "Information Science & Engineering",
-      "assetSlug": "ise"
+      "assetSlug": "ise",
+      "tagline": "A global premier centre of education and research in Information Science and Engineering.",
+      "established": "1999",
+      "intake": "90",
+      "overview": "The Department of Information Science and Engineering was established in 1999 and offers a 4-year B.E. programme in Information Science and Engineering with a sanctioned intake of 90. Backed by qualified faculty and well-equipped computing laboratories, the department trains students in information and communication technologies, software engineering and emerging computing domains. It runs a recognised Research Centre (established 2020) with active research in image processing and pattern recognition, wireless sensor and ubiquitous networks, vehicular ad-hoc networks, IoT and cloud computing, and data mining and machine/deep learning. The B.E. programme has been accredited by the NBA, and the department maintains strong industry linkages, internships and a vibrant student association.",
+      "vision": "To be a Global Premier Center of Education and Research in Information Science and Engineering.",
+      "mission": [
+        "To impart quality engineering education developing ethical and competent professionals.",
+        "To carry out interdisciplinary research to fulfil the needs of various sections of society, including government and private organizations.",
+        "To create exemplary young professionals who will promote sustainable development."
+      ],
+      "programsOffered": [
+        "B.E. — Information Science and Engineering",
+        "Ph.D. — Information Science and Engineering (VTU Research Centre)"
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "To provide students with a strong foundation in mathematics, science, and engineering fundamentals."
+        },
+        {
+          "code": "PEO2",
+          "text": "To provide exposure to emerging cutting-edge information and communication technologies for achieving excellence in the global Information Technology industry."
+        },
+        {
+          "code": "PEO3",
+          "text": "To equip students with the spirit of innovation to carry out research-type projects to fulfil the changing needs of society."
+        },
+        {
+          "code": "PEO4",
+          "text": "To inculcate teamwork, leadership qualities, and entrepreneurial and communication skills among students."
+        },
+        {
+          "code": "PEO5",
+          "text": "To motivate and nurture students to pursue higher education, engage in lifelong learning, and be socially responsible and morally upright Information Technology professionals."
+        }
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "Demonstrate the ability to apply basic science and engineering fundamentals to solve complex engineering problems in society."
+        },
+        {
+          "code": "PSO2",
+          "text": "Demonstrate the ability to provide information and communication technology solutions using modern engineering and IT tools at affordable cost, working as a team member."
+        },
+        {
+          "code": "PSO3",
+          "text": "Exhibit ethical, social and professional responsibilities and engage in lifelong learning."
+        }
+      ],
+      "highlights": [
+        "Established in 1999, offering a 4-year B.E. programme in Information Science and Engineering with an intake of 90.",
+        "NBA-accredited B.E. programme under the autonomous, VTU-affiliated institute.",
+        "VTU-recognised Research Centre (established 2020) across image processing, wireless sensor and vehicular networks, IoT and cloud computing, and machine/deep learning.",
+        "Active industry linkages and internships, with the student association RISE conducting webinars, training programmes and technical events."
+      ],
+      "labs": [
+        {
+          "name": "Aho-Ullman Lab (ISE Lab-1)"
+        },
+        {
+          "name": "Abraham Silberschatz Lab (ISE Lab-2)"
+        },
+        {
+          "name": "Tim Berners-Lee Lab (ISE Lab-3)"
+        },
+        {
+          "name": "Quine-McCluskey Lab (ISE Lab-4)"
+        },
+        {
+          "name": "Dr. A. P. J. Abdul Kalam Lab (ISE Lab-5)"
+        }
+      ],
+      "associations": [
+        {
+          "name": "RISE — Student Association of ISE",
+          "about": "The departmental student association that organises webinars, technical talks, student and faculty development programmes, training sessions, and celebrations through the academic year, providing students a platform to develop technical and organisational skills."
+        }
+      ],
+      "contact": {
+        "name": "Dr. S. P. Bangarashetti",
+        "designation": "Professor & Head",
+        "email": "spbis@becbgk.edu"
+      }
     },
     "mechanical-engg": {
       "name": "Mechanical Engineering",
-      "assetSlug": "mechanical"
+      "assetSlug": "mechanical",
+      "tagline": "Excelling in mechanical engineering education, research and innovation for sustainable development.",
+      "established": "1963",
+      "intake": "120",
+      "overview": "The Department of Mechanical Engineering is one of the oldest and largest departments of the college, established in 1963. It offers a 4-year B.E. in Mechanical Engineering (intake 120) and a 2-year M.Tech. in Machine Design (intake 18), and is a recognised VTU Research Centre established in 2000 with thirteen internal research guides. The department's research spans Machine Design, Thermal Engineering, Production Technology, and Material Science and Metallurgy, supported by qualified faculty, doctoral guides and well-equipped laboratories.",
+      "vision": "To excel in Mechanical Engineering education, research and innovation for sustainable development.",
+      "mission": [
+        "Develop students with the necessary knowledge and skills to meet societal needs.",
+        "Enable students to adopt changing technological advancements for employment and entrepreneurship.",
+        "Conduct research to develop intellectual property.",
+        "Strengthen the linkage between industry and academia."
+      ],
+      "programsOffered": [
+        "B.E. — Mechanical Engineering",
+        "M.Tech. — Machine Design",
+        "Ph.D. — Mechanical Engineering (VTU Research Centre)"
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "The Mechanical Engineering students should be able to engage in the design and to develop the components and equipment in the field of mechanical engineering industries and other allied industries."
+        },
+        {
+          "code": "PEO2",
+          "text": "The graduates should be able to apply the knowledge of mechanical engineering to solve problems of social relevance and pursue higher education studies and research in the field of materials science, machine design, manufacturing and thermal/fluid engineering."
+        },
+        {
+          "code": "PEO3",
+          "text": "The graduates will work effectively as individuals and as team members in interdisciplinary projects."
+        },
+        {
+          "code": "PEO4",
+          "text": "The graduates should be able to engage in lifelong learning, to become an entrepreneur, apply ethics and adapt to changing professional and societal requirements."
+        }
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "The students should be able to identify, analyze and solve mechanical engineering problems in the area of manufacturing technology, machine design, thermal/fluid engineering and interdisciplinary courses."
+        },
+        {
+          "code": "PSO2",
+          "text": "The students should be able to pursue higher studies and research in the area of material science, manufacturing, machine design, industrial management and thermal/fluid engineering."
+        },
+        {
+          "code": "PSO3",
+          "text": "The students should apply ethics and professional values in addressing social issues."
+        },
+        {
+          "code": "PSO4",
+          "text": "The students should be able to become technocrats and entrepreneurs and to solve community problems related to mechanical systems by imparting technological inputs and managerial skills."
+        }
+      ],
+      "highlights": [
+        "One of the oldest and largest departments of the college, established in 1963, with a B.E. intake of 120.",
+        "VTU-recognised Research Centre established in 2000 with five major research areas: Machine Design, Thermal Engineering, Production Technology, and Material Science and Metallurgy.",
+        "Thirteen internal faculty research guides and twelve faculty with Ph.D.; over 44 candidates awarded Ph.D. through the centre.",
+        "Research grants from agencies including AICTE, DST, DRDO, NRB and VGST, with project funding running into several tens of lakhs of rupees."
+      ],
+      "associations": [
+        {
+          "name": "Mechanical Engineering Association (MEA)",
+          "about": "Established in 1988-89, the MEA encourages and enhances the technical and other skills of students and conducts technical, cultural and sports activities through the year for the overall development of students, helping build personality, decision-making, organisational skills, teamwork and coordination."
+        }
+      ],
+      "contact": {
+        "name": "Dr. Vinay V. Kuppast",
+        "designation": "Professor & Head",
+        "phone": "+91-9986419729",
+        "email": "hodme@becbgk.edu"
+      }
     },
     "physics": {
       "name": "Physics",
@@ -632,11 +1029,63 @@
     },
     "mathematics": {
       "name": "Mathematics",
-      "assetSlug": "maths"
+      "assetSlug": "maths",
+      "tagline": "A foundational teaching-learning centre imparting mathematical knowledge and computational thinking across all engineering disciplines.",
+      "established": "1963",
+      "overview": "The Department of Mathematics, established in 1963, has emerged as a successful teaching-learning centre imparting mathematics knowledge across the engineering disciplines of the college. It develops computational skills, critical thinking and problem-solving abilities in engineering students through core and elective courses, with remedial instruction for students who need additional support. The department comprises highly experienced and dedicated faculty, many holding Ph.D. degrees from reputed universities and a few pursuing their doctoral research, who have published widely in national and international journals.",
+      "vision": "The Department of Mathematics offers courses of study that ensure the student learner is able to contribute to today's society.",
+      "mission": [
+        "Assist students in acquiring a conceptual understanding of the nature of mathematics and its applications.",
+        "Develop computational skills, critical thinking and problem-solving abilities through the study of mathematics.",
+        "Enable students to critically assess numerical and graphical information and formulate strategies for solving problems."
+      ],
+      "programsOffered": [
+        "B.E. — Engineering Mathematics (service courses across all UG programmes)",
+        "Ph.D. — Mathematics"
+      ],
+      "highlights": [
+        "A foundational basic-sciences department serving every engineering programme since the college's inception in 1963.",
+        "Faculty include several Ph.D. holders from reputed universities, with active doctoral research in Graph Theory, Fluid Dynamics, MHD and Numerical Analysis.",
+        "Faculty have published widely in national and international journals.",
+        "Offers core mathematics courses, electives and remedial instruction for engineering students."
+      ],
+      "contact": {
+        "name": "Dr Vidya M Shettar",
+        "designation": "Associate Professor & Head",
+        "phone": "+91-9480079044",
+        "email": "vmsmh@becbgk.edu"
+      }
     },
     "humanities": {
       "name": "Humanities & Social Sciences",
-      "assetSlug": "hss"
+      "assetSlug": "hss",
+      "tagline": "An interdisciplinary department shaping engineers into legally, linguistically, socially and ethically conscious individuals.",
+      "established": "2006",
+      "overview": "The Department of Humanities and Social Sciences, started in 2006, is an interdisciplinary department of Basaveshwar Engineering College, Bagalkote, that seeks to make technologists legally, linguistically, socially and ethically conscious individuals. Over the years, various subjects of humanities and social sciences have been introduced to widen the intellectual horizon of technical students. Today, the department functions at the intersections of communication, languages, Constitution of India, Intellectual Property Rights, Soft Skills, Universal Human Values, Scientific Foundations of Health and Innovation and Design Thinking. It focuses on students' inner character so that they contribute to building a value-based society.",
+      "vision": "To be unique and versatile unit of the institution, to promote the constitutional values with language proficiency, ethics, scientific temper and humanism, inculcating practices of good health and wellness, spirit of nationality among engineering graduates.",
+      "mission": [
+        "Develop globally competent professionals for future talent requirements.",
+        "Sharpening practical skills by providing value-based education.",
+        "Imbibe moral and ethical values and foster ecological and environmental consciousness.",
+        "Develop multi-tasking talent in graduates."
+      ],
+      "highlights": [
+        "Interdisciplinary department established in 2006, serving all engineering programmes of the college.",
+        "Offers core, mandatory and elective courses in Constitution of India, Intellectual Property Rights, Communicative English, Kannada (Samskruthika and Balake), Soft Skills, Universal Human Values, Scientific Foundations of Health, and Innovation and Design Thinking.",
+        "A well-established Language Laboratory supported by duly qualified faculty.",
+        "Best practices include in-classroom online quizzes after each topic and student seminars with PPT presentations to build communication skills and stage confidence."
+      ],
+      "labs": [
+        {
+          "name": "Language Laboratory"
+        }
+      ],
+      "contact": {
+        "name": "Dr. Basavarajeshwari G. Hokarani",
+        "designation": "Assistant Professor & Head",
+        "phone": "+91-9611431878",
+        "email": "bghhs@becbgk.edu"
+      }
     },
     "environmental-engg": {
       "name": "Environmental Engineering"

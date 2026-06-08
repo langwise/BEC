@@ -13,8 +13,12 @@ import {
   Compass,
   ArrowRight
 } from "lucide-react";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset } from "@/lib/assets";
+import Link from "next/link";
 
 const legacyMetrics = [
   {
@@ -82,15 +86,15 @@ const timelinePhases = [
     milestones: [
       {
         year: "1980s-90s",
-        text: "Introduction of state-of-the-art computer science, electronics, biotechnology, and informational programs."
+        text: "Expansion into newer disciplines including computer science, electronics, biotechnology and allied engineering programmes to meet emerging industrial demand."
       },
       {
-        year: "2001",
-        text: "Establishment of the Basaveshwar Engineering College Alumni Association (BECAA), connecting the college with its global graduates."
+        year: "Phase II Growth",
+        text: "Added seven additional undergraduate and four new postgraduate programmes, including the Master of Computer Applications (MCA), broadening the academic portfolio."
       },
       {
-        year: "2002",
-        text: "Recognition of early departments as approved research centers, beginning the transition toward a research-intensive institution."
+        year: "Research Genesis",
+        text: "Departments progressively recognised as approved research centres, beginning the transition toward a research-intensive institution."
       }
     ]
   },
@@ -113,14 +117,41 @@ const timelinePhases = [
       },
       {
         year: "2010s",
-        text: "Earned NAAC 'A' Grade and consistent NBA accreditations across various streams; multiple departments recognized as national QIP centers."
+        text: "Achieved NAAC accreditation by the UGC and 100% NBA accreditation of all UG courses, with departments recognised as VTU-approved research and development centres."
       },
       {
         year: "Present",
-        text: "Thriving 93-acre autonomous campus offering 10 UG, 8 PG, and 10 Doctoral programs with state-of-the-art industry-collaborative centers."
+        text: "Thriving 93-acre autonomous campus offering 9 UG and 8 PG programmes, with 10 departments recognised as VTU-approved R&D centres and state-of-the-art industry-collaborative facilities."
       }
     ]
   }
+];
+
+const heritageGallery = [
+  {
+    src: asset("institute/group-photos/faculty-group-photo.webp"),
+    alt: "Faculty of Basaveshwar Engineering College assembled before the main building",
+  },
+  {
+    src: asset("institute/group-photos/cine1583.webp"),
+    alt: "College community gathered on the campus grounds",
+  },
+  {
+    src: asset("institute/group-photos/cine1590.webp"),
+    alt: "Group photograph of staff and faculty at the BEC campus",
+  },
+  {
+    src: asset("institute/group-photos/cine1604.webp"),
+    alt: "Faculty and staff group photograph at the campus portico",
+  },
+  {
+    src: asset("institute/group-photos/cine1614.webp"),
+    alt: "Members of the college community at Basaveshwar Engineering College",
+  },
+  {
+    src: asset("institute/group-photos/faculty-group-photo-2.webp"),
+    alt: "Faculty group photograph at Basaveshwar Engineering College",
+  },
 ];
 
 export default function HistoryPage() {
@@ -148,9 +179,25 @@ export default function HistoryPage() {
               63 Years of <span className="bg-linear-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">Academic Excellence</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto font-medium">
-              From our humble foundation in 1963 to a premier autonomous technology institution. 
+              From our humble foundation in 1963 to a premier autonomous technology institution.
               Explore the milestone journey that defines Basaveshwar Engineering College.
             </p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15, duration: 0.7 }}
+              className="relative mt-10 aspect-16/9 w-full overflow-hidden rounded-2xl border border-stone-200 shadow-xl"
+            >
+              <Image
+                src={asset("institute/group-photos/cine1579.webp")}
+                alt="Faculty and staff of Basaveshwar Engineering College gathered before the main academic building"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 1024px"
+                className="object-cover"
+              />
+            </motion.div>
           </div>
         </section>
 
@@ -207,6 +254,24 @@ export default function HistoryPage() {
           </motion.div>
         </section>
 
+        {/* Heritage Gallery */}
+        <section className="container mx-auto max-w-5xl px-4 lg:px-6 pb-20">
+          <div className="text-center space-y-3 mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 text-orange-600 border border-orange-100/80 text-xs font-semibold uppercase tracking-wider">
+              <Building2 className="w-3.5 h-3.5" />
+              Through the Years
+            </div>
+            <h2 className="text-3xl font-bold text-gray-900 tracking-tight">
+              A Campus, A Community
+            </h2>
+            <p className="text-base text-gray-600 leading-relaxed font-medium max-w-2xl mx-auto">
+              Generations of faculty, staff and students gathered before the
+              landmark facade of Basaveshwar Engineering College.
+            </p>
+          </div>
+          <PhotoGallery images={heritageGallery} />
+        </section>
+
         {/* Phases Timeline */}
         <section className="container mx-auto max-w-5xl px-4 lg:px-6 space-y-16">
           <div className="relative">
@@ -224,7 +289,6 @@ export default function HistoryPage() {
                     <Icon className="w-5 h-5 text-gray-700" />
                   </div>
 
-                  {/* Desktop alignment placeholder */}
                   <div className={`space-y-4 lg:pr-10 ${isEven ? "lg:order-1 lg:text-right" : "lg:order-2 lg:col-start-2 lg:pl-10"}`}>
                     <div className="inline-flex items-center gap-1.5">
                       <Badge className="bg-stone-100 hover:bg-stone-200 text-stone-700 border-none font-semibold text-xs py-1 px-3">
@@ -305,12 +369,12 @@ export default function HistoryPage() {
               </p>
 
               <div className="pt-4 flex flex-wrap gap-4">
-                <a href="/administration/governance">
+                <Link href="/administration/governance">
                   <span className="inline-flex items-center text-sm font-bold text-orange-400 hover:text-orange-300 transition-colors cursor-pointer gap-1.5 group">
-                    View Present Governance 
+                    View Present Governance
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>

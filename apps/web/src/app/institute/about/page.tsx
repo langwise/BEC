@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Badge } from "@/components/ui/badge";
-import { Marquee } from "@/components/ui/marquee";
+import { PhotoGallery } from "@/components/common/photo-gallery";
 import {
   Trophy,
   Target,
@@ -18,6 +19,7 @@ import {
   Utensils,
   Zap,
 } from "lucide-react";
+import { asset } from "@/lib/assets";
 import { cn } from "@/lib/utils";
 
 export default function AboutUsPage() {
@@ -155,6 +157,21 @@ export default function AboutUsPage() {
               institution in North Karnataka.
             </p>
           </div>
+
+          <FadeIn delay={0.2}>
+            <div className="mt-10 overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 shadow-sm">
+              <div className="relative aspect-video">
+                <Image
+                  src={asset("institute/group-photos/faculty-group-photo.webp")}
+                  alt="Faculty and staff of Basaveshwar Engineering College gathered in front of the main administrative building"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 1152px"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -199,7 +216,7 @@ export default function AboutUsPage() {
                   </span>{" "}
                   and accredited by{" "}
                   <span className="font-semibold text-primary">
-                    NAAC with 'A' grade
+                    NAAC with ‘A’ grade
                   </span>
                   . It is permanently affiliated to{" "}
                   <span className="font-semibold text-gray-900">
@@ -235,6 +252,30 @@ export default function AboutUsPage() {
                 </p>
               </div>
             </div>
+          </FadeIn>
+
+          <FadeIn delay={0.2}>
+            <PhotoGallery
+              className="mt-14"
+              images={[
+                {
+                  src: asset(
+                    "institute/group-photos/faculty-group-photo-2.webp"
+                  ),
+                  alt: "Faculty members of Basaveshwar Engineering College assembled at the campus entrance portico",
+                },
+                {
+                  src: asset("institute/group-photos/cine1614.webp"),
+                  alt: "Senior faculty and leadership of Basaveshwar Engineering College in front of the main building",
+                },
+                {
+                  src: asset(
+                    "institute/group-photos/technical-and-non-technical-staff-group-photo-2.webp"
+                  ),
+                  alt: "Technical and non-technical staff of Basaveshwar Engineering College",
+                },
+              ]}
+            />
           </FadeIn>
         </div>
       </section>

@@ -1,6 +1,9 @@
 "use client";
 
 import { PageHeader } from "@/components/placements/page-header";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset, assetsUnder } from "@/lib/assets";
+import Image from "next/image";
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -11,7 +14,18 @@ import {
   Award,
   CheckCircle2,
   User,
+  Camera,
 } from "lucide-react";
+
+const HERO_IMAGE = asset("student-life/nss/cine0944.webp");
+const COORDINATOR_IMAGE = asset("student-life/nss/dr-s-k-patil.webp");
+
+const galleryImages = assetsUnder("student-life/nss/")
+  .filter((src) => src !== HERO_IMAGE && src !== COORDINATOR_IMAGE)
+  .map((src, index) => ({
+    src,
+    alt: `NSS volunteers at Basaveshwar Engineering College during a tree plantation and campus greening drive ${index + 1}`,
+  }));
 
 const activities = [
   {
@@ -47,14 +61,6 @@ const milestones = [
   "Participated in Swachh Bharat Summer Internship - 2018.",
 ];
 
-const reports = [
-  "2022-2023",
-  "2021-2022",
-  "2020-2021",
-  "2019-2020",
-  "2018-2019",
-];
-
 export default function NssPage() {
   return (
     <div className="space-y-6 md:space-y-12">
@@ -62,6 +68,33 @@ export default function NssPage() {
         title="National Service Scheme (NSS)"
         description='"Not Me But You" - Developing personality through community service.'
       />
+
+      {/* Hero Image */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="relative overflow-hidden rounded-2xl border border-slate-200 shadow-sm"
+      >
+        <div className="relative aspect-21/9 w-full">
+          <Image
+            src={HERO_IMAGE}
+            alt="The NSS unit of Basaveshwar Engineering College with its Programme Officer and student volunteers"
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-linear-to-t from-slate-900/70 via-slate-900/10 to-transparent" />
+          <div className="absolute bottom-0 left-0 p-4 md:p-8">
+            <p className="text-xs md:text-sm font-bold uppercase tracking-wider text-red-300">
+              NSS Unit
+            </p>
+            <p className="text-lg md:text-2xl font-bold text-white max-w-2xl leading-tight">
+              Volunteers driving community service across campus and villages.
+            </p>
+          </div>
+        </div>
+      </motion.div>
 
       {/* Introduction & Motto */}
       <motion.div
@@ -84,8 +117,8 @@ export default function NssPage() {
           </p>
           <div className="bg-red-50 border-l-4 border-red-600 p-4 md:p-6 rounded-r-xl">
             <blockquote className="text-base md:text-lg font-serif italic text-slate-700 mb-2">
-              "The welfare of an individual is ultimately dependent on the
-              welfare of the society as a whole."
+              “The welfare of an individual is ultimately dependent on the
+              welfare of the society as a whole.”
             </blockquote>
             <cite className="text-xs md:text-sm font-bold text-red-700 not-italic block">
               — NSS Motto: NOT ME BUT YOU
@@ -164,8 +197,14 @@ export default function NssPage() {
           </CardHeader>
           <CardContent className="p-4 md:p-6 pt-0 md:pt-0">
             <div className="text-center p-4 md:p-6 bg-slate-50 rounded-xl mb-4">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-slate-200 rounded-full mx-auto mb-3 md:mb-4 flex items-center justify-center text-slate-400">
-                <User className="w-8 h-8 md:w-10 md:h-10" />
+              <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full mx-auto mb-3 md:mb-4 overflow-hidden border-2 border-white shadow-md">
+                <Image
+                  src={COORDINATOR_IMAGE}
+                  alt="Dr. S. K. Patil, NSS Coordinator at Basaveshwar Engineering College"
+                  fill
+                  sizes="96px"
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-base md:text-lg font-bold text-slate-900">
                 Dr. S. K. Patil
@@ -231,38 +270,24 @@ export default function NssPage() {
         </Card>
       </motion.div>
 
-      {/* Reports Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-      >
-        <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-4 md:mb-6 flex items-center gap-2">
-          <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-red-600" />
-          NSS Reports
-        </h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
-          {reports.map((year, idx) => (
-            <div key={idx} className="group relative">
-              <a href="#" className="block">
-                <Card className="hover:shadow-lg transition-all duration-300 group-hover:bg-red-50 border-slate-200 group-hover:border-red-200">
-                  <CardContent className="p-3 md:p-4 flex flex-col items-center justify-center text-center">
-                    <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-slate-100 group-hover:bg-white group-hover:text-red-600 flex items-center justify-center text-slate-500 mb-2 transition-colors">
-                      <Calendar className="w-4 h-4 md:w-5 md:h-5" />
-                    </div>
-                    <span className="font-bold text-slate-900 group-hover:text-red-700 text-sm md:text-base">
-                      {year}
-                    </span>
-                    <span className="text-[10px] md:text-xs text-slate-500 mt-1 group-hover:text-red-500">
-                      View Report
-                    </span>
-                  </CardContent>
-                </Card>
-              </a>
-            </div>
-          ))}
-        </div>
-      </motion.div>
+      {/* Gallery Section */}
+      {galleryImages.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+        >
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-4 md:mb-6 flex items-center gap-2">
+            <Camera className="w-5 h-5 md:w-6 md:h-6 text-red-600" />
+            In Action
+          </h2>
+          <p className="text-sm md:text-base text-slate-600 mb-4 md:mb-6 max-w-3xl">
+            Glimpses of our NSS volunteers during tree plantation and campus
+            greening drives at Basaveshwar Engineering College.
+          </p>
+          <PhotoGallery images={galleryImages} />
+        </motion.div>
+      )}
     </div>
   );
 }

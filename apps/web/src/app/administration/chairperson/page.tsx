@@ -1,4 +1,5 @@
 import { LeadershipMessage } from "@/components/common/leadership-message";
+import { asset } from "@/lib/assets";
 
 const message = `
 Basaveshwar Engineering College (BEC) is a premier Technical Institute recognised at National level catering to the needs of rural masses in Northern part of Karnataka. Ever since its inception in 1963 with only three disciplines, now BEC has 9 UG & 8 PG programmes and is recognised at National level by securing NIRF ranking persistently.
@@ -20,8 +21,8 @@ export default function ChairmanMessagePage() {
       subtitle="Leading 150+ institutions with a commitment to excellence and social transformation."
       name="Dr. Veeranna Charantimath"
       role="Chairman, B. V. V. Sangha, Bagalkote"
-      // TODO: confirm current chairman + move to an R2 asset (still an external image).
-      image="https://www.becbgk.edu/img/core-img/chairman.png"
+      // TODO: confirm current chairman's identity/name — not provided/source-verified.
+      image={asset("governance/chairman.png")}
       imageFit="contain"
       quote={{
         text: "Work is Worship.",

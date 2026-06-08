@@ -1,5 +1,13 @@
-import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+
+import { PhotoGallery } from "@/components/common/photo-gallery";
 import { Card, CardContent } from "@/components/ui/card";
+import { asset, assetsUnder } from "@/lib/assets";
+
+const sanghaGallery = assetsUnder("governance/sangha/").map((src) => ({
+  src,
+  alt: "B.V.V. Sangha — leadership and members",
+}));
 
 export default function AboutSanghaPage() {
   return (
@@ -10,15 +18,29 @@ export default function AboutSanghaPage() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,#0f172a_0%,transparent_28%)]" />
         </div>
         <div className="relative container mx-auto max-w-6xl px-4 lg:px-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
-               Institute
-            </p>
-          <h1 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
-            About B.V.V. Sangha
-          </h1>
-          <p className="mt-4 text-lg text-gray-700 max-w-2xl leading-relaxed">
-            A century of selfless service and educational excellence, upholding social values and the philosophy of "Work is Worship".
-          </p>
+          <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+                 Institute
+              </p>
+              <h1 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
+                About B.V.V. Sangha
+              </h1>
+              <p className="mt-4 text-lg text-gray-700 max-w-2xl leading-relaxed">
+                A century of selfless service and educational excellence, upholding social values and the philosophy of “Work is Worship”.
+              </p>
+            </div>
+            <div className="relative aspect-4/3 overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
+              <Image
+                src={asset("governance/sangha/group-photo.webp")}
+                alt="Office-bearers and members of Basaveshwar Veerashaiva Vidya Vardhak Sangha, Bagalkot"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 480px"
+                className="object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -34,7 +56,7 @@ export default function AboutSanghaPage() {
             </p>
             <p>
               The Sangha has been serving the poor, the underprivileged, and needy people of this area for more than a century,
-              upholding social, human, and ethical values with emphasis on <span className="italic font-medium text-primary">"WORK IS WORSHIP"</span> — the basic philosophy of Lord Basaveshwar.
+              upholding social, human, and ethical values with emphasis on <span className="italic font-medium text-primary">“WORK IS WORSHIP”</span> — the basic philosophy of Lord Basaveshwar.
               It stands distinct in Southern India for its high-order selfless service and efforts to provide quality modern education to all sections of society.
             </p>
             <p>
@@ -99,7 +121,7 @@ export default function AboutSanghaPage() {
                         Download the full list of institutions run by Shri Basaveshwar Vidya Vardhak Sangha.
                     </p>
                      <a
-                        href="https://www.becbgk.edu/Documents/others/Institute_list.pdf"
+                        href={asset("documents/institute/institute-list.pdf")}
                         target="_blank"
                         rel="noreferrer"
                         className="inline-flex items-center text-sm font-medium text-primary hover:underline hover:underline-offset-4"
@@ -109,6 +131,21 @@ export default function AboutSanghaPage() {
                 </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-stone-200 bg-stone-50/50 py-14 md:py-18">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+            Leadership
+          </p>
+          <h2 className="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">
+            The People Behind the Sangha
+          </h2>
+          <p className="mt-3 max-w-2xl text-base text-gray-700 leading-relaxed">
+            The office-bearers and members who carry forward the Sangha’s mission of selfless service and quality education.
+          </p>
+          <PhotoGallery images={sanghaGallery} className="mt-8" />
         </div>
       </section>
     </main>

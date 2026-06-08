@@ -1,10 +1,12 @@
 "use client";
 
 import { PageHeader } from "@/components/placements/page-header";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset, assetsUnder } from "@/lib/assets";
+import Image from "next/image";
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy, Activity, MapPin, Users, Dumbbell, Ruler, Timer, Award } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Trophy, Activity, MapPin, Users, Dumbbell, Ruler, Timer, Award, ImageIcon } from "lucide-react";
 
 const outdoorStats = [
     { label: "Football Field", value: "120x90m", icon: Activity },
@@ -21,6 +23,11 @@ const indoorGames = [
     "Modern Gym Equipment"
 ];
 
+const galleryImages = assetsUnder("student-life/sports/").map((src, index) => ({
+    src,
+    alt: `Sports and games at Basaveshwar Engineering College ${index + 1}`,
+}));
+
 export default function SportsPage() {
     return (
         <div className="space-y-6 md:space-y-12">
@@ -28,6 +35,31 @@ export default function SportsPage() {
                 title="Sports & Games"
                 description="Fostering discipline, team spirit, and physical fitness through world-class infrastructure."
             />
+
+            {/* Hero Image */}
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="container mx-auto px-4 lg:px-6"
+            >
+                <div className="relative aspect-16/9 sm:aspect-21/9 overflow-hidden rounded-xl border border-stone-200 shadow-sm">
+                    <Image
+                        src={asset("student-life/sports/cine0083.webp")}
+                        alt="Trophies won by Basaveshwar Engineering College teams on display in the indoor stadium"
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 1024px"
+                        className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent" />
+                    <div className="absolute bottom-0 left-0 p-4 md:p-8">
+                        <p className="text-white/90 text-sm md:text-lg font-medium max-w-xl">
+                            A legacy of trophies earned across inter-collegiate and zonal tournaments.
+                        </p>
+                    </div>
+                </div>
+            </motion.div>
 
             {/* Introduction & Gymkhana */}
             <motion.div
@@ -144,6 +176,15 @@ export default function SportsPage() {
                         </CardContent>
                     </Card>
                 </div>
+            </section>
+
+            {/* Photo Gallery */}
+            <section>
+                <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-4 md:mb-8 flex items-center gap-2">
+                    <ImageIcon className="w-5 h-5 md:w-6 md:h-6 text-emerald-600" />
+                    Sports Life in Pictures
+                </h2>
+                <PhotoGallery images={galleryImages} />
             </section>
         </div>
     );

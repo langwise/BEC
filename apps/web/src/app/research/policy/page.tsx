@@ -14,10 +14,10 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { asset } from "@/lib/assets";
 
 export default function ResearchPolicyPage() {
-  const policyUrl =
-    "https://becbgk.edu/Research/Documents/Research%20Policy.pdf";
+  const policyUrl = asset("documents/research/research-policy.pdf");
 
   return (
     <div className="space-y-12">

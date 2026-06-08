@@ -4,31 +4,32 @@ import { PageHeader } from "@/components/placements/page-header";
 import { motion } from "motion/react";
 import { FileText, Download, ExternalLink, Library } from "lucide-react";
 import Link from "next/link";
+import { asset } from "@/lib/assets";
 
 const publicationYears = [
   {
     year: "2022-2023",
-    link: "https://becbgk.edu/Research/Documents/Publications/Scopus_BEC%202022.pdf",
+    link: asset("documents/research/scopus-2022.pdf"),
   },
   {
     year: "2021-2022",
-    link: "https://becbgk.edu/Research/Documents/Publications/Scopus_BEC%202021.pdf",
+    link: asset("documents/research/scopus-2021.pdf"),
   },
   {
     year: "2020-2021",
-    link: "https://becbgk.edu/Research/Documents/Publications/Scopus_BEC%202020.pdf",
+    link: asset("documents/research/scopus-2020.pdf"),
   },
   {
     year: "2019-2020",
-    link: "https://becbgk.edu/Research/Documents/Publications/Scopus_BEC%202019.pdf",
+    link: asset("documents/research/scopus-2019.pdf"),
   },
   {
     year: "2018-2019",
-    link: "https://becbgk.edu/Research/Documents/Publications/Scopus_BEC%202018.pdf",
+    link: asset("documents/research/scopus-2018.pdf"),
   },
   {
     year: "2017-2018",
-    link: "https://becbgk.edu/Research/Documents/Publications/Scopus_BEC%202017.pdf",
+    link: asset("documents/research/scopus-2017.pdf"),
   },
 ];
 

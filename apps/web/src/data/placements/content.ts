@@ -1,5 +1,8 @@
+import { asset } from "@/lib/assets";
+
 export const placementContent = {
-  brochureHref: "/placement-brochure.pdf",
+  brochureHref: asset("placements/brochure.pdf"),
+  policyHref: asset("placements/placement-policy.pdf"),
   recruiterFormSrc: "",
   accreditation: [
     { label: "NIRF", value: "150–250 band", note: "Rank band, last 4 years" },

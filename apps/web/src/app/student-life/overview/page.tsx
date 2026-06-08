@@ -1,7 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { PageHeader } from "@/components/placements/page-header";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset } from "@/lib/assets";
 import { motion } from "motion/react";
 import {
     Users,
@@ -59,7 +62,7 @@ const clubs = [
         icon: Users,
         color: "text-purple-600",
         bg: "bg-purple-100",
-        href: "#"
+        href: "/student-life/mindhog"
     },
     {
         name: "Gymkhana",
@@ -67,7 +70,7 @@ const clubs = [
         icon: Trophy,
         color: "text-amber-600",
         bg: "bg-amber-100",
-        href: "#"
+        href: "/student-life/sports"
     },
     {
         name: "NSS & Red Cross",
@@ -75,7 +78,7 @@ const clubs = [
         icon: Heart,
         color: "text-red-600",
         bg: "bg-red-100",
-        href: "#"
+        href: "/student-life/nss"
     },
     {
         name: "IEEE Student Branch",
@@ -83,7 +86,42 @@ const clubs = [
         icon: Activity,
         color: "text-blue-600",
         bg: "bg-blue-100",
-        href: "#"
+        href: "/student-life/ieee"
+    }
+];
+
+const galleryImages = [
+    {
+        src: asset("student-life/cultural/cine0189.webp"),
+        alt: "Student performing a classical dance at a BEC cultural event"
+    },
+    {
+        src: asset("student-life/cultural/cine0228.webp"),
+        alt: "Student music band rehearsing in the BEC cultural hall"
+    },
+    {
+        src: asset("student-life/cultural/cine0160.webp"),
+        alt: "Cultural club dance practice at Basaveshwar Engineering College"
+    },
+    {
+        src: asset("student-life/clubs/cine1910.webp"),
+        alt: "Student club members gathered for a group photograph at BEC"
+    },
+    {
+        src: asset("student-life/clubs/ieee-student-branch-35261.webp"),
+        alt: "Members of the IEEE Student Branch at Basaveshwar Engineering College"
+    },
+    {
+        src: asset("student-life/engineers-arena/cine1060.webp"),
+        alt: "Students at an Engineers' Arena activity in the campus hall"
+    },
+    {
+        src: asset("student-life/engineers-arena/cine1068.webp"),
+        alt: "Students collaborating on a hands-on Engineers' Arena challenge"
+    },
+    {
+        src: asset("student-life/engineers-arena/cine1074.webp"),
+        alt: "Engineers' Arena event hosted by student volunteers at BEC"
     }
 ];
 
@@ -101,6 +139,34 @@ export default function StudentLifeOverviewPage() {
                 title="Life at BEC"
                 description="A vibrant ecosystem of learning, culture, and community in the heart of Bagalkot."
             />
+
+            {/* Hero */}
+            <section className="container mx-auto px-4">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.98 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-2xl md:rounded-3xl border border-slate-100 shadow-sm"
+                >
+                    <Image
+                        src={asset("student-life/cultural/cine0157.webp")}
+                        alt="BEC students performing a synchronized group dance during a cultural event"
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 1024px"
+                        className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/10 to-transparent" />
+                    <div className="absolute bottom-0 left-0 p-5 md:p-10 text-white">
+                        <span className="text-orange-300 font-semibold tracking-wider text-xs md:text-sm uppercase">
+                            Culture · Clubs · Community
+                        </span>
+                        <h2 className="text-xl md:text-3xl font-bold mt-1 md:mt-2 max-w-2xl leading-tight">
+                            Where talent finds its stage
+                        </h2>
+                    </div>
+                </motion.div>
+            </section>
 
             {/* Introduction & Highlights */}
             <section className="container mx-auto px-4">
@@ -123,9 +189,11 @@ export default function StudentLifeOverviewPage() {
                                     Explore Hostels
                                 </Button>
                             </Link>
-                            <Button variant="outline" className="rounded-full px-6 md:px-8 text-sm md:text-base">
-                                Virtual Tour
-                            </Button>
+                            <Link href="/student-life/activities">
+                                <Button variant="outline" className="rounded-full px-6 md:px-8 text-sm md:text-base">
+                                    Student Activities
+                                </Button>
+                            </Link>
                         </div>
                     </motion.div>
 
@@ -172,32 +240,47 @@ export default function StudentLifeOverviewPage() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 }}
+                                    className="h-full"
                                 >
-                                    <Card className="h-full hover:shadow-lg transition-all duration-300 border-none shadow-md group overflow-hidden">
-                                        <CardContent className="p-4 md:p-6 relative">
-                                            <div className={`absolute top-0 right-0 w-24 h-24 rounded-bl-full opacity-10 transition-transform group-hover:scale-150 ${club.bg.replace('100', '500')}`} />
+                                    <Link href={club.href} className="block h-full">
+                                        <Card className="h-full hover:shadow-lg transition-all duration-300 border-none shadow-md group overflow-hidden">
+                                            <CardContent className="p-4 md:p-6 relative">
+                                                <div className={`absolute top-0 right-0 w-24 h-24 rounded-bl-full opacity-10 transition-transform group-hover:scale-150 ${club.bg.replace('100', '500')}`} />
 
-                                            <div className={`w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center mb-4 md:mb-6 text-white shadow-lg ${club.bg.replace('100', '500')}`}>
-                                                <Icon className="w-6 h-6 md:w-7 md:h-7" />
-                                            </div>
+                                                <div className={`w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center mb-4 md:mb-6 text-white shadow-lg ${club.bg.replace('100', '500')}`}>
+                                                    <Icon className="w-6 h-6 md:w-7 md:h-7" />
+                                                </div>
 
-                                            <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2 md:mb-3 group-hover:text-orange-600 transition-colors">
-                                                {club.name}
-                                            </h3>
-                                            <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-                                                {club.description}
-                                            </p>
+                                                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2 md:mb-3 group-hover:text-orange-600 transition-colors">
+                                                    {club.name}
+                                                </h3>
+                                                <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
+                                                    {club.description}
+                                                </p>
 
-                                            <div className="flex items-center text-xs md:text-sm font-semibold text-orange-600 group-hover:translate-x-1 transition-transform cursor-pointer">
-                                                Learn More <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1" />
-                                            </div>
-                                        </CardContent>
-                                    </Card>
+                                                <div className="flex items-center text-xs md:text-sm font-semibold text-orange-600 group-hover:translate-x-1 transition-transform">
+                                                    Learn More <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1" />
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    </Link>
                                 </motion.div>
                             );
                         })}
                     </div>
                 </div>
+            </section>
+
+            {/* Glimpses Gallery */}
+            <section className="container mx-auto px-4">
+                <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
+                    <span className="text-orange-600 font-semibold tracking-wider text-xs md:text-sm uppercase">Campus Moments</span>
+                    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mt-2">Glimpses of Campus Life</h2>
+                    <p className="text-sm md:text-base text-slate-600 mt-3 md:mt-4">
+                        Cultural performances, club gatherings and the Engineers&apos; Arena — a few moments from everyday life at BEC.
+                    </p>
+                </div>
+                <PhotoGallery images={galleryImages} />
             </section>
 
             {/* Amenities Grid */}

@@ -1,9 +1,19 @@
-import { Download, ArrowDown, CheckCircle2, Mail, Phone } from "lucide-react";
+import Image from "next/image";
+import { Download, ArrowDown, CheckCircle2, FileText, Mail, Phone } from "lucide-react";
 import { placementContent } from "@/data/placements/content";
 import { placementStats, topRecruiters } from "@/data/home/placements";
 import { BrochureCover } from "@/components/placements/brochure-cover";
 import { RecruiterForm } from "@/components/placements/recruiter-form";
 import { BrandLogo } from "@/components/placements/brand-logo";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset, assetsUnder } from "@/lib/assets";
+
+const cellPhotos = assetsUnder("placements/cell/").map((src) => ({
+  src,
+  alt: "Training & Placement Cell, Basaveshwar Engineering College, Bagalkote",
+}));
+
+const featureImage = asset("placements/cell/cine0682.webp");
 
 export const metadata = {
   title: "Placements | Basaveshwar Engineering College",
@@ -12,7 +22,7 @@ export const metadata = {
 };
 
 export default function PlacementsPage() {
-  const { home, whyRecruit, policy, brochureHref, accreditation, officers } =
+  const { home, whyRecruit, policy, brochureHref, policyHref, accreditation, officers } =
     placementContent;
 
   return (
@@ -92,7 +102,15 @@ export default function PlacementsPage() {
               ))}
             </div>
           </div>
-          <BrochureCover width="260px" />
+          <div className="relative aspect-4/3 overflow-hidden rounded-2xl border border-orange-100 shadow-xl shadow-orange-900/5">
+            <Image
+              src={featureImage}
+              alt="Students at a campus recruitment session in the Training & Placement Cell, Basaveshwar Engineering College, Bagalkote"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -127,6 +145,32 @@ export default function PlacementsPage() {
               <p className="mt-2 text-sm text-gray-600 leading-relaxed">{slot.description}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-10 text-center">
+          <a
+            href={policyHref}
+            download
+            className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-7 py-3.5 text-sm font-semibold text-gray-700 transition hover:border-primary hover:text-primary"
+          >
+            <FileText className="w-4 h-4" /> Download placement policy
+          </a>
+        </div>
+      </section>
+
+      {/* Placement cell gallery */}
+      <section
+        id="gallery"
+        className="bg-orange-50/50 border-y border-orange-100 scroll-mt-24"
+      >
+        <div className="container mx-auto px-4 py-20">
+          <h2 className="text-4xl font-bold text-gray-900 mb-3 text-center">
+            Inside the placement cell
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12 text-center">
+            Seminar halls, computer centres and interview rooms that host our campus
+            recruitment drives.
+          </p>
+          <PhotoGallery images={cellPhotos} className="max-w-5xl mx-auto" />
         </div>
       </section>
 

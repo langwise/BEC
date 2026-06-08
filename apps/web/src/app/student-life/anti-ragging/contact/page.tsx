@@ -2,30 +2,27 @@
 
 import { PageHeader } from "@/components/placements/page-header";
 import { motion } from "motion/react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, User, ShieldCheck, Siren } from "lucide-react";
 
-// Data based on typical composition mentioned in search results (Principal as Chairman)
-// Specific names other than Principal might need future updates if not found textually
 const committee = [
     {
-        name: "Dr. S. S. Injaganeri",
+        name: "Dr. B. R. Hiremath",
         role: "Chairman",
         designation: "Principal, BEC Bagalkot",
         contact: "principal@becbgk.edu"
     },
-    // Placeholder structure for other members usually found in such committees
     {
-        name: "Dr. V. S. Puranik",
-        role: "Member",
-        designation: "Dean (Student Welfare)",
-        contact: "dean_sw@becbgk.edu"
+        name: "Dr. P. L. Timmanagoudar",
+        role: "Member / Secretary",
+        designation: "HOD, Chemistry",
+        contact: "9448693600"
     },
     {
-        name: "Police Inspector",
-        role: "Member",
-        designation: "Town Police Station, Bagalkot",
-        contact: "100"
+        name: "Prof. V. D. Holla",
+        role: "Squad Coordinator",
+        designation: "Anti-Ragging Squad, E & E Engineering",
+        contact: "9342647037"
     }
 ];
 

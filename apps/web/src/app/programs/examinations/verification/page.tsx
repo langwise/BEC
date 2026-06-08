@@ -1,7 +1,8 @@
 "use client";
 
 import { FadeIn } from "@/components/animations/fade-in";
-import { CheckCircle2, Download } from "lucide-react";
+import { asset } from "@/lib/assets";
+import { Download } from "lucide-react";
 import Link from "next/link";
 
 export default function VerificationPage() {
@@ -25,7 +26,8 @@ export default function VerificationPage() {
                         </p>
 
                         <Link
-                            href="https://becbgk.edu/EXAM/Documents1/Academic%20Verification_N.docx"
+                            href={asset("documents/exam/academic-verification-n.docx")}
+                            target="_blank"
                             className="flex items-center gap-3 p-4 bg-blue-50 text-primary rounded-xl hover:bg-primary hover:text-white transition-all w-fit font-medium"
                         >
                             <Download className="w-5 h-5" />

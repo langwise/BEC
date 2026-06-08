@@ -722,6 +722,236 @@
         "name": "Smt. Karuna B. Kurbet",
         "designation": "Assistant Professor"
       }
+    ],
+    "biotechnology": [
+      {
+        "name": "Dr. Bharati S. Meti",
+        "designation": "Professor & Head"
+      },
+      {
+        "name": "Dr. Sharada P.",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. Madhumala Y.",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Dr. Preeti S. Kumarmath",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Dr. Shilpa K. Jigajinni",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Dr. Jayachandra S. Yaradoddi",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Dr. Basavaraj S. Nainegali",
+        "designation": "Assistant Professor"
+      }
+    ],
+    "industrial-and-production-engg": [
+      {
+        "name": "Dr. C. M. Javalagi",
+        "designation": "Professor (CAS) & Head"
+      },
+      {
+        "name": "Dr. D. G. Mallapur",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. S. M. Pharsiyawar",
+        "designation": "Associate Professor"
+      }
+    ],
+    "information-science-and-engg": [
+      {
+        "name": "Dr. Shobha R. Patil",
+        "designation": "Professor"
+      },
+      {
+        "name": "Dr. Sadhana P. Bangarashetti",
+        "designation": "Professor & Head"
+      },
+      {
+        "name": "Prof. P. V. Kulkarni",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. Preeti S. Puranik",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. Lokesh B. Bhajantri",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. Roopa B. Math",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Vijayalaxmi S. Patil",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Sandeep N. Kugali",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. G. M. Patil",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Parashuram K. Deshpande",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Girish B. Shettar",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Deepa I. Kalappanavar",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Chetana R. Shivanagi",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Mallikarjungouda R. Patil",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Shiddalingesh S. Hiremath",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Sheetal Pattanshetti",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. Parimala R. Muttannavar",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. S. S. Guttannavar",
+        "designation": "Assistant Professor"
+      }
+    ],
+    "mechanical-engg": [
+      {
+        "name": "Dr. V. V. Kuppast",
+        "designation": "Professor"
+      },
+      {
+        "name": "Prof. S. B. Wadawadagi",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. H. M. Kadlimatti",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. V. P. Girisagar",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. S. G. Sarganachari",
+        "designation": "Professor"
+      },
+      {
+        "name": "Dr. R. V. Kurahatti",
+        "designation": "Professor"
+      },
+      {
+        "name": "Prof. S. C. Yali",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. B. R. Endigeri",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. G. H. Rathod",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. S. M. Jigajinni",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. M. C. Goudar",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. M. M. G. Math",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. H. R. Patil",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Prof. Vivekanand B. S.",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. R. S. Matti",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. K. D. Aswale",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. S. J. Sanjay",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Dr. R. S. Naik",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Dr. A. N. Sonnad",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. P. C. Kolur",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. S. S. Davanageri",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. P. B. Bhajantri",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Prof. R. A. Patil",
+        "designation": "Associate Professor"
+      },
+      {
+        "name": "Dr. M. S. Hebbal",
+        "designation": "Professor (Contractual)"
+      }
+    ],
+    "humanities": [
+      {
+        "name": "Dr. Basavarajeshwari G. Hokarani",
+        "designation": "Assistant Professor & Head"
+      },
+      {
+        "name": "Smt. Shanta B. Basanagoudar",
+        "designation": "Assistant Professor"
+      },
+      {
+        "name": "Miss. Nidhi P. Koranmath",
+        "designation": "Assistant Professor"
+      }
     ]
   }
 }

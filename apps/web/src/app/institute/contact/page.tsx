@@ -13,13 +13,13 @@ import {
   Clock,
   Navigation,
 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 export default function ContactUsPage() {
   const collegeInfo = {
     name: "Basaveshwar Engineering College",
-    address: "Bagalkot-587103, Karnataka, India",
-    phone: "9481351234",
+    address: "Bagalkote-587103, Karnataka, India",
+    phone: "07618781963",
+    landline: "08354-234060",
     email: "principal@becbgk.edu",
     hours: "Mon - Sat: 9:00 AM - 5:00 PM",
   };
@@ -123,6 +123,9 @@ export default function ContactUsPage() {
                         <h3 className="text-xl font-bold text-gray-900 mb-2">Phone & Hours</h3>
                         <p className="text-gray-600 font-medium mb-1">
                             <a href={`tel:${collegeInfo.phone}`} className="hover:text-primary transition-colors">{collegeInfo.phone}</a>
+                        </p>
+                        <p className="text-gray-600 font-medium mb-1">
+                            <a href={`tel:${collegeInfo.landline}`} className="hover:text-primary transition-colors">{collegeInfo.landline}</a>
                         </p>
                          <div className="flex items-center gap-2 text-sm text-gray-500 mt-3">
                             <Clock className="w-4 h-4" />
@@ -250,25 +253,24 @@ export default function ContactUsPage() {
                 </div>
 
                 {/* Map */}
-                <div className="h-full min-h-[400px] bg-stone-50 rounded-3xl border border-stone-100 relative overflow-hidden group">
-                    {/* Placeholder Map Pattern */}
-                     <div className="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/2275px-Google_Maps_Logo_2020.svg.png')] bg-cover bg-center opacity-5 grayscale group-hover:grayscale-0 transition-all duration-700" />
-                     
-                     <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
-                          <div className="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center text-primary mb-4 animate-bounce">
-                              <MapPin className="w-8 h-8" />
-                          </div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">Google Maps</h3>
-                          <p className="text-gray-500 max-w-xs mb-6">Interactive map integration would go here to show exact campus location.</p>
-                          <a 
-                             href="https://maps.google.com/?q=Basaveshwar+Engineering+College" 
-                             target="_blank" 
-                             rel="noopener noreferrer"
-                             className="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-orange-700 transition-colors shadow-lg shadow-orange-200"
-                          >
-                              Open in Maps
-                          </a>
-                     </div>
+                <div className="h-full min-h-[400px] lg:min-h-[520px] bg-stone-50 rounded-3xl border border-stone-100 relative overflow-hidden flex flex-col">
+                    <iframe
+                        title="Basaveshwar Engineering College, Bagalkote location map"
+                        src="https://www.google.com/maps?q=Basaveshwar%20Engineering%20College%2C%20Bagalkote&output=embed"
+                        className="w-full flex-1 border-0"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        allowFullScreen
+                    />
+                    <a
+                        href="https://www.google.com/maps?q=Basaveshwar+Engineering+College,+Bagalkote"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 px-6 py-4 bg-white text-primary font-medium hover:bg-orange-50 transition-colors border-t border-stone-100"
+                    >
+                        <MapPin className="w-4 h-4" />
+                        Open in Google Maps
+                    </a>
                 </div>
            </FadeIn>
         </div>

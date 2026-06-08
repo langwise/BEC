@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { asset } from "@/lib/assets";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -226,7 +227,7 @@ export default function RtiPage() {
 
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                     <Card className="group rounded-sm border-stone-200 transition-all hover:shadow-md hover:border-primary/20 bg-white">
-                        <Link href="https://becbgk.edu/Documents/Mandatory_Disclosure/Mandatory_Disclosure_24_25.pdf" target="_blank" rel="noreferrer" className="block h-full">
+                        <Link href={asset("documents/disclosures/mandatory-disclosure-24-25.pdf")} target="_blank" rel="noreferrer" className="block h-full">
                             <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-2">
                                 <div className="space-y-1 pr-4">
                                     <CardTitle className="text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors">

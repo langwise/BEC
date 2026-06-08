@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "motion/react";
-import Image from "next/image";
 import {
   Users,
   Award,
@@ -115,9 +114,9 @@ export default function MBAResearchPage() {
       </div>
 
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Left Column - Stats & Areas */}
-        <div className="lg:col-span-8 space-y-8">
+      <div className="grid grid-cols-1 gap-8">
+        {/* Stats & Areas */}
+        <div className="space-y-8">
           {/* Stats Cards */}
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             {stats.map((stat, index) => {
@@ -174,32 +173,6 @@ export default function MBAResearchPage() {
                   </span>
                 </div>
               ))}
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Right Column - Image */}
-        <div className="lg:col-span-4 space-y-8">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.4 }}
-            className="relative h-[400px] rounded-3xl overflow-hidden shadow-lg group"
-          >
-            <Image
-              src="/mba-dept.png"
-              alt="Department of MBA"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6">
-              <span className="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-xs font-semibold mb-2">
-                Campus
-              </span>
-              <h3 className="text-xl font-bold text-white">
-                Department of MBA
-              </h3>
             </div>
           </motion.div>
         </div>

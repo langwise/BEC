@@ -1,15 +1,16 @@
 "use client";
 
 import { FadeIn } from "@/components/animations/fade-in";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset, assetsUnder } from "@/lib/assets";
 import Image from "next/image";
 import {
   Building2,
   Store,
-  Bus,
   Stethoscope,
   Landmark,
-  Mic2,
-  Clock,
+  CreditCard,
+  Mail,
   MapPin,
   Phone,
 } from "lucide-react";
@@ -17,60 +18,61 @@ import {
 export default function AmenitiesPage() {
   const amenities = [
     {
-      title: "Syndicate Bank",
+      title: "Bank Branch",
       description:
-        "A full-fledged branch of Syndicate Bank (Canara Bank) is located within the campus to serve the banking needs of students and staff.",
-      features: ["ATM Facility", "Student Accounts", "Education Loans"],
-      timings: "10:00 AM - 4:00 PM",
-      image: "/facilities/amenities/bank.png",
+        "An on-campus banking branch serves the day-to-day banking needs of students and staff, handling accounts, deposits and fee transactions without leaving the campus.",
+      features: ["Savings Accounts", "Fee Transactions", "Banking Support"],
+      image: asset("facilities/general/cine0366.webp"),
       icon: Landmark,
     },
     {
-      title: "College Canteen",
+      title: "ATM Facility",
       description:
-        "A spacious and hygienic canteen serving a variety of delicious and nutritious vegetarian meals and snacks at subsidized rates.",
-      features: ["Hygienic Kitchen", "Varied Menu", "Affordable Prices"],
-      timings: "7:00 AM - 8:00 PM",
-      image: "/facilities/amenities/canteen.png",
-      icon: Store,
+        "A 24-hour ATM kiosk on campus gives students and staff round-the-clock access to cash and basic banking services.",
+      features: ["24x7 Access", "Cash Withdrawal", "Balance Enquiry"],
+      image: asset("facilities/general/cine0364.webp"),
+      icon: CreditCard,
     },
     {
-      title: "Health Center",
+      title: "India Post Office",
       description:
-        "A well-equipped health center with a visiting medical officer to provide primary medical care to students and staff.",
-      features: ["First Aid", "General Checkup", "Emergency Support"],
-      timings: "9:00 AM - 5:00 PM",
-      image: "/facilities/amenities/health.png",
+        "A branch India Post office within the campus offers postal, parcel and small-savings services for the college community and the neighbouring locality.",
+      features: ["Postal Services", "Parcel & Speed Post", "Savings Schemes"],
+      image: asset("facilities/general/cine1255.webp"),
+      icon: Mail,
+    },
+    {
+      title: "Campus Health Centre",
+      description:
+        "The campus health centre provides primary medical care and first aid for students and staff, with support available for routine check-ups and emergencies.",
+      features: ["First Aid", "Primary Care", "Emergency Support"],
+      image: asset("facilities/general/cine1256.webp"),
       icon: Stethoscope,
     },
     {
-      title: "Co-operative Store",
+      title: "Canteen",
       description:
-        "A student-friendly store supplying textbooks, stationery, practical records, and other academic essentials.",
-      features: ["Stationery", "Textbooks", "Xerox & Print"],
-      timings: "9:30 AM - 5:30 PM",
-      image: "/facilities/amenities/coop.png",
+        "A spacious campus canteen serves a varied menu of meals, snacks and beverages at affordable rates, giving students and staff a comfortable place to eat and unwind.",
+      features: ["Varied Menu", "Snacks & Beverages", "Affordable Rates"],
+      image: asset("facilities/general/cine1257.webp"),
+      icon: Store,
+    },
+    {
+      title: "Co-operative Store & Book Stall",
+      description:
+        "The campus co-operative store and book stall supply textbooks, stationery, practical records and other academic essentials for everyday student needs.",
+      features: ["Textbooks", "Stationery", "Academic Essentials"],
+      image: asset("facilities/general/cine1260.webp"),
       icon: Building2,
     },
-    {
-      title: "Transportation",
-      description:
-        "A fleet of college buses providing convenient transportation for students and staff from various parts of the city.",
-      features: ["Multiple Routes", "Safe Travel", "Regular Service"],
-      timings: "Morning & Evening",
-      image: "/facilities/amenities/transport.png",
-      icon: Bus,
-    },
-    {
-      title: "Auditorium",
-      description:
-        "A state-of-the-art auditorium with a seating capacity of 1000+, equipped with advanced audio-visual systems for events.",
-      features: ["1000+ Seats", "Acoustic Design", "Green Rooms"],
-      timings: "Booking Required",
-      image: "/facilities/amenities/auditorium.png",
-      icon: Mic2,
-    },
   ];
+
+  const adminOfficeImages = assetsUnder(
+    "facilities/amenities/admission-section/",
+  ).map((src, index) => ({
+    src,
+    alt: `Administrative office at Basaveshwar Engineering College ${index + 1}`,
+  }));
 
   return (
     <div className="min-h-screen bg-stone-50">
@@ -107,8 +109,9 @@ export default function AmenitiesPage() {
             <p className="text-lg text-gray-600 leading-relaxed">
               Basaveshwar Engineering College ensures that students have access
               to all essential facilities within the campus premises. From
-              banking and healthcare to dining and transport, our amenities are
-              designed to support the daily needs of our vibrant community.
+              banking and a post office to a health centre, canteen and
+              co-operative store, our amenities are designed to support the
+              daily needs of our vibrant community.
             </p>
           </FadeIn>
         </div>
@@ -146,7 +149,7 @@ export default function AmenitiesPage() {
                         {item.description}
                       </p>
 
-                      <div className="mt-auto space-y-4">
+                      <div className="mt-auto">
                         {/* Features */}
                         <div className="flex flex-wrap gap-2">
                           {item.features.map((feature, idx) => (
@@ -158,12 +161,6 @@ export default function AmenitiesPage() {
                             </span>
                           ))}
                         </div>
-
-                        {/* Timings */}
-                        <div className="pt-4 border-t border-stone-100 flex items-center gap-2 text-sm text-gray-500 font-medium">
-                          <Clock className="h-4 w-4 text-primary" />
-                          <span>{item.timings}</span>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -171,6 +168,26 @@ export default function AmenitiesPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Administrative Office */}
+      <section className="py-16 bg-white border-b border-stone-200">
+        <div className="container mx-auto px-4">
+          <FadeIn className="max-w-5xl mx-auto">
+            <div className="max-w-3xl">
+              <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">
+                Administrative Office
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                The college administrative office handles admissions,
+                examination records, fee payments and student services from a
+                single, centrally located block, making routine administrative
+                work convenient for students and parents alike.
+              </p>
+            </div>
+            <PhotoGallery images={adminOfficeImages} />
+          </FadeIn>
         </div>
       </section>
 
