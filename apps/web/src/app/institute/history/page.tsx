@@ -43,7 +43,7 @@ const legacyMetrics = [
     bg: "bg-blue-50"
   },
   {
-    value: "15,000+",
+    value: "20,000+",
     label: "Global Alumni",
     icon: Users,
     color: "text-purple-600",

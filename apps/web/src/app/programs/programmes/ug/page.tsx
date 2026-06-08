@@ -10,7 +10,7 @@ const ugData = {
   highlights: [
       "NAAC 'A' Grade Accredited",
       "NBA Recognized Programmes",
-      "100% PhD Qualified Faculty",
+      "PhD-Qualified Faculty",
       "State-of-the-art Laboratories",
       "Industry-Integrated Curriculum",
       "Strong Placement Record",

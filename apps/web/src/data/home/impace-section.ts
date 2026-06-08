@@ -3,9 +3,9 @@ export const IMPACT_DATA = [
     id: 1,
     title: "Innovation & Research",
     description:
-      "Our faculty are not just teachers; they are pioneers. With 100% of our core faculty holding PhDs from premier institutions, we lead the way in groundbreaking research. From advanced materials to sustainable energy, our labs are where the future is forged.",
+      "Our faculty are not just teachers; they are pioneers. With more than half our faculty holding PhDs from premier institutions, we lead the way in groundbreaking research. From advanced materials to sustainable energy, our labs are where the future is forged.",
     stats: [
-      { value: "100%", label: "PhD Qualified Faculty" },
+      { value: "55%", label: "PhD Qualified Faculty" },
       { value: "₹ 3.40 Cr", label: "Research Grants" },
       { value: "35+", label: "Industry MoUs" },
     ],
@@ -36,7 +36,7 @@ export const IMPACT_DATA = [
       "Our legacy is defined by the success of our graduates. With a vast global network of alumni leading top organizations and a stellar placement record, we ensure that every student is career-ready from day one.",
     stats: [
       { value: "96%", label: "Placement Rate" },
-      { value: "50k+", label: "Strong Alumni Network" },
+      { value: "20,000+", label: "Strong Alumni Network" },
       { value: "₹ 3.14 Lac", label: "Average Package" },
     ],
     cta: "Placement Records",

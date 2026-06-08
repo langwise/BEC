@@ -236,7 +236,25 @@
         "designation": "Professor & Head",
         "phone": "+91-9448972628",
         "email": "bsmbt@becbgk.edu"
-      }
+      },
+      "documents": [
+        {
+          "title": "PEOs, PSOs & POs (2025)",
+          "file": "departments/biotechnology/docs/peo-pso-po-2025.pdf"
+        },
+        {
+          "title": "Department Association",
+          "file": "departments/biotechnology/docs/department-association.pdf"
+        },
+        {
+          "title": "Research Centre",
+          "file": "departments/biotechnology/docs/research-centre.pdf"
+        },
+        {
+          "title": "Best Practices",
+          "file": "departments/biotechnology/docs/best-practices.pdf"
+        }
+      ]
     },
     "civil-engg": {
       "name": "Civil Engineering",
@@ -729,7 +747,21 @@
         "designation": "Associate Professor & Head",
         "phone": "+91-9902678858",
         "email": "hodei@becbgk.edu"
-      }
+      },
+      "documents": [
+        {
+          "title": "Faculty List (2024-25)",
+          "file": "departments/ecs/docs/faculty-list-2024-25.pdf"
+        },
+        {
+          "title": "Scheme (I-VIII Semester)",
+          "file": "departments/ecs/docs/scheme-i-viii-sem.pdf"
+        },
+        {
+          "title": "Time Table (Odd 2024-25)",
+          "file": "departments/ecs/docs/time-table-odd-2024-25.pdf"
+        }
+      ]
     },
     "industrial-and-production-engg": {
       "name": "Industrial & Production Engineering",
@@ -810,7 +842,29 @@
         "designation": "Professor & Head",
         "phone": "+91-9448751788",
         "email": "hodip@becbgk.edu"
-      }
+      },
+      "documents": [
+        {
+          "title": "Board of Studies - Members",
+          "file": "departments/ip/docs/bos-members.pdf"
+        },
+        {
+          "title": "Infrastructure & Facilities",
+          "file": "departments/ip/docs/infrastructure-facilities.pdf"
+        },
+        {
+          "title": "Research Centre",
+          "file": "departments/ip/docs/research-centre.pdf"
+        },
+        {
+          "title": "Publications",
+          "file": "departments/ip/docs/publications.pdf"
+        },
+        {
+          "title": "Time Table (2023-24)",
+          "file": "departments/ip/docs/time-table-2023-24.pdf"
+        }
+      ]
     },
     "information-science-and-engg": {
       "name": "Information Science & Engineering",
@@ -898,7 +952,25 @@
         "name": "Dr. S. P. Bangarashetti",
         "designation": "Professor & Head",
         "email": "spbis@becbgk.edu"
-      }
+      },
+      "documents": [
+        {
+          "title": "Faculty List (2024-25)",
+          "file": "departments/ise/docs/faculty-list-2024-25.pdf"
+        },
+        {
+          "title": "Research Centre Information",
+          "file": "departments/ise/docs/research-centre.pdf"
+        },
+        {
+          "title": "Best Practices",
+          "file": "departments/ise/docs/best-practices.pdf"
+        },
+        {
+          "title": "Scheme (AY 2024-25)",
+          "file": "departments/ise/docs/scheme-2024-25.pdf"
+        }
+      ]
     },
     "mechanical-engg": {
       "name": "Mechanical Engineering",
@@ -972,7 +1044,41 @@
         "designation": "Professor & Head",
         "phone": "+91-9986419729",
         "email": "hodme@becbgk.edu"
-      }
+      },
+      "documents": [
+        {
+          "title": "Scheme & Syllabus (2021-22)",
+          "file": "departments/mechanical/docs/scheme-syllabus-2021-22.pdf"
+        },
+        {
+          "title": "Scheme & Syllabus (2022-23)",
+          "file": "departments/mechanical/docs/scheme-syllabus-2022-23.pdf"
+        },
+        {
+          "title": "POs, PEOs & PSOs",
+          "file": "departments/mechanical/docs/po-peo-pso.pdf"
+        },
+        {
+          "title": "Faculty List",
+          "file": "departments/mechanical/docs/faculty-list.pdf"
+        },
+        {
+          "title": "List of Faculty Publications",
+          "file": "departments/mechanical/docs/faculty-publications.pdf"
+        },
+        {
+          "title": "Research Centre Information",
+          "file": "departments/mechanical/docs/research-centre.pdf"
+        },
+        {
+          "title": "Placement & Higher Studies",
+          "file": "departments/mechanical/docs/placement.pdf"
+        },
+        {
+          "title": "Best Practices",
+          "file": "departments/mechanical/docs/best-practices.pdf"
+        }
+      ]
     },
     "physics": {
       "name": "Physics",
@@ -1054,7 +1160,25 @@
         "designation": "Associate Professor & Head",
         "phone": "+91-9480079044",
         "email": "vmsmh@becbgk.edu"
-      }
+      },
+      "documents": [
+        {
+          "title": "Scheme & Syllabus",
+          "file": "departments/maths/docs/syllabus-merged.pdf"
+        },
+        {
+          "title": "Board of Studies",
+          "file": "departments/maths/docs/bos.pdf"
+        },
+        {
+          "title": "Faculty List",
+          "file": "departments/maths/docs/faculty-list.pdf"
+        },
+        {
+          "title": "Department Publications",
+          "file": "departments/maths/docs/publications.pdf"
+        }
+      ]
     },
     "humanities": {
       "name": "Humanities & Social Sciences",
@@ -1085,7 +1209,21 @@
         "designation": "Assistant Professor & Head",
         "phone": "+91-9611431878",
         "email": "bghhs@becbgk.edu"
-      }
+      },
+      "documents": [
+        {
+          "title": "Faculty Publications",
+          "file": "departments/hss/docs/publications.pdf"
+        },
+        {
+          "title": "Events @ HSS",
+          "file": "departments/hss/docs/events.pdf"
+        },
+        {
+          "title": "Time Table",
+          "file": "departments/hss/docs/time-table.pdf"
+        }
+      ]
     },
     "environmental-engg": {
       "name": "Environmental Engineering"

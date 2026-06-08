@@ -151,7 +151,7 @@ export default function PGProgrammePage() {
         <section className="grid md:grid-cols-4 gap-4">
            {[
                { label: "Research Grants", value: "₹3.4Cr" },
-               { label: "PhD Faculty", value: "100%" },
+               { label: "PhD Faculty", value: "55%" },
                { label: "Placement Rate", value: "92%" },
                { label: "Avg Package", value: "₹5.5L" },
            ].map((stat, idx) => (
