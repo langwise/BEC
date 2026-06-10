@@ -1237,6 +1237,1136 @@
     "machine-design": {
       "name": "Machine Design"
     },
+    "pg/biotechnology": {
+      "name": "M.Tech. in Food Biotechnology",
+      "infrastructureGallerySlug": "pg-biotechnology/infrastructure",
+      "tagline": "Advanced biotechnology education focused on food processing, applied research and industry-ready skills.",
+      "overview": "The Department of Biotechnology offers UG, PG Diploma, PG and Ph.D. programmes and is recognized as an R&D centre by VTU, Belagavi since 2011. The M.Tech. in Food Biotechnology is supported by independent laboratories, classrooms, a seminar hall and a department library. The programme connects biotechnology, applied biology and food processing with project work, communication skills and internship opportunities.",
+      "vision": "To be an internationally reputed center of education and research in the field of Biotechnology.",
+      "mission": [
+        "Produce technically sound and ethically oriented students by imparting quality education through an improved teaching-learning process.",
+        "Take up applied research activities to meet the needs of the community and industry in Biotechnology."
+      ],
+      "programsOffered": [
+        "M.Tech. in Food Biotechnology",
+        "Post Graduate Diploma in Nutraceuticals and Food Processing under BiSEP",
+        "Ph.D. through the VTU recognized research centre"
+      ],
+      "highlights": [
+        "VTU recognized R&D centre since 2011.",
+        "District Level Bio-energy Research, Information and Demonstration Centre in association with Karnataka State Bio-energy Development Board.",
+        "Independent laboratories, classrooms, seminar hall and department library.",
+        "Food processing and nutraceuticals skill development exposure."
+      ],
+      "labs": [
+        {
+          "name": "Food Biotechnology Laboratories",
+          "description": "Facilities supporting food processing, testing and applied biotechnology work."
+        },
+        {
+          "name": "Bio-energy Research, Information and Demonstration Centre",
+          "description": "District-level BRIDC established with Karnataka State Bio-energy Development Board."
+        }
+      ],
+      "contact": {
+        "name": "Dr. Bharati S. Meti",
+        "designation": "Professor and Head",
+        "phone": "94489872628",
+        "email": "hodbt@becbgk.edu / bharatismeti@gmail.com"
+      },
+      "documents": [
+        {
+          "title": "Scheme & Syllabus",
+          "file": "departments/pg-biotechnology/docs/scheme-syllabus.pdf"
+        },
+        {
+          "title": "Time Table",
+          "file": "departments/pg-biotechnology/docs/time-table.pdf"
+        },
+        {
+          "title": "Research Centre Information",
+          "file": "departments/pg-biotechnology/docs/research-centre.pdf"
+        },
+        {
+          "title": "Publications 2021",
+          "file": "departments/pg-biotechnology/docs/publications-2021.pdf"
+        },
+        {
+          "title": "MoU List 2022",
+          "file": "departments/pg-biotechnology/docs/mou-list-2022.pdf"
+        },
+        {
+          "title": "Patents",
+          "file": "departments/pg-biotechnology/docs/patents.pdf"
+        },
+        {
+          "title": "Achievements",
+          "file": "departments/pg-biotechnology/docs/achievements.pdf"
+        },
+        {
+          "title": "Events",
+          "file": "departments/pg-biotechnology/docs/events.pdf"
+        },
+        {
+          "title": "Best Practices",
+          "file": "departments/pg-biotechnology/docs/best-practices.pdf"
+        }
+      ],
+      "additionalContacts": [
+        {
+          "name": "Dr. Sharada P.",
+          "designation": "PG Coordinator",
+          "phone": "9449985749",
+          "email": "spbt@becbgk.edu / sharadabec1980@gmail.com"
+        }
+      ],
+      "supportingStaff": [
+        {
+          "name": "Murugesh S. Huchannavar",
+          "designation": "Foreman"
+        },
+        {
+          "name": "Girish R. Katote",
+          "designation": "Instructor"
+        },
+        {
+          "name": "B. S. Ilal",
+          "designation": "SDC"
+        },
+        {
+          "name": "Uma L. Dangi",
+          "designation": "Peon"
+        }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS)",
+          "members": [
+            {
+              "name": "Dr. Bharati S. Meti, Professor & Head, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. Sanjay M. Mahajani, Professor, Dept. of Chemical Engg., IIT, Mumbai",
+              "position": "Member (VTU)"
+            },
+            {
+              "name": "Senior Scientist, Bio-incubation Centre, Department of Biotechnology, IIT, Chennai (Present designation: Associate Director, Perfect Day Pvt Ltd Bengaluru)",
+              "position": "Member (Academic)"
+            },
+            {
+              "name": "Dr. Gangamma S., Assistant Professor, Dept. of Chemical Engg., NITK, Suratkal",
+              "position": "Member (Academic)"
+            },
+            {
+              "name": "Dr. Gururaj Chalageri, Principal Scientist, R&D Centre, The Himalaya Drug Company, Makali, Bengaluru",
+              "position": "Member (Industry)"
+            },
+            {
+              "name": "Siddharth Arora, CEO, Fermentech Labs Pvt. Ltd., Roorkee, Haridwar",
+              "position": "Member (Alumni)"
+            },
+            {
+              "name": "Dr. G. B. Megeri, Associate Professor, Dept. of Civil Engg. (Environmental), BEC (A), Bagalkot",
+              "position": "Member (Internal)"
+            },
+            {
+              "name": "Dr. Sharada P., Associate Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Member (Internal)"
+            },
+            {
+              "name": "Dr. Madhumala Y., Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Member (Internal)"
+            },
+            {
+              "name": "Dr. Premjyoti C. Patil, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Member (Coordinator)"
+            },
+            {
+              "name": "Prof. Preeti S. Kumarmath, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Member (Internal)"
+            },
+            {
+              "name": "Prof. Shilpa K. Jigajinni, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Member (Internal)"
+            },
+            {
+              "name": "Miss. Shilpa Kugunavar, M.Tech., Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Student Representative"
+            },
+            {
+              "name": "Miss. Nikita Ingalagi, B.E. 8th semester, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Student Representative"
+            },
+            {
+              "name": "Mr. Amrut Bhat, B.E. 6th semester, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Student Representative"
+            }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BOE)",
+          "members": [
+            {
+              "name": "Dr. Bharati S. Meti, Professor & Head, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. Madhumala Y., Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Coordinator"
+            },
+            {
+              "name": "Dr. G. B. Megeri, Associate Professor, Dept. of Civil Engg. (Environmental), BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. Sharada P., Associate Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Prof. Preeti S. Kumarmath, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "position": "Member"
+            }
+          ]
+        }
+      ],
+      "associations": [
+        {
+          "name": "Our proud Alumni Entrepreneurs",
+          "about": "Dr. Sidharth Arora founded Fermentech Labs Pvt. Ltd., a startup in the waste-to-wealth sector and industrial enzyme production from agro-wastes, presently employing 7 people. He was selected for personal interaction with Hon. PM Shri Narendra Modi at Uttarakhand Investors Summit 2019, and his product was launched by Hon. Secretary, DBT, Dr. Renu Swaroop at Global Bio India 2019, New Delhi. Mr. Deepak Bajentri is Founder of Krimmi Biotech."
+        }
+      ]
+    },
+    "pg/electronics-and-communication-engg": {
+      "name": "M.Tech. in Digital Communication Engineering",
+      "tagline": "A two-year postgraduate programme in advanced communication engineering, offered by the Department of Electronics and Communication Engineering.",
+      "established": "2004-05",
+      "intake": "18",
+      "overview": "The Department of Electronics and Communication Engineering started the M.Tech. in Digital Communication Engineering in 2004-05 with an intake of 18. The programme is accredited by NBA and came under autonomy in 2007-08 along with the UG programme. It focuses on theoretical and practical aspects of communication engineering and is supported by the department's research centre.",
+      "vision": "To be recognized and respected as one of India's premier academic departments and centres of professional excellence in Electronics and Communication Engineering.",
+      "mission": [
+        "Impart quality technical education in Electronics and Communication Engineering.",
+        "Carry out cutting-edge research through innovations for the benefit of mankind."
+      ],
+      "programsOffered": [
+        "M.Tech. in Digital Communication Engineering",
+        "M.Tech. in Defence Technology in association with DRDO",
+        "Ph.D."
+      ],
+      "highlights": [
+        "M.Tech. Digital Communication Engineering started in 2004-05 with intake 18.",
+        "NBA accredited postgraduate programme.",
+        "Autonomous programme from 2007-08.",
+        "Supported by the department's recognized research centre."
+      ],
+      "contact": {
+        "name": "Dr. Shridhar K.",
+        "designation": "Professor and Head",
+        "phone": "08354-233072 (Office)",
+        "email": "shridhar.ece@gmail.com"
+      },
+      "documents": [
+        {
+          "title": "Time Table",
+          "file": "departments/pg-ece/docs/time-table.pdf"
+        },
+        {
+          "title": "M.Tech. 1st Semester Syllabus",
+          "file": "departments/pg-ece/docs/mtech-1st-semester-syllabus.pdf"
+        },
+        {
+          "title": "M.Tech. 2nd Semester Syllabus",
+          "file": "departments/pg-ece/docs/mtech-2nd-semester-syllabus.pdf"
+        },
+        {
+          "title": "Publications",
+          "file": "departments/pg-ece/docs/publications.pdf"
+        },
+        {
+          "title": "Alumni Testimonials",
+          "file": "departments/pg-ece/docs/alumni-testimonials.pdf"
+        },
+        {
+          "title": "Events and Gallery",
+          "file": "departments/pg-ece/docs/events-gallery.pdf"
+        },
+        {
+          "title": "Life at Department",
+          "file": "departments/pg-ece/docs/life-at-department.pdf"
+        }
+      ],
+      "supportingStaff": [
+        {
+          "name": "Shri. S. S. Bhavimath",
+          "designation": "Foreman"
+        },
+        {
+          "name": "Shri. M. H. Nayak",
+          "designation": "SDA"
+        }
+      ],
+      "infrastructureItems": [
+        {
+          "name": "Wireless Sensor Network Development Kit",
+          "specification": "MOTE-KIT5040CC",
+          "quantity": "01"
+        },
+        {
+          "name": "PCs",
+          "specification": "Core i5",
+          "quantity": "20"
+        },
+        {
+          "name": "Microwave Bench",
+          "specification": "X-Band",
+          "quantity": "04"
+        },
+        {
+          "name": "Antenna Trainer Kit",
+          "specification": "800 MHz",
+          "quantity": "01"
+        },
+        {
+          "name": "Advanced Microstrip Antenna Trainer Kit",
+          "specification": "All types of microstrip antenna",
+          "quantity": "01"
+        },
+        {
+          "name": "Optical Fibre Communication Kit",
+          "specification": "OFS-3",
+          "quantity": "01"
+        }
+      ],
+      "softwareItems": [
+        {
+          "name": "Qualnet",
+          "version": "Version 6.1",
+          "usage": "01 No., Computer Networks, Wireless Communication"
+        },
+        {
+          "name": "MATLAB with necessary toolboxes",
+          "version": "7.1 Version",
+          "usage": "10 No., Signal Processing, Communication Engineering"
+        },
+        {
+          "name": "Proteus VSM",
+          "version": "--",
+          "usage": "25 No., Micro-Electro Mechanical Systems"
+        }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS)",
+          "members": [
+            {
+              "name": "Dr. Shridhar K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkot",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. Ganghadhar S. Biradar (VTU Nominee), Professor, Department of Electronics and Communication Engineering, P.D.A College of Engineering, Gulbarga-587102",
+              "position": "VTU Nominee"
+            },
+            {
+              "name": "Dr. Kittur Harish Mallikarjun, School of Electronics Engineering, Vellore Institute of Technology, Vellore-632014, Tamil Nadu",
+              "position": "Subject Expert"
+            },
+            {
+              "name": "Dr. K. Viswanath, Department Telecommunication Engineering, Siddaganga Institute of Technology, B.H. Road, Tumakur-572103, Karnataka",
+              "position": "Subject Expert"
+            },
+            {
+              "name": "Sri. Mahalingeshwar Dhaded, Infosys Limited, 350, Hebbal Electronic City Hootagalli, Mysore-570027",
+              "position": "Alumni"
+            },
+            {
+              "name": "Sri. Sini Balakrishnan, Technologist, Western Digital, Prestige Techpark, Kudebeesanahalli, Bengaluru-560103",
+              "position": "Industry Representative"
+            },
+            {
+              "name": "Sri. Sridhar Kamalapurkar, Senior Architect-Software, BL Car Entertainment, NXP Semiconductors India Private Limited, Nagavara, Bangalore",
+              "position": "Industry Representative"
+            },
+            {
+              "name": "Prof. S. M. Iddalagi, Dept. of ECE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. P. N. Kulkarni, Dept. of ECE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. Jayashree D. Mallapur, Dept. of ECE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. S. G. Kambalimath, Dept. of ECE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. A. V. Sutagundar, Dept. of ECE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. Mahabaleshwar S. K., Dept. of ECE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Prof. M. J. Sataraddi, Dept. of ECE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. Ajayakumar C. Katageri, Dept. of ECE, BEC (A), Bagalkot",
+              "position": "Member"
+            }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BOE)",
+          "members": [
+            {
+              "name": "Dr. Shridhar K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkot",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. Mahabaleshwar S. K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkot",
+              "position": "Coordinator"
+            },
+            {
+              "name": "Dr. Rajani S. Pujar, Dept. of ECE, Basaveshwar Engineering College (A), Bagalkot",
+              "position": "Member"
+            }
+          ]
+        }
+      ],
+      "associations": [
+        {
+          "name": "ACME, Association for Communication and Modern Electronics",
+          "about": "BEC PG E&C Students Association caters to the co-curricular and extracurricular needs of students. ACME was established in 1989-1990 and organises project exhibitions and technical paper presentations under the name AVISHKAR."
+        },
+        {
+          "name": "Events organised by ACME",
+          "about": "Resource sessions included: Mr. Prasanna Ajarekar on Basics of Stock Trading; Mr. Mohan Kumar, Wipro Technologies, Bengaluru on Personality & Soft Skill Development; Mr. Pavan Patil, Sales Manager, ITC Ltd., Bengaluru on Resume Building; Mr. Nagangouda, HR Head MindTree, Bengaluru on Interpersonal Skills & Effectiveness; Dr. L. S. Ganesh, IIT Madras on Ethics in Business; Mr. Daultanj, Executive Director, Corporation Bank on Job Opportunities in Banking Sector; Mr. A. Seqeira, NITK Suratkal on Research Methodology."
+        }
+      ]
+    },
+    "pg/electrical-and-electronics-engg": {
+      "name": "M.Tech. in Energy Science and Technology",
+      "tagline": "Postgraduate study in energy systems, electrical engineering applications and research.",
+      "overview": "The Department of Electrical and Electronics Engineering was started with the inception of the college in 1963. The department offers graduate, postgraduate and research programmes through VTU and QIP. It has well-equipped laboratories, a separate computer centre with 25 P-IV IBM desktop PCs connected to the campus network, a seminar hall with modern audio-visual teaching aids, licensed software including MATLAB, Mi-Power and AutoCAD Electrical, and a department library with more than 1000 books in E&EE. The M.Tech. in Energy Science and Technology is an interdisciplinary programme covering solar, wind energy, biogas and biomass, electricity storage, electric vehicles, sustainability, reliability, O&M of SPV and wind plants, energy management, green buildings, smart grids, microgrids and IoT applications in energy systems.",
+      "vision": "To be in the global forefront of academic excellence, research and innovation in Electrical and Electronics Engineering to influence and meet energy, environment, industrial and societal needs.",
+      "mission": [
+        "Practice dynamic teaching-learning processes adapting to ongoing global technological developments in Electrical and Electronics Engineering.",
+        "Involve the department in national and international industry-institute collaborations for higher studies, research, development and innovation.",
+        "Carry out interdisciplinary activities that contribute to energy, environment, industrial and societal needs."
+      ],
+      "programsOffered": [
+        "M.Tech. in Energy Science and Technology",
+        "Ph.D. through VTU and QIP"
+      ],
+      "highlights": [
+        "Department established in 1963.",
+        "Offers graduate, postgraduate and research programmes.",
+        "Facilities include laboratories, computer centre, seminar hall, licensed software and department library.",
+        "Legacy page identifies this PG programme as Energy Science and Technology."
+      ],
+      "contact": {
+        "name": "Dr. Suresh H. Jangamashetti",
+        "designation": "Professor and Head",
+        "phone": "08354-234457 (Office)",
+        "email": "jangam@rocketmail.com"
+      },
+      "documents": [
+        {
+          "title": "Scheme of Teaching and Examinations 2020-21",
+          "file": "departments/pg-eee/docs/scheme-of-teaching-and-examinations-2020-21.pdf"
+        },
+        {
+          "title": "Publications",
+          "file": "departments/pg-eee/docs/publications.pdf"
+        }
+      ],
+      "supportingStaff": [
+        {
+          "name": "Mr. Mahantesh S. Bevoor",
+          "designation": "Asst. Instructor"
+        }
+      ],
+      "infrastructureItems": [
+        {
+          "name": "Wind Turbine Generator",
+          "specification": "3 phase PMSG, rated output 1500W, 12 to 48/60-140 LV/HV, rated wind speed 10.5/24 m/s, cut-in and cut-out wind speed 2.7 and 12 m/s, Class H, >87%, 16 poles, 3 blades, 3.2 m rotor diameter, carbon fiber composite",
+          "quantity": "01"
+        },
+        {
+          "name": "Equipment for Light Laboratory",
+          "specification": "Anemometer, lux meter, light loads",
+          "quantity": "01"
+        },
+        {
+          "name": "Inverters and instrumentation for wind-solar hybrid systems",
+          "quantity": "05"
+        },
+        {
+          "name": "SCADA and distribution automation laboratory",
+          "specification": "Distribution SCADA Version 1.0 control and monitoring software, IEC 61036, 3Ph LV measurement, harmonics up to 51 level, RS485 network, MySQL server, HMI Viewer and IFCU, digital output contacts, data logger, demand controller, PN8500",
+          "quantity": "01"
+        },
+        {
+          "name": "Sound Level Meter",
+          "specification": "Bruel & Kjaer 2250-L, 240x320 dot matrix display, SD card slot up to 32 GB, BZ-7226 signal recording option",
+          "quantity": "01"
+        },
+        {
+          "name": "Data Acquisition Cards",
+          "specification": "High performance multifunction I/O data acquisition, 16 channel remote data logger",
+          "quantity": "01"
+        },
+        {
+          "name": "4-quadrant DC motor with inverters, chopper and accessories",
+          "specification": "1 HP, 220V, 1500 rpm, 3-phase diode rectifier with brake chopper",
+          "quantity": "01"
+        },
+        {
+          "name": "Performance Monitoring Unit for SPV Powered DC Pumps",
+          "quantity": "01"
+        },
+        {
+          "name": "Grid tie inverter with FCU, installation and configuration",
+          "specification": "1.5 kW wind turbine generator inverter, 1 phase input/output, MPP voltage range 120-320 VDC, 220 VAC output, power factor >0.99, pure sine wave, 90% efficiency, bi-directional meter",
+          "quantity": "01"
+        },
+        {
+          "name": "4-Phase SRM Motor, 4-phase IGBT based Inverter Stack",
+          "specification": "4-phase, 2.2KW, 3000 rpm, 8/6 SRM drive with asymmetric half bridge converter",
+          "quantity": "01"
+        },
+        {
+          "name": "Solar PV operated DC water pumps with accessories",
+          "quantity": "03"
+        },
+        {
+          "name": "Automatic weather station",
+          "specification": "Weather station logger with enclosure, temperature and humidity sensor, rainfall sensor, wind sensors, solar radiation sensor, application software, solar panel and batteries",
+          "quantity": "02"
+        },
+        {
+          "name": "Solar photovoltaic training kit",
+          "specification": "75 W and 150 W SPV with display panels for voltage, current and power with compatible test loads",
+          "quantity": "01"
+        },
+        {
+          "name": "Wind turbine generator vertical-axis training kit",
+          "quantity": "01"
+        }
+      ],
+      "softwareItems": [
+        {
+          "name": "Mi Power",
+          "version": "MiPower V10.1, 15 user license",
+          "usage": "Load flow, short-circuit, transient stability, relay co-ordination, renewables, harmonic analysis, EMT, ground grid design, dynamic stability, voltage instability, load forecasting and related tools"
+        },
+        {
+          "name": "Software Package for wind data analysis",
+          "version": "Origin software",
+          "usage": "01 user"
+        }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS)",
+          "members": [
+            {
+              "name": "Dr. Suresh H. Jangamshetti, Dept. of E&EE, Basaveshwar Engineering College (A), Bagalkot",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. Siva Kumar K., Department of Electrical Engineering, IIT Hyderabad, Kandi, Sangareddy - 502285, Telangana",
+              "position": "VTU Nominee"
+            },
+            {
+              "name": "Dr. Kannan Tinnium, Luminous Power Technologies Pvt. Ltd., Plot no. 150, Sector 44, Gurugram-122003, Haryana",
+              "position": "Industry"
+            },
+            {
+              "name": "Dr. Sarasij Das, Department of Electrical Engineering, Indian Institute of Science Bangalore",
+              "position": "Academia"
+            },
+            {
+              "name": "Mr. Veerendra Kavishetti, Scientist-F, ISRO Bengaluru",
+              "position": "Alumni (1997)"
+            },
+            {
+              "name": "Dr. B. Chandrashekhar, Technical Lead, TCS Bengaluru",
+              "position": "Industry"
+            },
+            {
+              "name": "Dr. T. Jayabharati, Senior Professor, School of Electrical Engineering, VIT Vellore",
+              "position": "Academia & Alumni"
+            },
+            {
+              "name": "Dr. (Smt) D. S. Jangamshetti, Professor (CAS), Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Smt. Nanda P., Associate Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Mr. S. M. Patil, Associate Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. R. L. Naik, Associate Professor (CAS), Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Mr. S. G. Nayak, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Smt. Sunita S. Tambakad, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. B. F. Ronad, Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Mr. S. Y. Goudappanavar, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Mr. Vikas C. Jainkeri, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Mr. Sunil Rathod, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Akhil R., VIII Sem EE, 2BA17EE006, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Student Member"
+            },
+            {
+              "name": "Poornima Sheeri, VIII Sem EE, 2BA17EE032, Dept. of E&EE, BEC (A), Bagalkot",
+              "position": "Student Member"
+            },
+            {
+              "name": "Mr. Sachin Ganjal, VI Sem EE, 2BA18EE043",
+              "position": "Student Member"
+            },
+            {
+              "name": "Miss. Neelganga Goudar, VI Sem EE, 2BA18EE033",
+              "position": "Student Member"
+            }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BOE)",
+          "members": [
+            {
+              "name": "Dr. Basanagouda Ronad, Dept. of E&EE, Basaveshwar Engineering College (A), Bagalkot",
+              "position": "BOE Member"
+            }
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "title": "Professional activities through BEC-REACH, EEE Student Branch, IEEE Power & Energy Student Chapter and EEEA"
+        },
+        {
+          "title": "Key activities include solar thermal and solar PV device testing, energy conservation studies, micro wind turbine performance analysis, campus energy management through SCADA, FPGA based power electronics and drives, and SPV DC/AC irrigation pumping systems."
+        },
+        {
+          "title": "Activities under MoU include curriculum revision and restructuring, collaborative research, training programmes and invited talks, industrial visits and internships, identifying placement opportunities, and PRDC-EEE studentship for UG students."
+        }
+      ]
+    },
+    "pg/computer-science-and-engg": {
+      "name": "M.Tech. in Computer Science and Engineering",
+      "tagline": "Postgraduate computer science education with emphasis on research, innovation and IT industry readiness.",
+      "intake": "18",
+      "overview": "The Department of Computer Science and Engineering was established in 1983. It offers an undergraduate programme in Computer Science and Engineering, an M.Tech. programme in Computer Science and Engineering with an intake of 18, M.Sc. (Engineering by Research) and Ph.D. The department focuses on quality technical education, innovative skills, academic enrichment, confidence building and entrepreneurial abilities.",
+      "vision": "To be a centre of excellence in Computer Science and Engineering education, research and innovation.",
+      "mission": [
+        "Produce exemplary human resources in Computer Science and Engineering.",
+        "Carry out innovative cutting-edge research.",
+        "Imbibe moral and ethical values beneficial to society."
+      ],
+      "programsOffered": [
+        "M.Tech. in Computer Science and Engineering",
+        "M.Sc. (Engineering by Research)",
+        "Ph.D."
+      ],
+      "highlights": [
+        "M.Tech. Computer Science and Engineering intake of 18.",
+        "UG and PG programmes accredited by NBA.",
+        "Students are placed in top IT companies including TCS, Wipro, Infosys, IBM, Tech Mahindra, Accenture, Mindtree and Samsung.",
+        "Strong alumni base across industry and research."
+      ],
+      "contact": {
+        "name": "Dr. V. B. Pagi",
+        "designation": "Professor and Head",
+        "phone": "91-9342647100",
+        "email": "vbpcs@becbgk.edu"
+      },
+      "documents": [
+        {
+          "title": "M.Tech. 1st Semester Syllabus 2022-23",
+          "file": "departments/pg-cse/docs/mtech-1st-sem-syllabus-2022-23.pdf"
+        },
+        {
+          "title": "PG Time Table, Odd Semester 2022-23",
+          "file": "departments/pg-cse/docs/pg-time-table-odd-2022-23.pdf"
+        },
+        {
+          "title": "Board of Studies CSE 2022-25",
+          "file": "departments/pg-cse/docs/bos-cse-2022-25.pdf"
+        },
+        {
+          "title": "Research",
+          "file": "departments/pg-cse/docs/research.pdf"
+        },
+        {
+          "title": "CSE Publications 2018 to 2023",
+          "file": "departments/pg-cse/docs/publications-2018-2023.pdf"
+        },
+        {
+          "title": "Achievements",
+          "file": "departments/pg-cse/docs/achievements.pdf"
+        },
+        {
+          "title": "Events",
+          "file": "departments/pg-cse/docs/events.pdf"
+        },
+        {
+          "title": "Best Practices",
+          "file": "departments/pg-cse/docs/best-practices.pdf"
+        }
+      ],
+      "supportingStaff": [
+        {
+          "name": "Mr. M. M. Jumanal",
+          "designation": "Asst. Instructor"
+        },
+        {
+          "name": "Smt. Shantavva Badiger",
+          "designation": "Helper"
+        }
+      ],
+      "infrastructureItems": [
+        {
+          "name": "Desktop Computers",
+          "specification": "HP Core i7 10th generation, 8 GB RAM, 1 TB HDD",
+          "quantity": "30"
+        },
+        {
+          "name": "Desktop Computers",
+          "specification": "HP 19.5 inch LED monitor, HP 600 G2-MT CPU/Ci5/6500/8GB/1TB/DOS/DT, Intel Core i5-6500 CPU @ 3.20GHz, 8 GB RAM, 64-bit OS",
+          "quantity": "34"
+        },
+        {
+          "name": "HP ProDesk",
+          "specification": "Intel Core i5-7500 quad core CPU, 8GB, 1TB HDD, Windows 10",
+          "quantity": "35"
+        },
+        {
+          "name": "Desktop Computer",
+          "specification": "Intel Core i3, 4GB RAM, 500GB HDD, Windows 7",
+          "quantity": "1"
+        },
+        {
+          "name": "Dell Desktop",
+          "specification": "Intel Core i3-2100 CPU @ 3.10GHz, 4GB RAM, 32-bit Windows 7",
+          "quantity": "1"
+        },
+        {
+          "name": "HP Compaq dx2700 Micro Tower PC",
+          "specification": "Intel Pentium D CPU @ 3.00GHz, 2GB RAM, 32-bit Windows 7",
+          "quantity": "11"
+        },
+        {
+          "name": "HP Compaq dx6120 Micro Tower PC",
+          "specification": "Intel Core Duo CPU @ 2.53GHz, 1GB RAM, 32-bit Windows 7",
+          "quantity": "2"
+        },
+        {
+          "name": "ACER Power Series",
+          "specification": "Intel Core Duo E4500 @ 2020GHz, 1GB RAM, 32-bit Windows 7",
+          "quantity": "6"
+        },
+        {
+          "name": "HP Compaq Dx2480",
+          "specification": "Pentium IV @ 3.4GHz, 512MB RAM, FDD 1.44MB, 80GB SATA HDD, 32-bit",
+          "quantity": "8"
+        },
+        {
+          "name": "Dell Vostro 260",
+          "specification": "Intel Core i3-2100 CPU @ 3.10GHz, 4GB RAM, 500GB HDD",
+          "quantity": "2"
+        },
+        {
+          "name": "HP Compaq Dx2480 Business PC",
+          "specification": "Intel Core 2 Duo E7200 @ 2.53GHz, 2GB RAM, 80GB/160GB HDD",
+          "quantity": "5"
+        },
+        {
+          "name": "Acer Power Series PC",
+          "specification": "Intel Core 2 Duo 4300 1.8GHz, 2GB RAM, 160GB HDD",
+          "quantity": "1"
+        },
+        {
+          "name": "HP Compaq DX6120",
+          "specification": "Pentium IV 3.40GHz, 2GB RAM, 80GB HDD",
+          "quantity": "29"
+        },
+        {
+          "name": "HP Compaq D290",
+          "specification": "Intel Pentium 4 2.99GHz, 1GB RAM, 80GB HDD",
+          "quantity": "2"
+        },
+        {
+          "name": "Bhaskar Air Conditioners",
+          "specification": "2 Ton, 3 Phase",
+          "quantity": "4"
+        },
+        {
+          "name": "Network Storage Server",
+          "specification": "HP StoreEasy 1430, dual core i3 processor, 1 GB network controller, 8 TB memory",
+          "quantity": "1"
+        },
+        {
+          "name": "Server",
+          "specification": "HP Proliant, Intel Xeon E5-2650, 32GB memory, 1TB hard disk",
+          "quantity": "1"
+        },
+        {
+          "name": "E-Scan Agate Scanner",
+          "specification": "CCD area camera, 300x300 dpi A3++ colour/greyscale/B&W, 15 inch touchscreen",
+          "quantity": "1"
+        },
+        {
+          "name": "Sony SLTA57 DSLR Camera",
+          "specification": "16.1MP Exmor CMOS sensor, AVCHD full HD recording",
+          "quantity": "1"
+        },
+        {
+          "name": "Sony HDR-PJ230 Digital Camera",
+          "specification": "Full HD 60p, 8.9MP Exmor R CMOS sensor, built-in projector, 8GB flash memory",
+          "quantity": "2"
+        },
+        {
+          "name": "Sony HX300 Digital Camera",
+          "specification": "50x optical zoom, 20.4MP Exmor R CMOS sensor, full HD movie recording",
+          "quantity": "1"
+        },
+        {
+          "name": "DAHUA CA-FW450F Infrared Camera",
+          "specification": "1/3 inch Sony Super HAD CCD II, 520TVL colour resolution, 6mm fixed lens",
+          "quantity": "1"
+        },
+        {
+          "name": "iBall CHD12.0 Web Camera",
+          "specification": "Video up to 1600x1200, image up to 4000x3000, 30 fps",
+          "quantity": "2"
+        },
+        {
+          "name": "Zavio F312A Wireless Camera",
+          "specification": "1/4 inch progressive CMOS sensor, MJPEG/MPEG-4, max 640x480 VGA",
+          "quantity": "1"
+        },
+        {
+          "name": "D-Link WebSmart DGS-12 8 Port Switch",
+          "specification": "D-Link Green Technology, QoS with Auto Voice VLANs, IEEE 802.3az, advanced security features",
+          "quantity": "1"
+        },
+        {
+          "name": "HP Envy 23 All in One PC",
+          "specification": "23 inch full HD LED IPS touch display, 8GB DDR3L RAM, Core i5 4570T",
+          "quantity": "1"
+        },
+        {
+          "name": "Intensity Pro Frame Grabber",
+          "specification": "HDMI and analog HD/SD editing card",
+          "quantity": "1"
+        },
+        {
+          "name": "HP Z220 Graphics Work Station",
+          "specification": "Intel Xeon E3-1225V2 quad core processor, 4GB DDR3-SDRAM, Intel HD Graphics P4000",
+          "quantity": "2"
+        },
+        {
+          "name": "HP Z420 Image Processing Work Station",
+          "specification": "3.5GHz Intel Xeon E5-1650v2 quad core, 8GB RAM, 500GB SATA HDD",
+          "quantity": "2"
+        },
+        {
+          "name": "Networking Components for Cabling and Terminations (Rack)",
+          "specification": "--",
+          "quantity": "1"
+        },
+        {
+          "name": "Netfox Intelligent Networks Closed Rack",
+          "specification": "9U wall mount",
+          "quantity": "1"
+        },
+        {
+          "name": "Bluetooth Kit and Keyboard",
+          "specification": "Dell SK-9065 Bluetooth Kit and Dell SD-9085 Bluetooth Keyboard",
+          "quantity": "4"
+        },
+        {
+          "name": "CDMA",
+          "specification": "--",
+          "quantity": "4"
+        },
+        {
+          "name": "GPS Modem",
+          "specification": "--",
+          "quantity": "4"
+        },
+        {
+          "name": "GSM Modem",
+          "specification": "--",
+          "quantity": "4"
+        },
+        {
+          "name": "Power Injector",
+          "specification": "AIR-PWR INJ4",
+          "quantity": "1"
+        },
+        {
+          "name": "Router",
+          "specification": "Cisco 1941 router with Cisco Support Pack for 1 year",
+          "quantity": "1"
+        },
+        {
+          "name": "Server",
+          "specification": "HP Proliant DL 380c Gen8 Server",
+          "quantity": "1"
+        },
+        {
+          "name": "Smart Phones",
+          "specification": "",
+          "quantity": "3"
+        },
+        {
+          "name": "Network Switch",
+          "specification": "Catalyst 2960S 24 Crig E",
+          "quantity": "1"
+        },
+        {
+          "name": "Cisco Support Pack for 1 Year",
+          "specification": "--",
+          "quantity": "1"
+        },
+        {
+          "name": "Tablet",
+          "specification": "--",
+          "quantity": "1"
+        },
+        {
+          "name": "Wireless Access Point",
+          "specification": "--",
+          "quantity": "1"
+        },
+        {
+          "name": "Wireless Signal Jammer",
+          "specification": "--",
+          "quantity": "4"
+        },
+        {
+          "name": "Net #6A-RLM",
+          "specification": "--",
+          "quantity": "20"
+        },
+        {
+          "name": "Net #65-RLM",
+          "specification": "--",
+          "quantity": "1"
+        }
+      ],
+      "softwareItems": [
+        {
+          "name": "NetSim",
+          "version": "6",
+          "usage": "Application"
+        },
+        {
+          "name": "Microsoft Windows",
+          "version": "10",
+          "usage": "System"
+        },
+        {
+          "name": "Microsoft Windows",
+          "version": "8.1",
+          "usage": "System"
+        },
+        {
+          "name": "Open Source Linux Fedora",
+          "version": "14",
+          "usage": "System"
+        },
+        {
+          "name": "JDK",
+          "version": "1.8",
+          "usage": "Application"
+        },
+        {
+          "name": "NetBeans",
+          "version": "8.0",
+          "usage": "Application"
+        },
+        {
+          "name": "Geany",
+          "version": "0.21",
+          "usage": "Application"
+        },
+        {
+          "name": "ABBYY Fine Reader",
+          "version": "12",
+          "usage": "Application"
+        },
+        {
+          "name": "3D Animation Software",
+          "version": "Nil",
+          "usage": "Application"
+        },
+        {
+          "name": "Audio Editors",
+          "version": "Nil",
+          "usage": "Application"
+        },
+        {
+          "name": "Audio/Video Streaming Software",
+          "version": "Nil",
+          "usage": "Application"
+        },
+        {
+          "name": "DVD Creation Software",
+          "version": "Nil",
+          "usage": "Application"
+        },
+        {
+          "name": "Photo Editors",
+          "version": "Nil",
+          "usage": "Application"
+        },
+        {
+          "name": "Adobe Premier Pro, Adobe After Effects",
+          "version": "CS6",
+          "usage": "Application"
+        },
+        {
+          "name": "Customized E-book Collection with Perpetual Access of 164 Titles",
+          "version": "Nil",
+          "usage": "Application"
+        }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS)",
+          "members": [
+            {
+              "name": "Dr. V. B. Pagi, Professor and Head, Dept. of CSE, BEC Bagalkot",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. S. V. Saboji, Professor, Dept. of CSE, BEC Bagalkot",
+              "position": "Internal Member"
+            },
+            {
+              "name": "Dr. S. M. Hatture, Associate Professor, Dept. of CSE, BEC Bagalkot",
+              "position": "Internal Member"
+            },
+            {
+              "name": "Dr. V. H. Naik, Associate Professor, Dept. of CSE, BEC Bagalkot",
+              "position": "Internal Member"
+            },
+            {
+              "name": "Prof. S. S. Yendigeri, Associate Professor, Dept. of CSE, BEC Bagalkot",
+              "position": "Internal Member"
+            },
+            {
+              "name": "Prof. S. V. Hanji, Assistant Professor, Dept. of CSE, BEC Bagalkot",
+              "position": "Internal Member"
+            },
+            {
+              "name": "Dr. P. S. Challagidad, Assistant Professor, Dept. of CSE, BEC Bagalkot",
+              "position": "Internal Member"
+            },
+            {
+              "name": "Dr. Mahadev Prasanna, Professor, IIIT Dharwad",
+              "position": "Subject Expert"
+            },
+            {
+              "name": "Dr. Sharvani G. S., Associate Professor, RVCE Bangalore",
+              "position": "Subject Expert"
+            },
+            {
+              "name": "Dr. P. H. Unki, Professor, Dept. of CSE, BLDEA CET Vijayapur",
+              "position": "Subject Expert"
+            },
+            {
+              "name": "Dr. P. R. Patil, Professor & Head, Dept. of Computer Applications, B.V. Bhoomraddi College of Engg. and Technology, Vidyanagar, Hubli",
+              "position": "VTU Nominee"
+            },
+            {
+              "name": "Mr. Mahesh Kopp, Scientist, LRDE, DRDO, Bangalore",
+              "position": "Industry representative"
+            },
+            {
+              "name": "Dr. V. S. Rajapurohit, Professor and Head, GIT Belgaum",
+              "position": "Meritorious alumnus"
+            },
+            {
+              "name": "Dr. Bharati Reshmi, Associate Professor, Dept. of ISE, BEC Bagalkot",
+              "position": "Co-opted member"
+            },
+            {
+              "name": "Mr. Mohammad Ibrahim Korti, 1st Semester M.Tech. (CSE)",
+              "position": "Student member"
+            },
+            {
+              "name": "Miss. Allurkar Sneha, 6th Semester B.E. (CSE)",
+              "position": "Student member"
+            }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BOE)",
+          "members": [
+            {
+              "name": "Dr. V. B. Pagi, Professor and Head, BEC Bagalkot",
+              "position": "Chairman"
+            },
+            {
+              "name": "Prof. Vidya B. Hunagund, Associate Professor, BEC Bagalkot",
+              "position": "Member"
+            },
+            {
+              "name": "Prof. Smitha K., Assistant Professor, BEC Bagalkot",
+              "position": "Member"
+            }
+          ]
+        }
+      ],
+      "associations": [
+        {
+          "name": "Forum of Computer Science Students (FOCUS)",
+          "about": "FOCUS is a student association comprising UG and PG students. It aids overall personality development through curricular, extracurricular and socio-cultural activities, and organises technical activities to expose students to state-of-the-art tools and technologies.",
+          "coordinators": [
+            "Prof. Smita Gour",
+            "Prof. Shilpa Madhavanavar"
+          ]
+        },
+        {
+          "name": "Association exicoms for academic year 2022-2023",
+          "about": "Treasurer: Mr. Ningappa Hattarakal and Miss. Pratibha Math. Sports Secretary: Mr. Ninganagouda P. K. and Miss. Laxmi G. Bykod. Cultural Secretary: Mr. Prajwal R. Desai and Miss. Laxmi Savadi. Technical Coordinator: Mr. Krishna D. Bennur and Miss. Pritvi Allurkar. Program Coordinator: Mr. Abhishek Sarabi and Miss. Priyanka Hiremath."
+        }
+      ]
+    },
     "mca": {
       "name": "Master of Computer Applications (MCA)",
       "assetSlug": "mca",

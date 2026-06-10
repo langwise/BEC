@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
@@ -255,28 +257,15 @@ export default function IicPage() {
           <SectionHeading
             eyebrow="Policy"
             title="Innovation & Entrepreneurship Policy (BEC-IEP)"
-            description="Basaveshwar Engineering College has framed an Innovation and Entrepreneurship Policy for its students and faculty, in line with the MoE's National Innovation and Startup Policy (NISP) 2019. The policy provides the services, support and facilities that potential innovators and entrepreneurs need to excel."
+            description="BEC-IEP now has a standalone page with the policy text, resource links and contact information from the legacy page."
           />
-          <DocumentDirectory
-            groups={[
-              {
-                documents: [
-                  {
-                    title: "BEC Innovation & Entrepreneurship Policy",
-                    url: asset("documents/cells/iic/bec-ie-policy.pdf"),
-                  },
-                  {
-                    title: "MoE — National Innovation & Startup Policy (NISP) 2019",
-                    url: asset("documents/cells/iic/nisp-2019.pdf"),
-                  },
-                  {
-                    title: "Karnataka State Startup Policy",
-                    url: asset("documents/cells/iic/karnataka-startup-policy.pdf"),
-                  },
-                ],
-              },
-            ]}
-          />
+          <Link
+            href="/institute/cells/iep"
+            className="group inline-flex items-center gap-2 rounded-md border border-stone-200 bg-white px-4 py-3 text-sm font-semibold text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
+          >
+            Open BEC-IEP page
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </Link>
         </div>
 
         <div className="space-y-8">

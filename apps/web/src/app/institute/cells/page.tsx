@@ -7,6 +7,7 @@ import {
   Rocket,
   FlaskConical,
   Briefcase,
+  FileText,
 } from "lucide-react";
 
 import { PageHero } from "@/components/common/page-hero";
@@ -24,6 +25,13 @@ const cards = [
     icon: Lightbulb,
     description:
       "MoE Innovation Cell council fostering a campus innovation and start-up ecosystem — workshops, hackathons and the BEC Innovation & Entrepreneurship Policy.",
+  },
+  {
+    title: "Innovation & Entrepreneurship Policy (BEC-IEP)",
+    href: "/institute/cells/iep",
+    icon: FileText,
+    description:
+      "Standalone BEC policy page for student and faculty innovators, with BEC-IEP, NISP and Karnataka Startup Policy resources.",
   },
   {
     title: "Industry-Institute Partnership Cell (IIPC)",

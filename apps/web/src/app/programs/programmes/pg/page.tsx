@@ -1,8 +1,9 @@
 "use client";
 
 import { PageHeader } from "@/components/placements/page-header";
-import { CheckCircle2, GraduationCap, Building2, Wallet, Microscope } from "lucide-react";
+import { CheckCircle2, GraduationCap, Building2, Wallet, Microscope, type LucideIcon } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
+import Link from "next/link";
 
 const pgData = {
   title: "Post Graduate (M.Tech)",
@@ -16,10 +17,38 @@ const pgData = {
       "Expert Faculty Mentorship",
   ],
   disciplines: [
-      "Structural Engineering",
-      "Machine Design",
-      "Computer Science & Engineering",
-      "Digital Electronics & Communication",
+      {
+        name: "Food Biotechnology",
+        href: "/programs/departments/pg/biotechnology",
+      },
+      {
+        name: "Digital Communication Engineering",
+        href: "/programs/departments/pg/electronics-and-communication-engg",
+      },
+      {
+        name: "Energy Science and Technology",
+        href: "/programs/departments/pg/electrical-and-electronics-engg",
+      },
+      {
+        name: "Computer Science & Engineering",
+        href: "/programs/departments/pg/computer-science-and-engg",
+      },
+      {
+        name: "Environmental Engineering",
+        href: "/programs/departments/pg/environmental-engg",
+      },
+      {
+        name: "Geo-Technical Engineering",
+        href: "/programs/departments/pg/geo-technical-engg",
+      },
+      {
+        name: "Structural Engineering",
+        href: "/programs/departments/pg/structural-engg",
+      },
+      {
+        name: "Machine Design",
+        href: "/programs/departments/pg/machine-design",
+      },
   ],
   admission: {
     eligibility: [
@@ -39,7 +68,7 @@ const pgData = {
   ]
 };
 
-function SectionHeader({ icon: Icon, title }: { icon: any, title: string }) {
+function SectionHeader({ icon: Icon, title }: { icon: LucideIcon, title: string }) {
     return (
         <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -82,10 +111,13 @@ export default function PGProgrammePage() {
           <div className="grid md:grid-cols-2 gap-4">
               {pgData.disciplines.map((dept, idx) => (
                   <FadeIn key={idx} delay={idx * 0.05}>
-                    <div className="p-5 rounded-lg bg-orange-50/50 border border-orange-100 text-gray-800 font-medium hover:bg-white hover:shadow-md transition-all duration-300 flex items-center gap-3">
+                    <Link
+                      href={dept.href}
+                      className="p-5 rounded-lg bg-orange-50/50 border border-orange-100 text-gray-800 font-medium hover:bg-white hover:shadow-md transition-all duration-300 flex items-center gap-3"
+                    >
                         <Microscope className="w-5 h-5 text-primary/60" />
-                        {dept}
-                    </div>
+                        {dept.name}
+                    </Link>
                   </FadeIn>
               ))}
           </div>

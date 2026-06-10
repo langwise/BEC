@@ -7,6 +7,7 @@ export type DepartmentContent = {
   name: string;
   tagline?: string;
   assetSlug?: string;
+  infrastructureGallerySlug?: string;
   established?: string;
   intake?: string;
   overview?: string;
@@ -18,9 +19,17 @@ export type DepartmentContent = {
   highlights?: string[];
   researchAreas?: { supervisor: string; area: string; university?: string }[];
   labs?: { name: string; description?: string }[];
+  supportingStaff?: { name: string; designation: string }[];
+  committeeGroups?: {
+    title: string;
+    members: { name: string; position: string }[];
+  }[];
+  infrastructureItems?: { name: string; specification?: string; quantity?: string }[];
+  softwareItems?: { name: string; version?: string; usage?: string }[];
   activities?: { title: string; date?: string; description?: string }[];
   associations?: { name: string; about?: string; coordinators?: string[] }[];
   contact?: { name?: string; designation?: string; phone?: string; email?: string };
+  additionalContacts?: { name: string; designation?: string; phone?: string; email?: string }[];
   documents?: { title: string; file: string }[];
 };
 
@@ -29,14 +38,25 @@ export type DepartmentMeta = Pick<DepartmentContent, "name" | "tagline" | "asset
 
 const departments = data.departments as Record<string, DepartmentContent>;
 
-/** Full content for a department by its URL slug, or undefined if unknown. */
-export function getDepartmentContent(slug: string): DepartmentContent | undefined {
-  return departments[slug];
+function keyFor(slug: string, type?: string): string {
+  return type && departments[`${type}/${slug}`] ? `${type}/${slug}` : slug;
+}
+
+/** Full content for a department by URL slug/type, or undefined if unknown. */
+export function getDepartmentContent(
+  slug: string,
+  type?: string,
+): DepartmentContent | undefined {
+  return departments[keyFor(slug, type)];
 }
 
 /** Metadata for a department by its URL slug, or undefined if unknown. */
-export function getDepartmentMeta(slug: string): DepartmentMeta | undefined {
-  return departments[slug];
+export function getDepartmentMeta(slug: string, type?: string): DepartmentMeta | undefined {
+  return departments[keyFor(slug, type)];
+}
+
+export function getDepartmentContentKey(slug: string, type?: string): string {
+  return keyFor(slug, type);
 }
 
 /**

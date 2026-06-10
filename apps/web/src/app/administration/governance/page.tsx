@@ -18,6 +18,7 @@ import {
 } from "@/content/governance";
 import { BogGrid, bogCategoryLabels } from "@/components/governance/bog-grid";
 import { DeansGrid } from "@/components/governance/deans-grid";
+import { DocumentDirectory } from "@/components/common/document-directory";
 import { FilterChips } from "@/components/common/filter-chips";
 import { PersonCard, PersonGrid } from "@/components/common/person-card";
 import { SectionHeading } from "@/components/common/section-heading";
@@ -40,6 +41,62 @@ const governanceLinks = [
     label: "Academic Council Members (PDF)",
     href: asset("documents/misc/ac-members.pdf"),
     description: "Academic Council composition from the official PDF.",
+  },
+];
+
+const academicCouncilDocuments = [
+  {
+    label: "Academic Council Resolutions",
+    description: "Resolutions from the 9th to 12th Academic Council meetings.",
+    documents: [
+      {
+        title: "12th ACM Resolutions",
+        url: asset("documents/governance/academic-council/resolutions/12-acm-resolutions.pdf"),
+      },
+      {
+        title: "11th ACM Resolutions",
+        url: asset("documents/governance/academic-council/resolutions/11-acm-resolutions.pdf"),
+      },
+      {
+        title: "10th ACM Resolutions",
+        url: asset("documents/governance/academic-council/resolutions/10-acm-resolutions.pdf"),
+      },
+      {
+        title: "9th ACM Resolutions",
+        url: asset("documents/governance/academic-council/resolutions/9-acm-resolutions.pdf"),
+      },
+    ],
+  },
+  {
+    label: "Academic Council Proceedings",
+    description:
+      "Proceedings from the 20th to 25th Academic Council meetings. The legacy 26th ACM link duplicated the 25th ACM PDF, so it is not repeated here until BEC confirms the correct source document.",
+    documents: [
+      {
+        title: "25th ACM Proceedings",
+        url: asset("documents/governance/academic-council/proceedings/25-acm-proceedings.pdf"),
+      },
+      {
+        title: "24th ACM Proceedings",
+        url: asset("documents/governance/academic-council/proceedings/24-acm-proceedings.pdf"),
+      },
+      {
+        title: "23rd ACM Proceedings",
+        url: asset("documents/governance/academic-council/proceedings/23-acm-proceedings.pdf"),
+      },
+      {
+        title: "22nd ACM Proceedings",
+        url: asset("documents/governance/academic-council/proceedings/22-acm-proceedings.pdf"),
+      },
+      {
+        title: "21st ACM Proceedings",
+        url: asset("documents/governance/academic-council/proceedings/21-acm-proceedings.pdf"),
+      },
+      {
+        title: "20th ACM Proceedings",
+        url: asset("documents/governance/academic-council/proceedings/20-acm-proceedings.pdf"),
+      },
+    ],
   },
 ];
 
@@ -452,6 +509,15 @@ export default function GovernancePage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div id="academic-council" className="scroll-mt-24 space-y-6">
+          <SectionHeading
+            eyebrow="Academic Council"
+            title="Resolutions & proceedings"
+            description="Official Academic Council meeting records migrated from the legacy BEC website."
+          />
+          <DocumentDirectory groups={academicCouncilDocuments} />
         </div>
       </section>
     </main>

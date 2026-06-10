@@ -1,38 +1,55 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ChevronRight, GraduationCap, ArrowRight } from "lucide-react";
+import { GraduationCap, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { PageHeader } from "@/components/placements/page-header"; // Reusing the header component
 
 // Department Data
-const departmentsData = {
+type DepartmentLink = {
+  name: string;
+  slug?: string;
+};
+
+const departmentsData: Record<"ug" | "regular" | "pg", DepartmentLink[]> = {
   ug: [
-    "AI & ML",
-    "Automobile Engg.",
-    "Biotechnology",
-    "Civil Engg.",
-    "Computer Science & Engg.",
-    "Electronics & Communication Engg.",
-    "Electrical & Electronics Engg.",
-    "Electronics & Computer Engg.",
-    "Industrial & Production Engg.",
-    "Information Science & Engg.",
+    { name: "AI & ML" },
+    { name: "Automobile Engg." },
+    { name: "Biotechnology" },
+    { name: "Civil Engg." },
+    { name: "Computer Science & Engg." },
+    { name: "Electronics & Communication Engg." },
+    { name: "Electrical & Electronics Engg." },
+    { name: "Electronics & Computer Engg." },
+    { name: "Industrial & Production Engg." },
+    { name: "Information Science & Engg." },
   ],
   regular: [
-    "Mechanical Engg.",
-    "Physics",
-    "Chemistry",
-    "Mathematics",
-    "Humanities",
+    { name: "Mechanical Engg." },
+    { name: "Physics" },
+    { name: "Chemistry" },
+    { name: "Mathematics" },
+    { name: "Humanities" },
   ],
   pg: [
-    "Environmental Engg.",
-    "Geo-Technical Engg.",
-    "Structural Engg.",
-    "Machine Design",
-    "MCA",
-    "MBA",
+    { name: "Food Biotechnology", slug: "biotechnology" },
+    {
+      name: "Digital Communication Engineering",
+      slug: "electronics-and-communication-engg",
+    },
+    {
+      name: "Energy Science and Technology",
+      slug: "electrical-and-electronics-engg",
+    },
+    {
+      name: "Computer Science & Engineering",
+      slug: "computer-science-and-engg",
+    },
+    { name: "Environmental Engg." },
+    { name: "Geo-Technical Engg." },
+    { name: "Structural Engg." },
+    { name: "Machine Design" },
+    { name: "MCA" },
+    { name: "MBA" },
   ],
 };
 
@@ -46,15 +63,15 @@ function slugify(text: string) {
 }
 
 function DepartmentCard({
-  name,
+  department,
   type,
   index,
 }: {
-  name: string;
+  department: DepartmentLink;
   type: string;
   index: number;
 }) {
-  const url = `/programs/departments/${type}/${slugify(name)}`;
+  const url = `/programs/departments/${type}/${department.slug ?? slugify(department.name)}`;
 
   return (
     <motion.div
@@ -75,7 +92,7 @@ function DepartmentCard({
           </div>
 
           <h3 className="text-lg font-bold text-gray-900 mb-2 pr-4 group-hover:text-primary transition-colors">
-            {name}
+            {department.name}
           </h3>
 
           <div className="flex items-center text-sm text-gray-500 font-medium group-hover:text-primary transition-colors mt-4">
@@ -145,7 +162,7 @@ export default function DepartmentsPage() {
           <SectionTitle>Undergraduate Programs (UG)</SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {departmentsData.ug.map((dept, index) => (
-              <DepartmentCard key={index} name={dept} type="ug" index={index} />
+              <DepartmentCard key={dept.name} department={dept} type="ug" index={index} />
             ))}
           </div>
         </section>
@@ -156,8 +173,8 @@ export default function DepartmentsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {departmentsData.regular.map((dept, index) => (
               <DepartmentCard
-                key={index}
-                name={dept}
+                key={dept.name}
+                department={dept}
                 type="regular"
                 index={index}
               />
@@ -170,7 +187,7 @@ export default function DepartmentsPage() {
           <SectionTitle>Postgraduate Programs (PG)</SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {departmentsData.pg.map((dept, index) => (
-              <DepartmentCard key={index} name={dept} type="pg" index={index} />
+              <DepartmentCard key={dept.name} department={dept} type="pg" index={index} />
             ))}
           </div>
         </section>

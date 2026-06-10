@@ -13,6 +13,8 @@ import {
     Mic2,
     Palette,
     Laptop,
+    FileText,
+    ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PhotoGallery } from "@/components/common/photo-gallery";
@@ -71,6 +73,17 @@ const recurringEvents = [
         icon: Users,
         color: "text-green-600",
         bg: "bg-green-100",
+    },
+];
+
+const archivedEvents = [
+    {
+        title: "Past Symposia",
+        category: "National Symposia",
+        date: "8-9 September 2023",
+        description:
+            "Official archive for SYMPOSIA 2023, covering sustainability in engineering systems and emerging trends in smart systems.",
+        href: "/student-life/symposia",
     },
 ];
 
@@ -173,6 +186,50 @@ export default function ActivitiesPage() {
                             </motion.div>
                         );
                     })}
+                </div>
+            </section>
+
+            <section>
+                <div className="mb-6 md:mb-8">
+                    <h2 className="text-xl md:text-2xl font-bold text-slate-900">
+                        Archived Events
+                    </h2>
+                    <p className="mt-2 text-sm md:text-base text-slate-600 max-w-2xl leading-relaxed">
+                        Official records and documents from completed college events.
+                    </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+                    {archivedEvents.map((event) => (
+                        <Link
+                            key={event.href}
+                            href={event.href}
+                            className="group rounded-xl border border-stone-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
+                        >
+                            <div className="flex items-start justify-between gap-4">
+                                <div className="flex items-start gap-3">
+                                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-primary">
+                                        <FileText className="h-5 w-5" />
+                                    </span>
+                                    <span>
+                                        <span className="block text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
+                                            {event.category}
+                                        </span>
+                                        <span className="mt-1 block text-lg font-bold text-slate-900 group-hover:text-primary">
+                                            {event.title}
+                                        </span>
+                                        <span className="mt-1 block text-xs font-semibold text-slate-500">
+                                            {event.date}
+                                        </span>
+                                        <span className="mt-3 block text-sm leading-relaxed text-slate-600">
+                                            {event.description}
+                                        </span>
+                                    </span>
+                                </div>
+                                <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400 transition-transform group-hover:translate-x-1 group-hover:text-primary" />
+                            </div>
+                        </Link>
+                    ))}
                 </div>
             </section>
 

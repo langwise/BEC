@@ -659,6 +659,84 @@
         "designation": "Assistant Professor"
       }
     ],
+    "pg/biotechnology": [
+      {
+        "name": "Dr. Bharati S. Meti",
+        "designation": "Professor and Head",
+        "photo": "departments/pg-biotechnology/faculty/bharati-s-meti.webp",
+        "cv": "departments/pg-biotechnology/faculty/cv/bharati-s-meti.pdf"
+      },
+      {
+        "name": "Dr. Sharada P.",
+        "designation": "Associate Professor",
+        "photo": "departments/pg-biotechnology/faculty/sharada-p.webp",
+        "cv": "departments/pg-biotechnology/faculty/cv/sharada-p.pdf"
+      },
+      {
+        "name": "Dr. J. S. Yaradoddi",
+        "designation": "Assistant Professor",
+        "photo": "departments/pg-biotechnology/faculty/j-s-yaradoddi.webp",
+        "cv": "departments/pg-biotechnology/faculty/cv/j-s-yaradoddi.pdf"
+      }
+    ],
+    "pg/electronics-and-communication-engg": [
+      {
+        "name": "Dr. K. Shridhar",
+        "designation": "Professor and Head",
+        "photo": "departments/pg-ece/faculty/k-shridhar.webp",
+        "cv": "departments/pg-ece/faculty/cv/k-shridhar.pdf"
+      },
+      {
+        "name": "Dr. Ashok V. Sutagundar",
+        "designation": "Associate Professor",
+        "photo": "departments/pg-ece/faculty/ashok-v-sutagundar.webp",
+        "cv": "departments/pg-ece/faculty/cv/ashok-v-sutagundar.pdf"
+      },
+      {
+        "name": "Dr. K. Y. Bendigeri",
+        "designation": "Assistant Professor",
+        "photo": "departments/pg-ece/faculty/k-y-bendigeri.webp",
+        "cv": "departments/pg-ece/faculty/cv/k-y-bendigeri.pdf"
+      }
+    ],
+    "pg/electrical-and-electronics-engg": [
+      {
+        "name": "Dr. Basanagouda Ronad",
+        "designation": "Professor and Head",
+        "photo": "departments/pg-eee/faculty/basanagouda-ronad.webp"
+      },
+      {
+        "name": "Smt. Sunita S. Tambakad",
+        "designation": "Assistant Professor",
+        "photo": "departments/pg-eee/faculty/sunita-s-tambakad.webp",
+        "cv": "departments/pg-eee/faculty/cv/sunita-s-tambakad.pdf"
+      },
+      {
+        "name": "Mr. Vikas Jainkeri",
+        "designation": "Assistant Professor",
+        "photo": "departments/pg-eee/faculty/vikas-jainkeri.webp",
+        "cv": "departments/pg-eee/faculty/cv/vikas-jainkeri.pdf"
+      }
+    ],
+    "pg/computer-science-and-engg": [
+      {
+        "name": "Dr. V. B. Pagi",
+        "designation": "Professor and Head",
+        "photo": "departments/pg-cse/faculty/v-b-pagi.webp"
+      },
+      {
+        "name": "Dr. S. V. Saboji",
+        "designation": "Professor",
+        "photo": "departments/pg-cse/faculty/s-v-saboji.webp",
+        "cv": "departments/pg-cse/faculty/cv/s-v-saboji.pdf"
+      },
+      {
+        "name": "Prof. J. M. Hurakadli",
+        "designation": "Associate Professor",
+        "photo": "departments/pg-cse/faculty/j-m-hurakadli.webp",
+        "cv": "departments/pg-cse/faculty/cv/j-m-hurakadli.pdf"
+      }
+    ],
     "mba": [
       {
         "name": "Dr. Vinod S. Puranik",

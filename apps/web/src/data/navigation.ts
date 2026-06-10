@@ -7,7 +7,6 @@ export const navigationData: NavigationItem[] = [
     items: [
       { title: "About Sangha", href: "/institute/about-sangha" },
       { title: "About Us", href: "/institute/about" },
-      { title: "Awards & Recognitions", href: "/institute/awards" },
       { title: "History & Milestones", href: "/institute/history" },
       {
         title: "Accreditation & Quality",
@@ -26,6 +25,7 @@ export const navigationData: NavigationItem[] = [
         items: [
           { title: "Overview", href: "/institute/cells" },
           { title: "Innovation Council (IIC)", href: "/institute/cells/iic" },
+          { title: "Innovation & Entrepreneurship Policy", href: "/institute/cells/iep" },
           { title: "Industry Partnership (IIPC)", href: "/institute/cells/iipc" },
           { title: "NAIN Incubation", href: "/institute/cells/nain" },
           { title: "BEC-STEP", href: "/institute/cells/step" },
@@ -36,15 +36,11 @@ export const navigationData: NavigationItem[] = [
         title: "Campus",
         items: [
           { title: "Infrastructure", href: "/institute/campus/infrastructure" },
-          { title: "How To Reach", href: "/institute/campus/reach" },
-          { title: "Working Hours", href: "/institute/campus/hours" },
-          { title: "Campus Amenities", href: "/institute/campus/amenities" },
-          { title: "Virtual Campus Tour", href: "/institute/campus/tour" },
+          { title: "Campus Amenities", href: "/facilities/amenities" },
         ],
       },
       { title: "Contact Us", href: "/institute/contact" },
       { title: "Institute Brochure", href: "/institute/brochure" },
-      { title: "Institute Newsletter", href: "/institute/newsletter" },
       { title: "Gallery", href: "/institute/gallery" },
     ],
   },
@@ -205,6 +201,7 @@ export const navigationData: NavigationItem[] = [
       { title: "Students' Council", href: "/student-life/council" },
       { title: "Mindhog Club", href: "/student-life/mindhog" },
       { title: "Activities", href: "/student-life/activities" },
+      { title: "Symposia Archive", href: "/student-life/symposia" },
       { title: "NSS", href: "/student-life/nss" },
       { title: "NCC", href: "/student-life/ncc" },
       { title: "IEEE", href: "/student-life/ieee" },

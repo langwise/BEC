@@ -1,6 +1,7 @@
-import { PageHeader } from "@/components/placements/page-header"; // Reusing this convenient header
+import { notFound } from "next/navigation";
 import { DepartmentLayout } from "@/components/programs/departments/department-layout";
 import { getDepartmentData } from "@/data/department/department";
+import { getDepartmentContent } from "@/content/departments";
 
 // ⭐ SERVER COMPONENT (NO "use client")
 export default async function DepartmentPage({
@@ -9,6 +10,10 @@ export default async function DepartmentPage({
   params: Promise<{ type: string; slug: string }>;
 }) {
   const { type, slug } = await params;
+
+  if (!getDepartmentContent(slug, type)) {
+    notFound();
+  }
 
   const dept = getDepartmentData(type, slug);
 
