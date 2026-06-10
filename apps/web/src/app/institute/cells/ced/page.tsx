@@ -1,0 +1,81 @@
+import type { Metadata } from "next";
+
+import { PageHero } from "@/components/common/page-hero";
+import { SectionHeading } from "@/components/common/section-heading";
+import { PersonCard, PersonGrid } from "@/components/common/person-card";
+import { DocumentDirectory } from "@/components/common/document-directory";
+import { asset } from "@/lib/assets";
+
+export const metadata: Metadata = {
+  title:
+    "Centre for Entrepreneurship Development (BEC-CED) | Basaveshwar Engineering College, Bagalkote",
+  description:
+    "The Centre for Entrepreneurship Development (BEC-CED) at Basaveshwar Engineering College, Bagalkote — coordinators and activity records.",
+};
+
+const coordinators = [
+  {
+    name: "Dr. V. S. Puranik",
+    description: "Department of Industrial & Production Engineering",
+    badges: [{ label: "Chief Coordinator", tone: "primary" as const }],
+  },
+  {
+    name: "Dr. C. M. Javalagi",
+    description: "Department of Industrial & Production Engineering",
+    badges: [{ label: "Coordinator", tone: "muted" as const }],
+  },
+  {
+    name: "Dr. K. Bhat",
+    photo: asset("departments/ecs/faculty/krishnamurthy-bhat.webp"),
+    description: "Department of Information Technology",
+    badges: [{ label: "Coordinator", tone: "muted" as const }],
+  },
+  {
+    name: "Prof. H. R. Patil",
+    description: "Department of Mechanical Engineering",
+    badges: [{ label: "Coordinator", tone: "muted" as const }],
+  },
+];
+
+export default function CedPage() {
+  return (
+    <main className="bg-background text-foreground">
+      <PageHero
+        eyebrow="Entrepreneurship"
+        title="Centre for Entrepreneurship Development (BEC-CED)"
+        description="The college's Centre for Entrepreneurship Development promotes entrepreneurial skills among students and faculty, coordinated by a team drawn from the Industrial & Production, Information Technology and Mechanical Engineering departments."
+      />
+
+      <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
+        <div className="space-y-8">
+          <SectionHeading eyebrow="The Centre" title="Coordinators" />
+          <PersonGrid>
+            {coordinators.map((c) => (
+              <PersonCard
+                key={c.name}
+                name={c.name}
+                photo={"photo" in c ? c.photo : undefined}
+                description={c.description}
+                badges={c.badges}
+              />
+            ))}
+          </PersonGrid>
+        </div>
+
+        <div className="space-y-8">
+          <SectionHeading eyebrow="Records" title="Documents" />
+          <DocumentDirectory
+            groups={[
+              {
+                documents: [
+                  { title: "BEC-CED — Details", url: asset("documents/cells/ced/ced-details.pdf") },
+                  { title: "BEC-CED — Activity Report", url: asset("documents/cells/ced/activity-report.pdf") },
+                ],
+              },
+            ]}
+          />
+        </div>
+      </section>
+    </main>
+  );
+}

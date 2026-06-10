@@ -10,6 +10,29 @@ export const navigationData: NavigationItem[] = [
       { title: "Awards & Recognitions", href: "/institute/awards" },
       { title: "History & Milestones", href: "/institute/history" },
       {
+        title: "Accreditation & Quality",
+        items: [
+          { title: "Overview", href: "/accreditation" },
+          { title: "NAAC", href: "/accreditation/naac" },
+          { title: "NBA", href: "/accreditation/nba" },
+          { title: "NIRF Rankings", href: "/accreditation/nirf" },
+          { title: "IQAC", href: "/accreditation/iqac" },
+          { title: "VTU Affiliation", href: "/accreditation/vtu" },
+          { title: "TEQIP", href: "/accreditation/teqip" },
+        ],
+      },
+      {
+        title: "Cells & Centres",
+        items: [
+          { title: "Overview", href: "/institute/cells" },
+          { title: "Innovation Council (IIC)", href: "/institute/cells/iic" },
+          { title: "Industry Partnership (IIPC)", href: "/institute/cells/iipc" },
+          { title: "NAIN Incubation", href: "/institute/cells/nain" },
+          { title: "BEC-STEP", href: "/institute/cells/step" },
+          { title: "BEC-CED", href: "/institute/cells/ced" },
+        ],
+      },
+      {
         title: "Campus",
         items: [
           { title: "Infrastructure", href: "/institute/campus/infrastructure" },
@@ -61,6 +84,7 @@ export const navigationData: NavigationItem[] = [
       { title: "Examinations", href: "/programs/examinations" },
       { title: "Academic Office", href: "/programs/office" },
       { title: "Syllabus", href: "/programs/syllabus" },
+      { title: "First-Year Syllabus", href: "/programs/first-year" },
       {
         title: "Programmes",
         items: [
@@ -185,6 +209,7 @@ export const navigationData: NavigationItem[] = [
       { title: "NCC", href: "/student-life/ncc" },
       { title: "IEEE", href: "/student-life/ieee" },
       { title: "Sports and Games", href: "/student-life/sports" },
+      { title: "Gymkhana", href: "/student-life/gymkhana" },
       {
         title: "Anti Ragging",
         items: [
