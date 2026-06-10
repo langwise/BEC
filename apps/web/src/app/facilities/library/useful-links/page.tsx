@@ -7,104 +7,40 @@ import { LibrarySidebar } from "@/components/library/library-sidebar";
 import { Link as LinkIcon, ExternalLink } from "lucide-react";
 
 export default function UsefulLinksPage() {
+  // Useful links as listed on becbgk.edu/Library (useful links).
   const linkCategories = [
     {
-      category: "Academic Resources",
+      category: "Useful Links",
       links: [
         {
-          name: "AICTE",
-          url: "https://www.aicte-india.org",
-          description: "All India Council for Technical Education",
+          name: "W3Schools",
+          url: "http://www.w3schools.com",
+          description: "Web development tutorials and references",
         },
         {
-          name: "VTU",
-          url: "https://vtu.ac.in",
-          description: "Visvesvaraya Technological University",
+          name: "CEO Karnataka",
+          url: "http://www.ceokarnataka.kar.nic.in",
+          description: "Chief Electoral Officer, Karnataka",
         },
         {
-          name: "UGC",
-          url: "https://www.ugc.ac.in",
-          description: "University Grants Commission",
+          name: "eAadhaar",
+          url: "https://eaadhaar.uidai.gov.in",
+          description: "Download your Aadhaar online (UIDAI)",
         },
         {
-          name: "MHRD",
-          url: "https://www.education.gov.in",
-          description: "Ministry of Education, Govt. of India",
-        },
-      ],
-    },
-    {
-      category: "Research Tools",
-      links: [
-        {
-          name: "Mendeley",
-          url: "https://www.mendeley.com",
-          description: "Reference management software",
+          name: "UPSC",
+          url: "https://www.upsc.gov.in",
+          description: "Union Public Service Commission",
         },
         {
-          name: "Zotero",
-          url: "https://www.zotero.org",
-          description: "Free bibliography management",
+          name: "Indian Railways",
+          url: "https://www.indianrail.gov.in",
+          description: "Indian Railways passenger services",
         },
         {
-          name: "Grammarly",
-          url: "https://www.grammarly.com",
-          description: "Writing enhancement tool",
-        },
-        {
-          name: "Turnitin",
-          url: "https://www.turnitin.com",
-          description: "Plagiarism detection (campus access)",
-        },
-      ],
-    },
-    {
-      category: "Engineering Portals",
-      links: [
-        {
-          name: "IEEE",
-          url: "https://www.ieee.org",
-          description: "Institute of Electrical and Electronics Engineers",
-        },
-        {
-          name: "ASME",
-          url: "https://www.asme.org",
-          description: "American Society of Mechanical Engineers",
-        },
-        {
-          name: "ASCE",
-          url: "https://www.asce.org",
-          description: "American Society of Civil Engineers",
-        },
-        {
-          name: "ACM",
-          url: "https://www.acm.org",
-          description: "Association for Computing Machinery",
-        },
-      ],
-    },
-    {
-      category: "Open Access Resources",
-      links: [
-        {
-          name: "DOAJ",
-          url: "https://doaj.org",
-          description: "Directory of Open Access Journals",
-        },
-        {
-          name: "arXiv",
-          url: "https://arxiv.org",
-          description: "Open access preprints",
-        },
-        {
-          name: "PubMed Central",
-          url: "https://www.ncbi.nlm.nih.gov/pmc",
-          description: "Free biomedical literature",
-        },
-        {
-          name: "Google Scholar",
-          url: "https://scholar.google.com",
-          description: "Scholarly literature search",
+          name: "India Post",
+          url: "https://www.indiapost.gov.in",
+          description: "Department of Posts, Government of India",
         },
       ],
     },
@@ -124,7 +60,6 @@ export default function UsefulLinksPage() {
         icon={LinkIcon}
         title="Useful Links"
         subtitle="Quick access to important library and academic resources"
-        bgGradient="from-indigo-600 to-purple-600"
       />
 
       <section className="py-16">
@@ -149,13 +84,13 @@ export default function UsefulLinksPage() {
                 {linkCategories.map((category, catIndex) => (
                   <FadeIn key={catIndex} delay={0.1 + catIndex * 0.05}>
                     <div className="bg-white rounded-lg border border-stone-200 overflow-hidden">
-                      <div className="bg-linear-to-r from-indigo-600 to-purple-600 px-6 py-4">
-                        <h2 className="text-xl font-bold text-white">
+                      <div className="border-b border-stone-200 bg-stone-50 px-6 py-4">
+                        <h2 className="text-lg font-bold text-gray-900">
                           {category.category}
                         </h2>
                       </div>
                       <div className="p-6">
-                        <div className="space-y-3">
+                        <div className="grid sm:grid-cols-2 gap-3">
                           {category.links.map((link, linkIndex) => (
                             <a
                               key={linkIndex}
@@ -168,11 +103,11 @@ export default function UsefulLinksPage() {
                                   ? "noopener noreferrer"
                                   : undefined
                               }
-                              className="group flex items-start gap-4 p-4 rounded-lg hover:bg-indigo-50 transition-colors duration-200 border border-transparent hover:border-indigo-200"
+                              className="group flex items-start gap-3 p-4 rounded-lg hover:bg-orange-50 transition-colors duration-200 border border-stone-200 hover:border-primary/40"
                             >
-                              <ExternalLink className="h-5 w-5 text-indigo-600 shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                              <ExternalLink className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                               <div className="flex-1">
-                                <h3 className="font-semibold text-gray-900 group-hover:text-indigo-600 transition-colors">
+                                <h3 className="font-semibold text-gray-900 group-hover:text-primary transition-colors">
                                   {link.name}
                                 </h3>
                                 <p className="text-sm text-gray-600 mt-1">

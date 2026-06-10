@@ -1,6 +1,6 @@
 "use client";
 
-import { PageHeader } from "@/components/placements/page-header";
+import { ProgrammeHeader } from "@/components/programs/programmes/programme-header";
 import { CheckCircle2, GraduationCap, Building2, Wallet, BookOpen, Briefcase, HelpCircle } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 
@@ -15,19 +15,21 @@ const ugData = {
       "Industry-Integrated Curriculum",
       "Strong Placement Record",
   ],
+  // Branches and sanctioned intake as per becbgk.edu Admissions (UG).
   disciplines: [
-      "Civil Engineering",
-      "Mechanical Engineering",
-      "Electrical & Electronics Engineering",
-      "Electronics & Communication Engineering",
-      "Computer Science Engineering",
-      "Information Science Engineering",
-      "Industrial & Production Engineering",
-      "Chemical Engineering",
-      "Bio-Technology",
-      "Artificial Intelligence & Data Science",
-      "Computer Science & Business Systems",
+      { name: "Mechanical Engineering", intake: "120" },
+      { name: "Civil Engineering", intake: "120" },
+      { name: "Computer Science & Engineering", intake: "180" },
+      { name: "Information Science & Engineering", intake: "180" },
+      { name: "Electronics & Communication Engineering", intake: "120" },
+      { name: "Electrical & Electronics Engineering", intake: "60" },
+      { name: "Artificial Intelligence & Machine Learning", intake: "60" },
+      { name: "Electronics & Computer Engineering", intake: "60" },
+      { name: "Industrial & Production Engineering", intake: "30" },
+      { name: "Automobile Engineering", intake: "30" },
+      { name: "Biotechnology", intake: "30" },
   ],
+  collegeCodes: "Aided: E031  ·  Un-Aided (KEA): E049  ·  COMED-K: E024",
   admission: {
     eligibility: [
         "Passed 2nd PUC / 12th standard or equivalent with English as one of the languages",
@@ -38,6 +40,7 @@ const ugData = {
         { name: "Karnataka CET", description: "For Government Quota seats" },
         { name: "COMED-K", description: "For COMED-K Quota seats" },
         { name: "JEE Main", description: "Accepted for admissions" },
+        { name: "Diploma Lateral Entry", description: "Direct 2nd-year admission" },
         { name: "Institute Entrance", description: "For Management Quota" },
     ]
   },
@@ -63,7 +66,7 @@ function SectionHeader({ icon: Icon, title }: { icon: any, title: string }) {
 export default function UGProgrammePage() {
   return (
     <div className="space-y-16">
-      <PageHeader
+      <ProgrammeHeader
         title={ugData.title}
         description={ugData.description}
       />
@@ -92,12 +95,18 @@ export default function UGProgrammePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {ugData.disciplines.map((dept, idx) => (
                   <FadeIn key={idx} delay={idx * 0.05}>
-                    <div className="p-4 rounded-lg bg-orange-50/50 border border-orange-100 text-gray-800 font-medium hover:bg-white hover:shadow-md transition-all duration-300">
-                        {dept}
+                    <div className="flex items-center justify-between gap-3 p-4 rounded-lg bg-orange-50/50 border border-orange-100 text-gray-800 font-medium hover:bg-white hover:shadow-md transition-all duration-300">
+                        <span>{dept.name}</span>
+                        <span className="shrink-0 rounded-full bg-white border border-orange-100 px-2.5 py-0.5 text-xs font-semibold text-primary">
+                          {dept.intake} seats
+                        </span>
                     </div>
                   </FadeIn>
               ))}
           </div>
+          <p className="text-xs text-gray-500 mt-4">
+              College Codes — {ugData.collegeCodes}. Total sanctioned intake: 990 seats.
+          </p>
       </section>
 
       {/* Admission */}
@@ -165,9 +174,9 @@ export default function UGProgrammePage() {
                { label: "High Package", value: "₹12L+" },
                { label: "Recruiters", value: "100+" },
            ].map((stat, idx) => (
-               <div key={idx} className="p-6 rounded-2xl bg-primary text-white text-center">
-                   <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                   <div className="text-xs opacity-90 uppercase tracking-wider">{stat.label}</div>
+               <div key={idx} className="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm text-center">
+                   <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
+                   <div className="text-xs text-gray-500 uppercase tracking-wider">{stat.label}</div>
                </div>
            ))}
        </section>

@@ -40,7 +40,6 @@ export default function NCCPage() {
 
             {/* Introduction & Motto */}
             <motion.div
-                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
                 className="grid lg:grid-cols-2 gap-6 md:gap-8 items-center"
@@ -96,10 +95,7 @@ export default function NCCPage() {
                         return (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
-                                viewport={{ once: true }}
                             >
                                 <Card className="h-full hover:shadow-md transition-all border-t-4 border-t-slate-900">
                                     <CardContent className="p-4 md:p-6">

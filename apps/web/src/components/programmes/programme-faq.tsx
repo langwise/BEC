@@ -22,9 +22,6 @@ export function ProgrammeFAQ({ faqs }: ProgrammeFAQProps) {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
@@ -41,9 +38,6 @@ export function ProgrammeFAQ({ faqs }: ProgrammeFAQProps) {
             {faqs.map((faq, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="bg-muted rounded-xl overflow-hidden border border-border"
               >
@@ -79,9 +73,6 @@ export function ProgrammeFAQ({ faqs }: ProgrammeFAQProps) {
 
           {/* Additional Help */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-12 text-center p-8 bg-primary/5 rounded-xl"
           >

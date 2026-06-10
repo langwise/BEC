@@ -3,7 +3,6 @@
 
 import Image from "next/image";
 import { ExternalLink, Lock, Unlock } from "lucide-react";
-import { motion } from "motion/react";
 
 interface ResourceCardProps {
   name: string;
@@ -22,67 +21,42 @@ export function ResourceCard({
   logo,
   type = "free",
   category,
-  index = 0,
 }: ResourceCardProps) {
   const isPaid = type === "paid";
+  const TypeIcon = isPaid ? Lock : Unlock;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.05 }}
-      className="group bg-white rounded-lg border border-stone-200 hover:border-primary hover:shadow-lg transition-all duration-300 overflow-hidden"
-    >
-      {/* Logo/Header Section */}
-      <div
-        className={`h-32 flex items-center justify-center p-6 ${
-          isPaid
-            ? "bg-linear-to-br from-orange-50 to-red-50"
-            : "bg-linear-to-br from-green-50 to-teal-50"
-        }`}
-      >
+    <div className="group flex h-full flex-col bg-white rounded-xl border border-stone-200 hover:border-primary/40 hover:shadow-md transition-all duration-300 overflow-hidden">
+      {/* Header band — uniform, brand-tinted */}
+      <div className="relative h-28 flex items-center justify-center p-6 bg-stone-50 border-b border-stone-100">
         {logo ? (
-          <div className="relative w-full h-full">
+          <div className="relative h-full w-full">
             <Image src={logo} alt={name} fill className="object-contain" />
           </div>
         ) : (
-          <div
-            className={`text-4xl font-bold ${
-              isPaid ? "text-orange-600" : "text-green-600"
-            }`}
-          >
+          <div className="text-3xl font-bold tracking-wide text-primary/80">
             {name.substring(0, 3).toUpperCase()}
           </div>
         )}
+        <span className="absolute top-3 right-3 inline-flex items-center gap-1 rounded-full bg-white/90 border border-stone-200 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-gray-500">
+          <TypeIcon className="h-3 w-3" />
+          {isPaid ? "Subscribed" : "Open Access"}
+        </span>
       </div>
 
-      {/* Content Section */}
-      <div className="p-6">
-        <div className="flex items-start justify-between mb-3">
-          <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors">
-            {name}
-          </h3>
-          {isPaid ? (
-            <Lock className="h-5 w-5 text-orange-600 shrink-0" />
-          ) : (
-            <Unlock className="h-5 w-5 text-green-600 shrink-0" />
-          )}
-        </div>
+      {/* Content */}
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="text-base font-bold text-gray-900 group-hover:text-primary transition-colors">
+          {name}
+        </h3>
 
         {category && (
-          <span
-            className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3 ${
-              isPaid
-                ? "bg-orange-100 text-orange-700"
-                : "bg-green-100 text-green-700"
-            }`}
-          >
+          <span className="mt-2 inline-block w-fit rounded-full bg-stone-100 px-2.5 py-0.5 text-xs font-medium text-gray-600">
             {category}
           </span>
         )}
 
-        <p className="text-sm text-gray-600 leading-relaxed mb-4 line-clamp-3">
+        <p className="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
           {description}
         </p>
 
@@ -91,17 +65,13 @@ export function ResourceCard({
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 text-sm font-semibold transition-all ${
-              isPaid
-                ? "text-orange-600 hover:text-orange-700 hover:gap-3"
-                : "text-green-600 hover:text-green-700 hover:gap-3"
-            }`}
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:gap-2.5 transition-all"
           >
             Access Resource
             <ExternalLink className="h-4 w-4" />
           </a>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }

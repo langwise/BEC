@@ -19,7 +19,7 @@ const internalQuickLinks = [
 ];
 
 const internalResources = [
-  { label: "Academic Calendar", href: "/programs/calendar" },
+  { label: "Departments", href: "/departments" },
   { label: "Library", href: "/facilities/library" },
   { label: "Scholarships", href: "/programs/scholarships" },
   { label: "Examinations", href: "/programs/examinations" },

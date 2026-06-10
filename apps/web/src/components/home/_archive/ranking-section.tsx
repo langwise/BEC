@@ -7,9 +7,6 @@ function RankingCard({ ranking }: any) {
   return (
     <motion.div
       className="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-lg hover:border-primary/30 transition-all duration-300"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
     >
       <div className="flex items-start justify-between mb-3">
         <div>
@@ -41,9 +38,6 @@ export function RankingsSection() {
       <div className="container mx-auto px-4 lg:px-6 max-w-[1400px]">
         <motion.div
           className="mb-8"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
         >
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-primary mb-2">
             Rankings

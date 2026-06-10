@@ -184,7 +184,6 @@ export default function HistoryPage() {
             </p>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.15, duration: 0.7 }}
               className="relative mt-10 aspect-16/9 w-full overflow-hidden rounded-2xl border border-stone-200 shadow-xl"
@@ -209,7 +208,6 @@ export default function HistoryPage() {
               return (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.08, duration: 0.5 }}
                 >
@@ -237,9 +235,6 @@ export default function HistoryPage() {
         {/* Narrative Legacy Statement */}
         <section className="container mx-auto max-w-4xl px-4 lg:px-6 py-20 text-center space-y-6">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl font-bold text-gray-900 tracking-tight mb-4">
@@ -308,9 +303,6 @@ export default function HistoryPage() {
 
                   {/* Milestones Card */}
                   <motion.div 
-                    initial={{ opacity: 0, x: isEven ? 30 : -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                     className={`space-y-4 ${isEven ? "lg:order-2 lg:pl-10" : "lg:order-1 lg:col-start-1 lg:pr-10"}`}
                   >
@@ -343,9 +335,6 @@ export default function HistoryPage() {
         {/* Leadership Heritage Tribute */}
         <section className="container mx-auto max-w-5xl px-4 lg:px-6 py-24">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-slate-900 rounded-3xl p-8 md:p-14 text-white overflow-hidden relative border border-slate-800"
           >

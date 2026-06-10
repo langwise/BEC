@@ -26,9 +26,6 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
@@ -42,9 +39,6 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
 
           {/* Fee Categories Table */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-white rounded-xl shadow-sm border border-border overflow-hidden mb-8"
           >
@@ -72,9 +66,6 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
                   {feeCategories.map((category, index) => (
                     <motion.tr
                       key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: index * 0.1 }}
                       className="hover:bg-primary/5 transition-colors"
                     >
@@ -102,9 +93,6 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
           {/* Fee Documents */}
           {documents && documents.length > 0 && (
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-xl shadow-sm border border-border p-8"
             >
@@ -135,9 +123,6 @@ export function ProgrammeFeeTable({ feeCategories, documents }: ProgrammeFeeTabl
 
           {/* Important Notes */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl"
           >

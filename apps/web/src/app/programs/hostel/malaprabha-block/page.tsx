@@ -24,7 +24,7 @@ export default function MalaprabhaBlockPage() {
                 <FadeIn>
                     <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-xs">
                         <p className="text-gray-700 leading-relaxed mb-4">
-                            The hostel was started in the year <strong>1998</strong> to accommodate the students of Basaveshwar Engineering College Bagalkot. The hostel is well equipped with all requisite facilities to cater to the needs of all Girl students. The total number of rooms available in the hostel are 190 with a total capacity of 468 students.
+                            The hostel was started in the year <strong>1998</strong> to accommodate the students of Basaveshwar Engineering College Bagalkot. The hostel is well equipped with all requisite facilities to cater to the needs of all Girl students. The total number of rooms available in the hostel are 374 with a total capacity of 1000 students.
                         </p>
 
                         <div className="flex items-center gap-6 mt-6 pt-6 border-t border-stone-100">
@@ -34,7 +34,7 @@ export default function MalaprabhaBlockPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 font-medium">Capacity</p>
-                                    <p className="font-bold text-gray-900">468 Students</p>
+                                    <p className="font-bold text-gray-900">1000 Students</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-3">
@@ -43,7 +43,7 @@ export default function MalaprabhaBlockPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 font-medium">Rooms</p>
-                                    <p className="font-bold text-gray-900">190 Rooms</p>
+                                    <p className="font-bold text-gray-900">374 Rooms</p>
                                 </div>
                             </div>
                         </div>
@@ -62,10 +62,18 @@ export default function MalaprabhaBlockPage() {
                 <FadeIn delay={0.1}>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                         {[
-                            "Pure Vegetarian Mess", "Library", "Computer centre with Internet",
-                            "TV", "Multi Gym", "Guest room",
-                            "Generator", "Laundry", "Hot water",
-                            "Volley ball ground", "Indoor sports (Table Tennis, Carom, Chess etc.)"
+							"Pure Vegetarian Mess",
+							"Library",
+							"Solar Water Heater",
+							"TV",
+							"Internet Point",
+							"Guest room",
+							"Generator",
+							"Laundry",
+							"Hot water",
+							"Volley ball ground",
+							"Indoor sports (Table Tennis, Carom, Chess)",
+							"CC TV Camera",
                         ].map((facility, idx) => (
                             <div key={idx} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-stone-100 shadow-xs hover:border-orange-100 hover:shadow-sm transition-all">
                                 <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />

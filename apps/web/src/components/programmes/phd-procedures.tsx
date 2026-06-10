@@ -30,9 +30,6 @@ export function PhDProcedures({
         <div className="max-w-6xl mx-auto">
           {/* Available Branches */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
@@ -61,9 +58,6 @@ export function PhDProcedures({
                     {availableBranches.map((branch, index) => (
                       <motion.tr
                         key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: index * 0.05 }}
                         className="hover:bg-primary/5 transition-colors"
                       >
@@ -83,9 +77,6 @@ export function PhDProcedures({
 
           {/* Application Form Section */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="mb-12 bg-linear-to-br from-primary/5 to-primary/10 rounded-xl p-8 border border-primary/20"
           >
@@ -129,9 +120,6 @@ export function PhDProcedures({
           <div className="grid md:grid-cols-2 gap-8">
             {/* Registration Procedure */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl shadow-sm border border-border p-8"
             >
@@ -147,9 +135,6 @@ export function PhDProcedures({
                 {registrationProcedure.map((item, index) => (
                   <motion.li
                     key={index}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     className="flex items-start gap-3"
                   >
@@ -162,9 +147,6 @@ export function PhDProcedures({
 
             {/* Admission Procedure */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl shadow-sm border border-border p-8"
             >
@@ -180,9 +162,6 @@ export function PhDProcedures({
                 {admissionProcedure.map((item, index) => (
                   <motion.li
                     key={index}
-                    initial={{ opacity: 0, x: 10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     className="flex items-start gap-3"
                   >
@@ -196,9 +175,6 @@ export function PhDProcedures({
 
           {/* Help Section */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-12 text-center"
           >

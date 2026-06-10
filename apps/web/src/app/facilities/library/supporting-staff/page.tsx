@@ -65,7 +65,6 @@ export default function SupportingStaffPage() {
         icon={Users}
         title="Supporting Staff"
         subtitle="Our dedicated support team ensuring smooth library operations"
-        bgGradient="from-purple-600 to-indigo-600"
       />
 
       <section className="py-16">

@@ -65,7 +65,6 @@ export function AcademicCalendarSection({
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             className="max-w-4xl"
@@ -155,9 +154,6 @@ export function AcademicCalendarSection({
         <section className="py-16 bg-stone-50">
           <div className="container mx-auto px-4">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="mb-12"
             >
@@ -188,9 +184,6 @@ export function AcademicCalendarSection({
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="mb-12"
             >
@@ -243,9 +236,6 @@ export function AcademicCalendarSection({
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-white rounded-xl p-8 md:p-12 shadow-sm border border-stone-200 text-center"
           >
@@ -263,7 +253,7 @@ export function AcademicCalendarSection({
                   Contact COE
                 </Button>
               </a>
-              <a href="/programs/departments">
+              <a href="/departments">
                 <Button variant="outline" size="lg">
                   View Departments
                 </Button>
@@ -287,9 +277,6 @@ function CalendarCard({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className={`group bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col ${
         featured ? "ring-2 ring-primary/20" : ""

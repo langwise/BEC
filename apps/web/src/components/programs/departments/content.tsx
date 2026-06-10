@@ -44,9 +44,6 @@ export default function ContentSection({
   return (
     <motion.div
       id={id}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
       className="mb-12 scroll-mt-28"
     >
       <div className="flex items-center gap-4 mb-4">

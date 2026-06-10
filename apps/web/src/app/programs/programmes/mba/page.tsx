@@ -1,6 +1,6 @@
 "use client";
 
-import { PageHeader } from "@/components/placements/page-header";
+import { ProgrammeHeader } from "@/components/programs/programmes/programme-header";
 import {
   CheckCircle2,
   GraduationCap,
@@ -70,7 +70,7 @@ function SectionHeader({ icon: Icon, title }: { icon: any; title: string }) {
 export default function MBAProgrammePage() {
   return (
     <div className="space-y-16">
-      <PageHeader title={mbaData.title} description={mbaData.description} />
+      <ProgrammeHeader title={mbaData.title} description={mbaData.description} />
 
       {/* Overview & Highlights */}
       <section className="space-y-8">
@@ -117,6 +117,12 @@ export default function MBAProgrammePage() {
       {/* Admission */}
       <section className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
         <SectionHeader icon={Building2} title="Admission Criteria" />
+
+        <div className="mb-8 rounded-xl bg-orange-50/60 border border-orange-100 px-5 py-4 text-sm text-gray-700">
+          <span className="font-semibold text-gray-900">Intake:</span> 60 seats —
+          30 Government Quota + 30 Management Quota &nbsp;·&nbsp;
+          <span className="font-semibold text-gray-900">College Code:</span> B124
+        </div>
 
         <div className="space-y-8">
           <div>
@@ -183,10 +189,10 @@ export default function MBAProgrammePage() {
         ].map((stat, idx) => (
           <div
             key={idx}
-            className="p-6 rounded-2xl bg-linear-to-br from-primary to-orange-600 text-white text-center shadow-lg shadow-orange-200/50"
+            className="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm text-center"
           >
-            <div className="text-3xl font-bold mb-1">{stat.value}</div>
-            <div className="text-xs opacity-90 uppercase tracking-wider">
+            <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
+            <div className="text-xs text-gray-500 uppercase tracking-wider">
               {stat.label}
             </div>
           </div>

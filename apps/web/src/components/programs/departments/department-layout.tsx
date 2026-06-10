@@ -14,7 +14,7 @@ interface DepartmentLayoutProps {
 
 function DepartmentTables({ title, tables }: { title: string; tables: DataTable[] }) {
   return (
-    <section className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+    <section className="space-y-6">
       <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
       <div className="space-y-8">
         {tables.map((table) => (
@@ -65,7 +65,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     // 1. HOME tab (Overview + Highlights)
     if (activeTab === "home") {
         return (
-            <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <div className="space-y-4">
                 {dept.quickStats && dept.quickStats.length > 0 && (
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                         {dept.quickStats.map((stat, i) => (
@@ -104,7 +104,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     // Let's assume 'about' shows Vision + Mission
     if (activeTab === "about") {
         return (
-             <div className="grid grid-cols-1 gap-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+             <div className="grid grid-cols-1 gap-8">
                 <ContentSection
                     title={dept.vision.title}
                     content={dept.vision.content}
@@ -128,7 +128,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     if (activeSection) {
          if (activeSection.type === "content") {
              return (
-                 <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                 <div>
                     <ContentSection
                         title={activeSection.title}
                         content={activeSection.content}
@@ -141,7 +141,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
          }
          if (activeSection.type === "faculty-list") {
              return (
-                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                 <div className="space-y-6">
                      <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
                      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
                          {activeSection.faculty.map((member, fIndex) => (
@@ -153,7 +153,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
          }
          if (activeSection.type === "documents") {
              return (
-                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                 <div className="space-y-6">
                      <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
                      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                          {activeSection.documents.map((doc, i) => (
@@ -182,7 +182,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
          }
          if (activeSection.type === "gallery") {
              return (
-                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                 <div className="space-y-6">
                      <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
                      <PhotoGallery images={activeSection.images} />
                  </div>
@@ -190,7 +190,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
          }
          if (activeSection.type === "stats") {
              return (
-                 <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                 <div className="space-y-6">
                      <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                          {activeSection.stats.map((stat, i) => (

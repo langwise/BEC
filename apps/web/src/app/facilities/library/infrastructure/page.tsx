@@ -10,10 +10,8 @@ import {
   Building2,
   Wifi,
   BookOpen,
-  Users2,
   Monitor,
   Laptop,
-  AirVent,
   Shield,
 } from "lucide-react";
 
@@ -27,52 +25,56 @@ const spaceImages = [
 ];
 
 export default function InfrastructurePage() {
+  // Real infrastructure from becbgk.edu/Library (infrastructure) — Koha ILS,
+  // RFID automation and major equipment.
   const facilities = [
     {
-      icon: BookOpen,
-      title: "Reading Halls",
+      icon: Building2,
+      title: "Plinth Area",
       description:
-        "Spacious and well-lit reading halls with seating capacity for 300+ students",
-    },
-    {
-      icon: Monitor,
-      title: "Digital Library",
-      description:
-        "Dedicated section with 50+ computers for accessing digital resources",
-    },
-    {
-      icon: Users2,
-      title: "Group Study Rooms",
-      description:
-        "4 group study rooms for collaborative learning and discussions",
-    },
-    {
-      icon: Wifi,
-      title: "Wi-Fi Connectivity",
-      description: "1 Gbps high-speed internet throughout the library premises",
+        "1,970 sq.m built-up area housing six operational sections of the library.",
     },
     {
       icon: Laptop,
-      title: "OPAC Terminals",
+      title: "Koha ILS",
       description:
-        "Online Public Access Catalog terminals for easy book search",
-    },
-    {
-      icon: AirVent,
-      title: "Climate Control",
-      description:
-        "Centralized air conditioning for comfortable reading environment",
+        "Fully automated using the Koha open-source Integrated Library Management System (v20.11).",
     },
     {
       icon: Shield,
-      title: "Security Systems",
-      description: "RFID-based security systems and CCTV surveillance",
+      title: "RFID Security Gate",
+      description:
+        "RFID security gate operating at 13.56 MHz, reading up to 8 tags per second.",
+    },
+    {
+      icon: Monitor,
+      title: "Self-Check Kiosk",
+      description:
+        "22-inch touchscreen RFID self-check kiosk for borrower self-service issue and return.",
+    },
+    {
+      icon: Laptop,
+      title: "RFID Workstations",
+      description:
+        "Barcode- and RFID-enabled circulation workstations at the issue/return counter.",
+    },
+    {
+      icon: BookOpen,
+      title: "Book Scanner",
+      description:
+        "e-scan book scanner and TLP2844 / TSC244cPro barcode-label printers for processing.",
     },
     {
       icon: Building2,
-      title: "Total Area",
+      title: "NAS Mirror Server",
       description:
-        "10,000+ sq. ft. of dedicated library space across two floors",
+        "Tulsient NAS 8400 server with 8 hot-swappable drives, scalable up to 3.2 TB.",
+    },
+    {
+      icon: Wifi,
+      title: "OPAC & Digital Access",
+      description:
+        "Web OPAC for catalogue search plus access to subscribed e-journals, e-books and databases.",
     },
   ];
 
@@ -90,7 +92,6 @@ export default function InfrastructurePage() {
         icon={Building2}
         title="Infrastructure Facility"
         subtitle="Modern facilities designed for optimal learning and research"
-        bgGradient="from-orange-600 to-red-600"
       />
 
       <section className="py-16">
@@ -104,39 +105,36 @@ export default function InfrastructurePage() {
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    The Central Library building is spread across two floors
-                    with modern infrastructure designed to provide an excellent
-                    learning environment. The library features state-of-the-art
-                    facilities including spacious reading halls, digital library
-                    section, group study rooms, and advanced technological
-                    support.
+                    Established in 1963, the Library and Information Centre now
+                    occupies its own dedicated building of 1,970 sq.m, operating
+                    through six sections. It is fully automated on the Koha
+                    open-source library management system and RFID-enabled for
+                    self-service circulation and security.
                   </p>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-stone-200">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-primary mb-1">
-                        10,000+
+                        1,970
                       </div>
-                      <div className="text-sm text-gray-600">Sq. Ft. Area</div>
+                      <div className="text-sm text-gray-600">Sq.m Area</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-primary mb-1">
-                        300+
+                        6
                       </div>
-                      <div className="text-sm text-gray-600">
-                        Seating Capacity
-                      </div>
+                      <div className="text-sm text-gray-600">Sections</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-primary mb-1">
-                        50+
+                        Koha
                       </div>
-                      <div className="text-sm text-gray-600">Computers</div>
+                      <div className="text-sm text-gray-600">ILS Automated</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-bold text-primary mb-1">
-                        1 Gbps
+                        RFID
                       </div>
-                      <div className="text-sm text-gray-600">Internet</div>
+                      <div className="text-sm text-gray-600">Enabled</div>
                     </div>
                   </div>
                 </div>

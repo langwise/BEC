@@ -1,6 +1,6 @@
 "use client";
 
-import { PageHeader } from "@/components/placements/page-header";
+import { ProgrammeHeader } from "@/components/programs/programmes/programme-header";
 import { CheckCircle2, GraduationCap, Building2, Wallet, Code2, Cpu } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 
@@ -54,7 +54,7 @@ function SectionHeader({ icon: Icon, title }: { icon: any, title: string }) {
 export default function MCAProgrammePage() {
   return (
     <div className="space-y-16">
-      <PageHeader
+      <ProgrammeHeader
         title={mcaData.title}
         description={mcaData.description}
       />
@@ -95,7 +95,12 @@ export default function MCAProgrammePage() {
       {/* Admission */}
       <section className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
           <SectionHeader icon={Building2} title="Admission Process" />
-          
+
+          <div className="mb-8 rounded-xl bg-orange-50/60 border border-orange-100 px-5 py-4 text-sm text-gray-700">
+            <span className="font-semibold text-gray-900">Intake:</span> 60 seats —
+            30 Government Quota + 30 Management Quota
+          </div>
+
           <div className="space-y-8">
             <div>
                 <ul className="space-y-3">
@@ -152,7 +157,7 @@ export default function MCAProgrammePage() {
                 { label: "Recruiters", value: "85+" },
             ].map((stat, idx) => (
                 <div key={idx} className="p-6 rounded-2xl bg-white border border-gray-100 text-center">
-                    <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                    <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
                     <div className="text-xs text-gray-500 uppercase tracking-wider">{stat.label}</div>
                 </div>
             ))}

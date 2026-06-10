@@ -41,9 +41,6 @@ export function FollowUsSection() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

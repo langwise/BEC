@@ -164,9 +164,6 @@ export default function ContactUsPage() {
             {keyContacts.map((contact, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
                 className="bg-white p-6 rounded-xl border border-stone-100 hover:border-orange-200 hover:shadow-lg transition-all duration-300 flex flex-col"
               >

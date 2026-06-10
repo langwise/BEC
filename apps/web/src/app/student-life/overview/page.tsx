@@ -143,7 +143,6 @@ export default function StudentLifeOverviewPage() {
             {/* Hero */}
             <section className="container mx-auto px-4">
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.98 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
                     className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-2xl md:rounded-3xl border border-slate-100 shadow-sm"
@@ -172,7 +171,6 @@ export default function StudentLifeOverviewPage() {
             <section className="container mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-8 md:mb-16">
                     <motion.div
-                        initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.2 }}
                         className="space-y-4 md:space-y-6"
@@ -198,7 +196,6 @@ export default function StudentLifeOverviewPage() {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.3 }}
                         className="grid grid-cols-2 gap-3 md:gap-4"
@@ -236,9 +233,6 @@ export default function StudentLifeOverviewPage() {
                             return (
                                 <motion.div
                                     key={index}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 }}
                                     className="h-full"
                                 >

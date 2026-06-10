@@ -20,10 +20,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const libraryStats = [
-  { value: "1,40,000+", label: "Books & Volumes" },
-  { value: "200+", label: "Journals & Periodicals" },
-  { value: "50+", label: "E-Resources" },
-  { value: "1 Gbps", label: "Internet Speed" },
+  { value: "1,38,000", label: "Volumes" },
+  { value: "43,695", label: "Titles" },
+  { value: "10,300+", label: "E-Journals" },
+  { value: "24,351", label: "E-Books" },
 ];
 
 const libraryServices = [
@@ -33,8 +33,6 @@ const libraryServices = [
     description:
       "Learn about our rich collection, history, and mission to support academic excellence.",
     href: "/facilities/library/about",
-    color: "text-blue-600",
-    bgColor: "bg-blue-50",
   },
   {
     icon: Users,
@@ -42,8 +40,6 @@ const libraryServices = [
     description:
       "Meet our dedicated team of library professionals committed to serving you.",
     href: "/facilities/library/staff",
-    color: "text-green-600",
-    bgColor: "bg-green-50",
   },
   {
     icon: Users,
@@ -51,8 +47,6 @@ const libraryServices = [
     description:
       "Our support team ensuring smooth library operations and services.",
     href: "/facilities/library/supporting-staff",
-    color: "text-purple-600",
-    bgColor: "bg-purple-50",
   },
   {
     icon: Building2,
@@ -60,8 +54,6 @@ const libraryServices = [
     description:
       "Explore our modern facilities designed for optimal learning and research.",
     href: "/facilities/library/infrastructure",
-    color: "text-orange-600",
-    bgColor: "bg-orange-50",
   },
   {
     icon: Globe,
@@ -69,8 +61,6 @@ const libraryServices = [
     description:
       "Access premium digital databases, journals, and research materials.",
     href: "/facilities/library/e-resources-paid",
-    color: "text-red-600",
-    bgColor: "bg-red-50",
   },
   {
     icon: Globe,
@@ -78,8 +68,6 @@ const libraryServices = [
     description:
       "Discover free online resources and open-access academic materials.",
     href: "/facilities/library/e-resources-free",
-    color: "text-teal-600",
-    bgColor: "bg-teal-50",
   },
   {
     icon: LinkIcon,
@@ -87,8 +75,6 @@ const libraryServices = [
     description:
       "Quick access to important library resources and external databases.",
     href: "/facilities/library/useful-links",
-    color: "text-indigo-600",
-    bgColor: "bg-indigo-50",
   },
   {
     icon: Phone,
@@ -96,8 +82,6 @@ const libraryServices = [
     description:
       "Get in touch with our library team for assistance and inquiries.",
     href: "/facilities/library/contact",
-    color: "text-pink-600",
-    bgColor: "bg-pink-50",
   },
 ];
 
@@ -189,11 +173,11 @@ export default function LibraryPage() {
               return (
                 <FadeIn key={index} delay={index * 0.05}>
                   <Link href={service.href}>
-                    <div className="group h-full bg-white rounded-lg border border-stone-200 hover:border-primary hover:shadow-xl transition-all duration-300 overflow-hidden">
-                      <div
-                        className={`${service.bgColor} p-6 flex items-center justify-center transition-transform duration-300 group-hover:scale-105`}
-                      >
-                        <Icon className={`h-12 w-12 ${service.color}`} />
+                    <div className="group h-full bg-white rounded-lg border border-stone-200 hover:border-primary hover:shadow-md transition-all duration-300 overflow-hidden">
+                      <div className="bg-stone-50 border-b border-stone-100 p-6 flex items-center justify-center">
+                        <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-orange-50 text-primary transition-transform duration-300 group-hover:scale-110">
+                          <Icon className="h-7 w-7" />
+                        </span>
                       </div>
                       <div className="p-6">
                         <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
@@ -218,74 +202,71 @@ export default function LibraryPage() {
           <FadeIn delay={0.4}>
             <div className="grid md:grid-cols-3 gap-6">
               {/* Library Hours */}
-              <div className="bg-linear-to-br from-blue-600 to-blue-700 text-white rounded-lg p-8">
-                <Clock className="h-10 w-10 mb-4 opacity-90" />
-                <h3 className="text-xl font-bold mb-4">Library Hours</h3>
+              <div className="bg-white rounded-lg border border-stone-200 p-8">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-primary mb-5">
+                  <Clock className="h-6 w-6" />
+                </span>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Library Hours</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span className="opacity-90">Monday - Friday:</span>
-                    <span className="font-semibold">8:00 AM - 8:00 PM</span>
+                    <span className="text-gray-500">Monday - Friday</span>
+                    <span className="font-semibold text-gray-900">8:00 AM - 8:00 PM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="opacity-90">Saturday:</span>
-                    <span className="font-semibold">9:00 AM - 5:00 PM</span>
+                    <span className="text-gray-500">Saturday</span>
+                    <span className="font-semibold text-gray-900">9:00 AM - 5:00 PM</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="opacity-90">Sunday:</span>
-                    <span className="font-semibold">Closed</span>
+                    <span className="text-gray-500">Sunday</span>
+                    <span className="font-semibold text-gray-900">Closed</span>
                   </div>
                 </div>
               </div>
 
               {/* Contact Info */}
-              <div className="bg-linear-to-br from-orange-600 to-orange-700 text-white rounded-lg p-8">
-                <Phone className="h-10 w-10 mb-4 opacity-90" />
-                <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-                <div className="space-y-3 text-sm">
-                  <div className="flex items-start gap-2">
-                    <Phone className="h-4 w-4 mt-0.5 shrink-0 opacity-75" />
-                    <span>+91-8354-234060</span>
+              <div className="bg-white rounded-lg border border-stone-200 p-8">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-primary mb-5">
+                  <Phone className="h-6 w-6" />
+                </span>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Contact Us</h3>
+                <div className="space-y-3 text-sm text-gray-600">
+                  <div className="flex items-start gap-2.5">
+                    <Phone className="h-4 w-4 mt-0.5 shrink-0 text-gray-400" />
+                    <span>+91 94485 14872</span>
                   </div>
-                  <div className="flex items-start gap-2">
-                    <Mail className="h-4 w-4 mt-0.5 shrink-0 opacity-75" />
+                  <div className="flex items-start gap-2.5">
+                    <Mail className="h-4 w-4 mt-0.5 shrink-0 text-gray-400" />
                     <span>library@becbgk.edu</span>
                   </div>
-                  <div className="flex items-start gap-2">
-                    <MapPin className="h-4 w-4 mt-0.5 shrink-0 opacity-75" />
+                  <div className="flex items-start gap-2.5">
+                    <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-gray-400" />
                     <span>Central Library Building, BEC Campus</span>
                   </div>
                 </div>
               </div>
 
               {/* Quick Links */}
-              <div className="bg-linear-to-br from-green-600 to-green-700 text-white rounded-lg p-8">
-                <LinkIcon className="h-10 w-10 mb-4 opacity-90" />
-                <h3 className="text-xl font-bold mb-4">Quick Access</h3>
-                <div className="space-y-2 text-sm">
-                  <Link
-                    href="/facilities/library/e-resources-paid"
-                    className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
-                  >
-                    → E-Resources (Paid)
-                  </Link>
-                  <Link
-                    href="/facilities/library/e-resources-free"
-                    className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
-                  >
-                    → E-Resources (Free)
-                  </Link>
-                  <Link
-                    href="/facilities/library/useful-links"
-                    className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
-                  >
-                    → Useful Links
-                  </Link>
-                  <Link
-                    href="/facilities/library/infrastructure"
-                    className="block hover:underline opacity-90 hover:opacity-100 transition-opacity"
-                  >
-                    → Infrastructure
-                  </Link>
+              <div className="bg-white rounded-lg border border-stone-200 p-8">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 text-primary mb-5">
+                  <LinkIcon className="h-6 w-6" />
+                </span>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Quick Access</h3>
+                <div className="space-y-2.5 text-sm">
+                  {[
+                    { href: "/facilities/library/e-resources-paid", label: "E-Resources (Paid)" },
+                    { href: "/facilities/library/e-resources-free", label: "E-Resources (Free)" },
+                    { href: "/facilities/library/useful-links", label: "Useful Links" },
+                    { href: "/facilities/library/infrastructure", label: "Infrastructure" },
+                  ].map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
+                    >
+                      <ChevronRight className="h-4 w-4 text-primary" />
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>

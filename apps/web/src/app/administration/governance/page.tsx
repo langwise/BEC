@@ -16,7 +16,7 @@ import {
   principal,
   sangha,
 } from "@/content/governance";
-import { BogGrid, bogCategoryLabels } from "@/components/governance/bog-grid";
+import { BogTable, bogCategoryLabels } from "@/components/governance/bog-table";
 import { DeansGrid } from "@/components/governance/deans-grid";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { FilterChips } from "@/components/common/filter-chips";
@@ -379,7 +379,7 @@ export default function GovernancePage() {
             />
           </div>
 
-          <BogGrid
+          <BogTable
             members={
               activeCategory === "all"
                 ? bogMembers
