@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import DepartmentSidebar from "@/components/programs/departments/sidebar";
-import { DepartmentData } from "@/data/department/department";
+import type { DataTable, DepartmentData } from "@/data/department/department";
 import ContentSection from "@/components/programs/departments/content";
 import { CheckCircle2, FileText, Download } from "lucide-react";
 import { FacultyCard } from "@/components/programs/faculty/faculty-card";
@@ -10,6 +10,52 @@ import { PhotoGallery } from "@/components/common/photo-gallery";
 
 interface DepartmentLayoutProps {
   dept: DepartmentData;
+}
+
+function DepartmentTables({ title, tables }: { title: string; tables: DataTable[] }) {
+  return (
+    <section className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+      <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+      <div className="space-y-8">
+        {tables.map((table) => (
+          <div key={table.title} className="space-y-3">
+            <h3 className="text-base font-semibold text-gray-900">{table.title}</h3>
+            <div className="overflow-x-auto rounded-md border border-stone-200 bg-white shadow-sm">
+              <table className="min-w-full divide-y divide-stone-200 text-sm">
+                <thead className="bg-stone-50">
+                  <tr>
+                    {table.columns.map((column) => (
+                      <th
+                        key={column}
+                        scope="col"
+                        className="min-w-[160px] px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-stone-600"
+                      >
+                        {column}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-100 bg-white">
+                  {table.rows.map((row, rowIndex) => (
+                    <tr key={`${table.title}-${rowIndex}`} className="align-top">
+                      {row.map((cell, cellIndex) => (
+                        <td
+                          key={`${table.title}-${rowIndex}-${cellIndex}`}
+                          className="min-w-[180px] px-4 py-3 leading-relaxed text-stone-700 first:font-medium first:text-gray-900"
+                        >
+                          {cell || "-"}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
@@ -130,6 +176,9 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                      </div>
                  </div>
              )
+         }
+         if (activeSection.type === "tables") {
+             return <DepartmentTables title={activeSection.title} tables={activeSection.tables} />
          }
          if (activeSection.type === "gallery") {
              return (

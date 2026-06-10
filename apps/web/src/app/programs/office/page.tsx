@@ -3,7 +3,6 @@
 import { PageHeader } from "@/components/placements/page-header";
 import { FadeIn } from "@/components/animations/fade-in";
 import {
-    BookOpen,
     GraduationCap,
     ClipboardCheck,
     UserCog,
@@ -17,7 +16,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 
 const officeData = {
     title: "Academic Office",
@@ -40,7 +38,7 @@ const officeData = {
             title: "Academic Council",
             icon: Building2,
             description: "Governance body overseeing academic policies, curriculum updates, and standards.",
-            link: "#council"
+            link: "/administration/governance#academic-council"
         },
         {
             title: "Student Support",
@@ -101,6 +99,7 @@ export default function AcademicOfficePage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {officeData.functions.map((func, idx) => (
                             <FadeIn key={idx} delay={idx * 0.1}>
+                                <Link href={func.link} className="block h-full">
                                 <Card className="h-full border-stone-200 hover:shadow-lg transition-all duration-300 hover:border-primary/20 group cursor-pointer bg-white">
                                     <CardHeader className="pb-3">
                                         <div className="w-12 h-12 rounded-lg bg-orange-50 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
@@ -119,6 +118,7 @@ export default function AcademicOfficePage() {
                                         </div>
                                     </CardContent>
                                 </Card>
+                                </Link>
                             </FadeIn>
                         ))}
                     </div>

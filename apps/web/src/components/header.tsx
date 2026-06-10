@@ -152,20 +152,20 @@ export function Header() {
                         {item.title}
                       </a>
                     ) : (
-                    <details className="group">
+                    <details className="group/mobile-nav">
                       <summary className="flex items-center justify-between cursor-pointer py-2 font-medium">
-                        {item.title}
-                        <ChevronDown className="h-4 w-4 group-open:rotate-180" />
+                        <span>{item.title}</span>
+                        <ChevronDown className="h-4 w-4 shrink-0 transition-transform group-open/mobile-nav:rotate-180" />
                       </summary>
 
                       <div className="ml-4 mt-2 space-y-2 pb-2">
                         {item.items?.map((sub) => (
                           <div key={sub.title}>
                             {isGroup(sub) ? (
-                              <details>
-                                <summary className="flex justify-between cursor-pointer text-sm py-1">
-                                  {sub.title}
-                                  <ChevronDown className="w-3 h-3 group-open:rotate-180" />
+                              <details className="group/mobile-subnav">
+                                <summary className="flex items-center justify-between gap-3 cursor-pointer text-sm py-1">
+                                  <span>{sub.title}</span>
+                                  <ChevronDown className="h-3 w-3 shrink-0 transition-transform group-open/mobile-subnav:rotate-180" />
                                 </summary>
 
                                 <div className="ml-4 mt-1 space-y-1 border-l pl-2">

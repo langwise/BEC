@@ -33,6 +33,10 @@
             "type": "string",
             "description": "R2 folder under departments/<assetSlug>/ whose photos build the Infrastructure gallery. Omit if no photos exist yet."
           },
+          "infrastructureGallerySlug": {
+            "type": "string",
+            "description": "Explicit R2 folder under departments/<infrastructureGallerySlug>/ for verified infrastructure photos. Use this for PG departments instead of assetSlug fallback."
+          },
           "established": { "type": "string", "description": "Year the department was established, e.g. \"1983\"." },
           "intake": { "type": "string", "description": "Sanctioned UG intake, e.g. \"180\"." },
           "overview": { "type": "string", "description": "Department overview paragraph (Home tab)." },
@@ -89,6 +93,71 @@
               }
             }
           },
+          "supportingStaff": {
+            "type": "array",
+            "description": "Supporting staff records from legacy department pages.",
+            "items": {
+              "type": "object",
+              "required": ["name", "designation"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string" },
+                "designation": { "type": "string" }
+              }
+            }
+          },
+          "committeeGroups": {
+            "type": "array",
+            "description": "Department board memberships such as BOS and BOE.",
+            "items": {
+              "type": "object",
+              "required": ["title", "members"],
+              "additionalProperties": false,
+              "properties": {
+                "title": { "type": "string" },
+                "members": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["name", "position"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "name": { "type": "string" },
+                      "position": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "infrastructureItems": {
+            "type": "array",
+            "description": "Major equipment rows from legacy infrastructure pages.",
+            "items": {
+              "type": "object",
+              "required": ["name"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string" },
+                "specification": { "type": "string" },
+                "quantity": { "type": "string" }
+              }
+            }
+          },
+          "softwareItems": {
+            "type": "array",
+            "description": "Software rows from legacy infrastructure pages.",
+            "items": {
+              "type": "object",
+              "required": ["name"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string" },
+                "version": { "type": "string" },
+                "usage": { "type": "string" }
+              }
+            }
+          },
           "activities": {
             "type": "array",
             "description": "Recent events, workshops, talks and department activities.",
@@ -126,6 +195,21 @@
               "designation": { "type": "string" },
               "phone": { "type": "string" },
               "email": { "type": "string" }
+            }
+          },
+          "additionalContacts": {
+            "type": "array",
+            "description": "Additional department contact people shown on legacy pages.",
+            "items": {
+              "type": "object",
+              "required": ["name"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string" },
+                "designation": { "type": "string" },
+                "phone": { "type": "string" },
+                "email": { "type": "string" }
+              }
             }
           },
           "documents": {
