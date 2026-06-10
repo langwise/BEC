@@ -13,9 +13,6 @@ function EventCard({ event }: any) {
     <motion.a
       href="#"
       className="group block h-full"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
@@ -91,9 +88,6 @@ export function EventsSection() {
       <div className="container mx-auto px-4 lg:px-6 max-w-[1400px]">
         <motion.div
           className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
         >
           <div>
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-primary mb-2">

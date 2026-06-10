@@ -8,14 +8,11 @@ interface LibraryPageHeaderProps {
   icon: LucideIcon;
   title: string;
   subtitle?: string;
-  bgGradient?: string;
 }
 
 export function LibraryPageHeader({
-  icon: Icon,
   title,
   subtitle,
-  bgGradient = "from-primary to-accent",
 }: LibraryPageHeaderProps) {
   return (
     <section className="relative overflow-hidden border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50">

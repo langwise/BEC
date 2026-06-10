@@ -79,7 +79,6 @@ export default function RoboticsLabPage() {
 
         <div className="relative z-10 p-10 md:p-16 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-col items-center"
           >
@@ -105,7 +104,6 @@ export default function RoboticsLabPage() {
         {/* Main Features */}
         <div className="lg:col-span-2 space-y-8">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
@@ -150,7 +148,6 @@ export default function RoboticsLabPage() {
         {/* Sidebar / Objectives */}
         <div className="space-y-6">
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
             className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm relative overflow-hidden"
@@ -189,9 +186,6 @@ export default function RoboticsLabPage() {
       {/* Gallery */}
       {galleryImages.length > 0 && (
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
         >
           <h2 className="text-2xl font-bold text-slate-900 mb-2 flex items-center gap-3">
             <span className="w-1.5 h-8 bg-indigo-600 rounded-full" />

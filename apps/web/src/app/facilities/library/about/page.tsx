@@ -55,14 +55,14 @@ export default function AboutLibraryPage() {
                   <div className="prose prose-lg max-w-none">
                     <div className="bg-stone-50 border-l-4 border-primary p-6 rounded-r-lg mb-6">
                       <p className="text-lg text-gray-700 leading-relaxed mb-0">
-                        The Central Library at Basaveshwar Engineering College
-                        serves as the academic heart of the institution,
-                        supporting teaching, learning, and research activities.
-                        Established alongside the college in 1963, the library
-                        has grown into a comprehensive information resource
-                        center with over <strong>1,40,000 volumes</strong>
-                        covering diverse engineering disciplines and allied
-                        sciences.
+                        The Library and Information Centre was established in
+                        1963 with three departments, housed in a small building.
+                        It now occupies its own dedicated facility of 1,970 sq.m
+                        and operates through six sections, holding{" "}
+                        <strong>1,38,000 volumes</strong> across 43,695 titles
+                        along with a rich collection of e-journals, e-books and
+                        subscribed databases supporting every engineering
+                        discipline and allied science.
                       </p>
                     </div>
 
@@ -90,9 +90,9 @@ export default function AboutLibraryPage() {
               {/* Vision & Mission */}
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <FadeIn delay={0.2}>
-                  <div className="bg-blue-50 rounded-lg p-8 h-full border border-blue-100">
+                  <div className="bg-white rounded-lg p-8 h-full border border-stone-200">
                     <div className="flex items-center gap-3 mb-6">
-                      <div className="bg-blue-600 text-white p-3 rounded-lg">
+                      <div className="bg-orange-50 text-primary p-3 rounded-xl">
                         <Eye className="h-6 w-6" />
                       </div>
                       <h2 className="text-2xl font-bold text-gray-900">
@@ -100,19 +100,19 @@ export default function AboutLibraryPage() {
                       </h2>
                     </div>
                     <p className="text-gray-700 leading-relaxed">
-                      To be recognized as a premier library and information
-                      center that fosters innovation, supports research
-                      excellence, and cultivates lifelong learning habits among
-                      students and faculty through world-class resources and
-                      services.
+                      Engaged in learning and discovery as essential
+                      participants in the educational community — to develop,
+                      organize, provide access to and preserve materials to meet
+                      the needs of present and future generations of students and
+                      scholars.
                     </p>
                   </div>
                 </FadeIn>
 
                 <FadeIn delay={0.3}>
-                  <div className="bg-orange-50 rounded-lg p-8 h-full border border-orange-100">
+                  <div className="bg-white rounded-lg p-8 h-full border border-stone-200">
                     <div className="flex items-center gap-3 mb-6">
-                      <div className="bg-orange-600 text-white p-3 rounded-lg">
+                      <div className="bg-orange-50 text-primary p-3 rounded-xl">
                         <Target className="h-6 w-6" />
                       </div>
                       <h2 className="text-2xl font-bold text-gray-900">
@@ -123,26 +123,27 @@ export default function AboutLibraryPage() {
                       <li className="flex gap-2">
                         <ChevronRight className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
                         <span>
-                          Provide comprehensive access to quality information
-                          resources
+                          Strengthen and enhance the teaching, research and
+                          service of the users
                         </span>
                       </li>
                       <li className="flex gap-2">
                         <ChevronRight className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
                         <span>
-                          Support teaching, learning, and research activities
+                          Promote intellectual growth and creativity
                         </span>
                       </li>
                       <li className="flex gap-2">
                         <ChevronRight className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
                         <span>
-                          Promote information literacy and digital skills
+                          Develop collections and facilitate access to
+                          information resources
                         </span>
                       </li>
                       <li className="flex gap-2">
                         <ChevronRight className="h-5 w-5 text-orange-600 shrink-0 mt-0.5" />
                         <span>
-                          Foster a culture of continuous learning and innovation
+                          Teach the effective use of information resources
                         </span>
                       </li>
                     </ul>
@@ -163,12 +164,12 @@ export default function AboutLibraryPage() {
                       {
                         title: "Extensive Collection",
                         description:
-                          "Over 1,40,000 books, journals, and reference materials across all engineering disciplines",
+                          "1,38,000 volumes across 43,695 titles, with 160 national and 3 international print journals",
                       },
                       {
                         title: "Digital Resources",
                         description:
-                          "Access to premium e-journals, e-books, and international databases for research",
+                          "10,300+ e-journals, 24,351 e-books and 14 subscribed databases for research",
                       },
                       {
                         title: "Modern Infrastructure",

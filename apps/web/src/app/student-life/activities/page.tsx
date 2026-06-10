@@ -104,7 +104,6 @@ export default function ActivitiesPage() {
 
             {/* Featured Event Hero */}
             <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1 }}
                 className="relative rounded-3xl overflow-hidden bg-linear-to-r from-violet-600 to-indigo-600 text-white shadow-2xl"
@@ -151,10 +150,7 @@ export default function ActivitiesPage() {
                         return (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
-                                viewport={{ once: true }}
                             >
                                 <Card
                                     className="h-full hover:shadow-lg transition-all duration-300 border-l-4"
@@ -235,9 +231,6 @@ export default function ActivitiesPage() {
 
             {/* Mindhog Section */}
             <motion.section
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 className="bg-slate-900 rounded-3xl p-6 md:p-12 text-white relative overflow-hidden"
             >
                 <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl -mr-12 -mt-12" />

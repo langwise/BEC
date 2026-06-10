@@ -21,9 +21,6 @@ export function AlumniTestimonialsSection() {
           {testimonials.map((item, index) => (
             <motion.div
               key={item.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 relative group flex flex-col"
             >

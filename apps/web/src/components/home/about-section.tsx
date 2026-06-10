@@ -38,9 +38,6 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Left: Image (Stays static) */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[400px] lg:min-h-full group"
           >
@@ -63,19 +60,12 @@ export function AboutSection() {
           <div className="flex flex-col justify-center space-y-8 py-4">
             <div>
               <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-2"
               >
                 About BEC
               </motion.h2>
               <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: 60 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2, duration: 0.4 }}
-                className="h-1.5 bg-primary/20 rounded-full"
+                className="h-1.5 w-[60px] bg-primary/20 rounded-full"
               />
             </div>
 
@@ -140,9 +130,6 @@ export function AboutSection() {
             </Carousel>
 
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
               <Button

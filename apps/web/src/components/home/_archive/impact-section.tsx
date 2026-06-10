@@ -109,10 +109,7 @@ const TextBlock = React.forwardRef<
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
       >
         <div className="flex items-center gap-3 mb-6">
           <span className="h-px w-12 bg-orange-600/60"></span>
@@ -148,7 +145,6 @@ const TextBlock = React.forwardRef<
         >
           {item.cta}
           <motion.span
-            initial={{ x: 0 }}
             whileHover={{ x: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
           >

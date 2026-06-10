@@ -10,63 +10,31 @@ import { ResourceCard } from "@/components/library/resource-card";
 import { Globe } from "lucide-react";
 
 export default function EResourcesPaidPage() {
+  // Subscribed/paid databases as listed on becbgk.edu/Library (e-resources paid).
   const paidResources = [
-    {
-      name: "IEEE Xplore Digital Library",
-      description: "Access to IEEE journals, conference papers, and standards in electrical engineering and computer science",
-      url: "https://ieeexplore.ieee.org",
-      category: "Journals & Conferences",
-      type: "paid" as const
-    },
-    {
-      name: "Science Direct",
-      description: "Elsevier's platform providing access to scientific, technical, and medical research",
-      url: "https://www.sciencedirect.com",
-      category: "Research Database",
-      type: "paid" as const
-    },
-    {
-      name: "Springer Link",
-      description: "Access to Springer journals, books, and reference works across all disciplines",
-      url: "https://link.springer.com",
-      category: "Journals & Books",
-      type: "paid" as const
-    },
-    {
-      name: "ASCE Library",
-      description: "American Society of Civil Engineers publications and research papers",
-      url: "https://ascelibrary.org",
-      category: "Civil Engineering",
-      type: "paid" as const
-    },
-    {
-      name: "ASME Digital Collection",
-      description: "American Society of Mechanical Engineers journals and conference proceedings",
-      url: "https://asmedigitalcollection.asme.org",
-      category: "Mechanical Engineering",
-      type: "paid" as const
-    },
-    {
-      name: "ACM Digital Library",
-      description: "Association for Computing Machinery's comprehensive database",
-      url: "https://dl.acm.org",
-      category: "Computer Science",
-      type: "paid" as const
-    },
-    {
-      name: "Taylor & Francis Online",
-      description: "Access to journals across science, technology, medicine, and social sciences",
-      url: "https://www.tandfonline.com",
-      category: "Multidisciplinary",
-      type: "paid" as const
-    },
-    {
-      name: "Wiley Online Library",
-      description: "Research articles, books, and reference works from Wiley publications",
-      url: "https://onlinelibrary.wiley.com",
-      category: "Research Database",
-      type: "paid" as const
-    }
+    { name: "IEEE Xplore Digital Library", description: "IEEE journals, conference papers and standards in electrical engineering and computer science.", url: "https://ieeexplore.ieee.org", category: "Journals & Conferences", type: "paid" as const },
+    { name: "Science Direct (Elsevier)", description: "Elsevier's platform for scientific, technical and medical research literature.", url: "https://www.sciencedirect.com", category: "Research Database", type: "paid" as const },
+    { name: "Springer Link", description: "Springer journals and reference works — 667 titles subscribed.", url: "https://link.springer.com", category: "Journals & Books", type: "paid" as const },
+    { name: "Springer Link – Computer Science", description: "Specialized Springer collection for computer science.", url: "https://link.springer.com", category: "Computer Science", type: "paid" as const },
+    { name: "Taylor & Francis", description: "Journals across science, technology and social sciences — 239 titles subscribed.", url: "https://www.tandfonline.com", category: "Multidisciplinary", type: "paid" as const },
+    { name: "Emerald", description: "Management, engineering and social science journals — 120 titles subscribed.", url: "https://www.emerald.com", category: "Journals", type: "paid" as const },
+    { name: "ProQuest", description: "Dissertations and multidisciplinary research database — 3,900 titles.", url: "https://www.proquest.com", category: "Research Database", type: "paid" as const },
+    { name: "Cambridge University Press", description: "Academic journals and books from Cambridge University Press.", url: "https://www.cambridge.org/core", category: "Journals & Books", type: "paid" as const },
+    { name: "CRCnetbase", description: "CRC Press technical and engineering reference e-books.", category: "E-Books", type: "paid" as const },
+    { name: "EBSCOHOST", description: "Multi-disciplinary database platform aggregating journals and e-books.", url: "https://www.ebsco.com", category: "Research Database", type: "paid" as const },
+    { name: "Cengage Learning", description: "Academic e-library of textbooks and learning resources.", category: "E-Books", type: "paid" as const },
+    { name: "PACKT", description: "Technology and programming learning platform.", url: "https://www.packtpub.com", category: "E-Learning", type: "paid" as const },
+    { name: "BSP E-Books", description: "BS Publications engineering e-books collection.", category: "E-Books", type: "paid" as const },
+    { name: "Edisol Informatics", description: "Subscribed e-books collection.", category: "E-Books", type: "paid" as const },
+    { name: "N-LIST (INFLIBNET)", description: "National Library and Information Services Infrastructure consortium for e-journals and e-books.", url: "https://nlist.inflibnet.ac.in", category: "Consortium", type: "paid" as const },
+    { name: "DELNET", description: "Developing Library Network — resource sharing and cooperative cataloguing.", url: "https://delnet.in", category: "Consortium", type: "paid" as const },
+    { name: "MAP Systems (VTU Consortium)", description: "VTU consortium access provided through MAP Systems.", category: "Consortium", type: "paid" as const },
+    { name: "PAT Technology (VTU)", description: "VTU educational platform access.", category: "E-Learning", type: "paid" as const },
+    { name: "Eduport Global – CBS", description: "Educational resources platform.", category: "E-Learning", type: "paid" as const },
+    { name: "IEEE Blended e-Learning Platform", description: "IEEE blended learning courses and modules.", category: "E-Learning", type: "paid" as const },
+    { name: "Quiklrn", description: "Learning platform with language-lab support.", category: "E-Learning", type: "paid" as const },
+    { name: "Magzter", description: "Digital magazine subscription service.", url: "https://www.magzter.com", category: "Magazines", type: "paid" as const },
+    { name: "DrillBit", description: "Plagiarism detection / similarity-check tool.", url: "https://www.drillbitplagiarism.com", category: "Plagiarism Tool", type: "paid" as const },
   ];
 
   return (
@@ -85,7 +53,6 @@ export default function EResourcesPaidPage() {
         icon={Globe}
         title="E-Resources (Paid)"
         subtitle="Access premium digital databases and research materials"
-        bgGradient="from-red-600 to-orange-600"
       />
 
       <section className="py-16">

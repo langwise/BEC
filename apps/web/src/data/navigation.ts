@@ -1,4 +1,5 @@
 import { NavigationItem } from "@/types/navigation";
+import { departmentCategories, departmentHref } from "@/data/departments-catalog";
 
 export const navigationData: NavigationItem[] = [
   // 1. Institute (About Us)
@@ -58,7 +59,6 @@ export const navigationData: NavigationItem[] = [
             title: "Board of Governors",
             href: "/administration/governance#bog",
           },
-          { title: "The Senate", href: "/administration/governing/senate" },
         ],
       },
       { title: "Chairperson", href: "/administration/chairperson" },
@@ -79,7 +79,6 @@ export const navigationData: NavigationItem[] = [
     items: [
       { title: "Examinations", href: "/programs/examinations" },
       { title: "Academic Office", href: "/programs/office" },
-      { title: "Syllabus", href: "/programs/syllabus" },
       { title: "First-Year Syllabus", href: "/programs/first-year" },
       {
         title: "Programmes",
@@ -91,17 +90,25 @@ export const navigationData: NavigationItem[] = [
           { title: "M.Sc.(Engg.)/Ph.D", href: "/programs/programmes/phd" },
         ],
       },
-      { title: "Curriculum", href: "/programs/curriculum" },
-      { title: "Academic Calendar", href: "/programs/calendar" },
-      { title: "Departments", href: "/programs/departments" },
-      { title: "Convocation", href: "/programs/convocation" },
       { title: "Documents to Submit", href: "/programs/documents" },
       { title: "Scholarship Details", href: "/programs/scholarships" },
       { title: "Hostel Admissions", href: "/programs/hostel" },
     ],
   },
 
-  // 4. Research (Commented out to remove from website navigation)
+  // 4. Departments (top-level — UG, PG and Science & Humanities)
+  {
+    title: "Departments",
+    items: departmentCategories.map((category) => ({
+      title: category.navLabel,
+      items: category.departments.map((dept) => ({
+        title: dept.name,
+        href: departmentHref(category.key, dept.slug),
+      })),
+    })),
+  },
+
+  // 5. Research (Commented out to remove from website navigation)
   /*
   {
     title: "Research",
@@ -168,7 +175,7 @@ export const navigationData: NavigationItem[] = [
     title: "Facilities",
     items: [
       { title: "Library", href: "/facilities/library" },
-      { title: "Central Research Facility", href: "/facilities/research" },
+      { title: "Research", href: "/facilities/research" },
       { title: "Guest House", href: "/facilities/guesthouse" },
       { title: "Campus Amenities", href: "/facilities/amenities" },
       {

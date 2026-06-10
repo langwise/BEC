@@ -19,7 +19,11 @@ export default function ContactPage() {
                 <FadeIn>
                     <div className="grid gap-6">
                         <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
-                            <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Us</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-1">Dr. Chandrashekhar K.</h3>
+                            <p className="text-gray-700 font-medium">
+                                Controller Of Examinations &amp; Professor of Physics
+                            </p>
+                            <p className="text-gray-500 text-sm mb-6">Department of Physics</p>
 
                             <div className="space-y-4">
                                 <div className="flex items-start gap-4">
@@ -29,8 +33,8 @@ export default function ContactPage() {
                                     <div>
                                         <p className="font-semibold text-gray-900">Address</p>
                                         <p className="text-gray-600">
-                                            S. Nijalingappa Vidyanagar, Bagalkot - 587102,<br />
-                                            Karnataka, India
+                                            Basaveshwar Engineering College,<br />
+                                            Bagalkot - 587 102, Karnataka, India
                                         </p>
                                     </div>
                                 </div>
@@ -41,7 +45,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="font-semibold text-gray-900">Phone</p>
-                                        <p className="text-gray-600">+91-8354-234060 / 234204</p>
+                                        <p className="text-gray-600">+91 7618781973</p>
                                     </div>
                                 </div>
 
@@ -51,7 +55,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="font-semibold text-gray-900">Email</p>
-                                        <p className="text-gray-600">principal@becbgk.edu</p>
+                                        <p className="text-gray-600">beccoe2007@gmail.com</p>
                                     </div>
                                 </div>
                             </div>

@@ -97,16 +97,17 @@ export default function HostelPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
               "Pure Vegetarian Mess",
-              "Library",
-              "Computer centre with Internet",
-              "TV",
-              "Multi Gym",
+              "RO Filter Water",
+              "Solar Water Heater",
+              "Wood Boiler",
+              "Internet Point",
               "Guest room",
               "Generator",
-              "Laundry",
+              "Electric Boiler",
               "Hot water",
               "Volley ball ground",
               "Indoor sports (Table Tennis, Carom, Chess)",
+			  "CC TV Camera",
             ].map((facility, idx) => (
               <div
                 key={idx}
@@ -194,8 +195,8 @@ export default function HostelPage() {
           <h2 className="text-xl font-bold">Hostel Wardens</h2>
         </div>
         <FadeIn delay={0.1}>
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="p-4 border border-stone-100 rounded-xl bg-stone-50/50 hover:bg-white hover:shadow-md transition-all">
+          <div className="space-y-6">
+            <div className="p-4 border border-stone-100 rounded-xl bg-stone-50/50 hover:bg-white hover:shadow-md transition-all md:max-w-sm">
               <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">
                 Deputy Chief Warden
               </p>
@@ -203,37 +204,30 @@ export default function HostelPage() {
                 Dr. P. L. Timmanagoudar
               </p>
             </div>
-            <div className="p-4 border border-stone-100 rounded-xl bg-stone-50/50 hover:bg-white hover:shadow-md transition-all">
-              <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">
-                Deputy Chief Warden
-              </p>
-              <p className="text-lg font-bold text-gray-900">
-                Dr. Shobha Patil
-              </p>
-            </div>
-            <div className="p-4 border border-stone-100 rounded-xl bg-stone-50/50 hover:bg-white hover:shadow-md transition-all">
-              <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">
-                Warden
-              </p>
-              <p className="font-bold text-gray-800">Shri B. R. Endigeri</p>
-            </div>
-            <div className="p-4 border border-stone-100 rounded-xl bg-stone-50/50 hover:bg-white hover:shadow-md transition-all">
-              <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">
-                Warden
-              </p>
-              <p className="font-bold text-gray-800">Shri. B. M. Vyas</p>
-            </div>
-            <div className="p-4 border border-stone-100 rounded-xl bg-stone-50/50 hover:bg-white hover:shadow-md transition-all">
-              <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">
-                Warden
-              </p>
-              <p className="font-bold text-gray-800">Dr. Mahabaleshwar S. K.</p>
-            </div>
-            <div className="p-4 border border-stone-100 rounded-xl bg-stone-50/50 hover:bg-white hover:shadow-md transition-all">
-              <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">
-                Warden
-              </p>
-              <p className="font-bold text-gray-800">Dr. A. V. Sutagundar</p>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              {[
+                "Shri B. R. Endigeri",
+                "Shri. B. M. Vyas",
+                "Dr. Mahabaleshwar S. K.",
+                "Dr. A. V. Sutagundar",
+                "Shri Vivekanand B. S.",
+                "Dr. Shobha Patil",
+                "Smt. Sunita Tambakad",
+                "Smt. Sudha S. K",
+                "Dr. Manjula A. Sutagundar",
+                "Smt. Vijaylaxmi S. Patil",
+              ].map((warden) => (
+                <div
+                  key={warden}
+                  className="p-4 border border-stone-100 rounded-xl bg-stone-50/50 hover:bg-white hover:shadow-md transition-all"
+                >
+                  <p className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">
+                    Warden
+                  </p>
+                  <p className="font-bold text-gray-800">{warden}</p>
+                </div>
+              ))}
             </div>
           </div>
         </FadeIn>

@@ -10,9 +10,6 @@ function AnnouncementItem({ item, index }: any) {
     <motion.a
       href="#"
       className="group block py-3 px-3 -mx-3 hover:bg-gray-50 rounded-lg transition-colors"
-      initial={{ opacity: 0, x: 20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
       transition={{ delay: index * 0.05 }}
     >
       <div className="flex gap-3">
@@ -50,9 +47,6 @@ export function AnnouncementsSection() {
       <div className="container mx-auto px-4 lg:px-6 max-w-[1400px]">
         <motion.div
           className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
         >
           <div>
             <h2 className="text-3xl lg:text-4xl font-serif font-bold text-primary mb-2">

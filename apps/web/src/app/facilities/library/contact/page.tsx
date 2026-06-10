@@ -26,7 +26,6 @@ export default function ContactPage() {
         icon={Phone}
         title="Contact Information"
         subtitle="Get in touch with us for any assistance"
-        bgGradient="from-pink-600 to-rose-600"
       />
 
       <section className="py-16">
@@ -41,8 +40,8 @@ export default function ContactPage() {
                 {/* Contact Info Cards */}
                 <FadeIn delay={0.1}>
                   <div className="bg-white rounded-lg p-8 border border-stone-200">
-                    <div className="bg-blue-50 p-4 rounded-lg mb-4 inline-block">
-                      <Phone className="h-8 w-8 text-blue-600" />
+                    <div className="bg-orange-50 p-4 rounded-lg mb-4 inline-block">
+                      <Phone className="h-8 w-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Phone</h3>
                     <div className="space-y-2">
@@ -58,8 +57,8 @@ export default function ContactPage() {
 
                 <FadeIn delay={0.15}>
                   <div className="bg-white rounded-lg p-8 border border-stone-200">
-                    <div className="bg-green-50 p-4 rounded-lg mb-4 inline-block">
-                      <Mail className="h-8 w-8 text-green-600" />
+                    <div className="bg-orange-50 p-4 rounded-lg mb-4 inline-block">
+                      <Mail className="h-8 w-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Email</h3>
                     <div className="space-y-2">
@@ -91,8 +90,8 @@ export default function ContactPage() {
 
                 <FadeIn delay={0.25}>
                   <div className="bg-white rounded-lg p-8 border border-stone-200">
-                    <div className="bg-purple-50 p-4 rounded-lg mb-4 inline-block">
-                      <Clock className="h-8 w-8 text-purple-600" />
+                    <div className="bg-orange-50 p-4 rounded-lg mb-4 inline-block">
+                      <Clock className="h-8 w-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Working Hours</h3>
                     <div className="space-y-2 text-gray-700">

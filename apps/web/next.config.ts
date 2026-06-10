@@ -28,7 +28,21 @@ const nextConfig: NextConfig = {
       }
     ],
   },
-  /* config options here */
+  async redirects() {
+    return [
+      // Departments moved out of /programs to a top-level /departments route.
+      {
+        source: "/programs/departments",
+        destination: "/departments",
+        permanent: true,
+      },
+      {
+        source: "/programs/departments/:path*",
+        destination: "/departments/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

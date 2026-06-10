@@ -1,6 +1,6 @@
 "use client";
 
-import { PageHeader } from "@/components/placements/page-header";
+import { ProgrammeHeader } from "@/components/programs/programmes/programme-header";
 import { CheckCircle2, GraduationCap, Building2, Beaker, FileText, Microscope } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 
@@ -8,8 +8,8 @@ const phdData = {
   title: "M.Sc. (Engg.) & Ph.D",
   description: "Embark on a journey of advanced research and innovation with our doctoral and M.Sc. Engineering programmes across multiple disciplines.",
   highlights: [
-      "9 VTU Recognized Research Centers",
-      "100% PhD Qualified Supervisors",
+      "10 VTU-Recognized Research Centres",
+      "64 Research Supervisors · 140 Ph.D.s Awarded",
       "Advanced Research Facilities",
       "Industry-Sponsored Research Projects",
       "Publication Support & Guidance",
@@ -20,10 +20,12 @@ const phdData = {
       "Computer Science & Engineering",
       "Electronics & Communication Engineering",
       "Electrical & Electronics Engineering",
-      "Bio-Technology",
       "Mechanical Engineering",
-      "Physics (M.Sc. Engg.)",
+      "Industrial & Production Engineering",
       "Information Science & Engineering",
+      "Biotechnology",
+      "Physics (M.Sc. Engg.)",
+      "Management Studies (MBA)",
   ],
   admission: {
     eligibility: [
@@ -53,7 +55,7 @@ function SectionHeader({ icon: Icon, title }: { icon: any, title: string }) {
 export default function PhDProgrammePage() {
   return (
     <div className="space-y-16">
-      <PageHeader
+      <ProgrammeHeader
         title={phdData.title}
         description={phdData.description}
       />
@@ -62,7 +64,7 @@ export default function PhDProgrammePage() {
       <section className="space-y-8">
         <div className="prose prose-lg prose-orange max-w-none text-gray-600">
             <p>
-                BEC offers M.Sc.(Engg.) and Ph.D programmes in 9 recognized research centers with state-of-the-art facilities. With ₹3.40 crores in research grants and 35+ industry collaborations, we provide an excellent ecosystem for cutting-edge research and innovation.
+                BEC offers M.Sc.(Engg.) and Ph.D programmes across 10 VTU-recognized research centres with state-of-the-art facilities. With 64 research supervisors, 140 Ph.D.s awarded and ₹3.00 crores in recent research grants, we provide an excellent ecosystem for cutting-edge research and innovation.
             </p>
         </div>
 
@@ -135,13 +137,13 @@ export default function PhDProgrammePage() {
          {/* Stats */}
          <section className="grid md:grid-cols-4 gap-4">
            {[
-               { label: "Research Centers", value: "9" },
+               { label: "Research Centres", value: "10" },
                { label: "Research Grants", value: "₹3.4Cr" },
                { label: "Duration", value: "3-6 Yrs" },
                { label: "Industry MoUs", value: "35+" },
            ].map((stat, idx) => (
                <div key={idx} className="p-6 rounded-2xl bg-white border border-gray-100 text-center">
-                   <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                   <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
                    <div className="text-xs text-gray-500 uppercase tracking-wider">{stat.label}</div>
                </div>
            ))}

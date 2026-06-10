@@ -27,9 +27,6 @@ export function ProgrammePlacement({
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
@@ -44,9 +41,6 @@ export function ProgrammePlacement({
 
           {/* Placement Stats */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
           >
@@ -87,9 +81,6 @@ export function ProgrammePlacement({
           <div className="grid md:grid-cols-2 gap-8">
             {/* Top Recruiters */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="bg-white p-8 rounded-xl shadow-sm border border-border"
             >
@@ -105,9 +96,6 @@ export function ProgrammePlacement({
                 {topRecruiters.map((company, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     className="p-3 bg-muted rounded-lg text-center text-sm font-medium text-foreground hover:bg-primary/5 transition-colors"
                   >
@@ -119,9 +107,6 @@ export function ProgrammePlacement({
 
             {/* Industry Sectors */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="bg-white p-8 rounded-xl shadow-sm border border-border"
             >
@@ -137,9 +122,6 @@ export function ProgrammePlacement({
                 {industries.map((industry, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 bg-muted rounded-lg hover:bg-primary/5 transition-colors"
                   >
@@ -153,9 +135,6 @@ export function ProgrammePlacement({
 
           {/* CTA */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-12 text-center"
           >

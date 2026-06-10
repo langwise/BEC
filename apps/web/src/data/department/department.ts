@@ -75,10 +75,22 @@ function titleCase(slug: string): string {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-function quickStats(content: DepartmentContent): { label: string; value: string }[] {
+// The intake stat is program-specific — UG departments enrol B.E. students,
+// whereas PG/MBA/MCA entries report their own programme's intake.
+function intakeLabel(contentKey: string): string {
+  if (contentKey.startsWith("pg/")) return "M.Tech. Intake";
+  if (contentKey === "mca") return "MCA Intake";
+  if (contentKey === "mba") return "MBA Intake";
+  return "B.E. Intake";
+}
+
+function quickStats(
+  contentKey: string,
+  content: DepartmentContent,
+): { label: string; value: string }[] {
   const stats: { label: string; value: string }[] = [];
   if (content.established) stats.push({ label: "Established", value: content.established });
-  if (content.intake) stats.push({ label: "B.E. Intake", value: content.intake });
+  if (content.intake) stats.push({ label: intakeLabel(contentKey), value: content.intake });
   if (content.researchAreas?.length)
     stats.push({ label: "Research Supervisors", value: String(content.researchAreas.length) });
   if (content.programsOffered?.length)
@@ -293,7 +305,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
   return {
     name,
     tagline: content?.tagline ?? "Excellence in Education & Innovation",
-    quickStats: content ? quickStats(content) : undefined,
+    quickStats: content ? quickStats(contentKey, content) : undefined,
     overview: {
       title: "Overview",
       content:

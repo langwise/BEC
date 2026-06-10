@@ -43,9 +43,6 @@ export function ProgrammeAdmission({
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
@@ -61,9 +58,6 @@ export function ProgrammeAdmission({
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Eligibility */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="bg-white p-8 rounded-xl shadow-sm border border-border"
             >
@@ -90,9 +84,6 @@ export function ProgrammeAdmission({
 
             {/* Entrance Exams */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-white p-8 rounded-xl shadow-sm border border-border"
             >
@@ -122,9 +113,6 @@ export function ProgrammeAdmission({
 
           {/* Contact Information */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="bg-linear-to-br from-primary to-primary/80 p-8 rounded-xl text-white"
           >

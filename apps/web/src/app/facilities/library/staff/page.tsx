@@ -49,7 +49,6 @@ export default function StaffProfilePage() {
         icon={Users}
         title="Staff Profile"
         subtitle="Meet our dedicated team of library professionals"
-        bgGradient="from-green-600 to-teal-600"
       />
 
       <section className="py-16">

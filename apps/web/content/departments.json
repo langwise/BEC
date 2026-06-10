@@ -1225,17 +1225,401 @@
         }
       ]
     },
-    "environmental-engg": {
-      "name": "Environmental Engineering"
+    "pg/environmental-engg": {
+      "name": "M.Tech. in Environmental Engineering",
+      "tagline": "A two-year postgraduate programme of the Department of Civil Engineering, focused on sustainable environmental and water-quality engineering.",
+      "established": "2004",
+      "intake": "18",
+      "overview": "The Department of Civil Engineering started the M.Tech. in Environmental Engineering in 2004 with an intake of 18. Admissions are offered through PGCET/GATE and the Quality Improvement Programme (QIP). The programme is AICTE recognized, NAAC accredited and permanently affiliated to VTU, and is supported by a well-equipped Environmental Engineering laboratory with advanced analytical instrumentation, computational facilities, and a Mobile Water Testing Laboratory used for rural community outreach.",
+      "vision": "To be a center of excellence of higher learning and research in civil engineering encompassing ethical, environmental and economical aspects of the society.",
+      "mission": [
+        "Prepare globally competent engineers through dynamic teaching-learning and research processes.",
+        "Provide knowledge base and consultancy services to the community in Civil Engineering areas."
+      ],
+      "programsOffered": [
+        "M.Tech. in Environmental Engineering (intake 18)"
+      ],
+      "peos": [
+        { "code": "PEO1", "text": "Graduates of the Programme will be effective environmental engineers to serve in the various industry, academia and research organizations." },
+        { "code": "PEO2", "text": "Graduates will be able to understand, learn and apply appropriate techniques of prediction and modeling with an understanding of implications in long term sustainability." },
+        { "code": "PEO3", "text": "Graduates are able to learn and apply new developments and tools in solving complex real life environmental engineering problems, and carry out interdisciplinary research to provide efficient, sustainable and ethical solutions." }
+      ],
+      "highlights": [
+        "M.Tech. in Environmental Engineering started in 2004 with an intake of 18.",
+        "AICTE recognized, NAAC accredited and permanently affiliated to VTU.",
+        "Well-equipped Environmental Engineering laboratory with advanced analytical equipment.",
+        "Computational facilities with specialized software (ENVI, Design Expert).",
+        "Mobile Water Testing Laboratory for rural community outreach.",
+        "Faculty engaged in high-quality research and consultancy services."
+      ],
+      "infrastructureItems": [
+        { "name": "Servo hydraulic Actuator (500 kN)", "specification": "Load-controlled mode to simulate various structural loading environments", "quantity": "01" },
+        { "name": "Servo compression testing machine (3000 kN)", "specification": "Determines compression strength", "quantity": "01" },
+        { "name": "Servo hydraulic flexure testing machine (500 kN)", "specification": "Determines flexural strength", "quantity": "01" },
+        { "name": "Universal testing machine (500 kN)", "specification": "Determines tensile strength", "quantity": "01" },
+        { "name": "Steam curing tank", "specification": "Concrete curing", "quantity": "01" },
+        { "name": "Non-destructive testing machines (NDT)", "specification": "Determines the character of concrete without damaging it", "quantity": "01" },
+        { "name": "Data acquisition system", "specification": "", "quantity": "01" },
+        { "name": "Rapid chloride penetration test (RCPT)", "specification": "Evaluates resistance of concrete to chloride ion penetration", "quantity": "01" },
+        { "name": "TOC analyzer", "specification": "Measures total organic carbon in liquid/water samples", "quantity": "01" },
+        { "name": "BOD incubator and COD package", "specification": "Biochemical oxygen demand determination", "quantity": "01" },
+        { "name": "Solar 929 Atomic Absorption Spectrometer", "specification": "Analyse compounds in water", "quantity": "01" },
+        { "name": "Spectrophotometer UV/VIS", "specification": "Determination of different analytes", "quantity": "01" },
+        { "name": "Gas chromatograph", "specification": "Separating and analysing compounds vaporizable without decomposition", "quantity": "01" },
+        { "name": "Kjeldahl Apparatus", "specification": "Organic nitrogen / protein content analysis", "quantity": "01" },
+        { "name": "Portable multimeter kit with peristaltic pumps", "specification": "Physical liquid property assessment", "quantity": "01" },
+        { "name": "Soil moisture meter with data logger", "specification": "Measurement of moisture in soil", "quantity": "01" },
+        { "name": "Muffle furnace and vertical freezer", "specification": "Heating / cooling apparatus", "quantity": "01" },
+        { "name": "Cyclic / static tri-axial testing apparatus", "specification": "Soil strength determination", "quantity": "01" },
+        { "name": "Pile load test setup", "specification": "Determine ultimate bearing capacity", "quantity": "01" },
+        { "name": "Direct shear test apparatus", "specification": "Soil shear strength analysis", "quantity": "01" },
+        { "name": "Plate load test assembly", "specification": "Bearing capacity and settlement determination", "quantity": "01" },
+        { "name": "Total stations", "specification": "Surveying", "quantity": "04" },
+        { "name": "GPS handset and electronic distance meter", "specification": "Surveying", "quantity": "01" },
+        { "name": "Auto level, theodolite and planimeter", "specification": "Levelling / angle determination", "quantity": "01" },
+        { "name": "Shake table (horizontal)", "specification": "Compaction testing", "quantity": "01" },
+        { "name": "Shake table (vertical base motion)", "specification": "Compaction testing", "quantity": "01" },
+        { "name": "Venturi / orifice apparatus", "specification": "Stream discharge determination", "quantity": "01" },
+        { "name": "Closed circuit orifice / mouthpiece apparatus", "specification": "Stream discharge calculation", "quantity": "01" },
+        { "name": "Closed circuit minor loss apparatus", "specification": "Water discharge loss analysis", "quantity": "01" },
+        { "name": "Closed circuit pipe friction apparatus", "specification": "Friction-related discharge loss", "quantity": "01" },
+        { "name": "Closed circuit V-notch apparatus", "specification": "Discharge calculation", "quantity": "01" },
+        { "name": "Impact of jet on vanes apparatus", "specification": "Turbine capacity assessment", "quantity": "01" },
+        { "name": "Meander river model", "specification": "Simulate equilibrium river bed and planimetric changes", "quantity": "01" }
+      ],
+      "softwareItems": [
+        { "name": "ETABS", "version": "2016", "usage": "Structural modelling and design" },
+        { "name": "SAP2000", "version": "2016", "usage": "Structural modelling and design" },
+        { "name": "STAAD.Pro", "version": "V8i", "usage": "Structural modelling and design" },
+        { "name": "AutoCAD", "version": "2007", "usage": "Technical drawings" },
+        { "name": "ARC GIS and INFO", "version": "10", "usage": "Geographic information system mapping" },
+        { "name": "ENV Network", "version": "2.0", "usage": "Image processing" }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS)",
+          "members": [
+            { "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkot", "position": "Chairman" },
+            { "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. S. Sireesh, Professor, Indian Institute of Technology, Hyderabad", "position": "VTU Nominee" },
+            { "name": "Dr. M. Sekhar, Professor, Indian Institute of Science, Bangalore", "position": "External Member" },
+            { "name": "Dr. Ramaseshu D., Professor, National Institute of Technology, Warangal", "position": "External Member" },
+            { "name": "Dr. Basavaraj Manu, Associate Professor, National Institute of Technology Karnataka, Surathkal", "position": "External Member" },
+            { "name": "Dr. Abdul Razaq Honnutagi, Director, Anjuman-I-Islam's Kalsekar Technical Campus", "position": "Alumni" },
+            { "name": "Dr. Pranesh, Chief Design Engineer, Abhaya Associates Consulting Civil and Structural Engineers", "position": "Industry Representative" }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BOE)",
+          "members": [
+            { "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkot", "position": "Chairman" },
+            { "name": "Prof. M. Y. Ganiger, Assistant Professor, BEC, Bagalkot", "position": "Coordinator" },
+            { "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkot", "position": "Member" }
+          ]
+        }
+      ],
+      "contact": {
+        "name": "Dr. M. M. Hanamasagar",
+        "designation": "Associate Professor and Head, Department of Civil Engineering",
+        "phone": "9448816909",
+        "email": "mmhcv@becbgk.edu"
+      }
     },
-    "geo-technical-engg": {
-      "name": "Geo-Technical Engineering"
+    "pg/geo-technical-engg": {
+      "name": "M.Tech. in Geo-Technical Engineering",
+      "tagline": "A two-year postgraduate programme of the Department of Civil Engineering, specialising in soil mechanics, foundation engineering and geotechnical research.",
+      "established": "1994",
+      "intake": "18",
+      "overview": "The Department of Civil Engineering started the M.Tech. in Geo-Technical Engineering in 1994 with an intake of 18. The programme emphasises fundamental principles, creative problem-solving in geotechnical challenges, and the analytical abilities needed for interdisciplinary work. It is AICTE recognized, NAAC accredited and permanently affiliated to VTU, supported by independent classrooms with interactive boards and a state-of-the-art geotechnical laboratory with cyclic triaxial, digital static triaxial, plate load and consolidation testing equipment.",
+      "vision": "To be a center of excellence of higher learning and research in civil engineering encompassing ethical, environmental and economical aspects of the society.",
+      "mission": [
+        "Prepare globally competent engineers responsive to economic and technological growth through dynamic teaching-learning and research processes.",
+        "Provide knowledge base and consultancy services to the community in Civil Engineering areas."
+      ],
+      "programsOffered": [
+        "M.Tech. in Geo-Technical Engineering (intake 18)"
+      ],
+      "peos": [
+        { "code": "PEO1", "text": "Graduates of the program will become effective Geotechnical Engineers in Government, industry, or other organizations, designing, improving and implementing efficient, sustainable Geotechnical engineering practices." },
+        { "code": "PEO2", "text": "Graduates of the program will provide solutions to Geotechnical Engineering problems that account for economical, societal and ethical standards, both as individuals and in team environments, by applying acquired engineering knowledge." },
+        { "code": "PEO3", "text": "Graduates of the program will continue their lifelong learning to remain effective professionals and to maintain and enhance technical and professional growth." }
+      ],
+      "highlights": [
+        "M.Tech. in Geo-Technical Engineering started in 1994 with an intake of 18.",
+        "AICTE recognized, NAAC accredited and permanently affiliated to VTU.",
+        "State-of-the-art laboratory with cyclic triaxial, digital static triaxial, plate load and consolidation testing equipment.",
+        "Independent classrooms with interactive boards.",
+        "Faculty engaged in high-quality research and consultancy activities."
+      ],
+      "infrastructureItems": [
+        { "name": "Servo hydraulic Actuator (500 kN)", "specification": "Load-controlled mode to simulate various structural loading environments", "quantity": "01" },
+        { "name": "Servo compression testing machine (3000 kN)", "specification": "Determines compression strength", "quantity": "01" },
+        { "name": "Servo hydraulic flexure testing machine (500 kN)", "specification": "Determines flexural strength", "quantity": "01" },
+        { "name": "Universal testing machine (500 kN)", "specification": "Determines tensile strength", "quantity": "01" },
+        { "name": "Steam curing tank", "specification": "Concrete curing", "quantity": "01" },
+        { "name": "Non-destructive testing machines (NDT)", "specification": "Evaluates concrete without damage", "quantity": "01" },
+        { "name": "Data acquisition system", "specification": "", "quantity": "01" },
+        { "name": "Rapid chloride penetration test (RCPT)", "specification": "Assesses chloride ion penetration resistance", "quantity": "01" },
+        { "name": "TOC analyzer", "specification": "Measures total organic carbon in liquid samples", "quantity": "01" },
+        { "name": "BOD incubator and COD package", "specification": "Biochemical oxygen demand determination", "quantity": "01" },
+        { "name": "Solar 929 Atomic Absorption Spectrometer", "specification": "Analyses water compounds", "quantity": "01" },
+        { "name": "Spectrophotometer UV/VIS", "specification": "Determines various analytes", "quantity": "01" },
+        { "name": "Gas chromatograph", "specification": "Separates / analyses vaporizable compounds", "quantity": "01" },
+        { "name": "Kjeldahl Apparatus", "specification": "Organic nitrogen and protein analysis", "quantity": "01" },
+        { "name": "Cyclic and static tri-axial testing apparatus", "specification": "Determines soil strength", "quantity": "01" },
+        { "name": "Pile load test setup", "specification": "Determines ultimate bearing capacity", "quantity": "01" },
+        { "name": "Direct shear test apparatus", "specification": "Determines soil shear strength", "quantity": "01" },
+        { "name": "Plate load test assembly", "specification": "Bearing capacity and settlement determination", "quantity": "01" },
+        { "name": "Total stations", "specification": "Surveying", "quantity": "04" },
+        { "name": "Shake tables (horizontal and vertical)", "specification": "Compaction testing", "quantity": "02" }
+      ],
+      "softwareItems": [
+        { "name": "ETABS", "version": "2016", "usage": "Structural modelling and design" },
+        { "name": "SAP2000", "version": "2016", "usage": "Structural modelling and design" },
+        { "name": "STAAD.Pro", "version": "V8i", "usage": "Structural modelling and design" },
+        { "name": "AutoCAD", "version": "2007", "usage": "Technical drawings" },
+        { "name": "ARC GIS and INFO", "version": "10", "usage": "Geographic information system mapping" },
+        { "name": "ENV Network", "version": "2.0", "usage": "Image processing" }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS)",
+          "members": [
+            { "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkot", "position": "Chairman" },
+            { "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. S. Sireesh, Professor, Indian Institute of Technology, Hyderabad", "position": "VTU Nominee" },
+            { "name": "Dr. M. Sekhar, Professor, Indian Institute of Science, Bangalore", "position": "External Member" },
+            { "name": "Dr. Ramaseshu D., Professor, National Institute of Technology, Warangal", "position": "External Member" },
+            { "name": "Dr. Basavaraj Manu, Associate Professor, National Institute of Technology Karnataka, Surathkal", "position": "External Member" },
+            { "name": "Dr. Abdul Razaq Honnutagi, Director, Anjuman-I-Islam's Kalsekar Technical Campus", "position": "Alumni" },
+            { "name": "Dr. Pranesh, Chief Design Engineer, Abhaya Associates Consulting Civil and Structural Engineers", "position": "Industry Representative" }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BOE)",
+          "members": [
+            { "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkot", "position": "Chairman" },
+            { "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkot", "position": "Coordinator" },
+            { "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkot", "position": "Member" }
+          ]
+        }
+      ],
+      "contact": {
+        "name": "Dr. M. M. Hanamasagar",
+        "designation": "Associate Professor and Head, Department of Civil Engineering",
+        "phone": "9448816909",
+        "email": "mmhcv@becbgk.edu"
+      }
     },
-    "structural-engg": {
-      "name": "Structural Engineering"
+    "pg/structural-engg": {
+      "name": "M.Tech. in Structural Engineering",
+      "tagline": "A two-year postgraduate programme of the Department of Civil Engineering, focused on analysis, design and research in structural engineering.",
+      "established": "1994",
+      "intake": "18",
+      "overview": "The Civil Engineering Department is one of the pioneering departments of the college, established at its inception in 1963. The M.Tech. in Structural Engineering, with an intake of 18, provides postgraduate education in structural analysis and design supported by advanced laboratory facilities and research recognition from VTU and AICTE. Admissions are offered through PGCET/GATE and the Quality Improvement Programme (QIP), and the curriculum emphasises fundamental principles and creative problem-solving.",
+      "vision": "To be a center of excellence of higher learning and research in civil engineering encompassing ethical, environmental and economical aspects of the society.",
+      "mission": [
+        "Prepare globally competent engineers through dynamic teaching-learning and research processes.",
+        "Provide knowledge base and consultancy services to the community in Civil Engineering areas."
+      ],
+      "programsOffered": [
+        "M.Tech. in Structural Engineering (intake 18)"
+      ],
+      "peos": [
+        { "code": "PEO1", "text": "Graduates of the programme will become effective Structural engineers in government, industry, or other organizations, designing, improving and implementing efficient, sustainable Structural engineering practices." },
+        { "code": "PEO2", "text": "Graduates of the programme will provide solutions to Structural engineering problems that account for economical, societal and ethical standards, both as individuals and in team environments, by applying acquired engineering knowledge." },
+        { "code": "PEO3", "text": "Graduates of the programme will continue their lifelong learning to remain effective professionals and to maintain and enhance technical and professional growth." }
+      ],
+      "highlights": [
+        "M.Tech. in Structural Engineering with an intake of 18.",
+        "AICTE recognized, NAAC accredited and VTU affiliated.",
+        "State-of-the-art Structural Engineering laboratory with advanced testing equipment (actuator, loading frames, compression machines).",
+        "Computational facilities with ANSYS, ETABS, STAAD and AutoCAD.",
+        "Faculty engaged in research and consultancy activities."
+      ],
+      "infrastructureItems": [
+        { "name": "Servo hydraulic Actuator (500 kN)", "specification": "Load-controlled mode to simulate various structural loading environments", "quantity": "01" },
+        { "name": "Servo compression testing machine (3000 kN)", "specification": "Determines compression strength", "quantity": "01" },
+        { "name": "Servo hydraulic flexure testing machine (500 kN)", "specification": "Determines flexural strength", "quantity": "01" },
+        { "name": "Universal testing machine (500 kN)", "specification": "Determines tensile strength", "quantity": "01" },
+        { "name": "Steam curing tank", "specification": "Concrete curing", "quantity": "01" },
+        { "name": "Non-destructive testing machines (NDT)", "specification": "Evaluates concrete character without damage", "quantity": "01" },
+        { "name": "Data acquisition system", "specification": "", "quantity": "01" },
+        { "name": "Rapid chloride penetration test (RCPT)", "specification": "Evaluates the resistance of a concrete sample to the penetration of chloride ions", "quantity": "01" },
+        { "name": "TOC analyzer", "specification": "Measures total organic carbon in liquid/water", "quantity": "01" },
+        { "name": "BOD incubator and COD package", "specification": "Biochemical oxygen demand determination", "quantity": "01" },
+        { "name": "Solar 929 Atomic Absorption Spectrometer", "specification": "Analyse water compounds", "quantity": "01" },
+        { "name": "Spectrophotometer UV/VIS", "specification": "Determination of different analytes", "quantity": "01" },
+        { "name": "Gas chromatograph", "specification": "Separating / analyzing vaporizable compounds", "quantity": "01" },
+        { "name": "Kjeldahl Apparatus", "specification": "Organic nitrogen and protein analysis", "quantity": "01" },
+        { "name": "Thermo electron portable multimeter kit", "specification": "Physical properties testing of liquids", "quantity": "01" },
+        { "name": "Soil moisture meter with data logger", "specification": "Soil moisture measurement", "quantity": "01" },
+        { "name": "Muffle furnace and vertical freezer", "specification": "Heating / cooling apparatus", "quantity": "01" },
+        { "name": "Cyclic / static tri-axial testing apparatus", "specification": "Determines soil strength", "quantity": "01" },
+        { "name": "Pile load test setup", "specification": "Determine ultimate bearing capacity", "quantity": "01" },
+        { "name": "Direct shear test apparatus", "specification": "Determines soil shear strength", "quantity": "01" },
+        { "name": "Plate load test assembly", "specification": "Bearing capacity and settlement determination", "quantity": "01" },
+        { "name": "Total stations", "specification": "Surveying", "quantity": "04" },
+        { "name": "GPS handset and electronic distance meter", "specification": "Surveying", "quantity": "01" },
+        { "name": "Auto level, theodolite and planimeter", "specification": "Levelling and angle determination", "quantity": "01" },
+        { "name": "Shake tables (horizontal and vertical)", "specification": "Compaction testing", "quantity": "02" },
+        { "name": "Fluid mechanics apparatus (Venturi, orifice, pipe friction, V-notch)", "specification": "Discharge / flow determination", "quantity": "05" },
+        { "name": "Impact of jet on vanes apparatus", "specification": "Turbine capacity determination", "quantity": "01" },
+        { "name": "Meander river model", "specification": "River topography simulation", "quantity": "01" }
+      ],
+      "softwareItems": [
+        { "name": "ETABS", "version": "2016", "usage": "Modelling and structural design" },
+        { "name": "SAP2000", "version": "2016", "usage": "Modelling and structural design" },
+        { "name": "STAAD.Pro", "version": "V8i", "usage": "Modelling and structural design" },
+        { "name": "AutoCAD", "version": "2007", "usage": "Technical drawings" },
+        { "name": "ARC GIS and INFO", "version": "10", "usage": "Geographic information system mapping" },
+        { "name": "ENV Network", "version": "2.0", "usage": "Image processing" }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS)",
+          "members": [
+            { "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkot", "position": "Chairman" },
+            { "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. S. Sireesh, Professor, Indian Institute of Technology, Hyderabad", "position": "VTU Nominee" },
+            { "name": "Dr. M. Sekhar, Professor, Indian Institute of Science, Bangalore", "position": "External Member" },
+            { "name": "Dr. Ramaseshu D., Professor, National Institute of Technology, Warangal", "position": "External Member" },
+            { "name": "Dr. Basavaraj Manu, Associate Professor, National Institute of Technology Karnataka, Surathkal", "position": "External Member" },
+            { "name": "Dr. Abdul Razaq Honnutagi, Director, Anjuman-I-Islam's Kalsekar Technical Campus", "position": "Alumni" },
+            { "name": "Dr. Pranesh, Chief Design Engineer, Abhaya Associates Consulting Civil and Structural Engineers", "position": "Industry Representative" }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BOE)",
+          "members": [
+            { "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkot", "position": "Chairman" },
+            { "name": "Mr. G. S. Hiremath, Assistant Professor, BEC, Bagalkot", "position": "Coordinator" },
+            { "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkot", "position": "Member" }
+          ]
+        }
+      ],
+      "contact": {
+        "name": "Dr. M. M. Hanamasagar",
+        "designation": "Associate Professor and Head, Department of Civil Engineering",
+        "phone": "9448816909",
+        "email": "mmhcv@becbgk.edu"
+      }
     },
-    "machine-design": {
-      "name": "Machine Design"
+    "pg/machine-design": {
+      "name": "M.Tech. in Machine Design",
+      "tagline": "A two-year postgraduate programme of the Department of Mechanical Engineering, focused on advanced machine design, analysis and research.",
+      "intake": "18",
+      "overview": "The M.Tech. in Machine Design is offered by the Department of Mechanical Engineering — one of the institution's oldest and largest departments, established in 1963. The department was granted autonomous status by VTU, Belagavi and UGC, New Delhi in 2007-2008. The M.Tech. (Machine Design) programme has an intake of 18 and is supported by an R&D Centre (established 2000) offering M.Sc. (Engineering) and Ph.D. programmes, with research and funding support from DRDO, DST, CSIR, BRFST, AICTE and VGST.",
+      "vision": "To be a center of excellence in the field of mechanical engineering recognised globally for outstanding education and research, leading to competent engineers who are innovative, entrepreneurial and humanitarian in the advanced field of engineering and research.",
+      "mission": [
+        "Prepare effective and responsible graduate engineers for global requirements by providing quality education.",
+        "Constantly strive to improve the pedagogical methods employed in delivering the academic programmes.",
+        "Respond effectively to the needs of industry and the changing world, lives and livelihoods.",
+        "Conduct basic and applied research and generate intellectual property.",
+        "Provide consultancy to the neighbourhood and cultivate the culture of entrepreneurship."
+      ],
+      "programsOffered": [
+        "M.Tech. in Machine Design (intake 18)",
+        "M.Sc. (Engineering) by Research through the R&D Centre",
+        "Ph.D. in Mechanical Engineering through the R&D Centre"
+      ],
+      "highlights": [
+        "NBA accredited M.Tech. (Machine Design) under Tier-I, Washington Accord (2017-2021).",
+        "Supported by an R&D Centre established in 2000.",
+        "Research and funding support from DRDO, DST, CSIR, BRFST, AICTE and VGST.",
+        "Recognized QIP (Quality Improvement Programme) Centre.",
+        "TEQIP funding for student skill enhancement."
+      ],
+      "infrastructureItems": [
+        { "name": "Vacuum Pump", "specification": "Preparing composite structures of required configuration using the vacuum infusion method (fibre / resin)", "quantity": "01" },
+        { "name": "DSP-based Data Acquisition System", "specification": "High-speed acquisition of data from structures during static and dynamic testing", "quantity": "01" },
+        { "name": "Vibration Exciter", "specification": "Provides force and frequency to excite structures and study their behavioural response", "quantity": "01" },
+        { "name": "Displacement Sensor", "specification": "Measures displacement of composite structures under static / dynamic conditions", "quantity": "01" }
+      ],
+      "softwareItems": [
+        { "name": "UG NX CAD/CAM Bundle (NX MACH 3)", "version": "NX3", "usage": "Modelling, design and manufacturing" },
+        { "name": "NX Nastran for FEMAP", "version": "NX3", "usage": "Finite element analysis" },
+        { "name": "Solid Edge Classic", "version": "V19", "usage": "Modelling and design" },
+        { "name": "Altair HyperWorks", "version": "V9", "usage": "Simulation and analysis" },
+        { "name": "LSTC LS-Dyna (Windows)", "version": "--", "usage": "Explicit dynamic analysis" },
+        { "name": "IronCAD Generative Drafting", "version": "--", "usage": "Drafting" },
+        { "name": "Mechanical / Robot Simulation Software", "version": "--", "usage": "Simulation" },
+        { "name": "ANSYS", "version": "14.0", "usage": "Finite element analysis" },
+        { "name": "Auto-Power Spectrum / Modal Analysis Tools", "version": "--", "usage": "Vibration and modal analysis" },
+        { "name": "Windows 10", "version": "10", "usage": "Operating system" },
+        { "name": "Office 365", "version": "24", "usage": "Productivity applications" }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS)",
+          "members": [
+            { "name": "Dr. M. S. Hebbal, BEC, Bagalkot", "position": "Chairman" },
+            { "name": "Dr. G. B. Rudrakshi, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. V. V. Kuppast, BEC, Bagalkot", "position": "Member" },
+            { "name": "Smt. S. B. Wadawadagi, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. H. M. Kadlimatti, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. V. P. Girisagar, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. B. R. Endigeri, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. S. M. Jigajinni, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. M. M. G. Math, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. H. R. Patil, BEC, Bagalkot", "position": "Member" },
+            { "name": "Prof. S. S. Davanageri, BEC, Bagalkot", "position": "Member" },
+            { "name": "Dr. V. N. Gaitonde, KLE Technological University, Hubli", "position": "VTU Nominee" },
+            { "name": "Dr. Shivasharanswamy, Reva University, Bangalore", "position": "Academic Expert" },
+            { "name": "Sri. Darshan Athani, Pune", "position": "Industry Representative" },
+            { "name": "Sri. Gurunath Kashinakunte, Bangalore", "position": "Alumni Representative" },
+            { "name": "Sri. Ramesh H., R3 Automation, Bengaluru", "position": "Industry Invitee" },
+            { "name": "Sri. B. G. Suresh, Mahindra and Mahindra Ltd., Indore", "position": "Industry Invitee" },
+            { "name": "Sri. G. B. Kulkarni, Belcan, Pune", "position": "Industry Invitee" }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BOE)",
+          "members": [
+            { "name": "Dr. M. S. Hebbal, Professor and Head, Department of Mechanical Engineering, BEC, Bagalkot", "position": "Chairman" },
+            { "name": "Dr. H. M. Kadlimatti, Associate Professor, Department of Mechanical Engineering, BEC, Bagalkot", "position": "Coordinator" }
+          ]
+        }
+      ],
+      "supportingStaff": [
+        { "name": "Shri. S. S. Edramimath", "designation": "Mechanic" },
+        { "name": "Sri. Sunil Goudar", "designation": "Peon" }
+      ],
+      "associations": [
+        { "name": "Mechanical Engineering Association (MEA)", "about": "Started in 1988-1989 to encourage and enhance the technical and other skills of students. The association conducts activities throughout the year focused on professional development, soft skills, personality building, decision-making, organizational skills, teamwork and coordination." }
+      ],
+      "contact": {
+        "name": "Dr. Vinay V. Kuppast",
+        "designation": "Professor and Head, Department of Mechanical Engineering",
+        "phone": "9986419729",
+        "email": "hodme@becbgk.edu"
+      }
     },
     "pg/biotechnology": {
       "name": "M.Tech. in Food Biotechnology",

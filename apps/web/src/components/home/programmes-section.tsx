@@ -7,27 +7,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { motion, Variants } from "motion/react";
 import { FadeIn } from "../animations/fade-in";
 import { programmes } from "@/data/home/programme";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, GraduationCap } from "lucide-react";
 import Link from "next/link";
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
 
 export function ProgrammesSection() {
   return (
@@ -47,17 +31,11 @@ export function ProgrammesSection() {
           </p>
         </FadeIn>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-        >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {programmes.map((programme, index) => {
             const Icon = programme.icon;
             return (
-              <motion.div key={index} variants={cardVariants}>
+              <div key={index}>
                 <Card className="h-full border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group bg-stone-50/30">
                   <CardHeader className="space-y-6">
                     <div className="flex items-center justify-between">
@@ -84,17 +62,17 @@ export function ProgrammesSection() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             );
           })}
-        </motion.div>
+        </div>
 
         <div className="mt-12 text-center">
           <Button
             asChild
             className="h-12 px-8 rounded-full font-bold shadow-lg shadow-orange-100 hover:shadow-xl hover:-translate-y-0.5 transition-all"
           >
-            <Link href="/programs/departments">View All Departments</Link>
+            <Link href="/departments">View All Departments</Link>
           </Button>
         </div>
       </div>

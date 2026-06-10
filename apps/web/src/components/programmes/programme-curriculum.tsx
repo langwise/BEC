@@ -21,9 +21,6 @@ export function ProgrammeCurriculum({
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
@@ -38,9 +35,6 @@ export function ProgrammeCurriculum({
           <div className="grid md:grid-cols-2 gap-12">
             {/* Curriculum Features */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="bg-muted p-8 rounded-xl"
             >
@@ -56,9 +50,6 @@ export function ProgrammeCurriculum({
                 {features.map((feature, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 bg-white rounded-lg"
                   >
@@ -71,9 +62,6 @@ export function ProgrammeCurriculum({
 
             {/* Learning Outcomes */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="bg-primary/5 p-8 rounded-xl"
             >
@@ -89,9 +77,6 @@ export function ProgrammeCurriculum({
                 {outcomes.map((outcome, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 }}
                     className="flex items-center gap-3 p-4 bg-white rounded-lg"
                   >
@@ -105,9 +90,6 @@ export function ProgrammeCurriculum({
 
           {/* Call to Action */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-12 text-center"
           >

@@ -368,9 +368,6 @@ export default function AboutUsPage() {
           <div className="relative max-w-5xl mx-auto py-12">
             {/* Central Line */}
             <motion.div
-              initial={{ height: 0 }}
-              whileInView={{ height: "100%" }}
-              viewport={{ once: true }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
               className="absolute left-4 lg:left-1/2 top-0 w-0.5 lg:-ml-px bg-orange-200/50 h-full"
             />
@@ -379,9 +376,6 @@ export default function AboutUsPage() {
               {milestones.map((milestone, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
                   className={cn(
                     "relative flex flex-col lg:flex-row gap-8 lg:gap-0",
@@ -412,9 +406,6 @@ export default function AboutUsPage() {
 
                   {/* Center Dot */}
                   <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
                     transition={{ delay: index * 0.1 + 0.3, type: "spring" }}
                     className="absolute left-4 lg:left-1/2 top-4 lg:top-8 w-4 h-4 rounded-full bg-white border-4 border-primary z-10 shadow-sm lg:-translate-x-1/2 -translate-x-[7px]"
                   />
@@ -454,9 +445,6 @@ export default function AboutUsPage() {
               return (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
                   className="group p-8 rounded-2xl bg-white border border-stone-100 shadow-sm hover:shadow-md hover:border-orange-100 transition-all"
                 >
@@ -495,9 +483,6 @@ export default function AboutUsPage() {
               return (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
                   className="group bg-white p-8 rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:border-orange-100 transition-all duration-300"
                 >

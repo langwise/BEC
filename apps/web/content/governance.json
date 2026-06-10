@@ -23,16 +23,15 @@
     },
     {
       "role": "Dean Research & Development",
-      "name": "Dr. Bharati S. Meti",
-      "photo": "governance/deans/dr-bharati-s-meti.webp",
+      "name": "Dr. Mahabaleshwar S. K.",
+      "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
       "email": "deanrd@becbgk.edu",
-      "focus": "Research, innovation, consultancy",
-      "verify": true
+      "focus": "Research, innovation, consultancy"
     },
     {
       "role": "Dean Quality Assurance",
-      "name": "Dr. Mahabaleshwar S. K.",
-      "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
+      "name": "Dr. Bharati S. Meti",
+      "photo": "governance/deans/dr-bharati-s-meti.webp",
       "focus": "Accreditation & quality systems",
       "verify": true
     }

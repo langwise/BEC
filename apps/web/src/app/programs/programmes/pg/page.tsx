@@ -1,6 +1,6 @@
 "use client";
 
-import { PageHeader } from "@/components/placements/page-header";
+import { ProgrammeHeader } from "@/components/programs/programmes/programme-header";
 import { CheckCircle2, GraduationCap, Building2, Wallet, Microscope, type LucideIcon } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 import Link from "next/link";
@@ -19,35 +19,35 @@ const pgData = {
   disciplines: [
       {
         name: "Food Biotechnology",
-        href: "/programs/departments/pg/biotechnology",
+        href: "/departments/pg/biotechnology",
       },
       {
         name: "Digital Communication Engineering",
-        href: "/programs/departments/pg/electronics-and-communication-engg",
+        href: "/departments/pg/electronics-and-communication-engg",
       },
       {
         name: "Energy Science and Technology",
-        href: "/programs/departments/pg/electrical-and-electronics-engg",
+        href: "/departments/pg/electrical-and-electronics-engg",
       },
       {
         name: "Computer Science & Engineering",
-        href: "/programs/departments/pg/computer-science-and-engg",
+        href: "/departments/pg/computer-science-and-engg",
       },
       {
         name: "Environmental Engineering",
-        href: "/programs/departments/pg/environmental-engg",
+        href: "/departments/pg/environmental-engg",
       },
       {
         name: "Geo-Technical Engineering",
-        href: "/programs/departments/pg/geo-technical-engg",
+        href: "/departments/pg/geo-technical-engg",
       },
       {
         name: "Structural Engineering",
-        href: "/programs/departments/pg/structural-engg",
+        href: "/departments/pg/structural-engg",
       },
       {
         name: "Machine Design",
-        href: "/programs/departments/pg/machine-design",
+        href: "/departments/pg/machine-design",
       },
   ],
   admission: {
@@ -82,7 +82,7 @@ function SectionHeader({ icon: Icon, title }: { icon: LucideIcon, title: string 
 export default function PGProgrammePage() {
   return (
     <div className="space-y-16">
-      <PageHeader
+      <ProgrammeHeader
         title={pgData.title}
         description={pgData.description}
       />
@@ -121,6 +121,9 @@ export default function PGProgrammePage() {
                   </FadeIn>
               ))}
           </div>
+          <p className="text-xs text-gray-500 mt-4">
+              Each M.Tech specialization has a sanctioned intake of 18 seats, admitted via PGCET / GATE or the college entrance test.
+          </p>
       </section>
 
       {/* Admission */}
