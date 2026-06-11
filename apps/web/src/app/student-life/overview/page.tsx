@@ -1,316 +1,257 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { PageHeader } from "@/components/placements/page-header";
+
+import { PageHero } from "@/components/common/page-hero";
+import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
-import { asset } from "@/lib/assets";
-import { motion } from "motion/react";
-import {
-    Users,
-    Trophy,
-    Tent,
-    Wifi,
-    Radio,
-    Heart,
-    Utensils,
-    Store,
-    Activity,
-    Landmark,
-    Leaf,
-    MapPin,
-    ArrowRight
-} from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { asset } from "@/lib/assets";
+import {
+  Users,
+  Trophy,
+  Building2,
+  Wifi,
+  Radio,
+  Heart,
+  Cpu,
+  Leaf,
+  Activity,
+  Landmark,
+  Store,
+  Utensils,
+  ArrowRight,
+} from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Life at BEC | Basaveshwar Engineering College, Bagalkote",
+  description:
+    "Student life at Basaveshwar Engineering College, Bagalkote — culture, clubs, sports, hostels and a vibrant campus community.",
+};
 
 const highlights = [
-    {
-        title: "93.18 Acres",
-        subtitle: "Lush Green Campus",
-        icon: Leaf,
-        color: "text-emerald-600",
-        bg: "bg-emerald-50"
-    },
-    {
-        title: "1500+",
-        subtitle: "Hostel Capacity",
-        icon: Tent,
-        color: "text-indigo-600",
-        bg: "bg-indigo-50"
-    },
-    {
-        title: "BEC Dhwani",
-        subtitle: "90.4 FM Community Radio",
-        icon: Radio,
-        color: "text-orange-600",
-        bg: "bg-orange-50"
-    },
-    {
-        title: "1 Gbps",
-        subtitle: "WiFi Enabled Campus",
-        icon: Wifi,
-        color: "text-blue-600",
-        bg: "bg-blue-50"
-    }
+  { title: "93+ Acres", subtitle: "Green Campus", icon: Leaf },
+  { title: "4 Blocks", subtitle: "Hostel Accommodation", icon: Building2 },
+  { title: "BEC Dhwani", subtitle: "90.4 FM Community Radio", icon: Radio },
+  { title: "WiFi", subtitle: "Enabled Campus", icon: Wifi },
 ];
 
 const clubs = [
-    {
-        name: "Mindhog",
-        description: "The primary student club focusing on technical innovation, coding challenges, and peer learning.",
-        icon: Users,
-        color: "text-purple-600",
-        bg: "bg-purple-100",
-        href: "/student-life/mindhog"
-    },
-    {
-        name: "Gymkhana",
-        description: "Hub for sports, cultural activities, and annual fests. Features 5.00 acres of playground and indoor stadium.",
-        icon: Trophy,
-        color: "text-amber-600",
-        bg: "bg-amber-100",
-        href: "/student-life/sports"
-    },
-    {
-        name: "NSS & Red Cross",
-        description: "Community service wings engaging in social welfare, blood donation camps, and rural development.",
-        icon: Heart,
-        color: "text-red-600",
-        bg: "bg-red-100",
-        href: "/student-life/nss"
-    },
-    {
-        name: "IEEE Student Branch",
-        description: "Professional body chapter organizing technical workshops, seminars, and networking events.",
-        icon: Activity,
-        color: "text-blue-600",
-        bg: "bg-blue-100",
-        href: "/student-life/ieee"
-    }
+  {
+    name: "Mindhog",
+    description:
+      "The student club selected under the AICTE SPICES scheme, focused on creativity, ethics and collaboration.",
+    icon: Users,
+    href: "/student-life/mindhog",
+  },
+  {
+    name: "Sports & Gymkhana",
+    description:
+      "The student sports body — a 5-acre playground and indoor stadium under a full-time Physical Director.",
+    icon: Trophy,
+    href: "/student-life/gymkhana",
+  },
+  {
+    name: "NSS",
+    description:
+      "Community service wing engaging in social welfare, blood donation camps and rural development.",
+    icon: Heart,
+    href: "/student-life/nss",
+  },
+  {
+    name: "IEEE Student Branch",
+    description:
+      "Professional body chapter organising technical workshops, seminars and networking events.",
+    icon: Cpu,
+    href: "/student-life/ieee",
+  },
 ];
 
 const galleryImages = [
-    {
-        src: asset("student-life/cultural/cine0189.webp"),
-        alt: "Student performing a classical dance at a BEC cultural event"
-    },
-    {
-        src: asset("student-life/cultural/cine0228.webp"),
-        alt: "Student music band rehearsing in the BEC cultural hall"
-    },
-    {
-        src: asset("student-life/cultural/cine0160.webp"),
-        alt: "Cultural club dance practice at Basaveshwar Engineering College"
-    },
-    {
-        src: asset("student-life/clubs/cine1910.webp"),
-        alt: "Student club members gathered for a group photograph at BEC"
-    },
-    {
-        src: asset("student-life/clubs/ieee-student-branch-35261.webp"),
-        alt: "Members of the IEEE Student Branch at Basaveshwar Engineering College"
-    },
-    {
-        src: asset("student-life/engineers-arena/cine1060.webp"),
-        alt: "Students at an Engineers' Arena activity in the campus hall"
-    },
-    {
-        src: asset("student-life/engineers-arena/cine1068.webp"),
-        alt: "Students collaborating on a hands-on Engineers' Arena challenge"
-    },
-    {
-        src: asset("student-life/engineers-arena/cine1074.webp"),
-        alt: "Engineers' Arena event hosted by student volunteers at BEC"
-    }
+  {
+    src: asset("student-life/cultural/cine0189.webp"),
+    alt: "Student performing a classical dance at a BEC cultural event",
+  },
+  {
+    src: asset("student-life/cultural/cine0228.webp"),
+    alt: "Student music band rehearsing in the BEC cultural hall",
+  },
+  {
+    src: asset("student-life/cultural/cine0160.webp"),
+    alt: "Cultural club dance practice at Basaveshwar Engineering College",
+  },
+  {
+    src: asset("student-life/clubs/cine1910.webp"),
+    alt: "Student club members gathered for a group photograph at BEC",
+  },
+  {
+    src: asset("student-life/clubs/ieee-student-branch-35261.webp"),
+    alt: "Members of the IEEE Student Branch at Basaveshwar Engineering College",
+  },
+  {
+    src: asset("student-life/youth-red-cross/cine0856.webp"),
+    alt: "Youth Red Cross volunteers at a BEC community service activity",
+  },
+  {
+    src: asset("student-life/youth-red-cross/cine0860.webp"),
+    alt: "Youth Red Cross unit members at Basaveshwar Engineering College",
+  },
+  {
+    src: asset("student-life/engineers-arena/cine1060.webp"),
+    alt: "Students at an Engineers' Arena activity in the campus hall",
+  },
+  {
+    src: asset("student-life/engineers-arena/cine1074.webp"),
+    alt: "Engineers' Arena event hosted by student volunteers at BEC",
+  },
 ];
 
 const amenities = [
-    { name: "Campus Clinic", icon: Activity },
-    { name: "Bank & ATM", icon: Landmark },
-    { name: "Co-operative Store", icon: Store },
-    { name: "Canteen", icon: Utensils },
+  { name: "Campus Clinic", icon: Activity },
+  { name: "Bank & ATM", icon: Landmark },
+  { name: "Co-operative Store", icon: Store },
+  { name: "Canteen", icon: Utensils },
 ];
 
 export default function StudentLifeOverviewPage() {
-    return (
-        <div className="space-y-8 md:space-y-16">
-            <PageHeader
-                title="Life at BEC"
-                description="A vibrant ecosystem of learning, culture, and community in the heart of Bagalkot."
-            />
+  return (
+    <main className="bg-background text-foreground">
+      <PageHero
+        eyebrow="Culture · Clubs · Community"
+        title="Life at BEC"
+        description="A vibrant ecosystem of learning, culture and community in the heart of Bagalkot — where students thrive in every aspect of life, not just the classroom."
+      />
 
-            {/* Hero */}
-            <section className="container mx-auto px-4">
-                <motion.div
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-                    className="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden rounded-2xl md:rounded-3xl border border-slate-100 shadow-sm"
-                >
-                    <Image
-                        src={asset("student-life/cultural/cine0157.webp")}
-                        alt="BEC students performing a synchronized group dance during a cultural event"
-                        fill
-                        priority
-                        sizes="(max-width: 1024px) 100vw, 1024px"
-                        className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/10 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-5 md:p-10 text-white">
-                        <span className="text-orange-300 font-semibold tracking-wider text-xs md:text-sm uppercase">
-                            Culture · Clubs · Community
-                        </span>
-                        <h2 className="text-xl md:text-3xl font-bold mt-1 md:mt-2 max-w-2xl leading-tight">
-                            Where talent finds its stage
-                        </h2>
-                    </div>
-                </motion.div>
-            </section>
-
-            {/* Introduction & Highlights */}
-            <section className="container mx-auto px-4">
-                <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-8 md:mb-16">
-                    <motion.div
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.2 }}
-                        className="space-y-4 md:space-y-6"
-                    >
-                        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">
-                            More Than Just <span className="text-orange-600">Academics</span>
-                        </h2>
-                        <p className="text-sm md:text-lg text-slate-600 leading-relaxed">
-                            Basaveshwar Engineering College provides a holistic environment where students thrive not just in classrooms but in every aspect of life. From our sprawling 93-acre green campus to state-of-the-art recreational facilities, BEC is a home away from home.
-                        </p>
-                        <div className="flex flex-wrap gap-3 md:gap-4">
-                            <Link href="/student-life/hostels">
-                                <Button className="bg-orange-600 hover:bg-orange-700 text-white rounded-full px-6 md:px-8 text-sm md:text-base">
-                                    Explore Hostels
-                                </Button>
-                            </Link>
-                            <Link href="/student-life/activities">
-                                <Button variant="outline" className="rounded-full px-6 md:px-8 text-sm md:text-base">
-                                    Student Activities
-                                </Button>
-                            </Link>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.3 }}
-                        className="grid grid-cols-2 gap-3 md:gap-4"
-                    >
-                        {highlights.map((item, index) => {
-                            const Icon = item.icon;
-                            return (
-                                <div key={index} className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-                                    <div className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center mb-3 md:mb-4 ${item.bg} ${item.color}`}>
-                                        <Icon className="w-5 h-5 md:w-6 md:h-6" />
-                                    </div>
-                                    <div className="text-xl md:text-2xl font-bold text-slate-900">{item.title}</div>
-                                    <div className="text-xs md:text-sm text-slate-500">{item.subtitle}</div>
-                                </div>
-                            );
-                        })}
-                    </motion.div>
-                </div>
-            </section>
-
-            {/* Clubs & Activities */}
-            <section className="bg-slate-50 py-10 md:py-16">
-                <div className="container mx-auto px-4">
-                    <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
-                        <span className="text-orange-600 font-semibold tracking-wider text-xs md:text-sm uppercase">Vibrant Community</span>
-                        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mt-2">Student Activities & Clubs</h2>
-                        <p className="text-sm md:text-base text-slate-600 mt-3 md:mt-4">
-                            Discover your passions and build lifelong friendships through our diverse student organizations.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                        {clubs.map((club, index) => {
-                            const Icon = club.icon;
-                            return (
-                                <motion.div
-                                    key={index}
-                                    transition={{ delay: index * 0.1 }}
-                                    className="h-full"
-                                >
-                                    <Link href={club.href} className="block h-full">
-                                        <Card className="h-full hover:shadow-lg transition-all duration-300 border-none shadow-md group overflow-hidden">
-                                            <CardContent className="p-4 md:p-6 relative">
-                                                <div className={`absolute top-0 right-0 w-24 h-24 rounded-bl-full opacity-10 transition-transform group-hover:scale-150 ${club.bg.replace('100', '500')}`} />
-
-                                                <div className={`w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center mb-4 md:mb-6 text-white shadow-lg ${club.bg.replace('100', '500')}`}>
-                                                    <Icon className="w-6 h-6 md:w-7 md:h-7" />
-                                                </div>
-
-                                                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2 md:mb-3 group-hover:text-orange-600 transition-colors">
-                                                    {club.name}
-                                                </h3>
-                                                <p className="text-slate-600 text-xs md:text-sm leading-relaxed mb-4 md:mb-6">
-                                                    {club.description}
-                                                </p>
-
-                                                <div className="flex items-center text-xs md:text-sm font-semibold text-orange-600 group-hover:translate-x-1 transition-transform">
-                                                    Learn More <ArrowRight className="w-3 h-3 md:w-4 md:h-4 ml-1" />
-                                                </div>
-                                            </CardContent>
-                                        </Card>
-                                    </Link>
-                                </motion.div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
-
-            {/* Glimpses Gallery */}
-            <section className="container mx-auto px-4">
-                <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
-                    <span className="text-orange-600 font-semibold tracking-wider text-xs md:text-sm uppercase">Campus Moments</span>
-                    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mt-2">Glimpses of Campus Life</h2>
-                    <p className="text-sm md:text-base text-slate-600 mt-3 md:mt-4">
-                        Cultural performances, club gatherings and the Engineers&apos; Arena — a few moments from everyday life at BEC.
-                    </p>
-                </div>
-                <PhotoGallery images={galleryImages} />
-            </section>
-
-            {/* Amenities Grid */}
-            <section className="container mx-auto px-4 pb-10 md:pb-16">
-                <div className="bg-slate-900 rounded-3xl p-6 md:p-12 text-white overflow-hidden relative">
-                    <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl -mr-20 -mt-20" />
-                    <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl -ml-20 -mb-20" />
-
-                    <div className="relative z-10 grid lg:grid-cols-3 gap-8 md:gap-12 items-center">
-                        <div className="lg:col-span-1 space-y-4 md:space-y-6">
-                            <h2 className="text-2xl md:text-3xl font-bold">Campus Amenities</h2>
-                            <p className="text-sm md:text-base text-slate-300 leading-relaxed">
-                                We ensure a comfortable and convenient living experience with comprehensive support facilities available right on campus.
-                            </p>
-                            <div className="flex items-center gap-2 text-xs md:text-sm text-orange-300">
-                                <MapPin className="w-4 h-4" />
-                                Located centrally within Vidyagiri Campus
-                            </div>
-                        </div>
-
-                        <div className="lg:col-span-2 grid grid-cols-2 gap-3 md:gap-4">
-                            {amenities.map((item, index) => {
-                                const Icon = item.icon;
-                                return (
-                                    <div key={index} className="bg-white/10 backdrop-blur-md p-3 md:p-4 rounded-xl border border-white/10 flex flex-col sm:flex-row items-center sm:items-start gap-2 md:gap-4 text-center sm:text-left hover:bg-white/20 transition-colors">
-                                        <div className="w-10 h-10 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-400 shrink-0">
-                                            <Icon className="w-5 h-5 md:w-6 md:h-6" />
-                                        </div>
-                                        <span className="font-semibold text-sm md:text-base">{item.name}</span>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
+        <div className="relative aspect-16/9 w-full overflow-hidden rounded-md border border-stone-200 bg-stone-100 shadow-sm md:aspect-21/9">
+          <Image
+            src={asset("student-life/cultural/cine0157.webp")}
+            alt="BEC students performing a synchronised group dance during a cultural event"
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-linear-to-t from-stone-900/70 via-stone-900/10 to-transparent" />
+          <div className="absolute bottom-0 left-0 p-5 md:p-8 text-white">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-orange-300">
+              Where talent finds its stage
+            </p>
+          </div>
         </div>
-    );
+
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div className="space-y-5">
+            <SectionHeading
+              eyebrow="More than academics"
+              title="A home away from home"
+            />
+            <p className="text-base leading-relaxed text-gray-700">
+              Basaveshwar Engineering College provides a holistic environment
+              where students thrive not just in classrooms but in every aspect of
+              life — from a sprawling green campus to recreational facilities,
+              hostels and a community radio station.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/student-life/hostels">
+                <Button>Explore Hostels</Button>
+              </Link>
+              <Link href="/student-life/activities">
+                <Button variant="outline">Student Activities</Button>
+              </Link>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            {highlights.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.title}
+                  className="rounded-md border border-stone-200 bg-white p-6 text-center shadow-sm"
+                >
+                  <span className="mx-auto mb-3 inline-flex h-11 w-11 items-center justify-center rounded-md bg-orange-50 text-primary">
+                    <Icon className="h-5 w-5" />
+                  </span>
+                  <div className="text-xl font-semibold text-gray-900">{item.title}</div>
+                  <div className="text-sm text-gray-500">{item.subtitle}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="space-y-8">
+          <SectionHeading
+            eyebrow="Vibrant Community"
+            title="Student clubs & bodies"
+            description="Discover your passions and build lifelong friendships through diverse student organisations."
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {clubs.map((club) => {
+              const Icon = club.icon;
+              return (
+                <Link
+                  key={club.name}
+                  href={club.href}
+                  className="group flex h-full flex-col rounded-md border border-stone-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
+                >
+                  <span className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-md bg-orange-50 text-primary">
+                    <Icon className="h-5 w-5" />
+                  </span>
+                  <h3 className="text-base font-semibold text-gray-900 group-hover:text-primary">
+                    {club.name}
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
+                    {club.description}
+                  </p>
+                  <span className="mt-4 inline-flex items-center text-sm font-semibold text-primary">
+                    Learn More
+                    <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="space-y-8">
+          <SectionHeading
+            eyebrow="Campus Moments"
+            title="Glimpses of campus life"
+            description="Cultural performances, club gatherings, the Youth Red Cross and the Engineers' Arena — a few moments from everyday life at BEC."
+          />
+          <PhotoGallery images={galleryImages} />
+        </div>
+
+        <div className="rounded-md border border-stone-200 bg-stone-900 p-6 text-white shadow-sm md:p-10">
+          <div className="grid gap-8 lg:grid-cols-3 lg:items-center">
+            <div className="space-y-3">
+              <h2 className="text-2xl font-semibold md:text-3xl">Campus Amenities</h2>
+              <p className="text-sm leading-relaxed text-stone-300">
+                A comfortable, convenient living experience with support
+                facilities available right on campus.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-3 lg:col-span-2">
+              {amenities.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={item.name}
+                    className="flex items-center gap-3 rounded-md border border-white/10 bg-white/5 p-4"
+                  >
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-orange-500/10 text-orange-400">
+                      <Icon className="h-5 w-5" />
+                    </span>
+                    <span className="text-sm font-medium">{item.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

@@ -1,13 +1,5 @@
-import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 
-import { SymposiaPage } from "@/components/student-life/symposia-page";
-
-export const metadata: Metadata = {
-  title: "Symposia 2023 | Basaveshwar Engineering College, Bagalkote",
-  description:
-    "Archived details, brochure and schedules for SYMPOSIA 2023 at Basaveshwar Engineering College, Bagalkote.",
-};
-
-export default function Symposia2023Page() {
-  return <SymposiaPage />;
+export default function Symposia2023Redirect() {
+  redirect("/student-life/symposia");
 }
