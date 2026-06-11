@@ -1,6 +1,10 @@
 "use client";
 
+import Image from "next/image";
+
 import { FadeIn } from "@/components/animations/fade-in";
+import { DocumentDirectory } from "@/components/common/document-directory";
+import { asset } from "@/lib/assets";
 import {
   Building2,
   Award,
@@ -15,7 +19,6 @@ import {
   Sun,
   Gauge,
   Leaf,
-  GraduationCap,
 } from "lucide-react";
 
 const researchStats = [
@@ -131,18 +134,46 @@ export default function ResearchFacilitiesPage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,#0f172a_0%,transparent_28%)]" />
         </div>
         <div className="relative container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
-            Research
-          </p>
-          <div className="mt-4 space-y-4 max-w-3xl">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
-              Research &amp; Development
-            </h1>
-            <p className="text-base md:text-lg leading-relaxed text-gray-700">
-              Ten VTU-recognized research centres and a QIP centre for doctoral
-              studies, driving innovation across engineering, science and
-              management.
-            </p>
+          <div className="grid items-center gap-10 lg:grid-cols-[1.4fr_1fr] lg:gap-12">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+                Research
+              </p>
+              <div className="mt-4 space-y-4 max-w-2xl">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
+                  Research &amp; Development
+                </h1>
+                <p className="text-base md:text-lg leading-relaxed text-gray-700">
+                  Ten VTU-recognized research centres and a QIP centre for
+                  doctoral studies, driving innovation across engineering,
+                  science and management.
+                </p>
+              </div>
+            </div>
+
+            {/* Dean R&D feature card */}
+            <FadeIn className="w-full lg:justify-self-end lg:max-w-xs">
+              <figure className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-lg shadow-stone-900/5">
+                <div className="relative aspect-4/3 w-full bg-stone-100">
+                  <Image
+                    src={asset("governance/deans/dr-mahabaleshwar-s-k.webp")}
+                    alt="Dr. Mahabaleshwar S. Kakkasageri, Dean of Research and Development"
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 320px"
+                    className="object-cover object-top"
+                  />
+                </div>
+                <figcaption className="px-5 py-4">
+                  <h2 className="text-base font-bold leading-snug text-gray-900">
+                    Dr. Mahabaleshwar S. Kakkasageri
+                  </h2>
+                  <p className="mt-0.5 text-sm text-gray-600">
+                    Dean, Research &amp; Development
+                  </p>
+                </figcaption>
+              </figure>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -287,30 +318,6 @@ export default function ResearchFacilitiesPage() {
             </div>
           </FadeIn>
 
-          {/* Dean R&D */}
-          <FadeIn className="mt-12">
-            <div className="bg-white rounded-2xl border border-stone-200 shadow-sm p-8 flex flex-col sm:flex-row items-start gap-5">
-              <div className="w-14 h-14 shrink-0 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
-                <GraduationCap className="h-7 w-7" />
-              </div>
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary mb-1">
-                  Research Leadership
-                </p>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Dr. Mahabaleshwar S. Kakkasageri
-                </h3>
-                <p className="text-primary font-semibold">Dean, Research &amp; Development</p>
-                <p className="mt-3 text-sm text-gray-600 leading-relaxed max-w-2xl">
-                  The R&amp;D cell coordinates the recognized research centres,
-                  funded projects, consultancy and the institution&apos;s Ph.D.
-                  programmes, supported by Research Advisory, Ethics and Review
-                  committees and a formal research policy.
-                </p>
-              </div>
-            </div>
-          </FadeIn>
-
           {/* Industry-partnered labs */}
           <FadeIn className="mt-12">
             <div className="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
@@ -343,6 +350,64 @@ export default function ResearchFacilitiesPage() {
                 ))}
               </div>
             </div>
+          </FadeIn>
+
+          {/* Scopus-indexed publications */}
+          <FadeIn className="mt-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              Scopus-Indexed Publications
+            </h2>
+            <p className="text-sm text-gray-600 mb-6 max-w-2xl">
+              Year-wise lists of the college&apos;s research output indexed in
+              Scopus. Open a year to view the full publication list.
+            </p>
+            <DocumentDirectory
+              groups={[
+                {
+                  documents: [
+                    { title: "Scopus Publications 2022–23", url: asset("documents/research/scopus-2022.pdf") },
+                    { title: "Scopus Publications 2021–22", url: asset("documents/research/scopus-2021.pdf") },
+                    { title: "Scopus Publications 2020–21", url: asset("documents/research/scopus-2020.pdf") },
+                    { title: "Scopus Publications 2019–20", url: asset("documents/research/scopus-2019.pdf") },
+                    { title: "Scopus Publications 2018–19", url: asset("documents/research/scopus-2018.pdf") },
+                    { title: "Scopus Publications 2017–18", url: asset("documents/research/scopus-2017.pdf") },
+                  ],
+                },
+              ]}
+            />
+          </FadeIn>
+
+          {/* Policies, patents & committees */}
+          <FadeIn className="mt-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Policies, Patents &amp; Committees
+            </h2>
+            <DocumentDirectory
+              groups={[
+                {
+                  label: "Policy & Regulations",
+                  documents: [
+                    { title: "Research Policy", url: asset("documents/research/research-policy.pdf") },
+                    { title: "Research Regulations", url: asset("documents/research/research-regulations.pdf") },
+                  ],
+                },
+                {
+                  label: "Patents & Sponsored Research",
+                  documents: [
+                    { title: "Patents Filed & Granted", url: asset("documents/research/patents.pdf") },
+                    { title: "Sponsored Research Projects", url: asset("documents/research/sponsored-research.pdf") },
+                  ],
+                },
+                {
+                  label: "Research Committees",
+                  documents: [
+                    { title: "Research Advisory Committee", url: asset("documents/research/committee-advisory.pdf") },
+                    { title: "Research Ethics Committee", url: asset("documents/research/committee-ethics.pdf") },
+                    { title: "Research Review Committee", url: asset("documents/research/committee-review.pdf") },
+                  ],
+                },
+              ]}
+            />
           </FadeIn>
         </div>
       </section>

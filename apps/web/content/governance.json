@@ -8,6 +8,13 @@
   },
   "deans": [
     {
+      "role": "Dean Research & Development",
+      "name": "Dr. Mahabaleshwar S. K.",
+      "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
+      "email": "deanrd@becbgk.edu",
+      "focus": "Research, innovation, consultancy"
+    },
+    {
       "role": "Dean Academic",
       "name": "Dr. P. N. Kulkarni",
       "photo": "governance/deans/dr-p-n-kulkarni.webp",
@@ -20,13 +27,6 @@
       "photo": "governance/deans/dr-shankar-kambalimath.webp",
       "email": "placement@becbgk.edu",
       "focus": "Career services & placements"
-    },
-    {
-      "role": "Dean Research & Development",
-      "name": "Dr. Mahabaleshwar S. K.",
-      "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
-      "email": "deanrd@becbgk.edu",
-      "focus": "Research, innovation, consultancy"
     },
     {
       "role": "Dean Quality Assurance",
