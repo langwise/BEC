@@ -74,26 +74,25 @@ export const navigationData: NavigationItem[] = [
     ],
   },
 
-  // 3. Programs (Programmes)
+  // 3. Academics
   {
-    title: "Programs",
+    title: "Academics",
     items: [
-      { title: "Examinations", href: "/programs/examinations" },
-      { title: "Academic Office", href: "/programs/office" },
-      { title: "First-Year Syllabus", href: "/programs/first-year" },
+      { title: "Examinations", href: "/academics/examinations" },
+      { title: "First-Year Syllabus", href: "/academics/first-year" },
       {
         title: "Programmes",
         items: [
-          { title: "Under Graduate/BE", href: "/programs/programmes/ug" },
-          { title: "Post Graduate/M.Tech", href: "/programs/programmes/pg" },
-          { title: "MBA", href: "/programs/programmes/mba" },
-          { title: "MCA", href: "/programs/programmes/mca" },
-          { title: "M.Sc.(Engg.)/Ph.D", href: "/programs/programmes/phd" },
+          { title: "Under Graduate/BE", href: "/academics/programmes/ug" },
+          { title: "Post Graduate/M.Tech", href: "/academics/programmes/pg" },
+          { title: "MBA", href: "/academics/programmes/mba" },
+          { title: "MCA", href: "/academics/programmes/mca" },
+          { title: "M.Sc.(Engg.)/Ph.D", href: "/academics/programmes/phd" },
         ],
       },
-      { title: "Documents to Submit", href: "/programs/documents" },
-      { title: "Scholarship Details", href: "/programs/scholarships" },
-      { title: "Hostel Admissions", href: "/programs/hostel" },
+      { title: "Documents to Submit", href: "/academics/documents" },
+      { title: "Scholarship Details", href: "/academics/scholarships" },
+      { title: "Hostel Admissions", href: "/academics/hostel" },
     ],
   },
 

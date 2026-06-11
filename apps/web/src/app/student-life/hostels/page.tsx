@@ -143,7 +143,7 @@ export default function HostelsPage() {
             </div>
           </div>
           <Link
-            href="/programs/hostel"
+            href="/academics/hostel"
             className="group flex items-center justify-between gap-3 rounded-md border border-stone-200 bg-orange-50/60 p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
           >
             <div>

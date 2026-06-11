@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { DepartmentLayout } from "@/components/programs/departments/department-layout";
+import { DepartmentLayout } from "@/components/academics/departments/department-layout";
 import { getDepartmentData } from "@/data/department/department";
 import { getDepartmentContent } from "@/content/departments";
 
