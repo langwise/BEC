@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -56,6 +57,9 @@ export default function RootLayout({
           <Footer />
         </div>
         <Analytics />
+        {process.env.NODE_ENV === "production" && (
+          <GoogleAnalytics gaId="G-6F6X7N6R73" />
+        )}
       </body>
     </html>
   );
