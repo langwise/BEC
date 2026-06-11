@@ -15,47 +15,47 @@ import { cn } from "@/lib/utils";
 
 const libraryLinks = [
   {
-    href: "/facilities/library",
+    href: "/library",
     label: "Library Home",
     icon: BookOpen,
   },
   {
-    href: "/facilities/library/about",
+    href: "/library/about",
     label: "About Library",
     icon: BookOpen,
   },
   {
-    href: "/facilities/library/staff",
+    href: "/library/staff",
     label: "Staff Profile",
     icon: Users,
   },
   {
-    href: "/facilities/library/supporting-staff",
+    href: "/library/supporting-staff",
     label: "Supporting Staff",
     icon: Users,
   },
   {
-    href: "/facilities/library/infrastructure",
+    href: "/library/infrastructure",
     label: "Infrastructure",
     icon: Building2,
   },
   {
-    href: "/facilities/library/e-resources-paid",
+    href: "/library/e-resources-paid",
     label: "E-Resources (Paid)",
     icon: Globe,
   },
   {
-    href: "/facilities/library/e-resources-free",
+    href: "/library/e-resources-free",
     label: "E-Resources (Free)",
     icon: Globe,
   },
   {
-    href: "/facilities/library/useful-links",
+    href: "/library/useful-links",
     label: "Useful Links",
     icon: LinkIcon,
   },
   {
-    href: "/facilities/library/contact",
+    href: "/library/contact",
     label: "Contact",
     icon: Phone,
   },

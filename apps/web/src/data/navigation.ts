@@ -37,7 +37,8 @@ export const navigationData: NavigationItem[] = [
         title: "Campus",
         items: [
           { title: "Infrastructure", href: "/institute/campus/infrastructure" },
-          { title: "Campus Amenities", href: "/facilities/amenities" },
+          { title: "Campus Amenities", href: "/institute/campus/amenities" },
+          { title: "Library", href: "/library" },
         ],
       },
       { title: "Contact Us", href: "/institute/contact" },
@@ -108,89 +109,10 @@ export const navigationData: NavigationItem[] = [
     })),
   },
 
-  // 5. Research (Commented out to remove from website navigation)
-  /*
+  // 5. Research
   {
     title: "Research",
-    items: [
-      { title: "About Research", href: "/research/about" },
-      {
-        title: "Research Centres",
-        items: [
-          { title: "Biotechnology", href: "/research/centres/biotech" },
-          { title: "Civil Engg.", href: "/research/centres/civil" },
-          { title: "Computer Science", href: "/research/centres/cs" },
-          { title: "Electronics & Comm.", href: "/research/centres/ec" },
-          { title: "Electrical & Electronics", href: "/research/centres/ee" },
-          { title: "Industrial & Production", href: "/research/centres/ip" },
-          { title: "Information Science", href: "/research/centres/is" },
-          { title: "Mechanical", href: "/research/centres/mechanical" },
-          { title: "Physics", href: "/research/centres/physics" },
-          { title: "MBA", href: "/research/centres/mba" },
-        ],
-      },
-      {
-        title: "Lab's with Industries",
-        items: [
-          { title: "Bosch Rexroth", href: "/research/labs/bosch" },
-          { title: "MEMS Design", href: "/research/labs/mems" },
-          { title: "Nokia", href: "/research/labs/nokia" },
-          { title: "SCADA Lab", href: "/research/labs/scada" },
-          { title: "Renewable Energy", href: "/research/labs/renewable" },
-          { title: "Intel Intelligent Lab", href: "/research/labs/intel" },
-          { title: "Materials Lab", href: "/research/labs/materials" },
-          { title: "Multimedia Lab", href: "/research/labs/multimedia" },
-          { title: "Bio-diesel", href: "/research/labs/biodiesel" },
-        ],
-      },
-      {
-        title: "Centres of Excellence",
-        href: "/research/centres-of-excellence",
-      },
-      { title: "Patents", href: "/research/patents" },
-      { title: "Sponsored Research", href: "/research/sponsored" },
-      { title: "BEC Guidelines", href: "/research/guidelines" },
-      { title: "Research Policy", href: "/research/policy" },
-      {
-        title: "Research Committees",
-        items: [
-          {
-            title: "Advisory Committee",
-            href: "/research/committees/advisory",
-          },
-          { title: "Ethics Committee", href: "/research/committees/ethics" },
-          { title: "Review Committee", href: "/research/committees/review" },
-        ],
-      },
-      {
-        title: "Scopus Publications",
-        href: "/research/scopus",
-      },
-    ],
-  },
-  */
-
-  // 5. Facilities (Infrastructure)
-  {
-    title: "Facilities",
-    items: [
-      { title: "Library", href: "/facilities/library" },
-      { title: "Research", href: "/facilities/research" },
-      { title: "Guest House", href: "/facilities/guesthouse" },
-      { title: "Campus Amenities", href: "/facilities/amenities" },
-      {
-        title: "Grievances",
-        items: [
-          { title: "PwD", href: "/facilities/grievances/pwd" },
-          { title: "SC/ST", href: "/facilities/grievances/scst" },
-          { title: "OBC", href: "/facilities/grievances/obc" },
-          {
-            title: "Internal Complaints",
-            href: "/facilities/grievances/internal",
-          },
-        ],
-      },
-    ],
+    href: "/research",
   },
 
   // 6. Placements

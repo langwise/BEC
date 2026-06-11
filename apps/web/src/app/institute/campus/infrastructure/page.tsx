@@ -1,8 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Wifi, Monitor, BookOpen, Warehouse, Building, Stethoscope, Store, Podcast } from "lucide-react";
-import { PhotoGallery } from "@/components/common/photo-gallery";
+import { Wifi, Monitor, BookOpen, Warehouse, Building, Stethoscope, Store, Podcast, ArrowRight } from "lucide-react";
 import { asset } from "@/lib/assets";
 
 export default function InfrastructurePage() {
@@ -65,33 +65,6 @@ export default function InfrastructurePage() {
     "Centre for Advanced Materials Research Studies",
     "Smart Composite Structures Research Centre",
     "Geotechnical Engineering and Structural Engineering Laboratory",
-  ];
-
-  const campusAmenities = [
-    {
-      src: asset("facilities/general/cine1260.webp"),
-      alt: "Cooperative store and book stall on the BEC campus",
-    },
-    {
-      src: asset("facilities/general/cine1256.webp"),
-      alt: "Campus Hospital at Basaveshwar Engineering College",
-    },
-    {
-      src: asset("facilities/general/cine1255.webp"),
-      alt: "India Post office on the BEC campus",
-    },
-    {
-      src: asset("facilities/general/cine1257.webp"),
-      alt: "Campus store and refreshment stall at Basaveshwar Engineering College",
-    },
-    {
-      src: asset("facilities/general/cine0364.webp"),
-      alt: "Bank of Baroda ATM facility on campus",
-    },
-    {
-      src: asset("facilities/general/cine0366.webp"),
-      alt: "On-campus banking and ATM lobby",
-    },
   ];
 
   return (
@@ -171,15 +144,23 @@ export default function InfrastructurePage() {
       </section>
 
        <section className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6">
-        <div className="mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-            Campus Amenities
-          </h2>
-          <p className="mt-2 text-gray-600">
-            Everyday conveniences within the campus — a clinic, banks, a cooperative store, a post office, and more.
-          </p>
+        <div className="flex flex-col gap-6 rounded-sm border border-stone-200 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between md:p-8">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+              Campus Amenities
+            </h2>
+            <p className="mt-2 text-gray-600">
+              Everyday conveniences within the campus — a clinic, banks, a cooperative store, a post office, and more.
+            </p>
+          </div>
+          <Link
+            href="/institute/campus/amenities"
+            className="inline-flex shrink-0 items-center gap-2 rounded-sm bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary/90"
+          >
+            View Campus Amenities
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
-        <PhotoGallery images={campusAmenities} />
       </section>
 
        <section className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6">

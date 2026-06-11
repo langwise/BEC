@@ -16,10 +16,6 @@ import {
   Heart,
   Cpu,
   Leaf,
-  Activity,
-  Landmark,
-  Store,
-  Utensils,
   ArrowRight,
 } from "lucide-react";
 
@@ -104,13 +100,6 @@ const galleryImages = [
     src: asset("student-life/engineers-arena/cine1074.webp"),
     alt: "Engineers' Arena event hosted by student volunteers at BEC",
   },
-];
-
-const amenities = [
-  { name: "Campus Clinic", icon: Activity },
-  { name: "Bank & ATM", icon: Landmark },
-  { name: "Co-operative Store", icon: Store },
-  { name: "Canteen", icon: Utensils },
 ];
 
 export default function StudentLifeOverviewPage() {
@@ -225,30 +214,22 @@ export default function StudentLifeOverviewPage() {
         </div>
 
         <div className="rounded-md border border-stone-200 bg-stone-900 p-6 text-white shadow-sm md:p-10">
-          <div className="grid gap-8 lg:grid-cols-3 lg:items-center">
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="space-y-3">
               <h2 className="text-2xl font-semibold md:text-3xl">Campus Amenities</h2>
-              <p className="text-sm leading-relaxed text-stone-300">
+              <p className="max-w-xl text-sm leading-relaxed text-stone-300">
                 A comfortable, convenient living experience with support
-                facilities available right on campus.
+                facilities right on campus — a clinic, banks, a co-operative
+                store, a post office, a canteen and more.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-3 lg:col-span-2">
-              {amenities.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={item.name}
-                    className="flex items-center gap-3 rounded-md border border-white/10 bg-white/5 p-4"
-                  >
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-orange-500/10 text-orange-400">
-                      <Icon className="h-5 w-5" />
-                    </span>
-                    <span className="text-sm font-medium">{item.name}</span>
-                  </div>
-                );
-              })}
-            </div>
+            <Link
+              href="/institute/campus/amenities"
+              className="group inline-flex shrink-0 items-center gap-2 rounded-md bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-orange-400"
+            >
+              Explore Campus Amenities
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Link>
           </div>
         </div>
       </section>
