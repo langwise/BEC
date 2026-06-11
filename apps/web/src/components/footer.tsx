@@ -5,17 +5,17 @@ import {
   Phone,
   MapPin,
   Instagram,
-  ExternalLink as ExternalLinkIcon,
 } from "lucide-react";
 import Link from "next/link";
+import { asset } from "@/lib/assets";
 
 const internalQuickLinks = [
   { label: "About Us", href: "/institute/about" },
-  { label: "Programmes", href: "/programs/programmes" },
+  { label: "Programmes", href: "/departments" },
   { label: "Administration", href: "/administration/governance" },
   { label: "Accreditation & Quality", href: "/accreditation" },
   { label: "Student Life", href: "/student-life/overview" },
-  { label: "Alumni", href: "/alumni" },
+  { label: "Alumni", href: "/student-life/alumni" },
 ];
 
 const internalResources = [
@@ -25,6 +25,17 @@ const internalResources = [
   { label: "Examinations", href: "/programs/examinations" },
   { label: "Contact Us", href: "/institute/contact" },
   { label: "RTI", href: "/administration/disclosures/rti" },
+];
+
+const documentLinks = [
+  { label: "AICTE EoA Report", href: asset("documents/aicte/eoa-report-2025-26.pdf") },
+  { label: "Strategic Plan", href: asset("documents/strategic-plan/institutional-strategic-plan.pdf") },
+  { label: "Syllabus (All Branches)", href: asset("documents/syllabus/all-semester-syllabus.pdf") },
+  { label: "NPTEL Local Chapter", href: asset("documents/nptel/local-chapter.pdf") },
+  { label: "Spoken Tutorial", href: asset("documents/spoken-tutorial/courses-offered-2023.pdf") },
+  { label: "Internal Complaints (CICC)", href: asset("documents/cicc/cicc-2025.pdf") },
+  { label: "SC/ST/BCM Cell", href: asset("documents/sc-st-bcm/sc-st-bcm-2024.pdf") },
+  { label: "Youth Red Cross", href: asset("documents/red-cross/activities.pdf") },
 ];
 
 const externalPortals = [
@@ -44,6 +55,8 @@ const statutoryLinks = [
   { label: "SSP Karnataka", href: "https://ssp.postmatric.karnataka.gov.in" },
   { label: "About Bagalkote", href: "https://bagalkot.nic.in/en/" },
 ];
+
+const bottomLinks = [...externalPortals, ...statutoryLinks];
 
 export function Footer() {
   return (
@@ -123,18 +136,17 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Online Portals</h3>
+            <h3 className="font-bold text-lg mb-4">Documents</h3>
             <ul className="space-y-2 text-sm">
-              {externalPortals.map((link) => (
+              {documentLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 hover:text-primary transition-colors"
+                    className="hover:text-primary transition-colors"
                   >
                     {link.label}
-                    <ExternalLinkIcon className="h-3 w-3 opacity-60" />
                   </a>
                 </li>
               ))}
@@ -169,7 +181,7 @@ export function Footer() {
 
         <div className="border-t border-secondary-foreground/20 mt-10 pt-6">
           <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-secondary-foreground/80">
-            {statutoryLinks.map((link) => (
+            {bottomLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}

@@ -136,7 +136,7 @@ export function AboutSection() {
                 asChild
                 className="rounded-full px-8 h-12 text-base shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
               >
-                <Link href="/about/history">
+                <Link href="/institute/history">
                   Explore History & Milestones
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

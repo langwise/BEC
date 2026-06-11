@@ -8,6 +8,7 @@
   - the page is responsive with very good ux for all device types and cross browser compatibility
   - the page should be decently optimized for lower end and lower network region accessible
   - visually speaking and layout wise speaking, the design should be very well aligned according to a premier institute website.
+  - remove the content which we were not able to verify and inform the user boldly
 
 ## data source precedence
 
@@ -17,4 +18,4 @@ Whenever a question comes up about missing data, what content to add, or which v
 2. **Scraped site assets** — `data/scraped/site/becbgk.edu/…` (+ manifests in `data/scraped/manifests/`).
 3. **Live becbgk.edu pages** — fetch/re-scrape the relevant page for current copy.
 
-If none of the three yield the answer, leave the existing content untouched and flag it (in the run log / a clear TODO) for human input rather than fabricating.
+If data is none of the above, we should remove it and inform the user about it.

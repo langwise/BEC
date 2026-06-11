@@ -39,7 +39,7 @@ export default function ContactUsPage() {
     },
     {
       name: "Dr. S. G. Kambalimath",
-      designation: "Placement Officer",
+      designation: "Dean, Career Guidance & Placement",
       phone: null,
       email: "placement@becbgk.edu",
     },
@@ -96,7 +96,7 @@ export default function ContactUsPage() {
         description="We are here to help. Reach out to the right department for your queries."
         breadcrumb={[
           { label: "Home", href: "/" },
-          { label: "Institute", href: "/institute" },
+          { label: "Institute", href: "/institute/about" },
           { label: "Contact", href: "/institute/contact", active: true },
         ]}
       />
@@ -142,10 +142,6 @@ export default function ContactUsPage() {
                         <p className="text-gray-600 font-medium break-all">
                             <a href={`mailto:${collegeInfo.email}`} className="hover:text-primary transition-colors">{collegeInfo.email}</a>
                         </p>
-                        <div className="mt-4 pt-4 border-t border-stone-100">
-                             <p className="text-sm text-gray-500">For admissions:</p>
-                             <a href="mailto:admissions@becbgk.edu" className="text-primary font-medium hover:underline">admissions@becbgk.edu</a>
-                        </div>
                     </div>
                 </div>
             </FadeIn>

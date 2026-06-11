@@ -26,9 +26,9 @@ export default function AboutUsPage() {
   const stats = [
     { label: "Founded", value: "1963", icon: Building2 },
     { label: "Campus Size", value: "93 Acres", icon: Trophy },
-    { label: "Alumni Strong", value: "20,000+", icon: Users },
-    { label: "Students", value: "3,500+", icon: GraduationCap },
-    { label: "Faculty", value: "180+", sub: "55% PhDs", icon: Award },
+    { label: "Alumni", value: "Global", icon: Users },
+    { label: "Students", value: "3,200+", icon: GraduationCap },
+    { label: "Faculty", value: "180+", sub: "43% PhDs", icon: Award },
     { label: "Research Centers", value: "10", icon: BookOpen },
   ];
 
@@ -111,7 +111,7 @@ export default function AboutUsPage() {
     {
       icon: GraduationCap,
       title: "Academic Programs",
-      desc: "9 UG & 8 PG Programmes",
+      desc: "11 UG & 8 PG Programmes",
     },
     {
       icon: Building2,
@@ -206,7 +206,7 @@ export default function AboutUsPage() {
                   </span>{" "}
                   is a premier technical institution located in North Karnataka.
                   Started in 1963, the college has grown tremendously over the
-                  years and currently has 11 UG, 6 PG and 10 Research Centers
+                  years and currently has 11 UG, 8 PG and 10 Research Centers
                   recognized by VTU, Belagavi.
                 </p>
                 <p>
@@ -216,9 +216,9 @@ export default function AboutUsPage() {
                   </span>{" "}
                   and accredited by{" "}
                   <span className="font-semibold text-primary">
-                    NAAC with ‘A’ grade
+                    NAAC
                   </span>
-                  . It is permanently affiliated to{" "}
+                  . It is affiliated to{" "}
                   <span className="font-semibold text-gray-900">
                     VTU, Belagavi
                   </span>
@@ -230,12 +230,8 @@ export default function AboutUsPage() {
                   <span className="font-semibold text-primary">
                     93-acre campus
                   </span>
-                  , and many of its alumni of{" "}
-                  <span className="font-semibold text-gray-900">
-                    20,000+ students
-                  </span>{" "}
-                  are now in leadership positions with MNCs and large Indian
-                  companies in India and all over the world.
+                  , and many of its alumni are now in leadership positions with
+                  MNCs and large Indian companies in India and all over the world.
                 </p>
                 <p>
                   With a highly qualified, experienced, and dedicated{" "}
@@ -244,11 +240,11 @@ export default function AboutUsPage() {
                   </span>
                   , with{" "}
                   <span className="font-semibold text-primary">
-                    55% of them holding PhD’s
+                    43% of them holding PhD’s
                   </span>
                   , supported by nearly 200 staff members, the college offers an
                   unbeatable ambience and superior quality of education for its
-                  nearly 3500 students.
+                  3,200+ students.
                 </p>
               </div>
             </div>

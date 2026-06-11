@@ -2,9 +2,14 @@
 
 import { FadeIn } from "../animations/fade-in";
 import { Button } from "@/components/ui/button";
-import { BrandLogo } from "@/components/placements/brand-logo";
-import { placementStats, topRecruiters } from "@/data/home/placements";
+import {
+  placementStats,
+  topRecruiters,
+  recruitersSheet,
+} from "@/data/home/placements";
+import { asset } from "@/lib/assets";
 import { ArrowRight, Briefcase } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function PlacementsSection() {
@@ -71,7 +76,7 @@ export function PlacementsSection() {
             </FadeIn>
           </div>
 
-          {/* Right Column - Recruiters Grid */}
+          {/* Right Column - Recruiters */}
           <FadeIn delay={0.4} direction="left">
             <div className="relative bg-white rounded-3xl p-8 lg:p-12 shadow-xl shadow-gray-100 border border-gray-100">
               <div className="flex items-center justify-between mb-8">
@@ -86,26 +91,26 @@ export function PlacementsSection() {
                 </Link>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12">
-                {topRecruiters.map((company, index) => (
-                  <div
-                    key={index}
-                    className="aspect-video grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 flex items-center justify-center"
-                  >
-                    <BrandLogo
-                      name={company.name}
-                      domain={company.domain}
-                      className="max-h-10 w-auto max-w-[120px]"
-                      monogramClassName="h-12 w-12 text-lg"
-                    />
-                  </div>
+              <Image
+                src={asset(recruitersSheet.src)}
+                alt={`Esteemed recruiters of Basaveshwar Engineering College, Bagalkote, including ${topRecruiters
+                  .slice(0, 12)
+                  .join(", ")} and more`}
+                width={recruitersSheet.width}
+                height={recruitersSheet.height}
+                sizes="(max-width: 1024px) 90vw, 640px"
+                className="w-full h-auto rounded-xl"
+              />
+              <ul className="sr-only">
+                {topRecruiters.map((name) => (
+                  <li key={name}>{name}</li>
                 ))}
-              </div>
+              </ul>
 
               <div className="mt-10 pt-8 border-t border-gray-50 text-center">
                 <p className="text-sm text-gray-500 font-medium">
-                  Join <span className="text-gray-900 font-bold">3000+</span>{" "}
-                  alumni working at Fortune 500 companies
+                  <span className="text-gray-900 font-bold">60+</span> companies
+                  recruit across IT, core engineering and consulting
                 </p>
               </div>
             </div>

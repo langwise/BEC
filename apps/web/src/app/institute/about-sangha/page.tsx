@@ -1,13 +1,7 @@
 import Image from "next/image";
 
-import { PhotoGallery } from "@/components/common/photo-gallery";
 import { Card, CardContent } from "@/components/ui/card";
-import { asset, assetsUnder } from "@/lib/assets";
-
-const sanghaGallery = assetsUnder("governance/sangha/").map((src) => ({
-  src,
-  alt: "B.V.V. Sangha — leadership and members",
-}));
+import { asset } from "@/lib/assets";
 
 export default function AboutSanghaPage() {
   return (
@@ -131,21 +125,6 @@ export default function AboutSanghaPage() {
                 </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
-
-      <section className="border-t border-stone-200 bg-stone-50/50 py-14 md:py-18">
-        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
-            Leadership
-          </p>
-          <h2 className="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-gray-900">
-            The People Behind the Sangha
-          </h2>
-          <p className="mt-3 max-w-2xl text-base text-gray-700 leading-relaxed">
-            The office-bearers and members who carry forward the Sangha’s mission of selfless service and quality education.
-          </p>
-          <PhotoGallery images={sanghaGallery} className="mt-8" />
         </div>
       </section>
     </main>

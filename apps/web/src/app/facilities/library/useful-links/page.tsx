@@ -50,7 +50,7 @@ export default function UsefulLinksPage() {
     <div className="min-h-screen bg-stone-50">
       <LibraryBreadcrumb
         items={[
-          { label: "Facilities", href: "/facilities" },
+          { label: "Facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "Useful Links" },
         ]}

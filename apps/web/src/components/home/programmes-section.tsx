@@ -35,7 +35,7 @@ export function ProgrammesSection() {
           {programmes.map((programme, index) => {
             const Icon = programme.icon;
             return (
-              <div key={index}>
+              <Link key={index} href={programme.href} className="block h-full">
                 <Card className="h-full border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group bg-stone-50/30">
                   <CardHeader className="space-y-6">
                     <div className="flex items-center justify-between">
@@ -62,7 +62,7 @@ export function ProgrammesSection() {
                     </div>
                   </CardContent>
                 </Card>
-              </div>
+              </Link>
             );
           })}
         </div>

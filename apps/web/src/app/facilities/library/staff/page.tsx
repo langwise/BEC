@@ -39,7 +39,7 @@ export default function StaffProfilePage() {
 
       <LibraryBreadcrumb
         items={[
-          { label: "Facilities", href: "/facilities" },
+          { label: "Facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "Staff Profile" }
         ]}

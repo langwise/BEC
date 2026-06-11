@@ -55,7 +55,7 @@ export default function SupportingStaffPage() {
 
       <LibraryBreadcrumb
         items={[
-          { label: "Facilities", href: "/facilities" },
+          { label: "Facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "Supporting Staff" }
         ]}
