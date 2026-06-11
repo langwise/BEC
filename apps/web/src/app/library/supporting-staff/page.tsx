@@ -1,13 +1,17 @@
-"use client";
-
-
-
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
 import { LibrarySidebar } from "@/components/library/library-sidebar";
 import { StaffCard } from "@/components/library/staff-card";
 import { Users } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Library Supporting Staff",
+  description:
+    "The BEC Central Library supporting staff handle book circulation, shelving, maintenance and day-to-day operations, ensuring smooth service for all library users.",
+  path: "/library/supporting-staff",
+});
 
 export default function SupportingStaffPage() {
   const supportStaff = [

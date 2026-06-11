@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
 import { PageHero } from "@/components/common/page-hero";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "TEQIP | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "TEQIP-III Programme",
   description:
-    "Technical Education Quality Improvement Programme (TEQIP-III) records for Basaveshwar Engineering College, Bagalkote — institutional development plan, audit reports, calendars and MoUs.",
-};
+    "TEQIP-III records at BEC Bagalkote, the World Bank-assisted quality programme: institutional development plan, performance audit reports, academic calendars, AQARs and MoUs.",
+  path: "/accreditation/teqip",
+});
 
 export default function TeqipPage() {
   return (

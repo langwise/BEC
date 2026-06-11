@@ -1,9 +1,16 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { ProgrammeHeader } from "@/components/academics/programmes/programme-header";
 import { CheckCircle2, GraduationCap, Building2, Wallet, Microscope, type LucideIcon } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
+import { BreadcrumbsJsonLd } from "@/components/seo/jsonld";
 import Link from "next/link";
+
+export const metadata = pageMetadata({
+  title: "M.Tech Postgraduate Programmes",
+  description:
+    "BEC Bagalkote (College Code T810) offers M.Tech in Structural, Geo-Technical, Environmental and Machine Design, each with 18 seats, admitted via PGCET or GATE.",
+  path: "/academics/programmes/pg",
+});
 
 const pgData = {
   title: "Post Graduate (M.Tech)",
@@ -71,6 +78,12 @@ function SectionHeader({ icon: Icon, title }: { icon: LucideIcon, title: string 
 export default function PGProgrammePage() {
   return (
     <div className="space-y-16">
+      <BreadcrumbsJsonLd
+        items={[
+          { name: "Academics", path: "/academics/programmes/pg" },
+          { name: "PG Programmes", path: "/academics/programmes/pg" },
+        ]}
+      />
       <ProgrammeHeader
         title={pgData.title}
         description={pgData.description}

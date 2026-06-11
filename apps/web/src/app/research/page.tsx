@@ -1,9 +1,9 @@
-"use client";
-
 import Image from "next/image";
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { DocumentDirectory } from "@/components/common/document-directory";
+import { BreadcrumbsJsonLd } from "@/components/seo/jsonld";
+import { pageMetadata } from "@/lib/seo";
 import { asset } from "@/lib/assets";
 import {
   Building2,
@@ -124,9 +124,17 @@ const centresOfExcellence = [
   },
 ];
 
+export const metadata = pageMetadata({
+  title: "Research & Development",
+  description:
+    "Ten VTU-recognized research centres, a QIP doctoral centre and industry-partnered labs (Intel, Nokia, Bosch Rexroth) driving research across engineering, science and management at BEC Bagalkote.",
+  path: "/research",
+});
+
 export default function ResearchFacilitiesPage() {
   return (
     <div className="min-h-screen bg-stone-50">
+      <BreadcrumbsJsonLd items={[{ name: "Research", path: "/research" }]} />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50">
         <div className="absolute inset-0 opacity-20">

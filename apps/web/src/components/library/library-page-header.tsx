@@ -1,6 +1,4 @@
 // File: src/components/library/library-page-header.tsx
-"use client";
-
 import { LucideIcon } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 

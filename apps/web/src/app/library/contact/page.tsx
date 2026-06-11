@@ -1,13 +1,17 @@
-"use client";
-
-
-
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
 import { LibrarySidebar } from "@/components/library/library-sidebar";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Library Contact Information",
+  description:
+    "Contact the BEC Bagalkote Central Library: phone +91-8354-234060, email library@becbgk.edu, open Mon-Fri 8 AM-8 PM and Saturday 9 AM-5 PM.",
+  path: "/library/contact",
+});
 
 export default function ContactPage() {
   return (

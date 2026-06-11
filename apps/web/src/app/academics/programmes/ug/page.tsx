@@ -1,9 +1,16 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { ProgrammeHeader } from "@/components/academics/programmes/programme-header";
 import { CheckCircle2, GraduationCap, Building2, Wallet, FileText, ExternalLink } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
+import { BreadcrumbsJsonLd } from "@/components/seo/jsonld";
 import { asset } from "@/lib/assets";
+
+export const metadata = pageMetadata({
+  title: "B.E. Undergraduate Programmes",
+  description:
+    "BEC Bagalkote offers 4-year B.E. programmes across 11 disciplines with 990 total seats — admitted via Karnataka CET, COMED-K or JEE Main. NAAC 'A' grade, NBA accredited.",
+  path: "/academics/programmes/ug",
+});
 
 const ugData = {
   title: "Under Graduate (B.E.)",
@@ -72,6 +79,12 @@ function SectionHeader({ icon: Icon, title }: { icon: any, title: string }) {
 export default function UGProgrammePage() {
   return (
     <div className="space-y-16">
+      <BreadcrumbsJsonLd
+        items={[
+          { name: "Academics", path: "/academics/programmes/ug" },
+          { name: "UG Programmes", path: "/academics/programmes/ug" },
+        ]}
+      />
       <ProgrammeHeader
         title={ugData.title}
         description={ugData.description}

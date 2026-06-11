@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { AlertTriangle, Ban, FileText } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Anti-Ragging Information | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Anti-Ragging Information",
   description:
-    "Anti-ragging policy at Basaveshwar Engineering College, Bagalkote — what constitutes ragging, UGC offences and the administrative actions and punishments.",
-};
+    "BEC Bagalkote's zero-tolerance anti-ragging policy — what constitutes ragging, the offences under UGC guidelines, and the administrative actions and punishments.",
+  path: "/student-life/anti-ragging/info",
+});
 
 const ugcOffences = [
   "Abetment to ragging",

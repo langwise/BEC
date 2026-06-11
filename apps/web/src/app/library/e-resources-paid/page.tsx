@@ -1,13 +1,17 @@
-"use client";
-
-
-
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
 import { LibrarySidebar } from "@/components/library/library-sidebar";
 import { ResourceCard } from "@/components/library/resource-card";
 import { Globe } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Library Paid E-Resources",
+  description:
+    "BEC Library subscribed databases: IEEE Xplore, ScienceDirect, SpringerLink, Taylor & Francis, Emerald, ProQuest, N-LIST and more via campus IP access.",
+  path: "/library/e-resources-paid",
+});
 
 export default function EResourcesPaidPage() {
   // Subscribed/paid databases as listed on becbgk.edu/Library (e-resources paid).

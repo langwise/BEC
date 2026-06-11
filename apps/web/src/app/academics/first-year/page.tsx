@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
 import { PageHero } from "@/components/common/page-hero";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "First-Year Syllabus | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "BE First-Year Scheme & Syllabus",
   description:
-    "BE first-year (I & II semester) scheme and syllabus, stream-wise, for Basaveshwar Engineering College, Bagalkote.",
-};
+    "Download BE first-year (I & II semester) scheme and syllabus PDFs at BEC Bagalkote, grouped by stream — Civil, CSE, EC, EE, Mechanical — across scheme years 2017-18 to 2023-24.",
+  path: "/academics/first-year",
+});
 
 export default function FirstYearSyllabusPage() {
   return (

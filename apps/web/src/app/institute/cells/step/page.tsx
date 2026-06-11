@@ -6,13 +6,14 @@ import { PersonCard, PersonGrid } from "@/components/common/person-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
 import { UtensilsCrossed, Shirt, Building2 } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title:
-    "Science & Technology Entrepreneurs Park (BEC-STEP) | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "Science & Technology Entrepreneurs Park (BEC-STEP)",
   description:
-    "BEC-STEP, the Science & Technology Entrepreneurs Park at Basaveshwar Engineering College, Bagalkote — a DST-recognised park, established 1999, nurturing entrepreneurs through training, technology transfer and incubation in food, textile and building technology.",
-};
+    "BEC-STEP, a DST-recognised Science & Technology Entrepreneurs Park established 1999 at BEC Bagalkote, nurtures entrepreneurs through training, technology transfer and incubation in food, textile and building technology.",
+  path: "/institute/cells/step",
+});
 
 const objectives = [
   "Encourage development, transfer and commercialisation of new technologies",

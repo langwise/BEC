@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
 import { PageHero } from "@/components/common/page-hero";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "NIRF Rankings | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "NIRF Rankings",
   description:
-    "National Institutional Ranking Framework (NIRF) data submissions — Engineering, Overall and Innovation — for Basaveshwar Engineering College, Bagalkote.",
-};
+    "National Institutional Ranking Framework (NIRF) submissions for BEC Bagalkote — Engineering, Overall and Innovation data filed year on year from 2018-19 to 2025.",
+  path: "/accreditation/nirf",
+});
 
 export default function NirfPage() {
   return (

@@ -1,9 +1,15 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { asset } from "@/lib/assets";
 import { FileText, Download } from "lucide-react";
 import Link from "next/link";
+
+export const metadata = pageMetadata({
+    title: "Rules and Regulations",
+    description:
+        "Download BEC Bagalkote's autonomous academic regulations for B.E., M.Tech, MCA and MBA programmes, covering scheme years from 2018-19 through 2024-25.",
+    path: "/academics/examinations/rules",
+});
 
 const regulations = [
     { title: "1. B.E. BEC REGULATIONS 2024-2025", link: asset("documents/regulations/be-regulations-2024-25-21-12-2024.pdf") },

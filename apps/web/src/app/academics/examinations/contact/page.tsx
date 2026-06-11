@@ -1,7 +1,13 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Phone, Mail, MapPin } from "lucide-react";
+
+export const metadata = pageMetadata({
+    title: "Examination Section Contact",
+    description:
+        "Contact the Controller of Examinations, Dr. Chandrashekhar K., at BEC Bagalkote for examination queries — phone, email and address of the Autonomous Examination Section.",
+    path: "/academics/examinations/contact",
+});
 
 export default function ContactPage() {
     return (

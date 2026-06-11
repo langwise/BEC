@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { asset } from "@/lib/assets";
@@ -14,11 +14,12 @@ import {
   Trophy,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "IEEE Student Branch | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "IEEE Student Branch",
   description:
-    "The BEC-IEEE Student Branch (STB35261) at Basaveshwar Engineering College, Bagalkote — established 1994, its activities, flagship events and recognitions.",
-};
+    "The BEC-IEEE Student Branch (STB35261), established 1994 — workshops, the NOVUS flagship event and awards including Outstanding Large Student Branch and a Darrel Chong R10 award.",
+  path: "/student-life/ieee",
+});
 
 const HERO_IMAGE = asset("student-life/clubs/ieee-student-branch-35261.webp");
 

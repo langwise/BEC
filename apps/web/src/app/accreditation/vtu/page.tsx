@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
 import { PageHero } from "@/components/common/page-hero";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "VTU Affiliation | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "VTU Affiliation",
   description:
-    "Visvesvaraya Technological University (VTU), Belagavi affiliation orders for Basaveshwar Engineering College, Bagalkote.",
-};
+    "Visvesvaraya Technological University (VTU), Belagavi affiliation orders for BEC Bagalkote, including the 2018 and 2019-20 affiliation orders issued by the University.",
+  path: "/accreditation/vtu",
+});
 
 export default function VtuPage() {
   return (

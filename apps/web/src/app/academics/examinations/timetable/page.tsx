@@ -1,9 +1,15 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { asset } from "@/lib/assets";
 import { Clock, Download } from "lucide-react";
 import Link from "next/link";
+
+export const metadata = pageMetadata({
+    title: "SEE Examination Time Table",
+    description:
+        "Download Semester End Examination (SEE) time tables for BEC Bagalkote's UG and PG programmes, including the latest 2024-25 even, odd and make-up semester schedules.",
+    path: "/academics/examinations/timetable",
+});
 
 const timetables = [
     { title: "1_2024-25 EVEN_4_ 6_ 8_SEMESTER TIME TABLE", link: asset("documents/exam/1-2024-25-even-4-6-8-semester-time-table.pdf"), isNew: true },

@@ -1,13 +1,17 @@
-"use client";
-
-
-
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
 import { LibrarySidebar } from "@/components/library/library-sidebar";
 import { StaffCard } from "@/components/library/staff-card";
 import { Users } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Library Staff",
+  description:
+    "Meet the BEC Central Library team led by Librarian Dr. Shreekant G. Karkun, with assistant librarians Subhas C. Mahendrakar, Gurunath B. Goudar and Deepa M. Kolli.",
+  path: "/library/staff",
+});
 
 export default function StaffProfilePage() {
   const staffMembers = [

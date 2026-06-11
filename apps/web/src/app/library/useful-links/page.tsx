@@ -1,10 +1,16 @@
-"use client";
-
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
 import { LibrarySidebar } from "@/components/library/library-sidebar";
 import { Link as LinkIcon, ExternalLink } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Library Useful Links",
+  description:
+    "Quick links from the BEC Central Library to academic and government resources including W3Schools, UPSC, eAadhaar, Indian Railways and India Post.",
+  path: "/library/useful-links",
+});
 
 export default function UsefulLinksPage() {
   // Useful links as listed on becbgk.edu/Library (useful links).

@@ -1,8 +1,9 @@
-"use client";
+import type { Metadata } from "next";
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import {
   Building2,
@@ -14,6 +15,13 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Campus Amenities",
+  description:
+    "BEC Bagalkote's self-sufficient campus offers an on-site bank branch, 24x7 ATM, India Post office, health centre, canteen, co-operative store and central administrative office.",
+  path: "/institute/campus/amenities",
+});
 
 export default function AmenitiesPage() {
   const amenities = [

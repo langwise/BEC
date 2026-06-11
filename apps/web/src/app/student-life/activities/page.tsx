@@ -1,17 +1,18 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
 import { ArrowRight, FileText, Sparkles } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Events & Activities | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Events & Activities",
   description:
-    "Cultural performances, the Engineers' Arena and student events at Basaveshwar Engineering College, Bagalkote.",
-};
+    "Cultural performances, the Engineers' Arena and student events at BEC Bagalkote, plus the SYMPOSIA 2023 archive and the AICTE SPICES Mindhog student club.",
+  path: "/student-life/activities",
+});
 
 const activityGallery = [
   ...assetsUnder("student-life/cultural/").map((src) => ({

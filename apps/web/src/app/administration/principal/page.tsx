@@ -1,5 +1,13 @@
 import { LeadershipMessage } from "@/components/common/leadership-message";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Principal's Message",
+  description:
+    "Message from Dr. B. R. Hiremath, Principal of BEC Bagalkote, on the college's vision for education, NIRF ranking, 100% NBA-accredited UG courses, NAAC and QS I-Gauge recognition.",
+  path: "/administration/principal",
+});
 
 const message = `
 Education plays a vital role in the overall development of the Society and Nation building. The role of education is not just limited to transferring theoretical knowledge to students. The true goal of education is to surpass beyond awarding degree or a certificate to the students. By Education, Mahatma Gandhi meant an overall development of an individual i.e. man-body, mind and spirit. The ultimate goal of education is to discover the meaning of life and its fulfilment for the benefit of mankind as well as for oneself.

@@ -6,13 +6,14 @@ import { DocumentDirectory } from "@/components/common/document-directory";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title:
-    "Innovation & Entrepreneurship Policy | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "Innovation & Entrepreneurship Policy",
   description:
-    "BEC Innovation and Entrepreneurship Policy, source documents and contact details for students and faculty innovators.",
-};
+    "BEC Bagalkote's Innovation and Entrepreneurship Policy — aligned with MoE and Karnataka start-up policies, with source documents and contacts for student and faculty innovators.",
+  path: "/institute/cells/iep",
+});
 
 const contacts = [
   {

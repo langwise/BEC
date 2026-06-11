@@ -1,7 +1,13 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Building2, Info, Users, GraduationCap, Zap, CheckCircle2 } from "lucide-react";
+
+export const metadata = pageMetadata({
+    title: "PG Boys Hostel",
+    description:
+        "PG Boys Hostel at BEC Bagalkote, started in 2013 for PG and research students, offers 40 rooms for 80 students with vegetarian mess, library, gym and computer centre.",
+    path: "/academics/hostel/pg-block",
+});
 
 export default function PGBlockPage() {
     return (

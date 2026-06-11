@@ -1,7 +1,13 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Phone, MapPin, UserCircle } from "lucide-react";
+
+export const metadata = pageMetadata({
+    title: "Hostel Contact & Wardens",
+    description:
+        "Contact BEC Bagalkote's hostel administration for admission inquiries — reach Deputy Chief Warden Dr. P. L. Timmanagoudar and the Chief Warden at the Vidyagiri campus.",
+    path: "/academics/hostel/contact",
+});
 
 export default function HostelContactPage() {
     return (

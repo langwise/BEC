@@ -1,18 +1,19 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
 import { ArrowRight, Building2, UtensilsCrossed, ShieldCheck, Users } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Hostels | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Student Hostels",
   description:
-    "Hostel accommodation at Basaveshwar Engineering College, Bagalkote — residential blocks, facilities and the Student Welfare and Hostel Committee.",
-};
+    "BEC Bagalkote hostels — four residential blocks for boys, girls and PG scholars with a pure-veg mess, CCTV, resident wardens and the Student Welfare and Hostel Committee.",
+  path: "/student-life/hostels",
+});
 
 const girlsHostelImages = assetsUnder("facilities/hostels/girls/").map(
   (src, index) => ({

@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PersonCard, PersonGrid } from "@/components/common/person-card";
@@ -8,11 +7,12 @@ import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
 import { Trees, Warehouse } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "College Gymkhana | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Sports & College Gymkhana",
   description:
-    "The College Gymkhana at Basaveshwar Engineering College, Bagalkote — the student sports body, its facilities, office-bearers, achievements and annual reports.",
-};
+    "The BEC College Gymkhana — a 5-acre playground and indoor stadium, office-bearers, VTU state titles, VTU Blues and annual sports reports under a full-time Physical Director.",
+  path: "/student-life/gymkhana",
+});
 
 const facilities = [
   {

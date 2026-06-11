@@ -1,16 +1,17 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Button } from "@/components/ui/button";
 import { Zap, Lightbulb, Users, Hexagon, CheckCircle2 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Mindhog Student Club | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Mindhog Student Club",
   description:
-    "MindHog, the student club of Basaveshwar Engineering College, Bagalkote, selected under the AICTE SPICES scheme to foster student interests, creativity and ethics.",
-};
+    "MindHog, the BEC student club selected under the AICTE SPICES scheme with a Rs 2 lakh grant — fostering creativity, ethics, leadership and skills for UG and PG students.",
+  path: "/student-life/mindhog",
+});
 
 const objectives = [
   {

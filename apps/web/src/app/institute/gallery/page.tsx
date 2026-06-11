@@ -6,12 +6,14 @@ import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { assetsUnder } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Photo Gallery | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "Photo Gallery",
   description:
-    "Photo gallery of Basaveshwar Engineering College, Bagalkote — campus events, student life and industrial & educational visits.",
-};
+    "Photo gallery of BEC Bagalkote — explore campus events, festivals, everyday student life on the Vidyagiri campus, and industrial & educational field visits in pictures.",
+  path: "/institute/gallery",
+});
 
 const albums = [
   {

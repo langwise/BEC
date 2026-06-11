@@ -7,13 +7,14 @@ import { PersonCard, PersonGrid } from "@/components/common/person-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset, assetsUnder } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title:
-    "NAIN — New Age Incubation Network | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "NAIN — New Age Incubation Network",
   description:
-    "NAIN (New Age Incubation Network) at Basaveshwar Engineering College, Bagalkote — a Government of Karnataka (KBITS) incubation centre supporting students, scholars and alumni in turning ideas into enterprises.",
-};
+    "NAIN at BEC Bagalkote, a Government of Karnataka (KBITS) incubation centre, helps students, scholars and alumni turn locally-relevant ideas into proofs of concept and commercial enterprises.",
+  path: "/institute/cells/nain",
+});
 
 const objectives = [
   "Encourage students, research scholars and alumni to share ideas that solve locally-relevant problems, and to validate, refine and nurture them.",

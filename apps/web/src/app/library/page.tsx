@@ -1,6 +1,4 @@
 // File: src/app/library/page.tsx
-"use client";
-
 import {
   BookOpen,
   Users,
@@ -18,6 +16,15 @@ import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset } from "@/lib/assets";
 import Image from "next/image";
 import Link from "next/link";
+import { BreadcrumbsJsonLd } from "@/components/seo/jsonld";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Central Library",
+  description:
+    "BEC Bagalkote Central Library, serving since 1963: 1,38,000 volumes, 43,695 titles, 10,300+ e-journals and 24,351 e-books across modern facilities.",
+  path: "/library",
+});
 
 const libraryStats = [
   { value: "1,38,000", label: "Volumes" },
@@ -97,6 +104,7 @@ const galleryImages = [
 export default function LibraryPage() {
   return (
     <div className="min-h-screen bg-stone-50">
+      <BreadcrumbsJsonLd items={[{ name: "Library", path: "/library" }]} />
       {/* Hero Section */}
 
       <section className="relative overflow-hidden border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50">

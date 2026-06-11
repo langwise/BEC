@@ -1,5 +1,4 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { PageHeader } from "@/components/placements/page-header";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -18,6 +17,13 @@ const scholarshipData = [
     { id: 8, particulars: "Meritorious students secure highest marks in PUC at district level", department: "SWF/TBF", website: "http://schooleducation.kar.nic.in/swftbf/students.html" },
     { id: 9, particulars: "College Topper", department: "Shri. Biluru Guru Basav Utstav Samiti, Bagalkote", website: "" },
 ];
+
+export const metadata = pageMetadata({
+    title: "Student Scholarships",
+    description:
+        "Scholarships for BEC Bagalkote students — SC/ST, OBC and minority schemes via SSP, National Scholarship Portal, AICTE and merit awards, with department and portal links.",
+    path: "/academics/scholarships",
+});
 
 export default function ScholarshipsPage() {
     return (

@@ -1,5 +1,13 @@
 import { LeadershipMessage } from "@/components/common/leadership-message";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Chairman's Message",
+  description:
+    "Message from the Chairman of B.V.V. Sangha, the trust leading 150+ institutions that founded BEC Bagalkote in 1963, on its vision for quality technical education and social change.",
+  path: "/administration/chairperson",
+});
 
 const message = `
 Basaveshwar Engineering College (BEC) is a premier Technical Institute recognised at National level catering to the needs of rural masses in Northern part of Karnataka. Ever since its inception in 1963 with only three disciplines, now BEC has 9 UG & 8 PG programmes and is recognised at National level by securing NIRF ranking persistently.
