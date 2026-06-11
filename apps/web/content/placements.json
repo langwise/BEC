@@ -1,0 +1,4245 @@
+{
+  "departments": {
+    "computer-science-and-engg": {
+      "yearWise": [
+        {
+          "year": "2023-2024",
+          "students": "102",
+          "offers": "132",
+          "onCampus": "111",
+          "offCampus": "21",
+          "placed": "74",
+          "percent": "72.55",
+          "companies": "31"
+        },
+        {
+          "year": "2022-2023",
+          "students": "107",
+          "offers": "127",
+          "onCampus": "100",
+          "offCampus": "27",
+          "placed": "78",
+          "percent": "72.90",
+          "companies": "38"
+        },
+        {
+          "year": "2021-2022",
+          "students": "98",
+          "offers": "190",
+          "onCampus": "183",
+          "offCampus": "7",
+          "placed": "81",
+          "percent": "82.65",
+          "companies": "56"
+        }
+      ],
+      "batches": [
+        {
+          "batch": "2023-2024",
+          "companies": [
+            {
+              "company": "Accenture",
+              "package": "4.50",
+              "count": "12"
+            },
+            {
+              "company": "Barracuda Internship Hiring",
+              "package": "2.50",
+              "count": "6"
+            },
+            {
+              "company": "Barracuda Networks (India) Pvt Ltd",
+              "package": "8.58",
+              "count": "3"
+            },
+            {
+              "company": "Capgemini Technology Services I",
+              "package": "4.00",
+              "count": "6"
+            },
+            {
+              "company": "Caterpillar internship hiring",
+              "package": "2.50",
+              "count": "6"
+            },
+            {
+              "company": "Cognizant Technology",
+              "package": "4.00",
+              "count": "1"
+            },
+            {
+              "company": "Destination (CSR)",
+              "package": "2.50",
+              "count": "1"
+            },
+            {
+              "company": "Ethnus",
+              "package": "2.50",
+              "count": "4"
+            },
+            {
+              "company": "GenTech Academy",
+              "package": "2.20",
+              "count": "1"
+            },
+            {
+              "company": "Global Quest",
+              "package": "2.50",
+              "count": "6"
+            },
+            {
+              "company": "IBM",
+              "package": "4.50",
+              "count": "1"
+            },
+            {
+              "company": "IPCS Global(CSR)",
+              "package": "2.50",
+              "count": "2"
+            },
+            {
+              "company": "Kodnest(CSR)",
+              "package": "2.24",
+              "count": "16"
+            },
+            {
+              "company": "Mistral Solutions",
+              "package": "5.00",
+              "count": "1"
+            },
+            {
+              "company": "NoBroker Technologies",
+              "package": "4.65",
+              "count": "1"
+            },
+            {
+              "company": "PALLE TECHNOLOGIES)",
+              "package": "2.20",
+              "count": "15"
+            },
+            {
+              "company": "Pentagon Space",
+              "package": "2.20",
+              "count": "2"
+            },
+            {
+              "company": "TCS Digital",
+              "package": "7.00",
+              "count": "15"
+            },
+            {
+              "company": "TCS Ninja",
+              "package": "3.30",
+              "count": "18"
+            },
+            {
+              "company": "TCS Prime",
+              "package": "9.00",
+              "count": "2"
+            },
+            {
+              "company": "Tech Mahindra",
+              "package": "3.30",
+              "count": "2"
+            },
+            {
+              "company": "Synechron Technologies Pvt. Ltd",
+              "package": "4.82",
+              "count": "1"
+            },
+            {
+              "company": "Yashaswi Academy for Skills",
+              "package": "2.50",
+              "count": "2"
+            },
+            {
+              "company": "Xploria private limited",
+              "package": "3.48",
+              "count": "1"
+            },
+            {
+              "company": "Concentrix Services India Private Limited",
+              "package": "3.50",
+              "count": "1"
+            },
+            {
+              "company": "ZEPTO-Kiranatkart Technological PVT. Ltd. Bangalore",
+              "package": "3.0",
+              "count": "1"
+            },
+            {
+              "company": "Bottomline Capital cloud India Private Limited",
+              "package": "4.8",
+              "count": "1"
+            },
+            {
+              "company": "Vishwin Technologies PVT., Ltd., Bangalore",
+              "package": "2.2",
+              "count": "1"
+            },
+            {
+              "company": "Yethi Consulting Pvt Ltd.",
+              "package": "3.2",
+              "count": "1"
+            },
+            {
+              "company": "Archents IT India Private Limited Hyderabad, Telangana-500081",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Marelli(India) Pvt Ltd.,",
+              "package": "7.0",
+              "count": "1"
+            }
+          ],
+          "students": [
+            {
+              "name": "Aishwarya Sarashetti",
+              "usn": "2BA20CS003",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Aishwarya Sarashetti",
+              "usn": "2BA20CS003",
+              "mode": "On-Campus",
+              "company": "Ethnus",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Alpana",
+              "usn": "2BA20CS005",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Alpana",
+              "usn": "2BA20CS005",
+              "mode": "On-Campus",
+              "company": "Global Quest",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Amansab Bandenawaj Hadimani",
+              "usn": "2BA20CS006",
+              "mode": "On-Campus",
+              "company": "Caterpillar internship hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Amansab Bandenawaj Hadimani",
+              "usn": "2BA20CS006",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Amansab Bandenawaj Hadimani",
+              "usn": "2BA20CS006",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Amaresh Mallikarjun Angadi",
+              "usn": "2BA20CS007",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Anita Ashok Doddannavar",
+              "usn": "2BA20CS008",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Anusha G Megeri",
+              "usn": "2BA20CS009",
+              "mode": "On-Campus",
+              "company": "Caterpillar internship hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Anusha G Megeri",
+              "usn": "2BA20CS009",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Anusha G Megeri",
+              "usn": "2BA20CS009",
+              "mode": "On-Campus",
+              "company": "Capgemini Technology Services",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Avaneesh N Devareddi",
+              "usn": "2BA20CS010",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Balavva Mallangoud Biradar",
+              "usn": "2BA20CS012",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Basavaraj M Angadi",
+              "usn": "2BA20CS013",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Basavaraj M Angadi",
+              "usn": "2BA20CS013",
+              "mode": "On-Campus",
+              "company": "Barracuda Internship Hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Basavaraj M Angadi",
+              "usn": "2BA20CS013",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Danesh Ramappa Meti",
+              "usn": "2BA20CS016",
+              "mode": "On-Campus",
+              "company": "Destination (CSR)",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Ganesh R Manasunagi",
+              "usn": "2BA20CS017",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Ganga Ambali",
+              "usn": "2BA20CS018",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Harish Ningappa Kanthi",
+              "usn": "2BA20CS019",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Harsha Mukartihal",
+              "usn": "2BA20CS020",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Harshita Nataraj",
+              "usn": "2BA20CS021",
+              "mode": "On-Campus",
+              "company": "Ethnus",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Harshita Nataraj",
+              "usn": "2BA20CS021",
+              "mode": "On-Campus",
+              "company": "Global Quest",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Harshita Nataraj",
+              "usn": "2BA20CS021",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Harshita Nataraj",
+              "usn": "2BA20CS021",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Hema G Pujari",
+              "usn": "2BA20CS022",
+              "mode": "On-Campus",
+              "company": "Barracuda Internship Hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Hema G Pujari",
+              "usn": "2BA20CS022",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Hema G Pujari",
+              "usn": "2BA20CS022",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Isha",
+              "usn": "2BA20CS023",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Keerti Hanumappa Gangimalammanavar",
+              "usn": "2BA20CS027",
+              "mode": "On-Campus",
+              "company": "Ethnus",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Keerti Wali",
+              "usn": "2BA20CS028",
+              "mode": "On-Campus",
+              "company": "Barracuda Internship Hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Keerti Wali",
+              "usn": "2BA20CS028",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Mahalakshmi Lingadalli",
+              "usn": "2BA20CS031",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Mallanagouda Basanagouda Patil",
+              "usn": "2BA20CS032",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Mallanagouda Basanagouda Patil",
+              "usn": "2BA20CS032",
+              "mode": "On-Campus",
+              "company": "Pentagon Space",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Manjunath Iti",
+              "usn": "2BA20CS034",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Manjunath Iti",
+              "usn": "2BA20CS034",
+              "mode": "On-Campus",
+              "company": "Caterpillar internship hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Manohar M Kendhuli",
+              "usn": "2BA20CS035",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Mohammed Mujtaba M Mulla",
+              "usn": "2BA20CS036",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt Ltd",
+              "lpa": "8.58"
+            },
+            {
+              "name": "Mohammed Mujtaba M Mulla",
+              "usn": "2BA20CS036",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Mohammed Mujtaba M Mulla",
+              "usn": "2BA20CS036",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Monika",
+              "usn": "2BA20CS037",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt Ltd",
+              "lpa": "8.58"
+            },
+            {
+              "name": "Muttanagouda",
+              "usn": "2BA20CS038",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Namrata S",
+              "usn": "2BA20CS039",
+              "mode": "On-Campus",
+              "company": "Barracuda Internship Hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Naveen Halappa Allapur",
+              "usn": "2BA20CS040",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Naveen Parashuram Sadugol",
+              "usn": "2BA20CS041",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Naveen Parashuram Sadugol",
+              "usn": "2BA20CS041",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Neharika Maruti Hasalkar",
+              "usn": "2BA20CS042",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Neharika Maruti Hasalkar",
+              "usn": "2BA20CS042",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Neharika Maruti Hasalkar",
+              "usn": "2BA20CS042",
+              "mode": "On-Campus",
+              "company": "IBM",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Nikhil Sunil Dalawai",
+              "usn": "2BA20CS043",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Ningaraj M Nyamagoud",
+              "usn": "2BA20CS044",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES)",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Pavan",
+              "usn": "2BA20CS046",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Pavan",
+              "usn": "2BA20CS046",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Pavankumar Ketappanavar",
+              "usn": "2BA20CS047",
+              "mode": "On-Campus",
+              "company": "Pentagon Space",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Pooja K P",
+              "usn": "2BA20CS048",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Pooja Mallayya Muttinapendimath",
+              "usn": "2BA20CS049",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Pooja Mallayya Muttinapendimath",
+              "usn": "2BA20CS049",
+              "mode": "On-Campus",
+              "company": "IPCS Global(CSR)",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Pooja Mallayya Muttinapendimath",
+              "usn": "2BA20CS049",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES )",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Poojitha K Kulkarni",
+              "usn": "2BA20CS050",
+              "mode": "On-Campus",
+              "company": "Barracuda Internship Hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Poojitha K Kulkarni",
+              "usn": "2BA20CS050",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Prajwal Siddappa Hallur",
+              "usn": "2BA20CS053",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Prajwal Siddappa Hallur",
+              "usn": "2BA20CS053",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Pranav Channappa Javalagi",
+              "usn": "2BA20CS055",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Pranav Channappa Javalagi",
+              "usn": "2BA20CS055",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Pratiksha Basavaraj Chandaragi",
+              "usn": "2BA20CS057",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Raksha S Hubballi",
+              "usn": "2BA20CS061",
+              "mode": "On-Campus",
+              "company": "Barracuda Internship Hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Raksha S Hubballi",
+              "usn": "2BA20CS061",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Rashmi Holagundi",
+              "usn": "2BA20CS062",
+              "mode": "On-Campus",
+              "company": "Global Quest",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Rekha Maddin",
+              "usn": "2BA20CS063",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Rohit Raju Akkole",
+              "usn": "2BA20CS065",
+              "mode": "On-Campus",
+              "company": "GenTech Academy",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Rohit Raju Akkole",
+              "usn": "2BA20CS065",
+              "mode": "On-Campus",
+              "company": "TCS Prime",
+              "lpa": "9.00"
+            },
+            {
+              "name": "Rohit Raju Akkole",
+              "usn": "2BA20CS065",
+              "mode": "On-Campus",
+              "company": "Tech Mahindra",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Sagar Basavaraj Belur",
+              "usn": "2BA20CS068",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Sagar Sangappa Menasangi",
+              "usn": "2BA20CS069",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Sagar Sangappa Menasangi",
+              "usn": "2BA20CS069",
+              "mode": "On-Campus",
+              "company": "IPCS Global(CSR)",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Sagar Sangappa Menasangi",
+              "usn": "2BA20CS069",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Sagar Shekaraddi Huchchannavar",
+              "usn": "2BA20CS070",
+              "mode": "On-Campus",
+              "company": "TCS Prime",
+              "lpa": "9.00"
+            },
+            {
+              "name": "Sagar Shekaraddi Huchchannavar",
+              "usn": "2BA20CS070",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Sahana Nagavi",
+              "usn": "2BA20CS071",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Sahana Nagavi",
+              "usn": "2BA20CS071",
+              "mode": "On-Campus",
+              "company": "Caterpillar internship hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Sahana Nagavi",
+              "usn": "2BA20CS071",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Sandhya Shivappa Chawan",
+              "usn": "2BA20CS073",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Sarthak Pandey",
+              "usn": "2BA20CS075",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Savita Lakaraddi",
+              "usn": "2BA20CS076",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Savita Lakaraddi",
+              "usn": "2BA20CS076",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Shobha Ramesh Duragannavar",
+              "usn": "2BA20CS078",
+              "mode": "On-Campus",
+              "company": "NoBroker Technologies",
+              "lpa": "4.65"
+            },
+            {
+              "name": "Shraddha Kandagal",
+              "usn": "2BA20CS079",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Shraddha Kandagal",
+              "usn": "2BA20CS079",
+              "mode": "On-Campus",
+              "company": "Caterpillar internship hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Shraddha Kandagal",
+              "usn": "2BA20CS079",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Sidram Shivappa Muchandi",
+              "usn": "2BA20CS082",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Sukanya Mathapati",
+              "usn": "2BA20CS086",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Swami Arpita Vishwanath",
+              "usn": "2BA20CS087",
+              "mode": "On-Campus",
+              "company": "Global Quest",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Swami Arpita Vishwanath",
+              "usn": "2BA20CS087",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Swati Kurer",
+              "usn": "2BA20CS088",
+              "mode": "On-Campus",
+              "company": "Ethnus",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Swati Kurer",
+              "usn": "2BA20CS088",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Swati N Bijjaragi",
+              "usn": "2BA20CS089",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Umashree Ramappa Kumbar",
+              "usn": "2BA20CS091",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Umashree Ramappa Kumbar",
+              "usn": "2BA20CS091",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Vaishnavi Shinde",
+              "usn": "2BA20CS092",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Vaishnavi Shinde",
+              "usn": "2BA20CS092",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Vidyashree Bhavikatti",
+              "usn": "2BA20CS094",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt Ltd",
+              "lpa": "8.58"
+            },
+            {
+              "name": "Anjana Lokanna Hugar",
+              "usn": "2BA20CS096",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Lakshmi Basavaraj Narayanpur",
+              "usn": "2BA20CS097",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES )",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Chinmay S Desai",
+              "usn": "2BA20CS098",
+              "mode": "On-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Chinmay S Desai",
+              "usn": "2BA20CS098",
+              "mode": "On-Campus",
+              "company": "Global Quest",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Chinmay S Desai",
+              "usn": "2BA20CS098",
+              "mode": "On-Campus",
+              "company": "Kodnest(CSR)",
+              "lpa": "2.24"
+            },
+            {
+              "name": "Pujari Sakshi Neminath",
+              "usn": "2BA21CS402",
+              "mode": "On-Campus",
+              "company": "Caterpillar internship hiring",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Pujari Sakshi Neminath",
+              "usn": "2BA21CS402",
+              "mode": "On-Campus",
+              "company": "Global Quest",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Shweta Kinni",
+              "usn": "2BA21CS404",
+              "mode": "On-Campus",
+              "company": "PALLE TECHNOLOGIES",
+              "lpa": "2.20"
+            },
+            {
+              "name": "Alpana",
+              "usn": "2BA20CS005",
+              "mode": "Off-Campus",
+              "company": "Xploria private limited",
+              "lpa": "3.48"
+            },
+            {
+              "name": "Amaresh Mallikarjun Angadi",
+              "usn": "2BA20CS007",
+              "mode": "Off-Campus",
+              "company": "ZEPTO-Kiranatkart Technological PVT. Ltd. Bangalore",
+              "lpa": "3.0"
+            },
+            {
+              "name": "Basavaraj M Angadi",
+              "usn": "2BA20CS013",
+              "mode": "Off-Campus",
+              "company": "Mistral Solutions",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Danesh Ramappa Meti",
+              "usn": "2BA20CS016",
+              "mode": "Off-Campus",
+              "company": "Yashaswi Academy for Skills",
+              "lpa": "2.50"
+            },
+            {
+              "name": "Ganga Ambali",
+              "usn": "2BA20CS018",
+              "mode": "Off-Campus",
+              "company": "CAPITALCLOUD INDIA PRIVATE LIMITED, a Bottomline Company",
+              "lpa": "4.80"
+            },
+            {
+              "name": "Isha",
+              "usn": "2BA20CS023",
+              "mode": "Off-Campus",
+              "company": "TCS Digital",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Keerti Hanumappa Gangimalammanavar",
+              "usn": "2BA20CS027",
+              "mode": "Off-Campus",
+              "company": "Capgemini Technology Services",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Namrata S",
+              "usn": "2BA20CS039",
+              "mode": "Off-Campus",
+              "company": "Capgemini Technology Services",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Pradeep Kavadimatti",
+              "usn": "2BA20CS051",
+              "mode": "Off-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Prajwal Siddappa Hallur",
+              "usn": "2BA20CS053",
+              "mode": "Off-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Prema Gopal Jadipet",
+              "usn": "2BA20CS059",
+              "mode": "Off-Campus",
+              "company": "Yashaswi Academy for Skills",
+              "lpa": "2.00"
+            },
+            {
+              "name": "Rakesh",
+              "usn": "2BA20CS060",
+              "mode": "Off-Campus",
+              "company": "Yethi Consulting Pvt Ltd.",
+              "lpa": "3.2"
+            },
+            {
+              "name": "Ruchita Teggi",
+              "usn": "2BA20CS066",
+              "mode": "Off-Campus",
+              "company": "Capgemini Technology Services",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Sagar Basavaraj Belur",
+              "usn": "2BA20CS068",
+              "mode": "Off-Campus",
+              "company": "Archents IT India Private Limited Hyderabad, Telangana-500081",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Sandhya Shivappa Chawan",
+              "usn": "2BA20CS073",
+              "mode": "Off-Campus",
+              "company": "Capgemini Technology Services",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Sukanya Mathapati",
+              "usn": "2BA20CS086",
+              "mode": "Off-Campus",
+              "company": "Tech Mahindra Limited Madhapur, Hyderabad",
+              "lpa": "3.25"
+            },
+            {
+              "name": "Swami Arpita Vishwanath",
+              "usn": "2BA20CS087",
+              "mode": "Off-Campus",
+              "company": "Concentrix Services India Private Limited",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Swati Kurer",
+              "usn": "2BA20CS088",
+              "mode": "Off-Campus",
+              "company": "Capgemini Technology Services",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Tejaswini Shankar Soude",
+              "usn": "2BA20CS090",
+              "mode": "Off-Campus",
+              "company": "Synechron Technologies Pvt. Ltd",
+              "lpa": "4.82"
+            },
+            {
+              "name": "Shrinivas Pawar",
+              "usn": "2BA21CS403",
+              "mode": "Off-Campus",
+              "company": "Marelli(India) Pvt Ltd.,",
+              "lpa": "7.0"
+            },
+            {
+              "name": "Tarun S",
+              "usn": "2BA21CS405",
+              "mode": "Off-Campus",
+              "company": "Vishwin Technologies PVT., Ltd., Bangalore",
+              "lpa": "2.22"
+            }
+          ]
+        },
+        {
+          "batch": "2022-2023",
+          "companies": [
+            {
+              "company": "Accenture Solutions Pvt Ltd., Bengaluru",
+              "package": "4.00",
+              "count": "8"
+            },
+            {
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "package": "3 to 8",
+              "count": "10"
+            },
+            {
+              "company": "Brillio Technologies Private Limited, Bengaluru",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "package": "3.30",
+              "count": "15"
+            },
+            {
+              "company": "Continental Automotiva Component (India) Pvt Ltd, Bengaluru",
+              "package": "3.00",
+              "count": "3"
+            },
+            {
+              "company": "Deloitte Consulting India Private Limited",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "package": "3 to 8",
+              "count": "15"
+            },
+            {
+              "company": "Glassbeam Software",
+              "package": "3 to 8",
+              "count": "1"
+            },
+            {
+              "company": "HCL Technology Limited Bengaluru",
+              "package": "3.00",
+              "count": "4"
+            },
+            {
+              "company": "InTimeTec Visionsoft Pvt Ltd., Bengaluru",
+              "package": "6.00",
+              "count": "3"
+            },
+            {
+              "company": "KodNest Technologies Pvt Ltd, Bengaluru",
+              "package": "5.50",
+              "count": "2"
+            },
+            {
+              "company": "Palle Technologies Banalore",
+              "package": "4.00",
+              "count": "10"
+            },
+            {
+              "company": "Pentagon Space Pvt Ltd, Bengaluru",
+              "package": "4.00",
+              "count": "3"
+            },
+            {
+              "company": "Quest Global Engineering Services Pvt Ltd.,",
+              "package": "4.50",
+              "count": "3"
+            },
+            {
+              "company": "SecPod Technologies Pvt Ltd., Bengaluru",
+              "package": "5.50",
+              "count": "1"
+            },
+            {
+              "company": "SecPod Technologies Pvt., Ltd.",
+              "package": "6.00",
+              "count": "2"
+            },
+            {
+              "company": "Sigmato Solutions Pvt Ltd Bengaluru",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "SocZen Technology Pvt. Ltd.",
+              "package": "",
+              "count": "1"
+            },
+            {
+              "company": "TAP Academy, Bengaluru",
+              "package": "4.00",
+              "count": "2"
+            },
+            {
+              "company": "Tata Consultancy Services, Bengaluru",
+              "package": "3.00",
+              "count": "23"
+            },
+            {
+              "company": "Tech Mahendra Limited., Hyderabad",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "PRODUCTSPACE SOFTWARE INDIA PRIVATE LIMITED Hyderabad, Telangana 500081",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Verient CES PVT LTD, bANGALORE",
+              "package": "4.0",
+              "count": "1"
+            },
+            {
+              "company": "Contineo-Esutra Chronicles Pvt., Ltd",
+              "package": "3.0",
+              "count": "1"
+            },
+            {
+              "company": "Qream Solutions Pvt.,Ltd, Bangalore",
+              "package": "1.0",
+              "count": "1"
+            },
+            {
+              "company": "Stally Solutions Pvt Ltd., Bangalore",
+              "package": "2 to 3",
+              "count": "1"
+            },
+            {
+              "company": "Kyndryl India",
+              "package": "5.2",
+              "count": "1"
+            },
+            {
+              "company": "In Time Tec",
+              "package": "5.5",
+              "count": "1"
+            },
+            {
+              "company": "Blue Yonder India Pvt. Ltd.",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Data Marshall Pvt. Ltd. Hyderabad",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Pro Practical Tech Solutions, Hubballi",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Desk Nine Pvt Ltd, Bangalore",
+              "package": "3.5",
+              "count": "1"
+            },
+            {
+              "company": "Prwatech, Bangalore 76",
+              "package": "2.40",
+              "count": "1"
+            },
+            {
+              "company": "Amdee Data Informatix Services Private Limited, Bengaluru",
+              "package": "1.80",
+              "count": "1"
+            },
+            {
+              "company": "SHLR Technosoft Pvt Lyd, Bengaluru",
+              "package": "1.8",
+              "count": "1"
+            },
+            {
+              "company": "CODECRAFTINNOVATIONSEST.KHALIFA THANI ALI BIN GHALITA ALMHEIRI Dubai UAE",
+              "package": "3.6 aprox.",
+              "count": "1"
+            },
+            {
+              "company": "Total Environment Habitat Private Ltd",
+              "package": "4.5",
+              "count": "1"
+            },
+            {
+              "company": "ThinkJS PVTLTD HSRLayoutBengaluru",
+              "package": "1.8",
+              "count": "1"
+            }
+          ],
+          "students": [
+            {
+              "name": "Abhishek Araballi",
+              "usn": "2BA19CS001",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Abhishek Kori",
+              "usn": "2BA19CS002",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Abhishek Kori",
+              "usn": "2BA19CS002",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Abhishek Kori",
+              "usn": "2BA19CS002",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Aditya Muralidhar Kulkarani",
+              "usn": "2BA19CS004",
+              "mode": "On-Campus",
+              "company": "Pentagon Space Pvt Ltd, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Aishwarya G Kademani",
+              "usn": "2BA19CS005",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Akshay Ramachandra Revankar",
+              "usn": "2BA19CS008",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Akshay Ramachandra Revankar",
+              "usn": "2BA19CS008",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Akshay Ramachandra Revankar",
+              "usn": "2BA19CS008",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Amrutha Channalli",
+              "usn": "2BA19CS009",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "8.44"
+            },
+            {
+              "name": "Anusha Ashok Nagathan",
+              "usn": "2BA19CS012",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Anusha Ashok Nagathan",
+              "usn": "2BA19CS012",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Anusha Ashok Nagathan",
+              "usn": "2BA19CS012",
+              "mode": "On-Campus",
+              "company": "Quest Global Engineering Services Pvt Ltd.,",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Archana Ganji",
+              "usn": "2BA19CS013",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Archana Ganji",
+              "usn": "2BA19CS013",
+              "mode": "On-Campus",
+              "company": "HCL Technology Limited Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Basavaraj Balagar",
+              "usn": "2BA19CS014",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Basavaraj Balagar",
+              "usn": "2BA19CS014",
+              "mode": "On-Campus",
+              "company": "SocZen Technology Pvt. Ltd.",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Bhagya Menasagi",
+              "usn": "2BA19CS015",
+              "mode": "On-Campus",
+              "company": "SecPod Technologies Pvt Ltd., Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Bhagya Menasagi",
+              "usn": "2BA19CS015",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Bhagya Menasagi",
+              "usn": "2BA19CS015",
+              "mode": "On-Campus",
+              "company": "Tech Mahendra Limited., Hyderabad",
+              "lpa": "3.25"
+            },
+            {
+              "name": "Bhagya Menasagi",
+              "usn": "2BA19CS015",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Chaitanyarani V Kiragi",
+              "usn": "2BA19CS017",
+              "mode": "On-Campus",
+              "company": "Continental Automotiva Component (India) Pvt Ltd, Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Chaitanyarani V Kiragi",
+              "usn": "2BA19CS017",
+              "mode": "On-Campus",
+              "company": "Accenture Solutions Pvt Ltd., Bengaluru",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Chaitra H B Patil",
+              "usn": "2BA19CS018",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Chandreshekar H K",
+              "usn": "2BA19CS019",
+              "mode": "On-Campus",
+              "company": "InTimeTec Visionsoft Pvt Ltd., Bengaluru",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Chetan Siddappa Devanagavi",
+              "usn": "2BA19CS020",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Deepak Kalasannavar",
+              "usn": "2BA19CS022",
+              "mode": "On-Campus",
+              "company": "Continental Automotiva Component (India) Pvt Ltd, Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Dixita Hadagali",
+              "usn": "2BA19CS024",
+              "mode": "On-Campus",
+              "company": "TAP Academy, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Girish Mahadev Karki",
+              "usn": "2BA19CS026",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Girish Mahadev Karki",
+              "usn": "2BA19CS026",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Gouravva Hugar",
+              "usn": "2BA19CS028",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Jayashree S Bhixawarthimath",
+              "usn": "2BA19CS031",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Keerthana S P",
+              "usn": "2BA19CS033",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Kiran B Pail",
+              "usn": "2BA19CS034",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Kiran B Pail",
+              "usn": "2BA19CS034",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Annapurneshwari Lingaraj Kuri",
+              "usn": "2BA19CS036",
+              "mode": "On-Campus",
+              "company": "KodNest Technologies Pvt Ltd, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Mahalingesh Koujalagi",
+              "usn": "2BA19CS039",
+              "mode": "On-Campus",
+              "company": "Quest Global Engineering Services Pvt Ltd.,",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Mahalingesh Koujalagi",
+              "usn": "2BA19CS039",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Mahalingesh Koujalagi",
+              "usn": "2BA19CS039",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "4.64"
+            },
+            {
+              "name": "Mahima Panigatti",
+              "usn": "2BA19CS040",
+              "mode": "On-Campus",
+              "company": "Glassbeam Software",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Mahima Panigatti",
+              "usn": "2BA19CS040",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Mallikarjun Khichadi",
+              "usn": "2BA19CS041",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Manikanta D",
+              "usn": "2BA19CS042",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Nisha Premasing Naik",
+              "usn": "2BA19CS045",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Pooja J Kambar",
+              "usn": "2BA19CS048",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Preeti Bendigeri",
+              "usn": "2BA19CS050",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Rajashree Tadasanavar",
+              "usn": "2BA19CS051",
+              "mode": "On-Campus",
+              "company": "TAP Academy, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Rajashree Tadasanavar",
+              "usn": "2BA19CS051",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Ramjan Santi",
+              "usn": "2BA19CS053",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Ramjan Santi",
+              "usn": "2BA19CS053",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Rekha S Basapur",
+              "usn": "2BA19CS054",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Rekha Waghamode",
+              "usn": "2BA19CS055",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Reshma Jadhav",
+              "usn": "2BA19CS056",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Reshma Jadhav",
+              "usn": "2BA19CS056",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Rohit Prakash Konnur",
+              "usn": "2BA19CS057",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "8 to 12"
+            },
+            {
+              "name": "Rohit Prakash Konnur",
+              "usn": "2BA19CS057",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Rohit Prakash Konnur",
+              "usn": "2BA19CS057",
+              "mode": "On-Campus",
+              "company": "HCL Technology Limited Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Rohit Prakash Konnur",
+              "usn": "2BA19CS057",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Rohit Tukaram Matade",
+              "usn": "2BA19CS058",
+              "mode": "On-Campus",
+              "company": "InTimeTec Visionsoft Pvt Ltd., Bengaluru",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Rohit Tukaram Matade",
+              "usn": "2BA19CS058",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Rutuja Landage Shivaji",
+              "usn": "2BA19CS059",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "8.44"
+            },
+            {
+              "name": "Rutuja Landage Shivaji",
+              "usn": "2BA19CS059",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Sachin Meti",
+              "usn": "2BA19CS060",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "4.64"
+            },
+            {
+              "name": "Sahana B Machakanur",
+              "usn": "2BA19CS061",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Sarvajnya Pujari",
+              "usn": "2BA19CS064",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "8 to 12"
+            },
+            {
+              "name": "Sarvajnya Pujari",
+              "usn": "2BA19CS064",
+              "mode": "On-Campus",
+              "company": "Continental Auto Component (India) Pvt Ltd, Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Sarvajnya Pujari",
+              "usn": "2BA19CS064",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Sarvajnya Pujari",
+              "usn": "2BA19CS064",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Savita Venkanagouda Nadagouda",
+              "usn": "2BA19CS065",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Shailesh Siddalingappa Shettar",
+              "usn": "2BA19CS066",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Shailesh Siddalingappa Shettar",
+              "usn": "2BA19CS066",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Shailesh Siddalingappa Shettar",
+              "usn": "2BA19CS066",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "8 to 12"
+            },
+            {
+              "name": "Shashidhar Bijjaragi",
+              "usn": "2BA19CS067",
+              "mode": "On-Campus",
+              "company": "Accenture Solutions Private Limited Bengaluru",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Shashidhar Bijjaragi",
+              "usn": "2BA19CS067",
+              "mode": "On-Campus",
+              "company": "InTimeTec Visionsoft Pvt Ltd., Bengaluru",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Shrish Sudheendra Joshi",
+              "usn": "2BA19CS071",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Shrish Sudheendra Joshi",
+              "usn": "2BA19CS071",
+              "mode": "On-Campus",
+              "company": "Sigmato Solutions Pvt Ltd Bengaluru",
+              "lpa": ""
+            },
+            {
+              "name": "Smita D Ambiger",
+              "usn": "2BA19CS073",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Sneha Nagaraj Kshatriya",
+              "usn": "2BA19CS074",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Sneha S Lukk",
+              "usn": "2BA19CS075",
+              "mode": "On-Campus",
+              "company": "Brillio Technologies Private Limited, Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Sneha S Lukk",
+              "usn": "2BA19CS075",
+              "mode": "On-Campus",
+              "company": "Accenture Solutions Private Limited Bengaluru",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Sneha S Lukk",
+              "usn": "2BA19CS075",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "8.44"
+            },
+            {
+              "name": "Sneha S Lukk",
+              "usn": "2BA19CS075",
+              "mode": "On-Campus",
+              "company": "Deloitte Consulting India Private Limited",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Sneha S Lukk",
+              "usn": "2BA19CS075",
+              "mode": "On-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Sujay Patil",
+              "usn": "2BA19CS078",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Swati R Patil",
+              "usn": "2BA19CS081",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Tejashwini Yallaraddi",
+              "usn": "2BA19CS083",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Tejashwini Yallaraddi",
+              "usn": "2BA19CS083",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Vaishnavi Joshi",
+              "usn": "2BA19CS085",
+              "mode": "On-Campus",
+              "company": "KodNest Technologies Pvt Ltd, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Vaishnavi Joshi",
+              "usn": "2BA19CS085",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "8 to 12"
+            },
+            {
+              "name": "Varshini S Nidagundi",
+              "usn": "2BA19CS089",
+              "mode": "On-Campus",
+              "company": "Quest Global Engineering Services Pvt Ltd.,",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Vijaylaxmi Ummarji",
+              "usn": "2BA19CS091",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Vijaylaxmi Ummarji",
+              "usn": "2BA19CS091",
+              "mode": "On-Campus",
+              "company": "HCL Technology Limited Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Vishal Rajaput",
+              "usn": "2BA19CS094",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Srushti Gurubasappa Totager",
+              "usn": "2BA19CS095",
+              "mode": "On-Campus",
+              "company": "Tata Consultancy Services, Bengaluru",
+              "lpa": "3.30"
+            },
+            {
+              "name": "Neema Gudisagar",
+              "usn": "2BA19CS096",
+              "mode": "On-Campus",
+              "company": "Palle Technologies Banalore",
+              "lpa": "3 to 8"
+            },
+            {
+              "name": "Nikhita K Mirajakar",
+              "usn": "2BA19CS097",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Ashitosh Uday Deshnur",
+              "usn": "2BA20CS400",
+              "mode": "On-Campus",
+              "company": "Pentagon Space Pvt Ltd, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Ashitosh Uday Deshnur",
+              "usn": "2BA20CS400",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt, Ltd., Bengaluru",
+              "lpa": "4.64"
+            },
+            {
+              "name": "Rahul Khanapuri",
+              "usn": "2BA20CS403",
+              "mode": "On-Campus",
+              "company": "eTHNUS Consultancy services Private Limited, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Sohail Yalagar",
+              "usn": "2BA20CS407",
+              "mode": "On-Campus",
+              "company": "Pentagon Space Pvt Ltd, Bengaluru",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Aryan Pandey",
+              "usn": "2BA18CS013",
+              "mode": "Off-Campus",
+              "company": "Desk Nine Pvt Ltd, Bangalore",
+              "lpa": "3.5"
+            },
+            {
+              "name": "Aditi Malagi",
+              "usn": "2BA19CS003",
+              "mode": "Off-Campus",
+              "company": "Verint CSe India Private Ltd.,",
+              "lpa": "4.0"
+            },
+            {
+              "name": "Aishwarya Joshi",
+              "usn": "2BA19CS006",
+              "mode": "Off-Campus",
+              "company": "Contineo-Esutra Chronicles Pvt., Ltd",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Chaitra H B Patil",
+              "usn": "2BA19CS018",
+              "mode": "Off-Campus",
+              "company": "Blue Yonder India Pvt. Ltd.",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Chirag Ravindara Halyal",
+              "usn": "2BA19CS021",
+              "mode": "Off-Campus",
+              "company": "ThinkJS PVTLTDHSRLayoutBengaluru",
+              "lpa": "1.8"
+            },
+            {
+              "name": "Drakshayini Shivanand Hiregoudra",
+              "usn": "2BA19CS025",
+              "mode": "Off-Campus",
+              "company": "PRODUCTSPACE SOFTWARE INDIA PRIVATE LIMITEDHyderabad, Telangana 500081",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Gurunath H Rathod",
+              "usn": "2BA19CS030",
+              "mode": "Off-Campus",
+              "company": "Data Marshall Pvt. Ltd. Hyderabad",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Jayashree S Bhixawarthimath",
+              "usn": "2BA19CS031",
+              "mode": "Off-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Laxmi B Kenchappagol",
+              "usn": "2BA19CS037",
+              "mode": "Off-Campus",
+              "company": "Prwatech, Bangalore 76",
+              "lpa": "2.40"
+            },
+            {
+              "name": "Lingaraj M Manoli",
+              "usn": "2BA19CS038",
+              "mode": "Off-Campus",
+              "company": "SHLR Technosoft Pvt Lyd, Bengaluru",
+              "lpa": "1.8"
+            },
+            {
+              "name": "Namrata Gopal Ekabote",
+              "usn": "2BA19CS043",
+              "mode": "Off-Campus",
+              "company": "Accenture Solutions Pvt Ltd., Bengaluru",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Nikhil Netaji Nalavade",
+              "usn": "2BA19CS044",
+              "mode": "Off-Campus",
+              "company": "Stally Solutions Pvt Ltd.,",
+              "lpa": "2 to 4"
+            },
+            {
+              "name": "Nivedita S Kalamangi",
+              "usn": "2BA19CS046",
+              "mode": "Off-Campus",
+              "company": "Accenture Solutions Pvt Ltd., Bengaluru",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Raju Arjun",
+              "usn": "2BA19CS052",
+              "mode": "Off-Campus",
+              "company": "CODECRAFTINNOVATIONSEST.KHALIFA THANI ALI BIN GHALITA ALMHEIRI Dubai UAE",
+              "lpa": "3.6 aprox."
+            },
+            {
+              "name": "Ramjan Santi",
+              "usn": "2BA19CS053",
+              "mode": "Off-Campus",
+              "company": "In Time Tec",
+              "lpa": "5.5"
+            },
+            {
+              "name": "Rekha S Basapur",
+              "usn": "2BA19CS054",
+              "mode": "Off-Campus",
+              "company": "Accenture Solutions Pvt Ltd., Bengaluru",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Sangamesh Hadagali",
+              "usn": "2BA19CS063",
+              "mode": "Off-Campus",
+              "company": "Qream Solutions Pvt Ltd., Bangalore",
+              "lpa": "1.0"
+            },
+            {
+              "name": "Shashidhar Bijjaragi",
+              "usn": "2BA19CS067",
+              "mode": "Off-Campus",
+              "company": "Cognizant Technology Solutions India Pvt Ltd,",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Shivakumar S Katti",
+              "usn": "2BA19CS069",
+              "mode": "Off-Campus",
+              "company": "SecPod Technologies Pvt., Ltd.",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Smita D Ambiger",
+              "usn": "2BA19CS073",
+              "mode": "Off-Campus",
+              "company": "Accenture Solutions Pvt Ltd., Bengaluru",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Triveni P Patil",
+              "usn": "2BA19CS084",
+              "mode": "Off-Campus",
+              "company": "Kyndryl India",
+              "lpa": "5.2"
+            },
+            {
+              "name": "Vaishnavi Joshi",
+              "usn": "2BA19CS085",
+              "mode": "Off-Campus",
+              "company": "Accenture Solutions Private Limited Bengaluru",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Vanishri Shekharayya Hanchinamath",
+              "usn": "2BA19CS087",
+              "mode": "Off-Campus",
+              "company": "Pro Practical Tech Solutions, Hubballi",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Vinaya Ravichandra Naidu",
+              "usn": "2BA19CS092",
+              "mode": "Off-Campus",
+              "company": "Total Environment Habitat Private Ltd",
+              "lpa": "4.5"
+            },
+            {
+              "name": "Vishal Rajaput",
+              "usn": "2BA19CS094",
+              "mode": "Off-Campus",
+              "company": "HCL Technology Limited Bengaluru",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Shrinivas Kattimani",
+              "usn": "2BA20CS406",
+              "mode": "Off-Campus",
+              "company": "Amdee Data Informatix Services Private Limited, Bengaluru",
+              "lpa": "1.80"
+            },
+            {
+              "name": "Sohail Yalagar",
+              "usn": "2BA20CS407",
+              "mode": "Off-Campus",
+              "company": "Bharat Electronics Limited Bengaluru",
+              "lpa": "LS"
+            }
+          ]
+        },
+        {
+          "batch": "2021-2022",
+          "companies": [
+            {
+              "company": "Accenture",
+              "package": "4.50",
+              "count": "6"
+            },
+            {
+              "company": "Accolite",
+              "package": "5.00",
+              "count": "1"
+            },
+            {
+              "company": "AMD",
+              "package": "12.00",
+              "count": "1"
+            },
+            {
+              "company": "Atos",
+              "package": "3.40",
+              "count": "1"
+            },
+            {
+              "company": "Barracuda",
+              "package": "8.44",
+              "count": "2"
+            },
+            {
+              "company": "Brigosha Technologies",
+              "package": "4.50",
+              "count": "3"
+            },
+            {
+              "company": "Brillio",
+              "package": "4.50",
+              "count": "6"
+            },
+            {
+              "company": "Capegemini",
+              "package": "4.00",
+              "count": "7"
+            },
+            {
+              "company": "Chegg India",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Citius tech",
+              "package": "5.50",
+              "count": "6"
+            },
+            {
+              "company": "Coditas",
+              "package": "6.00",
+              "count": "1"
+            },
+            {
+              "company": "Cognizant",
+              "package": "4.00",
+              "count": "17"
+            },
+            {
+              "company": "Deevia Software",
+              "package": "5.00",
+              "count": "5"
+            },
+            {
+              "company": "Deloitte Consulting India Private Limited",
+              "package": "3.0",
+              "count": "1"
+            },
+            {
+              "company": "HCL",
+              "package": "3.60",
+              "count": "1"
+            },
+            {
+              "company": "Hexaview",
+              "package": "9.00",
+              "count": "2"
+            },
+            {
+              "company": "Hexaware",
+              "package": "4.00",
+              "count": "2"
+            },
+            {
+              "company": "IBM",
+              "package": "4.50",
+              "count": "6"
+            },
+            {
+              "company": "Incubation Program",
+              "package": "3.50",
+              "count": "1"
+            },
+            {
+              "company": "Infosys",
+              "package": "4.00",
+              "count": "11"
+            },
+            {
+              "company": "Infosys Digital Specialist",
+              "package": "6.50",
+              "count": "1"
+            },
+            {
+              "company": "JSW",
+              "package": "5.50",
+              "count": "2"
+            },
+            {
+              "company": "Kodnest",
+              "package": "3.50",
+              "count": "4"
+            },
+            {
+              "company": "Morgan Stanley",
+              "package": "3.50 to 11",
+              "count": "2"
+            },
+            {
+              "company": "Mphasis",
+              "package": "4.00",
+              "count": "14"
+            },
+            {
+              "company": "MSys",
+              "package": "4.00",
+              "count": "2"
+            },
+            {
+              "company": "NCS",
+              "package": "7.32",
+              "count": "1"
+            },
+            {
+              "company": "Persistent Systems",
+              "package": "4.70",
+              "count": "3"
+            },
+            {
+              "company": "Prodigy Technovations",
+              "package": "4.00",
+              "count": "2"
+            },
+            {
+              "company": "Quest Global",
+              "package": "3.00",
+              "count": "2"
+            },
+            {
+              "company": "Recruit CRM",
+              "package": "7.00",
+              "count": "1"
+            },
+            {
+              "company": "Rectigon Solutions",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Sasken Technologies",
+              "package": "5.00",
+              "count": "2"
+            },
+            {
+              "company": "Secpod",
+              "package": "3.50",
+              "count": "1"
+            },
+            {
+              "company": "Square Yards",
+              "package": "4.50",
+              "count": "2"
+            },
+            {
+              "company": "Synchrony",
+              "package": "8.70",
+              "count": "3"
+            },
+            {
+              "company": "Synerzip",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "TATA Elxsi",
+              "package": "3.50",
+              "count": "9"
+            },
+            {
+              "company": "TCS",
+              "package": "3.36",
+              "count": "13"
+            },
+            {
+              "company": "TCS digital",
+              "package": "7.20",
+              "count": "1"
+            },
+            {
+              "company": "Tech Mahendra",
+              "package": "3.25",
+              "count": "6"
+            },
+            {
+              "company": "Technologics Global",
+              "package": "3.00",
+              "count": "2"
+            },
+            {
+              "company": "Triwits",
+              "package": "3.20",
+              "count": "1"
+            },
+            {
+              "company": "Upskillz",
+              "package": "3.50",
+              "count": "1"
+            },
+            {
+              "company": "Vrize",
+              "package": "4.50 to 8",
+              "count": "4"
+            },
+            {
+              "company": "Wipro",
+              "package": "3.50",
+              "count": "18"
+            },
+            {
+              "company": "Univision",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Urneeds",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Work Force Cloud Tech (India) Pvt Ltd.",
+              "package": "7.00",
+              "count": "1"
+            },
+            {
+              "company": "AQM Technologies Pvt. Ltd.",
+              "package": "8.0",
+              "count": "1"
+            },
+            {
+              "company": "First Meridian Global Services Pvt Ltd,",
+              "package": "3.10",
+              "count": "1"
+            },
+            {
+              "company": "Six Dee Telecom Solutions Private Limited",
+              "package": "8.0",
+              "count": "1"
+            },
+            {
+              "company": "ALP Consulting Bangalore",
+              "package": "4.0",
+              "count": "1"
+            },
+            {
+              "company": "Prasanna Technologies Pvt Ltd,",
+              "package": "3.0",
+              "count": "1"
+            },
+            {
+              "company": "Edvantage Point Technologies Pvt Ltd",
+              "package": "2.0",
+              "count": "1"
+            },
+            {
+              "company": "Karnataka Vikas Grameena Bank, Dharwad 580008",
+              "package": "4.8 to 7.1",
+              "count": "1"
+            }
+          ],
+          "students": [
+            {
+              "name": "Abhishek Batakurki",
+              "usn": "2BA18CS001",
+              "mode": "On-Campus",
+              "company": "Hexaview Technologies, Pune",
+              "lpa": "9.00"
+            },
+            {
+              "name": "Abhishek Batakurki",
+              "usn": "2BA18CS001",
+              "mode": "On-Campus",
+              "company": "Square Yards",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Abhishek Gujjar",
+              "usn": "2BA18CS002",
+              "mode": "On-Campus",
+              "company": "Mphasi",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Adish Khemalapure",
+              "usn": "2BA18CS003",
+              "mode": "On-Campus",
+              "company": "Vrize",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Adish Khemalapure",
+              "usn": "2BA18CS003",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Adish Khemalapure",
+              "usn": "2BA18CS003",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Adish Khemalapure",
+              "usn": "2BA18CS003",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Adish Khemalapure",
+              "usn": "2BA18CS003",
+              "mode": "On-Campus",
+              "company": "Tech Mahendra",
+              "lpa": "3.25"
+            },
+            {
+              "name": "Adish Khemalapure",
+              "usn": "2BA18CS003",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Aditi Singri",
+              "usn": "2BA18CS004",
+              "mode": "On-Campus",
+              "company": "Vrize",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Aditi Singri",
+              "usn": "2BA18CS004",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Aditi Singri",
+              "usn": "2BA18CS004",
+              "mode": "On-Campus",
+              "company": "Tech Mahendra",
+              "lpa": "3.25"
+            },
+            {
+              "name": "Aditi Singri",
+              "usn": "2BA18CS004",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Akash Pradeep Korachagaon",
+              "usn": "2BA18CS005",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.0"
+            },
+            {
+              "name": "Akash Pradeep Korachagaon",
+              "usn": "2BA18CS005",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Akash Pradeep Korachagaon",
+              "usn": "2BA18CS005",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Akshata Kudari",
+              "usn": "2BA18CS006",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Akshata Kudari",
+              "usn": "2BA18CS006",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Amitkumar Malipatil",
+              "usn": "2BA18CS008",
+              "mode": "On-Campus",
+              "company": "ATQS Paladion Networks Private Limited",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Amitkumar Malipatil",
+              "usn": "2BA18CS008",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Amitkumar Malipatil",
+              "usn": "2BA18CS008",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Anand M Kumbar",
+              "usn": "2BA18CS009",
+              "mode": "On-Campus",
+              "company": "Vrize",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Anand M Kumbar",
+              "usn": "2BA18CS009",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Anand M Kumbar",
+              "usn": "2BA18CS009",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Anand M Kumbar",
+              "usn": "2BA18CS009",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Anand M Kumbar",
+              "usn": "2BA18CS009",
+              "mode": "On-Campus",
+              "company": "Persistent Systems",
+              "lpa": "4.70"
+            },
+            {
+              "name": "Anand M Kumbar",
+              "usn": "2BA18CS009",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Anand M Kumbar",
+              "usn": "2BA18CS009",
+              "mode": "On-Campus",
+              "company": "Tech Mahendra",
+              "lpa": "3.25"
+            },
+            {
+              "name": "Anirudh Astikar",
+              "usn": "2BA18CS010",
+              "mode": "On-Campus",
+              "company": "Urneeds",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Apoorva Bardapur",
+              "usn": "2BA18CS011",
+              "mode": "On-Campus",
+              "company": "Deloitte",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Atinderbir Pannu",
+              "usn": "2BA18CS014",
+              "mode": "On-Campus",
+              "company": "KodNest Technologies Pvt Ltd",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Bhavana Angadi",
+              "usn": "2BA18CS016",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Bhavana Angadi",
+              "usn": "2BA18CS016",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Bhavana Angadi",
+              "usn": "2BA18CS016",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Bhavana Angadi",
+              "usn": "2BA18CS016",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Bibifatima M Attar",
+              "usn": "2BA18CS017",
+              "mode": "On-Campus",
+              "company": "Capgemini",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Bibifatima M Attar",
+              "usn": "2BA18CS017",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Chandraprabhu P Daigond",
+              "usn": "2BA18CS018",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Chandraprabhu P Daigond",
+              "usn": "2BA18CS018",
+              "mode": "On-Campus",
+              "company": "Deevia software",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Daneshwari Bagi",
+              "usn": "2BA18CS019",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "G Madhu Lekha",
+              "usn": "2BA18CS021",
+              "mode": "On-Campus",
+              "company": "Brigosha Technologies",
+              "lpa": "4.50"
+            },
+            {
+              "name": "G Madhu Lekha",
+              "usn": "2BA18CS021",
+              "mode": "On-Campus",
+              "company": "Kodnest",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Gayatri",
+              "usn": "2BA18CS022",
+              "mode": "On-Campus",
+              "company": "Mphasi",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Gayatri",
+              "usn": "2BA18CS022",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "3.60"
+            },
+            {
+              "name": "Gururaj Timmappa Naik",
+              "usn": "2BA18CS023",
+              "mode": "On-Campus",
+              "company": "Capgemini",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Gururaj Timmappa Naik",
+              "usn": "2BA18CS023",
+              "mode": "On-Campus",
+              "company": "Kodnest",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Ishwari",
+              "usn": "2BA18CS024",
+              "mode": "On-Campus",
+              "company": "Brigosha Technologies",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Ishwari",
+              "usn": "2BA18CS024",
+              "mode": "On-Campus",
+              "company": "Chegg India",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Kartik A Mashal",
+              "usn": "2BA18CS025",
+              "mode": "On-Campus",
+              "company": "Vrize",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Kartik A Mashal",
+              "usn": "2BA18CS025",
+              "mode": "On-Campus",
+              "company": "Brillio",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Kartik A Mashal",
+              "usn": "2BA18CS025",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Kartik A Mashal",
+              "usn": "2BA18CS025",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Kartik A Mashal",
+              "usn": "2BA18CS025",
+              "mode": "On-Campus",
+              "company": "Infosys Digital Specialist",
+              "lpa": "6.50"
+            },
+            {
+              "name": "Kartik A Mashal",
+              "usn": "2BA18CS025",
+              "mode": "On-Campus",
+              "company": "Rectigon Solutions",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Kartik A Mashal",
+              "usn": "2BA18CS025",
+              "mode": "On-Campus",
+              "company": "Synerzip",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Kartik A Mashal",
+              "usn": "2BA18CS025",
+              "mode": "On-Campus",
+              "company": "Tech Mahendra",
+              "lpa": "3.25"
+            },
+            {
+              "name": "Kashinath",
+              "usn": "2BA18CS026",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Madhumati Sajjan",
+              "usn": "2BA18CS028",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Madhumati Sajjan",
+              "usn": "2BA18CS028",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Mahima S Patil",
+              "usn": "2BA18CS029",
+              "mode": "On-Campus",
+              "company": "Hexaware",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Mahima S Patil",
+              "usn": "2BA18CS029",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Mahima S Patil",
+              "usn": "2BA18CS029",
+              "mode": "On-Campus",
+              "company": "Square Yards",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Mahima S Patil",
+              "usn": "2BA18CS029",
+              "mode": "On-Campus",
+              "company": "Capegemini",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Marulasiddesh Handi",
+              "usn": "2BA18CS030",
+              "mode": "On-Campus",
+              "company": "Prodigy Technovations Pvt Ltd",
+              "lpa": "4"
+            },
+            {
+              "name": "Marulasiddesh Handi",
+              "usn": "2BA18CS030",
+              "mode": "On-Campus",
+              "company": "Technologics Global",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Megha",
+              "usn": "2BA18CS031",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Mounesh",
+              "usn": "2BA18CS032",
+              "mode": "On-Campus",
+              "company": "Citius HealthCare Technology Pvt Ltd.",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Netra S Tegginamani",
+              "usn": "2BA18CS033",
+              "mode": "On-Campus",
+              "company": "Msys Technologies",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Nikhil Vithal Ghorpade",
+              "usn": "2BA18CS035",
+              "mode": "On-Campus",
+              "company": "TCS Nija",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Nishat Chikkodi",
+              "usn": "2BA18CS036",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt Ltd",
+              "lpa": "8.44"
+            },
+            {
+              "name": "Nishat Chikkodi",
+              "usn": "2BA18CS036",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Nishat Chikkodi",
+              "usn": "2BA18CS036",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Pooja Chanapannavar",
+              "usn": "2BA18CS037",
+              "mode": "On-Campus",
+              "company": "Vrize",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Pooja Chanapannavar",
+              "usn": "2BA18CS037",
+              "mode": "On-Campus",
+              "company": "IBM",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Pooja Gunjal",
+              "usn": "2BA18CS038",
+              "mode": "On-Campus",
+              "company": "Capgemini",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Pooja Gunjal",
+              "usn": "2BA18CS038",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Pooja Gunjal",
+              "usn": "2BA18CS038",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Pooja V Dhongadi",
+              "usn": "2BA18CS040",
+              "mode": "On-Campus",
+              "company": "Vrize",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Pooja V Dhongadi",
+              "usn": "2BA18CS040",
+              "mode": "On-Campus",
+              "company": "TCS digital",
+              "lpa": "7.20"
+            },
+            {
+              "name": "Pradyumna Savadatti",
+              "usn": "2BA18CS041",
+              "mode": "On-Campus",
+              "company": "Brillio Technologies Pvt. Ltd",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Pradyumna Savadatti",
+              "usn": "2BA18CS041",
+              "mode": "On-Campus",
+              "company": "Brillio",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Pradyumna Savadatti",
+              "usn": "2BA18CS041",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Pradyumna Savadatti",
+              "usn": "2BA18CS041",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Prajwal Kalloli",
+              "usn": "2BA18CS042",
+              "mode": "On-Campus",
+              "company": "SASKEN Technologies",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Prajwal Kalloli",
+              "usn": "2BA18CS042",
+              "mode": "On-Campus",
+              "company": "JSW",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Prajwal Kalloli",
+              "usn": "2BA18CS042",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Pramodkumar Patil",
+              "usn": "2BA18CS044",
+              "mode": "On-Campus",
+              "company": "Citius HealthCare Technology Pvt Ltd.",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Pratibha Chidambar Kulakarni",
+              "usn": "2BA18CS045",
+              "mode": "On-Campus",
+              "company": "Wipro Limited",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Pratiksha Huddar",
+              "usn": "2BA18CS046",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Pratiksha Huddar",
+              "usn": "2BA18CS046",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Pratiksha Huddar",
+              "usn": "2BA18CS046",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Preeti Patil S N",
+              "usn": "2BA18CS047",
+              "mode": "On-Campus",
+              "company": "Brigosha Technologies",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Ragini P Anvekar",
+              "usn": "2BA18CS049",
+              "mode": "On-Campus",
+              "company": "Morgan Stanley",
+              "lpa": "11.0"
+            },
+            {
+              "name": "Ragini P Anvekar",
+              "usn": "2BA18CS049",
+              "mode": "On-Campus",
+              "company": "Accolite",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Ragini P Anvekar",
+              "usn": "2BA18CS049",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Ragini P Anvekar",
+              "usn": "2BA18CS049",
+              "mode": "On-Campus",
+              "company": "IBM",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Ragini P Anvekar",
+              "usn": "2BA18CS049",
+              "mode": "On-Campus",
+              "company": "Vrize",
+              "lpa": "8.00"
+            },
+            {
+              "name": "Rahul H Patil",
+              "usn": "2BA18CS050",
+              "mode": "On-Campus",
+              "company": "Brillio Technologies Pvt. Ltd",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Rahul H Patil",
+              "usn": "2BA18CS050",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Rahul H Patil",
+              "usn": "2BA18CS050",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Rakshit A Chopade",
+              "usn": "2BA18CS053",
+              "mode": "On-Campus",
+              "company": "Work Force Cloud Tech (India) Pvt Ltd.",
+              "lpa": "7.00"
+            },
+            {
+              "name": "Rakshit G Pawar",
+              "usn": "2BA18CS054",
+              "mode": "On-Campus",
+              "company": "Synchrony International Services Pvt Ltd.,",
+              "lpa": "8.70"
+            },
+            {
+              "name": "Rakshit G Pawar",
+              "usn": "2BA18CS054",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Ranjita Madari",
+              "usn": "2BA18CS055",
+              "mode": "On-Campus",
+              "company": "Brigosha Technologies",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Roopa Kunijadar",
+              "usn": "2BA18CS058",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Roopa Kunijadar",
+              "usn": "2BA18CS058",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Roopa Kunijadar",
+              "usn": "2BA18CS058",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Samreen Iqbal Mujawar",
+              "usn": "2BA18CS059",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Sanjeev Bhimasen Kulkarni",
+              "usn": "2BA18CS060",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Sanjeev Bhimasen Kulkarni",
+              "usn": "2BA18CS060",
+              "mode": "On-Campus",
+              "company": "MSys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Sanjeev Bhimasen Kulkarni",
+              "usn": "2BA18CS060",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Shravan Vijaykumar Mungarwadi",
+              "usn": "2BA18CS061",
+              "mode": "On-Campus",
+              "company": "Citius HealthCare Technology Pvt Ltd.",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Shreyas M Ghanekar",
+              "usn": "2BA18CS062",
+              "mode": "On-Campus",
+              "company": "Deevia Software (India) Pvt Ltd",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Shrinidhi R Rangapur",
+              "usn": "2BA18CS063",
+              "mode": "On-Campus",
+              "company": "Brillio Technologies Pvt. Ltd",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Shrinidhi R Rangapur",
+              "usn": "2BA18CS063",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Shrinidhi R Rangapur",
+              "usn": "2BA18CS063",
+              "mode": "On-Campus",
+              "company": "IBM",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Shrinidhi R Rangapur",
+              "usn": "2BA18CS063",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Shrinidhi R Rangapur",
+              "usn": "2BA18CS063",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Shrinidhi R Rangapur",
+              "usn": "2BA18CS063",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Soumya Angadi",
+              "usn": "2BA18CS064",
+              "mode": "On-Campus",
+              "company": "Jindal Aluminium Ltd",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Soumya Angadi",
+              "usn": "2BA18CS064",
+              "mode": "On-Campus",
+              "company": "Deevia software",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Soumya Angadi",
+              "usn": "2BA18CS064",
+              "mode": "On-Campus",
+              "company": "Upskillz",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Soumya B",
+              "usn": "2BA18CS065",
+              "mode": "On-Campus",
+              "company": "Brillio Technologies Pvt. Ltd",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Soumya B",
+              "usn": "2BA18CS065",
+              "mode": "On-Campus",
+              "company": "Capegemini",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Soumya B",
+              "usn": "2BA18CS065",
+              "mode": "On-Campus",
+              "company": "Persistent Systems",
+              "lpa": "4.70"
+            },
+            {
+              "name": "Soumya Y Bijapur",
+              "usn": "2BA18CS066",
+              "mode": "On-Campus",
+              "company": "Quest Golbal",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Spurthi Sridhar Babu",
+              "usn": "2BA18CS067",
+              "mode": "On-Campus",
+              "company": "Barracuda Networks (India) Pvt Ltd",
+              "lpa": "8.44"
+            },
+            {
+              "name": "Spurthi Sridhar Babu",
+              "usn": "2BA18CS067",
+              "mode": "On-Campus",
+              "company": "IBM",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Spurthi Sridhar Babu",
+              "usn": "2BA18CS067",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Spurthi Sridhar Babu",
+              "usn": "2BA18CS067",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Sunidhi S Parvatikar",
+              "usn": "2BA18CS068",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Sunidhi S Parvatikar",
+              "usn": "2BA18CS068",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Sunidhi S Parvatikar",
+              "usn": "2BA18CS068",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Sunidhi S Parvatikar",
+              "usn": "2BA18CS068",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Tejashwini Nagappa Sajjan",
+              "usn": "2BA18CS069",
+              "mode": "On-Campus",
+              "company": "Kyndryl Solutions Private Limited",
+              "lpa": "4.25"
+            },
+            {
+              "name": "Tejashwini Nagappa Sajjan",
+              "usn": "2BA18CS069",
+              "mode": "On-Campus",
+              "company": "Coditas",
+              "lpa": "6.00"
+            },
+            {
+              "name": "Tejashwini Nagappa Sajjan",
+              "usn": "2BA18CS069",
+              "mode": "On-Campus",
+              "company": "IBM",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Tejashwini Nagappa Sajjan",
+              "usn": "2BA18CS069",
+              "mode": "On-Campus",
+              "company": "Infosys",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Tejashwini Nagappa Sajjan",
+              "usn": "2BA18CS069",
+              "mode": "On-Campus",
+              "company": "Synchrony",
+              "lpa": "8.70"
+            },
+            {
+              "name": "Tejashwini Nagappa Sajjan",
+              "usn": "2BA18CS069",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Tulasabai Chavhan",
+              "usn": "2BA18CS071",
+              "mode": "On-Campus",
+              "company": "AMD India Pvt Ltd",
+              "lpa": "12.0"
+            },
+            {
+              "name": "Tulasabai Chavhan",
+              "usn": "2BA18CS071",
+              "mode": "On-Campus",
+              "company": "Accenture",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Tulasabai Chavhan",
+              "usn": "2BA18CS071",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Tulasabai Chavhan",
+              "usn": "2BA18CS071",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Tulasabai Chavhan",
+              "usn": "2BA18CS071",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Tulasabai Chavhan",
+              "usn": "2BA18CS071",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Urmila",
+              "usn": "2BA18CS072",
+              "mode": "On-Campus",
+              "company": "Siemens Technology and Services Pvt Ltd",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Urmila",
+              "usn": "2BA18CS072",
+              "mode": "On-Campus",
+              "company": "Cognizant",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Urmila",
+              "usn": "2BA18CS072",
+              "mode": "On-Campus",
+              "company": "Tech Mahendra",
+              "lpa": "3.25"
+            },
+            {
+              "name": "Varun Melinamani",
+              "usn": "2BA18CS073",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Vidya",
+              "usn": "2BA18CS074",
+              "mode": "On-Campus",
+              "company": "Synchrony International Services Pvt Ltd.,",
+              "lpa": "8.70"
+            },
+            {
+              "name": "Vidya",
+              "usn": "2BA18CS074",
+              "mode": "On-Campus",
+              "company": "ATQS Paladion Networks Private Limited",
+              "lpa": "3.4"
+            },
+            {
+              "name": "Vidya",
+              "usn": "2BA18CS074",
+              "mode": "On-Campus",
+              "company": "Capegemini",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Vidya",
+              "usn": "2BA18CS074",
+              "mode": "On-Campus",
+              "company": "HCL",
+              "lpa": "3.60"
+            },
+            {
+              "name": "Vidya",
+              "usn": "2BA18CS074",
+              "mode": "On-Campus",
+              "company": "Hexaware",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Vidya",
+              "usn": "2BA18CS074",
+              "mode": "On-Campus",
+              "company": "TATA Elxsi",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Vidya",
+              "usn": "2BA18CS074",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Vinaya Uppar",
+              "usn": "2BA18CS078",
+              "mode": "On-Campus",
+              "company": "Sasken Technologies Limited",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Vinayak Patil",
+              "usn": "2BA18CS079",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Vishvesh Aralikatti",
+              "usn": "2BA18CS080",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Vivek Shambulinga Halakatti",
+              "usn": "2BA18CS081",
+              "mode": "On-Campus",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Vivek Shambulinga Halakatti",
+              "usn": "2BA18CS081",
+              "mode": "On-Campus",
+              "company": "Hexaview",
+              "lpa": "9.00"
+            },
+            {
+              "name": "Vivek Shambulinga Halakatti",
+              "usn": "2BA18CS081",
+              "mode": "On-Campus",
+              "company": "NCS",
+              "lpa": "7.32"
+            },
+            {
+              "name": "Vivek Shambulinga Halakatti",
+              "usn": "2BA18CS081",
+              "mode": "On-Campus",
+              "company": "Triwits",
+              "lpa": "3.20"
+            },
+            {
+              "name": "Paras Thakur",
+              "usn": "2BA18CS083",
+              "mode": "On-Campus",
+              "company": "Capgemini",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Paras Thakur",
+              "usn": "2BA18CS083",
+              "mode": "On-Campus",
+              "company": "Citius tech",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Yash Amruth Darbar",
+              "usn": "2BA18CS084",
+              "mode": "On-Campus",
+              "company": "WileyEdge",
+              "lpa": "11.0"
+            },
+            {
+              "name": "Yash Amruth Darbar",
+              "usn": "2BA18CS084",
+              "mode": "On-Campus",
+              "company": "Morgan Stanley",
+              "lpa": "3.5"
+            },
+            {
+              "name": "Yash Amruth Darbar",
+              "usn": "2BA18CS084",
+              "mode": "On-Campus",
+              "company": "Brillio",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Yash Amruth Darbar",
+              "usn": "2BA18CS084",
+              "mode": "On-Campus",
+              "company": "IBM",
+              "lpa": "4.50"
+            },
+            {
+              "name": "Yash Amruth Darbar",
+              "usn": "2BA18CS084",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Mahesh",
+              "usn": "2BA18CS405",
+              "mode": "On-Campus",
+              "company": "KodNest Technologies Pvt Ltd",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Mahesh",
+              "usn": "2BA18CS405",
+              "mode": "On-Campus",
+              "company": "Incubation Program",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Ashpakali Makandar",
+              "usn": "2BA19CS401",
+              "mode": "On-Campus",
+              "company": "SecPod Technologies Pvt. Ltd.",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Ashpakali Makandar",
+              "usn": "2BA19CS401",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Ashpakali Makandar",
+              "usn": "2BA19CS401",
+              "mode": "On-Campus",
+              "company": "TCS",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Ashpakali Makandar",
+              "usn": "2BA19CS401",
+              "mode": "On-Campus",
+              "company": "Wipro",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Minazbegum Mehaboobsab Mulla",
+              "usn": "2BA19CS403",
+              "mode": "On-Campus",
+              "company": "Tech Mahindra",
+              "lpa": "3.25"
+            },
+            {
+              "name": "Rushikesh Anil Navale",
+              "usn": "2BA19CS405",
+              "mode": "On-Campus",
+              "company": "Citius HealthCare Technology Pvt Ltd.",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Saba Bagayat",
+              "usn": "2BA19CS406",
+              "mode": "On-Campus",
+              "company": "Univision",
+              "lpa": "3.00"
+            },
+            {
+              "name": "Shreyash Uday Shaha",
+              "usn": "2BA19CS409",
+              "mode": "On-Campus",
+              "company": "Wipro Limited",
+              "lpa": "3.50"
+            },
+            {
+              "name": "Shreyash Uday Shaha",
+              "usn": "2BA19CS409",
+              "mode": "On-Campus",
+              "company": "Mphasis",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Shrikant Ravalukedari",
+              "usn": "2BA19CS410",
+              "mode": "On-Campus",
+              "company": "Citius HealthCare Technology Pvt Ltd.",
+              "lpa": "5.50"
+            },
+            {
+              "name": "Spoorthi Suresh Bilagikar",
+              "usn": "2BA19CS411",
+              "mode": "On-Campus",
+              "company": "Prodigy Technovations",
+              "lpa": "4.00"
+            },
+            {
+              "name": "Subramanya Gopal Bellary",
+              "usn": "2BA19CS412",
+              "mode": "On-Campus",
+              "company": "Deevia Software (India) Pvt Ltd",
+              "lpa": "5.00"
+            },
+            {
+              "name": "Rakshit P Mannur",
+              "usn": "2BA16CS047",
+              "mode": "Off-Campus",
+              "company": "AQM Technologies Pvt. Ltd.",
+              "lpa": "8.0"
+            },
+            {
+              "name": "Anusha More",
+              "usn": "2BA17CS011",
+              "mode": "Off-Campus",
+              "company": "First Meridian Global Services Pvt Ltd,",
+              "lpa": "3.10"
+            },
+            {
+              "name": "Gayatri",
+              "usn": "2BA18CS022",
+              "mode": "Off-Campus",
+              "company": "Six Dee Telecom Solutions Private Limited",
+              "lpa": "8.0"
+            },
+            {
+              "name": "Ravikant Bhushannavar",
+              "usn": "2BA18CS057",
+              "mode": "Off-Campus",
+              "company": "Karnataka Vikas Grameena Bank, Dharwad 580008",
+              "lpa": "4.8 to 7.1"
+            },
+            {
+              "name": "Bhavyashree",
+              "usn": "2BA19CS402",
+              "mode": "Off-Campus",
+              "company": "Edvantage Point Technologies Pvt Ltd",
+              "lpa": "2.0"
+            },
+            {
+              "name": "Sachin",
+              "usn": "2BA19CS407",
+              "mode": "Off-Campus",
+              "company": "ALP Consulting Bangalore",
+              "lpa": "4.0"
+            },
+            {
+              "name": "Shilpa Kulali",
+              "usn": "2BA19CS408",
+              "mode": "Off-Campus",
+              "company": "Prasanna Technologies Pvt Ltd,",
+              "lpa": "3.0"
+            }
+          ]
+        }
+      ]
+    },
+    "civil-engg": {
+      "yearWise": [
+        {
+          "year": "2021-2022",
+          "percent": "72"
+        },
+        {
+          "year": "2022-2023",
+          "percent": "76"
+        },
+        {
+          "year": "2023-2024",
+          "percent": "75"
+        }
+      ],
+      "batches": []
+    },
+    "mba": {
+      "yearWise": [
+        {
+          "year": "2017-18",
+          "students": "38",
+          "placed": "19",
+          "percent": "50"
+        },
+        {
+          "year": "2018-19",
+          "students": "55",
+          "placed": "23",
+          "percent": "88"
+        },
+        {
+          "year": "2019-20",
+          "students": "45",
+          "placed": "23",
+          "percent": "77"
+        },
+        {
+          "year": "2020-21",
+          "students": "25",
+          "placed": "15",
+          "percent": "75"
+        },
+        {
+          "year": "2021-22",
+          "students": "40",
+          "placed": "27",
+          "percent": "90"
+        },
+        {
+          "year": "2022-23",
+          "students": "41",
+          "placed": "30",
+          "percent": "77"
+        },
+        {
+          "year": "2023-24",
+          "students": "54",
+          "placed": "38",
+          "percent": "70"
+        }
+      ],
+      "batches": []
+    },
+    "mechanical-engg": {
+      "yearWise": [
+        {
+          "year": "2021-2022",
+          "onCampus": "61",
+          "offCampus": "12",
+          "placed": "73"
+        },
+        {
+          "year": "2020-2021",
+          "onCampus": "17",
+          "offCampus": "73",
+          "placed": "90"
+        },
+        {
+          "year": "2019-2020",
+          "onCampus": "10",
+          "offCampus": "50",
+          "placed": "60"
+        }
+      ],
+      "batches": []
+    },
+    "ai-and-ml": {
+      "batches": [
+        {
+          "batch": "2024-2025",
+          "companies": [
+            {
+              "company": "Infosys",
+              "count": "13",
+              "package": ""
+            },
+            {
+              "company": "TCS Ninja",
+              "count": "3",
+              "package": ""
+            },
+            {
+              "company": "Infosys Internship",
+              "count": "3",
+              "package": ""
+            },
+            {
+              "company": "Barracuda Internship",
+              "count": "2",
+              "package": ""
+            },
+            {
+              "company": "Cognizant (GenC)",
+              "count": "1",
+              "package": ""
+            },
+            {
+              "company": "HCLTech",
+              "count": "1",
+              "package": ""
+            },
+            {
+              "company": "Tech Mahindra",
+              "count": "1",
+              "package": ""
+            }
+          ],
+          "students": [
+            {
+              "name": "Karthik Uday Mudhol",
+              "company": "Infosys",
+              "lpa": "8.24",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Karthik Uday Mudhol",
+              "company": "Cognizant (GenC)",
+              "lpa": "8.24",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Aliza Rizwan Pathan",
+              "company": "TCS Ninja",
+              "lpa": "8.01",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Hrishikesh Jakanur",
+              "company": "TCS Ninja",
+              "lpa": "8.1",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Vishal S Nala",
+              "company": "TCS Ninja",
+              "lpa": "7.4",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Adwitiya Rajeev Patil",
+              "company": "Infosys",
+              "lpa": "7.87",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Amruta Mallappa Hosur",
+              "company": "Infosys",
+              "lpa": "8.12",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Arpita Mallikarjun Patil",
+              "company": "Infosys",
+              "lpa": "7.22",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Chetan Jayathirth Deshpande",
+              "company": "Infosys",
+              "lpa": "7.54",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Chinnu Veeraabhadra Kumbar",
+              "company": "Infosys",
+              "lpa": "8.78",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Harish G Rolli",
+              "company": "Infosys",
+              "lpa": "7.73",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Hrishikesh N Jakanur",
+              "company": "Infosys",
+              "lpa": "8.1",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Mohanrao Kulkarni",
+              "company": "Infosys",
+              "lpa": "8.39",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Shrikar Purohit",
+              "company": "Infosys",
+              "lpa": "8.52",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Veeresh Basalingappa Pattanad",
+              "company": "Infosys",
+              "lpa": "8.21",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Vidya Basayya Lakkundimath",
+              "company": "Infosys",
+              "lpa": "7.1",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Vishal S Nala",
+              "company": "Infosys",
+              "lpa": "7.4",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Harish G Rolli",
+              "company": "Infosys",
+              "mode": "Internship",
+              "lpa": "7.73",
+              "usn": ""
+            },
+            {
+              "name": "Mohanrao Kulkarni",
+              "company": "Infosys",
+              "mode": "Internship",
+              "lpa": "8.39",
+              "usn": ""
+            },
+            {
+              "name": "Soumya Ashok Pattanad",
+              "company": "Infosys",
+              "mode": "Internship",
+              "lpa": "7.94",
+              "usn": ""
+            },
+            {
+              "name": "Veeresh Basalingappa Pattanad",
+              "company": "Barracuda",
+              "mode": "Internship",
+              "lpa": "8.21",
+              "usn": ""
+            },
+            {
+              "name": "Shreeraksha G Chulki",
+              "company": "Barracuda",
+              "mode": "Internship",
+              "lpa": "8.85",
+              "usn": ""
+            },
+            {
+              "name": "Rakshita Julapi",
+              "company": "HCLTech",
+              "lpa": "8.78",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Vishal S Nala",
+              "company": "Tech Mahindra",
+              "lpa": "7.56",
+              "usn": "",
+              "mode": ""
+            }
+          ]
+        },
+        {
+          "batch": "2023-2024",
+          "companies": [
+            {
+              "company": "Accenture",
+              "count": "2",
+              "package": ""
+            },
+            {
+              "company": "Tata Consultancy Services",
+              "count": "2",
+              "package": ""
+            },
+            {
+              "company": "Barracuda",
+              "count": "2",
+              "package": ""
+            },
+            {
+              "company": "Capgemini",
+              "count": "1",
+              "package": ""
+            },
+            {
+              "company": "iBind",
+              "count": "1",
+              "package": ""
+            },
+            {
+              "company": "Cognizant",
+              "count": "1",
+              "package": ""
+            }
+          ],
+          "students": [
+            {
+              "name": "Aishwarya Basavaraj Bani",
+              "company": "Capgemini",
+              "lpa": "4.25",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Rakshita Padmaraj Dhanpal",
+              "company": "Tata Consultancy Services",
+              "lpa": "3.36",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Nishita",
+              "company": "iBind",
+              "lpa": "7.1",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Arun Indi",
+              "company": "Barracuda",
+              "lpa": "8.58",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Makineni Aditya Vardhan",
+              "company": "Barracuda",
+              "lpa": "8.58",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Mohammad Islampur",
+              "company": "Tata Consultancy Services",
+              "lpa": "3.36",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Krutika Badiger",
+              "company": "Accenture",
+              "lpa": "4.5",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Sakshi Sonagaj",
+              "company": "Cognizant",
+              "lpa": "4.01",
+              "usn": "",
+              "mode": ""
+            },
+            {
+              "name": "Anita B M",
+              "company": "Accenture",
+              "lpa": "4.5",
+              "usn": "",
+              "mode": ""
+            }
+          ]
+        }
+      ],
+      "yearWise": []
+    }
+  }
+}

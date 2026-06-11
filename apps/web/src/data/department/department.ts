@@ -7,12 +7,16 @@ import {
   type DepartmentContent,
 } from "@/content/departments";
 import { getDepartmentFaculty } from "@/content/faculty";
+import { getDepartmentPlacements } from "@/content/placements";
+
+/** A two-part list entry — primary label + muted secondary detail (no dash-joining). */
+export type GroupItem = string | { label: string; value?: string };
 
 /** A labelled sub-block inside a content section (subheading + text and/or bullets). */
 export interface ContentGroup {
   subtitle?: string;
   text?: string;
-  items?: string[];
+  items?: GroupItem[];
 }
 
 export interface DataTable {
@@ -169,14 +173,93 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     if (content.researchAreas?.length)
       groups.push({
         subtitle: "Areas of Specialization",
-        items: content.researchAreas.map(
-          (r) => `${r.supervisor} — ${r.area}${r.university ? ` (${r.university})` : ""}`,
-        ),
+        items: content.researchAreas.map((r) => ({
+          label: r.supervisor,
+          value: `${r.area}${r.university ? ` · ${r.university}` : ""}`,
+        })),
       });
     for (const lab of content.labs ?? []) {
       groups.push({ subtitle: lab.name, text: lab.description });
     }
     sections.push({ id: "research", type: "content", title: "Research & Labs", icon: "flask", groups });
+  }
+
+  // Research achievements — Ph.D.s awarded, registered scholars, sponsored grants
+  if (content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length) {
+    const tables: DataTable[] = [];
+    if (content.phdsAwarded?.length) {
+      tables.push({
+        title: `Ph.D.s Awarded (${content.phdsAwarded.length})`,
+        columns: ["Research Scholar", "Guide", "Thesis Title", "Year"],
+        rows: content.phdsAwarded.map((p) => [p.scholar, p.guide, p.title, p.year]),
+      });
+    }
+    if (content.researchScholars?.length) {
+      tables.push({
+        title: `Registered Research Scholars (${content.researchScholars.length})`,
+        columns: ["Research Scholar", "Guide", "Thesis Title", "Status"],
+        rows: content.researchScholars.map((p) => [p.scholar, p.guide, p.title ?? "", p.status]),
+      });
+    }
+    if (content.researchGrants?.length) {
+      tables.push({
+        title: "Sponsored Research Grants",
+        columns: ["Project Title", "Sponsoring Agency", "Year", "Grant", "Investigators"],
+        rows: content.researchGrants.map((g) => [g.title, g.agency, g.year, g.amount, g.investigators]),
+      });
+    }
+    sections.push({
+      id: "research-achievements",
+      type: "tables",
+      title: "Research Achievements",
+      icon: "clipboard",
+      tables,
+    });
+  }
+
+  // Placements — year-wise summary, recruiters & packages, student-wise detail
+  const placements = getDepartmentPlacements(contentKey);
+  if (placements && (placements.yearWise.length || placements.batches.length)) {
+    const tables: DataTable[] = [];
+    if (placements.yearWise.length) {
+      tables.push({
+        title: "Year-wise Placement Summary",
+        columns: ["Year", "Students", "Offers", "On-Campus", "Off-Campus", "Placed", "Placement %", "Companies"],
+        rows: placements.yearWise.map((y) => [
+          y.year,
+          y.students ?? "",
+          y.offers ?? "",
+          y.onCampus ?? "",
+          y.offCampus ?? "",
+          y.placed ?? "",
+          y.percent ? `${y.percent}%` : "",
+          y.companies ?? "",
+        ]),
+      });
+    }
+    for (const batch of placements.batches) {
+      if (batch.companies.length) {
+        tables.push({
+          title: `Recruiters & Packages — ${batch.batch} (${batch.companies.length})`,
+          columns: ["Company", "Package (LPA)", "Students Placed"],
+          rows: batch.companies.map((c) => [c.company, c.package, c.count]),
+        });
+      }
+      if (batch.students.length) {
+        tables.push({
+          title: `Students Placed — ${batch.batch} (${batch.students.length} offers)`,
+          columns: ["Student", "USN", "Mode", "Company", "LPA"],
+          rows: batch.students.map((s) => [s.name, s.usn, s.mode, s.company, s.lpa]),
+        });
+      }
+    }
+    sections.push({
+      id: "placements",
+      type: "tables",
+      title: "Placements",
+      icon: "briefcase",
+      tables,
+    });
   }
 
   // Detailed infrastructure/equipment tables from legacy pages.
@@ -219,7 +302,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     if (content.activities?.length)
       groups.push({
         subtitle: "Recent Events & Activities",
-        items: content.activities.map((a) => (a.date ? `${a.title} — ${a.date}` : a.title)),
+        items: content.activities.map((a) => ({ label: a.title, value: a.date })),
       });
     for (const assoc of content.associations ?? []) {
       const coords = assoc.coordinators?.length
@@ -228,6 +311,23 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       groups.push({ subtitle: assoc.name, text: `${assoc.about ?? ""}${coords}`.trim() });
     }
     sections.push({ id: "activities", type: "content", title: "Activities & Forums", icon: "calendar", groups });
+  }
+
+  // MoUs / industry collaborations
+  if (content.mous?.length) {
+    sections.push({
+      id: "mou",
+      type: "tables",
+      title: "MoUs & Collaborations",
+      icon: "handshake",
+      tables: [
+        {
+          title: "Memoranda of Understanding",
+          columns: ["Partner Organization", "Location", "Since"],
+          rows: content.mous.map((m) => [m.partner, m.location ?? "", m.since ?? ""]),
+        },
+      ],
+    });
   }
 
   // Infrastructure gallery (R2 photos)
@@ -292,8 +392,11 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     staff: { label: "Supporting Staff", icon: "users-round" },
     governance: { label: "Board Members", icon: "clipboard" },
     research: { label: "Research & Labs", icon: "clipboard" },
+    "research-achievements": { label: "Research Achievements", icon: "clipboard" },
+    placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
     activities: { label: "Activities", icon: "calendar" },
+    mou: { label: "MoUs", icon: "handshake" },
     infrastructure: { label: "Infrastructure", icon: "building-2" },
     contact: { label: "Contact", icon: "users-round" },
   };
