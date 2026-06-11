@@ -1,10 +1,21 @@
 import Image from "next/image";
-import { Download, ArrowDown, CheckCircle2, FileText, Mail, Phone } from "lucide-react";
+import {
+  Download,
+  ArrowDown,
+  CheckCircle2,
+  FileText,
+  Mail,
+  Phone,
+  Briefcase,
+  MapPin,
+} from "lucide-react";
 import { placementContent } from "@/data/placements/content";
-import { placementStats, topRecruiters } from "@/data/home/placements";
+import {
+  placementStats,
+  topRecruiters,
+  recruitersSheet,
+} from "@/data/home/placements";
 import { BrochureCover } from "@/components/placements/brochure-cover";
-import { RecruiterForm } from "@/components/placements/recruiter-form";
-import { BrandLogo } from "@/components/placements/brand-logo";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
 
@@ -24,6 +35,7 @@ export const metadata = {
 export default function PlacementsPage() {
   const { home, whyRecruit, policy, brochureHref, policyHref, accreditation, officers } =
     placementContent;
+  const [dean, ...otherOfficers] = officers;
 
   return (
     <div className="min-h-screen bg-white">
@@ -177,82 +189,120 @@ export default function PlacementsPage() {
       {/* Recruiters band */}
       <section id="recruiters" className="bg-orange-50/50 border-y border-orange-100 scroll-mt-24">
         <div className="container mx-auto px-4 py-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-10 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center">
             Recruiters who trust us
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            {topRecruiters.map((r) => (
-              <div
-                key={r.name}
-                className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-orange-100 bg-white p-6"
-              >
-                <BrandLogo
-                  name={r.name}
-                  domain={r.domain}
-                  className="h-10 w-auto max-w-[120px]"
-                  monogramClassName="h-12 w-12 text-lg"
-                />
-                <span className="text-sm font-medium text-gray-700">{r.name}</span>
-              </div>
-            ))}
+          <p className="text-sm text-gray-500 max-w-2xl mx-auto mb-10 text-center">
+            A snapshot of the 60+ companies that recruit from BEC across IT, core
+            engineering and consulting.
+          </p>
+          <div className="max-w-5xl mx-auto rounded-2xl border border-orange-100 bg-white p-4 sm:p-6 shadow-sm">
+            <Image
+              src={asset(recruitersSheet.src)}
+              alt={`Esteemed recruiters of Basaveshwar Engineering College, Bagalkote, including ${topRecruiters
+                .slice(0, 12)
+                .join(", ")} and more`}
+              width={recruitersSheet.width}
+              height={recruitersSheet.height}
+              sizes="(max-width: 1024px) 92vw, 1024px"
+              className="w-full h-auto rounded-lg"
+            />
           </div>
+          <ul className="sr-only">
+            {topRecruiters.map((name) => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      {/* Form + contacts band */}
+      {/* Contact band */}
       <section id="register" className="container mx-auto px-4 py-20 scroll-mt-24">
         <div className="max-w-2xl mx-auto text-center mb-12">
+          <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary mb-5">
+            Get in touch
+          </span>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Register your interest</h2>
           <p className="text-lg text-gray-600">
-            Planning a campus drive? Share your details and the placement office will
-            reach out with available slots for the season.
+            Planning a campus drive? Reach out to the Training &amp; Placement Cell and
+            the team will share available slots for the season.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-[1fr_1.1fr] gap-10 lg:gap-14 items-start max-w-5xl mx-auto">
-          {/* Contacts */}
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-widest text-primary mb-5">
-              Training &amp; Placement Cell
-            </h3>
-            <div className="space-y-3">
-              {officers.map((o) => (
-                <div
-                  key={o.name}
-                  className="rounded-2xl border border-gray-100 bg-gray-50/60 p-5"
-                >
-                  <div className="flex flex-wrap items-start justify-between gap-2">
-                    <div>
-                      <div className="font-bold text-gray-900">{o.name}</div>
-                      <div className="text-sm text-gray-500">{o.role}</div>
-                    </div>
-                    <span className="rounded-full bg-primary/10 px-3 py-0.5 text-xs font-semibold text-primary whitespace-nowrap">
-                      {o.scope}
-                    </span>
-                  </div>
-                  <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5 text-sm">
-                    {o.email && (
-                      <a
-                        href={`mailto:${o.email}`}
-                        className="inline-flex items-center gap-1.5 text-gray-600 hover:text-primary transition-colors"
-                      >
-                        <Mail className="w-4 h-4" /> {o.email}
-                      </a>
-                    )}
-                    <a
-                      href={`tel:+91${o.phone}`}
-                      className="inline-flex items-center gap-1.5 text-gray-600 hover:text-primary transition-colors"
-                    >
-                      <Phone className="w-4 h-4" /> +91 {o.phone}
-                    </a>
-                  </div>
+        <div className="max-w-5xl mx-auto">
+          {/* Featured primary contact — recruiter point of contact */}
+          <div className="rounded-3xl border border-primary/20 bg-linear-to-br from-orange-50 to-white p-8 md:p-10 shadow-xl shadow-orange-900/5">
+            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between md:gap-10">
+              <div className="flex items-start gap-5">
+                <div className="hidden sm:flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                  <Briefcase className="h-7 w-7" />
                 </div>
-              ))}
+                <div>
+                  <span className="rounded-full bg-primary/10 px-3 py-0.5 text-xs font-semibold text-primary">
+                    {dean.scope}
+                  </span>
+                  <h3 className="mt-3 text-2xl font-bold text-gray-900">{dean.name}</h3>
+                  <p className="text-gray-500">{dean.role}</p>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3 md:shrink-0">
+                {dean.email && (
+                  <a
+                    href={`mailto:${dean.email}`}
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-200 transition hover:bg-primary/90"
+                  >
+                    <Mail className="w-4 h-4" /> {dean.email}
+                  </a>
+                )}
+                <a
+                  href={`tel:+91${dean.phone}`}
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3.5 text-sm font-semibold text-gray-700 transition hover:border-primary hover:text-primary"
+                >
+                  <Phone className="w-4 h-4" /> +91 {dean.phone}
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Form */}
-          <RecruiterForm />
+          {/* Officer directory */}
+          <h3 className="mt-12 mb-5 text-sm font-bold uppercase tracking-widest text-gray-400 text-center">
+            More placement contacts
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {otherOfficers.map((o) => (
+              <div
+                key={o.name}
+                className="flex flex-col rounded-2xl border border-gray-100 bg-gray-50/60 p-6 transition-colors hover:border-primary/30 hover:bg-white"
+              >
+                <span className="self-start rounded-full bg-primary/10 px-3 py-0.5 text-xs font-semibold text-primary">
+                  {o.scope}
+                </span>
+                <div className="mt-4 font-bold text-gray-900">{o.name}</div>
+                <div className="text-sm text-gray-500">{o.role}</div>
+                <div className="mt-4 flex flex-col gap-1.5 text-sm">
+                  {o.email && (
+                    <a
+                      href={`mailto:${o.email}`}
+                      className="inline-flex items-center gap-1.5 text-gray-600 transition-colors hover:text-primary"
+                    >
+                      <Mail className="w-4 h-4" /> {o.email}
+                    </a>
+                  )}
+                  <a
+                    href={`tel:+91${o.phone}`}
+                    className="inline-flex items-center gap-1.5 text-gray-600 transition-colors hover:text-primary"
+                  >
+                    <Phone className="w-4 h-4" /> +91 {o.phone}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 flex items-center justify-center gap-2 text-center text-sm text-gray-500">
+            <MapPin className="w-4 h-4 shrink-0 text-primary" />
+            {home.contact.address}
+          </div>
         </div>
       </section>
     </div>

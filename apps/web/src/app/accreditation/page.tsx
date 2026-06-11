@@ -69,7 +69,7 @@ export default function AccreditationPage() {
       <PageHero
         eyebrow="Quality Assurance"
         title="Accreditation & Quality"
-        description="Basaveshwar Engineering College is an autonomous institution accredited by NAAC and NBA, ranked under NIRF and permanently affiliated to VTU, Belagavi. Explore the college's accreditation and quality-assurance records below."
+        description="Basaveshwar Engineering College is an autonomous institution accredited by NAAC and NBA, ranked under NIRF and affiliated to VTU, Belagavi. Explore the college's accreditation and quality-assurance records below."
         badges={[
           { label: "NAAC Accredited" },
           { label: "NBA Accredited", tone: "outline" },

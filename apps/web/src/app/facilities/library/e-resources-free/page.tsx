@@ -57,7 +57,7 @@ export default function EResourcesFreePage() {
 
       <LibraryBreadcrumb
         items={[
-          { label: "Facilities", href: "/facilities" },
+          { label: "Facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "E-Resources (Free)" }
         ]}

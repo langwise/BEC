@@ -32,7 +32,7 @@ export default function NirfPage() {
               ],
             },
             {
-              label: "2023 Submission",
+              label: "2023",
               documents: [
                 { title: "Engineering", url: asset("documents/nirf/nirf-engg-report-submitted-20-01-2023.pdf") },
                 { title: "Overall", url: asset("documents/nirf/nirf-overall-submitted-20-01-2023.pdf") },

@@ -43,7 +43,7 @@ export default function EResourcesPaidPage() {
 
       <LibraryBreadcrumb
         items={[
-          { label: "Facilities", href: "/facilities" },
+          { label: "Facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "E-Resources (Paid)" }
         ]}

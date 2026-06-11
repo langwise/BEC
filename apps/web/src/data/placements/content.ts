@@ -19,6 +19,12 @@ export const placementContent = {
       phone: "8904095779",
     },
     {
+      name: "Dr. C. L. Chayalakshmi",
+      role: "Assistant Placement Officer",
+      scope: "General enquiry",
+      phone: "9902678858",
+    },
+    {
       name: "Dr. Santosh B. Kumbalavati",
       role: "Assistant Placement Officer",
       scope: "Internship providers",

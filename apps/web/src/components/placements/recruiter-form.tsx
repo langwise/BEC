@@ -1,15 +1,13 @@
 "use client";
 
+import { Mail, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { placementContent } from "@/data/placements/content";
 
 /**
- * Embedded Google Form for collecting recruiter leads.
- *
- * To go live: open the Google Form → Send → "<>" (embed) tab → copy the src
- * from the iframe and paste it into `placementContent.recruiterFormSrc`
- * (data/placements/content.ts). While that is empty, a styled placeholder is
- * shown so the page never renders a broken iframe.
+ * Recruiter lead-capture. The embedded Google Form is disabled until a form
+ * URL is set in `placementContent.recruiterFormSrc` (data/placements/content.ts);
+ * until then recruiters are routed to the placement office directly.
  */
 export function RecruiterForm({
   className,
@@ -33,19 +31,34 @@ export function RecruiterForm({
     );
   }
 
+  const { contact } = placementContent.home;
+
   return (
     <div
       className={cn(
-        "rounded-2xl border border-dashed border-orange-200 bg-orange-50/40 p-10 text-center",
+        "rounded-2xl border border-orange-100 bg-orange-50/40 p-8 text-center",
         className
       )}
     >
-      <div className="text-sm font-semibold text-gray-900">Recruiter interest form</div>
-      <p className="mx-auto mt-2 max-w-sm text-sm text-gray-500">
-        The lead-capture Google Form will appear here. Add its embed URL to{" "}
-        <code className="rounded bg-white px-1 py-0.5 text-gray-600">recruiterFormSrc</code>{" "}
-        in <code className="rounded bg-white px-1 py-0.5 text-gray-600">data/placements/content.ts</code>.
+      <h3 className="text-lg font-bold text-gray-900">Talk to the placement office</h3>
+      <p className="mx-auto mt-2 max-w-sm text-sm text-gray-600">
+        Planning a campus drive? Reach out to {contact.name},{" "}
+        {contact.role}, and the team will share available slots for the season.
       </p>
+      <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a
+          href={`mailto:${contact.email}`}
+          className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-200 transition hover:bg-primary/90"
+        >
+          <Mail className="w-4 h-4" /> {contact.email}
+        </a>
+        <a
+          href={`tel:+91${contact.mobile}`}
+          className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 transition hover:border-primary hover:text-primary"
+        >
+          <Phone className="w-4 h-4" /> +91 {contact.mobile}
+        </a>
+      </div>
     </div>
   );
 }

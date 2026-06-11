@@ -16,7 +16,7 @@ export default function ContactPage() {
 
       <LibraryBreadcrumb
         items={[
-          { label: "Facilities", href: "/facilities" },
+          { label: "Facilities" },
           { label: "Library", href: "/facilities/library" },
           { label: "Contact" }
         ]}

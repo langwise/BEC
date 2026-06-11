@@ -23,8 +23,8 @@ const objectives = [
 
 const highlights = [
   { value: "1 of 9", label: "Engineering colleges selected in Karnataka" },
-  { value: "₹3 Lakh", label: "Govt. of Karnataka funding per selected IT project" },
-  { value: "10 / year", label: "Maximum projects supported per college" },
+  { value: "2013–14", label: "Launched under the Karnataka State Budget" },
+  { value: "KBITS", label: "Administered by KBITS, Govt. of Karnataka" },
 ];
 
 const events = [
@@ -111,7 +111,7 @@ export default function NainPage() {
               NAIN was established under the Department of Electronics, Information
               Technology, Biotechnology and Science &amp; Technology, Government of
               Karnataka. It emerged from the Karnataka ICT Group (KIG 2020) report —
-              formed under the chairmanship of Sri Mohandas Pai — which set out a
+              formed under the leadership of Mr. Mohandas Pai and Mr. B. V. Naidu — which set out a
               roadmap for Karnataka&rsquo;s leadership in ICT.
             </p>
             <p>
