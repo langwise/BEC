@@ -7,7 +7,7 @@ export const programmes = [
     description:
       "B.E. programmes in Civil, Mechanical, Electrical, CSE, ECE, ISE and more, preparing students for successful engineering careers.",
     count: "11 B.E. Programmes",
-    href: "/programs/programmes/ug",
+    href: "/academics/programmes/ug",
   },
   {
     icon: BookOpen,
@@ -15,7 +15,7 @@ export const programmes = [
     description:
       "M.Tech, MBA, and MCA programmes fostering specialization and research excellence across diverse fields.",
     count: "M.Tech, MBA, MCA",
-    href: "/programs/programmes/pg",
+    href: "/academics/programmes/pg",
   },
   {
     icon: FlaskConical,
@@ -23,7 +23,7 @@ export const programmes = [
     description:
       "PhD and M.Tech research opportunities driving innovation with ₹3.40 crores in research grants and 35+ industry partnerships.",
     count: "Multiple Research Areas",
-    href: "/programs/programmes/phd",
+    href: "/academics/programmes/phd",
   },
   {
     icon: Users,

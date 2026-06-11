@@ -21,8 +21,8 @@ const internalQuickLinks = [
 const internalResources = [
   { label: "Departments", href: "/departments" },
   { label: "Library", href: "/library" },
-  { label: "Scholarships", href: "/programs/scholarships" },
-  { label: "Examinations", href: "/programs/examinations" },
+  { label: "Scholarships", href: "/academics/scholarships" },
+  { label: "Examinations", href: "/academics/examinations" },
   { label: "Contact Us", href: "/institute/contact" },
   { label: "RTI", href: "/administration/disclosures/rti" },
 ];
