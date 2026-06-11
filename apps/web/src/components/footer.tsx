@@ -20,7 +20,7 @@ const internalQuickLinks = [
 
 const internalResources = [
   { label: "Departments", href: "/departments" },
-  { label: "Library", href: "/facilities/library" },
+  { label: "Library", href: "/library" },
   { label: "Scholarships", href: "/programs/scholarships" },
   { label: "Examinations", href: "/programs/examinations" },
   { label: "Contact Us", href: "/institute/contact" },
