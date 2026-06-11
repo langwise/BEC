@@ -18,6 +18,9 @@ export type DepartmentContent = {
   psos?: CodedItem[];
   highlights?: string[];
   researchAreas?: { supervisor: string; area: string; university?: string }[];
+  phdsAwarded?: { scholar: string; guide: string; title: string; year: string }[];
+  researchScholars?: { scholar: string; usn?: string; guide: string; title?: string; status: string }[];
+  researchGrants?: { title: string; agency: string; year: string; amount: string; investigators: string }[];
   labs?: { name: string; description?: string }[];
   supportingStaff?: { name: string; designation: string }[];
   committeeGroups?: {
@@ -28,6 +31,7 @@ export type DepartmentContent = {
   softwareItems?: { name: string; version?: string; usage?: string }[];
   activities?: { title: string; date?: string; description?: string }[];
   associations?: { name: string; about?: string; coordinators?: string[] }[];
+  mous?: { partner: string; location?: string; since?: string }[];
   contact?: { name?: string; designation?: string; phone?: string; email?: string };
   additionalContacts?: { name: string; designation?: string; phone?: string; email?: string }[];
   documents?: { title: string; file: string }[];

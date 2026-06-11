@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "motion/react";
-import { useState } from "react";
 import { cn } from "@/lib/utils";
 import {
   Home,
@@ -15,6 +14,8 @@ import {
   Book,
   Target,
   Eye,
+  Briefcase,
+  Handshake,
   LucideIcon,
 } from "lucide-react";
 
@@ -31,6 +32,8 @@ const iconMap: Record<string, LucideIcon> = {
   "book": Book,
   "target": Target,
   "eye": Eye,
+  "briefcase": Briefcase,
+  "handshake": Handshake,
 };
 
 interface SidebarItem {
@@ -65,16 +68,13 @@ export default function DepartmentSidebar({ items = defaultItems, activeId, onSe
         </h2>
         
         <nav className="flex flex-col space-y-1">
-          {items.map((item, index) => {
+          {items.map((item) => {
             const Icon = iconMap[item.icon] || Home; // Fallback to Home if icon not found
             const isActive = activeId === item.id;
-            
+
             return (
               <motion.button
                 key={item.id}
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.03 }}
                 onClick={() => onSelect(item.id)}
                 className={cn(
                   "group flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 w-full text-left",

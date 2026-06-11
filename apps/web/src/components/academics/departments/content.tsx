@@ -3,10 +3,12 @@
 import { motion } from "motion/react";
 import { iconMap } from "./icons";
 
+type GroupItem = string | { label: string; value?: string };
+
 interface ContentGroup {
   subtitle?: string;
   text?: string;
-  items?: string[];
+  items?: GroupItem[];
 }
 
 interface ContentSectionProps {
@@ -18,10 +20,32 @@ interface ContentSectionProps {
   icon?: string;
 }
 
-function BulletList({ items }: { items: string[] }) {
+function BulletList({ items }: { items: GroupItem[] }) {
+  // Structured entries (label + optional detail) render as a clean divided list —
+  // primary line + muted secondary, never "label — value" crammed into one string.
+  const structured = items.some((it) => typeof it !== "string");
+
+  if (structured) {
+    return (
+      <ul className="mt-3 divide-y divide-stone-100 overflow-hidden rounded-xl border border-stone-200 bg-white not-prose">
+        {items.map((item, i) => {
+          const obj = typeof item === "string" ? { label: item } : item;
+          return (
+            <li key={i} className="px-4 py-3">
+              <p className="font-medium text-gray-900 leading-snug">{obj.label}</p>
+              {obj.value && (
+                <p className="mt-0.5 text-sm text-gray-500 leading-relaxed">{obj.value}</p>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+
   return (
     <ul className="mt-3 space-y-2 list-none pl-0">
-      {items.map((item, i) => (
+      {(items as string[]).map((item, i) => (
         <li key={i} className="flex items-start gap-3 text-gray-600 leading-relaxed">
           <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
           <span>{item}</span>

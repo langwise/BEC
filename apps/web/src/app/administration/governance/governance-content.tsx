@@ -100,14 +100,17 @@ const academicCouncilDocuments = [
   },
 ];
 
+// Ordered top-down by governance hierarchy: parent trust → statutory board →
+// principal → deans/officers → HODs → structure → documents.
 const anchorNav = [
   { id: "overview", label: "Overview" },
-  { id: "leadership", label: "Leadership" },
-  { id: "deans", label: "Deans & Officers" },
   { id: "sangha", label: "B.V.V. Sangha" },
+  { id: "director", label: "Director" },
   { id: "bog", label: "Board of Governors" },
-  { id: "org-chart", label: "Organization Chart" },
+  { id: "leadership", label: "Principal" },
+  { id: "deans", label: "Deans & Officers" },
   { id: "hods", label: "HOD Directory" },
+  { id: "org-chart", label: "Organization Chart" },
   { id: "documents", label: "Documents" },
 ];
 
@@ -131,10 +134,7 @@ export function GovernanceContent() {
   return (
     <main className="bg-background text-foreground">
       <section className="relative overflow-hidden border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#f97316_0%,transparent_35%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_40%,#0f172a_0%,transparent_28%)]" />
-        </div>
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,color-mix(in_oklch,var(--primary)_14%,transparent)_0%,transparent_45%)]" />
         <div className="relative container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
             Administration · Governance
@@ -183,185 +183,136 @@ export function GovernanceContent() {
         id="overview"
         className="py-14 md:py-18"
       >
-        <div className="container mx-auto max-w-6xl px-4 lg:px-6 grid gap-10 md:grid-cols-[1.1fr_0.9fr] items-start">
-          <div className="space-y-4">
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6">
+          <div className="max-w-3xl space-y-4">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
               Governance overview
             </h2>
             <p className="text-base leading-relaxed text-gray-700">
               Basaveshwar Engineering College operates under the aegis of B.V.V. Sangha with
-              statutory oversight by the Board of Governors. The Principal (Member Secretary)
+              statutory oversight by the Board of Governors. The Principal, as Member Secretary,
               leads day-to-day execution alongside Deans, Controllers, and Heads of Departments,
               ensuring policies, accreditation, and student outcomes remain aligned to mission.
             </p>
-            <div className="grid gap-3 sm:grid-cols-2">
-              <Card className="rounded-sm border-stone-200">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg font-semibold text-gray-900">
-                    Autonomy & Compliance
-                  </CardTitle>
-                  <CardDescription className="text-sm text-gray-600">
-                    Guided by BoG, VTU/UGC/AICTE norms, and institutional policies.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-              <Card className="rounded-sm border-stone-200">
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-lg font-semibold text-gray-900">
-                    Academic Quality
-                  </CardTitle>
-                  <CardDescription className="text-sm text-gray-600">
-                    Deans & HODs steward curriculum, accreditation, and learner success.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </div>
           </div>
-          <Card className="rounded-sm border-stone-200">
-            <CardHeader className="space-y-2 border-b border-stone-200 pb-4">
-              <CardTitle className="text-lg font-semibold text-gray-900">
-                At a glance
-              </CardTitle>
-              <CardDescription className="text-sm text-gray-600">
-                Snapshot of key governance touchpoints.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="pt-5 grid gap-4">
-              <div className="flex items-start gap-3">
-                <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-primary" />
-                <div>
-                  <p className="font-semibold text-gray-900">Board of Governors</p>
-                  <p className="text-sm text-gray-600">
-                    Strategy, compliance, approvals, and oversight.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-secondary" />
-                <div>
-                  <p className="font-semibold text-gray-900">Principal & Deans</p>
-                  <p className="text-sm text-gray-600">
-                    Execution, academic administration, exams, placements, and development.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-amber-500" />
-                <div>
-                  <p className="font-semibold text-gray-900">Heads of Department</p>
-                  <p className="text-sm text-gray-600">
-                    Programme delivery, labs, BOS inputs, and student success per department.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
-      <section
-        id="leadership"
-        className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
-      >
-        <div className="container mx-auto max-w-6xl px-4 lg:px-6 grid gap-8 md:grid-cols-[0.8fr_1.2fr] items-center">
-          <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
-            <Image
-              src={principal.photo}
-              alt={principal.name}
-              fill
-              sizes="(max-width: 768px) 100vw, 40vw"
-              className="object-cover object-top"
-              priority
-            />
-          </div>
-          <div className="space-y-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
-              Leadership
-            </p>
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-              {principal.name}
-            </h2>
-            <Badge className="rounded-sm bg-primary text-white">
-              {principal.role}
-            </Badge>
-            <p className="text-base leading-relaxed text-gray-700">
-              The Principal serves as Member Secretary to the Board of Governors and leads
-              the institution&apos;s academic and administrative execution alongside the Deans,
-              Controller of Examinations, and Heads of Department.
-            </p>
-            {principal.email ? (
-              <Link
-                href={`mailto:${principal.email}`}
-                className="inline-flex text-primary text-sm font-semibold hover:underline underline-offset-4"
+          <dl className="mt-10 grid border-y border-stone-200 sm:grid-cols-3 sm:divide-x sm:divide-stone-200">
+            {[
+              {
+                title: "Board of Governors",
+                body: "Strategy, compliance, approvals, and statutory oversight.",
+              },
+              {
+                title: "Principal & Deans",
+                body: "Academic administration, examinations, placements, and development.",
+              },
+              {
+                title: "Heads of Department",
+                body: "Programme delivery, labs, BOS inputs, and student success.",
+              },
+            ].map((tier) => (
+              <div
+                key={tier.title}
+                className="border-t border-stone-200 py-5 first:border-t-0 sm:border-t-0 sm:px-6 sm:py-6 sm:first:pl-0"
               >
-                {principal.email}
-              </Link>
-            ) : null}
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="deans"
-        className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-10"
-      >
-        <div className="space-y-6">
-          <SectionHeading
-            title="Deans"
-            description="Academic and administrative portfolios steering curriculum, placements, research, and quality."
-          />
-          <DeansGrid deans={deans} />
-        </div>
-
-        <div className="space-y-6">
-          <SectionHeading
-            title="Key officers"
-            description="Statutory and support functions essential to day-to-day operations."
-          />
-          <DeansGrid deans={officers} />
+                <dt className="font-semibold text-gray-900">{tier.title}</dt>
+                <dd className="mt-1 text-sm leading-relaxed text-gray-600">{tier.body}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
       <section
         id="sangha"
-        className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-8"
+        className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
       >
-        <SectionHeading
-          eyebrow="Parent Trust"
-          title="B.V.V. Sangha leadership"
-          description={sangha.intro}
-        />
-
-        <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
-          <Image
-            src={sangha.groupPhoto}
-            alt="B.V.V. Sangha leadership"
-            fill
-            sizes="(max-width: 1152px) 100vw, 1152px"
-            className="object-cover"
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
+          <SectionHeading
+            eyebrow="Parent Trust"
+            title="B.V.V. Sangha leadership"
+            description={sangha.intro}
           />
-        </div>
 
-        <PersonGrid>
-          {sangha.members.map((member) => (
-            <PersonCard
-              key={member.name}
-              photo={member.photo}
-              name={member.name}
-              badges={[
-                { label: member.role, tone: "primary" },
-                ...(member.verify
-                  ? [{ label: "To confirm", tone: "muted" as const }]
-                  : []),
-              ]}
+          <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
+            <Image
+              src={sangha.groupPhoto}
+              alt="B.V.V. Sangha leadership"
+              fill
+              sizes="(max-width: 1152px) 100vw, 1152px"
+              className="object-cover"
             />
-          ))}
-        </PersonGrid>
+          </div>
+
+          <PersonGrid>
+            {sangha.members.map((member) => (
+              <PersonCard
+                key={member.name}
+                photo={member.photo}
+                name={member.name}
+                badges={[
+                  { label: member.role, tone: "primary" },
+                  ...(member.verify
+                    ? [{ label: "To confirm", tone: "muted" as const }]
+                    : []),
+                ]}
+              />
+            ))}
+          </PersonGrid>
+        </div>
+      </section>
+
+      <section
+        id="director"
+        className="border-t border-stone-200 py-14 md:py-18"
+      >
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
+          <SectionHeading
+            eyebrow="B.V.V. Sangha"
+            title="Director of Technical Education"
+            description="The Director leads technical education across B.V.V. Sangha's institutes, steering BEC's growth, accreditation, and academic strategy on behalf of the parent trust."
+          />
+
+          <Card className="overflow-hidden rounded-sm border-stone-200 p-0 shadow-sm">
+            <div className="grid gap-0 md:grid-cols-[1fr_300px]">
+              <div className="flex flex-col justify-center gap-4 p-6 md:p-8">
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-semibold text-gray-900">
+                    Dr. R. N. Herkal
+                  </h3>
+                  <Badge className="rounded-sm bg-primary text-white">
+                    Director of Technical Education, B.V.V. Sangha
+                  </Badge>
+                </div>
+                <p className="text-base leading-relaxed text-gray-700">
+                  Under his leadership BEC has introduced BE-AIML and M.Tech Defence
+                  Technology, secured an AICTE Idea Lab, and accredited all its UG
+                  programmes — keeping the college ready for NEP-2020.
+                </p>
+                <Link
+                  href="/administration/director"
+                  className="inline-flex w-fit items-center gap-2 rounded-sm border border-stone-200 bg-white px-4 py-2 text-sm font-semibold text-primary transition-colors hover:border-primary/60"
+                >
+                  Read the Director&apos;s message →
+                </Link>
+              </div>
+              <div className="relative order-first aspect-4/5 w-full bg-stone-100 md:order-last md:aspect-auto md:min-h-[340px]">
+                <Image
+                  src={asset("governance/director/cine9670.webp")}
+                  alt="Dr. R. N. Herkal"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 300px"
+                  className="object-cover object-top"
+                />
+              </div>
+            </div>
+          </Card>
+        </div>
       </section>
 
       <section
         id="bog"
-        className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
+        className="border-t border-stone-200 py-14 md:py-18"
       >
         <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
           <SectionHeading
@@ -390,8 +341,118 @@ export function GovernanceContent() {
       </section>
 
       <section
+        id="leadership"
+        className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
+      >
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
+          <SectionHeading
+            eyebrow="Leadership"
+            title="Principal & Member Secretary"
+            description="The Principal serves as Member Secretary to the Board of Governors and leads the institution's academic and administrative execution alongside the Deans, Controller of Examinations, and Heads of Department."
+          />
+
+          <Card className="overflow-hidden rounded-sm border-stone-200 p-0 shadow-sm">
+            <div className="grid gap-0 md:grid-cols-[300px_1fr]">
+              <div className="relative aspect-4/5 w-full bg-stone-100 md:aspect-auto md:min-h-[340px]">
+                <Image
+                  src={principal.photo}
+                  alt={principal.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 300px"
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+              <div className="flex flex-col justify-center gap-4 p-6 md:p-8">
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-semibold text-gray-900">
+                    {principal.name}
+                  </h3>
+                  <Badge className="rounded-sm bg-primary text-white">
+                    {principal.role}
+                  </Badge>
+                </div>
+                <p className="text-base leading-relaxed text-gray-700">
+                  As Member Secretary to the Board of Governors, the Principal translates the
+                  Board&apos;s policies into day-to-day execution — overseeing academics,
+                  examinations, placements, research, and institutional development across all
+                  departments.
+                </p>
+                <div className="flex flex-wrap items-center gap-3">
+                  <Link
+                    href="/administration/principal"
+                    className="inline-flex w-fit items-center gap-2 rounded-sm border border-stone-200 bg-white px-4 py-2 text-sm font-semibold text-primary transition-colors hover:border-primary/60"
+                  >
+                    Read the Principal&apos;s message →
+                  </Link>
+                  {principal.email ? (
+                    <Link
+                      href={`mailto:${principal.email}`}
+                      className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
+                    >
+                      {principal.email}
+                    </Link>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      <section
+        id="deans"
+        className="border-t border-stone-200 py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-10"
+      >
+        <div className="space-y-6">
+          <SectionHeading
+            title="Deans"
+            description="Academic and administrative portfolios steering curriculum, placements, research, and quality."
+          />
+          <DeansGrid deans={deans} />
+        </div>
+
+        <div className="space-y-6">
+          <SectionHeading
+            title="Key officers"
+            description="Statutory and support functions essential to day-to-day operations."
+          />
+          <DeansGrid deans={officers} />
+        </div>
+      </section>
+
+      <section
+        id="hods"
+        className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
+      >
+        <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
+          <SectionHeading
+            title="HOD directory"
+            description="Heads of Department across all programmes. Cards awaiting an update will be confirmed from the department pages."
+          />
+
+          <PersonGrid>
+            {hods.map((hod) => (
+              <PersonCard
+                key={hod.department}
+                photo={hod.photo}
+                name={hod.name || hod.department}
+                description={hod.name ? hod.department : undefined}
+                email={hod.email}
+                badges={[
+                  hod.name
+                    ? { label: "Head of Department", tone: "muted" }
+                    : { label: "Awaiting update", tone: "outline" },
+                ]}
+              />
+            ))}
+          </PersonGrid>
+        </div>
+      </section>
+
+      <section
         id="org-chart"
-        className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-6"
+        className="border-t border-stone-200 py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-6"
       >
         <div className="space-y-2">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
@@ -439,37 +500,8 @@ export function GovernanceContent() {
       </section>
 
       <section
-        id="hods"
-        className="border-t border-stone-200 bg-stone-50/70 py-14 md:py-18"
-      >
-        <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
-          <SectionHeading
-            title="HOD directory"
-            description="Heads of Department across all programmes. Cards awaiting an update will be confirmed from the department pages."
-          />
-
-          <PersonGrid>
-            {hods.map((hod) => (
-              <PersonCard
-                key={hod.department}
-                photo={hod.photo}
-                name={hod.name || hod.department}
-                description={hod.name ? hod.department : undefined}
-                email={hod.email}
-                badges={[
-                  hod.name
-                    ? { label: "Head of Department", tone: "muted" }
-                    : { label: "Awaiting update", tone: "outline" },
-                ]}
-              />
-            ))}
-          </PersonGrid>
-        </div>
-      </section>
-
-      <section
         id="documents"
-        className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-6"
+        className="border-t border-stone-200 py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-6"
       >
         <div className="space-y-2">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
