@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
-
 import { PageHero } from "@/components/common/page-hero";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { SectionHeading } from "@/components/common/section-heading";
+import { pageMetadata } from "@/lib/seo";
 import {
   naacCertification,
   naacCriteria,
@@ -10,11 +9,12 @@ import {
   naacReview,
 } from "@/data/accreditation/naac";
 
-export const metadata: Metadata = {
-  title: "NAAC Accreditation | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "NAAC Accreditation",
   description:
-    "NAAC Self-Study Report (Cycle 2), criterion-wise metrics, DVV clarifications, appeal documents and the accreditation certificate for Basaveshwar Engineering College, Bagalkote.",
-};
+    "NAAC Self-Study Report (Cycle 2) for BEC Bagalkote: criterion-wise metrics, DVV clarifications, revised DVV and appeal records, plus the accreditation certificate.",
+  path: "/accreditation/naac",
+});
 
 export default function NaacPage() {
   return (

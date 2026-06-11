@@ -1,9 +1,15 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Building2, Users, Zap, CheckCircle2 } from "lucide-react";
 import { asset } from "@/lib/assets";
+
+export const metadata = pageMetadata({
+    title: "Sir M. Visvesavaraya Block",
+    description:
+        "Sir M. Visvesavaraya Block at BEC Bagalkote, started in 1968 for senior boys, offers 128 rooms for 384 students with vegetarian mess, library, gym and computer centre.",
+    path: "/academics/hostel/v-block",
+});
 
 export default function VBlockPage() {
     return (

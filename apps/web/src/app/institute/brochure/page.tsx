@@ -3,12 +3,14 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/common/page-hero";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Institute Brochure | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "Institute Brochure",
   description:
-    "Download the Basaveshwar Engineering College, Bagalkote institute brochure — scheme, programmes and prospectus.",
-};
+    "Download the BEC Bagalkote institute brochure — an overview of programmes, scheme of study, prospectus and admission information for the college established in 1963.",
+  path: "/institute/brochure",
+});
 
 export default function BrochurePage() {
   return (

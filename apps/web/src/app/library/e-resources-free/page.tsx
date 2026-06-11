@@ -1,13 +1,17 @@
-"use client";
-
-
-
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
 import { LibrarySidebar } from "@/components/library/library-sidebar";
 import { ResourceCard } from "@/components/library/resource-card";
 import { Globe } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Library Free E-Resources",
+  description:
+    "Open-access e-resources curated by BEC Library: patent databases, information gateways, e-theses, MIT OpenCourseWare, NDLI and institutional repositories.",
+  path: "/library/e-resources-free",
+});
 
 export default function EResourcesFreePage() {
   // Free / open-access e-resources as listed on becbgk.edu/Library (e-resources free).

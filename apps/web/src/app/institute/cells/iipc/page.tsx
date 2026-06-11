@@ -6,13 +6,14 @@ import { SectionHeading } from "@/components/common/section-heading";
 import { PersonCard, PersonGrid } from "@/components/common/person-card";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title:
-    "Industry-Institute Partnership Cell (IIPC) | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "Industry-Institute Partnership Cell (IIPC)",
   description:
-    "The Industry-Institute Partnership Cell (IIPC) at Basaveshwar Engineering College, Bagalkote — the college's interface with industry through guest lectures, internships, live projects, consultancy and industry-academia conclaves.",
-};
+    "BEC Bagalkote's Industry-Institute Partnership Cell (IIPC) bridges academia and industry through guest lectures, internships, live projects, consultancy and industry-academia conclaves.",
+  path: "/institute/cells/iipc",
+});
 
 const objectives = [
   "Strengthen linkages and expertise between industry and the institution",

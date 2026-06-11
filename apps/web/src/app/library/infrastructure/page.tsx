@@ -1,5 +1,3 @@
-"use client";
-
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -14,6 +12,14 @@ import {
   Laptop,
   Shield,
 } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Library Infrastructure Facility",
+  description:
+    "BEC Library spans 1,970 sq.m across six sections, fully automated on Koha ILS with RFID security gate, self-check kiosk, book scanner and Web OPAC access.",
+  path: "/library/infrastructure",
+});
 
 const spaceImages = [
   { src: asset("facilities/library/cine1235.webp"), alt: "Reading hall with study tables" },

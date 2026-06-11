@@ -1,6 +1,4 @@
 // File: src/app/library/about/page.tsx
-"use client";
-
 import { FadeIn } from "@/components/animations/fade-in";
 import { LibraryBreadcrumb } from "@/components/library/library-breadcrumb";
 import { LibraryPageHeader } from "@/components/library/library-page-header";
@@ -8,6 +6,14 @@ import { LibrarySidebar } from "@/components/library/library-sidebar";
 import { asset } from "@/lib/assets";
 import { BookOpen, Target, Eye, Award, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "About the Library",
+  description:
+    "Established in 1963, the BEC Library and Information Centre spans 1,970 sq.m across six sections, holding 1,38,000 volumes over 43,695 titles plus e-resources.",
+  path: "/library/about",
+});
 
 export default function AboutLibraryPage() {
   return (

@@ -11,12 +11,14 @@ import {
 } from "lucide-react";
 
 import { PageHero } from "@/components/common/page-hero";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Cells & Centres | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "Cells & Centres",
   description:
-    "Innovation, incubation, industry-partnership and entrepreneurship cells at Basaveshwar Engineering College, Bagalkote — IIC, IIPC, NAIN, BEC-STEP and BEC-CED.",
-};
+    "Innovation, incubation, industry-partnership and entrepreneurship cells at BEC Bagalkote — IIC, BEC-IEP, IIPC, NAIN, BEC-STEP and BEC-CED driving campus start-up culture.",
+  path: "/institute/cells",
+});
 
 const cards = [
   {

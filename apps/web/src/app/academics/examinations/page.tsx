@@ -1,7 +1,13 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Building2, CheckCircle2, Award } from "lucide-react";
+
+export const metadata = pageMetadata({
+    title: "Autonomous Examination Section",
+    description:
+        "BEC Bagalkote's Autonomous Examination Section, established in 2007 under VTU autonomy, oversees course registration, CIE/SEE exams, result processing and grade card issuance.",
+    path: "/academics/examinations",
+});
 
 export default function ExaminationsPage() {
     return (

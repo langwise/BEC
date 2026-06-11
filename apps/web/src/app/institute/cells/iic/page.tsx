@@ -9,13 +9,14 @@ import { PersonCard, PersonGrid } from "@/components/common/person-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset, assetsUnder } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title:
-    "Institution's Innovation Council (IIC) | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "Institution's Innovation Council (IIC)",
   description:
-    "The Institution's Innovation Council (IIC) at Basaveshwar Engineering College, Bagalkote — a MoE Innovation Cell council fostering innovation, entrepreneurship and start-up culture on campus.",
-};
+    "BEC Bagalkote's Institution's Innovation Council (IIC), a MoE Innovation Cell body fostering innovation, entrepreneurship and start-up culture — a 4.5-star, South West Zone best-performing council.",
+  path: "/institute/cells/iic",
+});
 
 const focusAreas = [
   "Creating vibrant local innovation ecosystems on campus",

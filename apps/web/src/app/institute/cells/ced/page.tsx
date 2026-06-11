@@ -5,13 +5,14 @@ import { SectionHeading } from "@/components/common/section-heading";
 import { PersonCard, PersonGrid } from "@/components/common/person-card";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title:
-    "Centre for Entrepreneurship Development (BEC-CED) | Basaveshwar Engineering College, Bagalkote",
+export const metadata: Metadata = pageMetadata({
+  title: "Centre for Entrepreneurship Development (BEC-CED)",
   description:
-    "The Centre for Entrepreneurship Development (BEC-CED) at Basaveshwar Engineering College, Bagalkote — coordinators and activity records.",
-};
+    "The Centre for Entrepreneurship Development (BEC-CED) at BEC Bagalkote fosters an entrepreneurial mindset among students through its coordinators, activities and activity reports.",
+  path: "/institute/cells/ced",
+});
 
 const coordinators = [
   {

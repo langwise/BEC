@@ -9,6 +9,15 @@ import {
   type DepartmentEntry,
   type DepartmentType,
 } from "@/data/departments-catalog";
+import { BreadcrumbsJsonLd } from "@/components/seo/jsonld";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Departments",
+  description:
+    "Explore the academic departments at Basaveshwar Engineering College, Bagalkote — undergraduate, postgraduate and science & humanities programmes spanning engineering, sciences and management.",
+  path: "/departments",
+});
 
 function DepartmentCard({
   department,
@@ -78,6 +87,7 @@ export default function DepartmentsPage() {
 
   return (
     <div className="min-h-screen bg-linear-to-br from-orange-50 via-white to-slate-50 relative">
+      <BreadcrumbsJsonLd items={[{ name: "Departments", path: "/departments" }]} />
       <section className="relative overflow-hidden border-b border-stone-200 bg-linear-to-br from-orange-50 via-white to-stone-50 py-14 md:py-18">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#f97316_0%,transparent_35%)]" />

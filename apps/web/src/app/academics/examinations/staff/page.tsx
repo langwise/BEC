@@ -1,7 +1,13 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { UserCircle } from "lucide-react";
+
+export const metadata = pageMetadata({
+    title: "Examination Section Staff",
+    description:
+        "Meet the Examination Section team at BEC Bagalkote, led by Controller of Examinations Dr. Chandrashekhar K. and supported by faculty, programmers and support staff.",
+    path: "/academics/examinations/staff",
+});
 
 const staffList = [
     { sl: 1, name: "Sri. Praveen Yalasangi", position: "Asst. Professor" },

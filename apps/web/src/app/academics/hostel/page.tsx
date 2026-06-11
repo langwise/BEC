@@ -1,5 +1,4 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import {
   Users,
@@ -9,6 +8,13 @@ import {
   CheckCircle2,
   LayoutDashboard,
 } from "lucide-react";
+
+export const metadata = pageMetadata({
+  title: "Hostel Facilities & Administration",
+  description:
+    "BEC Bagalkote offers boys' and girls' hostels managed by the B.V.V. Sangha Student Welfare & Hostel Committee, with vegetarian mess, RO water, gym, internet and 24x7 CCTV.",
+  path: "/academics/hostel",
+});
 import {
   Table,
   TableBody,

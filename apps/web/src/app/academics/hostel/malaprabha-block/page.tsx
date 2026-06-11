@@ -1,9 +1,15 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Building2, Users, Zap, CheckCircle2, ImageIcon } from "lucide-react";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { assetsUnder } from "@/lib/assets";
+
+export const metadata = pageMetadata({
+    title: "Malaprabha Ladies Hostel",
+    description:
+        "Malaprabha Ladies Hostel at BEC Bagalkote, started in 1998, houses up to 1000 girl students across 374 rooms with vegetarian mess, library, solar hot water and CCTV.",
+    path: "/academics/hostel/malaprabha-block",
+});
 
 const galleryImages = assetsUnder("facilities/hostels/girls/").map((src, index) => ({
     src,

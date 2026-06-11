@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Globe, GraduationCap, Briefcase, HeartHandshake, Mail, Phone, Users } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Alumni Association (BECAA) | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Alumni Association (BECAA)",
   description:
-    "The Basaveshwar Engineering College Alumni Association (BECAA), established 2001 — its objectives, leadership, contact and alumni impact.",
-};
+    "BEC Alumni Association (BECAA), established 2001 — 500+ members, 11 directors and 5 office bearers driving mentorship, career support and networking for graduates.",
+  path: "/student-life/alumni",
+});
 
 const contactDetails = {
   name: "Mr. Basavaraj Endigeri",

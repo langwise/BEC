@@ -3,7 +3,16 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wifi, Monitor, BookOpen, Warehouse, Building, Stethoscope, Store, Podcast, ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Campus Infrastructure",
+  description:
+    "BEC Bagalkote's 93-acre campus — 1 Gbps connectivity, 1,500 computers, a 1.40-lakh-volume RFID library, a 1,651-seat auditorium, hostels for 1,500 students and specialised research labs.",
+  path: "/institute/campus/infrastructure",
+});
 
 export default function InfrastructurePage() {
   const facilities = [

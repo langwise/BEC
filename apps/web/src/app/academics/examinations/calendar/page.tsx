@@ -1,9 +1,15 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { asset } from "@/lib/assets";
 import { Calendar, ExternalLink } from "lucide-react";
 import Link from "next/link";
+
+export const metadata = pageMetadata({
+    title: "Academic Calendar of Events",
+    description:
+        "Download BEC Bagalkote's academic calendar of events for BE, M.Tech and MBA programmes across odd and even semesters, including the latest 2024-25 schedules.",
+    path: "/academics/examinations/calendar",
+});
 
 const events = [
     { title: "Academic Calender, Even Semester (IV, VI & VIII Sem BE) 2024-25", link: asset("documents/calendar/academic-calender-odd-semester-iv-vi-viii-ug-20250215-13320622.pdf"), isNew: true },

@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  title: "About B.V.V. Sangha",
+  description:
+    "B.V.V. Sangha, Bagalkot — founded 1906, the century-old parent body of BEC Bagalkote runs 120+ institutes across 4 districts, serving 50,000+ students on the philosophy of Work is Worship.",
+  path: "/institute/about-sangha",
+});
 
 export default function AboutSanghaPage() {
   return (

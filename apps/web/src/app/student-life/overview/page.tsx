@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
@@ -19,11 +19,12 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Life at BEC | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Life at BEC",
   description:
-    "Student life at Basaveshwar Engineering College, Bagalkote — culture, clubs, sports, hostels and a vibrant campus community.",
-};
+    "Explore student life at BEC Bagalkote — a 93-acre green campus with hostels, BEC Dhwani 90.4 FM, sports, and student clubs like Mindhog, NSS and IEEE.",
+  path: "/student-life/overview",
+});
 
 const highlights = [
   { title: "93+ Acres", subtitle: "Green Campus", icon: Leaf },

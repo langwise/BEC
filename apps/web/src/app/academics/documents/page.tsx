@@ -1,5 +1,4 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { PageHeader } from "@/components/placements/page-header";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -16,6 +15,13 @@ const documentsData = [
     { id: 7, original: "Transfer Certificate (If Available)", xerox: "Transfer Certificate (If Available)" },
     { id: 8, original: "Aadhar Card", xerox: "Aadhar Card" },
 ];
+
+export const metadata = pageMetadata({
+    title: "Admission Documents Checklist",
+    description:
+        "Checklist of original documents and three sets of copies required for BE admission at BEC Bagalkote — CET/COMEDK order, marks cards, study, caste and income certificates.",
+    path: "/academics/documents",
+});
 
 export default function DocumentsPage() {
     return (

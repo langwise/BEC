@@ -1,9 +1,15 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { GraduationCap, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
+
+export const metadata = pageMetadata({
+    title: "Examination Results Portal",
+    description:
+        "Access BEC Bagalkote examination results through the Autonomous Results Portal — view outcomes for Regular, Re-appear and Makeup semester end examinations.",
+    path: "/academics/examinations/results",
+});
 
 export default function ResultsPage() {
     return (

@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
 import { PageHero } from "@/components/common/page-hero";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "NBA Accreditation | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "NBA Accreditation",
   description:
-    "National Board of Accreditation (NBA) programme accreditation and extension letters for Basaveshwar Engineering College, Bagalkote.",
-};
+    "National Board of Accreditation (NBA) programme accreditation for BEC Bagalkote: grant letters for CSE, ISE, ECE, EEE, EIE and Biotechnology plus extension and compliance records.",
+  path: "/accreditation/nba",
+});
 
 export default function NbaPage() {
   return (

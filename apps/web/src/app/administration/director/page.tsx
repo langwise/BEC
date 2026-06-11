@@ -1,5 +1,13 @@
 import { LeadershipMessage } from "@/components/common/leadership-message";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Director's Message",
+  description:
+    "Message from Dr. R. N. Herkal, Director of Technical Education at B.V.V. Sangha, on BEC Bagalkote's growth since 1963, BE-AIML, M.Tech Defence Technology and NEP-2020 readiness.",
+  path: "/administration/director",
+});
 
 const message = `
 Today, the technological developments across the Globe are remarkable and also galloping at a very rapid speed. The gap in synchronizing innovative technologies and the rich Indian value system is increasing at a startling pace. Hence, present day education imparted across technical institutes needs rethinking and new strategies must be envisaged.

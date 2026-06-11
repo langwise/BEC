@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Award,
@@ -11,12 +10,15 @@ import {
 } from "lucide-react";
 
 import { PageHero } from "@/components/common/page-hero";
+import { BreadcrumbsJsonLd } from "@/components/seo/jsonld";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Accreditation & Quality | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Accreditation & Quality",
   description:
-    "NAAC, NBA, NIRF, IQAC, VTU affiliation and TEQIP records for Basaveshwar Engineering College (Autonomous), Bagalkote — the college's accreditation and quality-assurance documentation.",
-};
+    "Accreditation and quality-assurance records for autonomous BEC Bagalkote: NAAC and NBA accreditation, NIRF rankings, IQAC reports, VTU affiliation and TEQIP documents.",
+  path: "/accreditation",
+});
 
 const cards = [
   {
@@ -66,6 +68,7 @@ const cards = [
 export default function AccreditationPage() {
   return (
     <main className="bg-background text-foreground">
+      <BreadcrumbsJsonLd items={[{ name: "Accreditation", path: "/accreditation" }]} />
       <PageHero
         eyebrow="Quality Assurance"
         title="Accreditation & Quality"

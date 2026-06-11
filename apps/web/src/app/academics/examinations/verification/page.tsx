@@ -1,9 +1,15 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
 import { asset } from "@/lib/assets";
 import { Download, Mail, IndianRupee, FileCheck2, Landmark } from "lucide-react";
 import Link from "next/link";
+
+export const metadata = pageMetadata({
+    title: "Academic Document Verification",
+    description:
+        "Academic document verification at BEC Bagalkote for Autonomous-scheme students (2007-08 onwards) — required details, fee, bank details and verification form for agencies.",
+    path: "/academics/examinations/verification",
+});
 
 const requiredInfo = [
     "Name of the agency",

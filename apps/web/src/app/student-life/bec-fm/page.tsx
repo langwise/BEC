@@ -1,17 +1,18 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
 import { Radio, Mic2, Users, Signal, Mail, Phone } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "BEC Dhwani 90.4 FM | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "BEC Dhwani 90.4 FM",
   description:
-    "BEC Dhwani 90.4 FM — the community radio station of Basaveshwar Engineering College, Bagalkote. Inaugurated in 2020, the first radio station in Bagalkot.",
-};
+    "BEC Dhwani 90.4 FM, the community radio station of BEC Bagalkote — inaugurated 29 February 2020 as the first radio station in Bagalkot, with talk shows and music.",
+  path: "/student-life/bec-fm",
+});
 
 const galleryImages = assetsUnder("student-life/bec-fm/").map((src, index) => ({
   src,

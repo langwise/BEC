@@ -1,9 +1,15 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Building2, Users, Trees, Zap, CheckCircle2 } from "lucide-react";
 import { asset } from "@/lib/assets";
+
+export const metadata = pageMetadata({
+    title: "Netaji Block Boys Hostel",
+    description:
+        "Netaji Block at BEC Bagalkote, started in 1996 for first-year boys, offers 100 rooms for 300 students with a garden, vegetarian mess, gym, library and computer centre.",
+    path: "/academics/hostel/netaji-block",
+});
 
 export default function NetajiBlockPage() {
     return (

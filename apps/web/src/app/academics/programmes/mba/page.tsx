@@ -1,5 +1,4 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { ProgrammeHeader } from "@/components/academics/programmes/programme-header";
 import {
   CheckCircle2,
@@ -10,6 +9,13 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
+
+export const metadata = pageMetadata({
+  title: "MBA Programme",
+  description:
+    "BEC Bagalkote's MBA programme (60 seats, College Code B124) offers specializations in Finance, Marketing, HR, Operations and Business Analytics, admitted via PGCET or KMAT.",
+  path: "/academics/programmes/mba",
+});
 
 const mbaData = {
   title: "Master of Business Administration (MBA)",

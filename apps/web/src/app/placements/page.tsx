@@ -18,6 +18,8 @@ import {
 import { BrochureCover } from "@/components/placements/brochure-cover";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
+import { BreadcrumbsJsonLd } from "@/components/seo/jsonld";
+import { pageMetadata } from "@/lib/seo";
 
 const cellPhotos = assetsUnder("placements/cell/").map((src) => ({
   src,
@@ -26,11 +28,12 @@ const cellPhotos = assetsUnder("placements/cell/").map((src) => ({
 
 const featureImage = asset("placements/cell/cine0682.webp");
 
-export const metadata = {
-  title: "Placements | Basaveshwar Engineering College",
+export const metadata = pageMetadata({
+  title: "Placements & Recruiters",
   description:
-    "Recruit from BEC Bagalkote — placement brochure, policy, recruiters and recruiter interest form, all on one page.",
-};
+    "Recruit from BEC Bagalkote — 60+ recruiters across IT, core engineering and consulting, with the placement brochure, policy, contacts and recruiter interest form on one page.",
+  path: "/placements",
+});
 
 export default function PlacementsPage() {
   const { home, whyRecruit, policy, brochureHref, policyHref, accreditation, officers } =
@@ -39,6 +42,7 @@ export default function PlacementsPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbsJsonLd items={[{ name: "Placements", path: "/placements" }]} />
       {/* Hero band */}
       <section className="bg-linear-to-br from-orange-50 via-white to-slate-50 border-b border-orange-100">
         <div className="container mx-auto px-4 py-20 md:py-24 text-center">

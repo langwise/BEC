@@ -1,17 +1,18 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
 import { Heart, Users, Leaf, LifeBuoy, Award, CheckCircle2, Calendar } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "National Service Scheme (NSS) | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "National Service Scheme (NSS)",
   description:
-    "The NSS unit at Basaveshwar Engineering College, Bagalkote — community service activities, its Programme Officer, certification criteria and milestones.",
-};
+    "The NSS unit at BEC Bagalkote, active since 1995 under the VTU NSS Cell — Swachh Bharat drives, health camps, tree plantation, disaster relief and certification criteria.",
+  path: "/student-life/nss",
+});
 
 const HERO_IMAGE = asset("student-life/nss/cine0944.webp");
 const COORDINATOR_IMAGE = asset("student-life/nss/dr-s-k-patil.webp");

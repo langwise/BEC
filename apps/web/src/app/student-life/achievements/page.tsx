@@ -1,15 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { ArrowRight, Code, Cpu, Star, Trophy, Activity } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Student Achievements | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Student Achievements",
   description:
-    "Source-verified student and institutional achievements at Basaveshwar Engineering College, Bagalkote — Smart India Hackathon, IIC recognition, KSCST projects and VTU sports titles.",
-};
+    "Source-verified BEC student milestones — Smart India Hackathon 2020 win, a 4.5-star IIC rating, KSCST projects and VTU state sports titles in handball and cricket.",
+  path: "/student-life/achievements",
+});
 
 const technicalAchievements = [
   {

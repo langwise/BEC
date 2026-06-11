@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
+import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Phone, Mail, User, Siren, ExternalLink } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Anti-Ragging Helpline | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Anti-Ragging Helpline",
   description:
-    "Anti-ragging helpline and committee contacts at Basaveshwar Engineering College, Bagalkote, plus the national UGC anti-ragging helpline.",
-};
+    "Anti-ragging committee contacts at BEC Bagalkote plus the 24x7 UGC toll-free helpline 1800-180-5522 and the national antiragging.in reporting portal.",
+  path: "/student-life/anti-ragging/contact",
+});
 
 const committee = [
   {

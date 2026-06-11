@@ -1,8 +1,14 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { ProgrammeHeader } from "@/components/academics/programmes/programme-header";
 import { CheckCircle2, GraduationCap, Building2, Beaker, FileText, Microscope } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
+
+export const metadata = pageMetadata({
+  title: "M.Sc. (Engg.) & Ph.D Research",
+  description:
+    "Pursue M.Sc.(Engg.) and Ph.D at BEC Bagalkote across 9 VTU-recognized research centres, with full-time and part-time registration administered by VTU, Belagavi.",
+  path: "/academics/programmes/phd",
+});
 
 const phdData = {
   title: "M.Sc. (Engg.) & Ph.D",

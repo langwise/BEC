@@ -1,8 +1,14 @@
-"use client";
-
+import { pageMetadata } from "@/lib/seo";
 import { ProgrammeHeader } from "@/components/academics/programmes/programme-header";
 import { CheckCircle2, GraduationCap, Building2, Wallet, Code2, Cpu } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
+
+export const metadata = pageMetadata({
+  title: "MCA Programme",
+  description:
+    "BEC Bagalkote's AICTE-approved, autonomous MCA programme (60 seats) covers software engineering, web, data science & AI, cloud and cyber security, admitted via PGCET or KMAT.",
+  path: "/academics/programmes/mca",
+});
 
 const mcaData = {
   title: "Master of Computer Applications (MCA)",

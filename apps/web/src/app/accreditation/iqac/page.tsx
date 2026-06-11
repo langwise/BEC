@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-
 import { PageHero } from "@/components/common/page-hero";
 import { DocumentDirectory } from "@/components/common/document-directory";
 import { asset } from "@/lib/assets";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "IQAC | Basaveshwar Engineering College, Bagalkote",
+export const metadata = pageMetadata({
+  title: "Internal Quality Assurance Cell (IQAC)",
   description:
-    "Internal Quality Assurance Cell (IQAC) of Basaveshwar Engineering College, Bagalkote — AQARs, action-taken reports, academic calendars, meeting records and members.",
-};
+    "IQAC at BEC Bagalkote drives quality enhancement: Annual Quality Assurance Reports (AQAR), action-taken reports, academic calendars, meeting records and member lists.",
+  path: "/accreditation/iqac",
+});
 
 export default function IqacPage() {
   return (

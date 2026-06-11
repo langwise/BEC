@@ -1,0 +1,45 @@
+# Basaveshwar Engineering College, Bagalkote (BEC)
+
+> Basaveshwar Engineering College (BEC), Bagalkote is an autonomous engineering institute established in 1963, run by B.V.V. Sangha and affiliated to Visvesvaraya Technological University (VTU), Belagavi. BEC offers undergraduate (B.E.), postgraduate (M.Tech, MBA, MCA) and doctoral (Ph.D.) programmes across engineering, management and the sciences in Bagalkote, Karnataka, India.
+
+## Institute
+
+- [About BEC](https://becbgk.edu/institute/about): History, vision, mission and overview of the institute.
+- [About B.V.V. Sangha](https://becbgk.edu/institute/about-sangha): The parent trust that runs BEC.
+- [History](https://becbgk.edu/institute/history): The institute's journey since 1963.
+- [Governance](https://becbgk.edu/institute/governance): Governing bodies and administrative structure.
+- [Contact](https://becbgk.edu/institute/contact): Address, phone and email for the institute.
+
+## Academics
+
+- [Departments](https://becbgk.edu/departments): All undergraduate, postgraduate and science departments.
+- [UG Programmes (B.E.)](https://becbgk.edu/academics/programmes/ug): Undergraduate engineering programmes.
+- [PG Programmes (M.Tech)](https://becbgk.edu/academics/programmes/pg): Postgraduate engineering programmes.
+- [MBA](https://becbgk.edu/academics/programmes/mba): Master of Business Administration.
+- [MCA](https://becbgk.edu/academics/programmes/mca): Master of Computer Applications.
+- [Ph.D.](https://becbgk.edu/academics/programmes/phd): Doctoral research programmes.
+- [Examinations](https://becbgk.edu/academics/examinations): Autonomous examination system, results and calendar.
+- [Scholarships](https://becbgk.edu/academics/scholarships): Scholarship schemes for students.
+
+## Admissions & Placements
+
+- [Placements](https://becbgk.edu/placements): Training & Placement Cell, recruiters and placement records.
+- [First Year](https://becbgk.edu/academics/first-year): Information for first-year admitted students.
+
+## Quality & Accreditation
+
+- [Accreditation](https://becbgk.edu/accreditation): NAAC, NBA, NIRF and quality assurance.
+- [NAAC](https://becbgk.edu/accreditation/naac): National Assessment and Accreditation Council status.
+- [NBA](https://becbgk.edu/accreditation/nba): National Board of Accreditation status.
+- [NIRF](https://becbgk.edu/accreditation/nirf): NIRF rankings.
+- [IQAC](https://becbgk.edu/accreditation/iqac): Internal Quality Assurance Cell.
+
+## Research & Student Life
+
+- [Research](https://becbgk.edu/research): Research activities, centres and publications.
+- [Student Life](https://becbgk.edu/student-life/overview): Clubs, activities, sports and campus life.
+- [Library](https://becbgk.edu/library): Central library, e-resources and services.
+
+## Optional
+
+- [Sitemap](https://becbgk.edu/sitemap.xml)
