@@ -1,128 +1,130 @@
-"use client";
+import type { Metadata } from "next";
 
-import { PageHeader } from "@/components/placements/page-header";
-import { motion } from "motion/react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ShieldAlert, AlertTriangle, Gavel, FileText, Ban } from "lucide-react";
+import { PageHero } from "@/components/common/page-hero";
+import { SectionHeading } from "@/components/common/section-heading";
+import { AlertTriangle, Ban, FileText } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Anti-Ragging Information | Basaveshwar Engineering College, Bagalkote",
+  description:
+    "Anti-ragging policy at Basaveshwar Engineering College, Bagalkote — what constitutes ragging, UGC offences and the administrative actions and punishments.",
+};
+
+const ugcOffences = [
+  "Abetment to ragging",
+  "Criminal conspiracy to rag",
+  "Unlawful assembly and rioting while ragging",
+  "Public nuisance created during ragging",
+  "Violation of decency and morals through ragging",
+  "Injury to body, causing hurt or grievous hurt",
+  "Wrongful restraint or confinement",
+  "Use of criminal force",
+  "Assault as well as sexual or unnatural offences",
+  "Extortion",
+  "Criminal trespass and offences against property",
+  "Criminal intimidation",
+];
 
 const punishments = [
-    {
-        title: "Suspension",
-        description: "Immediate suspension from attending classes and academic privileges.",
-    },
-    {
-        title: "Withholding Results",
-        description: "Withholding / withdrawing scholarship, fellowship and other benefits.",
-    },
-    {
-        title: "Expulsion",
-        description: "Debarring from appearing in any test/ examination or expulsion from the hostel.",
-    },
-    {
-        title: "Rustication",
-        description: "Rustication from the institution for periods ranging from one to four semesters.",
-    },
-    {
-        title: "Fine",
-        description: "Fine up to Rs. 25,000/- as per IPC / Karnataka Education Act.",
-    },
-    {
-        title: "Legal Action",
-        description: "Registration of FIR and prosecution under the Indian Penal Code.",
-    },
+  {
+    title: "Suspension",
+    description: "Suspension from attending classes and academic privileges.",
+  },
+  {
+    title: "Withholding Benefits",
+    description: "Withholding or withdrawing scholarship, fellowship and other benefits.",
+  },
+  {
+    title: "Debarring / Expulsion",
+    description: "Debarring from any test or examination, or expulsion from the hostel.",
+  },
+  {
+    title: "Rustication",
+    description: "Rustication from the institution for one to four semesters.",
+  },
+  {
+    title: "Fine",
+    description: "Fine as prescribed under the IPC and the Karnataka Education Act.",
+  },
+  {
+    title: "Legal Action",
+    description: "Registration of an FIR and prosecution under the Indian Penal Code.",
+  },
 ];
 
 export default function AntiRaggingInfoPage() {
-    return (
-        <div className="space-y-6 md:space-y-12">
-            <PageHeader
-                title="Anti-Ragging Information"
-                description="Zero Tolerance Policy - Making Campus Safe and Inclusive for All."
-            />
+  return (
+    <main className="bg-background text-foreground">
+      <PageHero
+        eyebrow="Student Safety"
+        title="Anti-Ragging Information"
+        description="Basaveshwar Engineering College maintains a zero-tolerance policy on ragging. Ragging within or outside the institution is strictly prohibited and is a criminal offence."
+        badges={[{ label: "Zero Tolerance" }]}
+      />
 
-            {/* Warning Section */}
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="grid lg:grid-cols-2 gap-6 md:gap-8 items-start"
-            >
-                <div className="space-y-4 md:space-y-6">
-                    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 leading-tight">
-                        What constitutes <span className="text-orange-600">Ragging?</span>
-                    </h2>
-                    <p className="text-sm md:text-lg text-slate-600 leading-relaxed">
-                        Ragging is basically any disorderly conduct, whether by words spoken or written or by an act which has the effect of teasing, treating or handling with rudeness any other student. It involves likely to cause annoyance, hardship or psychological harm or to raise fear or apprehension thereof in a fresher or a junior student.
-                    </p>
-                    <div className="bg-orange-50 border-l-4 border-orange-600 p-4 md:p-6 rounded-r-xl">
-                        <h4 className="flex items-center gap-2 font-bold text-orange-700 mb-2 text-sm md:text-base">
-                            <Ban className="w-4 h-4 md:w-5 md:h-5" />
-                            Strictly Prohibited
-                        </h4>
-                        <p className="text-xs md:text-sm text-slate-700">
-                            Ragging within or outside the Educational Institution is strictly prohibited. Engaging in ragging is a criminal offence under IPC sections and the Karnataka Education Act.
-                        </p>
-                    </div>
-                </div>
+      <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
+        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+          <div className="space-y-6">
+            <SectionHeading eyebrow="Definition" title="What constitutes ragging?" />
+            <p className="text-base leading-relaxed text-gray-700">
+              Ragging is any disorderly conduct — whether by spoken or written
+              words, or by an act — that has the effect of teasing, treating or
+              handling another student with rudeness, or that is likely to cause
+              annoyance, hardship or psychological harm, or to raise fear or
+              apprehension in a fresher or junior student.
+            </p>
+            <div className="rounded-md border-l-4 border-primary bg-orange-50/60 p-6">
+              <h4 className="flex items-center gap-2 text-base font-semibold text-gray-900">
+                <Ban className="h-5 w-5 text-primary" />
+                Strictly Prohibited
+              </h4>
+              <p className="mt-2 text-sm leading-relaxed text-gray-700">
+                Ragging within or outside the educational institution is strictly
+                prohibited. Engaging in ragging is a criminal offence under the
+                IPC and the Karnataka Education Act.
+              </p>
+            </div>
+          </div>
 
-                <div className="grid gap-4 md:gap-6">
-                    <Card className="border-orange-100 shadow-md">
-                        <CardHeader className="bg-slate-50 border-b border-slate-100 py-3 md:py-4">
-                            <CardTitle className="flex items-center gap-2 text-slate-800 text-base md:text-lg">
-                                <FileText className="w-4 h-4 md:w-5 md:h-5 text-orange-600" />
-                                UGC Guidelines
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="p-4 md:p-6">
-                            <ul className="space-y-2 md:space-y-3">
-                                {[
-                                    "Abetment to ragging",
-                                    "Criminal conspiracy to rag",
-                                    "Unlawful assembly and rioting while ragging",
-                                    "Public nuisance created during ragging",
-                                    "Violation of decency and morals through ragging",
-                                    "Injury to body, causing hurt or grievous hurt",
-                                    "Wrongful restraint or confinement",
-                                    "Use of criminal force",
-                                    "Assault as well as sexual offences or unnatural offences",
-                                    "Extortion",
-                                    "Criminal trespass & offences against property",
-                                    "Criminal intimidation",
-                                ].map((item, i) => (
-                                    <li key={i} className="flex items-start gap-2 text-xs md:text-sm text-slate-600">
-                                        <AlertTriangle className="w-3 h-3 md:w-4 md:h-4 text-orange-500 shrink-0 mt-0.5" />
-                                        <span>{item}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </CardContent>
-                    </Card>
-                </div>
-            </motion.div>
-
-            {/* Punishments Section */}
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-            >
-                <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 md:mb-8 flex items-center gap-2">
-                    <Gavel className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
-                    Administrative Action & Punishments
-                </h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                    {punishments.map((item, index) => (
-                        <Card key={index} className="hover:shadow-lg transition-all border-l-4 border-l-orange-500">
-                            <CardContent className="p-4 md:p-6">
-                                <h3 className="font-bold text-slate-900 mb-2 text-sm md:text-base">{item.title}</h3>
-                                <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                                    {item.description}
-                                </p>
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
-            </motion.div>
+          <div className="rounded-md border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+            <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-900">
+              <FileText className="h-5 w-5 text-primary" />
+              Offences under UGC Guidelines
+            </h3>
+            <ul className="mt-4 space-y-2">
+              {ugcOffences.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-2 text-sm leading-relaxed text-gray-700"
+                >
+                  <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-    );
+
+        <div className="space-y-8">
+          <SectionHeading
+            eyebrow="Consequences"
+            title="Administrative action & punishments"
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {punishments.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-md border border-stone-200 bg-white p-6 shadow-sm"
+              >
+                <h3 className="text-base font-semibold text-gray-900">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

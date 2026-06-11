@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/common/section-heading";
 import { PersonCard, PersonGrid } from "@/components/common/person-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { DocumentDirectory } from "@/components/common/document-directory";
-import { asset, assetsUnder } from "@/lib/assets";
+import { asset } from "@/lib/assets";
 import { Trees, Warehouse } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -68,17 +68,75 @@ const vtuBlues2024 = [
   "Ms. Madhu Jainar (CSE) — Handball",
 ];
 
-const galleryImages = assetsUnder("gallery/gymkhana/").map((src, index) => ({
-  src,
-  alt: `College Gymkhana sports activity at Basaveshwar Engineering College ${index + 1}`,
-}));
+const galleryImages = [
+  {
+    src: asset("student-life/sports/cine0043.webp"),
+    alt: "A BEC player leaps for an overhead smash during badminton in the indoor stadium",
+  },
+  {
+    src: asset("student-life/sports/cine0118.webp"),
+    alt: "A BEC student plays a forehand return during a table tennis rally",
+  },
+  {
+    src: asset("gallery/gymkhana/1.webp"),
+    alt: "Cricket teams gather for the opening ceremony of an inter-collegiate tournament at BEC",
+  },
+  {
+    src: asset("student-life/sports/cine0146.webp"),
+    alt: "BEC basketball players drive the ball on the outdoor court",
+  },
+  {
+    src: asset("student-life/sports/cine0053.webp"),
+    alt: "A doubles badminton rally at the net in the BEC indoor stadium",
+  },
+  {
+    src: asset("gallery/gymkhana/4.webp"),
+    alt: "The BEC women's volleyball team celebrates a win on the court",
+  },
+  {
+    src: asset("student-life/sports/cine0122.webp"),
+    alt: "A BEC student serves during a table tennis match",
+  },
+  {
+    src: asset("student-life/sports/cine0074.webp"),
+    alt: "A BEC student executes a jump smash during badminton practice",
+  },
+  {
+    src: asset("gallery/gymkhana/8.webp"),
+    alt: "Students perform Surya Namaskar at an outdoor yoga session on campus",
+  },
+  {
+    src: asset("gallery/gymkhana/6.webp"),
+    alt: "The BEC archery team with their target and championship trophy",
+  },
+  {
+    src: asset("gallery/gymkhana/5.webp"),
+    alt: "A BEC badminton team with their winners' trophy in the indoor court",
+  },
+  {
+    src: asset("student-life/sports/cine0139.webp"),
+    alt: "BEC sports teams and coaches with their trophies outside the gymkhana",
+  },
+  {
+    src: asset("gallery/gymkhana/7.webp"),
+    alt: "Students at a sports orientation session in the BEC indoor stadium",
+  },
+  {
+    src: asset("student-life/sports/cine0090.webp"),
+    alt: "VTU inter-collegiate trophies won by Basaveshwar Engineering College",
+  },
+  {
+    src: asset("gallery/gymkhana/3.webp"),
+    alt: "A display of sports trophies and shields won by BEC teams in the college foyer",
+  },
+];
 
 export default function GymkhanaPage() {
   return (
     <main className="bg-background text-foreground">
       <PageHero
-        eyebrow="Sports"
-        title="College Gymkhana"
+        eyebrow="Sports & Games"
+        title="Sports & College Gymkhana"
         description="The Gymkhana is the college's student sports body, working for the overall development of students through sport — instilling discipline, team spirit and sportsmanship under a full-time Physical Director."
         badges={[
           { label: "5-Acre Playground" },

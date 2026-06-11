@@ -1,123 +1,126 @@
-"use client";
+import type { Metadata } from "next";
 
-import { PageHeader } from "@/components/placements/page-header";
-import { motion } from "motion/react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Mail, User, ShieldCheck, Siren } from "lucide-react";
+import { PageHero } from "@/components/common/page-hero";
+import { SectionHeading } from "@/components/common/section-heading";
+import { Phone, Mail, User, Siren, ExternalLink } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Anti-Ragging Helpline | Basaveshwar Engineering College, Bagalkote",
+  description:
+    "Anti-ragging helpline and committee contacts at Basaveshwar Engineering College, Bagalkote, plus the national UGC anti-ragging helpline.",
+};
 
 const committee = [
-    {
-        name: "Dr. B. R. Hiremath",
-        role: "Chairman",
-        designation: "Principal, BEC Bagalkot",
-        contact: "principal@becbgk.edu"
-    },
-    {
-        name: "Dr. P. L. Timmanagoudar",
-        role: "Member / Secretary",
-        designation: "HOD, Chemistry",
-        contact: "9448693600"
-    },
-    {
-        name: "Prof. V. D. Holla",
-        role: "Squad Coordinator",
-        designation: "Anti-Ragging Squad, E & E Engineering",
-        contact: "9342647037"
-    }
+  {
+    name: "Dr. B. R. Hiremath",
+    role: "Chairman",
+    designation: "Principal, BEC Bagalkote",
+    contact: "principal@becbgk.edu",
+  },
+  {
+    name: "Dr. P. L. Timmanagoudar",
+    role: "Member / Secretary",
+    designation: "Professor, Department of Chemistry",
+    contact: "9448693600",
+  },
+  {
+    name: "Prof. V. D. Holla",
+    role: "Squad Coordinator",
+    designation: "Anti-Ragging Squad, E & E Engineering",
+    contact: "9342647037",
+  },
 ];
 
 export default function AntiRaggingContactPage() {
-    return (
-        <div className="space-y-6 md:space-y-12">
-            <PageHeader
-                title="Anti-Ragging Helpline"
-                description="Reach out for help. Your identity will be protected."
-            />
+  return (
+    <main className="bg-background text-foreground">
+      <PageHero
+        eyebrow="Student Safety"
+        title="Anti-Ragging Helpline"
+        description="Reach out for help — your identity will be protected. Use the national toll-free helpline or contact the college anti-ragging committee directly."
+      />
 
-            {/* Emergency Hero */}
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="bg-orange-600 rounded-3xl p-6 md:p-8 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8"
-            >
-                <div>
-                    <div className="flex items-center gap-2 mb-2 text-orange-100 font-bold uppercase tracking-wider text-xs md:text-sm">
-                        <Siren className="w-4 h-4 md:w-5 md:h-5 animate-pulse" />
-                        24x7 National Helpline
-                    </div>
-                    <h2 className="text-2xl md:text-3xl lg:text-5xl font-black tracking-tight mb-2">
-                        1800-180-5522
-                    </h2>
-                    <p className="text-orange-100 text-sm md:text-base">
-                        UGC Anti-Ragging Helpline (Toll Free)
-                    </p>
-                </div>
-                <div className="flex flex-col gap-3 w-full md:w-auto">
-                    <a href="tel:18001805522" className="bg-white text-orange-600 px-4 py-2 md:px-6 md:py-3 rounded-xl font-bold text-center hover:bg-orange-50 transition-colors text-sm md:text-base">
-                        Call Now
-                    </a>
-                    <a href="mailto:helpline@antiragging.in" className="bg-orange-700/50 text-white px-4 py-2 md:px-6 md:py-3 rounded-xl font-bold text-center hover:bg-orange-700 transition-colors border border-orange-500 text-sm md:text-base">
-                        helpline@antiragging.in
-                    </a>
-                </div>
-            </motion.div>
-
-            {/* Committee Grid */}
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-            >
-                <div className="flex items-center justify-between mb-6 md:mb-8">
-                    <h2 className="text-xl md:text-2xl font-bold text-slate-900 flex items-center gap-2">
-                        <ShieldCheck className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
-                        Anti-Ragging Committee
-                    </h2>
-                </div>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                    {committee.map((member, index) => (
-                        <Card key={index} className="hover:shadow-md transition-all">
-                            <CardContent className="p-4 md:p-6">
-                                <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-100 flex items-center justify-center mb-3 md:mb-4 text-slate-500 mx-auto">
-                                    <User className="w-5 h-5 md:w-6 md:h-6" />
-                                </div>
-                                <div className="text-center space-y-1 mb-3 md:mb-4">
-                                    <div className="text-[10px] md:text-xs font-bold text-orange-600 uppercase tracking-widest">{member.role}</div>
-                                    <h3 className="font-bold text-slate-900 text-base md:text-lg">{member.name}</h3>
-                                    <p className="text-xs md:text-sm text-slate-500">{member.designation}</p>
-                                </div>
-                                <div className="pt-3 md:pt-4 border-t border-slate-100 flex justify-center text-xs md:text-sm text-slate-600">
-                                    <a href={member.contact.includes('@') ? `mailto:${member.contact}` : `tel:${member.contact}`} className="flex items-center gap-2 hover:text-orange-600 transition-colors">
-                                        {member.contact.includes('@') ? <Mail className="w-4 h-4" /> : <Phone className="w-4 h-4" />}
-                                        {member.contact}
-                                    </a>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    ))}
-
-                    {/* Floating Addon Card for Reporting */}
-                    <Card className="bg-slate-900 text-white border-none relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-10 -mt-10" />
-                        <CardContent className="p-4 md:p-6 flex flex-col justify-center h-full relative z-10 text-center">
-                            <h3 className="font-bold text-lg md:text-xl mb-2">Report an Incident</h3>
-                            <p className="text-slate-400 text-xs md:text-sm mb-4 md:mb-6">
-                                You can also report ragging incidents through the online portal.
-                            </p>
-                            <a
-                                href="https://www.antiragging.in/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center bg-orange-600 hover:bg-orange-500 text-white py-2 px-4 rounded-lg font-bold transition-colors text-sm md:text-base"
-                            >
-                                Visit Portal
-                            </a>
-                        </CardContent>
-                    </Card>
-                </div>
-            </motion.div>
+      <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
+        <div className="rounded-md border border-stone-200 bg-orange-50/60 p-6 shadow-sm md:p-8">
+          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
+                <Siren className="h-4 w-4 text-primary" />
+                24x7 National Helpline
+              </div>
+              <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl">
+                1800-180-5522
+              </p>
+              <p className="mt-1 text-sm text-gray-600">
+                UGC Anti-Ragging Helpline (Toll Free)
+              </p>
+            </div>
+            <div className="flex w-full flex-col gap-3 sm:w-auto">
+              <a
+                href="tel:18001805522"
+                className="rounded-md bg-primary px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-primary/90"
+              >
+                Call Now
+              </a>
+              <a
+                href="mailto:helpline@antiragging.in"
+                className="rounded-md border border-stone-300 bg-white px-6 py-3 text-center text-sm font-semibold text-gray-700 transition-colors hover:border-primary/40 hover:text-primary"
+              >
+                helpline@antiragging.in
+              </a>
+            </div>
+          </div>
         </div>
-    );
+
+        <div className="space-y-8">
+          <SectionHeading eyebrow="College Contacts" title="Anti-Ragging Committee" />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {committee.map((member) => {
+              const isEmail = member.contact.includes("@");
+              return (
+                <div
+                  key={member.name}
+                  className="flex flex-col rounded-md border border-stone-200 bg-white p-6 text-center shadow-sm"
+                >
+                  <span className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-orange-50 text-primary">
+                    <User className="h-6 w-6" />
+                  </span>
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
+                    {member.role}
+                  </p>
+                  <h3 className="mt-1 text-base font-semibold text-gray-900">
+                    {member.name}
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-500">{member.designation}</p>
+                  <a
+                    href={isEmail ? `mailto:${member.contact}` : `tel:${member.contact}`}
+                    className="mt-4 inline-flex items-center justify-center gap-2 border-t border-stone-100 pt-4 text-sm font-medium text-gray-700 transition-colors hover:text-primary"
+                  >
+                    {isEmail ? <Mail className="h-4 w-4" /> : <Phone className="h-4 w-4" />}
+                    {member.contact}
+                  </a>
+                </div>
+              );
+            })}
+
+            <div className="flex flex-col justify-center rounded-md border border-stone-200 bg-stone-900 p-6 text-center text-white shadow-sm">
+              <h3 className="text-lg font-semibold">Report an Incident</h3>
+              <p className="mt-2 text-sm leading-relaxed text-stone-300">
+                You can also report ragging incidents through the national online
+                portal.
+              </p>
+              <a
+                href="https://www.antiragging.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary/90"
+              >
+                Visit Portal <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

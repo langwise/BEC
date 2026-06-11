@@ -205,15 +205,12 @@ export const navigationData: NavigationItem[] = [
     items: [
       { title: "Overview", href: "/student-life/overview" },
       { title: "Hostels", href: "/student-life/hostels" },
-      { title: "Students' Council", href: "/student-life/council" },
       { title: "Mindhog Club", href: "/student-life/mindhog" },
       { title: "Activities", href: "/student-life/activities" },
       { title: "Symposia Archive", href: "/student-life/symposia" },
-      { title: "NSS", href: "/student-life/nss" },
-      { title: "NCC", href: "/student-life/ncc" },
+      { title: "Sports & Gymkhana", href: "/student-life/gymkhana" },
       { title: "IEEE", href: "/student-life/ieee" },
-      { title: "Sports and Games", href: "/student-life/sports" },
-      { title: "Gymkhana", href: "/student-life/gymkhana" },
+      { title: "NSS", href: "/student-life/nss" },
       {
         title: "Anti Ragging",
         items: [
