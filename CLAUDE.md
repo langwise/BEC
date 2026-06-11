@@ -4,7 +4,7 @@ becbgk.edu site is fully scraped at ../data/scraped/site/...
 
 - by each page being prod ready i mean the following things
   - all the provided images are used appropriately
-  - all the data (text, stats, photos, pdfs) are source verified - either from "provided new data" or "optimized photos", or "scraped site/ assets" or actual current data from the respected pages from becbgk.edu content / copy on the website live rn (you may need to re-read or scrape the live pages)
+  - all the data (text, stats, photos, pdfs) are source verified - either from "provided new data" or "optimized photos", or "scraped site/" or actual current data from the respected pages from becbgk.edu content / copy on the website live rn (you may need to re-read or scrape the live pages)
   - we showcase all the data provided to us or if porting an existing page then all the upstream data exist in our new UI website
   - there is no any dummy, lorem ipsum type, placeholder things at all in the page
   - the page is responsive with very good ux for all device types and cross browser compatibility

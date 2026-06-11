@@ -64,7 +64,7 @@ export default function BECFMPage() {
           />
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:items-start">
+        <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:items-center">
           <div className="space-y-6">
             <SectionHeading
               eyebrow="About"
