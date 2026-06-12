@@ -15,18 +15,18 @@
       "focus": "Research, innovation, consultancy"
     },
     {
-      "role": "Dean Academic",
-      "name": "Dr. P. N. Kulkarni",
-      "photo": "governance/deans/dr-p-n-kulkarni.webp",
-      "email": "deanac@becbgk.edu",
-      "focus": "Programs & curriculum"
-    },
-    {
       "role": "Dean Placement & Training",
       "name": "Dr. S. G. Kambalimath",
       "photo": "governance/deans/dr-shankar-kambalimath.webp",
       "email": "placement@becbgk.edu",
       "focus": "Career services & placements"
+    },
+    {
+      "role": "Dean Academic",
+      "name": "Dr. P. N. Kulkarni",
+      "photo": "governance/deans/dr-p-n-kulkarni.webp",
+      "email": "deanac@becbgk.edu",
+      "focus": "Programs & curriculum"
     },
     {
       "role": "Dean Quality Assurance",
@@ -57,6 +57,11 @@
   ],
   "hods": [
     {
+      "department": "Electronics & Communication Engineering",
+      "name": "Dr. Mahabaleshwar S. K.",
+      "photo": "governance/hod/ece/dr-mahabaleshwar-s-k.webp"
+    },
+    {
       "department": "Artificial Intelligence & Machine Learning",
       "name": "Dr. B. M. Reshmi",
       "photo": "governance/hod/aiml/dr-b-m-reshmi.webp"
@@ -80,11 +85,6 @@
       "department": "Computer Science & Engineering",
       "name": "Dr. V. B. Pagi",
       "photo": "governance/hod/cse/dr-v-b-pagi.webp"
-    },
-    {
-      "department": "Electronics & Communication Engineering",
-      "name": "Dr. Mahabaleshwar S. K.",
-      "photo": "governance/hod/ece/dr-mahabaleshwar-s-k.webp"
     },
     {
       "department": "Electrical & Electronics Engineering",
