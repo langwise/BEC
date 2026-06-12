@@ -48,17 +48,31 @@ export type BogMember = {
   photo?: string;
 };
 
+export type SanghaChairman = {
+  name: string;
+  role: string;
+  photo: string;
+  messageHref?: string;
+};
+
+export type SanghaCouncilMember = {
+  name: string;
+  role: string;
+  invitee?: boolean;
+};
+
 export type SanghaMember = {
   name: string;
   role: string;
   photo?: string;
-  verify?: boolean;
 };
 
 export type Sangha = {
   intro?: string;
   groupPhoto: string;
+  chairman: SanghaChairman;
   members: SanghaMember[];
+  council: SanghaCouncilMember[];
 };
 
 /** Resolve an optional asset key to its public URL, or undefined if absent. */
@@ -88,8 +102,6 @@ export const hods: Hod[] = data.hods.map((hod) => ({
   photo: photo(hod.photo),
 }));
 
-export const bogLastUpdated: string = data.bogLastUpdated;
-
 export const bogMembers: BogMember[] = (
   data.bog as { name: string; role: string; affiliation: string; category: string; photo?: string }[]
 ).map((member) => ({
@@ -103,12 +115,24 @@ export const bogMembers: BogMember[] = (
 export const sangha: Sangha = {
   intro: data.sangha.intro,
   groupPhoto: asset(data.sangha.groupPhoto),
-  members: (data.sangha.members as { name: string; role: string; photo?: string; verify?: boolean }[]).map(
+  chairman: {
+    name: data.sangha.chairman.name,
+    role: data.sangha.chairman.role,
+    photo: asset(data.sangha.chairman.photo),
+    messageHref: data.sangha.chairman.messageHref,
+  },
+  members: (data.sangha.members as { name: string; role: string; photo?: string }[]).map(
     (member) => ({
       name: member.name,
       role: member.role,
       photo: photo(member.photo),
-      verify: member.verify,
+    }),
+  ),
+  council: (data.sangha.council as { name: string; role: string; invitee?: boolean }[]).map(
+    (member) => ({
+      name: member.name,
+      role: member.role,
+      invitee: member.invitee,
     }),
   ),
 };

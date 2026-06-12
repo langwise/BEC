@@ -81,13 +81,26 @@
     "sangha": {
       "type": "object",
       "description": "B.V.V. Sangha (parent trust) leadership shown above the Board of Governors.",
-      "required": ["groupPhoto", "members"],
+      "required": ["groupPhoto", "chairman", "council"],
       "additionalProperties": false,
       "properties": {
         "intro": { "type": "string" },
         "groupPhoto": { "$ref": "#/$defs/assetKey" },
+        "chairman": {
+          "type": "object",
+          "description": "Chairman of B.V.V. Sangha, featured at the top of the section.",
+          "required": ["name", "role", "photo"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string" },
+            "role": { "type": "string" },
+            "photo": { "$ref": "#/$defs/assetKey" },
+            "messageHref": { "type": "string", "description": "Optional link to the Chairman's message page." }
+          }
+        },
         "members": {
           "type": "array",
+          "description": "B.V.V. Sangha office bearers shown as photo cards (each confirmed by a provided photo).",
           "items": {
             "type": "object",
             "required": ["name", "role"],
@@ -95,14 +108,26 @@
             "properties": {
               "name": { "type": "string" },
               "role": { "type": "string" },
-              "photo": { "$ref": "#/$defs/assetKey" },
-              "verify": { "type": "boolean" }
+              "photo": { "$ref": "#/$defs/assetKey" }
+            }
+          }
+        },
+        "council": {
+          "type": "array",
+          "description": "B.V.V. Sangha Governing Council Members (name + designation).",
+          "items": {
+            "type": "object",
+            "required": ["name", "role"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": "string" },
+              "invitee": { "type": "boolean", "description": "Set true for special invitees listed separately from members." }
             }
           }
         }
       }
     },
-    "bogLastUpdated": { "type": "string" },
     "bog": {
       "type": "array",
       "description": "Board of Governors members for the #bog section.",

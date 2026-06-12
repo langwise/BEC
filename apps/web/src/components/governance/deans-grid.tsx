@@ -15,7 +15,6 @@ export function DeansGrid({ deans }: { deans: Person[] }) {
         if (dean.name) badges.push({ label: dean.role, tone: "primary" });
         if (dean.placeholder)
           badges.push({ label: "To be updated", tone: "outline" });
-        if (dean.verify) badges.push({ label: "To confirm", tone: "muted" });
 
         return (
           <PersonCard
