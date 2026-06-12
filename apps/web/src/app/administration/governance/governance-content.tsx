@@ -8,7 +8,6 @@ import { orgChartLevels } from "@/data/governance/org-chart";
 import { asset } from "@/lib/assets";
 import {
   BogMember,
-  bogLastUpdated,
   bogMembers,
   deans,
   hods,
@@ -40,7 +39,7 @@ const governanceLinks = [
   {
     label: "Academic Council Members (PDF)",
     href: asset("documents/misc/ac-members.pdf"),
-    description: "Academic Council composition from the official PDF.",
+    description: "Full Academic Council composition and members.",
   },
 ];
 
@@ -69,8 +68,7 @@ const academicCouncilDocuments = [
   },
   {
     label: "Academic Council Proceedings",
-    description:
-      "Proceedings from the 20th to 25th Academic Council meetings. The legacy 26th ACM link duplicated the 25th ACM PDF, so it is not repeated here until BEC confirms the correct source document.",
+    description: "Proceedings from the 20th to 25th Academic Council meetings.",
     documents: [
       {
         title: "25th ACM Proceedings",
@@ -108,8 +106,9 @@ const anchorNav = [
   { id: "director", label: "Director" },
   { id: "bog", label: "Board of Governors" },
   { id: "leadership", label: "Principal" },
-  { id: "deans", label: "Deans & Officers" },
+  { id: "deans", label: "Deans" },
   { id: "hods", label: "HOD Directory" },
+  { id: "officers", label: "Key Officers" },
   { id: "org-chart", label: "Organization Chart" },
   { id: "documents", label: "Documents" },
 ];
@@ -234,6 +233,42 @@ export function GovernanceContent() {
             description={sangha.intro}
           />
 
+          <div className="grid items-center gap-6 rounded-sm border border-stone-200 bg-white p-5 shadow-sm md:grid-cols-[0.7fr_1.3fr] md:gap-8 md:p-7">
+            <div className="relative mx-auto aspect-3/4 w-full max-w-[260px] overflow-hidden rounded-sm border border-stone-200 bg-stone-100 md:max-w-none">
+              <Image
+                src={sangha.chairman.photo}
+                alt={sangha.chairman.name}
+                fill
+                sizes="(max-width: 768px) 80vw, 30vw"
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="space-y-3">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+                Chairman
+              </p>
+              <h3 className="text-2xl font-semibold text-gray-900">
+                {sangha.chairman.name}
+              </h3>
+              <Badge className="rounded-sm bg-primary text-white">
+                {sangha.chairman.role}
+              </Badge>
+              <p className="text-base leading-relaxed text-gray-700">
+                Chairman of B.V.V. Sangha since 1991, leading 150+ institutions from
+                kindergarten to research and steering BEC&apos;s vision for quality technical
+                education under the philosophy &ldquo;Work is Worship&rdquo;.
+              </p>
+              {sangha.chairman.messageHref ? (
+                <Link
+                  href={sangha.chairman.messageHref}
+                  className="inline-flex text-primary text-sm font-semibold hover:underline underline-offset-4"
+                >
+                  Read the Chairman&apos;s message →
+                </Link>
+              ) : null}
+            </div>
+          </div>
+
           <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
             <Image
               src={sangha.groupPhoto}
@@ -244,21 +279,45 @@ export function GovernanceContent() {
             />
           </div>
 
-          <PersonGrid>
-            {sangha.members.map((member) => (
-              <PersonCard
-                key={member.name}
-                photo={member.photo}
-                name={member.name}
-                badges={[
-                  { label: member.role, tone: "primary" },
-                  ...(member.verify
-                    ? [{ label: "To confirm", tone: "muted" as const }]
-                    : []),
-                ]}
-              />
-            ))}
-          </PersonGrid>
+          <div className="space-y-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+              Office bearers
+            </h3>
+            <PersonGrid>
+              {sangha.members.map((member) => (
+                <PersonCard
+                  key={member.name}
+                  photo={member.photo}
+                  name={member.name}
+                  badges={[{ label: member.role, tone: "primary" }]}
+                />
+              ))}
+            </PersonGrid>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+              Governing Council
+            </h3>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {sangha.council.map((member) => (
+                <div
+                  key={member.name}
+                  className="flex items-start justify-between gap-3 rounded-sm border border-stone-200 bg-white px-4 py-3 shadow-sm"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">{member.name}</p>
+                    <p className="text-sm text-gray-600">{member.role}</p>
+                  </div>
+                  {member.invitee ? (
+                    <Badge variant="outline" className="shrink-0 rounded-sm text-xs">
+                      Invitee
+                    </Badge>
+                  ) : null}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -317,9 +376,8 @@ export function GovernanceContent() {
         <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
           <SectionHeading
             title="Board of Governors"
-            description="Official BoG composition sourced from becbgk.edu. Filter by category to skim core members, nominees, invitees, and student representatives."
+            description="Official Board of Governors composition. Filter by category to skim core members, nominees, invitees, and student representatives."
           />
-          <p className="text-xs text-gray-500">{bogLastUpdated}</p>
 
           <div className="rounded-sm border border-stone-200 bg-white p-3 shadow-sm md:p-4">
             <FilterChips
@@ -411,14 +469,6 @@ export function GovernanceContent() {
           />
           <DeansGrid deans={deans} />
         </div>
-
-        <div className="space-y-6">
-          <SectionHeading
-            title="Key officers"
-            description="Statutory and support functions essential to day-to-day operations."
-          />
-          <DeansGrid deans={officers} />
-        </div>
       </section>
 
       <section
@@ -428,7 +478,7 @@ export function GovernanceContent() {
         <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
           <SectionHeading
             title="HOD directory"
-            description="Heads of Department across all programmes. Cards awaiting an update will be confirmed from the department pages."
+            description="Heads of Department across all programmes."
           />
 
           <PersonGrid>
@@ -451,6 +501,17 @@ export function GovernanceContent() {
       </section>
 
       <section
+        id="officers"
+        className="border-t border-stone-200 py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-6"
+      >
+        <SectionHeading
+          title="Key officers"
+          description="Statutory and support functions essential to day-to-day operations."
+        />
+        <DeansGrid deans={officers} />
+      </section>
+
+      <section
         id="org-chart"
         className="border-t border-stone-200 py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-6"
       >
@@ -459,8 +520,8 @@ export function GovernanceContent() {
             Organization chart
           </h2>
           <p className="text-base text-gray-700 leading-relaxed">
-            Simplified governance stack derived from the mandatory disclosure and official pages.
-            Mobile users can scroll sideways to view all levels.
+            A simplified view of BEC&apos;s governance hierarchy. Mobile users can scroll
+            sideways to view all levels.
           </p>
         </div>
 
@@ -508,7 +569,7 @@ export function GovernanceContent() {
             Documents & links
           </h2>
           <p className="text-base text-gray-700 leading-relaxed">
-            Official governance references from becbgk.edu for verification and downloads.
+            Official governance references and downloads.
           </p>
         </div>
 
@@ -547,7 +608,7 @@ export function GovernanceContent() {
           <SectionHeading
             eyebrow="Academic Council"
             title="Resolutions & proceedings"
-            description="Official Academic Council meeting records migrated from the legacy BEC website."
+            description="Official Academic Council resolutions and proceedings."
           />
           <DocumentDirectory groups={academicCouncilDocuments} />
         </div>

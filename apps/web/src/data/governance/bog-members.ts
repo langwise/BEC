@@ -17,9 +17,6 @@ export type BogMember = {
   category: BogMemberCategory;
 };
 
-export const bogLastUpdated =
-  "Based on becbgk.edu/BOG Members (retrieved Dec 7, 2025)";
-
 export const bogMembers: BogMember[] = [
   {
     name: "Prof. S. R. Gudisagar",

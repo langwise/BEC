@@ -27,9 +27,8 @@ export default function ChairmanMessagePage() {
       eyebrow="Leadership Message"
       title="Chairman's Vision"
       subtitle="Leading 150+ institutions with a commitment to excellence and social transformation."
-      name="Dr. Veeranna Charantimath"
+      name="Dr. Veeranna C. Charantimath"
       role="Chairman, B. V. V. Sangha, Bagalkote"
-      // TODO: confirm current chairman's identity/name — not provided/source-verified.
       image={asset("governance/chairman.png")}
       imageFit="contain"
       quote={{

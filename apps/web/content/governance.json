@@ -32,8 +32,7 @@
       "role": "Dean Quality Assurance",
       "name": "Dr. Bharati S. Meti",
       "photo": "governance/deans/dr-bharati-s-meti.webp",
-      "focus": "Accreditation & quality systems",
-      "verify": true
+      "focus": "Accreditation & quality systems"
     }
   ],
   "officers": [
@@ -53,8 +52,7 @@
       "role": "Admission Section In-charge",
       "name": "Dr. S. G. Kumbalavati",
       "photo": "governance/admission-staff/dr-s-g-kumbalavati.webp",
-      "focus": "Admissions & student intake",
-      "verify": true
+      "focus": "Admissions & student intake"
     }
   ],
   "hods": [
@@ -135,30 +133,48 @@
     }
   ],
   "sangha": {
-    "intro": "Basaveshwar Veerashaiva Vidya Vardhak Sangha (B.V.V. Sangha), established in 1906, is the parent trust that runs BEC and 120+ institutions across north Karnataka under the philosophy “Work is Worship”.",
+    "intro": "Basaveshwar Veerashaiva Vidya Vardhak Sangha (B.V.V. Sangha), established in 1906, is the parent trust that runs BEC and 150+ institutions across Karnataka under the philosophy “Work is Worship”.",
     "groupPhoto": "governance/sangha/group-photo.webp",
+    "chairman": {
+      "name": "Dr. Veeranna C. Charantimath",
+      "role": "Chairman, B.V.V. Sangha",
+      "photo": "governance/chairman.png",
+      "messageHref": "/administration/chairperson"
+    },
     "members": [
       {
         "name": "Shri Omkar",
         "role": "B.V.V. Sangha Office Bearer",
-        "photo": "governance/sangha/shri-omkar.webp",
-        "verify": true
+        "photo": "governance/sangha/shri-omkar.webp"
       },
       {
         "name": "Sri Mahesh N. Athani",
         "role": "B.V.V. Sangha Office Bearer",
-        "photo": "governance/sangha/sri-mahesh-n-athani.webp",
-        "verify": true
+        "photo": "governance/sangha/sri-mahesh-n-athani.webp"
       },
       {
         "name": "Dr. Vijayakumar S. Katagihallimath",
         "role": "B.V.V. Sangha Office Bearer",
-        "photo": "governance/sangha/dr-vijayakumar-s-katagihallimath.webp",
-        "verify": true
+        "photo": "governance/sangha/dr-vijayakumar-s-katagihallimath.webp"
       }
+    ],
+    "council": [
+      { "name": "Dr. Veeranna C. Charantimath", "role": "Chairman" },
+      { "name": "Sri. Mahesh N. Athani", "role": "Member" },
+      { "name": "Sri. Andanappa M. Shettar", "role": "Member" },
+      { "name": "Sri. Gurusiddappa G. Yalligutti", "role": "Member" },
+      { "name": "Sri. Basavaraj Talikoti", "role": "Member" },
+      { "name": "Sri. Prakash S. Badadali", "role": "Member" },
+      { "name": "Sri. G. N. Patil", "role": "Member" },
+      { "name": "Sri. Channayya P. Balulmath", "role": "Member" },
+      { "name": "Sri. Basalingappa Hokrani", "role": "Member" },
+      { "name": "Sri. R. S. Akkimaradi", "role": "Member" },
+      { "name": "Sri. Raju Tapashetti", "role": "Member" },
+      { "name": "Dr. B. R. Hiremath", "role": "Principal, Member Secretary" },
+      { "name": "Prof. V. R. Shirol", "role": "Administrative Officer, B.V.V. Sangha", "invitee": true },
+      { "name": "Dr. R. N. Herkal", "role": "Director, Technical Education, B.V.V. Sangha", "invitee": true }
     ]
   },
-  "bogLastUpdated": "Based on becbgk.edu/BOG Members (retrieved Dec 7, 2025)",
   "bog": [
     {
       "name": "Prof. S. R. Gudisagar",
