@@ -25,7 +25,7 @@ export const navigationData: NavigationItem[] = [
         title: "Cells & Centres",
         items: [
           { title: "Overview", href: "/institute/cells" },
-          { title: "Innovation Council (IIC)", href: "/institute/cells/iic" },
+          { title: "Institution's Innovation Council (IIC)", href: "/institute/cells/iic" },
           { title: "Innovation & Entrepreneurship Policy", href: "/institute/cells/iep" },
           { title: "Industry Partnership (IIPC)", href: "/institute/cells/iipc" },
           { title: "NAIN Incubation", href: "/institute/cells/nain" },
