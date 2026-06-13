@@ -34,6 +34,7 @@ export const departmentCategories: DepartmentCategory[] = [
       { name: "Electronics & Computer Engg.", slug: "electronics-and-computer-engg" },
       { name: "Industrial & Production Engg.", slug: "industrial-and-production-engg" },
       { name: "Information Science & Engg.", slug: "information-science-and-engg" },
+      { name: "Mechanical Engg.", slug: "mechanical-engg" },
     ],
   },
   {
@@ -41,7 +42,6 @@ export const departmentCategories: DepartmentCategory[] = [
     title: "Science & Humanities",
     navLabel: "Science & Humanities",
     departments: [
-      { name: "Mechanical Engg.", slug: "mechanical-engg" },
       { name: "Physics", slug: "physics" },
       { name: "Chemistry", slug: "chemistry" },
       { name: "Mathematics", slug: "mathematics" },
