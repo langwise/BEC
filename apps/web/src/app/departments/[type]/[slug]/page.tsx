@@ -89,9 +89,6 @@ export default async function DepartmentPage({
         </div>
 
         <div className="relative container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
-            Departments · {dept.name}
-          </p>
           <div className="mt-4 space-y-4 max-w-3xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
               {dept.name}

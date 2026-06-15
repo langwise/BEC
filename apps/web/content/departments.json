@@ -335,17 +335,22 @@
         }
       ],
       "contact": {
-        "name": "Dr. V. G. Akkimardi",
-        "designation": "Professor & Head",
-        "phone": "+91-9448311580"
+        "name": "Dr. D. D. Chillal",
+        "designation": "HoD",
+        "phone": "+91-9880234101",
+		"email": "ddchillal@gmail.com"
       },
       "supportingStaff": [
         {
-          "name": "Sri. M. M. Badawadagi",
+          "name": "Mr Mahantesh Badodagi",
           "designation": "Driver / Mechanic"
         },
         {
-          "name": "Sri. S. A. Sheelavantar",
+          "name": "Mr Satappa Sheelavantar",
+          "designation": "Helper"
+        },
+        {
+          "name": "Mr Nagesh Kagal",
           "designation": "Helper"
         }
       ],
@@ -354,11 +359,11 @@
           "title": "Board of Studies",
           "members": [
             {
-              "name": "Dr. V. G. Akkimardi",
-              "position": "Chairman (Professor & Head)"
+              "name": "Dr Devanand D Chillal",
+              "position": "Chairman (HoD)"
             },
             {
-              "name": "Dr. Somashekahr S. Hiremath",
+              "name": "Dr. Nagaraj Ekbote" ,
               "position": "VTU Nominee"
             },
             {
@@ -366,35 +371,19 @@
               "position": "Alumni Representative"
             },
             {
-              "name": "Prof. S. S. Hiremath",
+              "name": "Mr Shivakumar Akki",
+              "position": "Member (Industry/Alumini)"
+            },
+            {
+              "name": "Dr. C. M. Veerendrakumar",
               "position": "Member"
             },
             {
-              "name": "Prof. R. A. Patil",
-              "position": "Member"
-            },
-            {
-              "name": "Prof. R. Nagaraja",
-              "position": "Member"
-            },
-            {
-              "name": "Prof. D. D. Chillal",
-              "position": "Member"
-            },
-            {
-              "name": "Prof. C. M. Veerendrakumar",
-              "position": "Member"
-            },
-            {
-              "name": "Mr. Suryakant Mali",
-              "position": "Alumni Member (Global Manufacturing Solutions)"
-            },
-            {
-              "name": "Mr. Rahul Biradar",
+              "name": "Mr. Prajwal Katate",
               "position": "Student Representative"
             },
             {
-              "name": "Ms. Maheshwari Math",
+              "name": "Ms. Bhagyashree Choudri",
               "position": "Student Representative"
             }
           ]
@@ -403,12 +392,8 @@
           "title": "Board of Examiners",
           "members": [
             {
-              "name": "Dr. V. G. Akkimardi",
-              "position": "Chairman"
-            },
-            {
               "name": "Dr. D. D. Chillal",
-              "position": "Co-coordinator"
+              "position": "Chairman/ Co-coordinator"
             },
             {
               "name": "Dr. C. M. Veerendrakumar",
@@ -498,7 +483,7 @@
       "associations": [
         {
           "name": "Automobile Engineering Student Association (AESA)",
-          "about": "AESA promotes co-curricular and extracurricular activities among students to explore and enhance their capabilities. It serves as a platform for developing technical skills and diverse competencies, supporting student initiatives such as industrial training, interactions with experts, communication-skills development and creative expression."
+          "about": "AESA promotes co-curricular and extracurricular activities among students to explore and enhance their capabilities. It serves as a platform for developing technical skills and diverse competencies, supporting student initiatives such as industrial training, interactions with experts, communication-skills development and creative expression. Inauguration of AESA activities for the academic year 2026-27 and welcome to Freshers."
         }
       ],
       "phdsAwarded": [
@@ -516,12 +501,6 @@
         }
       ],
       "additionalContacts": [
-        {
-          "name": "Dr. D. D. Chillal",
-          "designation": "Associate Professor",
-          "phone": "+91-9880234101",
-          "email": "ddcau@becbgk.edu"
-        },
         {
           "name": "Dr. C. M. Veerendrakumar",
           "designation": "Associate Professor",
@@ -1469,7 +1448,7 @@
       "tagline": "A Centre of Excellence in IT education, research and innovation since 1983.",
       "established": "1983",
       "intake": "180",
-      "overview": "The Department of Computer Science and Engineering was established in 1983. It offers an under-graduate programme (B.E.) in Computer Science and Engineering with an intake of 180 students, along with M.Sc. (Engineering by Research) and Ph.D. programmes. The department has highly qualified and well-experienced faculty committed to imparting quality technical education in IT and research. Its primary objectives include developing innovative skills, enriching academics through quality teaching-learning processes, building student confidence and inculcating entrepreneurial abilities — producing professionals with ethical values and societal concern.",
+      "overview": "The Department of Computer Science and Engineering was established in 1983. It offers an undergraduate programme (B.E.) in Computer Science and Engineering with an intake of 180 students, along with M.Sc. (Engineering by Research) and Ph.D. programmes. The department has highly qualified and well-experienced faculty committed to imparting quality technical education in IT and research. Its primary objectives include developing innovative skills, enriching academics through quality teaching-learning processes, building student confidence and inculcating entrepreneurial abilities — producing professionals with ethical values and societal concern.",
       "vision": "To be a Centre of Excellence in IT education, research and innovation, crafting competent professionals catering to the needs of society with moral and ethical values.",
       "mission": [
         "To produce competent IT professionals committed to lifelong learning.",
@@ -1478,14 +1457,15 @@
         "To instill environmental consciousness through teaching-learning processes."
       ],
       "programsOffered": [
-        "B.E. — Computer Science & Engineering",
-        "M.Sc. (Engineering by Research)",
-        "Ph.D. (VTU and QIP)"
+        "B.E.(Computer Science & Engineering)",
+        "M.Sc. (Engineering) by Research",
+        "Ph.D. (VTU Belagavi)",
+		"Ph.D. (AICTE QIP)"
       ],
       "peos": [
         {
           "code": "PEO1",
-          "text": "Provide a strong educational foundation in mathematics, science, basic engineering and Computer Science."
+          "text": "Provide a strong educational foundation in Mathematics, Science, Basic Engineering and Computer Science."
         },
         {
           "code": "PEO2",
@@ -1515,11 +1495,12 @@
         }
       ],
       "highlights": [
-        "Established in 1983 with a sanctioned B.E. intake of 180 students.",
-        "18 Ph.D.s awarded under departmental guidance; 20 research scholars currently registered.",
-        "10 VTU-recognized research supervisors across pattern recognition, image processing, IoT and network security.",
-        "Dedicated research labs in multimedia & vision computing, wireless & mobile computing and data mining.",
-        "Active student forum (FOCUS) and industry MoUs with Infosys, IBM, Philips and C-DAC."
+        "Established in 1983, with a present B.E. intake of 180 students.",
+        "18 Ph.D.s awarded under departmental guidance; 20 research scholars currently pursuing.",
+        "9 VTU-recognized research supervisors across Pattern Recognition, Image Processing, IoT and Network Security.",
+        "Dedicated research labs in Multimedia & Vision Computing, Wireless & Mobile Computing and Data Mining.",
+        "Active student forum (FOCUS).",
+		"Industry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna Technologies."
       ],
       "researchAreas": [
         {
@@ -2168,7 +2149,7 @@
         "B.E. — Electronics & Communication Engineering",
         "Ph.D. — Electronics & Communication Engineering"
       ],
-      "peos": [
+      "pIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna Technologieseos": [
         {
           "code": "PEO1",
           "text": "Lead a successful career by solving complex engineering problems of society and industry."

@@ -63,7 +63,7 @@
         "cv": "departments/cse/faculty/cv/s-n-benkikeri.pdf"
       },
       {
-        "name": "Smt. Smita Gour",
+        "name": "Dr. Smita Gour",
         "designation": "Assistant Professor",
         "photo": "departments/cse/faculty/smita-gour.webp",
         "cv": "departments/cse/faculty/cv/smita-gour.pdf"
@@ -86,13 +86,13 @@
         "cv": "departments/cse/faculty/cv/j-s-mulimani.pdf"
       },
       {
-        "name": "Sri. P. B. Madhavanavar",
+        "name": "Shri. P. B. Madhavanavar",
         "designation": "Assistant Professor",
         "photo": "departments/cse/faculty/p-b-madhavanavar.webp",
         "cv": "departments/cse/faculty/cv/p-b-madhavanavar.pdf"
       },
       {
-        "name": "Sri. B. S. Malapur",
+        "name": "Shri. B. S. Malapur",
         "designation": "Assistant Professor",
         "photo": "departments/cse/faculty/b-s-malapur.webp",
         "cv": "departments/cse/faculty/cv/b-s-malapur.pdf"
@@ -104,7 +104,7 @@
         "cv": "departments/cse/faculty/cv/s-r-karjol.pdf"
       },
       {
-        "name": "Smt. Shama P. S.",
+        "name": "Dr. Shama P. S.",
         "designation": "Assistant Professor",
         "photo": "departments/cse/faculty/shama-p-s.webp",
         "cv": "departments/cse/faculty/cv/shama-p-s.pdf"
@@ -162,14 +162,8 @@
     ],
     "automobile-engg": [
       {
-        "name": "Dr. Vijaykumar G. Akkimardi",
-        "designation": "Professor and Head",
-        "cv": "departments/au/faculty/cv/vijaykumar-g-akkimardi.pdf",
-        "photo": "departments/au/faculty/vijaykumar-g-akkimardi.webp"
-      },
-      {
         "name": "Dr Devanand D Chillal",
-        "designation": "Associate Professor",
+        "designation": "Head of the Department",
         "cv": "departments/au/faculty/cv/devanand-d-chillal.pdf",
         "photo": "departments/au/faculty/devanand-d-chillal.webp"
       },
