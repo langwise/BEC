@@ -6,7 +6,7 @@ export const metadata = pageMetadata({
   title: "Chairman's Message",
   description:
     "Message from the Chairman of B.V.V. Sangha, the trust leading 150+ institutions that founded BEC Bagalkote in 1963, on its vision for quality technical education and social change.",
-  path: "/administration/chairperson",
+  path: "/institute/chairperson",
 });
 
 const message = `
