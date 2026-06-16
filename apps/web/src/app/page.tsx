@@ -7,6 +7,7 @@ import { CampusLifeSection } from "@/components/home/campus-life-section";
 import { PlacementsSection } from "@/components/home/placements-section";
 import { FollowUsSection } from "@/components/home/follow-us-section";
 import { AboutSection } from "@/components/home/about-section";
+import { NewsAnnouncementsSection } from "@/components/home/news-announcements-section";
 
 export const metadata = {
   ...pageMetadata({
@@ -24,6 +25,7 @@ export default function Home() {
       <div className="relative [clip-path:inset(0)]">
         <HeroBanner />
         <FollowUsSection />
+        <NewsAnnouncementsSection />
         <AboutSection />
         <ProgrammesSection />
         <PlacementsSection />

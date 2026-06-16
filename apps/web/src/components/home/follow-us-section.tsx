@@ -22,6 +22,12 @@ const socialLinks = [
     url: "https://www.instagram.com/becbgk_official/",
     color: "bg-[#E4405F] text-white",
   },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    url: "https://www.linkedin.com/school/basaveshwar-engineering-college-bagalkot-qip-centre-/",
+    color: "bg-[#0A66C2] text-white",
+  },
 ];
 
 export function FollowUsSection() {
