@@ -5867,136 +5867,387 @@
         "phone": "+91-9611431878",
         "email": "bghhs@becbgk.edu"
       },
-      "documents": [
-        {
-          "title": "Scheme & Syllabus — Communicative English (1BHSC107M & 207M)",
-          "file": "departments/hss/docs/syllabus-communicative-english-1bhsc107m-207m.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Balake Kannada (1BHSB107C)",
-          "file": "departments/hss/docs/syllabus-balake-kannada-1bhsb107c.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Samskrutika Kannada (1BHSA107C)",
-          "file": "departments/hss/docs/syllabus-samskrutika-kannada-1bhsa107c.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Universal Human Values (IV Sem)",
-          "file": "departments/hss/docs/syllabus-universal-human-values-4th-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Research Methodology & IPR (VII & VIII Sem, 2025-26)",
-          "file": "departments/hss/docs/syllabus-research-methodology-ipr-7-8-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Quantitative Aptitude (V Sem, 2025-26)",
-          "file": "departments/hss/docs/syllabus-quantitative-aptitude-5th-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Indian Knowledge System (VI Sem, 2025-26)",
-          "file": "departments/hss/docs/syllabus-indian-knowledge-system-6th-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Professional Elective (III Sem)",
-          "file": "departments/hss/docs/syllabus-professional-elective-3rd-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Professional Elective (IV Sem)",
-          "file": "departments/hss/docs/syllabus-professional-elective-4th-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Professional Elective (V Sem, 2025-26)",
-          "file": "departments/hss/docs/syllabus-professional-elective-5th-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — Professional Elective (VI Sem)",
-          "file": "departments/hss/docs/syllabus-professional-elective-6th-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — NSS (III Sem)",
-          "file": "departments/hss/docs/syllabus-nss-3rd-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — NSS (IV Sem)",
-          "file": "departments/hss/docs/syllabus-nss-4th-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — NSS (V Sem, 2025-26)",
-          "file": "departments/hss/docs/syllabus-nss-5th-sem.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — NSS (VI Sem)",
-          "file": "departments/hss/docs/syllabus-nss-6th-sem.pdf"
-        },
-        {
-          "title": "Board of Studies — Members",
-          "file": "departments/hss/docs/board-of-studies-members.pdf"
-        },
-        {
-          "title": "Panel of Examiners (2024-25)",
-          "file": "departments/hss/docs/panel-of-examiners.pdf"
-        },
-        {
-          "title": "Faculty Publications",
-          "file": "departments/hss/docs/publications.pdf"
-        },
-        {
-          "title": "Events @ HSS",
-          "file": "departments/hss/docs/events.pdf"
-        },
-        {
-          "title": "Time Table (2025-26, Even Semester)",
-          "file": "departments/hss/docs/time-table.pdf"
-        }
-      ],
-      "committeeGroups": [
-        {
-          "title": "Board of Studies",
-          "members": [
-            {
-              "name": "Dr. B. G. Hokarani",
-              "position": "Chairman — Assistant Professor & HoD, Dept. of Humanities & Social Sciences, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. Nanda T. N.",
-              "position": "Member (VTU Nominee) — Assistant Professor, MIT, Mysore"
-            },
-            {
-              "name": "Prof. Subhash S.",
-              "position": "Member (Subject Expert) — Associate Professor, IIT Madras"
-            },
-            {
-              "name": "Dr. M. K. Matolli",
-              "position": "Member (Subject Expert) — Principal, Govt. Law College, Hassan"
-            },
-            {
-              "name": "Dr. Thimmesha L.",
-              "position": "Member (Subject Expert) — Assistant Professor & HoD, Govt. Engineering College, Hassan"
-            },
-            {
-              "name": "Mrs. Ragini P. R.",
-              "position": "Member (Alumni) — Director, Innovation Unlimited Training Services, Bengaluru"
-            },
-            {
-              "name": "Miss Nidhi P. Koranmath",
-              "position": "Member (Internal) — Assistant Professor, Dept. of H.S.S, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. Shanta B. Basanagoudra",
-              "position": "Member (Internal) — Assistant Professor, Dept. of H.S.S, BEC Bagalkote"
-            }
-          ]
-        },
-        {
-          "title": "Board of Examiners",
-          "members": [
-            {
-              "name": "Dr. B. G. Hokarani",
-              "position": "Chairman — Assistant Professor & HoD, Dept. of Humanities & Social Sciences, BEC Bagalkote"
-            }
-          ]
-        }
-      ]
+        "curriculumGroups": [
+          {
+            "title": "First Year (2025-26)",
+            "documents": [
+              {
+                "title": "Scheme of Teaching & Examinations (2025-26)",
+                "file": "departments/hss/docs/scheme-1st-year-25-26.pdf"
+              },
+              {
+                "title": "Syllabus (2025-26)",
+                "file": "departments/hss/docs/syllabus-1st-year-25-26.pdf"
+              },
+              {
+                "title": "Syllabus — Samskrutika Kannada (1BHSA107C)",
+                "file": "departments/hss/docs/syllabus-1st-year-samskrutika-kannada-1bhsa107c.pdf"
+              },
+              {
+                "title": "Syllabus — Balake Kannada (1BHSB107C)",
+                "file": "departments/hss/docs/syllabus-1st-year-balake-kannada-1bhsb107c.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Second Year (2025-26)",
+            "documents": [
+              {
+                "title": "Scheme of Teaching & Examinations (2025-26)",
+                "file": "departments/hss/docs/scheme-2nd-year-25-26.pdf"
+              },
+              {
+                "title": "Syllabus (2025-26)",
+                "file": "departments/hss/docs/syllabus-2nd-year-25-26.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Third Year (2025-26)",
+            "documents": [
+              {
+                "title": "Scheme of Teaching & Examinations (2025-26)",
+                "file": "departments/hss/docs/scheme-3rd-year-25-26.pdf"
+              },
+              {
+                "title": "Syllabus (2025-26)",
+                "file": "departments/hss/docs/syllabus-3rd-year-25-26.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Fourth Year (2025-26)",
+            "documents": [
+              {
+                "title": "Scheme of Teaching & Examinations (2025-26)",
+                "file": "departments/hss/docs/scheme-4th-year-25-26.pdf"
+              },
+              {
+                "title": "Syllabus — VII & VIII Semester (2025-26)",
+                "file": "departments/hss/docs/syllabus-4th-year-25-26.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Time Tables (2025-26)",
+            "documents": [
+              {
+                "title": "Time Table — Odd Semester",
+                "file": "departments/hss/docs/time-table-odd-sem-25-26.pdf"
+              },
+              {
+                "title": "Time Table — Even Semester",
+                "file": "departments/hss/docs/time-table-even-sem-25-26.pdf"
+              }
+            ]
+          }
+        ],
+        "activities": [
+          {
+            "title": "Classroom online quizzes after every topic",
+            "date": "Ongoing"
+          },
+          {
+            "title": "Student seminars — document preparation and PPT presentations on the digital board (I semester)",
+            "date": "Ongoing"
+          }
+        ],
+        "committeeGroups": [
+          {
+            "title": "Board of Studies in Humanities & Social Sciences",
+            "members": [
+              {
+                "name": "Dr. B. G. Hokarani",
+                "position": "Chairman — BEC, Bagalkote"
+              },
+              {
+                "name": "Dr. Sujata D.Patil",
+                "position": "Member(VTU Nominee) — PDA Engineering College,Kalaburgi"
+              },
+              {
+                "name": "Dr.Ridhima",
+                "position": "Member — IIT Dharawad"
+              },
+              {
+                "name": "Dr. Tejashwini B.J",
+                "position": "Member (Subject Expert) — BMSIT&M,Bengaluru"
+              },
+              {
+                "name": "Mrs. Jyoti Rotti",
+                "position": "Member(Alumni) — CEO and Co-FounderNEWNOP Technologies Pvt Ltd,Bengaluru"
+              },
+              {
+                "name": "Miss. Nidhi P. Koranmath",
+                "position": "Member(Internal) — BEC, Bagalkote"
+              },
+              {
+                "name": "Smt. Shanta Byadagi",
+                "position": "Member(Internal) — BEC, Bagalkote"
+              },
+              {
+                "name": "Dr.S.G.Kambalimath",
+                "position": "Member(Internal) — BEC, Bagalkote"
+              },
+              {
+                "name": "Shri. P. V. Kulkarni",
+                "position": "Subject Expert(Internal) — BEC, Bagalkote"
+              },
+              {
+                "name": "Dr.Shobha R.Patil",
+                "position": "Subject Expert(Internal) — BEC, BagalkoteCoordinator UHV-Cell"
+              },
+              {
+                "name": "Dr. S.K. Patil",
+                "position": "Subject Expert(Internal) — Associate ProfessorNSS Co-Ordinator,BEC, BGK"
+              },
+              {
+                "name": "Shri. Ganesh Kori",
+                "position": "Subject Expert(Internal) — Physical Director,BEC, BGK"
+              }
+            ]
+          },
+          {
+            "title": "Panel of Examiners (2025-26)",
+            "members": [
+              {
+                "name": "B.G.Hokarani.",
+                "position": "Assistant Professor.HOD of HSS. — Department of Humanities and Social Sciences. Basaveshwar Engineering College, Bagalkote"
+              },
+              {
+                "name": "Prof.Nidhi P.Koranmath",
+                "position": "Assistant Professor — Basaveshwar Engineering College, Bagalkote.Department of Humanities and Social Sciences"
+              },
+              {
+                "name": "Smt.Shanta Byadagi",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences Basaveshwar Engineering College, Bagalkote"
+              },
+              {
+                "name": "Prof. Ganesh Tilve",
+                "position": "Assistant Professor — Department of Biotechnology Engineering.GMIT Davangere"
+              },
+              {
+                "name": "Prof.Suresh Doddi",
+                "position": "Assistant Professor — Department of Mechanical Engineering.BLDEACET, Vijayapur."
+              },
+              {
+                "name": "Dr.I.G.Patil",
+                "position": "Professor — Department of Mechanical Engineering. TCE, Gadag ."
+              },
+              {
+                "name": "Prof.Sunil Biradar",
+                "position": "Associate Professor — Department of Mechanical EngineeringBLDEA’S Engineering College,Vijayapura"
+              },
+              {
+                "name": "Dr.Sujata.D.Patil",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering. Kalburgi"
+              },
+              {
+                "name": "Dr.Gloria",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Technology Hubli."
+              },
+              {
+                "name": "Sangappa K Kuppas",
+                "position": "Yoga Trainer — Vivekananda Yoga Vignan Kendra,Bagalkote."
+              },
+              {
+                "name": "Prof. Ganesh Kori",
+                "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Prof.Bhimanagouda Chitranal",
+                "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Prof. Shantu kattimani",
+                "position": "Sports Trainer — Department of Sports. Basaveshwar International Public School,Bagalakote"
+              },
+              {
+                "name": "Dr.Tejaswini B J",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences. BMSIT&M,Yelahank PDA, Bangalur"
+              },
+              {
+                "name": "Prof.Anand.Patil.",
+                "position": "Assistant Professor.HOD of HSS — Department of Humanities and Social Sciences. PDA, College of Engineering, Kalaburgi."
+              },
+              {
+                "name": "Prof.Shivakumar Nayak",
+                "position": "Assistant Professor — Department of Electrical and Electronic Engineering.Basaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Prof.M.M.Ganganallimath",
+                "position": "Assistant Professor — Department of Industrial and Production Engineering.Basaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Smt. Roopa B. MathDepartment of ISE",
+                "position": "Assistant Professor — Department of Information Science Engineering.Basaveshwar Engineering College,Bagalkote"
+              },
+              {
+                "name": "Prof.Hariharan P.",
+                "position": "Assistant Professor — Department of Biotechnology Engineering.Sir M Visvesvaraya Institute of Technology,Bangalur."
+              },
+              {
+                "name": "Purushottam Kumar",
+                "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru."
+              },
+              {
+                "name": "Dr.Rakesh Huded",
+                "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi."
+              },
+              {
+                "name": "Dr.Savitri Sattagiri.",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences PDA College of Engineering.Kalburgi."
+              },
+              {
+                "name": "Prof.Usharani M.",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences Maharaj Technical University ,BelavadiMandya.-571477"
+              },
+              {
+                "name": "Dr.Savithri Shantagiri",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering.Gulbarga."
+              },
+              {
+                "name": "Prof.Uma Bhavani",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences. Maharaj Technical University ,BelavadiMandya.-571477"
+              },
+              {
+                "name": "Prof. Prateeka R Pujar",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
+              },
+              {
+                "name": "Prof.S.V.Katti",
+                "position": "Assistant Professor — Department of English.Basaveshwar Art’s College,Bagalkote."
+              },
+              {
+                "name": "Dr.G.I.Nandikolmath",
+                "position": "Assistant Professor — Department of Kannada.Akkamahadevi Woman’s College,Bagalkote."
+              },
+              {
+                "name": "Dr.Rekha Chauhan",
+                "position": "Assistant Professor — Government Law College, Hasana ."
+              },
+              {
+                "name": "Prof.Prashantha.B.B",
+                "position": "Assistant Professor — Department of Physics.Sir M Visvesvaraya institute of technology, Hunasamaranahalli, Bangalur."
+              },
+              {
+                "name": "Dr.Jayachandra S Y",
+                "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College Bagalkote."
+              },
+              {
+                "name": "Prof.Rajashekhar Malgihal",
+                "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College, Bagalkote."
+              },
+              {
+                "name": "Prof.Shivakumar Nayak",
+                "position": "Assistant Professor — Department of Electrical and Electronic EngineeringBasaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Prof.Supriya Harlapur.",
+                "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Dr.Nagaraj Kalligudda",
+                "position": "Assistant Professor — Department of Artificial Intelligence and Machine learning EngineeringBasaveshwar Engineering College Bagalkote."
+              },
+              {
+                "name": "Prof.P.V.Kulkani",
+                "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwar Engineering College, Bagalkote."
+              },
+              {
+                "name": "Dr.D.D.Challal",
+                "position": "Assistant Professor — Department of Basaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Dr.Vilas Niak",
+                "position": "Assistant Professor — Department of Computer Science EngineeringBasaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Prof.M.M.Ganganallimath",
+                "position": "Assistant Professor — Department of Mechanical EngineeringBasaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Prof.R.G.Patil",
+                "position": "Assistant Professor — Department of Electrical and Electronic Engineering Basaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Prof.A.S.Chatra",
+                "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Dr. S.V.Heggond",
+                "position": "Assistant Professor — Department of Civil Engineering Basaveshwar Engineering College,Bagalkote."
+              },
+              {
+                "name": "Prof.Dinesh B.Mirajkar",
+                "position": "Assistant Professor — Department of Information Science EngineeringTatyasaheb Kore Institute of Engineering and Technology Warana University Warananagar, Maharashtra"
+              },
+              {
+                "name": "Prof.Sanjay Yadav",
+                "position": "Assistant Professor — Department of Mechanical Engineering. Basaveshwar Engineering College, Bagalkote."
+              },
+              {
+                "name": "Prof.V.V.Rajput",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Gogte Institute of Technology Belagavi."
+              },
+              {
+                "name": "Dr.Madumala Y",
+                "position": "Assistant Professor — Department of Biotechnology Engineering.Basaveshwar Engineering College, Bagalkote."
+              },
+              {
+                "name": "Prof.Hariharan P.",
+                "position": "Assistant Professor — Department of Biotechnology.Sir M Visvesvaraya Institute of Technology, Bangalur"
+              },
+              {
+                "name": "Phri.A Vishnupriya",
+                "position": "Assistant Manager — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
+              },
+              {
+                "name": "Prof.Shivam Kumar",
+                "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
+              },
+              {
+                "name": "Dr.Basavaraj H. N",
+                "position": "Assistant Professor — Department of Computer Science EngBMSIT AND M,Bangalur"
+              },
+              {
+                "name": "Dr.Rakesh Huded",
+                "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi"
+              },
+              {
+                "name": "Dr.Shobha Patil",
+                "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwa Engineering College, Bagalkote"
+              },
+              {
+                "name": "Prof. Priti Kumarmath",
+                "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College, Bagalkote."
+              },
+              {
+                "name": "Dr.Mallikarjun Aralimarad",
+                "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College, Bagalkote."
+              },
+              {
+                "name": "Shri.Himanshu Vyas",
+                "position": "Soft Skills trainer — Z Skillup ,Bangaluru."
+              },
+              {
+                "name": "Dr.Prashant Niranjan",
+                "position": "Associate Professor — Department of Computer Science Engineering. GIT,Belagavi"
+              },
+              {
+                "name": "Dr.C.R.Hiremath",
+                "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
+              },
+              {
+                "name": "Prof. Jayanti S.Sakri",
+                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
+              },
+              {
+                "name": "Prof. Prashant Puthani",
+                "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
+              }
+            ]
+          }
+        ]
     },
     "pg/environmental-engg": {
       "name": "M.Tech. in Environmental Engineering",

@@ -1091,15 +1091,19 @@
       {
         "name": "Dr. Basavarajeshwari G. Hokarani",
         "designation": "Assistant Professor & Head",
+        "photo": "departments/hss/faculty/basavarajeshwari-g-hokarani.webp",
         "cv": "departments/hss/faculty/cv/basavarajeshwari-g-hokarani.pdf"
       },
       {
-        "name": "Smt. Shanta B. Basanagoudar",
-        "designation": "Assistant Professor"
+        "name": "Smt. Shanta Byadagi",
+        "designation": "Assistant Professor",
+        "photo": "departments/hss/faculty/shanta-byadagi.webp",
+        "cv": "departments/hss/faculty/cv/shanta-byadagi.pdf"
       },
       {
         "name": "Miss. Nidhi P. Koranmath",
         "designation": "Assistant Professor",
+        "photo": "departments/hss/faculty/nidhi-p-koranmath.webp",
         "cv": "departments/hss/faculty/cv/nidhi-p-koranmath.pdf"
       }
     ]
