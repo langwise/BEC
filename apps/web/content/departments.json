@@ -4273,8 +4273,8 @@
       "assetSlug": "ise",
       "tagline": "A global premier centre of education and research in Information Science and Engineering.",
       "established": "1999",
-      "intake": "90",
-      "overview": "The Department of Information Science and Engineering was established in 1999 and offers a 4-year B.E. programme in Information Science and Engineering with a sanctioned intake of 90. Backed by qualified faculty and well-equipped computing laboratories, the department trains students in information and communication technologies, software engineering and emerging computing domains. It runs a recognised Research Centre (established 2020) with active research in image processing and pattern recognition, wireless sensor and ubiquitous networks, vehicular ad-hoc networks, IoT and cloud computing, and data mining and machine/deep learning. The B.E. programme has been accredited by the NBA, and the department maintains strong industry linkages, internships and a vibrant student association.",
+      "intake": "180",
+      "overview": "The Department of Information Science and Engineering was established in 1999 and offers a 4-year B.E. programme in Information Science and Engineering with a sanctioned intake of 180. Backed by qualified faculty and well-equipped computing laboratories, the department trains students in information and communication technologies, software engineering and emerging computing domains. It runs a recognised Research Centre (established 2020) with active research in image processing and pattern recognition, wireless sensor and ubiquitous networks, vehicular ad-hoc networks, IoT and cloud computing, and data mining and machine/deep learning. The B.E. programme has been accredited by the NBA, and the department maintains strong industry linkages, internships and a vibrant student association.",
       "vision": "To be a Global Premier Center of Education and Research in Information Science and Engineering.",
       "mission": [
         "To impart quality engineering education developing ethical and competent professionals.",
@@ -4282,8 +4282,9 @@
         "To create exemplary young professionals who will promote sustainable development."
       ],
       "programsOffered": [
-        "B.E. — Information Science and Engineering",
-        "Ph.D. — Information Science and Engineering (VTU Research Centre)"
+        "B.E. — Information Science and Engineering (UG)",
+        "Ph.D. / M.Sc. (Engineering) by Research",
+        "Recognised VTU Research Centre"
       ],
       "peos": [
         {
@@ -4310,19 +4311,15 @@
       "psos": [
         {
           "code": "PSO1",
-          "text": "Demonstrate the ability to apply basic science and engineering fundamentals to solve complex engineering problems in society."
+          "text": "Apply programming paradigms, modern tools, and ethical practices to develop sustainable Software Systems."
         },
         {
           "code": "PSO2",
-          "text": "Demonstrate the ability to provide information and communication technology solutions using modern engineering and IT tools at affordable cost, working as a team member."
-        },
-        {
-          "code": "PSO3",
-          "text": "Exhibit ethical, social and professional responsibilities and engage in lifelong learning."
+          "text": "Adopt computing and communication models along with data engineering techniques to develop secured intelligent Information Systems."
         }
       ],
       "highlights": [
-        "Established in 1999, offering a 4-year B.E. programme in Information Science and Engineering with an intake of 90.",
+        "Established in 1999, offering a 4-year B.E. programme in Information Science and Engineering with an intake of 180.",
         "NBA-accredited B.E. programme under the autonomous, VTU-affiliated institute.",
         "VTU-recognised Research Centre (established 2020) across image processing, wireless sensor and vehicular networks, IoT and cloud computing, and machine/deep learning.",
         "Active industry linkages and internships, with the student association RISE conducting webinars, training programmes and technical events."
@@ -4344,10 +4341,45 @@
           "name": "Dr. A. P. J. Abdul Kalam Lab (ISE Lab-5)"
         }
       ],
+      "activities": [
+        {
+          "title": "Technical Talk — Digital Modernization and Digital Marketing (Shri Mohmmad Jalihal, Insystel Technology Solutions, Pune)",
+          "date": "23-06-2021"
+        },
+        {
+          "title": "Staff Development Programme — Revisiting C (Prof. S. S. Gujarati)",
+          "date": "07–22 May 2021"
+        },
+        {
+          "title": "Training Programme — Advanced C Programming (Prof. S. S. Gujarati)",
+          "date": "26 Apr – 04 May 2021"
+        },
+        {
+          "title": "Skill Development Programme — ASP.NET and XML (Km. Leena Araluswami, SmarTee iT Solutions, Hubli)",
+          "date": "19–21 Mar 2021"
+        },
+        {
+          "title": "Celebration — Subhash Chandra Bose Jayanti",
+          "date": "23-01-2021"
+        },
+        {
+          "title": "Celebration — Swami Vivekananda Jayanti",
+          "date": "12-01-2021"
+        },
+        {
+          "title": "Webinar — Ideation (alumnus Shri Aniruddha Kulkarni, USA)",
+          "date": "01-12-2020"
+        },
+        {
+          "title": "Webinar — How to Start a STARTUP (alumni Mr. Mandar R. Mutalikdesai & Mr. Vinay Bhardwaj)",
+          "date": "08-11-2020"
+        }
+      ],
       "associations": [
         {
-          "name": "RISE — Student Association of ISE",
-          "about": "The departmental student association that organises webinars, technical talks, student and faculty development programmes, training sessions, and celebrations through the academic year, providing students a platform to develop technical and organisational skills."
+          "name": "RISE — Rays of Information Science Engineers (Student Association of ISE)",
+          "about": "The departmental student association, functioning since 2007-08, provides a platform for students to develop leadership, management, organisational and technical skills. It organises technical talks, workshops, training and skill/staff development programmes, and celebrations through the academic year, with active participation from alumni.",
+          "coordinators": ["Prof. G. B. Shettar", "Prof. S. S. Hiremath"]
         }
       ],
       "contact": {
@@ -4356,69 +4388,121 @@
         "phone": "8904614106",
         "email": "bechodise@gmail.com"
       },
-      "documents": [
+      "sectionTitles": {
+        "governance": "Boards",
+        "research": "Research Centre — Dr. A. P. J. Abdul Kalam Lab (VTU Recognised Research Centre)",
+        "facilities": "Infrastructure"
+      },
+      "sectionNavLabels": {
+        "governance": "Boards",
+        "research": "Research Centre"
+      },
+      "hideInfrastructureQuantity": true,
+      "curriculumGroups": [
         {
-          "title": "Faculty List (2024-25)",
-          "file": "departments/ise/docs/faculty-list-2024-25.pdf"
+          "title": "Scheme of Teaching & Examinations",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (Revised AY 2024-25)",
+              "file": "departments/ise/docs/scheme-2024-25.pdf"
+            },
+            {
+              "title": "Scheme of Teaching & Examinations (AY 2025-26)",
+              "file": "departments/ise/docs/scheme-2025-26.pdf"
+            }
+          ]
         },
         {
-          "title": "Research Centre Information",
-          "file": "departments/ise/docs/research-centre.pdf"
-        },
-        {
-          "title": "Research Data (Last 4 Academic Years)",
-          "file": "departments/ise/docs/research-data-4ay.pdf"
-        },
-        {
-          "title": "Research Publications (2025-26)",
-          "file": "departments/ise/docs/publications-2025-26.pdf"
-        },
-        {
-          "title": "MoU Details",
-          "file": "departments/ise/docs/mou-details.pdf"
-        },
-        {
-          "title": "RISE Association Events",
-          "file": "departments/ise/docs/association-events.pdf"
-        },
+          "title": "Syllabus",
+          "documents": [
+            {
+              "title": "Syllabus — IV Semester",
+              "file": "departments/ise/docs/syllabus-4th-sem.pdf"
+            },
+            {
+              "title": "Syllabus — VI Semester",
+              "file": "departments/ise/docs/syllabus-6th-sem.pdf"
+            },
+            {
+              "title": "Syllabus — VIII Semester",
+              "file": "departments/ise/docs/syllabus-8th-sem.pdf"
+            }
+          ]
+        }
+      ],
+      "bestPractices": [
         {
           "title": "Best Practices",
           "file": "departments/ise/docs/best-practices.pdf"
-        },
-        {
-          "title": "List of IoT Experiments",
-          "file": "departments/ise/docs/iot-experiments-list.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus (Revised AY 2024-25)",
-          "file": "departments/ise/docs/scheme-2024-25.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus (AY 2025-26)",
-          "file": "departments/ise/docs/scheme-2025-26.pdf"
         }
       ],
+      "sectionDocuments": {
+        "research": [
+          {
+            "title": "Research Centre Information",
+            "file": "departments/ise/docs/research-centre.pdf"
+          },
+          {
+            "title": "Research Data (Last 4 Academic Years)",
+            "file": "departments/ise/docs/research-data-4ay.pdf"
+          },
+          {
+            "title": "Research Publications (2025-26)",
+            "file": "departments/ise/docs/publications-2025-26.pdf"
+          }
+        ],
+        "mou": [
+          {
+            "title": "MoU Details",
+            "file": "departments/ise/docs/mou-details.pdf"
+          }
+        ],
+        "facilities": [
+          {
+            "title": "List of IoT Experiments",
+            "file": "departments/ise/docs/iot-experiments-list.pdf"
+          }
+        ],
+        "faculty": [
+          {
+            "title": "Faculty List (2024-25)",
+            "file": "departments/ise/docs/faculty-list-2024-25.pdf"
+          }
+        ]
+      },
+      "consolidateResearch": true,
       "researchAreas": [
         {
           "supervisor": "Dr. S. R. Patil",
           "area": "Image processing and pattern recognition"
         },
         {
-          "supervisor": "Dr. B. M. Reshmi",
-          "area": "Medical image processing and machine learning"
-        },
-        {
           "supervisor": "Dr. S. P. Bangarashetti",
           "area": "Image processing and pattern recognition"
-        },
-        {
-          "supervisor": "Dr. Anil Devangavi",
-          "area": "Vehicular ad-hoc networks"
         },
         {
           "supervisor": "Dr. Lokesh Bhajantri",
           "area": "Wireless sensor networks and ubiquitous networks, IoT and cloud computing"
         }
+      ],
+      "researchAreasList": [
+        "Image processing and pattern recognition",
+        "Wireless sensor networks and ubiquitous networks",
+        "Vehicular ad-hoc networks",
+        "IoT and cloud computing",
+        "Data mining and machine/deep learning"
+      ],
+      "researchFacilities": [
+        "e-Resources and digital library access",
+        "National and international journals",
+        "Audio and video facilities",
+        "Reprographic facilities"
+      ],
+      "researchAchievements": [
+        "Five faculty members are doctorates and two are registered for Ph.D.",
+        "National and international journal/conference publications and patents.",
+        "Faculty have served as journal reviewers and chaired sessions at IEEE international conferences.",
+        "Faculty recognised as guest editors and received Bronze-level partner faculty awards."
       ],
       "researchScholars": [
         {
@@ -4515,8 +4599,12 @@
           "designation": "Foreman"
         },
         {
-          "name": "Shri. V. S. Nashi",
-          "designation": "Assistant Instructor"
+          "name": "Shri. S. B. Khot",
+          "designation": "Instructor"
+        },
+        {
+          "name": "Smt. Akshata I. Nalatwad",
+          "designation": "Instructor"
         },
         {
           "name": "Shri. D. S. Gadad",
@@ -4525,14 +4613,6 @@
         {
           "name": "Shri. M. V. Gennur",
           "designation": "Assistant Instructor"
-        },
-        {
-          "name": "Shri. S. B. Khot",
-          "designation": "Instructor"
-        },
-        {
-          "name": "Akshata I. Nalatwad",
-          "designation": "Instructor"
         },
         {
           "name": "Shri. S. F. Patil",
@@ -4553,7 +4633,7 @@
       ],
       "committeeGroups": [
         {
-          "title": "Board of Studies (2022-2025)",
+          "title": "Board of Studies (07-08-2025 to 06-08-2028)",
           "members": [
             {
               "name": "Dr. L. B. Bhajantri",
@@ -4680,8 +4760,13 @@
       "infrastructureItems": [
         {
           "name": "Computers",
-          "specification": "Intel Core i3 Processor, 500 GB HDD, 4 GB RAM, mouse, keyboard",
-          "quantity": "120"
+          "specification": "180 nos. — Intel Core i3 Processor, 500 GB HDD, 4 GB RAM, mouse, keyboard",
+          "quantity": "180"
+        },
+        {
+          "name": "IoT Kits",
+          "specification": "IoT laboratory kits for hands-on experiments (sensors, microcontrollers, cloud connectivity)",
+          "quantity": ""
         },
         {
           "name": "Canon / HP Printer",

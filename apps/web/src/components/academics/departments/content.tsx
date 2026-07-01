@@ -18,6 +18,8 @@ interface ContentSectionProps {
   items?: string[];
   groups?: ContentGroup[];
   icon?: string;
+  /** Justify the body paragraph (used for the department Overview). */
+  justify?: boolean;
 }
 
 function BulletList({ items }: { items: GroupItem[] }) {
@@ -62,6 +64,7 @@ export default function ContentSection({
   items,
   groups,
   icon,
+  justify,
 }: ContentSectionProps) {
   const Icon = icon ? iconMap[icon] : null;
 
@@ -83,7 +86,7 @@ export default function ContentSection({
       </div>
 
       <div className="prose prose-lg prose-orange max-w-none text-gray-600 leading-relaxed">
-        {content && <p>{content}</p>}
+        {content && <p className={justify ? "text-justify" : undefined}>{content}</p>}
         {items && items.length > 0 && <BulletList items={items} />}
         {groups && groups.length > 0 && (
           <div className="not-prose mt-6 space-y-6">
