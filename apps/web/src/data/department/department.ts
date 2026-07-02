@@ -33,6 +33,9 @@ export interface HeaderBlock {
   icon: string;
 }
 
+/** A downloadable document link (title + resolved R2 url). */
+export type DocLink = { title: string; url: string };
+
 // Supported section types (discriminated union the renderer switches on).
 export type DepartmentSection =
   | {
@@ -43,12 +46,21 @@ export type DepartmentSection =
       items?: string[];
       groups?: ContentGroup[];
       icon?: string;
+      attachments?: DocLink[];
     }
-  | { id?: string; type: "faculty-list"; title: string; faculty: FacultyMember[] }
-  | { id?: string; type: "documents"; title: string; icon?: string; documents: { title: string; url: string }[] }
-  | { id?: string; type: "tables"; title: string; icon?: string; tables: DataTable[] }
+  | { id?: string; type: "faculty-list"; title: string; faculty: FacultyMember[]; attachments?: DocLink[] }
+  | {
+      id?: string;
+      type: "documents";
+      title: string;
+      icon?: string;
+      documents: DocLink[];
+      /** When present, the curriculum renders as labelled sub-tabs instead of a flat grid. */
+      groups?: { title: string; documents: DocLink[] }[];
+    }
+  | { id?: string; type: "tables"; title: string; icon?: string; tables: DataTable[]; attachments?: DocLink[] }
   | { id?: string; type: "stats"; title: string; stats: { label: string; value: string; icon?: string }[] }
-  | { id?: string; type: "gallery"; title: string; images: { src: string; alt: string }[] };
+  | { id?: string; type: "gallery"; title: string; images: { src: string; alt: string }[]; attachments?: DocLink[] };
 
 export interface DepartmentData {
   name: string;
@@ -63,6 +75,9 @@ export interface DepartmentData {
   quickStats?: { label: string; value: string }[];
 
   highlights: string[];
+
+  /** Best-practices PDFs surfaced on the Home tab. */
+  bestPractices?: DocLink[];
 
   sidebar: { id: string; label: string; icon: string }[];
 
@@ -106,6 +121,9 @@ function quickStats(
 function buildSections(contentKey: string, content: DepartmentContent): DepartmentSection[] {
   const sections: DepartmentSection[] = [];
 
+  // Per-department section heading override (falls back to the shared default).
+  const heading = (id: string, def: string) => content.sectionTitles?.[id] ?? def;
+
   // Academics — programs, PEOs, PSOs
   if (content.programsOffered?.length || content.peos?.length || content.psos?.length) {
     const groups: ContentGroup[] = [];
@@ -113,27 +131,44 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       groups.push({ subtitle: "Programs Offered", items: content.programsOffered });
     if (content.peos?.length)
       groups.push({
-        subtitle: "Programme Educational Objectives (PEOs)",
+        subtitle: "Programme Educational Objectives (PEO's)",
         items: content.peos.map((p) => `${p.code}: ${p.text}`),
       });
     if (content.psos?.length)
       groups.push({
-        subtitle: "Programme Specific Outcomes (PSOs)",
+        subtitle: "Programme Specific Outcomes (PSO's)",
         items: content.psos.map((p) => `${p.code}: ${p.text}`),
       });
-    sections.push({ id: "academics", type: "content", title: "Academics", icon: "book", groups });
+    sections.push({ id: "academics", type: "content", title: heading("academics", "Academics"), icon: "book", groups });
   }
 
-  // Curriculum & syllabus documents (R2 PDFs)
-  const documents = resolveDocuments(content.documents);
-  if (documents.length) {
-    sections.push({ id: "curriculum", type: "documents", title: "Curriculum & Syllabus", icon: "file-text", documents });
+  // Curriculum & syllabus documents (R2 PDFs). When curriculumGroups is set, the
+  // tab renders as labelled sub-tabs (Scheme of Teaching & Examinations / Syllabus).
+  if (content.curriculumGroups?.length) {
+    const groups = content.curriculumGroups
+      .map((g) => ({ title: g.title, documents: resolveDocuments(g.documents) }))
+      .filter((g) => g.documents.length);
+    if (groups.length) {
+      sections.push({
+        id: "curriculum",
+        type: "documents",
+        title: heading("curriculum", "Curriculum & Syllabus"),
+        icon: "file-text",
+        documents: [],
+        groups,
+      });
+    }
+  } else {
+    const documents = resolveDocuments(content.documents);
+    if (documents.length) {
+      sections.push({ id: "curriculum", type: "documents", title: heading("curriculum", "Curriculum & Syllabus"), icon: "file-text", documents });
+    }
   }
 
   // Faculty
   const faculty = getDepartmentFaculty(contentKey);
   if (faculty.length) {
-    sections.push({ id: "faculty", type: "faculty-list", title: "Teaching Faculty", faculty });
+    sections.push({ id: "faculty", type: "faculty-list", title: heading("faculty", "Teaching Faculty"), faculty });
   }
 
   // Supporting staff
@@ -141,7 +176,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({
       id: "staff",
       type: "tables",
-      title: "Supporting Staff",
+      title: heading("staff", "Supporting Staff"),
       icon: "users",
       tables: [
         {
@@ -158,7 +193,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({
       id: "governance",
       type: "tables",
-      title: "Board Members",
+      title: heading("governance", "Board Members"),
       icon: "clipboard",
       tables: content.committeeGroups.map((group) => ({
         title: group.title,
@@ -168,8 +203,52 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
+  // Consolidated Research Centre — supervisors, areas, scholars, grants,
+  // facilities and achievements all under one tab.
+  if (
+    content.consolidateResearch &&
+    (content.researchAreas?.length ||
+      content.researchScholars?.length ||
+      content.labs?.length ||
+      content.researchFacilities?.length ||
+      content.researchAchievements?.length)
+  ) {
+    const groups: ContentGroup[] = [];
+    if (content.researchAreas?.length)
+      groups.push({
+        subtitle: "Research Supervisors",
+        items: content.researchAreas.map((r) => ({ label: r.supervisor, value: r.area })),
+      });
+    if (content.researchAreasList?.length)
+      groups.push({ subtitle: "Research Areas", items: content.researchAreasList });
+    if (content.researchScholars?.length)
+      groups.push({
+        subtitle: `Research Scholars (${content.researchScholars.length})`,
+        items: content.researchScholars.map((s) => ({
+          label: s.scholar,
+          value: `Guide: ${s.guide}${s.status ? ` · ${s.status}` : ""}`,
+        })),
+      });
+    if (content.researchGrants?.length)
+      groups.push({
+        subtitle: "Sponsored Research Grants",
+        items: content.researchGrants.map((g) => ({
+          label: g.title,
+          value: `${g.agency} · ${g.amount} · ${g.year}`,
+        })),
+      });
+    if (content.researchFacilities?.length)
+      groups.push({ subtitle: "Research Facilities", items: content.researchFacilities });
+    if (content.researchAchievements?.length)
+      groups.push({ subtitle: "Research Achievements", items: content.researchAchievements });
+    for (const lab of content.labs ?? []) {
+      groups.push({ subtitle: lab.name, text: lab.description });
+    }
+    sections.push({ id: "research", type: "content", title: heading("research", "Research & Labs"), icon: "flask", groups });
+  }
+
   // Research — areas of specialization + labs
-  if (content.researchAreas?.length || content.labs?.length) {
+  if (!content.consolidateResearch && (content.researchAreas?.length || content.labs?.length)) {
     const groups: ContentGroup[] = [];
     if (content.researchAreas?.length)
       groups.push({
@@ -182,11 +261,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     for (const lab of content.labs ?? []) {
       groups.push({ subtitle: lab.name, text: lab.description });
     }
-    sections.push({ id: "research", type: "content", title: "Research & Labs", icon: "flask", groups });
+    sections.push({ id: "research", type: "content", title: heading("research", "Research & Labs"), icon: "flask", groups });
   }
 
   // Research achievements — Ph.D.s awarded, registered scholars, sponsored grants
-  if (content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length) {
+  if (!content.consolidateResearch && (content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length)) {
     const tables: DataTable[] = [];
     if (content.phdsAwarded?.length) {
       tables.push({
@@ -212,7 +291,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({
       id: "research-achievements",
       type: "tables",
-      title: "Research Achievements",
+      title: heading("research-achievements", "Research Achievements"),
       icon: "clipboard",
       tables,
     });
@@ -267,19 +346,22 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   if (content.infrastructureItems?.length || content.softwareItems?.length) {
     const tables: DataTable[] = [];
     if (content.infrastructureItems?.length) {
+      const hideQty = content.hideInfrastructureQuantity;
       tables.push({
-        title: "Major Equipment Available",
-        columns: ["Equipment", "Brief Specification", "Quantity"],
-        rows: content.infrastructureItems.map((item) => [
-          item.name,
-          item.specification ?? "",
-          item.quantity ?? "",
-        ]),
+        title: "Major Equipment",
+        columns: hideQty
+          ? ["Equipment", "Brief Specification"]
+          : ["Equipment", "Brief Specification", "Quantity"],
+        rows: content.infrastructureItems.map((item) =>
+          hideQty
+            ? [item.name, item.specification ?? ""]
+            : [item.name, item.specification ?? "", item.quantity ?? ""],
+        ),
       });
     }
     if (content.softwareItems?.length) {
       tables.push({
-        title: "Software Available",
+        title: "Software",
         columns: ["Name", "Version", "System / Application"],
         rows: content.softwareItems.map((item) => [
           item.name,
@@ -291,7 +373,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({
       id: "facilities",
       type: "tables",
-      title: "Infrastructure Details",
+      title: heading("facilities", "Infrastructure Details"),
       icon: "building-2",
       tables,
     });
@@ -311,21 +393,29 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         : "";
       groups.push({ subtitle: assoc.name, text: `${assoc.about ?? ""}${coords}`.trim() });
     }
-    sections.push({ id: "activities", type: "content", title: "Activities & Forums", icon: "calendar", groups });
+    sections.push({ id: "activities", type: "content", title: heading("activities", "Activities & Forums"), icon: "calendar", groups });
   }
 
   // MoUs / industry collaborations
   if (content.mous?.length) {
+    // Only show the "Since" column when at least one MoU records a date.
+    const hasSince = content.mous.some((m) => m.since);
     sections.push({
       id: "mou",
       type: "tables",
-      title: "MoUs & Collaborations",
+      title: heading("mou", "MoUs & Collaborations"),
       icon: "handshake",
       tables: [
         {
           title: "Memoranda of Understanding",
-          columns: ["Partner Organization", "Location", "Since"],
-          rows: content.mous.map((m) => [m.partner, m.location ?? "", m.since ?? ""]),
+          columns: hasSince
+            ? ["Partner Organization", "Location", "Since"]
+            : ["Partner Organization", "Location"],
+          rows: content.mous.map((m) =>
+            hasSince
+              ? [m.partner, m.location ?? "", m.since ?? ""]
+              : [m.partner, m.location ?? ""],
+          ),
         },
       ],
     });
@@ -341,7 +431,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({
       id: "infrastructure",
       type: "gallery",
-      title: "Infrastructure & Labs",
+      title: heading("infrastructure", "Infrastructure & Labs"),
       images: gallery.map((src, i) => ({ src, alt: `${content.name} — facilities photo ${i + 1}` })),
     });
   }
@@ -364,12 +454,24 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({
       id: "contact",
       type: "content",
-      title: "Department Contact",
+      title: heading("contact", "Department Contact"),
       icon: "phone",
       content: c ? [c.name, c.designation].filter(Boolean).join(" — ") || undefined : undefined,
       items,
       groups,
     });
+  }
+
+  // Attach extra PDFs to their sections (e.g. Research Centre Info under Research,
+  // MoU Details under MoUs). The Curriculum tab keeps only scheme/syllabus, so
+  // relocated documents surface alongside the section they belong to.
+  if (content.sectionDocuments) {
+    for (const section of sections) {
+      if (!section.id) continue;
+      if (section.type === "documents" || section.type === "stats") continue;
+      const docs = resolveDocuments(content.sectionDocuments[section.id]);
+      if (docs.length) section.attachments = docs;
+    }
   }
 
   return sections;
@@ -403,7 +505,10 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
   };
   for (const section of sections) {
     const meta = section.id ? sectionLabels[section.id] : undefined;
-    if (meta) sidebar.push({ id: section.id!, label: meta.label, icon: meta.icon });
+    if (meta) {
+      const label = (section.id && content?.sectionNavLabels?.[section.id]) || meta.label;
+      sidebar.push({ id: section.id!, label, icon: meta.icon });
+    }
   }
 
   return {
@@ -436,6 +541,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
       icon: "target",
     },
     highlights: content?.highlights ?? defaultHighlights,
+    bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
     sidebar,
     sections,
   };

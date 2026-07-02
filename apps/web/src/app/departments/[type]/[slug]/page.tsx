@@ -89,11 +89,11 @@ export default async function DepartmentPage({
         </div>
 
         <div className="relative container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
-          <div className="mt-4 space-y-4 max-w-3xl">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
+          <div className="mt-4 space-y-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900 text-balance lg:whitespace-nowrap">
               {dept.name}
             </h1>
-            <p className="text-base md:text-lg leading-relaxed text-gray-700">
+            <p className="max-w-3xl text-base md:text-lg leading-relaxed text-gray-700">
               {dept.tagline}
             </p>
           </div>

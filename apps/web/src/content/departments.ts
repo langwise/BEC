@@ -19,6 +19,14 @@ export type DepartmentContent = {
   psos?: CodedItem[];
   highlights?: string[];
   researchAreas?: { supervisor: string; area: string; university?: string }[];
+  /** Major research areas/domains as plain bullets (distinct from supervisor→area pairs). */
+  researchAreasList?: string[];
+  /** Research facilities available at the centre (bullets). */
+  researchFacilities?: string[];
+  /** Notable research achievements (bullets). */
+  researchAchievements?: string[];
+  /** Fold scholars/grants/facilities/achievements into a single "Research Centre" tab. */
+  consolidateResearch?: boolean;
   phdsAwarded?: { scholar: string; guide: string; title: string; year: string }[];
   researchScholars?: { scholar: string; usn?: string; guide: string; title?: string; status: string }[];
   researchGrants?: { title: string; agency: string; year: string; amount: string; investigators: string }[];
@@ -36,6 +44,18 @@ export type DepartmentContent = {
   contact?: { name?: string; designation?: string; phone?: string; email?: string };
   additionalContacts?: { name: string; designation?: string; phone?: string; email?: string }[];
   documents?: { title: string; file: string }[];
+  /** Curriculum shown as labelled sub-tabs (e.g. Scheme of Teaching & Examinations / Syllabus). */
+  curriculumGroups?: { title: string; documents: { title: string; file: string }[] }[];
+  /** Extra PDFs attached to a specific section, keyed by section id (research, mou, facilities, faculty…). */
+  sectionDocuments?: Record<string, { title: string; file: string }[]>;
+  /** Best-practices PDFs surfaced on the department Home tab. */
+  bestPractices?: { title: string; file: string }[];
+  /** Per-department section heading overrides, keyed by section id. */
+  sectionTitles?: Record<string, string>;
+  /** Per-department sidebar label overrides, keyed by section id. */
+  sectionNavLabels?: Record<string, string>;
+  /** Drop the "Quantity" column from the infrastructure/equipment table for this department. */
+  hideInfrastructureQuantity?: boolean;
 };
 
 /** Back-compat alias — the minimal shape older callers relied on. */

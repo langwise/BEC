@@ -9,6 +9,7 @@ export const navigationData: NavigationItem[] = [
       { title: "About Sangha", href: "/institute/about-sangha" },
       { title: "About Us", href: "/institute/about" },
       { title: "History & Milestones", href: "/institute/history" },
+      { title: "Chairperson", href: "/institute/chairperson" },
       {
         title: "Accreditation & Quality",
         items: [
@@ -62,7 +63,6 @@ export const navigationData: NavigationItem[] = [
           },
         ],
       },
-      { title: "Chairperson", href: "/administration/chairperson" },
       { title: "Director", href: "/administration/director" },
       { title: "Principal", href: "/administration/principal" },
       { title: "Deans", href: "/administration/governance#deans" },

@@ -852,93 +852,117 @@
     ],
     "information-science-and-engg": [
       {
+        "name": "Dr. Lokesh B. Bhajantri",
+        "designation": "Associate Professor & Head",
+        "photo": "departments/ise/faculty/lokesh-b-bhajantri.webp",
+        "cv": "departments/ise/faculty/cv/lokesh-b-bhajantri.pdf"
+      },
+      {
         "name": "Dr. Shobha R. Patil",
         "designation": "Professor",
+        "photo": "departments/ise/faculty/shobha-r-patil.webp",
         "cv": "departments/ise/faculty/cv/shobha-r-patil.pdf"
       },
       {
         "name": "Dr. Sadhana P. Bangarashetti",
-        "designation": "Professor & Head",
+        "designation": "Professor",
+        "photo": "departments/ise/faculty/sadhana-p-bangarashetti.webp",
         "cv": "departments/ise/faculty/cv/sadhana-p-bangarashetti.pdf"
       },
       {
         "name": "Prof. P. V. Kulkarni",
         "designation": "Associate Professor",
+        "photo": "departments/ise/faculty/p-v-kulkarni.webp",
         "cv": "departments/ise/faculty/cv/p-v-kulkarni.pdf"
       },
       {
         "name": "Prof. Preeti S. Puranik",
         "designation": "Associate Professor",
+        "photo": "departments/ise/faculty/preeti-s-puranik.webp",
         "cv": "departments/ise/faculty/cv/preeti-s-puranik.pdf"
-      },
-      {
-        "name": "Dr. Lokesh B. Bhajantri",
-        "designation": "Associate Professor",
-        "cv": "departments/ise/faculty/cv/lokesh-b-bhajantri.pdf"
       },
       {
         "name": "Prof. Roopa B. Math",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/roopa-b-math.webp",
         "cv": "departments/ise/faculty/cv/roopa-b-math.pdf"
       },
       {
         "name": "Prof. Vijayalaxmi S. Patil",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/vijayalaxmi-s-patil.webp",
         "cv": "departments/ise/faculty/cv/vijayalaxmi-s-patil.pdf"
       },
       {
         "name": "Prof. Sandeep N. Kugali",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/sandeep-n-kugali.webp",
         "cv": "departments/ise/faculty/cv/sandeep-n-kugali.pdf"
       },
       {
         "name": "Prof. G. M. Patil",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/g-m-patil.webp",
         "cv": "departments/ise/faculty/cv/g-m-patil.pdf"
       },
       {
         "name": "Prof. Parashuram K. Deshpande",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/parashuram-k-deshpande.webp",
         "cv": "departments/ise/faculty/cv/parashuram-k-deshpande.pdf"
       },
       {
         "name": "Prof. Girish B. Shettar",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/girish-b-shettar.webp",
         "cv": "departments/ise/faculty/cv/girish-b-shettar.pdf"
       },
       {
         "name": "Prof. Deepa I. Kalappanavar",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/deepa-i-kalappanavar.webp",
         "cv": "departments/ise/faculty/cv/deepa-i-kalappanavar.pdf"
       },
       {
         "name": "Prof. Chetana R. Shivanagi",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/chetana-r-shivanagi.webp",
         "cv": "departments/ise/faculty/cv/chetana-r-shivanagi.pdf"
       },
       {
         "name": "Prof. Mallikarjungouda R. Patil",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/mallikarjungouda-r-patil.webp",
         "cv": "departments/ise/faculty/cv/mallikarjungouda-r-patil.pdf"
       },
       {
         "name": "Prof. Shiddalingesh S. Hiremath",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/shiddalingesh-s-hiremath.webp",
         "cv": "departments/ise/faculty/cv/shiddalingesh-s-hiremath.pdf"
       },
       {
         "name": "Prof. Sheetal Pattanshetti",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/sheetal-pattanshetti.webp",
         "cv": "departments/ise/faculty/cv/sheetal-pattanshetti.pdf"
       },
       {
         "name": "Prof. Parimala R. Muttannavar",
         "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/parimala-r-muttannavar.webp",
         "cv": "departments/ise/faculty/cv/parimala-r-muttannavar.pdf"
       },
       {
         "name": "Prof. S. S. Guttannavar",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/s-s-guttannavar.webp"
+      },
+      {
+        "name": "Prof. Netravati Pattar",
+        "designation": "Assistant Professor",
+        "photo": "departments/ise/faculty/netravati-pattar.webp",
+        "cv": "departments/ise/faculty/cv/netravati-pattar.pdf"
       }
     ],
     "mechanical-engg": [
@@ -1064,15 +1088,19 @@
       {
         "name": "Dr. Basavarajeshwari G. Hokarani",
         "designation": "Assistant Professor & Head",
+        "photo": "departments/hss/faculty/basavarajeshwari-g-hokarani.webp",
         "cv": "departments/hss/faculty/cv/basavarajeshwari-g-hokarani.pdf"
       },
       {
-        "name": "Smt. Shanta B. Basanagoudar",
-        "designation": "Assistant Professor"
+        "name": "Smt. Shanta Byadagi",
+        "designation": "Assistant Professor",
+        "photo": "departments/hss/faculty/shanta-byadagi.webp",
+        "cv": "departments/hss/faculty/cv/shanta-byadagi.pdf"
       },
       {
         "name": "Miss. Nidhi P. Koranmath",
         "designation": "Assistant Professor",
+        "photo": "departments/hss/faculty/nidhi-p-koranmath.webp",
         "cv": "departments/hss/faculty/cv/nidhi-p-koranmath.pdf"
       }
     ]
