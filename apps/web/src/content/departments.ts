@@ -11,6 +11,7 @@ export type DepartmentContent = {
   established?: string;
   intake?: string;
   overview?: string;
+  about?: string;
   vision?: string;
   mission?: string[];
   programsOffered?: string[];

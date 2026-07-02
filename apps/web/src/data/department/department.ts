@@ -69,6 +69,7 @@ export interface DepartmentData {
   overview: HeaderBlock;
   vision: HeaderBlock;
   mission: HeaderBlock;
+  about?: HeaderBlock;
 
   /** Optional "at a glance" stats row shown on the Home tab. */
   quickStats?: { label: string; value: string }[];
@@ -485,7 +486,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
 
   // Sidebar derived from the content that actually exists.
   const sidebar = [{ id: "home", label: "Home", icon: "home" }];
-  if (content?.vision || content?.mission?.length)
+  if (content?.about || content?.vision || content?.mission?.length)
     sidebar.push({ id: "about", label: "About Department", icon: "graduation-cap" });
   const sectionLabels: Record<string, { label: string; icon: string }> = {
     academics: { label: "Academics", icon: "file-text" },
@@ -521,6 +522,13 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
         "Department overview will be updated soon. Explore the available sections from the menu.",
       icon: "book",
     },
+    about: content?.about
+      ? {
+          title: "About the Department",
+          content: content.about,
+          icon: "graduation-cap",
+        }
+      : undefined,
     vision: {
       title: "Vision",
       content: content?.vision ?? "Vision statement will be updated soon.",
