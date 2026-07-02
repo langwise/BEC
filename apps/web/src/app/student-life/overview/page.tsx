@@ -22,7 +22,7 @@ import {
 export const metadata = pageMetadata({
   title: "Life at BEC",
   description:
-    "Explore student life at BEC Bagalkote — a 93-acre green campus with hostels, BEC Dhwani 90.4 FM, sports, and student clubs like BEC Creative Spectrum, NSS and IEEE.",
+    "Explore student life at BEC Bagalkote — a 93-acre green campus with hostels, BEC Dhwani 90.4 FM, sports, and student clubs like Mindhog, NSS and IEEE.",
   path: "/student-life/overview",
 });
 
@@ -35,11 +35,11 @@ const highlights = [
 
 const clubs = [
   {
-    name: "BEC Creative Spectrum",
+    name: "Mindhog",
     description:
-      "A unified student club initiative bringing together ten distinct clubs under Cultural, Technical, and Holistic wings.",
+      "The student club selected under the AICTE SPICES scheme, focused on creativity, ethics and collaboration.",
     icon: Users,
-    href: "/student-life/bec-creative-spectrum",
+    href: "/student-life/mindhog",
   },
   {
     name: "Sports & Gymkhana",
