@@ -633,23 +633,20 @@
     ],
     "chemistry": [
       {
-        "name": "Dr. P. L. Timmanagoudar",
-        "designation": "Professor & Head"
+        "name": "Dr. S. K. Patil",
+        "designation": "Associate Professor & Head",
+        "photo": "governance/hod/chemistry/dr-s-k-patil.webp"
       },
       {
-        "name": "Dr. S. K. Patil",
-        "designation": "Associate Professor"
+        "name": "Dr. P. L. Timmanagoudar",
+        "designation": "Professor"
       },
       {
         "name": "Dr. V. R. Kattimani",
-        "designation": "Assistant Professor (Selection Grade)"
+        "designation": "Professor (CAS)"
       },
       {
-        "name": "Miss L. P. Channapagol",
-        "designation": "Assistant Professor"
-      },
-      {
-        "name": "Sri A. B. Kirasur",
+        "name": "Smt. K. M. Shettar",
         "designation": "Assistant Professor"
       }
     ],

@@ -15,7 +15,7 @@ export function PageHero({
 }: {
   eyebrow?: string;
   title: string;
-  description?: string;
+  description?: React.ReactNode;
   badges?: PageHeroBadge[];
   className?: string;
 }) {
@@ -41,9 +41,9 @@ export function PageHero({
             {title}
           </h1>
           {description ? (
-            <p className="text-base md:text-lg leading-relaxed text-gray-700">
+            <div className="text-base md:text-lg leading-relaxed text-gray-700 space-y-4">
               {description}
-            </p>
+            </div>
           ) : null}
           {badges?.length ? (
             <div className="flex flex-wrap gap-3 text-sm">

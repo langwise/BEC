@@ -69,6 +69,7 @@ export interface DepartmentData {
   overview: HeaderBlock;
   vision: HeaderBlock;
   mission: HeaderBlock;
+  about?: HeaderBlock;
 
   /** Optional "at a glance" stats row shown on the Home tab. */
   quickStats?: { label: string; value: string }[];
@@ -187,18 +188,31 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
-  // Board of Studies / Board of Examiners
+  // Board of Studies / Board of Examiners. Positions are authored as
+  // "Role — Designation & Affiliation"; when an em dash is present, split it into
+  // a dedicated third column so the role and affiliation don't crowd one cell.
   if (content.committeeGroups?.length) {
     sections.push({
       id: "governance",
       type: "tables",
       title: heading("governance", "Board Members"),
       icon: "clipboard",
-      tables: content.committeeGroups.map((group) => ({
-        title: group.title,
-        columns: ["Name of the Member", "Position"],
-        rows: group.members.map((member) => [member.name, member.position]),
-      })),
+      tables: content.committeeGroups.map((group) => {
+        const split = group.members.some((m) => m.position.includes("—"));
+        return {
+          title: group.title,
+          columns: split
+            ? ["Name of the Member", "Position", "Designation & Affiliation"]
+            : ["Name of the Member", "Position"],
+          rows: group.members.map((member) => {
+            if (!split) return [member.name, member.position];
+            const i = member.position.indexOf("—");
+            return i === -1
+              ? [member.name, member.position, ""]
+              : [member.name, member.position.slice(0, i).trim(), member.position.slice(i + 1).trim()];
+          }),
+        };
+      }),
     });
   }
 
@@ -485,7 +499,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
 
   // Sidebar derived from the content that actually exists.
   const sidebar = [{ id: "home", label: "Home", icon: "home" }];
-  if (content?.vision || content?.mission?.length)
+  if (content?.about || content?.vision || content?.mission?.length)
     sidebar.push({ id: "about", label: "About Department", icon: "graduation-cap" });
   const sectionLabels: Record<string, { label: string; icon: string }> = {
     academics: { label: "Academics", icon: "file-text" },
@@ -521,6 +535,13 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
         "Department overview will be updated soon. Explore the available sections from the menu.",
       icon: "book",
     },
+    about: content?.about
+      ? {
+          title: "About the Department",
+          content: content.about,
+          icon: "graduation-cap",
+        }
+      : undefined,
     vision: {
       title: "Vision",
       content: content?.vision ?? "Vision statement will be updated soon.",
