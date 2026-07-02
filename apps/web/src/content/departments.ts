@@ -56,6 +56,14 @@ export type DepartmentContent = {
   sectionNavLabels?: Record<string, string>;
   /** Drop the "Quantity" column from the infrastructure/equipment table for this department. */
   hideInfrastructureQuantity?: boolean;
+  /** Show Vision & Mission on the Home tab and move Highlights under "About Department". */
+  visionMissionOnHome?: boolean;
+  /** Split Supporting Staff into "Technical Staff" (instructors) and "Supporting Staff" (helpers/peons). */
+  groupSupportingStaff?: boolean;
+  /** Placements: show only summary/recruiter tables, hide per-student name lists. */
+  placementsSummaryOnly?: boolean;
+  /** Asset-key substrings to drop from the infrastructure gallery (e.g. stray portrait shots). */
+  galleryExclude?: string[];
 };
 
 /** Back-compat alias — the minimal shape older callers relied on. */

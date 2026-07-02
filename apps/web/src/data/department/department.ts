@@ -79,6 +79,9 @@ export interface DepartmentData {
   /** Best-practices PDFs surfaced on the Home tab. */
   bestPractices?: DocLink[];
 
+  /** When true, Home shows Vision & Mission and Highlights move under "About Department". */
+  visionMissionOnHome?: boolean;
+
   sidebar: { id: string; label: string; icon: string }[];
 
   sections?: DepartmentSection[];
@@ -171,20 +174,42 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({ id: "faculty", type: "faculty-list", title: heading("faculty", "Teaching Faculty"), faculty });
   }
 
-  // Supporting staff
+  // Supporting staff. Optionally split into "Technical Staff" (instructors) and
+  // "Supporting Staff" (helpers / peons / drivers) grouped by designation.
   if (content.supportingStaff?.length) {
+    const staffRow = (m: { name: string; designation: string }) => [m.name, m.designation];
+    let tables: DataTable[];
+    if (content.groupSupportingStaff) {
+      const isTechnical = (d: string) => /instructor/i.test(d);
+      const technical = content.supportingStaff.filter((m) => isTechnical(m.designation));
+      const support = content.supportingStaff.filter((m) => !isTechnical(m.designation));
+      tables = [
+        technical.length && {
+          title: "Technical Staff",
+          columns: ["Name", "Designation"],
+          rows: technical.map(staffRow),
+        },
+        support.length && {
+          title: "Supporting Staff",
+          columns: ["Name", "Designation"],
+          rows: support.map(staffRow),
+        },
+      ].filter(Boolean) as DataTable[];
+    } else {
+      tables = [
+        {
+          title: "Supporting Staff",
+          columns: ["Name", "Designation"],
+          rows: content.supportingStaff.map(staffRow),
+        },
+      ];
+    }
     sections.push({
       id: "staff",
       type: "tables",
       title: heading("staff", "Supporting Staff"),
       icon: "users",
-      tables: [
-        {
-          title: "Supporting Staff",
-          columns: ["Name", "Designation"],
-          rows: content.supportingStaff.map((member) => [member.name, member.designation]),
-        },
-      ],
+      tables,
     });
   }
 
@@ -338,7 +363,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           rows: batch.companies.map((c) => [c.company, c.package, c.count]),
         });
       }
-      if (batch.students.length) {
+      if (batch.students.length && !content.placementsSummaryOnly) {
         tables.push({
           title: `Students Placed — ${batch.batch} (${batch.students.length} offers)`,
           columns: ["Student", "USN", "Mode", "Company", "LPA"],
@@ -435,11 +460,15 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   }
 
   // Infrastructure gallery (R2 photos)
-  const gallery = content.infrastructureGallerySlug
+  const galleryAll = content.infrastructureGallerySlug
     ? getDepartmentGallery(content.infrastructureGallerySlug)
     : contentKey.startsWith("pg/")
       ? []
       : getDepartmentGallery(content.assetSlug);
+  // Drop any stray portrait/staff shots the department asked to exclude.
+  const gallery = content.galleryExclude?.length
+    ? galleryAll.filter((url) => !content.galleryExclude!.some((k) => url.includes(k)))
+    : galleryAll;
   if (gallery.length) {
     sections.push({
       id: "infrastructure",
@@ -555,6 +584,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     },
     highlights: content?.highlights ?? defaultHighlights,
     bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
+    visionMissionOnHome: content?.visionMissionOnHome,
     sidebar,
     sections,
   };

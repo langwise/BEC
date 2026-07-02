@@ -87,7 +87,7 @@ export default function ContentSection({
 
       <div className="prose prose-lg prose-orange max-w-3xl text-gray-600 leading-relaxed">
         {content && content.split(/\r?\n\r?\n/).map((para, idx) => (
-          <p key={idx} className="mb-6 last:mb-0">
+          <p key={idx} className={`mb-6 last:mb-0 ${justify ? "text-justify" : ""}`}>
             {para}
           </p>
         ))}

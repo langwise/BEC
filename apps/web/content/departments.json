@@ -1431,9 +1431,13 @@
     "computer-science-and-engg": {
       "name": "Computer Science & Engineering",
       "assetSlug": "cse",
-      "tagline": "A Centre of Excellence in IT education, research and innovation since 1983.",
+      "tagline": "A Centre of Excellence in IT Education, Research and Innovation, since 1983.",
       "established": "1983",
       "intake": "180",
+      "visionMissionOnHome": true,
+      "groupSupportingStaff": true,
+      "placementsSummaryOnly": true,
+      "galleryExclude": ["cine1451", "cine1479", "cine1482"],
       "overview": "The Department of Computer Science and Engineering was established in 1983. It offers an undergraduate programme (B.E.) in Computer Science and Engineering with an intake of 180 students, along with M.Sc. (Engineering by Research) and Ph.D. programmes. The department has highly qualified and well-experienced faculty committed to imparting quality technical education in IT and research. Its primary objectives include developing innovative skills, enriching academics through quality teaching-learning processes, building student confidence and inculcating entrepreneurial abilities — producing professionals with ethical values and societal concern.",
       "vision": "To be a Centre of Excellence in IT education, research and innovation, crafting competent professionals catering to the needs of society with moral and ethical values.",
       "mission": [
@@ -1481,7 +1485,7 @@
         }
       ],
       "highlights": [
-        "Established in 1983, with a present B.E. intake of 180 students.",
+        "Established in 1983. Present intake is 180 students.",
         "18 Ph.D.s awarded under departmental guidance; 20 research scholars currently pursuing.",
         "9 VTU-recognized research supervisors across Pattern Recognition, Image Processing, IoT and Network Security.",
         "Dedicated research labs in Multimedia & Vision Computing, Wireless & Mobile Computing and Data Mining.",
@@ -1525,11 +1529,6 @@
           "university": "VTU"
         },
         {
-          "supervisor": "Dr. Anil Devangavi",
-          "area": "Vehicular and Mobile Networks",
-          "university": "VTU"
-        },
-        {
           "supervisor": "Dr. B. M. Reshmi",
           "area": "Medical Image Processing",
           "university": "VTU"
@@ -1558,8 +1557,8 @@
           "description": "Supports student learning through hands-on activities, experimentation and the application of knowledge."
         },
         {
-          "name": "Named computing labs — Dijkstra, Charles Babbage, Kernighan & Ritchie, Kalpana Chawla, Alan Turing & C. V. Raman",
-          "description": "Modern computing labs equipped with 12th–14th Gen Intel Core i5/i7 HP desktops, multimedia projectors and air-conditioning."
+          "name": "Computing Labs — Dijkstra, Charles Babbage, Kernighan & Ritchie, Kalpana Chawla, Alan Turing & C. V. Raman",
+          "description": "Modern computing labs equipped with 12th – 14th Gen Intel Core i5/i7 HP desktops, multimedia projectors and air-conditioning."
         }
       ],
       "activities": [
@@ -1598,7 +1597,7 @@
           "about": "A student association of UG and PG students that aids overall personality development. Run by the students and monitored by faculty, it organizes curricular, extra-curricular and socio-cultural activities and technical events exposing students to state-of-the-art tools and technologies.",
           "coordinators": [
             "Dr. V. B. Pagi",
-            "Dr. Mahantesh G. Kambalimath"
+            "Dr. Smita Gour"
           ]
         }
       ],
@@ -1610,58 +1609,42 @@
       },
       "documents": [
         {
-          "title": "First Year Syllabus (2023-24)",
+          "title": "Scheme & Syllabus — First Year (2023-24 Batch)",
           "file": "departments/cse/docs/syllabus-1st-year-2023-24.pdf"
         },
         {
-          "title": "3rd & 4th Semester Syllabus (2023-24 Batch)",
+          "title": "Scheme & Syllabus — 3rd & 4th Semester (2023-24 Batch)",
           "file": "departments/cse/docs/syllabus-3-4-sem-2023-24.pdf"
         },
         {
-          "title": "3rd–8th Semester Syllabus (2022-23 Batch)",
+          "title": "Scheme & Syllabus — 3rd–8th Semester (2022-23 Batch)",
           "file": "departments/cse/docs/syllabus-3-8-sem-2022-23.pdf"
         },
         {
-          "title": "3rd–8th Semester Syllabus (2021-22 Batch)",
+          "title": "Scheme & Syllabus — 3rd–8th Semester (2021-22 Batch)",
           "file": "departments/cse/docs/syllabus-3-8-sem-2021-22.pdf"
-        },
-        {
-          "title": "Board of Studies — Proceedings (2024-25)",
-          "file": "departments/cse/docs/bos-2024-25.pdf"
-        },
-        {
-          "title": "Course Plan — 1st Semester (2024-25)",
-          "file": "departments/cse/docs/course-plan-1st-sem.pdf"
-        },
-        {
-          "title": "Course Plan — 3rd Semester (2024-25)",
-          "file": "departments/cse/docs/course-plan-3rd-sem.pdf"
-        },
-        {
-          "title": "Course Plan — 5th Semester (2024-25)",
-          "file": "departments/cse/docs/course-plan-5th-sem.pdf"
-        },
-        {
-          "title": "Course Plan — 7th Semester (2024-25)",
-          "file": "departments/cse/docs/course-plan-7th-sem.pdf"
-        },
-        {
-          "title": "Course Plan — DBMS",
-          "file": "departments/cse/docs/course-plan-dbms.pdf"
-        },
-        {
-          "title": "Course Plan — Universal Human Values (2024-25)",
-          "file": "departments/cse/docs/course-plan-uhv-2024-25.pdf"
-        },
-        {
-          "title": "List of Publications",
-          "file": "departments/cse/docs/publications.pdf"
-        },
+        }
+      ],
+      "bestPractices": [
         {
           "title": "Department Best Practices",
           "file": "departments/cse/docs/best-practices.pdf"
         }
       ],
+      "sectionDocuments": {
+        "research-achievements": [
+          {
+            "title": "List of Publications",
+            "file": "departments/cse/docs/publications.pdf"
+          }
+        ],
+        "governance": [
+          {
+            "title": "Board of Studies — Signed Proceedings (2024-25)",
+            "file": "departments/cse/docs/bos-2024-25.pdf"
+          }
+        ]
+      },
       "phdsAwarded": [
         {
           "scholar": "D. G. Savakar",
@@ -1932,43 +1915,51 @@
       ],
       "supportingStaff": [
         {
-          "name": "G. M. Chillalshetra",
+          "name": "Shri. G. M. Chillalshetra",
           "designation": "Instructor"
         },
         {
-          "name": "P. S. Choukimath",
+          "name": "Smt. Akshata Kudleppanavar",
+          "designation": "Instructor"
+        },
+        {
+          "name": "Shri. Gangadhar Yatnatti",
+          "designation": "Instructor"
+        },
+        {
+          "name": "Shri. P. S. Choukimath",
           "designation": "Assistant Instructor"
         },
         {
-          "name": "M. M. Jumanal",
+          "name": "Shri. M. M. Jumanal",
+          "designation": "Instructor"
+        },
+        {
+          "name": "Shri. B. R. Sunkad",
           "designation": "Assistant Instructor"
         },
         {
-          "name": "B. R. Sunkad",
+          "name": "Shri. N. L. Taranal",
           "designation": "Assistant Instructor"
         },
         {
-          "name": "N. L. Taranal",
-          "designation": "Assistant Instructor"
-        },
-        {
-          "name": "Mahantesh G. Bagi",
+          "name": "Shri. Mahantesh G. Bagi",
           "designation": "Helper"
         },
         {
-          "name": "S. I. Gangavati",
+          "name": "Shri. S. I. Gangavati",
           "designation": "Peon"
         },
         {
-          "name": "L. H. Taranal",
-          "designation": "Driver"
+          "name": "Shri. Kallayya Karikantti",
+          "designation": "Peon"
         },
         {
-          "name": "Shanta Badiger",
-          "designation": "Daily Wages Labour"
+          "name": "Shri. Mahesh Hodlurmath",
+          "designation": "Peon"
         },
         {
-          "name": "Kallayya Karikantti",
+          "name": "Smt. Gangamma Sunkad",
           "designation": "Peon"
         }
       ],
@@ -2064,6 +2055,18 @@
         {
           "partner": "ARLIG Technology LLP",
           "location": "Bangalore"
+        },
+        {
+          "partner": "IBM",
+          "location": "Bangalore"
+        },
+        {
+          "partner": "Philips",
+          "location": "Bangalore"
+        },
+        {
+          "partner": "C-DAC",
+          "location": "Bangalore"
         }
       ],
       "infrastructureItems": [
@@ -2074,13 +2077,13 @@
         },
         {
           "name": "Desktops / All-in-One PCs",
-          "specification": "HP Intel Core i5/i7 (10th Gen) @ 2.90 GHz, 8 GB RAM, 19\" TFT monitor",
-          "quantity": "14"
+          "specification": "HP Intel Core i5/i7 (10th–14th Gen) @ 2.90–3.0 GHz, 8–16 GB RAM, 19\" TFT monitor",
+          "quantity": "260"
         },
         {
           "name": "LCD Projectors",
           "specification": "~2,500 lumens colour light output",
-          "quantity": "5"
+          "quantity": "13"
         },
         {
           "name": "Smart Boards",
@@ -2095,7 +2098,7 @@
         {
           "name": "Printer-cum-Scanner & Copier (Xerox)",
           "specification": "A3 size, 600 DPI, 30 PPM",
-          "quantity": "1"
+          "quantity": "2"
         },
         {
           "name": "Generator",
