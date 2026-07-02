@@ -10,7 +10,7 @@ import { ArrowRight, FileText, Sparkles } from "lucide-react";
 export const metadata = pageMetadata({
   title: "Events & Activities",
   description:
-    "Cultural performances, the Engineers' Arena and student events at BEC Bagalkote, plus the SYMPOSIA 2023 archive and the AICTE SPICES Mindhog student club.",
+    "Cultural performances, the Engineers' Arena and student events at BEC Bagalkote, plus the SYMPOSIA 2023 archive and the BEC Creative Spectrum student club initiative.",
   path: "/student-life/activities",
 });
 
@@ -35,11 +35,11 @@ const links = [
     icon: FileText,
   },
   {
-    title: "Mindhog Student Club",
-    category: "AICTE SPICES",
+    title: "BEC Creative Spectrum",
+    category: "Student Initiative",
     description:
-      "The student club selected under the AICTE SPICES scheme, fostering creativity, ethics and collaboration.",
-    href: "/student-life/mindhog",
+      "A unified student club initiative bringing together ten distinct clubs under Cultural, Technical, and Holistic wings.",
+    href: "/student-life/bec-creative-spectrum",
     icon: Sparkles,
   },
 ];

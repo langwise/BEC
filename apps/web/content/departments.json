@@ -5530,7 +5530,8 @@
       "name": "Chemistry",
       "assetSlug": "chemistry",
       "tagline": "Foundational chemistry for engineering — teaching, research and innovation.",
-      "overview": "The Department of Chemistry places a strong emphasis on understanding the structure and properties of atoms and molecules, and on using this understanding to predict and interpret the behaviour of matter. Many chemistry concepts are fundamental to engineering, and the department offers stream-wise Applied Chemistry courses for the Computer Science, Electrical, Civil and Mechanical engineering streams.",
+      "overview": "The Department of Chemistry serves as a crucial stepping stone in shaping young minds for successful engineering careers. The courses offered during the first year provide a strong scientific and analytical foundation, enabling students to understand core engineering concepts and develop the problem-solving skills essential for their future studies.\n\nThe department offers courses that emphasize the application of basic sciences to engineering, fostering innovation, critical thinking, and a multidisciplinary approach to learning. These courses help students build a solid understanding of fundamental principles while preparing them to meet the challenges of modern engineering and technology.\n\nThe department is supported by highly qualified, experienced, and dedicated faculty members who strive to create an engaging and dynamic learning environment. Through effective teaching methodologies and continuous mentoring, faculty members inspire students to achieve academic excellence and adapt successfully to the engineering curriculum.\n\nBeyond academics, students are encouraged to actively participate in various co-curricular and extracurricular activities that contribute to their overall personality development. The department places strong emphasis on practical learning, enabling students to acquire hands-on experience and develop the skills required for their professional growth.\n\nWe are committed to providing a healthy, supportive, and student-friendly atmosphere that nurtures confidence, creativity, leadership, and lifelong learning. The Department of Chemistry aims to equip students with the knowledge, skills, and values necessary to excel in their chosen engineering disciplines and become responsible professionals and citizens.",
+      "about": "The Department of Chemistry serves as a foundational pillar in engineering education by imparting essential scientific knowledge and fostering analytical and problem-solving skills among undergraduate students. The department is committed to providing quality education through an outcome-based teaching–learning process that aligns with the vision and mission of the institution and supports the holistic development of future engineers.",
       "vision": "To be recognized as a premier technical institute committed to developing exemplary professionals, offering research-based innovative solutions and inspiring inventions for holistic socio-economic development.",
       "mission": [
         "Pursue excellence through student-centric, dynamic teaching-learning processes, encouraging freedom of inquiry and openness to change.",
@@ -5555,10 +5556,10 @@
         "email": "skpch@becbgk.edu"
       },
       "programsOffered": [
-        "Applied Chemistry for Computer Science & Engineering stream (BCHS102C/202C)",
-        "Applied Chemistry for Electrical & Electronics Engineering stream (BCHE102C/202C)",
-        "Applied Chemistry for Civil Engineering stream (BCHC102C/202C)",
-        "Applied Chemistry for Mechanical Engineering stream (BCHM102C/202C)"
+        "Applied Chemistry for Computer Science and Engineering Stream : 1BCHS102C/202C",
+        "Applied Chemistry for Civil Engineering stream : 1BCHC102C/202C",
+        "Applied Chemistry for Electrical & Electronics Engineering stream : 1BCHE102C/202C",
+        "Applied Chemistry for Mechanical Engineering stream : 1BCHM102C/202C"
       ],
       "supportingStaff": [
         {
@@ -5578,18 +5579,14 @@
           "designation": "Attender"
         },
         {
-          "name": "Sri. Basavaraj Simikeri",
+          "name": "Sri. S. M. Pavate",
           "designation": "Attender"
         }
       ],
       "researchAreas": [
         {
-          "supervisor": "Dr. Veeranna R. Kattimani",
-          "area": "Biofuel / biodiesel production from non-edible feedstock oils; nanocatalysts for sustainable energy"
-        },
-        {
-          "supervisor": "Smt. S. U. Durgadsimi",
-          "area": "Synthesis and structural / electrical studies of ferrite nanomaterials"
+          "supervisor": "Dr. V. R. Kattimani",
+          "area": "Biofuel/ biodiesel production from non-edible feedstock Biomass conversion, green solvents and environmental Sustainability: nanocatalyst for sustainable energy Technologies."
         }
       ],
       "infrastructureItems": [
@@ -5630,6 +5627,10 @@
           "file": "departments/chemistry/docs/applied-chemistry-scheme-and-syllabus.pdf"
         },
         {
+          "title": "Board of Studies - Members (2025-26)",
+          "file": "departments/chemistry/docs/board-of-studies-2025-26.pdf"
+        },
+        {
           "title": "Board of Studies - Members (2024-25)",
           "file": "departments/chemistry/docs/board-of-studies-2024-25.pdf"
         },
@@ -5648,44 +5649,44 @@
       ],
       "committeeGroups": [
         {
-          "title": "Board of Studies (2024-25)",
+          "title": "Board of Studies (2025-26)",
           "members": [
             {
               "name": "Dr. S. K. Patil",
-              "position": "Chairman — Associate Professor & HoD, BEC Bagalkot"
+              "position": "Chairman - Associate Professor & HoD BEC Bagalkot"
             },
             {
               "name": "Dr. P. Timmanagoudar",
-              "position": "Member — Professor, BEC Bagalkot"
+              "position": "Member - Professor. BEC Bagalkot"
             },
             {
               "name": "Dr. V. R. Kattimani",
-              "position": "Member — Associate Professor, BEC Bagalkot"
+              "position": "Member -  Professor (CAS) BEC Bagalkot"
             },
             {
-              "name": "Dr. Nilkamal Mahanta",
-              "position": "VTU Nominee — Associate Professor, Dept. of Chemistry, IIT Dharwad"
+              "name": "Dr. Veerupaxi Betageri",
+              "position": "VTU Nominee - Professor Dept. of chemistry VTU Belgaum"
             },
             {
-              "name": "Dr. Nagaraj P. Shetti",
-              "position": "Subject Expert — Associate Professor, School of Advanced Sciences, KLE Technological University, Dharwad"
+              "name": "Dr. Rajeshwar Rao Malakalapalli",
+              "position": "Subject Expert - Professor Department of Chemistry IIT Dharwad"
             }
           ]
         },
         {
-          "title": "Board of Examiners (2024-25)",
+          "title": "Board of Examiners (2025-26)",
           "members": [
             {
               "name": "Dr. S. K. Patil",
-              "position": "Chairman — Associate Professor & HoD, BEC Bagalkot"
+              "position": "Chairman - Associate Professor & HoD,  BEC Bagalkot"
             },
             {
-              "name": "Dr. P. L. Timmanagoudar",
-              "position": "Member — Professor, BEC Bagalkot"
+              "name": "Dr. V. R. Kattimani",
+              "position": "Member -  Professor (CAS) , BEC Bagalkot"
             },
             {
-              "name": "Prof. A. B. Kirasur",
-              "position": "Member / Valuation Coordinator — Assistant Professor, BEC Bagalkot"
+              "name": "Smt. K M Shettar",
+              "position": "Member / Valuation Coordinator - Assistant Professor, BEC Bagalkot"
             }
           ]
         }
