@@ -126,7 +126,7 @@ export const navigationData: NavigationItem[] = [
     items: [
       { title: "Overview", href: "/student-life/overview" },
       { title: "Hostels", href: "/student-life/hostels" },
-      { title: "Mindhog Club", href: "/student-life/mindhog" },
+      { title: "BEC Creative Spectrum", href: "/student-life/bec-creative-spectrum" },
       { title: "Activities", href: "/student-life/activities" },
       { title: "Symposia Archive", href: "/student-life/symposia" },
       { title: "Sports & Gymkhana", href: "/student-life/gymkhana" },
