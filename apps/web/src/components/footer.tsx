@@ -26,6 +26,7 @@ const internalResources = [
   { label: "Examinations", href: "/academics/examinations" },
   { label: "Contact Us", href: "/institute/contact" },
   { label: "RTI", href: "/administration/disclosures/rti" },
+  { label: "NIRF", href: "/accreditation/nirf" },
 ];
 
 const documentLinks = [
@@ -35,7 +36,7 @@ const documentLinks = [
   { label: "NPTEL Local Chapter", href: asset("documents/nptel/local-chapter.pdf") },
   { label: "Spoken Tutorial", href: asset("documents/spoken-tutorial/courses-offered-2023.pdf") },
   { label: "Internal Complaints (CICC)", href: asset("documents/cicc/cicc-2025.pdf") },
-  { label: "SC/ST/BCM Cell", href: asset("documents/sc-st-bcm/sc-st-bcm-2024.pdf") },
+  { label: "SC/ST/BCM Cell", href: asset("documents/sc-st-bcm/sc-st-bcm-2025-26.pdf") },
   { label: "Youth Red Cross", href: asset("documents/red-cross/activities.pdf") },
 ];
 
