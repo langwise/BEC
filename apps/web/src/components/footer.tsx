@@ -5,6 +5,7 @@ import {
   Phone,
   MapPin,
   Instagram,
+  Linkedin,
 } from "lucide-react";
 import Link from "next/link";
 import { asset } from "@/lib/assets";
@@ -99,6 +100,15 @@ export function Footer() {
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/school/basaveshwar-engineering-college-bagalkot-qip-centre-/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
               </Link>
             </div>
           </div>

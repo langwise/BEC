@@ -34,7 +34,7 @@ export function AboutSection() {
 
   return (
     <section className="py-20 bg-muted/20 overflow-hidden">
-      <div className="container px-4 md:px-6 mx-auto">
+      <div className="container mx-auto px-4 md:px-6 max-w-[1400px]">
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           {/* Left: Image (Stays static) */}
           <motion.div
@@ -57,7 +57,7 @@ export function AboutSection() {
           </motion.div>
 
           {/* Right: Content Carousel */}
-          <div className="flex flex-col justify-center space-y-8 py-4">
+          <div className="flex flex-col justify-center space-y-8 py-4 min-w-0 w-full">
             <div>
               <motion.h2
                 className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-2"
