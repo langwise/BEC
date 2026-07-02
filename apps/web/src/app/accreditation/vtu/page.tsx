@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "VTU Affiliation",
   description:
-    "Visvesvaraya Technological University (VTU), Belagavi affiliation orders for BEC Bagalkote, including affiliation orders for 2018, 2019–20, 2023-24 & 2024-25, and 2025–26.",
+    "Visvesvaraya Technological University (VTU), Belagavi affiliation orders for BEC Bagalkote, including the 2018 and 2019-20 affiliation orders issued by the University.",
   path: "/accreditation/vtu",
 });
 
@@ -26,10 +26,8 @@ export default function VtuPage() {
             {
               label: "Affiliation Orders",
               documents: [
-                { title: "VTU Affiliation Order (2025–26)", url: asset("documents/vtu/vtu-affiliation-2025-26.pdf") },
-                { title: "VTU Affiliation Order (2023-24 & 2024-25)", url: asset("documents/vtu/vtu-affiliation-2023-24-and-2024-25.pdf") },
-                { title: "VTU Affiliation Order (2019–20)", url: asset("documents/vtu/vtu-affiliation19-20.pdf") },
                 { title: "VTU Affiliation Order (2018)", url: asset("documents/vtu/vtuaffiliation2018.pdf") },
+                { title: "VTU Affiliation Order (2019–20)", url: asset("documents/vtu/vtu-affiliation19-20.pdf") },
               ],
             },
           ]}

@@ -189,14 +189,6 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     if (activeTab === "about") {
         return (
              <div className="grid grid-cols-1 gap-8">
-                {dept.about && (
-                    <ContentSection
-                        title={dept.about.title}
-                        content={dept.about.content}
-                        icon={dept.about.icon}
-                    />
-                )}
-
                 <ContentSection
                     title={dept.vision.title}
                     content={dept.vision.content}
