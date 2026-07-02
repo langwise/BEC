@@ -78,6 +78,27 @@ function DocumentsSection({
   );
 }
 
+/** Department Highlights card — shown on Home or (per-department) under "About". */
+function HighlightsBlock({ highlights }: { highlights: string[] }) {
+  if (!highlights?.length) return null;
+  return (
+    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+      <h2 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Department Highlights</h2>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {highlights.map((h, i) => (
+          <li
+            key={i}
+            className="flex items-start gap-3 p-3 rounded-lg hover:bg-orange-50 transition-colors"
+          >
+            <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+            <span className="text-gray-700 font-medium">{h}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 /** Renders a section's relocated/attached PDFs below its main content. */
 function SectionAttachments({ documents }: { documents?: DocLink[] }) {
   if (!documents?.length) return null;
@@ -159,21 +180,24 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     icon={dept.overview.icon}
                     justify
                 />
-                 {/* Highlights */}
-                <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Department Highlights</h2>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {dept.highlights.map((h, i) => (
-                        <li
-                            key={i}
-                            className="flex items-start gap-3 p-3 rounded-lg hover:bg-orange-50 transition-colors"
-                        >
-                            <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                            <span className="text-gray-700 font-medium">{h}</span>
-                        </li>
-                        ))}
-                    </ul>
-                </div>
+                {/* Vision & Mission on Home (per-department) */}
+                {dept.visionMissionOnHome && (
+                    <div className="grid grid-cols-1 gap-8">
+                        <ContentSection
+                            title={dept.vision.title}
+                            content={dept.vision.content}
+                            icon={dept.vision.icon}
+                        />
+                        <ContentSection
+                            title={dept.mission.title}
+                            content={dept.mission.content}
+                            items={dept.mission.items}
+                            icon={dept.mission.icon}
+                        />
+                    </div>
+                )}
+                {/* Highlights — hidden on Home when moved under About */}
+                {!dept.visionMissionOnHome && <HighlightsBlock highlights={dept.highlights} />}
                 {dept.bestPractices && dept.bestPractices.length > 0 && (
                     <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Best Practices</h2>
@@ -197,18 +221,24 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     />
                 )}
 
-                <ContentSection
-                    title={dept.vision.title}
-                    content={dept.vision.content}
-                    icon={dept.vision.icon}
-                />
+                {dept.visionMissionOnHome ? (
+                    <HighlightsBlock highlights={dept.highlights} />
+                ) : (
+                    <>
+                        <ContentSection
+                            title={dept.vision.title}
+                            content={dept.vision.content}
+                            icon={dept.vision.icon}
+                        />
 
-                <ContentSection
-                    title={dept.mission.title}
-                    content={dept.mission.content}
-                    items={dept.mission.items}
-                    icon={dept.mission.icon}
-                />
+                        <ContentSection
+                            title={dept.mission.title}
+                            content={dept.mission.content}
+                            items={dept.mission.items}
+                            icon={dept.mission.icon}
+                        />
+                    </>
+                )}
             </div>
         )
     }
