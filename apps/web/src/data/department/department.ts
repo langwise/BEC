@@ -188,18 +188,31 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
-  // Board of Studies / Board of Examiners
+  // Board of Studies / Board of Examiners. Positions are authored as
+  // "Role — Designation & Affiliation"; when an em dash is present, split it into
+  // a dedicated third column so the role and affiliation don't crowd one cell.
   if (content.committeeGroups?.length) {
     sections.push({
       id: "governance",
       type: "tables",
       title: heading("governance", "Board Members"),
       icon: "clipboard",
-      tables: content.committeeGroups.map((group) => ({
-        title: group.title,
-        columns: ["Name of the Member", "Position"],
-        rows: group.members.map((member) => [member.name, member.position]),
-      })),
+      tables: content.committeeGroups.map((group) => {
+        const split = group.members.some((m) => m.position.includes("—"));
+        return {
+          title: group.title,
+          columns: split
+            ? ["Name of the Member", "Position", "Designation & Affiliation"]
+            : ["Name of the Member", "Position"],
+          rows: group.members.map((member) => {
+            if (!split) return [member.name, member.position];
+            const i = member.position.indexOf("—");
+            return i === -1
+              ? [member.name, member.position, ""]
+              : [member.name, member.position.slice(0, i).trim(), member.position.slice(i + 1).trim()];
+          }),
+        };
+      }),
     });
   }
 
