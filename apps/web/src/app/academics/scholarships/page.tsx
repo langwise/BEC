@@ -106,7 +106,7 @@ export default function ScholarshipsPage() {
                             </Card>
 
                             <a
-                                href={asset("documents/scholarships/sc-st-bcm-2024.pdf")}
+                                href={asset("documents/sc-st-bcm/sc-st-bcm-2025-26.pdf")}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-4 bg-white border border-stone-200 rounded-xl p-5 shadow-xs hover:border-primary/40 hover:shadow-sm transition-all group"
@@ -116,7 +116,7 @@ export default function ScholarshipsPage() {
                                 </div>
                                 <div className="min-w-0">
                                     <p className="font-bold text-gray-900 group-hover:text-primary transition-colors">BEC SC/ST/BCM Cell</p>
-                                    <p className="text-sm text-gray-500">Cell information document (2024) — PDF</p>
+                                    <p className="text-sm text-gray-500">Cell information document (2025-26) — PDF</p>
                                 </div>
                                 <ExternalLink className="w-4 h-4 text-gray-400 ml-auto shrink-0" />
                             </a>
