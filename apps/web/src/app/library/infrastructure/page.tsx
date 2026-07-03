@@ -17,7 +17,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Library Infrastructure Facility",
   description:
-    "BEC Library spans 1,970 sq.m across six sections, fully automated on Koha ILS with RFID security gate, self-check kiosk, book scanner and Web OPAC access.",
+    "BEC Library spans 2,100 sq.m across six sections, fully automated on Koha ILS with RFID security gate, self-check kiosk, book scanner and Web OPAC access.",
   path: "/library/infrastructure",
 });
 
@@ -38,13 +38,13 @@ export default function InfrastructurePage() {
       icon: Building2,
       title: "Plinth Area",
       description:
-        "1,970 sq.m built-up area housing six operational sections of the library.",
+        "2,100 sq.m built-up area housing six operational sections of the library.",
     },
     {
       icon: Laptop,
       title: "Koha ILS",
       description:
-        "Fully automated using the Koha open-source Integrated Library Management System (v20.11).",
+        "Fully automated using the Koha open-source Integrated Library Management System (v25.05).",
     },
     {
       icon: Shield,
@@ -112,7 +112,7 @@ export default function InfrastructurePage() {
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
                     Established in 1963, the Library and Information Centre now
-                    occupies its own dedicated building of 1,970 sq.m, operating
+                    occupies its own dedicated building of 2,100 sq.m, operating
                     through six sections. It is fully automated on the Koha
                     open-source library management system and RFID-enabled for
                     self-service circulation and security.
@@ -120,7 +120,7 @@ export default function InfrastructurePage() {
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-stone-200">
                     <div className="text-center">
                       <div className="text-3xl font-bold text-primary mb-1">
-                        1,970
+                        2,100
                       </div>
                       <div className="text-sm text-gray-600">Sq.m Area</div>
                     </div>

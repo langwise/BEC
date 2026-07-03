@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Library Contact Information",
   description:
-    "Contact the BEC Bagalkote Central Library: phone +91-8354-234060, email library@becbgk.edu, open Mon-Fri 8 AM-8 PM and Saturday 9 AM-5 PM.",
+    "Contact the BEC Bagalkote Central Library: phone +91-8354-234060, email becbgklibrary@gmail.com, open Mon-Fri 8 AM-8 PM and Saturday 9 AM-5 PM.",
   path: "/library/contact",
 });
 
@@ -52,9 +52,6 @@ export default function ContactPage() {
                       <a href="tel:+918354234060" className="block text-gray-700 hover:text-primary transition-colors">
                         +91-8354-234060
                       </a>
-                      <a href="tel:+918354234061" className="block text-gray-700 hover:text-primary transition-colors">
-                        +91-8354-234061 (Ext: 234)
-                      </a>
                     </div>
                   </div>
                 </FadeIn>
@@ -66,11 +63,11 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Email</h3>
                     <div className="space-y-2">
-                      <a href="mailto:library@becbgk.edu" className="block text-gray-700 hover:text-primary transition-colors">
-                        library@becbgk.edu
+                      <a href="mailto:becbgklibrary@gmail.com" className="block text-gray-700 hover:text-primary transition-colors">
+                        becbgklibrary@gmail.com
                       </a>
-                      <a href="mailto:librarian@becbgk.edu" className="block text-gray-700 hover:text-primary transition-colors">
-                        librarian@becbgk.edu
+                      <a href="mailto:vist2becbgklibrary@gmail.com" className="block text-gray-700 hover:text-primary transition-colors">
+                        vist2becbgklibrary@gmail.com
                       </a>
                     </div>
                   </div>

@@ -22,15 +22,15 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Central Library",
   description:
-    "BEC Bagalkote Central Library, serving since 1963: 1,38,000 volumes, 43,695 titles, 10,300+ e-journals and 24,351 e-books across modern facilities.",
+    "BEC Bagalkote Central Library, serving since 1963: 1,45,874 volumes, 46,532 titles, 10,300+ e-journals and 34,446 e-books across modern facilities.",
   path: "/library",
 });
 
 const libraryStats = [
-  { value: "1,38,000", label: "Volumes" },
-  { value: "43,695", label: "Titles" },
+  { value: "1,45,874", label: "Volumes" },
+  { value: "46,532", label: "Titles" },
   { value: "10,300+", label: "E-Journals" },
-  { value: "24,351", label: "E-Books" },
+  { value: "34,446", label: "E-Books" },
 ];
 
 const libraryServices = [
@@ -244,7 +244,7 @@ export default function LibraryPage() {
                   </div>
                   <div className="flex items-start gap-2.5">
                     <Mail className="h-4 w-4 mt-0.5 shrink-0 text-gray-400" />
-                    <span>library@becbgk.edu</span>
+                    <span>becbgklibrary@gmail.com</span>
                   </div>
                   <div className="flex items-start gap-2.5">
                     <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-gray-400" />

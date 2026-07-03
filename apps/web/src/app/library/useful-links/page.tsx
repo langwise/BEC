@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Library Useful Links",
   description:
-    "Quick links from the BEC Central Library to academic and government resources including W3Schools, UPSC, eAadhaar, Indian Railways and India Post.",
+    "Quick links from the BEC Central Library to academic and government resources including W3Schools, UPSC, Aadhaar, Indian Railways and India Post.",
   path: "/library/useful-links",
 });
 
@@ -24,14 +24,14 @@ export default function UsefulLinksPage() {
           description: "Web development tutorials and references",
         },
         {
-          name: "CEO Karnataka",
-          url: "http://www.ceokarnataka.kar.nic.in",
-          description: "Chief Electoral Officer, Karnataka",
+          name: "Election Commission of India",
+          url: "https://www.eci.gov.in/",
+          description: "Official ECI website",
         },
         {
-          name: "eAadhaar",
-          url: "https://eaadhaar.uidai.gov.in",
-          description: "Download your Aadhaar online (UIDAI)",
+          name: "Aadhaar",
+          url: "https://uidai.gov.in/en/",
+          description: "Official UIDAI portal for Aadhaar services",
         },
         {
           name: "UPSC",

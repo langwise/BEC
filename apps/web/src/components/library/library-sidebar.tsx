@@ -50,6 +50,12 @@ const libraryLinks = [
     icon: Globe,
   },
   {
+    href: "http://119.161.97.235/",
+    label: "Web OPAC",
+    icon: LinkIcon,
+    external: true,
+  },
+  {
     href: "/library/useful-links",
     label: "Useful Links",
     icon: LinkIcon,
@@ -79,6 +85,8 @@ export function LibrarySidebar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
                   className={cn(
                     "flex items-center gap-3 px-4 py-3 rounded-md text-sm font-medium transition-all duration-200",
                     isActive
