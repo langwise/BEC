@@ -17,20 +17,12 @@ export const metadata: Metadata = pageMetadata({
 
 const contacts = [
   {
-    name: "Miss. Shruti B. Hiregoudar",
-    role: "District Innovation Associate - NAIN, KITS, GoK",
-    affiliation: "Basaveshwar Engineering College (A), Bagalkot - 587 103",
-    phone: "7899912164",
-    email: "hiregoudarshruti@gmail.com",
-    photo: asset("cells/iic/shruti-b-h.webp"),
-  },
-  {
-    name: "Dr. Anil D. Devangavi",
-    role: "HoD, Dept. of AI & ML",
-    affiliation: "Basaveshwar Engineering College (A), Bagalkot - 587 103",
-    phone: "9342186108",
-    email: "anildevangavi_s@yahoo.co.in",
-    photo: asset("cells/iic/anil-devangavi.webp"),
+    name: "Dr. Santhosh M. Malkapur",
+    role: "Convener and Startup Activity Coordinator, IIC 8.0 BEC Bagalkote",
+    affiliation: "Professor, Dept. of Civil Engg., Basaveshwar Engineering College, Bagalkote - 587 102",
+    phone: "+91-9945417886",
+    email: "sm.malkapur@gmail.com",
+    photo: asset("cells/iic/santhosh-malkapur.webp"),
   },
 ];
 
@@ -41,7 +33,7 @@ const governmentLinks = [
   },
   {
     title: "Karnataka Startup portal",
-    href: "https://startup.karnataka.gov.in",
+    href: "https://eitbt.karnataka.gov.in/startup/public/41/vision-&-objectives-/en",
   },
 ];
 
@@ -111,8 +103,8 @@ export default function IepPage() {
                     meta: "NISP resource linked from the legacy page",
                   },
                   {
-                    title: "Karnataka State Startup Policy",
-                    url: asset("documents/cells/iic/karnataka-startup-policy.pdf"),
+                    title: "Karnataka State Startup Policy 2025-2030",
+                    url: "https://eitbt.karnataka.gov.in/startup/public/uploads/media_to_upload1763380262.pdf",
                   },
                 ],
               },
