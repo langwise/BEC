@@ -14,7 +14,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Institution's Innovation Council (IIC)",
   description:
-    "BEC Bagalkote's Institution's Innovation Council (IIC), a MoE Innovation Cell body fostering innovation, entrepreneurship and start-up culture — a 4.5-star, South West Zone best-performing council.",
+    "BEC Bagalkote's Institution's Innovation Council (IIC), a MoE Innovation Cell body fostering innovation, entrepreneurship and start-up culture — a 4.0-star, South West Zone best-performing council.",
   path: "/institute/cells/iic",
 });
 
@@ -46,11 +46,11 @@ const achievements = [
   },
   {
     image: asset(
-      "cells/iic/achievements/2-iic-bec-secured-4-5-star-rating-on-5-star-scale-iic-2-0-15-10-2020.webp",
+      "cells/iic/achievements/iic-certificate-2023-24.webp",
     ),
-    title: "4.5★ Rating (IIC 2.0)",
+    title: "4.0★ Rating (IIC 2023-24)",
     description:
-      "Secured a 4.5 star rating on the 5-star scale under IIC 2.0 (15 October 2020).",
+      "Secured a 4.0 star rating on the 5-star scale for activities undertaken during the IIC calendar year 2023-24.",
   },
   {
     image: asset(
@@ -70,11 +70,11 @@ const council = [
     badges: [{ label: "IIC President", tone: "primary" as const }],
   },
   {
-    name: "Dr. A. D. Devangavi",
-    photo: asset("cells/iic/anil-devangavi.webp"),
-    description: "Associate Professor & Head, AI & ML",
+    name: "Dr. Santhosh M. Malkapur",
+    photo: asset("cells/iic/santhosh-malkapur.webp"),
+    description: "Professor, Dept. of Civil Engg.",
     badges: [
-      { label: "Convener & Coordinator", tone: "primary" as const },
+      { label: "Convener & Startup Coordinator (IIC 8.0)", tone: "primary" as const },
     ],
   },
   {
@@ -84,56 +84,49 @@ const council = [
     badges: [{ label: "Innovation Activities", tone: "outline" as const }],
   },
   {
-    name: "Dr. Bharati Meti",
+    name: "Dr. Bharati S. Meti",
+    photo: asset("cells/iic/bharati-meti.webp"),
     description: "Professor & Head, Biotechnology",
-    badges: [{ label: "IPR Activities", tone: "outline" as const }],
+    badges: [
+      { label: "Vice President", tone: "primary" as const },
+      { label: "IPR Activities", tone: "outline" as const },
+    ],
   },
   {
-    name: "Ms. Mamata Satareddi",
+    name: "Dr. Mamata Sataraddi",
     photo: asset("departments/ece/faculty/mamata-j-sataraddi.webp"),
     description: "Assistant Professor, Electronics & Communication Engg.",
     badges: [{ label: "Social Media Coordinator", tone: "outline" as const }],
   },
   {
+    name: "Dr. Santosh Kumbalavathi",
+    photo: asset("cells/iic/santhosh-kumbalavathi.webp"),
+    description: "Assistant Professor, Electronics & Instrumentation Engg.",
+    badges: [{ label: "Internship Coordinator", tone: "outline" as const }],
+  },
+  {
+    name: "Dr. Vijayalakshmi S. Jigajinni",
+    photo: asset("cells/iic/vijayalakshmi-jigajinni.webp"),
+    description: "Assistant Professor, Electronics & Communication Engg.",
+    badges: [{ label: "Innovation Coordinator", tone: "outline" as const }],
+  },
+  {
     name: "Shri. R. S. Hiremath",
+    photo: asset("cells/iic/rs-hiremath.webp"),
     description: "Managing Director, Flexitron, Bangalore",
     badges: [{ label: "Patent Expert", tone: "muted" as const }],
   },
   {
-    name: "Shri. Veekshit Math",
-    description: "CEO, Techasitis, Bagalkot",
-    badges: [{ label: "Alumni Entrepreneur", tone: "muted" as const }],
-  },
-  {
-    name: "Ms. Ankita Puranik",
+    name: "Mrs. Ankita Puranik",
+    photo: asset("cells/iic/ankita-puranik.webp"),
     description: "ICAR-NIVEDI AgriBusiness Incubator, Bangalore",
-    badges: [{ label: "Incubation Centre", tone: "muted" as const }],
+    badges: [{ label: "External Expert (Incubation)", tone: "muted" as const }],
   },
   {
-    name: "Shri. Prashant Kulkarni",
-    description: "Chief General Manager, Saipriya Sugars Ltd.",
-    badges: [{ label: "Nearby Industry Expert", tone: "muted" as const }],
-  },
-  {
-    name: "Shri Vijay Datar",
-    description: "CEO, Eurovoyages, Bagalkot",
-    badges: [{ label: "Industry Association", tone: "muted" as const }],
-  },
-  {
-    name: "Shri S. N. Kugali",
-    description: "Assistant Professor, Information Science & Engg.",
-    badges: [{ label: "Member", tone: "muted" as const }],
-  },
-  {
-    name: "Shri P. B. Madavannavar",
-    photo: asset("departments/cse/faculty/p-b-madhavanavar.webp"),
-    description: "Assistant Professor, Computer Science & Engg.",
-    badges: [{ label: "Member", tone: "muted" as const }],
-  },
-  {
-    name: "Shri Brijmohan Vyas",
-    description: "Assistant Professor, MBA",
-    badges: [{ label: "Member", tone: "muted" as const }],
+    name: "Mr. Ravi Neelegar",
+    photo: asset("cells/iic/ravi-neelagar.webp"),
+    description: "External Expert & Alumni Entrepreneur",
+    badges: [{ label: "Alumni Entrepreneur", tone: "muted" as const }],
   },
 ];
 
@@ -151,7 +144,7 @@ export default function IicPage() {
         description="Established under the Ministry of Education's Innovation Cell (MIC), the IIC at Basaveshwar Engineering College systematically fosters an innovation and start-up culture across the campus."
         badges={[
           { label: "MoE's Innovation Cell" },
-          { label: "4.5★ (IIC 2.0)", tone: "outline" },
+          { label: "4.0★ (IIC 2023-24)", tone: "outline" },
           { label: "SIH 2020 Winner", tone: "secondary" },
         ]}
       />
@@ -279,6 +272,11 @@ export default function IicPage() {
                     title: "Start-up Policy 2019",
                     url: asset("documents/cells/iic/iic-startup-policy-2019.pdf"),
                   },
+                  {
+                    title: "Karnataka Startup Portal",
+                    url: "https://eitbt.karnataka.gov.in/startup/public/41/vision-&-objectives-/en",
+                    meta: "External Link",
+                  },
                 ],
               },
               {
@@ -288,6 +286,9 @@ export default function IicPage() {
                   { title: "2019–20", url: asset("documents/cells/iic/activities/19-20.pdf") },
                   { title: "2020–21", url: asset("documents/cells/iic/activities/20-21.pdf") },
                   { title: "2021–22", url: asset("documents/cells/iic/activities/21-22.pdf") },
+                  { title: "2022–23", url: asset("documents/cells/iic/activities/22-23.csv"), meta: "CSV Report" },
+                  { title: "2023–24", url: asset("documents/cells/iic/activities/23-24.csv"), meta: "CSV Report" },
+                  { title: "2024–25", url: asset("documents/cells/iic/activities/24-25.csv"), meta: "CSV Report" },
                 ],
               },
             ]}
