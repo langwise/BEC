@@ -46,7 +46,8 @@ export default function PrincipalMessagePage() {
       subtitle="Building students to face the challenges of the future."
       name="Dr. B. R. Hiremath"
       role="Principal, Basaveshwar Engineering College"
-      image={asset("governance/principal/dr-b-r-hiremath.webp")}
+      image={asset("governance/principal/cine2151.webp")}
+      columnRatio="lg:grid-cols-[0.75fr_1.55fr]"
       quote={{
         text: "Education is an overall development of an individual — body, mind and spirit.",
         attribution: "Mahatma Gandhi",

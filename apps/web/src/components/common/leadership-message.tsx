@@ -16,6 +16,10 @@ export type LeadershipMessageProps = {
   image: string;
   /** How the portrait sits in its frame. Cutout PNGs look better "contain". */
   imageFit?: "cover" | "contain";
+  /** Custom aspect ratio for the image container, e.g. "aspect-[3/4]". Defaults to "aspect-4/3". */
+  imageAspectRatio?: string;
+  /** Grid column ratios for desktop, e.g. "lg:grid-cols-[0.75fr_1.55fr]". Defaults to "lg:grid-cols-[0.9fr_1.4fr]". */
+  columnRatio?: string;
   /** Optional pull-quote shown under the name card. */
   quote?: { text: string; attribution?: string };
   /** Body copy; blank lines separate paragraphs. */
@@ -49,6 +53,8 @@ export function LeadershipMessage({
   role,
   image,
   imageFit = "cover",
+  imageAspectRatio = "aspect-4/3",
+  columnRatio = "lg:grid-cols-[0.9fr_1.4fr]",
   quote,
   message,
   achievements,
@@ -82,9 +88,9 @@ export function LeadershipMessage({
       </section>
 
       <section className="py-14 md:py-18">
-        <div className="container mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-[0.9fr_1.4fr] lg:px-6 items-start">
+        <div className={`container mx-auto grid max-w-6xl gap-10 px-4 ${columnRatio} lg:px-6 items-start`}>
           <div className="space-y-6 lg:sticky lg:top-24">
-            <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
+            <div className={`relative ${imageAspectRatio} w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm`}>
               <Image
                 src={image}
                 alt={name}
