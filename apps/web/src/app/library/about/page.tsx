@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "About the Library",
   description:
-    "Established in 1963, the BEC Library and Information Centre spans 1,970 sq.m across six sections, holding 1,38,000 volumes over 43,695 titles plus e-resources.",
+    "Established in 1963, the BEC Library and Information Centre spans 2,100 sq.m across six sections, holding 1,45,874 volumes over 46,532 titles plus e-resources.",
   path: "/library/about",
 });
 
@@ -63,9 +63,9 @@ export default function AboutLibraryPage() {
                       <p className="text-lg text-gray-700 leading-relaxed mb-0">
                         The Library and Information Centre was established in
                         1963 with three departments, housed in a small building.
-                        It now occupies its own dedicated facility of 1,970 sq.m
+                        It now occupies its own dedicated facility of 2,100 sq.m
                         and operates through six sections, holding{" "}
-                        <strong>1,38,000 volumes</strong> across 43,695 titles
+                        <strong>1,45,874 volumes</strong> across 46,532 titles
                         along with a rich collection of e-journals, e-books and
                         subscribed databases supporting every engineering
                         discipline and allied science.
