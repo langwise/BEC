@@ -1,4 +1,4 @@
-import { FileText, Download } from "lucide-react";
+import { FileText, Download, ExternalLink } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -63,7 +63,13 @@ export function DocumentDirectory({
                     </span>
                   ) : null}
                 </span>
-                <Download className="h-4 w-4 shrink-0 text-stone-400 group-hover:text-primary" />
+                {/\.(pdf|csv|docx?|xlsx?)$/i.test(doc.url.split("?")[0].split("#")[0]) ? (
+                  <Download className="h-4 w-4 shrink-0 text-stone-400 group-hover:text-primary" />
+                ) : doc.url.startsWith("http://") || doc.url.startsWith("https://") ? (
+                  <ExternalLink className="h-4 w-4 shrink-0 text-stone-400 group-hover:text-primary" />
+                ) : (
+                  <Download className="h-4 w-4 shrink-0 text-stone-400 group-hover:text-primary" />
+                )}
               </a>
             ))}
           </div>

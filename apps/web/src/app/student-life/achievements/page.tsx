@@ -8,7 +8,7 @@ import { ArrowRight, Code, Cpu, Star, Trophy, Activity } from "lucide-react";
 export const metadata = pageMetadata({
   title: "Student Achievements",
   description:
-    "Source-verified BEC student milestones — Smart India Hackathon 2020 win, a 4.5-star IIC rating, KSCST projects and VTU state sports titles in handball and cricket.",
+    "Source-verified BEC student milestones — Smart India Hackathon 2020 win, a 4.0-star IIC rating, KSCST projects and VTU state sports titles in handball and cricket.",
   path: "/student-life/achievements",
 });
 
@@ -21,10 +21,10 @@ const technicalAchievements = [
     icon: Code,
   },
   {
-    title: "Institution Innovation Council — 4.5★",
-    category: "MoE IIC 2.0 · 2020",
+    title: "Institution Innovation Council — 4.0★",
+    category: "MoE IIC · 2023-24",
     description:
-      "BEC's Institution Innovation Council secured a 4.5-star rating on the 5-star scale under MoE's IIC 2.0.",
+      "BEC's Institution Innovation Council secured a 4.0-star rating on the 5-star scale for its activities in the 2023-24 calendar year.",
     icon: Star,
   },
   {
