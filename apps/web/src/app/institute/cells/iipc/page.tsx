@@ -5,13 +5,14 @@ import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PersonCard, PersonGrid } from "@/components/common/person-card";
 import { DocumentDirectory } from "@/components/common/document-directory";
+import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset } from "@/lib/assets";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Industry-Institute Partnership Cell (IIPC)",
+  title: "Institution Industry Cell (IIC)",
   description:
-    "BEC Bagalkote's Industry-Institute Partnership Cell (IIPC) bridges academia and industry through guest lectures, internships, live projects, consultancy and industry-academia conclaves.",
+    "BEC Bagalkote's Institution Industry Cell (IIC) bridges academia and industry through guest lectures, internships, live projects, consultancy and MoU-driven training programmes.",
   path: "/institute/cells/iipc",
 });
 
@@ -32,63 +33,132 @@ const activities = [
   "Industrial visits",
 ];
 
-const conclaves = [
-  { no: 1, location: "Bangalore", date: "13 Mar 2016", participants: 72 },
-  { no: 2, location: "Pune", date: "24 Apr 2016", participants: 68 },
-  { no: 3, location: "Hyderabad", date: "26 Jul 2016", participants: 36 },
-  { no: 4, location: "Goa", date: "17 Sep 2016", participants: 24 },
-  { no: 5, location: "Mumbai", date: "17 Dec 2016", participants: 36 },
-  { no: 6, location: "BEC & Government officials", date: "22 Dec 2016", participants: 14 },
-  { no: 7, location: "BEC, Bagalkot", date: "11 Feb 2017", participants: 40 },
-  { no: 8, location: "Bangalore", date: "13 Jul 2019", participants: 76 },
+const mouActivities = [
+  {
+    event: "Infosys Springboard & AWS Skill Builder Program Launch Event (Virtual)",
+    date: "25 Jul 2025",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "Infosys Springboard: Faculty Enablement Program (FEP) on Python Programming & Machine Learning",
+    date: "14–16 Apr 2025",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "Infosys Springboard Certification Drive (Student Enablement): Machine Learning Foundation Certification",
+    date: "7–11 Apr 2025",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "Infosys Springboard Certification Drive (Student Enablement): Front End Web Technologies",
+    date: "17–21 Mar 2025",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "Interaction with Final Year Students — Internship at Tech Fortune Pvt. Ltd. and Ongoing Project Scenarios",
+    date: "3 Feb 2025",
+    company: "Tech Fortune Pvt. Ltd., Bangalore",
+    location: "Online",
+  },
+  {
+    event: "Interaction with Final Year Students — Internship Opportunities and Cutting-Edge Technologies",
+    date: "3 Feb 2025",
+    company: "Arilig Technologies, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "SDP on Sales Force Technologies",
+    date: "3–5 Dec 2024",
+    company: "Arilig Technologies, Bangalore",
+    location: "Multimedia Seminar Hall, BEC Bagalkote",
+  },
+  {
+    event: "FDP on Generative AI",
+    date: "18–22 Nov 2024",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "FDP on Python Foundation",
+    date: "28 Aug – 3 Sep 2024",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "SDP on Infosys Springboard AI Foundation",
+    date: "22–26 Jul 2024",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "FDP on DevOps",
+    date: "15–18 Jul 2024",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "FDP on AI Foundation",
+    date: "24–28 Jun 2024",
+    company: "Infosys, Bangalore",
+    location: "Online",
+  },
+  {
+    event: "Seminar on Career Opportunities in Cybersecurity (Mr. Nikil Inginal)",
+    date: "23 May 2024",
+    company: "Threat Hunters Club LLP",
+    location: "CSE Seminar Hall, BEC Bagalkote",
+  },
+  {
+    event: "Workshop on Sales Force Technologies",
+    date: "3–5 Dec 2023",
+    company: "Arilig Technologies, Bangalore",
+    location: "Multimedia Seminar Hall, BEC Bagalkote",
+  },
+  {
+    event: "Seminar on Wireshark Tool (Mr. Nikil Inginal)",
+    date: "2 Dec 2023",
+    company: "Threat Hunters Club LLP",
+    location: "Multimedia Seminar Hall, BEC Bagalkote",
+  },
 ];
 
 const members = [
-  { name: "Dr. (Smt.) D. S. Jangamshetti", role: "Chairman", tone: "primary" as const },
-  { name: "Dr. Sanjay Hanji", role: "Coordinator", tone: "primary" as const },
+  { name: "Dr. Basavaraj R. Hiremath", role: "Chairman", tone: "primary" as const },
+  { name: "Dr. Govindraj B. Chittapur", role: "Coordinator", tone: "primary" as const },
   {
     name: "Dr. Ashok V. Sutagundar",
     role: "Member",
     tone: "muted" as const,
     photo: asset("departments/ece/faculty/ashok-v-sutagundar.webp"),
   },
-  { name: "Dr. B. R. Endigeri", role: "Member", tone: "muted" as const },
-  {
-    name: "Dr. S. V. Saboji",
-    role: "Member",
-    tone: "muted" as const,
-    photo: asset("departments/cse/faculty/s-v-saboji.webp"),
-  },
-  { name: "Prof. R. A. Patil", role: "Member", tone: "muted" as const },
-  { name: "Prof. R. S. Allurkar", role: "Member", tone: "muted" as const },
-  {
-    name: "Dr. G. B. Megeri",
-    role: "Member",
-    tone: "muted" as const,
-    photo: asset("departments/civil/faculty/gangadhar-b-megeri.webp"),
-  },
-  {
-    name: "Dr. S. Y. Goudappanavar",
-    role: "Member",
-    tone: "muted" as const,
-    photo: asset("departments/eee/faculty/sangamesh-y-goudappanavar.webp"),
-  },
-  {
-    name: "Dr. Adarsh Chatra",
-    role: "Member",
-    tone: "muted" as const,
-    photo: asset("departments/civil/faculty/adarsh-s-chatra.webp"),
-  },
+  { name: "Prof. Basavaraj R. Endigeri", role: "Member", tone: "muted" as const },
+  { name: "Dr. Rashmi R. Hunnur", role: "Member", tone: "muted" as const },
+  { name: "Dr. Shrinivas F. Chitragar", role: "Member", tone: "muted" as const },
+  { name: "Prof. Sanjay S. J.", role: "Member", tone: "muted" as const },
+  { name: "Prof. Jangin C. M.", role: "Member", tone: "muted" as const },
+  { name: "Dr. S. G. Kambalimath", role: "Mentor", tone: "outline" as const },
 ];
+
+const galleryImages = Array.from({ length: 11 }, (_, i) => {
+  const n = String(i + 1).padStart(2, "0");
+  return {
+    src: asset(`cells/iipc/gallery/iipc-activities-${n}.webp`),
+    alt: `Industry interaction with students of Basaveshwar Engineering College, Bagalkote — activity ${i + 1}`,
+  };
+});
 
 export default function IipcPage() {
   return (
     <main className="bg-background text-foreground">
       <PageHero
         eyebrow="Industry Connect"
-        title="Industry-Institute Partnership Cell (IIPC)"
-        description="The IIPC is the college's interface with industry — facilitating close industry-institute interaction and bridging the gap between academia and the corporate sector."
-        badges={[{ label: "8 Industry-Academia Conclaves" }]}
+        title="Institution Industry Cell (IIC)"
+        description="The Institution Industry Cell is the college's interface with industry — facilitating close industry-institute interaction and bridging the gap between academia and the corporate sector."
+        badges={[{ label: "MoU Activities 2023–25" }]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
@@ -96,17 +166,17 @@ export default function IipcPage() {
           <div className="space-y-4">
             <SectionHeading eyebrow="About" title="Bridging academia and industry" />
             <p className="text-base leading-relaxed text-gray-700">
-              The Industry-Institute Partnership Cell facilitates close
-              interaction between the college and industry, bridging gaps between
-              academia and the corporate sector. It promotes industry-institute
-              linkages through guest lectures, training, internships, industrial
-              visits and collaborative research.
+              The Institution Industry Cell facilitates close interaction between
+              the college and industry, bridging gaps between academia and the
+              corporate sector. It promotes industry-institute linkages through
+              guest lectures, training, internships, industrial visits and
+              collaborative research.
             </p>
           </div>
           <div className="relative aspect-16/10 w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100">
             <Image
               src={asset("cells/iipc/bec-iipc-cell-photo.webp")}
-              alt="The Industry-Institute Partnership Cell at Basaveshwar Engineering College"
+              alt="The Institution Industry Cell at Basaveshwar Engineering College"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -141,34 +211,64 @@ export default function IipcPage() {
 
         <div className="space-y-8">
           <SectionHeading
-            eyebrow="Outreach"
-            title="Industry-Academia Conclaves"
-            description="Conclaves convened across major industrial hubs to connect the college with prospective recruiters and collaborators."
+            eyebrow="Engagement"
+            title="MoU Activities (2023–25)"
+            description="Training programmes, faculty and student enablement drives, seminars and workshops delivered through the cell's industry MoUs."
           />
           <div className="overflow-x-auto rounded-md border border-stone-200 shadow-sm">
-            <table className="w-full min-w-[34rem] border-collapse bg-white text-left text-sm">
+            <table className="w-full min-w-[44rem] border-collapse bg-white text-left text-sm">
               <thead>
                 <tr className="border-b border-stone-200 bg-stone-50 text-gray-700">
-                  <th className="px-4 py-3 font-semibold">#</th>
+                  <th className="px-4 py-3 font-semibold">Event</th>
+                  <th className="px-4 py-3 font-semibold whitespace-nowrap">Date / Year</th>
+                  <th className="px-4 py-3 font-semibold">MoU Company</th>
                   <th className="px-4 py-3 font-semibold">Location</th>
-                  <th className="px-4 py-3 font-semibold">Date</th>
-                  <th className="px-4 py-3 text-right font-semibold">Industry Participants</th>
                 </tr>
               </thead>
               <tbody>
-                {conclaves.map((c) => (
-                  <tr key={c.no} className="border-b border-stone-100 last:border-0">
-                    <td className="px-4 py-3 text-gray-500">{c.no}</td>
-                    <td className="px-4 py-3 font-medium text-gray-900">{c.location}</td>
-                    <td className="px-4 py-3 text-gray-700">{c.date}</td>
-                    <td className="px-4 py-3 text-right font-semibold text-primary">
-                      {c.participants}
-                    </td>
+                {mouActivities.map((a) => (
+                  <tr key={a.event} className="border-b border-stone-100 last:border-0 align-top">
+                    <td className="px-4 py-3 font-medium text-gray-900">{a.event}</td>
+                    <td className="px-4 py-3 text-gray-700 whitespace-nowrap">{a.date}</td>
+                    <td className="px-4 py-3 text-gray-700">{a.company}</td>
+                    <td className="px-4 py-3 text-gray-700">{a.location}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+        </div>
+
+        <div className="space-y-8">
+          <SectionHeading
+            eyebrow="Records"
+            title="MoU Documents"
+            description="Signed Memorandums of Understanding between the college and partner industries."
+          />
+          <DocumentDirectory
+            groups={[
+              {
+                documents: [
+                  {
+                    title: "MoU — Bit Bytes (MBA)",
+                    url: asset("documents/cells/iipc/mou-bit-bytes-mba.pdf"),
+                  },
+                  {
+                    title: "MoU — CNC India (Mechanical)",
+                    url: asset("documents/cells/iipc/mou-cnc-india-mech.pdf"),
+                  },
+                  {
+                    title: "MoU — Sphoorti (Mechanical)",
+                    url: asset("documents/cells/iipc/mou-sphoorti-mech.pdf"),
+                  },
+                  {
+                    title: "MoU — Unnati (Mechanical)",
+                    url: asset("documents/cells/iipc/mou-unnati-mech.pdf"),
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
 
         <div className="space-y-8">
@@ -187,22 +287,22 @@ export default function IipcPage() {
             <p className="text-sm font-semibold uppercase tracking-wide text-secondary">
               Coordinator
             </p>
-            <p className="mt-2 text-lg font-semibold text-gray-900">Dr. Sanjay Hanji</p>
-            <p className="text-sm text-gray-700">Coordinator, Industry-Institute Partnership Cell</p>
+            <p className="mt-2 text-lg font-semibold text-gray-900">Dr. Govindraj B. Chittapur</p>
+            <p className="text-sm text-gray-700">Coordinator, Institution Industry Cell</p>
             <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-gray-700">
               <span>
                 Mobile:{" "}
-                <a href="tel:+919980871717" className="font-medium text-primary hover:underline">
-                  +91 99808 71717
+                <a href="tel:+919739265167" className="font-medium text-primary hover:underline">
+                  +91 97392 65167
                 </a>
               </span>
               <span>
                 Email:{" "}
                 <a
-                  href="mailto:sanjayhanji_94@rediffmail.com"
+                  href="mailto:gbchittapur@gmail.com"
                   className="font-medium text-primary hover:underline"
                 >
-                  sanjayhanji_94@rediffmail.com
+                  gbchittapur@gmail.com
                 </a>
               </span>
             </div>
@@ -210,19 +310,12 @@ export default function IipcPage() {
         </div>
 
         <div className="space-y-8">
-          <SectionHeading eyebrow="Records" title="Cell Gallery" />
-          <DocumentDirectory
-            groups={[
-              {
-                documents: [
-                  {
-                    title: "IIPC Gallery (PDF)",
-                    url: asset("documents/cells/iipc/iipc-gallery.pdf"),
-                  },
-                ],
-              },
-            ]}
+          <SectionHeading
+            eyebrow="Records"
+            title="Cell Gallery"
+            description="Glimpses of industry interaction with students from Basaveshwar Engineering College, Bagalkote."
           />
+          <PhotoGallery images={galleryImages} />
         </div>
       </section>
     </main>

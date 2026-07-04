@@ -28,6 +28,10 @@ export default function SupportingStaffPage() {
       designation: "SDA"
     },
     {
+      name: "Mrs. Shridevi P. Shirur",
+      designation: "SDA / Computer Operator"
+    },
+    {
       name: "Mr. Vittal Y. Ajjodi",
       designation: "Helper"
     },

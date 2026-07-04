@@ -3906,22 +3906,25 @@
     "mechanical-engg": {
       "yearWise": [
         {
-          "year": "2021-2022",
-          "onCampus": "61",
-          "offCampus": "12",
-          "placed": "73"
+          "year": "2023-2024",
+          "batch": "2021 Batch",
+          "onCampus": "19",
+          "offCampus": "16",
+          "higherStudies": "1"
         },
         {
-          "year": "2020-2021",
-          "onCampus": "17",
-          "offCampus": "73",
-          "placed": "90"
+          "year": "2024-2025",
+          "batch": "2022 Batch",
+          "onCampus": "29",
+          "offCampus": "9",
+          "higherStudies": "2"
         },
         {
-          "year": "2019-2020",
-          "onCampus": "10",
-          "offCampus": "50",
-          "placed": "60"
+          "year": "2025-2026",
+          "batch": "2023 Batch",
+          "onCampus": "40",
+          "offCampus": "Ongoing",
+          "higherStudies": "2"
         }
       ],
       "batches": []

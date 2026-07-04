@@ -128,7 +128,12 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   const heading = (id: string, def: string) => content.sectionTitles?.[id] ?? def;
 
   // Academics — programs, PEOs, PSOs
-  if (content.programsOffered?.length || content.peos?.length || content.psos?.length) {
+  if (
+    content.programsOffered?.length ||
+    content.peos?.length ||
+    content.psos?.length ||
+    content.pos?.length
+  ) {
     const groups: ContentGroup[] = [];
     if (content.programsOffered?.length)
       groups.push({ subtitle: "Programs Offered", items: content.programsOffered });
@@ -141,6 +146,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       groups.push({
         subtitle: "Programme Specific Outcomes (PSO's)",
         items: content.psos.map((p) => `${p.code}: ${p.text}`),
+      });
+    if (content.pos?.length)
+      groups.push({
+        subtitle: "Programme Outcomes (PO's)",
+        items: content.pos.map((p) => `${p.code}: ${p.text}`),
       });
     sections.push({ id: "academics", type: "content", title: heading("academics", "Academics"), icon: "book", groups });
   }
@@ -166,6 +176,18 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     if (documents.length) {
       sections.push({ id: "curriculum", type: "documents", title: heading("curriculum", "Curriculum & Syllabus"), icon: "file-text", documents });
     }
+  }
+
+  // Newsletters (monthly department PDFs) — reuses the documents section.
+  const newsletters = resolveDocuments(content.newsletters);
+  if (newsletters.length) {
+    sections.push({
+      id: "newsletters",
+      type: "documents",
+      title: heading("newsletters", "Newsletters"),
+      icon: "file-text",
+      documents: newsletters,
+    });
   }
 
   // Faculty
@@ -533,6 +555,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
   const sectionLabels: Record<string, { label: string; icon: string }> = {
     academics: { label: "Academics", icon: "file-text" },
     curriculum: { label: "Curriculum", icon: "file-text" },
+    newsletters: { label: "Newsletters", icon: "file-text" },
     faculty: { label: "Teaching Faculty", icon: "users" },
     staff: { label: "Supporting Staff", icon: "users-round" },
     governance: { label: "Board Members", icon: "clipboard" },
@@ -562,6 +585,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
       content:
         content?.overview ??
         "Department overview will be updated soon. Explore the available sections from the menu.",
+      items: content?.values,
       icon: "book",
     },
     about: content?.about

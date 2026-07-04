@@ -12,10 +12,11 @@ export const metadata = pageMetadata({
 });
 
 const regulations = [
-    { title: "1. B.E. BEC REGULATIONS 2024-2025", link: asset("documents/regulations/be-regulations-2024-25-21-12-2024.pdf") },
-    { title: "2. MTech Regulations 2024-25", link: asset("documents/regulations/2-mtech-regulations-2024-25-19-12-2024.pdf") },
-    { title: "3. MCA Regulations 2024-25", link: asset("documents/regulations/3-mca-regulations-2024-25-19-12-2024.pdf") },
-    { title: "4. MBA Regulations 2024-25", link: asset("documents/regulations/4-mba-regulations-2024-25-19-12-2024.pdf") },
+    { title: "1. B.E. BEC REGULATIONS 2025-26", link: asset("documents/regulations/be-regulations-2025-26.pdf") },
+    { title: "2. B.E. BEC REGULATIONS 2024-25", link: asset("documents/regulations/be-regulations-2024-25.pdf") },
+    { title: "3. MTech Regulations 2024-25", link: asset("documents/regulations/2-mtech-regulations-2024-25-19-12-2024.pdf") },
+    { title: "4. MCA Regulations 2024-25", link: asset("documents/regulations/3-mca-regulations-2024-25-19-12-2024.pdf") },
+    { title: "5. MBA Regulations 2024-25", link: asset("documents/regulations/4-mba-regulations-2024-25-19-12-2024.pdf") },
     { title: "5. B.E. BEC REGULATIONS 2023-2024", link: asset("documents/regulations/bec-regulations-2023-24-08-01-2024.pdf") },
     { title: "6. MTech Regulations 2023-24", link: asset("documents/regulations/6-mtech-regulations-2023-24-26-03-2024.pdf") },
     { title: "7. MCA Regulations 2023-24", link: asset("documents/regulations/7-mca-regulations-2023-24-26-03-2024.pdf") },

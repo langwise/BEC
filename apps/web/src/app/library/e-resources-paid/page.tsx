@@ -32,6 +32,7 @@ export default function EResourcesPaidPage() {
     { name: "BSP E-Books", description: "BS Publications engineering e-books collection.", url: "https://ebookstore.bspublications.net/library/", category: "E-Books", type: "paid" as const },
     { name: "Edisol informatics", description: "Subscribed e-books collection.", url: "https://ebooks.edsolinformatics.com/", category: "E-Books", type: "paid" as const },
     { name: "N-LIST", description: "National Library and Information Services Infrastructure consortium for e-journals and e-books.", url: "https://nlist.inflibnet.ac.in/", category: "Consortium", type: "paid" as const },
+    { name: "DELNET", description: "Developing Library Network — union catalogue and resource-sharing network.", url: "http://164.100.247.26/", category: "Consortium", type: "paid" as const },
     { name: "MAP Systems", description: "VTU consortium access provided through MAP Systems.", url: "https://access.vtuconsortium.com/becbgk", category: "Consortium", type: "paid" as const },
     { name: "PAT Technology", description: "VTU educational platform access.", url: "https://vtu.edutainer.in/", category: "E-Learning", type: "paid" as const },
     { name: "Eduport Global-CBS", description: "Educational resources platform.", url: "https://eduport-global.com", category: "E-Learning", type: "paid" as const },

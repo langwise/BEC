@@ -29,7 +29,7 @@ export default function ExamStaffPage() {
     return (
         <div className="space-y-8">
             <div>
-                <h1 className="text-3xl font-bold text-gray-900 tracking-tight mb-4">BEC Exam Staff</h1>
+                <h1 className="text-3xl font-bold text-gray-900 tracking-tight mb-4">Examination Staff</h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
                     The team responsible for the smooth conduct of examinations.
                 </p>
@@ -48,6 +48,17 @@ export default function ExamStaffPage() {
                                 <h3 className="text-lg font-bold text-gray-900">Dr. Chandrashekhar K.</h3>
                                 <p className="text-primary font-medium">Controller of Examinations</p>
                                 <p className="text-sm text-gray-500 mt-1">Professor of Physics</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex items-start gap-4">
+                            <div className="p-3 bg-primary/10 text-primary rounded-full">
+                                <UserCircle className="w-8 h-8" />
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold text-gray-900">Dr. S. V. Saboji</h3>
+                                <p className="text-primary font-medium">Special Officer</p>
+                                <p className="text-sm text-gray-500 mt-1">Professor, CSE</p>
                             </div>
                         </div>
 

@@ -254,7 +254,7 @@ export function GovernanceContent() {
                 {sangha.chairman.role}
               </Badge>
               <p className="text-base leading-relaxed text-gray-700">
-                Chairman of B.V.V. Sangha since 1991, leading 150+ institutions from
+                Chairman of B.V.V. Sangha since 1991, leading 190+ institutions from
                 kindergarten to research and steering BEC&apos;s vision for quality technical
                 education under the philosophy &ldquo;Work is Worship&rdquo;.
               </p>

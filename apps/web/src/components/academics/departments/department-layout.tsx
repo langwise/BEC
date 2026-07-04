@@ -180,6 +180,14 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     icon={dept.overview.icon}
                     justify
                 />
+                {/* Core values (per-department, e.g. IPE) — bullet list under the overview */}
+                {dept.overview.items && dept.overview.items.length > 0 && (
+                    <ContentSection
+                        title="Our Core Values"
+                        items={dept.overview.items}
+                        icon="target"
+                    />
+                )}
                 {/* Vision & Mission on Home (per-department) */}
                 {dept.visionMissionOnHome && (
                     <div className="grid grid-cols-1 gap-8">
