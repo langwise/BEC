@@ -230,7 +230,7 @@ export default function IqacPage() {
             {/* Committee Members Table */}
             <div className="space-y-6">
               <SectionHeading
-                title="IQAC Committee Members (2025–2026)"
+                title="IQAC Committee Members (2025–2027)"
                 description="Governing committee constituted for monitoring and guidance of academic and administrative quality systems at BEC."
               />
               <div className="overflow-hidden rounded-sm border border-stone-200 bg-white shadow-xs">
@@ -408,7 +408,7 @@ export default function IqacPage() {
                 {
                   label: "IQAC Members",
                   documents: [
-                    { title: "Approved IQAC Members List (2025–2026)", url: asset("documents/iqac/iqac-members-list-2025-26.pdf") },
+                    { title: "Approved IQAC Members List (2025–2027)", url: asset("documents/iqac/iqac-members-list-2025-27.pdf") },
                     { title: "IQAC Members List (Earlier)", url: asset("documents/iqac/members-list.pdf") },
                   ],
                 },

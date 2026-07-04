@@ -23,7 +23,7 @@ const requiredInfo = [
 ];
 
 const documentsToAttach = [
-    "Copy of PDC, or Degree Certificate, or final-semester Grade Card",
+    "PDC or Degree Certificate or final-semester Grade Card",
     "E-payment details — transaction number and payment date",
 ];
 

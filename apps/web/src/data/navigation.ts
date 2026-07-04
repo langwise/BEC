@@ -65,6 +65,7 @@ export const navigationData: NavigationItem[] = [
       },
       { title: "Director", href: "/administration/director" },
       { title: "Principal", href: "/administration/principal" },
+      { title: "Dean ICT", href: "/administration/dean-ict" },
       { title: "Deans", href: "/administration/governance#deans" },
       { title: "Heads of Departments", href: "/administration/governance#hods" },
       {

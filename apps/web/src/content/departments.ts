@@ -17,6 +17,12 @@ export type DepartmentContent = {
   programsOffered?: string[];
   peos?: CodedItem[];
   psos?: CodedItem[];
+  /** Programme Outcomes — rendered alongside PEOs/PSOs in the Academics section. */
+  pos?: CodedItem[];
+  /** Core values shown as a bullet list under the Home overview (e.g. IPE). */
+  values?: string[];
+  /** Monthly department newsletters, rendered as a documents section. */
+  newsletters?: { title: string; file: string }[];
   highlights?: string[];
   researchAreas?: { supervisor: string; area: string; university?: string }[];
   /** Major research areas/domains as plain bullets (distinct from supervisor→area pairs). */

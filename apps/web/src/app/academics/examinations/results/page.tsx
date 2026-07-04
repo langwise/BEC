@@ -32,9 +32,9 @@ export default function ResultsPage() {
                             </div>
 
                             <div className="space-y-2 max-w-lg">
-                                <h3 className="text-2xl font-bold text-gray-900">Autonomous Results Portal</h3>
+                                <h3 className="text-2xl font-bold text-gray-900">Examination Results portal</h3>
                                 <p className="text-gray-600">
-                                    Visit the external results portal to view outcomes for Regular, Re-appear, and Makeup examinations.
+                                    Visit the external results portal to view Regular, Reregister and Reappear Results, etc.
                                 </p>
                                 <p className="text-xs text-gray-400">
                                     Opens an external college portal in a new tab.

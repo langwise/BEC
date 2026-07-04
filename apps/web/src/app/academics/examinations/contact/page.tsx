@@ -40,7 +40,7 @@ export default function ContactPage() {
                                         <p className="font-semibold text-gray-900">Address</p>
                                         <p className="text-gray-600">
                                             Basaveshwar Engineering College,<br />
-                                            Bagalkot - 587 102, Karnataka, India
+                                            Bagalkote - 587 102, Karnataka, India
                                         </p>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="font-semibold text-gray-900">Phone</p>
-                                        <p className="text-gray-600">+91 7618781973</p>
+                                        <p className="text-gray-600">+91 7618781963</p>
                                     </div>
                                 </div>
 

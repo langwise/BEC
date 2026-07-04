@@ -170,7 +170,7 @@ export default function AboutLibraryPage() {
                       {
                         title: "Extensive Collection",
                         description:
-                          "1,38,000 volumes across 43,695 titles, with 160 national and 3 international print journals",
+                          "1,45,874 volumes across 46,532 titles, with 160 national and 3 international print journals",
                       },
                       {
                         title: "Digital Resources",

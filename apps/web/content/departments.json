@@ -519,7 +519,7 @@
       "tagline": "A centre for academic excellence in biotechnology and innovative research for a sustainable future.",
       "established": "2002",
       "intake": "30",
-      "overview": "The Department of Biotechnology was established in 2002 and is engaged in effective teaching-learning, basic research and technology-based training and service to society. It offers a 4-year B.E. in Biotechnology (intake 30) and is supported by well-equipped independent laboratories, classrooms, a seminar hall and library. The department has been recognised as an R&D (Ph.D.) Research Centre by VTU Belagavi since 2011, with six faculty holding Ph.D. degrees and active research in food processing, biofuels technology, bioremediation, fermentation technology and molecular biology. It hosts a Bioenergy Research, Information and Demonstration Centre (BRIDC) in association with KSBDB and a Food Testing Laboratory supported by KITS, Government of Karnataka, and partners with industry to provide students opportunities for internships and projects.",
+      "overview": "The Department of Biotechnology was established in 2002 and is engaged in effective teaching-learning, basic research and technology-based training and service to society. It offers a 4-year B.E. in Biotechnology (intake 30) and is supported by well-equipped independent laboratories, classrooms, a seminar hall and library. The department has been recognised as an R&D (Ph.D.) Research Centre by VTU Belagavi since 2011, with seven faculty holding Ph.D. degrees and active research in food processing, biofuels technology, bioremediation, fermentation technology and molecular biology. It hosts a Bioenergy Research, Information and Demonstration Centre (BRIDC) in association with KSBDB, GoK and a Food Testing Laboratory supported by KITS, Government of Karnataka, and partners with industry to provide students opportunities for internships and projects.",
       "vision": "To be a centre for academic excellence in biotechnology and innovative research for a sustainable future.",
       "mission": [
         "Develop technically competent and ethically oriented professionals.",
@@ -528,6 +528,7 @@
       ],
       "programsOffered": [
         "B.E. — Biotechnology",
+        "M.Sc. — Engineering by Research",
         "Ph.D. — Biotechnology (VTU Research Centre)"
       ],
       "peos": [
@@ -556,18 +557,14 @@
         {
           "code": "PSO2",
           "text": "Graduates will be able to design, optimize and manage bioprocesses for the development of bio-based products, ensuring quality, safety and regulatory compliance in the industries."
-        },
-        {
-          "code": "PSO3",
-          "text": "Graduates will be able to integrate bioethics, entrepreneurship and environmental awareness to enhance technical skills in biotechnology applications."
         }
       ],
       "highlights": [
         "Established in 2002 with a B.E. intake of 30; NBA-accredited UG programme.",
-        "Recognised as a VTU R&D (Ph.D.) Research Centre since 2011, with six Ph.D.-holding faculty and Ph.D.s awarded.",
+        "Recognised as a VTU R&D (Ph.D.) Research Centre since 2011, with seven Ph.D.-holding faculty and fourteen Ph.D.s awarded.",
         "Hosts a Bioenergy Research, Information and Demonstration Centre (BRIDC) in association with KSBDB, Government of Karnataka.",
         "Operates a Food Testing Laboratory and a poly-house with raceway ponds, supporting start-ups, patents and product development.",
-        "Research focus areas: food processing, biofuels technology, solid waste management and bioremediation, fermentation technology, and molecular biology and bioinformatics."
+        "Research focus areas: Biochemical technology, Microbial Technology, Food processing, Biofuels technology, Solid waste management and Bioremediation, Fermentation technology, and Molecular biology and Bioinformatics."
       ],
       "labs": [
         {
@@ -651,7 +648,7 @@
       "tagline": "A centre of excellence in teaching, research and innovation, shaping globally competent civil engineers for a sustainable society.",
       "established": "1963",
       "intake": "120",
-      "overview": "The Civil Engineering Department is one of the pioneering departments since the inception of the college in 1963. It is engaged in imparting quality education and producing outstanding graduates through qualified faculty and state-of-the-art infrastructure. The department offers a 4-year B.E. (intake 120) and 2-year M.Tech. programmes in Environmental Engineering, Geo-Technical Engineering and Structural Engineering (intake 18 each). It has been recognised as a Research Centre by VTU since 2003 and as a QIP Research Centre (Ph.D.) by AICTE, New Delhi since 2012, and is a State Resource Centre for training in Earthquake Engineering under NPCBEERM. The department has organised conferences, seminars and workshops, fetched research grants worth ₹163 lakhs, and provides consultancy services for various government and private agencies.",
+      "overview": "The Civil Engineering Department is one of the pioneering departments since the inception of the college in 1963. It is engaged in imparting quality education and producing outstanding graduates through qualified faculty and state-of-the-art infrastructure. The department offers a 4-year B.E. (intake 120) and 2-year M.Tech. programmes in Environmental Engineering, Geo-Technical Engineering and Structural Engineering (intake 18 each). It has been recognised as a Research Centre by VTU since 2003 and as a QIP Research Centre (Ph.D.) by AICTE, New Delhi since 2012, and is a State Resource Centre for training in Earthquake Engineering under NPCBEERM. The department has organised conferences, seminars and workshops, fetched research grants worth ₹183 lakhs, and provides consultancy services for various government and private agencies.",
       "vision": "To be a centre of excellence in teaching, research and innovation, shaping globally competent civil engineers toward the sustainable development of society.",
       "mission": [
         "Provide a student-centric learning environment, cultivating critical thinking and problem-solving skills in aspiring civil engineers.",
@@ -661,7 +658,7 @@
       ],
       "programsOffered": [
         "B.E. — Civil Engineering",
-        "M.Tech. — Environmental, Geo-Technical and Structural Engineering",
+        "M.Tech. — Structural Engineering",
         "Ph.D. — Civil Engineering (VTU and QIP)"
       ],
       "peos": [
@@ -693,11 +690,11 @@
         }
       ],
       "highlights": [
-        "A pioneering department since the college's inception in 1963, with a B.E. intake of 120.",
+        "A pioneering department since the college's inception in 1963, with B.E. intake grown from 30 to 120 students.",
         "Recognised as a VTU Research Centre (2003) and an AICTE QIP Ph.D. Research Centre (2012).",
         "State Resource Centre for Earthquake Engineering training under NPCBEERM.",
-        "Research grants worth Rs. 163 lakhs and active consultancy for government and private agencies.",
-        "Active VTU/QIP Research Centre with 25 Ph.D.s awarded and 21+ scholars currently pursuing under 8 recognised guides.",
+        "Research grants worth Rs. 183 lakhs and active consultancy for government and private agencies.",
+        "Active VTU/QIP Research Centre with 25 Ph.D.s awarded and 21+ scholars currently pursuing under 11 recognised guides.",
         "Advanced Geotechnical Engineering Research Laboratory with cyclic triaxial, automatic ring shear and oedometer testing machines."
       ],
       "labs": [
@@ -718,10 +715,10 @@
         }
       ],
       "contact": {
-        "name": "M. M. Hanamasagar",
-        "designation": "Associate Professor & Head",
-        "phone": "+91-9448816909",
-        "email": "mmhcv@becbgk.edu"
+        "name": "S. H. Sanni",
+        "designation": "Professor & Head",
+        "phone": "+91-9448440295",
+        "email": "shscv@becbgk.edu"
       },
       "documents": [
         {
@@ -729,34 +726,40 @@
           "file": "departments/civil/docs/syllabus-2024-25.pdf"
         },
         {
-          "title": "Board of Studies — Proceedings",
-          "file": "departments/civil/docs/bos-proceedings.pdf"
-        },
-        {
           "title": "Technical / Supporting Staff List (2024-25)",
           "file": "departments/civil/docs/supporting-staff-list.pdf"
-        },
-        {
-          "title": "Publication Summary",
-          "file": "departments/civil/docs/publication-summary.pdf"
-        },
-        {
-          "title": "Publications (2024-25)",
-          "file": "departments/civil/docs/publications-2024-25.pdf"
-        },
-        {
-          "title": "Publications (2023-24)",
-          "file": "departments/civil/docs/publications-2023-24.pdf"
-        },
-        {
-          "title": "Publications (2022-23)",
-          "file": "departments/civil/docs/publications-2022-23.pdf"
-        },
-        {
-          "title": "Publications (2021-22)",
-          "file": "departments/civil/docs/publications-2021-22.pdf"
         }
       ],
+      "sectionDocuments": {
+        "research-achievements": [
+          {
+            "title": "Publication Summary",
+            "file": "departments/civil/docs/publication-summary.pdf"
+          },
+          {
+            "title": "Publications (2024-25)",
+            "file": "departments/civil/docs/publications-2024-25.pdf"
+          },
+          {
+            "title": "Publications (2023-24)",
+            "file": "departments/civil/docs/publications-2023-24.pdf"
+          },
+          {
+            "title": "Publications (2022-23)",
+            "file": "departments/civil/docs/publications-2022-23.pdf"
+          },
+          {
+            "title": "Publications (2021-22)",
+            "file": "departments/civil/docs/publications-2021-22.pdf"
+          }
+        ],
+        "governance": [
+          {
+            "title": "Board of Studies — Signed Proceedings",
+            "file": "departments/civil/docs/bos-proceedings.pdf"
+          }
+        ]
+      },
       "supportingStaff": [
         {
           "name": "Sri. S. M. Teggi",
@@ -784,10 +787,6 @@
         },
         {
           "name": "Sri. R. G. Bandodakar",
-          "designation": "Helper"
-        },
-        {
-          "name": "Sri. Y. B. Jogin",
           "designation": "Helper"
         },
         {
@@ -823,10 +822,6 @@
           "designation": "Assistant Instructor"
         },
         {
-          "name": "Sri. R. D. Goudar",
-          "designation": "Peon"
-        },
-        {
           "name": "Sri. Santosh Bisali",
           "designation": "Peon"
         },
@@ -840,12 +835,8 @@
           "title": "Board of Studies",
           "members": [
             {
-              "name": "Dr. P. G. Rakaraddi",
-              "position": "Chairman, HOD Civil Engineering, BEC Bagalkot"
-            },
-            {
-              "name": "Dr. Veena S. Soraganvi",
-              "position": "Professor and Dean R&D, BEC Bagalkot"
+              "name": "Dr. S. H. Sanni",
+              "position": "Chairman and HOD Civil Engineering, BEC Bagalkot"
             },
             {
               "name": "Prof. P. S. Bangarshetti",
@@ -861,10 +852,6 @@
             },
             {
               "name": "Prof. S. M. Kalagudi",
-              "position": "Assistant Professor, BEC Bagalkot"
-            },
-            {
-              "name": "Dr. S. H. Sanni",
               "position": "Assistant Professor, BEC Bagalkot"
             },
             {
@@ -1429,7 +1416,7 @@
       ]
     },
     "computer-science-and-engg": {
-      "name": "Computer Science & Engineering",
+      "name": "Computer Science and Engineering",
       "assetSlug": "cse",
       "tagline": "A Centre of Excellence in IT Education, Research and Innovation, since 1983.",
       "established": "1983",
@@ -1820,34 +1807,6 @@
           "status": "Comprehensive Viva-Vocecompleted"
         },
         {
-          "scholar": "GIRISH SHETTER",
-          "usn": "2BA20PCS01",
-          "guide": "Dr. Anil Devangavi",
-          "title": "Novel Methodology to Enhance the UserExperience MinimizeDelay in Real TimeApplications at EdgeWork",
-          "status": "Course Completed"
-        },
-        {
-          "scholar": "VINAYAKTELSANG",
-          "usn": "2BA20PCS10",
-          "guide": "Dr. AnilDevangavi",
-          "title": "Data SecurityManagementTechniques for EdgeComputing",
-          "status": "Comprehensive Viva-Vocecompleted"
-        },
-        {
-          "scholar": "SANDEEP. N.KUGALI",
-          "usn": "2BA23PCS01",
-          "guide": "Dr. AnilDevangavi",
-          "title": "Machine Learning BasedAlgorithms to CombatDDoS Wormhole andBotnet Attacks in IoT",
-          "status": "Registered"
-        },
-        {
-          "scholar": "SHIDDALINGESH S. HIREMATH",
-          "usn": "2BA23PCS02",
-          "guide": "Dr. AnilDevangavi",
-          "title": "An Energy EfficientApproach for ClusterBased Context AwareRouting in IoT",
-          "status": "Registered"
-        },
-        {
           "scholar": "RAMYA.YAMIKAR",
           "usn": "2BA19MCS01",
           "guide": "Dr. BharatiReshmi",
@@ -2126,6 +2085,16 @@
       "name": "Electronics & Communication Engineering",
       "assetSlug": "ece",
       "tagline": "Excellence in electronics & communication engineering through quality education and research.",
+      "newsletters": [
+        { "title": "ECE Newsletter — October 2025", "file": "departments/ece/newsletters/ece-newsletter-oct-2025.pdf" },
+        { "title": "ECE Newsletter — November 2025", "file": "departments/ece/newsletters/ece-newsletter-nov-2025.pdf" },
+        { "title": "ECE Newsletter — December 2025", "file": "departments/ece/newsletters/ece-newsletter-dec-2025.pdf" },
+        { "title": "ECE Newsletter — January 2026", "file": "departments/ece/newsletters/ece-newsletter-jan-2026.pdf" },
+        { "title": "ECE Newsletter — February 2026", "file": "departments/ece/newsletters/ece-newsletter-feb-2026.pdf" },
+        { "title": "ECE Newsletter — March 2026", "file": "departments/ece/newsletters/ece-newsletter-mar-2026.pdf" },
+        { "title": "ECE Newsletter — April 2026", "file": "departments/ece/newsletters/ece-newsletter-apr-2026.pdf" },
+        { "title": "ECE Newsletter — May 2026", "file": "departments/ece/newsletters/ece-newsletter-may-2026.pdf" }
+      ],
       "established": "1985",
       "overview": "The Department of Electronics and Communication (E&C) Engineering was established in 1985. It offers an undergraduate programme in Electronics and Communication Engineering along with Ph.D. programmes in cutting-edge areas such as VLSI Design, Digital Signal Processing, Wireless Networking, MEMS and Speech Signal Processing. Recognised as a Quality Improvement Programme (QIP) centre by the Government of India, the department has a strong legacy in research and development — particularly in communications, signal processing, microelectronics and RF/photonics. It hosts well-equipped laboratories spanning digital electronics, advanced digital communication, microwave communication, microprocessors and microcontrollers, and computer networks, along with an exclusive computing facility running industry-standard tools such as CADENCE VLSI, ECAD and VHDL simulation/synthesis packages. The department regularly organises seminars, workshops and training programmes under initiatives like TEQIP, ACME and AICTE, and has executed several AICTE-sponsored projects to strengthen its laboratory and research capabilities.",
       "vision": "To achieve excellence in electronics and communication engineering through quality education and research for developing competent professionals.",
@@ -2206,13 +2175,14 @@
       "associations": [
         {
           "name": "ACME — Association for Communication and Modern Electronics",
-          "about": "The department's professional body, which organises seminars, workshops and technical events for students and faculty."
+          "about": "The Association for Communication and Modern Electronics (ACME) is the official student association of the Department of Electronics and Communication Engineering. It serves as a dynamic platform for students to explore, engage, and excel beyond academics. ACME organizes a wide variety of events throughout the year, including technical workshops, seminars, sports competitions, cultural programs, fun activities, and celebrations of important days. The association aims to foster all-round development by encouraging creativity, teamwork, leadership, and technical excellence among students. By bridging academics with extracurricular involvement, ACME plays a vital role in enriching the campus experience for ECE students.",
+          "coordinators": ["Dr. Sharanappa P. H.", "Dr. Basavaraj M. Angadi"]
         }
       ],
       "contact": {
-        "name": "Dr. (Smt.) J. D. Mallapur",
+        "name": "Dr. Mahabaleshwar S. K.",
         "designation": "Professor & Head",
-        "email": "jdmece@gmail.com"
+        "email": "mskec@becbgk.edu"
       },
       "researchAreas": [
         {
@@ -2537,13 +2507,6 @@
           "status": "Registered (2018)"
         },
         {
-          "scholar": "Mallikarjun Aralimarad",
-          "usn": "2BA13PE01",
-          "guide": "Dr. Meena M.",
-          "title": "Vision based Human action recognition",
-          "status": "Registered (2012)"
-        },
-        {
           "scholar": "Sunilkumar Hattaraki",
           "usn": "2BA20PEC04",
           "guide": "Dr. S. G. Kambalimath",
@@ -2778,7 +2741,7 @@
           "title": "Board of Studies (BoS)",
           "members": [
             {
-              "name": "Dr. Shridhar K. (Professor & Head, ECE, BEC)",
+              "name": "Dr. Mahabaleshwar S. K. (Professor & Head, ECE, BEC)",
               "position": "Chairman"
             },
             {
@@ -2843,16 +2806,12 @@
           "title": "Board of Examiners (BoE)",
           "members": [
             {
-              "name": "Dr. J. D. Mallapur, Professor and Head",
+              "name": "Dr. Mahabaleshwar S. K., Professor and Head",
               "position": "Chairman"
             },
             {
-              "name": "Dr. Mahabaleshwar S. K., Associate Professor",
-              "position": "Coordinator"
-            },
-            {
               "name": "Dr. Rajani S. Pujar, Assistant Professor",
-              "position": "Member"
+              "position": "Coordinator"
             }
           ]
         }
@@ -3040,8 +2999,8 @@
       "assetSlug": "eee",
       "tagline": "Academic excellence, research and innovation in electrical & electronics engineering to meet energy, industrial and societal needs.",
       "established": "1963",
-      "overview": "The Electrical and Electronics Engineering department was started with the inception of the college in 1963 and offers undergraduate, postgraduate and research programmes. It has well-equipped laboratories with state-of-the-art equipment and dedicated, qualified staff. The department has specialized faculty in Power Systems, Machines, Drives and Power Electronics, Renewable Energy Sources, Instrumentation, Signal Processing, HVDC and FACTS, and Power & Energy Systems. It is accredited by NBA and is a recognised Research Centre of VTU, Belagavi, offering a PG in Power & Energy Systems, Ph.D. and M.Sc. (Engg.) by research. Over the years the department has received 150+ lakhs in R&D grants and produced four Ph.D.s, 75+ M.Techs and 90+ technical publications. Two new research labs in Renewable Energy and SCADA were established with support from VGST (Govt. of Karnataka) and World Bank TEQIP-II grants, and the department has MoUs with three companies.",
-      "vision": "To be in the global forefront of academic excellence, research and innovation in electrical and electronics engineering to influence and meet energy, environment, industrial and societal needs.",
+      "overview": "The Electrical and Electronics Engineering department was started with the inception of the college in 1963 and offers undergraduate, postgraduate and research programmes. It has well-equipped laboratories with state-of-the-art equipment and dedicated, qualified staff. The department has specialized faculty in Power Systems, Machines, Drives and Power Electronics, Renewable Energy Sources, Instrumentation, Signal Processing, HVDC and FACTS, and Power & Energy Systems. It is accredited by NBA and is a recognised Research Centre of VTU, Belagavi, offering a PG in Power & Energy Systems, Ph.D. and M.Sc. (Engg.) by research. Over the years the department has received 150+ lakhs in R&D grants and produced 16+ Ph.D.s, 75+ M.Techs and 90+ technical publications. Two new research labs in Renewable Energy and SCADA were established with support from VGST (Govt. of Karnataka) and World Bank TEQIP-II grants, and the department has MoUs with seven organisations.",
+      "vision": "To be in the global forefront of education, research, and innovation in Electrical and Electronics Engineering to meet the energy, ecology, industrial and societal needs.",
       "mission": [
         "Practice dynamic teaching-learning processes adapting to ongoing global technological developments in electrical and electronics engineering.",
         "Engage in national/international industry and institute collaborations for higher studies, research, development and innovation.",
@@ -3056,8 +3015,8 @@
       "highlights": [
         "Established in 1963; NBA-accredited and a recognised VTU Research Centre.",
         "Specialized faculty across Power Systems, Drives & Power Electronics, Renewable Energy, Instrumentation, Signal Processing and HVDC/FACTS.",
-        "150+ lakhs in R&D grants; four Ph.D.s, 75+ M.Techs and 90+ technical publications produced.",
-        "New Renewable Energy and SCADA research labs funded by VGST and World Bank TEQIP-II; MoUs with three companies."
+        "150+ lakhs in R&D grants; 16+ Ph.D.s, 75+ M.Techs and 90+ technical publications produced.",
+        "New Renewable Energy and SCADA research labs funded by VGST and World Bank TEQIP-II; MoUs with seven organisations."
       ],
       "labs": [
         {
@@ -3240,31 +3199,10 @@
       ],
       "researchScholars": [
         {
-          "scholar": "Seema P. Diwan",
-          "usn": "2BA16PEJ11",
-          "guide": "Dr. S. H. Jangamshetti",
-          "title": "Design of Novel Wavelet Transform based Controller for Distribution Static Compensator and Performance Comparison with Traditional Controller",
-          "status": "Registered"
-        },
-        {
           "scholar": "Mahantesh Chikkadesai",
           "usn": "2BA19PEE02",
           "guide": "Dr. S. H. Jangamshetti",
           "title": "Design of Smart Controller for SPV-Wind Powered Home Microgrid",
-          "status": "Comprehensive Viva Completed"
-        },
-        {
-          "scholar": "Vikas Jainkeri",
-          "usn": "2BA19PEE01",
-          "guide": "Dr. S. H. Jangamshetti",
-          "title": "Design and Implementation of Model Based Control for Battery Energy Management",
-          "status": "Registered"
-        },
-        {
-          "scholar": "Suvarna Kolli",
-          "usn": "2BA18PEE01",
-          "guide": "Dr. R. L. Naik",
-          "title": "Reactive Power Pricing in Power Systems using Fuzzy Logic",
           "status": "Registered"
         },
         {
@@ -3272,7 +3210,7 @@
           "usn": "2BA19PEE03",
           "guide": "Dr. R. L. Naik",
           "title": "Investigation of Torque Ripple Minimization Techniques in SRM Drives for EV Application",
-          "status": "Comprehensive Viva Completed"
+          "status": "Registered"
         },
         {
           "scholar": "Prashant Kadi",
@@ -3286,6 +3224,13 @@
           "usn": "2BA21PEE01",
           "guide": "Dr. B. F. Ronad",
           "title": "Economically Energy Efficient Wind-Solar PV Hybrid Energy System for Irrigation Pumps Employed in Micro-Irrigation Systems",
+          "status": "Registered"
+        },
+        {
+          "scholar": "Apoorva Kulkarni",
+          "usn": "2BA25PEE01",
+          "guide": "Dr. Sangamesh Y. Goudappanavar",
+          "title": "AI Driven Reliability Assessment of Wind Plant for Optimal Planning of Power Dispatch",
           "status": "Registered"
         }
       ],
@@ -3380,23 +3325,41 @@
           "year": "2022",
           "amount": "Rs. 12,00,000",
           "investigators": "Dr. R. L. Naik, S. S. Tambakad"
+        },
+        {
+          "title": "Conical Collector Solar Water Heater",
+          "agency": "TEQIP-I",
+          "year": "2006",
+          "amount": "Rs. 20,000",
+          "investigators": "Dr. S. H. Jangamshetti"
+        },
+        {
+          "title": "Conical Collector Solar Water Heater for Rural Application",
+          "agency": "VGST, GoK",
+          "year": "2012",
+          "amount": "Rs. 40,000",
+          "investigators": "Dr. S. H. Jangamshetti"
         }
       ],
       "supportingStaff": [
-        {
-          "name": "N. M. Charantimath",
-          "designation": "Instructor"
-        },
         {
           "name": "M. S. Bevoor",
           "designation": "Assistant Instructor"
         },
         {
-          "name": "M. G. Ambore",
+          "name": "D. M. Shivangi",
           "designation": "Mechanic"
         },
         {
-          "name": "D. M. Shivangi",
+          "name": "S. S. Edramimath",
+          "designation": "Mechanic"
+        },
+        {
+          "name": "Srinivas Kulkarni",
+          "designation": "Mechanic"
+        },
+        {
+          "name": "Ramesh Paruti",
           "designation": "Mechanic"
         },
         {
@@ -3426,55 +3389,71 @@
         {
           "name": "L. S. Dangi",
           "designation": "Helper"
+        },
+        {
+          "name": "Roopa P. Bisali",
+          "designation": "Helper"
         }
       ],
       "committeeGroups": [
         {
-          "title": "Board of Studies (2025-2028)",
+          "title": "Board of Studies (2024-25)",
           "members": [
             {
-              "name": "Dr. Suresh H. Jangamshetti",
-              "position": "Chairman, Professor, EEE, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. D. S. Jangamshetti",
-              "position": "Professor, Internal Member"
-            },
-            {
-              "name": "Smt. Nanda P.",
-              "position": "Associate Professor, Internal Member"
-            },
-            {
-              "name": "Mr. S. M. Patil",
-              "position": "Associate Professor, Internal Member"
-            },
-            {
               "name": "Dr. R. L. Naik",
-              "position": "Associate Professor, Internal Member"
+              "position": "Chairman — Professor & HoD, Dept. of E&EE, BEC, Bagalkot"
             },
             {
-              "name": "Dr. B. F. Ronad",
-              "position": "Professor, Internal Member"
+              "name": "Dr. Nagendrappa H.",
+              "position": "VTU Nominee — Associate Professor, Dept. of E&EE, National Institute of Technology Karnataka, Surathkal"
+            },
+            {
+              "name": "Dr. Arunkumar Patil",
+              "position": "Subject Expert — Assistant Professor, Dept. of E&EE, Central University of Karnataka, Kalaburagi"
+            },
+            {
+              "name": "Dr. Animesh Kumar Sahoo",
+              "position": "Subject Expert — Assistant Professor, Dept. of E&EE, Indian Institute of Technology Dharwad"
+            },
+            {
+              "name": "Mr. Sreekant Kollur",
+              "position": "Meritorious Alumni — Engineering Specialist Senior 2, FedEx, Hyderabad"
+            },
+            {
+              "name": "Mr. Prasad Jigajinni",
+              "position": "Industry Representative — Advanced Lead Engineer, Wabtec Corporation, Bengaluru"
+            },
+            {
+              "name": "Mr. R. S. Allurkar",
+              "position": "Member — Associate Professor, Dept. of E&EE, BEC"
             },
             {
               "name": "Mr. S. G. Nayak",
-              "position": "Assistant Professor, Internal Member"
+              "position": "Member — Assistant Professor, Dept. of E&EE, BEC"
             },
             {
-              "name": "Smt. Sunita S. Tambakad",
-              "position": "Assistant Professor, Internal Member"
+              "name": "Smt. S. S. Tambakad",
+              "position": "Member — Assistant Professor, Dept. of E&EE, BEC"
             },
             {
-              "name": "Mr. S. Y. Goudappanavar",
-              "position": "Assistant Professor, Internal Member"
+              "name": "Dr. S. Y. Goudappanavar",
+              "position": "Member — Assistant Professor, Dept. of E&EE, BEC"
             },
             {
-              "name": "Mr. Vikas C. Jainkeri",
-              "position": "Assistant Professor, Internal Member"
+              "name": "Mr. M. L. Chikkadesai",
+              "position": "Member — Assistant Professor, Dept. of E&EE, BEC"
             },
             {
-              "name": "Mr. Sunil Rathod",
-              "position": "Assistant Professor, Internal Member"
+              "name": "Mr. S. S. Kandagal",
+              "position": "Member — Assistant Professor, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Mr. B. S. Hadapad",
+              "position": "Member — Assistant Professor, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Dr. Basanagouda Ronad",
+              "position": "Member Secretary — Associate Professor, Dept. of E&EE, BEC"
             }
           ]
         }
@@ -3595,8 +3574,8 @@
       ],
       "contact": {
         "name": "Dr. R. L. Naik",
-        "designation": "Associate Professor (Prof-CAS) & Head, Department of Electrical & Electronics Engineering",
-        "phone": "08354-234457",
+        "designation": "Professor (CAS) & Head, Department of Electrical & Electronics Engineering",
+        "phone": "+91-9986424111",
         "email": "hodee@becbgk.edu"
       },
       "documents": [
@@ -3617,10 +3596,6 @@
           "file": "departments/eee/docs/publications.pdf"
         },
         {
-          "title": "Board of Studies Members (2025-2028)",
-          "file": "departments/eee/docs/board-of-studies-members.pdf"
-        },
-        {
           "title": "Board of Examiners",
           "file": "departments/eee/docs/board-of-examiners.pdf"
         },
@@ -3632,53 +3607,282 @@
           "title": "Course Plans (Electrical & Electronics)",
           "file": "departments/eee/docs/course-plans.pdf"
         }
-      ]
+      ],
+      "curriculumGroups": [
+        {
+          "title": "Scheme & Syllabus",
+          "documents": [
+            {
+              "title": "Scheme & Syllabus (2025-26)",
+              "file": "departments/eee/docs/scheme-syllabus-2025-26.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus (2024-25)",
+              "file": "departments/eee/docs/scheme-syllabus-2024-25.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus (2023-24)",
+              "file": "departments/eee/docs/scheme-syllabus-2023-24.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus (2022-23)",
+              "file": "departments/eee/docs/scheme-syllabus-2022-23.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus (2021-22)",
+              "file": "departments/eee/docs/scheme-syllabus-2021-22.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus (2020-21)",
+              "file": "departments/eee/docs/scheme-syllabus-2020-21.pdf"
+            }
+          ]
+        }
+      ],
+      "sectionDocuments": {
+        "governance": [
+          {
+            "title": "Board of Studies Members (2025-2028)",
+            "file": "departments/eee/docs/board-of-studies-members.pdf"
+          },
+          {
+            "title": "Board of Studies — Signed Proceedings (2025)",
+            "file": "departments/eee/docs/bos-proceedings-2025.pdf"
+          }
+        ]
+      }
     },
     "electronics-and-computer-engg": {
-      "name": "Electronics & Computer Engineering",
+      "name": "Electronics and Computer Engineering",
       "assetSlug": "ecs",
       "tagline": "An interdisciplinary department blending electronics engineering and computer science to design, develop and integrate innovative technologies.",
+      "newsletters": [
+        { "title": "ECS Newsletter — October 2025", "file": "departments/ecs/newsletters/newsletter-oct-2025.pdf" },
+        { "title": "ECS Newsletter — November 2025", "file": "departments/ecs/newsletters/newsletter-nov-2025.pdf" },
+        { "title": "ECS Newsletter — December 2025", "file": "departments/ecs/newsletters/newsletter-dec-2025.pdf" },
+        { "title": "ECS Newsletter — January 2026", "file": "departments/ecs/newsletters/newsletter-jan-2026.pdf" },
+        { "title": "ECS Newsletter — February 2026", "file": "departments/ecs/newsletters/newsletter-feb-2026.pdf" },
+        { "title": "ECS Newsletter — March 2026", "file": "departments/ecs/newsletters/newsletter-mar-2026.pdf" },
+        { "title": "ECS Newsletter — April 2026", "file": "departments/ecs/newsletters/newsletter-apr-2026.pdf" },
+        { "title": "ECS Newsletter — May 2026", "file": "departments/ecs/newsletters/newsletter-may-2026.pdf" }
+      ],
       "established": "2024",
       "intake": "60",
       "overview": "Electronics and Computer Engineering blends electronic engineering with computer science to design, develop and integrate innovative technologies across hardware, software and IT. Established in the academic year 2024-25, the department offers a 4-year B.E. programme with an intake of 60 students, taught by highly qualified faculty whose average teaching experience is 27 years. It is housed in a spacious new building with well-equipped IoT and computer laboratories of more than 60 computers, faculty rooms and a department office, all served by pervasive high-quality wired and Wi-Fi networks. The department aims to impart engineering education that meets the needs of society, industry and research, developing professionals with ethical values and societal concern who are equipped for both electronics/electrical industries and software companies.",
-      "vision": "To be a recognized leader in the Instrumentation discipline by creating a good platform of learning and research with commitments to socio-economic development.",
+      "vision": "To be recognized as a Center of Excellence for Electronics and Computer Engineering education and research, developing competent professionals with moral and ethical values.",
       "mission": [
-        "To achieve academic excellence.",
-        "To create a research environment.",
-        "To interact with industry for mutual benefit.",
-        "To serve the community for socio-economic development."
+        "Develop professionals with strong fundamentals, technical skills, committed to life-long learning.",
+        "Create an environment for interdisciplinary research by collaborating with industries and institutes of higher learning.",
+        "Imbibe high moral and ethical values."
       ],
       "programsOffered": [
-        "B.E. — Electronics & Computer Engineering"
+        "B.E. — Electronics and Computer Engineering"
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "Apply knowledge of electronics and computing to design and develop intelligent products or systems, including IoT, robotics, and AI-based applications, addressing societal and industrial needs."
+        },
+        {
+          "code": "PEO2",
+          "text": "Develop expertise in designing, analyzing, and implementing electronic circuits, embedded systems, and signal processing applications to meet the needs of real-world challenges."
+        },
+        {
+          "code": "PEO3",
+          "text": "Impart proficiency in programming languages, software development, and modern computational tools to create innovative solutions for complex engineering problems."
+        },
+        {
+          "code": "PEO4",
+          "text": "Adapt to emerging technologies in electronics and computer engineering by engaging in continuous learning and contributing to sustainable and ethical technological advancements."
+        }
+      ],
+      "psos": [
+        {
+          "code": "PSO1",
+          "text": "Demonstrate the ability to design, develop a product/system by integrating concepts from electronics and computer engineering to solve real-world problems."
+        },
+        {
+          "code": "PSO2",
+          "text": "Inculcate the expertise in modern technologies such as Artificial Intelligence, Machine Learning, IoT, and Cyber-Physical Systems, and apply them to create innovative and sustainable engineering solutions."
+        }
       ],
       "highlights": [
-        "Newly established in the academic year 2024-25 with a sanctioned B.E. intake of 60 students.",
+        "Established in the academic year 2024-25, the department offers a B.E. program with an approved intake of 60 students.",
+        "The department is housed in a spacious modern building equipped with state-of-the-art VLSI, FPGA, Embedded Systems, IoT, and Computer laboratories featuring over 60 computers.",
+        "The program prepares graduates to pursue diverse career opportunities in software industries, electronics and electrical sectors.",
         "Highly qualified faculty with an average teaching experience of 27 years.",
-        "Housed in a spacious new building with well-equipped IoT and computer laboratories of more than 60 computers.",
-        "Pervasive, high-quality wired and Wi-Fi networking across the department.",
-        "Graduates are suited to electronics/electrical industries as well as software companies, broadening career opportunities."
+        "Pervasive, high-quality wired and Wi-Fi networking across the department."
       ],
       "labs": [
         {
-          "name": "Analog and Digital Electronics Lab"
+          "name": "Electronics and Linear IC Lab",
+          "description": "Basic lab for electronics and Linear IC experiments."
         },
         {
-          "name": "Microprocessors and Microcontrollers Lab"
+          "name": "Analog and Digital Electronics Lab",
+          "description": "Foundational lab for BJTs, FETs, and digital design and logic."
         },
         {
-          "name": "Embedded Systems Lab"
+          "name": "Embedded Systems Lab",
+          "description": "Software and interfacing of peripherals with 8051 microcontroller and ARM processor."
         },
         {
-          "name": "VLSI Design Lab"
+          "name": "Data Structure and Algorithm Lab",
+          "description": "Hands-on experience in implementing, testing, and analyzing data structures and algorithms using C Programming."
         },
         {
-          "name": "Communication Systems Lab"
+          "name": "FPGA Lab",
+          "description": "Practical skills in FPGA-based digital system design using Verilog and industry-standard design tools."
         },
         {
-          "name": "IoT Laboratory"
+          "name": "VLSI Design Lab",
+          "description": "State-of-the-art systems with industry-standard EDA tools — CADENCE VLSI, simulation/synthesis packages."
+        }
+      ],
+      "researchAreas": [
+        {
+          "supervisor": "Dr. Krishnamurthy Bhat",
+          "area": "Mechatronics, Sensor Design and Applications, Industrial Automation"
         },
         {
-          "name": "Computer Laboratory"
+          "supervisor": "Dr. Chayalakshmi C. L.",
+          "area": "Embedded Systems, Internet of Things, Industrial Automation"
+        },
+        {
+          "supervisor": "Dr. Manjula A. Sutagundar",
+          "area": "MEMs, Robotics and Automation"
+        },
+        {
+          "supervisor": "Smt. Laxmi Ugar",
+          "area": "Digital Signal Processing, Digital Communication"
+        }
+      ],
+      "infrastructureItems": [
+        {
+          "name": "HP Desktops",
+          "specification": "HP Make, RAM of 16 GB, Graphics card of 128 MB with Intel core i7 and i5 processor",
+          "quantity": "60"
+        },
+        {
+          "name": "FPGA Boards",
+          "specification": "FPGA Trainer kit, Xilinx Spartan 6-FPGA device LXTQG14",
+          "quantity": "15"
+        },
+        {
+          "name": "ARM Processor Boards",
+          "specification": "LPC2148 processor with onboard peripherals",
+          "quantity": "15"
+        },
+        {
+          "name": "Basic IoT Board",
+          "specification": "Processor Boards ARDUINO (Inclusive of WIFI and Bluetooth) and RASPBERRY PI 4",
+          "quantity": "15"
+        },
+        {
+          "name": "Digital Storage Oscilloscope",
+          "specification": "DSO, Bandwidth: 1GHz, 2 Channel, Up to 1GS/s",
+          "quantity": "15"
+        },
+        {
+          "name": "Function Generator",
+          "specification": "Rigol make, 200MHz, 1.25Gsa/s, 2 channel",
+          "quantity": "15"
+        }
+      ],
+      "softwareItems": [
+        {
+          "name": "Cadence Software",
+          "usage": "Cadence Design Systems (EDA software), Level One Software — 30 Users for 3 Years"
+        }
+      ],
+      "supportingStaff": [
+        {
+          "name": "Mr. Abhijit Kamatagi",
+          "designation": "Instructor"
+        },
+        {
+          "name": "Mr. Mahesh Mannikatti",
+          "designation": "Instructor"
+        },
+        {
+          "name": "Mr. Ravi Humanabadi",
+          "designation": "Asst. Instructor"
+        },
+        {
+          "name": "Mr. Praveen Muraganur",
+          "designation": "Mechanic"
+        },
+        {
+          "name": "Mr. Mallappa P. Badaradinni",
+          "designation": "Mechanic"
+        },
+        {
+          "name": "Mr. V. R. Math",
+          "designation": "Helper"
+        },
+        {
+          "name": "Mr. Pundalikappa Sulikeri",
+          "designation": "Helper"
+        },
+        {
+          "name": "Mrs. Malashri Rajanal",
+          "designation": "Peon"
+        }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (BoS)",
+          "members": [
+            {
+              "name": "Dr. Chayalakshmi C. L. (HoD)",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. Shreedhar A. Joshi (Prof., SDMCET, Dharwad)",
+              "position": "VTU Nominee"
+            },
+            {
+              "name": "Dr. Pavankumar C. (Prof., IIIT, Dharwad)",
+              "position": "Subject Expert"
+            },
+            {
+              "name": "Dr. Shridhar Iyer (Prof., SGBIT, Belgaum)",
+              "position": "Subject Expert"
+            },
+            {
+              "name": "Mrs. Saishree Raikar (JP Morgan, Bengaluru)",
+              "position": "Alumni Representative"
+            },
+            {
+              "name": "Mr. Praveen Mastamardi (NVDIA, Bengaluru)",
+              "position": "Industry Representative"
+            },
+            {
+              "name": "Dr. Krishnamurthy Bhat",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. Manjula A. Sutagundar",
+              "position": "Member"
+            },
+            {
+              "name": "Mrs. Laxmi Ugar",
+              "position": "Member"
+            }
+          ]
+        },
+        {
+          "title": "Board of Examiners (BoE)",
+          "members": [
+            {
+              "name": "Dr. Chayalakshmi C. L. (HoD)",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. Manjula A. Sutagundar",
+              "position": "Coordinator"
+            }
+          ]
         }
       ],
       "associations": [
@@ -3691,8 +3895,14 @@
         "name": "Dr. Chayalakshmi C. L.",
         "designation": "Associate Professor & Head",
         "phone": "+91-9902678858",
-        "email": "hodei@becbgk.edu"
+        "email": "chayalakshmi.cl@gmail.com"
       },
+      "additionalContacts": [
+        {
+          "name": "Department Email",
+          "email": "hodecs24@gmail.com"
+        }
+      ],
       "documents": [
         {
           "title": "Faculty List (2024-25)",
@@ -3706,7 +3916,44 @@
           "title": "Time Table (Odd 2024-25)",
           "file": "departments/ecs/docs/time-table-odd-2024-25.pdf"
         }
-      ]
+      ],
+      "curriculumGroups": [
+        {
+          "title": "Scheme of Teaching & Examinations",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/ecs/docs/scheme-2025-26.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Syllabus",
+          "documents": [
+            {
+              "title": "Scheme & Syllabus (2024-25)",
+              "file": "departments/ecs/docs/scheme-syllabus-2024-25.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Time Table",
+          "documents": [
+            {
+              "title": "Time Table (Even 2025-26)",
+              "file": "departments/ecs/docs/timetable-even-2025-26.pdf"
+            }
+          ]
+        }
+      ],
+      "sectionDocuments": {
+        "activities": [
+          {
+            "title": "Department Activities (2025-26)",
+            "file": "departments/ecs/docs/activities-2025-26.pdf"
+          }
+        ]
+      }
     },
     "industrial-and-production-engg": {
       "name": "Industrial & Production Engineering",
@@ -3715,11 +3962,18 @@
       "established": "1984",
       "intake": "30",
       "overview": "The Department of Industrial & Production Engineering was established in 1984 with an initial intake of 30 students. It prepares leaders capable of managing manufacturing and service-industry operations across the two domains of Industrial Engineering and Production Engineering. Students gain exposure to modern manufacturing technologies including CAD/CAM, CAE, FMS, CIM and additive manufacturing, alongside management concepts taught through practical case studies, supported by fully doctorate-qualified faculty, well-equipped laboratories and experienced technical staff. The department has been a recognised research centre since 2008, with 13 candidates awarded Ph.D. to date.",
-      "vision": "To be recognized and respected as a centre of excellence in Industrial and Production Engineering education, research and practice.",
+      "values": [
+        "Work is Worship",
+        "Ethics and Integrity",
+        "Mutual respect",
+        "Empathy and Compassion",
+        "Indian Ethos"
+      ],
+      "vision": "To achieve excellence in education and research in Industrial and Production Engineering for a sustainable future.",
       "mission": [
-        "To prepare globally competent professionals in the field of Industrial and Production Engineering by imparting total quality technical education and training, to make them leaders in industry and community.",
-        "To develop research interest and provide the necessary support for pursuing it.",
-        "To disseminate knowledge to society."
+        "Develop globally competent professionals in Industrial and Production Engineering by imparting quality education.",
+        "Nurture a culture of research, innovation, and entrepreneurship through collaboration with institutes and industries.",
+        "Imbibe moral, ethical, environmental, and societal consciousness."
       ],
       "programsOffered": [
         "B.E. — Industrial & Production Engineering",
@@ -3729,23 +3983,15 @@
       "peos": [
         {
           "code": "PEO1",
-          "text": "To equip students for a successful career in manufacturing, services and R&D, addressing worldwide industrial demands."
+          "text": "To prepare graduates for successful careers in manufacturing, service, R&D, academic, and allied engineering professions by providing strong fundamentals and the ability to meet global industry challenges."
         },
         {
           "code": "PEO2",
-          "text": "To inculcate professional skills among students in the design, manufacturing, maintenance, quality, computational and software aspects of products and services."
+          "text": "To develop professional competence in design, manufacturing, maintenance, quality, and computational aspects of products and services, enabling graduates to contribute effectively as industrial engineers and managers."
         },
         {
           "code": "PEO3",
-          "text": "To imbibe knowledge that enables students to acquire the inputs required to become competent industrial engineers and managers in contemporary industries."
-        },
-        {
-          "code": "PEO4",
-          "text": "To encourage students' lifelong-learning skills, entrepreneurial ability, innovation, communication, ethical practices and life skills."
-        },
-        {
-          "code": "PEO5",
-          "text": "To strengthen students' knowledge in multi-disciplinary areas of engineering."
+          "text": "To nurture lifelong learning, ethical practice, creativity, communication, and entrepreneurial ability, with a strong multidisciplinary outlook for continuous professional growth."
         }
       ],
       "psos": [
@@ -3784,7 +4030,7 @@
       ],
       "contact": {
         "name": "Dr. C. M. Javalagi",
-        "designation": "Professor & Head",
+        "designation": "Associate Professor & Head",
         "phone": "+91-9448751788",
         "email": "hodip@becbgk.edu"
       },
@@ -3816,113 +4062,109 @@
         {
           "title": "Department Events",
           "file": "departments/ip/docs/events.pdf"
+        }
+      ],
+      "curriculumGroups": [
+        {
+          "title": "Syllabus",
+          "documents": [
+            {
+              "title": "Syllabus — III & IV Semester (2025-26)",
+              "file": "departments/ip/docs/syllabus-iii-iv-sem-2025-26.pdf"
+            },
+            {
+              "title": "Syllabus — V & VI Semester (2025-26)",
+              "file": "departments/ip/docs/syllabus-v-vi-sem-2025-26.pdf"
+            }
+          ]
         },
         {
-          "title": "Course Plan - VII Semester (2023-24)",
-          "file": "departments/ip/docs/course-plan-vii-sem-2023-24.pdf"
-        },
-        {
-          "title": "Time Table (2023-24)",
-          "file": "departments/ip/docs/time-table-2023-24.pdf"
-        },
-        {
-          "title": "Syllabus - 3rd Semester (NEP, 2022-23)",
-          "file": "departments/ip/docs/syllabus-3rd-sem-nep-2022-23.pdf"
-        },
-        {
-          "title": "Syllabus - 5th Semester (NEP, 2021-22)",
-          "file": "departments/ip/docs/syllabus-5th-sem-nep-2021-22.pdf"
-        },
-        {
-          "title": "Syllabus - 7th Semester (2020-21)",
-          "file": "departments/ip/docs/syllabus-7th-sem-2020-21.pdf"
-        },
-        {
-          "title": "Syllabus - 8th Semester (2020-21)",
-          "file": "departments/ip/docs/syllabus-8th-sem-2020-21.pdf"
+          "title": "Time Table",
+          "documents": [
+            {
+              "title": "Time Table (Odd 2025-26)",
+              "file": "departments/ip/docs/time-table-odd-2025-26.pdf"
+            },
+            {
+              "title": "Time Table (Even 2025-26)",
+              "file": "departments/ip/docs/time-table-even-2025-26.pdf"
+            }
+          ]
         }
       ],
       "supportingStaff": [
-        {
-          "name": "Sri. S. B. Havaragi",
-          "designation": "Foreman"
-        },
         {
           "name": "Sri. P. S. Bhavimath",
           "designation": "Instructor"
         },
         {
-          "name": "Sri. S. V. Sobarad",
-          "designation": "Instructor"
+          "name": "Sri. M. S. Bevoor",
+          "designation": "Asst. Instructor"
         },
         {
-          "name": "Sri. M. S. Bevoorl",
-          "designation": "Asst. Instructor"
+          "name": "Sri. S. B. Hirekumbi",
+          "designation": "SDA and Computer Operator"
         },
         {
           "name": "Sri. M. V. Goudar",
           "designation": "Mechanic"
         },
         {
-          "name": "Sri. Ramesh Dodamani",
+          "name": "Sri. V. S. Tegginamath",
           "designation": "Helper"
-        },
-        {
-          "name": "Sri. A. R. Madalageri",
-          "designation": "Mechanic"
         }
       ],
       "committeeGroups": [
         {
-          "title": "Board of Studies / Board of Examiners",
+          "title": "Board of Studies (2025-26 to 2027-28)",
           "members": [
             {
-              "name": "Dr. S. T. Dundur, Professor, Dept. of IPE, BEC, Bagalkot",
+              "name": "Dr. C. M. Javalagi, Associate Professor & HOD, Dept. of I & P.E., BEC, Bagalkote",
+              "position": "Chairman"
+            },
+            {
+              "name": "Dr. S. M. Pharsiyawar, Assistant Professor, Dept. of I & P.E., BEC, Bagalkote",
+              "position": "Coordinator"
+            },
+            {
+              "name": "Dr. V. G. Akkimardi, Professor & HOD, Dept. of Automobile Engg., BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. V. S. Puranik, Professor and HOD, Dept. of IPE, BEC, Bagalkot",
-              "position": "Chairman & HOD"
-            },
-            {
-              "name": "Dr. C. M. Javalagi, Associate Professor (CAS), Dept. of IPE, BEC, Bagalkot",
+              "name": "Dr. D. D. Chillal, Associate Professor, Dept. of Automobile Engg., BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. D. G. Mallapur, Associate Professor, Dept. of IPE, BEC, Bagalkot",
+              "name": "Prof. M. M. Ganganallimath, Associate Professor, Dept. of Mechanical Engg., BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. S. M. Pharsiyawar, Associate Professor, Dept. of IPE, BEC, Bagalkot",
-              "position": "Member"
+              "name": "Dr. Virupaxi Bagodi, Principal & Professor, Government Engineering College, Talakal, Ta: Kukanoor, Dist: Koppal",
+              "position": "VTU Nominated Member"
             },
             {
-              "name": "Dr. V. G. Akkimardi, Professor and HOD, Dept. of Automobile Engg., BEC, Bagalkot",
-              "position": "Invited Member"
-            },
-            {
-              "name": "Dr. Rathan Raj K. J., Professor and HOD, Dept. of IEM, BMS College of Engineering, Bangalore",
-              "position": "VTU Nominated"
-            },
-            {
-              "name": "Dr. N. Nagesha, Professor & HOD, Dept. of Industrial & Production Engineering, University BDT College of Engineering, Davanagere",
+              "name": "Dr. Vinayak N. Kulkarni, Associate Professor and Head, Dept. of Automation and Robotics, KLE Technological University, Hubballi",
               "position": "Subject Expert"
             },
             {
-              "name": "Dr. Vivek Khazode, Associate Professor, National Institute of Industrial Engineering, Mumbai",
+              "name": "Dr. Sangamesh C. M., Associate Professor (DM-IoT and Drone), Dept. of Mechanical Engineering, PES University, Bengaluru",
               "position": "Subject Expert"
             },
             {
-              "name": "Mr. V. S. Kori, Sr. General Manager - Process Control (QA), Kirloskar Ferrous Industries Ltd., Koppal",
+              "name": "Dr. Shravan Kerur, Principal, BGMIT, Mudhol",
               "position": "Alumni"
             },
             {
-              "name": "Mr. C. T. Nagaraj, Manager - Tooling, Harita Units, Sundaram Auto Components Ltd. (TVS Group), Hosur",
+              "name": "Mr. Adhik Patil, Executive Director, Shri Balaji Sugars & Chemicals Pvt. Ltd., Yaragal, Ta: Muddebihal",
               "position": "Industry Expert"
             },
             {
-              "name": "Mr. Sridhar B. Kalyanshetti, Director, Combustion Concepts Pvt. Ltd., Mumbai",
-              "position": "Industry Expert"
+              "name": "Mrs. Ritika B. Kuri, 5th Semester Student, Dept. of I & P.E., BEC, Bagalkote",
+              "position": "Student Member"
+            },
+            {
+              "name": "Mr. Basavaraj Koujalagi, 5th Semester Student, Dept. of I & P.E., BEC, Bagalkote",
+              "position": "Student Member"
             }
           ]
         }
@@ -3951,162 +4193,132 @@
       ],
       "phdsAwarded": [
         {
-          "scholar": "Vishaldatt V. Kohir",
-          "guide": "Dr. S. T. Dundur",
-          "title": "An investigation of flank wear land inclination in orthogonal machining",
-          "year": "2016"
-        },
-        {
-          "scholar": "Vijaykumar Hiremath",
-          "guide": "Dr. S. T. Dundur",
-          "title": "A study on machinability of B4Cp reinforced 6061 aluminum metal matrix composite",
-          "year": "2018"
-        },
-        {
-          "scholar": "Rajendra V. Kadi",
-          "guide": "Dr. S. T. Dundur",
-          "title": "Experimental investigation on surface integrity of machining austenitic stainless steel",
-          "year": "2019"
-        },
-        {
-          "scholar": "Smt. G. S. Yarnal",
-          "guide": "Dr. V. S. Puranik",
-          "title": "Energy Management Studies in Sugar Industry",
-          "year": "2009"
-        },
-        {
-          "scholar": "S. D. Kulkarni",
-          "guide": "Dr. V. S. Puranik",
-          "title": "Energy Management Studies in Sugar Industry",
-          "year": "2009"
-        },
-        {
           "scholar": "Anand Misrakoti",
           "guide": "Dr. V. S. Puranik",
           "title": "Energy Conservation through Productivity Improvement by Lean Manufacturing in Small Scale Industries",
           "year": "2015"
         },
         {
+          "scholar": "Vishaldatta V. Kohir",
+          "guide": "Dr. S. T. Dundur",
+          "title": "An investigation of flank wear land inclination in orthogonal machining",
+          "year": "2016"
+        },
+        {
           "scholar": "V. S. Jorapur",
           "guide": "Dr. V. S. Puranik",
-          "title": "Analysis of Job Shop Scheduling Problems with Meta-Heuristics - Genetic Algorithms",
+          "title": "Analysis of job shop scheduling problems with metaheuristics genetic algorithms",
           "year": "2017"
         },
         {
           "scholar": "M. C. Goudar",
           "guide": "Dr. V. S. Puranik",
-          "title": "A Study on Total Quality Management Tools and Techniques in Hospital Service",
+          "title": "A study on total quality management tools and techniques in hospital service",
           "year": "2017"
         },
         {
-          "scholar": "Virupakshagouda G.",
-          "guide": "Dr. V. S. Puranik",
-          "title": "Management of Indian Disinvestment Program at State and Central Government",
-          "year": "2018"
-        },
-        {
-          "scholar": "Ningombam Sanjeev Kumar",
-          "guide": "Dr. V. S. Puranik",
-          "title": "Social Entrepreneurship Initiative in Karnataka - A Comprehensive Study on the Issue, Innovation and Value Creation",
-          "year": "2020"
-        },
-        {
-          "scholar": "Maheshwar",
-          "guide": "Dr. C. M. Javalagi",
-          "title": "Some studies on Enterprise Resource Planning (ERP) implementation in manufacturing and service industries of North Karnataka",
+          "scholar": "Vijaykumar Hiremath",
+          "guide": "Dr. S. T. Dundur",
+          "title": "A study on machinability of B4CP reinforced 6061 Aluminium metal matrix composite",
           "year": "2019"
-        },
-        {
-          "scholar": "D. G. Sondur",
-          "guide": "Dr. D. G. Mallapur",
-          "title": "Studies on mechanical and tribological properties of as-cast, cast-aged and forge-aged Al-14Si-13Mg-5Fe-2.5Cu alloy",
-          "year": "2019"
-        },
-        {
-          "scholar": "M. D. Harlapur",
-          "guide": "Dr. D. G. Mallapur",
-          "title": "Studies on mechanical and tribological properties of as-cast, cast-aged and forge-aged Al-25Mg2Si2Cu4Ni alloy",
-          "year": "2019"
-        }
-      ],
-      "researchScholars": [
-        {
-          "scholar": "G. H. Rathod",
-          "guide": "Dr. V. S. Puranik",
-          "title": "A New Comprehensive Methodology for enabling Environmentally Conscious Design and assessment of sustainability in an Indian Manufacturing Organization",
-          "status": "Registered 2010"
         },
         {
           "scholar": "Rajendra Kadi",
           "guide": "Dr. S. T. Dundur",
-          "title": "An Investigation on Surface Integrity of Machining Austenitic Stainless Steel under different cooling conditions",
-          "status": "Registered 2010"
+          "title": "Experimental investigation on surface integrity of machining austenitic stainless steel",
+          "year": "2019"
         },
         {
-          "scholar": "Taware Shree Dnyanoba",
-          "guide": "Dr. D. G. Mallapur",
-          "title": "Aluminum Die Casting Simulation Modeling for Cost Benefit Analysis",
-          "status": "Registered 2012"
+          "scholar": "Maheshwar C",
+          "guide": "Dr. C. M. Javalagi",
+          "title": "Some studies on enterprise resource planning implementation in manufacturing and service industries of north Karnataka",
+          "year": "2019"
         },
         {
-          "scholar": "Neeta S. Mathapati",
+          "scholar": "Dilip Gurunath Sondur",
           "guide": "Dr. D. G. Mallapur",
-          "title": "Studies of the Influence of Mn on Mechanical and Tribological Properties of As-cast, Cast-aged and Forge-aged Al-25Mg2Si2Cu4Mn Alloy",
-          "status": "Registered 2013"
+          "title": "Study on the mechanical and tribological properties of as cast, cast aged and forge aged Al25Mg2Si2Cu4Fe alloy",
+          "year": "2019"
+        },
+        {
+          "scholar": "Mohammad Saleem D. Harlapur",
+          "guide": "Dr. D. G. Mallapur",
+          "title": "Study on the mechanical and tribological properties of as cast, cast aged and forge aged Al25Mg2Si2Cu4Ni alloy",
+          "year": "2019"
         },
         {
           "scholar": "Zaheerabbas B. Kandagal",
           "guide": "Dr. V. G. Akkimardi",
-          "title": "Studies on Mechanical and Tribological properties of Microwave welded Metal Matrix Composites",
-          "status": "Registered 2013"
+          "title": "Studies on microstructural and mechanical properties of microwave welded Al6061-SiC-graphite hybrid composites",
+          "year": "2022"
         },
         {
-          "scholar": "H. R. Patil",
-          "guide": "Dr. C. M. Javalagi",
-          "title": "Studies on Green Supply Chain Management (GSCM) Issues in Manufacturing Industries of Karnataka",
-          "status": "Registered 2015"
-        },
-        {
-          "scholar": "A. D. C. Rajasabai",
-          "guide": "Dr. V. S. Puranik",
-          "title": "TQM for Social Welfare: A Comprehensive, Integrated, Holistic Study encompassing Economic, Social, Administrative and Cultural Arena in the Indian Context",
-          "status": "Registered 2016"
-        },
-        {
-          "scholar": "Mahesh Latte",
-          "guide": "Dr. C. M. Javalagi",
-          "title": "Analysis of Supply Chain Management in Small Scale Industries",
-          "status": "Registered 2017"
+          "scholar": "Neeta S. Mathapati",
+          "guide": "Dr. D. G. Mallapur",
+          "title": "Study on the mechanical properties of as cast, cast aged and forge aged Al-Mg-Si-Cu-Mn alloy",
+          "year": "2023"
         },
         {
           "scholar": "Warke Shubhada S.",
           "guide": "Dr. V. S. Puranik",
-          "title": "Modelling and Optimization of Additive Manufacturing Process",
-          "status": "Registered 2017"
+          "title": "Modelling and Optimization of Additive manufacturing process",
+          "year": "2024"
+        },
+        {
+          "scholar": "Mahesh Latte",
+          "guide": "Dr. C. M. Javalagi",
+          "title": "Analysis of key supply chain drivers in medium and small scale industries (MSMEs)",
+          "year": "2025"
+        }
+      ],
+      "researchScholars": [
+        {
+          "scholar": "H. R. Patil",
+          "guide": "Dr. C. M. Javalagi",
+          "title": "Modelling and analyses of green supply chain management (GSCM) issues and practices in process industries",
+          "status": "Comprehensive Viva-Voce completed"
+        },
+        {
+          "scholar": "Bhuvaneshwari Alias Sunita Kulkarni",
+          "guide": "Dr. V. S. Puranik",
+          "title": "Investigating the status of lean manufacturing practices in SMEs and development of a conceptual implementation model for production performance evaluation",
+          "status": "Submitted"
+        },
+        {
+          "scholar": "Parasuram Madar",
+          "guide": "Dr. S. T. Dundur",
+          "title": "An investigation into the usage of agro-based trash as the alternative fuel for all-season co-generation of electricity in sugar industries",
+          "status": "Course work completed"
         },
         {
           "scholar": "S. S. Davanageri",
           "guide": "Dr. S. T. Dundur",
-          "title": "Finite Element Analysis of Machining of Work-Material Synthesized Metal Matrix Composites from Microphotographs",
-          "status": "Registered 2017"
-        },
-        {
-          "scholar": "Parashuram Madar",
-          "guide": "Dr. S. T. Dundur",
-          "title": "An Investigation into the Usage of Agro-based Trash as the Alternative Fuel for All Season Co-generation of Electricity in Sugar Industry",
-          "status": "Registered 2017"
-        },
-        {
-          "scholar": "Harsha Indi",
-          "guide": "Dr. D. G. Mallapur",
-          "title": "Studies on the Tribological Properties of Al-Mg-Cu-Zn-Cr Alloy with T6 Heat Treatment",
-          "status": "Registered 2017"
+          "title": "Finite element analysis of machining of work material synthesized from metal matrix composites from micro-photographs",
+          "status": "Course work completed"
         },
         {
           "scholar": "Mallik Bhagawan",
           "guide": "Dr. S. T. Dundur",
-          "title": "An Investigation on the Characteristics associated with Cryogenic Machining of Elastomers",
-          "status": "Registered 2018"
+          "title": "An investigation on the characteristics associated with cryogenic machining of elastomers",
+          "status": "Open Seminar I and II completed"
+        },
+        {
+          "scholar": "Rajat Acharya",
+          "guide": "Dr. C. M. Javalagi",
+          "title": "Lean supply chain key performance indicator analysis in small and medium scale industries",
+          "status": "Comprehensive Viva-Voce completed"
+        },
+        {
+          "scholar": "Taware Shree Dnyanoba",
+          "guide": "Dr. D. G. Mallapur",
+          "title": "Aluminium die casting simulation modeling for cost benefit analysis",
+          "status": "Course work completed"
+        },
+        {
+          "scholar": "G. H. Rathod",
+          "guide": "Dr. V. S. Puranik",
+          "title": "A new comprehensive methodology for enabling environmentally conscious design and assessment of sustainability in an Indian manufacturing organization",
+          "status": "Comprehensive Viva-Voce completed"
         }
       ],
       "researchGrants": [
@@ -4252,14 +4464,29 @@
       ],
       "activities": [
         {
-          "title": "Industrial Tour to Bengaluru & Hosur industries",
-          "date": "October 2019",
-          "description": "IPE students visited Unnathi CNC Technologies Pvt. Ltd., CNC India Tools and Services Pvt. Ltd., India Design Exports Pvt. Ltd. (Bengaluru) and TVS Motor Company Ltd. (Hosur)."
+          "title": "Entrepreneurship Awareness Program (SDP)",
+          "date": "28 October 2025",
+          "description": "Organised by the Department of Industrial and Production Engineering in association with the Departments of Mechanical Engineering and Automobile Engineering to nurture an entrepreneurial mindset among students, introducing them to the fundamentals of entrepreneurship and the startup ecosystem. 62 students participated."
         },
         {
-          "title": "Workshop on \"Product Innovations through Out-of-the-Box Thinking\"",
-          "date": "26 October 2018",
-          "description": "Conducted for second, third and final year students, along with a Brain Storming technical competition and an industry-expert talk on the Oil and Gas Industry."
+          "title": "Sustainable Supply Chain Issues and Challenges for the 21st Century (Seminar)",
+          "date": "31 October 2025",
+          "description": "Expert seminar organised by the Departments of Mechanical Engineering Sciences on the latest trends, best practices and strategic frameworks for developing and managing sustainable supply chains amid climate change, resource scarcity and evolving regulatory frameworks."
+        },
+        {
+          "title": "New Energy Vehicles (SDP)",
+          "date": "14 November 2025",
+          "description": "Student Development Program organised by the Department of Automobile Engineering in association with the Departments of Mechanical and Industrial and Production Engineering, focusing on current developments in electric vehicles (EVs), hybrid electric vehicles (HEVs), fuel cell (hydrogen) and alternate fuels. 85 students participated; chief guest Dr. Niranjan Hiremath, HOD, Mechatronics, Reva University, Bengaluru."
+        },
+        {
+          "title": "SAP for Mechanical Engineering, Part-1: Finance Management (SDP)",
+          "date": "17-21 November 2025",
+          "description": "One-week program familiarising 30 students with SAP's financial tools for cost control, budgeting and project tracking, bridging technical knowledge and business management in mechanical engineering."
+        },
+        {
+          "title": "Geometrical Dimensioning and Tolerancing (GD&T) (SDP)",
+          "date": "27 March 2026",
+          "description": "Practical-oriented session organised by the Departments of Mechanical Engineering Sciences covering symbols, datums, tolerance zones and their real-time applications in design, manufacturing and quality control. Resource person: Mr. Gitan Ginde, Founder Director of Ganitharth Technologies and an alumnus of the IPE Department."
         }
       ],
       "additionalContacts": [
@@ -4870,7 +5097,7 @@
       "tagline": "Excelling in mechanical engineering education, research and innovation for sustainable development.",
       "established": "1963",
       "intake": "120",
-      "overview": "The Department of Mechanical Engineering is one of the oldest and largest departments of the college, established in 1963. It offers a 4-year B.E. in Mechanical Engineering (intake 120) and a 2-year M.Tech. in Machine Design (intake 18), and is a recognised VTU Research Centre established in 2000 with thirteen internal research guides. The department's research spans Machine Design, Thermal Engineering, Production Technology, and Material Science and Metallurgy, supported by qualified faculty, doctoral guides and well-equipped laboratories.",
+      "overview": "Established in 1963, the Department of Mechanical Engineering is one of the oldest and largest departments of Basaveshwar Engineering College, Bagalkot. The department offers a B.E. programme with an annual intake of 120 students and has a recognized Research and Development Centre offering M.Sc. (Engg.) and Ph.D. programmes under VTU, Belagavi. It is also a recognized QIP Centre of AICTE, Government of India. The B.E. programme is NBA-accredited under the Tier-I framework aligned with the Washington Accord up to June 2028. Faculty members have successfully completed sponsored research projects worth over Rs. 300 lakhs, published over 500 research papers along with books and book chapters and guided 66 research scholars to Ph.D. degrees. Supported by Government funding agencies such as DRDO, DST, CSIR, NRB and VGST, the department provides excellent research facilities, strong industry interaction, industrial exposure and career opportunities in both core and IT sectors.",
       "vision": "To excel in Mechanical Engineering education, research and innovation for sustainable development.",
       "mission": [
         "Develop students with the necessary knowledge and skills to meet societal needs.",
@@ -4880,13 +5107,12 @@
       ],
       "programsOffered": [
         "B.E. — Mechanical Engineering",
-        "M.Tech. — Machine Design",
         "Ph.D. — Mechanical Engineering (VTU Research Centre)"
       ],
       "peos": [
         {
           "code": "PEO1",
-          "text": "The Mechanical Engineering students should be able to engage in the design and to develop the components and equipment in the field of mechanical engineering industries and other allied industries."
+          "text": "The Mechanical Engineering students should be able to engage in the design and to develop the components and equipments in the field of mechanical engineering industries and other allied industries."
         },
         {
           "code": "PEO2",
@@ -4904,26 +5130,30 @@
       "psos": [
         {
           "code": "PSO1",
-          "text": "The students should be able to identify, analyze and solve mechanical engineering problems in the area of manufacturing technology, machine design, thermal/fluid engineering and interdisciplinary courses."
+          "text": "Apply core concepts of mechanical engineering to design, analyze, and solve mechanical systems and components by utilizing modern tools, computational techniques, and engineering practices in multidisciplinary environments."
         },
         {
           "code": "PSO2",
-          "text": "The students should be able to pursue higher studies and research in the area of material science, manufacturing, machine design, industrial management and thermal/fluid engineering."
-        },
-        {
-          "code": "PSO3",
-          "text": "The students should apply ethics and professional values in addressing social issues."
-        },
-        {
-          "code": "PSO4",
-          "text": "The students should be able to become technocrats and entrepreneurs and to solve community problems related to mechanical systems by imparting technological inputs and managerial skills."
+          "text": "Identify, formulate, and implement solutions to real-world mechanical engineering problems by integrating knowledge from multidisciplinary domains, including IoT and AI, while upholding ethical standards and effective communication within diverse teams."
         }
       ],
       "highlights": [
-        "One of the oldest and largest departments of the college, established in 1963, with a B.E. intake of 120.",
-        "VTU-recognised Research Centre established in 2000 with five major research areas: Machine Design, Thermal Engineering, Production Technology, and Material Science and Metallurgy.",
-        "Thirteen internal faculty research guides and twelve faculty with Ph.D.; over 44 candidates awarded Ph.D. through the centre.",
-        "Research grants from agencies including AICTE, DST, DRDO, NRB and VGST, with project funding running into several tens of lakhs of rupees."
+        "Established in 1963, one of the oldest and largest departments of the institute.",
+        "Offers B.E. in Mechanical Engineering (Intake: 120) under VTU, Belagavi.",
+        "Recognized Research and Development Centre since 2000, offering M.Sc. (Engg.) and Ph.D. programmes under VTU, Belagavi.",
+        "Recognized as a QIP Centre by AICTE, Government of India.",
+        "Total student strength of around 500, including UG and research scholars.",
+        "The B.E. programme has been accredited by NBA under the Tier-I framework aligned with the Washington Accord from 2003–2006, 2006–2009, 2016–2019, 2019–2022, 2022–2025, and 2025–June 2028.",
+        "Highly qualified and experienced faculty with strong academic and research credentials.",
+        "Sponsored research projects worth over Rs. 300 lakhs and over 500 research publications, books and book chapters.",
+        "66 research scholars have successfully completed their Ph.D. degrees.",
+        "Research and infrastructure supported by Government funding agencies like DRDO and NRB (Ministry of Defence, Government of India), DST and CSIR (Ministry of Science and Technology, Government of India), Board of Research in Fusion Science & Technology (BRFST, National Fusion Programme, Institute of Plasma Research, Gandhinagar, Gujarat), AICTE (MHRD, Government of India) and VGST (Government of Karnataka).",
+        "Facilities for advanced research in material development, testing and consultancy.",
+        "Strong industry interaction through internships, industrial visits, expert lectures, and MoUs.",
+        "Student skill development is supported through MEA (Mechanical Engineering Association) and Centres of Excellence in Advanced Materials Testing, BEC-Bosch Rexroth Centre for Industrial Automation, Mechatronics and Robotics.",
+        "Excellent placement opportunities in both core engineering and IT sectors.",
+        "Curriculum aligned with Outcome-Based Education (OBE), industry-specific competencies, and NEP-2020 principles.",
+        "Strong sports culture with students representing the university and earning University Blues."
       ],
       "associations": [
         {
@@ -4938,7 +5168,7 @@
         "name": "Dr. Vinay V. Kuppast",
         "designation": "Professor & Head",
         "phone": "+91-9986419729",
-        "email": "hodme@becbgk.edu"
+        "email": "bechodmech1963@gmail.com"
       },
       "documents": [
         {
@@ -4954,32 +5184,12 @@
           "file": "departments/mechanical/docs/scheme-syllabus-2024-25-first-year.pdf"
         },
         {
-          "title": "POs, PEOs & PSOs",
-          "file": "departments/mechanical/docs/po-peo-pso.pdf"
+          "title": "MEA Annual Report (2024-25)",
+          "file": "departments/mechanical/docs/mea-report-2024-25.pdf"
         },
         {
-          "title": "Faculty List",
-          "file": "departments/mechanical/docs/faculty-list.pdf"
-        },
-        {
-          "title": "Non-Teaching / Supporting Staff List",
-          "file": "departments/mechanical/docs/non-teaching-staff.pdf"
-        },
-        {
-          "title": "Board of Studies Proceedings",
-          "file": "departments/mechanical/docs/board-of-studies-proceedings.pdf"
-        },
-        {
-          "title": "List of Faculty Publications",
-          "file": "departments/mechanical/docs/faculty-publications.pdf"
-        },
-        {
-          "title": "Placement & Higher Studies Data",
-          "file": "departments/mechanical/docs/placement-and-higher-studies.pdf"
-        },
-        {
-          "title": "Best Practices in Teaching-Learning",
-          "file": "departments/mechanical/docs/best-practices.pdf"
+          "title": "Placement & Higher Studies (2024-25)",
+          "file": "departments/mechanical/docs/placement-and-higher-studies-2024-25.pdf"
         }
       ],
       "supportingStaff": [
@@ -5049,6 +5259,14 @@
         },
         {
           "name": "Sri. S. B. Kambi",
+          "designation": "Mechanic"
+        },
+        {
+          "name": "Sri. Girish N.",
+          "designation": "Mechanic"
+        },
+        {
+          "name": "Sri. Vishwanath Karadi",
           "designation": "Mechanic"
         },
         {
@@ -5194,7 +5412,7 @@
               "position": "Chairman"
             },
             {
-              "name": "Prof. S. C. Yali — Associate Professor (CAS), Dept. of Mechanical Engineering, Basaveshwar Engineering College, Bagalkote",
+              "name": "Dr. R. S. Naik — Assistant Professor, Dept. of Mechanical Engineering, Basaveshwar Engineering College, Bagalkote",
               "position": "Coordinator"
             }
           ]
@@ -5307,7 +5525,11 @@
         "Carry out innovative, cutting-edge research in physics for industrial and societal needs."
       ],
       "programsOffered": [
-        "Ph.D. — Physics (VTU Research Centre)"
+        "Ph.D. — Physics (VTU Research Centre)",
+        "B.E. First Year — Quantum Physics & Engineering Materials (1BPHE202C) [2025-26]",
+        "B.E. First Year — Physics for Sustainable Structural Systems (1BPHC202C) [2025-26]",
+        "B.E. First Year — Physics of Materials (1BPHM202C) [2025-26]",
+        "B.E. First Year — Quantum Physics and Quantum Computing (1BPHS102C) [2025-26]"
       ],
       "highlights": [
         "Established in 1963; a recognised VTU Research Centre since 2013.",
@@ -5315,9 +5537,9 @@
         "Qualified faculty supporting undergraduate engineering physics and research."
       ],
       "contact": {
-        "name": "Dr. S. U. Durgadsimi",
-        "designation": "Professor & Head, Physics",
-        "email": "sudph@becbgk.edu"
+        "name": "Prof. Ratnaprabha P. Araganji",
+        "designation": "Associate Professor & Head, Physics",
+        "email": "apratna@gmail.com"
       },
       "researchAreas": [
         {
@@ -5345,6 +5567,10 @@
           "designation": "Assistant Instructor"
         },
         {
+          "name": "Shri. Sudeep M. Mallanadadavar",
+          "designation": "Mechanic"
+        },
+        {
           "name": "Shri. M. S. Hiremani",
           "designation": "Helper"
         },
@@ -5355,31 +5581,27 @@
       ],
       "committeeGroups": [
         {
-          "title": "Board of Studies (2022-23)",
+          "title": "Board of Studies (2025-26)",
           "members": [
             {
-              "name": "Dr. Jayashri G. Ghantimath",
-              "position": "Chairman (Professor & HoD)"
+              "name": "Prof. Ratnaprabha P. Araganji",
+              "position": "Chairman — Associate Professor & HoD"
             },
             {
-              "name": "Dr. Prasad Vishnu Bhotla",
-              "position": "Member (VTU Nominee) — Professor & Chief Research Scientist, IISc Bengaluru"
+              "name": "Dr. Mahesh Lohith K. S.",
+              "position": "Member (VTU Nominee) — Associate Professor & Head, Department of Physics, ATME College of Engineering"
+            },
+            {
+              "name": "Dr. R. Prabhu",
+              "position": "Member — Associate Professor, Physics Department, IIT Dharwad"
             },
             {
               "name": "Dr. K. Chandrasekhar",
               "position": "Member — Professor & Controller of Examinations"
             },
             {
-              "name": "Dr. R. Prabhu",
-              "position": "Member — Associate Dean (Students Welfare), Physics Dept., IIT Dharwad"
-            },
-            {
-              "name": "Dr. Shaila U. Durgadsimi",
-              "position": "Member — Assistant Professor (Sel. Gr.)"
-            },
-            {
-              "name": "Smt. Ratnaprabha P. Araganji",
-              "position": "Member — Assistant Professor (Sel. Gr.)"
+              "name": "Dr. Jayashri G. Ghantimath",
+              "position": "Member — Professor"
             },
             {
               "name": "Sri. S. S. Bopardekar",
@@ -5388,15 +5610,15 @@
           ]
         },
         {
-          "title": "Board of Examiners (2022-23)",
+          "title": "Board of Examiners (2025-26)",
           "members": [
             {
-              "name": "Dr. Jayashri G. Ghantimath",
-              "position": "Chairman (Professor & HoD)"
+              "name": "Prof. Ratnaprabha P. Araganji",
+              "position": "Chairman — Associate Professor & HoD"
             },
             {
-              "name": "Shri. S. S. Bopardekar",
-              "position": "Member / Co-ordinator — Assistant Professor (Sel. Gr.)"
+              "name": "Dr. Jayashri G. Ghantimath",
+              "position": "Member (Coordinator) — Professor"
             }
           ]
         }
@@ -5473,12 +5695,25 @@
         {
           "name": "Torsional pendulum apparatus",
           "quantity": "03"
+        },
+        {
+          "name": "Kundt's tube apparatus",
+          "quantity": "02"
+        },
+        {
+          "name": "Forced mechanical oscillations apparatus",
+          "quantity": "02"
         }
       ],
       "additionalContacts": [
         {
+          "name": "Prof. Ratnaprabha P. Araganji",
+          "designation": "Associate Professor & Head — Board of Studies & Board of Examiners Chairman",
+          "email": "apratna@gmail.com"
+        },
+        {
           "name": "Dr. Jayashri G. Ghantimath",
-          "designation": "Professor — Board of Studies / Board of Examiners Chairperson",
+          "designation": "Professor — Board of Studies & Board of Examiners Member",
           "email": "jggbgk@gmail.com"
         }
       ],
@@ -5526,6 +5761,30 @@
         {
           "title": "Engineering Physics Syllabus — All Streams (2022-23)",
           "file": "departments/physics/docs/engineering-physics-syllabus-all-streams-2022-23.pdf"
+        },
+        {
+          "title": "Engineering Physics Syllabus — CS Stream (2025-26)",
+          "file": "departments/physics/docs/cs-syllabus-2025-26.pdf"
+        },
+        {
+          "title": "Engineering Physics Syllabus — Civil Stream (2025-26)",
+          "file": "departments/physics/docs/cv-syllabus-2025-26.pdf"
+        },
+        {
+          "title": "Engineering Physics Syllabus — EE Stream (2025-26)",
+          "file": "departments/physics/docs/ee-syllabus-2025-26.pdf"
+        },
+        {
+          "title": "Engineering Physics Syllabus — ME Stream (2025-26)",
+          "file": "departments/physics/docs/me-syllabus-2025-26.pdf"
+        },
+        {
+          "title": "Board of Studies — Proceedings (2025-26)",
+          "file": "departments/physics/docs/bos-proceedings-2025-26.pdf"
+        },
+        {
+          "title": "Board of Examiners — Members (2025-26)",
+          "file": "departments/physics/docs/boe-members-2025-26.pdf"
         }
       ]
     },
@@ -5656,23 +5915,33 @@
           "members": [
             {
               "name": "Dr. S. K. Patil",
-              "position": "Chairman - Associate Professor & HoD BEC Bagalkot"
+              "position": "Chairman - Associate Professor & HoD BEC Bagalkot",
+              "email": "sunilkumar.kp1971@gmail.com",
+              "phone": "9448766350"
             },
             {
               "name": "Dr. P. Timmanagoudar",
-              "position": "Member - Professor. BEC Bagalkot"
+              "position": "Member - Professor. BEC Bagalkot",
+              "email": "tgoudarprakash@gmail.com",
+              "phone": "9448693600"
             },
             {
               "name": "Dr. V. R. Kattimani",
-              "position": "Member -  Professor (CAS) BEC Bagalkot"
+              "position": "Member -  Professor (CAS) BEC Bagalkot",
+              "email": "veerannachem@gmail.com",
+              "phone": "9916022971"
             },
             {
               "name": "Dr. Veerupaxi Betageri",
-              "position": "VTU Nominee - Professor Dept. of chemistry VTU Belgaum"
+              "position": "VTU Nominee - Professor Dept. of chemistry VTU Belgaum",
+              "email": "virupaxb@gmail.com",
+              "phone": "9743020620"
             },
             {
               "name": "Dr. Rajeshwar Rao Malakalapalli",
-              "position": "Subject Expert - Professor Department of Chemistry IIT Dharwad"
+              "position": "Subject Expert - Professor Department of Chemistry IIT Dharwad",
+              "email": "rajesh@iitdh.ac.in",
+              "phone": "8362212834"
             }
           ]
         },
@@ -5718,10 +5987,10 @@
         "Offers core mathematics courses, electives and remedial instruction for engineering students."
       ],
       "contact": {
-        "name": "Dr Vidya M Shettar",
-        "designation": "Associate Professor & Head",
-        "phone": "+91-9480079044",
-        "email": "vmsmh@becbgk.edu"
+        "name": "Dr. S. V. Gurushantanavar",
+        "designation": "Associate Professor & HOD",
+        "phone": "+91-8317492301",
+        "email": "svguru2007@gmail.com"
       },
       "documents": [
         {
@@ -5745,6 +6014,10 @@
         {
           "name": "Ramappa S. Gulbal",
           "designation": "Mechanic"
+        },
+        {
+          "name": "Sri P. S. Chalavadi",
+          "designation": "Peon"
         }
       ],
       "committeeGroups": [
@@ -5752,44 +6025,68 @@
           "title": "Board of Studies",
           "members": [
             {
-              "name": "Dr S. S. Benchalli",
-              "position": "Chairman — Professor & Head, Department of Mathematics, BEC, Bagalkot"
+              "name": "Dr. S. V. Gurushantanavar",
+              "position": "Chairman — Associate Professor & HOD, Department of Mathematics, BEC, Bagalkot"
             },
             {
-              "name": "Dr N. N. Katagi",
-              "position": "VTU Nominee — Professor, Department of Mathematics, MIT, Manipal Academy of Higher Education, Manipal"
+              "name": "Dr. C. M. Suresha",
+              "position": "VTU Nominee — Professor and Head, R. N. S. Institute of Technology, Bengaluru"
             },
             {
-              "name": "Dr Jenifer J.",
-              "position": "Subject Expert — Professor & Head, SDM College of Engineering and Technology, Dharwad"
+              "name": "Dr. A. G. Hiremath",
+              "position": "Subject Expert — Professor and Head, PDACE, Kalaburagi"
             },
             {
-              "name": "Dr V. M. Shettar",
-              "position": "Member — Associate Professor, Department of Mathematics, BEC, Bagalkot"
+              "name": "Dr. V. M. Shettar",
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
             },
             {
-              "name": "Dr Mahadev Biradar",
-              "position": "Member — Associate Professor, Department of Mathematics, BEC, Bagalkot"
+              "name": "Dr. Mahadev M. Biradar",
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
             },
             {
-              "name": "Dr K. Rama Prasad",
-              "position": "Member — Associate Professor, Department of Mathematics, BEC, Bagalkot"
+              "name": "Dr. K. Ramprasad",
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
             },
             {
-              "name": "Dr S. V. Gurushantanavar",
-              "position": "Member — Assistant Professor, Department of Mathematics, BEC, Bagalkot"
+              "name": "Dr. A. H. Agadi",
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
             },
             {
-              "name": "Dr A. H. Agadi",
-              "position": "Member — Assistant Professor, Department of Mathematics, BEC, Bagalkot"
+              "name": "Dr. Ishwar Maharudrappa",
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
             },
             {
-              "name": "Prof. Ishwar Maharudrappa",
-              "position": "Member — Assistant Professor, Department of Mathematics, BEC, Bagalkot"
+              "name": "Prof. (Smt) V. M. Pudakalakatti",
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
             },
             {
-              "name": "Prof. V. M. Pudakalkatti",
-              "position": "Member — Assistant Professor, Department of Mathematics, BEC, Bagalkot"
+              "name": "Dr. Pradeep Hiremath",
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
+            },
+            {
+              "name": "Dr. Abhilash L. Nandeppanavar",
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
+            },
+            {
+              "name": "Dr. S. S. Benchalli",
+              "position": "Member — Professor (Subject Expert - Internal), BEC, Bagalkot"
+            },
+            {
+              "name": "Dr. S. H. Sanni",
+              "position": "Invitee — Retired Professor, BEC, Bagalkot"
+            },
+            {
+              "name": "Dr. Lokesh Bhajantri",
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
+            },
+            {
+              "name": "Dr. S. M. Jigajinni",
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
+            },
+            {
+              "name": "Dr. Manjula A. Sutagundar",
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
             }
           ]
         },
@@ -5797,35 +6094,43 @@
           "title": "Board of Examiners",
           "members": [
             {
-              "name": "Dr S. S. Benchalli",
+              "name": "Dr. S. V. Gurushantanavar",
               "position": "Chairman"
             },
             {
-              "name": "Dr K. Rama Prasad",
+              "name": "Prof. (Smt) V. M. Pudakalakatti",
               "position": "Coordinator"
             },
             {
-              "name": "Dr V. M. Shettar",
+              "name": "Dr. V. M. Shettar",
               "position": "Member"
             },
             {
-              "name": "Dr Mahadev Biradar",
+              "name": "Dr. Mahadev M. Biradar",
               "position": "Member"
             },
             {
-              "name": "Dr S. V. Gurushantanavar",
+              "name": "Dr. K. Ramprasad",
               "position": "Member"
             },
             {
-              "name": "Dr A. H. Agadi",
+              "name": "Dr. A. H. Agadi",
               "position": "Member"
             },
             {
-              "name": "Prof. Ishwar Maharudrappa",
+              "name": "Dr. Ishwar Maharudrappa",
               "position": "Member"
             },
             {
-              "name": "Prof. V. M. Pudakalkatti",
+              "name": "Dr. Pradeep Hiremath",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. Abhilash L. Nandeppanavar",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. S. S. Benchalli",
               "position": "Member"
             }
           ]
@@ -5836,7 +6141,7 @@
           "name": "Department of Mathematics Association",
           "about": "Provides a forum for the co-curricular and cultural activities of students throughout the year. It organises events and invites resource persons to conduct sessions on professional-development topics such as stock trading, soft skills, resume building, interpersonal skills, business ethics, banking opportunities and research methodology.",
           "coordinators": [
-            "Dr Vidya M. Shettar, Associate Professor & Head"
+            "Dr S. V. Gurushantanavar, Associate Professor & HOD"
           ]
         }
       ]
@@ -11073,6 +11378,7 @@
       "established": "2009",
       "intake": "60",
       "overview": "The Department of Management Studies was established at Basaveshwar Engineering College in 2009 to impart quality management education. It offers a two-year full-time MBA programme with an intake of 60 students spread over four semesters. The programme is autonomous, affiliated to VTU, Belagavi and approved by AICTE, New Delhi. The department is equipped with the necessary infrastructure, and its faculty are drawn from different specializations with varied experience. Practical labs such as a Presentation Lab and a Business Analytics Lab give students hands-on exposure to the presentation, communication, technical and analytical skills required of today's and tomorrow's managers.",
+      "about": "The Department of Management Studies (MBA) at Basaveshwar Engineering College offers industry-focused management education through experienced faculty, a contemporary curriculum, and experiential learning practices. The department emphasizes industry interaction, skill development, research, innovation, and strong placement support, preparing students to excel in diverse managerial and entrepreneurial roles.",
       "vision": "To be a centre of excellence in management education, research and entrepreneurship for a sustainable future.",
       "mission": [
         "Provide quality education in management to meet future talent requirements.",
@@ -11083,11 +11389,20 @@
         "MBA — Master of Business Administration (2-year, full-time)",
         "Ph.D. — Management (VTU)"
       ],
+      "pos": [
+        { "code": "PO1", "text": "Apply knowledge of management theories and practices to solve business problems." },
+        { "code": "PO2", "text": "Foster analytical and critical thinking abilities for data based decision making." },
+        { "code": "PO3", "text": "Ability to develop value-based leadership." },
+        { "code": "PO4", "text": "Ability to understand, analyze and communicate global, economic, legal and ethical aspects of business." },
+        { "code": "PO5", "text": "Ability to lead themselves and others in the achievement of organizational goals contributing effectively to a team environment." }
+      ],
       "highlights": [
         "Established in 2009; an autonomous programme affiliated to VTU and approved by AICTE, with an intake of 60.",
         "Specializations in Marketing, Finance, Human Resources, Operations and Business Analytics.",
         "Dedicated Presentation Lab and Business Analytics Lab for practical exposure.",
-        "Guided by core values of ethics, integrity, empathy and mutual respect."
+        "Guided by core values of ethics, integrity, empathy and mutual respect.",
+        "Management Club: where ideas transform into leadership and professional growth.",
+        "Industry engagement: Bridging academia and industry through interactions and experiential learning."
       ],
       "labs": [
         {
@@ -11106,8 +11421,19 @@
       "contact": {
         "name": "Dr. Vinod S. Puranik",
         "designation": "Professor & Head",
-        "email": "vinodpuranik36@gmail.com"
+        "email": "vinodpuranik36@gmail.com",
+        "phone": "9880224730"
       },
+      "additionalContacts": [
+        {
+          "name": "Dr. Rashmi Hunnur",
+          "phone": "9449159015"
+        },
+        {
+          "name": "Dr. Brijmohan Vyas",
+          "phone": "9743391794"
+        }
+      ],
       "documents": [
         {
           "title": "Scheme & Syllabus, Sem 1–4 (2024-25 Batch)",
@@ -11122,12 +11448,44 @@
           "file": "departments/mba/docs/bos-16th-proceedings.pdf"
         },
         {
-          "title": "Research Publications",
-          "file": "departments/mba/docs/research-publications.pdf"
-        },
-        {
           "title": "BEMSA — Department Association Activities List",
           "file": "departments/mba/docs/bemsa-activities-list.pdf"
+        }
+      ],
+      "sectionDocuments": {
+        "research-achievements": [
+          {
+            "title": "Research Publications",
+            "file": "departments/mba/docs/research-publications.pdf"
+          }
+        ],
+        "activities": [
+          {
+            "title": "IQAC Activities (2025-26)",
+            "file": "departments/mba/docs/iqac-activities-2025-26.pdf"
+          },
+          {
+            "title": "MBA Events",
+            "file": "departments/mba/docs/mba-events.pdf"
+          },
+          {
+            "title": "Alumni Testimonials",
+            "file": "departments/mba/docs/alumni-testimonials.pdf"
+          }
+        ]
+      },
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "MBA is a two-year full-time programme, aimed at nurturing and training young minds with contemporary skills of management, adept in handling diverse sectors of the economy."
+        },
+        {
+          "code": "PEO2",
+          "text": "The programme intends to inculcate leadership qualities in individuals to strategically position themselves in all emerging platforms of idea generation, creation of pragmatic knowledge, skills and competency development."
+        },
+        {
+          "code": "PEO3",
+          "text": "The diverse course curriculum enables a high degree of academic flexibility for fostering innovation and creativity. It instills resilience and adaptability in students for facing the challenges of the contemporary business world."
         }
       ],
       "psos": [
@@ -11263,10 +11621,6 @@
         {
           "partner": "Bitbites Food",
           "location": "Bagalkote"
-        },
-        {
-          "partner": "Granthalaya Book Centre (GBC)",
-          "since": "2025"
         }
       ],
       "infrastructureItems": [

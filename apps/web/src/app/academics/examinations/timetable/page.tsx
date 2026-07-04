@@ -12,11 +12,19 @@ export const metadata = pageMetadata({
 });
 
 const timetables = [
-    { title: "1_2024-25 EVEN_4_ 6_ 8_SEMESTER TIME TABLE", link: asset("documents/exam/1-2024-25-even-4-6-8-semester-time-table.pdf"), isNew: true },
-    { title: "2_2024-25 ODD_I SEM PG", link: asset("documents/exam/2-2024-25-odd-i-sem-pg.pdf"), isNew: true },
-    { title: "3_2024-25 ODD_3 SEM PG", link: asset("documents/exam/3-2024-25-odd-3-sem-pg.pdf"), isNew: true },
-    { title: "4_2024-25 ODD_MAKE UP_1_ 3_ 5_ 7 SEM", link: asset("documents/exam/4-2024-25-odd-make-up-1-3-5-7-sem.pdf"), isNew: true },
-    { title: "Time Table for BE I/II Semester SEE Examinations, Feb/March - 2025", link: asset("documents/exam/be-i-sem-see-timetable.pdf"), isNew: true },
+    { title: "B.E. I Sem SEE Time Table 2025-26 (Odd)", link: asset("documents/exam/be-i-sem-see-timetable-2025-26-odd.pdf"), isNew: true },
+    { title: "B.E. II Sem SEE Time Table 2025-26 (Even)", link: asset("documents/exam/be-ii-sem-see-timetable-2025-26-even.pdf"), isNew: true },
+    { title: "B.E. III Sem SEE Time Table 2025-26 (Odd)", link: asset("documents/exam/be-iii-sem-see-timetable-2025-26-odd.pdf"), isNew: true },
+    { title: "B.E. IV Sem SEE Time Table 2025-26 (Even)", link: asset("documents/exam/be-iv-sem-see-timetable-2025-26-even.pdf"), isNew: true },
+    { title: "B.E. VI Sem SEE Time Table 2025-26 (Even)", link: asset("documents/exam/be-vi-sem-see-timetable-2025-26-even.pdf"), isNew: true },
+    { title: "B.E. VIII Sem SEE Time Table 2025-26 (Even)", link: asset("documents/exam/be-viii-sem-see-timetable-2025-26-even.pdf"), isNew: true },
+    { title: "PG I Sem SEE Time Table 2025-26 (Odd)", link: asset("documents/exam/pg-i-sem-see-timetable-2025-26-odd.pdf"), isNew: true },
+    { title: "PG IV Sem SEE Time Table 2025-26 (Even)", link: asset("documents/exam/pg-iv-sem-see-timetable-2025-26-even.pdf"), isNew: true },
+    { title: "1_2024-25 EVEN_4_ 6_ 8_SEMESTER TIME TABLE", link: asset("documents/exam/1-2024-25-even-4-6-8-semester-time-table.pdf"), isNew: false },
+    { title: "2_2024-25 ODD_I SEM PG", link: asset("documents/exam/2-2024-25-odd-i-sem-pg.pdf"), isNew: false },
+    { title: "3_2024-25 ODD_3 SEM PG", link: asset("documents/exam/3-2024-25-odd-3-sem-pg.pdf"), isNew: false },
+    { title: "4_2024-25 ODD_MAKE UP_1_ 3_ 5_ 7 SEM", link: asset("documents/exam/4-2024-25-odd-make-up-1-3-5-7-sem.pdf"), isNew: false },
+    { title: "Time Table for BE I/II Semester SEE Examinations, Feb/March - 2025", link: asset("documents/exam/be-i-sem-see-timetable.pdf"), isNew: false },
 ];
 
 export default function TimeTablePage() {

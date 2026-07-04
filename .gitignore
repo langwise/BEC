@@ -46,3 +46,5 @@ yarn-error.log*
 # Asset-pipeline staging folders — optimized images live on R2, not in git.
 # (e.g. temp-library-staff-r2/ that leaked once.) Never commit these.
 apps/web/temp-*/
+
+.claude/workflows/
