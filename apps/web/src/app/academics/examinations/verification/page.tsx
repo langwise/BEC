@@ -56,8 +56,8 @@ export default function VerificationPage() {
       </div>
 
       <div className="rounded-xl bg-amber-50 border border-amber-200 px-5 py-4 text-sm text-amber-900">
-        Verification is available only for students admitted to 1<sup>st</sup>
-        year (BE / M.Tech / MCA / MBA) from the academic year
+        Verification is available only for students admitted to 1<sup>st</sup>{" "}
+        year (BE / M.Tech / MCA / MBA) from the academic year{" "}
         <strong>2007-08</strong> onwards.
       </div>
 
