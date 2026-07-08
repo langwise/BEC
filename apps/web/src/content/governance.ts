@@ -89,7 +89,7 @@ export const principal: Principal = {
 
 export const deans: Person[] = data.deans.map((dean) => ({
   ...dean,
-  photo: photo(dean.photo),
+  photo: photo("photo" in dean ? dean.photo : undefined),
 }));
 
 export const officers: Person[] = data.officers.map((officer) => ({

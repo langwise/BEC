@@ -32,7 +32,7 @@ export const ORG = {
     "https://www.facebook.com/BEC1963",
     "https://x.com/1963Bec",
     "https://www.instagram.com/becbgk_official/",
-    "https://www.linkedin.com/school/basaveshwar-engineering-college-bagalkot-qip-centre-/",
+    "https://www.linkedin.com/in/basaveshwar-engineering-college-bagalkote-karnataka-india-957a34206",
     "https://becbgk.irins.org/",
   ],
 } as const;
