@@ -103,7 +103,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </Link>
               <Link
-                href="https://www.linkedin.com/school/basaveshwar-engineering-college-bagalkot-qip-centre-/"
+                href="https://www.linkedin.com/in/basaveshwar-engineering-college-bagalkote-karnataka-india-957a34206"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-primary transition-colors"
