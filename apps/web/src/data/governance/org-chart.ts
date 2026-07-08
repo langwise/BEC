@@ -26,10 +26,12 @@ export const orgChartLevels: OrgChartLevel[] = [
     description:
       "Academic, research, quality, placement, and administration leadership.",
     nodes: [
-      "Dean Academic (Dr. P. N. Kulkarni)",
-      "Controller of Examinations (Dr. K. Chandrasekhar)",
-      "Dean Placement & Training (Dr. S. G. Kambalimath)",
       "Development Officer (Prof. B. S. Haravi)",
+      "Dean Academic (Dr. P. N. Kulkarni)",
+      "Dean R&D and ICT (Dr. Mahabaleshwar S. K.)",
+      "Dean Career Guidance & Placement (Dr. S. G. Kambalimath)",
+      "Dean Student Welfare",
+      "Controller of Examinations (Dr. K. Chandrasekhar)",
     ],
   },
   {

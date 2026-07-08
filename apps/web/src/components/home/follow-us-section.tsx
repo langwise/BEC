@@ -25,7 +25,7 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    url: "https://www.linkedin.com/school/basaveshwar-engineering-college-bagalkot-qip-centre-/",
+    url: "https://www.linkedin.com/in/basaveshwar-engineering-college-bagalkote-karnataka-india-957a34206",
     color: "bg-[#0A66C2] text-white",
   },
 ];

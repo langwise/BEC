@@ -65,7 +65,6 @@ export const navigationData: NavigationItem[] = [
       },
       { title: "Director", href: "/administration/director" },
       { title: "Principal", href: "/administration/principal" },
-      { title: "Dean ICT", href: "/administration/dean-ict" },
       { title: "Deans", href: "/administration/governance#deans" },
       { title: "Heads of Departments", href: "/administration/governance#hods" },
       {
@@ -79,7 +78,7 @@ export const navigationData: NavigationItem[] = [
   {
     title: "Academics",
     items: [
-      { title: "Examinations", href: "/academics/examinations" },
+      { title: "Research", href: "/research" },
       { title: "First-Year Syllabus", href: "/academics/first-year" },
       {
         title: "Programmes",
@@ -109,10 +108,10 @@ export const navigationData: NavigationItem[] = [
     })),
   },
 
-  // 5. Research
+  // 5. Examinations
   {
-    title: "Research",
-    href: "/research",
+    title: "Examinations",
+    href: "/academics/examinations",
   },
 
   // 6. Placements

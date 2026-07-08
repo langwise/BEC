@@ -26,6 +26,16 @@ const slideVariants = {
   }),
 };
 
+function EmptyState({ label }: { label: string }) {
+  return (
+    <div className="flex min-h-[380px] lg:h-[420px] flex-col items-center justify-center text-center">
+      <p className="text-sm font-medium text-muted-foreground">
+        No {label} at the moment. Please check back soon.
+      </p>
+    </div>
+  );
+}
+
 export function NewsAnnouncementsSection() {
   const [newsPage, setNewsPage] = React.useState(0);
   const [annPage, setAnnPage] = React.useState(0);
@@ -57,11 +67,17 @@ export function NewsAnnouncementsSection() {
   // Auto-play interval: 10 seconds (slides right-to-left)
   // Re-creates on page change to reset the timer when manual pagination happens.
   React.useEffect(() => {
+    if (totalNewsPages <= 1 && totalAnnPages <= 1) return;
+
     const timer = setInterval(() => {
-      setNewsDirection("forward");
-      setNewsPage((prev) => (prev + 1) % totalNewsPages);
-      setAnnDirection("forward");
-      setAnnPage((prev) => (prev + 1) % totalAnnPages);
+      if (totalNewsPages > 1) {
+        setNewsDirection("forward");
+        setNewsPage((prev) => (prev + 1) % totalNewsPages);
+      }
+      if (totalAnnPages > 1) {
+        setAnnDirection("forward");
+        setAnnPage((prev) => (prev + 1) % totalAnnPages);
+      }
     }, 10000);
 
     return () => clearInterval(timer);
@@ -86,6 +102,7 @@ export function NewsAnnouncementsSection() {
                 </div>
 
                 <div className="space-y-6 min-h-[380px] lg:h-[420px]">
+                  {newsData.length === 0 && <EmptyState label="news" />}
                   {/* Pinned News (Static) */}
                   <div className="space-y-6">
                     {pinnedNews.map((item) => (
@@ -157,32 +174,34 @@ export function NewsAnnouncementsSection() {
                   View all News
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
-                <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => {
-                      setNewsDirection("backward");
-                      setNewsPage((p) => (p - 1 + totalNewsPages) % totalNewsPages);
-                    }}
-                    className="h-8 w-8 rounded-full border-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <ChevronLeft className="h-4 w-4" />
-                    <span className="sr-only">Previous page</span>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => {
-                      setNewsDirection("forward");
-                      setNewsPage((p) => (p + 1) % totalNewsPages);
-                    }}
-                    className="h-8 w-8 rounded-full border-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <ChevronRight className="h-4 w-4" />
-                    <span className="sr-only">Next page</span>
-                  </Button>
-                </div>
+                {totalNewsPages > 1 && (
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={() => {
+                        setNewsDirection("backward");
+                        setNewsPage((p) => (p - 1 + totalNewsPages) % totalNewsPages);
+                      }}
+                      className="h-8 w-8 rounded-full border-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                    >
+                      <ChevronLeft className="h-4 w-4" />
+                      <span className="sr-only">Previous page</span>
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={() => {
+                        setNewsDirection("forward");
+                        setNewsPage((p) => (p + 1) % totalNewsPages);
+                      }}
+                      className="h-8 w-8 rounded-full border-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                    >
+                      <ChevronRight className="h-4 w-4" />
+                      <span className="sr-only">Next page</span>
+                    </Button>
+                  </div>
+                )}
               </div>
             </div>
           </FadeIn>
@@ -201,6 +220,9 @@ export function NewsAnnouncementsSection() {
                 </div>
 
                 <div className="space-y-6 min-h-[380px] lg:h-[420px]">
+                  {announcementsData.length === 0 && (
+                    <EmptyState label="announcements" />
+                  )}
                   {/* Pinned Announcements (Static) */}
                   <div className="space-y-6">
                     {pinnedAnn.map((item) => (
@@ -272,32 +294,34 @@ export function NewsAnnouncementsSection() {
                   View all Announcements
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
-                <div className="flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => {
-                      setAnnDirection("backward");
-                      setAnnPage((p) => (p - 1 + totalAnnPages) % totalAnnPages);
-                    }}
-                    className="h-8 w-8 rounded-full border-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <ChevronLeft className="h-4 w-4" />
-                    <span className="sr-only">Previous page</span>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => {
-                      setAnnDirection("forward");
-                      setAnnPage((p) => (p + 1) % totalAnnPages);
-                    }}
-                    className="h-8 w-8 rounded-full border-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <ChevronRight className="h-4 w-4" />
-                    <span className="sr-only">Next page</span>
-                  </Button>
-                </div>
+                {totalAnnPages > 1 && (
+                  <div className="flex gap-2">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={() => {
+                        setAnnDirection("backward");
+                        setAnnPage((p) => (p - 1 + totalAnnPages) % totalAnnPages);
+                      }}
+                      className="h-8 w-8 rounded-full border-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                    >
+                      <ChevronLeft className="h-4 w-4" />
+                      <span className="sr-only">Previous page</span>
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={() => {
+                        setAnnDirection("forward");
+                        setAnnPage((p) => (p + 1) % totalAnnPages);
+                      }}
+                      className="h-8 w-8 rounded-full border-gray-200 text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                    >
+                      <ChevronRight className="h-4 w-4" />
+                      <span className="sr-only">Next page</span>
+                    </Button>
+                  </div>
+                )}
               </div>
             </div>
           </FadeIn>

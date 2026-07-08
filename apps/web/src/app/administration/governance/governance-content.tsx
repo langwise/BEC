@@ -108,7 +108,6 @@ const anchorNav = [
   { id: "leadership", label: "Principal" },
   { id: "deans", label: "Deans" },
   { id: "hods", label: "HOD Directory" },
-  { id: "officers", label: "Key Officers" },
   { id: "org-chart", label: "Organization Chart" },
   { id: "documents", label: "Documents" },
 ];
@@ -496,19 +495,20 @@ export function GovernanceContent() {
                 ]}
               />
             ))}
+            {officers.map((officer) => (
+              <PersonCard
+                key={officer.role}
+                photo={officer.photo}
+                name={officer.name || officer.role}
+                description={officer.focus}
+                email={officer.email}
+                badges={
+                  officer.name ? [{ label: officer.role, tone: "primary" }] : []
+                }
+              />
+            ))}
           </PersonGrid>
         </div>
-      </section>
-
-      <section
-        id="officers"
-        className="border-t border-stone-200 py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-6"
-      >
-        <SectionHeading
-          title="Key officers"
-          description="Statutory and support functions essential to day-to-day operations."
-        />
-        <DeansGrid deans={officers} />
       </section>
 
       <section

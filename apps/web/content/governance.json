@@ -8,20 +8,6 @@
   },
   "deans": [
     {
-      "role": "Dean Research & Development",
-      "name": "Dr. Mahabaleshwar S. K.",
-      "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
-      "email": "deanrd@becbgk.edu",
-      "focus": "Research, innovation, consultancy"
-    },
-    {
-      "role": "Dean Placement & Training",
-      "name": "Dr. S. G. Kambalimath",
-      "photo": "governance/deans/dr-shankar-kambalimath.webp",
-      "email": "placement@becbgk.edu",
-      "focus": "Career services & placements"
-    },
-    {
       "role": "Dean Academic",
       "name": "Dr. P. N. Kulkarni",
       "photo": "governance/deans/dr-p-n-kulkarni.webp",
@@ -29,17 +15,23 @@
       "focus": "Programs & curriculum"
     },
     {
-      "role": "Dean Quality Assurance",
-      "name": "Dr. Bharati S. Meti",
-      "photo": "governance/deans/dr-bharati-s-meti.webp",
-      "focus": "Accreditation & quality systems"
+      "role": "Dean R&D and ICT",
+      "name": "Dr. Mahabaleshwar S. K.",
+      "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
+      "email": "deanrd@becbgk.edu",
+      "focus": "Research, innovation, consultancy & ICT infrastructure"
     },
     {
-      "role": "Dean ICT",
-      "name": "Dr. Mahabaleshwar S. K.",
-      "photo": "governance/deans/dean-ict-dr-mahabaleshwar-s-k.webp",
-      "email": "mahabaleshwar_sk@yahoo.co.in",
-      "focus": "Information & Communications Technology infrastructure"
+      "role": "Dean Career Guidance & Placement",
+      "name": "Dr. S. G. Kambalimath",
+      "photo": "governance/deans/dr-shankar-kambalimath.webp",
+      "email": "placement@becbgk.edu",
+      "focus": "Career services & placements"
+    },
+    {
+      "role": "Dean Student Welfare",
+      "focus": "Student welfare & support",
+      "placeholder": true
     }
   ],
   "officers": [
@@ -54,12 +46,6 @@
       "name": "Dr. Shreekant G. Karkun",
       "photo": "governance/hod/librarian/dr-shreekant-g-karkun.webp",
       "focus": "Central library & digital resources"
-    },
-    {
-      "role": "Admission Section In-charge",
-      "name": "Dr. S. G. Kumbalavati",
-      "photo": "governance/admission-staff/dr-s-g-kumbalavati.webp",
-      "focus": "Admissions & student intake"
     }
   ],
   "hods": [
