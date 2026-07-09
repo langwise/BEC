@@ -12802,10 +12802,6 @@
             "file": "departments/mba/docs/mba-events.pdf"
           },
           {
-            "title": "Alumni Testimonials",
-            "file": "departments/mba/docs/alumni-testimonials.pdf"
-          },
-          {
             "title": "Faculty & Students Achievements",
             "file": "departments/mba/docs/faculty-students-achievements.pdf"
           }
@@ -13105,6 +13101,79 @@
         {
           "title": "Student Development Programme on \"Requirement of MBA Graduates in Corporate World\"",
           "date": "2020-12-19"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Chandulingappa H",
+          "designation": "Branch Manager",
+          "organization": "Indian Overseas Bank",
+          "quote": "Being a part of new beginnings is always special and so is my journey in MBA as it kicked off along with BEC DOMS “Founders Batch” of MBA. Looking back, I can certainly say that DOMS was the most important milestone in shaping my career. MBA provides an innovative course design, best-in-class faculty from industry and academics. Throughout the academic sessions, I was challenged to discover capabilities that I never knew I had. Along with academics, the Department focuses on personality development which helped me build a rewarding career."
+        },
+        {
+          "name": "Anusha Aravepalli",
+          "designation": "Women Development Inspector",
+          "organization": "Karnataka State Women Development Corporation",
+          "quote": "I chose the MBA course at BEC DOMS to help me get closer to my dreams. Throughout my course, I had countless opportunities to develop analytical skills, leadership, and proactive thinking through various course-related activities. Department of Management Studies has the best faculty team who provide 360-degree support to students. I thank all my faculty members and friends for the amazing journey at BEC DOMS."
+        },
+        {
+          "name": "Vishwanath Ulligaddi",
+          "designation": "Senior Officer - Retail Sales",
+          "organization": "Asian Paints Limited",
+          "quote": "Today, I am working with Asian Paints. When I look back at the 10+ years of my life after BEC DOMS, I feel honored to be a part of an institution that helped me become the confident professional that I am today. When the opportunity comes calling, you ought to keep the door open. At DOMS, not only were we made aware to keep the doors open, we were taught to build new ones for ourselves."
+        },
+        {
+          "name": "Mallikarjun D Ghatawalimath",
+          "designation": "Assistant Manager",
+          "organization": "KPMG",
+          "quote": "DOMS waters the seed deeply buried in you, protects you and helps you grow. A great amount of gratitude to the wonderful professors of BEC DOMS who hold brilliant industry and academic experience. The assignment & assessment mechanism is top-notch. It becomes needless to voice out — if you are looking for an institution to enhance knowledge and to be competent in the current challenging world, then DOMS is the right place!"
+        },
+        {
+          "name": "Shruti Talikoti",
+          "designation": "Senior Analyst",
+          "organization": "Ernst & Young",
+          "quote": "I am working as a Senior Analyst in EY and would profoundly like to share that “Genesis” is an important word, and I must say the Department of Management Studies, Basaveshwar Engineering College (BEC-DOMS) is one place where it all started for me. Graduation was just a certificate, but the journey that made us capable of going that one extra mile can’t be summarized in a few words. Apart from lecture rooms or any infrastructure we could ask for, BEC’s vision to enable its students with industry-level capabilities made the difference. It’s been 10 years since I have been working in an industry where knowledge and discipline towards the profession is an essence. I extend my heartfelt thanks to my faculty for their selfless efforts."
+        },
+        {
+          "name": "Harun M. Kudachi",
+          "designation": "Assistant Manager - HR",
+          "organization": "Online Instruments India Pvt. Ltd, Bengaluru",
+          "quote": "BEC DOMS gave me so many opportunities to learn, not just academically but experientially. Whenever there was anything I needed or didn’t understand, all hands were on deck without delay. Moreover, I also learnt to be independent and make more right decisions. The knowledge, acumen and confidence I gained in the Department of Management Studies, BEC, gave me wings to fly."
+        },
+        {
+          "name": "Vijalakshmi Hiremath",
+          "designation": "Branch Manager",
+          "organization": "Indian Overseas Bank",
+          "quote": "It’s an immense pleasure to count myself as an alumni of BEC DOMS. I learnt and gained extensive experiences which helped throughout my studies in all my thick and thin. The knowledge and discipline we get from BEC DOMS is phenomenal, which helps you to succeed in all endeavors. And I’m sure it will help me in my future life. I owe a huge vote of thanks to every opportunity given to me to explore my personality and potential at the Department of Management Studies, Basaveshwar Engineering College."
+        },
+        {
+          "name": "Geeta Benal",
+          "designation": "Deputy Superintendent of Police (DYSP)",
+          "organization": "Karnataka Police",
+          "quote": "DOMS is where I found the perfect synergy of theoretical knowledge and practical application. Breaking away from the regular standard of education, they focus on the application of knowledge rather than the accumulation of knowledge. A system that motivates you to form an everlasting bond with your college. BEC DOMS is truly a place that prepares you for the real world."
+        },
+        {
+          "name": "Padmini Gundale",
+          "designation": "Associate-2",
+          "organization": "PricewaterhouseCoopers, Bengaluru",
+          "quote": "Department of Management Studies, BEC provided the platform to study, excel, compete and explore my potential. Motivational teaching, making projects, and learnings at internship helped a lot in understanding the technical aspects and clearing the job interviews. The Training and Placement department helped me in acing through the campus placements and I got my job. Today, I am fortunate enough to be working in PwC. I am thankful to BEC DOMS for all the support and proud to be a part of the BEC DOMS Alumni Network."
+        },
+        {
+          "name": "Manju Mudiyannavar",
+          "designation": "Marketing Manager",
+          "organization": "UltraTech Cement (Aditya Birla Group)",
+          "quote": "The environment at BEC-Department of Management Studies provided enough opportunities to learn and “explore the potential” to prepare for a rewarding future. What set the institute apart was the far-sightedness of the founders in implementing the vision which they had believed in for years. The right mix of academic focus and co-curricular activities created the right balance of “work and fun while you learn”. I am glad to have connected with the DOMS family and would be more than happy to contribute to the growth of the student fraternity in future."
+        },
+        {
+          "name": "Nisar Lathi",
+          "designation": "Territory Manager",
+          "organization": "Saint-Gobain Weber",
+          "quote": "DOMS gave me immense opportunities and platforms to explore my potential beyond the comfort zones. It helped me understand that dreams are just dreams — ephemeral, fleeting — until we work hard to get them into reality and shape. As I am progressing in my life, BEC DOMS has given me the grounds to acknowledge fear and adversity and keep on learning. I am thankful to BEC DOMS for all the support and proud to be a part of it."
+        },
+        {
+          "name": "Rajashekharayya V Hiremath",
+          "organization": "Accenture",
+          "quote": "I was fortunate enough to have studied at BEC Department of Management Studies. It gave me an excellent platform to study and excel in my professional life. The mentorship provided in a variety of contexts, and the myriad of other ways, greatly and positively affected me and shaped and prepared me for the outside world. I am thankful to BEC DOMS for all the support."
         }
       ]
     }
