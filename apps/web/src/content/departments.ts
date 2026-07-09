@@ -35,6 +35,11 @@ export type DepartmentContent = {
   researchAchievements?: string[];
   /** Year-wise research output grouped by category (journals, books, chapters, conferences). */
   publications?: { category: string; years: { year?: string; items: string[] }[] }[];
+  /** Incubated startups — companies registered and grants received. */
+  startups?: {
+    companies?: { name: string; founders: string; domain: string; established: string }[];
+    grants?: { startup: string; project: string; year: string; agency: string; amount: string }[];
+  };
   /** Alumni testimonials — rendered as quote cards under an "Alumni" section. */
   testimonials?: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
   /** Patents filed/published/granted — rendered as a table on the Research page. */

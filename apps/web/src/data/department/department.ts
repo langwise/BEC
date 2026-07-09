@@ -417,6 +417,26 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
+  // Incubated startups — companies registered and grants received.
+  if (content.startups && (content.startups.companies?.length || content.startups.grants?.length)) {
+    const tables: DataTable[] = [];
+    if (content.startups.companies?.length) {
+      tables.push({
+        title: `Startups Registered at BEC Incubation Centre (${content.startups.companies.length})`,
+        columns: ["Startup", "Founder(s)", "Domain", "Established"],
+        rows: content.startups.companies.map((c) => [c.name, c.founders, c.domain, c.established]),
+      });
+    }
+    if (content.startups.grants?.length) {
+      tables.push({
+        title: "Grants Received",
+        columns: ["Startup", "Project", "Funding Year", "Funding Agency", "Grant (₹ Lakh)"],
+        rows: content.startups.grants.map((g) => [g.startup, g.project, g.year, g.agency, g.amount]),
+      });
+    }
+    sections.push({ id: "startups", type: "tables", title: heading("startups", "Startups"), icon: "briefcase", tables });
+  }
+
   // Alumni testimonials
   if (content.testimonials?.length) {
     sections.push({
@@ -637,6 +657,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     "research-achievements": { label: "Research Achievements", icon: "clipboard" },
     publications: { label: "Publications", icon: "book" },
     patents: { label: "Patents", icon: "clipboard" },
+    startups: { label: "Startups", icon: "briefcase" },
     alumni: { label: "Alumni", icon: "users" },
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },

@@ -1201,7 +1201,65 @@
           "organization": "Fermentech Labs Pvt. Ltd., Roorkee, Haridwar",
           "quote": "During my stay of four years at Basaveshwar Engineering College, I came across various people of different states and cultures. I had received a lot of opportunities to groom myself, thanks to my ever-inspiring mentors who helped me to discover the talented part of myself. No wonder the institute is old and is still striving to achieve excellence; in due time it has definitely set some benchmarks in academia and is relentlessly trying to achieve the heights in rendering world-class education."
         }
-      ]
+      ],
+      "startups": {
+        "companies": [
+          {
+            "name": "Sudhalgae (Partnership Firm)",
+            "founders": "Mr. Ajay Katti & Mr. Manoj R",
+            "domain": "Algae Technology",
+            "established": "21 January 2020"
+          },
+          {
+            "name": "Plankt Biosystems Pvt. Ltd.",
+            "founders": "Mr. Ajay Katti & Mr. Manoj R",
+            "domain": "Health Supplement / Nutraceuticals",
+            "established": "13 January 2022"
+          },
+          {
+            "name": "Pomla (Partnership Firm)",
+            "founders": "Dr. Shivaleela V B & Mr. Siddangouda K",
+            "domain": "Secondary Agriculture",
+            "established": "14 March 2022"
+          },
+          {
+            "name": "Pomla Naturals LLP",
+            "founders": "Dr. Shivaleela V B & Mr. Siddangouda K",
+            "domain": "Food Processing",
+            "established": "19 July 2023"
+          }
+        ],
+        "grants": [
+          {
+            "startup": "Sudhalgae",
+            "project": "A novel algae production technology involving biofilm formation over a solid substrate",
+            "year": "28 July 2020",
+            "agency": "BIG, BIRAC, DBT, GoI (C-CAMP, Bengaluru)",
+            "amount": "50.00"
+          },
+          {
+            "startup": "Plankt Biosystems Pvt. Ltd.",
+            "project": "Nutraceutical product development of Spirulina",
+            "year": "30 June 2022",
+            "agency": "K Elevate, GoK, Bengaluru",
+            "amount": "18.00"
+          },
+          {
+            "startup": "Pomla",
+            "project": "Idea to PoC for scale-up and marketing studies of the Anti-tick soap",
+            "year": "22 September 2023",
+            "agency": "Amruth Startups (OBC), GoK, Bengaluru",
+            "amount": "23.00"
+          },
+          {
+            "startup": "Pomla Naturals LLP",
+            "project": "MSME support for pomegranate jam",
+            "year": "5 February 2024",
+            "agency": "Startup India, KLE CTIE",
+            "amount": "5.00"
+          }
+        ]
+      }
     },
     "civil-engg": {
       "name": "Civil Engineering",
