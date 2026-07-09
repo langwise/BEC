@@ -874,7 +874,7 @@
       "tagline": "A centre of excellence in teaching, research and innovation, shaping globally competent civil engineers for a sustainable society.",
       "established": "1963",
       "intake": "120",
-      "overview": "The Civil Engineering Department is one of the pioneering departments since the inception of the college in 1963. It is engaged in imparting quality education and producing outstanding graduates through qualified faculty and state-of-the-art infrastructure. The department offers a 4-year B.E. (intake 120) and 2-year M.Tech. programmes in Environmental Engineering, Geo-Technical Engineering and Structural Engineering (intake 18 each). It has been recognised as a Research Centre by VTU since 2003 and as a QIP Research Centre (Ph.D.) by AICTE, New Delhi since 2012, and is a State Resource Centre for training in Earthquake Engineering under NPCBEERM. The department has organised conferences, seminars and workshops, fetched research grants worth ₹183 lakhs, and provides consultancy services for various government and private agencies.",
+      "overview": "The Civil Engineering Department is one of the pioneering departments since the inception of the college in 1963. It is engaged in imparting quality education and producing outstanding graduates through qualified faculty and state-of-the-art infrastructure. The department offers a 4-year B.E. (intake 120) and 2-year M.Tech. programme in Structural Engineering with intake 18. It has been recognised as a Research Centre by VTU since 2003 and as a QIP Research Centre (Ph.D.) by AICTE, New Delhi since 2012, and is a State Resource Centre for training in Earthquake Engineering under NPCBEERM. The department has organised conferences, seminars and workshops, fetched research grants worth ₹183 lakhs, and provides consultancy services for various government and private agencies.",
       "vision": "To be a centre of excellence in teaching, research and innovation, shaping globally competent civil engineers toward the sustainable development of society.",
       "mission": [
         "Provide a student-centric learning environment, cultivating critical thinking and problem-solving skills in aspiring civil engineers.",
@@ -1126,8 +1126,12 @@
           "title": "Board of Examiners",
           "members": [
             {
+              "name": "Dr. S. H. Sanni",
+              "position": "Chairman and HOD Civil Engineering, BEC Bagalkote"
+            },
+            {
               "name": "Prof. B. A. Patil",
-              "position": "Assistant Professor"
+              "position": "Co-ordinator"
             }
           ]
         }
@@ -1164,6 +1168,18 @@
         {
           "supervisor": "Dr. G. B. Megeri",
           "area": "Civil engineering research (recognised Ph.D. guide)"
+        },
+        {
+          "supervisor": "Dr. Shreeshail Heggond",
+          "area": "Structural engineering; nano-materials, high-performance concrete and smart construction"
+        },
+        {
+          "supervisor": "Dr. Srinivas F. Chitragar",
+          "area": "Transportation systems engineering, highway engineering and pavement materials"
+        },
+        {
+          "supervisor": "Dr. Jayalatha N. A.",
+          "area": "Environmental engineering, wastewater treatment and bioremediation"
         }
       ],
       "phdsAwarded": [
@@ -3228,28 +3244,59 @@
         {
           "title": "Innovations in Teaching and Learning (Best Practices)",
           "file": "departments/ece/docs/innovations-in-teaching-and-learning.pdf"
-        },
-        {
-          "title": "MoU - Saaketh Electrocircuit Pvt. Ltd., Pune",
-          "file": "departments/ece/docs/mou-saaketh-electrocircuit.pdf"
-        },
-        {
-          "title": "MoU - AG Electric Motors, Karad",
-          "file": "departments/ece/docs/mou-ag-electric-motors.pdf"
-        },
-        {
-          "title": "MoU - VI Solutions Pvt. Ltd., Bengaluru",
-          "file": "departments/ece/docs/mou-vi-solutions.pdf"
-        },
-        {
-          "title": "MoU - Krishitharanga Farmtech LLP, Vijayapura",
-          "file": "departments/ece/docs/mou-krishitharanga-farmtech.pdf"
-        },
-        {
-          "title": "MoU - Space Zee Technologies Pvt. Ltd., Chennai",
-          "file": "departments/ece/docs/mou-space-zee-technologies.pdf"
         }
-      ]
+      ],
+      "pos": [
+        {
+          "code": "PO1",
+          "text": "Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences."
+        },
+        {
+          "code": "PO3",
+          "text": "Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations."
+        },
+        {
+          "code": "PO4",
+          "text": "Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions."
+        },
+        {
+          "code": "PO5",
+          "text": "Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations."
+        },
+        {
+          "code": "PO6",
+          "text": "The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice."
+        },
+        {
+          "code": "PO7",
+          "text": "Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development."
+        },
+        {
+          "code": "PO8",
+          "text": "Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice."
+        },
+        {
+          "code": "PO9",
+          "text": "Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+        },
+        {
+          "code": "PO10",
+          "text": "Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions."
+        },
+        {
+          "code": "PO11",
+          "text": "Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments."
+        },
+        {
+          "code": "PO12",
+          "text": "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
+        }
+      ],
+      "about": "Welcome to ECE at BEC. Since 1985, we've evolved from teaching basic circuits to advancing work in VLSI design, speech processing, wireless networks, MEMS, and emerging areas of electronics. Our students learn by building, experimenting, and questioning—because engineering is best understood through practice. We expect commitment, curiosity, and initiative, and in return, our faculty provide the guidance and support needed to grow. This department is yours to build—and we'll hold you to that trust."
     },
     "electrical-and-electronics-engg": {
       "name": "Electrical & Electronics Engineering",
@@ -4226,7 +4273,7 @@
       ],
       "contact": {
         "name": "Dr. Chayalakshmi C. L.",
-        "designation": "Associate Professor & Head",
+        "designation": "Associate Professor and Head",
         "phone": "+91-9902678858",
         "email": "chayalakshmi.cl@gmail.com"
       },
@@ -4252,10 +4299,10 @@
       ],
       "curriculumGroups": [
         {
-          "title": "Scheme of Teaching & Examinations",
+          "title": "Scheme of Teaching and Examinations",
           "documents": [
             {
-              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "title": "Scheme of Teaching and Examinations (2025-26)",
               "file": "departments/ecs/docs/scheme-2025-26.pdf"
             }
           ]
@@ -4264,7 +4311,7 @@
           "title": "Syllabus",
           "documents": [
             {
-              "title": "Scheme & Syllabus (2024-25)",
+              "title": "Scheme and Syllabus (2024-25)",
               "file": "departments/ecs/docs/scheme-syllabus-2024-25.pdf"
             }
           ]
@@ -4286,6 +4333,15 @@
             "file": "departments/ecs/docs/activities-2025-26.pdf"
           }
         ]
+      },
+      "sectionTitles": {
+        "curriculum": "Curriculum and Syllabus",
+        "research": "Research and Labs",
+        "activities": "Activities and Forums",
+        "infrastructure": "Infrastructure and Labs"
+      },
+      "sectionNavLabels": {
+        "research": "Research and Labs"
       }
     },
     "industrial-and-production-engg": {
