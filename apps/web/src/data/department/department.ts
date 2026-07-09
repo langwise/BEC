@@ -132,7 +132,8 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     content.programsOffered?.length ||
     content.peos?.length ||
     content.psos?.length ||
-    content.pos?.length
+    content.pos?.length ||
+    content.wk?.length
   ) {
     const groups: ContentGroup[] = [];
     if (content.programsOffered?.length)
@@ -146,6 +147,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       groups.push({
         subtitle: "Programme Specific Outcomes (PSO's)",
         items: content.psos.map((p) => `${p.code}: ${p.text}`),
+      });
+    if (content.wk?.length)
+      groups.push({
+        subtitle: "Knowledge and Attitude Profile (WK)",
+        items: content.wk.map((p) => `${p.code}: ${p.text}`),
       });
     if (content.pos?.length)
       groups.push({

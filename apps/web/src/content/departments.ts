@@ -19,6 +19,8 @@ export type DepartmentContent = {
   psos?: CodedItem[];
   /** Programme Outcomes — rendered alongside PEOs/PSOs in the Academics section. */
   pos?: CodedItem[];
+  /** Knowledge and Attitude Profile (WK) — rendered alongside PEOs/PSOs/POs. */
+  wk?: CodedItem[];
   /** Core values shown as a bullet list under the Home overview (e.g. IPE). */
   values?: string[];
   /** Monthly department newsletters, rendered as a documents section. */
