@@ -866,6 +866,46 @@
           "amount": "Rs. 7,000 (Sanctioned 11 May 2022)",
           "investigators": "Prof. Bharati S. Meti and Dr. Shilpa K Jigajinni"
         }
+      ],
+      "mous": [
+        {
+          "partner": "Karnataka State Bioenergy Development Board (KSBDB), GoK"
+        },
+        {
+          "partner": "Karnataka Biotechnology and Information Technology Services (KBITS), GoK"
+        },
+        {
+          "partner": "University of Horticultural Sciences",
+          "location": "Bagalkote"
+        },
+        {
+          "partner": "Bengaluru Bioinnovation Centre",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Aspartika Biotech Pvt. Ltd.",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Natura Crop Care Pvt. Ltd.",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Siddapur Distilleries Ltd.",
+          "location": "Siddapur"
+        },
+        {
+          "partner": "Medimox Diagnosis and Bioresearch Pvt. Ltd.",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Vriksha Vijnan Pvt. Ltd.",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Krishitharanga Farmtech LLP",
+          "location": "Vijayapur"
+        }
       ]
     },
     "civil-engg": {
@@ -3107,6 +3147,43 @@
             {
               "name": "Dr. Rajani S. Pujar, Assistant Professor",
               "position": "Coordinator"
+            }
+          ]
+        },
+        {
+          "title": "ACME Executive Committee (2025-26)",
+          "members": [
+            {
+              "name": "Mr. Vinay",
+              "position": "Vice President"
+            },
+            {
+              "name": "Miss. Deepa",
+              "position": "Ladies Representative"
+            },
+            {
+              "name": "Mr. Darshan",
+              "position": "Treasurer"
+            },
+            {
+              "name": "Mr. Vikas & Miss. Vinuta",
+              "position": "Cultural Secretaries"
+            },
+            {
+              "name": "Mr. Ullas & Miss. Priya",
+              "position": "Sports Secretaries"
+            },
+            {
+              "name": "Mr. Shreyas & Miss. Ananya",
+              "position": "Social Media Secretaries"
+            },
+            {
+              "name": "Mr. Sumit, Mr. Abhishek, Miss. Pooja & Miss. Apoorva",
+              "position": "Magazine Coordinators"
+            },
+            {
+              "name": "Mr. Vinod & Miss. Sanketha",
+              "position": "Avishkar Coordinators"
             }
           ]
         }
