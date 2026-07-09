@@ -73,7 +73,7 @@ export default function StepPage() {
       <PageHero
         eyebrow="Entrepreneurship"
         title="Science & Technology Entrepreneurs Park (BEC-STEP)"
-        description="Established in 1999, BEC-STEP has helped hundreds of entrepreneurs across the Bagalkot region through identification of products and processes, training, consultancy and incubation."
+        description="Established in 1999, BEC-STEP has helped hundreds of entrepreneurs across the Bagalkote region through identification of products and processes, training, consultancy and incubation."
         badges={[
           { label: "Established 1999" },
           { label: "DST Best STEP — 2006", tone: "outline" },
@@ -85,7 +85,7 @@ export default function StepPage() {
           <SectionHeading eyebrow="About" title="Enterprise for the region" />
           <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700">
             <p>
-              Bagalkot district has strong agricultural foundations — three rivers
+              Bagalkote district has strong agricultural foundations — three rivers
               and crops including pomegranate, sapota, guava and papaya — and was
               designated an industrial growth centre for agro-based industries, with
               273 acres allocated for an Agro Tech Park. The region is also home to

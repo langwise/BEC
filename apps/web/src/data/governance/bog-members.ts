@@ -87,7 +87,7 @@ export const bogMembers: BogMember[] = [
   {
     name: "Dr. B. R. Hiremath",
     role: "Ex-officio Member Secretary",
-    affiliation: "Principal, Basaveshwar Engineering College, Bagalkot",
+    affiliation: "Principal, Basaveshwar Engineering College, Bagalkote",
     category: "member-secretary",
   },
   {

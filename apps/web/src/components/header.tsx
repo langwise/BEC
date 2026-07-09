@@ -39,7 +39,7 @@ export function Header() {
             <div className="hidden whitespace-nowrap flex-col">
               <div className="text-3xl font-bold text-foreground">BEC</div>
               <div className="text-[8px] text-muted-foreground">
-                (Autonomous) Bagalkot
+                (Autonomous) Bagalkote
               </div>
             </div>
           </a>
@@ -138,7 +138,7 @@ export function Header() {
               side="right"
               className="w-[300px] px-4 overflow-y-auto"
             >
-              <SheetTitle className="mt-6 mb-6 font-bold text-lg">BEC Bagalkot</SheetTitle>
+              <SheetTitle className="mt-6 mb-6 font-bold text-lg">BEC Bagalkote</SheetTitle>
 
               <nav className="flex flex-col gap-1">
                 {navigationData.map((item) => (

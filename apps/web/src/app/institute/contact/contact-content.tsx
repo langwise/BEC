@@ -78,7 +78,7 @@ export default function ContactContent() {
     byTrain: [
       {
         name: "Bagalkot (BGK) Railway Station",
-        location: "Bagalkot",
+        location: "Bagalkote",
         distance: "5 km",
       },
       {
@@ -203,7 +203,7 @@ export default function ContactContent() {
                         How to Reach Us
                     </h2>
                     <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                        Basaveshwar Engineering College is well connected by road, rail, and air. The campus is located in the heart of Bagalkot city.
+                        Basaveshwar Engineering College is well connected by road, rail, and air. The campus is located in the heart of Bagalkote city.
                     </p>
                     
                     {/* Train Info */}

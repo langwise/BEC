@@ -37,7 +37,7 @@ export default function MalaprabhaBlockPage() {
                 <FadeIn>
                     <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-xs">
                         <p className="text-gray-700 leading-relaxed mb-4">
-                            The hostel was started in the year <strong>1998</strong> to accommodate the students of Basaveshwar Engineering College Bagalkot. The hostel is well equipped with all requisite facilities to cater to the needs of all Girl students. The total number of rooms available in the hostel are 374 with a total capacity of 1000 students.
+                            The hostel was started in the year <strong>1998</strong> to accommodate the students of Basaveshwar Engineering College Bagalkote. The hostel is well equipped with all requisite facilities to cater to the needs of all Girl students. The total number of rooms available in the hostel are 374 with a total capacity of 1000 students.
                         </p>
 
                         <div className="flex items-center gap-6 mt-6 pt-6 border-t border-stone-100">
