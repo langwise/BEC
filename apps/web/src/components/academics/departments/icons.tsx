@@ -14,6 +14,8 @@ import {
   UsersRound,
   GraduationCap,
   Clipboard,
+  Award,
+  Briefcase,
   type LucideIcon,
 } from "lucide-react";
 
@@ -31,4 +33,6 @@ export const iconMap: Record<string, LucideIcon> = {
   "users-round": UsersRound,
   "graduation-cap": GraduationCap,
   clipboard: Clipboard,
+  award: Award,
+  briefcase: Briefcase,
 };

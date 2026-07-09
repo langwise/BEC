@@ -15,6 +15,8 @@ export type DepartmentContent = {
   vision?: string;
   mission?: string[];
   programsOffered?: string[];
+  /** Programme structure facts (duration, semesters, total credits) shown under Academics. */
+  programStructure?: string[];
   peos?: CodedItem[];
   psos?: CodedItem[];
   /** Programme Outcomes — rendered alongside PEOs/PSOs in the Academics section. */
@@ -35,6 +37,15 @@ export type DepartmentContent = {
   researchAchievements?: string[];
   /** Year-wise research output grouped by category (journals, books, chapters, conferences). */
   publications?: { category: string; years: { year?: string; items: string[] }[] }[];
+  /** Free-form awards/achievements tables (faculty awards, student projects, participations, chapter awards). */
+  achievementTables?: { title: string; columns: string[]; rows: string[][] }[];
+  /** Incubated startups — companies registered and grants received. */
+  startups?: {
+    companies?: { name: string; founders: string; domain: string; established: string }[];
+    grants?: { startup: string; project: string; year: string; agency: string; amount: string }[];
+  };
+  /** Alumni testimonials — rendered as quote cards under an "Alumni" section. */
+  testimonials?: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
   /** Patents filed/published/granted — rendered as a table on the Research page. */
   patents?: {
     title: string;

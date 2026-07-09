@@ -1145,7 +1145,121 @@
           "published": "23/02/2024",
           "status": "Present status – hearing completed on 25/05/25 waiting for the award"
         }
-      ]
+      ],
+      "testimonials": [
+        {
+          "name": "Ambika Kurbet",
+          "designation": "Postdoctoral Fellow",
+          "organization": "Instem, Bengaluru",
+          "quote": "My experience at BEC-Bagalkote is great and memorable. The teachers and mentors are really helpful and helped me to improve my academic and interpersonal skills. My life at BEC made me stronger and took me a step ahead towards being an independent woman. I am thankful to all the teachers who supported us and corrected us throughout our bachelors. I loved the infrastructure facility in our college."
+        },
+        {
+          "name": "Deepak Bajantri",
+          "designation": "CEO & Designated Partner",
+          "organization": "Krimmi Biotech LLP, Bangalore",
+          "quote": "My bachelor degree at Basaveshwar Engg. College-Bagalkote in Biotechnology consisted of many project-based evaluations and faculty connect. The mentors at BEC helped us enhance our academic and interpersonal skills."
+        },
+        {
+          "name": "Dr. Rohan Shah",
+          "designation": "Post Doctoral Research Scientist",
+          "organization": "IIT, Delhi",
+          "quote": "I thank my Biotechnology department and its faculty members for encouraging me to think globally and spread my wings. The best thing about this BEC is the cross-culture interaction between students from various parts of the country. The professors here make the institute what it is today. I appreciate the support of my institute for shaping my career and getting me placed in such a big position."
+        },
+        {
+          "name": "Shruti Deshpande",
+          "designation": "QA Auditor",
+          "organization": "IQVIA, Bangalore",
+          "quote": "Department of Biotechnology, Basaveshwar Engg. College-Bagalkote is a place of learning, fun, culture, lore, literature and many such life-preaching activities. Studying at the Basaveshwar Engg. College-Bagalkote brought an added value to my life. It gave me an opportunity to meet different kinds of people and learn a number of things. I have received great support from faculties. I am thankful to the Training & Placement cell for providing a platform to enhance my skills and an opportunity to showcase them."
+        },
+        {
+          "name": "Gururaj Patil",
+          "designation": "Channel Partner Manager",
+          "organization": "Agilent Technologies, Bengaluru",
+          "quote": "Think Different — that is one thing that the Department of Biotechnology, Basaveshwar Engg. College-Bagalkote urges in, and to a far extent succeeds in teaching to its students, which invariably helps to achieve what you need. It nourished me and thus gave me an opportunity to define myself."
+        },
+        {
+          "name": "Niranjan Nayak",
+          "designation": "Senior Officer",
+          "organization": "Indian Immunologicals Limited",
+          "quote": "I would like to appreciate the Biotechnology Department at Basaveshwar Engineering College for the efforts they made in providing a fair and ample amount of chances to students in every aspect of our academics. The faculty members worked so hard on our overall development and conducted extra classes for us to enhance our technical and interpersonal skills. I loved my time here at BEC."
+        },
+        {
+          "name": "Dr. Rahul Metri",
+          "designation": "Data Science Leader",
+          "organization": "Unilever R&D, Bengaluru",
+          "quote": "Basaveshwar Engineering College has been a great contributor to the development of my personality. I have established my leadership, time management and team skills and have also been able to advance these skills to a whole new level. The infrastructure of the Biotechnology Department, one of the finest in Karnataka, is what stands out the most. The best thing about this BEC is the cross-culture interaction between students from various parts of the country. The professors here make the institute what it is today. With an attitude of being ever ready to help, and not only delivering classroom teachings, they are the pillars of the learning gained from this esteemed institute and this is a treasure for life."
+        },
+        {
+          "name": "Panchaxari Chitti",
+          "designation": "Research Associate",
+          "organization": "Intas Pharmaceutical Ltd, Ahmedabad (Gujarat)",
+          "quote": "My four years at Basaveshwar Engineering College have been excellent and a memory to cherish for a lifetime. The years spent here have been full of learning opportunities that were full of fun and frolic and sometimes with academic grind that one has to go through. The overall exposure makes you a better person to face the challenges of the corporate world."
+        },
+        {
+          "name": "Dr. Sidharth Arora",
+          "designation": "CEO",
+          "organization": "Fermentech Labs Pvt. Ltd., Roorkee, Haridwar",
+          "quote": "During my stay of four years at Basaveshwar Engineering College, I came across various people of different states and cultures. I had received a lot of opportunities to groom myself, thanks to my ever-inspiring mentors who helped me to discover the talented part of myself. No wonder the institute is old and is still striving to achieve excellence; in due time it has definitely set some benchmarks in academia and is relentlessly trying to achieve the heights in rendering world-class education."
+        }
+      ],
+      "startups": {
+        "companies": [
+          {
+            "name": "Sudhalgae (Partnership Firm)",
+            "founders": "Mr. Ajay Katti & Mr. Manoj R",
+            "domain": "Algae Technology",
+            "established": "21 January 2020"
+          },
+          {
+            "name": "Plankt Biosystems Pvt. Ltd.",
+            "founders": "Mr. Ajay Katti & Mr. Manoj R",
+            "domain": "Health Supplement / Nutraceuticals",
+            "established": "13 January 2022"
+          },
+          {
+            "name": "Pomla (Partnership Firm)",
+            "founders": "Dr. Shivaleela V B & Mr. Siddangouda K",
+            "domain": "Secondary Agriculture",
+            "established": "14 March 2022"
+          },
+          {
+            "name": "Pomla Naturals LLP",
+            "founders": "Dr. Shivaleela V B & Mr. Siddangouda K",
+            "domain": "Food Processing",
+            "established": "19 July 2023"
+          }
+        ],
+        "grants": [
+          {
+            "startup": "Sudhalgae",
+            "project": "A novel algae production technology involving biofilm formation over a solid substrate",
+            "year": "28 July 2020",
+            "agency": "BIG, BIRAC, DBT, GoI (C-CAMP, Bengaluru)",
+            "amount": "50.00"
+          },
+          {
+            "startup": "Plankt Biosystems Pvt. Ltd.",
+            "project": "Nutraceutical product development of Spirulina",
+            "year": "30 June 2022",
+            "agency": "K Elevate, GoK, Bengaluru",
+            "amount": "18.00"
+          },
+          {
+            "startup": "Pomla",
+            "project": "Idea to PoC for scale-up and marketing studies of the Anti-tick soap",
+            "year": "22 September 2023",
+            "agency": "Amruth Startups (OBC), GoK, Bengaluru",
+            "amount": "23.00"
+          },
+          {
+            "startup": "Pomla Naturals LLP",
+            "project": "MSME support for pomegranate jam",
+            "year": "5 February 2024",
+            "agency": "Startup India, KLE CTIE",
+            "amount": "5.00"
+          }
+        ]
+      }
     },
     "civil-engg": {
       "name": "Civil Engineering",
@@ -1956,7 +2070,476 @@
           "location": "Dharwad",
           "since": "2024"
         }
-      ]
+      ],
+      "researchGrants": [
+        {
+          "title": "Domestic Wastewater Treatment by Graphene",
+          "agency": "KSCST",
+          "year": "2020",
+          "amount": "₹4,000",
+          "investigators": "Prof. G. M Hiremath"
+        },
+        {
+          "title": "An Experimental Study on Effect of Replacement of River Sand by Steel Slag and M-Sand on the Strength Characteristics of Concrete",
+          "agency": "KSCST",
+          "year": "2021",
+          "amount": "₹5,000",
+          "investigators": "Dr. M. M. Hanamasagar"
+        },
+        {
+          "title": "Comparative Study on Durability of Conventional Concrete, HPC Environment Conditions",
+          "agency": "KSCST",
+          "year": "2021",
+          "amount": "₹6,000",
+          "investigators": "Dr. Parameshwar N Hiremath"
+        },
+        {
+          "title": "Experimental Studies on Assessment of Basic Compressive Stress of Stabilized Compressed Mud Block Masonry by Prism Test",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹7,000",
+          "investigators": "Dr. M. M. Hanamasagar"
+        },
+        {
+          "title": "Reclamation And Reuse of Greywater by Construction of Wetlands",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹7,000",
+          "investigators": "Prof. S. M. Kalagudi (Co-PI: Dr. P. G. Rakaraddi)"
+        },
+        {
+          "title": "Sustainable Waste Disposal System for a Rural Area",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹6,000",
+          "investigators": "Dr. Veena S Soraganvi (Co-PI: Dr. Jayalatha N A)"
+        },
+        {
+          "title": "Experimental Study on Geosynthetic Encased Stone Column with Different Soil",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹6,000",
+          "investigators": "Prof. Seema Shringeri"
+        },
+        {
+          "title": "Low-Cost Building Blocks Using Locally Available Materials",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹6,000",
+          "investigators": "Dr. Santhosh M. Malkapur"
+        },
+        {
+          "title": "Studies on Use of Crumb Rubber in Concrete for Acoustical Insulation Purposes",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹6,000",
+          "investigators": "Dr. Santhosh M. Malkapur"
+        },
+        {
+          "title": "A Comprehensive Study on Moment Resisted Connections Under Dynamic Loading",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹10,000",
+          "investigators": "Dr. S H Sanni (Co-PI: Prof. G S Hiremath)"
+        },
+        {
+          "title": "Treatment of Distillery Spent Wash by Integrated Anaerobic Digestion and Solar Photocatalysis",
+          "agency": "KSCST",
+          "year": "2023",
+          "amount": "₹5,000",
+          "investigators": "Dr. Veena s Soraganvi"
+        },
+        {
+          "title": "Catalytic Micropyrolysis of Waste Plastics into Crude Oil",
+          "agency": "KSCST",
+          "year": "2023",
+          "amount": "₹6,000",
+          "investigators": "Dr. B.R. Hiremath"
+        },
+        {
+          "title": "Treatment of Textile Wastewater by Electrocoagulation Process Using Perforated Aluminium Electrodes",
+          "agency": "KSCST",
+          "year": "2023",
+          "amount": "₹5,000",
+          "investigators": "Dr. B.R. Hiremath"
+        },
+        {
+          "title": "Performance of horizontal Subsurface flow Constructed wetland for Household Wastewater treatment",
+          "agency": "KSCST",
+          "year": "2023-24",
+          "amount": "₹5,500",
+          "investigators": "Dr. Jayalatha N A"
+        },
+        {
+          "title": "Performance of Geo-Synthetic Encased Single and Group of Stone Column with Layered soil",
+          "agency": "KSCST",
+          "year": "2023-24",
+          "amount": "₹5,000",
+          "investigators": "Prof. Seema Shringeri"
+        },
+        {
+          "title": "Performance of horizontal Subsurface flow Constructed wetland for Household Wastewater treatment",
+          "agency": "IWWA",
+          "year": "2023-24",
+          "amount": "₹10,000",
+          "investigators": "Dr. Jayalatha N A"
+        },
+        {
+          "title": "Removal of Heavy Metals from Wastewater by Bioremediation Method Using Microalgae",
+          "agency": "IWWA",
+          "year": "2023-24",
+          "amount": "₹4,000",
+          "investigators": "Dr. B.R Hiremath (Co-PI: Dr. Madhumala)"
+        },
+        {
+          "title": "Microbial Fuel Cell Construction for Sustainable Bio-Energy Generation and Wastewater Treatment",
+          "agency": "KSCST",
+          "year": "2023-24",
+          "amount": "₹7,000",
+          "investigators": "Dr. Jayalatha N A (Co-PI: Dr. G.B Megeri)"
+        },
+        {
+          "title": "Microbial Fuel Cell Construction for Sustainable Bio-Energy Generation and Wastewater Treatment",
+          "agency": "IWWA",
+          "year": "2023-24",
+          "amount": "₹4,000",
+          "investigators": "Dr. Jayalatha N A (Co-PI: Dr. G.B Megeri)"
+        },
+        {
+          "title": "Design of Traffic Signal Alert Device to Reduce the Road Accidents at Critical Sight Distances",
+          "agency": "KSCST",
+          "year": "2024-25",
+          "amount": "₹4,500",
+          "investigators": "Dr. Srinivas F C"
+        }
+      ],
+      "achievementTables": [
+        {
+          "title": "Project Proposals Submitted (10)",
+          "columns": [
+            "Faculty",
+            "Title of the Project",
+            "Sanctioning Scheme",
+            "Year",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "PI: Dr. Jayalatha N A; Co-PI: Dr. G.B Megeri",
+              "Removal of Veterinary Pharmaceuticals from Wastewater using Low-Cost Produced Biosurfactant",
+              "VGST",
+              "2024-25",
+              "₹20 Lakh"
+            ],
+            [
+              "PI: Dr. Santhosh M Malkapur; Co-PI: Dr. Shankar H Sanni",
+              "Centre for evaluating thermal and acoustic performance of building materials",
+              "VGST",
+              "2024-25",
+              "₹20 Lakh"
+            ],
+            [
+              "PI: Dr. S. M. Malkapur; Co-PI: Dr. S.H Sanni",
+              "Tree-Fall Resisting System",
+              "SERB-SURE Scheme (State University Research Scheme)",
+              "2023-24",
+              "₹30 Lakh"
+            ],
+            [
+              "PI: Dr. S. M. Malkapur",
+              "Affordable and durable cool-roof coating for buildings",
+              "Thoughtworks Technologies (India) - Venture Center CSR Grant",
+              "2023-24",
+              "₹50 Lakh"
+            ],
+            [
+              "PI: Dr. S.H Sanni; Co-PI: Dr. S. M. Malkapur",
+              "Experimental investigation on properties of engineered cementitious composites produced with PVA fibers",
+              "SERB-SURE",
+              "2023-24",
+              "₹30 Lakh"
+            ],
+            [
+              "Dr. Jayalatha N A",
+              "Removal of Veterinary Pharmaceuticals from Wastewater using Low-Cost Produced Biosurfactant",
+              "DST-SERB",
+              "2022-23",
+              "₹30 Lakh"
+            ],
+            [
+              "Dr. Adarsh Chatra",
+              "Landslide Early Warning System Using Deterministic and Probabilistic Modelling of Hillslopes",
+              "VGST-Karnataka",
+              "2022-23",
+              "₹20 Lakh"
+            ],
+            [
+              "Dr. Santhosh M. Malkapur",
+              "Centre for evaluating thermal performance of building materials and buildings",
+              "VGST-Karnataka",
+              "2022-23",
+              "₹20 Lakh"
+            ],
+            [
+              "Dr. Jayalatha N A",
+              "Faster Reduction of Sugarcane Industry Process Wastewater Load using Microalgae and Enrichment of Biofertilizer with Algal Biomass",
+              "DST-SERB",
+              "2022-23",
+              "₹20 Lakh"
+            ],
+            [
+              "Dr. Jayalatha N A",
+              "Forecasting of Floods in Ghataprabha River Basin using Ensemble of Artificial Neural Network Algorithms",
+              "DST-SERB",
+              "2022-23",
+              "₹20 Lakh"
+            ]
+          ]
+        },
+        {
+          "title": "Faculty Interaction with the Outside World (28)",
+          "columns": [
+            "Academic Year",
+            "Faculty",
+            "Type of Interaction",
+            "Details",
+            "Organization / Institution",
+            "When"
+          ],
+          "rows": [
+            [
+              "2024-25",
+              "Dr. Veena S Soraganvi",
+              "Convener",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. B.R Hiremath",
+              "Organizing Committee",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Prabhu G. Rakaraddi",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Mahantesh M. Hanamasagar",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Shankar H. Sanni",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Santhosh Malkapur",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Adarsh Chatra",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. G.B. Megeri",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Jayalatha N. A",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Santhosh Malkapur",
+              "Session Chair",
+              "International Conference on New Horizons in Civil Engineering",
+              "Manipal Institute of Technology, Manipal",
+              "Dec 2024"
+            ],
+            [
+              "2024-25",
+              "Geetanjali Patil",
+              "Committee Member",
+              "For the Selection of SRF and Project Assistant / Project Management",
+              "University of Horticultural Science, Bagalkote",
+              "Jan 2025"
+            ],
+            [
+              "2024-25",
+              "Dr. Basappa Meti",
+              "Reviewer (Indian Journal of Agricultural Research)",
+              "A Systematic Review of the existing literature to evaluate what is already known of the Participatory Irrigation Management",
+              "ARCC Journals",
+              "Jan 2025"
+            ],
+            [
+              "2024-25",
+              "Dr. G.B. Megeri",
+              "VTU BoE Member",
+              "Appointed as a BoE member for Biotechnology Board",
+              "VTU Belagavi",
+              "Jan 2025"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "Manuscript Reviewer",
+              "Study on Seepage and Stability of Soft Rock Slope with Fissures Under Extreme Rainfall",
+              "Indian Geotechnical Journal",
+              "Nov 2023"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "Manuscript Reviewer",
+              "Probabilistic Stability Analysis of Earthen Slope Using ANN, PSO-ANN, GPR and GA-ANFIS Soft Computing Techniques",
+              "Indian Geotechnical Journal",
+              "Oct 2023"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "Manuscript Reviewer",
+              "A Novel Approach for Identification of Landslide Susceptibility Zones - A Case Study from Uttarakhand Region",
+              "Indian Geotechnical Journal",
+              "Jan 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Jayalatha N A",
+              "Manuscript Reviewer",
+              "",
+              "Water Environment Research",
+              "Feb 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. S.H Sanni",
+              "Manuscript Reviewer",
+              "International Conference on Recent Advances in Applied Engineering Science",
+              "",
+              "March 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "Manuscript Reviewer",
+              "Research on Online Monitoring Technology for Rock Mass Condition of High-Speed Railway Tunnel Portal Slope in Seasonal Freezing Area",
+              "Journal of GeoEngineering",
+              "March 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Santhosh Malkapur",
+              "Session Chair",
+              "International Conference on Sustainable Infrastructure: Innovations, Opportunities and Challenges",
+              "National Institute of Technology Karnataka, Surathkal",
+              "April-May 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Srinivas F Chitragar",
+              "Session Chair",
+              "International Conference on Sustainable Infrastructure: Innovations, Opportunities and Challenges",
+              "National Institute of Technology Karnataka, Surathkal",
+              "April-May 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "External Member, Board of Examiners",
+              "Board of Examiners",
+              "Ballari Institute of Technology and Management",
+              "2022 - till date"
+            ],
+            [
+              "2023-24",
+              "Dr. Basappa Meti",
+              "Reviewer (Indian Journal of Agricultural Research)",
+              "Performance of Phytohormones Under Distinct Levels of Drip Irrigation on Growth and Productivity of Wheat (Triticum Aestivum L.)",
+              "ARCC Journals",
+              "April 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Basappa Meti",
+              "Reviewer (Indian Journal of Agricultural Research)",
+              "Impacts of Micro-irrigation Technologies in Maharashtra – A Review",
+              "ARCC Journals",
+              "June 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Jayalatha N A",
+              "Manuscript Reviewer",
+              "Biosurfactant production by Bacillus cereus GX7 utilizing organic waste and its application in the remediation of hydrocarbon-contaminated environments",
+              "World Journal of Microbiology and Biotechnology",
+              "Aug 2024"
+            ],
+            [
+              "2022-23 & 2021-22",
+              "Dr. Jayalatha N A",
+              "Technical Talk",
+              "Biosurfactants: A Green Approach to Environmental Restoration — during the Diamond Jubilee Celebrations (1963-2023) of BEC-IEEE Student Branch",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Aug 2023"
+            ],
+            [
+              "2022-23 & 2021-22",
+              "Dr. P.G Rakaraddi",
+              "Ph.D. Examiner",
+              "Ph.D. Open Seminar",
+              "Visvesvaraya Technological University, Belagavi",
+              "March 2023"
+            ],
+            [
+              "2022-23 & 2021-22",
+              "Dr. Santhosh Malkapur",
+              "Webinar",
+              "Awas par Samvaad — Technology and Innovation, Low-Cost Housing",
+              "Basaveshwar Engineering College, Bagalkote (in association with the Ministry of Housing (MoHUA), District Administration Bagalkote and CMC Bagalkote)",
+              "Oct 2021"
+            ]
+          ]
+        }
+      ],
+      "sectionTitles": {
+        "achievements": "Research Activities"
+      },
+      "sectionNavLabels": {
+        "achievements": "Research Activities"
+      }
     },
     "computer-science-and-engg": {
       "name": "Computer Science and Engineering",
@@ -2678,7 +3261,7 @@
         "B.E. — Electronics & Communication Engineering",
         "Ph.D. — Electronics & Communication Engineering"
       ],
-      "pIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna TechnologiesIndustry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna Technologieseos": [
+      "peos": [
         {
           "code": "PEO1",
           "text": "Lead a successful career by solving complex engineering problems of society and industry."
@@ -4620,6 +5203,603 @@
         {
           "title": "Sports: Handball (Women) - Zonal Champions, VTU Handball Zonals, SIT Mysore (Nanditha G. Hiremath & Shivaranjini Malipatil)",
           "date": "20-23 Dec 2025"
+        },
+        {
+          "title": "Ethnic and Cultural Activity",
+          "date": "12 Jun 2026",
+          "description": "Resource person: Mr. Prshant Maddennavar, AE, KPTCL, Bagalkote. Faculty coordinator: Dr. Sangamesh Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. Student team leads: Mr. Shrikanth, Ms. Nanditha Hiremath."
+        },
+        {
+          "title": "Tech-Talk on Power System Hardware Simulator",
+          "date": "22 May 2026",
+          "description": "Resource person: Mr. Mukund Parthasarathy, Director, PRDC, Bengaluru. Faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. Student team leads: Mr. Shrikanth, Ms. Nanditha Hiremath."
+        },
+        {
+          "title": "Poster Presentation by Third and Final Year Students",
+          "date": "21 Jan 2025",
+          "description": "Resource persons: Prof. R.G. Patil, Prof. Hamjadali Humachagi. Faculty coordinators: S. S. Kandagal and Dr. S. Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. vTools report: https://events.vtools.ieee.org/m/462955"
+        },
+        {
+          "title": "Outreach Activity on Energy Conservation in Residential Buildings",
+          "date": "5-6 Apr 2025",
+          "description": "Resource person: Dr. B. F. Ronad, Assoc. Professor, Dept. of EEE, BEC, Bagalkote. Faculty coordinators: Dr. B. F. Ronad, Prof. M. L. Chikkadesai, Asst. Professor, Dept. of EEE, BEC, Bagalkote."
+        },
+        {
+          "title": "World Earth Day Celebration",
+          "date": "22 Apr 2025",
+          "description": "Resource person and faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. vTools report: https://events.vtools.ieee.org/m/483928"
+        },
+        {
+          "title": "Technical Quiz on account of IEEE PES Day",
+          "date": "22 Apr 2025",
+          "description": "Resource person and faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. vTools report: https://events.vtools.ieee.org/m/484052"
+        },
+        {
+          "title": "Industrial Visit to NPCIL, Kaiga",
+          "date": "19 Jul 2025",
+          "description": "Resource persons: Shri. Aidrin Dsouza, APRO and Shri Gautam Kumar, NPCIL, Kaiga. Faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote."
+        },
+        {
+          "title": "MATLAB-SIMULINK Programming",
+          "date": "5 Aug 2023",
+          "description": "Resource person: Dr. Raghuram L. Naik, EEE, BEC(A), Bagalkote. Faculty coordinator: Dr. Basangouda F. Ronad. Student team lead: Keerthi V B. vTools report: https://events.vtools.ieee.org/m/383769"
+        },
+        {
+          "title": "Rural Education Promotion and Awareness Program on Renewable & Sustainable Energy",
+          "date": "10 Aug 2023",
+          "description": "Faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. Student team lead: Bhagyavanti Harale."
+        },
+        {
+          "title": "Unlocking the Benefits of IEEE & PES Membership (IEEE Day 2023)",
+          "date": "3 Oct 2023",
+          "description": "Resource person: Mr. Abhijay Gopal S, IEEE Day 2023, Region 10 Lead. Faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. Student team leads: Bhagyavanti Harale, Gireesh, Ambika Reddy. vTools report: https://events.vtools.ieee.org/m/376331"
+        },
+        {
+          "title": "Farmers Visit to the BEC EEE Department Energy Park",
+          "date": "19 Oct 2023",
+          "description": "Faculty coordinator: Dr. B. F. Ronad, Assistant Professor, EEED, BEC Bagalkote. Student team leads: Vijaykumar S Purutageri, Keerti V B. vTools report: https://events.vtools.ieee.org/m/379967"
+        },
+        {
+          "title": "Exploring IEEE - World's Largest Technical Professional Organization",
+          "date": "26 Oct 2023",
+          "description": "Resource person: Poorvi N. Goudar, 1st Year, EEE, BEC Bagalkote. Faculty coordinators: Dr. Basangouda F. Ronad, Dr. Sangamesh Y. Goudappanavar. vTools report: https://events.vtools.ieee.org/m/384106"
+        },
+        {
+          "title": "IEEE XTREME 17.0 - 24 Hour Coding Hackathon",
+          "date": "28-29 Oct 2023",
+          "description": "Faculty coordinator: Dr. B. F. Ronad, Assistant Professor, EEED, BEC Bagalkote."
+        },
+        {
+          "title": "GAMMA AI - Content Creation using AI-Model",
+          "date": "6 Nov 2023",
+          "description": "Resource person: Bharatesh B. Karbhari, 1st Year, EEE, BEC Bagalkote. Faculty coordinators: Dr. Basangouda F. Ronad, Dr. Sangamesh Y. Goudappanavar. vTools report: https://events.vtools.ieee.org/m/384103"
+        },
+        {
+          "title": "Technical Visit to Almatti Power House",
+          "date": "10 Apr 2024",
+          "description": "Resource person: Mr. Allamaprabhu Ambi, Sr. Er, KPCL, Almatti. Faculty coordinators: Dr. Sangamesh Y. Goudappanavar, Prof. S. S. Tambakad, Prof. M. L. Chikkadesai."
+        },
+        {
+          "title": "Webinar on AI and Embedded System for Industry",
+          "date": "2 Mar 2024",
+          "description": "Resource person: Mr. Habib Rajbar, CEO, Electropotent Infotech, Bengaluru. Faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC. Student team lead: Ms. Megha Hosamani, 8th Semester, EEED BEC."
+        },
+        {
+          "title": "Webinar on Introduction to Software Testing",
+          "date": "16 Apr 2024",
+          "description": "Resource person: Mr. Akshay Biradar, Software Quality Analyst Engineer, Aptean (Madurai). Faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. Student team lead: Manjunath Kurer, 8th Semester, EEED BEC."
+        },
+        {
+          "title": "Essential Pre-requisites for Placement Opportunities",
+          "date": "10 Apr 2024",
+          "description": "Resource person: Ms. S. Spurthi, Field Support Engineer, Indus Towers, Bengaluru. Faculty coordinator: Dr. B. F. Ronad, Assistant Professor, EEED, BEC Bagalkote."
+        },
+        {
+          "title": "Course Project Presentations on Optimum Sizing of Grid Connected AC Irrigation Pumps for Energy Conservation",
+          "date": "2 Apr 2024",
+          "description": "Faculty coordinator: Dr. B. F. Ronad, Assistant Professor, EEED, BEC Bagalkote."
+        },
+        {
+          "title": "IEEE PES Day 24 - Sparking Charge",
+          "date": "24 Apr 2024",
+          "description": "Faculty coordinator: Dr. Sangamesh Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC."
+        }
+      ],
+      "publications": [
+        {
+          "category": "International Journals",
+          "years": [
+            {
+              "items": [
+                "Anand H. Unnibhavi, D.S. Jangamshetti, Shridhar K. (2020), \"Triphone Model Based Novel Kannada Continuous Speech Recognition System using Kaldi Tool,\" International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075, Vol-9, Issue-9, pp. 452-458, July 2020 Q4(DOI:10.35940/IJITEE.I7210.079920)., Scopus and Elsevier indexed. SJR",
+                "Suhaib Mohammed, Raghuram L. Naik, “A critical review of materials and manufacturing techniques for small wind turbine blades”, Int. J. Materials Engineering Innovation, Vol. 13, No. 4, 2022.",
+                "Suhaib Mohammed, Raghuram L. Naik, “Design, Development and Experimental Investigation of H-rotor Vertical Axis Wind Turbine under Low Wind Speeds”, International journal of renewable energy research, Vol.13, No.1, March 2023.",
+                "Suhaib Mohammed, Raghuram L. Naik, “Multi-objective optimization of glass/carbon hybrid composites for small wind turbine blades using extreme mixture design response surface methodology”, The Korean Society for Composite Materials and IOP Publishing Limited, Funct. Compos. Struct. 6 (2024) 025009.",
+                "Basavaraju S. Hadapad and Raghuram L. Naik, “A simple approach for the computation of magnetic characteristics of 4-phase switched reluctance motor”, International Journal of Power Electronics and Drive Systems (IJPEDS), Vol. 15, No. 1, March 2024, pp. 136-146.",
+                "G Pooja, Manjula G, Rakesh, Sachin Karant, B F. Ronad, “Development of Android Application for Optimization of Irrigation System Capacity”, Turkish Online Journal of Qualitative Inquiry (TOJQI), ISSN: 1309-6591, Volume 12, Issue 7, July 2021, pp.1034–1039.",
+                "Hamjadali A.Umachagi, Prashant Kadi, Pavankumar Kulkarni, Saniya M. Patel, Basanagouda F. Ronad, “Development and Performance Testing of Automatic Seed Sowing Agri Robot”, International Journal of Research and Analysis in Science and Engineering, ISSN: 2582-8118, Volume 4, Issue 5, Sept 2024, pp-288-298.",
+                "Vijaykumar Purutageri, Tejashwini Bagewadi, Basanagouda Ronad, Mukta Bannur, “Design and Implementation of Multi Prime Mover Coupled Novel Water Pump for Small Scale Irrigation Requirements”, International Journal of Research and Analysis in Science and Engineering, ISSN: 2582-8118, Volume 4, Issue 5, Sept 2024, pp-531-543.",
+                "Sangamesh G, Naik Raghuram L., Jangamshetti Suresh H., “Simple Control Strategy for UPF Power Conditioner of GSC connected to Wind Turbine”, IASTED Asia PES-2013, April 10-12, 2013, Phuket Thailand. DOI: 10.2316/P.2013.800-060. (Q2)",
+                "Sangamesh Y. Goudappanavar, Megha Sunkad, Prema and Ravindranath Rubinabegaum H. Yadahalli, “Design and Modelling of Droop Control for Small Wind Turbine Generator in µGrid”, KD Publications, Pune, SSET 2024, BEC Bagalkote, 29-30, Aug. 2024.",
+                "Sangamesh Y. Goudappanavar, Vijayalaxmi R. H., \"Design of SVC for Dynamic Compensation to Improve LVRT of Small Wind Turbine\", IJIREEICE International Journal of Innovative Research in Electrical, Electronics, Instrumentation and Control Engineering, vol. 12, no. 4, 2024, Crossref https://doi.org/: 10.17148/IJIREEICE.2024.12403.",
+                "Sangamesh, Y. Goudappanavar, Suresh H. Jangamshetti, “High Tension Voltage Regulation Based Power Flow Analysis of Radial Distribution Network”, International Journal of Engineering Sciences and Management - A Multidisciplinary Publication of VTU, Vol.2, issue 2, pp:8-13, June 2020.",
+                "Sangamesh, Y. Goudappanavar, Suresh H. Jangamshetti & Pallavi Hosamath, “Optimal Sizing and Placement of µ-Wind Turbine Generator in µGrid based on Loss Estimation”, Journal of Information and Computational Science, ISSN:1548-7741, Vol.12 Issue 6, pp.34-40, Dec.2019.",
+                "Sangamesh, Y. G., Suchitra, G., and Jangamshetti, S. H. “Performance Assessment of 2500 TCD Cogeneration Plant”, International Journal of Scientific & Engineering Research (IJSER), Volume 3, Issue 5, pp. 1-6, May-2012.",
+                "MuskaanYadahalli, Shivakumar G. Nayak, and “Comparative Analysis of Sprinkler Irrigation System with Drip Irrigation System through IOT Module” International Journal of Engineering and Innovative Technology (IJEIT) Volume 8, Issue 8, February 2019, ISSN: 2277-3754 ISO 9001:2008 Certified. https://www.ijeit.com/Vol%208/ Issue%208/ IJEIT1412201902_03.pdf",
+                "Shivakumar G Nayak, Ashwini Patil, Gurubai Gadagenavar. “Development and Analysis of Speed Control of BLDC Motor with Arduino Controller”, International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075 (Online), Volume-11 Issue-4, March 2022. http://dx.doi.org/10.35940/ ijitee. C9813. 0311422",
+                "Shivakumar G Nayak , Arihant B Donage , Chandan L K , Pooja B Ambiger , Sahana Patil “Development and Implementation of Transformer BreatherHealth Monitoring System Using IoT” International Journal for Research in Applied Science & Engineering Technology (IJRASET) ISSN: 2321-9653; IC Value: 45.98; SJ Impact Factor: 7.538 Volume 11 Issue IX Sep 2023, https://doi.org/10.22214/ ijraset.2023.55632"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "International Conferences",
+          "years": [
+            {
+              "items": [
+                "Chayalakshmi C. L., D.S.Jangamashetti, and Savita Sonoli (2015), “Boiler Efficiency Estimation from Hydrogen Content in Fuel”, Proc. of Fourth International Conference on Advances in Computing, Communications and Informatics (ICACCI-2015), SCMS, Kochi, India pp.1107-1110, August 10-13, 2015. ISBN 978-1-4799-8792-4/15 IEEE XPLORE, 978-1-4799-8792-4/15, 2015, IEEE, 1107-1110.",
+                "Basavaraju S. Hadapad and Raghuram L. Naik, “Development of PD-PWM Technique for 5-Level Cascaded H-Bridge Inverter using FPGA for SPV Systems”, 1st International Conference on Sustainable Solutions in Engineering and Technology, August 29th and 30th, 2024, BEC, Bagalkote, India.",
+                "Basavaraju S. Hadapad and Raghuram L. Naik, “An Investigation on Torque Control Strategies for Switched Reluctance Motor”, 5th International Conference on Electrical, Electronics, Communication, Computer Technologies and Optimization Techniques, December 10th -11th, 2021, Mysore, India.",
+                "Mukta Bannur, Uday Patil, Geetanjali Patil, Basugouda Ronad, \"Experimental Investigation of Technical Feasibility of Standalone Pico-hydro Solar PV Hybrid Power System\" IEEE International Conference NKCon 2022, BLDCET Vijayapura, 21st November 2022.",
+                "Basanagouda Ronad, Mallikarjun Bhirade, Vireshkumar Mathad, Mukta Bannur, Shivappa Sobarad, Suresh H. Jangamshetti, “Dynamic Power Factor Correction using FC TCR – A Case Study of Academic Campus Distribution Network”, IEEE NKCon-2024, 3rd Edition of IEEE NKSS Flagship International Conference, BEC Bagalkote, 21-22 September 2024.",
+                "Sangamesh Y. Goudappanavar, Suresh H. Jangamshetti, Shrishail Majjigi, Basanagouda F. Ronad, “Development and Analysis of Wake Effect of Vertical Axis Wind Turbine Generator on HAWTG based on Experimental Method”, 3rd International Conference on Advances in Data-driven Computing and Intelligent Systems (ADCIS 2024), BITS Pilani, Goa, 20-21 September 2024.",
+                "S. Spurthi, Balchandra Chandragirivar, Premkumar Kulekumatagi, Komal Teli, Girish Bhadragond, Basanagouda Ronad, “Design, Development and Performance Testing of Multi-Task Multi-Tank Water Level Controller with Automated Power Supply for Multistoried Buildings”, 3rd International Conference on Advances in Data-driven Computing and Intelligent Systems (ADCIS 2024), BITS Pilani, Goa, 20-21 September 2024.",
+                "Basanagouda Ronad, Sangmesh Goudappanavar, Basavaraj Hugar, Santosh Raikar, Santosh Kumbalavati, Kiran Bendigeri, “IOT Based Control Mechanism for Solar PV Water Pumps Employed for Water Distribution in Academic Campus”, 3rd International Conference on Advances in Data-driven Computing and Intelligent Systems (ADCIS 2024), BITS Pilani, Goa, 20-21 September 2024.",
+                "Basanagouda Ronad, \"Feasibility Study of Solar PV Powered Water Pumping and Distribution System - A Case Study of Academic Campus,\" 2024 5th International Conference on Smart Electronics and Communication (ICOSEC), Trichy, India, 2024, pp. 208-215.",
+                "S. Y. Goudappanavar, D. Gowda and S. Kandagal, \"AI Based Development and Prediction of Energy Prosumers,\" 2025 3rd International Conference on Integrated Circuits and Communication Systems (ICICACS), Raichur, India, 2025, pp. 1-7, doi: 10.1109/ICICACS65178.2025.10968430.",
+                "S. Y. Goudappanavar, Santhoshkumar S. Kandagal, Mahantesh L. Chikkadesai, Basavaraju S. Hadapad and Pradeepkumar Nargund, “Performance Evaluation and Energy Flow Optimization of a Grid-Connected 250 kWp Rooftop Solar PV System in Institute Distribution Network”, 2025 IEEE North Karnataka Subsection Flagship International Conference (NKCon), Sept. 2025, KLEIT, Hubballi.",
+                "S. Y. Goudappanavar, S. Kandagal and D. Gowda, \"Development and Analysis of Power Balancing Control for nWTG in Secondary Distribution System,\" 2025 4th International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE), Ballari, India, 2025, pp. 1-5, doi: 10.1109/ICDCECE65353.2025.11035168.",
+                "Suresh H. Jangamshetti, Sangamesh Y. Goudappanavar, “Representation of Distribution Network for Teaching Power Flow Analysis- A Case Study of an Academic Campus”, 13th IEEE Integrated STEM Education Conference, John's Hopkins University, ML USA, 2023.",
+                "Sangamesh Y. Goudappanavar, S. H. Jangamshetti and J. J. O, \"Identification of Fault Area in the Distribution System based on Rotor Angle behaviour of Diesel Generator,\" 2020 3rd International Conference on Energy, Power and Environment: Towards Clean Energy Technologies, Shillong, Meghalaya, India, 2021, pp. 1-6, doi: 10.1109/ICEPE50861.2021.9404451.",
+                "Sangamesh Y. Goudappanavar, Megha Sunkad, Prema and Ravindranath Rubinabegaum H. Yadahalli, “Design and Modelling of Droop Control for Small Wind Turbine Generator in µGrid”, SSET 2024, BEC Bagalkote, 29-30, Aug. 2024.",
+                "S. Y. Goudappanavar and S. H. Jangamshetti, \"Stochastic Power Flow Analysis of Unbalanced Distribution System based on cluster of SWTG-SPV,\" 2020 2nd PhD Colloquium on Ethically Driven Innovation and Technology for Society (PhD EDITS), Bangalore, India, 2020, pp. 1-2, doi: 10.1109/PhDEDITS51180.2020.9315298.",
+                "Sangamesh Y. Goudappanavar, Suresh H. Jangamshetti and Rubinabegum H. Yadahalli, “Design and Modelling of Droop Control for Small Wind Turbine Generators in Microgrid”, International Conference on Small Wind Turbine, NIWE, MNRE, Chennai, 10-12 Dec. 2018.",
+                "V. S. Atur, S. Y. Goudappanavar and S. H. Jangamshetti, \"Novel Control Algorithm of Storage System for Small Wind Turbine Generator,\" 2017 International Conference on Current Trends in Computer, Electrical, Electronics and Communication (CTCEEC), Mysore, India, 2017, pp. 383-388, doi: 10.1109/CTCEEC.2017.8455184.",
+                "Sushma Patted, Sangamesh Goudappanavar., “Optimization of Earthing System in Industrial Plant”, presented at IRAJ, Mumbai, 25.09.2015.",
+                "Smitha Pujari, Deepa kabbur, JyotiTalawar, Shivakumar G Nayak, presented paper on “Speed Control of BLDC Motor using PI Controller”, Online International Conference on “Continuity, Consistency and Innovation in Applied Sciences and Humanities (ICCIASH-2020)” Organized on 13th and 14th August, 2020. Department of Science and Humanities, St.Martin’s Engineering College, Secunderabad, ISBN No 978-93-88096 42-3. ICCIASH-2020 PROCEEDINGSxx.pdf (smec.ac.in)",
+                "Shana Bhavi. Shivakumar Nayak, Bharath H K, Chetan Biradar, Sachin presented paper on “ Comparative Analysis of DC to DC Boost Converter with P, PI, PID Controllers” International conference on “ Global Convergence in Technology, Entrepreneurship, Computing and Value Engineering Principals and Practices” Organized by Sapthagiri College of Engineering, During 24th to 26th of June 2022."
+              ]
+            }
+          ]
+        },
+        {
+          "category": "National Conferences",
+          "years": [
+            {
+              "items": [
+                "Megha Beelagi, Shivakumar Nayak , Sujata Ajjappanavar , Chaitra Kumbar, SagarParashuram Mali presented paper on “Design and Implementation of Impedance Source Inverter Fed to Asynchronous Motor” National Conference of Science, Engineering and Management – NCSEM – 2K22 Organized on 1st and 2nd July 2022 by the Oxford College of Engineering Bengaluru."
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Book Chapters",
+          "years": [
+            {
+              "items": [
+                "Sangamesh Y. Goudappanavar, Kumar Shree Harsha S. S., Santhoshkumar S. Kandagal, Anilkumar C. Benny and Madhusudhan S., “AI-powered predictive analysis of ICU patient survival: A comparative study of model performance and SHAP interpretability”, Emerging Technologies in AI, Computation, Communication, and Cybersecurity, CRC Press, Taylor & Francis, 1st Ed, Pg.24, 1st Ed., ISBN 9781041240396.",
+                "Goudappanavar, S.Y., Nayak, S.G., Preetha, P.S. (2026). Development and Performance Analysis of ATS for IoT-Enabled SPV-Based RO Water Purifier in Academic Campus. In: Upadhyaya, T., Mahmud, M., Palandoken, M. (eds) Proceedings of International Conference on Artificial Intelligence, Communication Technologies and Smart Cities. ICACS 2025. Lecture Notes in Networks and Systems, vol 1533. Springer, Singapore. https://doi.org/10.1007/978-981-96-9196-8_8",
+                "Goudappanavar Sangamesh Y., Jangamshetti, S.H. (2025). AI Based Phase Identification to Integrate Distributed Energy Resources in Distribution Network. Innovations in Electrical and Electronics Engineering. ICEEE 2024. Lecture Notes in Electrical Engineering, vol 1294. Springer, Singapore. https://doi.org/10.1007/978-981-97-9037-1_7. (Q3)",
+                "Sangamesh Y. Goudappanavar, Suresh H. Jangamshetti, Shrishail Majjigi and Basanagouda Ronad “Development and Analysis of Wake Effect of Vertical Axis Wind Turbine Generator on HAWTG based on Experimental Method”, Lecture Notes in Networks and Systems, Inderscience, BITS Pilani K K Birla Goa, Springer Book Series, Sep. 2024.",
+                "Basanagouda Ronad, Sangamesh Y. Goudappanavar, Basavaraj Hugar, Santosh Kumbalavati, Kiran Bendigeri, “IOT Based Control mechanism for Solar PV Water Pumps Employed for Water Distribution in Academic Campus”, Lecture Notes in Networks and Systems, Inderscience, BITS Pilani K K Birla Goa, Springer Book Series, Sep. 2024.",
+                "Basanagouda F Ronad, “Design, Simulation and Development of DC-DC Converter for SPV Powered DC Distribution System in Domestic Loads”, Lecture Notes in Electrical Engineering- volume 844, Springer Publishers - Singapore, ISSN 1876-1100, ISBN: 978-981-16-8862-1, Feb 2022.",
+                "Basanagouda F Ronad, “Optimal Sizing and Cost Analysis of Hybrid Electric Renewable Energy Systems using HOMER”, Lecture Notes in Networks and Systems- volume 458, Springer Publishers – Singapore, ISSN 2367-3370, ISBN: 978-981-19 2893-2, August 2022."
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Student Publications",
+          "years": [
+            {
+              "year": "2024-25",
+              "items": [
+                "Basanagouda Ronad, Sumanth Veeraghantimath, Annadanesh Gudimani, Vijaykumar Purutageri (Sem VII). 2025 IEEE North Karnataka Subsection Flagship International Conference (NKCon), IEEE. Paper Published.",
+                "Basanagouda Ronad, Vijaykumar Purutageri, Nehal, Srushti Mathapati, Girish Bhadragond, Sumanth Veeraghantimath (Sem VII). 2025 IEEE North Karnataka Subsection Flagship International Conference (NKCon), IEEE. Paper Published."
+              ]
+            },
+            {
+              "year": "2023-24",
+              "items": [
+                "Vijaykumar Purutageri, Tejashwini Bagewadi (Sem VII). International Journal of Research and Analysis in Science and Engineering, KripaD Publishers, Pune, Vol. 4, Issue 5. Paper Published.",
+                "Vijayalaxmi R. H (Sem V). International Journal of Innovative Research in Electrical, Electronics, Instrumentation and Control Engineering, Tejass Publishers, Vol. 12, No. 4, Apr. 2024. Paper Published."
+              ]
+            },
+            {
+              "year": "2022-23",
+              "items": [
+                "Arihant Donage, Chandan L. K., Pooja B. Ambiger, Sahana Patil (Sem VIII). International Journal for Research in Applied Science & Engineering Technology, IJRASET, Vol. 9, Issue 9. Paper Published."
+              ]
+            },
+            {
+              "year": "2021-22",
+              "items": [
+                "G Pooja, Manjula Gaddi, Rakesh, Sachin Karant (Sem VIII). Turkish Online Journal of Qualitative Inquiry (TOJQI), Science Research Society, Vol. 12, Issue 7. Paper Published.",
+                "Aditya Bhuti, Jyoti K (Sem VIII). 5th IEEE International Conference on Electronics, Communication and Aerospace Technology (ICECA 2021), IEEE, Vol. 5, Issue 1. Paper Published.",
+                "Jyothi Kumbar, Neelaganga Goudar, Sahana Bhavi (Sem VI). IEEE Mysore Sub Section International Conference (MysuruCon-2021), IEEE, Vol. 1, Issue 1. Paper Published.",
+                "Ashwini Patil, Gurubai Gadagenavar (Sem VIII). International Journal of Innovative Technology and Exploring Engineering (IJITEE), Blue Eyes Intelligence Engineering and Science Publication (BEIESP), Vol. 1, Issue 1. Paper Published."
+              ]
+            }
+          ]
+        }
+      ],
+      "programStructure": [
+        "Programme: Electrical and Electronics Engineering (EE)",
+        "Duration: 4 years / 8 semesters",
+        "Total Credits: 160"
+      ],
+      "achievementTables": [
+        {
+          "title": "Faculty Awards & Recognitions",
+          "columns": [
+            "Faculty",
+            "Award",
+            "Awarding Body",
+            "Date",
+            "Venue"
+          ],
+          "rows": [
+            [
+              "S. S. Kandagal",
+              "Innovation Ambassador (IA) training 'Advanced Level'",
+              "MoE's Innovation Cell & AICTE",
+              "13.02.2026",
+              "BEC, Bagalkote"
+            ],
+            [
+              "Dr. Sangamesh Y. Goudappanavar",
+              "Best Researcher - Mission 2020 Challenge Award",
+              "IEEE Bangalore Section",
+              "10.01.2025",
+              "IEEE Bangalore Section"
+            ],
+            [
+              "Mahantesh Chikkadesai",
+              "IEEE NKSS Outstanding Volunteer Award",
+              "IEEE NKSS",
+              "04.01.2025",
+              "GIT Belagavi"
+            ],
+            [
+              "Dr. Basanagouda Ronad",
+              "Best Paper Award for \"Dynamic Power Factor Correction using FC TCR - A Case Study of Academic Campus Distribution Network\"",
+              "IEEE International Conference NKCon 2024",
+              "22.09.2024",
+              "BEC Bagalkote"
+            ],
+            [
+              "Basavaraju S. Hadapad, Dr. Raghuram L. Naik",
+              "Best Paper Award in SSET 2024",
+              "BEC, Bagalkote",
+              "30.08.2024",
+              "BEC Bagalkote"
+            ]
+          ]
+        },
+        {
+          "title": "Student & IEEE Chapter Awards",
+          "columns": [
+            "Award",
+            "Awarding Body",
+            "Recipient"
+          ],
+          "rows": [
+            [
+              "Best Student Volunteer Award",
+              "IEEE PES Bangalore Chapter",
+              "Vijaykumar P (VII Sem)"
+            ],
+            [
+              "Outstanding Student Branch Chapter Award 2022",
+              "IEEE PES Bangalore Chapter",
+              "BEC IEEE PES SBC (35261A)"
+            ],
+            [
+              "Outstanding Student Branch Chapter Award 2024",
+              "IEEE PES Bangalore Chapter",
+              "BEC IEEE PES SBC (35261A)"
+            ],
+            [
+              "IEEE NKSS Outstanding Student Branch Chapter Award 2024",
+              "IEEE NKSS Bangalore Chapter",
+              "BEC IEEE PES SBC (35261A)"
+            ]
+          ]
+        },
+        {
+          "title": "Student Project Awards (KSCST-funded)",
+          "columns": [
+            "Students",
+            "Sem",
+            "Project Title",
+            "Venue / Programme",
+            "Award",
+            "Year"
+          ],
+          "rows": [
+            [
+              "Ms. Vandana Laxman Pawar, Ms. Aishwarya Iranna Angadi, Ms. Muskan Rajesab Doddamani, Ms. Shirisha K",
+              "VII",
+              "Automation and Analysis of Solar Based DC Microgrid Integrating SPV and Grid Supply Source",
+              "KSCST Project",
+              "Rs. 5000",
+              "2025-26"
+            ],
+            [
+              "Ms. Nikita Siddarai Nivaragi, Mr. Anand Kuruballi, Ms. Aishwarya Shrishail Teli, Mr. Prajwal P Badadal",
+              "VII",
+              "AI Based Development of Algorithm to Predict Fault Type in Transmission Line",
+              "KSCST Project",
+              "Rs. 4000",
+              "2025-26"
+            ],
+            [
+              "Mr. Satish Singadi, Mr. Aniket, Mr. Mahantesh Hiremath, Mr. Mohammadrizwan Maldar",
+              "",
+              "VAWTG Using Arecanut Particles",
+              "State Level Project Seminar and Exhibition, JNNCE, Shimoga, KSCST",
+              "Rs. 5000",
+              "2024-25"
+            ],
+            [
+              "Mr. Rasool Ahmed",
+              "VII",
+              "IOT Based Mechanism for Solar Photovoltaic Based Water Pump Employed for Water Distribution in BEC Campus",
+              "KSCST Project",
+              "Rs. 5000",
+              "2024-25"
+            ],
+            [
+              "Mr. Balachandra C C, Ms. Komal Teli, Mr. Premkumar A K, Ms. S Spurthi",
+              "",
+              "Design and Development and Performance Analysis Multi Task Multi Tank Water Level Controller with Automated Power Supply for Multistore Buildings",
+              "KSCST Project",
+              "Rs. 5000",
+              "2023-24"
+            ],
+            [
+              "Mr. Pramachand Hanchinal, Mr. Basangouda, Ms. Veeen S Gidaganti, Mr. Vinay B Hosamani",
+              "",
+              "Development and Fabrication of VAWTG Blades Using Natural Fibers for Domestic Usage",
+              "KSCST Project",
+              "Rs. 6000",
+              "2023-24"
+            ],
+            [
+              "Mr. Nagaraj, Mr. Nagaraj Bhovi, Ms. Pooja Patil, Mr. Rahul Patil",
+              "",
+              "Analysis of Lead Acid Battery for Determination of State of Charge Based on Machine Learning",
+              "KSCST Project",
+              "Rs. 5000",
+              "2022-23"
+            ],
+            [
+              "Mr. Laxman Y U, Mr. Mukesh Dhasohamath, Ms. Sneha M Bhusaraddi, Ms. Seems S Angadi",
+              "",
+              "Design and Fabrication of BLDC Motor for Solar PV Application",
+              "KSCST Project",
+              "Rs. 7000",
+              "2021-22"
+            ],
+            [
+              "Ms. Ambika, Ms. Shavantramma Dodmani, Ms. Shreepada Joshi, Ms. Tejashwini Sughandi",
+              "",
+              "Design and Development of DC-DC Converter Employed for DC Distribution System for Domestic and Commercial Loads",
+              "KSCST Project",
+              "Rs. 7000",
+              "2021-22"
+            ]
+          ]
+        },
+        {
+          "title": "Student Participation in Technical Events",
+          "columns": [
+            "Academic Year",
+            "Student(s)",
+            "Event",
+            "Level",
+            "Date",
+            "Outcome"
+          ],
+          "rows": [
+            [
+              "2023-24",
+              "Vijayakumar Puratageri",
+              "IEEE R10 Region Student Chapter Leaders' Summit, Radisson Blue Atria, Bangalore",
+              "International",
+              "9-10 Nov 2024",
+              "Student Leader, IEEE R10 region"
+            ],
+            [
+              "2023-24",
+              "Pooja M Patil, Divya Hugar, Radhika H, Shweta M",
+              "WAVE 2.O, Hackathon 2024",
+              "National",
+              "1-2 Jul 2024",
+              "Participation"
+            ],
+            [
+              "2023-24",
+              "",
+              "Edu Vitality, Hackathon 2024, IEEE ComSoc Society Student Branch, RVCE",
+              "National",
+              "7-8 Jun 2024",
+              "Participation"
+            ],
+            [
+              "2023-24",
+              "Rasool Ahmed",
+              "State Level Seminar and Exhibition, KSCST",
+              "State",
+              "16 Apr 2024",
+              "Exhibition"
+            ],
+            [
+              "2023-24",
+              "Nehal A",
+              "ARAMBH - National Level Entrepreneurship Competition",
+              "National",
+              "10 Jan 2024",
+              "Participation"
+            ],
+            [
+              "2023-24",
+              "Bharatesh B.",
+              "IEEE R10-Region Bangalore Section Student Summit",
+              "National",
+              "30 Sep 2023",
+              "Participation"
+            ],
+            [
+              "2022-23",
+              "S. Spurthi, Premkumar K., Balchandra, Komal C Teli",
+              "State Level Seminar and Exhibition, Alva's Institute of Engineering and Technology, Moodubidire, KSCST",
+              "State",
+              "11-12 Aug 2023",
+              "Exhibition"
+            ],
+            [
+              "2022-23",
+              "Vinayak B. H., Basanagouda, Paramanand H., Veena S G",
+              "State Level Seminar and Exhibition, KSCST",
+              "State",
+              "28 Oct 2023",
+              "Participation Certificate"
+            ],
+            [
+              "2021-22",
+              "Banadevi B, Shwetha J, Veeresh K, Bharati Rathod",
+              "Hackathon GO AI for Social Good, C-DAC, Bengaluru",
+              "National",
+              "11-12 Jun 2022",
+              "Participation Certificate"
+            ],
+            [
+              "2024-25",
+              "Srushti Mathapathi",
+              "EE Summer School, IISc Bangalore",
+              "National",
+              "10-11 Jul 2025",
+              "Participation Certificate"
+            ],
+            [
+              "2024-25",
+              "Bharatesh B",
+              "IEEE SPACE, AES Bangalore Chapter",
+              "National",
+              "20-23 Jul 2025",
+              "Participation Certificate"
+            ],
+            [
+              "2024-25",
+              "Satish Singadi, Aniket, Mahantesh Hiremath, Mohammadrizwan Maldar",
+              "State Level Project Seminar and Exhibition, JNNCE, Shimoga, KSCST",
+              "National",
+              "1-2 Aug 2025",
+              "Participation Certificate"
+            ],
+            [
+              "2024-25",
+              "Bharatesh B",
+              "Quiz Competition, IEEE AES SBC, CET Tumkuru",
+              "National",
+              "22 Aug 2025",
+              "Participation Certificate"
+            ],
+            [
+              "2024-25",
+              "Bharatesh B",
+              "IEEE PES R10 SYP Summit 2025, Bangalore",
+              "National",
+              "19-20 Jul 2025",
+              "Participation Certificate"
+            ]
+          ]
+        },
+        {
+          "title": "Department Magazines & Newsletters",
+          "columns": [
+            "Academic Year",
+            "Publication",
+            "Editor",
+            "Student Editors",
+            "Issues",
+            "Format"
+          ],
+          "rows": [
+            [
+              "2023-24",
+              "Year Book - BEC IEEE",
+              "IEEE Student Branch",
+              "Vijaykumar P (VII Sem), Keerthi (VII Sem)",
+              "1",
+              "Hardcopy and Softcopy"
+            ],
+            [
+              "2023-24",
+              "Newsletter",
+              "Dr. Sangamesh Goudappanavar, IEEE PES SBC",
+              "Sarika Rathod (V Sem), Syed Imran (V Sem)",
+              "3",
+              "Hardcopy and Softcopy"
+            ],
+            [
+              "2023-24",
+              "Project Exhibition & Poster Presentation",
+              "IEEE PES & RS",
+              "Bharatesh B. (II Sem), Shrikant G. Patil (II Sem)",
+              "4",
+              "Hardcopy and Softcopy"
+            ],
+            [
+              "2022-23",
+              "e-News IEEE PES SBC 32561A",
+              "Mr. Appaji Uppar",
+              "Appaji Uppar (V Sem)",
+              "2",
+              "Hardcopy and Softcopy"
+            ],
+            [
+              "2022-23",
+              "The New Dimension - Novus'23",
+              "Dr. B. F. Ronad",
+              "Aishwarya (V Sem)",
+              "1",
+              "Hardcopy and Softcopy"
+            ],
+            [
+              "2022-23",
+              "BEC-IEEE-Invision",
+              "Ms. Bhakti",
+              "Bhagyavanthi (V Sem)",
+              "1",
+              "Hardcopy and Softcopy"
+            ],
+            [
+              "2021-22",
+              "Newsletter",
+              "IEEE PES SBC",
+              "Veena Gidaganti (V Sem)",
+              "1",
+              "Hardcopy and Softcopy"
+            ],
+            [
+              "2024-25",
+              "E-Wave Newsletters",
+              "Prof. Mahantesh L. C.",
+              "Bharatesh B. (VI Sem), Shrikant G. Patil (VI Sem)",
+              "1",
+              "Hardcopy and Softcopy"
+            ],
+            [
+              "2024-25",
+              "Eco-Vision 2k25",
+              "Dr. B. F. Ronad",
+              "",
+              "1",
+              "Softcopy"
+            ]
+          ]
         }
       ]
     },
@@ -12628,10 +13808,6 @@
             "file": "departments/mba/docs/mba-events.pdf"
           },
           {
-            "title": "Alumni Testimonials",
-            "file": "departments/mba/docs/alumni-testimonials.pdf"
-          },
-          {
             "title": "Faculty & Students Achievements",
             "file": "departments/mba/docs/faculty-students-achievements.pdf"
           }
@@ -12931,6 +14107,79 @@
         {
           "title": "Student Development Programme on \"Requirement of MBA Graduates in Corporate World\"",
           "date": "2020-12-19"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Chandulingappa H",
+          "designation": "Branch Manager",
+          "organization": "Indian Overseas Bank",
+          "quote": "Being a part of new beginnings is always special and so is my journey in MBA as it kicked off along with BEC DOMS “Founders Batch” of MBA. Looking back, I can certainly say that DOMS was the most important milestone in shaping my career. MBA provides an innovative course design, best-in-class faculty from industry and academics. Throughout the academic sessions, I was challenged to discover capabilities that I never knew I had. Along with academics, the Department focuses on personality development which helped me build a rewarding career."
+        },
+        {
+          "name": "Anusha Aravepalli",
+          "designation": "Women Development Inspector",
+          "organization": "Karnataka State Women Development Corporation",
+          "quote": "I chose the MBA course at BEC DOMS to help me get closer to my dreams. Throughout my course, I had countless opportunities to develop analytical skills, leadership, and proactive thinking through various course-related activities. Department of Management Studies has the best faculty team who provide 360-degree support to students. I thank all my faculty members and friends for the amazing journey at BEC DOMS."
+        },
+        {
+          "name": "Vishwanath Ulligaddi",
+          "designation": "Senior Officer - Retail Sales",
+          "organization": "Asian Paints Limited",
+          "quote": "Today, I am working with Asian Paints. When I look back at the 10+ years of my life after BEC DOMS, I feel honored to be a part of an institution that helped me become the confident professional that I am today. When the opportunity comes calling, you ought to keep the door open. At DOMS, not only were we made aware to keep the doors open, we were taught to build new ones for ourselves."
+        },
+        {
+          "name": "Mallikarjun D Ghatawalimath",
+          "designation": "Assistant Manager",
+          "organization": "KPMG",
+          "quote": "DOMS waters the seed deeply buried in you, protects you and helps you grow. A great amount of gratitude to the wonderful professors of BEC DOMS who hold brilliant industry and academic experience. The assignment & assessment mechanism is top-notch. It becomes needless to voice out — if you are looking for an institution to enhance knowledge and to be competent in the current challenging world, then DOMS is the right place!"
+        },
+        {
+          "name": "Shruti Talikoti",
+          "designation": "Senior Analyst",
+          "organization": "Ernst & Young",
+          "quote": "I am working as a Senior Analyst in EY and would profoundly like to share that “Genesis” is an important word, and I must say the Department of Management Studies, Basaveshwar Engineering College (BEC-DOMS) is one place where it all started for me. Graduation was just a certificate, but the journey that made us capable of going that one extra mile can’t be summarized in a few words. Apart from lecture rooms or any infrastructure we could ask for, BEC’s vision to enable its students with industry-level capabilities made the difference. It’s been 10 years since I have been working in an industry where knowledge and discipline towards the profession is an essence. I extend my heartfelt thanks to my faculty for their selfless efforts."
+        },
+        {
+          "name": "Harun M. Kudachi",
+          "designation": "Assistant Manager - HR",
+          "organization": "Online Instruments India Pvt. Ltd, Bengaluru",
+          "quote": "BEC DOMS gave me so many opportunities to learn, not just academically but experientially. Whenever there was anything I needed or didn’t understand, all hands were on deck without delay. Moreover, I also learnt to be independent and make more right decisions. The knowledge, acumen and confidence I gained in the Department of Management Studies, BEC, gave me wings to fly."
+        },
+        {
+          "name": "Vijalakshmi Hiremath",
+          "designation": "Branch Manager",
+          "organization": "Indian Overseas Bank",
+          "quote": "It’s an immense pleasure to count myself as an alumni of BEC DOMS. I learnt and gained extensive experiences which helped throughout my studies in all my thick and thin. The knowledge and discipline we get from BEC DOMS is phenomenal, which helps you to succeed in all endeavors. And I’m sure it will help me in my future life. I owe a huge vote of thanks to every opportunity given to me to explore my personality and potential at the Department of Management Studies, Basaveshwar Engineering College."
+        },
+        {
+          "name": "Geeta Benal",
+          "designation": "Deputy Superintendent of Police (DYSP)",
+          "organization": "Karnataka Police",
+          "quote": "DOMS is where I found the perfect synergy of theoretical knowledge and practical application. Breaking away from the regular standard of education, they focus on the application of knowledge rather than the accumulation of knowledge. A system that motivates you to form an everlasting bond with your college. BEC DOMS is truly a place that prepares you for the real world."
+        },
+        {
+          "name": "Padmini Gundale",
+          "designation": "Associate-2",
+          "organization": "PricewaterhouseCoopers, Bengaluru",
+          "quote": "Department of Management Studies, BEC provided the platform to study, excel, compete and explore my potential. Motivational teaching, making projects, and learnings at internship helped a lot in understanding the technical aspects and clearing the job interviews. The Training and Placement department helped me in acing through the campus placements and I got my job. Today, I am fortunate enough to be working in PwC. I am thankful to BEC DOMS for all the support and proud to be a part of the BEC DOMS Alumni Network."
+        },
+        {
+          "name": "Manju Mudiyannavar",
+          "designation": "Marketing Manager",
+          "organization": "UltraTech Cement (Aditya Birla Group)",
+          "quote": "The environment at BEC-Department of Management Studies provided enough opportunities to learn and “explore the potential” to prepare for a rewarding future. What set the institute apart was the far-sightedness of the founders in implementing the vision which they had believed in for years. The right mix of academic focus and co-curricular activities created the right balance of “work and fun while you learn”. I am glad to have connected with the DOMS family and would be more than happy to contribute to the growth of the student fraternity in future."
+        },
+        {
+          "name": "Nisar Lathi",
+          "designation": "Territory Manager",
+          "organization": "Saint-Gobain Weber",
+          "quote": "DOMS gave me immense opportunities and platforms to explore my potential beyond the comfort zones. It helped me understand that dreams are just dreams — ephemeral, fleeting — until we work hard to get them into reality and shape. As I am progressing in my life, BEC DOMS has given me the grounds to acknowledge fear and adversity and keep on learning. I am thankful to BEC DOMS for all the support and proud to be a part of it."
+        },
+        {
+          "name": "Rajashekharayya V Hiremath",
+          "organization": "Accenture",
+          "quote": "I was fortunate enough to have studied at BEC Department of Management Studies. It gave me an excellent platform to study and excel in my professional life. The mentorship provided in a variety of contexts, and the myriad of other ways, greatly and positively affected me and shaped and prepared me for the outside world. I am thankful to BEC DOMS for all the support."
         }
       ]
     }

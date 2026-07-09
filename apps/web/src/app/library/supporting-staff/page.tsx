@@ -36,10 +36,6 @@ export default function SupportingStaffPage() {
       designation: "Helper"
     },
     {
-      name: "Mr. Shivayya A. Hirehal",
-      designation: "Helper"
-    },
-    {
       name: "Mr. Manikesh G. Kaladagi",
       designation: "Attender"
     },
