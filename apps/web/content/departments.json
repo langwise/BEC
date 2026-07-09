@@ -3346,29 +3346,76 @@
       ],
       "labs": [
         {
-          "name": "Electrical Machines Lab"
+          "name": "Electrical Machines Lab",
+          "description": "Carpet area 330 sq.m (11 x 30). Major equipment: DC rectifier, 230 V / 32 A. Total investment till date: Rs. 25,94,867."
         },
         {
-          "name": "High Voltage Engineering Lab"
+          "name": "Electrical Measurement Lab",
+          "description": "Carpet area 195.5 sq.m (8.5 x 23). Total investment till date: Rs. 1,79,152."
         },
         {
-          "name": "Power System Lab"
+          "name": "High Voltage Lab",
+          "description": "Carpet area 56 sq.m (7 x 8). Major equipment: 100 kV high-voltage cascade transformer unit. Total investment till date: Rs. 5,43,658."
         },
         {
-          "name": "Microcontrollers Lab"
+          "name": "Micro Controller Lab",
+          "description": "Carpet area 35.75 sq.m (5.5 x 6.5). Major equipment: 8051 microcontroller kits. Total investment till date: Rs. 8,59,354."
         },
         {
-          "name": "Power System Protection Lab"
+          "name": "Analog and Digital Electronics Lab",
+          "description": "Carpet area 48.25 sq.m (7.5 x 6.5). Major equipment: digital CRO and power packs."
         },
         {
-          "name": "Renewable Energy Lab"
+          "name": "Digital Signal Processing Lab",
+          "description": "Carpet area 29.75 sq.m (8.5 x 3.5). Major equipment: Yokogawa digital oscilloscope DL9140 (1 GHz bandwidth, 4 channels). Total investment till date: Rs. 13,28,920."
         },
         {
-          "name": "SCADA Lab"
+          "name": "Power Electronics & Control System Simulation Lab",
+          "description": "Carpet area 45.5 sq.m (6.5 x 7)."
         },
         {
-          "name": "Computer Centre",
-          "description": "State-of-the-art systems with AutoCAD, MATLAB, Mi-Power, Windographer and Code Composer Studio."
+          "name": "FPGA Lab (TEQIP-II)",
+          "description": "FPGA-based power electronics laboratory. Total investment till date: Rs. 21,36,000."
+        },
+        {
+          "name": "Power Systems Lab",
+          "description": "Carpet area 19.25 sq.m (5.5 x 3.5). Total investment till date: Rs. 11,87,531."
+        },
+        {
+          "name": "Computer Lab",
+          "description": "Carpet area 29.75 sq.m (8.5 x 3.5). Total investment till date: Rs. 18,66,529."
+        },
+        {
+          "name": "AutoCAD Laboratory",
+          "description": "Carpet area 29.75 sq.m (8.5 x 3.5)."
+        },
+        {
+          "name": "Seminar Hall",
+          "description": "Carpet area 65 sq.m (10 x 6.5). Facilities: LCD projector with screen."
+        },
+        {
+          "name": "Software Licenses",
+          "description": "Departmental software licenses. Total investment till date: Rs. 25,78,120."
+        },
+        {
+          "name": "SCADA Lab (TEQIP)",
+          "description": "Carpet area 175 sq.m. Major equipment: wind electrical generator with controller and accessories (Model UE-15, 1.5 kW / 24 V). Total investment till date: Rs. 40,00,000."
+        },
+        {
+          "name": "Energy Lab (TEQIP)",
+          "description": "Carpet area 175 sq.m. Total investment till date: Rs. 27,70,000. Total laboratory investment across the department: Rs. 2,00,44,131."
+        },
+        {
+          "name": "UG Classrooms & Department Seminar Hall",
+          "description": "Room 107 (105 sq.m) with smart board and lecture-capturing facility; Room 206 (105 sq.m) with LCD display; Department Seminar Hall (65 sq.m) with LCD display."
+        },
+        {
+          "name": "Faculty Rooms & Department Office",
+          "description": "Nine faculty rooms - Rooms 1 to 8 at 115 sq.m each and Room 9 at 84 sq.m, with personal PCs and internet; EE department office (Room 10) at 126 sq.m."
+        },
+        {
+          "name": "Computing Facilities (UG)",
+          "description": "48 computers in total; 21 UG computer terminals (terminal-to-student ratio 1:4) with dual-core-and-above hardware; 45 terminals on LAN/WAN with 1 Gbps network connectivity; licensed Windows 10, MATLAB (networked), AutoCAD Electrical 2006 and MS Office; internet speed scaled by intake from 16 Mbps to 64 Mbps."
         }
       ],
       "peos": [
@@ -3850,6 +3897,11 @@
           "quantity": "1"
         },
         {
+          "name": "Equipment for Light Laboratory",
+          "specification": "Anemometer, lux meter and light loads",
+          "quantity": "1"
+        },
+        {
           "name": "Wind-Solar Hybrid Inverters & Instrumentation",
           "specification": "Inverters for wind-solar hybrid systems with instrumentation",
           "quantity": "5"
@@ -3908,6 +3960,44 @@
           "name": "Vertical Axis Wind Turbine Kit",
           "specification": "Training system",
           "quantity": "1"
+        },
+        {
+          "name": "Solar PV Panels",
+          "specification": "Mono-crystalline 180 W (12 V) and poly-crystalline 150 W (12 V) modules mounted on MS-tube structures with iron poles for vertical support (procured 2021)."
+        },
+        {
+          "name": "KREDL Energy Park Devices",
+          "specification": "Solar still, solar water heater, solar box cooker, solar street- and garden-lighting systems, solar drier, wind-solar hybrid systems and solar parabolic cooker, supplied under the KREDL Energy Park scheme (procured 2007)."
+        },
+        {
+          "name": "FPGA-based WAVECT Controller",
+          "specification": "4 voltage and 4 current sensors (up to 1000 V and 25 A) with FPGA processor generating 16 PWM pulses, ADC, motor speed sensing and instantaneous voltage/current waveform capture (procured 2016).",
+          "quantity": "1"
+        },
+        {
+          "name": "DC Motor with Mechanical Load",
+          "specification": "1.0 kW, 320 V, 1500 rpm with 1024-ppr incremental encoder for speed feedback and brake-drum mechanical loading (procured 2016).",
+          "quantity": "1"
+        },
+        {
+          "name": "Induction Motor with Mechanical Load",
+          "specification": "1.5 kW / 2.0 HP, 415 V, 1420 rpm, 3-phase with 1024-ppr incremental encoder and brake-drum mechanical loading (procured 2016).",
+          "quantity": "1"
+        },
+        {
+          "name": "Switched Reluctance Motor Drive with Mechanical Load",
+          "specification": "2.2 kW / 3 HP, 320 V, 3000 rpm, 8/6 SRM with 1024-ppr incremental encoder and brake-drum mechanical loading (procured 2018).",
+          "quantity": "1"
+        },
+        {
+          "name": "Two-Level Inverter with Class-E Chopper",
+          "specification": "3-phase IGBT-based inverter with rectifier and Class-E chopper feeding a DC motor with controlled supply (procured 2016).",
+          "quantity": "1"
+        },
+        {
+          "name": "3-Phase Diode Bridge Rectifier with 4-Phase SRM Inverter",
+          "specification": "Bridge rectifier with 415 Vac input, up to 560 Vdc output, and 4-phase IGBT inverter at 10 kHz switching frequency (procured 2018).",
+          "quantity": "1"
         }
       ],
       "softwareItems": [
@@ -3922,11 +4012,11 @@
         },
         {
           "name": "MATLAB",
-          "usage": "Modelling, simulation and analysis"
+          "usage": "Modelling, simulation and analysis (MATLAB 50-user / Simulink 25-user license)"
         },
         {
           "name": "AutoCAD",
-          "usage": "Electrical design and drafting"
+          "usage": "Electrical design and drafting (AutoCAD Electrical, 30-user license)"
         },
         {
           "name": "Windographer",
@@ -3934,7 +4024,11 @@
         },
         {
           "name": "Code Composer Studio",
-          "usage": "Embedded / DSP development"
+          "usage": "Embedded / DSP development (DK-DSP-2S810N development kit, 10-user license)"
+        },
+        {
+          "name": "Smart Grid Simulation Environment",
+          "usage": "Smart-grid modelling and simulation (PRDC, Bengaluru)"
         }
       ],
       "associations": [
@@ -4028,7 +4122,190 @@
             "file": "departments/eee/docs/bos-proceedings-2025.pdf"
           }
         ]
-      }
+      },
+      "pos": [
+        {
+          "code": "PO1",
+          "text": "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop solutions to complex engineering problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)"
+        },
+        {
+          "code": "PO3",
+          "text": "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)"
+        },
+        {
+          "code": "PO4",
+          "text": "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis and interpretation of data to provide valid conclusions. (WK8)"
+        },
+        {
+          "code": "PO5",
+          "text": "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering and IT tools, including prediction and modelling, recognizing their limitations to solve complex engineering problems. (WK2 and WK6)"
+        },
+        {
+          "code": "PO6",
+          "text": "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for their impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5 and WK7)"
+        },
+        {
+          "code": "PO7",
+          "text": "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national and international laws. (WK9)"
+        },
+        {
+          "code": "PO8",
+          "text": "Individual and Collaborative Team Work: Function effectively as an individual and as a member or leader in diverse and multi-disciplinary teams."
+        },
+        {
+          "code": "PO9",
+          "text": "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, and make effective presentations considering cultural, language and learning differences."
+        },
+        {
+          "code": "PO10",
+          "text": "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one's own work, as a member and leader in a team, to manage projects and in multidisciplinary environments."
+        },
+        {
+          "code": "PO11",
+          "text": "Life-Long Learning: Recognize the need for and have the preparation and ability for (i) independent and life-long learning, (ii) adaptability to new and emerging technologies and (iii) critical thinking in the broadest context of technological change. (WK8)"
+        }
+      ],
+      "wk": [
+        {
+          "code": "WK1",
+          "text": "A systematic, theory-based understanding of the natural sciences applicable to the discipline and awareness of relevant social sciences."
+        },
+        {
+          "code": "WK2",
+          "text": "Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed analysis and modelling applicable to the discipline."
+        },
+        {
+          "code": "WK3",
+          "text": "A systematic, theory-based formulation of engineering fundamentals required in the engineering discipline."
+        },
+        {
+          "code": "WK4",
+          "text": "Engineering specialist knowledge that provides theoretical frameworks and bodies of knowledge for the accepted practice areas in the engineering discipline; much is at the forefront of the discipline."
+        },
+        {
+          "code": "WK5",
+          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, reuse of resources, net zero carbon and similar concepts, that supports engineering design and operations in a practice area."
+        },
+        {
+          "code": "WK6",
+          "text": "Knowledge of engineering practice (technology) in the practice areas in the engineering discipline."
+        },
+        {
+          "code": "WK7",
+          "text": "Knowledge of the role of engineering in society and identified issues in engineering practice in the discipline, such as the professional responsibility of an engineer to public safety and sustainable development."
+        },
+        {
+          "code": "WK8",
+          "text": "Engagement with selected knowledge in the current research literature of the discipline, and awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
+        },
+        {
+          "code": "WK9",
+          "text": "Ethics, inclusive behaviour and conduct. Knowledge of professional ethics, responsibilities and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
+        }
+      ],
+      "sectionTitles": {
+        "research": "Research, Laboratories & Facilities"
+      },
+      "sectionNavLabels": {
+        "research": "Research & Facilities"
+      },
+      "activities": [
+        {
+          "title": "SDP: Solar PV Design using PV-Syst & Google SketchUp (Resource person: Mr. Madan Mohan K, MD, HIEE, Hyderabad)",
+          "date": "13-15 Feb 2025"
+        },
+        {
+          "title": "SDP: From Concept to Market - Design, Development and Manufacturing of Electric Motors (Resource person: Shri S. V. Ramdurgakar, Founder, AG Electro Service, Karad)",
+          "date": "15-17 Dec 2025"
+        },
+        {
+          "title": "SDP: Embedded Systems using ARM Controller (Resource persons from Advanced Electronic Systems & Solutions and SPJ Embedded Technologies)",
+          "date": "21-23 Feb 2026"
+        },
+        {
+          "title": "Empowering Powerman - A Comprehensive Training for HESCOM Lineman (with HESCOM resource persons)",
+          "date": "6-8 Jan 2025"
+        },
+        {
+          "title": "SDP: Electric Vehicle Training with 3-Wheeler Loader Components (Resource persons from NAMO Mobility and ISIEINDIA)",
+          "date": "16-20 Sep 2025"
+        },
+        {
+          "title": "FDP: Electrical Energy, Power Systems and Safety Practices (with HESCOM resource persons)",
+          "date": "5-7 Jan 2026"
+        },
+        {
+          "title": "FDP: Smart Irrigation Systems - Design, Automation, Integration and Sustainable Practices in Agriculture",
+          "date": "9-13 Feb 2026"
+        },
+        {
+          "title": "FDP: AI-ML Based Smart Grid (Resource persons from Itron, NIT Goa, IISc, PRDC, L&T and IIT Dharwad)",
+          "date": "30 Jan - 3 Feb 2025"
+        },
+        {
+          "title": "Alumni Seminar: Abroad Education in Germany - Mr. Vivekanand Sajjan (Secretary, SGM Group of Institutions), BEC Bagalkote",
+          "date": "4 May 2026"
+        },
+        {
+          "title": "Alumni Webinar: Practical Design of DC-DC Power Converters - Mr. Gangadhar Akki (Power Electronics Engineer, Robert Bosch, Bengaluru)",
+          "date": "29 Mar 2025"
+        },
+        {
+          "title": "Alumni Webinar: Next Gen Vehicles - Bridging the Last-Mile Gap on Indian Roads - Mr. Jagadish Patil (Salsync Consultants Pvt. Ltd.)",
+          "date": "12 Nov 2025"
+        },
+        {
+          "title": "Alumni Webinar: AI & ML - A Comprehensive Overview - Mr. Prasenjit Biswas (Project Design Leader, Schneider Electric Pvt. Ltd.)",
+          "date": "22 Mar 2025"
+        },
+        {
+          "title": "Alumni Mentorship Program (EE Seminar Hall)"
+        },
+        {
+          "title": "Sports: Cricket - Runners Up, VTU Kalaburagi Division Cricket Tournament, RYMEC Bellary (Veerbhadragouda Patil)",
+          "date": "30 Apr 2026"
+        },
+        {
+          "title": "Sports: Cricket - Winners, VTU Kalaburagi Division Cricket Tournament, RYMEC Bellary (Sandeepraddi & Veerbhadragouda Patil)",
+          "date": "31 Mar 2025"
+        },
+        {
+          "title": "Sports: Hockey - Winners, VTU Kalaburagi Division Tournament, RYMEC Bellary (Prajwal Shiggavi)",
+          "date": "21 Jan 2024"
+        },
+        {
+          "title": "Sports: Hockey - 3rd Place, VTU Division Tournament, CIT Ponnampet (Prajwal Shiggavi)",
+          "date": "29 Feb 2024"
+        },
+        {
+          "title": "Sports: Handball (Women) - Zonal Champions, VTU Handball Zonals, BEC Bagalkote (Nanditha G. Hiremath & Shivaranjini Malipatil)",
+          "date": "5 Dec 2024"
+        },
+        {
+          "title": "Sports: Handball (Women) - State Champions, VTU Handball Tournament, BEC Bagalkote (Nanditha G. Hiremath)",
+          "date": "5 Dec 2024"
+        },
+        {
+          "title": "Sports: Kho-Kho (Men) - VTU Zonal Champions, RYMEC Bellary (Prajwal Shiggavi)",
+          "date": "28-29 Apr 2025"
+        },
+        {
+          "title": "Sports: Handball - Winners, VTU Kalaburagi Zone, BITM Bellary (Annadanesh & Mallanagouda Patil)",
+          "date": "21-22 May 2025"
+        },
+        {
+          "title": "Sports: Basketball - Winners, VTU Kalaburagi Zone, BEC Bagalkote (Harish Kuri & Annadanesh)",
+          "date": "14-15 May 2025"
+        },
+        {
+          "title": "Sports: Handball (Women) - Zonal Champions, VTU Handball Zonals, SIT Mysore (Nanditha G. Hiremath & Shivaranjini Malipatil)",
+          "date": "20-23 Dec 2025"
+        }
+      ]
     },
     "electronics-and-computer-engg": {
       "name": "Electronics and Computer Engineering",
