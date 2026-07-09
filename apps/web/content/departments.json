@@ -5252,6 +5252,30 @@
           "title": "Geometrical Dimensioning and Tolerancing (GD&T) (SDP)",
           "date": "27 March 2026",
           "description": "Practical-oriented session organised by the Departments of Mechanical Engineering Sciences covering symbols, datums, tolerance zones and their real-time applications in design, manufacturing and quality control. Resource person: Mr. Gitan Ginde, Founder Director of Ganitharth Technologies and an alumnus of the IPE Department."
+        },
+        {
+          "title": "Ph.D. Awarded — Mr. Mahesh Ratnappa Latti",
+          "date": "1 August 2025",
+          "description": "Research Scholar Mr. Mahesh Ratnappa Latti (2BA18PIP03) was awarded a Ph.D. degree in “Analysis of Key Supply Chain Drivers in Medium & Small Scale Industries (MSMEs)” under the guidance of Prof. Dr. C. M. Javalagi at the department research centre."
+        },
+        {
+          "title": "Book Release — “Productivity Management of Apparel Industry in India”",
+          "date": "2 June 2025",
+          "description": "The book “Productivity Management of Apparel Industry in India — A Systems Perspective” authored by Dr. S. M. Pharsiyawar was released through LAP LAMBERT Academic Publishing."
+        },
+        {
+          "title": "Workshop on “Out of Box Thinking for Problem Solving” at B.V.S. Polytechnic",
+          "date": "24 February 2025",
+          "description": "Dr. S. M. Pharsiyawar conducted a workshop for final-year students at B.V.S. Polytechnic, Bagalkote, and served as the Chief Guest of the ceremony."
+        },
+        {
+          "title": "Lecture on “Personality Development” at B.V.S. Polytechnic",
+          "date": "25 September 2025",
+          "description": "Dr. S. M. Pharsiyawar delivered a lecture during the Career Guidance Program for 3rd-year students at B.V.S. Polytechnic, Bagalkote."
+        },
+        {
+          "title": "Treasure Hunt at SAMYUTI, Chanakya University",
+          "description": "IPE students participated in the Treasure Hunt organised at SAMYUTI by Chanakya University — an interactive event that tested problem-solving skills, teamwork and presence of mind, requiring teams to decode puzzles and solve riddles across the campus."
         }
       ]
     },
@@ -6629,6 +6653,43 @@
         {
           "title": "Board of Examiners — Members (2025-26)",
           "file": "departments/physics/docs/boe-members-2025-26.pdf"
+        }
+      ],
+      "activities": [
+        {
+          "title": "Cryogenics and Thermo-electrical Materials",
+          "date": "21 December 2024",
+          "description": "Resource person: Dr. Prasad Vishnu Bhotla, Professor, IISc Bengaluru. Coordinators: Prof. S. S. Bopardekar, Dr. Shaila U. Durgadsimi."
+        },
+        {
+          "title": "Nanotechnology",
+          "date": "9 February 2024",
+          "description": "Resource person: Dr. Prasad Vishnu Bhotla, Professor, IISc Bengaluru. Coordinators: Prof. S. S. Bopardekar, Dr. Shaila U. Durgadsimi."
+        },
+        {
+          "title": "Phase Change Memory Materials and its Applications",
+          "date": "2 February 2024",
+          "description": "Resource person: Dr. K. Ramesh, Principal Research Scientist, Physics Department, IISc Bengaluru. Coordinators: Prof. S. S. Bopardekar, Dr. Shaila U. Durgadsimi."
+        },
+        {
+          "title": "Thermal Properties of Materials",
+          "date": "2 February 2024",
+          "description": "Resource person: Dr. Prasad Vishnu Bhotla, Professor, IISc Bengaluru. Coordinators: Prof. S. S. Bopardekar, Dr. Shaila U. Durgadsimi."
+        },
+        {
+          "title": "Recent Advances in Thin Film Technology",
+          "date": "19–21 December 2013",
+          "description": "Coordinators: Dr. J. G. Ghantimath, Prof. S. S. Bopardekar, Prof. S. B. Navalgund."
+        },
+        {
+          "title": "Workshop on “Composites and their Applications”",
+          "date": "March 2013",
+          "description": "Coordinators: Dr. Shaila U. Durgadsimi, Prof. R. P. Araganji."
+        },
+        {
+          "title": "Robotics & Nanotechnology",
+          "date": "February 2009",
+          "description": "Coordinators: Dr. Shaila U. Durgadsimi, Prof. R. P. Araganji."
         }
       ]
     },
@@ -12330,6 +12391,10 @@
           {
             "title": "Alumni Testimonials",
             "file": "departments/mba/docs/alumni-testimonials.pdf"
+          },
+          {
+            "title": "Faculty & Students Achievements",
+            "file": "departments/mba/docs/faculty-students-achievements.pdf"
           }
         ]
       },
