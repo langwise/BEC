@@ -3354,6 +3354,11 @@
           "supervisor": "Dr. B. F. Ronad",
           "area": "Solar PV powered irrigation, DC distribution systems, electric vehicle chargers",
           "university": "VTU, Belagavi"
+        },
+        {
+          "supervisor": "Dr. S. Y. Goudappanavar",
+          "area": "Wind and solar energy in smart grid",
+          "university": "VTU, Belagavi"
         }
       ],
       "phdsAwarded": [
@@ -3713,13 +3718,60 @@
               "position": "Member Secretary — Associate Professor, Dept. of E&EE, BEC"
             }
           ]
+        },
+        {
+          "title": "Board of Examiners (BoE)",
+          "members": [
+            {
+              "name": "Dr. R. L. Naik",
+              "position": "Chairman — Professor & Head, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Smt. Sunita S. Tambakad",
+              "position": "BoE Coordinator — Assistant Professor, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Prof. Apoorva Kulkarni",
+              "position": "Issuing Coordinator — Assistant Professor, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Prof. Mahantesh L. Chikkadesai",
+              "position": "QP Proof-Reading Section Coordinator — Assistant Professor, Dept. of E&EE, BEC"
+            }
+          ]
         }
       ],
       "mous": [
         {
+          "partner": "A. G. Electro Services",
+          "since": "2013"
+        },
+        {
           "partner": "HESCOM (Hubballi Electricity Supply Company)",
           "location": "Hubballi",
           "since": "2018"
+        },
+        {
+          "partner": "Krishi Tharanga",
+          "location": "Vijayapur",
+          "since": "2024"
+        },
+        {
+          "partner": "PRDC",
+          "location": "Bengaluru",
+          "since": "2010"
+        },
+        {
+          "partner": "Saaketh Electronic Circuit Pvt. Ltd.",
+          "since": "2024"
+        },
+        {
+          "partner": "Shanthala Power Limited",
+          "since": "2024"
+        },
+        {
+          "partner": "Flensburg University of Applied Sciences",
+          "since": "2024"
         }
       ],
       "infrastructureItems": [
@@ -3832,7 +3884,7 @@
       "contact": {
         "name": "Dr. R. L. Naik",
         "designation": "Professor (CAS) & Head, Department of Electrical & Electronics Engineering",
-        "phone": "+91-9986424111",
+        "phone": "+91-9986424111, +91-7019824435",
         "email": "hodee@becbgk.edu"
       },
       "documents": [
