@@ -8,30 +8,33 @@
   },
   "deans": [
     {
-      "role": "Dean Academic",
+      "role": "Dean (Academics)",
       "name": "Dr. P. N. Kulkarni",
       "photo": "governance/deans/dr-p-n-kulkarni.webp",
-      "email": "deanac@becbgk.edu",
+      "email": "pnk_bewoor@yahoo.com",
       "focus": "Programs & curriculum"
     },
     {
-      "role": "Dean R&D and ICT",
+      "role": "Dean (R&D) and ICT",
       "name": "Dr. Mahabaleshwar S. K.",
       "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
-      "email": "deanrd@becbgk.edu",
-      "focus": "Research, innovation, consultancy & ICT infrastructure"
+      "email": "mahabalesh_sk@yahoo.co.in",
+      "focus": "Research, innovation, consultancy & ICT infrastructure",
+      "link": { "href": "/research", "label": "View Research & Development" }
     },
     {
-      "role": "Dean Career Guidance & Placement",
+      "role": "Dean (Career Guidance & Placement)",
       "name": "Dr. S. G. Kambalimath",
       "photo": "governance/deans/dr-shankar-kambalimath.webp",
-      "email": "placement@becbgk.edu",
+      "email": "becplacement@gmail.com",
       "focus": "Career services & placements"
     },
     {
-      "role": "Dean Student Welfare",
-      "focus": "Student welfare & support",
-      "placeholder": true
+      "role": "Dean (Student Welfare)",
+      "name": "Dr. Bharati S. Meti",
+      "photo": "governance/deans/dr-bharati-s-meti.webp",
+      "email": "dswbec@gmail.com",
+      "focus": "Student welfare & support"
     }
   ],
   "officers": [
@@ -239,7 +242,7 @@
     {
       "name": "Dr. B. R. Hiremath",
       "role": "Ex-officio Member Secretary",
-      "affiliation": "Principal, Basaveshwar Engineering College, Bagalkot",
+      "affiliation": "Principal, Basaveshwar Engineering College, Bagalkote",
       "category": "member-secretary",
       "photo": "governance/principal/dr-b-r-hiremath.webp"
     },

@@ -33,7 +33,7 @@ export default function HostelPage() {
           About Hostel
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed">
-          Basaveshwar Engineering College (Autonomous), Bagalkot provides
+          Basaveshwar Engineering College (Autonomous), Bagalkote provides
           excellent hostel facilities for boys and girls with a focus on student
           welfare, safety, and a conducive atmosphere for learning.
         </p>

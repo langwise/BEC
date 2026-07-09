@@ -19,6 +19,8 @@ export type DepartmentContent = {
   psos?: CodedItem[];
   /** Programme Outcomes — rendered alongside PEOs/PSOs in the Academics section. */
   pos?: CodedItem[];
+  /** Knowledge and Attitude Profile (WK) — rendered alongside PEOs/PSOs/POs. */
+  wk?: CodedItem[];
   /** Core values shown as a bullet list under the Home overview (e.g. IPE). */
   values?: string[];
   /** Monthly department newsletters, rendered as a documents section. */
@@ -31,6 +33,20 @@ export type DepartmentContent = {
   researchFacilities?: string[];
   /** Notable research achievements (bullets). */
   researchAchievements?: string[];
+  /** Year-wise research output grouped by category (journals, books, chapters, conferences). */
+  publications?: { category: string; years: { year?: string; items: string[] }[] }[];
+  /** Patents filed/published/granted — rendered as a table on the Research page. */
+  patents?: {
+    title: string;
+    applicationNumber?: string;
+    inventors?: string;
+    area?: string;
+    filed?: string;
+    published?: string;
+    awarded?: string;
+    awardNumber?: string;
+    status?: string;
+  }[];
   /** Fold scholars/grants/facilities/achievements into a single "Research Centre" tab. */
   consolidateResearch?: boolean;
   phdsAwarded?: { scholar: string; guide: string; title: string; year: string }[];

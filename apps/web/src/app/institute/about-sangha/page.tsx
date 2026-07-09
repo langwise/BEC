@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "About B.V.V. Sangha",
   description:
-    "B.V.V. Sangha, Bagalkot — founded 1906, the century-old parent body of BEC Bagalkote runs 190+ institutes, serving 53,000+ students on the philosophy of Work is Worship.",
+    "B.V.V. Sangha, Bagalkote — founded 1906, the century-old parent body of BEC Bagalkote runs 190+ institutes, serving 53,000+ students on the philosophy of Work is Worship.",
   path: "/institute/about-sangha",
 });
 
@@ -98,7 +98,7 @@ export default function AboutSanghaPage() {
           <div className="space-y-6 text-base text-gray-700 leading-relaxed text-justify">
             <p>
               <span className="font-semibold text-gray-900">Basaveshwar Veerashaiva Vidya Vardhak Sangha (B. V. V. Sangha)</span>,
-              Bagalkot is situated in the northern part of Karnataka was a part of the Bombay province. The merchants of Bagalkote
+              Bagalkote is situated in the northern part of Karnataka was a part of the Bombay province. The merchants of Bagalkote
               with the blessings of his Holiness <span className="font-semibold text-gray-900">Shri Gurubasava Mahaswamiji of Bilur</span> and
               his holiness <span className="font-semibold text-gray-900">Shri Revanasiddeshwara Mahaswamiji of Teekinamatha Bagalkote</span> established
               BVV Sangha on 18-10-1906. The Sangha started with a Sanskrit pathashala and is now a leading educational organization running

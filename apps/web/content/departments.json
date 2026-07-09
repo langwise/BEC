@@ -130,7 +130,7 @@
           "members": [
             {
               "name": "Dr. A. D. Devangavi",
-              "position": "Chairman — Professor and Head, Dept. of AI & ML, BEC Bagalkot"
+              "position": "Chairman — Professor and Head, Dept. of AI & ML, BEC Bagalkote"
             },
             {
               "name": "Dr. S. R. Mahadev Prasanna",
@@ -150,27 +150,27 @@
             },
             {
               "name": "Dr. V. B. Pagi",
-              "position": "Member — Professor and Head, CSE, BEC Bagalkot"
+              "position": "Member — Professor and Head, CSE, BEC Bagalkote"
             },
             {
               "name": "Smt. S. S. Yendigeri",
-              "position": "Member — Associate Professor, CSE, BEC Bagalkot"
+              "position": "Member — Associate Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Dr. S. M. Hatture",
-              "position": "Member — Associate Professor, CSE, BEC Bagalkot"
+              "position": "Member — Associate Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Dr. B. M. Reshmi",
-              "position": "Member — Associate Professor, AI & ML, BEC Bagalkot"
+              "position": "Member — Associate Professor, AI & ML, BEC Bagalkote"
             },
             {
               "name": "Dr. Vishwanath Kagawade",
-              "position": "Member — Associate Professor, AI & ML, BEC Bagalkot"
+              "position": "Member — Associate Professor, AI & ML, BEC Bagalkote"
             },
             {
               "name": "Dr. Ramesh Wadawadagi",
-              "position": "Member — Associate Professor, AI & ML, BEC Bagalkot"
+              "position": "Member — Associate Professor, AI & ML, BEC Bagalkote"
             },
             {
               "name": "Mr. Nandakishore Kulkarni",
@@ -191,11 +191,11 @@
           "members": [
             {
               "name": "Dr. A. D. Devangavi",
-              "position": "Chairman — Professor and Head, Dept. of AI & ML, BEC Bagalkot"
+              "position": "Chairman — Professor and Head, Dept. of AI & ML, BEC Bagalkote"
             },
             {
               "name": "Dr. B. M. Reshmi",
-              "position": "Member — Associate Professor, AI & ML, BEC Bagalkot"
+              "position": "Member — Associate Professor, AI & ML, BEC Bagalkote"
             }
           ]
         }
@@ -338,7 +338,7 @@
         "name": "Dr. D. D. Chillal",
         "designation": "HoD",
         "phone": "+91-9880234101",
-		"email": "ddchillal@gmail.com"
+        "email": "ddchillal@gmail.com"
       },
       "supportingStaff": [
         {
@@ -363,7 +363,7 @@
               "position": "Chairman (HoD)"
             },
             {
-              "name": "Dr. Nagaraj Ekbote" ,
+              "name": "Dr. Nagaraj Ekbote",
               "position": "VTU Nominee"
             },
             {
@@ -564,47 +564,41 @@
         "Recognised as a VTU R&D (Ph.D.) Research Centre since 2011, with seven Ph.D.-holding faculty and fourteen Ph.D.s awarded.",
         "Hosts a Bioenergy Research, Information and Demonstration Centre (BRIDC) in association with KSBDB, Government of Karnataka.",
         "Operates a Food Testing Laboratory and a poly-house with raceway ponds, supporting start-ups, patents and product development.",
-        "Research focus areas: Biochemical technology, Microbial Technology, Food processing, Biofuels technology, Solid waste management and Bioremediation, Fermentation technology, and Molecular biology and Bioinformatics."
+        "Research focus areas: Biochemical technology, Microbial Technology, Food processing, Biofuels technology, Solid waste management and Bioremediation, Fermentation technology, and Molecular biology and Bioinformatics.",
+        "Regular interaction with faculty from IITs, personnel from industry helped in enhancement and upgradation of the students' knowledge in the areas of Biotechnology. Regular visits and industrial internship to biotechnology, food and pharmaceutical companies helped students and faculty to keep themselves updated with technological changes."
       ],
       "labs": [
         {
-          "name": "Biochemistry Laboratory"
+          "name": "Biochemistry / Cell & Genetics / Microbiology / Molecular Biology & Immunotechnology / Genetic Engineering Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: Colorimeter, DQ-3 Water Distillation unit, Electric Balance, Colony Counter, Hot air Oven, Binocular Microscopes, Laminar Air Flow, BOD Incubator, Vertical Slab Gel-Electrophoresis, Sub Marine Gel-Electrophoresis, Trans-illuminator, Orion pH meter, Cyclomixer, Magnetic Stirrer, Cooling Centrifuge, Digital colorimeter, PCR, Micro Oven (Hot Air Oven), Water Bath, Simple Distillation Units."
         },
         {
-          "name": "Microbiology Laboratory"
+          "name": "Unit Operations Laboratory",
+          "description": "Total area: 58 Sq. Mt.. Major equipment: Pressure Drop in Packed Bed, Heat Transfer in Packed bed, Convective Mass Transfer coefficient, Wetted wall column, Diffusivity measurement Appts, Tray Dryer."
         },
         {
-          "name": "Molecular Biology & Genetic Engineering Laboratory"
+          "name": "Bioinformatics & Biostatistics Laboratory",
+          "description": "Total area: 56 Sq. Mt.. Major equipment: 15 Computers with accessories, 5KVA-UPS with 12V Battery, GCG Software."
         },
         {
-          "name": "Immunotechnology Laboratory"
+          "name": "Bioprocess Control & Instrumentation Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: Two Tank interacting System, Two Tank Non-Interacting System, Time Constant of Thermometer, Temperature Control Trainer (Comp.), Pressure control Trainer (Comp.), Flow control Trainer (Comp.), Air Compressor (1 HP)."
         },
         {
-          "name": "Biokinetics & Enzyme Technology Laboratory"
+          "name": "Biokinetics & Enzyme Technology Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: Mixed Flow Reactor, Plug Flow Reactor, Colorimeter, Electric Balance."
         },
         {
-          "name": "Upstream Process & Bioseparation Techniques Laboratory"
+          "name": "Upstream Processing & Downstream Processing Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: UV-VIS Spectrophotometer, Cross Flow Cassette, Fermentor, Micropipettes, Digital colorimeter, Thin Layer Chromatography, Autoclave, Orbital Shaking Incubator, Laboratory Blender."
         },
         {
-          "name": "Unit Operations Laboratory"
+          "name": "Bioprocess & Biochemical Engineering Laboratory",
+          "description": "Total area: 60 Sq. Mt.. Major equipment: Ultra Sonicator, HPLC (Binary Analytical System)."
         },
         {
-          "name": "Heat & Mass Transfer Laboratory"
-        },
-        {
-          "name": "Bioinformatics Laboratory"
-        },
-        {
-          "name": "Biostatistics and Tools Laboratory"
-        },
-        {
-          "name": "Extraction Methods and Herbal Products Laboratory"
-        },
-        {
-          "name": "Analysis of Dairy Products Laboratory"
-        },
-        {
-          "name": "Food Testing Laboratory"
+          "name": "Food Testing Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: Rotary Vacuum Flash Evaporator, UV Visible Double beam Spectrophotometer, Hot Air Oven, High Speed Cooling Centrifuge, Digital Electronic Weighing Balance, Digital Refractometer, Quartz Double Distillation Unit, Viscometer/Rheometer, Autoclave, Bomb Caloriemeter, Texture Analyser, Pilot Scale Spray Dryer Unit, Laminar Air Flow, Orbital Shaking Incubator, Kjeldahl's apparatus, Dietary Fiber Analyser."
         }
       ],
       "associations": [
@@ -621,7 +615,7 @@
         "name": "Dr. Bharati S. Meti",
         "designation": "Professor & Head",
         "phone": "+91-9448972628",
-        "email": "bsmbt@becbgk.edu"
+        "email": "bsmbt@becbgk.edu / hodbtbec@gmail.com / bharatismeti@gmail.com"
       },
       "documents": [
         {
@@ -640,6 +634,517 @@
           "title": "Best Practices",
           "file": "departments/biotechnology/docs/best-practices.pdf"
         }
+      ],
+      "about": "The Department of Biotechnology was established at Basaveshwar Engineering College in 2002, focusing on impactful teaching, research, and community service. The Department offers various programs including UG, PG Diploma, PG, and Ph.D., and has been recognized as an R&D center by VTU Belagavi since 2011.\n\nThe field of biotechnology stands at the intersection of engineering and technological advancement, encompassing diverse domains such as biopharmaceutical development, industrial applications, and environmental solutions. Central to this discipline is the application of genetic technologies across animal and plant biotechnology, as well as innovations in cell and tissue engineering. The COVID-19 pandemic underscored the critical role of biotechnology, with bio-pharmaceutical companies racing to develop vaccines and therapeutics, illuminating the industry's impact on public health. As of 2023, India emerges as a significant player in the global biotechnology landscape, ranking among the top twelve destinations for biotech innovation and holding the position as the largest biotechnology hub in the Asia Pacific region. The Indian biotechnology sector is valued at over USD 92 billion, with the bio-pharmaceutical industry leading in biosimilars, having the highest number approved in the domestic market. Moreover, the global bio-pharmaceutical market is projected to see remarkable growth, expanding from USD 274.10 billion in 2020 to an anticipated USD 703.28 billion by 2027, indicating a growing recognition of biotechnology's pivotal role in addressing contemporary challenges in healthcare and the environment.",
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (2025-2028)",
+          "members": [
+            {
+              "name": "Dr. Bharati S. Meti",
+              "position": "Chairman — Professor & Head, Dept. of Biotechnology, BEC Bagalkote; bharatismeti@gmail.com; 9448972628"
+            },
+            {
+              "name": "Dr. Sudhanshu Shukla",
+              "position": "Member (VTU Nominee) — Associate Professor & HOD, Department of Biosciences & Bioengineering, Indian Institute of Technology Dharwad, Walmi Campus PB Road Dharwad; sudhanshu@iitdh.ac.in; 7652079762"
+            },
+            {
+              "name": "Dr. Ashish Prabhu",
+              "position": "Member (Academic) — Assistant Professor, Department of Biotechnology, National Institute of Technology (NIT), Warangal; ashishp@nitw.ac.in; 9582700174"
+            },
+            {
+              "name": "Dr. Thivaharan V",
+              "position": "Member (Academic) — Additional Professor, Department of Biotechnology, Manipal Institute of Technology (MIT), Manipal; thivaharan.v@manipal.edu; 9844872904"
+            },
+            {
+              "name": "Dr. Girish Deshpande",
+              "position": "Member (Industry) — Head ARD, Biocon Ltd, Bengaluru; 8904487104"
+            },
+            {
+              "name": "Mrs. Swati S Gavimath",
+              "position": "Member (Alumni) — Scientist R&D Level I, Cellworks Research India Pvt. Ltd., Bengaluru; swatigavimath4@gmail.com; 8867144013"
+            },
+            {
+              "name": "All Faculty",
+              "position": "Member (Internal) — Department of Biotechnology, BEC Bagalkote"
+            },
+            {
+              "name": "Tarkesh H",
+              "position": "Student Representative — VII Sem Student, Department of Biotechnology, BEC Bagalkote"
+            },
+            {
+              "name": "Sahana Kumbar",
+              "position": "Student Representative — VII Sem Student, Department of Biotechnology, BEC Bagalkote"
+            }
+          ]
+        }
+      ],
+      "phdsAwarded": [
+        {
+          "scholar": "Uday Morbad (M.Sc. Engg.)",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Production & optimization of biodiesel using seed oils",
+          "year": "18.06.2018"
+        },
+        {
+          "scholar": "K Bhat",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Design and development of a sensor for real time monitoring of transesterification progress",
+          "year": "29.12.2018"
+        },
+        {
+          "scholar": "G B Megeri",
+          "guide": "Dr. G.M. Madhu",
+          "title": "Adsorption of lead and cadmium using synthesized nanometal oxides",
+          "year": "18.04.2019"
+        },
+        {
+          "scholar": "Vikas Gattaragi",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Evaluation of healthy human gut isolates as potential probiotics.",
+          "year": "10.06.2020"
+        },
+        {
+          "scholar": "Hemalatha V B",
+          "guide": "Dr. Virupakshaih D.B.M",
+          "title": "Bacteriophage are alternative biocontrol agents to prevent the food born Pseudomonas spp.",
+          "year": "15.06.2020"
+        },
+        {
+          "scholar": "Premjyoti C Patil",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Studies on biomass, lipid enhancement and molecular characterization of Cholerella spp. for Biofuel production",
+          "year": "20.03.2021"
+        },
+        {
+          "scholar": "Madhumala Y",
+          "guide": "Dr. Veena Soraganvi",
+          "title": "Biofilm induced reduction of hexavalent chromium by indigenous microbes.",
+          "year": "23.03.2021"
+        },
+        {
+          "scholar": "Shilpa K Jigajinni",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Immobilized Lipase Catalyzed Biodiesel production from Pongamia seed oil",
+          "year": "14.06.2022"
+        },
+        {
+          "scholar": "Shivaleela V B",
+          "guide": "Dr. Sharada P.",
+          "title": "Biochemical properties for recombinant tly-A protein form Mycobacterium tuberculosis",
+          "year": "09.07.2022"
+        },
+        {
+          "scholar": "Preeti S Kumarmath",
+          "guide": "Dr. Sharada P.",
+          "title": "Biochemical and Molecular Studies on antioxidant properties of Bryophyllum pinnatum",
+          "year": "20.08.2022"
+        },
+        {
+          "scholar": "Asiya Rozindar",
+          "guide": "Dr. Virupakshaiah D.B.M & Dr. Bharati S. Meti (Co-guide)",
+          "title": "Insilico studies of human chymase to identify better targets for its regulations and activity in effective treatment of mast cell mediated allergic reactions",
+          "year": "05.01.2024"
+        },
+        {
+          "scholar": "Mallikarjun Goni",
+          "guide": "Dr. Virupakshaiah D.B.M",
+          "title": "Molecular Identification and gene expression analysis of sialyl transferase levels in oral malignancy",
+          "year": "06.02.2024"
+        },
+        {
+          "scholar": "Pavan Kumar",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Bioformulations for Enhanced Resistance Against Bacterial Blight of Pomegranate",
+          "year": "05.03.2024"
+        },
+        {
+          "scholar": "Mahananda Math",
+          "guide": "Dr. Virupakshaiah D.B.M & Dr. Bharati S. Meti (Co-guide)",
+          "title": "Development of Phages form Dairy Products to Control Pathogen-Listeria Monocytogenes",
+          "year": "10-11-2025"
+        }
+      ],
+      "researchScholars": [
+        {
+          "scholar": "Sangamesh K.",
+          "usn": "2025040006",
+          "guide": "Dr. Jayachandra S. Yaradoddi (Co-Guide: Dr. Bharati S. Meti)",
+          "title": "Isolation of siderophore microbial species-Characterization and Applications",
+          "status": "Admitted 26/05/2025 · Reg. ID 2025040006"
+        },
+        {
+          "scholar": "Ms. Swapna Nikhil",
+          "usn": "2025040004",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Green synthesis of nanomaterials and their application in medical field",
+          "status": "Admitted 26/05/2025 · Reg. ID 2025040004"
+        }
+      ],
+      "researchGrants": [
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2025-26",
+          "amount": "Rs. 2,00,000 (Sanctioned 18-09-2025)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Optimization of media parameters for enhanced lipase production by Lysinibacillus macrolides FS1 and biodiesel production using enhanced immobilized lipase",
+          "agency": "KSCST",
+          "year": "2024-25",
+          "amount": "Rs. 6,000 (Sanctioned 14/03/2025)",
+          "investigators": "Dr. Shilpa K Jigajinni"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2024-25",
+          "amount": "Rs. 4,00,000 (Sanctioned 27-02-2025 & 18-10-2024)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2023-24",
+          "amount": "Rs. 95,000 (Sanctioned 6th February 2024)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2023-24",
+          "amount": "Rs. 1,90,000 (Sanctioned 19th December 2023)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Amino acid sequencing of lipase enzyme produced by Lysinibacillus macroides for bio-diesel production",
+          "agency": "KSCST",
+          "year": "2023-24",
+          "amount": "Rs. 7,000 (Sanctioned 19th April 2024)",
+          "investigators": "Dr. Jayachandra S. Y. & Dr. Shilpa K Jigajinni"
+        },
+        {
+          "title": "Statistical optimization of Immobilization process to enhance the lipase activity for biodiesel production",
+          "agency": "KSCST",
+          "year": "2022-23",
+          "amount": "Rs. 8,000 (Sanctioned 24th April 2023)",
+          "investigators": "Dr. Shilpa K Jigajinni"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2022-23",
+          "amount": "Rs. 1,90,000 (Sanctioned 21st December 2023)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2022-23",
+          "amount": "Rs. 1,90,000 (Sanctioned 31st August 2021 and 28th March 2022)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Development of efficient biocatalyst for biodiesel production",
+          "agency": "VGST (RGS)",
+          "year": "2021-22",
+          "amount": "Rs. 3,00,000 (Sanctioned 15 February 2023)",
+          "investigators": "Dr. Shilpa K Jigajinni & Dr. Jayachandra S. Y."
+        },
+        {
+          "title": "Removal of heavy metals from wastewater by bioremediation method using Microalgae",
+          "agency": "Indian Water Works Association",
+          "year": "2021-22",
+          "amount": "Rs. 10,000 (Sanctioned 1st July 2021)",
+          "investigators": "Dr. B R Hiremath & Dr. Madhumala Y"
+        },
+        {
+          "title": "Cloning and expression of lipase as biocatalyst for biodiesel production",
+          "agency": "KSCST",
+          "year": "2021-22",
+          "amount": "Rs. 7,000 (Sanctioned 11 May 2022)",
+          "investigators": "Prof. Bharati S. Meti and Dr. Shilpa K Jigajinni"
+        }
+      ],
+      "mous": [
+        {
+          "partner": "Karnataka State Bioenergy Development Board (KSBDB), GoK"
+        },
+        {
+          "partner": "Karnataka Biotechnology and Information Technology Services (KBITS), GoK"
+        },
+        {
+          "partner": "University of Horticultural Sciences",
+          "location": "Bagalkote"
+        },
+        {
+          "partner": "Bengaluru Bioinnovation Centre",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Aspartika Biotech Pvt. Ltd.",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Natura Crop Care Pvt. Ltd.",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Siddapur Distilleries Ltd.",
+          "location": "Siddapur"
+        },
+        {
+          "partner": "Medimox Diagnosis and Bioresearch Pvt. Ltd.",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Vriksha Vijnan Pvt. Ltd.",
+          "location": "Bengaluru"
+        },
+        {
+          "partner": "Krishitharanga Farmtech LLP",
+          "location": "Vijayapur"
+        }
+      ],
+      "publications": [
+        {
+          "category": "Journal Publications",
+          "years": [
+            {
+              "year": "2025-26",
+              "items": [
+                "KA, Darshan, Anita R Desai, Mallappa Shalavadi, Basavaraj S. Nainegali, and Laxman S Vijapur (2025). “Development and Characterization of Bromocriptine Mesylate Loaded Nanostructured Lipid Carriers for Enhanced Nose-to-Brain Delivery.” Precision Nanomedicine. September, 1586–1603. https://doi.org/10.33218/001c.144483.",
+                "Sharada S B, Arun Kulkarni, Hrishikesh H Pattihal (March, 2026). Evaluation of Natural Dye for DNA Visualization in Agarose Gel. International Research Journal of Innovations in Engineering and Technology. 10(4). pp 363-369. https://doi.org/10.47001/IRJIET/2026.104051"
+              ]
+            },
+            {
+              "year": "2024-25",
+              "items": [
+                "Ranjina Ranjith, Basavaraj S. Nainegali, Subbalaxmi Selvaraj (2025). Nurturing with science: Alternative solution for human milk oligosaccharides through bioproduction techniques and their emerging applications in infant nutrition. Food Bioscience. Volume 71., 107223. https://doi.org/10.1016/j.fbio.2025.107223",
+                "Jayachandra, Shoba H., Bharati SM, Sharada P. and Gangadhar M. (2024). Bio Prospecting of Novel Moderate Halophilic Bacterium Marinobacter spp. JS17 Recovered from the West Coast of Karnataka, India. Journal of Natural Remedies. 24(12); 2727-2736. https://doi.org/10.18311/jnr/2024/44437",
+                "Loka Chandrudu P. Ramesh Londonkar L, Shirisha Kumari S., RS.G, Jyothi K, Swetha C.M.,Jayachandra S.Y. (2025). Phytochemical Screening and Antimicrobial activity of Tephrosia villosa. Research Journal of Biotechnology. 20 (3), 118-124. DOI:10.25303/203rjbt1180124"
+              ]
+            },
+            {
+              "year": "2023-24",
+              "items": [
+                "Jigajinni, S. K., Meti, B. S., Nymangoudar, S. ., & Patil, S. (2023). Statistical Optimization of Enzymatic Transesterification Process to Produce Biodiesel from Honge Oil. Current Trends in Biotechnology and Pharmacy, 17(Supplement 3B), 1208–1222. https://doi.org/10.5530/ctbp.2023.3s.57"
+              ]
+            },
+            {
+              "year": "2022-23",
+              "items": [
+                "A. Rozindar, DBM Virupakshaiah, B Meti, BV Kumbha (2023). Identification of potential human chymase inhibitors using molecular docking and molecular dynamics simulation. Journal of Applied and Natural Science 15 (1), 1-8. https://doi.org/10.31018/jans.v15i1.3324."
+              ]
+            },
+            {
+              "year": "2021-22",
+              "items": [
+                "Zareenkousar Kazi, Basavaraj S. Hungund, Jayachandra S.Yaradoddi, N. R. Banapurmath, Abdulfatah Abdu Yusuf , Karedla Lakshmi,Kishore, Manzoore Elahi M. Soudagar , T. M. Yunus Khan, Ashraf, Elfasakhany (2022). Production, Characterization, and Antimicrobial Activity of Pigment from Streptomyces Species. Journal of Nanomaterials. Volume 2022, Article ID 3962301, 8 pages",
+                "Kazi Zareenkousar, Hungund Basavaraj S., Desai Diksha,Banapurmath ,Nagaraj R. and Jayachandra S. Yaradoddi (2022). Potential Biomedical implications of bioactive pigment and silver nanoparticles produced by the actinobacteria Rhodococcus sp. NCIM 5126. Research Journal of Biotechnology. Vol. 17 (5). Pages 160-169.",
+                "Mallikarjun Goni, Anil Kumar Desai, Niranjan Kumar, Veda Hegde, Palaksha Kanive Javaregowda, Virupakshaiah DBM (2022). Significance of altered glycosyltransferases expression levels in oral cancer. Current Science.",
+                "Preeti S Kumarmath, Anusha Kawatal, Kruti Nimbargi (2022). A Review on Extraction of Dye from Terminalia catappa Hull: A Substitute To Synthetic Dyes. JETIR 2022, Vol. 9 (2), pp 59-64.",
+                "Pavan Kumar, Veeresh Lokesh, Pushpa Doddaraju, Aprajita Kumari, Pooja Singh, Bharati S Meti, Jyotsana Sharma, Kapuganti Jagadis Gupta, Girigowda Manjunatha “Greenhouse and field experiments revealed that clove oil can effectively reduce bacterial blight and increase yield in pomegranate” Food and Energy Security (2021), Vol 10 (4) : 1-17 (e305).",
+                "Mallikarjun Goni, Veda Hegde, Niranjan Kumar, Anil Kumar Desai. Plaaksha Kanive Javaregowda, and Virupakshaiah DBM (2021). Evaluation of oral cancer associated glycosyltransferase expression levels in peripheral blood mononucleated cells, Advances in Cancer Biology-Metasis, Vol. 3. pp 1-6.",
+                "Preeti S Kumarmath and Sharada P (2021). Assay of Antioxidants in Bryophyllum pinnatum under Salt Stress, Journal of Chengdu University of Technology, Vol. 26 (9). pp 1-8.",
+                "Shilpa K. Jigajinni and Bharati S. Meti (2021). Immobilization Optimization and Characterization of Immobilized Lipase from Lysinibacillus macroides FS1 for Biodiesel Production, International Journal of Current Microbiology and Applied Sciences, Vol. 10(4) pp 232-245.",
+                "Shilpa K. Jigajinni and Bharati S. Meti (2021). Isolation, optimization and molecular characterization of novel lipase producing Lysinibacillus macroides FS1 from oil reach sample for biodiesel production, Current trends in Biotechnology and pharmacy. Vol. 15 (5): pp 385-394.",
+                "Shilpa K. Jigajinni and Bharati S. Meti (2021). Identification of Effective Factors for Immobilized Lipase Catalysed Biodiesel Production from Pongamia pinnata Seed Oil using Plackett-Burman Design, International Journal of Current Microbiology and Applied Sciences. Vol. 10 (9) pp 173-182.",
+                "Mallikarjun Goni, Palaksha Kanive Javaregowda, Vishwanath Chachadi and Virupakshaiah DBM (2021). Sialic acids: An avenue to target cancer progression, metastasis and resistance to therapy. Forum of Clinical Oncology. Vol. 12 (2). pp 1-9.",
+                "Preeti S Kumarmath and Sharada P (2021). Green approach for the synthesis of silver nanoparticles using Bryophyllum pinnatum, Internalization Journal of Green Pharmacy, Vol. 15 (3). pp 307-312."
+              ]
+            },
+            {
+              "year": "2020-2021",
+              "items": [
+                "Pavan Kumar, Mahesh S. Dashyal, Pushpa Doddaraju, Bharati S. Meti & Manjunath Girigowda (2021). Differential gene responses in different varieties of pomegranate during the pathogenesis of Xanthomonas axonopodis pv. Punicae, 3 Biotech. Vol. 11(4), pp 1-17.",
+                "Krishnamurthy Bhat, Bharati S Meti and K Chandrasekhar (2020). Planar Inter Digital Capacitive Sensor for Real time Transesterification Progress Monitoring of Karanja (Pongamia) Oil, Asian Journal of Convergence in Technology. Vol. 4 (3) pp 39-46.",
+                "Madhumala Y, Veena S Sorganvi and Nikhita H Ingalagi (2020). Chromium Reduction using bacterial Biofilms, International Journal of Applied Sciences and Technology. Vol. 5. pp 198-202.",
+                "Madhumala Y, Vijayalaxmi Naganuri, Megha Mathad (2020). Bioethanol Production from Waste Banana Peel, International Research JournaL of Engineering and Technology (irjet), Vol. 7, special issue, pp 124-129.",
+                "Madhumala Y, Goutami Hadimani, Savita Harke and Kaveri Lalaki (2020). Studies on Extraction and Applications of Prodigiosin from Serratia Marcescens, International Research Journal of Engineering And Technology (Irjet). Vol. 7, special issue, pp 227-231.",
+                "Hemalatha V B, Ajay Kumar Oli and D.B.M. Virupakshaiah (2020). Evaluating of Phage as Bio-control Agent in Enumeration of Food Borne Pathogenic Pseudomonas aeruginosa, J Pure Appl Microbiol Vol. 14 (3) pp 2115-2128.",
+                "Sharada P and Vikarahmed (2020). Alzheimer’s Disease: A Progressive Neurodegeneration International Research Journal of Engineering and Technology. Vol.7 (8) pp 2742-2744.",
+                "Vikarahmed, Sharada P, DBM Virupakshaih (2020). Annapurneshwari Biocomputational Approach for the Effective Treatment of Alzheimer's Disease International Journal of Pharmacy and Biological Sciences. Vol. 10 (3) pp192-197."
+              ]
+            },
+            {
+              "year": "2019-2020",
+              "items": [
+                "Madhumala Y, Manjula Mathapati and Dr. Veena S. Soraganvi (2019). Removal of heavy metal from industrial waste water using biofilm producing bacteria International Journal of Bio-Technology and Research. Vol. 9 (2), pp 15–30.",
+                "Shivleela V B, Srihari Prathapaneni, SharadaP & Girigouda K (2019). “N-terminal Domain of tlyA from Mycobacterium tuberculosis Displayed Concentration Dependent Ordered Structure” International Journal of Current Microbiology and Applied Sciences. Vol. 8 (10) pp 1917-1925.",
+                "Shivaleela, Shaik Kalimulla Niazi, Sharada P & Giri Gowda K (2019).“Mycobacterium tuberculosistlyA E59Q is stable compare to the native protein”International Journal of Current Microbiology and Applied Sciences. Vol. 8 (9). pp 2203-2212."
+              ]
+            },
+            {
+              "year": "2018-2019",
+              "items": [
+                "Madhumala Y, Veena Sorganvi and Bharati S Meti (2018). “Reduction of hexavalent chromium using biofilm forming isolates” International journal of technical innovation in modern engineering and science, Vol. 4 (11) pp 197 -205.",
+                "Vikas C Ghattargi, Yogesh Nimonkar, Shaunak Burse, Dimple Davray, Shreyas Kumbhare, Meghana Gaikwad, Mangesh Suryavanshi, Swapnil Doijad, Bhimashankar Utage, Om Sharma, Yogesh Shouche and Bharati S Meti (2018). “Genomic and physiological analysis of an Indigenous strain, Enterococcus faecium 170M39”, Functional and Integrative Genomics Springer publications. Vol. 12, pp 385-399.",
+                "Vikas C Ghattargi, Meghana Gaikwad, Dhiraj Dhotre, Yogesh Nimonkar, Om Sharma, Yogesh S Shouche, Shrikant Powar and Bharati S Meti (2018).“Comparative Genomics analysis reviles key genetic factors associated with Probiotic property in, Enterococcus faecium strains”, BMC Genomics. Vol. 19 (1). pp 1-16.",
+                "Vikas C. Ghattargi, Mangesh V. Suryavanshi, SwapnilKalam, Yogesh S Shouche, Bharati S. Meti (2018). “Need to explore camel milk as probiotics” Current Science. Vol. 114, pp 425-426."
+              ]
+            },
+            {
+              "year": "2017-2018",
+              "items": [
+                "Premjyoti C Patil and Bharati S Meti (2018). “Isolation of microalgae for biomass and lipid enhancement through placket-Burman Design” Int. J.Curr. Microbiol. App. Sci Vol. 7 (3). pp 2508-2518.",
+                "Madhumala Y, Vishal Managutti, Puja B Patil & Veena S Sorganvi (2017). “Comparative Study of Bioreduction of water containing Hexavalent chromium using biofilm forming and non-biofilm forming Bacteria”. International Journal of Advanced Research Methodology in Engineering and technology. Vol. 1 (2) pp 41- 44.",
+                "Anurag Bellankinamath, Ajay Katageri, Hemalata V B and Bharati S Meti (2017).“Isolation and Characterization of the Indigenous acetic acid from Western Ghats soil samples”. International Journal of Current Microbial Application Science Vol. 6 (9) pp 1255-1265."
+              ]
+            },
+            {
+              "year": "2016-2017",
+              "items": [
+                "Krishnamurthy Bhat, Bharati S. Meti & K. Chandrasekhar (2016). “Automation technique for online transesterification process of biodiesel plant in India” International Journal of Biotechnology and research. Vol. 6(1) pp13-18.",
+                "Krishnamurthy Bhat, Bharati S. Meti & K. Chandrasekhar (2016). “Consolidation of available methods and design of a reliable physicochemical system for transesterification progress monitoring in biodiesel reaction chamber” International Research Journal of Engineering and Technology. Vol. 3 (6) pp 2334-2338.",
+                "D.B.M. Virupakshaiah and V.B. Hemalata (2016). “Molecular Identification of Pseudomonas aeruginosa from food born isolates”. International journal of current microbiology and applied sciences. Vol.7 (6) pp 1026-1032.",
+                "V.B. Hemalata and D.B.M. Virupakshaiah (2016). “Isolation and Identification of food borne pathogens from spoiled food samples. International journal of current microbiology and applied sciences. Vol. 5 (6) pp 1017-1025.",
+                "Yashaswi R Metri & Bharati S Meti (2015). “Cellulosic Conversion to Bioethanol from Pongamia Pod- A Biodiesel Industry Waste” International Journal of Modern Engineering Research. Vol. 5 (9) pp 69-74.",
+                "Virupakshaiah DBM & Hemalatha V B (2015). “Bacteriophages are alternative Biocontrol agents to prevent the food borne pathogens” International Journal of Current Microbiology and applied science. Vol. 4 (9) pp 916-924.",
+                "Bharati S Meti & Shailaja B (2014). “Treatment of Sugar Process Wastewater & Biogas Production using algal biomass” International Journal of Engineering Research &Technology. Vol. 3 (9) pp 61-67.",
+                "Premjyothi C Patil & Bharati S Meti (2014). “A Brief Review on Algal Lipid”. International Journal of Research Studies in Biosciences. Vol. 2. pp 51-61.",
+                "Megeri G. B. & G. M. Madhu (2014). “Adsorption of Lead from Aqueous Solution using Aluminum Oxide” Journal of Chemical Engineering Research. Vol. 2 (1) pp 145-150.",
+                "Megeri G. B. & G. M. Madhu (2014). Adsorption and optimization studies of lead from aqueous solution using ᵞ-Alumina, Journal of Environmental chemical Engineering. Vol. 10. pp 30-39.",
+                "Virupakshaiah DBM, Kelamani Chandrakanth (2014). Homology Modelling of PBP2a Protein Form Methicillin Resistance Staphylococcus aureus Journal of Advanced Bioinformatics Applications and Research. Vol. 5 (1). pp 28-32.",
+                "Virupakshaiah DBM (2014). Insilico Designing of Methicillin Antibiotic Analogs For The Treatment OF Staphylococcus aureus Journal of Advanced Bioinformatics Applications and Research. Vol. 5 (1). pp 33-36.",
+                "Virupakshaiah DBM, KelamaniChandrakanth (2014). Screening and Docking Study of Insilico designed Antibiotics for the Treatment of Methicillin Resistance Staphylococcus aureus.Journal of Advanced Bioinformatics Applications and Research. Vol. 5 (1). pp 23-27.",
+                "Virupakshaiah DBM (2014). Insilico Screening of Secondary Metabolites Derived From Marine Fungi For Anticancer Study. Journal of Advanced Bioinformatics Applications and Research. Vol. 5 (2). pp 78-82.",
+                "Virupakshaiah DBM and Kelamani Chandrakanth (2014). Epidemiological Survey of Staphylococcus aureus isolated from clinical sample of Bagalkot district. International Journal of Informative and Futuristic Research. Vol. 1 (11). pp 34-40.",
+                "Virupakshaiah DBM and Kelamani Chandrakanth (2014). Molecular Characterization of Staphylococcus aureus isolated from Clinical Sample of Bagalkot District. International Journal of Informative and Futuristic Research Vol. 1 (11). pp 39-46.",
+                "Virupakshaiah DBM (2014). “Docking of secondary metabolites derived from marine fungi with Hsp90a protein in cancer treatment” Journal of advanced Bioinformatics Applications &Research. Vol. 5 (2) pp 92-96.",
+                "Virupakshaiah DBM, Kelamani Chandrakanth & P. B. Kalaburgi (2012). Amplification & Sequencing of mecA gene from methicillinresistance Staphylococcous aureus. International Journal of Advance Biotechnology & Research. Vol. 2 (3) pp 310-314.",
+                "Kalaburgi P. B, C. B. Shivayogimath, U. B. Deshannavar & Virupakshaiah DBM (2012). Water quality evaluation of river Ghataprabha, India “International Journal of Environmental Sciences”. Vol. 1 (1). pp 12-18.",
+                "Virupakshaiah DBM, Kelamani Chandrakanth (2011). Staphylococcus aureus strain DBM17 penicillin binding protein (mecA) gene, partial cds- Published in NCBI-NIH (WHO) BCT.",
+                "Sharada P and Naik G R (2011). “Physiological and Biochemical responses of groundnut genotypes to drought stress” Worlds Journal of Science and Technology. Vol. (1) pp 29-32.",
+                "Sharada P and Naik G R (2011). “Pyrroline-5-carboxylate synthetase- Isolation, Partial Purification and Its Characterization Worlds Journal of Science and Technology Vol. (3). pp 60-66.",
+                "Virupakshaiah DBM, Kelamani Chandrakanth & C. C. Gavimath Udaykumar Morbad (2010). “Comparative Genomics of Staphylococcus aureus coagulase gene Journal of Advanced Bioinformatics Applications and Research Vol. 1. pp 31-36."
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Edited Books",
+          "years": [
+            {
+              "year": "2024-25",
+              "items": [
+                "Jayachandra S. Yaradoddi (Editor), Bharati S. Meti (Editor), Sulochana B. Mudgulkar (Editor), Dayanand Agsar (Editor) Book Published. Frontiers in Food Biotechnology (2024). (Springer Publishers). ISBN: 978-981-97-3260-9."
+              ]
+            },
+            {
+              "year": "2023-24",
+              "items": [
+                "Dr. Chetan D.M., Dr. Jayachandra S. Yaradoddi, Dr. B.S Priya, Dr. S. Nanjunda Swamy, Dr. Ramesh S. Bhat (2023). A to Z MCQs in Microbiology (For UGC-CSIR NET Life Sciences Exam. ISBN : 978-93-91208-66-0."
+              ]
+            },
+            {
+              "year": "2022-23",
+              "items": [
+                "Jayachandra S. Yaradoddi, Merja Hannele Kontro, Sharanabasava V. Ganachari 2022. Actinobacteria- Ecology, Diversity, Classification and Extensive Applications. EBook ISBN- 978-981-16-3353-9. Springer Singapore. https://doi.org/10.1007/978-981-16-3353-9"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Book Chapters",
+          "years": [
+            {
+              "year": "2024-25",
+              "items": [
+                "Jayachandra S Yaradoddi, DM Chetan, Bharati S Meti, DBM Virupakshaiah, SS Injaganeri. Nutrigenomics and Nutri-informatics (2024). Jayachandra S. Yaradoddi (Editor), Bharati S. Meti (Editor), Sulochana B. Mudgulkar (Editor), Dayanand Agsar (Editor) Book Published. Frontiers in Food Biotechnology (2024). (Springer Publishers).Springer Nature 347-360. https://doi.org/10.1007/978-981-97-3261-6_20",
+                "Meti, B.S., Kulkarni, S.R., Jigajinni, S.K., Nainegali, B. (2024). Food Industry By-Products and Waste Management. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_14",
+                "Meti, B.S., Bhat, S., Shivaleela, V.B., Jigajinni, S.K. (2024). Food Business Management and Bioentrepreneurship. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_22",
+                "Sharada, P. (2024). Food Toxicology and Safety. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_10",
+                "Kumarmath, P.S. (2024). Nanotechnology in Food Industry. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_11",
+                "Madhumala, Y., Soraganvi, V.S. (2024). Microbiology of Food Spoilage. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_5",
+                "Bhavya, D.C., Virupakshaiah, D.B.M., Yaradoddi, J.S. (2024). Potentials of Probiotics in Food. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_24.",
+                "Yaradoddi, J.S., Meti, B.S., Shoba, H., Injaganeri, S.S. (2024). Prospect of Biotechnology in Foods. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_1.",
+                "Jayachandra S. Yaradoddi, Merja H. Kontro, D. M. Chetan, Gangadhar Megeri. Screening and Characterization of Carotenoid Pigment from the Actinobacteria. Protocols of Actinomycetes Edited by Dr. Karthik Loganathan. CRC Press. 2024. Pages 1-6. DOI:10.1201/9781003398400-14",
+                "N Yallappa, M., Megeri, G.B., Hungund, B.S., Jayachandra, S.Y. (2024). Fermentation Technology and Food Enzymes. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_13.",
+                "Patil, P. (2024). Functional Foods in Brief. In: Yaradoddi, J.S., Meti, B.S., Mudgulkar, S.B., Agsar, D. (eds) Frontiers in Food Biotechnology. Springer, Singapore. https://doi.org/10.1007/978-981-97-3261-6_4"
+              ]
+            },
+            {
+              "year": "2021-22",
+              "items": [
+                "Chandrashekar, M., Maralappanavar, M.S., Patil, P., Patil, N., Sivaram, A. (2022). Selection, Screening, and Analysis of Recombinant Clones. In: A Complete Guide to Gene Cloning: From Basic to Advanced . Techniques in Life Science and Biomedicine for the Non-Expert. Springer, Cham. https://doi.org/10.1007/978-3-030-96851-9_7"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Conference Papers",
+          "years": [
+            {
+              "year": null,
+              "items": [
+                "Shilpa K Jigajinni and Bharati S Meti , ‘Isolation optimization and molecular Characterization of novel lipase producing Lysinibacillus macrolides FSI from oil Rich Sample for Biodiesel Production’, 18th and 19th March, 2021. (Accepted for publication in the Journal, Current trends in Biotechnology and Pharmacy – powered by scopus,",
+                "Preeti S Kumarmath and Sharada P ,International Virtual Conference On :Sustainable Biotechnology. Paper titled “Antioxidant Assay of Bryophyllum gastonis bonniere at Salt Stress” 18th and 19th March, 2021. (Accepted for publication in the Journal, Current trends in Biotechnology and Pharmacy – powered by scopus",
+                "Preeti S Kumarmath and Sharada P, 2020,Green approach for the synthesis of Silver nano particles using Bryophyllum fedtschenkoi International Conference on Advanced Materials Science and Applications (Online)3-4 September, , 124, Ramaiah Institute of Technology, Bangalore, Karnataka, India.",
+                "Pavan Kumar, Manjunath G, Bharati S Meti.Bacillus subtilis based Bio-formulation for effective management of bacterial blight in Pomegranate. Poster presentation “International Conference on Plant Protection- in Horticulture (ICPPH-2019), - organized by ICAR-lndian Institute of Horticultural Research (IIHR), Bangalore. (July 2019).",
+                "Pavan kumar, Manjunath G, Bharati S Meti.Biological management of bacterial blight of pomegranate using Bacillus subtilis based bioformulations. “4th Edition of Global Conference on Plant Science and Molecular Biology”, London UK (September 2019).",
+                "Pavan Kumar, Pushpa Doddaraju, Abhishek gowda, Bharati S Meti and Manjunatha G. “Early diagnosis of bacterial blight pathogen Xanthomonas axanopodis pv. punicae in pomegranate, Poster presentation”. In National symposium on Cutting edge approaches for sustainable plant disease management and ensuring farmers’ profit”21-23 December (2018).",
+                "Sushma Hallad, Yashaswi R Metri & Bharati S Meti (2015) “Isolation of Cellulose Degrading Microbes From Western Ghats Of Karnataka” in Proceedings of Recent Trends in Environmental Waste Management (RTEWM) at Haveri.",
+                "Pavan Kumar, Bharati S Meti and Manjunatha G.Clove Oil an Effective Antibiotic Agent Against Bacterial Blight of Pomegranate. Oral presentation”. In National symposium on Cutting edge approaches for sustainable plant disease management and ensuring farmers’ profit”21-23 December (2018).",
+                "Premjyoti Patil & Bharati S. Meti “Microalgae the source of bioenergy” paper presentation in the International conference on recent trends in agriculture, biotechnology and food processing held at Agriculture college, Hassan, India from 5th to 7th July 2017",
+                "Virupakshaiah DBM, Madhiha Ahamad, Smita Patil & Kelamani Chandrakanth (2013) Molecular docking studies of Mycobacterium tuberculosis RNA polymerase β subunit (rpoB) Receptor. International Conference on world academy of science engineering and technology. Issue 77 May 2013 Amsterdam PP 551-556.",
+                "Virupakshaiah DBMPaper presentation on “Invitro rooting and acclimatization of sugarcane seedlings” in the International Symposium on ‘Acclimatization & Establishment of Micropropagated Plants’ at Faro, Portugal on 12-15, Sept. 2007.",
+                "Virupakshaiah DBM International Conference on “Docking studies on Antiviral Drugs for SARS” at Nice, France, on 8th to 16th Oct. 2007."
+              ]
+            }
+          ]
+        }
+      ],
+      "patents": [
+        {
+          "title": "Cookie mix for special need",
+          "applicationNumber": "201641042251",
+          "inventors": "Bharati S Meti & Shivaleela V B",
+          "area": "Food",
+          "filed": "10/12/2016",
+          "published": "23/12/2016",
+          "awarded": "3/11/2020",
+          "awardNumber": "350729"
+        },
+        {
+          "title": "Process of purification of glycerine",
+          "applicationNumber": "201741034620",
+          "inventors": "Shivaleela V B & Bharati S Meti",
+          "area": "Chemical",
+          "filed": "28/09/2017",
+          "published": "05/10/2018",
+          "awarded": "30/12/2021",
+          "awardNumber": "385625"
+        },
+        {
+          "title": "Soap preparation using organic waste for animal use to remove body pests like ticks",
+          "applicationNumber": "201741034621",
+          "inventors": "Bharati S Meti & Shivaleela V B",
+          "area": "Chemical",
+          "filed": "28/09/2017",
+          "published": "05/10/2018",
+          "awarded": "08/04/2022",
+          "awardNumber": "394358"
+        },
+        {
+          "title": "Bioformulation of Bacillus subtilis for management of bacterial blight in pomegranate",
+          "applicationNumber": "202141033369A",
+          "inventors": "Pavan Kumar, Bharati S Meti & Manjunath Girigowda",
+          "area": "Chemical",
+          "filed": "25/07/2021",
+          "published": "30/07/2021",
+          "awarded": "12/04/2024",
+          "awardNumber": "532662"
+        },
+        {
+          "title": "Amla blended pomegranate jam and its preparation process thereof",
+          "applicationNumber": "202341009959",
+          "inventors": "Bharati S Meti, Shivaleela V B and Shilpa K Jigajinni",
+          "filed": "14/02/2023",
+          "published": "23/02/2024",
+          "status": "Present status – hearing completed on 25/05/25 waiting for the award"
+        }
       ]
     },
     "civil-engg": {
@@ -648,7 +1153,7 @@
       "tagline": "A centre of excellence in teaching, research and innovation, shaping globally competent civil engineers for a sustainable society.",
       "established": "1963",
       "intake": "120",
-      "overview": "The Civil Engineering Department is one of the pioneering departments since the inception of the college in 1963. It is engaged in imparting quality education and producing outstanding graduates through qualified faculty and state-of-the-art infrastructure. The department offers a 4-year B.E. (intake 120) and 2-year M.Tech. programmes in Environmental Engineering, Geo-Technical Engineering and Structural Engineering (intake 18 each). It has been recognised as a Research Centre by VTU since 2003 and as a QIP Research Centre (Ph.D.) by AICTE, New Delhi since 2012, and is a State Resource Centre for training in Earthquake Engineering under NPCBEERM. The department has organised conferences, seminars and workshops, fetched research grants worth ₹183 lakhs, and provides consultancy services for various government and private agencies.",
+      "overview": "The Civil Engineering Department is one of the pioneering departments since the inception of the college in 1963. It is engaged in imparting quality education and producing outstanding graduates through qualified faculty and state-of-the-art infrastructure. The department offers a 4-year B.E. (intake 120) and 2-year M.Tech. programme in Structural Engineering with intake 18. It has been recognised as a Research Centre by VTU since 2003 and as a QIP Research Centre (Ph.D.) by AICTE, New Delhi since 2012, and is a State Resource Centre for training in Earthquake Engineering under NPCBEERM. The department has organised conferences, seminars and workshops, fetched research grants worth ₹183 lakhs, and provides consultancy services for various government and private agencies.",
       "vision": "To be a centre of excellence in teaching, research and innovation, shaping globally competent civil engineers toward the sustainable development of society.",
       "mission": [
         "Provide a student-centric learning environment, cultivating critical thinking and problem-solving skills in aspiring civil engineers.",
@@ -836,39 +1341,39 @@
           "members": [
             {
               "name": "Dr. S. H. Sanni",
-              "position": "Chairman and HOD Civil Engineering, BEC Bagalkot"
+              "position": "Chairman and HOD Civil Engineering, BEC Bagalkote"
             },
             {
               "name": "Prof. P. S. Bangarshetti",
-              "position": "Associate Professor, BEC Bagalkot"
+              "position": "Associate Professor, BEC Bagalkote"
             },
             {
               "name": "Dr. B. R. Hiremath",
-              "position": "Associate Professor, BEC Bagalkot"
+              "position": "Associate Professor, BEC Bagalkote"
             },
             {
               "name": "Dr. M. M. Hanamasagar",
-              "position": "Associate Professor, BEC Bagalkot"
+              "position": "Associate Professor, BEC Bagalkote"
             },
             {
               "name": "Prof. S. M. Kalagudi",
-              "position": "Assistant Professor, BEC Bagalkot"
+              "position": "Assistant Professor, BEC Bagalkote"
             },
             {
               "name": "Prof. S. F. Chitragar",
-              "position": "Assistant Professor, BEC Bagalkot"
+              "position": "Assistant Professor, BEC Bagalkote"
             },
             {
               "name": "Prof. S. A. Kambali",
-              "position": "Assistant Professor, BEC Bagalkot"
+              "position": "Assistant Professor, BEC Bagalkote"
             },
             {
               "name": "Prof. G. H. Bandihal",
-              "position": "Assistant Professor, BEC Bagalkot"
+              "position": "Assistant Professor, BEC Bagalkote"
             },
             {
               "name": "Prof. G. S. Hiremath",
-              "position": "Assistant Professor, BEC Bagalkot"
+              "position": "Assistant Professor, BEC Bagalkote"
             },
             {
               "name": "Dr. S. Sireesh",
@@ -900,8 +1405,12 @@
           "title": "Board of Examiners",
           "members": [
             {
+              "name": "Dr. S. H. Sanni",
+              "position": "Chairman and HOD Civil Engineering, BEC Bagalkote"
+            },
+            {
               "name": "Prof. B. A. Patil",
-              "position": "Assistant Professor"
+              "position": "Co-ordinator"
             }
           ]
         }
@@ -938,6 +1447,18 @@
         {
           "supervisor": "Dr. G. B. Megeri",
           "area": "Civil engineering research (recognised Ph.D. guide)"
+        },
+        {
+          "supervisor": "Dr. Shreeshail Heggond",
+          "area": "Structural engineering; nano-materials, high-performance concrete and smart construction"
+        },
+        {
+          "supervisor": "Dr. Srinivas F. Chitragar",
+          "area": "Transportation systems engineering, highway engineering and pavement materials"
+        },
+        {
+          "supervisor": "Dr. Jayalatha N. A.",
+          "area": "Environmental engineering, wastewater treatment and bioremediation"
         }
       ],
       "phdsAwarded": [
@@ -1139,7 +1660,7 @@
           "scholar": "Manjukumar P.",
           "usn": "2BA18PCV01",
           "guide": "Dr. V. S. Soraganvi",
-          "title": "Urban Sprawling of Bagalkot City and Surrounding Heritage Structures",
+          "title": "Urban Sprawling of Bagalkote City and Surrounding Heritage Structures",
           "status": "DC Formed"
         },
         {
@@ -1413,6 +1934,28 @@
           "title": "Participation by 50 students at National Level PRAXIS-2024, KLECET Chikodi (cash prizes totalling Rs. 11,000)",
           "date": "29 February - 1 March 2024"
         }
+      ],
+      "researchAchievements": [
+        "23 research scholars are currently pursuing Ph.D. under 8 recognised Ph.D. guides; 25 scholars have been awarded Ph.D. since 2003 (3 in 2024–25).",
+        "Patent granted: “Tre-Fall Resisting Apparatus for a Straight Tree” — Dr. S. M. Malkapur & Dr. Shankar H. Sanni (Design No. 4252115-001, granted 30 July 2024).",
+        "Patent granted: “An Electro-Mechanical System for Prevention of Wastage of Cold Water Stored in Hot Water Pipeline” — Dr. R. N. Herkal & Dr. Krishnamurthy Bhat (Patent No. 3471221, granted 2020).",
+        "Patent published: “Tree-Fall Resisting System/Apparatus at the Off-Street Area for an Inclined Tree” — Dr. S. M. Malkapur & Dr. Shankar H. Sanni (Application No. 202241009473 A).",
+        "Best Paper Award — Dr. Santosh M. Malkapur & Dr. Shankar H. Sanni, SIIOC 2024, NITK Surathkal (April 2024).",
+        "Best Paper Award — Dr. Jayalatha N. A. & Dr. G. B. Megeri, “Sustainable Wastewater Management with Native Plant Reed Beds”, ICSSET 2024, BEC Bagalkote (September 2024).",
+        "Best Presenter — Dr. Santhosh M. Malkapur, “Studies on Cool Roof Coatings Using Locally Available Materials”, ICNHCE, MIT Manipal (December 2024).",
+        "Second Best Paper Awards — Dr. Shankar H. Sanni and team, NCRAEM-21, Amrutha Institute of Engineering and Management (2021)."
+      ],
+      "mous": [
+        {
+          "partner": "Medini Technology",
+          "location": "Bangalore",
+          "since": "2013"
+        },
+        {
+          "partner": "WALMI (Water and Land Management Institute)",
+          "location": "Dharwad",
+          "since": "2024"
+        }
       ]
     },
     "computer-science-and-engg": {
@@ -1424,7 +1967,11 @@
       "visionMissionOnHome": true,
       "groupSupportingStaff": true,
       "placementsSummaryOnly": true,
-      "galleryExclude": ["cine1451", "cine1479", "cine1482"],
+      "galleryExclude": [
+        "cine1451",
+        "cine1479",
+        "cine1482"
+      ],
       "overview": "The Department of Computer Science and Engineering was established in 1983. It offers an undergraduate programme (B.E.) in Computer Science and Engineering with an intake of 180 students, along with M.Sc. (Engineering by Research) and Ph.D. programmes. The department has highly qualified and well-experienced faculty committed to imparting quality technical education in IT and research. Its primary objectives include developing innovative skills, enriching academics through quality teaching-learning processes, building student confidence and inculcating entrepreneurial abilities — producing professionals with ethical values and societal concern.",
       "vision": "To be a Centre of Excellence in IT education, research and innovation, crafting competent professionals catering to the needs of society with moral and ethical values.",
       "mission": [
@@ -1437,7 +1984,7 @@
         "B.E.(Computer Science & Engineering)",
         "M.Sc. (Engineering) by Research",
         "Ph.D. (VTU Belagavi)",
-		"Ph.D. (AICTE QIP)"
+        "Ph.D. (AICTE QIP)"
       ],
       "peos": [
         {
@@ -1477,7 +2024,7 @@
         "9 VTU-recognized research supervisors across Pattern Recognition, Image Processing, IoT and Network Security.",
         "Dedicated research labs in Multimedia & Vision Computing, Wireless & Mobile Computing and Data Mining.",
         "Active student forum (FOCUS).",
-		"Industry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna Technologies."
+        "Industry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna Technologies."
       ],
       "researchAreas": [
         {
@@ -1928,31 +2475,31 @@
           "members": [
             {
               "name": "Dr. V. B. Pagi",
-              "position": "Chairman — Professor & Head, CSE, BEC Bagalkot"
+              "position": "Chairman — Professor & Head, CSE, BEC Bagalkote"
             },
             {
               "name": "Dr. S. V. Saboji",
-              "position": "Internal Member — Professor, CSE, BEC Bagalkot"
+              "position": "Internal Member — Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Dr. S. M. Hatture",
-              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkot"
+              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Dr. V. H. Naik",
-              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkot"
+              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Prof. S. S. Yendigeri",
-              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkot"
+              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Prof. S. V. Hanji",
-              "position": "Internal Member — Assistant Professor, CSE, BEC Bagalkot"
+              "position": "Internal Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Dr. P. S. Challagidad",
-              "position": "Internal Member — Assistant Professor, CSE, BEC Bagalkot"
+              "position": "Internal Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Dr. Mahadev Prasanna",
@@ -1980,7 +2527,7 @@
             },
             {
               "name": "Dr. Bharati Reshmi",
-              "position": "Co-opted Member — Associate Professor, ISE, BEC Bagalkot"
+              "position": "Co-opted Member — Associate Professor, ISE, BEC Bagalkote"
             },
             {
               "name": "Mr. Mohammad Ibrahim Korti",
@@ -2000,11 +2547,11 @@
         },
         {
           "partner": "Threat Hunters Club LLP",
-          "location": "Bagalkot"
+          "location": "Bagalkote"
         },
         {
           "partner": "Sovanna Technologies",
-          "location": "Bagalkot",
+          "location": "Bagalkote",
           "since": "2023"
         },
         {
@@ -2086,14 +2633,38 @@
       "assetSlug": "ece",
       "tagline": "Excellence in electronics & communication engineering through quality education and research.",
       "newsletters": [
-        { "title": "ECE Newsletter — October 2025", "file": "departments/ece/newsletters/ece-newsletter-oct-2025.pdf" },
-        { "title": "ECE Newsletter — November 2025", "file": "departments/ece/newsletters/ece-newsletter-nov-2025.pdf" },
-        { "title": "ECE Newsletter — December 2025", "file": "departments/ece/newsletters/ece-newsletter-dec-2025.pdf" },
-        { "title": "ECE Newsletter — January 2026", "file": "departments/ece/newsletters/ece-newsletter-jan-2026.pdf" },
-        { "title": "ECE Newsletter — February 2026", "file": "departments/ece/newsletters/ece-newsletter-feb-2026.pdf" },
-        { "title": "ECE Newsletter — March 2026", "file": "departments/ece/newsletters/ece-newsletter-mar-2026.pdf" },
-        { "title": "ECE Newsletter — April 2026", "file": "departments/ece/newsletters/ece-newsletter-apr-2026.pdf" },
-        { "title": "ECE Newsletter — May 2026", "file": "departments/ece/newsletters/ece-newsletter-may-2026.pdf" }
+        {
+          "title": "ECE Newsletter — October 2025",
+          "file": "departments/ece/newsletters/ece-newsletter-oct-2025.pdf"
+        },
+        {
+          "title": "ECE Newsletter — November 2025",
+          "file": "departments/ece/newsletters/ece-newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "ECE Newsletter — December 2025",
+          "file": "departments/ece/newsletters/ece-newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "ECE Newsletter — January 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "ECE Newsletter — February 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "ECE Newsletter — March 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "ECE Newsletter — April 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-apr-2026.pdf"
+        },
+        {
+          "title": "ECE Newsletter — May 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-may-2026.pdf"
+        }
       ],
       "established": "1985",
       "overview": "The Department of Electronics and Communication (E&C) Engineering was established in 1985. It offers an undergraduate programme in Electronics and Communication Engineering along with Ph.D. programmes in cutting-edge areas such as VLSI Design, Digital Signal Processing, Wireless Networking, MEMS and Speech Signal Processing. Recognised as a Quality Improvement Programme (QIP) centre by the Government of India, the department has a strong legacy in research and development — particularly in communications, signal processing, microelectronics and RF/photonics. It hosts well-equipped laboratories spanning digital electronics, advanced digital communication, microwave communication, microprocessors and microcontrollers, and computer networks, along with an exclusive computing facility running industry-standard tools such as CADENCE VLSI, ECAD and VHDL simulation/synthesis packages. The department regularly organises seminars, workshops and training programmes under initiatives like TEQIP, ACME and AICTE, and has executed several AICTE-sponsored projects to strengthen its laboratory and research capabilities.",
@@ -2176,7 +2747,10 @@
         {
           "name": "ACME — Association for Communication and Modern Electronics",
           "about": "The Association for Communication and Modern Electronics (ACME) is the official student association of the Department of Electronics and Communication Engineering. It serves as a dynamic platform for students to explore, engage, and excel beyond academics. ACME organizes a wide variety of events throughout the year, including technical workshops, seminars, sports competitions, cultural programs, fun activities, and celebrations of important days. The association aims to foster all-round development by encouraging creativity, teamwork, leadership, and technical excellence among students. By bridging academics with extracurricular involvement, ACME plays a vital role in enriching the campus experience for ECE students.",
-          "coordinators": ["Dr. Sharanappa P. H.", "Dr. Basavaraj M. Angadi"]
+          "coordinators": [
+            "Dr. Sharanappa P. H.",
+            "Dr. Basavaraj M. Angadi"
+          ]
         }
       ],
       "contact": {
@@ -2814,6 +3388,43 @@
               "position": "Coordinator"
             }
           ]
+        },
+        {
+          "title": "ACME Executive Committee (2025-26)",
+          "members": [
+            {
+              "name": "Mr. Vinay",
+              "position": "Vice President"
+            },
+            {
+              "name": "Miss. Deepa",
+              "position": "Ladies Representative"
+            },
+            {
+              "name": "Mr. Darshan",
+              "position": "Treasurer"
+            },
+            {
+              "name": "Mr. Vikas & Miss. Vinuta",
+              "position": "Cultural Secretaries"
+            },
+            {
+              "name": "Mr. Ullas & Miss. Priya",
+              "position": "Sports Secretaries"
+            },
+            {
+              "name": "Mr. Shreyas & Miss. Ananya",
+              "position": "Social Media Secretaries"
+            },
+            {
+              "name": "Mr. Sumit, Mr. Abhishek, Miss. Pooja & Miss. Apoorva",
+              "position": "Magazine Coordinators"
+            },
+            {
+              "name": "Mr. Vinod & Miss. Sanketha",
+              "position": "Avishkar Coordinators"
+            }
+          ]
         }
       ],
       "mous": [
@@ -2971,28 +3582,59 @@
         {
           "title": "Innovations in Teaching and Learning (Best Practices)",
           "file": "departments/ece/docs/innovations-in-teaching-and-learning.pdf"
-        },
-        {
-          "title": "MoU - Saaketh Electrocircuit Pvt. Ltd., Pune",
-          "file": "departments/ece/docs/mou-saaketh-electrocircuit.pdf"
-        },
-        {
-          "title": "MoU - AG Electric Motors, Karad",
-          "file": "departments/ece/docs/mou-ag-electric-motors.pdf"
-        },
-        {
-          "title": "MoU - VI Solutions Pvt. Ltd., Bengaluru",
-          "file": "departments/ece/docs/mou-vi-solutions.pdf"
-        },
-        {
-          "title": "MoU - Krishitharanga Farmtech LLP, Vijayapura",
-          "file": "departments/ece/docs/mou-krishitharanga-farmtech.pdf"
-        },
-        {
-          "title": "MoU - Space Zee Technologies Pvt. Ltd., Chennai",
-          "file": "departments/ece/docs/mou-space-zee-technologies.pdf"
         }
-      ]
+      ],
+      "pos": [
+        {
+          "code": "PO1",
+          "text": "Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences."
+        },
+        {
+          "code": "PO3",
+          "text": "Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations."
+        },
+        {
+          "code": "PO4",
+          "text": "Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions."
+        },
+        {
+          "code": "PO5",
+          "text": "Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations."
+        },
+        {
+          "code": "PO6",
+          "text": "The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice."
+        },
+        {
+          "code": "PO7",
+          "text": "Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development."
+        },
+        {
+          "code": "PO8",
+          "text": "Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice."
+        },
+        {
+          "code": "PO9",
+          "text": "Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+        },
+        {
+          "code": "PO10",
+          "text": "Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions."
+        },
+        {
+          "code": "PO11",
+          "text": "Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments."
+        },
+        {
+          "code": "PO12",
+          "text": "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
+        }
+      ],
+      "about": "Welcome to ECE at BEC. Since 1985, we've evolved from teaching basic circuits to advancing work in VLSI design, speech processing, wireless networks, MEMS, and emerging areas of electronics. Our students learn by building, experimenting, and questioning—because engineering is best understood through practice. We expect commitment, curiosity, and initiative, and in return, our faculty provide the guidance and support needed to grow. This department is yours to build—and we'll hold you to that trust."
     },
     "electrical-and-electronics-engg": {
       "name": "Electrical & Electronics Engineering",
@@ -3020,29 +3662,76 @@
       ],
       "labs": [
         {
-          "name": "Electrical Machines Lab"
+          "name": "Electrical Machines Lab",
+          "description": "Carpet area 330 sq.m (11 x 30). Major equipment: DC rectifier, 230 V / 32 A. Total investment till date: Rs. 25,94,867."
         },
         {
-          "name": "High Voltage Engineering Lab"
+          "name": "Electrical Measurement Lab",
+          "description": "Carpet area 195.5 sq.m (8.5 x 23). Total investment till date: Rs. 1,79,152."
         },
         {
-          "name": "Power System Lab"
+          "name": "High Voltage Lab",
+          "description": "Carpet area 56 sq.m (7 x 8). Major equipment: 100 kV high-voltage cascade transformer unit. Total investment till date: Rs. 5,43,658."
         },
         {
-          "name": "Microcontrollers Lab"
+          "name": "Micro Controller Lab",
+          "description": "Carpet area 35.75 sq.m (5.5 x 6.5). Major equipment: 8051 microcontroller kits. Total investment till date: Rs. 8,59,354."
         },
         {
-          "name": "Power System Protection Lab"
+          "name": "Analog and Digital Electronics Lab",
+          "description": "Carpet area 48.25 sq.m (7.5 x 6.5). Major equipment: digital CRO and power packs."
         },
         {
-          "name": "Renewable Energy Lab"
+          "name": "Digital Signal Processing Lab",
+          "description": "Carpet area 29.75 sq.m (8.5 x 3.5). Major equipment: Yokogawa digital oscilloscope DL9140 (1 GHz bandwidth, 4 channels). Total investment till date: Rs. 13,28,920."
         },
         {
-          "name": "SCADA Lab"
+          "name": "Power Electronics & Control System Simulation Lab",
+          "description": "Carpet area 45.5 sq.m (6.5 x 7)."
         },
         {
-          "name": "Computer Centre",
-          "description": "State-of-the-art systems with AutoCAD, MATLAB, Mi-Power, Windographer and Code Composer Studio."
+          "name": "FPGA Lab (TEQIP-II)",
+          "description": "FPGA-based power electronics laboratory. Total investment till date: Rs. 21,36,000."
+        },
+        {
+          "name": "Power Systems Lab",
+          "description": "Carpet area 19.25 sq.m (5.5 x 3.5). Total investment till date: Rs. 11,87,531."
+        },
+        {
+          "name": "Computer Lab",
+          "description": "Carpet area 29.75 sq.m (8.5 x 3.5). Total investment till date: Rs. 18,66,529."
+        },
+        {
+          "name": "AutoCAD Laboratory",
+          "description": "Carpet area 29.75 sq.m (8.5 x 3.5)."
+        },
+        {
+          "name": "Seminar Hall",
+          "description": "Carpet area 65 sq.m (10 x 6.5). Facilities: LCD projector with screen."
+        },
+        {
+          "name": "Software Licenses",
+          "description": "Departmental software licenses. Total investment till date: Rs. 25,78,120."
+        },
+        {
+          "name": "SCADA Lab (TEQIP)",
+          "description": "Carpet area 175 sq.m. Major equipment: wind electrical generator with controller and accessories (Model UE-15, 1.5 kW / 24 V). Total investment till date: Rs. 40,00,000."
+        },
+        {
+          "name": "Energy Lab (TEQIP)",
+          "description": "Carpet area 175 sq.m. Total investment till date: Rs. 27,70,000. Total laboratory investment across the department: Rs. 2,00,44,131."
+        },
+        {
+          "name": "UG Classrooms & Department Seminar Hall",
+          "description": "Room 107 (105 sq.m) with smart board and lecture-capturing facility; Room 206 (105 sq.m) with LCD display; Department Seminar Hall (65 sq.m) with LCD display."
+        },
+        {
+          "name": "Faculty Rooms & Department Office",
+          "description": "Nine faculty rooms - Rooms 1 to 8 at 115 sq.m each and Room 9 at 84 sq.m, with personal PCs and internet; EE department office (Room 10) at 126 sq.m."
+        },
+        {
+          "name": "Computing Facilities (UG)",
+          "description": "48 computers in total; 21 UG computer terminals (terminal-to-student ratio 1:4) with dual-core-and-above hardware; 45 terminals on LAN/WAN with 1 Gbps network connectivity; licensed Windows 10, MATLAB (networked), AutoCAD Electrical 2006 and MS Office; internet speed scaled by intake from 16 Mbps to 64 Mbps."
         }
       ],
       "peos": [
@@ -3096,6 +3785,11 @@
         {
           "supervisor": "Dr. B. F. Ronad",
           "area": "Solar PV powered irrigation, DC distribution systems, electric vehicle chargers",
+          "university": "VTU, Belagavi"
+        },
+        {
+          "supervisor": "Dr. S. Y. Goudappanavar",
+          "area": "Wind and solar energy in smart grid",
           "university": "VTU, Belagavi"
         }
       ],
@@ -3401,7 +4095,7 @@
           "members": [
             {
               "name": "Dr. R. L. Naik",
-              "position": "Chairman — Professor & HoD, Dept. of E&EE, BEC, Bagalkot"
+              "position": "Chairman — Professor & HoD, Dept. of E&EE, BEC, Bagalkote"
             },
             {
               "name": "Dr. Nagendrappa H.",
@@ -3456,19 +4150,71 @@
               "position": "Member Secretary — Associate Professor, Dept. of E&EE, BEC"
             }
           ]
+        },
+        {
+          "title": "Board of Examiners (BoE)",
+          "members": [
+            {
+              "name": "Dr. R. L. Naik",
+              "position": "Chairman — Professor & Head, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Smt. Sunita S. Tambakad",
+              "position": "BoE Coordinator — Assistant Professor, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Prof. Apoorva Kulkarni",
+              "position": "Issuing Coordinator — Assistant Professor, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Prof. Mahantesh L. Chikkadesai",
+              "position": "QP Proof-Reading Section Coordinator — Assistant Professor, Dept. of E&EE, BEC"
+            }
+          ]
         }
       ],
       "mous": [
         {
+          "partner": "A. G. Electro Services",
+          "since": "2013"
+        },
+        {
           "partner": "HESCOM (Hubballi Electricity Supply Company)",
           "location": "Hubballi",
           "since": "2018"
+        },
+        {
+          "partner": "Krishi Tharanga",
+          "location": "Vijayapur",
+          "since": "2024"
+        },
+        {
+          "partner": "PRDC",
+          "location": "Bengaluru",
+          "since": "2010"
+        },
+        {
+          "partner": "Saaketh Electronic Circuit Pvt. Ltd.",
+          "since": "2024"
+        },
+        {
+          "partner": "Shanthala Power Limited",
+          "since": "2024"
+        },
+        {
+          "partner": "Flensburg University of Applied Sciences",
+          "since": "2024"
         }
       ],
       "infrastructureItems": [
         {
           "name": "Wind Turbine Generator",
           "specification": "3-phase PMSG, 1500 W rated output, 12-48 V / 60-140 V operation",
+          "quantity": "1"
+        },
+        {
+          "name": "Equipment for Light Laboratory",
+          "specification": "Anemometer, lux meter and light loads",
           "quantity": "1"
         },
         {
@@ -3530,6 +4276,44 @@
           "name": "Vertical Axis Wind Turbine Kit",
           "specification": "Training system",
           "quantity": "1"
+        },
+        {
+          "name": "Solar PV Panels",
+          "specification": "Mono-crystalline 180 W (12 V) and poly-crystalline 150 W (12 V) modules mounted on MS-tube structures with iron poles for vertical support (procured 2021)."
+        },
+        {
+          "name": "KREDL Energy Park Devices",
+          "specification": "Solar still, solar water heater, solar box cooker, solar street- and garden-lighting systems, solar drier, wind-solar hybrid systems and solar parabolic cooker, supplied under the KREDL Energy Park scheme (procured 2007)."
+        },
+        {
+          "name": "FPGA-based WAVECT Controller",
+          "specification": "4 voltage and 4 current sensors (up to 1000 V and 25 A) with FPGA processor generating 16 PWM pulses, ADC, motor speed sensing and instantaneous voltage/current waveform capture (procured 2016).",
+          "quantity": "1"
+        },
+        {
+          "name": "DC Motor with Mechanical Load",
+          "specification": "1.0 kW, 320 V, 1500 rpm with 1024-ppr incremental encoder for speed feedback and brake-drum mechanical loading (procured 2016).",
+          "quantity": "1"
+        },
+        {
+          "name": "Induction Motor with Mechanical Load",
+          "specification": "1.5 kW / 2.0 HP, 415 V, 1420 rpm, 3-phase with 1024-ppr incremental encoder and brake-drum mechanical loading (procured 2016).",
+          "quantity": "1"
+        },
+        {
+          "name": "Switched Reluctance Motor Drive with Mechanical Load",
+          "specification": "2.2 kW / 3 HP, 320 V, 3000 rpm, 8/6 SRM with 1024-ppr incremental encoder and brake-drum mechanical loading (procured 2018).",
+          "quantity": "1"
+        },
+        {
+          "name": "Two-Level Inverter with Class-E Chopper",
+          "specification": "3-phase IGBT-based inverter with rectifier and Class-E chopper feeding a DC motor with controlled supply (procured 2016).",
+          "quantity": "1"
+        },
+        {
+          "name": "3-Phase Diode Bridge Rectifier with 4-Phase SRM Inverter",
+          "specification": "Bridge rectifier with 415 Vac input, up to 560 Vdc output, and 4-phase IGBT inverter at 10 kHz switching frequency (procured 2018).",
+          "quantity": "1"
         }
       ],
       "softwareItems": [
@@ -3544,11 +4328,11 @@
         },
         {
           "name": "MATLAB",
-          "usage": "Modelling, simulation and analysis"
+          "usage": "Modelling, simulation and analysis (MATLAB 50-user / Simulink 25-user license)"
         },
         {
           "name": "AutoCAD",
-          "usage": "Electrical design and drafting"
+          "usage": "Electrical design and drafting (AutoCAD Electrical, 30-user license)"
         },
         {
           "name": "Windographer",
@@ -3556,7 +4340,11 @@
         },
         {
           "name": "Code Composer Studio",
-          "usage": "Embedded / DSP development"
+          "usage": "Embedded / DSP development (DK-DSP-2S810N development kit, 10-user license)"
+        },
+        {
+          "name": "Smart Grid Simulation Environment",
+          "usage": "Smart-grid modelling and simulation (PRDC, Bengaluru)"
         }
       ],
       "associations": [
@@ -3575,7 +4363,7 @@
       "contact": {
         "name": "Dr. R. L. Naik",
         "designation": "Professor (CAS) & Head, Department of Electrical & Electronics Engineering",
-        "phone": "+91-9986424111",
+        "phone": "+91-9986424111, +91-7019824435",
         "email": "hodee@becbgk.edu"
       },
       "documents": [
@@ -3650,21 +4438,228 @@
             "file": "departments/eee/docs/bos-proceedings-2025.pdf"
           }
         ]
-      }
+      },
+      "pos": [
+        {
+          "code": "PO1",
+          "text": "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop solutions to complex engineering problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)"
+        },
+        {
+          "code": "PO3",
+          "text": "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)"
+        },
+        {
+          "code": "PO4",
+          "text": "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis and interpretation of data to provide valid conclusions. (WK8)"
+        },
+        {
+          "code": "PO5",
+          "text": "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering and IT tools, including prediction and modelling, recognizing their limitations to solve complex engineering problems. (WK2 and WK6)"
+        },
+        {
+          "code": "PO6",
+          "text": "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for their impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5 and WK7)"
+        },
+        {
+          "code": "PO7",
+          "text": "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national and international laws. (WK9)"
+        },
+        {
+          "code": "PO8",
+          "text": "Individual and Collaborative Team Work: Function effectively as an individual and as a member or leader in diverse and multi-disciplinary teams."
+        },
+        {
+          "code": "PO9",
+          "text": "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, and make effective presentations considering cultural, language and learning differences."
+        },
+        {
+          "code": "PO10",
+          "text": "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one's own work, as a member and leader in a team, to manage projects and in multidisciplinary environments."
+        },
+        {
+          "code": "PO11",
+          "text": "Life-Long Learning: Recognize the need for and have the preparation and ability for (i) independent and life-long learning, (ii) adaptability to new and emerging technologies and (iii) critical thinking in the broadest context of technological change. (WK8)"
+        }
+      ],
+      "wk": [
+        {
+          "code": "WK1",
+          "text": "A systematic, theory-based understanding of the natural sciences applicable to the discipline and awareness of relevant social sciences."
+        },
+        {
+          "code": "WK2",
+          "text": "Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed analysis and modelling applicable to the discipline."
+        },
+        {
+          "code": "WK3",
+          "text": "A systematic, theory-based formulation of engineering fundamentals required in the engineering discipline."
+        },
+        {
+          "code": "WK4",
+          "text": "Engineering specialist knowledge that provides theoretical frameworks and bodies of knowledge for the accepted practice areas in the engineering discipline; much is at the forefront of the discipline."
+        },
+        {
+          "code": "WK5",
+          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, reuse of resources, net zero carbon and similar concepts, that supports engineering design and operations in a practice area."
+        },
+        {
+          "code": "WK6",
+          "text": "Knowledge of engineering practice (technology) in the practice areas in the engineering discipline."
+        },
+        {
+          "code": "WK7",
+          "text": "Knowledge of the role of engineering in society and identified issues in engineering practice in the discipline, such as the professional responsibility of an engineer to public safety and sustainable development."
+        },
+        {
+          "code": "WK8",
+          "text": "Engagement with selected knowledge in the current research literature of the discipline, and awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
+        },
+        {
+          "code": "WK9",
+          "text": "Ethics, inclusive behaviour and conduct. Knowledge of professional ethics, responsibilities and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
+        }
+      ],
+      "sectionTitles": {
+        "research": "Research, Laboratories & Facilities"
+      },
+      "sectionNavLabels": {
+        "research": "Research & Facilities"
+      },
+      "activities": [
+        {
+          "title": "SDP: Solar PV Design using PV-Syst & Google SketchUp (Resource person: Mr. Madan Mohan K, MD, HIEE, Hyderabad)",
+          "date": "13-15 Feb 2025"
+        },
+        {
+          "title": "SDP: From Concept to Market - Design, Development and Manufacturing of Electric Motors (Resource person: Shri S. V. Ramdurgakar, Founder, AG Electro Service, Karad)",
+          "date": "15-17 Dec 2025"
+        },
+        {
+          "title": "SDP: Embedded Systems using ARM Controller (Resource persons from Advanced Electronic Systems & Solutions and SPJ Embedded Technologies)",
+          "date": "21-23 Feb 2026"
+        },
+        {
+          "title": "Empowering Powerman - A Comprehensive Training for HESCOM Lineman (with HESCOM resource persons)",
+          "date": "6-8 Jan 2025"
+        },
+        {
+          "title": "SDP: Electric Vehicle Training with 3-Wheeler Loader Components (Resource persons from NAMO Mobility and ISIEINDIA)",
+          "date": "16-20 Sep 2025"
+        },
+        {
+          "title": "FDP: Electrical Energy, Power Systems and Safety Practices (with HESCOM resource persons)",
+          "date": "5-7 Jan 2026"
+        },
+        {
+          "title": "FDP: Smart Irrigation Systems - Design, Automation, Integration and Sustainable Practices in Agriculture",
+          "date": "9-13 Feb 2026"
+        },
+        {
+          "title": "FDP: AI-ML Based Smart Grid (Resource persons from Itron, NIT Goa, IISc, PRDC, L&T and IIT Dharwad)",
+          "date": "30 Jan - 3 Feb 2025"
+        },
+        {
+          "title": "Alumni Seminar: Abroad Education in Germany - Mr. Vivekanand Sajjan (Secretary, SGM Group of Institutions), BEC Bagalkote",
+          "date": "4 May 2026"
+        },
+        {
+          "title": "Alumni Webinar: Practical Design of DC-DC Power Converters - Mr. Gangadhar Akki (Power Electronics Engineer, Robert Bosch, Bengaluru)",
+          "date": "29 Mar 2025"
+        },
+        {
+          "title": "Alumni Webinar: Next Gen Vehicles - Bridging the Last-Mile Gap on Indian Roads - Mr. Jagadish Patil (Salsync Consultants Pvt. Ltd.)",
+          "date": "12 Nov 2025"
+        },
+        {
+          "title": "Alumni Webinar: AI & ML - A Comprehensive Overview - Mr. Prasenjit Biswas (Project Design Leader, Schneider Electric Pvt. Ltd.)",
+          "date": "22 Mar 2025"
+        },
+        {
+          "title": "Alumni Mentorship Program (EE Seminar Hall)"
+        },
+        {
+          "title": "Sports: Cricket - Runners Up, VTU Kalaburagi Division Cricket Tournament, RYMEC Bellary (Veerbhadragouda Patil)",
+          "date": "30 Apr 2026"
+        },
+        {
+          "title": "Sports: Cricket - Winners, VTU Kalaburagi Division Cricket Tournament, RYMEC Bellary (Sandeepraddi & Veerbhadragouda Patil)",
+          "date": "31 Mar 2025"
+        },
+        {
+          "title": "Sports: Hockey - Winners, VTU Kalaburagi Division Tournament, RYMEC Bellary (Prajwal Shiggavi)",
+          "date": "21 Jan 2024"
+        },
+        {
+          "title": "Sports: Hockey - 3rd Place, VTU Division Tournament, CIT Ponnampet (Prajwal Shiggavi)",
+          "date": "29 Feb 2024"
+        },
+        {
+          "title": "Sports: Handball (Women) - Zonal Champions, VTU Handball Zonals, BEC Bagalkote (Nanditha G. Hiremath & Shivaranjini Malipatil)",
+          "date": "5 Dec 2024"
+        },
+        {
+          "title": "Sports: Handball (Women) - State Champions, VTU Handball Tournament, BEC Bagalkote (Nanditha G. Hiremath)",
+          "date": "5 Dec 2024"
+        },
+        {
+          "title": "Sports: Kho-Kho (Men) - VTU Zonal Champions, RYMEC Bellary (Prajwal Shiggavi)",
+          "date": "28-29 Apr 2025"
+        },
+        {
+          "title": "Sports: Handball - Winners, VTU Kalaburagi Zone, BITM Bellary (Annadanesh & Mallanagouda Patil)",
+          "date": "21-22 May 2025"
+        },
+        {
+          "title": "Sports: Basketball - Winners, VTU Kalaburagi Zone, BEC Bagalkote (Harish Kuri & Annadanesh)",
+          "date": "14-15 May 2025"
+        },
+        {
+          "title": "Sports: Handball (Women) - Zonal Champions, VTU Handball Zonals, SIT Mysore (Nanditha G. Hiremath & Shivaranjini Malipatil)",
+          "date": "20-23 Dec 2025"
+        }
+      ]
     },
     "electronics-and-computer-engg": {
       "name": "Electronics and Computer Engineering",
       "assetSlug": "ecs",
       "tagline": "An interdisciplinary department blending electronics engineering and computer science to design, develop and integrate innovative technologies.",
       "newsletters": [
-        { "title": "ECS Newsletter — October 2025", "file": "departments/ecs/newsletters/newsletter-oct-2025.pdf" },
-        { "title": "ECS Newsletter — November 2025", "file": "departments/ecs/newsletters/newsletter-nov-2025.pdf" },
-        { "title": "ECS Newsletter — December 2025", "file": "departments/ecs/newsletters/newsletter-dec-2025.pdf" },
-        { "title": "ECS Newsletter — January 2026", "file": "departments/ecs/newsletters/newsletter-jan-2026.pdf" },
-        { "title": "ECS Newsletter — February 2026", "file": "departments/ecs/newsletters/newsletter-feb-2026.pdf" },
-        { "title": "ECS Newsletter — March 2026", "file": "departments/ecs/newsletters/newsletter-mar-2026.pdf" },
-        { "title": "ECS Newsletter — April 2026", "file": "departments/ecs/newsletters/newsletter-apr-2026.pdf" },
-        { "title": "ECS Newsletter — May 2026", "file": "departments/ecs/newsletters/newsletter-may-2026.pdf" }
+        {
+          "title": "ECS Newsletter — October 2025",
+          "file": "departments/ecs/newsletters/newsletter-oct-2025.pdf"
+        },
+        {
+          "title": "ECS Newsletter — November 2025",
+          "file": "departments/ecs/newsletters/newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "ECS Newsletter — December 2025",
+          "file": "departments/ecs/newsletters/newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "ECS Newsletter — January 2026",
+          "file": "departments/ecs/newsletters/newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "ECS Newsletter — February 2026",
+          "file": "departments/ecs/newsletters/newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "ECS Newsletter — March 2026",
+          "file": "departments/ecs/newsletters/newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "ECS Newsletter — April 2026",
+          "file": "departments/ecs/newsletters/newsletter-apr-2026.pdf"
+        },
+        {
+          "title": "ECS Newsletter — May 2026",
+          "file": "departments/ecs/newsletters/newsletter-may-2026.pdf"
+        }
       ],
       "established": "2024",
       "intake": "60",
@@ -3893,7 +4888,7 @@
       ],
       "contact": {
         "name": "Dr. Chayalakshmi C. L.",
-        "designation": "Associate Professor & Head",
+        "designation": "Associate Professor and Head",
         "phone": "+91-9902678858",
         "email": "chayalakshmi.cl@gmail.com"
       },
@@ -3919,10 +4914,10 @@
       ],
       "curriculumGroups": [
         {
-          "title": "Scheme of Teaching & Examinations",
+          "title": "Scheme of Teaching and Examinations",
           "documents": [
             {
-              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "title": "Scheme of Teaching and Examinations (2025-26)",
               "file": "departments/ecs/docs/scheme-2025-26.pdf"
             }
           ]
@@ -3931,7 +4926,7 @@
           "title": "Syllabus",
           "documents": [
             {
-              "title": "Scheme & Syllabus (2024-25)",
+              "title": "Scheme and Syllabus (2024-25)",
               "file": "departments/ecs/docs/scheme-syllabus-2024-25.pdf"
             }
           ]
@@ -3953,6 +4948,15 @@
             "file": "departments/ecs/docs/activities-2025-26.pdf"
           }
         ]
+      },
+      "sectionTitles": {
+        "curriculum": "Curriculum and Syllabus",
+        "research": "Research and Labs",
+        "activities": "Activities and Forums",
+        "infrastructure": "Infrastructure and Labs"
+      },
+      "sectionNavLabels": {
+        "research": "Research and Labs"
       }
     },
     "industrial-and-production-engg": {
@@ -4487,14 +5491,30 @@
           "title": "Geometrical Dimensioning and Tolerancing (GD&T) (SDP)",
           "date": "27 March 2026",
           "description": "Practical-oriented session organised by the Departments of Mechanical Engineering Sciences covering symbols, datums, tolerance zones and their real-time applications in design, manufacturing and quality control. Resource person: Mr. Gitan Ginde, Founder Director of Ganitharth Technologies and an alumnus of the IPE Department."
-        }
-      ],
-      "additionalContacts": [
+        },
         {
-          "name": "Dr. C. M. Javalagi",
-          "designation": "Professor and Head",
-          "phone": "+91-9448751788",
-          "email": "cmjavalagi@gmail.com"
+          "title": "Ph.D. Awarded — Mr. Mahesh Ratnappa Latti",
+          "date": "1 August 2025",
+          "description": "Research Scholar Mr. Mahesh Ratnappa Latti (2BA18PIP03) was awarded a Ph.D. degree in “Analysis of Key Supply Chain Drivers in Medium & Small Scale Industries (MSMEs)” under the guidance of Prof. Dr. C. M. Javalagi at the department research centre."
+        },
+        {
+          "title": "Book Release — “Productivity Management of Apparel Industry in India”",
+          "date": "2 June 2025",
+          "description": "The book “Productivity Management of Apparel Industry in India — A Systems Perspective” authored by Dr. S. M. Pharsiyawar was released through LAP LAMBERT Academic Publishing."
+        },
+        {
+          "title": "Workshop on “Out of Box Thinking for Problem Solving” at B.V.S. Polytechnic",
+          "date": "24 February 2025",
+          "description": "Dr. S. M. Pharsiyawar conducted a workshop for final-year students at B.V.S. Polytechnic, Bagalkote, and served as the Chief Guest of the ceremony."
+        },
+        {
+          "title": "Lecture on “Personality Development” at B.V.S. Polytechnic",
+          "date": "25 September 2025",
+          "description": "Dr. S. M. Pharsiyawar delivered a lecture during the Career Guidance Program for 3rd-year students at B.V.S. Polytechnic, Bagalkote."
+        },
+        {
+          "title": "Treasure Hunt at SAMYUTI, Chanakya University",
+          "description": "IPE students participated in the Treasure Hunt organised at SAMYUTI by Chanakya University — an interactive event that tested problem-solving skills, teamwork and presence of mind, requiring teams to decode puzzles and solve riddles across the campus."
         }
       ]
     },
@@ -4609,7 +5629,10 @@
         {
           "name": "RISE — Rays of Information Science Engineers (Student Association of ISE)",
           "about": "The departmental student association, functioning since 2007-08, provides a platform for students to develop leadership, management, organisational and technical skills. It organises technical talks, workshops, training and skill/staff development programmes, and celebrations through the academic year, with active participation from alumni.",
-          "coordinators": ["Prof. G. B. Shettar", "Prof. S. S. Hiremath"]
+          "coordinators": [
+            "Prof. G. B. Shettar",
+            "Prof. S. S. Hiremath"
+          ]
         }
       ],
       "contact": {
@@ -5097,7 +6120,7 @@
       "tagline": "Excelling in mechanical engineering education, research and innovation for sustainable development.",
       "established": "1963",
       "intake": "120",
-      "overview": "Established in 1963, the Department of Mechanical Engineering is one of the oldest and largest departments of Basaveshwar Engineering College, Bagalkot. The department offers a B.E. programme with an annual intake of 120 students and has a recognized Research and Development Centre offering M.Sc. (Engg.) and Ph.D. programmes under VTU, Belagavi. It is also a recognized QIP Centre of AICTE, Government of India. The B.E. programme is NBA-accredited under the Tier-I framework aligned with the Washington Accord up to June 2028. Faculty members have successfully completed sponsored research projects worth over Rs. 300 lakhs, published over 500 research papers along with books and book chapters and guided 66 research scholars to Ph.D. degrees. Supported by Government funding agencies such as DRDO, DST, CSIR, NRB and VGST, the department provides excellent research facilities, strong industry interaction, industrial exposure and career opportunities in both core and IT sectors.",
+      "overview": "Established in 1963, the Department of Mechanical Engineering is one of the oldest and largest departments of Basaveshwar Engineering College, Bagalkote. The department offers a B.E. programme with an annual intake of 120 students and has a recognized Research and Development Centre offering M.Sc. (Engg.) and Ph.D. programmes under VTU, Belagavi. It is also a recognized QIP Centre of AICTE, Government of India. The B.E. programme is NBA-accredited under the Tier-I framework aligned with the Washington Accord up to June 2028. Faculty members have successfully completed sponsored research projects worth over Rs. 300 lakhs, published over 500 research papers along with books and book chapters and guided 66 research scholars to Ph.D. degrees. Supported by Government funding agencies such as DRDO, DST, CSIR, NRB and VGST, the department provides excellent research facilities, strong industry interaction, industrial exposure and career opportunities in both core and IT sectors.",
       "vision": "To excel in Mechanical Engineering education, research and innovation for sustainable development.",
       "mission": [
         "Develop students with the necessary knowledge and skills to meet societal needs.",
@@ -5511,6 +6534,90 @@
           "version": "V14.5",
           "usage": "Finite element analysis (FEA)"
         }
+      ],
+      "wk": [
+        {
+          "code": "WK1",
+          "text": "A systematic, theory-based understanding of the natural sciences applicable to the discipline and awareness of relevant social sciences."
+        },
+        {
+          "code": "WK2",
+          "text": "Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed analysis and modelling applicable to the discipline."
+        },
+        {
+          "code": "WK3",
+          "text": "A systematic, theory-based formulation of engineering fundamentals required in the engineering discipline."
+        },
+        {
+          "code": "WK4",
+          "text": "Engineering specialist knowledge that provides theoretical frameworks and bodies of knowledge for the accepted practice areas in the engineering discipline; much is at the forefront of the discipline."
+        },
+        {
+          "code": "WK5",
+          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, re-use of resources, net zero carbon, and similar concepts, that supports engineering design and operations in a practice area."
+        },
+        {
+          "code": "WK6",
+          "text": "Knowledge of engineering practice (technology) in the practice areas in the engineering discipline."
+        },
+        {
+          "code": "WK7",
+          "text": "Knowledge of the role of engineering in society and identified issues in engineering practice in the discipline, such as the professional responsibility of an engineer to public safety and sustainable development."
+        },
+        {
+          "code": "WK8",
+          "text": "Engagement with selected knowledge in the current research literature of the discipline, awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
+        },
+        {
+          "code": "WK9",
+          "text": "Ethics, inclusive behavior and conduct. Knowledge of professional ethics, responsibilities, and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
+        }
+      ],
+      "pos": [
+        {
+          "code": "PO1",
+          "text": "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4)."
+        },
+        {
+          "code": "PO3",
+          "text": "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5)."
+        },
+        {
+          "code": "PO4",
+          "text": "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8)."
+        },
+        {
+          "code": "PO5",
+          "text": "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6)."
+        },
+        {
+          "code": "PO6",
+          "text": "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7)."
+        },
+        {
+          "code": "PO7",
+          "text": "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9)."
+        },
+        {
+          "code": "PO8",
+          "text": "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams."
+        },
+        {
+          "code": "PO9",
+          "text": "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences."
+        },
+        {
+          "code": "PO10",
+          "text": "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments."
+        },
+        {
+          "code": "PO11",
+          "text": "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change (WK8)."
+        }
       ]
     },
     "physics": {
@@ -5786,6 +6893,43 @@
           "title": "Board of Examiners — Members (2025-26)",
           "file": "departments/physics/docs/boe-members-2025-26.pdf"
         }
+      ],
+      "activities": [
+        {
+          "title": "Cryogenics and Thermo-electrical Materials",
+          "date": "21 December 2024",
+          "description": "Resource person: Dr. Prasad Vishnu Bhotla, Professor, IISc Bengaluru. Coordinators: Prof. S. S. Bopardekar, Dr. Shaila U. Durgadsimi."
+        },
+        {
+          "title": "Nanotechnology",
+          "date": "9 February 2024",
+          "description": "Resource person: Dr. Prasad Vishnu Bhotla, Professor, IISc Bengaluru. Coordinators: Prof. S. S. Bopardekar, Dr. Shaila U. Durgadsimi."
+        },
+        {
+          "title": "Phase Change Memory Materials and its Applications",
+          "date": "2 February 2024",
+          "description": "Resource person: Dr. K. Ramesh, Principal Research Scientist, Physics Department, IISc Bengaluru. Coordinators: Prof. S. S. Bopardekar, Dr. Shaila U. Durgadsimi."
+        },
+        {
+          "title": "Thermal Properties of Materials",
+          "date": "2 February 2024",
+          "description": "Resource person: Dr. Prasad Vishnu Bhotla, Professor, IISc Bengaluru. Coordinators: Prof. S. S. Bopardekar, Dr. Shaila U. Durgadsimi."
+        },
+        {
+          "title": "Recent Advances in Thin Film Technology",
+          "date": "19–21 December 2013",
+          "description": "Coordinators: Dr. J. G. Ghantimath, Prof. S. S. Bopardekar, Prof. S. B. Navalgund."
+        },
+        {
+          "title": "Workshop on “Composites and their Applications”",
+          "date": "March 2013",
+          "description": "Coordinators: Dr. Shaila U. Durgadsimi, Prof. R. P. Araganji."
+        },
+        {
+          "title": "Robotics & Nanotechnology",
+          "date": "February 2009",
+          "description": "Coordinators: Dr. Shaila U. Durgadsimi, Prof. R. P. Araganji."
+        }
       ]
     },
     "chemistry": {
@@ -5915,19 +7059,19 @@
           "members": [
             {
               "name": "Dr. S. K. Patil",
-              "position": "Chairman - Associate Professor & HoD BEC Bagalkot",
+              "position": "Chairman - Associate Professor & HoD BEC Bagalkote",
               "email": "sunilkumar.kp1971@gmail.com",
               "phone": "9448766350"
             },
             {
               "name": "Dr. P. Timmanagoudar",
-              "position": "Member - Professor. BEC Bagalkot",
+              "position": "Member - Professor. BEC Bagalkote",
               "email": "tgoudarprakash@gmail.com",
               "phone": "9448693600"
             },
             {
               "name": "Dr. V. R. Kattimani",
-              "position": "Member -  Professor (CAS) BEC Bagalkot",
+              "position": "Member -  Professor (CAS) BEC Bagalkote",
               "email": "veerannachem@gmail.com",
               "phone": "9916022971"
             },
@@ -5950,15 +7094,15 @@
           "members": [
             {
               "name": "Dr. S. K. Patil",
-              "position": "Chairman - Associate Professor & HoD,  BEC Bagalkot"
+              "position": "Chairman - Associate Professor & HoD,  BEC Bagalkote"
             },
             {
               "name": "Dr. V. R. Kattimani",
-              "position": "Member -  Professor (CAS) , BEC Bagalkot"
+              "position": "Member -  Professor (CAS) , BEC Bagalkote"
             },
             {
               "name": "Smt. K M Shettar",
-              "position": "Member / Valuation Coordinator - Assistant Professor, BEC Bagalkot"
+              "position": "Member / Valuation Coordinator - Assistant Professor, BEC Bagalkote"
             }
           ]
         }
@@ -6026,7 +7170,7 @@
           "members": [
             {
               "name": "Dr. S. V. Gurushantanavar",
-              "position": "Chairman — Associate Professor & HOD, Department of Mathematics, BEC, Bagalkot"
+              "position": "Chairman — Associate Professor & HOD, Department of Mathematics, BEC, Bagalkote"
             },
             {
               "name": "Dr. C. M. Suresha",
@@ -6038,55 +7182,55 @@
             },
             {
               "name": "Dr. V. M. Shettar",
-              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. Mahadev M. Biradar",
-              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. K. Ramprasad",
-              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. A. H. Agadi",
-              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. Ishwar Maharudrappa",
-              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Prof. (Smt) V. M. Pudakalakatti",
-              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. Pradeep Hiremath",
-              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. Abhilash L. Nandeppanavar",
-              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. S. S. Benchalli",
-              "position": "Member — Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. S. H. Sanni",
-              "position": "Invitee — Retired Professor, BEC, Bagalkot"
+              "position": "Invitee — Retired Professor, BEC, Bagalkote"
             },
             {
               "name": "Dr. Lokesh Bhajantri",
-              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. S. M. Jigajinni",
-              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkote"
             },
             {
               "name": "Dr. Manjula A. Sutagundar",
-              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkot"
+              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkote"
             }
           ]
         },
@@ -6176,387 +7320,387 @@
         "phone": "+91-9611431878",
         "email": "bghhs@becbgk.edu"
       },
-        "curriculumGroups": [
-          {
-            "title": "First Year (2025-26)",
-            "documents": [
-              {
-                "title": "Scheme of Teaching & Examinations (2025-26)",
-                "file": "departments/hss/docs/scheme-1st-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus (2025-26)",
-                "file": "departments/hss/docs/syllabus-1st-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus — Samskrutika Kannada (1BHSA107C)",
-                "file": "departments/hss/docs/syllabus-1st-year-samskrutika-kannada-1bhsa107c.pdf"
-              },
-              {
-                "title": "Syllabus — Balake Kannada (1BHSB107C)",
-                "file": "departments/hss/docs/syllabus-1st-year-balake-kannada-1bhsb107c.pdf"
-              }
-            ]
-          },
-          {
-            "title": "Second Year (2025-26)",
-            "documents": [
-              {
-                "title": "Scheme of Teaching & Examinations (2025-26)",
-                "file": "departments/hss/docs/scheme-2nd-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus (2025-26)",
-                "file": "departments/hss/docs/syllabus-2nd-year-25-26.pdf"
-              }
-            ]
-          },
-          {
-            "title": "Third Year (2025-26)",
-            "documents": [
-              {
-                "title": "Scheme of Teaching & Examinations (2025-26)",
-                "file": "departments/hss/docs/scheme-3rd-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus (2025-26)",
-                "file": "departments/hss/docs/syllabus-3rd-year-25-26.pdf"
-              }
-            ]
-          },
-          {
-            "title": "Fourth Year (2025-26)",
-            "documents": [
-              {
-                "title": "Scheme of Teaching & Examinations (2025-26)",
-                "file": "departments/hss/docs/scheme-4th-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus — VII & VIII Semester (2025-26)",
-                "file": "departments/hss/docs/syllabus-4th-year-25-26.pdf"
-              }
-            ]
-          },
-          {
-            "title": "Time Tables (2025-26)",
-            "documents": [
-              {
-                "title": "Time Table — Odd Semester",
-                "file": "departments/hss/docs/time-table-odd-sem-25-26.pdf"
-              },
-              {
-                "title": "Time Table — Even Semester",
-                "file": "departments/hss/docs/time-table-even-sem-25-26.pdf"
-              }
-            ]
-          }
-        ],
-        "activities": [
-          {
-            "title": "Classroom online quizzes after every topic",
-            "date": "Ongoing"
-          },
-          {
-            "title": "Student seminars — document preparation and PPT presentations on the digital board (I semester)",
-            "date": "Ongoing"
-          }
-        ],
-        "committeeGroups": [
-          {
-            "title": "Board of Studies in Humanities & Social Sciences",
-            "members": [
-              {
-                "name": "Dr. B. G. Hokarani",
-                "position": "Chairman — BEC, Bagalkote"
-              },
-              {
-                "name": "Dr. Sujata D.Patil",
-                "position": "Member(VTU Nominee) — PDA Engineering College,Kalaburgi"
-              },
-              {
-                "name": "Dr.Ridhima",
-                "position": "Member — IIT Dharawad"
-              },
-              {
-                "name": "Dr. Tejashwini B.J",
-                "position": "Member (Subject Expert) — BMSIT&M,Bengaluru"
-              },
-              {
-                "name": "Mrs. Jyoti Rotti",
-                "position": "Member(Alumni) — CEO and Co-FounderNEWNOP Technologies Pvt Ltd,Bengaluru"
-              },
-              {
-                "name": "Miss. Nidhi P. Koranmath",
-                "position": "Member(Internal) — BEC, Bagalkote"
-              },
-              {
-                "name": "Smt. Shanta Byadagi",
-                "position": "Member(Internal) — BEC, Bagalkote"
-              },
-              {
-                "name": "Dr.S.G.Kambalimath",
-                "position": "Member(Internal) — BEC, Bagalkote"
-              },
-              {
-                "name": "Shri. P. V. Kulkarni",
-                "position": "Subject Expert(Internal) — BEC, Bagalkote"
-              },
-              {
-                "name": "Dr.Shobha R.Patil",
-                "position": "Subject Expert(Internal) — BEC, BagalkoteCoordinator UHV-Cell"
-              },
-              {
-                "name": "Dr. S.K. Patil",
-                "position": "Subject Expert(Internal) — Associate ProfessorNSS Co-Ordinator,BEC, BGK"
-              },
-              {
-                "name": "Shri. Ganesh Kori",
-                "position": "Subject Expert(Internal) — Physical Director,BEC, BGK"
-              }
-            ]
-          },
-          {
-            "title": "Panel of Examiners (2025-26)",
-            "members": [
-              {
-                "name": "B.G.Hokarani.",
-                "position": "Assistant Professor.HOD of HSS. — Department of Humanities and Social Sciences. Basaveshwar Engineering College, Bagalkote"
-              },
-              {
-                "name": "Prof.Nidhi P.Koranmath",
-                "position": "Assistant Professor — Basaveshwar Engineering College, Bagalkote.Department of Humanities and Social Sciences"
-              },
-              {
-                "name": "Smt.Shanta Byadagi",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences Basaveshwar Engineering College, Bagalkote"
-              },
-              {
-                "name": "Prof. Ganesh Tilve",
-                "position": "Assistant Professor — Department of Biotechnology Engineering.GMIT Davangere"
-              },
-              {
-                "name": "Prof.Suresh Doddi",
-                "position": "Assistant Professor — Department of Mechanical Engineering.BLDEACET, Vijayapur."
-              },
-              {
-                "name": "Dr.I.G.Patil",
-                "position": "Professor — Department of Mechanical Engineering. TCE, Gadag ."
-              },
-              {
-                "name": "Prof.Sunil Biradar",
-                "position": "Associate Professor — Department of Mechanical EngineeringBLDEA’S Engineering College,Vijayapura"
-              },
-              {
-                "name": "Dr.Sujata.D.Patil",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering. Kalburgi"
-              },
-              {
-                "name": "Dr.Gloria",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Technology Hubli."
-              },
-              {
-                "name": "Sangappa K Kuppas",
-                "position": "Yoga Trainer — Vivekananda Yoga Vignan Kendra,Bagalkote."
-              },
-              {
-                "name": "Prof. Ganesh Kori",
-                "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.Bhimanagouda Chitranal",
-                "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof. Shantu kattimani",
-                "position": "Sports Trainer — Department of Sports. Basaveshwar International Public School,Bagalakote"
-              },
-              {
-                "name": "Dr.Tejaswini B J",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. BMSIT&M,Yelahank PDA, Bangalur"
-              },
-              {
-                "name": "Prof.Anand.Patil.",
-                "position": "Assistant Professor.HOD of HSS — Department of Humanities and Social Sciences. PDA, College of Engineering, Kalaburgi."
-              },
-              {
-                "name": "Prof.Shivakumar Nayak",
-                "position": "Assistant Professor — Department of Electrical and Electronic Engineering.Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.M.M.Ganganallimath",
-                "position": "Assistant Professor — Department of Industrial and Production Engineering.Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Smt. Roopa B. MathDepartment of ISE",
-                "position": "Assistant Professor — Department of Information Science Engineering.Basaveshwar Engineering College,Bagalkote"
-              },
-              {
-                "name": "Prof.Hariharan P.",
-                "position": "Assistant Professor — Department of Biotechnology Engineering.Sir M Visvesvaraya Institute of Technology,Bangalur."
-              },
-              {
-                "name": "Purushottam Kumar",
-                "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru."
-              },
-              {
-                "name": "Dr.Rakesh Huded",
-                "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi."
-              },
-              {
-                "name": "Dr.Savitri Sattagiri.",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences PDA College of Engineering.Kalburgi."
-              },
-              {
-                "name": "Prof.Usharani M.",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences Maharaj Technical University ,BelavadiMandya.-571477"
-              },
-              {
-                "name": "Dr.Savithri Shantagiri",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering.Gulbarga."
-              },
-              {
-                "name": "Prof.Uma Bhavani",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. Maharaj Technical University ,BelavadiMandya.-571477"
-              },
-              {
-                "name": "Prof. Prateeka R Pujar",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
-              },
-              {
-                "name": "Prof.S.V.Katti",
-                "position": "Assistant Professor — Department of English.Basaveshwar Art’s College,Bagalkote."
-              },
-              {
-                "name": "Dr.G.I.Nandikolmath",
-                "position": "Assistant Professor — Department of Kannada.Akkamahadevi Woman’s College,Bagalkote."
-              },
-              {
-                "name": "Dr.Rekha Chauhan",
-                "position": "Assistant Professor — Government Law College, Hasana ."
-              },
-              {
-                "name": "Prof.Prashantha.B.B",
-                "position": "Assistant Professor — Department of Physics.Sir M Visvesvaraya institute of technology, Hunasamaranahalli, Bangalur."
-              },
-              {
-                "name": "Dr.Jayachandra S Y",
-                "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College Bagalkote."
-              },
-              {
-                "name": "Prof.Rajashekhar Malgihal",
-                "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Prof.Shivakumar Nayak",
-                "position": "Assistant Professor — Department of Electrical and Electronic EngineeringBasaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.Supriya Harlapur.",
-                "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Dr.Nagaraj Kalligudda",
-                "position": "Assistant Professor — Department of Artificial Intelligence and Machine learning EngineeringBasaveshwar Engineering College Bagalkote."
-              },
-              {
-                "name": "Prof.P.V.Kulkani",
-                "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Dr.D.D.Challal",
-                "position": "Assistant Professor — Department of Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Dr.Vilas Niak",
-                "position": "Assistant Professor — Department of Computer Science EngineeringBasaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.M.M.Ganganallimath",
-                "position": "Assistant Professor — Department of Mechanical EngineeringBasaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.R.G.Patil",
-                "position": "Assistant Professor — Department of Electrical and Electronic Engineering Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.A.S.Chatra",
-                "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Dr. S.V.Heggond",
-                "position": "Assistant Professor — Department of Civil Engineering Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.Dinesh B.Mirajkar",
-                "position": "Assistant Professor — Department of Information Science EngineeringTatyasaheb Kore Institute of Engineering and Technology Warana University Warananagar, Maharashtra"
-              },
-              {
-                "name": "Prof.Sanjay Yadav",
-                "position": "Assistant Professor — Department of Mechanical Engineering. Basaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Prof.V.V.Rajput",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Gogte Institute of Technology Belagavi."
-              },
-              {
-                "name": "Dr.Madumala Y",
-                "position": "Assistant Professor — Department of Biotechnology Engineering.Basaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Prof.Hariharan P.",
-                "position": "Assistant Professor — Department of Biotechnology.Sir M Visvesvaraya Institute of Technology, Bangalur"
-              },
-              {
-                "name": "Phri.A Vishnupriya",
-                "position": "Assistant Manager — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
-              },
-              {
-                "name": "Prof.Shivam Kumar",
-                "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
-              },
-              {
-                "name": "Dr.Basavaraj H. N",
-                "position": "Assistant Professor — Department of Computer Science EngBMSIT AND M,Bangalur"
-              },
-              {
-                "name": "Dr.Rakesh Huded",
-                "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi"
-              },
-              {
-                "name": "Dr.Shobha Patil",
-                "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwa Engineering College, Bagalkote"
-              },
-              {
-                "name": "Prof. Priti Kumarmath",
-                "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Dr.Mallikarjun Aralimarad",
-                "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Shri.Himanshu Vyas",
-                "position": "Soft Skills trainer — Z Skillup ,Bangaluru."
-              },
-              {
-                "name": "Dr.Prashant Niranjan",
-                "position": "Associate Professor — Department of Computer Science Engineering. GIT,Belagavi"
-              },
-              {
-                "name": "Dr.C.R.Hiremath",
-                "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
-              },
-              {
-                "name": "Prof. Jayanti S.Sakri",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
-              },
-              {
-                "name": "Prof. Prashant Puthani",
-                "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
-              }
-            ]
-          }
-        ]
+      "curriculumGroups": [
+        {
+          "title": "First Year (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/hss/docs/scheme-1st-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus (2025-26)",
+              "file": "departments/hss/docs/syllabus-1st-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus — Samskrutika Kannada (1BHSA107C)",
+              "file": "departments/hss/docs/syllabus-1st-year-samskrutika-kannada-1bhsa107c.pdf"
+            },
+            {
+              "title": "Syllabus — Balake Kannada (1BHSB107C)",
+              "file": "departments/hss/docs/syllabus-1st-year-balake-kannada-1bhsb107c.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Second Year (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/hss/docs/scheme-2nd-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus (2025-26)",
+              "file": "departments/hss/docs/syllabus-2nd-year-25-26.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Third Year (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/hss/docs/scheme-3rd-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus (2025-26)",
+              "file": "departments/hss/docs/syllabus-3rd-year-25-26.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Fourth Year (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/hss/docs/scheme-4th-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus — VII & VIII Semester (2025-26)",
+              "file": "departments/hss/docs/syllabus-4th-year-25-26.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Time Tables (2025-26)",
+          "documents": [
+            {
+              "title": "Time Table — Odd Semester",
+              "file": "departments/hss/docs/time-table-odd-sem-25-26.pdf"
+            },
+            {
+              "title": "Time Table — Even Semester",
+              "file": "departments/hss/docs/time-table-even-sem-25-26.pdf"
+            }
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "title": "Classroom online quizzes after every topic",
+          "date": "Ongoing"
+        },
+        {
+          "title": "Student seminars — document preparation and PPT presentations on the digital board (I semester)",
+          "date": "Ongoing"
+        }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies in Humanities & Social Sciences",
+          "members": [
+            {
+              "name": "Dr. B. G. Hokarani",
+              "position": "Chairman — BEC, Bagalkote"
+            },
+            {
+              "name": "Dr. Sujata D.Patil",
+              "position": "Member(VTU Nominee) — PDA Engineering College,Kalaburgi"
+            },
+            {
+              "name": "Dr.Ridhima",
+              "position": "Member — IIT Dharawad"
+            },
+            {
+              "name": "Dr. Tejashwini B.J",
+              "position": "Member (Subject Expert) — BMSIT&M,Bengaluru"
+            },
+            {
+              "name": "Mrs. Jyoti Rotti",
+              "position": "Member(Alumni) — CEO and Co-FounderNEWNOP Technologies Pvt Ltd,Bengaluru"
+            },
+            {
+              "name": "Miss. Nidhi P. Koranmath",
+              "position": "Member(Internal) — BEC, Bagalkote"
+            },
+            {
+              "name": "Smt. Shanta Byadagi",
+              "position": "Member(Internal) — BEC, Bagalkote"
+            },
+            {
+              "name": "Dr.S.G.Kambalimath",
+              "position": "Member(Internal) — BEC, Bagalkote"
+            },
+            {
+              "name": "Shri. P. V. Kulkarni",
+              "position": "Subject Expert(Internal) — BEC, Bagalkote"
+            },
+            {
+              "name": "Dr.Shobha R.Patil",
+              "position": "Subject Expert(Internal) — BEC, BagalkoteCoordinator UHV-Cell"
+            },
+            {
+              "name": "Dr. S.K. Patil",
+              "position": "Subject Expert(Internal) — Associate ProfessorNSS Co-Ordinator,BEC, BGK"
+            },
+            {
+              "name": "Shri. Ganesh Kori",
+              "position": "Subject Expert(Internal) — Physical Director,BEC, BGK"
+            }
+          ]
+        },
+        {
+          "title": "Panel of Examiners (2025-26)",
+          "members": [
+            {
+              "name": "B.G.Hokarani.",
+              "position": "Assistant Professor.HOD of HSS. — Department of Humanities and Social Sciences. Basaveshwar Engineering College, Bagalkote"
+            },
+            {
+              "name": "Prof.Nidhi P.Koranmath",
+              "position": "Assistant Professor — Basaveshwar Engineering College, Bagalkote.Department of Humanities and Social Sciences"
+            },
+            {
+              "name": "Smt.Shanta Byadagi",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences Basaveshwar Engineering College, Bagalkote"
+            },
+            {
+              "name": "Prof. Ganesh Tilve",
+              "position": "Assistant Professor — Department of Biotechnology Engineering.GMIT Davangere"
+            },
+            {
+              "name": "Prof.Suresh Doddi",
+              "position": "Assistant Professor — Department of Mechanical Engineering.BLDEACET, Vijayapur."
+            },
+            {
+              "name": "Dr.I.G.Patil",
+              "position": "Professor — Department of Mechanical Engineering. TCE, Gadag ."
+            },
+            {
+              "name": "Prof.Sunil Biradar",
+              "position": "Associate Professor — Department of Mechanical EngineeringBLDEA’S Engineering College,Vijayapura"
+            },
+            {
+              "name": "Dr.Sujata.D.Patil",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering. Kalburgi"
+            },
+            {
+              "name": "Dr.Gloria",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Technology Hubli."
+            },
+            {
+              "name": "Sangappa K Kuppas",
+              "position": "Yoga Trainer — Vivekananda Yoga Vignan Kendra,Bagalkote."
+            },
+            {
+              "name": "Prof. Ganesh Kori",
+              "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.Bhimanagouda Chitranal",
+              "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof. Shantu kattimani",
+              "position": "Sports Trainer — Department of Sports. Basaveshwar International Public School,Bagalakote"
+            },
+            {
+              "name": "Dr.Tejaswini B J",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. BMSIT&M,Yelahank PDA, Bangalur"
+            },
+            {
+              "name": "Prof.Anand.Patil.",
+              "position": "Assistant Professor.HOD of HSS — Department of Humanities and Social Sciences. PDA, College of Engineering, Kalaburgi."
+            },
+            {
+              "name": "Prof.Shivakumar Nayak",
+              "position": "Assistant Professor — Department of Electrical and Electronic Engineering.Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.M.M.Ganganallimath",
+              "position": "Assistant Professor — Department of Industrial and Production Engineering.Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Smt. Roopa B. MathDepartment of ISE",
+              "position": "Assistant Professor — Department of Information Science Engineering.Basaveshwar Engineering College,Bagalkote"
+            },
+            {
+              "name": "Prof.Hariharan P.",
+              "position": "Assistant Professor — Department of Biotechnology Engineering.Sir M Visvesvaraya Institute of Technology,Bangalur."
+            },
+            {
+              "name": "Purushottam Kumar",
+              "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru."
+            },
+            {
+              "name": "Dr.Rakesh Huded",
+              "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi."
+            },
+            {
+              "name": "Dr.Savitri Sattagiri.",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences PDA College of Engineering.Kalburgi."
+            },
+            {
+              "name": "Prof.Usharani M.",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences Maharaj Technical University ,BelavadiMandya.-571477"
+            },
+            {
+              "name": "Dr.Savithri Shantagiri",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering.Gulbarga."
+            },
+            {
+              "name": "Prof.Uma Bhavani",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. Maharaj Technical University ,BelavadiMandya.-571477"
+            },
+            {
+              "name": "Prof. Prateeka R Pujar",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
+            },
+            {
+              "name": "Prof.S.V.Katti",
+              "position": "Assistant Professor — Department of English.Basaveshwar Art’s College,Bagalkote."
+            },
+            {
+              "name": "Dr.G.I.Nandikolmath",
+              "position": "Assistant Professor — Department of Kannada.Akkamahadevi Woman’s College,Bagalkote."
+            },
+            {
+              "name": "Dr.Rekha Chauhan",
+              "position": "Assistant Professor — Government Law College, Hasana ."
+            },
+            {
+              "name": "Prof.Prashantha.B.B",
+              "position": "Assistant Professor — Department of Physics.Sir M Visvesvaraya institute of technology, Hunasamaranahalli, Bangalur."
+            },
+            {
+              "name": "Dr.Jayachandra S Y",
+              "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College Bagalkote."
+            },
+            {
+              "name": "Prof.Rajashekhar Malgihal",
+              "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Prof.Shivakumar Nayak",
+              "position": "Assistant Professor — Department of Electrical and Electronic EngineeringBasaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.Supriya Harlapur.",
+              "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Dr.Nagaraj Kalligudda",
+              "position": "Assistant Professor — Department of Artificial Intelligence and Machine learning EngineeringBasaveshwar Engineering College Bagalkote."
+            },
+            {
+              "name": "Prof.P.V.Kulkani",
+              "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Dr.D.D.Challal",
+              "position": "Assistant Professor — Department of Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Dr.Vilas Niak",
+              "position": "Assistant Professor — Department of Computer Science EngineeringBasaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.M.M.Ganganallimath",
+              "position": "Assistant Professor — Department of Mechanical EngineeringBasaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.R.G.Patil",
+              "position": "Assistant Professor — Department of Electrical and Electronic Engineering Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.A.S.Chatra",
+              "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Dr. S.V.Heggond",
+              "position": "Assistant Professor — Department of Civil Engineering Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.Dinesh B.Mirajkar",
+              "position": "Assistant Professor — Department of Information Science EngineeringTatyasaheb Kore Institute of Engineering and Technology Warana University Warananagar, Maharashtra"
+            },
+            {
+              "name": "Prof.Sanjay Yadav",
+              "position": "Assistant Professor — Department of Mechanical Engineering. Basaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Prof.V.V.Rajput",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Gogte Institute of Technology Belagavi."
+            },
+            {
+              "name": "Dr.Madumala Y",
+              "position": "Assistant Professor — Department of Biotechnology Engineering.Basaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Prof.Hariharan P.",
+              "position": "Assistant Professor — Department of Biotechnology.Sir M Visvesvaraya Institute of Technology, Bangalur"
+            },
+            {
+              "name": "Phri.A Vishnupriya",
+              "position": "Assistant Manager — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
+            },
+            {
+              "name": "Prof.Shivam Kumar",
+              "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
+            },
+            {
+              "name": "Dr.Basavaraj H. N",
+              "position": "Assistant Professor — Department of Computer Science EngBMSIT AND M,Bangalur"
+            },
+            {
+              "name": "Dr.Rakesh Huded",
+              "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi"
+            },
+            {
+              "name": "Dr.Shobha Patil",
+              "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwa Engineering College, Bagalkote"
+            },
+            {
+              "name": "Prof. Priti Kumarmath",
+              "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Dr.Mallikarjun Aralimarad",
+              "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Shri.Himanshu Vyas",
+              "position": "Soft Skills trainer — Z Skillup ,Bangaluru."
+            },
+            {
+              "name": "Dr.Prashant Niranjan",
+              "position": "Associate Professor — Department of Computer Science Engineering. GIT,Belagavi"
+            },
+            {
+              "name": "Dr.C.R.Hiremath",
+              "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
+            },
+            {
+              "name": "Prof. Jayanti S.Sakri",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
+            },
+            {
+              "name": "Prof. Prashant Puthani",
+              "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
+            }
+          ]
+        }
+      ]
     },
     "pg/environmental-engg": {
       "name": "M.Tech. in Environmental Engineering",
@@ -6798,43 +7942,43 @@
           "title": "Board of Studies (BOS)",
           "members": [
             {
-              "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkot",
+              "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkot",
+              "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkot",
+              "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkot",
+              "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkot",
+              "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
@@ -6867,19 +8011,19 @@
           "title": "Board of Examiners (BOE)",
           "members": [
             {
-              "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkot",
+              "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Prof. M. Y. Ganiger, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. M. Y. Ganiger, Assistant Professor, BEC, Bagalkote",
               "position": "Coordinator"
             },
             {
-              "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             }
           ]
@@ -7194,7 +8338,7 @@
           "scholar": "Manjukumar P.",
           "usn": "2BA18PCV01",
           "guide": "Dr. V. S. Soraganvi",
-          "title": "Urban Sprawling of Bagalkot City and Surrounding Heritage Structures",
+          "title": "Urban Sprawling of Bagalkote City and Surrounding Heritage Structures",
           "status": "DC Formed"
         },
         {
@@ -7476,7 +8620,7 @@
         {
           "title": "Best Paper Award - Sustainable Wastewater Management with Native Plant Reed Beds",
           "date": "September 2024",
-          "description": "Dr. Jayalatha N. A. and Dr. G. B. Megeri received the best paper award at the International Conference on Sustainable Solutions in Engineering and Technology, BEC Bagalkot."
+          "description": "Dr. Jayalatha N. A. and Dr. G. B. Megeri received the best paper award at the International Conference on Sustainable Solutions in Engineering and Technology, BEC Bagalkote."
         },
         {
           "title": "Patent Granted - Tree-Fall Resisting Apparatus for a Straight Tree",
@@ -7679,43 +8823,43 @@
           "title": "Board of Studies (BOS)",
           "members": [
             {
-              "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkot",
+              "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkot",
+              "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkot",
+              "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkot",
+              "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkot",
+              "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
@@ -7748,15 +8892,15 @@
           "title": "Board of Examiners (BOE)",
           "members": [
             {
-              "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkot",
+              "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkote",
               "position": "Coordinator"
             },
             {
-              "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             }
           ]
@@ -8255,43 +9399,43 @@
           "title": "Board of Studies (BOS)",
           "members": [
             {
-              "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkot",
+              "name": "Dr. P. G. Rakaraddi, HOD, Department of Civil Engineering, BEC, Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkot",
+              "name": "Dr. Veena S. Soraganvi, Professor and Dean (Research and Development), BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkot",
+              "name": "Dr. B. R. Hiremath, Associate Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkot",
+              "name": "Dr. M. M. Hanamasagar, Associate Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. M. Kalagudi, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkot",
+              "name": "Dr. S. H. Sanni, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. F. Chitragar, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. A. Kambali, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. G. H. Bandihal, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. G. S. Hiremath, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
@@ -8324,19 +9468,19 @@
           "title": "Board of Examiners (BOE)",
           "members": [
             {
-              "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkot",
+              "name": "Dr. P. G. Rakaraddi, Head, Department of Civil Engineering, BEC, Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Mr. G. S. Hiremath, Assistant Professor, BEC, Bagalkot",
+              "name": "Mr. G. S. Hiremath, Assistant Professor, BEC, Bagalkote",
               "position": "Coordinator"
             },
             {
-              "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. P. V. Patil, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkot",
+              "name": "Prof. S. M. Shringeri, Assistant Professor, BEC, Bagalkote",
               "position": "Member"
             }
           ]
@@ -8659,7 +9803,7 @@
           "scholar": "Manjukumar P.",
           "usn": "2BA18PCV01",
           "guide": "Dr. V. S. Soraganvi",
-          "title": "Urban Sprawling of Bagalkot City and Surrounding Heritage Structures",
+          "title": "Urban Sprawling of Bagalkote City and Surrounding Heritage Structures",
           "status": "DC Formed"
         },
         {
@@ -8891,47 +10035,47 @@
           "title": "Board of Studies (BOS)",
           "members": [
             {
-              "name": "Dr. M. S. Hebbal, BEC, Bagalkot",
+              "name": "Dr. M. S. Hebbal, BEC, Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. G. B. Rudrakshi, BEC, Bagalkot",
+              "name": "Dr. G. B. Rudrakshi, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. V. V. Kuppast, BEC, Bagalkot",
+              "name": "Dr. V. V. Kuppast, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Smt. S. B. Wadawadagi, BEC, Bagalkot",
+              "name": "Smt. S. B. Wadawadagi, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. H. M. Kadlimatti, BEC, Bagalkot",
+              "name": "Dr. H. M. Kadlimatti, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. V. P. Girisagar, BEC, Bagalkot",
+              "name": "Prof. V. P. Girisagar, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. B. R. Endigeri, BEC, Bagalkot",
+              "name": "Prof. B. R. Endigeri, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. S. M. Jigajinni, BEC, Bagalkot",
+              "name": "Dr. S. M. Jigajinni, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. M. M. G. Math, BEC, Bagalkot",
+              "name": "Prof. M. M. G. Math, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. H. R. Patil, BEC, Bagalkot",
+              "name": "Prof. H. R. Patil, BEC, Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. S. S. Davanageri, BEC, Bagalkot",
+              "name": "Prof. S. S. Davanageri, BEC, Bagalkote",
               "position": "Member"
             },
             {
@@ -8968,11 +10112,11 @@
           "title": "Board of Examiners (BOE)",
           "members": [
             {
-              "name": "Dr. M. S. Hebbal, Professor and Head, Department of Mechanical Engineering, BEC, Bagalkot",
+              "name": "Dr. M. S. Hebbal, Professor and Head, Department of Mechanical Engineering, BEC, Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. H. M. Kadlimatti, Associate Professor, Department of Mechanical Engineering, BEC, Bagalkot",
+              "name": "Dr. H. M. Kadlimatti, Associate Professor, Department of Mechanical Engineering, BEC, Bagalkote",
               "position": "Coordinator"
             }
           ]
@@ -9133,7 +10277,7 @@
           "title": "Board of Studies (BOS)",
           "members": [
             {
-              "name": "Dr. Bharati S. Meti, Professor & Head, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Dr. Bharati S. Meti, Professor & Head, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Chairman"
             },
             {
@@ -9157,39 +10301,39 @@
               "position": "Member (Alumni)"
             },
             {
-              "name": "Dr. G. B. Megeri, Associate Professor, Dept. of Civil Engg. (Environmental), BEC (A), Bagalkot",
+              "name": "Dr. G. B. Megeri, Associate Professor, Dept. of Civil Engg. (Environmental), BEC (A), Bagalkote",
               "position": "Member (Internal)"
             },
             {
-              "name": "Dr. Sharada P., Associate Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Dr. Sharada P., Associate Professor, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Member (Internal)"
             },
             {
-              "name": "Dr. Madhumala Y., Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Dr. Madhumala Y., Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Member (Internal)"
             },
             {
-              "name": "Dr. Premjyoti C. Patil, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Dr. Premjyoti C. Patil, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Member (Coordinator)"
             },
             {
-              "name": "Prof. Preeti S. Kumarmath, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Prof. Preeti S. Kumarmath, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Member (Internal)"
             },
             {
-              "name": "Prof. Shilpa K. Jigajinni, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Prof. Shilpa K. Jigajinni, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Member (Internal)"
             },
             {
-              "name": "Miss. Shilpa Kugunavar, M.Tech., Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Miss. Shilpa Kugunavar, M.Tech., Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Student Representative"
             },
             {
-              "name": "Miss. Nikita Ingalagi, B.E. 8th semester, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Miss. Nikita Ingalagi, B.E. 8th semester, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Student Representative"
             },
             {
-              "name": "Mr. Amrut Bhat, B.E. 6th semester, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Mr. Amrut Bhat, B.E. 6th semester, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Student Representative"
             }
           ]
@@ -9198,23 +10342,23 @@
           "title": "Board of Examiners (BOE)",
           "members": [
             {
-              "name": "Dr. Bharati S. Meti, Professor & Head, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Dr. Bharati S. Meti, Professor & Head, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. Madhumala Y., Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Dr. Madhumala Y., Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Coordinator"
             },
             {
-              "name": "Dr. G. B. Megeri, Associate Professor, Dept. of Civil Engg. (Environmental), BEC (A), Bagalkot",
+              "name": "Dr. G. B. Megeri, Associate Professor, Dept. of Civil Engg. (Environmental), BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. Sharada P., Associate Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Dr. Sharada P., Associate Professor, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. Preeti S. Kumarmath, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkot",
+              "name": "Prof. Preeti S. Kumarmath, Assistant Professor, Dept. of Biotechnology, BEC (A), Bagalkote",
               "position": "Member"
             }
           ]
@@ -9422,7 +10566,7 @@
           "title": "Board of Studies (BOS)",
           "members": [
             {
-              "name": "Dr. Shridhar K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkot",
+              "name": "Dr. Shridhar K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkote",
               "position": "Chairman"
             },
             {
@@ -9450,35 +10594,35 @@
               "position": "Industry Representative"
             },
             {
-              "name": "Prof. S. M. Iddalagi, Dept. of ECE, BEC (A), Bagalkot",
+              "name": "Prof. S. M. Iddalagi, Dept. of ECE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. P. N. Kulkarni, Dept. of ECE, BEC (A), Bagalkot",
+              "name": "Dr. P. N. Kulkarni, Dept. of ECE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. Jayashree D. Mallapur, Dept. of ECE, BEC (A), Bagalkot",
+              "name": "Dr. Jayashree D. Mallapur, Dept. of ECE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. S. G. Kambalimath, Dept. of ECE, BEC (A), Bagalkot",
+              "name": "Dr. S. G. Kambalimath, Dept. of ECE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. A. V. Sutagundar, Dept. of ECE, BEC (A), Bagalkot",
+              "name": "Dr. A. V. Sutagundar, Dept. of ECE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. Mahabaleshwar S. K., Dept. of ECE, BEC (A), Bagalkot",
+              "name": "Dr. Mahabaleshwar S. K., Dept. of ECE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. M. J. Sataraddi, Dept. of ECE, BEC (A), Bagalkot",
+              "name": "Prof. M. J. Sataraddi, Dept. of ECE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. Ajayakumar C. Katageri, Dept. of ECE, BEC (A), Bagalkot",
+              "name": "Dr. Ajayakumar C. Katageri, Dept. of ECE, BEC (A), Bagalkote",
               "position": "Member"
             }
           ]
@@ -9487,15 +10631,15 @@
           "title": "Board of Examiners (BOE)",
           "members": [
             {
-              "name": "Dr. Shridhar K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkot",
+              "name": "Dr. Shridhar K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. Mahabaleshwar S. K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkot",
+              "name": "Dr. Mahabaleshwar S. K., Dept. of ECE, Basaveshwar Engineering College (A), Bagalkote",
               "position": "Coordinator"
             },
             {
-              "name": "Dr. Rajani S. Pujar, Dept. of ECE, Basaveshwar Engineering College (A), Bagalkot",
+              "name": "Dr. Rajani S. Pujar, Dept. of ECE, Basaveshwar Engineering College (A), Bagalkote",
               "position": "Member"
             }
           ]
@@ -10085,47 +11229,47 @@
           "title": "Board of Studies (BOS)",
           "members": [
             {
-              "name": "Dr. Suresh H. Jangamshetti, Dept. of E&EE, Basaveshwar Engineering College (A), Bagalkot",
+              "name": "Dr. Suresh H. Jangamshetti, Dept. of E&EE, Basaveshwar Engineering College (A), Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. (Smt) D. S. Jangamshetti, Professor (CAS), Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Dr. (Smt) D. S. Jangamshetti, Professor (CAS), Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Smt. Nanda P., Associate Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Smt. Nanda P., Associate Professor, Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Mr. S. M. Patil, Associate Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Mr. S. M. Patil, Associate Professor, Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. R. L. Naik, Associate Professor (CAS), Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Dr. R. L. Naik, Associate Professor (CAS), Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Mr. S. G. Nayak, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Mr. S. G. Nayak, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Smt. Sunita S. Tambakad, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Smt. Sunita S. Tambakad, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Dr. B. F. Ronad, Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Dr. B. F. Ronad, Professor, Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Mr. S. Y. Goudappanavar, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Mr. S. Y. Goudappanavar, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Mr. Vikas C. Jainkeri, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Mr. Vikas C. Jainkeri, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Mr. Sunil Rathod, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkot",
+              "name": "Mr. Sunil Rathod, Assistant Professor, Dept. of E&EE, BEC (A), Bagalkote",
               "position": "Member"
             }
           ]
@@ -10134,7 +11278,7 @@
           "title": "Board of Examiners (BOE)",
           "members": [
             {
-              "name": "Dr. Basanagouda Ronad, Dept. of E&EE, Basaveshwar Engineering College (A), Bagalkot",
+              "name": "Dr. Basanagouda Ronad, Dept. of E&EE, Basaveshwar Engineering College (A), Bagalkote",
               "position": "BOE Member"
             }
           ]
@@ -10576,31 +11720,31 @@
           "title": "Board of Studies (BOS)",
           "members": [
             {
-              "name": "Dr. V. B. Pagi, Professor and Head, Dept. of CSE, BEC Bagalkot",
+              "name": "Dr. V. B. Pagi, Professor and Head, Dept. of CSE, BEC Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Dr. S. V. Saboji, Professor, Dept. of CSE, BEC Bagalkot",
+              "name": "Dr. S. V. Saboji, Professor, Dept. of CSE, BEC Bagalkote",
               "position": "Internal Member"
             },
             {
-              "name": "Dr. S. M. Hatture, Associate Professor, Dept. of CSE, BEC Bagalkot",
+              "name": "Dr. S. M. Hatture, Associate Professor, Dept. of CSE, BEC Bagalkote",
               "position": "Internal Member"
             },
             {
-              "name": "Dr. V. H. Naik, Associate Professor, Dept. of CSE, BEC Bagalkot",
+              "name": "Dr. V. H. Naik, Associate Professor, Dept. of CSE, BEC Bagalkote",
               "position": "Internal Member"
             },
             {
-              "name": "Prof. S. S. Yendigeri, Associate Professor, Dept. of CSE, BEC Bagalkot",
+              "name": "Prof. S. S. Yendigeri, Associate Professor, Dept. of CSE, BEC Bagalkote",
               "position": "Internal Member"
             },
             {
-              "name": "Prof. S. V. Hanji, Assistant Professor, Dept. of CSE, BEC Bagalkot",
+              "name": "Prof. S. V. Hanji, Assistant Professor, Dept. of CSE, BEC Bagalkote",
               "position": "Internal Member"
             },
             {
-              "name": "Dr. P. S. Challagidad, Assistant Professor, Dept. of CSE, BEC Bagalkot",
+              "name": "Dr. P. S. Challagidad, Assistant Professor, Dept. of CSE, BEC Bagalkote",
               "position": "Internal Member"
             },
             {
@@ -10628,7 +11772,7 @@
               "position": "Meritorious alumnus"
             },
             {
-              "name": "Dr. Bharati Reshmi, Associate Professor, Dept. of ISE, BEC Bagalkot",
+              "name": "Dr. Bharati Reshmi, Associate Professor, Dept. of ISE, BEC Bagalkote",
               "position": "Co-opted member"
             },
             {
@@ -10645,15 +11789,15 @@
           "title": "Board of Examiners (BOE)",
           "members": [
             {
-              "name": "Dr. V. B. Pagi, Professor and Head, BEC Bagalkot",
+              "name": "Dr. V. B. Pagi, Professor and Head, BEC Bagalkote",
               "position": "Chairman"
             },
             {
-              "name": "Prof. Vidya B. Hunagund, Associate Professor, BEC Bagalkot",
+              "name": "Prof. Vidya B. Hunagund, Associate Professor, BEC Bagalkote",
               "position": "Member"
             },
             {
-              "name": "Prof. Smitha K., Assistant Professor, BEC Bagalkot",
+              "name": "Prof. Smitha K., Assistant Professor, BEC Bagalkote",
               "position": "Member"
             }
           ]
@@ -11000,11 +12144,11 @@
         },
         {
           "partner": "Threat Hunters Club LLP",
-          "location": "Bagalkot"
+          "location": "Bagalkote"
         },
         {
           "partner": "Sovanna Technologies",
-          "location": "Bagalkot",
+          "location": "Bagalkote",
           "since": "2023"
         },
         {
@@ -11093,17 +12237,17 @@
         {
           "title": "Antiragging Awareness Program",
           "date": "07.03.2024",
-          "description": "Resource Person: Dr. P. L. Timmangoudar, Nodal Officer, Antiragging Committee, BEC Bagalkot."
+          "description": "Resource Person: Dr. P. L. Timmangoudar, Nodal Officer, Antiragging Committee, BEC Bagalkote."
         },
         {
           "title": "International Women's Day",
           "date": "09.03.2024",
-          "description": "Resource Person: Dr. Chayalakshmi C. L., Associate Professor, Dept. of E&E, BEC Bagalkot."
+          "description": "Resource Person: Dr. Chayalakshmi C. L., Associate Professor, Dept. of E&E, BEC Bagalkote."
         },
         {
           "title": "Awareness Program on \"Online Courses\"",
           "date": "09.03.2024",
-          "description": "Resource Person: Dr. Chayalakshmi C. L., Associate Professor, Dept. of E&E, BEC Bagalkot."
+          "description": "Resource Person: Dr. Chayalakshmi C. L., Associate Professor, Dept. of E&E, BEC Bagalkote."
         },
         {
           "title": "Technology Trends (for MCA I semester students)",
@@ -11118,7 +12262,7 @@
         {
           "title": "Orientation Programme and Parents Meet",
           "date": "04.04.2024 to 06.04.2024",
-          "description": "Chief Guest: Ms. Seema Mannur, CA, Bagalkot. Talks by Dr. S. G. Kambalimath (placement) and Dr. V. B. Pagi (motivational)."
+          "description": "Chief Guest: Ms. Seema Mannur, CA, Bagalkote. Talks by Dr. S. G. Kambalimath (placement) and Dr. V. B. Pagi (motivational)."
         },
         {
           "title": "A talk on \"AI and Future\"",
@@ -11128,7 +12272,7 @@
         {
           "title": "Personality Development Programme",
           "date": "04.05.2024",
-          "description": "Resource Person: Prof. S. S. Gujarathi, BEC Bagalkot."
+          "description": "Resource Person: Prof. S. S. Gujarathi, BEC Bagalkote."
         },
         {
           "title": "A talk on \"Agile Practices\"",
@@ -11138,12 +12282,12 @@
         {
           "title": "A talk on \"Intellectual Property Rights\"",
           "date": "31.05.2024",
-          "description": "Resource Person: Dr. B. G. Hokraani, HoD, Dept. of HSS, BEC Bagalkot."
+          "description": "Resource Person: Dr. B. G. Hokraani, HoD, Dept. of HSS, BEC Bagalkote."
         },
         {
           "title": "Hands-on \"Linux Commands\"",
           "date": "01.06.2024",
-          "description": "Resource Person: Prof. M. H. Shirur, BEC Bagalkot."
+          "description": "Resource Person: Prof. M. H. Shirur, BEC Bagalkote."
         },
         {
           "title": "PGCET/KMAT Awareness and Training Programme for degree students",
@@ -11153,22 +12297,22 @@
         {
           "title": "Ideathon Phase-I",
           "date": "20.07.2024",
-          "description": "Coordinated by Prof. S. M. Magi and Prof. C. M. Jangin, BEC Bagalkot."
+          "description": "Coordinated by Prof. S. M. Magi and Prof. C. M. Jangin, BEC Bagalkote."
         },
         {
           "title": "SDP on INFOSYS Springboard AI Foundation",
           "date": "22.07.2024 to 26.07.2024",
-          "description": "Coordinated by Prof. S. M. Magi and Prof. C. M. Jangin, BEC Bagalkot."
+          "description": "Coordinated by Prof. S. M. Magi and Prof. C. M. Jangin, BEC Bagalkote."
         },
         {
           "title": "Visit to BEC STEP",
           "date": "27.07.2024",
-          "description": "Coordinated by Prof. S. M. Magi, Prof. C. M. Jangin and Prof. Karuna Kurbet, BEC Bagalkot."
+          "description": "Coordinated by Prof. S. M. Magi, Prof. C. M. Jangin and Prof. Karuna Kurbet, BEC Bagalkote."
         },
         {
           "title": "MDP on \"Leadership for Achieving Academic Excellence\"",
           "date": "03.08.2024",
-          "description": "Resource Person: Dr. Meena Chandawarkar, Chairperson NCTE-SRC New Delhi, Chief Advisor-Quality Assurance, B.V.V. Sangha, Bagalkot."
+          "description": "Resource Person: Dr. Meena Chandawarkar, Chairperson NCTE-SRC New Delhi, Chief Advisor-Quality Assurance, B.V.V. Sangha, Bagalkote."
         },
         {
           "title": "A talk on Soft-skill Program and HR Interview Tips",
@@ -11188,7 +12332,7 @@
         {
           "title": "General Aptitude and Professional Skills",
           "date": "14.09.2024",
-          "description": "Resource Person: Prof. Rajashekhar Malagihal, Assistant Professor, Dept. of Civil, BEC Bagalkot."
+          "description": "Resource Person: Prof. Rajashekhar Malagihal, Assistant Professor, Dept. of Civil, BEC Bagalkote."
         },
         {
           "title": "Celebration of Dr. A. P. J. Abdul Kalam Birth Anniversary",
@@ -11208,12 +12352,12 @@
         {
           "title": "Antiragging Awareness Program",
           "date": "05.02.2025",
-          "description": "Resource Person: Dr. P. L. Timmangoudar, Nodal Officer, Antiragging Committee, BEC Bagalkot."
+          "description": "Resource Person: Dr. P. L. Timmangoudar, Nodal Officer, Antiragging Committee, BEC Bagalkote."
         },
         {
           "title": "One-day Workshop on Blockchain Technologies",
           "date": "03.04.2025",
-          "description": "Resource Person: Dr. S. V. Saboji, Professor, Dept. of CSE, BEC Bagalkot."
+          "description": "Resource Person: Dr. S. V. Saboji, Professor, Dept. of CSE, BEC Bagalkote."
         }
       ],
       "contact": {
@@ -11264,7 +12408,7 @@
           "members": [
             {
               "name": "Prof. Sudha K. S.",
-              "position": "Chairman — HOD, MCA, BEC Bagalkot"
+              "position": "Chairman — HOD, MCA, BEC Bagalkote"
             },
             {
               "name": "Dr. Renuka Prasad B",
@@ -11284,23 +12428,23 @@
             },
             {
               "name": "Prof. S. S. Gujarathi",
-              "position": "Member — Associate Professor, MCA, BEC Bagalkot"
+              "position": "Member — Associate Professor, MCA, BEC Bagalkote"
             },
             {
               "name": "Prof. S. M. Magi",
-              "position": "Member — Assistant Professor, MCA, BEC Bagalkot"
+              "position": "Member — Assistant Professor, MCA, BEC Bagalkote"
             },
             {
               "name": "Prof. M. H. Shirur",
-              "position": "Member — Assistant Professor, MCA, BEC Bagalkot"
+              "position": "Member — Assistant Professor, MCA, BEC Bagalkote"
             },
             {
               "name": "Prof. C. M. Jangin",
-              "position": "Member — Assistant Professor, MCA, BEC Bagalkot"
+              "position": "Member — Assistant Professor, MCA, BEC Bagalkote"
             },
             {
               "name": "Prof. Karuna B. Kurbet",
-              "position": "Member — Assistant Professor, MCA, BEC Bagalkot"
+              "position": "Member — Assistant Professor, MCA, BEC Bagalkote"
             },
             {
               "name": "Mr. Laxmanna A. Goudar",
@@ -11390,11 +12534,26 @@
         "Ph.D. — Management (VTU)"
       ],
       "pos": [
-        { "code": "PO1", "text": "Apply knowledge of management theories and practices to solve business problems." },
-        { "code": "PO2", "text": "Foster analytical and critical thinking abilities for data based decision making." },
-        { "code": "PO3", "text": "Ability to develop value-based leadership." },
-        { "code": "PO4", "text": "Ability to understand, analyze and communicate global, economic, legal and ethical aspects of business." },
-        { "code": "PO5", "text": "Ability to lead themselves and others in the achievement of organizational goals contributing effectively to a team environment." }
+        {
+          "code": "PO1",
+          "text": "Apply knowledge of management theories and practices to solve business problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Foster analytical and critical thinking abilities for data based decision making."
+        },
+        {
+          "code": "PO3",
+          "text": "Ability to develop value-based leadership."
+        },
+        {
+          "code": "PO4",
+          "text": "Ability to understand, analyze and communicate global, economic, legal and ethical aspects of business."
+        },
+        {
+          "code": "PO5",
+          "text": "Ability to lead themselves and others in the achievement of organizational goals contributing effectively to a team environment."
+        }
       ],
       "highlights": [
         "Established in 2009; an autonomous programme affiliated to VTU and approved by AICTE, with an intake of 60.",
@@ -11471,6 +12630,10 @@
           {
             "title": "Alumni Testimonials",
             "file": "departments/mba/docs/alumni-testimonials.pdf"
+          },
+          {
+            "title": "Faculty & Students Achievements",
+            "file": "departments/mba/docs/faculty-students-achievements.pdf"
           }
         ]
       },

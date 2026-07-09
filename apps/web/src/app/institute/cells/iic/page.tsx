@@ -42,7 +42,7 @@ const achievements = [
     ),
     title: "Best Performing IIC — South West Zone",
     description:
-      "IIC-BEC, Bagalkot is recognised as one of the three Best Performing Institution Innovation Councils from the South West Zone (SWRO).",
+      "IIC-BEC, Bagalkote is recognised as one of the three Best Performing Institution Innovation Councils from the South West Zone (SWRO).",
   },
   {
     image: asset(

@@ -18,6 +18,17 @@ const scholarshipData = [
     { id: 9, particulars: "College Topper", department: "Shri. Biluru Guru Basav Utstav Samiti, Bagalkote", website: "" },
 ];
 
+const scstCellMembers = [
+    { id: 1, name: "Prof. B. R. Endigeri", designation: "Asst. Prof.", position: "Chairman", mobile: "9845657310", email: "endigeribasavaraj@gmail.com" },
+    { id: 2, name: "Prof. R. L. Naik", designation: "Assoc. Prof.", position: "Member", mobile: "9880529043", email: "r_l_naik@yahoo.co.in" },
+    { id: 3, name: "Prof. G. H. Rathod", designation: "Asst. Prof.", position: "Member", mobile: "9342619667", email: "gopinath.rathod@gmail.com" },
+    { id: 4, name: "Prof. Prashant B. M.", designation: "Asst. Prof.", position: "Member", mobile: "9986340050", email: "pbmadhavanavar@gmail.com" },
+    { id: 5, name: "Prof. Kiran Y. Bendigeri", designation: "Asst. Prof.", position: "Member", mobile: "9916010712", email: "kiranendigeri@gmail.com" },
+    { id: 6, name: "Prof. Shilpa H. Tondyal", designation: "Asst. Prof.", position: "Member", mobile: "8095545010", email: "spmadhavanavar@gmail.com" },
+    { id: 7, name: "Mr. Basavaraj K.", designation: "Student", position: "Member", mobile: "9591901431", email: "basavarajkodekal28@gmail.com" },
+    { id: 8, name: "Miss. Ranjita Rathod", designation: "Student", position: "Member", mobile: "9611259760", email: "ranjitarathod334@gmail.com" },
+];
+
 export const metadata = pageMetadata({
     title: "Student Scholarships",
     description:
@@ -96,6 +107,51 @@ export default function ScholarshipsPage() {
                                                             ) : (
                                                                 <span className="text-gray-400 italic text-sm">Offline / Contact College</span>
                                                             )}
+                                                        </TableCell>
+                                                    </TableRow>
+                                                ))}
+                                            </TableBody>
+                                        </Table>
+                                    </div>
+                                </CardContent>
+                            </Card>
+
+                            {/* SC/ST/BCM Cell roster */}
+                            <Card className="bg-white border-stone-200 shadow-sm overflow-hidden">
+                                <CardHeader className="bg-stone-50/50 border-b border-stone-100 pb-4">
+                                    <CardTitle className="text-xl">SC/ST/BCM Cell — Academic Year 2025-2026</CardTitle>
+                                    <CardDescription>
+                                        The following staff and student members have been appointed to the SC/ST/BCM Cell to address grievances and monitor the performance of the students.
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="p-0">
+                                    <div className="overflow-x-auto">
+                                        <Table>
+                                            <TableHeader>
+                                                <TableRow className="bg-stone-50 hover:bg-stone-50 text-base">
+                                                    <TableHead className="w-[80px] text-center font-bold text-gray-700 hidden md:table-cell">Sl. No.</TableHead>
+                                                    <TableHead className="font-bold text-gray-700 min-w-[200px]">Name</TableHead>
+                                                    <TableHead className="font-bold text-gray-700 min-w-[140px]">Designation</TableHead>
+                                                    <TableHead className="font-bold text-gray-700 min-w-[110px]">Position</TableHead>
+                                                    <TableHead className="font-bold text-gray-700 min-w-[130px]">Mobile</TableHead>
+                                                    <TableHead className="font-bold text-gray-700 min-w-[240px]">Email</TableHead>
+                                                </TableRow>
+                                            </TableHeader>
+                                            <TableBody>
+                                                {scstCellMembers.map((member) => (
+                                                    <TableRow key={member.id} className="hover:bg-stone-50/50 transition-colors">
+                                                        <TableCell className="text-center font-medium text-gray-500 hidden md:table-cell">{member.id}</TableCell>
+                                                        <TableCell className="font-medium text-gray-900">{member.name}</TableCell>
+                                                        <TableCell className="text-gray-600">{member.designation}</TableCell>
+                                                        <TableCell className="text-gray-600">{member.position}</TableCell>
+                                                        <TableCell className="text-gray-600 tabular-nums">{member.mobile}</TableCell>
+                                                        <TableCell>
+                                                            <a
+                                                                href={`mailto:${member.email}`}
+                                                                className="text-primary hover:text-primary/80 hover:underline break-all"
+                                                            >
+                                                                {member.email}
+                                                            </a>
                                                         </TableCell>
                                                     </TableRow>
                                                 ))}

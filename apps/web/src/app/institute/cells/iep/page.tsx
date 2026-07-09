@@ -57,7 +57,7 @@ export default function IepPage() {
             <SectionHeading eyebrow="About" title="About BEC-IEP" />
             <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700">
               <p>
-                Basaveshwar Engineering College (BEC), Bagalkot has framed the
+                Basaveshwar Engineering College (BEC), Bagalkote has framed the
                 innovation and entrepreneurship policy for students and faculty
                 of the college.
               </p>

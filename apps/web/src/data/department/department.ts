@@ -132,7 +132,8 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     content.programsOffered?.length ||
     content.peos?.length ||
     content.psos?.length ||
-    content.pos?.length
+    content.pos?.length ||
+    content.wk?.length
   ) {
     const groups: ContentGroup[] = [];
     if (content.programsOffered?.length)
@@ -146,6 +147,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       groups.push({
         subtitle: "Programme Specific Outcomes (PSO's)",
         items: content.psos.map((p) => `${p.code}: ${p.text}`),
+      });
+    if (content.wk?.length)
+      groups.push({
+        subtitle: "Knowledge and Attitude Profile (WK)",
+        items: content.wk.map((p) => `${p.code}: ${p.text}`),
       });
     if (content.pos?.length)
       groups.push({
@@ -357,6 +363,53 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
+  // Publications — year-wise research output grouped by category.
+  if (content.publications?.length) {
+    const groups: ContentGroup[] = [];
+    for (const cat of content.publications) {
+      groups.push({ subtitle: cat.category });
+      for (const y of cat.years) {
+        groups.push({ subtitle: y.year, items: y.items });
+      }
+    }
+    sections.push({
+      id: "publications",
+      type: "content",
+      title: heading("publications", "Publications"),
+      icon: "book",
+      groups,
+    });
+  }
+
+  // Patents — filed / published / granted.
+  if (content.patents?.length) {
+    const hasArea = content.patents.some((p) => p.area);
+    const columns = ["Title of Invention", "Application No.", "Inventors"];
+    if (hasArea) columns.push("Area");
+    columns.push("Filed", "Published", "Status");
+    sections.push({
+      id: "patents",
+      type: "tables",
+      title: heading("patents", "Patents"),
+      icon: "clipboard",
+      tables: [
+        {
+          title: `Patents (${content.patents.length})`,
+          columns,
+          rows: content.patents.map((p) => {
+            const status = p.awarded
+              ? `Granted ${p.awarded}${p.awardNumber ? ` · No. ${p.awardNumber}` : ""}`
+              : p.status ?? "";
+            const row = [p.title, p.applicationNumber ?? "", p.inventors ?? ""];
+            if (hasArea) row.push(p.area ?? "");
+            row.push(p.filed ?? "", p.published ?? "", status);
+            return row;
+          }),
+        },
+      ],
+    });
+  }
+
   // Placements — year-wise summary, recruiters & packages, student-wise detail
   const placements = getDepartmentPlacements(contentKey);
   if (placements && (placements.yearWise.length || placements.batches.length)) {
@@ -445,7 +498,10 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     if (content.activities?.length)
       groups.push({
         subtitle: "Recent Events & Activities",
-        items: content.activities.map((a) => ({ label: a.title, value: a.date })),
+        items: content.activities.map((a) => ({
+          label: a.title,
+          value: [a.date, a.description].filter(Boolean).join(" — "),
+        })),
       });
     for (const assoc of content.associations ?? []) {
       const coords = assoc.coordinators?.length
@@ -561,6 +617,8 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     governance: { label: "Board Members", icon: "clipboard" },
     research: { label: "Research & Labs", icon: "clipboard" },
     "research-achievements": { label: "Research Achievements", icon: "clipboard" },
+    publications: { label: "Publications", icon: "book" },
+    patents: { label: "Patents", icon: "clipboard" },
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
     activities: { label: "Activities", icon: "calendar" },

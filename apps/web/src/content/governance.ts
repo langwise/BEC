@@ -8,6 +8,7 @@ export type Person = {
   email?: string;
   phone?: string;
   focus?: string;
+  link?: { href: string; label: string };
   placeholder?: boolean;
   verify?: boolean;
 };

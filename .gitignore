@@ -37,6 +37,10 @@ yarn-error.log*
 .DS_Store
 *.pem
 
+# Corrections tracking workspace — ledger, dashboard, scripts. Local-only,
+# not part of the shipped site. Kept on disk but never committed.
+/corrections/
+
 # Local source data — scraped site mirror + provided department docs/images.
 # These are the raw inputs (GBs of binaries); images/PDFs are uploaded to R2 and
 # referenced via asset(). Nothing under here should ever be committed.

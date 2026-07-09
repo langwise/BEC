@@ -10,7 +10,7 @@ import { Radio, Mic2, Users, Signal, Mail, Phone } from "lucide-react";
 export const metadata = pageMetadata({
   title: "BEC Dhwani 90.4 FM",
   description:
-    "BEC Dhwani 90.4 FM, the community radio station of BEC Bagalkote — inaugurated 29 February 2020 as the first radio station in Bagalkot, with talk shows and music.",
+    "BEC Dhwani 90.4 FM, the community radio station of BEC Bagalkote — inaugurated 29 February 2020 as the first radio station in Bagalkote, with talk shows and music.",
   path: "/student-life/bec-fm",
 });
 
@@ -40,7 +40,7 @@ const cards = [
 const facts = [
   { label: "Frequency", value: "90.4 FM" },
   { label: "Inaugurated", value: "29 February 2020" },
-  { label: "Distinction", value: "First radio station in Bagalkot" },
+  { label: "Distinction", value: "First radio station in Bagalkote" },
 ];
 
 export default function BECFMPage() {
@@ -49,7 +49,7 @@ export default function BECFMPage() {
       <PageHero
         eyebrow="Community Radio"
         title="BEC Dhwani 90.4 FM"
-        description="The community radio station of Basaveshwar Engineering College — the voice of the campus and its neighbouring communities. Inaugurated in 2020, it is the first radio station in Bagalkot."
+        description="The community radio station of Basaveshwar Engineering College — the voice of the campus and its neighbouring communities. Inaugurated in 2020, it is the first radio station in Bagalkote."
         badges={[{ label: "90.4 FM" }, { label: "Since 2020", tone: "outline" }]}
       />
 
@@ -73,7 +73,7 @@ export default function BECFMPage() {
             />
             <p className="text-base leading-relaxed text-gray-700">
               BEC Dhwani 90.4 FM was established to cater to the needs of the
-              student community and the wider region around Bagalkot. It carries
+              student community and the wider region around Bagalkote. It carries
               talk shows, music and locally relevant programming produced on
               campus.
             </p>
@@ -100,7 +100,7 @@ export default function BECFMPage() {
             <p className="mt-2 text-sm leading-relaxed text-gray-600">
               Tune your radio to{" "}
               <span className="font-semibold text-gray-900">90.4 FM</span> across
-              the Bagalkot region, or reach the station directly.
+              the Bagalkote region, or reach the station directly.
             </p>
             <div className="mt-4 space-y-2">
               <a

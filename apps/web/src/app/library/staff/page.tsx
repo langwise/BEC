@@ -22,7 +22,7 @@ export default function StaffProfilePage() {
       qualification: "B.Sc., M.L.I.Sc., Ph.D.",
       experience: "35 Years",
       email: "becshrikant@gmail.com",
-      address: "“Gajanana” Near Old ESI Hospital, Muchakhandi Cross, Kaladagi Road, Bagalkot-587101",
+      address: "“Gajanana” Near Old ESI Hospital, Muchakhandi Cross, Kaladagi Road, Bagalkote-587101",
       image: "facilities/library/staff/dr-shreekant-g-karkun.jpg",
       orcidId: "0000-0002-6584-3004",
       vidwanId: "65775",
@@ -53,30 +53,30 @@ export default function StaffProfilePage() {
           "Cloud computing : Its Impact and Influence on Library Management and Services in 62nd ILA International Conference on “Gearing up for the future: Library initiatives for digital India\", pp509-517, 2017",
           "E-Resources : An Overview, in 62nd ILA International Conference on “Gearing up for the future: Library initiatives for digital India\", pp626-631, 2017",
           "Development of Smart Library in Digital Environment in 2 nd LPA International Conference on “IKOAL (Knowledge Organization in Academic Libraries)-2017” jointly organized by LPA & GOA University pp357-367, 2017",
-          "Best Practices of Basaveshwar Science College Library, Bagalkot, 2 nd LPA International Conference on “IKOAL (Knowledge Organization in Academic Libraries)-2017” jointly organized by LPA & GOA University, 322-329, 2017",
+          "Best Practices of Basaveshwar Science College Library, Bagalkote, 2 nd LPA International Conference on “IKOAL (Knowledge Organization in Academic Libraries)-2017” jointly organized by LPA & GOA University, 322-329, 2017",
           "Use of Infographics and Its Impact On Libraries in 2 nd LPA International Conference on “IKOAL (Knowledge Organization in Academic Libraries)-2017” jointly organized by LPA & GOA University, 215-221, 2017",
           "Use of ICT applications in Medical College libraries: A study in International conference on Managing library and information system in the Digital World: Challenges and Opportunities, pp462-467, 2015",
           "Building Electronic Information resources: Issues and Challenges in International conference on Emerging Technologies and Future of Libraries: Issues and Challenges, pp478-485, 2015",
           "Impact of cloud computing on libraries in International conference on Emerging Technologies and Future of Libraries: Issues and Challenges, PP150-157, 2015",
-          "Resource sharing in e environment: A study of P.M.N.M Dental college and hospital library Bagalkot in International conference on Sustainability of Digital Libraries ICSDL, PP426-430, 2014",
+          "Resource sharing in e environment: A study of P.M.N.M Dental college and hospital library Bagalkote in International conference on Sustainability of Digital Libraries ICSDL, PP426-430, 2014",
           "Knowledge management: Challenges for librarians of Information Technology era in National conference on Empowering libraries for lifelong learning skills, 2012",
           "Information search pattern in the web based environment: A case study of JSS Medical College Mysore in National conference on Empowering libraries for lifelong learning skills, 2012",
           "Maheswarappa B S and Karkun S G. Information Gathering Habits of Biological and Physical Scientists in a University Environment: A Case Study of Karnatak University, Dharwad. In Knowledge Societies and Libraries (Prof AAN Raju Festschrift Volume) edited by N Laxman Rao, S Sudarshan Rao and T V Prafulla Chandra. New Delhi, Ess Ess, 2004. pp 38-73.",
           "Maheswarappa B S and Karkun S G. The Awareness and Usefulness of Information Services of INSDOC and NCSI, IISc, Bangalore among the Biological and Physical Scientists in a University Environment. IN: Dynamics of Librarianship edited and published by Department of Library and Information Science, Annamalai University, Annmalainagar, 1992, pp213- 220."
         ],
         invitedTalks: [
-          "Basaveshwar Science College, Bagalkot",
-          "BVVs Akkamahadevi Women’s College, Bagalkot",
+          "Basaveshwar Science College, Bagalkote",
+          "BVVs Akkamahadevi Women’s College, Bagalkote",
           "PDA Engineering College, Gulbarga",
-          "Basaveshwar Arts College, Bagalkot",
+          "Basaveshwar Arts College, Bagalkote",
           "S R Kanthi Arts, Commerce, Science College, Mudhol",
-          "BVVs Polytechnic Bagalkot",
-          "BVVs College of Education, Bagalkot",
+          "BVVs Polytechnic Bagalkote",
+          "BVVs College of Education, Bagalkote",
           "VTU, Belagavi",
           "KLS Gogte Engineering College, Belagavi",
-          "Govt Polytechnic Bagalkot.",
-          "BVVs Dental College, Bagalkot",
-          "BLDEs Engineering College, Bagalkot",
+          "Govt Polytechnic Bagalkote.",
+          "BVVs Dental College, Bagalkote",
+          "BLDEs Engineering College, Bagalkote",
           "Bhimanna Khandre Engineering College, Bhalki",
           "ASP College of Commerce, Vijayapura"
         ],
@@ -100,7 +100,7 @@ export default function StaffProfilePage() {
       qualification: "B.Com, MLI.Sc, M.Phil",
       experience: "20 Years 6 Months",
       email: "subhas.mahendrakar@gmail.com",
-      address: "#119C, Sector No:34 Navanagar Bagalkot",
+      address: "#119C, Sector No:34 Navanagar Bagalkote",
       image: "facilities/library/staff/subhas-c-mahendrakar.JPG",
       vidwanId: "216125",
       responsibilities: "Digital Library, Library Automation.",
@@ -112,9 +112,9 @@ export default function StaffProfilePage() {
           "Knowledge Management in National Conference on Libraries and Librarianship in Transition: Challenges and Opportunities from 22 & 23 August -2014 ISBN: 978-81-929927-0-9 Page No-87 to 91"
         ],
         workshops: [
-          "One day “Orientation Program to The Library And Information Science Professionals Of B.V.V.Sangha’s Institutions, Bagalkot”, 2014",
+          "One day “Orientation Program to The Library And Information Science Professionals Of B.V.V.Sangha’s Institutions, Bagalkote”, 2014",
           "3 days International Conference on Knowledge Management and Organization in the Digital Era “ICKMODE” Sri Siddaganga Institute of Technology Tumkur, 2013",
-          "One week Short Term Training program on “Trends in Information Communication Technology and It’s Impact on Engineering College Libraries” Basaveshwar Engineering College (Autonomous), Bagalkot Library and Information Centre 2009."
+          "One week Short Term Training program on “Trends in Information Communication Technology and It’s Impact on Engineering College Libraries” Basaveshwar Engineering College (Autonomous), Bagalkote Library and Information Centre 2009."
         ]
       },
       hasDetails: true
@@ -126,14 +126,14 @@ export default function StaffProfilePage() {
       qualification: "B.A, MLI.Sc",
       experience: "13 Years 6 Months",
       email: "gurubgoudar@gmail.com",
-      address: "Gurunath B Goudar C/o T H Bhavikatti # B-66 Navanagar, Bagalkot",
+      address: "Gurunath B Goudar C/o T H Bhavikatti # B-66 Navanagar, Bagalkote",
       image: "facilities/library/staff/gurunath-b-goudar.jpg",
       responsibilities: "Circulation Section",
       publications: {
         workshops: [
           "3 days “Faculty Development Program on Library Automation and e-Resources Management” in P.E.S. College of Engineering Mandya”, 2013.",
-          "One day “Orientation Program to The Library And Information Science Professionals Of B.V.V.Sangha’s Institutions, Bagalkot”, 2014.",
-          "Two days Orientation Program “Use of Information Technologies in Libraries” Of B.V.V.Sangha’s Institutions, Bagalkot, 2017."
+          "One day “Orientation Program to The Library And Information Science Professionals Of B.V.V.Sangha’s Institutions, Bagalkote”, 2014.",
+          "Two days Orientation Program “Use of Information Technologies in Libraries” Of B.V.V.Sangha’s Institutions, Bagalkote, 2017."
         ]
       },
       hasDetails: true
@@ -145,7 +145,7 @@ export default function StaffProfilePage() {
       qualification: "BA, MLISC",
       experience: "5 Years",
       email: "Deeepur197@gmail.com",
-      address: "Bagalkot (Contact: 7813091544)",
+      address: "Bagalkote (Contact: 7813091544)",
       image: "facilities/library/staff/deepa-m-kolli.jpg",
       responsibilities: "Book Banks and Journal Section",
       hasDetails: true
