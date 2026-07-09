@@ -24,7 +24,7 @@ export default function SupportingStaffPage() {
       designation: "Mechanic"
     },
     {
-      name: "Mr. S. F. Madiwalar",
+      name: "Mr. Shivayogi F. Madiwalar",
       designation: "SDA"
     },
     {
@@ -36,6 +36,10 @@ export default function SupportingStaffPage() {
       designation: "Helper"
     },
     {
+      name: "Mr. Shivayya A. Hirehal",
+      designation: "Helper"
+    },
+    {
       name: "Mr. Manikesh G. Kaladagi",
       designation: "Attender"
     },
@@ -44,7 +48,7 @@ export default function SupportingStaffPage() {
       designation: "Peon"
     },
     {
-      name: "Mr. A. S. Naragund",
+      name: "Mr. Annadaneppa S. Naragund",
       designation: "Peon"
     }
   ];
