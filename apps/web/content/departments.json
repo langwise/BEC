@@ -2070,7 +2070,476 @@
           "location": "Dharwad",
           "since": "2024"
         }
-      ]
+      ],
+      "researchGrants": [
+        {
+          "title": "Domestic Wastewater Treatment by Graphene",
+          "agency": "KSCST",
+          "year": "2020",
+          "amount": "₹4,000",
+          "investigators": "Prof. G. M Hiremath"
+        },
+        {
+          "title": "An Experimental Study on Effect of Replacement of River Sand by Steel Slag and M-Sand on the Strength Characteristics of Concrete",
+          "agency": "KSCST",
+          "year": "2021",
+          "amount": "₹5,000",
+          "investigators": "Dr. M. M. Hanamasagar"
+        },
+        {
+          "title": "Comparative Study on Durability of Conventional Concrete, HPC Environment Conditions",
+          "agency": "KSCST",
+          "year": "2021",
+          "amount": "₹6,000",
+          "investigators": "Dr. Parameshwar N Hiremath"
+        },
+        {
+          "title": "Experimental Studies on Assessment of Basic Compressive Stress of Stabilized Compressed Mud Block Masonry by Prism Test",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹7,000",
+          "investigators": "Dr. M. M. Hanamasagar"
+        },
+        {
+          "title": "Reclamation And Reuse of Greywater by Construction of Wetlands",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹7,000",
+          "investigators": "Prof. S. M. Kalagudi (Co-PI: Dr. P. G. Rakaraddi)"
+        },
+        {
+          "title": "Sustainable Waste Disposal System for a Rural Area",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹6,000",
+          "investigators": "Dr. Veena S Soraganvi (Co-PI: Dr. Jayalatha N A)"
+        },
+        {
+          "title": "Experimental Study on Geosynthetic Encased Stone Column with Different Soil",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹6,000",
+          "investigators": "Prof. Seema Shringeri"
+        },
+        {
+          "title": "Low-Cost Building Blocks Using Locally Available Materials",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹6,000",
+          "investigators": "Dr. Santhosh M. Malkapur"
+        },
+        {
+          "title": "Studies on Use of Crumb Rubber in Concrete for Acoustical Insulation Purposes",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹6,000",
+          "investigators": "Dr. Santhosh M. Malkapur"
+        },
+        {
+          "title": "A Comprehensive Study on Moment Resisted Connections Under Dynamic Loading",
+          "agency": "KSCST",
+          "year": "2022",
+          "amount": "₹10,000",
+          "investigators": "Dr. S H Sanni (Co-PI: Prof. G S Hiremath)"
+        },
+        {
+          "title": "Treatment of Distillery Spent Wash by Integrated Anaerobic Digestion and Solar Photocatalysis",
+          "agency": "KSCST",
+          "year": "2023",
+          "amount": "₹5,000",
+          "investigators": "Dr. Veena s Soraganvi"
+        },
+        {
+          "title": "Catalytic Micropyrolysis of Waste Plastics into Crude Oil",
+          "agency": "KSCST",
+          "year": "2023",
+          "amount": "₹6,000",
+          "investigators": "Dr. B.R. Hiremath"
+        },
+        {
+          "title": "Treatment of Textile Wastewater by Electrocoagulation Process Using Perforated Aluminium Electrodes",
+          "agency": "KSCST",
+          "year": "2023",
+          "amount": "₹5,000",
+          "investigators": "Dr. B.R. Hiremath"
+        },
+        {
+          "title": "Performance of horizontal Subsurface flow Constructed wetland for Household Wastewater treatment",
+          "agency": "KSCST",
+          "year": "2023-24",
+          "amount": "₹5,500",
+          "investigators": "Dr. Jayalatha N A"
+        },
+        {
+          "title": "Performance of Geo-Synthetic Encased Single and Group of Stone Column with Layered soil",
+          "agency": "KSCST",
+          "year": "2023-24",
+          "amount": "₹5,000",
+          "investigators": "Prof. Seema Shringeri"
+        },
+        {
+          "title": "Performance of horizontal Subsurface flow Constructed wetland for Household Wastewater treatment",
+          "agency": "IWWA",
+          "year": "2023-24",
+          "amount": "₹10,000",
+          "investigators": "Dr. Jayalatha N A"
+        },
+        {
+          "title": "Removal of Heavy Metals from Wastewater by Bioremediation Method Using Microalgae",
+          "agency": "IWWA",
+          "year": "2023-24",
+          "amount": "₹4,000",
+          "investigators": "Dr. B.R Hiremath (Co-PI: Dr. Madhumala)"
+        },
+        {
+          "title": "Microbial Fuel Cell Construction for Sustainable Bio-Energy Generation and Wastewater Treatment",
+          "agency": "KSCST",
+          "year": "2023-24",
+          "amount": "₹7,000",
+          "investigators": "Dr. Jayalatha N A (Co-PI: Dr. G.B Megeri)"
+        },
+        {
+          "title": "Microbial Fuel Cell Construction for Sustainable Bio-Energy Generation and Wastewater Treatment",
+          "agency": "IWWA",
+          "year": "2023-24",
+          "amount": "₹4,000",
+          "investigators": "Dr. Jayalatha N A (Co-PI: Dr. G.B Megeri)"
+        },
+        {
+          "title": "Design of Traffic Signal Alert Device to Reduce the Road Accidents at Critical Sight Distances",
+          "agency": "KSCST",
+          "year": "2024-25",
+          "amount": "₹4,500",
+          "investigators": "Dr. Srinivas F C"
+        }
+      ],
+      "achievementTables": [
+        {
+          "title": "Project Proposals Submitted (10)",
+          "columns": [
+            "Faculty",
+            "Title of the Project",
+            "Sanctioning Scheme",
+            "Year",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "PI: Dr. Jayalatha N A; Co-PI: Dr. G.B Megeri",
+              "Removal of Veterinary Pharmaceuticals from Wastewater using Low-Cost Produced Biosurfactant",
+              "VGST",
+              "2024-25",
+              "₹20 Lakh"
+            ],
+            [
+              "PI: Dr. Santhosh M Malkapur; Co-PI: Dr. Shankar H Sanni",
+              "Centre for evaluating thermal and acoustic performance of building materials",
+              "VGST",
+              "2024-25",
+              "₹20 Lakh"
+            ],
+            [
+              "PI: Dr. S. M. Malkapur; Co-PI: Dr. S.H Sanni",
+              "Tree-Fall Resisting System",
+              "SERB-SURE Scheme (State University Research Scheme)",
+              "2023-24",
+              "₹30 Lakh"
+            ],
+            [
+              "PI: Dr. S. M. Malkapur",
+              "Affordable and durable cool-roof coating for buildings",
+              "Thoughtworks Technologies (India) - Venture Center CSR Grant",
+              "2023-24",
+              "₹50 Lakh"
+            ],
+            [
+              "PI: Dr. S.H Sanni; Co-PI: Dr. S. M. Malkapur",
+              "Experimental investigation on properties of engineered cementitious composites produced with PVA fibers",
+              "SERB-SURE",
+              "2023-24",
+              "₹30 Lakh"
+            ],
+            [
+              "Dr. Jayalatha N A",
+              "Removal of Veterinary Pharmaceuticals from Wastewater using Low-Cost Produced Biosurfactant",
+              "DST-SERB",
+              "2022-23",
+              "₹30 Lakh"
+            ],
+            [
+              "Dr. Adarsh Chatra",
+              "Landslide Early Warning System Using Deterministic and Probabilistic Modelling of Hillslopes",
+              "VGST-Karnataka",
+              "2022-23",
+              "₹20 Lakh"
+            ],
+            [
+              "Dr. Santhosh M. Malkapur",
+              "Centre for evaluating thermal performance of building materials and buildings",
+              "VGST-Karnataka",
+              "2022-23",
+              "₹20 Lakh"
+            ],
+            [
+              "Dr. Jayalatha N A",
+              "Faster Reduction of Sugarcane Industry Process Wastewater Load using Microalgae and Enrichment of Biofertilizer with Algal Biomass",
+              "DST-SERB",
+              "2022-23",
+              "₹20 Lakh"
+            ],
+            [
+              "Dr. Jayalatha N A",
+              "Forecasting of Floods in Ghataprabha River Basin using Ensemble of Artificial Neural Network Algorithms",
+              "DST-SERB",
+              "2022-23",
+              "₹20 Lakh"
+            ]
+          ]
+        },
+        {
+          "title": "Faculty Interaction with the Outside World (28)",
+          "columns": [
+            "Academic Year",
+            "Faculty",
+            "Type of Interaction",
+            "Details",
+            "Organization / Institution",
+            "When"
+          ],
+          "rows": [
+            [
+              "2024-25",
+              "Dr. Veena S Soraganvi",
+              "Convener",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. B.R Hiremath",
+              "Organizing Committee",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Prabhu G. Rakaraddi",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Mahantesh M. Hanamasagar",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Shankar H. Sanni",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Santhosh Malkapur",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Adarsh Chatra",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. G.B. Megeri",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Jayalatha N. A",
+              "Reviewer",
+              "International Conference on Sustainable Solutions in Engineering and Technology",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Sept 2024"
+            ],
+            [
+              "2024-25",
+              "Dr. Santhosh Malkapur",
+              "Session Chair",
+              "International Conference on New Horizons in Civil Engineering",
+              "Manipal Institute of Technology, Manipal",
+              "Dec 2024"
+            ],
+            [
+              "2024-25",
+              "Geetanjali Patil",
+              "Committee Member",
+              "For the Selection of SRF and Project Assistant / Project Management",
+              "University of Horticultural Science, Bagalkote",
+              "Jan 2025"
+            ],
+            [
+              "2024-25",
+              "Dr. Basappa Meti",
+              "Reviewer (Indian Journal of Agricultural Research)",
+              "A Systematic Review of the existing literature to evaluate what is already known of the Participatory Irrigation Management",
+              "ARCC Journals",
+              "Jan 2025"
+            ],
+            [
+              "2024-25",
+              "Dr. G.B. Megeri",
+              "VTU BoE Member",
+              "Appointed as a BoE member for Biotechnology Board",
+              "VTU Belagavi",
+              "Jan 2025"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "Manuscript Reviewer",
+              "Study on Seepage and Stability of Soft Rock Slope with Fissures Under Extreme Rainfall",
+              "Indian Geotechnical Journal",
+              "Nov 2023"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "Manuscript Reviewer",
+              "Probabilistic Stability Analysis of Earthen Slope Using ANN, PSO-ANN, GPR and GA-ANFIS Soft Computing Techniques",
+              "Indian Geotechnical Journal",
+              "Oct 2023"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "Manuscript Reviewer",
+              "A Novel Approach for Identification of Landslide Susceptibility Zones - A Case Study from Uttarakhand Region",
+              "Indian Geotechnical Journal",
+              "Jan 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Jayalatha N A",
+              "Manuscript Reviewer",
+              "",
+              "Water Environment Research",
+              "Feb 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. S.H Sanni",
+              "Manuscript Reviewer",
+              "International Conference on Recent Advances in Applied Engineering Science",
+              "",
+              "March 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "Manuscript Reviewer",
+              "Research on Online Monitoring Technology for Rock Mass Condition of High-Speed Railway Tunnel Portal Slope in Seasonal Freezing Area",
+              "Journal of GeoEngineering",
+              "March 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Santhosh Malkapur",
+              "Session Chair",
+              "International Conference on Sustainable Infrastructure: Innovations, Opportunities and Challenges",
+              "National Institute of Technology Karnataka, Surathkal",
+              "April-May 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Srinivas F Chitragar",
+              "Session Chair",
+              "International Conference on Sustainable Infrastructure: Innovations, Opportunities and Challenges",
+              "National Institute of Technology Karnataka, Surathkal",
+              "April-May 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Adarsh Chatra",
+              "External Member, Board of Examiners",
+              "Board of Examiners",
+              "Ballari Institute of Technology and Management",
+              "2022 - till date"
+            ],
+            [
+              "2023-24",
+              "Dr. Basappa Meti",
+              "Reviewer (Indian Journal of Agricultural Research)",
+              "Performance of Phytohormones Under Distinct Levels of Drip Irrigation on Growth and Productivity of Wheat (Triticum Aestivum L.)",
+              "ARCC Journals",
+              "April 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Basappa Meti",
+              "Reviewer (Indian Journal of Agricultural Research)",
+              "Impacts of Micro-irrigation Technologies in Maharashtra – A Review",
+              "ARCC Journals",
+              "June 2024"
+            ],
+            [
+              "2023-24",
+              "Dr. Jayalatha N A",
+              "Manuscript Reviewer",
+              "Biosurfactant production by Bacillus cereus GX7 utilizing organic waste and its application in the remediation of hydrocarbon-contaminated environments",
+              "World Journal of Microbiology and Biotechnology",
+              "Aug 2024"
+            ],
+            [
+              "2022-23 & 2021-22",
+              "Dr. Jayalatha N A",
+              "Technical Talk",
+              "Biosurfactants: A Green Approach to Environmental Restoration — during the Diamond Jubilee Celebrations (1963-2023) of BEC-IEEE Student Branch",
+              "Basaveshwar Engineering College, Bagalkote",
+              "Aug 2023"
+            ],
+            [
+              "2022-23 & 2021-22",
+              "Dr. P.G Rakaraddi",
+              "Ph.D. Examiner",
+              "Ph.D. Open Seminar",
+              "Visvesvaraya Technological University, Belagavi",
+              "March 2023"
+            ],
+            [
+              "2022-23 & 2021-22",
+              "Dr. Santhosh Malkapur",
+              "Webinar",
+              "Awas par Samvaad — Technology and Innovation, Low-Cost Housing",
+              "Basaveshwar Engineering College, Bagalkote (in association with the Ministry of Housing (MoHUA), District Administration Bagalkote and CMC Bagalkote)",
+              "Oct 2021"
+            ]
+          ]
+        }
+      ],
+      "sectionTitles": {
+        "achievements": "Research Activities"
+      },
+      "sectionNavLabels": {
+        "achievements": "Research Activities"
+      }
     },
     "computer-science-and-engg": {
       "name": "Computer Science and Engineering",
