@@ -170,7 +170,7 @@ export function Footer() {
               <li className="flex gap-2">
                 <MapPin className="h-5 w-5 shrink-0 text-primary" />
                 <span className="text-secondary-foreground/80">
-                  S. Nijalingappa Vidyanagar, Bagalkot - 587102, Karnataka,
+                  S. Nijalingappa Vidyanagar, Bagalkote - 587102, Karnataka,
                   India
                 </span>
               </li>
@@ -210,7 +210,7 @@ export function Footer() {
         <div className="border-t border-secondary-foreground/20 mt-6 pt-6 text-center text-sm text-secondary-foreground/70">
           <p>
             &copy; {new Date().getFullYear()} Basaveshwar Engineering College
-            (Autonomous), Bagalkot. All rights reserved.
+            (Autonomous), Bagalkote. All rights reserved.
           </p>
         </div>
       </div>

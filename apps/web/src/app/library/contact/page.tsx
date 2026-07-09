@@ -83,7 +83,7 @@ export default function ContactPage() {
                       Central Library Building<br />
                       Basaveshwar Engineering College<br />
                       S. Nijalingappa Vidyanagar<br />
-                      Bagalkot - 587102<br />
+                      Bagalkote - 587102<br />
                       Karnataka, India
                     </p>
                   </div>

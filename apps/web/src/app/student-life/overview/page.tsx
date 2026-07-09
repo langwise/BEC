@@ -109,7 +109,7 @@ export default function StudentLifeOverviewPage() {
       <PageHero
         eyebrow="Culture · Clubs · Community"
         title="Life at BEC"
-        description="A vibrant ecosystem of learning, culture and community in the heart of Bagalkot — where students thrive in every aspect of life, not just the classroom."
+        description="A vibrant ecosystem of learning, culture and community in the heart of Bagalkote — where students thrive in every aspect of life, not just the classroom."
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
