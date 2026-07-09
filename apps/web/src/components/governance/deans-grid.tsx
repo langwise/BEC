@@ -23,6 +23,7 @@ export function DeansGrid({ deans }: { deans: Person[] }) {
             name={dean.name || dean.role}
             description={dean.focus}
             email={dean.email}
+            link={dean.link}
             badges={badges}
           />
         );
