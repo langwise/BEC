@@ -451,7 +451,10 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     if (content.activities?.length)
       groups.push({
         subtitle: "Recent Events & Activities",
-        items: content.activities.map((a) => ({ label: a.title, value: a.date })),
+        items: content.activities.map((a) => ({
+          label: a.title,
+          value: [a.date, a.description].filter(Boolean).join(" — "),
+        })),
       });
     for (const assoc of content.associations ?? []) {
       const coords = assoc.coordinators?.length
