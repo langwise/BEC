@@ -363,6 +363,53 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
+  // Publications — year-wise research output grouped by category.
+  if (content.publications?.length) {
+    const groups: ContentGroup[] = [];
+    for (const cat of content.publications) {
+      groups.push({ subtitle: cat.category });
+      for (const y of cat.years) {
+        groups.push({ subtitle: y.year, items: y.items });
+      }
+    }
+    sections.push({
+      id: "publications",
+      type: "content",
+      title: heading("publications", "Publications"),
+      icon: "book",
+      groups,
+    });
+  }
+
+  // Patents — filed / published / granted.
+  if (content.patents?.length) {
+    const hasArea = content.patents.some((p) => p.area);
+    const columns = ["Title of Invention", "Application No.", "Inventors"];
+    if (hasArea) columns.push("Area");
+    columns.push("Filed", "Published", "Status");
+    sections.push({
+      id: "patents",
+      type: "tables",
+      title: heading("patents", "Patents"),
+      icon: "clipboard",
+      tables: [
+        {
+          title: `Patents (${content.patents.length})`,
+          columns,
+          rows: content.patents.map((p) => {
+            const status = p.awarded
+              ? `Granted ${p.awarded}${p.awardNumber ? ` · No. ${p.awardNumber}` : ""}`
+              : p.status ?? "";
+            const row = [p.title, p.applicationNumber ?? "", p.inventors ?? ""];
+            if (hasArea) row.push(p.area ?? "");
+            row.push(p.filed ?? "", p.published ?? "", status);
+            return row;
+          }),
+        },
+      ],
+    });
+  }
+
   // Placements — year-wise summary, recruiters & packages, student-wise detail
   const placements = getDepartmentPlacements(contentKey);
   if (placements && (placements.yearWise.length || placements.batches.length)) {
@@ -570,6 +617,8 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     governance: { label: "Board Members", icon: "clipboard" },
     research: { label: "Research & Labs", icon: "clipboard" },
     "research-achievements": { label: "Research Achievements", icon: "clipboard" },
+    publications: { label: "Publications", icon: "book" },
+    patents: { label: "Patents", icon: "clipboard" },
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
     activities: { label: "Activities", icon: "calendar" },
