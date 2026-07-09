@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,6 +21,8 @@ export type PersonCardProps = {
   description?: string;
   badges?: PersonBadge[];
   email?: string;
+  /** Optional call-to-action link rendered under the details. */
+  link?: { href: string; label: string };
   className?: string;
 };
 
@@ -53,8 +56,16 @@ export function PersonCard({
   description,
   badges = [],
   email,
+  link,
   className,
 }: PersonCardProps) {
+  const linkBadgeIndex = link
+    ? (() => {
+        const primary = badges.findIndex((b) => b.tone === "primary");
+        return primary === -1 ? 0 : primary;
+      })()
+    : -1;
+
   return (
     <Card
       className={cn(
@@ -88,14 +99,40 @@ export function PersonCard({
         ) : null}
         {badges.length ? (
           <div className="flex flex-wrap items-center gap-2 pt-0.5">
-            {badges.map((badge, index) => (
-              <Badge
-                key={`${badge.label}-${index}`}
-                {...badgeProps(badge.tone ?? "muted")}
-              >
-                {badge.label}
-              </Badge>
-            ))}
+            {badges.map((badge, index) => {
+              const isLinked = link && index === linkBadgeIndex;
+              const badgeEl = (
+                <Badge
+                  {...badgeProps(badge.tone ?? "muted")}
+                  className={cn(
+                    badgeProps(badge.tone ?? "muted").className,
+                    isLinked &&
+                      "gap-1 pr-2 ring-1 ring-inset ring-white/25 transition-colors group-hover/badge:bg-primary/85",
+                  )}
+                >
+                  {badge.label}
+                  {isLinked ? (
+                    <ArrowUpRight className="h-3 w-3 opacity-90 transition-transform group-hover/badge:translate-x-0.5 group-hover/badge:-translate-y-0.5" />
+                  ) : null}
+                </Badge>
+              );
+
+              return isLinked ? (
+                <Link
+                  key={`${badge.label}-${index}`}
+                  href={link.href}
+                  aria-label={link.label}
+                  title={link.label}
+                  className="group/badge inline-flex rounded-sm underline decoration-white/40 decoration-dotted underline-offset-4 hover:decoration-white/70"
+                >
+                  {badgeEl}
+                </Link>
+              ) : (
+                <span key={`${badge.label}-${index}`} className="inline-flex">
+                  {badgeEl}
+                </span>
+              );
+            })}
           </div>
         ) : null}
         {email ? (
