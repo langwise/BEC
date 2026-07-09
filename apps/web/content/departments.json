@@ -338,7 +338,7 @@
         "name": "Dr. D. D. Chillal",
         "designation": "HoD",
         "phone": "+91-9880234101",
-		"email": "ddchillal@gmail.com"
+        "email": "ddchillal@gmail.com"
       },
       "supportingStaff": [
         {
@@ -363,7 +363,7 @@
               "position": "Chairman (HoD)"
             },
             {
-              "name": "Dr. Nagaraj Ekbote" ,
+              "name": "Dr. Nagaraj Ekbote",
               "position": "VTU Nominee"
             },
             {
@@ -1424,7 +1424,11 @@
       "visionMissionOnHome": true,
       "groupSupportingStaff": true,
       "placementsSummaryOnly": true,
-      "galleryExclude": ["cine1451", "cine1479", "cine1482"],
+      "galleryExclude": [
+        "cine1451",
+        "cine1479",
+        "cine1482"
+      ],
       "overview": "The Department of Computer Science and Engineering was established in 1983. It offers an undergraduate programme (B.E.) in Computer Science and Engineering with an intake of 180 students, along with M.Sc. (Engineering by Research) and Ph.D. programmes. The department has highly qualified and well-experienced faculty committed to imparting quality technical education in IT and research. Its primary objectives include developing innovative skills, enriching academics through quality teaching-learning processes, building student confidence and inculcating entrepreneurial abilities — producing professionals with ethical values and societal concern.",
       "vision": "To be a Centre of Excellence in IT education, research and innovation, crafting competent professionals catering to the needs of society with moral and ethical values.",
       "mission": [
@@ -1437,7 +1441,7 @@
         "B.E.(Computer Science & Engineering)",
         "M.Sc. (Engineering) by Research",
         "Ph.D. (VTU Belagavi)",
-		"Ph.D. (AICTE QIP)"
+        "Ph.D. (AICTE QIP)"
       ],
       "peos": [
         {
@@ -1477,7 +1481,7 @@
         "9 VTU-recognized research supervisors across Pattern Recognition, Image Processing, IoT and Network Security.",
         "Dedicated research labs in Multimedia & Vision Computing, Wireless & Mobile Computing and Data Mining.",
         "Active student forum (FOCUS).",
-		"Industry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna Technologies."
+        "Industry MoUs with Infosys, Innoovatum, Arlig, Threat Hunters and Sovanna Technologies."
       ],
       "researchAreas": [
         {
@@ -2086,14 +2090,38 @@
       "assetSlug": "ece",
       "tagline": "Excellence in electronics & communication engineering through quality education and research.",
       "newsletters": [
-        { "title": "ECE Newsletter — October 2025", "file": "departments/ece/newsletters/ece-newsletter-oct-2025.pdf" },
-        { "title": "ECE Newsletter — November 2025", "file": "departments/ece/newsletters/ece-newsletter-nov-2025.pdf" },
-        { "title": "ECE Newsletter — December 2025", "file": "departments/ece/newsletters/ece-newsletter-dec-2025.pdf" },
-        { "title": "ECE Newsletter — January 2026", "file": "departments/ece/newsletters/ece-newsletter-jan-2026.pdf" },
-        { "title": "ECE Newsletter — February 2026", "file": "departments/ece/newsletters/ece-newsletter-feb-2026.pdf" },
-        { "title": "ECE Newsletter — March 2026", "file": "departments/ece/newsletters/ece-newsletter-mar-2026.pdf" },
-        { "title": "ECE Newsletter — April 2026", "file": "departments/ece/newsletters/ece-newsletter-apr-2026.pdf" },
-        { "title": "ECE Newsletter — May 2026", "file": "departments/ece/newsletters/ece-newsletter-may-2026.pdf" }
+        {
+          "title": "ECE Newsletter — October 2025",
+          "file": "departments/ece/newsletters/ece-newsletter-oct-2025.pdf"
+        },
+        {
+          "title": "ECE Newsletter — November 2025",
+          "file": "departments/ece/newsletters/ece-newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "ECE Newsletter — December 2025",
+          "file": "departments/ece/newsletters/ece-newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "ECE Newsletter — January 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "ECE Newsletter — February 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "ECE Newsletter — March 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "ECE Newsletter — April 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-apr-2026.pdf"
+        },
+        {
+          "title": "ECE Newsletter — May 2026",
+          "file": "departments/ece/newsletters/ece-newsletter-may-2026.pdf"
+        }
       ],
       "established": "1985",
       "overview": "The Department of Electronics and Communication (E&C) Engineering was established in 1985. It offers an undergraduate programme in Electronics and Communication Engineering along with Ph.D. programmes in cutting-edge areas such as VLSI Design, Digital Signal Processing, Wireless Networking, MEMS and Speech Signal Processing. Recognised as a Quality Improvement Programme (QIP) centre by the Government of India, the department has a strong legacy in research and development — particularly in communications, signal processing, microelectronics and RF/photonics. It hosts well-equipped laboratories spanning digital electronics, advanced digital communication, microwave communication, microprocessors and microcontrollers, and computer networks, along with an exclusive computing facility running industry-standard tools such as CADENCE VLSI, ECAD and VHDL simulation/synthesis packages. The department regularly organises seminars, workshops and training programmes under initiatives like TEQIP, ACME and AICTE, and has executed several AICTE-sponsored projects to strengthen its laboratory and research capabilities.",
@@ -2176,7 +2204,10 @@
         {
           "name": "ACME — Association for Communication and Modern Electronics",
           "about": "The Association for Communication and Modern Electronics (ACME) is the official student association of the Department of Electronics and Communication Engineering. It serves as a dynamic platform for students to explore, engage, and excel beyond academics. ACME organizes a wide variety of events throughout the year, including technical workshops, seminars, sports competitions, cultural programs, fun activities, and celebrations of important days. The association aims to foster all-round development by encouraging creativity, teamwork, leadership, and technical excellence among students. By bridging academics with extracurricular involvement, ACME plays a vital role in enriching the campus experience for ECE students.",
-          "coordinators": ["Dr. Sharanappa P. H.", "Dr. Basavaraj M. Angadi"]
+          "coordinators": [
+            "Dr. Sharanappa P. H.",
+            "Dr. Basavaraj M. Angadi"
+          ]
         }
       ],
       "contact": {
@@ -3657,14 +3688,38 @@
       "assetSlug": "ecs",
       "tagline": "An interdisciplinary department blending electronics engineering and computer science to design, develop and integrate innovative technologies.",
       "newsletters": [
-        { "title": "ECS Newsletter — October 2025", "file": "departments/ecs/newsletters/newsletter-oct-2025.pdf" },
-        { "title": "ECS Newsletter — November 2025", "file": "departments/ecs/newsletters/newsletter-nov-2025.pdf" },
-        { "title": "ECS Newsletter — December 2025", "file": "departments/ecs/newsletters/newsletter-dec-2025.pdf" },
-        { "title": "ECS Newsletter — January 2026", "file": "departments/ecs/newsletters/newsletter-jan-2026.pdf" },
-        { "title": "ECS Newsletter — February 2026", "file": "departments/ecs/newsletters/newsletter-feb-2026.pdf" },
-        { "title": "ECS Newsletter — March 2026", "file": "departments/ecs/newsletters/newsletter-mar-2026.pdf" },
-        { "title": "ECS Newsletter — April 2026", "file": "departments/ecs/newsletters/newsletter-apr-2026.pdf" },
-        { "title": "ECS Newsletter — May 2026", "file": "departments/ecs/newsletters/newsletter-may-2026.pdf" }
+        {
+          "title": "ECS Newsletter — October 2025",
+          "file": "departments/ecs/newsletters/newsletter-oct-2025.pdf"
+        },
+        {
+          "title": "ECS Newsletter — November 2025",
+          "file": "departments/ecs/newsletters/newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "ECS Newsletter — December 2025",
+          "file": "departments/ecs/newsletters/newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "ECS Newsletter — January 2026",
+          "file": "departments/ecs/newsletters/newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "ECS Newsletter — February 2026",
+          "file": "departments/ecs/newsletters/newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "ECS Newsletter — March 2026",
+          "file": "departments/ecs/newsletters/newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "ECS Newsletter — April 2026",
+          "file": "departments/ecs/newsletters/newsletter-apr-2026.pdf"
+        },
+        {
+          "title": "ECS Newsletter — May 2026",
+          "file": "departments/ecs/newsletters/newsletter-may-2026.pdf"
+        }
       ],
       "established": "2024",
       "intake": "60",
@@ -4488,14 +4543,6 @@
           "date": "27 March 2026",
           "description": "Practical-oriented session organised by the Departments of Mechanical Engineering Sciences covering symbols, datums, tolerance zones and their real-time applications in design, manufacturing and quality control. Resource person: Mr. Gitan Ginde, Founder Director of Ganitharth Technologies and an alumnus of the IPE Department."
         }
-      ],
-      "additionalContacts": [
-        {
-          "name": "Dr. C. M. Javalagi",
-          "designation": "Professor and Head",
-          "phone": "+91-9448751788",
-          "email": "cmjavalagi@gmail.com"
-        }
       ]
     },
     "information-science-and-engg": {
@@ -4609,7 +4656,10 @@
         {
           "name": "RISE — Rays of Information Science Engineers (Student Association of ISE)",
           "about": "The departmental student association, functioning since 2007-08, provides a platform for students to develop leadership, management, organisational and technical skills. It organises technical talks, workshops, training and skill/staff development programmes, and celebrations through the academic year, with active participation from alumni.",
-          "coordinators": ["Prof. G. B. Shettar", "Prof. S. S. Hiremath"]
+          "coordinators": [
+            "Prof. G. B. Shettar",
+            "Prof. S. S. Hiremath"
+          ]
         }
       ],
       "contact": {
@@ -5511,6 +5561,90 @@
           "version": "V14.5",
           "usage": "Finite element analysis (FEA)"
         }
+      ],
+      "wk": [
+        {
+          "code": "WK1",
+          "text": "A systematic, theory-based understanding of the natural sciences applicable to the discipline and awareness of relevant social sciences."
+        },
+        {
+          "code": "WK2",
+          "text": "Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed analysis and modelling applicable to the discipline."
+        },
+        {
+          "code": "WK3",
+          "text": "A systematic, theory-based formulation of engineering fundamentals required in the engineering discipline."
+        },
+        {
+          "code": "WK4",
+          "text": "Engineering specialist knowledge that provides theoretical frameworks and bodies of knowledge for the accepted practice areas in the engineering discipline; much is at the forefront of the discipline."
+        },
+        {
+          "code": "WK5",
+          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, re-use of resources, net zero carbon, and similar concepts, that supports engineering design and operations in a practice area."
+        },
+        {
+          "code": "WK6",
+          "text": "Knowledge of engineering practice (technology) in the practice areas in the engineering discipline."
+        },
+        {
+          "code": "WK7",
+          "text": "Knowledge of the role of engineering in society and identified issues in engineering practice in the discipline, such as the professional responsibility of an engineer to public safety and sustainable development."
+        },
+        {
+          "code": "WK8",
+          "text": "Engagement with selected knowledge in the current research literature of the discipline, awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
+        },
+        {
+          "code": "WK9",
+          "text": "Ethics, inclusive behavior and conduct. Knowledge of professional ethics, responsibilities, and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
+        }
+      ],
+      "pos": [
+        {
+          "code": "PO1",
+          "text": "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development (WK1 to WK4)."
+        },
+        {
+          "code": "PO3",
+          "text": "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required (WK5)."
+        },
+        {
+          "code": "PO4",
+          "text": "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions (WK8)."
+        },
+        {
+          "code": "PO5",
+          "text": "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems (WK2 and WK6)."
+        },
+        {
+          "code": "PO6",
+          "text": "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment (WK1, WK5, and WK7)."
+        },
+        {
+          "code": "PO7",
+          "text": "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws (WK9)."
+        },
+        {
+          "code": "PO8",
+          "text": "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams."
+        },
+        {
+          "code": "PO9",
+          "text": "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences."
+        },
+        {
+          "code": "PO10",
+          "text": "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments."
+        },
+        {
+          "code": "PO11",
+          "text": "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change (WK8)."
+        }
       ]
     },
     "physics": {
@@ -6176,387 +6310,387 @@
         "phone": "+91-9611431878",
         "email": "bghhs@becbgk.edu"
       },
-        "curriculumGroups": [
-          {
-            "title": "First Year (2025-26)",
-            "documents": [
-              {
-                "title": "Scheme of Teaching & Examinations (2025-26)",
-                "file": "departments/hss/docs/scheme-1st-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus (2025-26)",
-                "file": "departments/hss/docs/syllabus-1st-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus — Samskrutika Kannada (1BHSA107C)",
-                "file": "departments/hss/docs/syllabus-1st-year-samskrutika-kannada-1bhsa107c.pdf"
-              },
-              {
-                "title": "Syllabus — Balake Kannada (1BHSB107C)",
-                "file": "departments/hss/docs/syllabus-1st-year-balake-kannada-1bhsb107c.pdf"
-              }
-            ]
-          },
-          {
-            "title": "Second Year (2025-26)",
-            "documents": [
-              {
-                "title": "Scheme of Teaching & Examinations (2025-26)",
-                "file": "departments/hss/docs/scheme-2nd-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus (2025-26)",
-                "file": "departments/hss/docs/syllabus-2nd-year-25-26.pdf"
-              }
-            ]
-          },
-          {
-            "title": "Third Year (2025-26)",
-            "documents": [
-              {
-                "title": "Scheme of Teaching & Examinations (2025-26)",
-                "file": "departments/hss/docs/scheme-3rd-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus (2025-26)",
-                "file": "departments/hss/docs/syllabus-3rd-year-25-26.pdf"
-              }
-            ]
-          },
-          {
-            "title": "Fourth Year (2025-26)",
-            "documents": [
-              {
-                "title": "Scheme of Teaching & Examinations (2025-26)",
-                "file": "departments/hss/docs/scheme-4th-year-25-26.pdf"
-              },
-              {
-                "title": "Syllabus — VII & VIII Semester (2025-26)",
-                "file": "departments/hss/docs/syllabus-4th-year-25-26.pdf"
-              }
-            ]
-          },
-          {
-            "title": "Time Tables (2025-26)",
-            "documents": [
-              {
-                "title": "Time Table — Odd Semester",
-                "file": "departments/hss/docs/time-table-odd-sem-25-26.pdf"
-              },
-              {
-                "title": "Time Table — Even Semester",
-                "file": "departments/hss/docs/time-table-even-sem-25-26.pdf"
-              }
-            ]
-          }
-        ],
-        "activities": [
-          {
-            "title": "Classroom online quizzes after every topic",
-            "date": "Ongoing"
-          },
-          {
-            "title": "Student seminars — document preparation and PPT presentations on the digital board (I semester)",
-            "date": "Ongoing"
-          }
-        ],
-        "committeeGroups": [
-          {
-            "title": "Board of Studies in Humanities & Social Sciences",
-            "members": [
-              {
-                "name": "Dr. B. G. Hokarani",
-                "position": "Chairman — BEC, Bagalkote"
-              },
-              {
-                "name": "Dr. Sujata D.Patil",
-                "position": "Member(VTU Nominee) — PDA Engineering College,Kalaburgi"
-              },
-              {
-                "name": "Dr.Ridhima",
-                "position": "Member — IIT Dharawad"
-              },
-              {
-                "name": "Dr. Tejashwini B.J",
-                "position": "Member (Subject Expert) — BMSIT&M,Bengaluru"
-              },
-              {
-                "name": "Mrs. Jyoti Rotti",
-                "position": "Member(Alumni) — CEO and Co-FounderNEWNOP Technologies Pvt Ltd,Bengaluru"
-              },
-              {
-                "name": "Miss. Nidhi P. Koranmath",
-                "position": "Member(Internal) — BEC, Bagalkote"
-              },
-              {
-                "name": "Smt. Shanta Byadagi",
-                "position": "Member(Internal) — BEC, Bagalkote"
-              },
-              {
-                "name": "Dr.S.G.Kambalimath",
-                "position": "Member(Internal) — BEC, Bagalkote"
-              },
-              {
-                "name": "Shri. P. V. Kulkarni",
-                "position": "Subject Expert(Internal) — BEC, Bagalkote"
-              },
-              {
-                "name": "Dr.Shobha R.Patil",
-                "position": "Subject Expert(Internal) — BEC, BagalkoteCoordinator UHV-Cell"
-              },
-              {
-                "name": "Dr. S.K. Patil",
-                "position": "Subject Expert(Internal) — Associate ProfessorNSS Co-Ordinator,BEC, BGK"
-              },
-              {
-                "name": "Shri. Ganesh Kori",
-                "position": "Subject Expert(Internal) — Physical Director,BEC, BGK"
-              }
-            ]
-          },
-          {
-            "title": "Panel of Examiners (2025-26)",
-            "members": [
-              {
-                "name": "B.G.Hokarani.",
-                "position": "Assistant Professor.HOD of HSS. — Department of Humanities and Social Sciences. Basaveshwar Engineering College, Bagalkote"
-              },
-              {
-                "name": "Prof.Nidhi P.Koranmath",
-                "position": "Assistant Professor — Basaveshwar Engineering College, Bagalkote.Department of Humanities and Social Sciences"
-              },
-              {
-                "name": "Smt.Shanta Byadagi",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences Basaveshwar Engineering College, Bagalkote"
-              },
-              {
-                "name": "Prof. Ganesh Tilve",
-                "position": "Assistant Professor — Department of Biotechnology Engineering.GMIT Davangere"
-              },
-              {
-                "name": "Prof.Suresh Doddi",
-                "position": "Assistant Professor — Department of Mechanical Engineering.BLDEACET, Vijayapur."
-              },
-              {
-                "name": "Dr.I.G.Patil",
-                "position": "Professor — Department of Mechanical Engineering. TCE, Gadag ."
-              },
-              {
-                "name": "Prof.Sunil Biradar",
-                "position": "Associate Professor — Department of Mechanical EngineeringBLDEA’S Engineering College,Vijayapura"
-              },
-              {
-                "name": "Dr.Sujata.D.Patil",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering. Kalburgi"
-              },
-              {
-                "name": "Dr.Gloria",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Technology Hubli."
-              },
-              {
-                "name": "Sangappa K Kuppas",
-                "position": "Yoga Trainer — Vivekananda Yoga Vignan Kendra,Bagalkote."
-              },
-              {
-                "name": "Prof. Ganesh Kori",
-                "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.Bhimanagouda Chitranal",
-                "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof. Shantu kattimani",
-                "position": "Sports Trainer — Department of Sports. Basaveshwar International Public School,Bagalakote"
-              },
-              {
-                "name": "Dr.Tejaswini B J",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. BMSIT&M,Yelahank PDA, Bangalur"
-              },
-              {
-                "name": "Prof.Anand.Patil.",
-                "position": "Assistant Professor.HOD of HSS — Department of Humanities and Social Sciences. PDA, College of Engineering, Kalaburgi."
-              },
-              {
-                "name": "Prof.Shivakumar Nayak",
-                "position": "Assistant Professor — Department of Electrical and Electronic Engineering.Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.M.M.Ganganallimath",
-                "position": "Assistant Professor — Department of Industrial and Production Engineering.Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Smt. Roopa B. MathDepartment of ISE",
-                "position": "Assistant Professor — Department of Information Science Engineering.Basaveshwar Engineering College,Bagalkote"
-              },
-              {
-                "name": "Prof.Hariharan P.",
-                "position": "Assistant Professor — Department of Biotechnology Engineering.Sir M Visvesvaraya Institute of Technology,Bangalur."
-              },
-              {
-                "name": "Purushottam Kumar",
-                "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru."
-              },
-              {
-                "name": "Dr.Rakesh Huded",
-                "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi."
-              },
-              {
-                "name": "Dr.Savitri Sattagiri.",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences PDA College of Engineering.Kalburgi."
-              },
-              {
-                "name": "Prof.Usharani M.",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences Maharaj Technical University ,BelavadiMandya.-571477"
-              },
-              {
-                "name": "Dr.Savithri Shantagiri",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering.Gulbarga."
-              },
-              {
-                "name": "Prof.Uma Bhavani",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. Maharaj Technical University ,BelavadiMandya.-571477"
-              },
-              {
-                "name": "Prof. Prateeka R Pujar",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
-              },
-              {
-                "name": "Prof.S.V.Katti",
-                "position": "Assistant Professor — Department of English.Basaveshwar Art’s College,Bagalkote."
-              },
-              {
-                "name": "Dr.G.I.Nandikolmath",
-                "position": "Assistant Professor — Department of Kannada.Akkamahadevi Woman’s College,Bagalkote."
-              },
-              {
-                "name": "Dr.Rekha Chauhan",
-                "position": "Assistant Professor — Government Law College, Hasana ."
-              },
-              {
-                "name": "Prof.Prashantha.B.B",
-                "position": "Assistant Professor — Department of Physics.Sir M Visvesvaraya institute of technology, Hunasamaranahalli, Bangalur."
-              },
-              {
-                "name": "Dr.Jayachandra S Y",
-                "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College Bagalkote."
-              },
-              {
-                "name": "Prof.Rajashekhar Malgihal",
-                "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Prof.Shivakumar Nayak",
-                "position": "Assistant Professor — Department of Electrical and Electronic EngineeringBasaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.Supriya Harlapur.",
-                "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Dr.Nagaraj Kalligudda",
-                "position": "Assistant Professor — Department of Artificial Intelligence and Machine learning EngineeringBasaveshwar Engineering College Bagalkote."
-              },
-              {
-                "name": "Prof.P.V.Kulkani",
-                "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Dr.D.D.Challal",
-                "position": "Assistant Professor — Department of Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Dr.Vilas Niak",
-                "position": "Assistant Professor — Department of Computer Science EngineeringBasaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.M.M.Ganganallimath",
-                "position": "Assistant Professor — Department of Mechanical EngineeringBasaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.R.G.Patil",
-                "position": "Assistant Professor — Department of Electrical and Electronic Engineering Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.A.S.Chatra",
-                "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Dr. S.V.Heggond",
-                "position": "Assistant Professor — Department of Civil Engineering Basaveshwar Engineering College,Bagalkote."
-              },
-              {
-                "name": "Prof.Dinesh B.Mirajkar",
-                "position": "Assistant Professor — Department of Information Science EngineeringTatyasaheb Kore Institute of Engineering and Technology Warana University Warananagar, Maharashtra"
-              },
-              {
-                "name": "Prof.Sanjay Yadav",
-                "position": "Assistant Professor — Department of Mechanical Engineering. Basaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Prof.V.V.Rajput",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Gogte Institute of Technology Belagavi."
-              },
-              {
-                "name": "Dr.Madumala Y",
-                "position": "Assistant Professor — Department of Biotechnology Engineering.Basaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Prof.Hariharan P.",
-                "position": "Assistant Professor — Department of Biotechnology.Sir M Visvesvaraya Institute of Technology, Bangalur"
-              },
-              {
-                "name": "Phri.A Vishnupriya",
-                "position": "Assistant Manager — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
-              },
-              {
-                "name": "Prof.Shivam Kumar",
-                "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
-              },
-              {
-                "name": "Dr.Basavaraj H. N",
-                "position": "Assistant Professor — Department of Computer Science EngBMSIT AND M,Bangalur"
-              },
-              {
-                "name": "Dr.Rakesh Huded",
-                "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi"
-              },
-              {
-                "name": "Dr.Shobha Patil",
-                "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwa Engineering College, Bagalkote"
-              },
-              {
-                "name": "Prof. Priti Kumarmath",
-                "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Dr.Mallikarjun Aralimarad",
-                "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College, Bagalkote."
-              },
-              {
-                "name": "Shri.Himanshu Vyas",
-                "position": "Soft Skills trainer — Z Skillup ,Bangaluru."
-              },
-              {
-                "name": "Dr.Prashant Niranjan",
-                "position": "Associate Professor — Department of Computer Science Engineering. GIT,Belagavi"
-              },
-              {
-                "name": "Dr.C.R.Hiremath",
-                "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
-              },
-              {
-                "name": "Prof. Jayanti S.Sakri",
-                "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
-              },
-              {
-                "name": "Prof. Prashant Puthani",
-                "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
-              }
-            ]
-          }
-        ]
+      "curriculumGroups": [
+        {
+          "title": "First Year (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/hss/docs/scheme-1st-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus (2025-26)",
+              "file": "departments/hss/docs/syllabus-1st-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus — Samskrutika Kannada (1BHSA107C)",
+              "file": "departments/hss/docs/syllabus-1st-year-samskrutika-kannada-1bhsa107c.pdf"
+            },
+            {
+              "title": "Syllabus — Balake Kannada (1BHSB107C)",
+              "file": "departments/hss/docs/syllabus-1st-year-balake-kannada-1bhsb107c.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Second Year (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/hss/docs/scheme-2nd-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus (2025-26)",
+              "file": "departments/hss/docs/syllabus-2nd-year-25-26.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Third Year (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/hss/docs/scheme-3rd-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus (2025-26)",
+              "file": "departments/hss/docs/syllabus-3rd-year-25-26.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Fourth Year (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "file": "departments/hss/docs/scheme-4th-year-25-26.pdf"
+            },
+            {
+              "title": "Syllabus — VII & VIII Semester (2025-26)",
+              "file": "departments/hss/docs/syllabus-4th-year-25-26.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Time Tables (2025-26)",
+          "documents": [
+            {
+              "title": "Time Table — Odd Semester",
+              "file": "departments/hss/docs/time-table-odd-sem-25-26.pdf"
+            },
+            {
+              "title": "Time Table — Even Semester",
+              "file": "departments/hss/docs/time-table-even-sem-25-26.pdf"
+            }
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "title": "Classroom online quizzes after every topic",
+          "date": "Ongoing"
+        },
+        {
+          "title": "Student seminars — document preparation and PPT presentations on the digital board (I semester)",
+          "date": "Ongoing"
+        }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies in Humanities & Social Sciences",
+          "members": [
+            {
+              "name": "Dr. B. G. Hokarani",
+              "position": "Chairman — BEC, Bagalkote"
+            },
+            {
+              "name": "Dr. Sujata D.Patil",
+              "position": "Member(VTU Nominee) — PDA Engineering College,Kalaburgi"
+            },
+            {
+              "name": "Dr.Ridhima",
+              "position": "Member — IIT Dharawad"
+            },
+            {
+              "name": "Dr. Tejashwini B.J",
+              "position": "Member (Subject Expert) — BMSIT&M,Bengaluru"
+            },
+            {
+              "name": "Mrs. Jyoti Rotti",
+              "position": "Member(Alumni) — CEO and Co-FounderNEWNOP Technologies Pvt Ltd,Bengaluru"
+            },
+            {
+              "name": "Miss. Nidhi P. Koranmath",
+              "position": "Member(Internal) — BEC, Bagalkote"
+            },
+            {
+              "name": "Smt. Shanta Byadagi",
+              "position": "Member(Internal) — BEC, Bagalkote"
+            },
+            {
+              "name": "Dr.S.G.Kambalimath",
+              "position": "Member(Internal) — BEC, Bagalkote"
+            },
+            {
+              "name": "Shri. P. V. Kulkarni",
+              "position": "Subject Expert(Internal) — BEC, Bagalkote"
+            },
+            {
+              "name": "Dr.Shobha R.Patil",
+              "position": "Subject Expert(Internal) — BEC, BagalkoteCoordinator UHV-Cell"
+            },
+            {
+              "name": "Dr. S.K. Patil",
+              "position": "Subject Expert(Internal) — Associate ProfessorNSS Co-Ordinator,BEC, BGK"
+            },
+            {
+              "name": "Shri. Ganesh Kori",
+              "position": "Subject Expert(Internal) — Physical Director,BEC, BGK"
+            }
+          ]
+        },
+        {
+          "title": "Panel of Examiners (2025-26)",
+          "members": [
+            {
+              "name": "B.G.Hokarani.",
+              "position": "Assistant Professor.HOD of HSS. — Department of Humanities and Social Sciences. Basaveshwar Engineering College, Bagalkote"
+            },
+            {
+              "name": "Prof.Nidhi P.Koranmath",
+              "position": "Assistant Professor — Basaveshwar Engineering College, Bagalkote.Department of Humanities and Social Sciences"
+            },
+            {
+              "name": "Smt.Shanta Byadagi",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences Basaveshwar Engineering College, Bagalkote"
+            },
+            {
+              "name": "Prof. Ganesh Tilve",
+              "position": "Assistant Professor — Department of Biotechnology Engineering.GMIT Davangere"
+            },
+            {
+              "name": "Prof.Suresh Doddi",
+              "position": "Assistant Professor — Department of Mechanical Engineering.BLDEACET, Vijayapur."
+            },
+            {
+              "name": "Dr.I.G.Patil",
+              "position": "Professor — Department of Mechanical Engineering. TCE, Gadag ."
+            },
+            {
+              "name": "Prof.Sunil Biradar",
+              "position": "Associate Professor — Department of Mechanical EngineeringBLDEA’S Engineering College,Vijayapura"
+            },
+            {
+              "name": "Dr.Sujata.D.Patil",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering. Kalburgi"
+            },
+            {
+              "name": "Dr.Gloria",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Technology Hubli."
+            },
+            {
+              "name": "Sangappa K Kuppas",
+              "position": "Yoga Trainer — Vivekananda Yoga Vignan Kendra,Bagalkote."
+            },
+            {
+              "name": "Prof. Ganesh Kori",
+              "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.Bhimanagouda Chitranal",
+              "position": "Sports Trainer — Department of Sports. Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof. Shantu kattimani",
+              "position": "Sports Trainer — Department of Sports. Basaveshwar International Public School,Bagalakote"
+            },
+            {
+              "name": "Dr.Tejaswini B J",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. BMSIT&M,Yelahank PDA, Bangalur"
+            },
+            {
+              "name": "Prof.Anand.Patil.",
+              "position": "Assistant Professor.HOD of HSS — Department of Humanities and Social Sciences. PDA, College of Engineering, Kalaburgi."
+            },
+            {
+              "name": "Prof.Shivakumar Nayak",
+              "position": "Assistant Professor — Department of Electrical and Electronic Engineering.Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.M.M.Ganganallimath",
+              "position": "Assistant Professor — Department of Industrial and Production Engineering.Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Smt. Roopa B. MathDepartment of ISE",
+              "position": "Assistant Professor — Department of Information Science Engineering.Basaveshwar Engineering College,Bagalkote"
+            },
+            {
+              "name": "Prof.Hariharan P.",
+              "position": "Assistant Professor — Department of Biotechnology Engineering.Sir M Visvesvaraya Institute of Technology,Bangalur."
+            },
+            {
+              "name": "Purushottam Kumar",
+              "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru."
+            },
+            {
+              "name": "Dr.Rakesh Huded",
+              "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi."
+            },
+            {
+              "name": "Dr.Savitri Sattagiri.",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences PDA College of Engineering.Kalburgi."
+            },
+            {
+              "name": "Prof.Usharani M.",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences Maharaj Technical University ,BelavadiMandya.-571477"
+            },
+            {
+              "name": "Dr.Savithri Shantagiri",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. PDA College of Engineering.Gulbarga."
+            },
+            {
+              "name": "Prof.Uma Bhavani",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. Maharaj Technical University ,BelavadiMandya.-571477"
+            },
+            {
+              "name": "Prof. Prateeka R Pujar",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
+            },
+            {
+              "name": "Prof.S.V.Katti",
+              "position": "Assistant Professor — Department of English.Basaveshwar Art’s College,Bagalkote."
+            },
+            {
+              "name": "Dr.G.I.Nandikolmath",
+              "position": "Assistant Professor — Department of Kannada.Akkamahadevi Woman’s College,Bagalkote."
+            },
+            {
+              "name": "Dr.Rekha Chauhan",
+              "position": "Assistant Professor — Government Law College, Hasana ."
+            },
+            {
+              "name": "Prof.Prashantha.B.B",
+              "position": "Assistant Professor — Department of Physics.Sir M Visvesvaraya institute of technology, Hunasamaranahalli, Bangalur."
+            },
+            {
+              "name": "Dr.Jayachandra S Y",
+              "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College Bagalkote."
+            },
+            {
+              "name": "Prof.Rajashekhar Malgihal",
+              "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Prof.Shivakumar Nayak",
+              "position": "Assistant Professor — Department of Electrical and Electronic EngineeringBasaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.Supriya Harlapur.",
+              "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Dr.Nagaraj Kalligudda",
+              "position": "Assistant Professor — Department of Artificial Intelligence and Machine learning EngineeringBasaveshwar Engineering College Bagalkote."
+            },
+            {
+              "name": "Prof.P.V.Kulkani",
+              "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Dr.D.D.Challal",
+              "position": "Assistant Professor — Department of Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Dr.Vilas Niak",
+              "position": "Assistant Professor — Department of Computer Science EngineeringBasaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.M.M.Ganganallimath",
+              "position": "Assistant Professor — Department of Mechanical EngineeringBasaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.R.G.Patil",
+              "position": "Assistant Professor — Department of Electrical and Electronic Engineering Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.A.S.Chatra",
+              "position": "Assistant Professor — Department of Civil EngineeringBasaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Dr. S.V.Heggond",
+              "position": "Assistant Professor — Department of Civil Engineering Basaveshwar Engineering College,Bagalkote."
+            },
+            {
+              "name": "Prof.Dinesh B.Mirajkar",
+              "position": "Assistant Professor — Department of Information Science EngineeringTatyasaheb Kore Institute of Engineering and Technology Warana University Warananagar, Maharashtra"
+            },
+            {
+              "name": "Prof.Sanjay Yadav",
+              "position": "Assistant Professor — Department of Mechanical Engineering. Basaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Prof.V.V.Rajput",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. KLE Gogte Institute of Technology Belagavi."
+            },
+            {
+              "name": "Dr.Madumala Y",
+              "position": "Assistant Professor — Department of Biotechnology Engineering.Basaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Prof.Hariharan P.",
+              "position": "Assistant Professor — Department of Biotechnology.Sir M Visvesvaraya Institute of Technology, Bangalur"
+            },
+            {
+              "name": "Phri.A Vishnupriya",
+              "position": "Assistant Manager — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
+            },
+            {
+              "name": "Prof.Shivam Kumar",
+              "position": "Subject Expert — Ethnus Consultancy Services PrivateLimited.Jayanagar,Bengaluru"
+            },
+            {
+              "name": "Dr.Basavaraj H. N",
+              "position": "Assistant Professor — Department of Computer Science EngBMSIT AND M,Bangalur"
+            },
+            {
+              "name": "Dr.Rakesh Huded",
+              "position": "Associate Professor — Department of Electrical and Electronic EngineeringPDA, College of Engineering, Kalaburgi"
+            },
+            {
+              "name": "Dr.Shobha Patil",
+              "position": "Assistant Professor — Department of Information Science EngineeringBasaveshwa Engineering College, Bagalkote"
+            },
+            {
+              "name": "Prof. Priti Kumarmath",
+              "position": "Assistant Professor — Department of Biotechnology EngineeringBasaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Dr.Mallikarjun Aralimarad",
+              "position": "Assistant Professor — Department of Electrical and Communication Engineering Basaveshwar Engineering College, Bagalkote."
+            },
+            {
+              "name": "Shri.Himanshu Vyas",
+              "position": "Soft Skills trainer — Z Skillup ,Bangaluru."
+            },
+            {
+              "name": "Dr.Prashant Niranjan",
+              "position": "Associate Professor — Department of Computer Science Engineering. GIT,Belagavi"
+            },
+            {
+              "name": "Dr.C.R.Hiremath",
+              "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
+            },
+            {
+              "name": "Prof. Jayanti S.Sakri",
+              "position": "Assistant Professor — Department of Humanities and Social Sciences. KLEIT,Hubballi."
+            },
+            {
+              "name": "Prof. Prashant Puthani",
+              "position": "Assistant Professor — Department of Mechanical Engineering, BLDEA,s Engineering College, Vijyapur"
+            }
+          ]
+        }
+      ]
     },
     "pg/environmental-engg": {
       "name": "M.Tech. in Environmental Engineering",
@@ -11390,11 +11524,26 @@
         "Ph.D. — Management (VTU)"
       ],
       "pos": [
-        { "code": "PO1", "text": "Apply knowledge of management theories and practices to solve business problems." },
-        { "code": "PO2", "text": "Foster analytical and critical thinking abilities for data based decision making." },
-        { "code": "PO3", "text": "Ability to develop value-based leadership." },
-        { "code": "PO4", "text": "Ability to understand, analyze and communicate global, economic, legal and ethical aspects of business." },
-        { "code": "PO5", "text": "Ability to lead themselves and others in the achievement of organizational goals contributing effectively to a team environment." }
+        {
+          "code": "PO1",
+          "text": "Apply knowledge of management theories and practices to solve business problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Foster analytical and critical thinking abilities for data based decision making."
+        },
+        {
+          "code": "PO3",
+          "text": "Ability to develop value-based leadership."
+        },
+        {
+          "code": "PO4",
+          "text": "Ability to understand, analyze and communicate global, economic, legal and ethical aspects of business."
+        },
+        {
+          "code": "PO5",
+          "text": "Ability to lead themselves and others in the achievement of organizational goals contributing effectively to a team environment."
+        }
       ],
       "highlights": [
         "Established in 2009; an autonomous programme affiliated to VTU and approved by AICTE, with an intake of 60.",
