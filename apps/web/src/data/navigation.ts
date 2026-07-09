@@ -34,6 +34,7 @@ export const navigationData: NavigationItem[] = [
           { title: "BEC-CED", href: "/institute/cells/ced" },
         ],
       },
+      { title: "Dean ICT", href: "/institute/dean-ict" },
       {
         title: "Campus",
         items: [
