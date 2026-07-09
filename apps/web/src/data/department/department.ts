@@ -137,6 +137,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   // Academics — programs, PEOs, PSOs
   if (
     content.programsOffered?.length ||
+    content.programStructure?.length ||
     content.peos?.length ||
     content.psos?.length ||
     content.pos?.length ||
@@ -145,6 +146,8 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     const groups: ContentGroup[] = [];
     if (content.programsOffered?.length)
       groups.push({ subtitle: "Programs Offered", items: content.programsOffered });
+    if (content.programStructure?.length)
+      groups.push({ subtitle: "Programme Structure", items: content.programStructure });
     if (content.peos?.length)
       groups.push({
         subtitle: "Programme Educational Objectives (PEO's)",
@@ -437,6 +440,21 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({ id: "startups", type: "tables", title: heading("startups", "Startups"), icon: "briefcase", tables });
   }
 
+  // Free-form awards/achievements tables (faculty awards, student projects/participation, chapter awards).
+  if (content.achievementTables?.length) {
+    sections.push({
+      id: "achievements",
+      type: "tables",
+      title: heading("achievements", "Awards & Achievements"),
+      icon: "award",
+      tables: content.achievementTables.map((t) => ({
+        title: t.title,
+        columns: t.columns,
+        rows: t.rows,
+      })),
+    });
+  }
+
   // Alumni testimonials
   if (content.testimonials?.length) {
     sections.push({
@@ -658,6 +676,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     publications: { label: "Publications", icon: "book" },
     patents: { label: "Patents", icon: "clipboard" },
     startups: { label: "Startups", icon: "briefcase" },
+    achievements: { label: "Awards & Achievements", icon: "award" },
     alumni: { label: "Alumni", icon: "users" },
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
