@@ -4,6 +4,7 @@ import { useState } from "react";
 import DepartmentSidebar from "@/components/academics/departments/sidebar";
 import type { DataTable, DepartmentData, DocLink } from "@/data/department/department";
 import ContentSection from "@/components/academics/departments/content";
+import TestimonialsSection from "@/components/academics/departments/testimonials";
 import { CheckCircle2, FileText, Download } from "lucide-react";
 import { FacultyCard } from "@/components/academics/faculty/faculty-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
@@ -298,6 +299,15 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                      <DepartmentTables title={activeSection.title} tables={activeSection.tables} />
                      <SectionAttachments documents={activeSection.attachments} />
                  </div>
+             )
+         }
+         if (activeSection.type === "testimonials") {
+             return (
+                 <TestimonialsSection
+                     title={activeSection.title}
+                     icon={activeSection.icon}
+                     testimonials={activeSection.testimonials}
+                 />
              )
          }
          if (activeSection.type === "gallery") {

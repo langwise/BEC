@@ -60,6 +60,13 @@ export type DepartmentSection =
     }
   | { id?: string; type: "tables"; title: string; icon?: string; tables: DataTable[]; attachments?: DocLink[] }
   | { id?: string; type: "stats"; title: string; stats: { label: string; value: string; icon?: string }[] }
+  | {
+      id?: string;
+      type: "testimonials";
+      title: string;
+      icon?: string;
+      testimonials: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
+    }
   | { id?: string; type: "gallery"; title: string; images: { src: string; alt: string }[]; attachments?: DocLink[] };
 
 export interface DepartmentData {
@@ -410,6 +417,17 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
+  // Alumni testimonials
+  if (content.testimonials?.length) {
+    sections.push({
+      id: "alumni",
+      type: "testimonials",
+      title: heading("alumni", "Alumni Testimonials"),
+      icon: "users",
+      testimonials: content.testimonials,
+    });
+  }
+
   // Placements — year-wise summary, recruiters & packages, student-wise detail
   const placements = getDepartmentPlacements(contentKey);
   if (placements && (placements.yearWise.length || placements.batches.length)) {
@@ -588,7 +606,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   if (content.sectionDocuments) {
     for (const section of sections) {
       if (!section.id) continue;
-      if (section.type === "documents" || section.type === "stats") continue;
+      if (section.type === "documents" || section.type === "stats" || section.type === "testimonials") continue;
       const docs = resolveDocuments(content.sectionDocuments[section.id]);
       if (docs.length) section.attachments = docs;
     }
@@ -619,6 +637,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     "research-achievements": { label: "Research Achievements", icon: "clipboard" },
     publications: { label: "Publications", icon: "book" },
     patents: { label: "Patents", icon: "clipboard" },
+    alumni: { label: "Alumni", icon: "users" },
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
     activities: { label: "Activities", icon: "calendar" },
