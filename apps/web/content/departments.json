@@ -564,47 +564,41 @@
         "Recognised as a VTU R&D (Ph.D.) Research Centre since 2011, with seven Ph.D.-holding faculty and fourteen Ph.D.s awarded.",
         "Hosts a Bioenergy Research, Information and Demonstration Centre (BRIDC) in association with KSBDB, Government of Karnataka.",
         "Operates a Food Testing Laboratory and a poly-house with raceway ponds, supporting start-ups, patents and product development.",
-        "Research focus areas: Biochemical technology, Microbial Technology, Food processing, Biofuels technology, Solid waste management and Bioremediation, Fermentation technology, and Molecular biology and Bioinformatics."
+        "Research focus areas: Biochemical technology, Microbial Technology, Food processing, Biofuels technology, Solid waste management and Bioremediation, Fermentation technology, and Molecular biology and Bioinformatics.",
+        "Regular interaction with faculty from IITs, personnel from industry helped in enhancement and upgradation of the students' knowledge in the areas of Biotechnology. Regular visits and industrial internship to biotechnology, food and pharmaceutical companies helped students and faculty to keep themselves updated with technological changes."
       ],
       "labs": [
         {
-          "name": "Biochemistry Laboratory"
+          "name": "Biochemistry / Cell & Genetics / Microbiology / Molecular Biology & Immunotechnology / Genetic Engineering Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: Colorimeter, DQ-3 Water Distillation unit, Electric Balance, Colony Counter, Hot air Oven, Binocular Microscopes, Laminar Air Flow, BOD Incubator, Vertical Slab Gel-Electrophoresis, Sub Marine Gel-Electrophoresis, Trans-illuminator, Orion pH meter, Cyclomixer, Magnetic Stirrer, Cooling Centrifuge, Digital colorimeter, PCR, Micro Oven (Hot Air Oven), Water Bath, Simple Distillation Units."
         },
         {
-          "name": "Microbiology Laboratory"
+          "name": "Unit Operations Laboratory",
+          "description": "Total area: 58 Sq. Mt.. Major equipment: Pressure Drop in Packed Bed, Heat Transfer in Packed bed, Convective Mass Transfer coefficient, Wetted wall column, Diffusivity measurement Appts, Tray Dryer."
         },
         {
-          "name": "Molecular Biology & Genetic Engineering Laboratory"
+          "name": "Bioinformatics & Biostatistics Laboratory",
+          "description": "Total area: 56 Sq. Mt.. Major equipment: 15 Computers with accessories, 5KVA-UPS with 12V Battery, GCG Software."
         },
         {
-          "name": "Immunotechnology Laboratory"
+          "name": "Bioprocess Control & Instrumentation Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: Two Tank interacting System, Two Tank Non-Interacting System, Time Constant of Thermometer, Temperature Control Trainer (Comp.), Pressure control Trainer (Comp.), Flow control Trainer (Comp.), Air Compressor (1 HP)."
         },
         {
-          "name": "Biokinetics & Enzyme Technology Laboratory"
+          "name": "Biokinetics & Enzyme Technology Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: Mixed Flow Reactor, Plug Flow Reactor, Colorimeter, Electric Balance."
         },
         {
-          "name": "Upstream Process & Bioseparation Techniques Laboratory"
+          "name": "Upstream Processing & Downstream Processing Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: UV-VIS Spectrophotometer, Cross Flow Cassette, Fermentor, Micropipettes, Digital colorimeter, Thin Layer Chromatography, Autoclave, Orbital Shaking Incubator, Laboratory Blender."
         },
         {
-          "name": "Unit Operations Laboratory"
+          "name": "Bioprocess & Biochemical Engineering Laboratory",
+          "description": "Total area: 60 Sq. Mt.. Major equipment: Ultra Sonicator, HPLC (Binary Analytical System)."
         },
         {
-          "name": "Heat & Mass Transfer Laboratory"
-        },
-        {
-          "name": "Bioinformatics Laboratory"
-        },
-        {
-          "name": "Biostatistics and Tools Laboratory"
-        },
-        {
-          "name": "Extraction Methods and Herbal Products Laboratory"
-        },
-        {
-          "name": "Analysis of Dairy Products Laboratory"
-        },
-        {
-          "name": "Food Testing Laboratory"
+          "name": "Food Testing Laboratory",
+          "description": "Total area: 93 Sq. Mt.. Major equipment: Rotary Vacuum Flash Evaporator, UV Visible Double beam Spectrophotometer, Hot Air Oven, High Speed Cooling Centrifuge, Digital Electronic Weighing Balance, Digital Refractometer, Quartz Double Distillation Unit, Viscometer/Rheometer, Autoclave, Bomb Caloriemeter, Texture Analyser, Pilot Scale Spray Dryer Unit, Laminar Air Flow, Orbital Shaking Incubator, Kjeldahl's apparatus, Dietary Fiber Analyser."
         }
       ],
       "associations": [
@@ -621,7 +615,7 @@
         "name": "Dr. Bharati S. Meti",
         "designation": "Professor & Head",
         "phone": "+91-9448972628",
-        "email": "bsmbt@becbgk.edu"
+        "email": "bsmbt@becbgk.edu / hodbtbec@gmail.com / bharatismeti@gmail.com"
       },
       "documents": [
         {
@@ -639,6 +633,238 @@
         {
           "title": "Best Practices",
           "file": "departments/biotechnology/docs/best-practices.pdf"
+        }
+      ],
+      "about": "The Department of Biotechnology was established at Basaveshwar Engineering College in 2002, focusing on impactful teaching, research, and community service. The Department offers various programs including UG, PG Diploma, PG, and Ph.D., and has been recognized as an R&D center by VTU Belagavi since 2011.\n\nThe field of biotechnology stands at the intersection of engineering and technological advancement, encompassing diverse domains such as biopharmaceutical development, industrial applications, and environmental solutions. Central to this discipline is the application of genetic technologies across animal and plant biotechnology, as well as innovations in cell and tissue engineering. The COVID-19 pandemic underscored the critical role of biotechnology, with bio-pharmaceutical companies racing to develop vaccines and therapeutics, illuminating the industry's impact on public health. As of 2023, India emerges as a significant player in the global biotechnology landscape, ranking among the top twelve destinations for biotech innovation and holding the position as the largest biotechnology hub in the Asia Pacific region. The Indian biotechnology sector is valued at over USD 92 billion, with the bio-pharmaceutical industry leading in biosimilars, having the highest number approved in the domestic market. Moreover, the global bio-pharmaceutical market is projected to see remarkable growth, expanding from USD 274.10 billion in 2020 to an anticipated USD 703.28 billion by 2027, indicating a growing recognition of biotechnology's pivotal role in addressing contemporary challenges in healthcare and the environment.",
+      "committeeGroups": [
+        {
+          "title": "Board of Studies (2025-2028)",
+          "members": [
+            {
+              "name": "Dr. Bharati S. Meti",
+              "position": "Chairman — Professor & Head, Dept. of Biotechnology, BEC Bagalkote; bharatismeti@gmail.com; 9448972628"
+            },
+            {
+              "name": "Dr. Sudhanshu Shukla",
+              "position": "Member (VTU Nominee) — Associate Professor & HOD, Department of Biosciences & Bioengineering, Indian Institute of Technology Dharwad, Walmi Campus PB Road Dharwad; sudhanshu@iitdh.ac.in; 7652079762"
+            },
+            {
+              "name": "Dr. Ashish Prabhu",
+              "position": "Member (Academic) — Assistant Professor, Department of Biotechnology, National Institute of Technology (NIT), Warangal; ashishp@nitw.ac.in; 9582700174"
+            },
+            {
+              "name": "Dr. Thivaharan V",
+              "position": "Member (Academic) — Additional Professor, Department of Biotechnology, Manipal Institute of Technology (MIT), Manipal; thivaharan.v@manipal.edu; 9844872904"
+            },
+            {
+              "name": "Dr. Girish Deshpande",
+              "position": "Member (Industry) — Head ARD, Biocon Ltd, Bengaluru; 8904487104"
+            },
+            {
+              "name": "Mrs. Swati S Gavimath",
+              "position": "Member (Alumni) — Scientist R&D Level I, Cellworks Research India Pvt. Ltd., Bengaluru; swatigavimath4@gmail.com; 8867144013"
+            },
+            {
+              "name": "All Faculty",
+              "position": "Member (Internal) — Department of Biotechnology, BEC Bagalkote"
+            },
+            {
+              "name": "Tarkesh H",
+              "position": "Student Representative — VII Sem Student, Department of Biotechnology, BEC Bagalkote"
+            },
+            {
+              "name": "Sahana Kumbar",
+              "position": "Student Representative — VII Sem Student, Department of Biotechnology, BEC Bagalkote"
+            }
+          ]
+        }
+      ],
+      "phdsAwarded": [
+        {
+          "scholar": "Uday Morbad (M.Sc. Engg.)",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Production & optimization of biodiesel using seed oils",
+          "year": "18.06.2018"
+        },
+        {
+          "scholar": "K Bhat",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Design and development of a sensor for real time monitoring of transesterification progress",
+          "year": "29.12.2018"
+        },
+        {
+          "scholar": "G B Megeri",
+          "guide": "Dr. G.M. Madhu",
+          "title": "Adsorption of lead and cadmium using synthesized nanometal oxides",
+          "year": "18.04.2019"
+        },
+        {
+          "scholar": "Vikas Gattaragi",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Evaluation of healthy human gut isolates as potential probiotics.",
+          "year": "10.06.2020"
+        },
+        {
+          "scholar": "Hemalatha V B",
+          "guide": "Dr. Virupakshaih D.B.M",
+          "title": "Bacteriophage are alternative biocontrol agents to prevent the food born Pseudomonas spp.",
+          "year": "15.06.2020"
+        },
+        {
+          "scholar": "Premjyoti C Patil",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Studies on biomass, lipid enhancement and molecular characterization of Cholerella spp. for Biofuel production",
+          "year": "20.03.2021"
+        },
+        {
+          "scholar": "Madhumala Y",
+          "guide": "Dr. Veena Soraganvi",
+          "title": "Biofilm induced reduction of hexavalent chromium by indigenous microbes.",
+          "year": "23.03.2021"
+        },
+        {
+          "scholar": "Shilpa K Jigajinni",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Immobilized Lipase Catalyzed Biodiesel production from Pongamia seed oil",
+          "year": "14.06.2022"
+        },
+        {
+          "scholar": "Shivaleela V B",
+          "guide": "Dr. Sharada P.",
+          "title": "Biochemical properties for recombinant tly-A protein form Mycobacterium tuberculosis",
+          "year": "09.07.2022"
+        },
+        {
+          "scholar": "Preeti S Kumarmath",
+          "guide": "Dr. Sharada P.",
+          "title": "Biochemical and Molecular Studies on antioxidant properties of Bryophyllum pinnatum",
+          "year": "20.08.2022"
+        },
+        {
+          "scholar": "Asiya Rozindar",
+          "guide": "Dr. Virupakshaiah D.B.M & Dr. Bharati S. Meti (Co-guide)",
+          "title": "Insilico studies of human chymase to identify better targets for its regulations and activity in effective treatment of mast cell mediated allergic reactions",
+          "year": "05.01.2024"
+        },
+        {
+          "scholar": "Mallikarjun Goni",
+          "guide": "Dr. Virupakshaiah D.B.M",
+          "title": "Molecular Identification and gene expression analysis of sialyl transferase levels in oral malignancy",
+          "year": "06.02.2024"
+        },
+        {
+          "scholar": "Pavan Kumar",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Bioformulations for Enhanced Resistance Against Bacterial Blight of Pomegranate",
+          "year": "05.03.2024"
+        },
+        {
+          "scholar": "Mahananda Math",
+          "guide": "Dr. Virupakshaiah D.B.M & Dr. Bharati S. Meti (Co-guide)",
+          "title": "Development of Phages form Dairy Products to Control Pathogen-Listeria Monocytogenes",
+          "year": "10-11-2025"
+        }
+      ],
+      "researchScholars": [
+        {
+          "scholar": "Sangamesh K.",
+          "usn": "2025040006",
+          "guide": "Dr. Jayachandra S. Yaradoddi (Co-Guide: Dr. Bharati S. Meti)",
+          "title": "Isolation of siderophore microbial species-Characterization and Applications",
+          "status": "Admitted 26/05/2025 · Reg. ID 2025040006"
+        },
+        {
+          "scholar": "Ms. Swapna Nikhil",
+          "usn": "2025040004",
+          "guide": "Dr. Bharati S. Meti",
+          "title": "Green synthesis of nanomaterials and their application in medical field",
+          "status": "Admitted 26/05/2025 · Reg. ID 2025040004"
+        }
+      ],
+      "researchGrants": [
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2025-26",
+          "amount": "Rs. 2,00,000 (Sanctioned 18-09-2025)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Optimization of media parameters for enhanced lipase production by Lysinibacillus macrolides FS1 and biodiesel production using enhanced immobilized lipase",
+          "agency": "KSCST",
+          "year": "2024-25",
+          "amount": "Rs. 6,000 (Sanctioned 14/03/2025)",
+          "investigators": "Dr. Shilpa K Jigajinni"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2024-25",
+          "amount": "Rs. 4,00,000 (Sanctioned 27-02-2025 & 18-10-2024)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2023-24",
+          "amount": "Rs. 95,000 (Sanctioned 6th February 2024)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2023-24",
+          "amount": "Rs. 1,90,000 (Sanctioned 19th December 2023)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Amino acid sequencing of lipase enzyme produced by Lysinibacillus macroides for bio-diesel production",
+          "agency": "KSCST",
+          "year": "2023-24",
+          "amount": "Rs. 7,000 (Sanctioned 19th April 2024)",
+          "investigators": "Dr. Jayachandra S. Y. & Dr. Shilpa K Jigajinni"
+        },
+        {
+          "title": "Statistical optimization of Immobilization process to enhance the lipase activity for biodiesel production",
+          "agency": "KSCST",
+          "year": "2022-23",
+          "amount": "Rs. 8,000 (Sanctioned 24th April 2023)",
+          "investigators": "Dr. Shilpa K Jigajinni"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2022-23",
+          "amount": "Rs. 1,90,000 (Sanctioned 21st December 2023)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Bioenergy Research Information Demonstration Activity",
+          "agency": "KSBDB-BRIDC",
+          "year": "2022-23",
+          "amount": "Rs. 1,90,000 (Sanctioned 31st August 2021 and 28th March 2022)",
+          "investigators": "Prof. Bharati S. Meti"
+        },
+        {
+          "title": "Development of efficient biocatalyst for biodiesel production",
+          "agency": "VGST (RGS)",
+          "year": "2021-22",
+          "amount": "Rs. 3,00,000 (Sanctioned 15 February 2023)",
+          "investigators": "Dr. Shilpa K Jigajinni & Dr. Jayachandra S. Y."
+        },
+        {
+          "title": "Removal of heavy metals from wastewater by bioremediation method using Microalgae",
+          "agency": "Indian Water Works Association",
+          "year": "2021-22",
+          "amount": "Rs. 10,000 (Sanctioned 1st July 2021)",
+          "investigators": "Dr. B R Hiremath & Dr. Madhumala Y"
+        },
+        {
+          "title": "Cloning and expression of lipase as biocatalyst for biodiesel production",
+          "agency": "KSCST",
+          "year": "2021-22",
+          "amount": "Rs. 7,000 (Sanctioned 11 May 2022)",
+          "investigators": "Prof. Bharati S. Meti and Dr. Shilpa K Jigajinni"
         }
       ]
     },
