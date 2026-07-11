@@ -3,7 +3,7 @@
   "principal": {
     "name": "Dr. B. R. Hiremath",
     "role": "Principal & Member Secretary",
-    "photo": "governance/principal/dr-b-r-hiremath.webp",
+    "photo": "governance/principal/cine2151.webp",
     "email": "becprincipal@yahoo.com"
   },
   "deans": [
@@ -53,54 +53,9 @@
   ],
   "hods": [
     {
-      "department": "Electronics & Communication Engineering",
-      "name": "Dr. Mahabaleshwar S. K.",
-      "photo": "governance/hod/ece/dr-mahabaleshwar-s-k.webp"
-    },
-    {
-      "department": "Artificial Intelligence & Machine Learning",
-      "name": "Dr. B. M. Reshmi",
-      "photo": "governance/hod/aiml/dr-b-m-reshmi.webp"
-    },
-    {
-      "department": "Biotechnology",
-      "name": "Dr. Bharati S. Meti",
-      "photo": "governance/hod/biotechnology/dr-bharati-s-meti.webp"
-    },
-    {
-      "department": "Chemistry",
-      "name": "Dr. S. K. Patil",
-      "photo": "governance/hod/chemistry/dr-s-k-patil.webp"
-    },
-    {
       "department": "Civil Engineering",
       "name": "Dr. S. H. Sanni",
       "photo": "governance/hod/civil/dr-s-h-sanni.webp"
-    },
-    {
-      "department": "Computer Science & Engineering",
-      "name": "Dr. V. B. Pagi",
-      "photo": "governance/hod/cse/dr-v-b-pagi.webp"
-    },
-    {
-      "department": "Electrical & Electronics Engineering",
-      "name": "Dr. R. L. Naik",
-      "photo": "governance/hod/eee/dr-r-l-naik.webp"
-    },
-    {
-      "department": "Electronics & Computer Engineering",
-      "name": "Dr. C. L. Chayalakshmi",
-      "photo": "governance/hod/ecs/dr-c-l-chayalakshmi.webp"
-    },
-    {
-      "department": "Industrial & Production Engineering",
-      "name": "Dr. C. M. Javalagi",
-      "photo": "governance/hod/ip/dr-c-m-javalagi.webp"
-    },
-    {
-      "department": "Information Science & Engineering",
-      "name": "Dr. Lokesh B. Bhajantri",
-      "photo": "governance/hod/ise/dr-lokesh-b-bhajantri.webp"
     },
     {
       "department": "Mechanical Engineering",
@@ -108,14 +63,64 @@
       "photo": "governance/hod/mechanical/dr-vinay-v-kuppast.webp"
     },
     {
+      "department": "Electrical & Electronics Engineering",
+      "name": "Dr. R. L. Naik",
+      "photo": "governance/hod/eee/dr-r-l-naik.webp"
+    },
+    {
+      "department": "Computer Science & Engineering",
+      "name": "Dr. V. B. Pagi",
+      "photo": "governance/hod/cse/dr-v-b-pagi.webp"
+    },
+    {
+      "department": "Industrial & Production Engineering",
+      "name": "Dr. C. M. Javalagi",
+      "photo": "governance/hod/ip/dr-c-m-javalagi.webp"
+    },
+    {
+      "department": "Electronics & Communication Engineering",
+      "name": "Dr. Mahabaleshwar S. K.",
+      "photo": "governance/hod/ece/dr-mahabaleshwar-s-k.webp"
+    },
+    {
+      "department": "Information Science & Engineering",
+      "name": "Dr. Lokesh B. Bhajantri",
+      "photo": "governance/hod/ise/dr-lokesh-b-bhajantri.webp"
+    },
+    {
+      "department": "Biotechnology",
+      "name": "Dr. Bharati S. Meti",
+      "photo": "governance/hod/biotechnology/dr-bharati-s-meti.webp"
+    },
+    {
+      "department": "Artificial Intelligence & Machine Learning",
+      "name": "Dr. B. M. Reshmi",
+      "photo": "governance/hod/aiml/dr-b-m-reshmi.webp"
+    },
+    {
+      "department": "Electronics & Computer Engineering",
+      "name": "Dr. C. L. Chayalakshmi",
+      "photo": "governance/hod/ecs/dr-c-l-chayalakshmi.webp"
+    },
+    {
+      "department": "Physics",
+      "name": "Prof. R. P. Araganji",
+      "photo": "departments/physics/faculty/ratnaprabha-p-araganji.webp"
+    },
+    {
+      "department": "Chemistry",
+      "name": "Dr. S. K. Patil",
+      "photo": "governance/hod/chemistry/dr-s-k-patil.webp"
+    },
+    {
       "department": "Mathematics",
       "name": "Dr. S. V. Gurushanthanavar",
       "photo": "governance/hod/maths/dr-s-v-gurushanthanavar.webp"
     },
     {
-      "department": "Humanities",
-      "name": "Dr. B. G. Hokarani",
-      "photo": "governance/hod/hss/dr-b-g-hokarani.webp"
+      "department": "MCA",
+      "name": "Sri S. M. Magi",
+      "photo": "governance/hod/mca/sri-s-m-magi.webp"
     },
     {
       "department": "MBA",
@@ -123,9 +128,9 @@
       "photo": "governance/hod/mba/dr-vinod-s-puranik.webp"
     },
     {
-      "department": "MCA",
-      "name": "Sri S. M. Magi",
-      "photo": "governance/hod/mca/sri-s-m-magi.webp"
+      "department": "Humanities",
+      "name": "Dr. B. G. Hokarani",
+      "photo": "governance/hod/hss/dr-b-g-hokarani.webp"
     }
   ],
   "sangha": {
@@ -158,17 +163,16 @@
       { "name": "Dr. Veeranna C. Charantimath", "role": "Chairman" },
       { "name": "Sri. Mahesh N. Athani", "role": "Member" },
       { "name": "Sri. Andanappa M. Shettar", "role": "Member" },
-      { "name": "Sri. Gurusiddappa G. Yalligutti", "role": "Member" },
-      { "name": "Sri. Basavaraj Talikoti", "role": "Member" },
-      { "name": "Sri. Prakash S. Badadali", "role": "Member" },
-      { "name": "Sri. G. N. Patil", "role": "Member" },
+      { "name": "Sri. Chennabasavaraj V. Koti", "role": "Member" },
+      { "name": "Sri. Rajendra M. Tapashetti", "role": "Member" },
       { "name": "Sri. Channayya P. Balulmath", "role": "Member" },
-      { "name": "Sri. Basalingappa Hokrani", "role": "Member" },
-      { "name": "Sri. R. S. Akkimaradi", "role": "Member" },
-      { "name": "Sri. Raju Tapashetti", "role": "Member" },
+      { "name": "Sri. Basavaraj M. Talikoti", "role": "Member" },
+      { "name": "Sri. Rudrappa S. Akkimaradi", "role": "Member" },
+      { "name": "Sri. Gurusiddappa (Kumar) G. Yalligutti", "role": "Member" },
       { "name": "Dr. B. R. Hiremath", "role": "Principal, Member Secretary" },
-      { "name": "Prof. V. R. Shirol", "role": "Administrative Officer, B.V.V. Sangha", "invitee": true },
-      { "name": "Dr. R. N. Herkal", "role": "Director, Technical Education, B.V.V. Sangha", "invitee": true }
+      { "name": "Prof. V. R. Shirol", "role": "Administrative Officer, B.V.V. Sangha, Bagalkot", "invitee": true },
+      { "name": "Dr. V. S. Katagihallimath", "role": "Administrative Officer, B.V.V. Sangha, Bagalkot", "invitee": true },
+      { "name": "Dr. R. N. Herkal", "role": "Director of Technical Institutions, B.V.V. Sangha, Bagalkot", "invitee": true }
     ]
   },
   "bog": [
@@ -244,7 +248,7 @@
       "role": "Ex-officio Member Secretary",
       "affiliation": "Principal, Basaveshwar Engineering College, Bagalkote",
       "category": "member-secretary",
-      "photo": "governance/principal/dr-b-r-hiremath.webp"
+      "photo": "governance/principal/cine2151.webp"
     },
     {
       "name": "M. Tech. Students – 2 Nos.",

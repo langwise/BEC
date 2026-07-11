@@ -74,6 +74,7 @@ export default function InfrastructurePage() {
     "Centre for Advanced Materials Research Studies",
     "Smart Composite Structures Research Centre",
     "Geotechnical Engineering and Structural Engineering Laboratory",
+    "Robotics Lab"
   ];
 
   return (
