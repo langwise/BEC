@@ -147,6 +147,8 @@ export type DepartmentContent = {
   hideInfrastructureQuantity?: boolean;
   /** Show Vision & Mission on the Home tab (after the overview) and move the HoD message, lead photo and Highlights under "About Department". */
   visionMissionOnHome?: boolean;
+  /** Move the Programme Educational Objectives (PEOs) and Programme Specific Outcomes (PSOs) out of the Academics section and under "About Department". */
+  peosPsosUnderAbout?: boolean;
   /** Split Supporting Staff into "Technical Staff" (instructors) and "Supporting Staff" (helpers/peons). */
   groupSupportingStaff?: boolean;
   /** Placements: show only summary/recruiter tables, hide per-student name lists. */

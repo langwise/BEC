@@ -405,7 +405,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     if (activeTab === "about") {
         return (
              <div className="grid grid-cols-1 gap-8">
-                {dept.about && (
+                {dept.about?.content && (
                     <ContentSection
                         title={dept.about.title}
                         content={dept.about.content}
@@ -434,6 +434,10 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                             icon={dept.mission.icon}
                         />
                     </>
+                )}
+
+                {dept.about?.groups && dept.about.groups.length > 0 && (
+                    <ContentSection groups={dept.about.groups} justify />
                 )}
             </div>
         )

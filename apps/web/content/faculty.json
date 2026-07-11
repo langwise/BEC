@@ -413,7 +413,7 @@
         "photo": "departments/civil/faculty/gangadhar-b-megeri.webp"
       },
       {
-        "name": "Mahantesh M. Hanamasagar",
+        "name": "Dr. Mahantesh M. Hanamasagar",
         "designation": "Associate Professor",
         "cv": "departments/civil/faculty/cv/mahantesh-m-hanamasagar.pdf",
         "photo": "departments/civil/faculty/mahantesh-m-hanamasagar.webp"
@@ -423,13 +423,13 @@
         "designation": "Associate Professor"
       },
       {
-        "name": "Sunilkumar.M. Kalagudi",
+        "name": "Mr. Sunilkumar.M. Kalagudi",
         "designation": "Associate Professor",
         "cv": "departments/civil/faculty/cv/sunilkumar-m-kalagudi.pdf",
         "photo": "departments/civil/faculty/sunilkumar-m-kalagudi.webp"
       },
       {
-        "name": "Basavanagouda A Patil",
+        "name": "Mr. Basavanagouda A Patil",
         "designation": "Assistant Professor",
         "cv": "departments/civil/faculty/cv/basavanagouda-a-patil.pdf",
         "photo": "departments/civil/faculty/basavanagouda-a-patil.webp"
@@ -447,33 +447,37 @@
         "photo": "departments/civil/faculty/srinivas-f-chitragar.webp"
       },
       {
-        "name": "Geetanjali Patil",
+        "name": "Ms. Geetanjali Patil",
         "designation": "Assistant Professor",
         "cv": "departments/civil/faculty/cv/geetanjali-patil.pdf",
         "photo": "departments/civil/faculty/geetanjali-patil.webp"
       },
       {
-        "name": "Gururaj Bandihal",
+        "name": "Mr. Gururaj Bandihal",
         "designation": "Assistant Professor",
         "cv": "departments/civil/faculty/cv/gururaj-bandihal.pdf",
         "photo": "departments/civil/faculty/gururaj-bandihal.webp"
       },
       {
-        "name": "Manjunath Munenakoppa",
+        "name": "Mr. Manjunath Munenakoppa",
         "designation": "Assistant Professor",
-        "cv": "departments/civil/faculty/cv/manjunath-munenakoppa.pdf"
+        "cv": "departments/civil/faculty/cv/manjunath-munenakoppa.pdf",
+        "photo": "departments/civil/faculty/manjunath-munenakoppa.webp"
       },
       {
         "name": "Mr. D. B. Sajjanar",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "photo": "departments/civil/faculty/d-b-sajjanar.webp"
       },
       {
         "name": "Mr. Kiran Koraddi",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "photo": "departments/civil/faculty/kiran-koraddi.webp"
       },
       {
         "name": "Mr. Kushnappa K",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "photo": "departments/civil/faculty/kushnappa-k.webp"
       },
       {
         "name": "Mr. Shashikant A Kambali",
@@ -482,25 +486,25 @@
         "photo": "departments/civil/faculty/shashikant-a-kambali.webp"
       },
       {
-        "name": "Prakash S Bangarashetti",
+        "name": "Mr. Prakash S Bangarashetti",
         "designation": "Assistant Professor",
         "cv": "departments/civil/faculty/cv/prakash-s-bangarashetti.pdf",
         "photo": "departments/civil/faculty/prakash-s-bangarashetti.webp"
       },
       {
-        "name": "Ramesh Baragani",
+        "name": "Mr. Ramesh Baragani",
         "designation": "Assistant Professor",
         "cv": "departments/civil/faculty/cv/ramesh-baragani.pdf",
         "photo": "departments/civil/faculty/ramesh-baragani.webp"
       },
       {
-        "name": "Seema Shringeri",
+        "name": "Ms. Seema Shringeri",
         "designation": "Assistant Professor",
         "cv": "departments/civil/faculty/cv/seema-shringeri.pdf",
         "photo": "departments/civil/faculty/seema-shringeri.webp"
       },
       {
-        "name": "Shrishail B Chiniwalar",
+        "name": "Mr. Shrishail B Chiniwalar",
         "designation": "Assistant Professor",
         "cv": "departments/civil/faculty/cv/shrishail-b-chiniwalar.pdf",
         "photo": "departments/civil/faculty/shrishail-b-chiniwalar.webp"

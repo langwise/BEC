@@ -1264,6 +1264,7 @@
     "civil-engg": {
       "name": "Civil Engineering",
       "assetSlug": "civil",
+      "peosPsosUnderAbout": true,
       "tagline": "A centre of excellence in teaching, research and innovation, shaping globally competent civil engineers for a sustainable society.",
       "established": "1963",
       "intake": "120",
@@ -1334,19 +1335,61 @@
         }
       ],
       "contact": {
-        "name": "S. H. Sanni",
+        "name": "Dr. S. H. Sanni",
         "designation": "Professor & Head",
         "phone": "+91-9448440295",
-        "email": ""
+        "email": "bechodcivil1963@gmail.com"
       },
       "documents": [
         {
-          "title": "Scheme & Syllabus (AY 2024-25)",
-          "file": "departments/civil/docs/syllabus-2024-25.pdf"
+          "title": "Scheme of Teaching & Examination — UG (2026-27 onwards)",
+          "file": "departments/civil/docs/scheme-syllabus-2026-27.pdf"
         },
         {
-          "title": "Technical / Supporting Staff List (2024-25)",
-          "file": "departments/civil/docs/supporting-staff-list.pdf"
+          "title": "Scheme & Syllabus and BoS Proceedings (AY 2025-26)",
+          "file": "departments/civil/docs/scheme-syllabus-2025-26.pdf"
+        },
+        {
+          "title": "19th Board of Studies — Panel of Experts (2025-2028)",
+          "file": "departments/civil/docs/bos-panel-of-experts-2025-28.pdf"
+        }
+      ],
+      "newsletters": [
+        {
+          "title": "Civil Insight Newsletter — October 2025",
+          "file": "departments/civil/newsletters/civil-newsletter-oct-2025.pdf"
+        },
+        {
+          "title": "Civil Insight Newsletter — November 2025",
+          "file": "departments/civil/newsletters/civil-newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "Civil Insight Newsletter — December 2025",
+          "file": "departments/civil/newsletters/civil-newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "Civil Insight Newsletter — January 2026",
+          "file": "departments/civil/newsletters/civil-newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "Civil Insight Newsletter — February 2026",
+          "file": "departments/civil/newsletters/civil-newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "Civil Insight Newsletter — March 2026",
+          "file": "departments/civil/newsletters/civil-newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "Civil Insight Newsletter — April 2026",
+          "file": "departments/civil/newsletters/civil-newsletter-apr-2026.pdf"
+        },
+        {
+          "title": "Civil Insight Newsletter — May 2026",
+          "file": "departments/civil/newsletters/civil-newsletter-may-2026.pdf"
+        },
+        {
+          "title": "Civil Insight Newsletter — June 2026",
+          "file": "departments/civil/newsletters/civil-newsletter-jun-2026.pdf"
         }
       ],
       "sectionDocuments": {
@@ -1371,12 +1414,6 @@
             "title": "Publications (2021-22)",
             "file": "departments/civil/docs/publications-2021-22.pdf"
           }
-        ],
-        "governance": [
-          {
-            "title": "Board of Studies — Signed Proceedings",
-            "file": "departments/civil/docs/bos-proceedings.pdf"
-          }
         ]
       },
       "supportingStaff": [
@@ -1393,15 +1430,7 @@
           "designation": "Assistant Instructor"
         },
         {
-          "name": "Sri. R. B. Jalageri",
-          "designation": "Mechanic"
-        },
-        {
           "name": "Sri. N. B. Patroti",
-          "designation": "Helper"
-        },
-        {
-          "name": "Sri. M. M. Savanur",
           "designation": "Helper"
         },
         {
@@ -1451,67 +1480,119 @@
       ],
       "committeeGroups": [
         {
-          "title": "Board of Studies",
+          "title": "Board of Studies (2025-2028)",
           "members": [
             {
-              "name": "Dr. S. H. Sanni",
-              "position": "Chairman and HOD Civil Engineering, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. P. S. Bangarshetti",
-              "position": "Associate Professor, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. B. R. Hiremath",
-              "position": "Associate Professor, BEC Bagalkote"
-            },
-            {
               "name": "Dr. M. M. Hanamasagar",
-              "position": "Associate Professor, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. S. M. Kalagudi",
-              "position": "Assistant Professor, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. S. F. Chitragar",
-              "position": "Assistant Professor, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. S. A. Kambali",
-              "position": "Assistant Professor, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. G. H. Bandihal",
-              "position": "Assistant Professor, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. G. S. Hiremath",
-              "position": "Assistant Professor, BEC Bagalkote"
+              "position": "Chairman — Associate Professor, BEC Bagalkote"
             },
             {
               "name": "Dr. S. Sireesh",
-              "position": "VTU Nominee, Professor (GT), IIT Hyderabad"
+              "position": "VTU Nominee — Professor (GT), IIT Hyderabad"
             },
             {
               "name": "Dr. M. Sekhar",
-              "position": "External Member, Professor, Indian Institute of Science, Bangalore"
+              "position": "External Member — Professor, Indian Institute of Science, Bengaluru"
             },
             {
               "name": "Dr. Ramaseshu D.",
-              "position": "External Member, Professor, NIT Warangal"
+              "position": "External Member — Professor, NIT Warangal"
             },
             {
-              "name": "Dr. Basavaraj Manu",
-              "position": "External Member, Associate Professor, NIT Karnataka, Surathkal"
+              "name": "Dr. Basavaraju Manu",
+              "position": "External Member — Associate Professor, NIT Karnataka, Surathkal"
             },
             {
               "name": "Dr. Abdul Razaq Honnutagi",
-              "position": "Alumni, Director, Anjuman-I-Islam's Kalsekar Technical Campus"
+              "position": "Alumni — Director, Anjuman-I-Islam's Kalsekar Technical Campus, Mumbai"
             },
             {
               "name": "Dr. Pranesh",
-              "position": "Industry, Chief Design Engineer, Abhaya Associates"
+              "position": "Member from Industry — Chief Design Engineer, Abhaya Associates, Bengaluru"
+            },
+            {
+              "name": "Dr. B. R. Hiremath",
+              "position": "Special Invitee — Associate Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. B. S. Haravi",
+              "position": "Member — Associate Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. P. G. Rakaraddi",
+              "position": "Member — BEC Bagalkote"
+            },
+            {
+              "name": "Prof. S. M. Kalagudi",
+              "position": "Member — Associate Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. S. H. Sanni",
+              "position": "Member — Associate Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. G. B. Megeri",
+              "position": "Member — Associate Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. S. F. Chitragar",
+              "position": "Member — Assistant Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. S. A. Kambali",
+              "position": "Member — Assistant Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. G. H. Bandihal",
+              "position": "Member — Assistant Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. G. S. Hiremath",
+              "position": "Member — BEC Bagalkote"
+            },
+            {
+              "name": "Prof. G. R. Patil",
+              "position": "Member — BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Seema Shringeri",
+              "position": "Member — Assistant Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. S. M. Malkapur",
+              "position": "Member — Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. Adarsh Chatra",
+              "position": "Member — Associate Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Manjunth Y. M.",
+              "position": "Member — BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Ramesh Baragani",
+              "position": "Member — Assistant Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. B. A. Patil",
+              "position": "Member — Assistant Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. P. S. Bangarashetti",
+              "position": "Member — Assistant Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. B. S. Meti",
+              "position": "Member — Associate Professor, BEC Bagalkote"
+            },
+            {
+              "name": "Lakhmi B. Pattanshetty",
+              "position": "Student Member — BEC Bagalkote"
+            },
+            {
+              "name": "Pooja Ranjanagi",
+              "position": "Student Member — BEC Bagalkote"
             }
           ]
         },
@@ -1876,6 +1957,7 @@
           "status": "Registered"
         }
       ],
+      "hideInfrastructureQuantity": true,
       "infrastructureItems": [
         {
           "name": "Geo-Technical Lab",

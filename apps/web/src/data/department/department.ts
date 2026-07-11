@@ -43,6 +43,8 @@ export interface HeaderBlock {
   icon: string;
   /** Optional lead image rendered above the block's body (e.g. the department group photo). */
   image?: { src: string; alt: string; caption?: string };
+  /** Labelled sub-blocks rendered below the body (e.g. PEOs/PSOs relocated under "About Department"). */
+  groups?: ContentGroup[];
 }
 
 /** A downloadable document link (title + resolved R2 url). */
@@ -199,6 +201,22 @@ function dropEmptyColumns(
   };
 }
 
+/** PEOs and PSOs as labelled content groups — shared by the Academics section and the "About Department" relocation. */
+function academicOutcomeGroups(content: DepartmentContent): ContentGroup[] {
+  const groups: ContentGroup[] = [];
+  if (content.peos?.length)
+    groups.push({
+      subtitle: "Programme Educational Objectives (PEOs)",
+      items: content.peos.map((p) => `${p.code}: ${p.text}`),
+    });
+  if (content.psos?.length)
+    groups.push({
+      subtitle: "Programme Specific Outcomes (PSOs)",
+      items: content.psos.map((p) => `${p.code}: ${p.text}`),
+    });
+  return groups;
+}
+
 function buildSections(contentKey: string, content: DepartmentContent): DepartmentSection[] {
   const sections: DepartmentSection[] = [];
 
@@ -236,42 +254,26 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   const hasAchievements = () =>
     Boolean(content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length);
 
-  // Academics — programs, PEOs, PSOs
-  if (
-    content.programsOffered?.length ||
-    content.programStructure?.length ||
-    content.peos?.length ||
-    content.psos?.length ||
-    content.pos?.length ||
-    content.wk?.length
-  ) {
-    const groups: ContentGroup[] = [];
-    if (content.programsOffered?.length)
-      groups.push({ subtitle: "Programs Offered", items: content.programsOffered });
-    if (content.programStructure?.length)
-      groups.push({ subtitle: "Programme Structure", items: content.programStructure });
-    if (content.peos?.length)
-      groups.push({
-        subtitle: "Programme Educational Objectives (PEOs)",
-        items: content.peos.map((p) => `${p.code}: ${p.text}`),
-      });
-    if (content.psos?.length)
-      groups.push({
-        subtitle: "Programme Specific Outcomes (PSO's)",
-        items: content.psos.map((p) => `${p.code}: ${p.text}`),
-      });
-    if (content.wk?.length)
-      groups.push({
-        subtitle: "Knowledge and Attitude Profile (WK)",
-        items: content.wk.map((p) => `${p.code}: ${p.text}`),
-      });
-    if (content.pos?.length)
-      groups.push({
-        subtitle: "Programme Outcomes (PO's)",
-        items: content.pos.map((p) => `${p.code}: ${p.text}`),
-      });
+  // Academics — programs, PEOs, PSOs. When peosPsosUnderAbout is set, the PEOs/PSOs
+  // move to the "About Department" tab instead (see academicOutcomeGroups / the about block).
+  const groups: ContentGroup[] = [];
+  if (content.programsOffered?.length)
+    groups.push({ subtitle: "Programs Offered", items: content.programsOffered });
+  if (content.programStructure?.length)
+    groups.push({ subtitle: "Programme Structure", items: content.programStructure });
+  if (!content.peosPsosUnderAbout) groups.push(...academicOutcomeGroups(content));
+  if (content.wk?.length)
+    groups.push({
+      subtitle: "Knowledge and Attitude Profile (WK)",
+      items: content.wk.map((p) => `${p.code}: ${p.text}`),
+    });
+  if (content.pos?.length)
+    groups.push({
+      subtitle: "Programme Outcomes (POs)",
+      items: content.pos.map((p) => `${p.code}: ${p.text}`),
+    });
+  if (groups.length)
     sections.push({ id: "academics", type: "content", title: heading("academics", "Academics"), icon: "book", groups });
-  }
 
   // Curriculum & syllabus documents (R2 PDFs). When curriculumGroups is set, the
   // tab renders as labelled sub-tabs (Scheme of Teaching & Examinations / Syllabus).
@@ -835,7 +837,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
 
   // Sidebar derived from the content that actually exists.
   const sidebar = [{ id: "home", label: "Home", icon: "home" }];
-  if (content?.about || content?.vision || content?.mission?.length)
+  if (content?.about || content?.vision || content?.mission?.length || content?.peosPsosUnderAbout)
     sidebar.push({ id: "about", label: "About Department", icon: "graduation-cap" });
   const sectionLabels: Record<string, { label: string; icon: string }> = {
     academics: { label: "Academics", icon: "file-text" },
@@ -893,13 +895,16 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
           }
         : undefined,
     },
-    about: content?.about
-      ? {
-          title: "About the Department",
-          content: content.about,
-          icon: "graduation-cap",
-        }
-      : undefined,
+    about: (() => {
+      const outcomeGroups = content?.peosPsosUnderAbout ? academicOutcomeGroups(content) : [];
+      if (!content?.about && !outcomeGroups.length) return undefined;
+      return {
+        title: "About the Department",
+        content: content?.about,
+        icon: "graduation-cap",
+        groups: outcomeGroups.length ? outcomeGroups : undefined,
+      };
+    })(),
     hodMessage: content?.hodMessage
       ? {
           message: content.hodMessage.message,
