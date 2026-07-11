@@ -6,9 +6,10 @@ import DepartmentSidebar from "@/components/academics/departments/sidebar";
 import type { DataTable, DepartmentData, DocLink } from "@/data/department/department";
 import ContentSection from "@/components/academics/departments/content";
 import TestimonialsSection from "@/components/academics/departments/testimonials";
-import { CheckCircle2, FileText, Download, Quote } from "lucide-react";
+import { CheckCircle2, FileText, Download } from "lucide-react";
 import { FacultyCard } from "@/components/academics/faculty/faculty-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
+import { QuickFacts } from "@/components/academics/departments/quick-facts";
 
 interface DepartmentLayoutProps {
   dept: DepartmentData;
@@ -105,10 +106,7 @@ function HighlightsBlock({ highlights }: { highlights: string[] }) {
 function HodMessageBlock({ hodMessage }: { hodMessage: NonNullable<DepartmentData["hodMessage"]> }) {
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8">
-      <div className="mb-6 flex items-center gap-2">
-        <Quote className="h-5 w-5 shrink-0 text-primary" />
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Message from the HOD</h2>
-      </div>
+      <h2 className="mb-6 text-2xl font-bold tracking-tight text-gray-900">Head of the Department</h2>
       <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-8">
         {hodMessage.image && (
           <div className="relative mx-auto aspect-[3/4] w-40 shrink-0 overflow-hidden rounded-xl bg-stone-100 shadow-sm ring-1 ring-stone-200 sm:mx-0 sm:w-44">
@@ -134,6 +132,42 @@ function HodMessageBlock({ hodMessage }: { hodMessage: NonNullable<DepartmentDat
         </div>
       </div>
     </div>
+  );
+}
+
+/** Highlighted pill caption shown under a photo (e.g. "Teaching Faculty"). */
+function PhotoCaption({ children }: { children: string }) {
+  return (
+    <figcaption className="mt-4 flex justify-center">
+      <span className="inline-flex items-center rounded-full bg-orange-50 px-5 py-2 text-sm font-semibold uppercase tracking-wider text-primary ring-1 ring-primary/20">
+        {children}
+      </span>
+    </figcaption>
+  );
+}
+
+/** Department lead photo (e.g. the group photo) — shown on Home or, per-department, under "About". */
+function OverviewPhoto({
+  image,
+  className,
+}: {
+  image: { src: string; alt: string; caption?: string };
+  className?: string;
+}) {
+  return (
+    <figure className={className}>
+      <div className="relative aspect-3/2 w-full overflow-hidden rounded-2xl border border-gray-100 shadow-sm">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          priority
+          sizes="(min-width: 1024px) 900px, 100vw"
+          className="object-cover"
+        />
+      </div>
+      {image.caption && <PhotoCaption>{image.caption}</PhotoCaption>}
+    </figure>
   );
 }
 
@@ -200,17 +234,20 @@ function SectionEmbeds({ documents }: { documents?: DocLink[] }) {
 /** A group-photo banner shown above a section's content (faculty / staff).
  *  Renders at the image's natural aspect ratio so no one gets cropped, regardless
  *  of the source photo's dimensions. */
-function GroupPhotoBanner({ image }: { image: { src: string; alt: string } }) {
+function GroupPhotoBanner({ image }: { image: { src: string; alt: string; caption?: string } }) {
   return (
-    <figure className="w-full overflow-hidden rounded-2xl border border-gray-100 bg-stone-100 shadow-sm">
-      <Image
-        src={image.src}
-        alt={image.alt}
-        width={0}
-        height={0}
-        sizes="(min-width: 1024px) 900px, 100vw"
-        className="h-auto w-full"
-      />
+    <figure className="w-full">
+      <div className="w-full overflow-hidden rounded-2xl border border-gray-100 bg-stone-100 shadow-sm">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          width={0}
+          height={0}
+          sizes="(min-width: 1024px) 900px, 100vw"
+          className="h-auto w-full"
+        />
+      </div>
+      {image.caption && <PhotoCaption>{image.caption}</PhotoCaption>}
     </figure>
   );
 }
@@ -233,10 +270,10 @@ function ImageGroups({ groups }: { groups: { title?: string; images: { src: stri
   );
 }
 
-function DepartmentTables({ title, tables }: { title: string; tables: DataTable[] }) {
+function DepartmentTables({ title, tables }: { title?: string; tables: DataTable[] }) {
   return (
     <section className="space-y-6">
-      <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+      {title ? <h2 className="text-2xl font-bold text-gray-900">{title}</h2> : null}
       <div className="space-y-8">
         {tables.map((table) => (
           <div key={table.title} className="space-y-3">
@@ -293,6 +330,13 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     if (activeTab === "home") {
         return (
             <div className="space-y-4">
+                <ContentSection
+                    title={dept.overview.title}
+                    content={dept.overview.content}
+                    icon={dept.overview.icon}
+                    justify
+                    wide
+                />
                 {dept.quickStats && dept.quickStats.length > 0 && (
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                         {dept.quickStats.map((stat, i) => (
@@ -303,35 +347,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                         ))}
                     </div>
                 )}
-                <ContentSection
-                    title={dept.overview.title}
-                    content={dept.overview.content}
-                    icon={dept.overview.icon}
-                    justify
-                    wide
-                />
-                {dept.hodMessage && <HodMessageBlock hodMessage={dept.hodMessage} />}
-                {dept.overview.image && (
-                    <figure className={`relative aspect-3/2 w-full overflow-hidden rounded-2xl border border-gray-100 shadow-sm ${dept.hodMessage ? "mt-8 mb-12" : "-mt-4 mb-12"}`}>
-                        <Image
-                            src={dept.overview.image.src}
-                            alt={dept.overview.image.alt}
-                            fill
-                            priority
-                            sizes="(min-width: 1024px) 900px, 100vw"
-                            className="object-cover"
-                        />
-                    </figure>
-                )}
-                {/* Core values (per-department, e.g. IPE) — bullet list under the overview */}
-                {dept.overview.items && dept.overview.items.length > 0 && (
-                    <ContentSection
-                        title="Our Core Values"
-                        items={dept.overview.items}
-                        icon="target"
-                    />
-                )}
-                {/* Vision & Mission on Home (per-department) */}
+                {/* Vision & Mission directly after the overview (per-department) */}
                 {dept.visionMissionOnHome && (
                     <div className="grid grid-cols-1 gap-8">
                         <ContentSection
@@ -347,12 +363,36 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                         />
                     </div>
                 )}
+                {dept.quickFacts && <QuickFacts quickFacts={dept.quickFacts} />}
+                {/* HoD message + lead photo — relocated under About when Vision & Mission are on Home */}
+                {!dept.visionMissionOnHome && dept.hodMessage && (
+                    <HodMessageBlock hodMessage={dept.hodMessage} />
+                )}
+                {!dept.visionMissionOnHome && dept.overview.image && (
+                    <OverviewPhoto
+                        image={dept.overview.image}
+                        className={dept.hodMessage ? "mt-8 mb-12" : "-mt-4 mb-12"}
+                    />
+                )}
+                {/* Core values (per-department, e.g. IPE) — bullet list under the overview */}
+                {dept.overview.items && dept.overview.items.length > 0 && (
+                    <ContentSection
+                        title="Our Core Values"
+                        items={dept.overview.items}
+                        icon="target"
+                    />
+                )}
                 {/* Highlights — hidden on Home when moved under About */}
                 {!dept.visionMissionOnHome && <HighlightsBlock highlights={dept.highlights} />}
                 {dept.bestPractices && dept.bestPractices.length > 0 && (
                     <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
                         <h2 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Best Practices</h2>
                         <DocGrid documents={dept.bestPractices} />
+                    </div>
+                )}
+                {dept.homeGroupPhoto && (
+                    <div className="pt-4">
+                        <GroupPhotoBanner image={dept.homeGroupPhoto} />
                     </div>
                 )}
             </div>
@@ -373,7 +413,11 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                 )}
 
                 {dept.visionMissionOnHome ? (
-                    <HighlightsBlock highlights={dept.highlights} />
+                    <>
+                        {dept.hodMessage && <HodMessageBlock hodMessage={dept.hodMessage} />}
+                        {dept.overview.image && <OverviewPhoto image={dept.overview.image} />}
+                        <HighlightsBlock highlights={dept.highlights} />
+                    </>
                 ) : (
                     <>
                         <ContentSection
@@ -411,6 +455,16 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     />
                     <SectionEmbeds documents={activeSection.embeds} />
                     <SectionAttachments documents={activeSection.attachments} />
+                    {activeSection.tables && activeSection.tables.length > 0 && (
+                        <div className="mt-10">
+                            <DepartmentTables tables={activeSection.tables} />
+                        </div>
+                    )}
+                    {activeSection.groupPhoto && (
+                        <div className="mt-10">
+                            <GroupPhotoBanner image={activeSection.groupPhoto} />
+                        </div>
+                    )}
                  </div>
              )
          }

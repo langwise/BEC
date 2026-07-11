@@ -7,18 +7,35 @@ export type DepartmentContent = {
   name: string;
   tagline?: string;
   assetSlug?: string;
+  /** Asset key for a full-bleed hero image shown at the top of the department page (like the home hero). */
+  heroImage?: string;
   infrastructureGallerySlug?: string;
   established?: string;
   intake?: string;
+  /** Department-specific "Quick Facts" panel shown on the Home tab. Only rendered when set. */
+  quickFacts?: {
+    facts?: { label: string; value: string }[];
+    researchAreas?: string[];
+  };
+  /** When true, surfaces an "NBA Accredited" card in the Home quick-stats row. */
+  nbaAccredited?: boolean;
   overview?: string;
   /** Asset key for a lead image shown above the Home overview (e.g. the department group photo). */
   overviewImage?: string;
+  /** Caption rendered below the overview lead image (e.g. "Teaching Faculty"). */
+  overviewImageCaption?: string;
   /** Message from the Head of Department, shown on the Home tab. */
   hodMessage?: { message: string; name?: string; designation?: string; image?: string };
   about?: string;
   vision?: string;
   mission?: string[];
   programsOffered?: string[];
+  /**
+   * Overrides the "Programs Offered" stat count when the listed bullets expand a
+   * single programme into multiple recognition tracks (e.g. one Ph.D. shown as its
+   * VTU and AICTE-QIP variants). Defaults to programsOffered.length when unset.
+   */
+  programsOfferedCount?: number;
   /** Programme structure facts (duration, semesters, total credits) shown under Academics. */
   programStructure?: string[];
   peos?: CodedItem[];
@@ -69,11 +86,25 @@ export type DepartmentContent = {
   phdsAwarded?: { scholar: string; guide: string; title: string; year: string }[];
   researchScholars?: { scholar: string; usn?: string; guide: string; title?: string; status: string }[];
   researchGrants?: { title: string; agency: string; year: string; amount: string; investigators: string }[];
-  labs?: { name: string; description?: string; images?: string[] }[];
+  labs?: { name: string; description?: string; images?: string[]; feature?: boolean }[];
+  /** When true, the Ph.D.s/Scholars/Grants tables render inside the Research tab and no standalone "Research Achievements" tab is emitted. */
+  achievementsUnderResearch?: boolean;
+  /** Labs shown under the Infrastructure tab (title + caption + images), separate from `labs` which render under Research. */
+  infrastructureLabs?: { name: string; description?: string; images?: string[] }[];
   /** Group photo of the teaching faculty, shown as a banner above the Faculty grid. */
   facultyGroupPhoto?: string;
+  /** Highlighted caption rendered below the teaching-faculty group photo (e.g. "Teaching Faculty"). */
+  facultyGroupPhotoCaption?: string;
   /** Group photo of the supporting staff, shown as a banner above the Supporting Staff tables. */
   staffGroupPhoto?: string;
+  /** Highlighted caption rendered below the supporting-staff group photo (e.g. "Supporting Staff"). */
+  staffGroupPhotoCaption?: string;
+  /** Group photo of placed students, shown as a captioned banner at the end of the Placements section. */
+  placementsPhoto?: string;
+  placementsPhotoCaption?: string;
+  /** Group photo shown as a captioned banner at the very end of the department Home tab (e.g. the graduating batch). */
+  homeGroupPhoto?: string;
+  homeGroupPhotoCaption?: string;
   /** Categorised facility photos (classrooms, labs, library, campus), shown as captioned galleries on the Facilities tab. */
   facilitiesGallery?: { title?: string; images: string[] }[];
   supportingStaff?: { name: string; designation: string }[];
@@ -84,9 +115,14 @@ export type DepartmentContent = {
   infrastructureItems?: { name: string; specification?: string; quantity?: string }[];
   softwareItems?: { name: string; version?: string; usage?: string }[];
   activities?: { title: string; date?: string; description?: string }[];
+  /** Department activity programmes (SDPs, FDPs, workshops) rendered as titled tables under an "Activities" section. */
+  activityTables?: { title: string; columns: string[]; rows: string[][] }[];
   associations?: {
     name: string;
     about?: string;
+    /** Group photo of the association's office bearers, shown as a captioned banner at the end of the section. */
+    photo?: string;
+    photoCaption?: string;
     coordinators?: string[];
     /** Student executive committee (exicom) — office bearers and the positions they hold. */
     exicom?: { name: string; position: string }[];
@@ -109,7 +145,7 @@ export type DepartmentContent = {
   sectionNavLabels?: Record<string, string>;
   /** Drop the "Quantity" column from the infrastructure/equipment table for this department. */
   hideInfrastructureQuantity?: boolean;
-  /** Show Vision & Mission on the Home tab and move Highlights under "About Department". */
+  /** Show Vision & Mission on the Home tab (after the overview) and move the HoD message, lead photo and Highlights under "About Department". */
   visionMissionOnHome?: boolean;
   /** Split Supporting Staff into "Technical Staff" (instructors) and "Supporting Staff" (helpers/peons). */
   groupSupportingStaff?: boolean;

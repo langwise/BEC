@@ -11,6 +11,10 @@ interface ContentGroup {
   text?: string;
   items?: GroupItem[];
   images?: { src: string; alt: string }[];
+  /** Render this group's images large (single column) instead of small tiles. */
+  featureImages?: boolean;
+  /** Render this group's images at a moderate bump (2 per row) instead of small tiles. */
+  largeImages?: boolean;
 }
 
 interface ContentSectionProps {
@@ -112,7 +116,13 @@ export default function ContentSection({
                 {group.items && group.items.length > 0 && <BulletList items={group.items} />}
               </div>
               {group.images && group.images.length > 0 && (
-                <PhotoGallery images={group.images} centered className="mt-4" />
+                <PhotoGallery
+                  images={group.images}
+                  centered={!group.featureImages}
+                  feature={group.featureImages}
+                  large={group.largeImages}
+                  className="mt-4"
+                />
               )}
             </div>
           ))}

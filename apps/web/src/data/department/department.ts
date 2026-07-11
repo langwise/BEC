@@ -13,8 +13,8 @@ import { getDepartmentPlacements } from "@/content/placements";
 /** A two-part list entry — primary label + muted secondary detail (no dash-joining). */
 export type GroupItem = string | { label: string; value?: string };
 
-/** A photo with alt text, used for inline galleries and banners. */
-export type SectionImage = { src: string; alt: string };
+/** A photo with alt text (and optional highlighted caption), used for inline galleries and banners. */
+export type SectionImage = { src: string; alt: string; caption?: string };
 
 /** A labelled sub-block inside a content section (subheading + text and/or bullets). */
 export interface ContentGroup {
@@ -23,6 +23,10 @@ export interface ContentGroup {
   items?: GroupItem[];
   /** Photos rendered as a grid under this group (e.g. per-laboratory shots on the Research tab). */
   images?: SectionImage[];
+  /** Render this group's images large (single column) instead of small grid tiles. */
+  featureImages?: boolean;
+  /** Render this group's images at a moderate bump (2 per row) instead of small grid tiles. */
+  largeImages?: boolean;
 }
 
 export interface DataTable {
@@ -38,7 +42,7 @@ export interface HeaderBlock {
   items?: string[];
   icon: string;
   /** Optional lead image rendered above the block's body (e.g. the department group photo). */
-  image?: { src: string; alt: string };
+  image?: { src: string; alt: string; caption?: string };
 }
 
 /** A downloadable document link (title + resolved R2 url). */
@@ -53,6 +57,10 @@ export type DepartmentSection =
       content?: string;
       items?: string[];
       groups?: ContentGroup[];
+      /** Data tables rendered below the content groups (e.g. research achievements folded into the Research tab). */
+      tables?: DataTable[];
+      /** A captioned group-photo banner shown at the very end of the section (e.g. an association's office bearers). */
+      groupPhoto?: SectionImage;
       icon?: string;
       attachments?: DocLink[];
       embeds?: DocLink[];
@@ -94,6 +102,9 @@ export interface DepartmentData {
   name: string;
   tagline: string;
 
+  /** Optional full-bleed hero image shown at the top of the page (home-hero style). */
+  heroImage?: SectionImage;
+
   overview: HeaderBlock;
   vision: HeaderBlock;
   mission: HeaderBlock;
@@ -105,13 +116,19 @@ export interface DepartmentData {
   /** Optional "at a glance" stats row shown on the Home tab. */
   quickStats?: { label: string; value: string }[];
 
+  /** Department-specific "Quick Facts" panel (facts + research areas). Only set per-department. */
+  quickFacts?: { facts: { label: string; value: string }[]; researchAreas: string[] };
+
   highlights: string[];
 
   /** Best-practices PDFs surfaced on the Home tab. */
   bestPractices?: DocLink[];
 
-  /** When true, Home shows Vision & Mission and Highlights move under "About Department". */
+  /** When true, Home shows Vision & Mission after the overview, and the HoD message, lead photo and Highlights move under "About Department". */
   visionMissionOnHome?: boolean;
+
+  /** Captioned group-photo banner shown at the very end of the Home tab (e.g. the graduating batch). */
+  homeGroupPhoto?: SectionImage;
 
   sidebar: { id: string; label: string; icon: string }[];
 
@@ -148,7 +165,11 @@ function quickStats(
   if (content.researchAreas?.length)
     stats.push({ label: "Research Supervisors", value: String(content.researchAreas.length) });
   if (content.programsOffered?.length)
-    stats.push({ label: "Programs Offered", value: String(content.programsOffered.length) });
+    stats.push({
+      label: "Programs Offered",
+      value: String(content.programsOfferedCount ?? content.programsOffered.length),
+    });
+  if (content.nbaAccredited) stats.push({ label: "Accredited", value: "NBA" });
   return stats;
 }
 
@@ -158,11 +179,55 @@ function labImages(lab: { name: string; images?: string[] }): SectionImage[] | u
   return lab.images.map((key) => ({ src: asset(key), alt: lab.name }));
 }
 
+// Drop any column whose cells are all empty across every row (e.g. a batch with
+// no CTC data, or year-wise metrics the department didn't report).
+function dropEmptyColumns(
+  columns: string[],
+  rows: string[][],
+): { columns: string[]; rows: string[][] } {
+  const keep = columns.map((_, i) => rows.some((row) => (row[i] ?? "").trim() !== ""));
+  return {
+    columns: columns.filter((_, i) => keep[i]),
+    rows: rows.map((row) => row.filter((_, i) => keep[i])),
+  };
+}
+
 function buildSections(contentKey: string, content: DepartmentContent): DepartmentSection[] {
   const sections: DepartmentSection[] = [];
 
   // Per-department section heading override (falls back to the shared default).
   const heading = (id: string, def: string) => content.sectionTitles?.[id] ?? def;
+
+  // Research achievements (Ph.D.s awarded, registered scholars, sponsored grants)
+  // as data tables — shared by the standalone "Research Achievements" tab and the
+  // inline-under-Research layout (content.achievementsUnderResearch).
+  const achievementTables = (): DataTable[] => {
+    const tables: DataTable[] = [];
+    if (content.phdsAwarded?.length) {
+      tables.push({
+        title: `Ph.D.s Awarded (${content.phdsAwarded.length})`,
+        columns: ["Research Scholar", "Guide", "Thesis Title", content.consolidateResearch ? "Registered Year" : "Year"],
+        rows: content.phdsAwarded.map((p) => [p.scholar, p.guide, p.title, p.year]),
+      });
+    }
+    if (content.researchScholars?.length) {
+      tables.push({
+        title: `Research Scholars (${content.researchScholars.length})`,
+        columns: ["Research Scholar", "Guide", "Thesis Title", "Status"],
+        rows: content.researchScholars.map((p) => [p.scholar, p.guide, p.title ?? "", p.status]),
+      });
+    }
+    if (content.researchGrants?.length) {
+      tables.push({
+        title: "Sponsored Research Grants",
+        columns: ["Project Title", "Sponsoring Agency", "Year", "Grant", "Investigators"],
+        rows: content.researchGrants.map((g) => [g.title, g.agency, g.year, g.amount, g.investigators]),
+      });
+    }
+    return tables;
+  };
+  const hasAchievements = () =>
+    Boolean(content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length);
 
   // Academics — programs, PEOs, PSOs
   if (
@@ -211,7 +276,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       sections.push({
         id: "curriculum",
         type: "documents",
-        title: heading("curriculum", "Curriculum & Syllabus"),
+        title: heading("curriculum", "Curriculum"),
         icon: "file-text",
         documents: [],
         groups,
@@ -224,18 +289,6 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     }
   }
 
-  // Newsletters (monthly department PDFs) — reuses the documents section.
-  const newsletters = resolveDocuments(content.newsletters);
-  if (newsletters.length) {
-    sections.push({
-      id: "newsletters",
-      type: "documents",
-      title: heading("newsletters", "Newsletters"),
-      icon: "file-text",
-      documents: newsletters,
-    });
-  }
-
   // Faculty
   const faculty = getDepartmentFaculty(contentKey);
   if (faculty.length) {
@@ -245,7 +298,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       title: heading("faculty", "Teaching Faculty"),
       faculty,
       groupPhoto: content.facultyGroupPhoto
-        ? { src: asset(content.facultyGroupPhoto), alt: `${content.name} — teaching faculty` }
+        ? {
+            src: asset(content.facultyGroupPhoto),
+            alt: `${content.name} — teaching faculty`,
+            caption: content.facultyGroupPhotoCaption,
+          }
         : undefined,
     });
   }
@@ -287,7 +344,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       icon: "users",
       tables,
       groupPhoto: content.staffGroupPhoto
-        ? { src: asset(content.staffGroupPhoto), alt: `${content.name} — supporting staff` }
+        ? {
+            src: asset(content.staffGroupPhoto),
+            alt: `${content.name} — supporting staff`,
+            caption: content.staffGroupPhotoCaption,
+          }
         : undefined,
     });
   }
@@ -345,56 +406,49 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     for (const lab of content.labs ?? []) {
       groups.push({ subtitle: lab.name, text: lab.description, images: labImages(lab) });
     }
-    sections.push({ id: "research", type: "content", title: heading("research", "Research & Labs"), icon: "flask", groups });
+    sections.push({ id: "research", type: "content", title: heading("research", "Research"), icon: "flask", groups });
   }
 
-  // Research — areas of specialization + labs
-  if (!content.consolidateResearch && (content.researchAreas?.length || content.labs?.length)) {
+  // Research — research guides + labs, optionally with the achievement tables
+  // folded in (content.achievementsUnderResearch).
+  if (
+    !content.consolidateResearch &&
+    (content.researchAreas?.length ||
+      content.labs?.length ||
+      (content.achievementsUnderResearch && hasAchievements()))
+  ) {
     const groups: ContentGroup[] = [];
     if (content.researchAreas?.length)
       groups.push({
-        subtitle: "Areas of Specialization",
+        subtitle: "Research Guides",
         items: content.researchAreas.map((r) => ({
           label: r.supervisor,
           value: `${r.area}${r.university ? ` · ${r.university}` : ""}`,
         })),
       });
     for (const lab of content.labs ?? []) {
-      groups.push({ subtitle: lab.name, text: lab.description, images: labImages(lab) });
+      groups.push({ subtitle: lab.name, text: lab.description, images: labImages(lab), featureImages: lab.feature });
     }
-    sections.push({ id: "research", type: "content", title: heading("research", "Research & Labs"), icon: "flask", groups });
+    const tables = content.achievementsUnderResearch ? achievementTables() : [];
+    sections.push({
+      id: "research",
+      type: "content",
+      title: heading("research", "Research"),
+      icon: "flask",
+      groups,
+      tables: tables.length ? tables : undefined,
+    });
   }
 
-  // Research achievements — Ph.D.s awarded, registered scholars, sponsored grants
-  if (content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length) {
-    const tables: DataTable[] = [];
-    if (content.phdsAwarded?.length) {
-      tables.push({
-        title: `Ph.D.s Awarded (${content.phdsAwarded.length})`,
-        columns: ["Research Scholar", "Guide", "Thesis Title", content.consolidateResearch ? "Registered Year" : "Year"],
-        rows: content.phdsAwarded.map((p) => [p.scholar, p.guide, p.title, p.year]),
-      });
-    }
-    if (content.researchScholars?.length) {
-      tables.push({
-        title: `Research Scholars (${content.researchScholars.length})`,
-        columns: ["Research Scholar", "Guide", "Thesis Title", "Status"],
-        rows: content.researchScholars.map((p) => [p.scholar, p.guide, p.title ?? "", p.status]),
-      });
-    }
-    if (content.researchGrants?.length) {
-      tables.push({
-        title: "Sponsored Research Grants",
-        columns: ["Project Title", "Sponsoring Agency", "Year", "Grant", "Investigators"],
-        rows: content.researchGrants.map((g) => [g.title, g.agency, g.year, g.amount, g.investigators]),
-      });
-    }
+  // Research achievements — Ph.D.s awarded, registered scholars, sponsored grants.
+  // Skipped when folded into the Research tab (content.achievementsUnderResearch).
+  if (!content.achievementsUnderResearch && hasAchievements()) {
     sections.push({
       id: "research-achievements",
       type: "tables",
       title: heading("research-achievements", "Research Achievements"),
       icon: "clipboard",
-      tables,
+      tables: achievementTables(),
     });
   }
 
@@ -506,10 +560,9 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   if (placements && (placements.yearWise.length || placements.batches.length)) {
     const tables: DataTable[] = [];
     if (placements.yearWise.length) {
-      tables.push({
-        title: "Year-wise Placement Summary",
-        columns: ["Year", "Students", "Offers", "On-Campus", "Off-Campus", "Placed", "Placement %", "Companies"],
-        rows: placements.yearWise.map((y) => [
+      const summary = dropEmptyColumns(
+        ["Year", "Students", "Offers", "On-Campus", "Off-Campus", "Placed", "Placement %", "Companies"],
+        placements.yearWise.map((y) => [
           y.year,
           y.students ?? "",
           y.offers ?? "",
@@ -519,14 +572,18 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           y.percent ? `${y.percent}%` : "",
           y.companies ?? "",
         ]),
-      });
+      );
+      tables.push({ title: "Year-wise Placement Summary", ...summary });
     }
     for (const batch of placements.batches) {
       if (batch.companies.length) {
+        const recruiters = dropEmptyColumns(
+          ["Company", "Package (LPA)", "Students Placed"],
+          batch.companies.map((c) => [c.company, c.package, c.count]),
+        );
         tables.push({
           title: `Recruiters & Packages — ${batch.batch} (${batch.companies.length})`,
-          columns: ["Company", "Package (LPA)", "Students Placed"],
-          rows: batch.companies.map((c) => [c.company, c.package, c.count]),
+          ...recruiters,
         });
       }
       if (batch.students.length && !content.placementsSummaryOnly) {
@@ -543,6 +600,13 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       title: "Placements",
       icon: "briefcase",
       tables,
+      groupPhoto: content.placementsPhoto
+        ? {
+            src: asset(content.placementsPhoto),
+            alt: content.placementsPhotoCaption ?? `${content.name} — placed students`,
+            caption: content.placementsPhotoCaption,
+          }
+        : undefined,
     });
   }
 
@@ -614,7 +678,22 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     // With no dated activities, the section is a student "Association", not an activities feed.
     const associationsOnly = !content.activities?.length && !!content.associations?.length;
     const defaultTitle = associationsOnly ? "Association" : "Activities & Forums";
-    sections.push({ id: "activities", type: "content", title: heading("activities", defaultTitle), icon: "calendar", groups });
+    const assocPhoto = content.associations?.find((a) => a.photo);
+    const groupPhoto = assocPhoto?.photo
+      ? { src: asset(assocPhoto.photo), alt: assocPhoto.photoCaption ?? assocPhoto.name, caption: assocPhoto.photoCaption }
+      : undefined;
+    sections.push({ id: "activities", type: "content", title: heading("activities", defaultTitle), icon: "calendar", groups, groupPhoto });
+  }
+
+  // Activity programmes (SDPs, FDPs, workshops) — one titled table per category.
+  if (content.activityTables?.length) {
+    sections.push({
+      id: "activity-programs",
+      type: "tables",
+      title: heading("activity-programs", "Activities"),
+      icon: "calendar",
+      tables: content.activityTables.map((t) => ({ title: t.title, columns: t.columns, rows: t.rows })),
+    });
   }
 
   // MoUs / industry collaborations
@@ -652,12 +731,46 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   const gallery = content.galleryExclude?.length
     ? galleryAll.filter((url) => !content.galleryExclude!.some((k) => url.includes(k)))
     : galleryAll;
-  if (gallery.length) {
+  const galleryImages = gallery.map((src, i) => ({
+    src,
+    alt: `${content.name} — facilities photo ${i + 1}`,
+  }));
+  if (content.infrastructureLabs?.length) {
+    // Named labs (title + caption + images) render as content blocks; any
+    // remaining department photos follow as a gallery group.
+    const groups: ContentGroup[] = content.infrastructureLabs.map((lab) => ({
+      subtitle: lab.name,
+      text: lab.description,
+      images: labImages(lab),
+      largeImages: true,
+    }));
+    if (galleryImages.length) groups.push({ subtitle: "Photo Gallery", images: galleryImages });
+    sections.push({
+      id: "infrastructure",
+      type: "content",
+      title: heading("infrastructure", "Infrastructure & Labs"),
+      icon: "building-2",
+      groups,
+    });
+  } else if (galleryImages.length) {
     sections.push({
       id: "infrastructure",
       type: "gallery",
       title: heading("infrastructure", "Infrastructure & Labs"),
-      images: gallery.map((src, i) => ({ src, alt: `${content.name} — facilities photo ${i + 1}` })),
+      images: galleryImages,
+    });
+  }
+
+  // Newsletters (monthly department PDFs) — reuses the documents section.
+  // Placed last, immediately before Contact.
+  const newsletters = resolveDocuments(content.newsletters);
+  if (newsletters.length) {
+    sections.push({
+      id: "newsletters",
+      type: "documents",
+      title: heading("newsletters", "Newsletters"),
+      icon: "file-text",
+      documents: newsletters,
     });
   }
 
@@ -679,7 +792,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     sections.push({
       id: "contact",
       type: "content",
-      title: heading("contact", "Department Contact"),
+      title: heading("contact", "Contact"),
       icon: "phone",
       content: c ? [c.name, c.designation].filter(Boolean).join(" — ") || undefined : undefined,
       items,
@@ -730,7 +843,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     faculty: { label: "Teaching Faculty", icon: "users" },
     staff: { label: "Supporting Staff", icon: "users-round" },
     governance: { label: "Board Members", icon: "clipboard" },
-    research: { label: "Research & Labs", icon: "clipboard" },
+    research: { label: "Research", icon: "clipboard" },
     "research-achievements": { label: "Research Achievements", icon: "clipboard" },
     publications: { label: "Publications", icon: "book" },
     patents: { label: "Patents", icon: "clipboard" },
@@ -740,6 +853,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
     activities: { label: "Activities", icon: "calendar" },
+    "activity-programs": { label: "Activities", icon: "calendar" },
     mou: { label: "MoUs", icon: "handshake" },
     infrastructure: { label: "Infrastructure", icon: "building-2" },
     contact: { label: "Contact", icon: "users-round" },
@@ -755,7 +869,14 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
   return {
     name,
     tagline: content?.tagline ?? "Excellence in Education & Innovation",
+    heroImage: content?.heroImage
+      ? { src: asset(content.heroImage), alt: `${name} — department building` }
+      : undefined,
     quickStats: content ? quickStats(contentKey, content) : undefined,
+    quickFacts:
+      content?.quickFacts?.facts?.length && content.quickFacts.researchAreas?.length
+        ? { facts: content.quickFacts.facts, researchAreas: content.quickFacts.researchAreas }
+        : undefined,
     overview: {
       title: "Overview",
       content:
@@ -764,7 +885,11 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
       items: content?.values,
       icon: "book",
       image: content?.overviewImage
-        ? { src: asset(content.overviewImage), alt: `${name} — faculty and staff` }
+        ? {
+            src: asset(content.overviewImage),
+            alt: content.overviewImageCaption ?? `${name} — faculty and staff`,
+            caption: content.overviewImageCaption,
+          }
         : undefined,
     },
     about: content?.about
@@ -798,6 +923,13 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     highlights: content?.highlights ?? defaultHighlights,
     bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
     visionMissionOnHome: content?.visionMissionOnHome,
+    homeGroupPhoto: content?.homeGroupPhoto
+      ? {
+          src: asset(content.homeGroupPhoto),
+          alt: content.homeGroupPhotoCaption ?? `${name} — graduating batch`,
+          caption: content.homeGroupPhotoCaption,
+        }
+      : undefined,
     sidebar,
     sections,
   };

@@ -510,6 +510,7 @@
       {
         "name": "Dr. Mahabaleshwar S. Kakkasageri",
         "designation": "Professor and Head",
+        "cv": "departments/ece/faculty/cv/mahabaleshwar-s-kakkasageri.pdf",
         "photo": "departments/ece/faculty/mahabaleshwar-s-k.webp"
       },
       {
@@ -521,6 +522,7 @@
       {
         "name": "Dr. P. N. Kulkarni",
         "designation": "Professor",
+        "cv": "departments/ece/faculty/cv/p-n-kulkarni.pdf",
         "photo": "departments/ece/faculty/p-n-kulkarni.webp"
       },
       {
@@ -560,8 +562,9 @@
         "photo": "departments/ece/faculty/mamata-j-sataraddi.webp"
       },
       {
-        "name": "Smt. S. R. Bharamagoudar",
+        "name": "Dr. S. R. Bharamagoudar",
         "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/s-r-bharamagoudar.pdf",
         "photo": "departments/ece/faculty/s-r-bharamagoudar.webp"
       },
       {
@@ -573,6 +576,7 @@
       {
         "name": "Sri. S. V. Hanji",
         "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/s-v-hanji.pdf",
         "photo": "departments/ece/faculty/s-v-hanji.webp"
       },
       {
@@ -592,6 +596,12 @@
         "designation": "Assistant Professor",
         "cv": "departments/ece/faculty/cv/anand-h-unnibhavi.pdf",
         "photo": "departments/ece/faculty/a-h-unnibhavi.webp"
+      },
+      {
+        "name": "Dr. Santosh B. Kumbalavati",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/santosh-b-kumbalavati.pdf",
+        "photo": "departments/ece/faculty/s-b-kumbalavati.webp"
       },
       {
         "name": "Dr. Kirankumar B. Balavalad",
@@ -622,6 +632,12 @@
         "designation": "Assistant Professor",
         "cv": "departments/ece/faculty/cv/ajayakumar-c-katageri.pdf",
         "photo": "departments/ece/faculty/a-c-katageri.webp"
+      },
+      {
+        "name": "Dr. K. Y. Bendigeri",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/k-y-bendigeri.pdf",
+        "photo": "departments/ece/faculty/k-y-bendigeri.webp"
       }
     ],
     "chemistry": [

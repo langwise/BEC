@@ -3214,7 +3214,31 @@
     "electronics-and-communication-engg": {
       "name": "Electronics & Communication Engineering",
       "assetSlug": "ece",
+      "heroImage": "departments/ece/hero-building.webp",
       "tagline": "Excellence in electronics & communication engineering through quality education and research",
+      "quickFacts": {
+        "facts": [
+          {
+            "label": "Established",
+            "value": "1985"
+          },
+          {
+            "label": "Faculty Strength",
+            "value": "20"
+          },
+          {
+            "label": "PhD Faculty",
+            "value": "15"
+          }
+        ],
+        "researchAreas": [
+          "VLSI Design",
+          "Digital Signal Processing",
+          "Wireless Networking",
+          "MEMS",
+          "Speech Signal Processing"
+        ]
+      },
       "newsletters": [
         {
           "title": "ECE Newsletter — October 2025",
@@ -3250,9 +3274,17 @@
         }
       ],
       "established": "1985",
+      "nbaAccredited": true,
       "overviewImage": "departments/ece/total-staff.webp",
+      "overviewImageCaption": "Teaching Faculty",
       "facultyGroupPhoto": "departments/ece/teaching-faculty.webp",
+      "facultyGroupPhotoCaption": "Teaching Faculty",
       "staffGroupPhoto": "departments/ece/staff-group.webp",
+      "staffGroupPhotoCaption": "Supporting Staff",
+      "placementsPhoto": "departments/ece/placed-students-25-26.webp",
+      "placementsPhotoCaption": "Placed Students 25-26",
+      "homeGroupPhoto": "departments/ece/graduating-batch-22-26.webp",
+      "homeGroupPhotoCaption": "Graduating Batch 22-26",
       "facilitiesGallery": [
         {
           "title": "Classrooms",
@@ -3301,9 +3333,16 @@
         "teaching-faculty",
         "staff-group",
         "total-staff",
-        "quadrangle-"
+        "quadrangle-",
+        "hero-building",
+        "acme-office-bearers.webp",
+        "cine9358.webp",
+        "cine9372.webp",
+        "cine9631.webp",
+        "cine9647.webp",
+        "cine9661.webp"
       ],
-      "overview": "The Department of Electronics and Communication (E&C) Engineering was established in 1985. It offers an undergraduate programme in Electronics and Communication Engineering along with Ph.D. programmes in cutting-edge areas such as VLSI Design, Digital Signal Processing, Wireless Networking, MEMS and Speech Signal Processing. Recognised as a Quality Improvement Programme (QIP) centre by the Government of India, the department has a strong legacy in research and development — particularly in communications, signal processing, microelectronics and RF/photonics. It hosts well-equipped laboratories spanning digital electronics, advanced digital communication, microwave communication, microprocessors and microcontrollers, and computer networks, along with an exclusive computing facility running industry-standard tools such as CADENCE VLSI, ECAD and VHDL simulation/synthesis packages. The department regularly organises seminars, workshops and training programmes under initiatives like TEQIP, ACME and AICTE, and has executed several AICTE-sponsored projects to strengthen its laboratory and research capabilities.",
+      "overview": "The Department of Electronics and Communication (E&C) Engineering was established in 1985. It offers an undergraduate programme in Electronics and Communication Engineering along with Ph.D. programmes in cutting-edge areas such as VLSI Design, Digital Signal Processing, Wireless Networking, MEMS and Speech Signal Processing. Recognised as a Quality Improvement Programme (QIP) centre by the Government of India, the department has a strong legacy in research and development — particularly in communications, signal processing, microelectronics and RF/photonics. It hosts well-equipped laboratories spanning digital electronics, advanced digital communication, microwave communication, microprocessors and microcontrollers, and computer networks, along with an exclusive computing facility running industry-standard tools such as CADENCE VLSI, ECAD and Verilog simulation/synthesis packages. The department regularly organises seminars, workshops and training programmes under initiatives like TEQIP, ACME and AICTE, and has executed several AICTE-sponsored projects to strengthen its laboratory and research capabilities.",
       "vision": "To achieve excellence in electronics and communication engineering through quality education and research for developing competent professionals.",
       "mission": [
         "Foster a dynamic teaching and learning process.",
@@ -3312,8 +3351,10 @@
       ],
       "programsOffered": [
         "B.E. — Electronics & Communication Engineering",
-        "Ph.D. — Electronics & Communication Engineering"
+        "Ph.D. — Electronics & Communication Engineering (VTU Belgavi)",
+        "Ph.D. — Electronics & Communication Engineering (AICTE-QIP)"
       ],
+      "programsOfferedCount": 2,
       "peos": [
         {
           "code": "PEO1",
@@ -3349,14 +3390,28 @@
       "highlights": [
         "Established in 1985 with a Ph.D. research centre recognised under the Government of India QIP scheme.",
         "Research strengths in communications, signal processing, microelectronics and RF/photonics.",
-        "Exclusive computing facility with CADENCE VLSI, ECAD and VHDL simulation/synthesis tools.",
+        "Exclusive computing facility with CADENCE VLSI, ECAD and Verilog simulation/synthesis tools.",
         "Executed several AICTE-sponsored projects to augment laboratory and research infrastructure.",
         "Active skill development through seminars, workshops and training under TEQIP, ACME and AICTE."
       ],
+      "achievementsUnderResearch": true,
       "labs": [
         {
+          "name": "Centre of Excellence in Robotics",
+          "description": "Students work hands-on with Smorphi modular shape-shifting robots at the department's Centre of Excellence in Robotics.",
+          "images": [
+            "research/labs/robotics/cine0896.webp"
+          ],
+          "feature": true
+        }
+      ],
+      "infrastructureLabs": [
+        {
           "name": "Digital Electronics Lab",
-          "description": "Foundational lab for digital design and logic experimentation."
+          "description": "Foundational lab for digital design and logic experimentation.",
+          "images": [
+            "departments/ece/lab5.webp"
+          ]
         },
         {
           "name": "Advanced Digital Communication Lab",
@@ -3385,14 +3440,13 @@
           "name": "Computer Networks Lab",
           "description": "Networking protocols, configuration and performance analysis.",
           "images": [
-            "departments/ece/lab5.webp",
             "departments/ece/lab6.webp",
             "departments/ece/lab7.webp"
           ]
         },
         {
           "name": "Computing Facility",
-          "description": "State-of-the-art systems with industry-standard EDA tools — CADENCE VLSI, ECAD and VHDL simulation/synthesis packages.",
+          "description": "State-of-the-art systems with industry-standard EDA tools — CADENCE VLSI, ECAD and Verilog simulation/synthesis packages.",
           "images": [
             "departments/ece/lab9.webp"
           ]
@@ -3402,6 +3456,8 @@
         {
           "name": "ACME — Association for Communication and Modern Electronics",
           "about": "The Association for Communication and Modern Electronics (ACME) is the official student association of the Department of Electronics and Communication Engineering. It serves as a dynamic platform for students to explore, engage, and excel beyond academics. ACME organizes a wide variety of events throughout the year, including technical workshops, seminars, sports competitions, cultural programs, fun activities, and celebrations of important days. The association aims to foster all-round development by encouraging creativity, teamwork, leadership, and technical excellence among students. By bridging academics with extracurricular involvement, ACME plays a vital role in enriching the campus experience for ECE students.",
+          "photo": "departments/ece/acme-office-bearers.webp",
+          "photoCaption": "ACME Office Bearers",
           "coordinators": [
             "Dr. Sharanappa P. H.",
             "Dr. Basavaraj M. Angadi"
@@ -3442,10 +3498,123 @@
           ]
         }
       ],
+      "activityTables": [
+        {
+          "title": "Skill Development Programmes (SDP)",
+          "columns": [
+            "Programme",
+            "Dates"
+          ],
+          "rows": [
+            [
+              "Data Structure using C++",
+              "28.01.2026 to 06.02.2026"
+            ],
+            [
+              "Cyber Security",
+              "01.11.2025 to 05.11.2025"
+            ],
+            [
+              "Intensive Training on TCS NQT 2025",
+              "27.10.2025 to 31.10.2025"
+            ],
+            [
+              "Embedded Systems and Product Design",
+              "11.10.2025 to 13.10.2025"
+            ],
+            [
+              "Quant Edge: Skills for Success",
+              "17.09.2025 to 22.09.2025"
+            ],
+            [
+              "Mastering LabVIEW: Applications and Insights",
+              "13.02.2025 to 15.02.2025"
+            ]
+          ]
+        },
+        {
+          "title": "Faculty Development Programmes (FDP)",
+          "columns": [
+            "Programme",
+            "Dates"
+          ],
+          "rows": [
+            [
+              "Effective Teaching Practices",
+              "26.02.2026 to 28.02.2026"
+            ],
+            [
+              "Fundamentals of AI and ML",
+              "16.12.2025 to 20.12.2025"
+            ],
+            [
+              "Empowering Research: Exploring Funding Opportunities",
+              "17.01.2025 to 18.01.2025"
+            ]
+          ]
+        },
+        {
+          "title": "Workshops & Short-Term Courses",
+          "columns": [
+            "Workshop / Short-Term Course",
+            "Date(s)"
+          ],
+          "rows": [
+            [
+              "POTENZIA",
+              "07.04.2024"
+            ],
+            [
+              "Start-Up 101 Steps (Legal and Ethical)",
+              "11.05.2024"
+            ],
+            [
+              "IoT for Agriculture and Domestic Applications",
+              "23.01.2024 to 27.01.2024"
+            ],
+            [
+              "Idea to Product: How to Penetrate the Market",
+              "05.01.2024"
+            ],
+            [
+              "Project Based Learning as an Approach to Engineering Studies",
+              "20.04.2023"
+            ],
+            [
+              "Technical Poster Making Competition",
+              "29.03.2023"
+            ],
+            [
+              "Self-Driven Activity: Strategic Business Plan — Business Advice for Future Entrepreneur",
+              "25.02.2023"
+            ],
+            [
+              "Web Development",
+              "17.01.2023"
+            ],
+            [
+              "Certificate Course on “Signals and Communication Systems”",
+              "11.05.2022 to 20.05.2022"
+            ],
+            [
+              "Importance of Basic Life Support Techniques",
+              "09.05.2022"
+            ],
+            [
+              "Hands-on Workshop on Android Based App",
+              "13.11.2021"
+            ],
+            [
+              "Understanding LabVIEW and its Applications",
+              "07.10.2021 to 09.10.2021"
+            ]
+          ]
+        }
+      ],
       "contact": {
         "name": "Dr. Mahabaleshwar S. K.",
         "designation": "Professor & Head",
-        "email": "mskec@becbgk.edu"
+        "email": "bechodece2023@gmail.com"
       },
       "researchAreas": [
         {
@@ -3474,7 +3643,7 @@
           "university": "VTU"
         },
         {
-          "supervisor": "Dr. Nagratna Rajoor",
+          "supervisor": "Dr. Nagratna Rajur",
           "area": "Wireless Sensor Networks",
           "university": "VTU"
         },
@@ -3514,8 +3683,28 @@
           "university": "VTU"
         },
         {
-          "supervisor": "Dr. Santosh Kumblawati",
+          "supervisor": "Dr. Santosh Kumblavati",
           "area": "Wireless Sensor Networks",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Shobha R. Bharamagoudar",
+          "area": "Mobile Opportunistic Networks",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Somu Parande",
+          "area": "Wireless Sensor Networks",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Basavaraj Angadi",
+          "area": "Wireless Sensor Networks",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Ajayakumar C. Katageri",
+          "area": "MEMS",
           "university": "VTU"
         }
       ],
@@ -3551,6 +3740,12 @@
           "year": "2013"
         },
         {
+          "scholar": "Vijayashree Budhihal",
+          "guide": "Dr. S. S. Manvi",
+          "title": "Neuro-fuzzy and agent based quality of service routing solutions for mobile Ad Hoc networks",
+          "year": "2014"
+        },
+        {
           "scholar": "Nagaratna R.",
           "guide": "Dr. Jayashree D. Mallapur",
           "title": "An energy efficient time synchronization in wireless sensor networks",
@@ -3577,7 +3772,7 @@
         {
           "scholar": "Ajayakumar C. Katageri",
           "guide": "Dr. B. G. Sheeparamatti",
-          "title": "Modeling, simulation and fabrication of CNT based piezoresistive pressure sensor",
+          "title": "Modeling, Simulation and fabrication of CNT based piezoresistive pressure sensor",
           "year": "2020"
         },
         {
@@ -3611,7 +3806,7 @@
           "year": "2021"
         },
         {
-          "scholar": "Shiala Mudengudi",
+          "scholar": "Shailaja Mudengudi",
           "guide": "Dr. Mahabaleshwar S. K.",
           "title": "Intelligent security schemes for vehicular clouds networks",
           "year": "2021"
@@ -3689,20 +3884,31 @@
           "year": "2024"
         },
         {
-          "scholar": "Shobha R. Bharamagoudar",
-          "guide": "Dr. S. V. Saboji",
-          "title": "Routing System for Mobile Opportunistic Network using Microscopic and Macroscopic Schemes",
+          "scholar": "Aparna Chilakawad",
+          "guide": "Dr. P. N. Kulkarni",
+          "title": "Spectral splitting of speech signal to reduce the effect of masking due to SNHL using time varying filters for binaural dichotic presentation",
+          "year": "2025"
+        },
+        {
+          "scholar": "Shrikant Salotagi",
+          "guide": "Dr. Jayashree D. Mallapur",
+          "title": "Optimization of Resource allocation in IoT applications",
           "year": "2024"
+        },
+        {
+          "scholar": "Shivanand Hiremath",
+          "guide": "Dr. Jayashree D. Mallapur",
+          "title": "QoS based dynamic resource provision and traffic scheduling in vehicular cloud computing networks",
+          "year": "2023"
+        },
+        {
+          "scholar": "Jyoti Katagi",
+          "guide": "Dr. P. N. Kulkarni",
+          "title": "Effect of monaural and binaural hearing aids on source localization",
+          "year": "2025"
         }
       ],
       "researchScholars": [
-        {
-          "scholar": "Shreekant Salotagi",
-          "usn": "2BA18PEC01",
-          "guide": "Dr. Jayashree D. Mallapur",
-          "title": "Optimization of Resource Allocation in Internet of Things Application",
-          "status": "Registered (2018)"
-        },
         {
           "scholar": "Adappa Angadi",
           "usn": "2BA16PEJ04",
@@ -3732,27 +3938,6 @@
           "status": "Registered (2017)"
         },
         {
-          "scholar": "Jyoti Katagi",
-          "usn": "2BA17PEA04",
-          "guide": "Dr. P. N. Kulkarni",
-          "title": "Effect of monaural and binaural hearing aids on source localization",
-          "status": "Registered (2016)"
-        },
-        {
-          "scholar": "Aparna Chilakawad",
-          "usn": "2BA18PEC03",
-          "guide": "Dr. P. N. Kulkarni",
-          "title": "Spectral Splitting of Speech signal to reduce effect of masking due to sensorineural loss using time varying filters for binaural dichotic presentation",
-          "status": "Registered (2017)"
-        },
-        {
-          "scholar": "Madhuri B. Mulik",
-          "usn": "2BA16PEC01",
-          "guide": "Dr. P. N. Kulkarni",
-          "title": "Assessment of SAR Images for Climate Change Risk Detection using Image Processing Techniques with respect to Indian Scenario",
-          "status": "Registered (2016)"
-        },
-        {
           "scholar": "Ujwala Nandini",
           "usn": "2BA18PEC02",
           "guide": "Dr. B. G. Sheeparamatti",
@@ -3760,24 +3945,24 @@
           "status": "Registered (2018)"
         },
         {
-          "scholar": "Sunilkumar Hattaraki",
-          "usn": "2BA20PEC04",
-          "guide": "Dr. S. G. Kambalimath",
-          "title": "Automatic Detection of Listening Conditions and Adaptive Speech Signal Filtering in Hearing Aids",
-          "status": "Registered (2021)"
+          "scholar": "Vinay Shettar",
+          "usn": "2BA20PEC05",
+          "guide": "Dr. B. G. Sheeparamatti",
+          "title": "Fabrication and characterization of novel thin films for energy applications",
+          "status": "Registered (2022)"
         },
         {
-          "scholar": "Vinod Kumar M. Sonar",
-          "usn": "2BA20PEC06",
-          "guide": "Dr. S. G. Kambalimath",
-          "title": "AI based Programmable Digital Hearing Aid",
-          "status": "Registered (2021)"
+          "scholar": "Mallikarjun Aralimarad",
+          "usn": "2BA23PEC02",
+          "guide": "Dr. Anand H. Unnibhavi",
+          "title": "Development of effective speech recognition system and vocabulary building for children with cochlear implants",
+          "status": "Registered (2024)"
         },
         {
           "scholar": "Achyut Yargal",
           "usn": "2BA20PEC01",
           "guide": "Dr. Kiran Y. Bendigeri",
-          "title": "IoT Data Aggregation for vertical and Horizontal with Edge Computing",
+          "title": "IoT Data Aggregation for Vertical and Horizontal with Edge Computing",
           "status": "Registered (2021)"
         },
         {
@@ -3802,38 +3987,87 @@
           "status": "Registered (2024)"
         },
         {
-          "scholar": "B. M. Angadi",
-          "usn": "2BA17PEA03",
+          "scholar": "Vinayak A. Telsang",
+          "usn": "2BA20PCS10",
           "guide": "Dr. Mahabaleshwar S. K.",
-          "title": "Sensor nodes localization, clustering and routing algorithms for wireless sensor networks",
-          "status": "Registered (2017)"
+          "title": "Data security management techniques for edge computing",
+          "status": "Registered (2020)"
+        },
+        {
+          "scholar": "Kotrappa B. Korlahalli",
+          "usn": "2BA23PEC01",
+          "guide": "Dr. Mahabaleshwar S. K.",
+          "title": "Machine learning based algorithms to mitigate eavesdropping, spoofing and privacy leakage attacks in IoT",
+          "status": "Registered (2023)"
         },
         {
           "scholar": "Mallikarjun Deshamuk",
           "usn": "2BA20PEC02",
           "guide": "Dr. Santosh Kumblawati",
-          "title": "Optimizing Resource Utilization and Enhancing Performance of LTE Advanced Communication System",
+          "title": "Optimizing Resource Utilization and Enhancing Performance of LTE Advance Communication System",
           "status": "Registered (2021)"
+        },
+        {
+          "scholar": "Sudheendra Yalagur",
+          "usn": "2BA23PEC03",
+          "guide": "Dr. Santosh Kumblawati",
+          "title": "Design and performance evaluation of smart and secured routing protocol for VANETs",
+          "status": "Registered (2023)"
         },
         {
           "scholar": "Sneha Kotin",
           "usn": "2BA21PEC05",
-          "guide": "Dr. A. V. Sutagundar",
+          "guide": "Dr. Ashok Sutagundar",
           "title": "Design, Simulation and Optimization of MEMS based thin films",
           "status": "Registered (2023)"
         },
         {
-          "scholar": "Mallikarjun Aralimarad",
-          "guide": "Dr. Anand H. Unnibhavi",
-          "title": "Development of effective speech recognition system and vocabulary building system for children with cochlear implants",
-          "status": "Registered (2023)"
+          "scholar": "Rashmi Kittali",
+          "usn": "2BA21PEC",
+          "guide": "Dr. Ashok Sutagundar",
+          "title": "Structural Health Monitoring using AI and ML",
+          "status": "Registered (2021)"
         },
         {
-          "scholar": "Shivakumar G. Nayak",
-          "usn": "2BA25PEE02",
-          "guide": "Dr. Anand H. Unnibhavi",
-          "title": "Development of Dialect Balanced Deep Learning Based Automatic Speech Recognition System for the Kannada Language",
+          "scholar": "Sadashiv R. Badiger",
+          "usn": "2BA21PEC04",
+          "guide": "Dr. Chayalakshmi C. L.",
+          "title": "Data management techniques in edge computing for IoT applications",
+          "status": "Registered (2021)"
+        },
+        {
+          "scholar": "Shrishail Chamatagoudar",
+          "usn": "2BA22PEC02",
+          "guide": "Dr. Rajani S. Pujar, Dr. Chayalakshmi C. L.",
+          "title": "Artificial intelligence based resource management techniques for edge computing",
+          "status": "Registered (2022)"
+        },
+        {
+          "scholar": "Laxmi Burangi",
+          "usn": "2BA24PEC01",
+          "guide": "Dr. Mamata J. Sataraddi",
+          "title": "Development of advanced and sustainable recycling of end-of-life solar panels",
           "status": "Registered (2025)"
+        },
+        {
+          "scholar": "Piyusha Shrenik Shetgar",
+          "guide": "Dr. Chayalakshmi C. L.",
+          "title": "Efficient data management techniques in edge computing",
+          "status": "Registered (2024)"
+        },
+        {
+          "scholar": "Sunil Kumar Hattarki",
+          "usn": "2BA20PEC04",
+          "guide": "Dr. Chayalakshmi C. L.",
+          "title": "Automatic detection of listening conditions and adaptive speech signal filtering in hearing aids",
+          "status": "Registered (2022)"
+        },
+        {
+          "scholar": "Vinod Badawadagi",
+          "usn": "2BA25PEC01",
+          "guide": "Dr. Basavaraj Angadi",
+          "title": "Internet of Things",
+          "status": "Registered (2026)"
         }
       ],
       "researchGrants": [
@@ -4009,7 +4243,7 @@
               "position": "VTU Nominee"
             },
             {
-              "name": "Dr. Rahul Jashvantbhai Pandya (Assistant Professor, Dept. of ECE, IIT Dharwad)",
+              "name": "Dr. Rahul Jashvantbhai Pandya (Associate Professor, Dept. of ECE, IIT Dharwad)",
               "position": "Subject Expert"
             },
             {
@@ -4039,6 +4273,10 @@
             },
             {
               "name": "Dr. Rajani S. Pujar, Assistant Professor",
+              "position": "Coordinator"
+            },
+            {
+              "name": "Dr. Sharanappa P. H., Assistant Professor",
               "position": "Coordinator"
             }
           ]
@@ -4081,7 +4319,7 @@
       },
       "infrastructureItems": [
         {
-          "name": "VHDL/VLSI Lab",
+          "name": "VLSI/Verilog Lab",
           "specification": "Laboratory with 22 computers running industry-standard EDA tools",
           "quantity": "22 systems"
         },
@@ -4180,92 +4418,136 @@
           "usage": "Instrumentation and process control"
         }
       ],
-      "documents": [
+      "curriculumGroups": [
         {
-          "title": "Scheme & Syllabus (2025-26)",
-          "file": "departments/ece/docs/scheme-syllabus-2025-26.pdf"
+          "title": "Scheme & Syllabus",
+          "documents": [
+            {
+              "title": "Scheme & Syllabus (2025-26)",
+              "file": "departments/ece/docs/scheme-syllabus-2025-26.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus (2024-25)",
+              "file": "departments/ece/docs/scheme-syllabus-2024-25.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus (2023-24 Batch)",
+              "file": "departments/ece/docs/scheme-syllabus-2023-24.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus (2022-23 Batch)",
+              "file": "departments/ece/docs/scheme-syllabus-2022-23.pdf"
+            }
+          ]
         },
         {
-          "title": "Scheme & Syllabus (2024-25)",
-          "file": "departments/ece/docs/scheme-syllabus-2024-25.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus (2023-24 Batch)",
-          "file": "departments/ece/docs/scheme-syllabus-2023-24.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus (2022-23 Batch)",
-          "file": "departments/ece/docs/scheme-syllabus-2022-23.pdf"
-        },
-        {
-          "title": "Programme Outcomes, PEOs & PSOs",
-          "file": "departments/ece/docs/programme-outcomes-peos-psos.pdf"
-        },
-        {
-          "title": "Research Centre Information",
-          "file": "departments/ece/docs/research-centre-information.pdf"
-        },
-        {
-          "title": "Research Publications & Books",
-          "file": "departments/ece/docs/research-publications-and-books.pdf"
-        },
-        {
-          "title": "Patents",
-          "file": "departments/ece/docs/patents.pdf"
-        },
-        {
-          "title": "Innovations in Teaching and Learning (Best Practices)",
-          "file": "departments/ece/docs/innovations-in-teaching-and-learning.pdf"
+          "title": "Time Table",
+          "documents": [
+            {
+              "title": "Time Table (2025-26 Even Semester)",
+              "file": "departments/ece/docs/timetable-2025-26-even.pdf"
+            }
+          ]
         }
       ],
+      "sectionDocuments": {
+        "research": [
+          {
+            "title": "Research Centre Information",
+            "file": "departments/ece/docs/research-centre-information.pdf"
+          },
+          {
+            "title": "Research Publications & Books",
+            "file": "departments/ece/docs/research-publications-and-books.pdf"
+          },
+          {
+            "title": "Patents",
+            "file": "departments/ece/docs/patents.pdf"
+          }
+        ]
+      },
       "pos": [
         {
           "code": "PO1",
-          "text": "Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems."
+          "text": "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop solutions to complex engineering problems."
         },
         {
           "code": "PO2",
-          "text": "Problem analysis: Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences."
+          "text": "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)"
         },
         {
           "code": "PO3",
-          "text": "Design/development of solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for the public health and safety, and the cultural, societal, and environmental considerations."
+          "text": "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)"
         },
         {
           "code": "PO4",
-          "text": "Conduct investigations of complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions."
+          "text": "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis and interpretation of data to provide valid conclusions. (WK8)"
         },
         {
           "code": "PO5",
-          "text": "Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modeling to complex engineering activities with an understanding of the limitations."
+          "text": "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering and IT tools, including prediction and modelling, recognizing their limitations to solve complex engineering problems. (WK2 and WK6)"
         },
         {
           "code": "PO6",
-          "text": "The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice."
+          "text": "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for their impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5 and WK7)"
         },
         {
           "code": "PO7",
-          "text": "Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development."
+          "text": "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national and international laws. (WK9)"
         },
         {
           "code": "PO8",
-          "text": "Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice."
+          "text": "Individual and Collaborative Team Work: Function effectively as an individual and as a member or leader in diverse and multi-disciplinary teams."
         },
         {
           "code": "PO9",
-          "text": "Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings."
+          "text": "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, and make effective presentations considering cultural, language and learning differences."
         },
         {
           "code": "PO10",
-          "text": "Communication: Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions."
+          "text": "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one's own work, as a member and leader in a team, to manage projects and in multidisciplinary environments."
         },
         {
           "code": "PO11",
-          "text": "Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments."
+          "text": "Life-Long Learning: Recognize the need for and have the preparation and ability for (i) independent and life-long learning, (ii) adaptability to new and emerging technologies and (iii) critical thinking in the broadest context of technological change. (WK8)"
+        }
+      ],
+      "wk": [
+        {
+          "code": "WK1",
+          "text": "A systematic, theory-based understanding of the natural sciences applicable to the discipline and awareness of relevant social sciences."
         },
         {
-          "code": "PO12",
-          "text": "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
+          "code": "WK2",
+          "text": "Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed analysis and modelling applicable to the discipline."
+        },
+        {
+          "code": "WK3",
+          "text": "A systematic, theory-based formulation of engineering fundamentals required in the engineering discipline."
+        },
+        {
+          "code": "WK4",
+          "text": "Engineering specialist knowledge that provides theoretical frameworks and bodies of knowledge for the accepted practice areas in the engineering discipline; much is at the forefront of the discipline."
+        },
+        {
+          "code": "WK5",
+          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, reuse of resources, net zero carbon and similar concepts, that supports engineering design and operations in a practice area."
+        },
+        {
+          "code": "WK6",
+          "text": "Knowledge of engineering practice (technology) in the practice areas in the engineering discipline."
+        },
+        {
+          "code": "WK7",
+          "text": "Knowledge of the role of engineering in society and identified issues in engineering practice in the discipline, such as the professional responsibility of an engineer to public safety and sustainable development."
+        },
+        {
+          "code": "WK8",
+          "text": "Engagement with selected knowledge in the current research literature of the discipline, and awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
+        },
+        {
+          "code": "WK9",
+          "text": "Ethics, inclusive behaviour and conduct. Knowledge of professional ethics, responsibilities and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
         }
       ],
       "hodMessage": {
@@ -4282,7 +4564,8 @@
           "title": "ECE UG Alumni Record",
           "file": "departments/ece/docs/ug-alumni-record.pdf"
         }
-      ]
+      ],
+      "visionMissionOnHome": true
     },
     "electrical-and-electronics-engg": {
       "name": "Electrical & Electronics Engineering",
@@ -4562,7 +4845,8 @@
           "guide": "Dr. Sangamesh Y. Goudappanavar",
           "title": "AI Driven Reliability Assessment of Wind Plant for Optimal Planning of Power Dispatch",
           "status": "Registered"
-        },{
+        },
+        {
           "scholar": "Shivakumar G. Nayak",
           "usn": "",
           "guide": "Dr. Anand Unnibhavi",
@@ -6194,12 +6478,12 @@
       },
       "sectionTitles": {
         "curriculum": "Curriculum and Syllabus",
-        "research": "Research and Labs",
+        "research": "Research",
         "activities": "Activities and Forums",
         "infrastructure": "Infrastructure and Labs"
       },
       "sectionNavLabels": {
-        "research": "Research and Labs"
+        "research": "Research"
       }
     },
     "industrial-and-production-engg": {
@@ -11932,7 +12216,7 @@
           "area": "Aerospace Engineering"
         },
         {
-          "supervisor": "Dr. Santosh Kumblawati",
+          "supervisor": "Dr. Santosh Kumblavati",
           "area": "Wireless Sensor Networks"
         },
         {
@@ -12178,7 +12462,7 @@
         {
           "scholar": "Mr. Mallikarjun Deshamuk",
           "usn": "2BA20PEC02",
-          "guide": "Dr. Santosh Kumblawati",
+          "guide": "Dr. Santosh Kumblavati",
           "title": "Optimizing Resource Utilization and Enhancing Performance of LTE Advanced Communication System",
           "status": "Registered 2021"
         },

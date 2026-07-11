@@ -3839,6 +3839,305 @@
         }
       ]
     },
+    "electronics-and-communication-engg": {
+      "yearWise": [
+        {
+          "year": "2026 Batch",
+          "placed": "87",
+          "companies": "18"
+        },
+        {
+          "year": "2025 Batch",
+          "placed": "82",
+          "companies": "16"
+        },
+        {
+          "year": "2024 Batch",
+          "placed": "71",
+          "companies": "18"
+        }
+      ],
+      "batches": [
+        {
+          "batch": "2026 Batch",
+          "companies": [
+            {
+              "company": "Infosys",
+              "package": "3.60",
+              "count": "25"
+            },
+            {
+              "company": "Qspider",
+              "package": "",
+              "count": "14"
+            },
+            {
+              "company": "TCS Ninja",
+              "package": "3.36",
+              "count": "12"
+            },
+            {
+              "company": "Kodnest",
+              "package": "",
+              "count": "8"
+            },
+            {
+              "company": "JSW TalenTech",
+              "package": "5.50",
+              "count": "7"
+            },
+            {
+              "company": "Cognizant Gen C",
+              "package": "4.02",
+              "count": "6"
+            },
+            {
+              "company": "Dextris Internship",
+              "package": "₹5,000/mo",
+              "count": "2"
+            },
+            {
+              "company": "Tescom",
+              "package": "2.80",
+              "count": "2"
+            },
+            {
+              "company": "Vstand4U",
+              "package": "",
+              "count": "2"
+            },
+            {
+              "company": "Arista Network Internship",
+              "package": "14.00",
+              "count": "1"
+            },
+            {
+              "company": "Bosch Automotive Electronics",
+              "package": "6.50",
+              "count": "1"
+            },
+            {
+              "company": "EVERTZ INDIA PRIVATE LIMITED",
+              "package": "₹17,000/mo",
+              "count": "1"
+            },
+            {
+              "company": "Infobell IT Solutions Pvt Ltd",
+              "package": "4.00",
+              "count": "1"
+            },
+            {
+              "company": "Karmic",
+              "package": "₹15,000/mo",
+              "count": "1"
+            },
+            {
+              "company": "TCS Digital",
+              "package": "7.02",
+              "count": "1"
+            },
+            {
+              "company": "TCS Internship",
+              "package": "₹17,000/mo",
+              "count": "1"
+            },
+            {
+              "company": "TCS Prime",
+              "package": "9.02",
+              "count": "1"
+            },
+            {
+              "company": "Vayavya Labs",
+              "package": "4.50",
+              "count": "1"
+            }
+          ],
+          "students": []
+        },
+        {
+          "batch": "2025 Batch",
+          "companies": [
+            {
+              "company": "Infosys",
+              "package": "3.60",
+              "count": "20"
+            },
+            {
+              "company": "Vstand4U",
+              "package": "",
+              "count": "14"
+            },
+            {
+              "company": "Qspider",
+              "package": "",
+              "count": "13"
+            },
+            {
+              "company": "TCS Ninja",
+              "package": "3.36",
+              "count": "13"
+            },
+            {
+              "company": "Kodnest",
+              "package": "₹5,000/mo",
+              "count": "5"
+            },
+            {
+              "company": "HCLTech",
+              "package": "4.25",
+              "count": "4"
+            },
+            {
+              "company": "TAP ACADEMY",
+              "package": "",
+              "count": "3"
+            },
+            {
+              "company": "Barracuda",
+              "package": "8.32",
+              "count": "2"
+            },
+            {
+              "company": "BOSCH Automotive",
+              "package": "5.50",
+              "count": "1"
+            },
+            {
+              "company": "Cognizant",
+              "package": "4.02",
+              "count": "1"
+            },
+            {
+              "company": "Harman Technology",
+              "package": "6.00",
+              "count": "1"
+            },
+            {
+              "company": "Karmic",
+              "package": "3.00",
+              "count": "1"
+            },
+            {
+              "company": "Mukand Sumi Special Steel Ltd",
+              "package": "3.50",
+              "count": "1"
+            },
+            {
+              "company": "Pentagon Space",
+              "package": "",
+              "count": "1"
+            },
+            {
+              "company": "TCS Digital",
+              "package": "7.02",
+              "count": "1"
+            },
+            {
+              "company": "Tech Mahindra",
+              "package": "3.30",
+              "count": "1"
+            }
+          ],
+          "students": []
+        },
+        {
+          "batch": "2024 Batch",
+          "companies": [
+            {
+              "company": "TCS Ninja",
+              "package": "",
+              "count": "16"
+            },
+            {
+              "company": "PALLE TECHNOLOGIES (CSR)",
+              "package": "",
+              "count": "12"
+            },
+            {
+              "company": "Ozlo sleep",
+              "package": "",
+              "count": "9"
+            },
+            {
+              "company": "Pentagon Space",
+              "package": "",
+              "count": "5"
+            },
+            {
+              "company": "Ethnus",
+              "package": "",
+              "count": "4"
+            },
+            {
+              "company": "Accenture",
+              "package": "",
+              "count": "3"
+            },
+            {
+              "company": "Kodnest(CSR)",
+              "package": "",
+              "count": "3"
+            },
+            {
+              "company": "TCS Digital",
+              "package": "",
+              "count": "3"
+            },
+            {
+              "company": "Destination (CSR)",
+              "package": "",
+              "count": "2"
+            },
+            {
+              "company": "Global Quest",
+              "package": "",
+              "count": "2"
+            },
+            {
+              "company": "Mistral Solutions",
+              "package": "",
+              "count": "2"
+            },
+            {
+              "company": "RENK Gears Private Limited",
+              "package": "",
+              "count": "2"
+            },
+            {
+              "company": "TATA Consulting Engineers Limited (TCE)",
+              "package": "",
+              "count": "2"
+            },
+            {
+              "company": "Vayavya labs",
+              "package": "",
+              "count": "2"
+            },
+            {
+              "company": "Alcon Laboratories Internship Hiring",
+              "package": "",
+              "count": "1"
+            },
+            {
+              "company": "Applied Materials",
+              "package": "",
+              "count": "1"
+            },
+            {
+              "company": "Kimo.ai, In4growth global ventures",
+              "package": "",
+              "count": "1"
+            },
+            {
+              "company": "Sion semiconductor",
+              "package": "",
+              "count": "1"
+            }
+          ],
+          "students": []
+        }
+      ]
+    },
     "civil-engg": {
       "yearWise": [
         {

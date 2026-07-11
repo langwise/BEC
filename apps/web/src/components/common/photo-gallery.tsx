@@ -17,6 +17,8 @@ export function PhotoGallery({
   images,
   className,
   centered = false,
+  feature = false,
+  large = false,
 }: {
   images: GalleryImage[];
   className?: string;
@@ -26,8 +28,39 @@ export function PhotoGallery({
    * they don't look lopsided.
    */
   centered?: boolean;
+  /**
+   * Render each image large and full-column-width (single column) instead of as
+   * a small grid tile — for showcase photos like a Centre of Excellence.
+   */
+  feature?: boolean;
+  /**
+   * With `centered`, use larger tiles (2 per row on desktop instead of 3) — a
+   * moderate bump for per-lab infrastructure photos without going full-width.
+   */
+  large?: boolean;
 }) {
   if (!images.length) return null;
+
+  if (feature) {
+    return (
+      <div className={cn("flex flex-col gap-4", className)}>
+        {images.map((image, index) => (
+          <div
+            key={`${image.src}-${index}`}
+            className="group relative aspect-3/2 w-full max-w-3xl overflow-hidden rounded-lg border border-stone-200 bg-stone-100"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+        ))}
+      </div>
+    );
+  }
 
   if (centered) {
     return (
@@ -35,13 +68,16 @@ export function PhotoGallery({
         {images.map((image, index) => (
           <div
             key={`${image.src}-${index}`}
-            className="group relative aspect-4/3 w-[calc(50%-0.6rem)] overflow-hidden rounded-sm border border-stone-200 bg-stone-100 sm:w-[calc(33.333%-0.7rem)]"
+            className={cn(
+              "group relative aspect-4/3 w-[calc(50%-0.6rem)] overflow-hidden rounded-sm border border-stone-200 bg-stone-100",
+              large ? "sm:w-[calc(50%-0.75rem)]" : "sm:w-[calc(33.333%-0.7rem)]",
+            )}
           >
             <Image
               src={image.src}
               alt={image.alt}
               fill
-              sizes="(max-width: 640px) 50vw, 33vw"
+              sizes={large ? "(max-width: 640px) 50vw, 50vw" : "(max-width: 640px) 50vw, 33vw"}
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
