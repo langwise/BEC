@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 export const metadata = pageMetadata({
   title: "Examination Section Contact",
   description:
-    "Contact the Controller of Examinations, Dr. Chandrashekhar K., at BEC Bagalkote for examination queries — phone, email and address of the Autonomous Examination Section.",
+    "Contact the Controller of Examinations, Dr. K. Chandrasekhar, at BEC Bagalkote for examination queries — phone, email and address of the Autonomous Examination Section.",
   path: "/academics/examinations/contact",
 });
 
@@ -26,11 +26,11 @@ export default function ContactPage() {
           <div className="grid gap-6">
             <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
               <h3 className="text-xl font-bold text-gray-900 mb-1">
-                Dr. Chandrashekhar K.
+                Dr. K. Chandrasekhar
               </h3>
-              <p className="text-gray-700 font-medium">Professor</p>
+              <p className="text-gray-700 font-medium">Controller of Examinations</p>
               <p className="text-gray-500 text-sm mb-6">
-                Department of Physics
+                Professor, Department of Physics
               </p>
 
               <div className="space-y-4">

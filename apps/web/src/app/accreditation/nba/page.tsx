@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "NBA Accreditation",
   description:
-    "National Board of Accreditation (NBA) programme accreditation for BEC Bagalkote: grant letters for CSE, ISE, ECE, EEE, EIE and Biotechnology plus extension and compliance records.",
+    "National Board of Accreditation (NBA) programme accreditation certificates for BEC Bagalkote, covering Civil, Computer Science, Electronics & Communication, Mechanical, Information Science, Electrical & Electronics Engineering and Biotechnology.",
   path: "/accreditation/nba",
 });
 
@@ -16,33 +16,22 @@ export default function NbaPage() {
       <PageHero
         eyebrow="Accreditation"
         title="NBA Accreditation"
-        description="Programme-level accreditation by the National Board of Accreditation (NBA), New Delhi. Accreditation grants, extensions and compliance letters for the college's engineering programmes are published below."
-        badges={[
-          { label: "NBA Accredited" },
-          { label: "Outcome-Based Education", tone: "outline" },
-        ]}
+        description={
+          <span className="block text-justify">
+            The undergraduate programmes in Biotechnology, Civil Engineering, Computer Science and Engineering, Electronics and Communication Engineering, Electrical and Electronics Engineering, Mechanical Engineering, and Information Science and Engineering are currently accredited by the National Board of Accreditation (NBA). The programme-wise NBA accreditation certificates reflect the institution&apos;s commitment to Outcome-Based Education (OBE), quality assurance, continuous improvement and academic excellence.
+          </span>
+        }
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
         <DocumentDirectory
           groups={[
             {
-              label: "Accreditation Grants",
+              label: "Accreditation Certificates",
               documents: [
-                { title: "NBA Accreditation Grant Letter", url: asset("documents/nba/2431-nba-grant.pdf") },
-                { title: "Information Science & Engg. (ISE) — NBA Grant", url: asset("documents/nba/2431-ise-grant.pdf") },
-                { title: "Information Science & Engg. (ISE) — Accreditation 2023–2026", url: asset("documents/nba/nba-ise-2023-2026.pdf") },
-                { title: "Electronics & Comm. and Computer Science — Accreditation 2022–25", url: asset("documents/nba/ec-cs-6886-22-25.pdf") },
-                { title: "Computer Science & Engg. (CSE) — Accreditation 2021", url: asset("documents/nba/663-md-cse-21.pdf") },
-                { title: "Electrical, Electronics-Instrumentation & Biotechnology — Accreditation 2021–22", url: asset("documents/nba/ee-ei-bt-accreditition-21-22.pdf") },
-              ],
-            },
-            {
-              label: "Extensions & Compliance",
-              documents: [
-                { title: "Accreditation Extension 2019–22", url: asset("documents/nba/567-accreditation-extension-19-22.pdf") },
-                { title: "Accreditation Extension (2020)", url: asset("documents/nba/663-dc-extension-accreditation-20.pdf") },
-                { title: "Electrical & Biotechnology — Extension Compliance 2022–23", url: asset("documents/nba/ee-bt-extension-compliance-22-23.pdf") },
+                { title: "Civil, Computer Science, Electronics & Communication and Mechanical Engineering — 2025–26 to 30 June 2028", url: asset("documents/nba/nba-civil-cse-ece-mech-2025-2028.pdf") },
+                { title: "Information Science & Engineering (ISE) — 2023–24 to 30 June 2026", url: asset("documents/nba/nba-ise-2023-2026.pdf") },
+                { title: "Electrical & Electronics Engineering and Biotechnology — 2022–23 to 30 June 2025", url: asset("documents/nba/nba-eee-bt-2022-2025.pdf") },
               ],
             },
           ]}

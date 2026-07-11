@@ -22,11 +22,7 @@ export default function NaacPage() {
       <PageHero
         eyebrow="Accreditation"
         title="NAAC Accreditation"
-        description="Assessment and accreditation by the National Assessment and Accreditation Council (NAAC), Bengaluru. The Self-Study Report, criterion-wise metrics, Data Validation & Verification (DVV) clarifications, appeal records and the accreditation certificate are published below."
-        badges={[
-          { label: "NAAC Accredited" },
-          { label: "Self-Study Report — Cycle 2", tone: "outline" },
-        ]}
+        description="Basaveshwar Engineering College has been accredited by the National Assessment and Accreditation Council (NAAC). This section provides access to the Self-Study Report (SSR), criterion-wise metrics, Data Validation and Verification (DVV) clarifications, appeal records and the NAAC accreditation certificate, ensuring transparency in the institution's quality assurance and accreditation process."
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">

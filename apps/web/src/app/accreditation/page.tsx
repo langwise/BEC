@@ -73,14 +73,34 @@ export default function AccreditationPage() {
         eyebrow="Quality Assurance"
         title="Accreditation & Quality"
         description="Basaveshwar Engineering College is an autonomous institution accredited by NAAC and NBA, ranked under NIRF and affiliated to VTU, Belagavi. Explore the college's accreditation and quality-assurance records below."
-        badges={[
-          { label: "NAAC Accredited" },
-          { label: "NBA Accredited", tone: "outline" },
-          { label: "Autonomous", tone: "secondary" },
-        ]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
+        <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700 mb-12">
+          <p className="text-justify">
+            Basaveshwar Engineering College is committed to maintaining the
+            standards of academic excellence and institutional quality through
+            continuous assessment, accreditation, and quality assurance
+            initiatives. As an autonomous institution affiliated with
+            Visvesvaraya Technological University (VTU), Belagavi, Karnataka, the
+            college is accredited by NAAC (valid up to 16 January 2029).
+          </p>
+          <p className="text-justify">
+            The undergraduate programmes in Biotechnology Engineering, Civil
+            Engineering, Computer Science and Engineering, Electronics and
+            Communication Engineering, Electrical and Electronics Engineering,
+            Mechanical Engineering, and Information Science and Engineering are
+            currently accredited by the National Board of Accreditation (NBA),
+            reflecting their compliance with Outcome-Based Education (OBE)
+            standards. The institution actively participates in the National
+            Institutional Ranking Framework (NIRF) and strengthens its quality
+            processes through the Internal Quality Assurance Cell (IQAC). The
+            college has also benefited from the Technical Education Quality
+            Improvement Programme (TEQIP), fostering excellence in teaching,
+            research, innovation, infrastructure, governance, and student
+            outcomes.
+          </p>
+        </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card) => {
             const Icon = card.icon;

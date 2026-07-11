@@ -5,7 +5,7 @@ import { UserCircle } from "lucide-react";
 export const metadata = pageMetadata({
   title: "Examination Section Staff",
   description:
-    "Meet the Examination Section team at BEC Bagalkote, led by Controller of Examinations Dr. Chandrashekhar K. and supported by faculty, programmers and support staff.",
+    "Meet the Examination Section team at BEC Bagalkote, led by Controller of Examinations Dr. K. Chandrasekhar and supported by faculty, programmers and support staff.",
   path: "/academics/examinations/staff",
 });
 
@@ -48,13 +48,13 @@ export default function ExamStaffPage() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900">
-                  Dr. Chandrashekhar K.
+                  Dr. K. Chandrasekhar
                 </h3>
                 <p className="text-primary font-medium">
                   Controller of Examinations
                 </p>
                 <p className="text-sm text-gray-500 mt-1">
-                  Professor of Physics
+                  Professor, Department of Physics
                 </p>
               </div>
             </div>

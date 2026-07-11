@@ -38,7 +38,7 @@ const governanceLinks = [
   },
   {
     label: "Academic Council Members (PDF)",
-    href: asset("documents/misc/ac-members.pdf"),
+    href: asset("documents/governance/academic-council/ac-members-list-2026.pdf"),
     description: "Full Academic Council composition and members.",
   },
 ];
