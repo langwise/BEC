@@ -340,11 +340,6 @@
     ],
     "physics": [
       {
-        "name": "Dr. Jayashri G. Ghantimath",
-        "designation": "Professor",
-        "cv": "departments/physics/faculty/cv/jayashri-g-ghantimath.pdf"
-      },
-      {
         "name": "Prof. Ratnaprabha. P. Araganji.",
         "designation": "Associate Professor and HoD",
         "cv": "departments/physics/faculty/cv/ratnaprabha-p-araganji.pdf",
@@ -357,21 +352,28 @@
         "photo": "departments/physics/faculty/k-chandrasekhar.webp"
       },
       {
+        "name": "Dr. Jayashri G. Ghantimath",
+        "designation": "Professor",
+        "cv": "departments/physics/faculty/cv/jayashri-g-ghantimath.pdf"
+      },
+      
+      {
         "name": "Shriram S. Bopardekar",
         "designation": "Associate Professor",
         "cv": "departments/physics/faculty/cv/shriram-s-bopardekar.pdf",
         "photo": "departments/physics/faculty/shriram-s-bopardekar.webp"
       },
       {
-        "name": "Dr. Aishwarya Nadgir",
-        "designation": "Assistant Professor",
-        "cv": "departments/physics/faculty/cv/aishwarya-nadgir.pdf"
-      },
-      {
         "name": "Dr. Vibha",
         "designation": "Assistant Professor",
         "cv": "departments/physics/faculty/cv/vibha.pdf"
+      },
+      {
+        "name": "Dr. Aishwarya Nadgir",
+        "designation": "Assistant Professor",
+        "cv": "departments/physics/faculty/cv/aishwarya-nadgir.pdf"
       }
+      
     ],
     "civil-engg": [
       {

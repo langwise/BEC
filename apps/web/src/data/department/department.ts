@@ -180,7 +180,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       groups.push({ subtitle: "Programme Structure", items: content.programStructure });
     if (content.peos?.length)
       groups.push({
-        subtitle: "Programme Educational Objectives (PEO's)",
+        subtitle: "Programme Educational Objectives (PEOs)",
         items: content.peos.map((p) => `${p.code}: ${p.text}`),
       });
     if (content.psos?.length)
@@ -338,22 +338,6 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       });
     if (content.researchAreasList?.length)
       groups.push({ subtitle: "Research Areas", items: content.researchAreasList });
-    if (content.researchScholars?.length)
-      groups.push({
-        subtitle: `Research Scholars (${content.researchScholars.length})`,
-        items: content.researchScholars.map((s) => ({
-          label: s.scholar,
-          value: `Guide: ${s.guide}${s.status ? ` · ${s.status}` : ""}`,
-        })),
-      });
-    if (content.researchGrants?.length)
-      groups.push({
-        subtitle: "Sponsored Research Grants",
-        items: content.researchGrants.map((g) => ({
-          label: g.title,
-          value: `${g.agency} · ${g.amount} · ${g.year}`,
-        })),
-      });
     if (content.researchFacilities?.length)
       groups.push({ subtitle: "Research Facilities", items: content.researchFacilities });
     if (content.researchAchievements?.length)
@@ -382,12 +366,12 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   }
 
   // Research achievements — Ph.D.s awarded, registered scholars, sponsored grants
-  if (!content.consolidateResearch && (content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length)) {
+  if (content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length) {
     const tables: DataTable[] = [];
     if (content.phdsAwarded?.length) {
       tables.push({
         title: `Ph.D.s Awarded (${content.phdsAwarded.length})`,
-        columns: ["Research Scholar", "Guide", "Thesis Title", "Year"],
+        columns: ["Research Scholar", "Guide", "Thesis Title", content.consolidateResearch ? "Registered Year" : "Year"],
         rows: content.phdsAwarded.map((p) => [p.scholar, p.guide, p.title, p.year]),
       });
     }

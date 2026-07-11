@@ -3139,7 +3139,7 @@
         },
         {
           "partner": "Infosys Limited",
-          "location": ""
+          "location": "Bangalore"
         },
         {
           "partner": "ARLIG Technology LLP",
@@ -4287,26 +4287,24 @@
     "electrical-and-electronics-engg": {
       "name": "Electrical & Electronics Engineering",
       "assetSlug": "eee",
-      "tagline": "Academic excellence, research and innovation in electrical & electronics engineering to meet energy, industrial and societal needs.",
+      "tagline": "Established in 1963; NBA-accredited; A recognised VTU Research Centre.",
       "established": "1963",
-      "overview": "The Electrical and Electronics Engineering department was started with the inception of the college in 1963 and offers undergraduate, postgraduate and research programmes. It has well-equipped laboratories with state-of-the-art equipment and dedicated, qualified staff. The department has specialized faculty in Power Systems, Machines, Drives and Power Electronics, Renewable Energy Sources, Instrumentation, Signal Processing, HVDC and FACTS, and Power & Energy Systems. It is accredited by NBA and is a recognised Research Centre of VTU, Belagavi, offering a PG in Power & Energy Systems, Ph.D. and M.Sc. (Engg.) by research. Over the years the department has received 150+ lakhs in R&D grants and produced 16+ Ph.D.s, 75+ M.Techs and 90+ technical publications. Two new research labs in Renewable Energy and SCADA were established with support from VGST (Govt. of Karnataka) and World Bank TEQIP-II grants, and the department has MoUs with seven organisations.",
+      "overview": "Electrical and Electronics Engineering department (EEED) was started with the inception of the college in the year 1963. The department offers graduate, research programs. It has well equipped laboratories with state-of-art equipment. The students excel in academics under the constant guidance of qualified and dedicated staff. The faculty and student development programs are regularly organized. The graduating students are well placed in industry as well as in academia through campus placements and direct recruitment. Department has specialized faculty in Power Systems, Machines, Drives and Power Electronics, Renewable Energy Sources, Signal Processing, HVDC and FACTS, Power and Energy Systems. The Department has well-established Electrical Machines, High Voltage Engineering, Power System, Microcontrollers and Power System Protection laboratories. The Software packages include AutoCAD, MATLAB, Mi-power, Windographer and Code Composer Studio. The department is rendering dedicated service to the Electrical and Electronics community. It is accredited by NBA and a recognized Research Center of Visveswaraya Technological University Belgaum. It offers PG in Power and Energy Systems, Ph.D. and M.Sc. Engg. by research. At present eight research scholars are persuing Ph.D. in the department. Over the years the department has received 150+ lakhs R&D grants and produced 1 Ph.Ds, 75+ M.Techs and 90+ technical publications. Three new research labs in the area of Renewable Energy , SCADA and FPGA based Machine drives are established under the financial support from VGST, Govt of Karnataka and TEQIP grants of World Bank. The department is having MoUs with eight organization, under which students and faculty are excelling and working with latest projects in the area of electrical engineering.",
       "vision": "To be in the global forefront of education, research, and innovation in Electrical and Electronics Engineering to meet the energy, ecology, industrial and societal needs.",
       "mission": [
-        "Practice dynamic teaching-learning processes adapting to ongoing global technological developments in electrical and electronics engineering.",
-        "Engage in national/international industry and institute collaborations for higher studies, research, development and innovation.",
-        "Carry out inter-disciplinary projects, skill-development activities and field visits to imbibe real-life experiences in students.",
-        "Render empathetic services to resolve energy, ecology and environmental issues."
+        "Develop globally competent professionals adapting to technological transformations in the field of Electrical and Electronics Engineering",
+        "Promote collaborations with higher learning institutes and industries for research, innovation and entrepreneurship.",
+        "Imbibe moral & ethical values and render empathetical services to energy, ecology & environmental issues."
       ],
       "programsOffered": [
         "B.E. — Electrical & Electronics Engineering",
-        "M.Tech. — Power & Energy Systems",
         "Ph.D. and M.Sc. (Engg.) by Research (VTU and QIP)"
       ],
       "highlights": [
         "Established in 1963; NBA-accredited and a recognised VTU Research Centre.",
         "Specialized faculty across Power Systems, Drives & Power Electronics, Renewable Energy, Instrumentation, Signal Processing and HVDC/FACTS.",
         "150+ lakhs in R&D grants; 16+ Ph.D.s, 75+ M.Techs and 90+ technical publications produced.",
-        "New Renewable Energy and SCADA research labs funded by VGST and World Bank TEQIP-II; MoUs with seven organisations."
+        "New Renewable Energy, SCADA, and research labs funded by VGST and World Bank TEQIP-II; MoUs with seven organisations."
       ],
       "labs": [
         {
@@ -4415,16 +4413,6 @@
         }
       ],
       "researchAreas": [
-        {
-          "supervisor": "Dr. S. H. Jangamshetti",
-          "area": "Renewable energy systems, wind/solar PV hybrid systems, power and energy systems",
-          "university": "VTU, Belagavi"
-        },
-        {
-          "supervisor": "Dr. D. S. Jangamshetti",
-          "area": "Signal and speech processing, embedded data acquisition and control systems",
-          "university": "VTU, Belagavi"
-        },
         {
           "supervisor": "Dr. R. L. Naik",
           "area": "Power electronics, multilevel inverters, machine drives, grid-connected PV systems",
@@ -4545,34 +4533,40 @@
           "usn": "2BA19PEE02",
           "guide": "Dr. S. H. Jangamshetti",
           "title": "Design of Smart Controller for SPV-Wind Powered Home Microgrid",
-          "status": "Registered"
+          "status": "Comphrehensive Viva Completed"
         },
         {
           "scholar": "Basavaraju Hadapad",
           "usn": "2BA19PEE03",
           "guide": "Dr. R. L. Naik",
           "title": "Investigation of Torque Ripple Minimization Techniques in SRM Drives for EV Application",
-          "status": "Registered"
+          "status": "Comphrehensive Viva Completed"
         },
         {
           "scholar": "Prashant Kadi",
           "usn": "2BA20PEE01",
           "guide": "Dr. B. F. Ronad",
           "title": "To Develop a Bidirectional Interactive High Efficient Charger for Electric Vehicles",
-          "status": "Registered"
+          "status": "Comphrehensive Viva Completed"
         },
         {
           "scholar": "Hamjadali Umachagi",
           "usn": "2BA21PEE01",
           "guide": "Dr. B. F. Ronad",
           "title": "Economically Energy Efficient Wind-Solar PV Hybrid Energy System for Irrigation Pumps Employed in Micro-Irrigation Systems",
-          "status": "Registered"
+          "status": "Course Work Completed"
         },
         {
           "scholar": "Apoorva Kulkarni",
           "usn": "2BA25PEE01",
           "guide": "Dr. Sangamesh Y. Goudappanavar",
           "title": "AI Driven Reliability Assessment of Wind Plant for Optimal Planning of Power Dispatch",
+          "status": "Registered"
+        },{
+          "scholar": "Shivakumar G. Nayak",
+          "usn": "",
+          "guide": "Dr. Anand Unnibhavi",
+          "title": "Development of dialect balanced deep learning based automatic speech recognition system for the Kannada language",
           "status": "Registered"
         }
       ],
@@ -4824,6 +4818,7 @@
       "mous": [
         {
           "partner": "A. G. Electro Services",
+          "location": "Karad, Maharashtra",
           "since": "2013"
         },
         {
@@ -4843,14 +4838,17 @@
         },
         {
           "partner": "Saaketh Electronic Circuit Pvt. Ltd.",
+          "location": "Pune, Maharashtra",
           "since": "2024"
         },
         {
           "partner": "Shanthala Power Limited",
+          "location": "Hubballi",
           "since": "2024"
         },
         {
           "partner": "Flensburg University of Applied Sciences",
+          "location": "Flensburg, Germany",
           "since": "2024"
         }
       ],
@@ -5010,9 +5008,9 @@
       ],
       "contact": {
         "name": "Dr. R. L. Naik",
-        "designation": "Professor (CAS) & Head, Department of Electrical & Electronics Engineering",
+        "designation": "Professor (CAS) & Head, \nDepartment of Electrical & Electronics Engineering",
         "phone": "+91-9986424111, +91-7019824435",
-        "email": "hodee@becbgk.edu"
+        "email": "naikrup1774@gmail.com"
       },
       "documents": [
         {
@@ -5575,7 +5573,7 @@
           "title": "Student Project Awards (KSCST-funded)",
           "columns": [
             "Students",
-            "Sem",
+            "Guide",
             "Project Title",
             "Venue / Programme",
             "Award",
@@ -5584,7 +5582,7 @@
           "rows": [
             [
               "Ms. Vandana Laxman Pawar, Ms. Aishwarya Iranna Angadi, Ms. Muskan Rajesab Doddamani, Ms. Shirisha K",
-              "VII",
+              "Dr. R. L. Naik",
               "Automation and Analysis of Solar Based DC Microgrid Integrating SPV and Grid Supply Source",
               "KSCST Project",
               "Rs. 5000",
@@ -5592,7 +5590,7 @@
             ],
             [
               "Ms. Nikita Siddarai Nivaragi, Mr. Anand Kuruballi, Ms. Aishwarya Shrishail Teli, Mr. Prajwal P Badadal",
-              "VII",
+              "Dr. Sangamesh Y. Goudappanavar",
               "AI Based Development of Algorithm to Predict Fault Type in Transmission Line",
               "KSCST Project",
               "Rs. 4000",
@@ -5600,7 +5598,7 @@
             ],
             [
               "Mr. Satish Singadi, Mr. Aniket, Mr. Mahantesh Hiremath, Mr. Mohammadrizwan Maldar",
-              "",
+              "Dr. Sangamesh Y. Goudappanavar",
               "VAWTG Using Arecanut Particles",
               "State Level Project Seminar and Exhibition, JNNCE, Shimoga, KSCST",
               "Rs. 5000",
@@ -5608,7 +5606,7 @@
             ],
             [
               "Mr. Rasool Ahmed",
-              "VII",
+              "Dr. Basanagouda Ronad",
               "IOT Based Mechanism for Solar Photovoltaic Based Water Pump Employed for Water Distribution in BEC Campus",
               "KSCST Project",
               "Rs. 5000",
@@ -5616,7 +5614,7 @@
             ],
             [
               "Mr. Balachandra C C, Ms. Komal Teli, Mr. Premkumar A K, Ms. S Spurthi",
-              "",
+              "Dr. Basanagouda Ronad",
               "Design and Development and Performance Analysis Multi Task Multi Tank Water Level Controller with Automated Power Supply for Multistore Buildings",
               "KSCST Project",
               "Rs. 5000",
@@ -5624,7 +5622,7 @@
             ],
             [
               "Mr. Pramachand Hanchinal, Mr. Basangouda, Ms. Veeen S Gidaganti, Mr. Vinay B Hosamani",
-              "",
+              "Dr. Basanagouda Ronad",
               "Development and Fabrication of VAWTG Blades Using Natural Fibers for Domestic Usage",
               "KSCST Project",
               "Rs. 6000",
@@ -5632,7 +5630,7 @@
             ],
             [
               "Mr. Nagaraj, Mr. Nagaraj Bhovi, Ms. Pooja Patil, Mr. Rahul Patil",
-              "",
+              "Dr. Basanagouda Ronad",
               "Analysis of Lead Acid Battery for Determination of State of Charge Based on Machine Learning",
               "KSCST Project",
               "Rs. 5000",
@@ -5640,7 +5638,7 @@
             ],
             [
               "Mr. Laxman Y U, Mr. Mukesh Dhasohamath, Ms. Sneha M Bhusaraddi, Ms. Seems S Angadi",
-              "",
+              "Dr. Suresh H. Jangamshetti",
               "Design and Fabrication of BLDC Motor for Solar PV Application",
               "KSCST Project",
               "Rs. 7000",
@@ -5648,7 +5646,7 @@
             ],
             [
               "Ms. Ambika, Ms. Shavantramma Dodmani, Ms. Shreepada Joshi, Ms. Tejashwini Sughandi",
-              "",
+              "Dr. Basanagouda Ronad",
               "Design and Development of DC-DC Converter Employed for DC Distribution System for Domestic and Commercial Loads",
               "KSCST Project",
               "Rs. 7000",
@@ -6883,8 +6881,8 @@
       "contact": {
         "name": "Dr. Lokesh B. Bhajantri",
         "designation": "Associate Professor & Head",
-        "phone": "8904614106",
-        "email": "bechodise@gmail.com"
+        "phone": "+91 89046 14106, +91 86607 72398",
+        "email": "bechodise@gmail.com, lokeshcse@yahoo.co.in"
       },
       "sectionTitles": {
         "governance": "Boards",
@@ -6981,6 +6979,10 @@
         {
           "supervisor": "Dr. Lokesh Bhajantri",
           "area": "Wireless sensor networks and ubiquitous networks, IoT and cloud computing"
+        },
+        {
+          "supervisor": "Dr. Shivanand Pujar",
+          "area": "Image Processing"
         }
       ],
       "researchAreasList": [
@@ -7002,67 +7004,39 @@
         "Faculty have served as journal reviewers and chaired sessions at IEEE international conferences.",
         "Faculty recognised as guest editors and received Bronze-level partner faculty awards."
       ],
-      "researchScholars": [
-        {
-          "scholar": "Shubhada S. Kulkarni",
-          "guide": "Dr. S. R. Patil",
-          "title": "Enhancing security of data aggregation in wireless multimedia sensor networks based on similarity matching & selective encryption for multimedia data",
-          "status": "Registered 2015"
-        },
-        {
-          "scholar": "Sujata Karaddi",
-          "guide": "Dr. S. R. Patil",
-          "title": "Text based approach for document image retrieval",
-          "status": "Registered 2015"
-        },
+      "phdsAwarded": [
         {
           "scholar": "Veena I. Patil",
           "guide": "Dr. S. R. Patil",
           "title": "Automatic detection of cancerous cells in histopathological images of uterine tissue",
-          "status": "Registered 2015"
-        },
-        {
-          "scholar": "Savitri B. Patil",
-          "guide": "Dr. S. R. Patil",
-          "title": "Performance quality analysis of biometric system for secured person identification and authentication",
-          "status": "Registered 2015"
-        },
-        {
-          "scholar": "Ramya Yamikar",
-          "guide": "Dr. B. M. Reshmi",
-          "title": "Automatic detection of diabetic retinopathy using fundus images",
-          "status": "Registered 2019"
-        },
-        {
-          "scholar": "Rajesh I. S.",
-          "guide": "Dr. B. M. Reshmi",
-          "title": "A study on automatic detection of macular disorders using fundus images",
-          "status": "Registered 2015"
+          "year": "2015"
         },
         {
           "scholar": "Pavan Kunchur",
           "guide": "Dr. S. P. Bangarashetti",
           "title": "Design of a framework: creating photographic mosaic with Hadoop in big data image processing",
-          "status": "Registered 2015"
-        },
-        {
-          "scholar": "Umashankar Prasanna",
-          "guide": "Dr. S. P. Bangarashetti",
-          "title": "Automatic speaker age classification, recognition and identifying speaker emotion using voice signal",
-          "status": "Registered 2017"
-        },
-        {
-          "scholar": "Prundalik R.",
-          "guide": "Dr. Lokesh Bhajantri",
-          "title": "Secure data processing, classification, and management in semantic sensor web",
-          "status": "Registered 2016"
+          "year": "2015"
         },
         {
           "scholar": "Gangadharaiah S.",
           "guide": "Dr. Lokesh Bhajantri",
           "title": "Resource management and secure routing in Internet of Things",
-          "status": "Registered 2016"
+          "year": "2016"
         },
+        {
+          "scholar": "Tabassum N. Mujawar",
+          "guide": "Dr. Lokesh Bhajantri",
+          "title": "Trust based access control mechanism for cloud environment",
+          "year": "2017"
+        },
+        {
+          "scholar": "Vasudha A.",
+          "guide": "Dr. Lokesh Bhajantri",
+          "title": "Cognitive agent based data synchronization and fault tolerance in ubiquitous networks",
+          "year": "2017"
+        }
+      ],
+      "researchScholars": [
         {
           "scholar": "Prashant M. Balarugi",
           "guide": "Dr. Lokesh Bhajantri",
@@ -7070,16 +7044,40 @@
           "status": "Registered 2017"
         },
         {
-          "scholar": "Tabassum N. Mujawar",
+          "scholar": "Basavaraj G. Kumbhar",
           "guide": "Dr. Lokesh Bhajantri",
-          "title": "Trust based access control mechanism for cloud environment",
-          "status": "Registered 2017"
+          "title": "Agent Based Secure Resource and Data Management in FOG Computing",
+          "status": "Registered 2021"
         },
         {
-          "scholar": "Vasudha A.",
+          "scholar": "Sumadevi Benkikeri",
           "guide": "Dr. Lokesh Bhajantri",
-          "title": "Cognitive agent based data synchronization and fault tolerance in ubiquitous networks",
-          "status": "Registered 2017"
+          "title": "Secured Data Management and Processing in Semantic Web",
+          "status": "Registered 2024"
+        },
+        {
+          "scholar": "Parimala R. Muttanvar",
+          "guide": "Dr. Lokesh Bhajantri",
+          "title": "Context Aware Secure Federated Semantic Agricultural Cloud Environment for Artificial Intelligence Driven Data Recommendations",
+          "status": "Registered 2025"
+        },
+        {
+          "scholar": "Rajkumar C. Sikkeri",
+          "guide": "Dr. S. R. Patil",
+          "title": "Cloud Based real-time monitoring of crop using machine learning",
+          "status": "Registered 2021"
+        },
+        {
+          "scholar": "Raghavendra Jadhav",
+          "guide": "Dr. S. P. Bangarashetti",
+          "title": "Data analytics on coronaviruses and epidemic diseases",
+          "status": "Registered 2021"
+        },
+        {
+          "scholar": "Sudha V. Salake",
+          "guide": "Dr. S. P. Bangarashetti",
+          "title": "An integration and automation of AI in healthcare domain assisted reproductive technology",
+          "status": "Registered 2021"
         }
       ],
       "researchGrants": [
@@ -7106,7 +7104,7 @@
         },
         {
           "name": "Shri. D. S. Gadad",
-          "designation": "Assistant Instructor"
+          "designation": "Instructor"
         },
         {
           "name": "Shri. M. V. Gennur",
@@ -7870,7 +7868,7 @@
       "assetSlug": "physics",
       "tagline": "A centre of excellence for education and research in physics.",
       "established": "1963",
-      "overview": "The Physics department was started with the inception of the college in 1963 and has well-equipped laboratories. Students excel under the guidance of qualified and dedicated staff, and faculty and student development programmes are organised regularly. The department has been a recognised Research Centre of VTU, Belagavi since 2013, with research focused on material science and magnetoelectric composites. At present four faculty and four supporting staff work in the department, actively engaged in teaching undergraduate students and pursuing research.",
+      "overview": "The Physics department was started with the inception of the college in 1963 and has well-equipped laboratories. Students excel under the guidance of qualified and dedicated staff, and faculty and student development programmes are organised regularly. The department has been a recognised Research Centre of VTU, Belagavi since 2013, with research focused on material science and magnetoelectric composites. At present six faculty and four supporting staff work in the department, actively engaged in teaching undergraduate students and pursuing research.",
       "vision": "To be recognized as a centre of excellence for education and research in the field of physics.",
       "mission": [
         "Pursue excellence by imparting education in physics through a student-centric, dynamic teaching-learning process.",
@@ -7891,7 +7889,7 @@
       "contact": {
         "name": "Prof. Ratnaprabha P. Araganji",
         "designation": "Associate Professor & Head, Physics",
-        "email": "apratna@gmail.com"
+        "email": "hodphbec@gmail.com, apratna@gmail.com"
       },
       "researchAreas": [
         {
@@ -8055,18 +8053,6 @@
         {
           "name": "Forced mechanical oscillations apparatus",
           "quantity": "02"
-        }
-      ],
-      "additionalContacts": [
-        {
-          "name": "Prof. Ratnaprabha P. Araganji",
-          "designation": "Associate Professor & Head — Board of Studies & Board of Examiners Chairman",
-          "email": "apratna@gmail.com"
-        },
-        {
-          "name": "Dr. Jayashri G. Ghantimath",
-          "designation": "Professor — Board of Studies & Board of Examiners Member",
-          "email": "jggbgk@gmail.com"
         }
       ],
       "documents": [
