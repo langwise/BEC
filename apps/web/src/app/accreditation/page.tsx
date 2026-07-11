@@ -116,7 +116,7 @@ export default function AccreditationPage() {
                 <h2 className="text-lg font-semibold text-gray-900 transition-colors group-hover:text-primary">
                   {card.title}
                 </h2>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600 text-justify">
                   {card.description}
                 </p>
                 <span className="mt-5 inline-flex items-center text-sm font-medium text-primary">

@@ -41,7 +41,7 @@ export function PageHero({
             {title}
           </h1>
           {description ? (
-            <div className="text-base md:text-lg leading-relaxed text-gray-700 space-y-4">
+            <div className="text-base md:text-lg leading-relaxed text-gray-700 space-y-4 text-justify">
               {description}
             </div>
           ) : null}

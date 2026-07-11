@@ -98,7 +98,7 @@ export default function AmenitiesPage() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
               Campus Amenities
             </h1>
-            <p className="text-base md:text-lg leading-relaxed text-gray-700">
+            <p className="text-base md:text-lg leading-relaxed text-gray-700 text-justify">
               Everything you need for a comfortable and convenient campus life,
               right at your doorstep.
             </p>
@@ -152,7 +152,7 @@ export default function AmenitiesPage() {
 
                     {/* Content Area */}
                     <div className="p-6 flex-1 flex flex-col">
-                      <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                      <p className="text-gray-600 mb-6 text-sm leading-relaxed text-justify">
                         {item.description}
                       </p>
 
@@ -205,7 +205,7 @@ export default function AmenitiesPage() {
             <div className="bg-linear-to-r from-slate-900 to-slate-800 rounded-2xl p-6 md:p-12 text-white shadow-xl max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
               <div>
                 <h2 className="text-2xl font-bold mb-2">Need Assistance?</h2>
-                <p className="text-slate-300">
+                <p className="text-slate-300 text-justify">
                   For inquiries regarding campus facilities, please visit the
                   administrative office.
                 </p>

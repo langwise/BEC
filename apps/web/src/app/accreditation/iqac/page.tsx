@@ -13,7 +13,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { asset } from "@/lib/assets";
 import { pageMetadata } from "@/lib/seo";
-import { Target, Award, ShieldCheck, ListChecks, Users, CheckCircle2 } from "lucide-react";
+import { Target, Award, ShieldCheck, ListChecks, Users, CheckCircle2, Mail } from "lucide-react";
 
 export const metadata = pageMetadata({
   title: "Internal Quality Assurance Cell (IQAC)",
@@ -62,7 +62,7 @@ const iqacCommittee = [
   { slNo: "6", designation: "Nominee — Employers", name: "Shri. Samarth Jagali", affiliation: "Viraj Constructions, Vidyagiri, Bagalkote" },
   { slNo: "", designation: "Nominee — Industrialist", name: "Shri. Sachin Sedamkar", affiliation: "MD, Amogh Readymix Concrete, Bagalkote" },
   { slNo: "", designation: "Nominee — Stakeholders", name: "Shri. P. S. Kumbar", affiliation: "Parent (Stakeholder Nominee)" },
-  { slNo: "7", designation: "Coordinator", name: "Dr. A. H. Agadi", affiliation: "Coordinator, IQAC" }
+  { slNo: "7", designation: "Coordinator", name: "Dr. C. M. Javalagi", affiliation: "Coordinator, IQAC" }
 ];
 
 const departmentCoordinators = [
@@ -81,8 +81,8 @@ const departmentCoordinators = [
 ];
 
 function initials(name: string): string {
-  const cleaned = name.replace(/\b(Prof|Dr|Sri|Smt|Mr|Mrs|Ms)\.?\b/gi, "").trim();
-  const parts = cleaned.split(/\s+/).filter(Boolean);
+  const cleaned = name.replace(/\b(Prof|Dr|Sri|Smt|Mr|Mrs|Ms)\b\.?/gi, "").trim();
+  const parts = cleaned.split(/\s+/).filter((p) => /[a-z]/i.test(p));
   const letters = parts.slice(0, 2).map((p) => p[0]).join("");
   return (letters || name.slice(0, 2)).toUpperCase();
 }
@@ -105,7 +105,6 @@ export default function IqacPage() {
         eyebrow="Quality Assurance"
         title="Internal Quality Assurance Cell (IQAC)"
         description="The IQAC drives continuous quality enhancement at Basaveshwar Engineering College. Annual Quality Assurance Reports (AQAR), action-taken reports, academic calendars, meeting records and the cell's composition are published below."
-        badges={[{ label: "IQAC" }]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
@@ -182,7 +181,7 @@ export default function IqacPage() {
                     {roles.map((r, i) => (
                       <div key={i} className="flex items-start gap-3 bg-stone-50/50 p-4 rounded-sm border border-stone-200/60">
                         <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
-                        <span className="text-sm text-gray-700 leading-relaxed">{r}</span>
+                        <span className="text-sm text-gray-700 leading-relaxed text-justify">{r}</span>
                       </div>
                     ))}
                   </div>
@@ -197,7 +196,7 @@ export default function IqacPage() {
                     {responsibilities.map((r, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
-                        <span className="text-sm text-gray-700 leading-relaxed">{r}</span>
+                        <span className="text-sm text-gray-700 leading-relaxed text-justify">{r}</span>
                       </li>
                     ))}
                   </ul>
@@ -218,10 +217,34 @@ export default function IqacPage() {
                 {compositionGuidelines.map((g, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                    <span>{g}</span>
+                    <span className="text-justify">{g}</span>
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Contact */}
+            <div className="rounded-sm border border-stone-200 bg-white p-6 shadow-xs">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-primary">
+                    <Mail className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Contact IQAC</h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      For quality-assurance queries, feedback and AQAR-related correspondence.
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="mailto:iqacbecbgk23@gmail.com"
+                  className="inline-flex items-center justify-center gap-2 rounded-sm border border-stone-200 bg-stone-50/50 px-4 py-2.5 text-sm font-medium text-primary transition-colors hover:bg-primary/5"
+                >
+                  <Mail className="h-4 w-4" />
+                  iqacbecbgk23@gmail.com
+                </a>
+              </div>
             </div>
           </TabsContent>
 

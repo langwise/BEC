@@ -17,7 +17,6 @@ export default function VtuPage() {
         eyebrow="Affiliation"
         title="VTU Affiliation"
         description="Basaveshwar Engineering College is affiliated to Visvesvaraya Technological University (VTU), Belagavi. The affiliation orders issued by the University are published below."
-        badges={[{ label: "Affiliated to VTU, Belagavi" }]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">

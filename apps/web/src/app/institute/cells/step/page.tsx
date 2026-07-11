@@ -74,10 +74,6 @@ export default function StepPage() {
         eyebrow="Entrepreneurship"
         title="Science & Technology Entrepreneurs Park (BEC-STEP)"
         description="Established in 1999, BEC-STEP has helped hundreds of entrepreneurs across the Bagalkote region through identification of products and processes, training, consultancy and incubation."
-        badges={[
-          { label: "Established 1999" },
-          { label: "DST Best STEP — 2006", tone: "outline" },
-        ]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
@@ -132,7 +128,7 @@ export default function StepPage() {
                     <Icon className="h-5 w-5" />
                   </span>
                   <h3 className="text-base font-semibold text-gray-900">{f.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600 text-justify">
                     {f.description}
                   </p>
                 </div>

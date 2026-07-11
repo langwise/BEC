@@ -31,7 +31,7 @@ export default function AboutSanghaPage() {
               <h1 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
                 About B.V.V. Sangha
               </h1>
-              <p className="mt-4 text-lg text-gray-700 max-w-2xl leading-relaxed">
+              <p className="mt-4 text-lg text-gray-700 max-w-2xl leading-relaxed text-justify">
                 A century of selfless service and educational excellence, upholding social values and the philosophy of “Work is Worship”.
               </p>
             </div>
@@ -208,7 +208,7 @@ export default function AboutSanghaPage() {
             <Card className="rounded-sm border-stone-200 shadow-sm bg-stone-50/50">
                 <CardContent className="pt-6">
                     <h4 className="font-semibold text-gray-900 mb-2">Institutions List</h4>
-                    <p className="text-sm text-gray-600 mb-4">
+                    <p className="text-sm text-gray-600 mb-4 text-justify">
                         Download the full list of institutions run by Shri Basaveshwar Vidya Vardhak Sangha.
                     </p>
                      <a

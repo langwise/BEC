@@ -88,11 +88,6 @@ export default function DeanIctPage() {
         eyebrow="Information & Communications Technology"
         title="Dean ICT"
         description="The Office of the Dean, Information and Communications Technology (ICT) leads a technology-driven learning environment at Basaveshwar Engineering College, supporting academic, research and administrative activities across the campus."
-        badges={[
-          { label: "1000 Mbps ILL (1:1)" },
-          { label: "1200+ Computers", tone: "outline" },
-          { label: "Smart Classrooms", tone: "secondary" },
-        ]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">

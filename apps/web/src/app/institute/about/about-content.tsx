@@ -150,7 +150,7 @@ export default function AboutContent() {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-gray-900">
               Six decades of excellence in technical education and innovation
             </h1>
-            <p className="text-base md:text-lg leading-relaxed text-gray-700">
+            <p className="text-base md:text-lg leading-relaxed text-gray-700 text-justify">
               Basaveshwar Engineering College (BEC) – a crown jewel in the
               highly respected and renowned 120-year-old Basaveshwar Veerashaiva
               Vidya Vardhak Sangha (B. V. V. S.) and a premier technical
@@ -310,7 +310,7 @@ export default function AboutContent() {
                   <h3 className="text-3xl font-bold text-gray-900 mb-4">
                     Our Mission
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-lg">
+                  <p className="text-gray-600 leading-relaxed text-lg text-justify">
                     Guided by our vision, we strive to achieve these core
                     objectives in our pursuit of educational excellence.
                   </p>
@@ -450,7 +450,7 @@ export default function AboutContent() {
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
                     {facility.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed text-justify">
                     {facility.desc}
                   </p>
                 </motion.div>

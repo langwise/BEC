@@ -481,7 +481,6 @@ export default function IipcPage() {
         eyebrow="Industry Connect"
         title="Institution Industry Cell (IIC)"
         description="The Institution Industry Cell is the college's interface with industry — facilitating close industry-institute interaction and bridging the gap between academia and the corporate sector."
-        badges={[{ label: "MoU Activities 2023–25" }]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">

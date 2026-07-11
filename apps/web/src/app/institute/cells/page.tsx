@@ -72,11 +72,6 @@ export default function CellsPage() {
         eyebrow="Innovation & Outreach"
         title="Cells & Centres"
         description="Basaveshwar Engineering College runs a network of cells and centres that connect students with industry, government incubation support and the wider innovation and entrepreneurship ecosystem."
-        badges={[
-          { label: "Innovation" },
-          { label: "Incubation", tone: "outline" },
-          { label: "Industry Partnership", tone: "secondary" },
-        ]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
@@ -95,7 +90,7 @@ export default function CellsPage() {
                 <h2 className="text-lg font-semibold text-gray-900 transition-colors group-hover:text-primary">
                   {card.title}
                 </h2>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600 text-justify">
                   {card.description}
                 </p>
                 <span className="mt-5 inline-flex items-center text-sm font-medium text-primary">

@@ -142,11 +142,6 @@ export default function IicPage() {
         eyebrow="Innovation"
         title="Institution's Innovation Council (IIC)"
         description="Established under the Ministry of Education's Innovation Cell (MIC), the IIC at Basaveshwar Engineering College systematically fosters an innovation and start-up culture across the campus."
-        badges={[
-          { label: "MoE's Innovation Cell" },
-          { label: "4.0★ (IIC 2023-24)", tone: "outline" },
-          { label: "SIH 2020 Winner", tone: "secondary" },
-        ]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
@@ -221,7 +216,7 @@ export default function IicPage() {
                 </div>
                 <div className="flex flex-1 flex-col gap-2 p-5">
                   <h3 className="text-base font-semibold text-gray-900">{a.title}</h3>
-                  <p className="text-sm leading-relaxed text-gray-600">{a.description}</p>
+                  <p className="text-sm leading-relaxed text-gray-600 text-justify">{a.description}</p>
                 </div>
               </div>
             ))}

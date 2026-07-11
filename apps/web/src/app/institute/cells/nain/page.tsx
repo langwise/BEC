@@ -78,10 +78,6 @@ export default function NainPage() {
         eyebrow="Incubation"
         title="NAIN — New Age Incubation Network"
         description="A Government of Karnataka incubation initiative, administered by KBITS, that helps students, research scholars and alumni convert their ideas into proofs of concept and, ultimately, enterprises."
-        badges={[
-          { label: "KBITS · Govt. of Karnataka" },
-          { label: "1 of 9 selected colleges", tone: "outline" },
-        ]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">

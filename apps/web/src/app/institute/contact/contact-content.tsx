@@ -165,7 +165,7 @@ export default function ContactContent() {
         <div className="container mx-auto px-4 lg:px-6 max-w-7xl">
           <FadeIn className="mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-4">Key Contacts</h2>
-            <p className="text-gray-600 max-w-2xl text-lg">Direct lines to our administration and departments.</p>
+            <p className="text-gray-600 max-w-2xl text-lg text-justify">Direct lines to our administration and departments.</p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -19,7 +19,6 @@ export default function BrochurePage() {
         eyebrow="About Us"
         title="Institute Brochure"
         description="An overview of Basaveshwar Engineering College — its programmes, scheme of study and admission information. Download the brochure below."
-        badges={[{ label: "Established 1963" }]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">

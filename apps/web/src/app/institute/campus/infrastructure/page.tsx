@@ -91,7 +91,7 @@ export default function InfrastructurePage() {
           <h1 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
             World-class Infrastructure
           </h1>
-          <p className="mt-4 text-lg text-gray-700 max-w-2xl leading-relaxed">
+          <p className="mt-4 text-lg text-gray-700 max-w-2xl leading-relaxed text-justify">
             A 93-acre green campus equipped with modern laboratories, digital classrooms, and comprehensive amenities to support holistic learning and research.
           </p>
 
@@ -123,7 +123,7 @@ export default function InfrastructurePage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-gray-600 leading-relaxed text-justify">
                   {item.description}
                 </p>
               </CardContent>
@@ -138,7 +138,7 @@ export default function InfrastructurePage() {
              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
                 Specialized Laboratories
             </h2>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 text-justify">
                  Industry-collaborated and research-focused centers of excellence.
             </p>
             </div>
@@ -159,7 +159,7 @@ export default function InfrastructurePage() {
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
               Campus Amenities
             </h2>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 text-justify">
               Everyday conveniences within the campus — a clinic, banks, a cooperative store, a post office, and more.
             </p>
           </div>

@@ -44,11 +44,6 @@ export default function IepPage() {
         eyebrow="Institute · Cells & Centres"
         title="BEC Innovation & Entrepreneurship Policy"
         description="Basaveshwar Engineering College has framed an innovation and entrepreneurship policy for students and faculty, aligned with the National Innovation and Startup Policy framework."
-        badges={[
-          { label: "BEC-IEP" },
-          { label: "Students & Faculty", tone: "outline" },
-          { label: "NISP aligned", tone: "secondary" },
-        ]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">

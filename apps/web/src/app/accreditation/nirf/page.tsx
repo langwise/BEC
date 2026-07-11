@@ -18,7 +18,6 @@ export default function NirfPage() {
         eyebrow="Rankings"
         title="NIRF Rankings"
         description="Data submitted to the National Institutional Ranking Framework (NIRF), Ministry of Education, Government of India. Engineering, Overall and Innovation submissions are published year on year below."
-        badges={[{ label: "NIRF Participant" }]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">

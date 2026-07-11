@@ -17,7 +17,6 @@ export default function TeqipPage() {
         eyebrow="Quality Improvement"
         title="TEQIP"
         description="The Technical Education Quality Improvement Programme (TEQIP-III), a World Bank-assisted initiative of the Government of India, supported infrastructure, research and academic quality at the college. The programme's plans, audit reports, calendars and agreements are published below."
-        badges={[{ label: "TEQIP-III" }]}
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
