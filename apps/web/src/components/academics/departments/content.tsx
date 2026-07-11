@@ -112,7 +112,7 @@ export default function ContentSection({
                     {group.subtitle}
                   </h3>
                 )}
-                {group.text && <p className="text-gray-600 leading-relaxed">{group.text}</p>}
+                {group.text && <p className="text-gray-600 leading-relaxed text-justify">{group.text}</p>}
                 {group.items && group.items.length > 0 && <BulletList items={group.items} />}
               </div>
               {group.images && group.images.length > 0 && (

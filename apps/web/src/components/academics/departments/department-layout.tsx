@@ -263,7 +263,7 @@ function ImageGroups({ groups }: { groups: { title?: string; images: { src: stri
               {group.title}
             </h3>
           )}
-          <PhotoGallery images={group.images} centered />
+          <PhotoGallery images={group.images} centered large />
         </div>
       ))}
     </div>

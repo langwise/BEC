@@ -3301,7 +3301,7 @@
           ]
         },
         {
-          "title": "Library",
+          "title": "Department Library",
           "images": [
             "departments/ece/student-library-1.webp",
             "departments/ece/student-library-2.webp",
@@ -3457,7 +3457,7 @@
           "name": "ACME — Association for Communication and Modern Electronics",
           "about": "The Association for Communication and Modern Electronics (ACME) is the official student association of the Department of Electronics and Communication Engineering. It serves as a dynamic platform for students to explore, engage, and excel beyond academics. ACME organizes a wide variety of events throughout the year, including technical workshops, seminars, sports competitions, cultural programs, fun activities, and celebrations of important days. The association aims to foster all-round development by encouraging creativity, teamwork, leadership, and technical excellence among students. By bridging academics with extracurricular involvement, ACME plays a vital role in enriching the campus experience for ECE students.",
           "photo": "departments/ece/acme-office-bearers.webp",
-          "photoCaption": "ACME Office Bearers",
+          "photoCaption": "ACME Office Bearers 25-26",
           "coordinators": [
             "Dr. Sharanappa P. H.",
             "Dr. Basavaraj M. Angadi"
@@ -3500,7 +3500,7 @@
       ],
       "activityTables": [
         {
-          "title": "Skill Development Programmes (SDP)",
+          "title": "Student Development Programmes (SDP)",
           "columns": [
             "Programme",
             "Dates"
