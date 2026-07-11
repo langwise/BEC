@@ -96,6 +96,7 @@ export type DepartmentSection =
       type: "testimonials";
       title: string;
       icon?: string;
+      distinguished?: { name: string; designation?: string; photo: string }[];
       testimonials: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
     }
   | { id?: string; type: "gallery"; title: string; images: { src: string; alt: string }[]; attachments?: DocLink[]; embeds?: DocLink[] }
@@ -132,6 +133,9 @@ export interface DepartmentData {
 
   /** Best-practices PDFs surfaced on the Home tab. */
   bestPractices?: DocLink[];
+
+  /** When true, the Best Practices block moves from the Home tab to "About Department". */
+  bestPracticesUnderAbout?: boolean;
 
   /** When true, Home shows Vision & Mission after the overview, and the HoD message, lead photo and Highlights move under "About Department". */
   visionMissionOnHome?: boolean;
@@ -253,6 +257,36 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   };
   const hasAchievements = () =>
     Boolean(content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length);
+  const patentsTables = (): DataTable[] => {
+    if (!content.patents?.length) return [];
+    const hasArea = content.patents.some((p) => p.area);
+    const columns = ["Title of Invention", "Application No.", "Inventors"];
+    if (hasArea) columns.push("Area");
+    columns.push("Filed", "Published", "Status");
+    return [
+      {
+        title: `Patents (${content.patents.length})`,
+        columns,
+        rows: content.patents.map((p) => {
+          const status = p.awarded
+            ? `Granted ${p.awarded}${p.awardNumber ? ` · No. ${p.awardNumber}` : ""}`
+            : p.status ?? "";
+          const row = [p.title, p.applicationNumber ?? "", p.inventors ?? ""];
+          if (hasArea) row.push(p.area ?? "");
+          row.push(p.filed ?? "", p.published ?? "", status);
+          return row;
+        }),
+      },
+    ];
+  };
+  const publicationGroups = (): ContentGroup[] => {
+    const groups: ContentGroup[] = [];
+    for (const cat of content.publications ?? []) {
+      groups.push({ subtitle: cat.category });
+      for (const y of cat.years) groups.push({ subtitle: y.year, items: y.items });
+    }
+    return groups;
+  };
 
   // Academics — programs, PEOs, PSOs. When peosPsosUnderAbout is set, the PEOs/PSOs
   // move to the "About Department" tab instead (see academicOutcomeGroups / the about block).
@@ -322,9 +356,9 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     const staffRow = (m: { name: string; designation: string }) => [m.name, m.designation];
     let tables: DataTable[];
     if (content.groupSupportingStaff) {
-      const isTechnical = (d: string) => /instructor/i.test(d);
-      const technical = content.supportingStaff.filter((m) => isTechnical(m.designation));
-      const support = content.supportingStaff.filter((m) => !isTechnical(m.designation));
+      const isSupport = (d: string) => /peon|helper|attender|sweeper|driver|watch|garden|clean/i.test(d);
+      const technical = content.supportingStaff.filter((m) => !isSupport(m.designation));
+      const support = content.supportingStaff.filter((m) => isSupport(m.designation));
       tables = [
         technical.length && {
           title: "Technical Staff",
@@ -451,60 +485,55 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
 
   // Research achievements — Ph.D.s awarded, registered scholars, sponsored grants.
   // Skipped when folded into the Research tab (content.achievementsUnderResearch).
-  if (!content.achievementsUnderResearch && hasAchievements()) {
-    sections.push({
-      id: "research-achievements",
-      type: "tables",
-      title: heading("research-achievements", "Research Achievements"),
-      icon: "clipboard",
-      tables: achievementTables(),
-    });
+  // With publicationsUnderAchievements, publications and patents fold in here too.
+  const foldPublications = Boolean(content.publicationsUnderAchievements);
+  if (
+    !content.achievementsUnderResearch &&
+    (hasAchievements() || (foldPublications && (content.publications?.length || content.patents?.length)))
+  ) {
+    const groups = foldPublications ? publicationGroups() : [];
+    const tables = achievementTables();
+    if (foldPublications) tables.push(...patentsTables());
+    const title = heading("research-achievements", "Research Achievements");
+    if (groups.length) {
+      sections.push({
+        id: "research-achievements",
+        type: "content",
+        title,
+        icon: "clipboard",
+        groups,
+        tables: tables.length ? tables : undefined,
+      });
+    } else {
+      sections.push({
+        id: "research-achievements",
+        type: "tables",
+        title,
+        icon: "clipboard",
+        tables,
+      });
+    }
   }
 
   // Publications — year-wise research output grouped by category.
-  if (content.publications?.length) {
-    const groups: ContentGroup[] = [];
-    for (const cat of content.publications) {
-      groups.push({ subtitle: cat.category });
-      for (const y of cat.years) {
-        groups.push({ subtitle: y.year, items: y.items });
-      }
-    }
+  if (content.publications?.length && !foldPublications) {
     sections.push({
       id: "publications",
       type: "content",
       title: heading("publications", "Publications"),
       icon: "book",
-      groups,
+      groups: publicationGroups(),
     });
   }
 
   // Patents — filed / published / granted.
-  if (content.patents?.length) {
-    const hasArea = content.patents.some((p) => p.area);
-    const columns = ["Title of Invention", "Application No.", "Inventors"];
-    if (hasArea) columns.push("Area");
-    columns.push("Filed", "Published", "Status");
+  if (content.patents?.length && !foldPublications) {
     sections.push({
       id: "patents",
       type: "tables",
       title: heading("patents", "Patents"),
       icon: "clipboard",
-      tables: [
-        {
-          title: `Patents (${content.patents.length})`,
-          columns,
-          rows: content.patents.map((p) => {
-            const status = p.awarded
-              ? `Granted ${p.awarded}${p.awardNumber ? ` · No. ${p.awardNumber}` : ""}`
-              : p.status ?? "";
-            const row = [p.title, p.applicationNumber ?? "", p.inventors ?? ""];
-            if (hasArea) row.push(p.area ?? "");
-            row.push(p.filed ?? "", p.published ?? "", status);
-            return row;
-          }),
-        },
-      ],
+      tables: patentsTables(),
     });
   }
 
@@ -543,14 +572,52 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
-  // Alumni testimonials
-  if (content.testimonials?.length) {
+  // Student achievements — month-wise narrative highlights, with optional
+  // Best Outgoing Students and alumni-entrepreneur tables folded in below.
+  if (content.studentAchievements) {
+    const sa = content.studentAchievements;
+    const groups: ContentGroup[] = (sa.months ?? []).map((m) => ({
+      subtitle: m.title,
+      items: m.items,
+    }));
+    const tables: DataTable[] = [];
+    if (sa.bestOutgoing?.length)
+      tables.push({
+        title: "Best Outgoing Students",
+        columns: ["Student", "Academic Year"],
+        rows: sa.bestOutgoing.map((s) => [s.name, s.year]),
+      });
+    if (sa.entrepreneurs?.length)
+      tables.push({
+        title: "Alumni Entrepreneurs",
+        columns: ["Name", "Role", "Organization"],
+        rows: sa.entrepreneurs.map((e) => [e.name, e.role ?? "", e.organization ?? ""]),
+      });
+    if (groups.length || tables.length)
+      sections.push({
+        id: "student-achievements",
+        type: "content",
+        title: heading("student-achievements", "Student Achievements"),
+        icon: "award",
+        groups,
+        tables: tables.length ? tables : undefined,
+      });
+  }
+
+  // Alumni — distinguished-alumni gallery and/or testimonials
+  if (content.distinguishedAlumni?.length || content.testimonials?.length) {
+    const distinguished = content.distinguishedAlumni?.map((a) => ({ ...a, photo: asset(a.photo) }));
+    const testimonials = (content.testimonials ?? []).map((t) => ({
+      ...t,
+      photo: t.photo ? asset(t.photo) : undefined,
+    }));
     sections.push({
       id: "alumni",
       type: "testimonials",
-      title: heading("alumni", "Alumni Testimonials"),
+      title: heading("alumni", distinguished?.length ? "Alumni" : "Alumni Testimonials"),
       icon: "users",
-      testimonials: content.testimonials,
+      distinguished,
+      testimonials,
     });
   } else if (content.alumniRecords?.length) {
     const embeds = resolveDocuments(content.alumniRecords);
@@ -682,6 +749,13 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         groups.push({
           subtitle: "Association Exicoms (2025–2026)",
           items: assoc.exicom.map((m) => ({ label: m.name, value: m.position })),
+        });
+      for (const g of assoc.exicomGroups ?? [])
+        groups.push({ subtitle: g.title, items: g.members });
+      if (assoc.gallery?.length)
+        groups.push({
+          subtitle: "Activity Highlights",
+          images: assoc.gallery.map((key) => ({ src: asset(key), alt: `${assoc.name} activity` })),
         });
     }
     // With no dated activities, the section is a student "Association", not an activities feed.
@@ -852,6 +926,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     patents: { label: "Patents", icon: "clipboard" },
     startups: { label: "Startups", icon: "briefcase" },
     achievements: { label: "Awards & Achievements", icon: "award" },
+    "student-achievements": { label: "Student Achievements", icon: "award" },
     alumni: { label: "Alumni", icon: "users" },
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
@@ -928,6 +1003,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     },
     highlights: content?.highlights ?? defaultHighlights,
     bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
+    bestPracticesUnderAbout: content?.bestPracticesUnderAbout,
     visionMissionOnHome: content?.visionMissionOnHome,
     homeGroupPhoto: content?.homeGroupPhoto
       ? {

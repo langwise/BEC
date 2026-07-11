@@ -103,6 +103,17 @@ function HighlightsBlock({ highlights }: { highlights: string[] }) {
   );
 }
 
+/** Best Practices card — shown on Home or (per-department) under "About". */
+function BestPracticesBlock({ documents }: { documents: NonNullable<DepartmentData["bestPractices"]> }) {
+  if (!documents?.length) return null;
+  return (
+    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+      <h2 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Best Practices</h2>
+      <DocGrid documents={documents} />
+    </div>
+  );
+}
+
 /** Message from the Head of Department — shown on the Home tab with an optional portrait. */
 function HodMessageBlock({ hodMessage }: { hodMessage: NonNullable<DepartmentData["hodMessage"]> }) {
   return (
@@ -377,11 +388,8 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                 )}
                 {/* Highlights — hidden on Home when moved under About */}
                 {!dept.visionMissionOnHome && <HighlightsBlock highlights={dept.highlights} />}
-                {dept.bestPractices && dept.bestPractices.length > 0 && (
-                    <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Best Practices</h2>
-                        <DocGrid documents={dept.bestPractices} />
-                    </div>
+                {!dept.bestPracticesUnderAbout && dept.bestPractices && (
+                    <BestPracticesBlock documents={dept.bestPractices} />
                 )}
                 {dept.homeGroupPhoto && (
                     <div className="pt-4">
@@ -439,6 +447,10 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
 
                 {dept.about?.groups && dept.about.groups.length > 0 && (
                     <ContentSection groups={dept.about.groups} justify />
+                )}
+
+                {dept.bestPracticesUnderAbout && dept.bestPractices && (
+                    <BestPracticesBlock documents={dept.bestPractices} />
                 )}
             </div>
         )
@@ -525,6 +537,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                      title={activeSection.title}
                      icon={activeSection.icon}
                      testimonials={activeSection.testimonials}
+                     distinguished={activeSection.distinguished}
                  />
              )
          }

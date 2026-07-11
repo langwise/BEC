@@ -7164,10 +7164,27 @@
     "information-science-and-engg": {
       "name": "Information Science & Engineering",
       "assetSlug": "ise",
+      "heroImage": "departments/ise/hero-building.webp",
+      "facultyGroupPhoto": "departments/ise/cine1490.webp",
+      "facultyGroupPhotoCaption": "Teaching Faculty",
+      "staffGroupPhoto": "departments/ise/cine1497.webp",
+      "staffGroupPhotoCaption": "Technical and Supporting Staff",
+      "galleryExclude": [
+        "cine1490",
+        "cine1497",
+        "cine1505",
+        "hero-building"
+      ],
       "tagline": "A global premier centre of education and research in Information Science and Engineering.",
       "established": "1999",
       "intake": "180",
       "overview": "The Department of Information Science and Engineering was established in 1999 and offers a 4-year B.E. programme in Information Science and Engineering with a sanctioned intake of 180. Backed by qualified faculty and well-equipped computing laboratories, the department trains students in information and communication technologies, software engineering and emerging computing domains. It runs a recognised Research Centre (established 2020) with active research in image processing and pattern recognition, wireless sensor and ubiquitous networks, vehicular ad-hoc networks, IoT and cloud computing, and data mining and machine/deep learning. The B.E. programme has been accredited by the NBA, and the department maintains strong industry linkages, internships and a vibrant student association.",
+      "hodMessage": {
+        "message": "Welcome to the Department of Information Science and Engineering at Basaveshwar Engineering College. The department is committed to providing quality technical education, fostering innovation, and promoting excellence in teaching, research, and professional ethics. We strive to equip our students with strong technical knowledge, problem-solving abilities, leadership qualities, and lifelong learning skills to meet the evolving demands of the IT industry and society. With dedicated and experienced faculty members, state-of-the-art laboratories, industry collaborations, and a research-oriented environment, we encourage the students to explore emerging technologies and develop innovative solutions to real-world challenges. The department also motivates students to actively participate in co-curricular and extracurricular activities, fostering their overall personality development and preparing them to become competent, ethical, and socially responsible professionals.",
+        "name": "Dr. Lokesh B.B.",
+        "designation": "Associate Professor and Head",
+        "image": "departments/ise/faculty/lokesh-b-bhajantri-hod.webp"
+      },
       "vision": "To be a Global Premier Center of Education and Research in Information Science and Engineering.",
       "mission": [
         "To impart quality engineering education developing ethical and competent professionals.",
@@ -7215,24 +7232,8 @@
         "Established in 1999, offering a 4-year B.E. programme in Information Science and Engineering with an intake of 180.",
         "NBA-accredited B.E. programme under the autonomous, VTU-affiliated institute.",
         "VTU-recognised Research Centre (established 2020) across image processing, wireless sensor and vehicular networks, IoT and cloud computing, and machine/deep learning.",
-        "Active industry linkages and internships, with the student association RISE conducting webinars, training programmes and technical events."
-      ],
-      "labs": [
-        {
-          "name": "Aho-Ullman Lab (ISE Lab-1)"
-        },
-        {
-          "name": "Abraham Silberschatz Lab (ISE Lab-2)"
-        },
-        {
-          "name": "Tim Berners-Lee Lab (ISE Lab-3)"
-        },
-        {
-          "name": "Quine-McCluskey Lab (ISE Lab-4)"
-        },
-        {
-          "name": "Dr. A. P. J. Abdul Kalam Lab (ISE Lab-5)"
-        }
+        "Active industry linkages and internships, with the student association RISE conducting webinars, training programmes and technical events.",
+        "Four faculty members are recognised as research supervisors under VTU, Belagavi."
       ],
       "activities": [
         {
@@ -7275,9 +7276,306 @@
           "coordinators": [
             "Prof. G. B. Shettar",
             "Prof. S. S. Hiremath"
+          ],
+          "exicom": [
+            {
+              "name": "Mr. Darshan J.",
+              "position": "Vice President"
+            },
+            {
+              "name": "Miss. Aishwarya H.",
+              "position": "Ladies Representative"
+            },
+            {
+              "name": "Mr. Harsharvadhan K.",
+              "position": "Secretary"
+            },
+            {
+              "name": "Mr. Puneeth R. M.",
+              "position": "Deputy Secretary"
+            },
+            {
+              "name": "Akash Kadam and Vinayak S. K.",
+              "position": "Treasurers"
+            }
+          ],
+          "exicomGroups": [
+            {
+              "title": "Technical Coordinators",
+              "members": [
+                "Abhishek V.",
+                "Arun G. H.",
+                "Rohan",
+                "Sahana S. K.",
+                "Hanamantgouda D.",
+                "Rohit H.",
+                "Roopa S. J.",
+                "Vijayalaxmi S. S.",
+                "Poorvi V.",
+                "Vinodraddi A.",
+                "Priyanka D.",
+                "Shaila H.",
+                "Darur Eashwar",
+                "Vinayak K.",
+                "Abhishek",
+                "Preetam J.",
+                "Anirudh K.",
+                "Kshama S. S.",
+                "Swayam H.",
+                "Sujay J.",
+                "Jyotika K.",
+                "Vijaylaxmi S.",
+                "Deepika D.",
+                "Karishma T. B."
+              ]
+            },
+            {
+              "title": "Program Coordinators",
+              "members": [
+                "Sahana Y.",
+                "Veeresh T.",
+                "Bhagyashree K.",
+                "Ranjita B.",
+                "Keerti P.",
+                "Sapna B.",
+                "Soumya M. T.",
+                "Laxmi B.",
+                "Anjana R. C.",
+                "Sudeep K.",
+                "Sushmita I. K.",
+                "Vandan K.",
+                "Ramya V.",
+                "Vijayalaxmi A.",
+                "Triveni S. K.",
+                "Sanjana B.",
+                "Nidhi R.",
+                "Shivani",
+                "Vaishnavi",
+                "Neha S."
+              ]
+            },
+            {
+              "title": "Sports Coordinators",
+              "members": [
+                "Veerkumar K.",
+                "Harish T.",
+                "Rahul N. B.",
+                "Vanita R.",
+                "Krishnakumar B.",
+                "Samarth N.",
+                "Ganesh M. D.",
+                "Diva P.",
+                "Vishwanath P.",
+                "Sahana K.",
+                "Nishchit V. R.",
+                "Mahesh M.",
+                "Sanjeev K.",
+                "Swati K.",
+                "Mahesh M. M.",
+                "Pavankumar G.",
+                "Somashekhar D."
+              ]
+            },
+            {
+              "title": "Cultural Coordinators",
+              "members": [
+                "Kaveri K.",
+                "Chandana H.",
+                "Arafat K.",
+                "Aishwarya S.",
+                "Raghunandan R. H.",
+                "Priyanka S. P.",
+                "Neha B.",
+                "Shrilaxmi V. G.",
+                "Godeshwari",
+                "Ananya K.",
+                "Pallavi M. T.",
+                "Satish B.",
+                "Sarvesh N. H.",
+                "Pramod K.",
+                "D. M. Niharika",
+                "Savitri G. B."
+              ]
+            },
+            {
+              "title": "RISE Media Team",
+              "members": [
+                "Praveen A.",
+                "Srujan P.",
+                "Vishal F.",
+                "Samarth S."
+              ]
+            }
+          ],
+          "gallery": [
+            "departments/ise/rise/activity-01.webp",
+            "departments/ise/rise/activity-02.webp",
+            "departments/ise/rise/activity-03.webp",
+            "departments/ise/rise/activity-04.webp",
+            "departments/ise/rise/activity-05.webp",
+            "departments/ise/rise/activity-06.webp",
+            "departments/ise/rise/activity-07.webp",
+            "departments/ise/rise/activity-08.webp",
+            "departments/ise/rise/activity-09.webp",
+            "departments/ise/rise/activity-10.webp",
+            "departments/ise/rise/outreach-01.webp",
+            "departments/ise/rise/outreach-02.webp",
+            "departments/ise/rise/outreach-03.webp",
+            "departments/ise/rise/outreach-04.webp",
+            "departments/ise/rise/outreach-05.webp",
+            "departments/ise/rise/outreach-06.webp",
+            "departments/ise/rise/outreach-07.webp",
+            "departments/ise/rise/outreach-08.webp",
+            "departments/ise/rise/outreach-09.webp",
+            "departments/ise/rise/outreach-10.webp",
+            "departments/ise/rise/outreach-11.webp",
+            "departments/ise/rise/outreach-12.webp",
+            "departments/ise/rise/outreach-13.webp",
+            "departments/ise/rise/outreach-14.webp",
+            "departments/ise/rise/outreach-15.webp"
           ]
         }
       ],
+      "studentAchievements": {
+        "months": [
+          {
+            "title": "October 2025",
+            "items": [
+              "Ms. Geetanjali Patil and Ms. Sneha Hajare (3rd Semester) secured First and Third Place respectively in the BEC-IEEE Quiz-A-Thon, themed “Leveraging Technology for a Better Tomorrow”, organized by the BEC-IEEE Student Branch (STB35261) on the occasion of IEEE Day 2025 (7–18 October 2025).",
+              "Mr. Ganesh M. Dangi and Mr. Sudeep S. Badammanavar (5th Semester) secured the Runner-Up position in the Shuttle Badminton Zonal-Level Tournament (Kalaburagi Division) held at Vijayapura, organized by VTU.",
+              "Mr. Parth P. Mane (5th Semester) secured the Winner’s position in the Table Tennis Zonal-Level Tournament held at BKEC, Basavakalyan, Bidar, organized by VTU.",
+              "The Department organized “Lagori”, an outdoor event conducted by 4th-year students, on 31 October 2025. The team led by Priya L Rathod — with Anita Nayak, Kanchana M Naik, Ganga Malibiradar, Deepika Kambar, Chandana Patil and Jayashree M Ibrahimpoor — won the competition."
+            ]
+          },
+          {
+            "title": "November 2025",
+            "items": [
+              "Our team secured the Kalaburagi Zonal Championship at the VTU Zonal Basketball Tournament held at Basaveshwar Engineering College on 14 November 2025. Participants: Nishchit V Rao, Sanjeev Malibiradar and Aditya Kashappa Sanadi.",
+              "The Department organized an Intra-Department Sports Meet (31 October – 2 November 2025), conducted by 4th-year students, featuring outdoor games (Cricket, Volleyball, Super Six, 3B 3G, Lagori, Relay) and indoor games (Badminton, Carrom, Table-Tennis, Chess).",
+              "Super 6 Winners: Samarth Nyamagoudar, VeerKumar Killedar, Vishwanath Pattar, Pratik Satyanaik, Abhishek Vadavadagi and Sampath Bagoji.",
+              "Volleyball Winners: Samarth Nyamagoudar, Sampath Bagoji, Vishwanath Pattar, Abhishek Babaleshwar, Vinay Hiremath and Abhishek Vadavadagi.",
+              "Cricket (5th Semester) Winners — “Team Alpha” led by Pranav Korwar, with Advait T, Punith B, Samarth S, Vinayak G, Sudeep B, Prateek B, Naveen U, Soham P, Sumeet K, Parth M and Ram Kumar.",
+              "Carrom (5th Semester) Winners — Advait T and Punith B."
+            ]
+          },
+          {
+            "title": "December 2025",
+            "items": [
+              "ISE students participated in the Artificial Intelligence and Robotics Workshop at Techfest, IIT Bombay (21–25 December 2025), gaining hands-on exposure to advanced technologies and interaction with experts from academia and industry.",
+              "Mr. Shubham Malaji (7th Semester) was selected by Infosys for the role of Specialist Programmer – L1, with a package of ₹10 LPA."
+            ]
+          },
+          {
+            "title": "January 2026",
+            "items": [
+              "Ms. Nidhi Rathi (7th Semester) was selected for an internship at Wesco International with a stipend of ₹25,000 per month.",
+              "Mr. Arun R. Hatti (7th Semester) was selected by IBM with a package of ₹11 LPA.",
+              "Ms. Sanjana Karne secured 1st place in the Drawing and Arts Competition organized by the Department of MBA on 13 January 2026."
+            ]
+          },
+          {
+            "title": "February 2026",
+            "items": [
+              "Our students secured the First and Second Prizes in the Project Contest held on 21 February 2026 at Basaveshwar Engineering College. First Prize — Samarth Sugandhi, Soham Patil and Aditya R. Pattar; Second Prize — Aishwarya Sangam, Aishwarya Bhandarakavate, Rohit Lokare and Vaibhav Kulkarni.",
+              "Ms. Shrilaxmi Gondi and Ms. Aishwarya Shettar (6th Semester) secured First Place in the “Code and Debugging” event held on 22 February 2026 at University BDT College of Engineering, Davanagere.",
+              "Ms. Neha Basavanal (6th Semester) participated in Bharatanatyam during Hampi Utsava (13–15 February 2026).",
+              "Ms. Soujanya Mohare (6th Semester) successfully completed the Alankar Final Examination conducted by Akhila Bharatiya Gandharva Mahavidyalaya, Miraj, Maharashtra.",
+              "Ms. Shalini Hiregoudar participated in a Bharatanatyam event organized by the Indian Art & Culture Federation under the Nobel World Records attempt on 22 February 2026, recognized as a new world record.",
+              "A total of 16 students from the 8th Semester and 3 students from the 6th Semester appeared for the Graduate Aptitude Test in Engineering (GATE) 2026.",
+              "BEC Swara members — Kshama Pendse, Gouri Desai and Chinmayi Bhopadekar — along with Prof. P. V. Kulkarni, participated in Sangeet Shivaratri at Shivalaya Temple on the occasion of Maha Shivaratri."
+            ]
+          },
+          {
+            "title": "March 2026",
+            "items": [
+              "6th Semester students secured both the First and Second Prizes at the National Level 24-Hour Hackathon WAVE 3.0, organized by Basaveshwar Engineering College on 13–14 March 2026 (600 participants). First Prize (₹25,000) — Samarth Sugandhi and Sangam Gaddi; Second Prize (₹15,000, all-girls team) — Preeti Devaraddi, Mayuri Kodolli, Kangoni Mayuri and Soumya Tiparaddi.",
+              "4th Semester students secured the Second Prize in the dance competition at the National-level Kurukshetra event organized by the Department of Management Studies (DOMS), BEC, on 24 March 2026. Team: Shalini, Shantala, Subhashini, Kashamma, Sushma and Spandana.",
+              "Ms. Kshama Pendse (6th Semester) participated in “Haridasa Namana” on 8 March 2026, organized on the occasion of Vadirajara Aradhane at Shree Raghavendra Matha, Jamkhandi.",
+              "6th Semester students secured the Second Prize (₹2,000) in the college-level Ideawave competition conducted by the Department of Electronics and Communication Engineering on 12 March 2026. Team: Madhu G, Rahul B, Mahesh M and Nischit R."
+            ]
+          },
+          {
+            "title": "April 2026",
+            "items": [
+              "6th Semester students secured the First Prize (₹15,000) in the “WebSprint” event held at Presidency University on 9 April 2026. Team: Samarth Sugandhi, Sangam Gaddi, Vikas Kannur and Aditya R Pattar.",
+              "Ms. Sanjana D. Karne (4th Semester) secured First Place in the Rangoli Competition at UTKARSHA 2K26, held at Basaveshwar Engineering College on 24–25 April 2026.",
+              "ISE interns participated in a plantation drive organized by Infobell Pvt. Ltd. (as part of its CSR initiative) at the College of Agriculture, GKVK on 24 April 2026."
+            ]
+          },
+          {
+            "title": "May 2026",
+            "items": [
+              "The Department conducted “Byte & Bite” on 30 May 2026, featuring two competitions — Think. Build. Publish and Cooking Without Fire. Think. Build. Publish Winners: 1st — Team Pixel; 2nd — Team Hacksmit & Team Reel Intelligence. Cooking Without Fire Winners: 1st — Khana Khazana; 2nd — Royal Recipe.",
+              "Mr. Hemank Paliwal and Ms. Diva Paliwal secured top positions in the NPTEL course “Education for Sustainable Development” with outstanding scores.",
+              "Ms. Nidhi Rathi completed the NPTEL course “Air Pollution and Control” (IIT Roorkee, Jan–Apr 2026 session), securing an Elite Certificate with a consolidated score of 79% and ranking among the Top 5% of 8,850 certified candidates.",
+              "NPTEL performance (6th Semester): 50 students scored above 90% and 50 students scored between 75–89%, out of 113 participants.",
+              "Mr. Suraj Deshpande and team (4th Semester) secured 3rd place in the “Debate” and “Spin Pitch” events at the Techno Cultural Fest conducted by KLE BVB (8–10 May 2026).",
+              "Akarsh, Darshan and Manoj (4th Semester) secured 2nd place in the “Prompt to App” event at CIRCUTECH 2026 (26 May 2026).",
+              "Nikhil, Vivek and team secured 1st place in the “BGMI Showdown” at CIRCUTECH 2026.",
+              "Keertana and Deepika secured 2nd place in the “Claytopia” event at CIRCUTECH 2026.",
+              "Sahana Kalhol, Sudharani Nagathan, Santosh Malabadi and team (6th Semester) secured 1st and 2nd places in the WEBXCELERATE event conducted by the Department of Computer Science and Engineering (19–20 May 2026)."
+            ]
+          }
+        ],
+        "bestOutgoing": [
+          {
+            "name": "Sunil Patil",
+            "year": "2014–15"
+          },
+          {
+            "name": "Soumya Kandagal",
+            "year": "2015–16"
+          },
+          {
+            "name": "Subham Hebbare",
+            "year": "2016–17"
+          },
+          {
+            "name": "Sushma Ankad",
+            "year": "2017–18"
+          },
+          {
+            "name": "Parvati Bulamath",
+            "year": "2018–19"
+          },
+          {
+            "name": "Sushma Angadi",
+            "year": "2021–22"
+          }
+        ],
+        "entrepreneurs": [
+          {
+            "name": "Mr. Bhargav Gumaste",
+            "role": "Founder & CEO",
+            "organization": "Mindvision Technologies"
+          },
+          {
+            "name": "Mr. Muttanna Sarashetti",
+            "role": "Managing Director",
+            "organization": "GBUITS Innovations Pvt. Ltd."
+          },
+          {
+            "name": "Mr. Sharanabasu G. Angadi",
+            "role": "Lead Engineer (SDE-IV)",
+            "organization": "Standard Chartered Research & Development Pvt. Ltd."
+          },
+          {
+            "name": "Mr. Harsh Kulkarni",
+            "role": "Founder",
+            "organization": "Tantramsha — Tailored Software & ERP Solutions"
+          },
+          {
+            "name": "Mr. Santoshkumar Hanaji",
+            "role": "Director",
+            "organization": "Nggawe Nirman Technologies Pvt. Ltd."
+          },
+          {
+            "name": "Mr. Vinayak Inamdar",
+            "role": "Co-founder",
+            "organization": "TattvaLabs Pvt. Ltd."
+          }
+        ]
+      },
       "contact": {
         "name": "Dr. Lokesh B. Bhajantri",
         "designation": "Associate Professor & Head",
@@ -7285,13 +7583,17 @@
         "email": "bechodise@gmail.com, lokeshcse@yahoo.co.in"
       },
       "sectionTitles": {
-        "governance": "Boards",
+        "governance": "Board Members",
         "research": "Research Centre — Dr. A. P. J. Abdul Kalam Lab (VTU Recognised Research Centre)",
-        "facilities": "Infrastructure"
+        "facilities": "Infrastructure",
+        "staff": "Technical and Supporting Staff",
+        "activities": "RISE — Rays of Information Science Engineers (Student Association)"
       },
       "sectionNavLabels": {
-        "governance": "Boards",
-        "research": "Research Centre"
+        "governance": "Board Members",
+        "research": "Research Centre",
+        "staff": "Technical and Supporting Staff",
+        "activities": "RISE Association"
       },
       "hideInfrastructureQuantity": true,
       "curriculumGroups": [
@@ -7299,11 +7601,15 @@
           "title": "Scheme of Teaching & Examinations",
           "documents": [
             {
-              "title": "Scheme of Teaching & Examinations (Revised AY 2024-25)",
+              "title": "Scheme of Teaching & Examinations (AY 2023-24 Admitted Batch)",
+              "file": "departments/ise/docs/scheme-2023-24.pdf"
+            },
+            {
+              "title": "Scheme of Teaching & Examinations (AY 2024-25 Entry Batch)",
               "file": "departments/ise/docs/scheme-2024-25.pdf"
             },
             {
-              "title": "Scheme of Teaching & Examinations (AY 2025-26)",
+              "title": "Scheme of Teaching & Examinations (AY 2025-26 Admitted Batch)",
               "file": "departments/ise/docs/scheme-2025-26.pdf"
             }
           ]
@@ -7312,18 +7618,200 @@
           "title": "Syllabus",
           "documents": [
             {
-              "title": "Syllabus — IV Semester",
-              "file": "departments/ise/docs/syllabus-4th-sem.pdf"
+              "title": "Syllabus — III & IV Semester (2024-25 Entry Batch)",
+              "file": "departments/ise/docs/syllabus-3-4-sem-2024-25.pdf"
             },
             {
-              "title": "Syllabus — VI Semester",
-              "file": "departments/ise/docs/syllabus-6th-sem.pdf"
+              "title": "Syllabus — V, VI & VII Semester (2024-25 Entry Batch)",
+              "file": "departments/ise/docs/syllabus-5-6-7-sem-2024-25.pdf"
             },
             {
-              "title": "Syllabus — VIII Semester",
-              "file": "departments/ise/docs/syllabus-8th-sem.pdf"
+              "title": "Syllabus — VII Semester (2023-24 Entry Batch)",
+              "file": "departments/ise/docs/syllabus-7th-sem-2023-24.pdf"
             }
           ]
+        }
+      ],
+      "newsletters": [
+        {
+          "title": "ISE Samvaad — October 2025",
+          "file": "departments/ise/newsletters/ise-newsletter-oct-2025.pdf"
+        },
+        {
+          "title": "ISE Samvaad — November 2025",
+          "file": "departments/ise/newsletters/ise-newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "ISE Samvaad — December 2025",
+          "file": "departments/ise/newsletters/ise-newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "ISE Samvaad — January 2026",
+          "file": "departments/ise/newsletters/ise-newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "ISE Samvaad — February 2026",
+          "file": "departments/ise/newsletters/ise-newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "ISE Samvaad — March 2026",
+          "file": "departments/ise/newsletters/ise-newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "ISE Samvaad — April 2026",
+          "file": "departments/ise/newsletters/ise-newsletter-apr-2026.pdf"
+        },
+        {
+          "title": "ISE Samvaad — May 2026",
+          "file": "departments/ise/newsletters/ise-newsletter-may-2026.pdf"
+        },
+        {
+          "title": "ISE Samvaad — June 2026",
+          "file": "departments/ise/newsletters/ise-newsletter-jun-2026.pdf"
+        }
+      ],
+      "distinguishedAlumni": [
+        {
+          "name": "Md. Aiyaz Mulla",
+          "designation": "Director & CTO, Anthropic Software Pvt Ltd, Bengaluru (2005)",
+          "photo": "departments/ise/alumni/md-aiyaz-mulla.webp"
+        },
+        {
+          "name": "Siddalingayya Hiremath",
+          "designation": "Manager, DXC Technology, Bengaluru (2005)",
+          "photo": "departments/ise/alumni/siddalingayya-hiremath.webp"
+        },
+        {
+          "name": "Yogesh S. Salimath",
+          "designation": "Software Engineer, Broadcom, Bangalore (2015)",
+          "photo": "departments/ise/alumni/yogesh-s-salimath.webp"
+        },
+        {
+          "name": "Vinod Balagoudar",
+          "designation": "Technical Lead, Volvo IT, Bangalore (2006)",
+          "photo": "departments/ise/alumni/vinod-balagoudar.webp"
+        },
+        {
+          "name": "Anil Tandur",
+          "designation": "Test Analyst, Infosys Limited, Bangalore (2006)",
+          "photo": "departments/ise/alumni/anil-tandur.webp"
+        },
+        {
+          "name": "Venkatesh Budi",
+          "designation": "Sr. Tech Consultant, Salesforce India Pvt Ltd, Bangalore (2008)",
+          "photo": "departments/ise/alumni/venkatesh-budi.webp"
+        },
+        {
+          "name": "Sharanabasu G. Angadi",
+          "designation": "Tech Lead, Walkingtree Consultancies Service Pvt Ltd, Bangalore (2011)",
+          "photo": "departments/ise/alumni/sharanabasu-g-angadi.webp"
+        },
+        {
+          "name": "Sandeep A. Desai",
+          "designation": "Sr. ATG, Target Labs Inc. (Client: Walmart Labs), California, USA (2007)",
+          "photo": "departments/ise/alumni/sandeep-a-desai.webp"
+        },
+        {
+          "name": "Pramod L. Patil",
+          "designation": "KAS Tahsildar, Govt. of Karnataka (2010)",
+          "photo": "departments/ise/alumni/pramod-l-patil.webp"
+        },
+        {
+          "name": "Sangamesh Hebbalmath",
+          "designation": "Siemens Healthcare GmbH, Erlangen, Germany",
+          "photo": "departments/ise/alumni/sangamesh-hebbalmath.webp"
+        },
+        {
+          "name": "Shivaling Sannalli",
+          "designation": "Lead Consultant & QA Head, Thoughtworks Technologies Pvt Ltd, Hyderabad",
+          "photo": "departments/ise/alumni/shivaling-sannalli.webp"
+        },
+        {
+          "name": "Muragendra Nagappa Kapari",
+          "designation": "Senior Software Engineer, Chicago Mercantile Exchange Group India, Bangalore",
+          "photo": "departments/ise/alumni/muragendra-n-kapari.webp"
+        },
+        {
+          "name": "Deepa Teggihalli",
+          "designation": "Automation Tester, IBM India, Bangalore (2013)",
+          "photo": "departments/ise/alumni/deepa-teggihalli.webp"
+        },
+        {
+          "name": "Sneha Gireddy",
+          "designation": "SAP ABAP Developer, Cognizant Technology Solutions, Pune (2013)",
+          "photo": "departments/ise/alumni/sneha-gireddy.webp"
+        },
+        {
+          "name": "Dr. Piyush Kumar Pareek",
+          "designation": "Associate Professor & Head, Dept. of CSE, East West College of Engineering, Bengaluru (2010)",
+          "photo": "departments/ise/alumni/piyush-kumar-pareek.webp"
+        },
+        {
+          "name": "Iranna Totagi",
+          "designation": "Lead Engineer, Microfocus Software (2010)",
+          "photo": "departments/ise/alumni/iranna-totagi.webp"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Santosh Hosamani",
+          "designation": "Senior Software Engineer",
+          "organization": "Emids Technologies",
+          "quote": "Reputed autonomous college with the history of quality education, providing a platform of opportunities (entrepreneurship, incubation, placements) and grooming professional students to deliver engineering aspects in a real-time environment."
+        },
+        {
+          "name": "Sangamesh Hebbalamath",
+          "designation": "Global Product Manager, Digital Health",
+          "organization": "Siemens Healthineers GmbH, Erlangen, Germany",
+          "photo": "departments/ise/alumni/sangamesh-hebbalmath.webp",
+          "quote": "I feel blessed and honored to complete my academics (bachelor) in one of the oldest and well recognized colleges of Karnataka. During my studies, I met highly experienced professors, motivated lecturers and amazing classmates. I was given all opportunities to build myself into a better human and responsible individual. I am grateful to the institution which provides education for all classes of students."
+        },
+        {
+          "name": "Piyushkumar Pareekh",
+          "designation": "Professor & Head, Department of CSE",
+          "organization": "East West College of Engineering, Bengaluru",
+          "photo": "departments/ise/alumni/piyush-kumar-pareek.webp",
+          "quote": "Basaveshwar Engineering College is a temple which has blessed the youth with the technical knowledge required and ensured students love all and serve all in society. ISE department: unconditional love, commitment and dedication towards all students by all our teachers. There has always been a sense of happiness and love whenever we remember our teachers and college."
+        },
+        {
+          "name": "Asif Ali",
+          "designation": "Lead Software Engineer (Sr. MTS)",
+          "organization": "Nutanix",
+          "quote": "It is my firm belief that education is the best way to enlighten young minds and it can only be imparted in a good environment having prosperous thinking. My college had all it takes. My college experience was the best experience of my lifetime. Our college was always very supportive and motivating to grow in our curriculum. Fortunately my department had one of the best faculty members who made our experience flawless."
+        },
+        {
+          "name": "Ashok Meti",
+          "designation": "Principal Engineer",
+          "organization": "Pluribus Networks Systems",
+          "quote": "Had a great bonding with the department throughout the four years. The Information Science department was nothing short of scholarly lecturers, modern infrastructure, required tools and software, and a dedicated team led by Shri P. V. Kulkarni sir who was instrumental in taking the department to new heights. The effort put forth by faculty really helped me get the confidence and skills required for the career ahead. I am really grateful to all the teaching and non-teaching faculty of the department."
+        },
+        {
+          "name": "Santosh Hanaji",
+          "designation": "Co-Founder & Director – Operations",
+          "organization": "Nggawe Nirman Technologies",
+          "quote": "Basaveshwara Vidyavardhaka Sangha and Basaveshwara Engineering College are highly regarded household names in North Karnataka. The administration and faculty work tirelessly and strive constantly to raise the bar of quality education. I am personally indebted to all my teachers for the wonderful teaching I received during my graduation."
+        },
+        {
+          "name": "Ayyaz Mulla",
+          "designation": "CTO & Director – Technology",
+          "organization": "Anthropic Software Pvt Ltd",
+          "photo": "departments/ise/alumni/md-aiyaz-mulla.webp",
+          "quote": "BEC is not just a college, it's a culture — culture to think freely and act upon it, culture to aim big and go for it, culture to experiment, explore and be yourself, culture to build yourself. Many colleges have engineering; BEC is one with the culture and attitude of engineering brought and built by my professors."
+        },
+        {
+          "name": "Vinayak Inamdar",
+          "quote": "\"Na hi jnanena sadrisham, pavitram iha vidyate\" — nothing is more sacred than knowledge. The role of an educational institution is very important in a student's life, as it decides the fate of the student. Basaveshwar Engineering College has been committed to delivering quality knowledge since 1963. BEC has been a life-transforming journey for me. Right from ethics and professionalism to advanced technological knowledge, those four years helped shape me into a skilled engineer. Be it academics or extracurricular activities, the faculty supported me in every possible way. I cherish every moment I spent in college along with faculty and friends."
+        },
+        {
+          "name": "Amrut Godakhindi",
+          "quote": "Even though I am from the first ISE batch in BEC, the infrastructure provided by the college was excellent for a new course. The teaching staff was very accomplished and laid a very strong technical foundation for me in the information science field. It has inspired me to this day, and even after 17 years in a corporate job, I am still in a technical role by choice!"
+        },
+        {
+          "name": "Sharanabasu G. Angadi",
+          "designation": "Lead Engineer (SDE-IV)",
+          "organization": "Standard Chartered Research and Development Pvt. Ltd",
+          "photo": "departments/ise/alumni/sharanabasu-g-angadi.webp",
+          "quote": "About the college: well disciplined and well maintained with a huge campus. About the ISE department: well curriculum-oriented — the practicals and theory provided here make students industry-ready."
         }
       ],
       "bestPractices": [
@@ -7332,6 +7820,8 @@
           "file": "departments/ise/docs/best-practices.pdf"
         }
       ],
+      "bestPracticesUnderAbout": true,
+      "visionMissionOnHome": true,
       "sectionDocuments": {
         "research": [
           {
@@ -7352,21 +7842,10 @@
             "title": "MoU Details",
             "file": "departments/ise/docs/mou-details.pdf"
           }
-        ],
-        "facilities": [
-          {
-            "title": "List of IoT Experiments",
-            "file": "departments/ise/docs/iot-experiments-list.pdf"
-          }
-        ],
-        "faculty": [
-          {
-            "title": "Faculty List (2024-25)",
-            "file": "departments/ise/docs/faculty-list-2024-25.pdf"
-          }
         ]
       },
       "consolidateResearch": true,
+      "publicationsUnderAchievements": true,
       "researchAreas": [
         {
           "supervisor": "Dr. S. R. Patil",
@@ -7397,12 +7876,6 @@
         "National and international journals",
         "Audio and video facilities",
         "Reprographic facilities"
-      ],
-      "researchAchievements": [
-        "Five faculty members are doctorates and two are registered for Ph.D.",
-        "National and international journal/conference publications and patents.",
-        "Faculty have served as journal reviewers and chaired sessions at IEEE international conferences.",
-        "Faculty recognised as guest editors and received Bronze-level partner faculty awards."
       ],
       "phdsAwarded": [
         {
@@ -7480,6 +7953,127 @@
           "status": "Registered 2021"
         }
       ],
+      "publications": [
+        {
+          "category": "Journal Papers",
+          "years": [
+            {
+              "year": "2023–24",
+              "items": [
+                "Sadhana P. Bangarashetti. “Customer Spending Prediction on E-Commerce Website.” Grenze International Journal of Engineering and Technology (GIJET), pp. 118-122, June 2024.",
+                "Gangadharaiah, S., Bhajantri, L. B. “Secure Data Dissemination and Routing in Internet of Things.” International Journal of Information Technology, pp. 1-17, 2024. ISSN 2511-2112.",
+                "Bhajantri, L. B., Ayyannavar, V. V. “Cognitive Agent Based Fault Tolerance in Ubiquitous Networks: A Machine Learning Approach.” International Journal of Information Technology, 16(4), pp. 2363-2377, 2024. ISSN 2511-2112.",
+                "Aditi Kolki, Bagyashree M. C., Panjali Sataraddi, Shreya Katti, Roopa B. Math, Girish B. Shettar. “Survey on Crop Fertilizer Advisor.” International Journal of Advanced Research in Science, Communication and Technology, 4(6), pp. 636-638, 2024. ISSN 2581-9429.",
+                "Anushree M. Zalaki, Lakhnan Hulakund, Sahana Batakurki, Siddu Hiremath, P. S. Puranik. “Fraud Detection of PAN Card using Machine Learning.” International Journal of Research in Engineering, Science and Management, 7, pp. 86-89, May 2024. ISSN 2581-5792.",
+                "Sandeep Kugali. “Design and Development of Automatic Juice Vending Machine.” International Journal of All Research Education and Scientific Methods (IJARESM), Vol. 10, Issue 5, pp. 4680-4685, May 2024. ISSN 2455-6211.",
+                "Mujawar, T. N., Bhajantri, L. B., Sutagundar, A. V. “Hierarchical Access Structure-based Scheme with Outsourcing and Revocation Mechanism for Cloud Environment.” Journal of Telecommunications and Information Technology, 4, pp. 83-92, 2023. ISSN 1899-8852.",
+                "Basavaraj G. Kumbar, Lokesh B. Bhajantri. “Convolutional Neural Network and Fog Computing Approach for Smart Industry.” International Journal of Research and Analysis in Science and Engineering, 4(5), pp. 737-745, 2024. ISSN 2582-8118.",
+                "S. N. Benkikeri, Lokesh B. Bhajantri. “Text-to-Video Generator using Stable Diffusion Model for Dynamic Video Content Creation.” International Journal of Research and Analysis in Science and Engineering, 4(5), pp. 815-823, 2024. ISSN 2582-8118.",
+                "P. K. Deshpande. “A Survey on Placement Management Android Application.” International Journal of Research in Engineering, Science and Management, 7, pp. 35-38, 2024. ISSN 2581-5792.",
+                "P. K. Deshpande. “Placement Management Android Application.” International Journal of Research in Engineering, Science and Management, 7, pp. 101-106, 2024. ISSN 2581-5792.",
+                "P. K. Deshpande. “Face Recognition Attendance System.” International Journal of Research in Engineering, Science and Management, 7, pp. 116-119, 2024. ISSN 2581-5792.",
+                "V. S. Patil. “Creating a News Video Dataset for HEVC Codec Evaluation: Considerations and Best Practices.” Journal of Propulsion Technology, Vol. 45, No. 5, pp. 1-8, 2024.",
+                "V. S. Patil. “NewsFlash: Dynamic Highlight Generator for NEWS Videos.” AES Transactions, Vol. 56, No. 10, pp. 479-482, 2024. ISSN 2096-3246.",
+                "V. S. Patil, Amogh, Soumya, Vikas. “Gym Management System.” International Journal of Novel Research and Development (IJNRD), Vol. 9, Oct 2024. ISSN 2456-4184.",
+                "Ananya Ilkal, Nikhat Itagi, Shrinidhi Lokapur, Deepa I. K. “Event Management System.” International Journal of Novel Research and Development (IJNRD), 9(8), 2024. ISSN 2456-4184.",
+                "Sadhana P. Bangarashetti, Pavan Kunchur. “WhatsApp Based Student Internal Marks Reporting System.” International Journal of Science and Research (IJSR), Vol. 13, pp. 362-365, Feb 2024. ISSN 2319-7064.",
+                "Sadhana P. Bangarashetti. “Multiple Health Disease Prediction.” International Journal of Research in Engineering, Science and Management, Vol. 7, pp. 161-167, May 2024. ISSN 2581-5792.",
+                "Roopa B. Math, Mahantesh M. Ganganallimath. “Applications of Six Sigma to Improve the Passing Percentage of an Engineering Course.” Journal of Mines, Metals and Fuels, 71(6), pp. 848-856, 2023. ISSN 0022-2755."
+              ]
+            },
+            {
+              "year": "2022–23",
+              "items": [
+                "Vidya S. Bennur, Ashok V. Sutagundar, Lokesh B. Bhajantri. “Agent based Localization using Mobile Sink in Wireless Sensor Networks.” International Journal of Sensors Wireless Communications and Control, pp. 1-6, 2022.",
+                "Lokesh B. Bhajantri, Tabassum N. Mujawar. “The Trusted Hierarchical Access Structure-Based Encryption Scheme for Cloud Computing.” International Journal of Cloud Applications and Computing, IGI Global, 12 & 1, pp. 1-17, 2022. ISSN 2156-1834.",
+                "Dr. S. R. Patil, Kishor Parvatikar, Prathiksha Chetana, Bhagyawant Biradar, Vidyashri Mudagal. “An Implementation of self driving Car.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:55 Issue:01:2022, pp. 347-351, 2022. ISSN 0493-2137.",
+                "Dr. S. R. Patil, Kishor Parvatikar, Prathiksha Chetana, Bhagyawant Biradar, Vidyashri Mudagal. “A Review on Self Driving Cars.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:55 Issue:01:2022, pp. 326-334, 2022. ISSN 0493-2137.",
+                "Lokesh B. Bhajantri, Tabassum N. Mujawar. “An Attribute based Encryption Method using Outsourced Decryption and Hierarchical Access Structure.” Journal of Information Technology and Telecommunication, 4, pp. 75-81, 2022. ISSN 1899-8852.",
+                "Dr. Lokesh B. Bhajantri Gangadharaiah S. “Hybrid Centralized Peer to Peer Architecture for Resource Discovery and Secure Communication in Internet of Things.” International Journal on Advanced Science, Engineering and Information Technology, 13 & 2, pp. 726-735, April 2023. ISSN 2088-5334.",
+                "Chetana R Shivanagi, Afak R Makandar, Amanli T, Prasad K kadapatti, Vinodkumar Poleshi. “A Survey On AI Based Proctoring System For Online Tests.” International Journal Of Scientific Development And Research (IJSDR), 8 &5, pp. 967-969, May 2023. ISSN 2455-2631.",
+                "Sandeep Kugali, Pooja Mavinakai, Pooja ragi, Sneha Patil, Vidya Murteli. “A Survey On Vehicle Safety and Alert system.” International Journal Of Scientific Development And Research (IJSDR), 8 & 3, pp. 213-221, 2023. ISSN 2455-2631.",
+                "P. K. Deshpande, Sharik sameera Mulla, Anjana Umarji, Aishwarya Sangapur, Saniha Hunur. “IoT based Smart object Detector: A Survey.” International Journal Of Scientific Development And Research (IJSDR), 8 & 3, pp. 50-57, 2023. ISSN 2455-2631.",
+                "P. K. Deshpande, Poonam Patil, Aishwarya Kannalli, Ptrachi Solankure. “A Survey on Driver Drowsiness detection System.” International Journal Of Scientific Development And Research (IJSDR), 8 & 3, pp. 838-442, 2023. ISSN 2455-2631.",
+                "Deepa Kalapannavar, Aishwarya K, Rashmi Angadi, Yashodha Y, Kaveri Angadi. “Anti-Poaching Alarm System for valuable Trees in the forest.” International Journal Of Scientific Development And Research (IJSDR), 8 & 3, pp. 873-878, 2023. ISSN 2455-2631."
+              ]
+            },
+            {
+              "year": "2021–22",
+              "items": [
+                "Sudha Ayatti, Gouri Khadabadi, S.P. Bangarshetti, Pavan N. Kunchur. “All in One Card: A Knowledgeable Tool.” JNNCE Journal of Engineering & Management, Volume 5, Issue No.1, pp. 1-8, 2021. ISSN 2582-0079.",
+                "Lokesh B. Bhajantri, Ramesh M. Kagalkar, Pundalik Ranjolekar. “Convolution Neural Network Model Based Human Wearable Smart Ring System: Agent Approach.” International Journal of Electronics and Telecommunications, Polish Academy of Sciences, Vol.67, Issue No. 4, pp. 673-678, 2021. ISSN 2300-1933.",
+                "Vidya S. Bennur, Ashok V. Sutagundar, Lokesh B. Bhajantri. “Agent based Localization using Mobile Sink in Wireless Sensor Networks.” International Journal of Sensors Wireless Communications and Control, Vol.2, Issue No. 4, pp. 1-17, 2022. ISSN 2210-3287.",
+                "Savitri Patil, Shobha R. Patil. “Image Filtering Techniques for Noise Removal-Review.” Mukt Shabd Journal, Vol.11, Issue No. 6, pp. 894-898, 2022. ISSN 2347-3150.",
+                "Veena patil & Dr. Shobha Patil. “An Empirical Survey on Uterine Cancer Tissue Classification using Histopathological Images.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:5 Issue No.1, pp. 391-404, 2022. ISSN 0493-2137.",
+                "Dr. S. R. Patil, Kishor Parvatikar, Prathiksha Chetana, Bhagyawant Biradar, Vidyashri Mudagal. “An Implementation of self driving Car.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:55 Issue No. 1, pp. 347-352, 2022. ISSN 0493-2137.",
+                "Dr. S. R. Patil, Kishor Parvatikar, Prathiksha Chetana, Bhagyawant Biradar, Vidyashri Mudagal. “A Review on Self Driving Cars.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:55 Issue 01, pp. 326-334, 2022. ISSN 0493-2137.",
+                "Vijayalaxmi S.Patil, Dr.Suvarna Nandyal. “Entropy Coding for H.264 Video Compression.” International Journal of Scientific Research, Vol:11 Issue 01, pp. 42-45, 2022.",
+                "Pankaja Patil, Gouri Khadabadi, Sudha V Sulakhe, Pavan Kunchur, Sadhana Bangarashetti, Pranav Mutalik. “IoT based Vehicle Health Monitoring System.” Grenze International Journal of Engineering and Technology, Vol:7 Issue 01, pp. 191-196, 2021. ISSN 2395-5295.",
+                "Ranjana.Battur, Arundhati Nelli, Pavan Kunchur, Sadhana Bangarashetti, Nelson Lobo. “Sign Language Interpreter using Convolutional Neural Network.” Grenze International Journal of Engineering and Technology, Vol:8 Issue 01, pp. 241-245, 2021. ISSN 2395-5295.",
+                "Lokesh B. Bhajantri, Tabassum N. Mujawar. “An Attribute based Encryption Method using Outsourced Decryption and Hierarchical Access Structure.” Journal of Information Technology and Telecommunication, Vo.4, pp. 75-81, 2022. ISSN 1899-8852.",
+                "Shobha Patil, Aneesh Purohit, Prajwal Hiremath, Satish kali, Vinayak R.G. “Intelligent Tourist Guide.” International Journal of Innovative Research in Engineering, Vol-4, Issue 3, pp. 28-30, May 2023. ISSN 2582-8746.",
+                "Vijayalaxmi.Patil, Spoorti U, Laxmi Shinde, Veena Neelanayak, Muskan H. “Online Law Android App.” International Journal of Research in Engineering and Science (IJRES), Vol. 11, Issue-2, pp. 368-371, Feb, 2023. ISSN 2320-9356.",
+                "Vijayalaxmi.Patil, Spoorti U, Laxmi Shinde, Veena Neelanayak, Muskan H. “Implementation of Law Android App.” International Journal of Research in Engineering and Science (IJRES), Vol. 11, Issue-6, pp. 183-187, Jun, 2023. ISSN 2320-9364."
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Conference Papers",
+          "years": [
+            {
+              "year": "2023–24",
+              "items": [
+                "Lokesh B. Bhajantri, Basavaraj G. Kumbar. “Context Aware Resource Discovery in Fog Computing: Agent Approach.” Second IEEE International Conference on Advances in Information Technology (ICAIT-2024), AIT, Chikkamagaluru, Karnataka, India, pp. 1-5, 2024.",
+                "Lokesh B. Bhajantri, Mohammed Rehan, Bandenawaz F. B. “Artificial Intelligence and Machine Learning Approach Recommendation System in Internet of Medical Things.” International Conference on Intelligent Algorithms for Computational Intelligence Systems (IACIS-2024), Hassan, India, pp. 1-6, 2024.",
+                "V. S. Patil. “Video Enhancement Algorithm using Pre- and Post-Processing for Compressed Videos.” International Conference for Advancement in Technology (ICONAT), Goa, India, 2023.",
+                "Raghavendra Jadhav, Sadhana P. Bangarashetti. “Impact of Lumpy Skin Disease Virus on Indian Cattle: A Review of Mitigation Strategies.” International Conference on Sustainable Solutions in Engineering & Technology (SSET-24), pp. 92, Aug 2024. ISSN 2582-8188.",
+                "Sudha V. S., Sadhana P. Bangarashetti. “Brain Tumour Detection using AI and ML Techniques.” International Conference on Sustainable Solutions in Engineering & Technology (SSET-24), pp. 79, Aug 2024. ISSN 2582-8188."
+              ]
+            },
+            {
+              "year": "2022–23",
+              "items": [
+                "Girish B. Shettar, Dr. Anil D. Devangavi. “Edge Computing: An overview.” Thirteen International Conference on Computational Intelligence and Information Technology, pp. 6, 2023."
+              ]
+            },
+            {
+              "year": "2021–22",
+              "items": [
+                "Lokesh B. Bhajantri, Vasudha V. Ayyanavar. “Fault Analysis and Identification in Ubiquitous Networks using Cognitive Agents Approach.” IEEE 2022 International Conference on Electronics and Renewable Systems (ICEARS), Tuticorin, India., pp. 713-719. ISSN 6654-8425.",
+                "Lokesh B. Bhajantri, Tabassum M. Mujawar. “Efficient Direct and Immediate User Revocable Attribute Based Encryption Scheme.” 5th International Conference on Intelligent Sustainable System (ICISS 2022), SCAD College of Engineering and Technology Feb. 17-18 2022, Tirunelveli, India.",
+                "Lokesh Bhajantri, Nikhil Kadadevar, Anup Jeeragal, Vinayak Jeeragal and Iranna Jamdar. “A Survey on Cognitive Internet of Things Based Prediction of Covid-19 Patient.” Second International Conference on Sentimental Analysis and Deep Learning (ICSADL 2022), Department of Electronics and Computer Engineering, Institute of Engineering, Tribhuvan University, Nepal.",
+                "Vijayalaxmi S.Patil, Dr.Suvarna Nandyal. “Intra Prediction in H.265.HEVC to improve the PSNR using Gradient Calculation.” International Conference on Computational Intelligence, Data Science and Cloud Computing, Institute of Engineering & Management, Kolkata, India, pp. 1-2."
+              ]
+            }
+          ]
+        }
+      ],
+      "patents": [
+        {
+          "title": "AI and IoT based Agriculture Crop Cutting Device",
+          "inventors": "Dr. Lokesh B. Bhajantri, Dr. Manjula A. Sutagundar, Prof. Vasudha Ayyanavar, Dr. Daneshwari Hatti",
+          "applicationNumber": "390551-001",
+          "filed": "18/07/2023",
+          "status": "Applied — awaiting technical examination"
+        },
+        {
+          "title": "An Application for Divyang to use Voice Mail",
+          "inventors": "Dr. Lokesh B. Bhajantri",
+          "applicationNumber": "202241022232 A",
+          "filed": "13/04/2022",
+          "published": "29/04/2022",
+          "status": "Published"
+        },
+        {
+          "title": "Food Analysis Using Chemical Sensor",
+          "inventors": "Dr. Sadhana P. Bangarashetti",
+          "applicationNumber": "202241003611",
+          "filed": "21/01/2022",
+          "published": "04/02/2022",
+          "status": "Published"
+        }
+      ],
       "researchGrants": [
         {
           "title": "Smart Ring Based Real Time Monitoring in Human Emergency Situations",
@@ -7490,10 +8084,6 @@
         }
       ],
       "supportingStaff": [
-        {
-          "name": "Shri. Kupendrakumar H. B.",
-          "designation": "Foreman"
-        },
         {
           "name": "Shri. S. B. Khot",
           "designation": "Instructor"
@@ -7509,6 +8099,10 @@
         {
           "name": "Shri. M. V. Gennur",
           "designation": "Assistant Instructor"
+        },
+        {
+          "name": "Shri. Kupendrakumar H. B.",
+          "designation": "Foreman"
         },
         {
           "name": "Shri. S. F. Patil",
@@ -7527,81 +8121,122 @@
           "designation": "Peon"
         }
       ],
+      "groupSupportingStaff": true,
       "committeeGroups": [
         {
           "title": "Board of Studies (07-08-2025 to 06-08-2028)",
           "members": [
             {
-              "name": "Dr. L. B. Bhajantri",
-              "position": "Chairman — Associate Professor, ISE, BEC Bagalkote"
+              "name": "Dr. Lokesh B. Bhajantri",
+              "position": "Chairman — Associate Professor & Head, ISE, BEC Bagalkote"
             },
             {
-              "name": "Dr. Sadhana P. B.",
+              "name": "Dr. Sadhana P. Bangarashetti",
               "position": "Internal Member — Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Dr. Smt. S. R. Patil",
+              "name": "Dr. Shobha R. Patil",
               "position": "Internal Member — Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Sri. P. V. Kulkarni",
+              "name": "Sri. Pandurang V. Kulkarni",
               "position": "Internal Member — Associate Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Smt. P. S. Puranik",
+              "name": "Smt. Preeti S. Puranik",
               "position": "Internal Member — Associate Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Smt. R. B. Math",
+              "name": "Dr. Shivanand H. Pujar",
+              "position": "Internal Member — Associate Professor, ISE, BEC Bagalkote"
+            },
+            {
+              "name": "Smt. Roopa B. Math",
               "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Smt. V. S. Patil",
+              "name": "Smt. Vijayalaxmi S. Patil",
               "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Shri. S. N. Kugali",
+              "name": "Shri. Sandeep N. Kugali",
               "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Miss. G. M. Patil",
+              "name": "Miss. Gurudevi M. Patil",
               "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Shri. P. K. Deshpande",
+              "name": "Shri. Parashuram K. Deshpande",
               "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Shri. G. B. Shettar",
+              "name": "Shri. Girish B. Shettar",
               "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Smt. Deepa I. K.",
+              "name": "Smt. Deepa I. Kalappanavar",
               "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Miss. C. R. Shivanagi",
+              "name": "Miss. Chetana R. Shivanagi",
               "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Dr. Shekar B. H.",
-              "position": "Member, Subject Expert — Professor, Dept. of Computer Science, Mangalore University, Mangalore"
+              "name": "Shri. Mallikarjungouda R. Patil",
+              "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Dr. Pavan Kumar C.",
-              "position": "Member, Subject Expert — Associate Professor, Dept. of Computer Science, IIIT Dharwad"
+              "name": "Shri. Shiddalingesh S. Hiremath",
+              "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Dr. Prabhu Prasad",
-              "position": "Member, VTU Nominee — Associate Professor, Dept. of Computer Science, IIIT Dharwad"
+              "name": "Smt. Sheetal M. Pattanshetti",
+              "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Mr. Santosh Hanaji",
-              "position": "Member, Industry Expert — Co-founder, Nggawe Nirman Technologies Pvt. Ltd., Bengaluru"
+              "name": "Miss. Parimala R. Muttannavar",
+              "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
             },
             {
-              "name": "Mr. Dheeraj Kavalur",
-              "position": "Member, Alumni — Software Development System, Apple Inc., Bangalore"
+              "name": "Smt. Seema Guttannavar",
+              "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
+            },
+            {
+              "name": "Smt. Netravati Pattar",
+              "position": "Internal Member — Assistant Professor, ISE, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. Narayana D. G.",
+              "position": "Member — VTU Nominee"
+            },
+            {
+              "name": "Dr. Shridhar Sanshi",
+              "position": "Member — Subject Expert"
+            },
+            {
+              "name": "Dr. Vishwanath Hulipalled",
+              "position": "Member — Subject Expert"
+            },
+            {
+              "name": "Dr. Subhash Patil",
+              "position": "Member — Subject Expert"
+            },
+            {
+              "name": "Mr. Akshay Lokapur",
+              "position": "Member — Industry Expert"
+            },
+            {
+              "name": "Mr. Iranna Totagi",
+              "position": "Member — Industry Alumni"
+            },
+            {
+              "name": "Miss. Karishma Barigidad",
+              "position": "Member — Student Member"
+            },
+            {
+              "name": "Mr. Arun Hebbal",
+              "position": "Member — Student Member"
             }
           ]
         },
@@ -7660,8 +8295,58 @@
           "quantity": "180"
         },
         {
-          "name": "IoT Kits",
-          "specification": "IoT laboratory kits for hands-on experiments (sensors, microcontrollers, cloud connectivity)",
+          "name": "IoT Base Board with Processor Boards",
+          "specification": "ALS-SDA-IOT-01 — Arduino (onboard WiFi & Bluetooth) and Raspberry Pi 4 Model B (2 GB), HDMI cable, 32 GB SD card",
+          "quantity": ""
+        },
+        {
+          "name": "Raspberry Pi Base Board",
+          "specification": "ALS-IOT-PRJBRD-RBPi-02 — Raspberry Pi 4 Model B (2 GB), HDMI cable, 32 GB SD card, alphanumeric LCD and Pi camera",
+          "quantity": ""
+        },
+        {
+          "name": "IR Non-Contact Temperature Sensor",
+          "specification": "MLX90614 ESF",
+          "quantity": ""
+        },
+        {
+          "name": "Carbon Dioxide Sensor",
+          "specification": "MG811",
+          "quantity": ""
+        },
+        {
+          "name": "Muscle (EMG) Sensor",
+          "specification": "",
+          "quantity": ""
+        },
+        {
+          "name": "Pulse Oximeter & Heart-Rate Sensor Module",
+          "specification": "MAX30100",
+          "quantity": ""
+        },
+        {
+          "name": "Galvanic Skin Response (GSR) Sensor",
+          "specification": "Seeed Studio Grove",
+          "quantity": ""
+        },
+        {
+          "name": "ECG / Heart-Rate Monitor Module",
+          "specification": "AD8232",
+          "quantity": ""
+        },
+        {
+          "name": "Addressable RGB LED Module",
+          "specification": "WS2812 LilyPad, for Arduino",
+          "quantity": ""
+        },
+        {
+          "name": "Electromagnetic Buzzer",
+          "specification": "5 V, active",
+          "quantity": ""
+        },
+        {
+          "name": "Tactile Push-Button Switch",
+          "specification": "6×6×5 mm (pack of 10)",
           "quantity": ""
         },
         {
@@ -7747,13 +8432,6 @@
           "name": "Max-Plus",
           "version": "2.10.2",
           "usage": "Application"
-        }
-      ],
-      "additionalContacts": [
-        {
-          "name": "Dr. S. G. Kambalimath",
-          "designation": "Placement Officer & Head, Training and Placement Department",
-          "email": ""
         }
       ]
     },

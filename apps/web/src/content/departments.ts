@@ -60,11 +60,19 @@ export type DepartmentContent = {
   publications?: { category: string; years: { year?: string; items: string[] }[] }[];
   /** Free-form awards/achievements tables (faculty awards, student projects, participations, chapter awards). */
   achievementTables?: { title: string; columns: string[]; rows: string[][] }[];
+  /** Student achievements — month-wise narrative highlights, plus optional Best Outgoing Students and alumni-entrepreneur tables. */
+  studentAchievements?: {
+    months?: { title: string; items: string[] }[];
+    bestOutgoing?: { name: string; year: string }[];
+    entrepreneurs?: { name: string; role?: string; organization?: string }[];
+  };
   /** Incubated startups — companies registered and grants received. */
   startups?: {
     companies?: { name: string; founders: string; domain: string; established: string }[];
     grants?: { startup: string; project: string; year: string; agency: string; amount: string }[];
   };
+  /** Distinguished alumni — portrait gallery (photo + name + designation) shown above testimonials. */
+  distinguishedAlumni?: { name: string; designation?: string; photo: string }[];
   /** Alumni testimonials — rendered as quote cards under an "Alumni" section. */
   testimonials?: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
   /** Alumni record PDFs — rendered as a downloadable "Alumni Records" section. */
@@ -83,6 +91,8 @@ export type DepartmentContent = {
   }[];
   /** Fold scholars/grants/facilities/achievements into a single "Research Centre" tab. */
   consolidateResearch?: boolean;
+  /** Fold Publications and Patents into the "Research Achievements" section instead of separate tabs. */
+  publicationsUnderAchievements?: boolean;
   phdsAwarded?: { scholar: string; guide: string; title: string; year: string }[];
   researchScholars?: { scholar: string; usn?: string; guide: string; title?: string; status: string }[];
   researchGrants?: { title: string; agency: string; year: string; amount: string; investigators: string }[];
@@ -126,6 +136,10 @@ export type DepartmentContent = {
     coordinators?: string[];
     /** Student executive committee (exicom) — office bearers and the positions they hold. */
     exicom?: { name: string; position: string }[];
+    /** Coordinator teams listed by category (e.g. Technical, Program, Sports, Cultural, Media). */
+    exicomGroups?: { title: string; members: string[] }[];
+    /** Asset keys for an activity-highlights photo gallery shown at the end of the section. */
+    gallery?: string[];
   }[];
   mous?: { partner: string; location?: string; since?: string }[];
   contact?: { name?: string; designation?: string; phone?: string; email?: string };
@@ -139,6 +153,8 @@ export type DepartmentContent = {
   sectionEmbeds?: Record<string, { title: string; file: string }[]>;
   /** Best-practices PDFs surfaced on the department Home tab. */
   bestPractices?: { title: string; file: string }[];
+  /** Move the Best Practices block out of the Home tab and under "About Department". */
+  bestPracticesUnderAbout?: boolean;
   /** Per-department section heading overrides, keyed by section id. */
   sectionTitles?: Record<string, string>;
   /** Per-department sidebar label overrides, keyed by section id. */
@@ -203,9 +219,9 @@ export function resolveDocuments(
 
 export function getDepartmentGallery(assetSlug?: string): string[] {
   if (!assetSlug) return [];
-  // Scene/infrastructure photos only — exclude the faculty/ subtree (portraits +
-  // CV PDFs) and any non-image assets.
+  // Scene/infrastructure photos only — exclude the faculty/ and alumni/ subtrees
+  // (portraits + CV PDFs) and any non-image assets.
   return assetsUnder(`departments/${assetSlug}/`).filter(
-    (url) => !url.includes("/faculty/") && /\.(webp|jpe?g|png)$/i.test(url),
+    (url) => !url.includes("/faculty/") && !url.includes("/alumni/") && /\.(webp|jpe?g|png)$/i.test(url),
   );
 }
