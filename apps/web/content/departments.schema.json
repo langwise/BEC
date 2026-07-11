@@ -287,6 +287,13 @@
                 "description": {
                   "type": "string"
                 },
+                "features": {
+                  "type": "array",
+                  "description": "Feature/capability bullets rendered as a list under this lab on the Research tab.",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "images": {
                   "type": "array",
                   "description": "Photo asset keys on R2 for this lab, shown as a grid under it on the Research tab.",
@@ -458,6 +465,36 @@
                 },
                 "description": {
                   "type": "string"
+                },
+                "details": {
+                  "type": "array",
+                  "description": "Labelled facts about the event (e.g. Resource person, Participants, Budget, Outcomes). Rendered as a bullet list under the description.",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "images": {
+                  "type": "array",
+                  "description": "Captioned event photos rendered as a gallery under the activity.",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "key"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "key": {
+                        "allOf": [
+                          {
+                            "$ref": "./_schema/asset-keys.json"
+                          }
+                        ]
+                      },
+                      "caption": {
+                        "type": "string"
+                      }
+                    }
+                  }
                 }
               }
             }

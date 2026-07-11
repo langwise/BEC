@@ -32,6 +32,7 @@ export const navigationData: NavigationItem[] = [
           { title: "NAIN Incubation", href: "/institute/cells/nain" },
           { title: "BEC-STEP", href: "/institute/cells/step" },
           { title: "BEC-CED", href: "/institute/cells/ced" },
+          { title: "Universal Human Values (UHV) Cell", href: "/institute/cells/uhv" },
         ],
       },
       { title: "Dean ICT", href: "/institute/dean-ict" },

@@ -207,35 +207,18 @@
     "electrical-and-electronics-engg": [
       {
         "name": "Dr. Raghuram L. Naik",
-        "designation": "Professor (CAS) & HoD"
+        "designation": "Professor (CAS) & HoD",
+        "photo": "governance/hod/eee/dr-r-l-naik.webp"
       },
       {
-        "name": "Dr. Suresh H. Jangamashetti",
-        "designation": "Professor"
+        "name": "Dr. Basanagouda Ronad",
+        "designation": "Associate Professor",
+        "photo": "departments/eee/faculty/basanagouda-ronad.webp"
       },
       {
-        "name": "Dr. Basangouda Ronad",
-        "designation": "Associate Professor"
-      },
-      {
-        "name": "Dr. D. S. Jangamshetti",
-        "designation": "Associate Professor"
-      },
-      {
-        "name": "Dr. G. Suchitra",
-        "designation": "Associate Professor"
-      },
-      {
-        "name": "Prof. Mahantesh L. Chikkadesai",
-        "designation": "Associate Professor"
-      },
-      {
-        "name": "Prof. R. G. Patil",
-        "designation": "Associate Professor"
-      },
-      {
-        "name": "Prof. R. S. Allurkar",
-        "designation": "Associate Professor"
+        "name": "Prof. Rajshekhar S. Allurkar",
+        "designation": "Associate Professor",
+        "photo": "departments/eee/faculty/rajshekhar-s-allurkar.webp"
       },
       {
         "name": "Dr. Sangamesh Y. Goudappanavar",
@@ -244,39 +227,44 @@
         "photo": "departments/eee/faculty/sangamesh-y-goudappanavar.webp"
       },
       {
+        "name": "Prof. Mahantesh L. Chikkadesai",
+        "designation": "Assistant Professor",
+        "photo": "departments/eee/faculty/mahantesh-l-chikkadesai.webp"
+      },
+      {
+        "name": "Prof. Basavaraju S. Hadapad",
+        "designation": "Assistant Professor",
+        "photo": "departments/eee/faculty/basavaraju-s-hadapad.webp"
+      },
+      {
+        "name": "Prof. Shivakumar G. Nayak",
+        "designation": "Assistant Professor",
+        "photo": "departments/eee/faculty/shivakumar-g-nayak.webp"
+      },
+      {
+        "name": "Prof. Santhoshkumar S. Kandagal",
+        "designation": "Assistant Professor",
+        "photo": "departments/eee/faculty/santhoshkumar-s-kandagal.webp"
+      },
+      {
+        "name": "Prof. Sunita S. Tambakad",
+        "designation": "Assistant Professor",
+        "photo": "departments/eee/faculty/sunita-s-tambakad.webp"
+      },
+      {
         "name": "Prof. Apoorva Kulkarni",
         "designation": "Assistant Professor"
       },
       {
-        "name": "Prof. Basavaraj S. Hadapad",
-        "designation": "Assistant Professor"
+        "name": "Dr. G. Suchitra",
+        "designation": "Associate Professor"
       },
       {
-        "name": "Prof. Nanda P.",
-        "designation": "Assistant Professor (Selection Grade)"
-      },
-      {
-        "name": "Prof. S. G. Nayak",
-        "designation": "Assistant Professor"
+        "name": "Prof. R. G. Patil",
+        "designation": "Associate Professor"
       },
       {
         "name": "Prof. S. M. Iddalagi",
-        "designation": "Assistant Professor"
-      },
-      {
-        "name": "Prof. S. S. Rathod",
-        "designation": "Assistant Professor"
-      },
-      {
-        "name": "Prof. Santoshkumar S. Kandagal",
-        "designation": "Assistant Professor"
-      },
-      {
-        "name": "Prof. Shashidhar M. Patil",
-        "designation": "Assistant Professor (Selection Grade)"
-      },
-      {
-        "name": "Smt. Sunita Tambakad",
         "designation": "Assistant Professor"
       }
     ],

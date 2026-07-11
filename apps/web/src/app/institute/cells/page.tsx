@@ -8,6 +8,7 @@ import {
   FlaskConical,
   Briefcase,
   FileText,
+  HeartHandshake,
 } from "lucide-react";
 
 import { PageHero } from "@/components/common/page-hero";
@@ -62,6 +63,13 @@ const cards = [
     icon: Briefcase,
     description:
       "Coordinators and activity records of the college's entrepreneurship development centre.",
+  },
+  {
+    title: "Universal Human Values (UHV) Cell",
+    href: "/institute/cells/uhv",
+    icon: HeartHandshake,
+    description:
+      "An institution-level cell established in 2025 that integrates human values and ethics into technical education through the Student Induction Programme, the AICTE UHV course and value-based development programmes.",
   },
 ];
 

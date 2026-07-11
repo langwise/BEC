@@ -257,6 +257,37 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   };
   const hasAchievements = () =>
     Boolean(content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length);
+  // Major-equipment + software tables — shared by the standalone Facilities tab
+  // and the inline-under-Research layout (content.labsUnderFacilities).
+  const infrastructureTables = (): DataTable[] => {
+    const tables: DataTable[] = [];
+    if (content.infrastructureItems?.length) {
+      const hideQty = content.hideInfrastructureQuantity;
+      tables.push({
+        title: "Major Equipment",
+        columns: hideQty
+          ? ["Equipment", "Brief Specification"]
+          : ["Equipment", "Brief Specification", "Quantity"],
+        rows: content.infrastructureItems.map((item) =>
+          hideQty
+            ? [item.name, item.specification ?? ""]
+            : [item.name, item.specification ?? "", item.quantity ?? ""],
+        ),
+      });
+    }
+    if (content.softwareItems?.length) {
+      tables.push({
+        title: "Software",
+        columns: ["Name", "Version", "System / Application"],
+        rows: content.softwareItems.map((item) => [
+          item.name,
+          item.version ?? "",
+          item.usage ?? "",
+        ]),
+      });
+    }
+    return tables;
+  };
   const patentsTables = (): DataTable[] => {
     if (!content.patents?.length) return [];
     const hasArea = content.patents.some((p) => p.area);
@@ -447,7 +478,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     if (content.researchAchievements?.length)
       groups.push({ subtitle: "Research Achievements", items: content.researchAchievements });
     for (const lab of content.labs ?? []) {
-      groups.push({ subtitle: lab.name, text: lab.description, images: labImages(lab) });
+      groups.push({ subtitle: lab.name, text: lab.description, items: lab.features, images: labImages(lab) });
     }
     sections.push({ id: "research", type: "content", title: heading("research", "Research"), icon: "flask", groups });
   }
@@ -469,10 +500,14 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           value: `${r.area}${r.university ? ` · ${r.university}` : ""}`,
         })),
       });
-    for (const lab of content.labs ?? []) {
-      groups.push({ subtitle: lab.name, text: lab.description, images: labImages(lab), featureImages: lab.feature });
-    }
-    const tables = content.achievementsUnderResearch ? achievementTables() : [];
+    if (!content.labsUnderFacilities)
+      for (const lab of content.labs ?? []) {
+        groups.push({ subtitle: lab.name, text: lab.description, items: lab.features, images: labImages(lab), featureImages: lab.feature });
+      }
+    const tables = [
+      ...(content.achievementsUnderResearch ? achievementTables() : []),
+      ...(content.labsUnderFacilities ? infrastructureTables() : []),
+    ];
     sections.push({
       id: "research",
       type: "content",
@@ -686,40 +721,30 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
-  // Detailed infrastructure/equipment tables from legacy pages.
-  if (content.infrastructureItems?.length || content.softwareItems?.length) {
-    const tables: DataTable[] = [];
-    if (content.infrastructureItems?.length) {
-      const hideQty = content.hideInfrastructureQuantity;
-      tables.push({
-        title: "Major Equipment",
-        columns: hideQty
-          ? ["Equipment", "Brief Specification"]
-          : ["Equipment", "Brief Specification", "Quantity"],
-        rows: content.infrastructureItems.map((item) =>
-          hideQty
-            ? [item.name, item.specification ?? ""]
-            : [item.name, item.specification ?? "", item.quantity ?? ""],
-        ),
-      });
-    }
-    if (content.softwareItems?.length) {
-      tables.push({
-        title: "Software",
-        columns: ["Name", "Version", "System / Application"],
-        rows: content.softwareItems.map((item) => [
-          item.name,
-          item.version ?? "",
-          item.usage ?? "",
-        ]),
-      });
-    }
+  // Facilities — laboratories rendered as content blocks when labs are routed
+  // here (content.labsUnderFacilities); otherwise the legacy equipment/software
+  // tables.
+  if (content.labsUnderFacilities && content.labs?.length) {
+    const groups: ContentGroup[] = content.labs.map((lab) => ({
+      subtitle: lab.name,
+      text: lab.description,
+      images: labImages(lab),
+      featureImages: lab.feature,
+    }));
+    sections.push({
+      id: "facilities",
+      type: "content",
+      title: heading("facilities", "Laboratories"),
+      icon: "building-2",
+      groups,
+    });
+  } else if (content.infrastructureItems?.length || content.softwareItems?.length) {
     sections.push({
       id: "facilities",
       type: "tables",
       title: heading("facilities", "Infrastructure Details"),
       icon: "building-2",
-      tables,
+      tables: infrastructureTables(),
       imageGroups: content.facilitiesGallery
         ?.map((g) => ({
           title: g.title,
@@ -732,14 +757,25 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   // Activities & student forums
   if (content.activities?.length || content.associations?.length) {
     const groups: ContentGroup[] = [];
-    if (content.activities?.length)
+    const richActivities = content.activities?.filter((a) => a.details?.length || a.images?.length) ?? [];
+    const simpleActivities = content.activities?.filter((a) => !a.details?.length && !a.images?.length) ?? [];
+    if (simpleActivities.length)
       groups.push({
         subtitle: "Recent Events & Activities",
-        items: content.activities.map((a) => ({
+        items: simpleActivities.map((a) => ({
           label: a.title,
           value: [a.date, a.description].filter(Boolean).join(" — "),
         })),
       });
+    for (const a of richActivities) {
+      groups.push({
+        subtitle: a.date ? `${a.title} (${a.date})` : a.title,
+        text: a.description,
+        items: a.details,
+        images: a.images?.map((img) => ({ src: asset(img.key), alt: img.caption ?? a.title, caption: img.caption })),
+        largeImages: true,
+      });
+    }
     for (const assoc of content.associations ?? []) {
       const coords = assoc.coordinators?.length
         ? ` Faculty Coordinators (2025–2026): ${assoc.coordinators.join(" and ")}.`

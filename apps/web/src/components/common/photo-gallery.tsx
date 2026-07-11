@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
@@ -5,6 +6,8 @@ import { cn } from "@/lib/utils";
 export type GalleryImage = {
   src: string;
   alt: string;
+  /** Optional caption rendered below the photo. When omitted the tile shows no caption. */
+  caption?: string;
 };
 
 /**
@@ -45,18 +48,18 @@ export function PhotoGallery({
     return (
       <div className={cn("flex flex-col gap-4", className)}>
         {images.map((image, index) => (
-          <div
-            key={`${image.src}-${index}`}
-            className="group relative aspect-3/2 w-full max-w-3xl overflow-hidden rounded-lg border border-stone-200 bg-stone-100"
-          >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              sizes="(max-width: 768px) 100vw, 768px"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
+          <figure key={`${image.src}-${index}`} className="w-full max-w-3xl">
+            <div className="group relative aspect-3/2 w-full overflow-hidden rounded-lg border border-stone-200 bg-stone-100">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            {image.caption && <Caption>{image.caption}</Caption>}
+          </figure>
         ))}
       </div>
     );
@@ -66,21 +69,24 @@ export function PhotoGallery({
     return (
       <div className={cn("flex flex-wrap justify-center gap-4", className)}>
         {images.map((image, index) => (
-          <div
+          <figure
             key={`${image.src}-${index}`}
             className={cn(
-              "group relative aspect-4/3 w-[calc(50%-0.6rem)] overflow-hidden rounded-sm border border-stone-200 bg-stone-100",
+              "w-[calc(50%-0.6rem)]",
               large ? "sm:w-[calc(50%-0.75rem)]" : "sm:w-[calc(33.333%-0.7rem)]",
             )}
           >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              sizes={large ? "(max-width: 640px) 50vw, 50vw" : "(max-width: 640px) 50vw, 33vw"}
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
+            <div className="group relative aspect-4/3 w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes={large ? "(max-width: 640px) 50vw, 50vw" : "(max-width: 640px) 50vw, 33vw"}
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            {image.caption && <Caption>{image.caption}</Caption>}
+          </figure>
         ))}
       </div>
     );
@@ -94,19 +100,27 @@ export function PhotoGallery({
       )}
     >
       {images.map((image, index) => (
-        <div
-          key={`${image.src}-${index}`}
-          className="group relative aspect-4/3 overflow-hidden rounded-sm border border-stone-200 bg-stone-100"
-        >
-          <Image
-            src={image.src}
-            alt={image.alt}
-            fill
-            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 360px"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
+        <figure key={`${image.src}-${index}`}>
+          <div className="group relative aspect-4/3 overflow-hidden rounded-sm border border-stone-200 bg-stone-100">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 360px"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          {image.caption && <Caption>{image.caption}</Caption>}
+        </figure>
       ))}
     </div>
+  );
+}
+
+function Caption({ children }: { children: ReactNode }) {
+  return (
+    <figcaption className="mt-2 text-center text-sm leading-snug text-gray-600">
+      {children}
+    </figcaption>
   );
 }

@@ -4652,6 +4652,11 @@
     "electrical-and-electronics-engg": {
       "name": "Electrical & Electronics Engineering",
       "assetSlug": "eee",
+      "facultyGroupPhoto": "departments/eee/cine1772.webp",
+      "facultyGroupPhotoCaption": "Teaching Faculty",
+      "staffGroupPhoto": "departments/eee/cine1775.webp",
+      "staffGroupPhotoCaption": "Supporting Staff",
+      "galleryExclude": ["cine1770.webp", "cine1772.webp", "cine1775.webp", "cine1785.webp"],
       "tagline": "Established in 1963; NBA-accredited; A recognised VTU Research Centre.",
       "established": "1963",
       "overview": "Electrical and Electronics Engineering department (EEED) was started with the inception of the college in the year 1963. The department offers graduate, research programs. It has well equipped laboratories with state-of-art equipment. The students excel in academics under the constant guidance of qualified and dedicated staff. The faculty and student development programs are regularly organized. The graduating students are well placed in industry as well as in academia through campus placements and direct recruitment. Department has specialized faculty in Power Systems, Machines, Drives and Power Electronics, Renewable Energy Sources, Signal Processing, HVDC and FACTS, Power and Energy Systems. The Department has well-established Electrical Machines, High Voltage Engineering, Power System, Microcontrollers and Power System Protection laboratories. The Software packages include AutoCAD, MATLAB, Mi-power, Windographer and Code Composer Studio. The department is rendering dedicated service to the Electrical and Electronics community. It is accredited by NBA and a recognized Research Center of Visveswaraya Technological University Belgaum. It offers PG in Power and Energy Systems, Ph.D. and M.Sc. Engg. by research. At present eight research scholars are persuing Ph.D. in the department. Over the years the department has received 150+ lakhs R&D grants and produced 1 Ph.Ds, 75+ M.Techs and 90+ technical publications. Three new research labs in the area of Renewable Energy , SCADA and FPGA based Machine drives are established under the financial support from VGST, Govt of Karnataka and TEQIP grants of World Bank. The department is having MoUs with eight organization, under which students and faculty are excelling and working with latest projects in the area of electrical engineering.",
@@ -4777,6 +4782,13 @@
           "text": "Apply conventional concepts and contemporary tools to design, simulate and analyze electrical and electronic systems for real-time applications through hands-on learning gained in SCADA, energy systems and power electronics laboratories."
         }
       ],
+      "bestPractices": [
+        {
+          "title": "Best Practices",
+          "file": "departments/eee/docs/best-practices.pdf"
+        }
+      ],
+      "bestPracticesUnderAbout": true,
       "researchAreas": [
         {
           "supervisor": "Dr. R. L. Naik",
@@ -5160,7 +5172,7 @@
           ]
         },
         {
-          "title": "Board of Examiners (BoE)",
+          "title": "Board of Examination (BoE)",
           "members": [
             {
               "name": "Dr. R. L. Naik",
@@ -5535,8 +5547,10 @@
           "text": "Ethics, inclusive behaviour and conduct. Knowledge of professional ethics, responsibilities and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
         }
       ],
+      "labsUnderFacilities": true,
       "sectionTitles": {
-        "research": "Research, Laboratories & Facilities"
+        "research": "Research & Facilities",
+        "facilities": "Laboratories"
       },
       "sectionNavLabels": {
         "research": "Research & Facilities"
@@ -5740,23 +5754,23 @@
           "years": [
             {
               "items": [
-                "Anand H. Unnibhavi, D.S. Jangamshetti, Shridhar K. (2020), \"Triphone Model Based Novel Kannada Continuous Speech Recognition System using Kaldi Tool,\" International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075, Vol-9, Issue-9, pp. 452-458, July 2020 Q4(DOI:10.35940/IJITEE.I7210.079920)., Scopus and Elsevier indexed. SJR",
-                "Suhaib Mohammed, Raghuram L. Naik, “A critical review of materials and manufacturing techniques for small wind turbine blades”, Int. J. Materials Engineering Innovation, Vol. 13, No. 4, 2022.",
-                "Suhaib Mohammed, Raghuram L. Naik, “Design, Development and Experimental Investigation of H-rotor Vertical Axis Wind Turbine under Low Wind Speeds”, International journal of renewable energy research, Vol.13, No.1, March 2023.",
                 "Suhaib Mohammed, Raghuram L. Naik, “Multi-objective optimization of glass/carbon hybrid composites for small wind turbine blades using extreme mixture design response surface methodology”, The Korean Society for Composite Materials and IOP Publishing Limited, Funct. Compos. Struct. 6 (2024) 025009.",
                 "Basavaraju S. Hadapad and Raghuram L. Naik, “A simple approach for the computation of magnetic characteristics of 4-phase switched reluctance motor”, International Journal of Power Electronics and Drive Systems (IJPEDS), Vol. 15, No. 1, March 2024, pp. 136-146.",
-                "G Pooja, Manjula G, Rakesh, Sachin Karant, B F. Ronad, “Development of Android Application for Optimization of Irrigation System Capacity”, Turkish Online Journal of Qualitative Inquiry (TOJQI), ISSN: 1309-6591, Volume 12, Issue 7, July 2021, pp.1034–1039.",
                 "Hamjadali A.Umachagi, Prashant Kadi, Pavankumar Kulkarni, Saniya M. Patel, Basanagouda F. Ronad, “Development and Performance Testing of Automatic Seed Sowing Agri Robot”, International Journal of Research and Analysis in Science and Engineering, ISSN: 2582-8118, Volume 4, Issue 5, Sept 2024, pp-288-298.",
                 "Vijaykumar Purutageri, Tejashwini Bagewadi, Basanagouda Ronad, Mukta Bannur, “Design and Implementation of Multi Prime Mover Coupled Novel Water Pump for Small Scale Irrigation Requirements”, International Journal of Research and Analysis in Science and Engineering, ISSN: 2582-8118, Volume 4, Issue 5, Sept 2024, pp-531-543.",
-                "Sangamesh G, Naik Raghuram L., Jangamshetti Suresh H., “Simple Control Strategy for UPF Power Conditioner of GSC connected to Wind Turbine”, IASTED Asia PES-2013, April 10-12, 2013, Phuket Thailand. DOI: 10.2316/P.2013.800-060. (Q2)",
                 "Sangamesh Y. Goudappanavar, Megha Sunkad, Prema and Ravindranath Rubinabegaum H. Yadahalli, “Design and Modelling of Droop Control for Small Wind Turbine Generator in µGrid”, KD Publications, Pune, SSET 2024, BEC Bagalkote, 29-30, Aug. 2024.",
                 "Sangamesh Y. Goudappanavar, Vijayalaxmi R. H., \"Design of SVC for Dynamic Compensation to Improve LVRT of Small Wind Turbine\", IJIREEICE International Journal of Innovative Research in Electrical, Electronics, Instrumentation and Control Engineering, vol. 12, no. 4, 2024, Crossref https://doi.org/: 10.17148/IJIREEICE.2024.12403.",
+                "Suhaib Mohammed, Raghuram L. Naik, “Design, Development and Experimental Investigation of H-rotor Vertical Axis Wind Turbine under Low Wind Speeds”, International journal of renewable energy research, Vol.13, No.1, March 2023.",
+                "Shivakumar G Nayak , Arihant B Donage , Chandan L K , Pooja B Ambiger , Sahana Patil “Development and Implementation of Transformer BreatherHealth Monitoring System Using IoT” International Journal for Research in Applied Science & Engineering Technology (IJRASET) ISSN: 2321-9653; IC Value: 45.98; SJ Impact Factor: 7.538 Volume 11 Issue IX Sep 2023, https://doi.org/10.22214/ ijraset.2023.55632",
+                "Suhaib Mohammed, Raghuram L. Naik, “A critical review of materials and manufacturing techniques for small wind turbine blades”, Int. J. Materials Engineering Innovation, Vol. 13, No. 4, 2022.",
+                "Shivakumar G Nayak, Ashwini Patil, Gurubai Gadagenavar. “Development and Analysis of Speed Control of BLDC Motor with Arduino Controller”, International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075 (Online), Volume-11 Issue-4, March 2022. http://dx.doi.org/10.35940/ ijitee. C9813. 0311422",
+                "G Pooja, Manjula G, Rakesh, Sachin Karant, B F. Ronad, “Development of Android Application for Optimization of Irrigation System Capacity”, Turkish Online Journal of Qualitative Inquiry (TOJQI), ISSN: 1309-6591, Volume 12, Issue 7, July 2021, pp.1034–1039.",
+                "Anand H. Unnibhavi, D.S. Jangamshetti, Shridhar K. (2020), \"Triphone Model Based Novel Kannada Continuous Speech Recognition System using Kaldi Tool,\" International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075, Vol-9, Issue-9, pp. 452-458, July 2020 Q4(DOI:10.35940/IJITEE.I7210.079920)., Scopus and Elsevier indexed. SJR",
                 "Sangamesh, Y. Goudappanavar, Suresh H. Jangamshetti, “High Tension Voltage Regulation Based Power Flow Analysis of Radial Distribution Network”, International Journal of Engineering Sciences and Management - A Multidisciplinary Publication of VTU, Vol.2, issue 2, pp:8-13, June 2020.",
                 "Sangamesh, Y. Goudappanavar, Suresh H. Jangamshetti & Pallavi Hosamath, “Optimal Sizing and Placement of µ-Wind Turbine Generator in µGrid based on Loss Estimation”, Journal of Information and Computational Science, ISSN:1548-7741, Vol.12 Issue 6, pp.34-40, Dec.2019.",
-                "Sangamesh, Y. G., Suchitra, G., and Jangamshetti, S. H. “Performance Assessment of 2500 TCD Cogeneration Plant”, International Journal of Scientific & Engineering Research (IJSER), Volume 3, Issue 5, pp. 1-6, May-2012.",
                 "MuskaanYadahalli, Shivakumar G. Nayak, and “Comparative Analysis of Sprinkler Irrigation System with Drip Irrigation System through IOT Module” International Journal of Engineering and Innovative Technology (IJEIT) Volume 8, Issue 8, February 2019, ISSN: 2277-3754 ISO 9001:2008 Certified. https://www.ijeit.com/Vol%208/ Issue%208/ IJEIT1412201902_03.pdf",
-                "Shivakumar G Nayak, Ashwini Patil, Gurubai Gadagenavar. “Development and Analysis of Speed Control of BLDC Motor with Arduino Controller”, International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN: 2278-3075 (Online), Volume-11 Issue-4, March 2022. http://dx.doi.org/10.35940/ ijitee. C9813. 0311422",
-                "Shivakumar G Nayak , Arihant B Donage , Chandan L K , Pooja B Ambiger , Sahana Patil “Development and Implementation of Transformer BreatherHealth Monitoring System Using IoT” International Journal for Research in Applied Science & Engineering Technology (IJRASET) ISSN: 2321-9653; IC Value: 45.98; SJ Impact Factor: 7.538 Volume 11 Issue IX Sep 2023, https://doi.org/10.22214/ ijraset.2023.55632"
+                "Sangamesh G, Naik Raghuram L., Jangamshetti Suresh H., “Simple Control Strategy for UPF Power Conditioner of GSC connected to Wind Turbine”, IASTED Asia PES-2013, April 10-12, 2013, Phuket Thailand. DOI: 10.2316/P.2013.800-060. (Q2)",
+                "Sangamesh, Y. G., Suchitra, G., and Jangamshetti, S. H. “Performance Assessment of 2500 TCD Cogeneration Plant”, International Journal of Scientific & Engineering Research (IJSER), Volume 3, Issue 5, pp. 1-6, May-2012."
               ]
             }
           ]
@@ -5766,27 +5780,27 @@
           "years": [
             {
               "items": [
-                "Chayalakshmi C. L., D.S.Jangamashetti, and Savita Sonoli (2015), “Boiler Efficiency Estimation from Hydrogen Content in Fuel”, Proc. of Fourth International Conference on Advances in Computing, Communications and Informatics (ICACCI-2015), SCMS, Kochi, India pp.1107-1110, August 10-13, 2015. ISBN 978-1-4799-8792-4/15 IEEE XPLORE, 978-1-4799-8792-4/15, 2015, IEEE, 1107-1110.",
+                "S. Y. Goudappanavar, D. Gowda and S. Kandagal, \"AI Based Development and Prediction of Energy Prosumers,\" 2025 3rd International Conference on Integrated Circuits and Communication Systems (ICICACS), Raichur, India, 2025, pp. 1-7, doi: 10.1109/ICICACS65178.2025.10968430.",
+                "S. Y. Goudappanavar, Santhoshkumar S. Kandagal, Mahantesh L. Chikkadesai, Basavaraju S. Hadapad and Pradeepkumar Nargund, “Performance Evaluation and Energy Flow Optimization of a Grid-Connected 250 kWp Rooftop Solar PV System in Institute Distribution Network”, 2025 IEEE North Karnataka Subsection Flagship International Conference (NKCon), Sept. 2025, KLEIT, Hubballi.",
+                "S. Y. Goudappanavar, S. Kandagal and D. Gowda, \"Development and Analysis of Power Balancing Control for nWTG in Secondary Distribution System,\" 2025 4th International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE), Ballari, India, 2025, pp. 1-5, doi: 10.1109/ICDCECE65353.2025.11035168.",
                 "Basavaraju S. Hadapad and Raghuram L. Naik, “Development of PD-PWM Technique for 5-Level Cascaded H-Bridge Inverter using FPGA for SPV Systems”, 1st International Conference on Sustainable Solutions in Engineering and Technology, August 29th and 30th, 2024, BEC, Bagalkote, India.",
-                "Basavaraju S. Hadapad and Raghuram L. Naik, “An Investigation on Torque Control Strategies for Switched Reluctance Motor”, 5th International Conference on Electrical, Electronics, Communication, Computer Technologies and Optimization Techniques, December 10th -11th, 2021, Mysore, India.",
-                "Mukta Bannur, Uday Patil, Geetanjali Patil, Basugouda Ronad, \"Experimental Investigation of Technical Feasibility of Standalone Pico-hydro Solar PV Hybrid Power System\" IEEE International Conference NKCon 2022, BLDCET Vijayapura, 21st November 2022.",
                 "Basanagouda Ronad, Mallikarjun Bhirade, Vireshkumar Mathad, Mukta Bannur, Shivappa Sobarad, Suresh H. Jangamshetti, “Dynamic Power Factor Correction using FC TCR – A Case Study of Academic Campus Distribution Network”, IEEE NKCon-2024, 3rd Edition of IEEE NKSS Flagship International Conference, BEC Bagalkote, 21-22 September 2024.",
                 "Sangamesh Y. Goudappanavar, Suresh H. Jangamshetti, Shrishail Majjigi, Basanagouda F. Ronad, “Development and Analysis of Wake Effect of Vertical Axis Wind Turbine Generator on HAWTG based on Experimental Method”, 3rd International Conference on Advances in Data-driven Computing and Intelligent Systems (ADCIS 2024), BITS Pilani, Goa, 20-21 September 2024.",
                 "S. Spurthi, Balchandra Chandragirivar, Premkumar Kulekumatagi, Komal Teli, Girish Bhadragond, Basanagouda Ronad, “Design, Development and Performance Testing of Multi-Task Multi-Tank Water Level Controller with Automated Power Supply for Multistoried Buildings”, 3rd International Conference on Advances in Data-driven Computing and Intelligent Systems (ADCIS 2024), BITS Pilani, Goa, 20-21 September 2024.",
                 "Basanagouda Ronad, Sangmesh Goudappanavar, Basavaraj Hugar, Santosh Raikar, Santosh Kumbalavati, Kiran Bendigeri, “IOT Based Control Mechanism for Solar PV Water Pumps Employed for Water Distribution in Academic Campus”, 3rd International Conference on Advances in Data-driven Computing and Intelligent Systems (ADCIS 2024), BITS Pilani, Goa, 20-21 September 2024.",
                 "Basanagouda Ronad, \"Feasibility Study of Solar PV Powered Water Pumping and Distribution System - A Case Study of Academic Campus,\" 2024 5th International Conference on Smart Electronics and Communication (ICOSEC), Trichy, India, 2024, pp. 208-215.",
-                "S. Y. Goudappanavar, D. Gowda and S. Kandagal, \"AI Based Development and Prediction of Energy Prosumers,\" 2025 3rd International Conference on Integrated Circuits and Communication Systems (ICICACS), Raichur, India, 2025, pp. 1-7, doi: 10.1109/ICICACS65178.2025.10968430.",
-                "S. Y. Goudappanavar, Santhoshkumar S. Kandagal, Mahantesh L. Chikkadesai, Basavaraju S. Hadapad and Pradeepkumar Nargund, “Performance Evaluation and Energy Flow Optimization of a Grid-Connected 250 kWp Rooftop Solar PV System in Institute Distribution Network”, 2025 IEEE North Karnataka Subsection Flagship International Conference (NKCon), Sept. 2025, KLEIT, Hubballi.",
-                "S. Y. Goudappanavar, S. Kandagal and D. Gowda, \"Development and Analysis of Power Balancing Control for nWTG in Secondary Distribution System,\" 2025 4th International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE), Ballari, India, 2025, pp. 1-5, doi: 10.1109/ICDCECE65353.2025.11035168.",
-                "Suresh H. Jangamshetti, Sangamesh Y. Goudappanavar, “Representation of Distribution Network for Teaching Power Flow Analysis- A Case Study of an Academic Campus”, 13th IEEE Integrated STEM Education Conference, John's Hopkins University, ML USA, 2023.",
-                "Sangamesh Y. Goudappanavar, S. H. Jangamshetti and J. J. O, \"Identification of Fault Area in the Distribution System based on Rotor Angle behaviour of Diesel Generator,\" 2020 3rd International Conference on Energy, Power and Environment: Towards Clean Energy Technologies, Shillong, Meghalaya, India, 2021, pp. 1-6, doi: 10.1109/ICEPE50861.2021.9404451.",
                 "Sangamesh Y. Goudappanavar, Megha Sunkad, Prema and Ravindranath Rubinabegaum H. Yadahalli, “Design and Modelling of Droop Control for Small Wind Turbine Generator in µGrid”, SSET 2024, BEC Bagalkote, 29-30, Aug. 2024.",
+                "Suresh H. Jangamshetti, Sangamesh Y. Goudappanavar, “Representation of Distribution Network for Teaching Power Flow Analysis- A Case Study of an Academic Campus”, 13th IEEE Integrated STEM Education Conference, John's Hopkins University, ML USA, 2023.",
+                "Mukta Bannur, Uday Patil, Geetanjali Patil, Basugouda Ronad, \"Experimental Investigation of Technical Feasibility of Standalone Pico-hydro Solar PV Hybrid Power System\" IEEE International Conference NKCon 2022, BLDCET Vijayapura, 21st November 2022.",
+                "Shana Bhavi. Shivakumar Nayak, Bharath H K, Chetan Biradar, Sachin presented paper on “ Comparative Analysis of DC to DC Boost Converter with P, PI, PID Controllers” International conference on “ Global Convergence in Technology, Entrepreneurship, Computing and Value Engineering Principals and Practices” Organized by Sapthagiri College of Engineering, During 24th to 26th of June 2022.",
+                "Basavaraju S. Hadapad and Raghuram L. Naik, “An Investigation on Torque Control Strategies for Switched Reluctance Motor”, 5th International Conference on Electrical, Electronics, Communication, Computer Technologies and Optimization Techniques, December 10th -11th, 2021, Mysore, India.",
+                "Sangamesh Y. Goudappanavar, S. H. Jangamshetti and J. J. O, \"Identification of Fault Area in the Distribution System based on Rotor Angle behaviour of Diesel Generator,\" 2020 3rd International Conference on Energy, Power and Environment: Towards Clean Energy Technologies, Shillong, Meghalaya, India, 2021, pp. 1-6, doi: 10.1109/ICEPE50861.2021.9404451.",
                 "S. Y. Goudappanavar and S. H. Jangamshetti, \"Stochastic Power Flow Analysis of Unbalanced Distribution System based on cluster of SWTG-SPV,\" 2020 2nd PhD Colloquium on Ethically Driven Innovation and Technology for Society (PhD EDITS), Bangalore, India, 2020, pp. 1-2, doi: 10.1109/PhDEDITS51180.2020.9315298.",
+                "Smitha Pujari, Deepa kabbur, JyotiTalawar, Shivakumar G Nayak, presented paper on “Speed Control of BLDC Motor using PI Controller”, Online International Conference on “Continuity, Consistency and Innovation in Applied Sciences and Humanities (ICCIASH-2020)” Organized on 13th and 14th August, 2020. Department of Science and Humanities, St.Martin’s Engineering College, Secunderabad, ISBN No 978-93-88096 42-3. ICCIASH-2020 PROCEEDINGSxx.pdf (smec.ac.in)",
                 "Sangamesh Y. Goudappanavar, Suresh H. Jangamshetti and Rubinabegum H. Yadahalli, “Design and Modelling of Droop Control for Small Wind Turbine Generators in Microgrid”, International Conference on Small Wind Turbine, NIWE, MNRE, Chennai, 10-12 Dec. 2018.",
                 "V. S. Atur, S. Y. Goudappanavar and S. H. Jangamshetti, \"Novel Control Algorithm of Storage System for Small Wind Turbine Generator,\" 2017 International Conference on Current Trends in Computer, Electrical, Electronics and Communication (CTCEEC), Mysore, India, 2017, pp. 383-388, doi: 10.1109/CTCEEC.2017.8455184.",
-                "Sushma Patted, Sangamesh Goudappanavar., “Optimization of Earthing System in Industrial Plant”, presented at IRAJ, Mumbai, 25.09.2015.",
-                "Smitha Pujari, Deepa kabbur, JyotiTalawar, Shivakumar G Nayak, presented paper on “Speed Control of BLDC Motor using PI Controller”, Online International Conference on “Continuity, Consistency and Innovation in Applied Sciences and Humanities (ICCIASH-2020)” Organized on 13th and 14th August, 2020. Department of Science and Humanities, St.Martin’s Engineering College, Secunderabad, ISBN No 978-93-88096 42-3. ICCIASH-2020 PROCEEDINGSxx.pdf (smec.ac.in)",
-                "Shana Bhavi. Shivakumar Nayak, Bharath H K, Chetan Biradar, Sachin presented paper on “ Comparative Analysis of DC to DC Boost Converter with P, PI, PID Controllers” International conference on “ Global Convergence in Technology, Entrepreneurship, Computing and Value Engineering Principals and Practices” Organized by Sapthagiri College of Engineering, During 24th to 26th of June 2022."
+                "Chayalakshmi C. L., D.S.Jangamashetti, and Savita Sonoli (2015), “Boiler Efficiency Estimation from Hydrogen Content in Fuel”, Proc. of Fourth International Conference on Advances in Computing, Communications and Informatics (ICACCI-2015), SCMS, Kochi, India pp.1107-1110, August 10-13, 2015. ISBN 978-1-4799-8792-4/15 IEEE XPLORE, 978-1-4799-8792-4/15, 2015, IEEE, 1107-1110.",
+                "Sushma Patted, Sangamesh Goudappanavar., “Optimization of Earthing System in Industrial Plant”, presented at IRAJ, Mumbai, 25.09.2015."
               ]
             }
           ]
@@ -5806,13 +5820,13 @@
           "years": [
             {
               "items": [
-                "Sangamesh Y. Goudappanavar, Kumar Shree Harsha S. S., Santhoshkumar S. Kandagal, Anilkumar C. Benny and Madhusudhan S., “AI-powered predictive analysis of ICU patient survival: A comparative study of model performance and SHAP interpretability”, Emerging Technologies in AI, Computation, Communication, and Cybersecurity, CRC Press, Taylor & Francis, 1st Ed, Pg.24, 1st Ed., ISBN 9781041240396.",
                 "Goudappanavar, S.Y., Nayak, S.G., Preetha, P.S. (2026). Development and Performance Analysis of ATS for IoT-Enabled SPV-Based RO Water Purifier in Academic Campus. In: Upadhyaya, T., Mahmud, M., Palandoken, M. (eds) Proceedings of International Conference on Artificial Intelligence, Communication Technologies and Smart Cities. ICACS 2025. Lecture Notes in Networks and Systems, vol 1533. Springer, Singapore. https://doi.org/10.1007/978-981-96-9196-8_8",
                 "Goudappanavar Sangamesh Y., Jangamshetti, S.H. (2025). AI Based Phase Identification to Integrate Distributed Energy Resources in Distribution Network. Innovations in Electrical and Electronics Engineering. ICEEE 2024. Lecture Notes in Electrical Engineering, vol 1294. Springer, Singapore. https://doi.org/10.1007/978-981-97-9037-1_7. (Q3)",
                 "Sangamesh Y. Goudappanavar, Suresh H. Jangamshetti, Shrishail Majjigi and Basanagouda Ronad “Development and Analysis of Wake Effect of Vertical Axis Wind Turbine Generator on HAWTG based on Experimental Method”, Lecture Notes in Networks and Systems, Inderscience, BITS Pilani K K Birla Goa, Springer Book Series, Sep. 2024.",
                 "Basanagouda Ronad, Sangamesh Y. Goudappanavar, Basavaraj Hugar, Santosh Kumbalavati, Kiran Bendigeri, “IOT Based Control mechanism for Solar PV Water Pumps Employed for Water Distribution in Academic Campus”, Lecture Notes in Networks and Systems, Inderscience, BITS Pilani K K Birla Goa, Springer Book Series, Sep. 2024.",
                 "Basanagouda F Ronad, “Design, Simulation and Development of DC-DC Converter for SPV Powered DC Distribution System in Domestic Loads”, Lecture Notes in Electrical Engineering- volume 844, Springer Publishers - Singapore, ISSN 1876-1100, ISBN: 978-981-16-8862-1, Feb 2022.",
-                "Basanagouda F Ronad, “Optimal Sizing and Cost Analysis of Hybrid Electric Renewable Energy Systems using HOMER”, Lecture Notes in Networks and Systems- volume 458, Springer Publishers – Singapore, ISSN 2367-3370, ISBN: 978-981-19 2893-2, August 2022."
+                "Basanagouda F Ronad, “Optimal Sizing and Cost Analysis of Hybrid Electric Renewable Energy Systems using HOMER”, Lecture Notes in Networks and Systems- volume 458, Springer Publishers – Singapore, ISSN 2367-3370, ISBN: 978-981-19 2893-2, August 2022.",
+                "Sangamesh Y. Goudappanavar, Kumar Shree Harsha S. S., Santhoshkumar S. Kandagal, Anilkumar C. Benny and Madhusudhan S., “AI-powered predictive analysis of ICU patient survival: A comparative study of model performance and SHAP interpretability”, Emerging Technologies in AI, Computation, Communication, and Cybersecurity, CRC Press, Taylor & Francis, 1st Ed, Pg.24, 1st Ed., ISBN 9781041240396."
               ]
             }
           ]
@@ -5830,8 +5844,8 @@
             {
               "year": "2023-24",
               "items": [
-                "Vijaykumar Purutageri, Tejashwini Bagewadi (Sem VII). International Journal of Research and Analysis in Science and Engineering, KripaD Publishers, Pune, Vol. 4, Issue 5. Paper Published.",
-                "Vijayalaxmi R. H (Sem V). International Journal of Innovative Research in Electrical, Electronics, Instrumentation and Control Engineering, Tejass Publishers, Vol. 12, No. 4, Apr. 2024. Paper Published."
+                "Vijayalaxmi R. H (Sem V). International Journal of Innovative Research in Electrical, Electronics, Instrumentation and Control Engineering, Tejass Publishers, Vol. 12, No. 4, Apr. 2024. Paper Published.",
+                "Vijaykumar Purutageri, Tejashwini Bagewadi (Sem VII). International Journal of Research and Analysis in Science and Engineering, KripaD Publishers, Pune, Vol. 4, Issue 5. Paper Published."
               ]
             },
             {
@@ -5843,9 +5857,9 @@
             {
               "year": "2021-22",
               "items": [
-                "G Pooja, Manjula Gaddi, Rakesh, Sachin Karant (Sem VIII). Turkish Online Journal of Qualitative Inquiry (TOJQI), Science Research Society, Vol. 12, Issue 7. Paper Published.",
                 "Aditya Bhuti, Jyoti K (Sem VIII). 5th IEEE International Conference on Electronics, Communication and Aerospace Technology (ICECA 2021), IEEE, Vol. 5, Issue 1. Paper Published.",
                 "Jyothi Kumbar, Neelaganga Goudar, Sahana Bhavi (Sem VI). IEEE Mysore Sub Section International Conference (MysuruCon-2021), IEEE, Vol. 1, Issue 1. Paper Published.",
+                "G Pooja, Manjula Gaddi, Rakesh, Sachin Karant (Sem VIII). Turkish Online Journal of Qualitative Inquiry (TOJQI), Science Research Society, Vol. 12, Issue 7. Paper Published.",
                 "Ashwini Patil, Gurubai Gadagenavar (Sem VIII). International Journal of Innovative Technology and Exploring Engineering (IJITEE), Blue Eyes Intelligence Engineering and Science Publication (BEIESP), Vol. 1, Issue 1. Paper Published."
               ]
             }
@@ -9602,6 +9616,10 @@
     "humanities": {
       "name": "Humanities & Social Sciences",
       "assetSlug": "hss",
+      "overviewImage": "departments/hss/cine1977.webp",
+      "overviewImageCaption": "Department Faculty",
+      "visionMissionOnHome": true,
+      "galleryExclude": ["cine1977", "cine2032", "cine2035", "cine2038"],
       "tagline": "An interdisciplinary department shaping engineers into legally, linguistically, socially and ethically conscious individuals.",
       "established": "2006",
       "overview": "The Department of Humanities and Social Sciences, started in 2006, is an interdisciplinary department of Basaveshwar Engineering College, Bagalkote, that seeks to make technologists legally, linguistically, socially and ethically conscious individuals. Over the years, various subjects of humanities and social sciences have been introduced to widen the intellectual horizon of technical students. Today, the department functions at the intersections of communication, languages, Constitution of India, Intellectual Property Rights, Soft Skills, Universal Human Values, Scientific Foundations of Health and Innovation and Design Thinking. It focuses on students' inner character so that they contribute to building a value-based society.",
@@ -9620,9 +9638,26 @@
       ],
       "labs": [
         {
-          "name": "Language Laboratory"
+          "name": "Language Laboratory — ORELL Digital Language Lab (DLL)",
+          "description": "The department's Language Laboratory runs the ORELL Digital Language Lab (DLL), a software-driven, technology-enabled environment designed to enhance students' proficiency in English and other languages through interactive, audio-visual and activity-based learning. It develops communication skills, pronunciation, vocabulary, grammar and listening comprehension, strengthening all four Listening, Speaking, Reading and Writing (LSRW) skills. Sessions are conducted through live demonstrations of the software followed by interactive activities based on audio-visual lectures on Communicative English, improving students' listening and speaking skills, building confidence and creating awareness of the importance of practising advanced English vocabulary for effective communication. For students, it improves pronunciation and communication, enhances listening comprehension and speaking confidence, develops correct grammar usage, encourages self-paced independent learning and provides immediate feedback to improve language accuracy.",
+          "features": [
+            "Interactive lessons with audio, video, animations and exercises",
+            "Listening, Speaking, Reading and Writing (LSRW) skill development",
+            "Pronunciation practice using native-speaker models",
+            "Speech recording and playback for self-assessment and teacher evaluation",
+            "Vocabulary and grammar enhancement through structured activities",
+            "Real-time teacher monitoring and control of student activities",
+            "Individual, pair and group learning modes",
+            "Progress tracking, performance assessment and report generation"
+          ]
         }
       ],
+      "sectionTitles": {
+        "infrastructure": "Photo Gallery"
+      },
+      "sectionNavLabels": {
+        "infrastructure": "Photo Gallery"
+      },
       "contact": {
         "name": "Dr. Basavarajeshwari G. Hokarani",
         "designation": "Assistant Professor & Head",
@@ -9631,14 +9666,39 @@
       },
       "curriculumGroups": [
         {
-          "title": "First Year (2025-26)",
+          "title": "Scheme & Syllabus (2026-27)",
           "documents": [
             {
-              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "title": "Scheme of Teaching & Examinations (2026-27)",
+              "file": "departments/hss/docs/scheme-26-27.pdf"
+            },
+            {
+              "title": "Syllabus — First Year (2026-27)",
+              "file": "departments/hss/docs/syllabus-1st-year-26-27.pdf"
+            },
+            {
+              "title": "Syllabus — Second Year (2026-27)",
+              "file": "departments/hss/docs/syllabus-2nd-year-26-27.pdf"
+            },
+            {
+              "title": "Syllabus — Third Year (2026-27)",
+              "file": "departments/hss/docs/syllabus-3rd-year-26-27.pdf"
+            },
+            {
+              "title": "Syllabus — Fourth Year (2026-27)",
+              "file": "departments/hss/docs/syllabus-4th-year-26-27.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Scheme & Syllabus (2025-26)",
+          "documents": [
+            {
+              "title": "Scheme of Teaching & Examinations — First Year (2025-26)",
               "file": "departments/hss/docs/scheme-1st-year-25-26.pdf"
             },
             {
-              "title": "Syllabus (2025-26)",
+              "title": "Syllabus — First Year (2025-26)",
               "file": "departments/hss/docs/syllabus-1st-year-25-26.pdf"
             },
             {
@@ -9648,44 +9708,29 @@
             {
               "title": "Syllabus — Balake Kannada (1BHSB107C)",
               "file": "departments/hss/docs/syllabus-1st-year-balake-kannada-1bhsb107c.pdf"
-            }
-          ]
-        },
-        {
-          "title": "Second Year (2025-26)",
-          "documents": [
+            },
             {
-              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "title": "Scheme of Teaching & Examinations — Second Year (2025-26)",
               "file": "departments/hss/docs/scheme-2nd-year-25-26.pdf"
             },
             {
-              "title": "Syllabus (2025-26)",
+              "title": "Syllabus — Second Year (2025-26)",
               "file": "departments/hss/docs/syllabus-2nd-year-25-26.pdf"
-            }
-          ]
-        },
-        {
-          "title": "Third Year (2025-26)",
-          "documents": [
+            },
             {
-              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "title": "Scheme of Teaching & Examinations — Third Year (2025-26)",
               "file": "departments/hss/docs/scheme-3rd-year-25-26.pdf"
             },
             {
-              "title": "Syllabus (2025-26)",
+              "title": "Syllabus — Third Year (2025-26)",
               "file": "departments/hss/docs/syllabus-3rd-year-25-26.pdf"
-            }
-          ]
-        },
-        {
-          "title": "Fourth Year (2025-26)",
-          "documents": [
+            },
             {
-              "title": "Scheme of Teaching & Examinations (2025-26)",
+              "title": "Scheme of Teaching & Examinations — Fourth Year (2025-26)",
               "file": "departments/hss/docs/scheme-4th-year-25-26.pdf"
             },
             {
-              "title": "Syllabus — VII & VIII Semester (2025-26)",
+              "title": "Syllabus — Fourth Year, VII & VIII Semester (2025-26)",
               "file": "departments/hss/docs/syllabus-4th-year-25-26.pdf"
             }
           ]
@@ -9706,12 +9751,63 @@
       ],
       "activities": [
         {
-          "title": "Classroom online quizzes after every topic",
-          "date": "Ongoing"
+          "title": "Student Development Programme — Excellence in Language: A Doorway to Global Opportunities",
+          "date": "25 October 2025",
+          "description": "A one-day Student Development Programme organised by the Department of Humanities and Social Sciences in the BEC Auditorium for all B.E. first-year students. The resource person Dr. G. K. Badiger, Principal, Government First Grade Degree College & PG Centre, Dharwad, shared powerful insights on the role of language in shaping one's personality, seizing opportunities and excelling across domains. Students were motivated and enriched by the thoughts shared.",
+          "details": [
+            "Resource person: Dr. G. K. Badiger, Principal, Government First Grade Degree College & PG Centre, Dharwad",
+            "Venue: BEC Auditorium",
+            "Participants: 880 first-year B.E. students",
+            "Objectives: Enhance communication and academic & professional language skills; promote multilingual and intercultural communication; inspire students to explore languages beyond the classroom and understand their role in culture, identity and global citizenship",
+            "Outcome: Improved language proficiency, professional writing, teamwork and public-speaking confidence, fostering a lifelong commitment to personal and professional growth",
+            "Budget sanctioned: ₹20,000"
+          ],
+          "images": [
+            {
+              "key": "departments/hss/activities/sdp-2025-language-audience.webp",
+              "caption": "B.E. first-semester students from all branches at the SDP in the BEC Auditorium"
+            },
+            {
+              "key": "departments/hss/activities/sdp-2025-language-inaugural.webp",
+              "caption": "Inauguration by the resource person watering a sapling, with faculty and student representatives"
+            },
+            {
+              "key": "departments/hss/activities/sdp-2025-language-volunteers.webp",
+              "caption": "SDP volunteers with the resource person and faculty"
+            },
+            {
+              "key": "departments/hss/activities/sdp-2025-language-student-reps.webp",
+              "caption": "B.E. first-year student representatives with the resource person and faculty"
+            }
+          ]
         },
         {
-          "title": "Student seminars — document preparation and PPT presentations on the digital board (I semester)",
-          "date": "Ongoing"
+          "title": "Student Development Programme — Engineering Your Future: Developing Backup Plans for Engineering Grads",
+          "date": "30–31 October 2025",
+          "description": "A two-day Student Development Programme organised by the Department of Humanities and Social Sciences in association with the Internal Quality Assurance Cell (IQAC) for B.E. V & VII semester and MCA students in the BEC Gallery Hall. The resource person Mr. Deepak Bannur, UPSC/KPSC mentor and Ops & Strategy Topper (IAS), Bengaluru, walked students through the framework, assessment and syllabus blueprint of the Civil Services examinations, with interactions, doubt clarification, mock tests and mock interviews, and guidance on aligning college life with examination preparation.",
+          "details": [
+            "Resource person: Mr. Deepak Bannur, UPSC/KPSC Mentor & Faculty Entrepreneur (Ops & Strategy Topper, IAS), Bengaluru",
+            "Venue: BEC Gallery Hall",
+            "Participants: 110 B.E. V & VII semester and MCA students",
+            "Objectives: Competitive-exam skill development; a structured learning approach; interview skills and personality development; stimulating personal and academic growth",
+            "Highlights: Syllabus blueprint of the Civil Services examinations, mock tests, mock interviews and doubt clarification",
+            "Outcome: Effective career-development strategies with stronger communication, confidence and a positive attitude toward personal and career growth",
+            "Budget sanctioned: ₹60,000"
+          ],
+          "images": [
+            {
+              "key": "departments/hss/activities/sdp-2025-backup-plans-lamp.webp",
+              "caption": "Inauguration and lamp-lighting by the resource person, in-charge Principal and faculty"
+            },
+            {
+              "key": "departments/hss/activities/sdp-2025-backup-plans-floral-welcome.webp",
+              "caption": "Floral welcome of the resource person by the in-charge Principal"
+            },
+            {
+              "key": "departments/hss/activities/sdp-2025-backup-plans-group.webp",
+              "caption": "Group photograph of the resource person, faculty and participants at the valedictory"
+            }
+          ]
         }
       ],
       "committeeGroups": [

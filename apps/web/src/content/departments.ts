@@ -96,9 +96,11 @@ export type DepartmentContent = {
   phdsAwarded?: { scholar: string; guide: string; title: string; year: string }[];
   researchScholars?: { scholar: string; usn?: string; guide: string; title?: string; status: string }[];
   researchGrants?: { title: string; agency: string; year: string; amount: string; investigators: string }[];
-  labs?: { name: string; description?: string; images?: string[]; feature?: boolean }[];
+  labs?: { name: string; description?: string; features?: string[]; images?: string[]; feature?: boolean }[];
   /** When true, the Ph.D.s/Scholars/Grants tables render inside the Research tab and no standalone "Research Achievements" tab is emitted. */
   achievementsUnderResearch?: boolean;
+  /** When true, `labs` render on the Facilities tab and the equipment/software tables move into the Research tab instead. */
+  labsUnderFacilities?: boolean;
   /** Labs shown under the Infrastructure tab (title + caption + images), separate from `labs` which render under Research. */
   infrastructureLabs?: { name: string; description?: string; images?: string[] }[];
   /** Group photo of the teaching faculty, shown as a banner above the Faculty grid. */
@@ -124,7 +126,15 @@ export type DepartmentContent = {
   }[];
   infrastructureItems?: { name: string; specification?: string; quantity?: string }[];
   softwareItems?: { name: string; version?: string; usage?: string }[];
-  activities?: { title: string; date?: string; description?: string }[];
+  activities?: {
+    title: string;
+    date?: string;
+    description?: string;
+    /** Labelled facts (resource person, participants, budget, outcomes…) shown as bullets. */
+    details?: string[];
+    /** Captioned event photos rendered as a gallery under the activity. */
+    images?: { key: string; caption?: string }[];
+  }[];
   /** Department activity programmes (SDPs, FDPs, workshops) rendered as titled tables under an "Activities" section. */
   activityTables?: { title: string; columns: string[]; rows: string[][] }[];
   associations?: {
