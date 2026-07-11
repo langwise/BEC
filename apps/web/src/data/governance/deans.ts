@@ -10,19 +10,19 @@ export type Dean = {
 export const deans: Dean[] = [
   {
     role: "Dean Academic",
-    email: "deanac@becbgk.edu",
+    email: "", // deanac@becbgk.edu — TODO: restore official email
     placeholder: true,
     focus: "Programs & curriculum",
   },
   {
     role: "Dean Placement & Training",
-    email: "placement@becbgk.edu",
+    email: "", // placement@becbgk.edu — TODO: restore official email
     placeholder: true,
     focus: "Career services & placements",
   },
   {
     role: "Dean Research & Development",
-    email: "deanrd@becbgk.edu",
+    email: "", // deanrd@becbgk.edu — TODO: restore official email
     placeholder: true,
     focus: "Research, innovation, consultancy",
   },

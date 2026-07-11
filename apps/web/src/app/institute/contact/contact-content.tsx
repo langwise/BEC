@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "motion/react";
 import { PageHeader } from "@/components/placements/page-header";
 import { FadeIn } from "@/components/animations/fade-in";
@@ -15,12 +16,25 @@ import {
 } from "lucide-react";
 
 export default function ContactContent() {
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
+    const scrollToTarget = () => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    const raf = requestAnimationFrame(() =>
+      requestAnimationFrame(scrollToTarget)
+    );
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
   const collegeInfo = {
     name: "Basaveshwar Engineering College",
     address: "Bagalkote-587103, Karnataka, India",
     phone: "07618781963",
     landline: "08354-234060",
-    email: "principal@becbgk.edu",
+    email: "", // principal@becbgk.edu — TODO: restore official email
     hours: "Mon - Sat: 9:00 AM - 5:00 PM",
   };
 
@@ -29,31 +43,31 @@ export default function ContactContent() {
       name: "Dr. B. R. Hiremath",
       designation: "Principal",
       phone: "94489 39700",
-      email: "principal@becbgk.edu",
+      email: "", // principal@becbgk.edu — TODO: restore official email
     },
     {
       name: "Dr. K Chandrasekhar",
       designation: "Controller of Examinations",
       phone: null,
-      email: "coe@becbgk.edu",
+      email: "", // coe@becbgk.edu — TODO: restore official email
     },
     {
       name: "Dr. S. G. Kambalimath",
       designation: "Dean, Career Guidance & Placement",
       phone: null,
-      email: "placement@becbgk.edu",
+      email: "", // placement@becbgk.edu — TODO: restore official email
     },
     {
       name: "Dr. P. N. Kulkarni",
       designation: "Dean Academic",
       phone: null,
-      email: "deanac@becbgk.edu",
+      email: "", // deanac@becbgk.edu — TODO: restore official email
     },
     {
       name: "Prof. B. S. Haravi",
       designation: "Development Officer",
       phone: null,
-      email: "do@becbgk.edu",
+      email: "", // do@becbgk.edu — TODO: restore official email
     },
   ];
 
@@ -134,6 +148,7 @@ export default function ContactContent() {
                     </div>
 
                     {/* Email */}
+                    {collegeInfo.email && (
                     <div className="bg-white p-8 rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl hover:border-orange-100 transition-all duration-300 group">
                         <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                             <Mail className="w-6 h-6" />
@@ -143,6 +158,7 @@ export default function ContactContent() {
                             <a href={`mailto:${collegeInfo.email}`} className="hover:text-primary transition-colors">{collegeInfo.email}</a>
                         </p>
                     </div>
+                    )}
                 </div>
             </FadeIn>
         </div>
@@ -177,12 +193,14 @@ export default function ContactContent() {
                   <h3 className="text-lg font-bold text-gray-900">{contact.name}</h3>
                   <p className="text-primary font-medium text-sm mb-4">{contact.designation}</p>
                   
+                  {contact.email && (
                   <div className="mt-auto pt-4 border-t border-stone-50">
                       <a href={`mailto:${contact.email}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition-colors">
                           <Mail className="w-4 h-4" />
                           {contact.email}
                       </a>
                   </div>
+                  )}
               </motion.div>
             ))}
           </div>

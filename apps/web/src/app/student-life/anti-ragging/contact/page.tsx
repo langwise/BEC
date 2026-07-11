@@ -15,7 +15,7 @@ const committee = [
     name: "Dr. B. R. Hiremath",
     role: "Chairman",
     designation: "Principal, BEC Bagalkote",
-    contact: "principal@becbgk.edu",
+    contact: "", // principal@becbgk.edu — TODO: restore official email
   },
   {
     name: "Dr. P. L. Timmanagoudar",
@@ -92,6 +92,7 @@ export default function AntiRaggingContactPage() {
                     {member.name}
                   </h3>
                   <p className="mt-1 text-sm text-gray-500">{member.designation}</p>
+                  {member.contact && (
                   <a
                     href={isEmail ? `mailto:${member.contact}` : `tel:${member.contact}`}
                     className="mt-4 inline-flex items-center justify-center gap-2 border-t border-stone-100 pt-4 text-sm font-medium text-gray-700 transition-colors hover:text-primary"
@@ -99,6 +100,7 @@ export default function AntiRaggingContactPage() {
                     {isEmail ? <Mail className="h-4 w-4" /> : <Phone className="h-4 w-4" />}
                     {member.contact}
                   </a>
+                  )}
                 </div>
               );
             })}

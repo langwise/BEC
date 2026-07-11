@@ -133,10 +133,12 @@ export default function StudentLifeLayout({
                                     Student Support
                                 </h3>
                                 <div className="space-y-2 text-xs">
+                                    {/* TODO: restore official email
                                     <div className="flex items-center gap-2 text-gray-700">
                                         <span className="font-semibold text-primary">Email:</span>
                                         principal@becbgk.edu
                                     </div>
+                                    */}
                                     <div className="flex items-center gap-2 text-gray-700">
                                         <span className="font-semibold text-primary">Helpline:</span>
                                         08354-234060

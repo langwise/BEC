@@ -35,8 +35,9 @@ const FAQS = [
   },
   {
     question: "Where is BEC Bagalkote located?",
+    // TODO: restore official email — was "... reach the institute at principal@becbgk.edu or +91-8354-234060."
     answer:
-      "The campus is at S. Nijalingappa Vidyanagar, Bagalkote 587102, Karnataka, India. You can reach the institute at principal@becbgk.edu or +91-8354-234060.",
+      "The campus is at S. Nijalingappa Vidyanagar, Bagalkote 587102, Karnataka, India. You can reach the institute at +91-8354-234060.",
   },
 ];
 

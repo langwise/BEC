@@ -18,7 +18,7 @@ export const ORG = {
   foundingYear: "1963",
   parentOrganization: "B.V.V. Sangha",
   affiliation: "Visvesvaraya Technological University (VTU), Belagavi",
-  email: "principal@becbgk.edu",
+  email: "", // principal@becbgk.edu — TODO: restore official email
   telephone: ["+91-8354-234060", "+91-8354-234204"],
   address: {
     street: "S. Nijalingappa Vidyanagar",

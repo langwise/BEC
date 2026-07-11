@@ -17,7 +17,7 @@ export function OrganizationJsonLd() {
     logo: absoluteUrl("/logo.png"),
     foundingDate: ORG.foundingYear,
     parentOrganization: { "@type": "Organization", name: ORG.parentOrganization },
-    email: ORG.email,
+    ...(ORG.email ? { email: ORG.email } : {}),
     telephone: ORG.telephone[0],
     address: {
       "@type": "PostalAddress",
