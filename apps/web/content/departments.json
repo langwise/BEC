@@ -6645,7 +6645,7 @@
         "name": "Dr. C. M. Javalagi",
         "designation": "Associate Professor & Head",
         "phone": "+91-9448751788",
-        "email": ""
+        "email": "becipe1983@gmail.com"
       },
       "documents": [
         {
@@ -6675,6 +6675,40 @@
         {
           "title": "Department Events",
           "file": "departments/ip/docs/events.pdf"
+        }
+      ],
+      "newsletters": [
+        {
+          "title": "IPE Newsletter — November 2025",
+          "file": "departments/ip/newsletters/ipe-newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "IPE Newsletter — December 2025",
+          "file": "departments/ip/newsletters/ipe-newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "IPE Newsletter — January 2026",
+          "file": "departments/ip/newsletters/ipe-newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "IPE Newsletter — February 2026",
+          "file": "departments/ip/newsletters/ipe-newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "IPE Newsletter — March 2026",
+          "file": "departments/ip/newsletters/ipe-newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "IPE Newsletter — April 2026",
+          "file": "departments/ip/newsletters/ipe-newsletter-apr-2026.pdf"
+        },
+        {
+          "title": "IPE Newsletter — May 2026",
+          "file": "departments/ip/newsletters/ipe-newsletter-may-2026.pdf"
+        },
+        {
+          "title": "IPE Newsletter — June 2026",
+          "file": "departments/ip/newsletters/ipe-newsletter-jun-2026.pdf"
         }
       ],
       "curriculumGroups": [
@@ -6966,7 +7000,7 @@
       ],
       "infrastructureItems": [
         {
-          "name": "Lathe Machines (BANK-35, Srinivas Enterprises)",
+          "name": "Lathe Machines",
           "specification": "All Geared, Auto-Feed, Speed 115-2000 rpm, 1 m bed length",
           "quantity": "Multiple"
         },

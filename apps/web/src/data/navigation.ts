@@ -137,12 +137,17 @@ export const navigationData: NavigationItem[] = [
     href: "/placements",
   },
 
-  // 8. Student Life
+  // 8. Hostel
+  {
+    title: "Hostel",
+    href: "/student-life/hostels",
+  },
+
+  // 9. Student Life
   {
     title: "Student Life",
     items: [
       { title: "Overview", href: "/student-life/overview" },
-      { title: "Hostels", href: "/student-life/hostels" },
       { title: "BEC Creative Spectrum", href: "/student-life/bec-creative-spectrum" },
       { title: "Activities", href: "/student-life/activities" },
       { title: "Symposia Archive", href: "/student-life/symposia" },

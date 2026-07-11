@@ -375,14 +375,6 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                         className={dept.hodMessage ? "mt-8 mb-12" : "-mt-4 mb-12"}
                     />
                 )}
-                {/* Core values (per-department, e.g. IPE) — bullet list under the overview */}
-                {dept.overview.items && dept.overview.items.length > 0 && (
-                    <ContentSection
-                        title="Our Core Values"
-                        items={dept.overview.items}
-                        icon="target"
-                    />
-                )}
                 {/* Highlights — hidden on Home when moved under About */}
                 {!dept.visionMissionOnHome && <HighlightsBlock highlights={dept.highlights} />}
                 {dept.bestPractices && dept.bestPractices.length > 0 && (
@@ -434,6 +426,15 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                             icon={dept.mission.icon}
                         />
                     </>
+                )}
+
+                {/* Core values (per-department, e.g. IPE) — bullet list after the mission */}
+                {dept.overview.items && dept.overview.items.length > 0 && (
+                    <ContentSection
+                        title="Our Core Values"
+                        items={dept.overview.items}
+                        icon="target"
+                    />
                 )}
 
                 {dept.about?.groups && dept.about.groups.length > 0 && (

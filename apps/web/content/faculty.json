@@ -862,11 +862,13 @@
       {
         "name": "Dr. C. M. Javalagi",
         "designation": "Associate Professor & Head",
+        "photo": "departments/ip/faculty/c-m-javalagi.webp",
         "cv": "departments/ip/faculty/cv/c-m-javalagi.pdf"
       },
       {
         "name": "Dr. S. M. Pharsiyawar",
         "designation": "Assistant Professor",
+        "photo": "departments/ip/faculty/s-m-pharsiyawar.webp",
         "cv": "departments/ip/faculty/cv/s-m-pharsiyawar.pdf"
       }
     ],
