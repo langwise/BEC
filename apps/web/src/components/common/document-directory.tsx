@@ -34,7 +34,7 @@ export function DocumentDirectory({
                 {group.label}
               </h3>
               {group.description ? (
-                <p className="text-sm leading-relaxed text-gray-600">
+                <p className="text-sm leading-relaxed text-gray-600 text-justify">
                   {group.description}
                 </p>
               ) : null}

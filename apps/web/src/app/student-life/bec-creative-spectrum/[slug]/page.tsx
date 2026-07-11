@@ -136,7 +136,7 @@ export default async function ClubDetailPage({ params }: { params: Promise<{ slu
           
           {/* Club Description */}
           {club.description && (
-            <p className="text-sm md:text-base text-stone-600 dark:text-stone-300 leading-relaxed font-medium">
+            <p className="text-sm md:text-base text-stone-600 dark:text-stone-300 leading-relaxed font-medium text-justify">
               {club.description}
             </p>
           )}
@@ -300,16 +300,16 @@ export default async function ClubDetailPage({ params }: { params: Promise<{ slu
 
           {/* Week-wise Planning Overview */}
           <div className="space-y-4">
-            <h4 className="font-bold text-gray-900 dark:text-white text-base flex items-center gap-2">
+            <h4 className="font-bold text-primary dark:text-white text-base flex items-center gap-2">
               <Award className={`w-4.5 h-4.5 ${style.text}`} />
               Week-wise Planning Overview
             </h4>
             <Card className="border border-stone-200 dark:border-stone-800 dark:bg-stone-900/30 overflow-hidden shadow-xxs">
               <Table>
-                <TableHeader className="bg-stone-50/50 dark:bg-stone-900/50">
+                <TableHeader className="bg-primary/5 dark:bg-stone-900/50">
                   <TableRow>
-                    <TableHead className="w-[120px] font-semibold">Period</TableHead>
-                    <TableHead className="font-semibold">Activities / Focus</TableHead>
+                    <TableHead className="w-[120px] font-semibold text-primary">Period</TableHead>
+                    <TableHead className="font-semibold text-primary">Activities / Focus</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>

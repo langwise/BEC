@@ -63,7 +63,7 @@ export function ProgrammeFAQ({ faqs }: ProgrammeFAQProps) {
                     openIndex === index ? "max-h-96" : "max-h-0"
                   )}
                 >
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed text-justify">
                     {faq.answer}
                   </div>
                 </div>

@@ -33,8 +33,7 @@ export default function ContactContent() {
     name: "Basaveshwar Engineering College",
     address: "Bagalkote-587103, Karnataka, India",
     phone: "07618781963",
-    landline: "08354-234060",
-    email: "", // principal@becbgk.edu — TODO: restore official email
+    email: "becprincipal@yahoo.com",
     hours: "Mon - Sat: 9:00 AM - 5:00 PM",
   };
 
@@ -43,25 +42,25 @@ export default function ContactContent() {
       name: "Dr. B. R. Hiremath",
       designation: "Principal",
       phone: "94489 39700",
-      email: "", // principal@becbgk.edu — TODO: restore official email
+      email: "becprincipal@yahoo.com",
     },
     {
       name: "Dr. K Chandrasekhar",
       designation: "Controller of Examinations",
       phone: null,
-      email: "", // coe@becbgk.edu — TODO: restore official email
+      email: "beccoe2007@gmail.com",
     },
     {
       name: "Dr. S. G. Kambalimath",
       designation: "Dean, Career Guidance & Placement",
-      phone: null,
-      email: "", // placement@becbgk.edu — TODO: restore official email
+      phone: "8904095779",
+      email: "becplacement@gmail.com / placement@becbgk.edu",
     },
     {
       name: "Dr. P. N. Kulkarni",
       designation: "Dean Academic",
       phone: null,
-      email: "", // deanac@becbgk.edu — TODO: restore official email
+      email: "pnk_bewoor@yahoo.com",
     },
     {
       name: "Prof. B. S. Haravi",
@@ -138,9 +137,6 @@ export default function ContactContent() {
                         <p className="text-gray-600 font-medium mb-1">
                             <a href={`tel:${collegeInfo.phone}`} className="hover:text-primary transition-colors">{collegeInfo.phone}</a>
                         </p>
-                        <p className="text-gray-600 font-medium mb-1">
-                            <a href={`tel:${collegeInfo.landline}`} className="hover:text-primary transition-colors">{collegeInfo.landline}</a>
-                        </p>
                          <div className="flex items-center gap-2 text-sm text-gray-500 mt-3">
                             <Clock className="w-4 h-4" />
                             {collegeInfo.hours}
@@ -194,11 +190,13 @@ export default function ContactContent() {
                   <p className="text-primary font-medium text-sm mb-4">{contact.designation}</p>
                   
                   {contact.email && (
-                  <div className="mt-auto pt-4 border-t border-stone-50">
-                      <a href={`mailto:${contact.email}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition-colors">
-                          <Mail className="w-4 h-4" />
-                          {contact.email}
+                  <div className="mt-auto pt-4 border-t border-stone-50 space-y-1.5">
+                      {contact.email.split("/").map((e) => e.trim()).filter(Boolean).map((addr) => (
+                      <a key={addr} href={`mailto:${addr}`} className="flex items-center gap-2 text-sm text-gray-600 hover:text-primary transition-colors break-all">
+                          <Mail className="w-4 h-4 shrink-0" />
+                          {addr}
                       </a>
+                      ))}
                   </div>
                   )}
               </motion.div>
@@ -208,7 +206,7 @@ export default function ContactContent() {
       </section>
 
       {/* How to Reach */}
-      <section className="py-20 lg:py-24 bg-white">
+      <section id="how-to-reach" className="scroll-mt-24 py-20 lg:py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-6 max-w-7xl">
            <FadeIn className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 {/* Intro */}
@@ -220,7 +218,7 @@ export default function ContactContent() {
                     <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 mb-6">
                         How to Reach Us
                     </h2>
-                    <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                    <p className="text-lg text-gray-600 leading-relaxed mb-8 text-justify">
                         Basaveshwar Engineering College is well connected by road, rail, and air. The campus is located in the heart of Bagalkote city.
                     </p>
                     

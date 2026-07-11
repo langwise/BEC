@@ -46,7 +46,7 @@ export function RtiContent() {
 
             <section className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
                 <div className="space-y-4">
-                    <p className="text-base text-gray-700 leading-relaxed max-w-4xl">
+                    <p className="text-base text-gray-700 leading-relaxed max-w-4xl text-justify">
                         The Right to Information Act, 2005 empowers citizens to access information under the control of public authorities.
                         Basaveshwar Engineering College (Autonomous) is committed to transparency and compliance with the Act.
                     </p>
@@ -77,7 +77,7 @@ export function RtiContent() {
                                     <div className="pt-2 border-t border-stone-100 space-y-1">
                                         <p className="flex items-center gap-2 text-gray-700">
                                             <span className="font-medium w-20 text-xs uppercase tracking-wide text-gray-500">Contact No:</span>
-                                            08354-234060, 234204
+                                            08354-234204
                                         </p>
                                         <p className="flex items-center gap-2 text-gray-700">
                                             <span className="font-medium w-20 text-xs uppercase tracking-wide text-gray-500">Fax:</span>
@@ -98,12 +98,6 @@ export function RtiContent() {
                                         <p className="text-gray-600">Basaveshwar Engineering College</p>
                                         <p className="text-gray-600">S. Nijalingappa Road, Vidyagiri</p>
                                         <p className="text-gray-600">Bagalkote-587102, Karnataka.</p>
-                                    </div>
-                                    <div className="pt-2 border-t border-stone-100 space-y-1">
-                                        <p className="flex items-center gap-2 text-gray-700">
-                                            <span className="font-medium w-20 text-xs uppercase tracking-wide text-gray-500">Contact No:</span>
-                                            08354-234060
-                                        </p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -155,7 +149,7 @@ export function RtiContent() {
                                     <div className="pt-2 border-t border-stone-100 space-y-1">
                                         <p className="flex items-center gap-2 text-gray-700">
                                             <span className="font-medium w-24 text-xs uppercase tracking-wide text-gray-500">ದೂರವಾಣಿ ಸಂಖ್ಯೆ:</span>
-                                            08354-234060, 234204
+                                            08354-234204
                                         </p>
                                         <p className="flex items-center gap-2 text-gray-700">
                                             <span className="font-medium w-24 text-xs uppercase tracking-wide text-gray-500">ಫ್ಯಾಕ್ಸ್:</span>
@@ -178,12 +172,6 @@ export function RtiContent() {
                                         <p className="font-semibold text-gray-900 text-base">ಸಹಾಯಕ ಆಡಳಿತಾಧಿಕಾರಿ</p>
                                         <p className="text-gray-600">ಬಸವೇಶ್ವರ ಇಂಜಿನಿಯರಿಂಗ್ ಕಾಲೇಜ್</p>
                                         <p className="text-gray-600">ಬಾಗಲಕೋಟೆ-587102</p>
-                                    </div>
-                                    <div className="pt-2 border-t border-stone-100 space-y-1">
-                                        <p className="flex items-center gap-2 text-gray-700">
-                                            <span className="font-medium w-24 text-xs uppercase tracking-wide text-gray-500">ದೂರವಾಣಿ ಸಂಖ್ಯೆ:</span>
-                                            08354-234060
-                                        </p>
                                     </div>
                                 </CardContent>
                             </Card>

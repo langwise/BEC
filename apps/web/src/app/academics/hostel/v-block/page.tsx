@@ -43,7 +43,7 @@ export default function VBlockPage() {
 
                 <FadeIn>
                     <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-xs">
-                        <p className="text-gray-700 leading-relaxed">
+                        <p className="text-gray-700 leading-relaxed text-justify">
                             The Visvesavaraya hostel was started in the year <strong>1968</strong> to accommodate boys of Basaveshwar Engineering College Bagalkote. The hostel has grown many folds and is equipped with all facilities since from its inception. The total number of rooms in the hostel is 128 with a total capacity of 384.
                         </p>
                         <div className="flex items-center gap-6 mt-6 pt-6 border-t border-stone-100">

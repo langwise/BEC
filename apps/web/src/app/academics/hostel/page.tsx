@@ -32,7 +32,7 @@ export default function HostelPage() {
         <h1 className="text-3xl font-bold text-gray-900 tracking-tight mb-4">
           About Hostel
         </h1>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-gray-600 leading-relaxed text-justify">
           Basaveshwar Engineering College (Autonomous), Bagalkote provides
           excellent hostel facilities for boys and girls with a focus on student
           welfare, safety, and a conducive atmosphere for learning.
@@ -49,7 +49,7 @@ export default function HostelPage() {
 
         <FadeIn>
           <div className="bg-orange-50/50 rounded-2xl p-8 border border-orange-100 space-y-6">
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-justify">
               The hostels of B.V.V. Sangha are managed by a committee set up by
               the Sangha in the name of{" "}
               <strong>Student Welfare and Hostel Committee (SWC)</strong>{" "}
@@ -142,13 +142,13 @@ export default function HostelPage() {
             <Table>
               <TableHeader>
                 <TableRow className="bg-orange-50/50 hover:bg-orange-50/50">
-                  <TableHead className="w-[100px] font-bold text-gray-900 border-b border-orange-100 hidden md:table-cell">
+                  <TableHead className="w-[100px] font-bold text-primary border-b border-orange-100 hidden md:table-cell">
                     Sl. No.
                   </TableHead>
-                  <TableHead className="font-bold text-gray-900 border-b border-orange-100">
+                  <TableHead className="font-bold text-primary border-b border-orange-100">
                     Hostel Name
                   </TableHead>
-                  <TableHead className="font-bold text-gray-900 border-b border-orange-100">
+                  <TableHead className="font-bold text-primary border-b border-orange-100">
                     Utility
                   </TableHead>
                 </TableRow>

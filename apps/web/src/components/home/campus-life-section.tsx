@@ -21,7 +21,7 @@ export function CampusLifeSection() {
               More than just <br />{" "}
               <span className="text-primary">academics</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-xl font-medium leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-xl font-medium leading-relaxed text-justify">
               Beyond the classrooms, BEC offers a vibrant campus life powered by
               student-led clubs, massive cultural fests, and a tight-knit
               community on our 93-acre green campus.

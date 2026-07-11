@@ -13,7 +13,6 @@ import {
   CreditCard,
   Mail,
   MapPin,
-  Phone,
 } from "lucide-react";
 
 export const metadata: Metadata = pageMetadata({
@@ -187,7 +186,7 @@ export default function AmenitiesPage() {
               <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">
                 Administrative Office
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-lg text-gray-600 leading-relaxed mb-8 text-justify">
                 The college administrative office handles admissions,
                 examination records, fee payments and student services from a
                 single, centrally located block, making routine administrative
@@ -212,17 +211,6 @@ export default function AmenitiesPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 w-full md:w-auto">
-                <div className="flex items-center gap-3">
-                  <div className="p-2 bg-white/10 rounded-full">
-                    <Phone className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <div className="text-xs text-slate-400">Call Us</div>
-                    <div className="font-semibold whitespace-nowrap">
-                      +91-8354-234060
-                    </div>
-                  </div>
-                </div>
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-white/10 rounded-full">
                     <MapPin className="h-5 w-5" />

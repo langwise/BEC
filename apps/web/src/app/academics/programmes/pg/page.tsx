@@ -30,21 +30,21 @@ const pgData = {
         parent: "Civil Engineering",
         href: "/departments/pg/structural-engg",
       },
-      {
-        name: "Geo-Technical Engineering",
-        parent: "Civil Engineering",
-        href: "/departments/pg/geo-technical-engg",
-      },
-      {
-        name: "Environmental Engineering",
-        parent: "Civil Engineering",
-        href: "/departments/pg/environmental-engg",
-      },
-      {
-        name: "Machine Design",
-        parent: "Mechanical Engineering",
-        href: "/departments/pg/machine-design",
-      },
+      // {
+      //   name: "Geo-Technical Engineering",
+      //   parent: "Civil Engineering",
+      //   href: "/departments/pg/geo-technical-engg",
+      // },
+      // {
+      //   name: "Environmental Engineering",
+      //   parent: "Civil Engineering",
+      //   href: "/departments/pg/environmental-engg",
+      // },
+      // {
+      //   name: "Machine Design",
+      //   parent: "Mechanical Engineering",
+      //   href: "/departments/pg/machine-design",
+      // },
   ],
   admission: {
     eligibility: [
@@ -92,7 +92,7 @@ export default function PGProgrammePage() {
       {/* Overview & Highlights */}
       <section className="space-y-8">
         <div className="prose prose-lg prose-orange max-w-none text-gray-600">
-            <p>
+            <p className="text-justify">
                 Our M.Tech programmes offer advanced specialization across Civil and Mechanical Engineering, with a strong emphasis on research, laboratory work and a thesis. The college has also introduced an M.Tech in Defence Technology in association with DRDO.
             </p>
         </div>
@@ -167,7 +167,7 @@ export default function PGProgrammePage() {
           <SectionHeader icon={Wallet} title="Fee Structure Overview" />
           <div className="overflow-x-auto rounded-xl border border-gray-200">
               <table className="w-full text-sm text-left">
-                  <thead className="bg-gray-50 text-gray-900 font-semibold border-b border-gray-200">
+                  <thead className="bg-primary/5 text-primary font-semibold border-b border-gray-200">
                       <tr>
                           <th className="px-6 py-4">Quota</th>
                           <th className="px-6 py-4">Type</th>

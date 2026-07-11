@@ -73,7 +73,7 @@ export default function EResourcesPaidPage() {
             <div className="lg:col-span-3">
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
-                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
                     The library subscribes to various premium e-resources providing access to millions of research
                     articles, journals, and databases. These resources are accessible on campus through IP-based
                     authentication.

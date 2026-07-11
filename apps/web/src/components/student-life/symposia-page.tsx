@@ -98,12 +98,12 @@ export function SymposiaPage() {
               Registration is closed
             </h2>
             <div className="mt-4 space-y-3 text-sm leading-relaxed text-gray-700">
-              <p>
+              <p className="text-justify">
                 SYMPOSIA 2023 is retained here as a past-event archive. The
                 original registration deadline was 05/09/2023, so QR codes and
                 form links are not surfaced as active calls to action.
               </p>
-              <p>
+              <p className="text-justify">
                 For current student activities, use the Activities page and
                 official college announcements.
               </p>

@@ -50,7 +50,7 @@ export default function TestimonialsSection({
             className="flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm"
           >
             <Quote className="w-8 h-8 text-primary/20 shrink-0" aria-hidden />
-            <blockquote className="mt-3 flex-1 text-gray-700 leading-relaxed">
+            <blockquote className="mt-3 flex-1 text-gray-700 leading-relaxed text-justify">
               {t.quote}
             </blockquote>
             <figcaption className="mt-5 flex items-center gap-4 border-t border-stone-100 pt-4">

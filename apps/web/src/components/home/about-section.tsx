@@ -76,7 +76,7 @@ export function AboutSection() {
                     <div className="pr-4 md:pr-12">
                       <div className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                         {slide.paragraphs.map((paragraph, index) => (
-                          <p key={index} className={index > 0 ? "mt-4" : ""}>
+                          <p key={index} className={index > 0 ? "mt-4 text-justify" : "text-justify"}>
                             {paragraph}
                           </p>
                         ))}

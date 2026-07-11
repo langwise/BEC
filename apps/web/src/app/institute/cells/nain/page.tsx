@@ -107,7 +107,7 @@ export default function NainPage() {
             </div>
           </div>
           <SectionHeading eyebrow="About" title="From idea to enterprise" />
-          <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700">
+          <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700 text-justify">
             <p>
               NAIN was established under the Department of Electronics, Information
               Technology, Biotechnology and Science &amp; Technology, Government of

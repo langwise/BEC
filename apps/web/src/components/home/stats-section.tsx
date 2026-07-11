@@ -7,11 +7,11 @@ import { FadeIn } from "../animations/fade-in";
 // 11 UG ("11 disciplines", Admissions) & 8 PG, 10 R&D centres, 93.18 acres,
 // established 1963 (About page).
 const stats = [
-  { value: "3,200+", label: "Students on Campus" },
+  { value: "4,00+", label: "Students on Campus" },
   { value: "180+", label: "Faculty Members" },
-  { value: "43%", label: "Faculty with PhDs" },
+  { value: "50%", label: "Faculty with PhDs" },
   { value: "11", label: "Undergraduate Programmes" },
-  { value: "8", label: "Postgraduate Programmes" },
+  { value: "3", label: "Postgraduate Programmes" },
   { value: "10", label: "Research Centres" },
   { value: "93+", label: "Acres of Campus" },
   { value: "1963", label: "Established" },

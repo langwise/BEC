@@ -29,7 +29,7 @@ export default function PGBlockPage() {
 
                 <FadeIn>
                     <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-xs">
-                        <p className="text-gray-700 leading-relaxed mb-4">
+                        <p className="text-gray-700 leading-relaxed mb-4 text-justify">
                             The hostel was started in the year <strong>2013</strong> to provide accommodation exclusively for PG and Research students of Basaveshwar Engineering College Bagalkote. Total rooms available in the hostel are 40 with a total capacity of 80 students.
                         </p>
 

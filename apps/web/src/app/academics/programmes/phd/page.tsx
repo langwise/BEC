@@ -82,7 +82,7 @@ export default function PhDProgrammePage() {
       {/* Overview & Highlights */}
       <section className="space-y-8">
         <div className="prose prose-lg prose-orange max-w-none text-gray-600">
-            <p>
+            <p className="text-justify">
                 BEC offers research programmes leading to M.Sc.(Engg.) and Ph.D across nine VTU-recognized research centres, supported by state-of-the-art laboratories and experienced research supervisors. Admission and registration are administered by Visvesvaraya Technological University (VTU), Belagavi.
             </p>
         </div>
@@ -133,7 +133,7 @@ export default function PhDProgrammePage() {
       <section>
           <SectionHeader icon={FileText} title="Application Procedure" />
           <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 text-sm text-gray-700 mb-6">
-              <p>
+              <p className="text-justify">
                   <strong>How to Apply:</strong> Download the application form from the VTU website (www.vtu.ac.in), pay Rs. 1,500/- online, and submit the duly-filled application with the required enclosures to The Registrar, Visvesvaraya Technological University, &ldquo;Jnana Sangama&rdquo;, Belagavi-590018.
               </p>
           </div>

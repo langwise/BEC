@@ -151,10 +151,10 @@ export default function BECCreativeSpectrumPage() {
               title="A platform for creative & personal growth"
             />
             <div className="space-y-4 text-base leading-relaxed text-gray-700 dark:text-gray-300">
-              <p>
+              <p className="text-justify">
                 <strong className="font-semibold text-gray-900 dark:text-white">BEC Creative Spectrum</strong> is an integrated, institutionally governed student club framework designed to nurture talent, build character, and cultivate a vibrant campus culture at Basaveshwar Engineering College. It operates as an umbrella organization bringing together ten distinct clubs under three focused wings — Cultural, Technical, and Holistic Development.
               </p>
-              <p>
+              <p className="text-justify">
                 Unlike individual clubs that function in isolation, BEC Creative Spectrum creates a cohesive ecosystem where clubs collaborate, share resources, co-organize events, and collectively represent the creative and intellectual identity of BEC. Every club follows a structured <strong className="font-semibold text-gray-900 dark:text-white">3-month action plan</strong>, is led by trained student leaders, and is supported by a dedicated faculty coordinator.
               </p>
             </div>
@@ -264,13 +264,13 @@ export default function BECCreativeSpectrumPage() {
           />
           <Card className="bg-white border-stone-200 dark:border-stone-800 dark:bg-stone-900/30 overflow-hidden shadow-xs">
             <Table>
-              <TableHeader className="bg-stone-50/50 dark:bg-stone-900/50">
+              <TableHeader className="bg-primary/5 dark:bg-stone-900/50">
                 <TableRow>
-                  <TableHead className="w-[80px] font-semibold">#</TableHead>
-                  <TableHead className="font-semibold w-[220px]">Club Name</TableHead>
-                  <TableHead className="font-semibold w-[180px]">Wing</TableHead>
-                  <TableHead className="font-semibold">Focus Area</TableHead>
-                  <TableHead className="w-[100px] font-semibold text-right pr-4">Action</TableHead>
+                  <TableHead className="w-[80px] font-semibold text-primary">#</TableHead>
+                  <TableHead className="font-semibold w-[220px] text-primary">Club Name</TableHead>
+                  <TableHead className="font-semibold w-[180px] text-primary">Wing</TableHead>
+                  <TableHead className="font-semibold text-primary">Focus Area</TableHead>
+                  <TableHead className="w-[100px] font-semibold text-right pr-4 text-primary">Action</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -386,7 +386,7 @@ export default function BECCreativeSpectrumPage() {
             <div>
               <h3 className="font-bold text-gray-900 dark:text-white text-lg">Faculty Oversight & Guidance</h3>
               <p className="text-xs font-semibold uppercase tracking-wider text-secondary mt-1">Faculty Patron & Dean of Student Welfare (DSW)</p>
-              <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 mt-2 text-sm leading-relaxed text-justify">
                 The Dean of Student Welfare serves as the institutional backbone of BEC Creative Spectrum. Providing strategic direction, ensuring alignment with college policies, approving major events and budgets, she acts as the vital bridge between student leadership and college administration to ensure the initiative remains responsible, focused, and productive.
               </p>
             </div>
@@ -398,19 +398,19 @@ export default function BECCreativeSpectrumPage() {
             <div className="space-y-4">
               <div className="flex items-center gap-2 mb-2">
                 <Users className="w-5 h-5 text-primary" />
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white">Student Executive Committee</h3>
+                <h3 className="text-lg font-bold text-primary dark:text-white">Student Executive Committee</h3>
               </div>
-              <p className="text-sm text-stone-500 leading-relaxed mb-4">
+              <p className="text-sm text-stone-500 leading-relaxed mb-4 text-justify">
                 The central governing body responsible for overall coordination, planning, and execution of Spectrum-wide activities, selected annually based on merit and leadership ability.
               </p>
               
               <Card className="bg-white border-stone-200 dark:border-stone-800 dark:bg-stone-900/30 overflow-hidden shadow-xs">
                 <Table className="w-full">
-                  <TableHeader className="bg-stone-50/50 dark:bg-stone-900/50 border-b border-stone-200 dark:border-stone-800">
+                  <TableHeader className="bg-primary/5 dark:bg-stone-900/50 border-b border-stone-200 dark:border-stone-800">
                     <TableRow>
-                      <TableHead className="w-[180px] font-semibold text-gray-900 dark:text-white px-4 py-3">Role</TableHead>
-                      <TableHead className="w-[180px] font-semibold text-gray-900 dark:text-white px-4 py-3">Level</TableHead>
-                      <TableHead className="font-semibold text-gray-900 dark:text-white px-4 py-3 whitespace-normal">Responsibilities</TableHead>
+                      <TableHead className="w-[180px] font-semibold text-primary dark:text-white px-4 py-3">Role</TableHead>
+                      <TableHead className="w-[180px] font-semibold text-primary dark:text-white px-4 py-3">Level</TableHead>
+                      <TableHead className="font-semibold text-primary dark:text-white px-4 py-3 whitespace-normal">Responsibilities</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -438,19 +438,19 @@ export default function BECCreativeSpectrumPage() {
             <div className="space-y-4">
               <div className="flex items-center gap-2 mb-2">
                 <HeartHandshake className="w-5 h-5 text-primary" />
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white">Club-Level Leadership</h3>
+                <h3 className="text-lg font-bold text-primary dark:text-white">Club-Level Leadership</h3>
               </div>
-              <p className="text-sm text-stone-500 leading-relaxed mb-4">
+              <p className="text-sm text-stone-500 leading-relaxed mb-4 text-justify">
                 Each of the ten clubs is led by a dedicated student leadership team and backed by a faculty mentor to drive day-to-day operations with excellence.
               </p>
 
               <Card className="bg-white border-stone-200 dark:border-stone-800 dark:bg-stone-900/30 overflow-hidden shadow-xs">
                 <Table className="w-full">
-                  <TableHeader className="bg-stone-50/50 dark:bg-stone-900/50 border-b border-stone-200 dark:border-stone-800">
+                  <TableHeader className="bg-primary/5 dark:bg-stone-900/50 border-b border-stone-200 dark:border-stone-800">
                     <TableRow>
-                      <TableHead className="w-[180px] font-semibold text-gray-900 dark:text-white px-4 py-3">Role</TableHead>
-                      <TableHead className="w-[180px] font-semibold text-gray-900 dark:text-white px-4 py-3">Level</TableHead>
-                      <TableHead className="font-semibold text-gray-900 dark:text-white px-4 py-3 whitespace-normal">Responsibilities</TableHead>
+                      <TableHead className="w-[180px] font-semibold text-primary dark:text-white px-4 py-3">Role</TableHead>
+                      <TableHead className="w-[180px] font-semibold text-primary dark:text-white px-4 py-3">Level</TableHead>
+                      <TableHead className="font-semibold text-primary dark:text-white px-4 py-3 whitespace-normal">Responsibilities</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -480,7 +480,7 @@ export default function BECCreativeSpectrumPage() {
                   <GraduationCap className="h-4.5 w-4.5 text-primary" />
                   Accountability & Structure
                 </h4>
-                <p className="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed">
+                <p className="text-xs text-gray-600 dark:text-gray-400 mt-2 leading-relaxed text-justify">
                   Every single club operates on a rolling <strong className="font-semibold text-gray-900 dark:text-white">3-month action plan</strong> with clearly defined deliverables. Student leaders take full ownership, mentored closely by their designated Faculty Coordinators and reporting up to the Student Executive Committee and DSW.
                 </p>
               </div>

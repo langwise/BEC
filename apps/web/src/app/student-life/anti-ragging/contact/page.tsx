@@ -15,7 +15,7 @@ const committee = [
     name: "Dr. B. R. Hiremath",
     role: "Chairman",
     designation: "Principal, BEC Bagalkote",
-    contact: "", // principal@becbgk.edu — TODO: restore official email
+    contact: "becprincipal@yahoo.com",
   },
   {
     name: "Dr. P. L. Timmanagoudar",

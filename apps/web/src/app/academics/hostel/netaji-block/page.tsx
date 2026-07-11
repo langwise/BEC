@@ -43,7 +43,7 @@ export default function NetajiBlockPage() {
 
                 <FadeIn>
                     <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-xs">
-                        <p className="text-gray-700 leading-relaxed mb-4">
+                        <p className="text-gray-700 leading-relaxed mb-4 text-justify">
                             The Netaji hostel was started in the year <strong>1996</strong> to accommodate the increase in demand from the students of Basaveshwar Engineering College Bagalkote. This hostel was mainly started to accommodate the first year students of the college. The hostel has a beautiful garden with all the adequate facilities required for the students. The total number of rooms in the hostel is 100 with total capacity of 300 students.
                         </p>
                         <div className="flex items-start gap-3 bg-green-50 text-green-800 p-4 rounded-xl border border-green-100 mb-6">

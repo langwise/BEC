@@ -4,7 +4,7 @@
     "name": "Dr. B. R. Hiremath",
     "role": "Principal & Member Secretary",
     "photo": "governance/principal/dr-b-r-hiremath.webp",
-    "email": ""
+    "email": "becprincipal@yahoo.com"
   },
   "deans": [
     {
@@ -134,19 +134,19 @@
     "chairman": {
       "name": "Dr. Veeranna C. Charantimath",
       "role": "Chairman, B.V.V. Sangha",
-      "photo": "governance/chairman.png",
+      "photo": "governance/chairman.jpg",
       "messageHref": "/institute/chairperson"
+    },
+    "secretary": {
+      "name": "Sri Mahesh N. Athani",
+      "role": "Secretary, B.V.V. Sangha",
+      "photo": "governance/sangha/sri-mahesh-n-athani.webp"
     },
     "members": [
       {
         "name": "Shri Omkar",
         "role": "B.V.V. Sangha Office Bearer",
         "photo": "governance/sangha/shri-omkar.webp"
-      },
-      {
-        "name": "Sri Mahesh N. Athani",
-        "role": "B.V.V. Sangha Office Bearer",
-        "photo": "governance/sangha/sri-mahesh-n-athani.webp"
       },
       {
         "name": "Dr. Vijayakumar S. Katagihallimath",

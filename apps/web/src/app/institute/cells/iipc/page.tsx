@@ -488,7 +488,7 @@ export default function IipcPage() {
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div className="space-y-4">
             <SectionHeading eyebrow="About" title="Bridging academia and industry" />
-            <p className="text-base leading-relaxed text-gray-700">
+            <p className="text-base leading-relaxed text-gray-700 text-justify">
               The Institution Industry Cell facilitates close interaction between
               the college and industry, bridging gaps between academia and the
               corporate sector. It promotes industry-institute linkages through
@@ -541,7 +541,7 @@ export default function IipcPage() {
           <div className="overflow-x-auto rounded-md border border-stone-200 shadow-sm">
             <table className="w-full min-w-[44rem] border-collapse bg-white text-left text-sm">
               <thead>
-                <tr className="border-b border-stone-200 bg-stone-50 text-gray-700">
+                <tr className="border-b border-stone-200 bg-primary/5 text-primary">
                   <th className="px-4 py-3 font-semibold">Event</th>
                   <th className="px-4 py-3 font-semibold whitespace-nowrap">Date / Year</th>
                   <th className="px-4 py-3 font-semibold">MoU Company</th>
@@ -612,7 +612,7 @@ export default function IipcPage() {
                 </div>
                 <div className="space-y-3">
                   {mou.narrative.map((para) => (
-                    <p key={para} className="text-sm leading-relaxed text-gray-700">
+                    <p key={para} className="text-sm leading-relaxed text-gray-700 text-justify">
                       {para}
                     </p>
                   ))}
@@ -620,7 +620,7 @@ export default function IipcPage() {
                 <div className="overflow-x-auto rounded-md border border-stone-200">
                   <table className="w-full min-w-[40rem] border-collapse bg-white text-left text-sm">
                     <thead>
-                      <tr className="border-b border-stone-200 bg-stone-50 text-gray-700">
+                      <tr className="border-b border-stone-200 bg-primary/5 text-primary">
                         <th className="px-4 py-3 font-semibold whitespace-nowrap">Academic Year</th>
                         <th className="px-4 py-3 font-semibold">Activity</th>
                         <th className="px-4 py-3 font-semibold whitespace-nowrap">Date</th>
@@ -656,7 +656,7 @@ export default function IipcPage() {
           <div className="overflow-x-auto rounded-md border border-stone-200 shadow-sm">
             <table className="w-full min-w-[48rem] border-collapse bg-white text-left text-sm">
               <thead>
-                <tr className="border-b border-stone-200 bg-stone-50 text-gray-700">
+                <tr className="border-b border-stone-200 bg-primary/5 text-primary">
                   <th className="px-4 py-3 font-semibold whitespace-nowrap">Sl. No.</th>
                   <th className="px-4 py-3 font-semibold">Activity</th>
                   <th className="px-4 py-3 font-semibold whitespace-nowrap">Date</th>

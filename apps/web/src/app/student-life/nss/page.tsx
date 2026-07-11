@@ -83,7 +83,7 @@ export default function NssPage() {
               title="Service to society, without bias"
             />
             <div className="space-y-4 text-base leading-relaxed text-gray-700">
-              <p>
+              <p className="text-justify">
                 The NSS unit aims to instill the idea of social welfare in
                 students, encouraging them to provide service to society without
                 bias. Through volunteerism, students learn the realities of rural

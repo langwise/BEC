@@ -60,7 +60,7 @@ export default function ScholarshipsPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-lg">Financial Aid & Support</h3>
-                                    <p className="text-gray-600 mt-1 leading-relaxed">
+                                    <p className="text-gray-600 mt-1 leading-relaxed text-justify">
                                         Basaveshwar Engineering College encourages students to avail of various scholarships provided by the Government of Karnataka, Government of India, and other organizations. Below is the list of available scholarships.
                                     </p>
                                 </div>
@@ -69,18 +69,18 @@ export default function ScholarshipsPage() {
                             {/* Scholarship Table */}
                             <Card className="bg-white border-stone-200 shadow-sm overflow-hidden">
                                 <CardHeader className="bg-stone-50/50 border-b border-stone-100 pb-4">
-                                    <CardTitle className="text-xl">Available Scholarships</CardTitle>
+                                    <CardTitle className="text-xl text-primary">Available Scholarships</CardTitle>
                                     <CardDescription>List of scholarships, relevant departments, and application links.</CardDescription>
                                 </CardHeader>
                                 <CardContent className="p-0">
                                     <div className="overflow-x-auto">
                                         <Table>
                                             <TableHeader>
-                                                <TableRow className="bg-stone-50 hover:bg-stone-50 text-base">
-                                                    <TableHead className="w-[80px] text-center font-bold text-gray-700 hidden md:table-cell">Sl. No.</TableHead>
-                                                    <TableHead className="font-bold text-gray-700 min-w-[250px]">Particulars</TableHead>
-                                                    <TableHead className="font-bold text-gray-700 min-w-[300px]">Department</TableHead>
-                                                    <TableHead className="font-bold text-gray-700 min-w-[200px]">Website</TableHead>
+                                                <TableRow className="bg-primary/5 hover:bg-primary/5 text-base">
+                                                    <TableHead className="w-[80px] text-center font-bold text-primary hidden md:table-cell">Sl. No.</TableHead>
+                                                    <TableHead className="font-bold text-primary min-w-[250px]">Particulars</TableHead>
+                                                    <TableHead className="font-bold text-primary min-w-[300px]">Department</TableHead>
+                                                    <TableHead className="font-bold text-primary min-w-[200px]">Website</TableHead>
                                                 </TableRow>
                                             </TableHeader>
                                             <TableBody>
@@ -119,7 +119,7 @@ export default function ScholarshipsPage() {
                             {/* SC/ST/BCM Cell roster */}
                             <Card className="bg-white border-stone-200 shadow-sm overflow-hidden">
                                 <CardHeader className="bg-stone-50/50 border-b border-stone-100 pb-4">
-                                    <CardTitle className="text-xl">SC/ST/BCM Cell — Academic Year 2025-2026</CardTitle>
+                                    <CardTitle className="text-xl text-primary">SC/ST/BCM Cell — Academic Year 2025-2026</CardTitle>
                                     <CardDescription>
                                         The following staff and student members have been appointed to the SC/ST/BCM Cell to address grievances and monitor the performance of the students.
                                     </CardDescription>
@@ -128,13 +128,13 @@ export default function ScholarshipsPage() {
                                     <div className="overflow-x-auto">
                                         <Table>
                                             <TableHeader>
-                                                <TableRow className="bg-stone-50 hover:bg-stone-50 text-base">
-                                                    <TableHead className="w-[80px] text-center font-bold text-gray-700 hidden md:table-cell">Sl. No.</TableHead>
-                                                    <TableHead className="font-bold text-gray-700 min-w-[200px]">Name</TableHead>
-                                                    <TableHead className="font-bold text-gray-700 min-w-[140px]">Designation</TableHead>
-                                                    <TableHead className="font-bold text-gray-700 min-w-[110px]">Position</TableHead>
-                                                    <TableHead className="font-bold text-gray-700 min-w-[130px]">Mobile</TableHead>
-                                                    <TableHead className="font-bold text-gray-700 min-w-[240px]">Email</TableHead>
+                                                <TableRow className="bg-primary/5 hover:bg-primary/5 text-base">
+                                                    <TableHead className="w-[80px] text-center font-bold text-primary hidden md:table-cell">Sl. No.</TableHead>
+                                                    <TableHead className="font-bold text-primary min-w-[200px]">Name</TableHead>
+                                                    <TableHead className="font-bold text-primary min-w-[140px]">Designation</TableHead>
+                                                    <TableHead className="font-bold text-primary min-w-[110px]">Position</TableHead>
+                                                    <TableHead className="font-bold text-primary min-w-[130px]">Mobile</TableHead>
+                                                    <TableHead className="font-bold text-primary min-w-[240px]">Email</TableHead>
                                                 </TableRow>
                                             </TableHeader>
                                             <TableBody>

@@ -1,6 +1,7 @@
 import {
   Facebook,
   Twitter,
+  Mail,
   Phone,
   MapPin,
   Instagram,
@@ -176,17 +177,15 @@ export function Footer() {
               <li className="flex gap-2">
                 <Phone className="h-5 w-5 shrink-0 text-primary" />
                 <span className="text-secondary-foreground/80">
-                  +91-8354-234060 / 234204
+                  +91-8354-234204
                 </span>
               </li>
-              {/* TODO: restore official email
               <li className="flex gap-2">
                 <Mail className="h-5 w-5 shrink-0 text-primary" />
                 <span className="text-secondary-foreground/80">
-                  principal@becbgk.edu
+                  becprincipal@yahoo.com
                 </span>
               </li>
-              */}
             </ul>
           </div>
         </div>

@@ -323,7 +323,7 @@ export function ResearchContent() {
             </div>
 
             <div className="space-y-8 px-6 py-7 md:px-8 md:py-8">
-              <p className="text-base leading-relaxed text-gray-700">
+              <p className="text-base leading-relaxed text-gray-700 text-justify">
                 {centre.about}
               </p>
 
@@ -387,14 +387,14 @@ export function ResearchContent() {
             <div>
               <SectionHeading eyebrow="At a glance" title="Research at BEC" />
               <div className="mt-5 space-y-4 text-base leading-relaxed text-gray-600">
-                <p>
+                <p className="text-justify">
                   Basaveshwar Engineering College operates 10 research centres
                   recognized by VTU, Belagavi and functions as a QIP centre for
                   doctoral admissions. Its well-qualified faculty — 87 members
                   holding Ph.D. degrees from IITs and NITs — are actively engaged
                   in quality teaching–learning and research.
                 </p>
-                <p>
+                <p className="text-justify">
                   Over the last five years the college secured research grants of
                   about Rs. 3.00 crores, in addition to Rs. 40 crores through the
                   World Bank–assisted TEQIP programme across its three phases —
@@ -423,26 +423,26 @@ export function ResearchContent() {
 
           {/* Recognized research centres */}
           <div id="centres" className="scroll-mt-28 pt-16">
-            <h2 className="mb-6 text-2xl font-bold text-gray-900 md:text-3xl">
+            <h2 className="mb-6 text-2xl font-bold text-primary md:text-3xl">
               Recognized Research Centres
             </h2>
             <div className="overflow-x-auto rounded-2xl border border-stone-200 bg-white shadow-sm">
               <table className="min-w-full divide-y divide-stone-200 text-sm">
-                <thead className="bg-stone-50">
+                <thead className="bg-primary/5">
                   <tr>
-                    <th className="px-5 py-3.5 text-left text-xs font-semibold uppercase tracking-wider text-gray-500">
+                    <th className="px-5 py-3.5 text-left text-xs font-semibold uppercase tracking-wider text-primary">
                       Research Centre
                     </th>
-                    <th className="px-5 py-3.5 text-center text-xs font-semibold uppercase tracking-wider text-gray-500">
+                    <th className="px-5 py-3.5 text-center text-xs font-semibold uppercase tracking-wider text-primary">
                       Recognized
                     </th>
-                    <th className="px-5 py-3.5 text-center text-xs font-semibold uppercase tracking-wider text-gray-500">
+                    <th className="px-5 py-3.5 text-center text-xs font-semibold uppercase tracking-wider text-primary">
                       Guides
                     </th>
-                    <th className="px-5 py-3.5 text-center text-xs font-semibold uppercase tracking-wider text-gray-500">
+                    <th className="px-5 py-3.5 text-center text-xs font-semibold uppercase tracking-wider text-primary">
                       Scholars
                     </th>
-                    <th className="px-5 py-3.5 text-center text-xs font-semibold uppercase tracking-wider text-gray-500">
+                    <th className="px-5 py-3.5 text-center text-xs font-semibold uppercase tracking-wider text-primary">
                       Ph.D.s Awarded
                     </th>
                   </tr>

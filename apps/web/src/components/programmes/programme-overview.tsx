@@ -30,7 +30,7 @@ export function ProgrammeOverview({
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Programme Overview
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed text-justify">
               {description}
             </p>
           </motion.div>

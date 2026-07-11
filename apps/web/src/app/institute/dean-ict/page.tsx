@@ -203,7 +203,7 @@ export default function DeanIctPage() {
               ))}
             </ul>
           </div>
-          <p className="max-w-3xl text-base leading-relaxed text-gray-700">
+          <p className="max-w-3xl text-base leading-relaxed text-gray-700 text-justify">
             This state-of-the-art IT ecosystem enables a technology-driven
             learning environment, ensuring seamless access to digital resources,
             secure communication, and enhanced academic excellence.

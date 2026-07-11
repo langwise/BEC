@@ -32,7 +32,7 @@ export default function ExaminationsPage() {
 
         <FadeIn>
           <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-xs prose prose-orange max-w-none text-gray-700">
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-justify">
               Basaveshwar Engineering College, Bagalkote was granted{" "}
               <strong>Autonomous status</strong> from the academic year
               2007-2008 by Visvesvaraya Technological University (VTU),
@@ -40,7 +40,7 @@ export default function ExaminationsPage() {
               the year 2007 to oversee the conduct of examinations and
               evaluation processes.
             </p>
-            <p className="leading-relaxed mt-4">
+            <p className="leading-relaxed mt-4 text-justify">
               The examination section is dedicated to maintaining high standards
               in the assessment of student performance. It is headed by the{" "}
               <strong>Controller of Examinations</strong>, supported by a team

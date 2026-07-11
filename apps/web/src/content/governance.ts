@@ -72,6 +72,7 @@ export type Sangha = {
   intro?: string;
   groupPhoto: string;
   chairman: SanghaChairman;
+  secretary: SanghaMember;
   members: SanghaMember[];
   council: SanghaCouncilMember[];
 };
@@ -121,6 +122,11 @@ export const sangha: Sangha = {
     role: data.sangha.chairman.role,
     photo: asset(data.sangha.chairman.photo),
     messageHref: data.sangha.chairman.messageHref,
+  },
+  secretary: {
+    name: data.sangha.secretary.name,
+    role: data.sangha.secretary.role,
+    photo: photo(data.sangha.secretary.photo),
   },
   members: (data.sangha.members as { name: string; role: string; photo?: string }[]).map(
     (member) => ({

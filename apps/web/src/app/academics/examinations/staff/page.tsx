@@ -76,7 +76,7 @@ export default function ExamStaffPage() {
             <div className="rounded-2xl border border-stone-200 overflow-hidden shadow-xs bg-white">
               <div className="overflow-x-auto">
                 <table className="w-full text-sm text-left">
-                  <thead className="bg-orange-50/50 text-gray-700 font-semibold border-b border-stone-100">
+                  <thead className="bg-orange-50/50 text-primary font-semibold border-b border-stone-100">
                     <tr>
                       <th className="px-6 py-4 w-16 text-center hidden md:table-cell">
                         Sl. No.

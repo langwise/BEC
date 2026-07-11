@@ -116,7 +116,7 @@ export default function IEEEPage() {
               title="Over 25 years of IEEE activity"
             />
             <div className="space-y-4 text-base leading-relaxed text-gray-700">
-              <p>
+              <p className="text-justify">
                 The IEEE Student Branch (STB35261) at Basaveshwar Engineering
                 College, Bagalkote — known among peers as BEC-IEEE — was
                 established in 1994 and has completed over 25 years of technical,
@@ -124,7 +124,7 @@ export default function IEEEPage() {
                 entity of the IEEE North Karnataka Sub Section, affiliated to the
                 IEEE Bangalore Section.
               </p>
-              <p>
+              <p className="text-justify">
                 The branch organises regular technical seminars, workshops and
                 competitions to bridge the gap between academic learning and
                 industry requirements, and has helped initiate IEEE activities at

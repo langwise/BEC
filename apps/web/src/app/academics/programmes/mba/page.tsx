@@ -83,7 +83,7 @@ export default function MBAProgrammePage() {
       {/* Overview & Highlights */}
       <section className="space-y-8">
         <div className="prose prose-lg prose-orange max-w-none text-gray-600">
-          <p>
+          <p className="text-justify">
             The MBA programme at BEC is designed to create future business
             leaders who can bridge the gap between technology and management.
             Our curriculum integrates core management principles with practical
@@ -165,7 +165,7 @@ export default function MBAProgrammePage() {
         <SectionHeader icon={Wallet} title="Fee Structure" />
         <div className="overflow-x-auto rounded-xl border border-gray-200">
           <table className="w-full text-sm text-left">
-            <thead className="bg-gray-50 text-gray-900 font-semibold border-b border-gray-200">
+            <thead className="bg-primary/5 text-primary font-semibold border-b border-gray-200">
               <tr>
                 <th className="px-6 py-4">Quota</th>
                 <th className="px-6 py-4">Type</th>

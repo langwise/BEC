@@ -14,4 +14,5 @@ export interface NavigationItem {
   title: string;
   href?: string;
   items?: NavigationItemChild[];
+  groupsFirst?: boolean;
 }

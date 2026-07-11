@@ -71,7 +71,7 @@ export default function BECFMPage() {
               eyebrow="About"
               title="Broadcasting knowledge, culture and campus voices"
             />
-            <p className="text-base leading-relaxed text-gray-700">
+            <p className="text-base leading-relaxed text-gray-700 text-justify">
               BEC Dhwani 90.4 FM was established to cater to the needs of the
               student community and the wider region around Bagalkote. It carries
               talk shows, music and locally relevant programming produced on

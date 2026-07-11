@@ -153,7 +153,7 @@ export default function IicPage() {
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-start">
           <div className="space-y-4">
             <SectionHeading eyebrow="About" title="A campus-wide innovation ecosystem" />
-            <p className="text-base leading-relaxed text-gray-700">
+            <p className="text-base leading-relaxed text-gray-700 text-justify">
               The Ministry of Education (MoE), Government of India established the
               MoE&rsquo;s Innovation Cell (MIC) to systematically foster a culture
               of innovation across higher education. The IIC initiative encourages

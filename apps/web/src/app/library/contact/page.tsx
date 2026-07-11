@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Library Contact Information",
   description:
-    "Contact the BEC Bagalkote Central Library: phone +91-8354-234060, email becbgklibrary@gmail.com, open Mon-Fri 8 AM-8 PM and Saturday 9 AM-5 PM.",
+    "Contact the BEC Bagalkote Central Library: email becbgklibrary@gmail.com, open Mon-Fri 8 AM-8 PM and Saturday 9 AM-5 PM.",
   path: "/library/contact",
 });
 
@@ -42,20 +42,6 @@ export default function ContactPage() {
             <div className="lg:col-span-3">
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 {/* Contact Info Cards */}
-                <FadeIn delay={0.1}>
-                  <div className="bg-white rounded-lg p-8 border border-stone-200">
-                    <div className="bg-orange-50 p-4 rounded-lg mb-4 inline-block">
-                      <Phone className="h-8 w-8 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Phone</h3>
-                    <div className="space-y-2">
-                      <a href="tel:+918354234060" className="block text-gray-700 hover:text-primary transition-colors">
-                        +91-8354-234060
-                      </a>
-                    </div>
-                  </div>
-                </FadeIn>
-
                 <FadeIn delay={0.15}>
                   <div className="bg-white rounded-lg p-8 border border-stone-200">
                     <div className="bg-orange-50 p-4 rounded-lg mb-4 inline-block">

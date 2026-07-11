@@ -82,7 +82,7 @@ export default function AchievementsPage() {
                 National winners at the{" "}
                 <span className="text-orange-400">Smart India Hackathon</span>
               </h2>
-              <p className="max-w-xl leading-relaxed text-stone-300">
+              <p className="max-w-xl leading-relaxed text-stone-300 text-justify">
                 Team We_ASCLEPIUS won the 2020 Software Edition of the Smart India
                 Hackathon, one of the country's largest open-innovation contests.
               </p>

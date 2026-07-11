@@ -83,7 +83,7 @@ export default function EResourcesFreePage() {
             <div className="lg:col-span-3">
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
-                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4 text-justify">
                     Explore our curated collection of free online resources, open-access journals, and educational
                     platforms. These resources are freely accessible to everyone and provide valuable learning materials
                     across various disciplines.

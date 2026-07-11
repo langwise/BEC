@@ -43,9 +43,10 @@ export const navigationData: NavigationItem[] = [
           { title: "Library", href: "/library" },
         ],
       },
-      { title: "Contact Us", href: "/institute/contact" },
       { title: "Institute Brochure", href: "/institute/brochure" },
       { title: "Gallery", href: "/institute/gallery" },
+      { title: "Contact Us", href: "/institute/contact" },
+      { title: "How to Reach", href: "/institute/contact#how-to-reach" },
     ],
   },
 
@@ -78,6 +79,7 @@ export const navigationData: NavigationItem[] = [
   // 3. Academics
   {
     title: "Academics",
+    groupsFirst: true,
     items: [
       { title: "Research", href: "/research" },
       { title: "First-Year Syllabus", href: "/academics/first-year" },
@@ -109,19 +111,33 @@ export const navigationData: NavigationItem[] = [
     })),
   },
 
-  // 5. Examinations
+  // 5. Admissions
+  {
+    title: "Admissions",
+    items: [
+      { title: "Overview", href: "/admissions" },
+      { title: "Under Graduate/BE", href: "/admissions/ug" },
+      { title: "Post Graduate/M.Tech", href: "/admissions/pg" },
+      { title: "Ph.D / M.Sc.(Engg.)", href: "/admissions/phd" },
+      { title: "MBA", href: "/admissions/mba" },
+      { title: "MCA", href: "/admissions/mca" },
+      { title: "Contact", href: "/admissions/contact" },
+    ],
+  },
+
+  // 6. Examinations
   {
     title: "Examinations",
     href: "/academics/examinations",
   },
 
-  // 6. Placements
+  // 7. Placements
   {
     title: "Placements",
     href: "/placements",
   },
 
-  // 7. Student Life
+  // 8. Student Life
   {
     title: "Student Life",
     items: [

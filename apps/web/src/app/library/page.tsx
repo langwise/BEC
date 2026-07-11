@@ -300,7 +300,7 @@ export default function LibraryPage() {
                   Dr. Shreekant G. Karkun
                 </h3>
                 <p className="text-primary font-semibold mb-4">Librarian</p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-justify">
                   The Central Library is committed to supporting the teaching,
                   learning, and research needs of our students, faculty, and
                   researchers through a rich collection of print and digital

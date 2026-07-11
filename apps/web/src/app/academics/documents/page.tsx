@@ -45,7 +45,7 @@ export default function DocumentsPage() {
                                 <Info className="w-6 h-6 text-yellow-600 shrink-0 mt-1" />
                                 <div>
                                     <h3 className="font-bold text-yellow-900 text-lg">Important Instruction</h3>
-                                    <p className="text-yellow-800 mt-1 leading-relaxed">
+                                    <p className="text-yellow-800 mt-1 leading-relaxed text-justify">
                                         Dear Students, please arrange the <strong>Original Documents</strong> and <strong>Xerox copies</strong> of the same in the order shown below. Ensure you have 3 sets of Xerox copies for all documents.
                                     </p>
                                 </div>
@@ -59,7 +59,7 @@ export default function DocumentsPage() {
                                             <FileText className="w-5 h-5" />
                                         </div>
                                         <div>
-                                            <CardTitle className="text-xl">Check List</CardTitle>
+                                            <CardTitle className="text-xl text-primary">Check List</CardTitle>
                                             <CardDescription>Required documents for verification and submission</CardDescription>
                                         </div>
                                     </div>
@@ -67,10 +67,10 @@ export default function DocumentsPage() {
                                 <CardContent className="p-0">
                                     <Table>
                                         <TableHeader>
-                                            <TableRow className="bg-stone-50 hover:bg-stone-50">
-                                                <TableHead className="w-[80px] text-center font-bold text-gray-700 hidden md:table-cell">Sl. No.</TableHead>
-                                                <TableHead className="font-bold text-gray-700">Original Documents</TableHead>
-                                                <TableHead className="font-bold text-gray-700">3 sets Xerox copies of documents</TableHead>
+                                            <TableRow className="bg-primary/5 hover:bg-primary/5">
+                                                <TableHead className="w-[80px] text-center font-bold text-primary hidden md:table-cell">Sl. No.</TableHead>
+                                                <TableHead className="font-bold text-primary">Original Documents</TableHead>
+                                                <TableHead className="font-bold text-primary">3 sets Xerox copies of documents</TableHead>
                                             </TableRow>
                                         </TableHeader>
                                         <TableBody>

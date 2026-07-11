@@ -186,7 +186,7 @@ export function GovernanceContent() {
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
               Governance overview
             </h2>
-            <p className="text-base leading-relaxed text-gray-700">
+            <p className="text-base leading-relaxed text-gray-700 text-justify">
               Basaveshwar Engineering College operates under the aegis of B.V.V. Sangha with
               statutory oversight by the Board of Governors. The Principal, as Member Secretary,
               leads day-to-day execution alongside Deans, Controllers, and Heads of Departments,
@@ -252,7 +252,7 @@ export function GovernanceContent() {
               <Badge className="rounded-sm bg-primary text-white">
                 {sangha.chairman.role}
               </Badge>
-              <p className="text-base leading-relaxed text-gray-700">
+              <p className="text-base leading-relaxed text-gray-700 text-justify">
                 Chairman of B.V.V. Sangha since 1991, leading 190+ institutions from
                 kindergarten to research and steering BEC&apos;s vision for quality technical
                 education under the philosophy &ldquo;Work is Worship&rdquo;.
@@ -265,6 +265,19 @@ export function GovernanceContent() {
                   Read the Chairman&apos;s message →
                 </Link>
               ) : null}
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-gray-900">
+              Secretary
+            </h3>
+            <div className="max-w-xs">
+              <PersonCard
+                photo={sangha.secretary.photo}
+                name={sangha.secretary.name}
+                badges={[{ label: sangha.secretary.role, tone: "primary" }]}
+              />
             </div>
           </div>
 
@@ -342,7 +355,7 @@ export function GovernanceContent() {
                     Director of Technical Education, B.V.V. Sangha
                   </Badge>
                 </div>
-                <p className="text-base leading-relaxed text-gray-700">
+                <p className="text-base leading-relaxed text-gray-700 text-justify">
                   Under his leadership BEC has introduced BE-AIML and M.Tech Defence
                   Technology, secured an AICTE Idea Lab, and accredited all its UG
                   programmes — keeping the college ready for NEP-2020.
@@ -429,7 +442,7 @@ export function GovernanceContent() {
                     {principal.role}
                   </Badge>
                 </div>
-                <p className="text-base leading-relaxed text-gray-700">
+                <p className="text-base leading-relaxed text-gray-700 text-justify">
                   As Member Secretary to the Board of Governors, the Principal translates the
                   Board&apos;s policies into day-to-day execution — overseeing academics,
                   examinations, placements, research, and institutional development across all

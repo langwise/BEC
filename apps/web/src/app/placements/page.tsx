@@ -114,7 +114,7 @@ export default function PlacementsPage() {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">About the cell</h2>
             <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
               {home.about.map((p, i) => (
-                <p key={i}>{p}</p>
+                <p key={i} className="text-justify">{p}</p>
               ))}
             </div>
           </div>

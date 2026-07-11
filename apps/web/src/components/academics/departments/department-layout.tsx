@@ -5,6 +5,7 @@ import Image from "next/image";
 import DepartmentSidebar from "@/components/academics/departments/sidebar";
 import type { DataTable, DepartmentData, DocLink } from "@/data/department/department";
 import ContentSection from "@/components/academics/departments/content";
+import ContactSection from "@/components/academics/departments/contact-section";
 import TestimonialsSection from "@/components/academics/departments/testimonials";
 import { CheckCircle2, FileText, Download } from "lucide-react";
 import { FacultyCard } from "@/components/academics/faculty/faculty-card";
@@ -277,16 +278,16 @@ function DepartmentTables({ title, tables }: { title?: string; tables: DataTable
       <div className="space-y-8">
         {tables.map((table) => (
           <div key={table.title} className="space-y-3">
-            <h3 className="text-base font-semibold text-gray-900">{table.title}</h3>
+            <h3 className="text-base font-semibold text-primary">{table.title}</h3>
             <div className="overflow-x-auto rounded-md border border-stone-200 bg-white shadow-sm">
               <table className="min-w-full divide-y divide-stone-200 text-sm">
-                <thead className="bg-stone-50">
+                <thead className="bg-primary/5">
                   <tr>
                     {table.columns.map((column) => (
                       <th
                         key={column}
                         scope="col"
-                        className="min-w-[160px] px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-stone-600"
+                        className="min-w-[160px] px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-primary"
                       >
                         {column}
                       </th>
@@ -502,6 +503,15 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                      <SectionEmbeds documents={activeSection.embeds} />
                      <SectionAttachments documents={activeSection.attachments} />
                  </div>
+             )
+         }
+         if (activeSection.type === "contact") {
+             return (
+                 <ContactSection
+                     title={activeSection.title}
+                     icon={activeSection.icon}
+                     people={activeSection.people}
+                 />
              )
          }
          if (activeSection.type === "testimonials") {

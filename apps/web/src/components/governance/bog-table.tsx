@@ -47,14 +47,14 @@ export function BogTable({ members }: { members: BogMember[] }) {
       <div className="hidden sm:block">
         <Table>
           <TableHeader>
-            <TableRow className="border-stone-200 bg-stone-50/80 hover:bg-stone-50/80">
-              <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">
+            <TableRow className="border-stone-200 bg-primary/5 hover:bg-primary/5">
+              <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">
                 Member
               </TableHead>
-              <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">
+              <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">
                 Affiliation
               </TableHead>
-              <TableHead className="px-5 py-3.5 text-right text-xs font-semibold uppercase tracking-wider text-gray-500">
+              <TableHead className="px-5 py-3.5 text-right text-xs font-semibold uppercase tracking-wider text-primary">
                 Role
               </TableHead>
             </TableRow>

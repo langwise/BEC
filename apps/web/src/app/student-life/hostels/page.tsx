@@ -111,7 +111,7 @@ export default function HostelsPage() {
               <Users className="h-5 w-5 text-primary" />
               Management
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-gray-600">
+            <p className="mt-2 text-sm leading-relaxed text-gray-600 text-justify">
               The hostels are managed by the Student Welfare and Hostel Committee
               (SWC) of the B.V.V. Sangha, consisting of 12 members.
             </p>

@@ -78,7 +78,7 @@ export default function UsefulLinksPage() {
             <div className="lg:col-span-3">
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed text-justify">
                     This page provides quick access to important library
                     services, academic resources, and useful external links that
                     support teaching, learning, and research activities.

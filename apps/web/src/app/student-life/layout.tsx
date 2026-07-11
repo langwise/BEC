@@ -126,25 +126,6 @@ export default function StudentLifeLayout({
                                     <SidebarNavItem key={index} item={item} pathname={pathname} />
                                 ))}
                             </nav>
-
-                            {/* Quick Assistance Card */}
-                            <div className="mt-8 p-6 rounded-2xl bg-white border border-orange-100 shadow-sm">
-                                <h3 className="text-sm font-bold text-gray-900 mb-2">
-                                    Student Support
-                                </h3>
-                                <div className="space-y-2 text-xs">
-                                    {/* TODO: restore official email
-                                    <div className="flex items-center gap-2 text-gray-700">
-                                        <span className="font-semibold text-primary">Email:</span>
-                                        principal@becbgk.edu
-                                    </div>
-                                    */}
-                                    <div className="flex items-center gap-2 text-gray-700">
-                                        <span className="font-semibold text-primary">Helpline:</span>
-                                        08354-234060
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 

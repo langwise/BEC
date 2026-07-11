@@ -248,13 +248,11 @@ export function AcademicCalendarSection({
               or events, please contact the Controller of Examinations
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {/* TODO: restore official email
-              <a href="mailto:coe@becbgk.edu">
+              <a href="mailto:beccoe2007@gmail.com">
                 <Button variant="default" size="lg">
                   Contact COE
                 </Button>
               </a>
-              */}
               <a href="/departments">
                 <Button variant="outline" size="lg">
                   View Departments

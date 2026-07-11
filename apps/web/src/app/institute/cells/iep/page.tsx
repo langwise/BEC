@@ -55,7 +55,7 @@ export default function IepPage() {
         <div className="grid gap-8 lg:grid-cols-[1fr_220px] lg:items-start">
           <div className="space-y-5">
             <SectionHeading eyebrow="About" title="About BEC-IEP" />
-            <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700">
+            <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700 text-justify">
               <p>
                 Basaveshwar Engineering College (BEC), Bagalkote has framed the
                 innovation and entrepreneurship policy for students and faculty

@@ -405,7 +405,7 @@ export function StaffCard({
                     {responsibilities && (
                       <div className="border-t border-stone-100 pt-4">
                         <span className="text-xs text-stone-500 block mb-1">Administrative Responsibilities</span>
-                        <p className="text-stone-700 text-sm leading-relaxed">{responsibilities}</p>
+                        <p className="text-stone-700 text-sm leading-relaxed text-justify">{responsibilities}</p>
                       </div>
                     )}
 
@@ -413,7 +413,7 @@ export function StaffCard({
                     {researchInterest && (
                       <div className="border-t border-stone-100 pt-4">
                         <span className="text-xs text-stone-500 block mb-1">Research Interests</span>
-                        <p className="text-stone-700 text-sm leading-relaxed">{researchInterest}</p>
+                        <p className="text-stone-700 text-sm leading-relaxed text-justify">{researchInterest}</p>
                       </div>
                     )}
 

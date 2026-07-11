@@ -83,7 +83,7 @@ export default function StepPage() {
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
         <div className="space-y-4">
           <SectionHeading eyebrow="About" title="Enterprise for the region" />
-          <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700">
+          <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700 text-justify">
             <p>
               Bagalkote district has strong agricultural foundations — three rivers
               and crops including pomegranate, sapota, guava and papaya — and was

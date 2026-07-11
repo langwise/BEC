@@ -148,14 +148,14 @@ export default function GymkhanaPage() {
         <div className="space-y-4">
           <SectionHeading eyebrow="About" title="Sport for overall development" />
           <div className="max-w-3xl space-y-4 text-base leading-relaxed text-gray-700">
-            <p>
+            <p className="text-justify">
               Sports play an integral part in moulding and refining the character of
               a student. The college has excellent infrastructure for developing
               sporting skills — a 5-acre outdoor playground and an indoor stadium —
               and a full-time Physical Director who works for the physical fitness of
               students and the conduct of sports activities.
             </p>
-            <p>
+            <p className="text-justify">
               The Gymkhana aims at the overall development of students through its
               various sports programmes, inculcating discipline, team spirit,
               teamwork, co-operation, sportsmanship and tolerance, while offering

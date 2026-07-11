@@ -48,7 +48,7 @@ export default function VerificationPage() {
         <h1 className="text-3xl font-bold text-gray-900 tracking-tight mb-4">
           Academic Verification
         </h1>
-        <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg text-gray-600 leading-relaxed text-justify">
           Academic document verification for Autonomous-scheme students, for
           Government departments, verification agencies and academic
           institutions.

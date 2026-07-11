@@ -7,6 +7,7 @@ import { CampusLifeSection } from "@/components/home/campus-life-section";
 import { PlacementsSection } from "@/components/home/placements-section";
 import { FollowUsSection } from "@/components/home/follow-us-section";
 import { AboutSection } from "@/components/home/about-section";
+import { VisionMissionSection } from "@/components/home/vision-mission-section";
 import { NewsAnnouncementsSection } from "@/components/home/news-announcements-section";
 
 export const metadata = {
@@ -27,6 +28,7 @@ export default function Home() {
         <FollowUsSection />
         <NewsAnnouncementsSection />
         <AboutSection />
+        <VisionMissionSection />
         <ProgrammesSection />
         <PlacementsSection />
         <StatsSection />

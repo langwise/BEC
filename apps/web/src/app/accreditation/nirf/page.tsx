@@ -85,26 +85,22 @@ export default function NirfPage() {
                 <Mail className="h-5 w-5 text-primary shrink-0" />
                 Comments & Feedback
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                As per the NIRF guidelines, we welcome comments, feedback, and suggestions regarding the published Data Capturing System (DCS) reports.
-                {/* TODO: restore official email —
-                {" "}Please feel free to reach out to us at our official email address:{" "}
+              <p className="text-sm text-gray-600 leading-relaxed text-justify">
+                As per the NIRF guidelines, we welcome comments, feedback, and suggestions regarding the published Data Capturing System (DCS) reports. Please feel free to reach out to us at our official email address:{" "}
                 <a
-                  href="mailto:principal@becbgk.edu?subject=Comments%20%26%20Feedback%20on%20NIRF%20Data"
+                  href="mailto:becprincipal@yahoo.com?subject=Comments%20%26%20Feedback%20on%20NIRF%20Data"
                   className="font-semibold text-primary hover:underline"
                 >
-                  principal@becbgk.edu
-                </a> */}
+                  becprincipal@yahoo.com
+                </a>
               </p>
             </div>
-            {/* TODO: restore official email — Send Feedback button
             <a
-              href="mailto:principal@becbgk.edu?subject=Comments%20%26%20Feedback%20on%20NIRF%20Data&body=Dear%20Principal%2C%0A%0AI%20would%20like%20to%20provide%20the%20following%20comments%2Ffeedback%20regarding%20the%20published%20NIRF%20DCS%20data%3A%0A%0A%5BYour%20Feedback%20Here%5D%0A%0ARegards%2C%0A%5BYour%20Name%5D"
+              href="mailto:becprincipal@yahoo.com?subject=Comments%20%26%20Feedback%20on%20NIRF%20Data&body=Dear%20Principal%2C%0A%0AI%20would%20like%20to%20provide%20the%20following%20comments%2Ffeedback%20regarding%20the%20published%20NIRF%20DCS%20data%3A%0A%0A%5BYour%20Feedback%20Here%5D%0A%0ARegards%2C%0A%5BYour%20Name%5D"
               className="inline-flex h-11 items-center justify-center rounded-lg bg-primary text-primary-foreground hover:bg-primary/95 px-6 text-sm font-semibold tracking-wide shadow-sm shrink-0"
             >
               Send Feedback
             </a>
-            */}
           </div>
         </div>
       </section>

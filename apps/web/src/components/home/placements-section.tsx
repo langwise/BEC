@@ -34,7 +34,7 @@ export function PlacementsSection() {
                 <span className="text-primary">industry leaders</span>
               </h2>
 
-              <p className="text-lg text-gray-600 leading-relaxed font-medium max-w-xl">
+              <p className="text-lg text-gray-600 leading-relaxed font-medium max-w-xl text-justify">
                 Our rigorous training and strong recruiter network ensure you
                 step confidently into roles across technology, consulting, and
                 core engineering.

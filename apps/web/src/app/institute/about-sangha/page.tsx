@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { asset } from "@/lib/assets";
@@ -61,25 +63,62 @@ export default function AboutSanghaPage() {
 
       <section className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6">
         
-        {/* Full-width Leadership & Governing Body Images */}
-        <div className="flex flex-col sm:flex-row gap-8 mb-12 not-prose justify-center items-start">
-          {/* Photo-2: Dr. Veeranna Charantimath */}
-          <div className="bg-white rounded-lg border border-stone-200 overflow-hidden shadow-xs p-5 flex flex-col items-center w-full sm:w-[292px] shrink-0">
+        {/* Chairman — portrait with a pull-quote from the Chairman's Message */}
+        <div className="grid gap-8 mb-8 items-stretch lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.65fr)]">
+          {/* Photo-2: Dr. Veeranna C. Charantimath */}
+          <div className="bg-white rounded-lg border border-stone-200 overflow-hidden shadow-xs p-5 flex flex-col items-center">
             <div className="relative w-full aspect-[3/4] overflow-hidden rounded-md border border-stone-100 bg-stone-50">
               <Image
                 src={asset("governance/chairman.jpg")}
-                alt="Dr. Veeranna Charantimath"
+                alt="Dr. Veeranna C. Charantimath"
                 fill
-                sizes="(max-width: 640px) 100vw, 292px"
+                sizes="(max-width: 1024px) 100vw, 320px"
                 className="object-cover object-top"
               />
             </div>
-            <h4 className="font-bold text-gray-900 text-base mt-4 text-center">Dr. Veeranna Charantimath</h4>
+            <h4 className="font-bold text-gray-900 text-base mt-4 text-center">Dr. Veeranna C. Charantimath</h4>
             <p className="text-sm text-primary font-semibold mt-0.5 text-center">Chairman, B.V.V. Sangha</p>
           </div>
 
-          {/* Photo-3: Group Photo */}
-          <div className="bg-white rounded-lg border border-stone-200 overflow-hidden shadow-xs p-5 flex flex-col items-center w-full sm:w-[488px] shrink-0">
+          {/* Pull-quote sourced from /institute/chairperson */}
+          <figure className="relative flex flex-col justify-center rounded-lg border border-stone-200 bg-linear-to-br from-orange-50/60 via-white to-stone-50 p-7 md:p-10 shadow-xs">
+            <span aria-hidden className="pointer-events-none absolute left-5 top-1 select-none font-serif text-7xl leading-none text-primary/20">“</span>
+            <blockquote className="relative text-lg md:text-xl font-medium leading-relaxed text-gray-800">
+              We at BVVS strongly believe in the philosophy of Lord Basaveshwar of the 12<sup>th</sup> century — <span className="italic text-primary">“Work is Worship”</span> — and inculcate a concrete value system amongst the faculty and students. The B.V.V. Sangha has an everlasting commitment for developing professionals with a humane and pragmatic approach to bring about change in the society.
+            </blockquote>
+            <figcaption className="mt-6">
+              <p className="font-bold text-gray-900">Dr. Veeranna C. Charantimath</p>
+              <p className="text-sm text-gray-600">Chairman, B.V.V. Sangha, Bagalkote</p>
+              <Link
+                href="/institute/chairperson"
+                className="group mt-3 inline-flex w-fit items-center gap-1 text-sm font-medium text-primary hover:underline hover:underline-offset-4"
+              >
+                Read the full message
+                <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </Link>
+            </figcaption>
+          </figure>
+        </div>
+
+        {/* Secretary + B.V.V. Sangha Committee */}
+        <div className="grid gap-8 mb-12 sm:grid-cols-2 items-start">
+          {/* Photo-3: Sri Mahesh N. Athani — Secretary */}
+          <div className="bg-white rounded-lg border border-stone-200 overflow-hidden shadow-xs p-5 flex flex-col items-center">
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-md border border-stone-100 bg-stone-50">
+              <Image
+                src={asset("governance/sangha/sri-mahesh-n-athani.webp")}
+                alt="Sri Mahesh N. Athani"
+                fill
+                sizes="(max-width: 640px) 100vw, 488px"
+                className="object-cover object-top"
+              />
+            </div>
+            <h4 className="font-bold text-gray-900 text-base mt-4 text-center">Sri Mahesh N. Athani</h4>
+            <p className="text-sm text-primary font-semibold mt-0.5 text-center">Secretary, B.V.V. Sangha</p>
+          </div>
+
+          {/* Photo-4: Group Photo */}
+          <div className="bg-white rounded-lg border border-stone-200 overflow-hidden shadow-xs p-5 flex flex-col items-center">
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-md border border-stone-100 bg-stone-50">
               <Image
                 src={asset("governance/sangha/group-photo.webp")}

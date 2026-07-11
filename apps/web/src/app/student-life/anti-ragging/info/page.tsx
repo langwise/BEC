@@ -66,7 +66,7 @@ export default function AntiRaggingInfoPage() {
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div className="space-y-6">
             <SectionHeading eyebrow="Definition" title="What constitutes ragging?" />
-            <p className="text-base leading-relaxed text-gray-700">
+            <p className="text-base leading-relaxed text-gray-700 text-justify">
               Ragging is any disorderly conduct — whether by spoken or written
               words, or by an act — that has the effect of teasing, treating or
               handling another student with rudeness, or that is likely to cause
@@ -78,7 +78,7 @@ export default function AntiRaggingInfoPage() {
                 <Ban className="h-5 w-5 text-primary" />
                 Strictly Prohibited
               </h4>
-              <p className="mt-2 text-sm leading-relaxed text-gray-700">
+              <p className="mt-2 text-sm leading-relaxed text-gray-700 text-justify">
                 Ragging within or outside the educational institution is strictly
                 prohibited. Engaging in ragging is a criminal offence under the
                 IPC and the Karnataka Education Act.

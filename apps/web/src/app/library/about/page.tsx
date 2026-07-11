@@ -60,7 +60,7 @@ export default function AboutLibraryPage() {
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
                   <div className="prose prose-lg max-w-none">
                     <div className="bg-stone-50 border-l-4 border-primary p-6 rounded-r-lg mb-6">
-                      <p className="text-lg text-gray-700 leading-relaxed mb-0">
+                      <p className="text-lg text-gray-700 leading-relaxed mb-0 text-justify">
                         The Library and Information Centre was established in
                         1963 with three departments, housed in a small building.
                         It now occupies its own dedicated facility of 2,100 sq.m
@@ -72,7 +72,7 @@ export default function AboutLibraryPage() {
                       </p>
                     </div>
 
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    <p className="text-gray-700 leading-relaxed mb-4 text-justify">
                       Our library is committed to providing state-of-the-art
                       facilities and resources to students, faculty, and
                       researchers. With a perfect blend of traditional print
@@ -81,7 +81,7 @@ export default function AboutLibraryPage() {
                       knowledge resources essential for academic excellence.
                     </p>
 
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed text-justify">
                       The library operates with a user-centric approach,
                       offering personalized services and maintaining extended
                       hours to accommodate the diverse needs of our academic
@@ -105,7 +105,7 @@ export default function AboutLibraryPage() {
                         Our Vision
                       </h2>
                     </div>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed text-justify">
                       Engaged in learning and discovery as essential
                       participants in the educational community — to develop,
                       organize, provide access to and preserve materials to meet

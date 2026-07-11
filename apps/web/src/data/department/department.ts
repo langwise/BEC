@@ -96,7 +96,14 @@ export type DepartmentSection =
       icon?: string;
       testimonials: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
     }
-  | { id?: string; type: "gallery"; title: string; images: { src: string; alt: string }[]; attachments?: DocLink[]; embeds?: DocLink[] };
+  | { id?: string; type: "gallery"; title: string; images: { src: string; alt: string }[]; attachments?: DocLink[]; embeds?: DocLink[] }
+  | {
+      id?: string;
+      type: "contact";
+      title: string;
+      icon?: string;
+      people: { name?: string; designation?: string; phone?: string; email?: string }[];
+    };
 
 export interface DepartmentData {
   name: string;
@@ -780,23 +787,17 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     content.additionalContacts?.length
   ) {
     const c = content.contact;
-    const items = [c?.phone && `Phone: ${c.phone}`, c?.email && `Email: ${c.email}`].filter(
-      Boolean,
-    ) as string[];
-    const groups = content.additionalContacts?.map((person) => ({
-      subtitle: person.name,
-      text: person.designation,
-      items: [person.phone && `Phone: ${person.phone}`, person.email && `Email: ${person.email}`]
-        .filter(Boolean) as string[],
-    }));
+    const people: { name?: string; designation?: string; phone?: string; email?: string }[] = [];
+    if (c && (c.name || c.phone || c.email)) {
+      people.push({ name: c.name, designation: c.designation, phone: c.phone, email: c.email });
+    }
+    if (content.additionalContacts?.length) people.push(...content.additionalContacts);
     sections.push({
       id: "contact",
-      type: "content",
+      type: "contact",
       title: heading("contact", "Contact"),
       icon: "phone",
-      content: c ? [c.name, c.designation].filter(Boolean).join(" — ") || undefined : undefined,
-      items,
-      groups,
+      people,
     });
   }
 
@@ -806,7 +807,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   if (content.sectionDocuments) {
     for (const section of sections) {
       if (!section.id) continue;
-      if (section.type === "documents" || section.type === "stats" || section.type === "testimonials") continue;
+      if (section.type === "documents" || section.type === "stats" || section.type === "testimonials" || section.type === "contact") continue;
       const docs = resolveDocuments(content.sectionDocuments[section.id]);
       if (docs.length) section.attachments = docs;
     }
@@ -816,7 +817,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   if (content.sectionEmbeds) {
     for (const section of sections) {
       if (!section.id) continue;
-      if (section.type === "documents" || section.type === "stats" || section.type === "testimonials") continue;
+      if (section.type === "documents" || section.type === "stats" || section.type === "testimonials" || section.type === "contact") continue;
       const docs = resolveDocuments(content.sectionEmbeds[section.id]);
       if (docs.length) section.embeds = docs;
     }

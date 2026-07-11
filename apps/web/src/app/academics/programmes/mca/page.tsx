@@ -69,7 +69,7 @@ export default function MCAProgrammePage() {
       {/* Overview & Highlights */}
       <section className="space-y-8">
         <div className="prose prose-lg prose-orange max-w-none text-gray-600">
-            <p>
+            <p className="text-justify">
                 The MCA programme at BEC is designed to develop skilled IT professionals capable of designing, developing, and managing software applications. With a perfect blend of theoretical concepts and hands-on practical training, our graduates are industry-ready from day one.
             </p>
         </div>
@@ -135,7 +135,7 @@ export default function MCAProgrammePage() {
           <SectionHeader icon={Wallet} title="Fee Structure" />
           <div className="overflow-x-auto rounded-xl border border-gray-200">
               <table className="w-full text-sm text-left">
-                  <thead className="bg-gray-50 text-gray-900 font-semibold border-b border-gray-200">
+                  <thead className="bg-primary/5 text-primary font-semibold border-b border-gray-200">
                       <tr>
                           <th className="px-6 py-4">Quota</th>
                           <th className="px-6 py-4">Type</th>

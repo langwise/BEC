@@ -68,54 +68,86 @@ export function Header() {
 
                     <NavigationMenuContent>
                       <div className="w-[800px] p-6 space-y-6 max-h-[70vh] overflow-y-auto">
-                        {/* Flat links */}
-                        {item.items?.some(isLink) && (
-                          <div className="grid grid-cols-3 gap-3">
-                            {item.items.filter(isLink).map((link) => (
-                              <NavigationMenuLink
-                                key={link.title}
-                                href={link.href}
-                                className="block rounded-md p-4 hover:bg-white hover:text-primary transition-colors"
-                              >
-                                <div className="text-sm font-medium">
-                                  {link.title}
+                        {(() => {
+                          const flatLinks = item.items?.some(isLink) && (
+                            <div className="grid grid-cols-3 gap-3">
+                              {item.items.filter(isLink).map((link) => (
+                                <NavigationMenuLink
+                                  key={link.title}
+                                  href={link.href}
+                                  className="block rounded-md p-4 hover:bg-white hover:text-primary transition-colors"
+                                >
+                                  <div className="text-sm font-medium">
+                                    {link.title}
+                                  </div>
+                                </NavigationMenuLink>
+                              ))}
+                            </div>
+                          );
+
+                          const divider = item.items?.some(isLink) &&
+                            item.items.some(isGroup) && (
+                              <div className="border-t border-muted" />
+                            );
+
+                          const groups = item.items?.some(isGroup) && (
+                            <div className="grid grid-cols-3 gap-8">
+                              {item.items.filter(isGroup).map((group) => (
+                                <div key={group.title} className="space-y-3">
+                                  <div className="text-sm font-semibold bg-muted/50 px-4 py-2 rounded-md">
+                                    {group.title}
+                                  </div>
+
+                                  <ul className="space-y-1.5">
+                                    {group.items.map((nested) => (
+                                      <li key={nested.title}>
+                                        <NavigationMenuLink
+                                          href={nested.href}
+                                          className="block rounded-md px-4 py-2.5 text-sm hover:bg-white hover:text-primary transition-colors"
+                                        >
+                                          {nested.title}
+                                        </NavigationMenuLink>
+                                      </li>
+                                    ))}
+                                  </ul>
                                 </div>
-                              </NavigationMenuLink>
-                            ))}
-                          </div>
-                        )}
+                              ))}
+                            </div>
+                          );
 
-                        {/* Divider */}
-                        {item.items?.some(isLink) &&
-                          item.items.some(isGroup) && (
-                            <div className="border-t border-muted" />
-                          )}
+                          const groupsAsRow = item.items?.some(isGroup) && (
+                            <div className="grid grid-cols-3 gap-3">
+                              {item.items
+                                .filter(isGroup)
+                                .flatMap((group) => group.items)
+                                .map((nested) => (
+                                  <NavigationMenuLink
+                                    key={nested.title}
+                                    href={nested.href}
+                                    className="block rounded-md p-4 hover:bg-white hover:text-primary transition-colors"
+                                  >
+                                    <div className="text-sm font-medium">
+                                      {nested.title}
+                                    </div>
+                                  </NavigationMenuLink>
+                                ))}
+                            </div>
+                          );
 
-                        {/* Grouped items */}
-                        {item.items?.some(isGroup) && (
-                          <div className="grid grid-cols-3 gap-8">
-                            {item.items.filter(isGroup).map((group) => (
-                              <div key={group.title} className="space-y-3">
-                                <div className="text-sm font-semibold bg-muted/50 px-4 py-2 rounded-md">
-                                  {group.title}
-                                </div>
-
-                                <ul className="space-y-1.5">
-                                  {group.items.map((nested) => (
-                                    <li key={nested.title}>
-                                      <NavigationMenuLink
-                                        href={nested.href}
-                                        className="block rounded-md px-4 py-2.5 text-sm hover:bg-white hover:text-primary transition-colors"
-                                      >
-                                        {nested.title}
-                                      </NavigationMenuLink>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                            ))}
-                          </div>
-                        )}
+                          return item.groupsFirst ? (
+                            <>
+                              {groupsAsRow}
+                              {divider}
+                              {flatLinks}
+                            </>
+                          ) : (
+                            <>
+                              {flatLinks}
+                              {divider}
+                              {groups}
+                            </>
+                          );
+                        })()}
                       </div>
                     </NavigationMenuContent>
                       </>
@@ -159,7 +191,13 @@ export function Header() {
                       </summary>
 
                       <div className="ml-4 mt-2 space-y-2 pb-2">
-                        {item.items?.map((sub) => (
+                        {(item.groupsFirst
+                          ? [
+                              ...(item.items?.filter(isGroup) ?? []),
+                              ...(item.items?.filter(isLink) ?? []),
+                            ]
+                          : item.items ?? []
+                        ).map((sub) => (
                           <div key={sub.title}>
                             {isGroup(sub) ? (
                               <details className="group/mobile-subnav">

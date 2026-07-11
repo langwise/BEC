@@ -93,7 +93,7 @@ export default function UGProgrammePage() {
       {/* Overview & Highlights */}
       <section className="space-y-8">
         <div className="prose prose-lg prose-orange max-w-none text-gray-600">
-            <p>
+            <p className="text-justify">
                 Basaveshwar Engineering College offers Bachelor of Engineering programmes in 11 disciplines, providing students with a strong foundation in engineering principles and practical skills. Our NAAC 'A' accredited and NBA recognized programmes prepare students for successful careers in industry and research.
             </p>
         </div>
@@ -164,7 +164,7 @@ export default function UGProgrammePage() {
           <SectionHeader icon={Wallet} title="Fee Structure Overview" />
           <div className="overflow-x-auto rounded-xl border border-gray-200">
               <table className="w-full text-sm text-left">
-                  <thead className="bg-gray-50 text-gray-900 font-semibold border-b border-gray-200">
+                  <thead className="bg-primary/5 text-primary font-semibold border-b border-gray-200">
                       <tr>
                           <th className="px-6 py-4">Quota</th>
                           <th className="px-6 py-4">Type</th>

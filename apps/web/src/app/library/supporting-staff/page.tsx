@@ -77,7 +77,7 @@ export default function SupportingStaffPage() {
             <div className="lg:col-span-3">
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed text-justify">
                     Our supporting staff plays a crucial role in maintaining the day-to-day operations of the library.
                     They assist in book circulation, shelving, maintenance, and providing general support to library users.
                   </p>

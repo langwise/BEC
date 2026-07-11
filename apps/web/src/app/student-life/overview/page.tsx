@@ -136,7 +136,7 @@ export default function StudentLifeOverviewPage() {
               eyebrow="More than academics"
               title="A home away from home"
             />
-            <p className="text-base leading-relaxed text-gray-700">
+            <p className="text-base leading-relaxed text-gray-700 text-justify">
               Basaveshwar Engineering College provides a holistic environment
               where students thrive not just in classrooms but in every aspect of
               life — from a sprawling green campus to recreational facilities,
@@ -218,7 +218,7 @@ export default function StudentLifeOverviewPage() {
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="space-y-3">
               <h2 className="text-2xl font-semibold md:text-3xl">Campus Amenities</h2>
-              <p className="max-w-xl text-sm leading-relaxed text-stone-300">
+              <p className="max-w-xl text-sm leading-relaxed text-stone-300 text-justify">
                 A comfortable, convenient living experience with support
                 facilities right on campus — a clinic, banks, a co-operative
                 store, a post office, a canteen and more.

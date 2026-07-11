@@ -350,10 +350,10 @@ export default function HistoryContent() {
               <h2 className="text-3xl md:text-4xl font-bold leading-tight">
                 Honoring the Visionaries Who Shaped BEC
               </h2>
-              <p className="text-slate-300 text-sm md:text-base leading-relaxed font-medium">
+              <p className="text-slate-300 text-sm md:text-base leading-relaxed font-medium text-justify">
                 The progressive journey of Basaveshwar Engineering College has been sculpted by generations of visionary leaders, former Principals, and former Directors. Under the benevolent patronage of the Basaveshwar Veerashaiva Vidya Vardhak Sangha (B. V. V. S.), their proactive governance, academic foresight, and administrative grit transformed a regional engineering college into a nationally acclaimed, autonomous center of technological excellence.
               </p>
-              <p className="text-slate-300 text-sm md:text-base leading-relaxed font-medium">
+              <p className="text-slate-300 text-sm md:text-base leading-relaxed font-medium text-justify">
                 Their contribution laid the cornerstone of our comprehensive laboratories, state-of-the-art campus infrastructure, robust placement platforms, and rich research culture. Today, we celebrate their enduring legacy by continuing to pioneer advanced, industry-aligned engineering education.
               </p>
 

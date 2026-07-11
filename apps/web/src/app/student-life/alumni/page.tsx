@@ -71,13 +71,13 @@ export default function AlumniPage() {
           <div className="space-y-6">
             <SectionHeading eyebrow="About" title="Building a lifelong bond" />
             <div className="space-y-4 text-base leading-relaxed text-gray-700">
-              <p>
+              <p className="text-justify">
                 BECAA serves as a bridge between the institute and its global
                 community of graduates. Governed by a dedicated body of 11
                 directors and 5 office bearers, it is committed to strengthening
                 the relationship between industry and academia.
               </p>
-              <p>
+              <p className="text-justify">
                 The network of over 500 active members contributes to the college
                 ecosystem through mentorship, technical knowledge sharing and
                 creating career opportunities for current students.
@@ -139,7 +139,7 @@ export default function AlumniPage() {
           <h2 className="mt-3 text-2xl font-semibold md:text-3xl">
             Global support during crisis
           </h2>
-          <p className="mt-4 max-w-3xl leading-relaxed text-stone-300">
+          <p className="mt-4 max-w-3xl leading-relaxed text-stone-300 text-justify">
             During the COVID-19 pandemic, BEC alumni residing in the USA donated
             six 10-litre oxygen concentrators to S. Nijalingappa Medical College
             and HSK Hospital, Bagalkote (June 2021) — a reflection of the enduring

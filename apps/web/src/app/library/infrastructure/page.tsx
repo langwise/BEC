@@ -110,7 +110,7 @@ export default function InfrastructurePage() {
             <div className="lg:col-span-3">
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
                     Established in 1963, the Library and Information Centre now
                     occupies its own dedicated building of 2,100 sq.m, operating
                     through six sections. It is fully automated on the Koha

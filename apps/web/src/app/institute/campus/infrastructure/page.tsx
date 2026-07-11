@@ -175,7 +175,7 @@ export default function InfrastructurePage() {
        <section className="py-14 md:py-18 container mx-auto max-w-6xl px-4 lg:px-6">
         <div className="rounded-sm border border-stone-200 bg-white p-6 shadow-sm md:p-8">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Digital Campus</h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-justify">
                 We pride ourselves on being a digital campus with lecture capture facilities. All classrooms are equipped with audio-visual facilities, including 20 classrooms featuring 65” smart digital boards for an enhanced interactive learning experience. All departments are housed in separate buildings, each with its own air-conditioned seminar hall.
             </p>
         </div>

@@ -146,7 +146,7 @@ export default function IqacPage() {
                     <CardTitle className="text-base font-semibold text-gray-900">Performance Improvement</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm leading-relaxed text-gray-600">
+                    <p className="text-sm leading-relaxed text-gray-600 text-justify">
                       To develop a quality system for conscious, consistent and catalytic programmed action to improve the academic and administrative performance of BEC Bagalkote.
                     </p>
                   </CardContent>
@@ -160,7 +160,7 @@ export default function IqacPage() {
                     <CardTitle className="text-base font-semibold text-gray-900">Quality Enhancement</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm leading-relaxed text-gray-600">
+                    <p className="text-sm leading-relaxed text-gray-600 text-justify">
                       To promote BEC measures for functioning towards quality enhancement through internationalization of quality culture and institutionalization of best practices.
                     </p>
                   </CardContent>
@@ -211,7 +211,7 @@ export default function IqacPage() {
                 <Users className="h-5 w-5" />
                 <h4 className="font-semibold text-gray-900">NAAC Composition Guidelines</h4>
               </div>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed text-justify">
                 As per the National Assessment & Accreditation Council (NAAC) guidelines, the IQAC may be constituted under the Chairmanship of the Head of the Institution, along with heads of key academic and administrative units, senior teachers, representatives of the local management, and external stakeholders.
               </p>
               <ul className="grid gap-3 sm:grid-cols-2 text-sm text-gray-700 pt-2 border-t border-stone-200/60">
@@ -238,11 +238,11 @@ export default function IqacPage() {
                 <div className="hidden md:block">
                   <Table>
                     <TableHeader>
-                      <TableRow className="border-stone-200 bg-stone-50/80 hover:bg-stone-50/80">
-                        <TableHead className="w-16 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">Sl. No.</TableHead>
-                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">Designation / Category</TableHead>
-                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">Name of the Member</TableHead>
-                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">Affiliation / Organization</TableHead>
+                      <TableRow className="border-stone-200 bg-primary/5 hover:bg-primary/5">
+                        <TableHead className="w-16 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">Sl. No.</TableHead>
+                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">Designation / Category</TableHead>
+                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">Name of the Member</TableHead>
+                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">Affiliation / Organization</TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -311,10 +311,10 @@ export default function IqacPage() {
                 <div className="hidden sm:block">
                   <Table>
                     <TableHeader>
-                      <TableRow className="border-stone-200 bg-stone-50/80 hover:bg-stone-50/80">
-                        <TableHead className="w-20 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">Sl. No.</TableHead>
-                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">Name of the Faculty</TableHead>
-                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-gray-500">Department</TableHead>
+                      <TableRow className="border-stone-200 bg-primary/5 hover:bg-primary/5">
+                        <TableHead className="w-20 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">Sl. No.</TableHead>
+                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">Name of the Faculty</TableHead>
+                        <TableHead className="px-5 py-3.5 text-xs font-semibold uppercase tracking-wider text-primary">Department</TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>

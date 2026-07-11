@@ -178,7 +178,7 @@ export default function StaffProfilePage() {
             <div className="lg:col-span-3">
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-lg p-8 mb-8 border border-stone-200">
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed text-justify">
                     Our library team comprises highly qualified and experienced professionals dedicated to
                     providing excellent library services. Each member brings unique expertise and commitment
                     to supporting the academic and research needs of our community. Click on any staff member's
