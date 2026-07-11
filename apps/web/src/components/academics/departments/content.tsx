@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { iconMap } from "./icons";
+import { PhotoGallery } from "@/components/common/photo-gallery";
 
 type GroupItem = string | { label: string; value?: string };
 
@@ -9,6 +10,7 @@ interface ContentGroup {
   subtitle?: string;
   text?: string;
   items?: GroupItem[];
+  images?: { src: string; alt: string }[];
 }
 
 interface ContentSectionProps {
@@ -20,6 +22,8 @@ interface ContentSectionProps {
   icon?: string;
   /** Justify the body paragraph (used for the department Overview). */
   justify?: boolean;
+  /** Let the body span the full column width instead of the default readable max-width. */
+  wide?: boolean;
 }
 
 function BulletList({ items }: { items: GroupItem[] }) {
@@ -65,6 +69,7 @@ export default function ContentSection({
   groups,
   icon,
   justify,
+  wide,
 }: ContentSectionProps) {
   const Icon = icon ? iconMap[icon] : null;
 
@@ -85,17 +90,19 @@ export default function ContentSection({
         </h2>
       </div>
 
-      <div className="prose prose-lg prose-orange max-w-3xl text-gray-600 leading-relaxed">
+      <div className={`prose prose-lg prose-orange text-gray-600 leading-relaxed ${wide ? "max-w-none" : "max-w-3xl"}`}>
         {content && content.split(/\r?\n\r?\n/).map((para, idx) => (
           <p key={idx} className={`mb-6 last:mb-0 ${justify ? "text-justify" : ""}`}>
             {para}
           </p>
         ))}
         {items && items.length > 0 && <BulletList items={items} />}
-        {groups && groups.length > 0 && (
-          <div className="not-prose mt-6 space-y-6">
-            {groups.map((group, i) => (
-              <div key={i}>
+      </div>
+      {groups && groups.length > 0 && (
+        <div className="mt-6 space-y-6">
+          {groups.map((group, i) => (
+            <div key={i}>
+              <div className={wide ? "max-w-none" : "max-w-3xl"}>
                 {group.subtitle && (
                   <h3 className="text-base font-semibold uppercase tracking-wide text-secondary mb-1">
                     {group.subtitle}
@@ -104,10 +111,13 @@ export default function ContentSection({
                 {group.text && <p className="text-gray-600 leading-relaxed">{group.text}</p>}
                 {group.items && group.items.length > 0 && <BulletList items={group.items} />}
               </div>
-            ))}
-          </div>
-        )}
-      </div>
+              {group.images && group.images.length > 0 && (
+                <PhotoGallery images={group.images} centered className="mt-4" />
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </motion.div>
   );
 }

@@ -11,6 +11,10 @@ export type DepartmentContent = {
   established?: string;
   intake?: string;
   overview?: string;
+  /** Asset key for a lead image shown above the Home overview (e.g. the department group photo). */
+  overviewImage?: string;
+  /** Message from the Head of Department, shown on the Home tab. */
+  hodMessage?: { message: string; name?: string; designation?: string; image?: string };
   about?: string;
   vision?: string;
   mission?: string[];
@@ -46,6 +50,8 @@ export type DepartmentContent = {
   };
   /** Alumni testimonials — rendered as quote cards under an "Alumni" section. */
   testimonials?: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
+  /** Alumni record PDFs — rendered as a downloadable "Alumni Records" section. */
+  alumniRecords?: { title: string; file: string }[];
   /** Patents filed/published/granted — rendered as a table on the Research page. */
   patents?: {
     title: string;
@@ -63,7 +69,13 @@ export type DepartmentContent = {
   phdsAwarded?: { scholar: string; guide: string; title: string; year: string }[];
   researchScholars?: { scholar: string; usn?: string; guide: string; title?: string; status: string }[];
   researchGrants?: { title: string; agency: string; year: string; amount: string; investigators: string }[];
-  labs?: { name: string; description?: string }[];
+  labs?: { name: string; description?: string; images?: string[] }[];
+  /** Group photo of the teaching faculty, shown as a banner above the Faculty grid. */
+  facultyGroupPhoto?: string;
+  /** Group photo of the supporting staff, shown as a banner above the Supporting Staff tables. */
+  staffGroupPhoto?: string;
+  /** Categorised facility photos (classrooms, labs, library, campus), shown as captioned galleries on the Facilities tab. */
+  facilitiesGallery?: { title?: string; images: string[] }[];
   supportingStaff?: { name: string; designation: string }[];
   committeeGroups?: {
     title: string;
@@ -72,7 +84,13 @@ export type DepartmentContent = {
   infrastructureItems?: { name: string; specification?: string; quantity?: string }[];
   softwareItems?: { name: string; version?: string; usage?: string }[];
   activities?: { title: string; date?: string; description?: string }[];
-  associations?: { name: string; about?: string; coordinators?: string[] }[];
+  associations?: {
+    name: string;
+    about?: string;
+    coordinators?: string[];
+    /** Student executive committee (exicom) — office bearers and the positions they hold. */
+    exicom?: { name: string; position: string }[];
+  }[];
   mous?: { partner: string; location?: string; since?: string }[];
   contact?: { name?: string; designation?: string; phone?: string; email?: string };
   additionalContacts?: { name: string; designation?: string; phone?: string; email?: string }[];
@@ -81,6 +99,8 @@ export type DepartmentContent = {
   curriculumGroups?: { title: string; documents: { title: string; file: string }[] }[];
   /** Extra PDFs attached to a specific section, keyed by section id (research, mou, facilities, faculty…). */
   sectionDocuments?: Record<string, { title: string; file: string }[]>;
+  /** PDFs embedded inline (rendered in a viewer) under a specific section, keyed by section id. */
+  sectionEmbeds?: Record<string, { title: string; file: string }[]>;
   /** Best-practices PDFs surfaced on the department Home tab. */
   bestPractices?: { title: string; file: string }[];
   /** Per-department section heading overrides, keyed by section id. */

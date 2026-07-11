@@ -40,6 +40,42 @@
           "established": { "type": "string", "description": "Year the department was established, e.g. \"1983\"." },
           "intake": { "type": "string", "description": "Sanctioned UG intake, e.g. \"180\"." },
           "overview": { "type": "string", "description": "Department overview paragraph (Home tab)." },
+          "overviewImage": { "allOf": [{ "$ref": "./_schema/asset-keys.json" }], "description": "Image asset key on R2 shown above the Home overview (e.g. the department group photo)." },
+          "facultyGroupPhoto": { "allOf": [{ "$ref": "./_schema/asset-keys.json" }], "description": "Group photo of the teaching faculty, shown as a banner above the Faculty grid." },
+          "staffGroupPhoto": { "allOf": [{ "$ref": "./_schema/asset-keys.json" }], "description": "Group photo of the supporting staff, shown as a banner above the Supporting Staff tables." },
+          "facilitiesGallery": {
+            "type": "array",
+            "description": "Categorised facility photos (classrooms, labs, library, campus), shown as captioned galleries on the Facilities tab.",
+            "items": {
+              "type": "object",
+              "required": ["images"],
+              "additionalProperties": false,
+              "properties": {
+                "title": { "type": "string", "description": "Caption for this group of photos (e.g. Classrooms, Library)." },
+                "images": {
+                  "type": "array",
+                  "items": { "allOf": [{ "$ref": "./_schema/asset-keys.json" }] }
+                }
+              }
+            }
+          },
+          "galleryExclude": {
+            "type": "array",
+            "description": "Asset-key substrings to drop from the generic Infrastructure gallery (e.g. shots already placed under Research/Facilities).",
+            "items": { "type": "string" }
+          },
+          "hodMessage": {
+            "type": "object",
+            "description": "Message from the Head of Department, shown on the Home tab.",
+            "required": ["message"],
+            "additionalProperties": false,
+            "properties": {
+              "message": { "type": "string", "description": "The HOD's message body." },
+              "name": { "type": "string", "description": "Name of the HOD (byline)." },
+              "designation": { "type": "string", "description": "Designation of the HOD (byline)." },
+              "image": { "allOf": [{ "$ref": "./_schema/asset-keys.json" }], "description": "Image asset key on R2 for the HOD's photo." }
+            }
+          },
           "vision": { "type": "string", "description": "Vision statement (About tab)." },
           "mission": {
             "type": "array",
@@ -89,7 +125,12 @@
               "additionalProperties": false,
               "properties": {
                 "name": { "type": "string" },
-                "description": { "type": "string" }
+                "description": { "type": "string" },
+                "images": {
+                  "type": "array",
+                  "description": "Photo asset keys on R2 for this lab, shown as a grid under it on the Research & Labs tab.",
+                  "items": { "allOf": [{ "$ref": "./_schema/asset-keys.json" }] }
+                }
               }
             }
           },
@@ -182,7 +223,20 @@
               "properties": {
                 "name": { "type": "string" },
                 "about": { "type": "string" },
-                "coordinators": { "type": "array", "items": { "type": "string" } }
+                "coordinators": { "type": "array", "items": { "type": "string" } },
+                "exicom": {
+                  "type": "array",
+                  "description": "Student executive committee (exicom) office bearers.",
+                  "items": {
+                    "type": "object",
+                    "required": ["name", "position"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "name": { "type": "string" },
+                      "position": { "type": "string" }
+                    }
+                  }
+                }
               }
             }
           },
@@ -215,6 +269,19 @@
           "documents": {
             "type": "array",
             "description": "Curriculum / syllabus PDFs (Scheme & Syllabus, BoS, course plans). Rendered as the 'Curriculum & Syllabus' download section.",
+            "items": {
+              "type": "object",
+              "required": ["title", "file"],
+              "additionalProperties": false,
+              "properties": {
+                "title": { "type": "string" },
+                "file": { "allOf": [{ "$ref": "./_schema/asset-keys.json" }], "description": "PDF asset key on R2 (autocompletes)." }
+              }
+            }
+          },
+          "alumniRecords": {
+            "type": "array",
+            "description": "Alumni record PDFs. Rendered as a downloadable 'Alumni Records' section.",
             "items": {
               "type": "object",
               "required": ["title", "file"],

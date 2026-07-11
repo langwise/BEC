@@ -16,11 +16,39 @@ export type GalleryImage = {
 export function PhotoGallery({
   images,
   className,
+  centered = false,
 }: {
   images: GalleryImage[];
   className?: string;
+  /**
+   * Center rows with fixed-size tiles instead of a stretched grid — keeps tiles
+   * a uniform size across sections and centers partial rows (2 or 3 photos) so
+   * they don't look lopsided.
+   */
+  centered?: boolean;
 }) {
   if (!images.length) return null;
+
+  if (centered) {
+    return (
+      <div className={cn("flex flex-wrap justify-center gap-4", className)}>
+        {images.map((image, index) => (
+          <div
+            key={`${image.src}-${index}`}
+            className="group relative aspect-4/3 w-[calc(50%-0.6rem)] overflow-hidden rounded-sm border border-stone-200 bg-stone-100 sm:w-[calc(33.333%-0.7rem)]"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width: 640px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div

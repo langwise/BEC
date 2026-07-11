@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import DepartmentSidebar from "@/components/academics/departments/sidebar";
 import type { DataTable, DepartmentData, DocLink } from "@/data/department/department";
 import ContentSection from "@/components/academics/departments/content";
 import TestimonialsSection from "@/components/academics/departments/testimonials";
-import { CheckCircle2, FileText, Download } from "lucide-react";
+import { CheckCircle2, FileText, Download, Quote } from "lucide-react";
 import { FacultyCard } from "@/components/academics/faculty/faculty-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 
@@ -100,6 +101,42 @@ function HighlightsBlock({ highlights }: { highlights: string[] }) {
   );
 }
 
+/** Message from the Head of Department — shown on the Home tab with an optional portrait. */
+function HodMessageBlock({ hodMessage }: { hodMessage: NonNullable<DepartmentData["hodMessage"]> }) {
+  return (
+    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8">
+      <div className="mb-6 flex items-center gap-2">
+        <Quote className="h-5 w-5 shrink-0 text-primary" />
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Message from the HOD</h2>
+      </div>
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-8">
+        {hodMessage.image && (
+          <div className="relative mx-auto aspect-[3/4] w-40 shrink-0 overflow-hidden rounded-xl bg-stone-100 shadow-sm ring-1 ring-stone-200 sm:mx-0 sm:w-44">
+            <Image
+              src={hodMessage.image.src}
+              alt={hodMessage.image.alt}
+              fill
+              sizes="(min-width: 640px) 176px, 160px"
+              className="object-cover object-top"
+            />
+          </div>
+        )}
+        <div className="min-w-0 flex-1">
+          <p className="whitespace-pre-line leading-relaxed text-gray-700">{hodMessage.message}</p>
+          {hodMessage.name && (
+            <div className="mt-5">
+              <p className="font-semibold text-gray-900">{hodMessage.name}</p>
+              {hodMessage.designation && (
+                <p className="mt-0.5 text-sm text-gray-500">{hodMessage.designation}</p>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /** Renders a section's relocated/attached PDFs below its main content. */
 function SectionAttachments({ documents }: { documents?: DocLink[] }) {
   if (!documents?.length) return null;
@@ -107,6 +144,89 @@ function SectionAttachments({ documents }: { documents?: DocLink[] }) {
     <div className="mt-8 space-y-3">
       <h3 className="text-base font-semibold text-gray-900">Related Documents</h3>
       <DocGrid documents={documents} />
+    </div>
+  );
+}
+
+/** Inline PDF viewers rendered under a section, with an open-in-new-tab fallback. */
+function SectionEmbeds({ documents }: { documents?: DocLink[] }) {
+  if (!documents?.length) return null;
+  return (
+    <div className="mt-8 space-y-8">
+      {documents.map((doc, i) => (
+        <div key={i} className="space-y-3">
+          <div className="flex items-center justify-between gap-3">
+            <h3 className="text-base font-semibold text-gray-900">{doc.title}</h3>
+            <a
+              href={doc.url}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+            >
+              <Download className="h-4 w-4" />
+              Download
+            </a>
+          </div>
+          <div className="overflow-hidden rounded-md border border-stone-200 bg-stone-50 shadow-sm">
+            <object
+              data={doc.url}
+              type="application/pdf"
+              className="h-[75vh] max-h-[900px] min-h-[420px] w-full"
+              aria-label={doc.title}
+            >
+              <div className="flex flex-col items-center gap-3 p-8 text-center">
+                <FileText className="h-8 w-8 text-primary" />
+                <p className="text-sm text-stone-600">
+                  Your browser can&rsquo;t display this PDF inline.
+                </p>
+                <a
+                  href={doc.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary/90"
+                >
+                  <Download className="h-4 w-4" />
+                  Open {doc.title}
+                </a>
+              </div>
+            </object>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/** A group-photo banner shown above a section's content (faculty / staff). Uses a
+ *  3:2 frame — the ratio of the department group photos — so no faces get cropped. */
+function GroupPhotoBanner({ image }: { image: { src: string; alt: string } }) {
+  return (
+    <figure className="relative aspect-3/2 w-full overflow-hidden rounded-2xl border border-gray-100 bg-stone-100 shadow-sm">
+      <Image
+        src={image.src}
+        alt={image.alt}
+        fill
+        sizes="(min-width: 1024px) 900px, 100vw"
+        className="object-cover"
+      />
+    </figure>
+  );
+}
+
+/** Captioned photo galleries (e.g. Facilities: classrooms / labs / library / campus). */
+function ImageGroups({ groups }: { groups: { title?: string; images: { src: string; alt: string }[] }[] }) {
+  return (
+    <div className="space-y-8">
+      {groups.map((group, i) => (
+        <div key={i} className="space-y-3">
+          {group.title && (
+            <h3 className="text-base font-semibold uppercase tracking-wide text-secondary">
+              {group.title}
+            </h3>
+          )}
+          <PhotoGallery images={group.images} centered />
+        </div>
+      ))}
     </div>
   );
 }
@@ -180,7 +300,21 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     content={dept.overview.content}
                     icon={dept.overview.icon}
                     justify
+                    wide
                 />
+                {dept.hodMessage && <HodMessageBlock hodMessage={dept.hodMessage} />}
+                {dept.overview.image && (
+                    <figure className={`relative aspect-3/2 w-full overflow-hidden rounded-2xl border border-gray-100 shadow-sm ${dept.hodMessage ? "mt-8 mb-12" : "-mt-4 mb-12"}`}>
+                        <Image
+                            src={dept.overview.image.src}
+                            alt={dept.overview.image.alt}
+                            fill
+                            priority
+                            sizes="(min-width: 1024px) 900px, 100vw"
+                            className="object-cover"
+                        />
+                    </figure>
+                )}
                 {/* Core values (per-department, e.g. IPE) — bullet list under the overview */}
                 {dept.overview.items && dept.overview.items.length > 0 && (
                     <ContentSection
@@ -267,6 +401,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                         groups={activeSection.groups}
                         icon={activeSection.icon || "file-text"}
                     />
+                    <SectionEmbeds documents={activeSection.embeds} />
                     <SectionAttachments documents={activeSection.attachments} />
                  </div>
              )
@@ -280,6 +415,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                              <FacultyCard key={fIndex} member={member} />
                          ))}
                      </div>
+                     {activeSection.groupPhoto && <GroupPhotoBanner image={activeSection.groupPhoto} />}
                      <SectionAttachments documents={activeSection.attachments} />
                  </div>
              )
@@ -295,8 +431,13 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
          }
          if (activeSection.type === "tables") {
              return (
-                 <div>
+                 <div className="space-y-8">
+                     {activeSection.imageGroups && activeSection.imageGroups.length > 0 && (
+                         <ImageGroups groups={activeSection.imageGroups} />
+                     )}
                      <DepartmentTables title={activeSection.title} tables={activeSection.tables} />
+                     {activeSection.groupPhoto && <GroupPhotoBanner image={activeSection.groupPhoto} />}
+                     <SectionEmbeds documents={activeSection.embeds} />
                      <SectionAttachments documents={activeSection.attachments} />
                  </div>
              )

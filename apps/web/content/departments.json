@@ -3250,6 +3250,59 @@
         }
       ],
       "established": "1985",
+      "overviewImage": "departments/ece/total-staff.webp",
+      "facultyGroupPhoto": "departments/ece/teaching-faculty.webp",
+      "staffGroupPhoto": "departments/ece/staff-group.webp",
+      "facilitiesGallery": [
+        {
+          "title": "Classrooms",
+          "images": [
+            "departments/ece/classroom-1.webp",
+            "departments/ece/classroom-2.webp"
+          ]
+        },
+        {
+          "title": "Laboratories",
+          "images": [
+            "departments/ece/student-lab-1.webp",
+            "departments/ece/student-lab.webp"
+          ]
+        },
+        {
+          "title": "Library",
+          "images": [
+            "departments/ece/student-library-1.webp",
+            "departments/ece/student-library-2.webp",
+            "departments/ece/student-library.webp"
+          ]
+        },
+        {
+          "title": "ECE Hub",
+          "images": [
+            "departments/ece/quadrangle-1.webp",
+            "departments/ece/quadrangle-2.webp",
+            "departments/ece/quadrangle-3.webp"
+          ]
+        }
+      ],
+      "galleryExclude": [
+        "lab1.webp",
+        "lab2.webp",
+        "lab3.webp",
+        "lab4.webp",
+        "lab5.webp",
+        "lab6.webp",
+        "lab7.webp",
+        "lab8.webp",
+        "lab9.webp",
+        "classroom-",
+        "student-lab",
+        "student-library",
+        "teaching-faculty",
+        "staff-group",
+        "total-staff",
+        "quadrangle-"
+      ],
       "overview": "The Department of Electronics and Communication (E&C) Engineering was established in 1985. It offers an undergraduate programme in Electronics and Communication Engineering along with Ph.D. programmes in cutting-edge areas such as VLSI Design, Digital Signal Processing, Wireless Networking, MEMS and Speech Signal Processing. Recognised as a Quality Improvement Programme (QIP) centre by the Government of India, the department has a strong legacy in research and development — particularly in communications, signal processing, microelectronics and RF/photonics. It hosts well-equipped laboratories spanning digital electronics, advanced digital communication, microwave communication, microprocessors and microcontrollers, and computer networks, along with an exclusive computing facility running industry-standard tools such as CADENCE VLSI, ECAD and VHDL simulation/synthesis packages. The department regularly organises seminars, workshops and training programmes under initiatives like TEQIP, ACME and AICTE, and has executed several AICTE-sponsored projects to strengthen its laboratory and research capabilities.",
       "vision": "To achieve excellence in electronics and communication engineering through quality education and research for developing competent professionals.",
       "mission": [
@@ -3307,23 +3360,42 @@
         },
         {
           "name": "Advanced Digital Communication Lab",
-          "description": "Experiments in modern digital and wireless communication systems."
+          "description": "Experiments in modern digital and wireless communication systems.",
+          "images": [
+            "departments/ece/lab1.webp",
+            "departments/ece/lab3.webp"
+          ]
         },
         {
           "name": "Microwave Communication Lab",
-          "description": "Microwave and RF communication measurements and experiments."
+          "description": "Microwave and RF communication measurements and experiments.",
+          "images": [
+            "departments/ece/lab2.webp",
+            "departments/ece/lab4.webp"
+          ]
         },
         {
           "name": "Microprocessor & Microcontroller Lab",
-          "description": "Embedded systems programming on microprocessor and microcontroller platforms."
+          "description": "Embedded systems programming on microprocessor and microcontroller platforms.",
+          "images": [
+            "departments/ece/lab8.webp"
+          ]
         },
         {
           "name": "Computer Networks Lab",
-          "description": "Networking protocols, configuration and performance analysis."
+          "description": "Networking protocols, configuration and performance analysis.",
+          "images": [
+            "departments/ece/lab5.webp",
+            "departments/ece/lab6.webp",
+            "departments/ece/lab7.webp"
+          ]
         },
         {
           "name": "Computing Facility",
-          "description": "State-of-the-art systems with industry-standard EDA tools — CADENCE VLSI, ECAD and VHDL simulation/synthesis packages."
+          "description": "State-of-the-art systems with industry-standard EDA tools — CADENCE VLSI, ECAD and VHDL simulation/synthesis packages.",
+          "images": [
+            "departments/ece/lab9.webp"
+          ]
         }
       ],
       "associations": [
@@ -3333,6 +3405,40 @@
           "coordinators": [
             "Dr. Sharanappa P. H.",
             "Dr. Basavaraj M. Angadi"
+          ],
+          "exicom": [
+            {
+              "name": "Mr. Vinay",
+              "position": "Vice President"
+            },
+            {
+              "name": "Miss. Deepa",
+              "position": "Ladies Representative"
+            },
+            {
+              "name": "Mr. Darshan",
+              "position": "Treasurer"
+            },
+            {
+              "name": "Mr. Vikas & Miss. Vinuta",
+              "position": "Cultural Secretaries"
+            },
+            {
+              "name": "Mr. Ullas & Miss. Priya",
+              "position": "Sports Secretaries"
+            },
+            {
+              "name": "Mr. Shreyas & Miss. Ananya",
+              "position": "Social Media Secretaries"
+            },
+            {
+              "name": "Mr. Sumit, Mr. Abhishek, Miss. Pooja & Miss. Apoorva",
+              "position": "Magazine Coordinators"
+            },
+            {
+              "name": "Mr. Vinod & Miss. Sanketha",
+              "position": "Avishkar Coordinators"
+            }
           ]
         }
       ],
@@ -3731,6 +3837,13 @@
           "guide": "Dr. Anand H. Unnibhavi",
           "title": "Development of effective speech recognition system and vocabulary building system for children with cochlear implants",
           "status": "Registered (2023)"
+        },
+        {
+          "scholar": "Shivakumar G. Nayak",
+          "usn": "2BA25PEE02",
+          "guide": "Dr. Anand H. Unnibhavi",
+          "title": "Development of Dialect Balanced Deep Learning Based Automatic Speech Recognition System for the Kannada Language",
+          "status": "Registered (2025)"
         }
       ],
       "researchGrants": [
@@ -3971,43 +4084,6 @@
               "position": "Coordinator"
             }
           ]
-        },
-        {
-          "title": "ACME Executive Committee (2025-26)",
-          "members": [
-            {
-              "name": "Mr. Vinay",
-              "position": "Vice President"
-            },
-            {
-              "name": "Miss. Deepa",
-              "position": "Ladies Representative"
-            },
-            {
-              "name": "Mr. Darshan",
-              "position": "Treasurer"
-            },
-            {
-              "name": "Mr. Vikas & Miss. Vinuta",
-              "position": "Cultural Secretaries"
-            },
-            {
-              "name": "Mr. Ullas & Miss. Priya",
-              "position": "Sports Secretaries"
-            },
-            {
-              "name": "Mr. Shreyas & Miss. Ananya",
-              "position": "Social Media Secretaries"
-            },
-            {
-              "name": "Mr. Sumit, Mr. Abhishek, Miss. Pooja & Miss. Apoorva",
-              "position": "Magazine Coordinators"
-            },
-            {
-              "name": "Mr. Vinod & Miss. Sanketha",
-              "position": "Avishkar Coordinators"
-            }
-          ]
         }
       ],
       "mous": [
@@ -4037,6 +4113,14 @@
           "since": "2024 (valid until 10 May 2028)"
         }
       ],
+      "sectionEmbeds": {
+        "mou": [
+          {
+            "title": "MoU Documents",
+            "file": "departments/ece/docs/mou.pdf"
+          }
+        ]
+      },
       "infrastructureItems": [
         {
           "name": "VHDL/VLSI Lab",
@@ -4138,14 +4222,23 @@
           "usage": "Instrumentation and process control"
         }
       ],
-      "activities": [
-        {
-          "title": "Webinar on Job Opportunities in VLSI / Semiconductor Industry",
-          "date": "5 October 2024",
-          "description": "Conducted with resource persons from Takshashila VLSI, covering the importance of VLSI, the current industry landscape, salary and placement prospects, key technical tools and course offerings, followed by a Q&A session. Coordinated by Mr. Suhas Hatti."
-        }
-      ],
       "documents": [
+        {
+          "title": "Scheme & Syllabus (2025-26)",
+          "file": "departments/ece/docs/scheme-syllabus-2025-26.pdf"
+        },
+        {
+          "title": "Scheme & Syllabus (2024-25)",
+          "file": "departments/ece/docs/scheme-syllabus-2024-25.pdf"
+        },
+        {
+          "title": "Scheme & Syllabus (2023-24 Batch)",
+          "file": "departments/ece/docs/scheme-syllabus-2023-24.pdf"
+        },
+        {
+          "title": "Scheme & Syllabus (2022-23 Batch)",
+          "file": "departments/ece/docs/scheme-syllabus-2022-23.pdf"
+        },
         {
           "title": "Programme Outcomes, PEOs & PSOs",
           "file": "departments/ece/docs/programme-outcomes-peos-psos.pdf"
@@ -4217,7 +4310,21 @@
           "text": "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
         }
       ],
-      "about": "Welcome to ECE at BEC. Since 1985, we've evolved from teaching basic circuits to advancing work in VLSI design, speech processing, wireless networks, MEMS, and emerging areas of electronics. Our students learn by building, experimenting, and questioning—because engineering is best understood through practice. We expect commitment, curiosity, and initiative, and in return, our faculty provide the guidance and support needed to grow. This department is yours to build—and we'll hold you to that trust."
+      "hodMessage": {
+        "message": "Welcome to ECE at BEC. Since 1985, we've evolved from teaching basic circuits to advancing work in VLSI design, speech processing, wireless networks, MEMS, and emerging areas of electronics. Our students learn by building, experimenting, and questioning—because engineering is best understood through practice. We expect commitment, curiosity, and initiative, and in return, our faculty provide the guidance and support needed to grow. This department is yours to build—and we'll hold you to that trust.",
+        "name": "Dr. Mahabaleshwar S. K.",
+        "designation": "Professor & Head, Department of E&CE",
+        "image": "governance/hod/ece/dr-mahabaleshwar-s-k.webp"
+      },
+      "sectionNavLabels": {
+        "activities": "Association"
+      },
+      "alumniRecords": [
+        {
+          "title": "ECE UG Alumni Record",
+          "file": "departments/ece/docs/ug-alumni-record.pdf"
+        }
+      ]
     },
     "electrical-and-electronics-engg": {
       "name": "Electrical & Electronics Engineering",

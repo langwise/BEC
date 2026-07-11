@@ -514,24 +514,12 @@
         "name": "Dr. Jayashree D. Mallapur",
         "designation": "Professor",
         "cv": "departments/ece/faculty/cv/jayashree-d-mallapur.pdf",
-        "photo": "departments/ece/faculty/jayashree-d-mallapur.webp"
+        "photo": "departments/ece/faculty/j-d-mallapur.webp"
       },
       {
         "name": "Dr. P. N. Kulkarni",
         "designation": "Professor",
         "photo": "departments/ece/faculty/p-n-kulkarni.webp"
-      },
-      {
-        "name": "Dr. Ashok V. Sutagundar",
-        "designation": "Associate Professor",
-        "cv": "departments/ece/faculty/cv/ashok-v-sutagundar.pdf",
-        "photo": "departments/ece/faculty/ashok-v-sutagundar.webp"
-      },
-      {
-        "name": "Dr. K. Nagarathna Rajur",
-        "designation": "Associate Professor",
-        "cv": "departments/ece/faculty/cv/k-nagarathna-rajur.pdf",
-        "photo": "departments/ece/faculty/k-nagarathna-rajur.webp"
       },
       {
         "name": "Dr. S. G. Kambalimath",
@@ -540,52 +528,22 @@
         "photo": "departments/ece/faculty/s-g-kambalimath.webp"
       },
       {
-        "name": "Basavaraj M. Angadi",
-        "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/basavaraj-m-angadi.pdf",
-        "photo": "departments/ece/faculty/basavaraj-m-angadi.webp"
+        "name": "B Veeresh",
+        "designation": "Associate Professor",
+        "cv": "departments/ece/faculty/cv/b-veeresh.pdf",
+        "photo": "departments/ece/faculty/b-veeresh.webp"
       },
       {
-        "name": "Dr. Ajayakumar C. Katageri",
-        "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/ajayakumar-c-katageri.pdf",
-        "photo": "departments/ece/faculty/ajayakumar-c-katageri.webp"
+        "name": "Dr. Ashok V. Sutagundar",
+        "designation": "Associate Professor",
+        "cv": "departments/ece/faculty/cv/ashok-v-sutagundar.pdf",
+        "photo": "departments/ece/faculty/a-v-sutagundar.webp"
       },
       {
-        "name": "Dr. Anand H Unnibhavi",
-        "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/anand-h-unnibhavi.pdf",
-        "photo": "departments/ece/faculty/anand-h-unnibhavi.webp"
-      },
-      {
-        "name": "Dr. Kirankumar B. Balavalad",
-        "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/kirankumar-b-balavalad.pdf",
-        "photo": "departments/ece/faculty/kirankumar-b-balavalad.webp"
-      },
-      {
-        "name": "Dr. Mamata J. Sataraddi",
-        "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/mamata-j-sataraddi.pdf",
-        "photo": "departments/ece/faculty/mamata-j-sataraddi.webp"
-      },
-      {
-        "name": "Dr. Rajani S. Pujar",
-        "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/rajani-s-pujar.pdf",
-        "photo": "departments/ece/faculty/rajani-s-pujar.webp"
-      },
-      {
-        "name": "Dr. Sharanappa P. H.",
-        "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/sharanappa-p-h.pdf",
-        "photo": "departments/ece/faculty/sharanappa-p-h.webp"
-      },
-      {
-        "name": "Dr. Somu P. Parande",
-        "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/somu-p-parande.pdf",
-        "photo": "departments/ece/faculty/somu-p-parande.webp"
+        "name": "Dr. K. Nagarathna Rajur",
+        "designation": "Associate Professor",
+        "cv": "departments/ece/faculty/cv/k-nagarathna-rajur.pdf",
+        "photo": "departments/ece/faculty/nagarathna-r.webp"
       },
       {
         "name": "Dr. V. S. Jigajinni",
@@ -594,15 +552,10 @@
         "photo": "departments/ece/faculty/v-s-jigajinni.webp"
       },
       {
-        "name": "Mallikarjun Aralimarad",
+        "name": "Dr. Mamata J. Sataraddi",
         "designation": "Assistant Professor",
-        "cv": "departments/ece/faculty/cv/mallikarjun-aralimarad.pdf",
-        "photo": "departments/ece/faculty/mallikarjun-aralimarad.webp"
-      },
-      {
-        "name": "Prof. P. M. Chanal",
-        "designation": "Assistant Professor",
-        "photo": "departments/ece/faculty/p-m-chanal.webp"
+        "cv": "departments/ece/faculty/cv/mamata-j-sataraddi.pdf",
+        "photo": "departments/ece/faculty/mamata-j-sataraddi.webp"
       },
       {
         "name": "Prof. S. R. Bharamagoudar",
@@ -610,21 +563,63 @@
         "photo": "departments/ece/faculty/s-r-bharamagoudar.webp"
       },
       {
+        "name": "Dr. Rajani S. Pujar",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/rajani-s-pujar.pdf",
+        "photo": "departments/ece/faculty/rajani-s-pujar.webp"
+      },
+      {
         "name": "Prof. S. V. Hanji",
         "designation": "Assistant Professor",
         "photo": "departments/ece/faculty/s-v-hanji.webp"
       },
       {
+        "name": "Mallikarjun Aralimarad",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/mallikarjun-aralimarad.pdf",
+        "photo": "departments/ece/faculty/m-c-aralimarad.webp"
+      },
+      {
+        "name": "Dr. Somu P. Parande",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/somu-p-parande.pdf",
+        "photo": "departments/ece/faculty/somu-parande.webp"
+      },
+      {
+        "name": "Dr. Anand H Unnibhavi",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/anand-h-unnibhavi.pdf",
+        "photo": "departments/ece/faculty/a-h-unnibhavi.webp"
+      },
+      {
+        "name": "Dr. Kirankumar B. Balavalad",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/kirankumar-b-balavalad.pdf",
+        "photo": "departments/ece/faculty/kiran-balavalad.webp"
+      },
+      {
+        "name": "Dr. Sharanappa P. H.",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/sharanappa-p-h.pdf",
+        "photo": "departments/ece/faculty/sharanappa-p-h.webp"
+      },
+      {
+        "name": "Basavaraj M. Angadi",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/basavaraj-m-angadi.pdf",
+        "photo": "departments/ece/faculty/b-m-angadi.webp"
+      },
+      {
         "name": "Supriya B Harlapur",
         "designation": "Assistant Professor",
         "cv": "departments/ece/faculty/cv/supriya-b-harlapur.pdf",
-        "photo": "departments/ece/faculty/supriya-b-harlapur.webp"
+        "photo": "departments/ece/faculty/s-b-harlapur.webp"
       },
       {
-        "name": "B Veeresh",
-        "designation": "Department",
-        "cv": "departments/ece/faculty/cv/b-veeresh.pdf",
-        "photo": "departments/ece/faculty/b-veeresh.webp"
+        "name": "Dr. Ajayakumar C. Katageri",
+        "designation": "Assistant Professor",
+        "cv": "departments/ece/faculty/cv/ajayakumar-c-katageri.pdf",
+        "photo": "departments/ece/faculty/a-c-katageri.webp"
       }
     ],
     "chemistry": [
