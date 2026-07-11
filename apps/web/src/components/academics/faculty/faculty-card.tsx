@@ -61,24 +61,30 @@ export function FacultyCard({ member }: FacultyCardProps) {
   const card = (
     <Card
       className={cn(
-        "group flex h-full flex-row items-center gap-4 rounded-md border-stone-200 p-4 shadow-sm transition-all",
+        "group flex h-full flex-col overflow-hidden rounded-xl border-stone-200 p-0 shadow-sm transition-all",
         hasCv && "hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md",
       )}
     >
-      <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border border-stone-200 bg-stone-100 shadow-sm ring-2 ring-stone-100 transition-all duration-300 group-hover:ring-primary/20">
-        <Portrait member={member} sizes="64px" />
+      <div className="relative aspect-4/5 w-full overflow-hidden bg-stone-100">
+        <Portrait
+          member={member}
+          sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          className="transition-transform duration-500 group-hover:scale-[1.03]"
+        />
       </div>
-      <div className="min-w-0 flex-1">
-        <h3 className="text-base font-semibold leading-snug text-gray-900 transition-colors group-hover:text-primary">
-          {member.name}
-        </h3>
-        <p className="mt-0.5 text-sm leading-snug text-gray-600">
-          {member.designation}
-        </p>
+      <div className="flex flex-1 items-start gap-2 p-4">
+        <div className="min-w-0 flex-1">
+          <h3 className="text-base font-semibold leading-snug text-gray-900 transition-colors group-hover:text-primary">
+            {member.name}
+          </h3>
+          <p className="mt-0.5 text-sm leading-snug text-gray-600">
+            {member.designation}
+          </p>
+        </div>
+        {hasCv && (
+          <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-stone-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-primary" />
+        )}
       </div>
-      {hasCv && (
-        <ChevronRight className="h-5 w-5 shrink-0 self-center text-stone-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-primary" />
-      )}
     </Card>
   );
 

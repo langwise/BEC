@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import DepartmentSidebar from "@/components/academics/departments/sidebar";
 import type { DataTable, DepartmentData, DocLink } from "@/data/department/department";
@@ -122,7 +122,7 @@ function HodMessageBlock({ hodMessage }: { hodMessage: NonNullable<DepartmentDat
           </div>
         )}
         <div className="min-w-0 flex-1">
-          <p className="whitespace-pre-line leading-relaxed text-gray-700">{hodMessage.message}</p>
+          <p className="whitespace-pre-line leading-relaxed text-gray-700 text-justify">{hodMessage.message}</p>
           {hodMessage.name && (
             <div className="mt-5">
               <p className="font-semibold text-gray-900">{hodMessage.name}</p>
@@ -197,17 +197,19 @@ function SectionEmbeds({ documents }: { documents?: DocLink[] }) {
   );
 }
 
-/** A group-photo banner shown above a section's content (faculty / staff). Uses a
- *  3:2 frame — the ratio of the department group photos — so no faces get cropped. */
+/** A group-photo banner shown above a section's content (faculty / staff).
+ *  Renders at the image's natural aspect ratio so no one gets cropped, regardless
+ *  of the source photo's dimensions. */
 function GroupPhotoBanner({ image }: { image: { src: string; alt: string } }) {
   return (
-    <figure className="relative aspect-3/2 w-full overflow-hidden rounded-2xl border border-gray-100 bg-stone-100 shadow-sm">
+    <figure className="w-full overflow-hidden rounded-2xl border border-gray-100 bg-stone-100 shadow-sm">
       <Image
         src={image.src}
         alt={image.alt}
-        fill
+        width={0}
+        height={0}
         sizes="(min-width: 1024px) 900px, 100vw"
-        className="object-cover"
+        className="h-auto w-full"
       />
     </figure>
   );
@@ -279,6 +281,12 @@ function DepartmentTables({ title, tables }: { title: string; tables: DataTable[
 
 export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
   const [activeTab, setActiveTab] = useState(dept.sidebar[0]?.id || "home");
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleSelect = (id: string) => {
+    setActiveTab(id);
+    containerRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const renderContent = () => {
     // 1. HOME tab (Overview + Highlights)
@@ -486,12 +494,12 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
   }
 
   return (
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+        <div ref={containerRef} className="flex flex-col lg:flex-row gap-8 lg:gap-12 scroll-mt-24">
             {/* Sidebar with Controled State */}
-            <DepartmentSidebar 
-                items={dept.sidebar} 
-                activeId={activeTab} 
-                onSelect={setActiveTab} 
+            <DepartmentSidebar
+                items={dept.sidebar}
+                activeId={activeTab}
+                onSelect={handleSelect}
             />
 
             {/* Main Content Area */}

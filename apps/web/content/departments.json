@@ -3214,7 +3214,7 @@
     "electronics-and-communication-engg": {
       "name": "Electronics & Communication Engineering",
       "assetSlug": "ece",
-      "tagline": "Excellence in electronics & communication engineering through quality education and research.",
+      "tagline": "Excellence in electronics & communication engineering through quality education and research",
       "newsletters": [
         {
           "title": "ECE Newsletter — October 2025",
@@ -3449,8 +3449,8 @@
       },
       "researchAreas": [
         {
-          "supervisor": "Dr. Shridhar S. K.",
-          "area": "Speech Processing",
+          "supervisor": "Dr. Mahabaleshwar S. K.",
+          "area": "Wireless Networks",
           "university": "VTU"
         },
         {
@@ -3464,8 +3464,8 @@
           "university": "VTU"
         },
         {
-          "supervisor": "Dr. B. G. Sheeparamatti",
-          "area": "MEMS, Embedded Systems",
+          "supervisor": "Dr. S. G. Kambalimath",
+          "area": "VLSI and Signal Processing",
           "university": "VTU"
         },
         {
@@ -3474,27 +3474,7 @@
           "university": "VTU"
         },
         {
-          "supervisor": "Dr. Mahabaleshwar S. K.",
-          "area": "Wireless Networks",
-          "university": "VTU"
-        },
-        {
-          "supervisor": "Dr. S. G. Kambalimath",
-          "area": "VLSI and Signal Processing",
-          "university": "VTU"
-        },
-        {
-          "supervisor": "Dr. Kiran Y. Bendigeri",
-          "area": "Wireless Sensor Networks",
-          "university": "VTU"
-        },
-        {
           "supervisor": "Dr. Nagratna Rajoor",
-          "area": "Wireless Sensor Networks",
-          "university": "VTU"
-        },
-        {
-          "supervisor": "Dr. Mamata J. Sataraddi",
           "area": "Wireless Sensor Networks",
           "university": "VTU"
         },
@@ -3504,12 +3484,17 @@
           "university": "VTU"
         },
         {
-          "supervisor": "Dr. Santosh Kumblawati",
+          "supervisor": "Dr. Mamata J. Sataraddi",
           "area": "Wireless Sensor Networks",
           "university": "VTU"
         },
         {
           "supervisor": "Dr. Rajani S. Pujar",
+          "area": "Speech Processing",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Anand H. Unnibhavi",
           "area": "Speech Processing",
           "university": "VTU"
         },
@@ -3524,8 +3509,13 @@
           "university": "VTU"
         },
         {
-          "supervisor": "Dr. Anand H. Unnibhavi",
-          "area": "Speech Processing",
+          "supervisor": "Dr. Kiran Y. Bendigeri",
+          "area": "Wireless Sensor Networks",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Santosh Kumblawati",
+          "area": "Wireless Sensor Networks",
           "university": "VTU"
         }
       ],
@@ -3693,13 +3683,13 @@
           "year": "2022"
         },
         {
-          "scholar": "Dr. Basavaraj Angadi",
+          "scholar": "Basavaraj Angadi",
           "guide": "Dr. Mahabaleshwar S. K.",
           "title": "Sensor Nodes Localization, Clustering and Routing algorithms for Wireless Sensor Networks",
           "year": "2024"
         },
         {
-          "scholar": "Dr. Shobha R. Bharamagoudar",
+          "scholar": "Shobha R. Bharamagoudar",
           "guide": "Dr. S. V. Saboji",
           "title": "Routing System for Mobile Opportunistic Network using Microscopic and Macroscopic Schemes",
           "year": "2024"
@@ -3963,7 +3953,7 @@
       "supportingStaff": [
         {
           "name": "Sri. S. S. Bhavimath",
-          "designation": "Foreman (PG)"
+          "designation": "Instructor"
         },
         {
           "name": "Sri. Prasad P. Umarji",
@@ -4011,64 +4001,32 @@
           "title": "Board of Studies (BoS)",
           "members": [
             {
-              "name": "Dr. Mahabaleshwar S. K. (Professor & Head, ECE, BEC)",
-              "position": "Chairman"
+              "name": "Dr. Mahabaleshwar S. K. (Professor and Head, Dept. of ECE, BEC Bagalkote)",
+              "position": "BOS Chairman"
             },
             {
-              "name": "Dr. Ganghadhar S. Biradar (Professor, PDA College)",
+              "name": "Dr. G. S. Biradar (Professor, Dept. of ECE, PDA College of Engineering)",
               "position": "VTU Nominee"
             },
             {
-              "name": "Dr. Kittur Harish Mallikarjun (Professor, VIT Vellore)",
+              "name": "Dr. Rahul Jashvantbhai Pandya (Assistant Professor, Dept. of ECE, IIT Dharwad)",
               "position": "Subject Expert"
             },
             {
-              "name": "Dr. K. Viswanath (Professor, Siddaganga Institute)",
+              "name": "Dr. Prabhu K. (Associate Professor, Dept. of ECE, NITK Suratkal)",
               "position": "Subject Expert"
             },
             {
-              "name": "Sri. Mahalingeshwar Dhaded (Infosys)",
+              "name": "Smt. Seema Ajey Khanapuri (SAP COE S4HANA Governance Manager, Hewlett Packard, Bengaluru)",
+              "position": "Industry Expert"
+            },
+            {
+              "name": "Mr. Sagar Kalligudd (Senior Software Engineer, CISCO, Bengaluru)",
               "position": "Alumni Representative"
             },
             {
-              "name": "Sri. Sini Balakrishnan (Western Digital)",
-              "position": "Industry Representative"
-            },
-            {
-              "name": "Sri. Sridhar Kamalapurkar (NXP Semiconductors)",
-              "position": "Industry Representative"
-            },
-            {
-              "name": "Prof. S. M. Iddalagi",
-              "position": "Member"
-            },
-            {
-              "name": "Dr. P. N. Kulkarni",
-              "position": "Member"
-            },
-            {
-              "name": "Dr. Jayashree D. Mallapur",
-              "position": "Member"
-            },
-            {
-              "name": "Dr. S. G. Kambalimath",
-              "position": "Member"
-            },
-            {
-              "name": "Dr. A. V. Sutagundar",
-              "position": "Member"
-            },
-            {
-              "name": "Dr. Mahabaleshwar S. K.",
-              "position": "Member"
-            },
-            {
-              "name": "Prof. M. J. Sataraddi",
-              "position": "Member"
-            },
-            {
-              "name": "Dr. A. C. Katageri",
-              "position": "Member"
+              "name": "All Teaching Faculty Members of Electronics and Communication Engineering Department, BEC Bagalkote",
+              "position": "Members"
             }
           ]
         },
@@ -4313,8 +4271,8 @@
       "hodMessage": {
         "message": "Welcome to ECE at BEC. Since 1985, we've evolved from teaching basic circuits to advancing work in VLSI design, speech processing, wireless networks, MEMS, and emerging areas of electronics. Our students learn by building, experimenting, and questioning—because engineering is best understood through practice. We expect commitment, curiosity, and initiative, and in return, our faculty provide the guidance and support needed to grow. This department is yours to build—and we'll hold you to that trust.",
         "name": "Dr. Mahabaleshwar S. K.",
-        "designation": "Professor & Head, Department of E&CE",
-        "image": "governance/hod/ece/dr-mahabaleshwar-s-k.webp"
+        "designation": "Professor & Head",
+        "image": "governance/deans/dr-mahabaleshwar-s-k.webp"
       },
       "sectionNavLabels": {
         "activities": "Association"

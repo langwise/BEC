@@ -393,7 +393,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     }
     if (content.researchScholars?.length) {
       tables.push({
-        title: `Registered Research Scholars (${content.researchScholars.length})`,
+        title: `Research Scholars (${content.researchScholars.length})`,
         columns: ["Research Scholar", "Guide", "Thesis Title", "Status"],
         rows: content.researchScholars.map((p) => [p.scholar, p.guide, p.title ?? "", p.status]),
       });
