@@ -8,7 +8,7 @@ import {
 } from "@/content/departments";
 import { asset } from "@/lib/assets";
 import { getDepartmentFaculty } from "@/content/faculty";
-import { getDepartmentPlacements } from "@/content/placements";
+import { getDepartmentPlacements, type PlacementOffersChart } from "@/content/placements";
 
 /** A two-part list entry — primary label + muted secondary detail (no dash-joining). */
 export type GroupItem = string | { label: string; value?: string };
@@ -87,6 +87,8 @@ export type DepartmentSection =
       groupPhoto?: SectionImage;
       /** Captioned photo galleries shown above the tables (e.g. Facilities: classrooms/labs/library/campus). */
       imageGroups?: { title?: string; images: SectionImage[] }[];
+      /** Placement-offers bar chart shown above the tables (e.g. CSE year-wise offers). */
+      placementChart?: PlacementOffersChart;
       attachments?: DocLink[];
       embeds?: DocLink[];
     }
@@ -96,7 +98,7 @@ export type DepartmentSection =
       type: "testimonials";
       title: string;
       icon?: string;
-      distinguished?: { name: string; designation?: string; photo: string }[];
+      distinguished?: { name: string; designation?: string; organization?: string; photo?: string }[];
       testimonials: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
     }
   | { id?: string; type: "gallery"; title: string; images: { src: string; alt: string }[]; attachments?: DocLink[]; embeds?: DocLink[] }
@@ -641,7 +643,10 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
 
   // Alumni — distinguished-alumni gallery and/or testimonials
   if (content.distinguishedAlumni?.length || content.testimonials?.length) {
-    const distinguished = content.distinguishedAlumni?.map((a) => ({ ...a, photo: asset(a.photo) }));
+    const distinguished = content.distinguishedAlumni?.map((a) => ({
+      ...a,
+      photo: a.photo ? asset(a.photo) : undefined,
+    }));
     const testimonials = (content.testimonials ?? []).map((t) => ({
       ...t,
       photo: t.photo ? asset(t.photo) : undefined,
@@ -711,6 +716,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       title: "Placements",
       icon: "briefcase",
       tables,
+      placementChart: placements.offersChart,
       groupPhoto: content.placementsPhoto
         ? {
             src: asset(content.placementsPhoto),
@@ -754,11 +760,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
-  // Activities & student forums
-  if (content.activities?.length || content.associations?.length) {
+  // Activities & events
+  if (content.activities?.length) {
     const groups: ContentGroup[] = [];
-    const richActivities = content.activities?.filter((a) => a.details?.length || a.images?.length) ?? [];
-    const simpleActivities = content.activities?.filter((a) => !a.details?.length && !a.images?.length) ?? [];
+    const richActivities = content.activities.filter((a) => a.details?.length || a.images?.length);
+    const simpleActivities = content.activities.filter((a) => !a.details?.length && !a.images?.length);
     if (simpleActivities.length)
       groups.push({
         subtitle: "Recent Events & Activities",
@@ -776,7 +782,13 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         largeImages: true,
       });
     }
-    for (const assoc of content.associations ?? []) {
+    sections.push({ id: "activities", type: "content", title: heading("activities", "Activities"), icon: "calendar", groups });
+  }
+
+  // Student associations & forums — their own section, separate from activities.
+  if (content.associations?.length) {
+    const groups: ContentGroup[] = [];
+    for (const assoc of content.associations) {
       const coords = assoc.coordinators?.length
         ? ` Faculty Coordinators (2025–2026): ${assoc.coordinators.join(" and ")}.`
         : "";
@@ -794,14 +806,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           images: assoc.gallery.map((key) => ({ src: asset(key), alt: `${assoc.name} activity` })),
         });
     }
-    // With no dated activities, the section is a student "Association", not an activities feed.
-    const associationsOnly = !content.activities?.length && !!content.associations?.length;
-    const defaultTitle = associationsOnly ? "Association" : "Activities & Forums";
-    const assocPhoto = content.associations?.find((a) => a.photo);
+    const assocPhoto = content.associations.find((a) => a.photo);
     const groupPhoto = assocPhoto?.photo
       ? { src: asset(assocPhoto.photo), alt: assocPhoto.photoCaption ?? assocPhoto.name, caption: assocPhoto.photoCaption }
       : undefined;
-    sections.push({ id: "activities", type: "content", title: heading("activities", defaultTitle), icon: "calendar", groups, groupPhoto });
+    sections.push({ id: "association", type: "content", title: heading("association", "Association"), icon: "users", groups, groupPhoto });
   }
 
   // Activity programmes (SDPs, FDPs, workshops) — one titled table per category.
@@ -935,6 +944,14 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     }
   }
 
+  // Per-department section icon overrides (sidebar + heading), keyed by section id.
+  if (content.sectionIcons) {
+    for (const section of sections) {
+      const override = section.id ? content.sectionIcons[section.id] : undefined;
+      if (override) (section as { icon?: string }).icon = override;
+    }
+  }
+
   return sections;
 }
 
@@ -967,6 +984,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
     activities: { label: "Activities", icon: "calendar" },
+    association: { label: "Association", icon: "users" },
     "activity-programs": { label: "Activities", icon: "calendar" },
     mou: { label: "MoUs", icon: "handshake" },
     infrastructure: { label: "Infrastructure", icon: "building-2" },
@@ -976,7 +994,8 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     const meta = section.id ? sectionLabels[section.id] : undefined;
     if (meta) {
       const label = (section.id && content?.sectionNavLabels?.[section.id]) || meta.label;
-      sidebar.push({ id: section.id!, label, icon: meta.icon });
+      const icon = (section.id && content?.sectionIcons?.[section.id]) || meta.icon;
+      sidebar.push({ id: section.id!, label, icon });
     }
   }
 

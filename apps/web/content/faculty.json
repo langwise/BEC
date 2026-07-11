@@ -121,7 +121,8 @@
       },
       {
         "name": "Shri. Manjunath Sholapur",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "photo": "departments/cse/faculty/manjunath-sholapur.webp"
       }
     ],
     "ai-and-ml": [
@@ -781,32 +782,39 @@
     ],
     "mca": [
       {
-        "name": "Prof. S. M. Magi",
-        "designation": "Assistant Professor & Head"
+        "name": "Prof. Sangamesh M. Magi",
+        "designation": "Assistant Professor & Head",
+        "photo": "departments/mca/faculty/sangamesh-m-magi.webp",
+        "cv": "departments/mca/faculty/cv/sangamesh-m-magi.pdf"
       },
       {
         "name": "Prof. Shrinivas S. Gujarathi",
-        "designation": "Associate Professor"
-      },
-      {
-        "name": "Prof. Abhishek S. Hebballi",
-        "designation": "Assistant Professor"
-      },
-      {
-        "name": "Prof. C. M. Jangin",
-        "designation": "Assistant Professor"
-      },
-      {
-        "name": "Prof. M. H. Shirur",
-        "designation": "Assistant Professor"
+        "designation": "Associate Professor",
+        "photo": "departments/mca/faculty/shrinivas-s-gujarathi.webp",
+        "cv": "departments/mca/faculty/cv/shrinivas-s-gujarathi.pdf"
       },
       {
         "name": "Prof. Sudha K. S.",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "photo": "departments/mca/faculty/sudha-k-s.webp",
+        "cv": "departments/mca/faculty/cv/sudha-k-s.pdf"
       },
       {
-        "name": "Smt. Karuna B. Kurbet",
-        "designation": "Assistant Professor"
+        "name": "Prof. Manjunath H. Shirur",
+        "designation": "Assistant Professor",
+        "photo": "departments/mca/faculty/manjunath-h-shirur.webp",
+        "cv": "departments/mca/faculty/cv/manjunath-h-shirur.pdf"
+      },
+      {
+        "name": "Prof. Chandrashekarayya M. Jangin",
+        "designation": "Assistant Professor",
+        "cv": "departments/mca/faculty/cv/chandrashekarayya-m-jangin.pdf"
+      },
+      {
+        "name": "Prof. Karuna B. Kurbet",
+        "designation": "Assistant Professor",
+        "photo": "departments/mca/faculty/karuna-b-kurbet.webp",
+        "cv": "departments/mca/faculty/cv/karuna-b-kurbet.pdf"
       }
     ],
     "biotechnology": [

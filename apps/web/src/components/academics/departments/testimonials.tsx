@@ -14,7 +14,8 @@ type Testimonial = {
 type Distinguished = {
   name: string;
   designation?: string;
-  photo: string;
+  organization?: string;
+  photo?: string;
 };
 
 function initials(name: string): string {
@@ -99,13 +100,20 @@ export default function TestimonialsSection({
                 key={i}
                 className="flex flex-col items-center rounded-2xl border border-stone-200 bg-white p-4 text-center shadow-sm"
               >
-                <div className="h-24 w-24 overflow-hidden rounded-full border border-stone-200 bg-stone-50">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={a.photo} alt={a.name} className="h-full w-full object-cover" loading="lazy" />
+                <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-stone-200 bg-primary/10 text-xl font-semibold text-primary">
+                  {a.photo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={a.photo} alt={a.name} className="h-full w-full object-cover" loading="lazy" />
+                  ) : (
+                    initials(a.name)
+                  )}
                 </div>
                 <p className="mt-3 text-sm font-semibold leading-snug text-gray-900">{a.name}</p>
                 {a.designation && (
                   <p className="mt-1 text-xs leading-snug text-gray-500">{a.designation}</p>
+                )}
+                {a.organization && (
+                  <p className="mt-0.5 text-xs font-medium leading-snug text-primary/80">{a.organization}</p>
                 )}
               </div>
             ))}

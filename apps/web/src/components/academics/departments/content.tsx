@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { motion } from "motion/react";
 import { iconMap } from "./icons";
 import { PhotoGallery } from "@/components/common/photo-gallery";
@@ -28,6 +29,22 @@ interface ContentSectionProps {
   justify?: boolean;
   /** Let the body span the full column width instead of the default readable max-width. */
   wide?: boolean;
+}
+
+function withOrdinalSuperscripts(text: string) {
+  const parts = text.split(/(\d+)(st|nd|rd|th)\b/g);
+  const nodes: ReactNode[] = [];
+  for (let i = 0; i < parts.length; i += 3) {
+    if (parts[i]) nodes.push(parts[i]);
+    if (parts[i + 1] !== undefined)
+      nodes.push(
+        <span key={i}>
+          {parts[i + 1]}
+          <sup>{parts[i + 2]}</sup>
+        </span>,
+      );
+  }
+  return nodes;
 }
 
 function BulletList({ items, justify }: { items: GroupItem[]; justify?: boolean }) {
@@ -114,7 +131,7 @@ export default function ContentSection({
                     {group.subtitle}
                   </h3>
                 )}
-                {group.text && <p className="text-gray-600 leading-relaxed text-justify">{group.text}</p>}
+                {group.text && <p className="text-gray-600 leading-relaxed text-justify">{withOrdinalSuperscripts(group.text)}</p>}
                 {group.items && group.items.length > 0 && <BulletList items={group.items} justify={justify} />}
               </div>
               {group.images && group.images.length > 0 && (

@@ -44,15 +44,21 @@ function ContactCard({ person }: { person: ContactPerson }) {
               <span className="truncate">{person.phone}</span>
             </a>
           )}
-          {person.email && (
-            <a
-              href={`mailto:${person.email}`}
-              className="flex items-center gap-3 text-sm text-gray-600 transition-colors hover:text-primary"
-            >
-              <Mail className="h-4 w-4 shrink-0 text-gray-400" />
-              <span className="truncate">{person.email}</span>
-            </a>
-          )}
+          {person.email &&
+            person.email
+              .split(",")
+              .map((e) => e.trim())
+              .filter(Boolean)
+              .map((email) => (
+                <a
+                  key={email}
+                  href={`mailto:${email}`}
+                  className="flex items-center gap-3 text-sm text-gray-600 transition-colors hover:text-primary"
+                >
+                  <Mail className="h-4 w-4 shrink-0 text-gray-400" />
+                  <span className="truncate">{email}</span>
+                </a>
+              ))}
         </div>
       )}
     </div>

@@ -11,6 +11,7 @@ import { CheckCircle2, FileText, Download } from "lucide-react";
 import { FacultyCard } from "@/components/academics/faculty/faculty-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { QuickFacts } from "@/components/academics/departments/quick-facts";
+import { PlacementOffersChart } from "@/components/academics/departments/placement-offers-chart";
 
 interface DepartmentLayoutProps {
   dept: DepartmentData;
@@ -512,6 +513,9 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
          if (activeSection.type === "tables") {
              return (
                  <div className="space-y-8">
+                     {activeSection.placementChart && (
+                         <PlacementOffersChart chart={activeSection.placementChart} />
+                     )}
                      {activeSection.imageGroups && activeSection.imageGroups.length > 0 && (
                          <ImageGroups groups={activeSection.imageGroups} />
                      )}

@@ -71,8 +71,8 @@ export type DepartmentContent = {
     companies?: { name: string; founders: string; domain: string; established: string }[];
     grants?: { startup: string; project: string; year: string; agency: string; amount: string }[];
   };
-  /** Distinguished alumni — portrait gallery (photo + name + designation) shown above testimonials. */
-  distinguishedAlumni?: { name: string; designation?: string; photo: string }[];
+  /** Distinguished alumni — gallery of name + designation + organization, with an optional portrait (initials shown when absent). */
+  distinguishedAlumni?: { name: string; designation?: string; organization?: string; photo?: string }[];
   /** Alumni testimonials — rendered as quote cards under an "Alumni" section. */
   testimonials?: { name: string; quote: string; designation?: string; organization?: string; photo?: string }[];
   /** Alumni record PDFs — rendered as a downloadable "Alumni Records" section. */
@@ -169,6 +169,8 @@ export type DepartmentContent = {
   sectionTitles?: Record<string, string>;
   /** Per-department sidebar label overrides, keyed by section id. */
   sectionNavLabels?: Record<string, string>;
+  /** Per-department section icon overrides (sidebar + heading), keyed by section id. */
+  sectionIcons?: Record<string, string>;
   /** Drop the "Quantity" column from the infrastructure/equipment table for this department. */
   hideInfrastructureQuantity?: boolean;
   /** Show Vision & Mission on the Home tab (after the overview) and move the HoD message, lead photo and Highlights under "About Department". */

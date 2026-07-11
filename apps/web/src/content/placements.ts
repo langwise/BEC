@@ -28,9 +28,20 @@ export type PlacementBatch = {
   students: PlacementStudent[];
 };
 
+/** A single bar in the placement-offers chart. */
+export type PlacementOffersPoint = { year: string; offers: number; note?: string };
+
+/** Year-wise placement-offers bar chart (department's own published figures). */
+export type PlacementOffersChart = {
+  title?: string;
+  yAxisLabel?: string;
+  points: PlacementOffersPoint[];
+};
+
 export type DepartmentPlacements = {
   yearWise: PlacementYear[];
   batches: PlacementBatch[];
+  offersChart?: PlacementOffersChart;
 };
 
 const byDepartment = data.departments as Record<string, DepartmentPlacements>;

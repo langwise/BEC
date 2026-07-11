@@ -1,6 +1,17 @@
 {
   "departments": {
     "computer-science-and-engg": {
+      "offersChart": {
+        "title": "No. of Placement Offers",
+        "yAxisLabel": "No. of Placement Offers",
+        "points": [
+          { "year": "2022", "offers": 183 },
+          { "year": "2023", "offers": 100 },
+          { "year": "2024", "offers": 124 },
+          { "year": "2025", "offers": 154 },
+          { "year": "2026", "offers": 72, "note": "on going" }
+        ]
+      },
       "yearWise": [
         {
           "year": "2023-2024",

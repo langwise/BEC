@@ -2808,19 +2808,19 @@
       },
       "documents": [
         {
-          "title": "Scheme & Syllabus — First Year (2023-24 Batch)",
+          "title": "2026-27 Scheme and Syllabus",
           "file": "departments/cse/docs/syllabus-1st-year-2023-24.pdf"
         },
         {
-          "title": "Scheme & Syllabus — 3rd & 4th Semester (2023-24 Batch)",
+          "title": "2025-26 Scheme and Syllabus",
           "file": "departments/cse/docs/syllabus-3-4-sem-2023-24.pdf"
         },
         {
-          "title": "Scheme & Syllabus — 3rd–8th Semester (2022-23 Batch)",
+          "title": "2024-25 Scheme and Syllabus",
           "file": "departments/cse/docs/syllabus-3-8-sem-2022-23.pdf"
         },
         {
-          "title": "Scheme & Syllabus — 3rd–8th Semester (2021-22 Batch)",
+          "title": "2023-24 Scheme and Syllabus",
           "file": "departments/cse/docs/syllabus-3-8-sem-2021-22.pdf"
         }
       ],
@@ -2828,6 +2828,97 @@
         {
           "title": "Department Best Practices",
           "file": "departments/cse/docs/best-practices.pdf"
+        }
+      ],
+      "distinguishedAlumni": [
+        {
+          "name": "Ananthanarayana V. S.",
+          "designation": "Professor (HAG Scale), Dept. of Information Technology",
+          "organization": "NITK Surathkal"
+        },
+        {
+          "name": "S. G. Koolagudi",
+          "designation": "Professor, Dept. of Computer Science & Engineering",
+          "organization": "NITK Surathkal"
+        },
+        {
+          "name": "Parameshwar Hegde",
+          "designation": "Chief Technology Officer",
+          "organization": "Crunchbase, USA"
+        },
+        {
+          "name": "Siddanagouda Rati",
+          "designation": "Senior Principal Technical Program Manager",
+          "organization": "Citrix, USA"
+        },
+        {
+          "name": "Somashekar Rudraxi",
+          "designation": "Data Analytics Engineer",
+          "organization": "Apple, California, USA"
+        },
+        {
+          "name": "Venkatesh Channal",
+          "designation": "Software Development Manager",
+          "organization": "Amazon Development"
+        },
+        {
+          "name": "Anant Kolhar",
+          "designation": "Vice President — Strategy & Operations",
+          "organization": "Vegam Solutions, Bangalore"
+        },
+        {
+          "name": "Kavita Tippanna",
+          "designation": "Senior Software Engineer",
+          "organization": "Medallia Inc, USA"
+        },
+        {
+          "name": "Sameer Lattannavar",
+          "designation": "Graphics Software Engineer",
+          "organization": "Intel Technologies Pvt. Ltd., Hyderabad"
+        },
+        {
+          "name": "Chetan Bhandi",
+          "designation": "Senior Principal Consultant — Learning",
+          "organization": "Infosys, Mysore"
+        }
+      ],
+      "publications": [
+        {
+          "category": "Journal Publications",
+          "years": [
+            {
+              "items": [
+                "Dr. V. B. Pagi. “Enhanced Human Detection in Videos via Moment Invariant Features and Triple-SCNN.” IAENG Journal of Computer Science, accepted for publication, August 2025 (Q3), indexed in Scopus, ESCI.",
+                "Dr. V. B. Pagi. “Human Crime Activity Recognition and Shooting Weapon Detection in Video Frames using Contour Approximation Algorithm and FastDTW Classifier.” Cogent Social Sciences (Q2), Vol. 11, Issue 1, February 2025, Taylor & Francis Online, indexed in Scopus, WoS and SCIE. https://doi.org/10.1080/23311886.2025.2465834",
+                "Dr. V. B. Pagi. “The Novel HAP Algorithm for Human Crime Activity Prediction in Video Frames using Kalman Filter and Template Matching.” Communications on Applied Non-Linear Analysis (CANA) (Q4), indexed in Scopus, Vol. 32, No. 9s (2025), March 2025, pp. 2050-2075. https://doi.org/10.52783/cana.v32.4447",
+                "Dr. V. B. Pagi. “The Novel HAD Algorithm to Detect Presence of Human Activity in Videos based on MediaPipe Pose and Human Landmarks.” Cogent Social Sciences (Q2), Vol. 11, Issue 1, March 2025, Taylor & Francis Online, indexed in Scopus, WoS and SCIE. https://doi.org/10.1080/23311886.2025.2474863",
+                "Dr. V. B. Pagi. “Human Detection in Videos Based on Contour and Invariant Moments using FastDTW Algorithm.” IJIS-SCI, Scopus, WoS-Q2 (communicated).",
+                "Dr. G. B. Chittapur. “Glimpse into the Future — Holographic Projection Technology.” International Journal of Information Technology, Vol. 4, No. 5, 2024.",
+                "Dr. S. V. Saboji. “Review of Machine Learning Approaches and Challenges for Detecting Phishing Attacks.” Grenze International Journal of Engineering and Technology, January 2024, Issue 2, Grenze ID: 01.GIJET.10.1.63_2, ISSN: 2395-5295.",
+                "Dr. S. V. Saboji. “Optimized Hybrid IDS Using HBA, LightGBM, and LSTM for DDoS Attack Detection.” International Journal of Computer Network and Information Security, MECS Press, published online 15 July 2025 (communicated).",
+                "Prof. Shama P. Santappanavar. “Tennis Text-Gen: A Unified System for Generating Textual Descriptions in Tennis Videos Using RCNN and NLP.” International Journal of Intelligent Engineering and Systems (IJIES) (Scopus, Q2) (communicated).",
+                "Prof. Smita Gour. “A Novel Uncertainty-Aware Evidential Multimodal Deep Learning for RGB-D Household Object Recognition.” Journal of Information Systems Engineering and Management, February 2025, e-ISSN 2468-4376, Vol. 10, No. 17s. https://doi.org/10.52783/jisem.v10i17s.2788",
+                "Prof. Smita Gour. “A Genetic Algorithm Approach to Segment Household Objects from an Image.” Communications on Applied Nonlinear Analysis, January 2025, ISSN: 1074-133X, Vol. 32, No. 7s (2025).",
+                "Prof. Smita Gour. “Real-Time Performance Evaluation of Household Object Detection, Recognition and Grasping Using Firebird V Robot.” Journal of Information Systems Engineering and Management, accepted April 2025, e-ISSN 2468-4376.",
+                "S. N. Benkikeri. “Text-to-Video Generator Using Stable Diffusion Model for Dynamic Video Content Creation.” International Journal of Research and Analysis in Science and Engineering, Vol. 4, Issue 5, September 2024, ISSN: 2582-8118."
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Conference Proceedings",
+          "years": [
+            {
+              "items": [
+                "Dr. V. B. Pagi. “Human Detection in Videos using the Siamese Convolutional Neural Network.” IEEE NKCON 2025, September 27-28, 2025, KLE Institute of Technology, Hubballi.",
+                "Dr. V. B. Pagi. “Number Plate Recognition in Challenging Environments: A Study.” Proc. of International Conference on Sustainable Solutions in Engineering and Technology (SSET-2024), BEC Bagalkote, August 29-30, 2024.",
+                "Dr. V. B. Pagi. “An Insight into Key Algorithms for Sentiment Analysis.” Proc. of International Conference on Sustainable Solutions in Engineering and Technology (SSET-2024), BEC Bagalkote, August 29-30, 2024.",
+                "Dr. V. B. Pagi. “Physical Abuse Activity Recognition using Landmarks of Human Posture and DTW Classifier.” Proc. of IEEE North Karnataka Sub Section International Conference 2024, BEC Bagalkote, September 21-22, 2024.",
+                "Dr. Vasudha M. Bonal. “Context Aware Data Synchronization in Ubiquitous Networks: Cognitive Agent Approach.” International Conference on Smart Trends in Computing and Communications, Vol. 215 (2022), pp. 176-181.",
+                "Dr. S. V. Saboji. “Smart Agriculture Cybersecurity: An ML-Enabled Threat Detection Framework.” International Conference on Sustainable Management and Advanced Research Technologies (SMART 2026), March 27-28, 2026, Rajarambapu Institute of Technology, Islampur, Sangli District, Maharashtra."
+              ]
+            }
+          ]
         }
       ],
       "sectionDocuments": {
@@ -2839,8 +2930,12 @@
         ],
         "governance": [
           {
-            "title": "Board of Studies — Signed Proceedings (2024-25)",
-            "file": "departments/cse/docs/bos-2024-25.pdf"
+            "title": "Board of Studies — Resolutions (27-06-2026)",
+            "file": "departments/cse/docs/bos-resolutions-2026-06-27.pdf"
+          },
+          {
+            "title": "Board of Studies — Resolutions (01-09-2025)",
+            "file": "departments/cse/docs/bos-resolutions-2025-09-01.pdf"
           }
         ]
       },
@@ -3136,7 +3231,7 @@
       ],
       "committeeGroups": [
         {
-          "title": "Board of Studies",
+          "title": "Board of Studies (2025-2028)",
           "members": [
             {
               "name": "Dr. V. B. Pagi",
@@ -3144,63 +3239,107 @@
             },
             {
               "name": "Dr. S. V. Saboji",
-              "position": "Internal Member — Professor, CSE, BEC Bagalkote"
+              "position": "Faculty Member — Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Dr. S. M. Hatture",
-              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkote"
+              "name": "Prof. K. S. Patil",
+              "position": "Faculty Member — Associate Professor, CSE, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. V. B. Hunagund",
+              "position": "Faculty Member — Associate Professor, CSE, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. J. M. Hurakadli",
+              "position": "Faculty Member — Associate Professor, CSE, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. V. M. Bonal",
+              "position": "Faculty Member — Associate Professor, CSE, BEC Bagalkote"
             },
             {
               "name": "Dr. V. H. Naik",
-              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkote"
+              "position": "Faculty Member — Associate Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Prof. S. S. Yendigeri",
-              "position": "Internal Member — Associate Professor, CSE, BEC Bagalkote"
+              "name": "Dr. M. G. Kambalimath",
+              "position": "Faculty Member — Assistant Professor (Sr. Scale), CSE, BEC Bagalkote"
             },
             {
-              "name": "Prof. S. V. Hanji",
-              "position": "Internal Member — Assistant Professor, CSE, BEC Bagalkote"
+              "name": "Dr. G. B. Chittapur",
+              "position": "Faculty Member — Assistant Professor (Sr. Scale), CSE, BEC Bagalkote"
             },
             {
-              "name": "Dr. P. S. Challagidad",
-              "position": "Internal Member — Assistant Professor, CSE, BEC Bagalkote"
+              "name": "Prof. S. N. Benkikeri",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Dr. Mahadev Prasanna",
-              "position": "Subject Expert — Professor, IIT Dharwad"
+              "name": "Dr. S. K. Gour",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Dr. Sharvani G. S.",
-              "position": "Subject Expert — Associate Professor, RVCE Bangalore"
+              "name": "Prof. S. P. Madhavanavar",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Dr. P. H. Unki",
-              "position": "Subject Expert — Professor, CSE, BLDEA CET Vijayapur"
+              "name": "Prof. Smitha K.",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Dr. P. R. Patil",
-              "position": "VTU Nominee — Professor & Head, Computer Applications, B.V. Bhoomraddi College"
+              "name": "Prof. J. S. Mulimani",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Mr. Mahesh Kopp",
-              "position": "Industry Representative — Scientist, LRDE, DRDO, Bangalore"
+              "name": "Prof. P. B. Madhavanavar",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Dr. V. S. Rajapurohit",
-              "position": "Meritorious Alumnus — Professor & Head, GIT Belgaum"
+              "name": "Prof. B. S. Malapur",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Dr. Bharati Reshmi",
-              "position": "Co-opted Member — Associate Professor, ISE, BEC Bagalkote"
+              "name": "Prof. S. R. Karjol",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Mr. Mohammad Ibrahim Korti",
-              "position": "Student Member — 1st Semester M.Tech. (CSE)"
+              "name": "Dr. Shama P. S.",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
             },
             {
-              "name": "Miss. Allurkar Sneha",
-              "position": "Student Member — 6th Semester B.E. (CSE)"
+              "name": "Prof. Netra Yaradoni",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. M. B. Sholapur",
+              "position": "Faculty Member — Assistant Professor, CSE, BEC Bagalkote"
+            },
+            {
+              "name": "Dr. Manjunath Vanahalli",
+              "position": "Subject Expert — Assistant Professor, Data Science & Artificial Intelligence, IIIT Dharwad"
+            },
+            {
+              "name": "Dr. Manohar Koli",
+              "position": "Subject Expert — Assistant Professor, CSE, Haveri University, Haveri"
+            },
+            {
+              "name": "Dr. Sanjeev Sannakki",
+              "position": "VTU Nominee — Professor, CSE, Gogte Institute of Technology, Belagavi"
+            },
+            {
+              "name": "Shri C. Raghavendra",
+              "position": "Industry Representative — Senior System Analyst, IBM India Pvt. Ltd., Bengaluru"
+            },
+            {
+              "name": "Shri Gurushant Hanchinal",
+              "position": "Alumnus — Founder & CEO, Vealthx, Bengaluru"
+            },
+            {
+              "name": "Shriraksha P. Kulkarni",
+              "position": "Student Member"
+            },
+            {
+              "name": "Aftab Faniband",
+              "position": "Student Member"
             }
           ]
         }
@@ -3291,7 +3430,13 @@
           "specification": "Structured Cat 5/Cat 6 + fibre-backbone cabling",
           "quantity": "2"
         }
-      ]
+      ],
+      "sectionTitles": {
+        "infrastructure": "Photo Gallery"
+      },
+      "sectionNavLabels": {
+        "infrastructure": "Photo Gallery"
+      }
     },
     "electronics-and-communication-engg": {
       "name": "Electronics & Communication Engineering",
@@ -14599,33 +14744,75 @@
     "mca": {
       "name": "Master of Computer Applications (MCA)",
       "assetSlug": "mca",
+      "galleryExclude": ["cine0404", "cine0437", "cine0448", "cine0483", "cine0488"],
       "tagline": "Educate and empower students for the IT profession with techno-social values.",
-      "overview": "The MCA programme is a two-year course offered within the autonomous framework granted to the college by VTU and UGC in 2007. The department offers a student-friendly learning atmosphere, a syllabus framed in consultation with industry experts, a software development cell that lets students experience live projects, and state-of-the-art computing laboratories built on open-source technologies.",
-      "vision": "Educate and empower students for the IT profession with techno-social values.",
+      "intake": "60",
+      "overview": "The MCA programme is a two-year course offered within the autonomous framework granted to the college by VTU and UGC in 2007. It has well-equipped laboratories with state-of-the-art equipment and highly qualified, well-experienced faculty committed to imparting quality technical education in IT and research. Our curriculum, aligned with the latest technological advancements, gives students strong foundations in programming, software engineering, artificial intelligence, data science, cloud computing, web technologies, cybersecurity and emerging computing domains. Along with technical knowledge, we emphasise critical thinking, problem-solving, innovation, ethical values, teamwork, leadership, research and lifelong learning.",
+      "vision": "To be a centre of excellence in the field of Computer Applications, to educate and empower students for the IT profession with techno-social values.",
       "mission": [
-        "Impart quality IT education and encourage students to showcase the best of their abilities.",
-        "Strengthen technical skills and imbibe moral and ethical values beneficial to society.",
-        "Produce graduates who accomplish the best professional standards."
+        "Impart quality education through an effective teaching–learning process.",
+        "Nurture a culture of academic excellence, research, innovation and entrepreneurship through a strong industry interface for sustainable and quality living.",
+        "Foster a culture conducive to the well-being of society through ethical and professional practices."
+      ],
+      "hodMessage": {
+        "message": "We believe that education is not merely about earning a degree but about building character, developing leadership qualities and strong technical skills to solve real-world problems, and creating responsible professionals who contribute positively to society. We encourage every student to dream big, work hard, embrace continuous learning and uphold the values of integrity, discipline and social responsibility. Our experienced and dedicated faculty are committed to providing quality education through outcome-based teaching, practical laboratory sessions, project-based learning, industry interactions, internships, technical workshops, seminars and value-added certification programmes. We continuously encourage students to participate in research, innovation, hackathons, coding competitions and professional activities that enhance their technical expertise and employability. We maintain strong interactions with industry and alumni to ensure our students remain industry-ready and globally competitive. I warmly invite aspiring students, parents, recruiters and stakeholders to explore the opportunities offered by our department — together, let us embark on a journey of learning, innovation and excellence.",
+        "name": "Prof. Sangamesh M. Magi",
+        "designation": "Assistant Professor & Head",
+        "image": "governance/hod/mca/sri-s-m-magi.webp"
+      },
+      "highlights": [
+        "Regular upgradation of skill sets and qualifications by the faculty members.",
+        "Faculty members are actively involved in research activities.",
+        "Good placement activities.",
+        "Industry internship for final-year students.",
+        "Regular conduction of technical seminars and remedial classes."
       ],
       "programsOffered": [
-        "MCA — Master of Computer Applications (2-year)"
+        "MCA — Master of Computer Applications (2-year, full-time)"
       ],
-      "highlights": [
-        "Part of the college's autonomous status granted by VTU and UGC in 2007.",
-        "Software development cell for live, industry-style projects.",
-        "State-of-the-art computing laboratories built on open-source technologies.",
-        "Syllabus framed in consultation with industry experts.",
-        "Ms. Ganga Bilagi — University Blue (2024-25) and Best Women Cricketer, Session 12, Ijere Academy Hubli.",
-        "Students placed as interns at QSpiders."
+      "peos": [
+        { "code": "PEO1", "text": "Have a strong foundation and the ability to apply knowledge of computer science and applications, and mathematics, to analyse, design and implement IT solutions to real-life problems." },
+        { "code": "PEO2", "text": "Have a comprehensive background to practise software engineering principles across domains that require software architecture, design, development and testing practices." },
+        { "code": "PEO3", "text": "Have an understanding of the professional and ethical obligations of a software engineer towards society and the need for lifelong learning." }
       ],
-      "labs": [
+      "psos": [
+        { "code": "PSO1", "text": "Apply computer science and applications knowledge to analyse, design and develop computing solutions using modern languages, environments and platforms that solve simple to complex real-time problems." },
+        { "code": "PSO2", "text": "Anticipate the changing direction of computational technology, evaluate it, and communicate its likely utility for building software systems that perform tasks related to industry, research and education." },
+        { "code": "PSO3", "text": "Inculcate the knowledge of computer applications and management principles to manage IT projects effectively and create an innovative career path." }
+      ],
+      "pos": [
+        { "code": "PO1", "text": "Foundation Knowledge: Apply knowledge of mathematics, programming logic and coding fundamentals for solution architecture and problem solving." },
+        { "code": "PO2", "text": "Problem Analysis: Identify, review, formulate and analyse problems, primarily focusing on customer requirements, using critical-thinking frameworks." },
+        { "code": "PO3", "text": "Development of Solutions: Design, develop and investigate problems with an innovative approach for solutions incorporating ESG (Environmental, Social and Governance) and SDG (Sustainable Development Goals)." },
+        { "code": "PO4", "text": "Modern Tool Usage: Select, adapt and apply modern computational tools such as algorithm development, with an understanding of limitations including human biases." },
+        { "code": "PO5", "text": "Individual and Teamwork: Function and communicate effectively as an individual or as a team leader in diverse and multidisciplinary groups, using methodologies such as Agile." },
+        { "code": "PO6", "text": "Project Management and Finance: Use principles of project management such as scheduling and work-breakdown structure, and be conversant with principles of finance for profitable project management." },
+        { "code": "PO7", "text": "Ethics: Commit to professional ethics in managing software projects with financial aspects; learn to use new technologies for cybersecurity and protect customers from malware." },
+        { "code": "PO8", "text": "Life-long Learning: Demonstrate change-management skills and the ability to learn and adapt to contemporary technologies and evolving ways of working." }
+      ],
+      "curriculumGroups": [
         {
-          "name": "Computing Laboratories",
-          "description": "State-of-the-art labs built on open-source technologies."
+          "title": "Scheme & Syllabus",
+          "documents": [
+            { "title": "MCA Scheme & Syllabus (2026-27)", "file": "departments/mca/docs/scheme-syllabus-2026-27.pdf" },
+            { "title": "MCA Scheme & Syllabus (2025-26)", "file": "departments/mca/docs/scheme-syllabus-2025-26.pdf" }
+          ]
         },
         {
-          "name": "Software Development Cell",
-          "description": "Enables students to experience and build live projects."
+          "title": "Scheme of Teaching & Examinations",
+          "documents": [
+            { "title": "Scheme (2025-27 Batch)", "file": "departments/mca/docs/scheme-2025-27-batch.pdf" },
+            { "title": "Scheme (2024-26 Batch)", "file": "departments/mca/docs/scheme-2024-26-batch.pdf" },
+            { "title": "Scheme (2023-25 Batch)", "file": "departments/mca/docs/scheme-2023-25-batch.pdf" }
+          ]
+        },
+        {
+          "title": "Syllabus",
+          "documents": [
+            { "title": "Syllabus (2025-27 Batch)", "file": "departments/mca/docs/syllabus-2025-27-batch.pdf" },
+            { "title": "Syllabus (2024-26 Batch)", "file": "departments/mca/docs/syllabus-2024-26-batch.pdf" },
+            { "title": "Syllabus (2023-25 Batch)", "file": "departments/mca/docs/syllabus-2023-25-batch.pdf" }
+          ]
         }
       ],
       "associations": [
@@ -14766,159 +14953,132 @@
         }
       ],
       "contact": {
-        "name": "Mrs. Sudha K. S.",
-        "designation": "Assistant Professor & Head",
-        "phone": "+91-9900490012",
-        "email": ""
+        "name": "Prof. Sangamesh M. Magi",
+        "designation": "Assistant Professor & Head, Department of MCA",
+        "phone": "+91-9008449672",
+        "email": "hodmc@becbgk.edu, sangamesh.magi17@gmail.com"
       },
-      "documents": [
+      "achievementTables": [
         {
-          "title": "Syllabus, Sem I–IV (2023-24)",
-          "file": "departments/mca/docs/syllabus-1-4-sem-2023-24.pdf"
+          "title": "Areas of Specialization",
+          "columns": ["Faculty", "Areas of Specialization"],
+          "rows": [
+            ["Prof. Sangamesh M. Magi", "Artificial Intelligence, Deep Learning, Computer Vision, Big Data"],
+            ["Prof. Shrinivas S. Gujarathi", "Big Data, Computer Vision"],
+            ["Prof. Sudha K. S.", "Wireless Networks"],
+            ["Prof. Karuna B. Kurbet", "Artificial Intelligence, Deep Learning, Computer Vision"]
+          ]
         },
         {
-          "title": "Scheme (2024-25)",
-          "file": "departments/mca/docs/scheme-2024-25.pdf"
+          "title": "Registered Research Scholars",
+          "columns": ["Faculty / Research Scholar", "Research Guide", "Status"],
+          "rows": [
+            ["Prof. Sangamesh M. Magi", "Dr. Jayashree Madalagi", "Coursework completed"],
+            ["Prof. Shrinivas S. Gujarathi", "Dr. Anand Guli", "Appearing for coursework"],
+            ["Prof. Sudha K. S.", "Dr. Sweta Goudar", "Appearing for coursework"],
+            ["Prof. Karuna B. Kurbet", "Dr. Sunita Padmannavar", "Coursework completed"]
+          ]
         },
         {
-          "title": "Program Outcomes (POs)",
-          "file": "departments/mca/docs/program-outcomes.pdf"
+          "title": "Journal Publications",
+          "columns": ["Author(s)", "Title", "Publisher", "Year"],
+          "rows": [
+            ["Sangamesh M. Magi", "Deep Learning-Based Multi-Class Plant Disease Recognition and Classification for Diverse Crops", "Springer", "2025"],
+            ["Karuna B. Kurbet", "Security Threats in Indian Cyberspace by Social Media and Cyberhoaxes", "IJTSRD", "2018"],
+            ["Sangamesh M. Magi", "Classification of Peanut Varieties and their Quality Grading", "Journal of Image Processing and Artificial Intelligence", "2016"],
+            ["Sangamesh M. Magi", "Classification of Human Brain Strokes using CT-Scanned Images", "Journal of Image Processing and Artificial Intelligence", "2016"],
+            ["Sangamesh M. Magi", "A Colour-Based Classification and Quality Grading of Grape Varieties", "Journal of Image Processing and Artificial Intelligence", "2016"],
+            ["Sangamesh M. Magi", "Wavelet-Based Acoustic Analysis for Determining Health Condition of Motorized Two-Wheelers", "Applied Acoustics, Elsevier", "2011"],
+            ["Sangamesh M. Magi", "Comparative Performance Analysis of Three Classifiers for Acoustic Signal-Based Recognition of Motorcycles using Time- and Frequency-Domain Features", "IET Intelligent Transport Systems", "2011"]
+          ]
         },
         {
-          "title": "Board of Studies (BoS)",
-          "file": "departments/mca/docs/board-of-studies.pdf"
+          "title": "Conference Publications",
+          "columns": ["Author(s)", "Title", "Type", "Conference / Publisher", "ISSN / ISBN", "Year"],
+          "rows": [
+            ["Karuna B. Kurbet", "Procto Vision: AI-Based Proctored Test System", "National", "Conference on Academic Research and Innovation in Fintech", "978-93-5602-603-2", "2025"],
+            ["Sangamesh M. Magi", "An IoT-Enabled Multi-Agent Framework for Real-Time Emergency Monitoring: A Context-Aware Approach", "", "Springer", "", "2025"],
+            ["Sudha K. S., Karuna B. Kurbet", "Number Plate Recognition in Challenging Environments: A Study", "International", "International Conference on Sustainable Solutions in Engineering and Technology (SSET-2024)", "2582-8118", "2024"],
+            ["Sudha K. S.", "IoT-Enabled Infant Incubator for Healthcare Centres", "International", "International Conference on Sustainable Solutions in Engineering and Technology (SSET-2024)", "2582-8118", "2024"]
+          ]
         },
         {
-          "title": "Infrastructure Facility",
-          "file": "departments/mca/docs/infrastructure-facility.pdf"
-        },
-        {
-          "title": "Department Activities (2024-25)",
-          "file": "departments/mca/docs/activities-2024-25.pdf"
+          "title": "Book Publications",
+          "columns": ["Author", "Title", "Publisher", "ISBN", "Year"],
+          "rows": [
+            ["Shrinivas S. Gujarathi", "Big Data Analytics", "Scientific International Publishing House", "978-93-7196-606-1", "2025"]
+          ]
         }
       ],
+      "newsletters": [
+        { "title": "MCA Newsletter — May 2026", "file": "departments/mca/newsletters/mca-newsletter-may-2026.pdf" },
+        { "title": "MCA Newsletter — April 2026", "file": "departments/mca/newsletters/mca-newsletter-apr-2026.pdf" },
+        { "title": "MCA Newsletter — March 2026", "file": "departments/mca/newsletters/mca-newsletter-mar-2026.pdf" },
+        { "title": "MCA Newsletter — February 2026", "file": "departments/mca/newsletters/mca-newsletter-feb-2026.pdf" },
+        { "title": "MCA Newsletter — January 2026", "file": "departments/mca/newsletters/mca-newsletter-jan-2026.pdf" },
+        { "title": "MCA Newsletter — December 2025", "file": "departments/mca/newsletters/mca-newsletter-dec-2025.pdf" },
+        { "title": "MCA Newsletter — November 2025", "file": "departments/mca/newsletters/mca-newsletter-nov-2025.pdf" },
+        { "title": "MCA Newsletter — October 2025", "file": "departments/mca/newsletters/mca-newsletter-oct-2025.pdf" }
+      ],
       "supportingStaff": [
-        {
-          "name": "Suhasini Kamitkar",
-          "designation": "Instructor"
-        },
-        {
-          "name": "Ramesh A. Doddmani",
-          "designation": "Helper"
-        }
+        { "name": "Suhasini Kamitkar", "designation": "Instructor" },
+        { "name": "Aparoopa Oghi", "designation": "Assistant Instructor" },
+        { "name": "Ramesh A. Doddmani", "designation": "Helper" }
       ],
       "committeeGroups": [
         {
           "title": "Board of Studies (BoS)",
           "members": [
-            {
-              "name": "Prof. Sudha K. S.",
-              "position": "Chairman — HOD, MCA, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. Renuka Prasad B",
-              "position": "VTU Nominee — Associate Professor and Associate Dean (Academics & Projects)"
-            },
-            {
-              "name": "Dr. B. Annappa",
-              "position": "Member (Academic Expert) — Professor, NITK Surathkal"
-            },
-            {
-              "name": "Mr. Madhusudhan Desai",
-              "position": "Member (Industry Expert) — Sr. Technical Architect, Accenture India Pvt. Ltd."
-            },
-            {
-              "name": "Ms. Savitri Shirshad",
-              "position": "Member (Alumni) — Rolls-Royce India Pvt. Ltd."
-            },
-            {
-              "name": "Prof. S. S. Gujarathi",
-              "position": "Member — Associate Professor, MCA, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. S. M. Magi",
-              "position": "Member — Assistant Professor, MCA, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. M. H. Shirur",
-              "position": "Member — Assistant Professor, MCA, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. C. M. Jangin",
-              "position": "Member — Assistant Professor, MCA, BEC Bagalkote"
-            },
-            {
-              "name": "Prof. Karuna B. Kurbet",
-              "position": "Member — Assistant Professor, MCA, BEC Bagalkote"
-            },
-            {
-              "name": "Mr. Laxmanna A. Goudar",
-              "position": "Student Member"
-            },
-            {
-              "name": "Ms. Jyothi B. Patil",
-              "position": "Student Member"
-            }
+            { "name": "Prof. Sangamesh M. Magi", "position": "Chairman — HOD, MCA, Ph.D (Pursuing), BEC Bagalkote" },
+            { "name": "Dr. Geetha M", "position": "VTU Nominee — Professor, Bapuji Institute of Engineering & Technology, Davangere" },
+            { "name": "Dr. Siba Narayan Swain", "position": "Member (Academic Expert) — Professor, IIT Dharwad" },
+            { "name": "Dr. Manohar Madgi", "position": "Member (Academic Expert) — Professor, KLE Technological University, Hubballi" },
+            { "name": "Dr. V. C. Hallur", "position": "Member (Academic Expert) — Associate Professor & Head, Angadi Institute of Technology and Management, Belagavi" },
+            { "name": "Mr. Kushal Bangi", "position": "Member (Industry Expert) — Manager, Data Science, Amazon, Bengaluru" },
+            { "name": "Mr. Revanayya Hiremath", "position": "Member (Alumni) — Principal Cloud Engineer, Manhattan Associates Pvt. Ltd., Bengaluru" },
+            { "name": "Prof. Shrinivas S. Gujarathi", "position": "Member — Associate Professor, MCA, Ph.D (Pursuing), BEC Bagalkote" },
+            { "name": "Prof. Sudha K. S.", "position": "Member — Assistant Professor, MCA, Ph.D (Pursuing), BEC Bagalkote" },
+            { "name": "Prof. Manjunath H. Shirur", "position": "Member — Assistant Professor, MCA, BEC Bagalkote" },
+            { "name": "Prof. Chandrashekarayya M. Jangin", "position": "Member — Assistant Professor, MCA, Ph.D (Pursuing), BEC Bagalkote" },
+            { "name": "Prof. Karuna B. Kurbet", "position": "Member — Assistant Professor, MCA, B.Ed, Ph.D (Pursuing), BEC Bagalkote" }
           ]
         },
         {
           "title": "Board of Examiners (BoE)",
           "members": [
-            {
-              "name": "Prof. Sudha K. S.",
-              "position": "Chairman"
-            },
-            {
-              "name": "Prof. M. H. Shirur",
-              "position": "BoE Coordinator"
-            }
+            { "name": "Prof. Sangamesh M. Magi", "position": "Chairman" },
+            { "name": "Prof. Chandrashekarayya M. Jangin", "position": "BoE Coordinator" }
           ]
         }
       ],
       "infrastructureItems": [
-        {
-          "name": "Lab Computers",
-          "specification": "For MCA Computer Lab",
-          "quantity": "60"
-        },
-        {
-          "name": "Office Computer",
-          "specification": "For MCA office work",
-          "quantity": "01"
-        },
-        {
-          "name": "Faculty Computer",
-          "specification": "For faculty member",
-          "quantity": "01"
-        },
-        {
-          "name": "MCA Lab-I",
-          "specification": "Computing laboratory, 169.44 sq.m",
-          "quantity": "30 computers"
-        },
-        {
-          "name": "MCA Lab-II",
-          "specification": "Computing laboratory, 169.44 sq.m",
-          "quantity": "30 computers"
-        },
-        {
-          "name": "MCA Classrooms",
-          "specification": "MCA-I Year (164.99 sq.m) and MCA-II Year (164.99 sq.m)",
-          "quantity": "02"
-        },
-        {
-          "name": "MCA Staff Rooms",
-          "quantity": "03"
-        },
-        {
-          "name": "MCA Reading Room and Library",
-          "quantity": "01"
-        },
-        {
-          "name": "Software Development Cell",
-          "quantity": "01"
-        }
-      ]
+        { "name": "Desktop Computers", "specification": "Intel Core i5 processors, 8 GB RAM, Windows 10 Pro", "quantity": "60" },
+        { "name": "Smart Board", "specification": "For innovative teaching", "quantity": "01" },
+        { "name": "Wall-mounted Projectors", "specification": "High definition", "quantity": "04" },
+        { "name": "Printer-cum-Scanner & Copier", "specification": "Konica Minolta Bizhub 205i", "quantity": "01" },
+        { "name": "Printer", "specification": "HP LaserJet Pro P1108 plus", "quantity": "01" },
+        { "name": "Office Computer", "specification": "For MCA office work", "quantity": "01" },
+        { "name": "Faculty Computers", "specification": "For faculty members", "quantity": "02" },
+        { "name": "Water Cooler", "specification": "Drinking-water facility", "quantity": "01" },
+        { "name": "MCA Computing Lab-I", "specification": "Computing laboratory, 169.44 sq.m", "quantity": "30 computers" },
+        { "name": "MCA Computing Lab-II", "specification": "Computing laboratory, 169.44 sq.m", "quantity": "30 computers" },
+        { "name": "MCA Classrooms", "specification": "MCA-I Year & MCA-II Year (164.99 sq.m each)", "quantity": "02" },
+        { "name": "MCA Reading Room & Library", "specification": "Carpet area 83.5 sq.m", "quantity": "01" },
+        { "name": "MCA Staff Rooms", "specification": "Faculty work spaces", "quantity": "03" },
+        { "name": "Software Development Cell", "specification": "Live student projects", "quantity": "01" }
+      ],
+      "sectionDocuments": {
+        "governance": [
+          { "title": "Board of Studies (2025-26)", "file": "departments/mca/docs/board-of-studies-2025-26.pdf" },
+          { "title": "Board of Examiners (2025-26)", "file": "departments/mca/docs/board-of-examiners-2025-26.pdf" }
+        ],
+        "facilities": [
+          { "title": "Infrastructure Facility — Full Details", "file": "departments/mca/docs/infrastructure-facility.pdf" }
+        ]
+      },
+      "sectionTitles": { "achievements": "Research" },
+      "sectionNavLabels": { "achievements": "Research" },
+      "sectionIcons": { "achievements": "flask" }
     },
     "mba": {
       "name": "Master of Business Administration (MBA)",
