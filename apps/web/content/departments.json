@@ -3913,13 +3913,28 @@
           "university": "VTU"
         },
         {
+          "supervisor": "Dr. Shobha R. Bharamagoudar",
+          "area": "Mobile Opportunistic Networks",
+          "university": "VTU"
+        },
+        {
           "supervisor": "Dr. Rajani S. Pujar",
           "area": "Speech Processing",
           "university": "VTU"
         },
         {
+          "supervisor": "Dr. Somu Parande",
+          "area": "Wireless Sensor Networks",
+          "university": "VTU"
+        },
+        {
           "supervisor": "Dr. Anand H. Unnibhavi",
           "area": "Speech Processing",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Santosh Kumblavati",
+          "area": "Wireless Sensor Networks",
           "university": "VTU"
         },
         {
@@ -3933,26 +3948,6 @@
           "university": "VTU"
         },
         {
-          "supervisor": "Dr. Kiran Y. Bendigeri",
-          "area": "Wireless Sensor Networks",
-          "university": "VTU"
-        },
-        {
-          "supervisor": "Dr. Santosh Kumblavati",
-          "area": "Wireless Sensor Networks",
-          "university": "VTU"
-        },
-        {
-          "supervisor": "Dr. Shobha R. Bharamagoudar",
-          "area": "Mobile Opportunistic Networks",
-          "university": "VTU"
-        },
-        {
-          "supervisor": "Dr. Somu Parande",
-          "area": "Wireless Sensor Networks",
-          "university": "VTU"
-        },
-        {
           "supervisor": "Dr. Basavaraj Angadi",
           "area": "Wireless Sensor Networks",
           "university": "VTU"
@@ -3960,6 +3955,11 @@
         {
           "supervisor": "Dr. Ajayakumar C. Katageri",
           "area": "MEMS",
+          "university": "VTU"
+        },
+        {
+          "supervisor": "Dr. Kiran Y. Bendigeri",
+          "area": "Wireless Sensor Networks",
           "university": "VTU"
         }
       ],
@@ -4323,6 +4323,13 @@
           "guide": "Dr. Basavaraj Angadi",
           "title": "Internet of Things",
           "status": "Registered (2026)"
+        },
+        {
+          "scholar": "Shivkumar G. Nayak",
+          "usn": "2BA25PEE02",
+          "guide": "Dr. Anandh H. Unnibhavi",
+          "title": "Development of dialect balanced deep learning based automatic speech recognition system for the Kannada language",
+          "status": "Registered (2025"
         }
       ],
       "researchGrants": [
