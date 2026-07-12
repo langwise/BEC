@@ -17,25 +17,11 @@ export const metadata: Metadata = pageMetadata({
 
 const albums = [
   {
-    eyebrow: "Events",
-    title: "Campus Events",
-    description: "Cultural and technical events, festivals and celebrations across the campus.",
-    prefix: "gallery/life-at-bec/events/",
-    altBase: "Campus event at Basaveshwar Engineering College",
-  },
-  {
     eyebrow: "Campus",
-    title: "Campus Life",
-    description: "Everyday glimpses of student life on the Vidyagiri campus.",
-    prefix: "gallery/life-at-bec/new/",
-    altBase: "Student life at Basaveshwar Engineering College",
-  },
-  {
-    eyebrow: "Visits",
-    title: "Industrial & Educational Visits",
-    description: "Students on industrial tours and educational field visits.",
-    prefix: "gallery/life-at-bec/travel/",
-    altBase: "Industrial and educational visit by Basaveshwar Engineering College students",
+    title: "Campus in Pictures",
+    description: "Moments from across the Vidyagiri campus — academics, events, festivals and everyday student life.",
+    prefix: "gallery/life-at-bec/campus/",
+    altBase: "Basaveshwar Engineering College campus",
   },
 ];
 

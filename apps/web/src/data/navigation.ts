@@ -139,7 +139,7 @@ export const navigationData: NavigationItem[] = [
 
   // 8. Hostel
   {
-    title: "Hostel",
+    title: "Hostels",
     href: "/student-life/hostels",
   },
 
