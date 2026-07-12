@@ -339,6 +339,8 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   const groups: ContentGroup[] = [];
   if (content.programsOffered?.length)
     groups.push({ subtitle: "Programs Offered", items: content.programsOffered });
+  if (content.coursesOffered?.length)
+    groups.push({ subtitle: "Courses Offered", items: content.coursesOffered });
   if (content.programStructure?.length)
     groups.push({ subtitle: "Programme Structure", items: content.programStructure });
   if (!content.peosPsosUnderAbout) groups.push(...academicOutcomeGroups(content));

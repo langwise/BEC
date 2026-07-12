@@ -36,6 +36,8 @@ export type DepartmentContent = {
    * VTU and AICTE-QIP variants). Defaults to programsOffered.length when unset.
    */
   programsOfferedCount?: number;
+  /** Courses taught by the department (distinct from degree programmes), shown as a separate "Courses Offered" list under Academics. */
+  coursesOffered?: string[];
   /** Programme structure facts (duration, semesters, total credits) shown under Academics. */
   programStructure?: string[];
   peos?: CodedItem[];
