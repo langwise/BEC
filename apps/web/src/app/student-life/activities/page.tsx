@@ -5,12 +5,12 @@ import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset, assetsUnder } from "@/lib/assets";
-import { ArrowRight, FileText, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export const metadata = pageMetadata({
   title: "Events & Activities",
   description:
-    "Cultural performances, the Engineers' Arena and student events at BEC Bagalkote, plus the SYMPOSIA 2023 archive and the BEC Creative Spectrum student club initiative.",
+    "Cultural performances, the Engineers' Arena and student events at BEC Bagalkote, plus the BEC Creative Spectrum student club initiative.",
   path: "/student-life/activities",
 });
 
@@ -26,14 +26,6 @@ const activityGallery = [
 ];
 
 const links = [
-  {
-    title: "Symposia Archive",
-    category: "National Symposia",
-    description:
-      "Official archive for SYMPOSIA 2023, the national technical symposia held during BEC's Diamond Jubilee year.",
-    href: "/student-life/symposia",
-    icon: FileText,
-  },
   {
     title: "BEC Creative Spectrum",
     category: "Student Initiative",

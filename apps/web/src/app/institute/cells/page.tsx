@@ -79,7 +79,7 @@ export default function CellsPage() {
       <PageHero
         eyebrow="Innovation & Outreach"
         title="Cells & Centres"
-        description="Basaveshwar Engineering College runs a network of cells and centres that connect students with industry, government incubation support and the wider innovation and entrepreneurship ecosystem."
+        description="Basaveshwar Engineering College is an autonomous college that runs a network of cells and centres that connect students with industry, government incubation support and the wider innovation and entrepreneurship ecosystem."
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">

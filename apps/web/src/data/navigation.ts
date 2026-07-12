@@ -154,7 +154,6 @@ export const navigationData: NavigationItem[] = [
       { title: "Overview", href: "/student-life/overview" },
       { title: "BEC Creative Spectrum", href: "/student-life/bec-creative-spectrum" },
       { title: "Activities", href: "/student-life/activities" },
-      { title: "Symposia Archive", href: "/student-life/symposia" },
       { title: "Sports & Gymkhana", href: "/student-life/gymkhana" },
       { title: "IEEE", href: "/student-life/ieee" },
       { title: "NSS", href: "/student-life/nss" },

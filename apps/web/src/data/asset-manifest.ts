@@ -79,6 +79,7 @@ export const manifest = {
   "cells/nain/gok-logo.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/nain/gok-logo.webp",
   "cells/nain/nain-logo.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/nain/nain-logo.webp",
   "cells/nain/shruti-b-h.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/nain/shruti-b-h.webp",
+  "cells/nain/v2/banner.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/nain/v2/banner.webp",
   "cells/nain/v2/center/1.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/nain/v2/center/1.webp",
   "cells/nain/v2/center/10.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/nain/v2/center/10.webp",
   "cells/nain/v2/center/11.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/nain/v2/center/11.webp",

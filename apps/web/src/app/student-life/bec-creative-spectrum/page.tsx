@@ -144,7 +144,23 @@ export default function BECCreativeSpectrumPage() {
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-12 md:py-16 space-y-16">
         
         {/* About & Graphic Section */}
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <div className="space-y-10">
+          <div>
+            <div className="relative mx-auto w-full max-w-3xl aspect-square">
+              <Image
+                src={asset("student-life/bec-creative-spectrum/bec-creative-spectrum.webp")}
+                alt="BEC Creative Spectrum Student Club Initiative Chart"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-contain"
+              />
+            </div>
+            <div className="mt-2 text-center text-xs text-stone-500">
+              BEC Creative Spectrum Club Structure
+            </div>
+          </div>
+
           <div className="space-y-6">
             <SectionHeading
               eyebrow="About the Initiative"
@@ -165,22 +181,6 @@ export default function BECCreativeSpectrumPage() {
                   <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Button>
               </Link>
-            </div>
-          </div>
-
-          <div className="relative rounded-xl border border-stone-200 dark:border-stone-800 bg-stone-50/50 dark:bg-stone-900/30 p-4 shadow-sm">
-            <div className="relative w-full aspect-square overflow-hidden rounded-lg bg-white">
-              <Image
-                src={asset("student-life/bec-creative-spectrum/bec-creative-spectrum.webp")}
-                alt="BEC Creative Spectrum Student Club Initiative Chart"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 500px"
-                className="object-contain p-2"
-              />
-            </div>
-            <div className="mt-3 text-center text-xs text-stone-500">
-              BEC Creative Spectrum Club Structure
             </div>
           </div>
         </div>
