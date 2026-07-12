@@ -19,7 +19,7 @@ export const placementContent = {
       phone: "8904095779",
     },
     {
-      name: "Dr. C. L. Chayalakshmi",
+      name: "Dr. Chayalakshmi C. L.",
       role: "Assistant Placement Officer",
       scope: "General enquiry",
       phone: "9902678858",

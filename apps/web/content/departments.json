@@ -6445,6 +6445,7 @@
     "electronics-and-computer-engg": {
       "name": "Electronics and Computer Engineering",
       "assetSlug": "ecs",
+      "heroImage": "departments/ecs/hero-building.webp",
       "tagline": "An interdisciplinary department blending electronics engineering and computer science to design, develop and integrate innovative technologies.",
       "newsletters": [
         {
@@ -6482,7 +6483,8 @@
       ],
       "established": "2024",
       "intake": "60",
-      "overview": "Electronics and Computer Engineering blends electronic engineering with computer science to design, develop and integrate innovative technologies across hardware, software and IT. Established in the academic year 2024-25, the department offers a 4-year B.E. programme with an intake of 60 students, taught by highly qualified faculty whose average teaching experience is 27 years. It is housed in a spacious new building with well-equipped IoT and computer laboratories of more than 60 computers, faculty rooms and a department office, all served by pervasive high-quality wired and Wi-Fi networks. The department aims to impart engineering education that meets the needs of society, industry and research, developing professionals with ethical values and societal concern who are equipped for both electronics/electrical industries and software companies.",
+      "overview": "Electronics and Computer Engineering blends electronics engineering with computer science to design, develop and integrate innovative technologies across hardware, software and IT. Established in the academic year 2024-25, the department offers a 4-year B.E. programme with an intake of 60 students, taught by highly qualified faculty whose average teaching experience is 27 years. It is housed in a spacious new building with well-equipped VLSI, IoT, and computer laboratories of more than 60 computers, faculty rooms and a department office, all served by pervasive high-quality wired and Wi-Fi networks. The department aims to impart engineering education that meets the needs of society, industry and research, developing professionals with ethical values and societal concern who are equipped for both electronics/electrical industries and software companies.",
+      "about": "Welcome to the Department of Electronics and Computer Engineering (ECS) at Basaveshwar Engineering College, Bagalkote—a place where innovation meets technology and ideas are transformed into impactful solutions.\n\nEstablished in the academic year 2024-25, the Department of Electronics and Computer Engineering offers a unique interdisciplinary program that combines the strengths of Electronics Engineering with the rapidly evolving world of Computer Science. As industries increasingly seek engineers who can seamlessly integrate hardware and software, our program equips students with the knowledge and practical skills needed to excel in this dynamic landscape.\n\nElectronics and Computer Engineering—where hardware meets intelligence, software drives innovation, and your future begins.",
       "vision": "To be recognized as a Center of Excellence for Electronics and Computer Engineering education and research, developing competent professionals with moral and ethical values.",
       "mission": [
         "Develop professionals with strong fundamentals, technical skills, committed to life-long learning.",
@@ -6555,20 +6557,12 @@
       ],
       "researchAreas": [
         {
-          "supervisor": "Dr. Krishnamurthy Bhat",
-          "area": "Mechatronics, Sensor Design and Applications, Industrial Automation"
-        },
-        {
           "supervisor": "Dr. Chayalakshmi C. L.",
           "area": "Embedded Systems, Internet of Things, Industrial Automation"
         },
         {
           "supervisor": "Dr. Manjula A. Sutagundar",
           "area": "MEMs, Robotics and Automation"
-        },
-        {
-          "supervisor": "Smt. Laxmi Ugar",
-          "area": "Digital Signal Processing, Digital Communication"
         }
       ],
       "infrastructureItems": [
@@ -6701,8 +6695,8 @@
       ],
       "associations": [
         {
-          "name": "O-TEC",
-          "about": "The department's student association, which organises workshops, hackathons and technical competitions to foster hands-on learning and professional development."
+          "name": "Outstanding Techies of Electronics and Computers (O-TEC)",
+          "about": "The Department of Electronics and Computer Engineering believes that true learning extends beyond the classroom. Through a wide spectrum of technical, innovative, and professional activities, our students are encouraged to discover their potential, develop practical skills, and emerge as confident technology leaders. Outstanding Techies is a vibrant platform that showcases the talent, creativity, and achievements of our students. From hackathons, coding competitions, circuit design contests, robotics, IoT and AI projects, technical workshops, paper presentations, and industrial visits to community outreach and innovation challenges, every activity is designed to nurture problem-solving abilities, teamwork, leadership, and an entrepreneurial mindset. These activities empower students to bridge the gap between theory and practice, foster innovation, and prepare them for the rapidly evolving world of technology. Guided by dedicated faculty mentors and supported by state-of-the-art facilities, our students continuously strive for excellence and make meaningful contributions to engineering and society. At the Department of Electronics and Computer Engineering, we believe that every aspiring engineer has the potential to become an outstanding technologist. Outstanding Techies celebrates this journey of learning, innovation, and excellence, inspiring students to dream bigger, create smarter, and lead the future."
         }
       ],
       "contact": {
@@ -6762,6 +6756,12 @@
       ],
       "sectionDocuments": {
         "activities": [
+          {
+            "title": "Department Activities (2025-26)",
+            "file": "departments/ecs/docs/activities-2025-26.pdf"
+          }
+        ],
+        "association": [
           {
             "title": "Department Activities (2025-26)",
             "file": "departments/ecs/docs/activities-2025-26.pdf"
@@ -15134,10 +15134,20 @@
     "mba": {
       "name": "Master of Business Administration (MBA)",
       "assetSlug": "mba",
+      "placementImages": [
+        {
+          "title": "5 Years Placement Data",
+          "images": ["departments/mba/docs/5-years-placement-data.webp"]
+        },
+        {
+          "title": "Placement & Career Guidance",
+          "images": ["departments/mba/docs/placement-and-career-guidance.webp"]
+        }
+      ],
       "tagline": "A centre of excellence in management education, research and entrepreneurship for a sustainable future.",
       "established": "2009",
       "intake": "60",
-      "overview": "The Department of Management Studies was established at Basaveshwar Engineering College in 2009 to impart quality management education. It offers a two-year full-time MBA programme with an intake of 60 students spread over four semesters. The programme is autonomous, affiliated to VTU, Belagavi and approved by AICTE, New Delhi. The department is equipped with the necessary infrastructure, and its faculty are drawn from different specializations with varied experience. Practical labs such as a Presentation Lab and a Business Analytics Lab give students hands-on exposure to the presentation, communication, technical and analytical skills required of today's and tomorrow's managers.",
+      "overview": "The Department of Management Studies was established at Basaveshwar Engineering College in 2009 to impart quality management education. It offers a two-year full-time MBA programme with an intake of 60 students spread over four semesters. The programme is autonomous, affiliated to VTU, Belagavi and approved by AICTE, New Delhi. The department is equipped with the necessary infrastructure, and its faculty are drawn from different specializations with varied experience. Practical labs such as a Communication Lab and a Business Analytics Lab give students hands-on exposure to the presentation, communication, technical and analytical skills required of today's and tomorrow's managers.",
       "about": "The Department of Management Studies (MBA) at Basaveshwar Engineering College offers industry-focused management education through experienced faculty, a contemporary curriculum, and experiential learning practices. The department emphasizes industry interaction, skill development, research, innovation, and strong placement support, preparing students to excel in diverse managerial and entrepreneurial roles.",
       "vision": "To be a centre of excellence in management education, research and entrepreneurship for a sustainable future.",
       "mission": [
@@ -15174,14 +15184,14 @@
       "highlights": [
         "Established in 2009; an autonomous programme affiliated to VTU and approved by AICTE, with an intake of 60.",
         "Specializations in Marketing, Finance, Human Resources, Operations and Business Analytics.",
-        "Dedicated Presentation Lab and Business Analytics Lab for practical exposure.",
+        "Dedicated Communication Lab and Business Analytics Lab for practical exposure.",
         "Guided by core values of ethics, integrity, empathy and mutual respect.",
         "Management Club: where ideas transform into leadership and professional growth.",
         "Industry engagement: Bridging academia and industry through interactions and experiential learning."
       ],
       "labs": [
         {
-          "name": "Presentation Lab"
+          "name": "Communication Lab"
         },
         {
           "name": "Business Analytics Lab"
@@ -15191,6 +15201,21 @@
         {
           "name": "BEMSA — BEC Management Students Association",
           "about": "Established in 2009, BEMSA brings students onto a common platform to share ideas and experiences and to organise executive meets, student and personality development programmes, sports and cultural events, improving communication, managerial, presentation and teamwork skills."
+        }
+      ],
+      "customSections": [
+        {
+          "id": "life-at-doms",
+          "title": "Life at DOMS",
+          "label": "Life at DOMS",
+          "icon": "calendar",
+          "content": "From orientation and management fests to guest lectures, industry visits, cultural nights and sports meets, life at the Department of Management Studies is vibrant and hands-on. The booklet below captures the events and activities that shape our students beyond the classroom.",
+          "embeds": [
+            {
+              "title": "MBA Events",
+              "file": "departments/mba/docs/mba-events.pdf"
+            }
+          ]
         }
       ],
       "contact": {

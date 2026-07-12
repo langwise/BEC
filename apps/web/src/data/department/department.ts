@@ -749,6 +749,15 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       icon: "briefcase",
       tables,
       placementChart: placements.offersChart,
+      imageGroups: content.placementImages
+        ?.map((g) => ({
+          title: g.title,
+          images: g.images.map((key) => ({
+            src: asset(key),
+            alt: g.title ?? `${content.name} placements`,
+          })),
+        }))
+        .filter((g) => g.images.length),
       groupPhoto: content.placementsPhoto
         ? {
             src: asset(content.placementsPhoto),
@@ -933,6 +942,26 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
+  // Free-form custom sections (own tab) — intro copy plus inline-embedded PDFs
+  // and/or download links (e.g. "Life at DOMS" showing the MBA Events booklet).
+  if (content.customSections?.length) {
+    for (const cs of content.customSections) {
+      const embeds = resolveDocuments(cs.embeds);
+      const attachments = resolveDocuments(cs.documents);
+      if (!cs.content && !cs.items?.length && !embeds.length && !attachments.length) continue;
+      sections.push({
+        id: cs.id,
+        type: "content",
+        title: heading(cs.id, cs.title),
+        content: cs.content,
+        items: cs.items,
+        icon: cs.icon ?? "calendar",
+        ...(embeds.length ? { embeds } : {}),
+        ...(attachments.length ? { attachments } : {}),
+      });
+    }
+  }
+
   // Photo Gallery (loose department scene photos) — own section, after
   // Newsletters and before Contact.
   if (galleryImages.length) {
@@ -1033,6 +1062,9 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     "photo-gallery": { label: "Photo Gallery", icon: "image" },
     contact: { label: "Contact", icon: "users-round" },
   };
+  for (const cs of content?.customSections ?? []) {
+    sectionLabels[cs.id] = { label: cs.label ?? cs.title, icon: cs.icon ?? "calendar" };
+  }
   for (const section of sections) {
     const meta = section.id ? sectionLabels[section.id] : undefined;
     if (meta) {

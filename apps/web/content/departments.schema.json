@@ -670,6 +670,94 @@
               }
             }
           },
+          "customSections": {
+            "type": "array",
+            "description": "Free-form extra sections, each its own sidebar tab: intro copy plus inline-embedded PDFs and/or download links (e.g. 'Life at DOMS').",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Unique section/tab id (kebab-case)."
+                },
+                "title": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string",
+                  "description": "Sidebar label; falls back to title."
+                },
+                "icon": {
+                  "type": "string",
+                  "description": "Section/sidebar icon key (e.g. calendar, image, users)."
+                },
+                "content": {
+                  "type": "string"
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "embeds": {
+                  "type": "array",
+                  "description": "PDFs rendered inline in a viewer.",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "title",
+                      "file"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "file": {
+                        "allOf": [
+                          {
+                            "$ref": "./_schema/asset-keys.json"
+                          }
+                        ],
+                        "description": "PDF asset key on R2 (autocompletes)."
+                      }
+                    }
+                  }
+                },
+                "documents": {
+                  "type": "array",
+                  "description": "PDFs rendered as download links.",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "title",
+                      "file"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "file": {
+                        "allOf": [
+                          {
+                            "$ref": "./_schema/asset-keys.json"
+                          }
+                        ],
+                        "description": "PDF asset key on R2 (autocompletes)."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "alumniRecords": {
             "type": "array",
             "description": "Alumni record PDFs. Rendered as a downloadable 'Alumni Records' section.",

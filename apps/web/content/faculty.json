@@ -203,6 +203,12 @@
         "designation": "Assistant Professor",
         "cv": "departments/ecs/faculty/cv/laxmi-ugar.pdf",
         "photo": "departments/ecs/faculty/laxmi-ugar.webp"
+      },
+      {
+        "name": "Rajashekar Reddy",
+        "designation": "Assistant Professor",
+        "cv": "departments/ecs/faculty/cv/rajashekar-reddy.pdf",
+        "photo": "departments/ecs/faculty/rajashekar-reddy.webp"
       }
     ],
     "electrical-and-electronics-engg": [

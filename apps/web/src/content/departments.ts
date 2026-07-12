@@ -114,6 +114,8 @@ export type DepartmentContent = {
   /** Group photo of placed students, shown as a captioned banner at the end of the Placements section. */
   placementsPhoto?: string;
   placementsPhotoCaption?: string;
+  /** Placement infographics (e.g. year-wise placement data, training structure) shown above the Placements tables. */
+  placementImages?: { title?: string; images: string[] }[];
   /** Group photo shown as a captioned banner at the very end of the department Home tab (e.g. the graduating batch). */
   homeGroupPhoto?: string;
   homeGroupPhotoCaption?: string;
@@ -161,6 +163,18 @@ export type DepartmentContent = {
   sectionDocuments?: Record<string, { title: string; file: string }[]>;
   /** PDFs embedded inline (rendered in a viewer) under a specific section, keyed by section id. */
   sectionEmbeds?: Record<string, { title: string; file: string }[]>;
+  /** Free-form extra sections (own sidebar tab) with intro copy, inline-embedded PDFs and/or download links. */
+  customSections?: {
+    id: string;
+    title: string;
+    /** Sidebar label; falls back to `title`. */
+    label?: string;
+    icon?: string;
+    content?: string;
+    items?: string[];
+    embeds?: { title: string; file: string }[];
+    documents?: { title: string; file: string }[];
+  }[];
   /** Best-practices PDFs surfaced on the department Home tab. */
   bestPractices?: { title: string; file: string }[];
   /** Move the Best Practices block out of the Home tab and under "About Department". */
@@ -234,14 +248,15 @@ export function resolveDocuments(
 export function getDepartmentGallery(assetSlug?: string): string[] {
   if (!assetSlug) return [];
   // Scene/infrastructure photos only — exclude the faculty/, staff/ and alumni/
-  // subtrees (portraits + CV PDFs), the curated gallery/ subtree (appended
-  // separately, in order, at the end of the Photo Gallery) and any non-image
-  // assets.
+  // subtrees (portraits + CV PDFs), the docs/ subtree (document infographics
+  // surfaced elsewhere), the curated gallery/ subtree (appended separately, in
+  // order, at the end of the Photo Gallery) and any non-image assets.
   return assetsUnder(`departments/${assetSlug}/`).filter(
     (url) =>
       !url.includes("/faculty/") &&
       !url.includes("/staff/") &&
       !url.includes("/alumni/") &&
+      !url.includes("/docs/") &&
       !url.includes("/gallery/") &&
       /\.(webp|jpe?g|png)$/i.test(url),
   );
