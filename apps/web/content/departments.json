@@ -3450,12 +3450,16 @@
             "value": "1985"
           },
           {
+            "label": "Intake",
+            "value": "120"
+          },
+          {
             "label": "Faculty Strength",
-            "value": "20"
+            "value": "22"
           },
           {
             "label": "PhD Faculty",
-            "value": "15"
+            "value": "18"
           }
         ],
         "researchAreas": [
@@ -3523,7 +3527,7 @@
         {
           "title": "Laboratories",
           "images": [
-            "departments/ece/student-lab-1.webp",
+            "departments/ece/cine9381.webp",
             "departments/ece/student-lab.webp"
           ]
         },
@@ -3563,11 +3567,18 @@
         "quadrangle-",
         "hero-building",
         "acme-office-bearers.webp",
+        "cine9381.webp",
         "cine9358.webp",
         "cine9372.webp",
         "cine9631.webp",
         "cine9647.webp",
-        "cine9661.webp"
+        "cine9661.webp",
+        "cine9406.webp",
+        "cine9534.webp",
+        "cine9390.webp",
+        "graduating-batch-22-26",
+        "hod-mahabaleshwar-s-k",
+        "placed-students-25-26"
       ],
       "overview": "The Department of Electronics and Communication (E&C) Engineering was established in 1985. It offers an undergraduate programme in Electronics and Communication Engineering along with Ph.D. programmes in cutting-edge areas such as VLSI Design, Digital Signal Processing, Wireless Networking, MEMS and Speech Signal Processing. Recognised as a Quality Improvement Programme (QIP) centre by the Government of India, the department has a strong legacy in research and development — particularly in communications, signal processing, microelectronics and RF/photonics. It hosts well-equipped laboratories spanning digital electronics, advanced digital communication, microwave communication, microprocessors and microcontrollers, and computer networks, along with an exclusive computing facility running industry-standard tools such as CADENCE VLSI, ECAD and Verilog simulation/synthesis packages. The department regularly organises seminars, workshops and training programmes under initiatives like TEQIP, ACME and AICTE, and has executed several AICTE-sponsored projects to strengthen its laboratory and research capabilities.",
       "vision": "To achieve excellence in electronics and communication engineering through quality education and research for developing competent professionals.",
@@ -3615,8 +3626,9 @@
         }
       ],
       "highlights": [
-        "Established in 1985 with a Ph.D. research centre recognised under the Government of India QIP scheme.",
+        "Established in 1985",
         "Research strengths in communications, signal processing, microelectronics and RF/photonics.",
+        "Ph.D. research centre recognised by VTU Belagavi and Government of India QIP scheme.",
         "Exclusive computing facility with CADENCE VLSI, ECAD and Verilog simulation/synthesis tools.",
         "Executed several AICTE-sponsored projects to augment laboratory and research infrastructure.",
         "Active skill development through seminars, workshops and training under TEQIP, ACME and AICTE."
@@ -3668,7 +3680,7 @@
           "description": "Networking protocols, configuration and performance analysis.",
           "images": [
             "departments/ece/lab6.webp",
-            "departments/ece/lab7.webp"
+            "departments/ece/student-lab-1.webp"
           ]
         },
         {
@@ -3690,6 +3702,22 @@
             "Dr. Basavaraj M. Angadi"
           ],
           "exicom": [
+            {
+              "name": "Dr. B. R. Hiremath",
+              "position": "Chairperson"
+            },
+            {
+              "name": "Dr. Mahabaleshwar S. K.",
+              "position": "Member"
+            },
+            {
+              "name": "Dr. Sharanappa P. H.",
+              "position": "Coordinator"
+            },
+            {
+              "name": "Dr. B. M. Angadi",
+              "position": "Coordinator"
+            },
             {
               "name": "Mr. Vinay",
               "position": "Vice President"
@@ -4270,7 +4298,7 @@
           "status": "Registered (2022)"
         },
         {
-          "scholar": "Laxmi Burangi",
+          "scholar": "Laxmi Brungi",
           "usn": "2BA24PEC01",
           "guide": "Dr. Mamata J. Sataraddi",
           "title": "Development of advanced and sustainable recycling of end-of-life solar panels",
@@ -4411,50 +4439,72 @@
           "investigators": "Dr. A. C. Katageri, Dr. K. B. Balavalad"
         }
       ],
+      "staffCards": true,
       "supportingStaff": [
         {
           "name": "Sri. S. S. Bhavimath",
-          "designation": "Instructor"
+          "designation": "Instructor",
+          "photo": "departments/ece/staff/s-s-bhavimath.webp"
         },
         {
           "name": "Sri. Prasad P. Umarji",
-          "designation": "Instructor"
+          "designation": "Instructor",
+          "photo": "departments/ece/staff/prasad-p-umarji.webp"
         },
         {
           "name": "Sri. R. S. Honnyal",
-          "designation": "Instructor"
+          "designation": "Instructor",
+          "photo": "departments/ece/staff/r-s-honnyal.webp"
         },
         {
           "name": "Smt. Sushma R. Acharya",
-          "designation": "Instructor"
+          "designation": "Instructor",
+          "photo": "departments/ece/staff/sushma-r-acharya.webp"
         },
         {
           "name": "Sri. R. A. Pinjar",
-          "designation": "Instructor"
+          "designation": "Instructor",
+          "photo": "departments/ece/staff/r-a-pinjar.webp"
         },
         {
-          "name": "Sri. Mahantesh Nayak",
-          "designation": "SDA"
+          "name": "Sri. R. S. Kallur",
+          "designation": "Instructor",
+          "photo": "departments/ece/staff/r-s-kallur.webp"
         },
         {
           "name": "Smt. S. S. Metimath",
-          "designation": "Assistant Instructor"
+          "designation": "Assistant Instructor",
+          "photo": "departments/ece/staff/s-s-metimath.webp"
         },
         {
           "name": "Sri. S. S. Bagali",
-          "designation": "Assistant Instructor"
+          "designation": "Assistant Instructor",
+          "photo": "departments/ece/staff/s-s-bagali.webp"
+        },
+        {
+          "name": "Sri. Mahantesh Nayak",
+          "designation": "SDC",
+          "photo": "departments/ece/staff/mahantesh-nayak.webp"
         },
         {
           "name": "Sri. M. K. Jigajinni",
-          "designation": "Mechanic"
+          "designation": "Mechanic",
+          "photo": "departments/ece/staff/m-k-jigajinni.webp"
         },
         {
           "name": "Sri. P. S. Bisali",
-          "designation": "Helper"
+          "designation": "Helper",
+          "photo": "departments/ece/staff/p-s-bisali.webp"
         },
         {
           "name": "Sri. Basavaraj Golappagol",
-          "designation": "Attender"
+          "designation": "Peon",
+          "photo": "departments/ece/staff/basavaraj-golappagol.webp"
+        },
+        {
+          "name": "Sri. Shanmakh Katageri",
+          "designation": "Peon",
+          "photo": "departments/ece/staff/shanmakh-katageri.webp"
         }
       ],
       "committeeGroups": [
@@ -4781,7 +4831,7 @@
         "message": "Welcome to ECE at BEC. Since 1985, we've evolved from teaching basic circuits to advancing work in VLSI design, speech processing, wireless networks, MEMS, and emerging areas of electronics. Our students learn by building, experimenting, and questioning—because engineering is best understood through practice. We expect commitment, curiosity, and initiative, and in return, our faculty provide the guidance and support needed to grow. This department is yours to build—and we'll hold you to that trust.",
         "name": "Dr. Mahabaleshwar S. K.",
         "designation": "Professor & Head",
-        "image": "governance/deans/dr-mahabaleshwar-s-k.webp"
+        "image": "departments/ece/hod-mahabaleshwar-s-k.webp"
       },
       "sectionNavLabels": {
         "activities": "Association"

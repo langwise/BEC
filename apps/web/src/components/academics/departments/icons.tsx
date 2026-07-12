@@ -16,6 +16,7 @@ import {
   Clipboard,
   Award,
   Briefcase,
+  Image as ImageIcon,
   type LucideIcon,
 } from "lucide-react";
 
@@ -35,4 +36,5 @@ export const iconMap: Record<string, LucideIcon> = {
   clipboard: Clipboard,
   award: Award,
   briefcase: Briefcase,
+  image: ImageIcon,
 };

@@ -3,11 +3,24 @@ import {
   getDepartmentContent,
   getDepartmentContentKey,
   getDepartmentGallery,
+  getDepartmentGalleryExtra,
   resolveDocuments,
   type DepartmentContent,
 } from "@/content/departments";
 import { asset } from "@/lib/assets";
 import { getDepartmentFaculty } from "@/content/faculty";
+
+/**
+ * Resolve an asset key to its R2 URL only if it exists on R2. `asset()` falls
+ * back to a same-origin `/key` path for unknown keys — for a portrait that means
+ * a broken image, so return undefined instead and let the card show initials.
+ */
+function resolveAssetUrl(key?: string): string | undefined {
+  if (!key) return undefined;
+  const url = asset(key);
+  return url.startsWith("http") ? url : undefined;
+}
+
 import { getDepartmentPlacements, type PlacementOffersChart } from "@/content/placements";
 
 /** A two-part list entry — primary label + muted secondary detail (no dash-joining). */
@@ -383,9 +396,28 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
-  // Supporting staff. Optionally split into "Technical Staff" (instructors) and
-  // "Supporting Staff" (helpers / peons / drivers) grouped by designation.
-  if (content.supportingStaff?.length) {
+  // Supporting staff. Rendered either as photo cards (staffCards) or as tables,
+  // optionally split into "Technical Staff" (instructors) and "Supporting Staff"
+  // (helpers / peons / drivers) grouped by designation.
+  if (content.supportingStaff?.length && content.staffCards) {
+    sections.push({
+      id: "staff",
+      type: "faculty-list",
+      title: heading("staff", "Supporting Staff"),
+      faculty: content.supportingStaff.map((m) => ({
+        name: m.name,
+        designation: m.designation,
+        photoUrl: resolveAssetUrl(m.photo),
+      })),
+      groupPhoto: content.staffGroupPhoto
+        ? {
+            src: asset(content.staffGroupPhoto),
+            alt: `${content.name} — supporting staff`,
+            caption: content.staffGroupPhotoCaption,
+          }
+        : undefined,
+    });
+  } else if (content.supportingStaff?.length) {
     const staffRow = (m: { name: string; designation: string }) => [m.name, m.designation];
     let tables: DataTable[];
     if (content.groupSupportingStaff) {
@@ -859,33 +891,32 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   const gallery = content.galleryExclude?.length
     ? galleryAll.filter((url) => !content.galleryExclude!.some((k) => url.includes(k)))
     : galleryAll;
-  const galleryImages = gallery.map((src, i) => ({
+  // Curated photos from the department's gallery/ subfolder, appended in key
+  // order after the auto-derived scene photos.
+  const extraSlug = content.infrastructureGallerySlug ?? content.assetSlug;
+  const galleryImages = [
+    ...gallery,
+    ...(contentKey.startsWith("pg/") ? [] : getDepartmentGalleryExtra(extraSlug)),
+  ].map((src, i) => ({
     src,
     alt: `${content.name} — facilities photo ${i + 1}`,
   }));
+  // Named labs (title + caption + images) render as content blocks. The loose
+  // department photos go to a dedicated "Photo Gallery" section (added below,
+  // after Newsletters), so Infrastructure keeps only the labs.
   if (content.infrastructureLabs?.length) {
-    // Named labs (title + caption + images) render as content blocks; any
-    // remaining department photos follow as a gallery group.
     const groups: ContentGroup[] = content.infrastructureLabs.map((lab) => ({
       subtitle: lab.name,
       text: lab.description,
       images: labImages(lab),
       largeImages: true,
     }));
-    if (galleryImages.length) groups.push({ subtitle: "Photo Gallery", images: galleryImages });
     sections.push({
       id: "infrastructure",
       type: "content",
       title: heading("infrastructure", "Infrastructure & Labs"),
       icon: "building-2",
       groups,
-    });
-  } else if (galleryImages.length) {
-    sections.push({
-      id: "infrastructure",
-      type: "gallery",
-      title: heading("infrastructure", "Infrastructure & Labs"),
-      images: galleryImages,
     });
   }
 
@@ -899,6 +930,17 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       title: heading("newsletters", "Newsletters"),
       icon: "file-text",
       documents: newsletters,
+    });
+  }
+
+  // Photo Gallery (loose department scene photos) — own section, after
+  // Newsletters and before Contact.
+  if (galleryImages.length) {
+    sections.push({
+      id: "photo-gallery",
+      type: "gallery",
+      title: heading("photo-gallery", "Photo Gallery"),
+      images: galleryImages,
     });
   }
 
@@ -988,6 +1030,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     "activity-programs": { label: "Activities", icon: "calendar" },
     mou: { label: "MoUs", icon: "handshake" },
     infrastructure: { label: "Infrastructure", icon: "building-2" },
+    "photo-gallery": { label: "Photo Gallery", icon: "image" },
     contact: { label: "Contact", icon: "users-round" },
   };
   for (const section of sections) {

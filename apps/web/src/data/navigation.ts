@@ -35,7 +35,6 @@ export const navigationData: NavigationItem[] = [
           { title: "Universal Human Values (UHV) Cell", href: "/institute/cells/uhv" },
         ],
       },
-      { title: "Dean ICT", href: "/institute/dean-ict" },
       {
         title: "Campus",
         items: [

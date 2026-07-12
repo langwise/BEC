@@ -16,6 +16,7 @@ import {
   Eye,
   Briefcase,
   Handshake,
+  Image as ImageIcon,
   LucideIcon,
 } from "lucide-react";
 
@@ -34,6 +35,7 @@ const iconMap: Record<string, LucideIcon> = {
   "eye": Eye,
   "briefcase": Briefcase,
   "handshake": Handshake,
+  "image": ImageIcon,
 };
 
 interface SidebarItem {

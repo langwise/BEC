@@ -119,7 +119,7 @@ export type DepartmentContent = {
   homeGroupPhotoCaption?: string;
   /** Categorised facility photos (classrooms, labs, library, campus), shown as captioned galleries on the Facilities tab. */
   facilitiesGallery?: { title?: string; images: string[] }[];
-  supportingStaff?: { name: string; designation: string }[];
+  supportingStaff?: { name: string; designation: string; photo?: string }[];
   committeeGroups?: {
     title: string;
     members: { name: string; position: string }[];
@@ -179,6 +179,8 @@ export type DepartmentContent = {
   peosPsosUnderAbout?: boolean;
   /** Split Supporting Staff into "Technical Staff" (instructors) and "Supporting Staff" (helpers/peons). */
   groupSupportingStaff?: boolean;
+  /** Render Supporting Staff as photo cards (like teaching faculty) instead of tables. */
+  staffCards?: boolean;
   /** Placements: show only summary/recruiter tables, hide per-student name lists. */
   placementsSummaryOnly?: boolean;
   /** Asset-key substrings to drop from the infrastructure gallery (e.g. stray portrait shots). */
@@ -231,9 +233,28 @@ export function resolveDocuments(
 
 export function getDepartmentGallery(assetSlug?: string): string[] {
   if (!assetSlug) return [];
-  // Scene/infrastructure photos only — exclude the faculty/ and alumni/ subtrees
-  // (portraits + CV PDFs) and any non-image assets.
+  // Scene/infrastructure photos only — exclude the faculty/, staff/ and alumni/
+  // subtrees (portraits + CV PDFs), the curated gallery/ subtree (appended
+  // separately, in order, at the end of the Photo Gallery) and any non-image
+  // assets.
   return assetsUnder(`departments/${assetSlug}/`).filter(
-    (url) => !url.includes("/faculty/") && !url.includes("/alumni/") && /\.(webp|jpe?g|png)$/i.test(url),
+    (url) =>
+      !url.includes("/faculty/") &&
+      !url.includes("/staff/") &&
+      !url.includes("/alumni/") &&
+      !url.includes("/gallery/") &&
+      /\.(webp|jpe?g|png)$/i.test(url),
+  );
+}
+
+/**
+ * Curated department photos dropped into a `gallery/` subfolder on R2. Returned
+ * in key order (name them zero-padded, e.g. g01.webp) and appended to the end of
+ * the Photo Gallery section so authors control what shows and in what order.
+ */
+export function getDepartmentGalleryExtra(assetSlug?: string): string[] {
+  if (!assetSlug) return [];
+  return assetsUnder(`departments/${assetSlug}/gallery/`).filter((url) =>
+    /\.(webp|jpe?g|png)$/i.test(url),
   );
 }

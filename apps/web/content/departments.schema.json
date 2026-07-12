@@ -346,6 +346,10 @@
               }
             }
           },
+          "staffCards": {
+            "type": "boolean",
+            "description": "Render Supporting Staff as photo cards (like teaching faculty) instead of tables."
+          },
           "supportingStaff": {
             "type": "array",
             "description": "Supporting staff records from legacy department pages.",
@@ -362,6 +366,14 @@
                 },
                 "designation": {
                   "type": "string"
+                },
+                "photo": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ],
+                  "description": "Portrait asset key on R2 (used when staffCards is enabled)."
                 }
               }
             }

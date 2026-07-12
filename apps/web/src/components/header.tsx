@@ -55,28 +55,28 @@ export function Header() {
           </a>
 
           {/* Institution codes */}
-          <div className="hidden lg:flex shrink-0 items-start gap-6 text-[11px] leading-snug">
-            <div className="grid grid-cols-[auto_auto] gap-x-2 gap-y-0.5">
-              <span className="col-span-2 font-semibold uppercase tracking-wide text-[10px] text-primary">
+          <div className="hidden lg:flex shrink-0 items-start gap-x-6 text-[11px] leading-tight">
+            <div className="grid grid-cols-[auto_auto] gap-x-2">
+              <span className="col-span-2 mb-0.5 font-semibold uppercase tracking-wide text-[10px] text-primary">
                 CET Code
               </span>
               <span className="text-muted-foreground">Aided</span>
-              <span className="font-bold text-foreground">E031</span>
+              <span className="text-right font-bold tabular-nums text-foreground">E031</span>
               <span className="text-muted-foreground">Unaided</span>
-              <span className="font-bold text-foreground">E049</span>
+              <span className="text-right font-bold tabular-nums text-foreground">E049</span>
             </div>
-            <div className="grid grid-cols-[auto_auto] gap-x-2 gap-y-0.5">
-              <span className="col-span-2 font-semibold uppercase tracking-wide text-[10px] text-primary">
+            <div className="grid grid-cols-[auto_auto] gap-x-2">
+              <span className="col-span-2 mb-0.5 font-semibold uppercase tracking-wide text-[10px] text-primary">
                 Other Codes
               </span>
               <span className="text-muted-foreground">COMEDK</span>
-              <span className="font-bold text-foreground">E024</span>
+              <span className="text-right font-bold tabular-nums text-foreground">E024</span>
               <span className="text-muted-foreground">MBA</span>
-              <span className="font-bold text-foreground">B124</span>
+              <span className="text-right font-bold tabular-nums text-foreground">B124</span>
               <span className="text-muted-foreground">M.Tech.</span>
-              <span className="font-bold text-foreground">T810</span>
+              <span className="text-right font-bold tabular-nums text-foreground">T810</span>
               <span className="text-muted-foreground">MCA</span>
-              <span className="font-bold text-foreground">C408MC</span>
+              <span className="text-right font-bold tabular-nums text-foreground">C408MC</span>
             </div>
           </div>
 
