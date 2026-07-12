@@ -50,14 +50,19 @@ function DocumentsSection({
 }: {
   title: string;
   documents: DocLink[];
-  groups?: { title: string; documents: DocLink[] }[];
+  groups?: {
+    title: string;
+    documents: DocLink[];
+    sections?: { title: string; documents: DocLink[] }[];
+  }[];
 }) {
   const [active, setActive] = useState(0);
+  const activeGroup = groups?.[active];
   return (
     <div className="space-y-6">
       <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
       {groups?.length ? (
-        <div className="space-y-5">
+        <div className="space-y-6">
           <div className="flex flex-wrap gap-2 border-b border-stone-200">
             {groups.map((g, i) => (
               <button
@@ -74,7 +79,18 @@ function DocumentsSection({
               </button>
             ))}
           </div>
-          <DocGrid documents={groups[active]?.documents ?? []} />
+          {activeGroup?.sections?.length ? (
+            <div className="space-y-8">
+              {activeGroup.sections.map((s, i) => (
+                <div key={i} className="space-y-3">
+                  <h3 className="text-lg font-semibold text-gray-900">{s.title}</h3>
+                  <DocGrid documents={s.documents} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <DocGrid documents={activeGroup?.documents ?? []} />
+          )}
         </div>
       ) : (
         <DocGrid documents={documents} />

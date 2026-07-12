@@ -277,7 +277,7 @@
     ],
     "mathematics": [
       {
-        "name": "Dr. S.V.Gurushantanavar",
+        "name": "Dr. S. V. Gurushantanavar",
         "designation": "Associate Professor & HOD",
         "cv": "departments/maths/faculty/cv/s-v-gurushantanavar.pdf",
         "photo": "departments/maths/faculty/s-v-gurushantanavar.webp"
@@ -315,7 +315,8 @@
       {
         "name": "Prof. Ishwar Maharudrappa",
         "designation": "Assistant Professor",
-        "cv": "departments/maths/faculty/cv/ishwar-maharudrappa.pdf"
+        "cv": "departments/maths/faculty/cv/ishwar-maharudrappa.pdf",
+        "photo": "departments/maths/faculty/ishwar-maharudrappa.webp"
       },
       {
         "name": "Prof. V M Pudakalkatti",
@@ -326,11 +327,14 @@
       {
         "name": "Dr. Pradeep N Hiremath",
         "designation": "Assistant Professor",
-        "cv": "departments/maths/faculty/cv/pradeep-n-hiremath.pdf"
+        "cv": "departments/maths/faculty/cv/pradeep-n-hiremath.pdf",
+        "photo": "departments/maths/faculty/pradeep-n-hiremath.webp"
       },
       {
         "name": "Dr. Abhilash L. Nandeppanavar",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "cv": "departments/maths/faculty/cv/abhilash-l-nandeppanavar.pdf",
+        "photo": "departments/maths/faculty/abhilash-l-nandeppanavar.webp"
       }
     ],
     "physics": [

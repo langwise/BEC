@@ -159,8 +159,13 @@ export type DepartmentContent = {
   contact?: { name?: string; designation?: string; phone?: string; email?: string };
   additionalContacts?: { name: string; designation?: string; phone?: string; email?: string }[];
   documents?: { title: string; file: string }[];
-  /** Curriculum shown as labelled sub-tabs (e.g. Scheme of Teaching & Examinations / Syllabus). */
-  curriculumGroups?: { title: string; documents: { title: string; file: string }[] }[];
+  /** Curriculum shown as labelled sub-tabs (e.g. Scheme of Teaching & Examinations / Syllabus).
+   * A tab holds either a flat `documents` grid, or `sections` — labelled blocks each with their own grid. */
+  curriculumGroups?: {
+    title: string;
+    documents?: { title: string; file: string }[];
+    sections?: { title: string; documents: { title: string; file: string }[] }[];
+  }[];
   /** Extra PDFs attached to a specific section, keyed by section id (research, mou, facilities, faculty…). */
   sectionDocuments?: Record<string, { title: string; file: string }[]>;
   /** PDFs embedded inline (rendered in a viewer) under a specific section, keyed by section id. */

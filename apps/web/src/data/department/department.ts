@@ -87,8 +87,13 @@ export type DepartmentSection =
       title: string;
       icon?: string;
       documents: DocLink[];
-      /** When present, the curriculum renders as labelled sub-tabs instead of a flat grid. */
-      groups?: { title: string; documents: DocLink[] }[];
+      /** When present, the curriculum renders as labelled sub-tabs instead of a flat grid.
+       * A tab with `sections` renders them as labelled blocks (each its own grid) under the tab. */
+      groups?: {
+        title: string;
+        documents: DocLink[];
+        sections?: { title: string; documents: DocLink[] }[];
+      }[];
     }
   | {
       id?: string;
@@ -361,8 +366,14 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   // tab renders as labelled sub-tabs (Scheme of Teaching & Examinations / Syllabus).
   if (content.curriculumGroups?.length) {
     const groups = content.curriculumGroups
-      .map((g) => ({ title: g.title, documents: resolveDocuments(g.documents) }))
-      .filter((g) => g.documents.length);
+      .map((g) => ({
+        title: g.title,
+        documents: resolveDocuments(g.documents),
+        sections: g.sections
+          ?.map((s) => ({ title: s.title, documents: resolveDocuments(s.documents) }))
+          .filter((s) => s.documents.length),
+      }))
+      .filter((g) => g.documents.length || g.sections?.length);
     if (groups.length) {
       sections.push({
         id: "curriculum",

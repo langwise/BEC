@@ -9632,14 +9632,16 @@
     "mathematics": {
       "name": "Mathematics",
       "assetSlug": "maths",
+      "heroImage": "departments/maths/hero-building.webp",
+      "galleryExclude": ["hero-building"],
       "tagline": "A foundational teaching-learning centre imparting mathematical knowledge and computational thinking across all engineering disciplines.",
       "established": "1963",
       "overview": "The Department of Mathematics, established in 1963, has emerged as a successful teaching-learning centre imparting mathematics knowledge across the engineering disciplines of the college. It develops computational skills, critical thinking and problem-solving abilities in engineering students through core and elective courses, with remedial instruction for students who need additional support. The department comprises highly experienced and dedicated faculty, many holding Ph.D. degrees from reputed universities and a few pursuing their doctoral research, who have published widely in national and international journals.",
-      "vision": "The Department of Mathematics offers courses of study that ensure the student learner is able to contribute to today's society.",
+      "vision": "To be a centre of excellence in teaching and explore in basic and applied areas of Mathematics.",
       "mission": [
-        "Assist students in acquiring a conceptual understanding of the nature of mathematics and its applications.",
-        "Develop computational skills, critical thinking and problem-solving abilities through the study of mathematics.",
-        "Enable students to critically assess numerical and graphical information and formulate strategies for solving problems."
+        "Encourage students to achieve academic excellence through innovative teaching and learning.",
+        "Imbibe in students lifelong learning ability, mastery of reasoning, problem-solving and critical thinking.",
+        "To Groom the students to become professionally and morally sound professionals."
       ],
       "programsOffered": [
         "B.E. — Engineering Mathematics (service courses across all UG programmes)"
@@ -9656,31 +9658,159 @@
         "phone": "+91-8317492301",
         "email": "svguru2007@gmail.com"
       },
-      "documents": [
+      "curriculumGroups": [
         {
-          "title": "Scheme & Syllabus",
-          "file": "departments/maths/docs/syllabus-merged.pdf"
+          "title": "2026-27",
+          "sections": [
+            {
+              "title": "Semester 1",
+              "documents": [
+                {
+                  "title": "CSE Stream — Calculus and Linear Algebra (1BMAS101C)",
+                  "file": "departments/maths/docs/syllabus/sem1-cse.pdf"
+                },
+                {
+                  "title": "Civil Stream — Differential Calculus and Linear Algebra (1BMAC101C)",
+                  "file": "departments/maths/docs/syllabus/sem1-civil.pdf"
+                },
+                {
+                  "title": "EEE Stream — Differential Calculus and Linear Algebra (1BMAE101C)",
+                  "file": "departments/maths/docs/syllabus/sem1-eee.pdf"
+                },
+                {
+                  "title": "Mechanical Stream — Differential Calculus and Linear Algebra (1BMAM101C)",
+                  "file": "departments/maths/docs/syllabus/sem1-mech.pdf"
+                }
+              ]
+            },
+            {
+              "title": "Semester 2",
+              "documents": [
+                {
+                  "title": "CSE Stream — Differential Equations and Numerical Methods (1BMAS201C)",
+                  "file": "departments/maths/docs/syllabus/sem2-cse.pdf"
+                },
+                {
+                  "title": "Civil Stream — Calculus and Numerical Methods (1BMAC201C)",
+                  "file": "departments/maths/docs/syllabus/sem2-civil.pdf"
+                },
+                {
+                  "title": "EEE Stream — Calculus, Laplace Transform and Numerical Methods (1BMAE201C)",
+                  "file": "departments/maths/docs/syllabus/sem2-eee.pdf"
+                },
+                {
+                  "title": "Mechanical Stream — Calculus and Numerical Methods (1BMAM201C)",
+                  "file": "departments/maths/docs/syllabus/sem2-mech.pdf"
+                }
+              ]
+            },
+            {
+              "title": "Semester 3",
+              "documents": [
+                {
+                  "title": "CSE Stream — Mathematics for Computer Science (1BMAS301C)",
+                  "file": "departments/maths/docs/syllabus/sem3-cse.pdf"
+                },
+                {
+                  "title": "Civil Stream — Mathematics for Civil Engineering (1BMAC301C)",
+                  "file": "departments/maths/docs/syllabus/sem3-civil.pdf"
+                },
+                {
+                  "title": "EEE Stream — Mathematics for Electrical Engineering (1BMAE301C)",
+                  "file": "departments/maths/docs/syllabus/sem3-eee.pdf"
+                },
+                {
+                  "title": "Mechanical Stream — Mathematics for Mechanical Engineering (1BMAM301C)",
+                  "file": "departments/maths/docs/syllabus/sem3-mech.pdf"
+                },
+                {
+                  "title": "Bridge Course Mathematics-I (BMAB300M)",
+                  "file": "departments/maths/docs/syllabus/sem3-bridge.pdf"
+                }
+              ]
+            }
+          ]
         },
         {
-          "title": "Board of Studies",
-          "file": "departments/maths/docs/bos.pdf"
-        },
-        {
-          "title": "Faculty List",
-          "file": "departments/maths/docs/faculty-list.pdf"
-        },
-        {
-          "title": "Department Publications",
-          "file": "departments/maths/docs/publications.pdf"
+          "title": "2025-26",
+          "sections": [
+            {
+              "title": "Semester 1",
+              "documents": [
+                {
+                  "title": "CSE Stream — Calculus and Linear Algebra (1BMAS101C)",
+                  "file": "departments/maths/docs/syllabus/sem1-cse.pdf"
+                },
+                {
+                  "title": "Civil Stream — Differential Calculus and Linear Algebra (1BMAC101C)",
+                  "file": "departments/maths/docs/syllabus/sem1-civil.pdf"
+                },
+                {
+                  "title": "EEE Stream — Differential Calculus and Linear Algebra (1BMAE101C)",
+                  "file": "departments/maths/docs/syllabus/sem1-eee.pdf"
+                },
+                {
+                  "title": "Mechanical Stream — Differential Calculus and Linear Algebra (1BMAM101C)",
+                  "file": "departments/maths/docs/syllabus/sem1-mech.pdf"
+                }
+              ]
+            },
+            {
+              "title": "Semester 2",
+              "documents": [
+                {
+                  "title": "CSE Stream — Differential Equations and Numerical Methods (1BMAS201C)",
+                  "file": "departments/maths/docs/syllabus/sem2-cse.pdf"
+                },
+                {
+                  "title": "Civil Stream — Calculus and Numerical Methods (1BMAC201C)",
+                  "file": "departments/maths/docs/syllabus/sem2-civil.pdf"
+                },
+                {
+                  "title": "EEE Stream — Calculus, Laplace Transform and Numerical Methods (1BMAE201C)",
+                  "file": "departments/maths/docs/syllabus/sem2-eee.pdf"
+                },
+                {
+                  "title": "Mechanical Stream — Calculus and Numerical Methods (1BMAM201C)",
+                  "file": "departments/maths/docs/syllabus/sem2-mech.pdf"
+                }
+              ]
+            },
+            {
+              "title": "Semester 3",
+              "documents": [
+                {
+                  "title": "CSE Stream — Mathematics for Computer Science (BMAS301C)",
+                  "file": "departments/maths/docs/syllabus/2025-26/sem3-cse.pdf"
+                },
+                {
+                  "title": "Civil Stream — Mathematics for Civil Engineering (BMAC301C)",
+                  "file": "departments/maths/docs/syllabus/2025-26/sem3-civil.pdf"
+                },
+                {
+                  "title": "EEE Stream — Mathematics for Electrical Engineering (BMAE301C)",
+                  "file": "departments/maths/docs/syllabus/2025-26/sem3-eee.pdf"
+                },
+                {
+                  "title": "Mechanical Stream — Mathematics for Mechanical Engineering (BMAM301C)",
+                  "file": "departments/maths/docs/syllabus/2025-26/sem3-mech.pdf"
+                },
+                {
+                  "title": "Bridge Course Mathematics-I (BMAB300M)",
+                  "file": "departments/maths/docs/syllabus/2025-26/sem3-bridge.pdf"
+                }
+              ]
+            }
+          ]
         }
       ],
       "supportingStaff": [
         {
-          "name": "Ramappa S. Gulbal",
+          "name": "Sri. Ramappa S. Gulbal",
           "designation": "Mechanic"
         },
         {
-          "name": "Sri P. S. Chalavadi",
+          "name": "Sri. P. S. Chalavadi",
           "designation": "Peon"
         }
       ],
@@ -9738,19 +9868,19 @@
             },
             {
               "name": "Dr. S. H. Sanni",
-              "position": "Invitee — Retired Professor, BEC, Bagalkote"
+              "position": "Member — Associate Professor & HoD (Subject Expert - Internal), Civil Engg. Dept., BEC, Bagalkote"
             },
             {
               "name": "Dr. Lokesh Bhajantri",
-              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkote"
+              "position": "Member — Associate Professor & HoD (Subject Expert - Internal), ISE Dept., BEC, Bagalkote"
             },
             {
               "name": "Dr. S. M. Jigajinni",
-              "position": "Member — Associate Professor (Subject Expert - Internal), BEC, Bagalkote"
+              "position": "Member — Associate Professor (Subject Expert - Internal), ME Dept., BEC, Bagalkote"
             },
             {
               "name": "Dr. Manjula A. Sutagundar",
-              "position": "Member — Assistant Professor (Subject Expert - Internal), BEC, Bagalkote"
+              "position": "Member — Assistant Professor (Subject Expert - Internal), ECS Dept., BEC, Bagalkote"
             }
           ]
         },
