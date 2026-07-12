@@ -42,22 +42,22 @@ export function Header() {
               className="object-contain h-20 sm:h-28 md:h-32 lg:h-40 w-auto shrink-0 -ml-2 sm:-ml-6 lg:-ml-12"
             />
             <div className="flex flex-col justify-center min-w-0">
-              <span className="text-[0.7rem] sm:text-base lg:text-lg font-semibold uppercase tracking-wide text-foreground leading-tight">
+              <span className="text-[0.6rem] sm:text-sm lg:text-base font-semibold uppercase tracking-wide text-foreground leading-tight">
                 B.V.V. Sangha&apos;s
               </span>
               <div className="w-fit">
-                <span className="block text-sm sm:text-xl lg:text-3xl font-bold text-primary leading-tight">
+                <span className="block text-[0.7rem] sm:text-base lg:text-xl font-bold text-primary leading-tight">
                   Basaveshwar Engineering College, Bagalkote
                 </span>
-                <span className="block text-[0.65rem] sm:text-sm lg:text-base font-semibold italic uppercase tracking-wide text-foreground leading-tight text-right">
+                <span className="block text-[0.55rem] sm:text-xs lg:text-sm font-semibold italic uppercase tracking-wide text-foreground leading-tight text-right">
                   ESTD: 1963
                 </span>
-                <span className="hidden md:block w-0 min-w-full text-sm lg:text-base font-medium text-foreground/90 leading-snug mt-0.5 text-justify">
+                <span className="hidden md:block w-0 min-w-full text-xs lg:text-sm font-medium text-foreground/90 leading-snug mt-0.5 text-justify">
                   [A Government Aided Autonomous College,
                   Recognized by AICTE, Permanently Affiliated to Visvesvaraya
                   Technological University, Belagavi &amp; Accredited by NAAC with
                   &apos;A&apos; Grade from 2024 to 2029] <br/ >
-                  <span className="block text-xl lg:text-xl font-bold text-primary leading-tight">
+                  <span className="block text-base lg:text-base font-bold text-primary leading-tight">
                   S. Nijalingappa Vidyanagar, Bagalkote - 587 102, Karnataka, India
                   </span>
                 </span>

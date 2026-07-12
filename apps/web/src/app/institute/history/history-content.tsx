@@ -59,7 +59,7 @@ const timelinePhases = [
     icon: Compass,
     color: "from-orange-500 to-amber-500",
     description: 
-      "Basaveshwar Engineering College was established in 1963 by the philanthropic Basaveshwar Veerashaiva Vidya Vardhak Sangha (B. V. V. S.), fueled by a vision to bring quality technical education to the rural masses of Northern Karnataka.",
+      "Basaveshwar Engineering College was established in 1963 by the philanthropic Basaveshwar Veerashaiva Vidyavardhak Sangha (B. V. V. S.), fueled by a vision to bring quality technical education to the rural masses of Northern Karnataka.",
     milestones: [
       {
         year: "1963",
@@ -241,7 +241,7 @@ export default function HistoryContent() {
               Building Leaders Since 1963
             </h2>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed font-medium">
-              Established under the patronage of the Basaveshwar Veerashaiva Vidya Vardhak Sangha (B. V. V. S.), 
+              Established under the patronage of the Basaveshwar Veerashaiva Vidyavardhak Sangha (B. V. V. S.), 
               BEC was born out of an urgent need to empower students in Northern Karnataka with state-of-the-art 
               technical skills. Today, our 93-acre sprawling campus is a major educational nerve center 
               fostering holistic technical competence, path-breaking research, and strong global connections.
@@ -351,7 +351,7 @@ export default function HistoryContent() {
                 Honoring the Visionaries Who Shaped BEC
               </h2>
               <p className="text-slate-300 text-sm md:text-base leading-relaxed font-medium text-justify">
-                The progressive journey of Basaveshwar Engineering College has been sculpted by generations of visionary leaders, former Principals, and former Directors. Under the benevolent patronage of the Basaveshwar Veerashaiva Vidya Vardhak Sangha (B. V. V. S.), their proactive governance, academic foresight, and administrative grit transformed a regional engineering college into a nationally acclaimed, autonomous center of technological excellence.
+                The progressive journey of Basaveshwar Engineering College has been sculpted by generations of visionary leaders, former Principals, and former Directors. Under the benevolent patronage of the Basaveshwar Veerashaiva Vidyavardhak Sangha (B. V. V. S.), their proactive governance, academic foresight, and administrative grit transformed a regional engineering college into a nationally acclaimed, autonomous center of technological excellence.
               </p>
               <p className="text-slate-300 text-sm md:text-base leading-relaxed font-medium text-justify">
                 Their contribution laid the cornerstone of our comprehensive laboratories, state-of-the-art campus infrastructure, robust placement platforms, and rich research culture. Today, we celebrate their enduring legacy by continuing to pioneer advanced, industry-aligned engineering education.

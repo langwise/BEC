@@ -136,7 +136,7 @@ export default function AboutSanghaPage() {
         <div className="grid gap-10 lg:grid-cols-[2fr_1fr]">
           <div className="space-y-6 text-base text-gray-700 leading-relaxed text-justify">
             <p>
-              <span className="font-semibold text-gray-900">Basaveshwar Veerashaiva Vidya Vardhak Sangha (B. V. V. Sangha)</span>,
+              <span className="font-semibold text-gray-900">Basaveshwar Veerashaiva Vidyavardhak Sangha (B. V. V. Sangha)</span>,
               Bagalkote is situated in the northern part of Karnataka was a part of the Bombay province. The merchants of Bagalkote
               with the blessings of his Holiness <span className="font-semibold text-gray-900">Shri Gurubasava Mahaswamiji of Bilur</span> and
               his holiness <span className="font-semibold text-gray-900">Shri Revanasiddeshwara Mahaswamiji of Teekinamatha Bagalkote</span> established

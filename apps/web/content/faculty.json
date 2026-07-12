@@ -376,6 +376,23 @@
     ],
     "civil-engg": [
       {
+        "name": "Dr. R. N. Herkal",
+        "designation": "Director",
+        "photo": "governance/director/cine9670.webp"
+      },
+      {
+        "name": "Dr. B. R. Hiremath",
+        "designation": "Principal",
+        "cv": "departments/civil/faculty/cv/b-r-hiremath.pdf",
+        "photo": "governance/principal/cine2151.webp"
+      },
+      {
+        "name": "Dr. Shankar H. Sanni",
+        "designation": "Associate Professor",
+        "cv": "departments/civil/faculty/cv/shankar-h-sanni.pdf",
+        "photo": "departments/civil/faculty/shankar-h-sanni.webp"
+      },
+      {
         "name": "Dr. Santhosh M. Malkapur",
         "designation": "Professor",
         "cv": "departments/civil/faculty/cv/santhosh-m-malkapur.pdf",
@@ -383,15 +400,9 @@
       },
       {
         "name": "Dr. Adarsh S. Chatra",
-        "designation": "Associate Professor",
+        "designation": "Professor",
         "cv": "departments/civil/faculty/cv/adarsh-s-chatra.pdf",
         "photo": "departments/civil/faculty/adarsh-s-chatra.webp"
-      },
-      {
-        "name": "Dr. Shankar H. Sanni",
-        "designation": "Associate Professor",
-        "cv": "departments/civil/faculty/cv/shankar-h-sanni.pdf",
-        "photo": "departments/civil/faculty/shankar-h-sanni.webp"
       },
       {
         "name": "Dr. Shreeshail Heggond",

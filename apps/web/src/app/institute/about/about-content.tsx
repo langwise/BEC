@@ -76,6 +76,16 @@ export default function AboutContent() {
       title: "NIRF Ranking",
       desc: "Rank band 201-250 nationally",
     },
+    {
+      year: "2021-22",
+      title: "TEQIP-III",
+      desc: "Rs. 8.47 crore grant received",
+    },
+    {
+      year: "2023-24",
+      title: "NIRF Innovation Ranking",
+      desc: "Recognized in the NIRF Innovation category",
+    },
   ];
 
   const facilities = [
@@ -111,7 +121,7 @@ export default function AboutContent() {
     {
       icon: GraduationCap,
       title: "Academic Programs",
-      desc: "11 UG & 8 PG Programmes",
+      desc: "11 UG & 3 PG Programmes",
     },
     {
       icon: Building2,
@@ -201,12 +211,12 @@ export default function AboutContent() {
                   – a crown jewel in the highly respected and renowned
                   <span className="font-semibold text-gray-900">
                     {" "}
-                    120-year-old Basaveshwar Veerashaiva Vidya Vardhak Sangha
+                    120-year-old Basaveshwar Veerashaiva Vidyavardhak Sangha
                     (B. V. V. S.)
                   </span>{" "}
                   is a premier technical institution located in North Karnataka.
                   Started in 1963, the college has grown tremendously over the
-                  years and currently has 11 UG, 6 PG and 10 Research Centers
+                  years and currently has 11 UG, 3 PG and 10 Research Centers
                   recognized by VTU, Belagavi.
                 </p>
                 <p>

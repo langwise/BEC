@@ -12,7 +12,7 @@ export const metadata = pageMetadata({
 const message = `
 Today, the technological developments across the Globe are remarkable and also galloping at a very rapid speed. The gap in synchronizing innovative technologies and the rich Indian value system is increasing at a startling pace. Hence, present day education imparted across technical institutes needs rethinking and new strategies must be envisaged.
 
-The Technical Institutes under Basaveshwar Veerashaiva Vidya Vardhak Sangha are the artifact of a vision of excellence. Basaveshwar Engineering College (BEC), Bagalkote is one of the pioneering institutes serving stakeholders in northern Karnataka. The growth of the college since its inception in 1963 is commendable.
+The Technical Institutes under Basaveshwar Veerashaiva Vidyavardhak Sangha are the artifact of a vision of excellence. Basaveshwar Engineering College (BEC), Bagalkote is one of the pioneering institutes serving stakeholders in northern Karnataka. The growth of the college since its inception in 1963 is commendable.
 
 Some of the recent accomplishments include the introduction of BE-AIML, M.Tech Defence Technology, sanction of an AICTE Idea Lab worth ₹1.10 Cr, and accreditation of all UG programs. The college has utilized TEQIP grants effectively and is now ready for NEP-2020 implementation.
 

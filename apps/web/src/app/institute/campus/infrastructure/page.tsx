@@ -39,7 +39,7 @@ export default function InfrastructurePage() {
     {
       icon: <BookOpen className="h-5 w-5" />,
       title: "Library & Information Centre",
-      description: "RFID secured system, 1.40 lakh volumes, 42,000+ print titles, 34,000+ e-books, and 15,000+ e-journals.",
+      description: "RFID secured system, 1.40 lakh volumes, 46,000+ print titles, 34,000+ e-books, and 15,000+ journals",
     },
     {
       icon: <Building className="h-5 w-5" />,

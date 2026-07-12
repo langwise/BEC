@@ -61,11 +61,11 @@ export default function AmenitiesPage() {
       description:
         "A spacious campus canteen serves a varied menu of meals, snacks and beverages at affordable rates, giving students and staff a comfortable place to eat and unwind.",
       features: ["Varied Menu", "Snacks & Beverages", "Affordable Rates"],
-      image: asset("facilities/general/cine1257.webp"),
+      image: asset("facilities/general/canteen.webp"),
       icon: Store,
     },
     {
-      title: "Co-operative Store & Book Stall",
+      title: "Co-operative Store, Book Stall, and Xerox",
       description:
         "The campus co-operative store and book stall supply textbooks, stationery, practical records and other academic essentials for everyday student needs.",
       features: ["Textbooks", "Stationery", "Academic Essentials"],
