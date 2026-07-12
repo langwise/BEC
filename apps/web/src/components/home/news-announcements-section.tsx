@@ -9,7 +9,7 @@ import { FadeIn } from "../animations/fade-in";
 import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
-const UNPINNED_ITEMS_PER_PAGE = 2;
+const UNPINNED_ITEMS_PER_PAGE = 5;
 
 const slideVariants = {
   enter: (direction: "forward" | "backward") => ({
@@ -101,7 +101,7 @@ export function NewsAnnouncementsSection() {
                   </div>
                 </div>
 
-                <div className="space-y-6 min-h-[380px] lg:h-[420px]">
+                <div className="space-y-6 min-h-[380px]">
                   {newsData.length === 0 && <EmptyState label="news" />}
                   {/* Pinned News (Static) */}
                   <div className="space-y-6">
@@ -219,7 +219,7 @@ export function NewsAnnouncementsSection() {
                   </div>
                 </div>
 
-                <div className="space-y-6 min-h-[380px] lg:h-[420px]">
+                <div className="space-y-6 min-h-[380px]">
                   {announcementsData.length === 0 && (
                     <EmptyState label="announcements" />
                   )}

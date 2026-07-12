@@ -81,7 +81,7 @@ export const navigationData: NavigationItem[] = [
     title: "Academics",
     groupsFirst: true,
     items: [
-      { title: "Research", href: "/research" },
+      // { title: "Research", href: "/research" },
       { title: "First-Year Syllabus", href: "/academics/first-year" },
       {
         title: "Programmes",
@@ -131,19 +131,23 @@ export const navigationData: NavigationItem[] = [
     href: "/academics/examinations",
   },
 
-  // 7. Placements
+  // 7. Research
+
+  { title: "Research", href: "/research" },
+
+  // 8. Placements
   {
     title: "Placements",
     href: "/placements",
   },
 
-  // 8. Hostel
+  // 9. Hostels
   {
     title: "Hostels",
     href: "/student-life/hostels",
   },
 
-  // 9. Student Life
+  // 10. Student Life
   {
     title: "Student Life",
     items: [

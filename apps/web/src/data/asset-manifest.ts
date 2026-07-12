@@ -580,6 +580,7 @@ export const manifest = {
   "departments/eee/faculty/santhoshkumar-s-kandagal.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/eee/faculty/santhoshkumar-s-kandagal.webp",
   "departments/eee/faculty/shivakumar-g-nayak.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/eee/faculty/shivakumar-g-nayak.webp",
   "departments/eee/faculty/sunita-s-tambakad.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/eee/faculty/sunita-s-tambakad.webp",
+  "departments/eee/hero-building.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/eee/hero-building.webp",
   "departments/hss/activities/sdp-2025-backup-plans-floral-welcome.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/hss/activities/sdp-2025-backup-plans-floral-welcome.webp",
   "departments/hss/activities/sdp-2025-backup-plans-group.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/hss/activities/sdp-2025-backup-plans-group.webp",
   "departments/hss/activities/sdp-2025-backup-plans-lamp.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/hss/activities/sdp-2025-backup-plans-lamp.webp",

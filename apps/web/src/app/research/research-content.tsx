@@ -49,7 +49,7 @@ const anchorNav = [
 ];
 
 const overviewStats = [
-  { value: "87", label: "Faculty with Ph.D." },
+  { value: "89", label: "Faculty with Ph.D." },
   { value: "855", label: "Journal Publications" },
   { value: "355", label: "Conference Papers" },
   { value: "₹43 Cr", label: "Grants incl. TEQIP" },

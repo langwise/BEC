@@ -27,62 +27,74 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-muted">
+      {/* Top strip */}
+      <div className="bg-primary h-2" />
+
       {/* Row 1: brand + mobile menu trigger */}
+      <div className="bg-primary/[0.06] border-b border-primary/10">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between gap-4 py-3">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 py-2 sm:py-3">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-4 sm:gap-6 min-w-0">
+          <a href="/" className="flex items-center gap-2 sm:gap-6 lg:gap-9 min-w-0 flex-1">
             <img
-              src="/bvvs-logo.jpg"
+              src="/logo-bg-removed.png"
               alt="Basaveshwar Engineering College, Bagalkote logo"
-              className="object-contain h-20 sm:h-24 lg:h-28 w-auto shrink-0"
+              className="object-contain h-20 sm:h-28 md:h-32 lg:h-40 w-auto shrink-0 -ml-2 sm:-ml-6 lg:-ml-12"
             />
-            <div className="hidden sm:flex flex-col justify-center min-w-0">
-              <span className="text-sm lg:text-base font-semibold uppercase tracking-wide text-foreground leading-tight">
+            <div className="flex flex-col justify-center min-w-0">
+              <span className="text-[0.7rem] sm:text-base lg:text-lg font-semibold uppercase tracking-wide text-foreground leading-tight">
                 B.V.V. Sangha&apos;s
               </span>
-              <span className="text-xl lg:text-3xl font-bold text-primary leading-tight">
-                Basaveshwar Engineering College, Bagalkote
-              </span>
-              <span className="hidden md:block max-w-3xl text-xs lg:text-sm font-medium text-foreground/80 leading-snug mt-0.5 text-justify">
-                Established 1963. A Government Aided Autonomous College,
-                Recognized by AICTE, Permanently Affiliated to Visvesvaraya
-                Technological University, Belagavi &amp; Accredited by NAAC with
-                &apos;A&apos; Grade from 2024 to 2029. S. Nijalingappa
-                Vidyanagar, Bagalkote - 587 102, Karnataka, India
-              </span>
+              <div className="w-fit">
+                <span className="block text-sm sm:text-xl lg:text-3xl font-bold text-primary leading-tight">
+                  Basaveshwar Engineering College, Bagalkote
+                </span>
+                <span className="block text-[0.65rem] sm:text-sm lg:text-base font-semibold italic uppercase tracking-wide text-foreground leading-tight text-right">
+                  ESTD: 1963
+                </span>
+                <span className="hidden md:block w-0 min-w-full text-sm lg:text-base font-medium text-foreground/90 leading-snug mt-0.5 text-justify">
+                  [A Government Aided Autonomous College,
+                  Recognized by AICTE, Permanently Affiliated to Visvesvaraya
+                  Technological University, Belagavi &amp; Accredited by NAAC with
+                  &apos;A&apos; Grade from 2024 to 2029] <br/ >
+                  <span className="block text-xl lg:text-xl font-bold text-primary leading-tight">
+                  S. Nijalingappa Vidyanagar, Bagalkote - 587 102, Karnataka, India
+                  </span>
+                </span>
+              </div>
             </div>
           </a>
 
           {/* Institution codes */}
-          <div className="hidden lg:flex shrink-0 items-start gap-x-6 text-[11px] leading-tight">
-            <div className="grid grid-cols-[auto_auto] gap-x-2">
-              <span className="col-span-2 mb-0.5 font-semibold uppercase tracking-wide text-[10px] text-primary">
+          <div className="hidden lg:flex shrink-0 items-start gap-x-6 rounded-lg border border-primary/20 bg-white px-5 py-3 text-sm font-bold leading-tight shadow-sm">
+            <div className="grid grid-cols-[auto_auto] gap-x-3 gap-y-1">
+              <span className="col-span-2 mb-1 font-extrabold uppercase tracking-wide text-xs text-primary">
                 CET Code
               </span>
-              <span className="text-muted-foreground">Aided</span>
-              <span className="text-right font-bold tabular-nums text-foreground">E031</span>
-              <span className="text-muted-foreground">Unaided</span>
-              <span className="text-right font-bold tabular-nums text-foreground">E049</span>
+              <span className="uppercase text-foreground">Aided</span>
+              <span className="text-left font-bold tabular-nums text-foreground">E031</span>
+              <span className="uppercase text-foreground">Unaided</span>
+              <span className="text-left font-bold tabular-nums text-foreground">E049</span>
             </div>
-            <div className="grid grid-cols-[auto_auto] gap-x-2">
-              <span className="col-span-2 mb-0.5 font-semibold uppercase tracking-wide text-[10px] text-primary">
+            <div className="w-px self-stretch bg-primary/15" />
+            <div className="grid grid-cols-[auto_auto] gap-x-3 gap-y-1">
+              <span className="col-span-2 mb-1 font-extrabold uppercase tracking-wide text-xs text-primary">
                 Other Codes
               </span>
-              <span className="text-muted-foreground">COMEDK</span>
-              <span className="text-right font-bold tabular-nums text-foreground">E024</span>
-              <span className="text-muted-foreground">MBA</span>
-              <span className="text-right font-bold tabular-nums text-foreground">B124</span>
-              <span className="text-muted-foreground">M.Tech.</span>
-              <span className="text-right font-bold tabular-nums text-foreground">T810</span>
-              <span className="text-muted-foreground">MCA</span>
-              <span className="text-right font-bold tabular-nums text-foreground">C408MC</span>
+              <span className="uppercase text-foreground">COMEDK</span>
+              <span className="text-left font-bold tabular-nums text-foreground">E024</span>
+              <span className="uppercase text-foreground">MBA</span>
+              <span className="text-left font-bold tabular-nums text-foreground">B124</span>
+              <span className="uppercase text-foreground">M.Tech.</span>
+              <span className="text-left font-bold tabular-nums text-foreground">T810</span>
+              <span className="uppercase text-foreground">MCA</span>
+              <span className="text-left font-bold tabular-nums text-foreground">C408MC</span>
             </div>
           </div>
 
           {/* Mobile Menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-            <SheetTrigger asChild className="lg:hidden">
+            <SheetTrigger asChild className="lg:hidden shrink-0">
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
               </Button>
@@ -162,14 +174,15 @@ export function Header() {
           </Sheet>
         </div>
       </div>
+      </div>
 
       {/* Row 2: full-width desktop navigation */}
       <div className="hidden lg:block bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <nav className="relative">
-            <NavigationMenu>
-              <NavigationMenuList className="gap-0.5">
-                {navigationData.map((item: NavigationItem) => (
+            <NavigationMenu viewport={false} className="max-w-none w-full justify-start">
+              <NavigationMenuList className="gap-0.5 justify-start">
+                {navigationData.map((item: NavigationItem, index: number) => (
                   <NavigationMenuItem key={item.title}>
                     {!item.items && item.href ? (
                       <a
@@ -187,8 +200,12 @@ export function Header() {
                       {item.title}
                     </NavigationMenuTrigger>
 
-                    <NavigationMenuContent>
-                      <div className="w-[800px] p-6 space-y-6 max-h-[70vh] overflow-y-auto">
+                    <NavigationMenuContent
+                      className={cn(
+                        index >= navigationData.length / 2 && "!left-auto right-0"
+                      )}
+                    >
+                      <div className="w-[800px] max-w-[calc(100vw-2rem)] p-6 space-y-6 max-h-[70vh] overflow-y-auto">
                         {(() => {
                           const flatLinks = item.items?.some(isLink) && (
                             <div className="grid grid-cols-3 gap-3">

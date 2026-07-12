@@ -51,9 +51,9 @@ export const specialOfficers = [
     photo: asset("research/officers/dr-mamata-j-sataraddi.webp"),
   },
   {
-    name: "Dr. Viswanath Khagawade",
+    name: "Dr. Vishwanath Kagawade",
     role: "Special Officer, Research & Development",
-    email: "viswanath.1312@gmail.com",
+    email: "vishwanath.1312@gmail.com",
     photo: asset("research/officers/dr-vishwanath-kagwade.webp"),
   },
 ];

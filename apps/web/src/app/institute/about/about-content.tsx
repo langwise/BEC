@@ -27,8 +27,8 @@ export default function AboutContent() {
     { label: "Founded", value: "1963", icon: Building2 },
     { label: "Campus Size", value: "93 Acres", icon: Trophy },
     { label: "Alumni", value: "Global", icon: Users },
-    { label: "Students", value: "3,200+", icon: GraduationCap },
-    { label: "Faculty", value: "180+", sub: "43% PhDs", icon: Award },
+    { label: "Students", value: "3,500+", icon: GraduationCap },
+    { label: "Faculty", value: "180+", sub: "55% PhDs", icon: Award },
     { label: "Research Centers", value: "10", icon: BookOpen },
   ];
 
@@ -206,7 +206,7 @@ export default function AboutContent() {
                   </span>{" "}
                   is a premier technical institution located in North Karnataka.
                   Started in 1963, the college has grown tremendously over the
-                  years and currently has 11 UG, 8 PG and 10 Research Centers
+                  years and currently has 11 UG, 6 PG and 10 Research Centers
                   recognized by VTU, Belagavi.
                 </p>
                 <p>
@@ -240,11 +240,11 @@ export default function AboutContent() {
                   </span>
                   , with{" "}
                   <span className="font-semibold text-primary">
-                    43% of them holding PhD’s
+                  55% of them holding PhD’s
                   </span>
                   , supported by nearly 200 staff members, the college offers an
                   unbeatable ambience and superior quality of education for its
-                  3,200+ students.
+                  3,500+ students.
                 </p>
               </div>
             </div>
