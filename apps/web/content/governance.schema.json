@@ -39,6 +39,7 @@
           "phone": { "type": "string" },
           "focus": { "type": "string", "description": "Short description of the portfolio." },
           "link": { "type": "object", "description": "Optional CTA link rendered on the card (e.g. to the Research page).", "required": ["href", "label"], "additionalProperties": false, "properties": { "href": { "type": "string" }, "label": { "type": "string" } } },
+          "roleBadges": { "type": "array", "description": "Multiple role badges, each optionally linking to its own page. Overrides the single 'role' badge on the card.", "items": { "type": "object", "required": ["label"], "additionalProperties": false, "properties": { "label": { "type": "string" }, "link": { "type": "object", "required": ["href", "label"], "additionalProperties": false, "properties": { "href": { "type": "string" }, "label": { "type": "string" } } } } } },
           "placeholder": { "type": "boolean", "description": "Set true while the person is unconfirmed; renders a 'to be updated' badge." },
           "verify": { "type": "boolean", "description": "Set true when the name/role mapping is a best-guess that a coordinator should confirm." }
         }

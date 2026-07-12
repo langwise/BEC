@@ -20,7 +20,10 @@
       "photo": "governance/deans/dr-mahabaleshwar-s-k.webp",
       "email": "mahabalesh_sk@yahoo.co.in",
       "focus": "Research, innovation, consultancy & ICT infrastructure",
-      "link": { "href": "/research", "label": "View Research & Development" }
+      "roleBadges": [
+        { "label": "Dean (R&D)", "link": { "href": "/research", "label": "View Research & Development" } },
+        { "label": "Dean (ICT)", "link": { "href": "/institute/dean-ict", "label": "View Dean (ICT) Office" } }
+      ]
     },
     {
       "role": "Dean (Career Guidance & Placement)",

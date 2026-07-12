@@ -14,7 +14,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Dean ICT",
   description:
-    "Office of the Dean, Information and Communications Technology (ICT) at Basaveshwar Engineering College Bagalkote — message from Dr. Mahabaleshwar S. Kakkasageri, the ICT team and campus IT infrastructure highlights.",
+    "Office of the Dean, Information and Communications Technology (ICT) at Basaveshwar Engineering College Bagalkote — message from Dr. Mahabaleshwar S. K., the ICT team and campus IT infrastructure highlights.",
   path: "/institute/dean-ict",
 });
 
@@ -30,29 +30,27 @@ const messageParagraphs = [
 
 const ictTeam = [
   {
-    name: "Dr. Mahabaleshwar S K",
-    designation: "Dean",
-    photo: asset("governance/deans/dean-ict-dr-mahabaleshwar-s-k.webp"),
-    tone: "primary" as const,
-  },
-  {
-    name: "Mr. Kupendrakumar H B",
+    name: "Mr. Kupendrakumar H. B.",
     designation: "Foreman",
+    photo: asset("administration/ict-team/kupendrakumar-h-b.webp"),
     tone: "outline" as const,
   },
   {
     name: "Mr. Prashant Kalhal",
     designation: "Network Administrator",
+    photo: asset("administration/ict-team/prashant-kalhal.webp"),
     tone: "outline" as const,
   },
   {
     name: "Mr. Santosh Mani",
     designation: "Network Administrator",
+    photo: asset("administration/ict-team/santosh-mani.webp"),
     tone: "outline" as const,
   },
   {
     name: "Mr. Kallappa Kumbar",
     designation: "Peon",
+    photo: asset("administration/ict-team/kallappa-kumbar.webp"),
     tone: "outline" as const,
   },
 ];
@@ -92,16 +90,16 @@ export default function DeanIctPage() {
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
         <div className="space-y-8">
-          <SectionHeading eyebrow="Message" title="From the Dean, ICT" />
+          <SectionHeading eyebrow="Message" title="Dean (ICT)" />
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.4fr] lg:items-start">
             <div className="space-y-6 lg:sticky lg:top-24">
-              <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
+              <div className="relative aspect-[2114/2400] w-full overflow-hidden rounded-sm border border-stone-200 bg-stone-100 shadow-sm">
                 <Image
                   src={asset("governance/deans/dean-ict-dr-mahabaleshwar-s-k.webp")}
-                  alt="Dr. Mahabaleshwar S. Kakkasageri, Dean ICT"
+                  alt="Dr. Mahabaleshwar S. K., Dean ICT"
                   fill
                   sizes="(max-width: 1024px) 100vw, 36vw"
-                  className="object-cover object-top"
+                  className="object-cover"
                   priority
                 />
               </div>
@@ -109,21 +107,18 @@ export default function DeanIctPage() {
                 <CardContent className="space-y-3 p-6">
                   <div>
                     <h2 className="text-xl font-semibold text-gray-900">
-                      Dr. Mahabaleshwar S. Kakkasageri
+                      Dr. Mahabaleshwar S. K.
                     </h2>
                     <p className="mt-1 text-sm leading-relaxed text-gray-600">
                       Dean, Information and Communications Technology (ICT)
                     </p>
-                    <p className="text-sm leading-relaxed text-gray-600">
-                      Basaveshwar Engineering College, Bagalkote
-                    </p>
                   </div>
-                  <Link
+                  {/* <Link
                     href={`mailto:${deanEmail}`}
                     className="inline-block text-sm font-semibold text-primary underline-offset-4 hover:underline"
                   >
                     {deanEmail}
-                  </Link>
+                  </Link> */}
                 </CardContent>
               </Card>
             </div>
@@ -139,13 +134,10 @@ export default function DeanIctPage() {
               <div className="border-t border-stone-200 pt-6">
                 <p className="text-sm text-gray-500">Warm regards,</p>
                 <p className="mt-1 text-lg font-semibold text-gray-900">
-                  Dr. Mahabaleshwar S. Kakkasageri
+                  Dr. Mahabaleshwar S. K.
                 </p>
                 <p className="text-sm text-gray-600">
                   Dean, Information and Communications Technology (ICT)
-                </p>
-                <p className="text-sm text-gray-600">
-                  Basaveshwar Engineering College, Bagalkote
                 </p>
                 <p className="mt-2 text-sm text-gray-600">
                   Contact:{" "}

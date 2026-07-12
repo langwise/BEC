@@ -177,7 +177,7 @@ export function Footer() {
               <li className="flex gap-2">
                 <Phone className="h-5 w-5 shrink-0 text-primary" />
                 <span className="text-secondary-foreground/80">
-                  +91-8354-234204
+                +91 76187 81963
                 </span>
               </li>
               <li className="flex gap-2">

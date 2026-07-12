@@ -39,10 +39,10 @@ const heroImage = asset("research/labs/robotics/cine0876.webp");
 
 const anchorNav = [
   { id: "message", label: "Dean's Message" },
+  { id: "officers", label: "Research Office" },
   { id: "centres-of-excellence", label: "Centres of Excellence" },
   { id: "overview", label: "Overview" },
   { id: "centres", label: "Research Centres" },
-  { id: "officers", label: "Research Office" },
   { id: "patents", label: "Patents" },
   { id: "sponsored", label: "Sponsored Research" },
   { id: "resources", label: "Resources" },
@@ -242,7 +242,7 @@ export function ResearchContent() {
 
             <div>
               <SectionHeading
-                eyebrow="Message from the Dean"
+                eyebrow="Message from the Dean (R&D)"
                 title="Fostering a vibrant, impact-driven research ecosystem"
               />
               <Quote className="mt-6 h-10 w-10 text-primary/20" aria-hidden />
@@ -265,6 +265,54 @@ export function ResearchContent() {
                 <p className="text-sm text-gray-600">{dean.role}</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Research office / special officers ─────────────── */}
+      <section id="officers" className="scroll-mt-28 py-16 md:py-20">
+        <div className="container mx-auto max-w-6xl space-y-10 px-4 lg:px-6">
+          <div className="space-y-3">
+            <SectionHeading
+              eyebrow="Research Office"
+              title="Special Officers"
+            />
+            <p className="text-base leading-relaxed text-gray-700 text-justify">
+              Faculty officers who coordinate research administration, scholar
+              registration, funded projects and the college&apos;s research
+              committees.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-around gap-10 py-2">
+            {specialOfficers.map((officer) => (
+              <div
+                key={officer.email}
+                className="flex w-full max-w-xs flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition-shadow hover:shadow-md sm:w-72"
+              >
+                <div className="relative aspect-3/4 w-full overflow-hidden bg-stone-100">
+                  <Image
+                    src={officer.photo}
+                    alt={officer.name}
+                    fill
+                    sizes="(min-width: 640px) 20rem, 90vw"
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col items-center p-5 text-center">
+                  <h3 className="text-lg font-semibold leading-snug text-gray-900">
+                    {officer.name}
+                  </h3>
+                  <p className="mt-1 text-sm text-gray-600">{officer.role}</p>
+                  <Link
+                    href={`mailto:${officer.email}`}
+                    className="mt-3 inline-flex max-w-full items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
+                  >
+                    <Mail className="h-4 w-4 shrink-0" />
+                    <span className="truncate">{officer.email}</span>
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -515,48 +563,6 @@ export function ResearchContent() {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Research office / special officers ─────────────── */}
-      <section id="officers" className="scroll-mt-28 py-16 md:py-20">
-        <div className="container mx-auto max-w-6xl space-y-8 px-4 lg:px-6">
-          <SectionHeading
-            eyebrow="Research Office"
-            title="Special Officers for Research & Development"
-            description="Faculty officers who coordinate research administration, scholar registration, funded projects and the college's research committees."
-          />
-          <div className="grid gap-6 sm:grid-cols-2 lg:max-w-3xl">
-            {specialOfficers.map((officer) => (
-              <div
-                key={officer.email}
-                className="flex items-center gap-5 rounded-2xl border border-stone-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <div className="relative aspect-3/4 w-24 shrink-0 overflow-hidden rounded-xl border border-stone-200 bg-stone-100 sm:w-28">
-                  <Image
-                    src={officer.photo}
-                    alt={officer.name}
-                    fill
-                    sizes="120px"
-                    className="object-cover object-top"
-                  />
-                </div>
-                <div className="min-w-0">
-                  <h3 className="text-lg font-semibold leading-snug text-gray-900">
-                    {officer.name}
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-600">{officer.role}</p>
-                  <Link
-                    href={`mailto:${officer.email}`}
-                    className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
-                  >
-                    <Mail className="h-4 w-4" />
-                    <span className="truncate">{officer.email}</span>
-                  </Link>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

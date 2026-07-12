@@ -12,7 +12,14 @@ export function DeansGrid({ deans }: { deans: Person[] }) {
         const badges: PersonBadge[] = [];
         // Show the role as a badge only when the name is the card title,
         // otherwise the title already is the role.
-        if (dean.name) badges.push({ label: dean.role, tone: "primary" });
+        if (dean.name) {
+          if (dean.roleBadges?.length) {
+            for (const b of dean.roleBadges)
+              badges.push({ label: b.label, tone: "primary", link: b.link });
+          } else {
+            badges.push({ label: dean.role, tone: "primary" });
+          }
+        }
         if (dean.placeholder)
           badges.push({ label: "To be updated", tone: "outline" });
 

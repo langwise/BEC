@@ -11,6 +11,8 @@ export type PersonBadgeTone = "primary" | "muted" | "outline";
 export type PersonBadge = {
   label: string;
   tone?: PersonBadgeTone;
+  /** Optional link that turns this specific badge into a CTA. */
+  link?: { href: string; label: string };
 };
 
 export type PersonCardProps = {
@@ -100,7 +102,9 @@ export function PersonCard({
         {badges.length ? (
           <div className="flex flex-wrap items-center gap-2 pt-0.5">
             {badges.map((badge, index) => {
-              const isLinked = link && index === linkBadgeIndex;
+              const badgeLink =
+                badge.link ?? (index === linkBadgeIndex ? link : undefined);
+              const isLinked = Boolean(badgeLink);
               const badgeEl = (
                 <Badge
                   {...badgeProps(badge.tone ?? "muted")}
@@ -117,12 +121,12 @@ export function PersonCard({
                 </Badge>
               );
 
-              return isLinked ? (
+              return badgeLink ? (
                 <Link
                   key={`${badge.label}-${index}`}
-                  href={link.href}
-                  aria-label={link.label}
-                  title={link.label}
+                  href={badgeLink.href}
+                  aria-label={badgeLink.label}
+                  title={badgeLink.label}
                   className="group/badge inline-flex rounded-sm underline decoration-white/40 decoration-dotted underline-offset-4 hover:decoration-white/70"
                 >
                   {badgeEl}

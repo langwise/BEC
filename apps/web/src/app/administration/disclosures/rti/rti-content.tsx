@@ -77,11 +77,11 @@ export function RtiContent() {
                                     <div className="pt-2 border-t border-stone-100 space-y-1">
                                         <p className="flex items-center gap-2 text-gray-700">
                                             <span className="font-medium w-20 text-xs uppercase tracking-wide text-gray-500">Contact No:</span>
-                                            08354-234204
+                                            76187 81963
                                         </p>
                                         <p className="flex items-center gap-2 text-gray-700">
                                             <span className="font-medium w-20 text-xs uppercase tracking-wide text-gray-500">Fax:</span>
-                                            08354-234204
+                                            76187 81963
                                         </p>
                                     </div>
                                 </CardContent>
@@ -149,11 +149,11 @@ export function RtiContent() {
                                     <div className="pt-2 border-t border-stone-100 space-y-1">
                                         <p className="flex items-center gap-2 text-gray-700">
                                             <span className="font-medium w-24 text-xs uppercase tracking-wide text-gray-500">ದೂರವಾಣಿ ಸಂಖ್ಯೆ:</span>
-                                            08354-234204
+                                            76187 81963
                                         </p>
                                         <p className="flex items-center gap-2 text-gray-700">
                                             <span className="font-medium w-24 text-xs uppercase tracking-wide text-gray-500">ಫ್ಯಾಕ್ಸ್:</span>
-                                            08354-234204
+                                            76187 81963
                                         </p>
                                     </div>
                                 </CardContent>

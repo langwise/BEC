@@ -9,6 +9,8 @@ export type Person = {
   phone?: string;
   focus?: string;
   link?: { href: string; label: string };
+  /** Multiple role badges, each optionally linking to its own page. */
+  roleBadges?: { label: string; link?: { href: string; label: string } }[];
   placeholder?: boolean;
   verify?: boolean;
 };

@@ -31,8 +31,8 @@ export const researchStats = [
 
 // Message from the Dean (R&D), provided by BEC (Comments_Research_16-06-2026).
 export const dean = {
-  name: "Dr. Mahabaleshwar S. Kakkasageri",
-  role: "Dean, Research & Development and ICT",
+  name: "Dr. Mahabaleshwar S. K.",
+  role: "Dean (Research & Development)",
   email: "mahabalesh_sk@yahoo.co.in",
   photo: asset("governance/deans/dr-mahabaleshwar-s-k.webp"),
   message: [

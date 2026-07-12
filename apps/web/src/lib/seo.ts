@@ -19,7 +19,7 @@ export const ORG = {
   parentOrganization: "B.V.V. Sangha",
   affiliation: "Visvesvaraya Technological University (VTU), Belagavi",
   email: "becprincipal@yahoo.com",
-  telephone: ["+91-8354-234204"],
+  telephone: ["+91-76187-81963"],
   address: {
     street: "S. Nijalingappa Vidyanagar",
     city: "Bagalkote",
