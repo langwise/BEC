@@ -156,6 +156,8 @@ export type DepartmentContent = {
     exicomGroups?: { title: string; members: string[] }[];
     /** Asset keys for an activity-highlights photo gallery shown at the end of the section. */
     gallery?: string[];
+    /** Events organised by the association (name + date + coordinators), shown as a list. */
+    events?: { title: string; date?: string; coordinators?: string }[];
   }[];
   mous?: { partner: string; location?: string; since?: string }[];
   /** Asset keys for MoU signing photos, shown as a gallery under the MoUs section. */
@@ -190,6 +192,8 @@ export type DepartmentContent = {
   }[];
   /** Best-practices PDFs surfaced on the department Home tab. */
   bestPractices?: { title: string; file: string }[];
+  /** Best practices shown as text (practice + year) on the Home tab, instead of a PDF link. */
+  bestPracticesList?: { practice: string; year?: string }[];
   /** Move the Best Practices block out of the Home tab and under "About Department". */
   bestPracticesUnderAbout?: boolean;
   /** Per-department section heading overrides, keyed by section id. */

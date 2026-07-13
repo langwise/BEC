@@ -120,13 +120,40 @@ function HighlightsBlock({ highlights }: { highlights: string[] }) {
   );
 }
 
-/** Best Practices card — shown on Home or (per-department) under "About". */
-function BestPracticesBlock({ documents }: { documents: NonNullable<DepartmentData["bestPractices"]> }) {
-  if (!documents?.length) return null;
+/** Best Practices card — shown on Home or (per-department) under "About".
+ *  Renders a text list (practice + year) and/or downloadable PDFs. */
+function BestPracticesBlock({
+  documents,
+  list,
+}: {
+  documents?: DepartmentData["bestPractices"];
+  list?: DepartmentData["bestPracticesList"];
+}) {
+  if (!documents?.length && !list?.length) return null;
   return (
     <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
       <h2 className="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Best Practices</h2>
-      <DocGrid documents={documents} />
+      {list?.length ? (
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {list.map((b, i) => (
+            <li
+              key={i}
+              className="flex items-start gap-3 p-3 rounded-lg hover:bg-orange-50 transition-colors"
+            >
+              <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+              <span className="text-gray-700 font-medium">
+                {b.practice}
+                {b.year && <span className="ml-1 font-normal text-gray-500">· {b.year}</span>}
+              </span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {documents?.length ? (
+        <div className={list?.length ? "mt-6" : ""}>
+          <DocGrid documents={documents} />
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -378,7 +405,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                 )}
                 {/* Vision & Mission directly after the overview (per-department) */}
                 {dept.visionMissionOnHome && (
-                    <div className="grid grid-cols-1 gap-8">
+                    <div className="grid grid-cols-1 gap-4">
                         <ContentSection
                             title={dept.vision.title}
                             content={dept.vision.content}
@@ -405,9 +432,10 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                 )}
                 {/* Highlights — hidden on Home when moved under About */}
                 {!dept.visionMissionOnHome && <HighlightsBlock highlights={dept.highlights} />}
-                {!dept.bestPracticesUnderAbout && dept.bestPractices && (
-                    <BestPracticesBlock documents={dept.bestPractices} />
-                )}
+                {!dept.bestPracticesUnderAbout &&
+                    (dept.bestPractices?.length || dept.bestPracticesList?.length) && (
+                        <BestPracticesBlock documents={dept.bestPractices} list={dept.bestPracticesList} />
+                    )}
                 {dept.homeGroupPhoto && (
                     <div className="pt-4">
                         <GroupPhotoBanner image={dept.homeGroupPhoto} />
@@ -466,9 +494,10 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     <ContentSection groups={dept.about.groups} justify />
                 )}
 
-                {dept.bestPracticesUnderAbout && dept.bestPractices && (
-                    <BestPracticesBlock documents={dept.bestPractices} />
-                )}
+                {dept.bestPracticesUnderAbout &&
+                    (dept.bestPractices?.length || dept.bestPracticesList?.length) && (
+                        <BestPracticesBlock documents={dept.bestPractices} list={dept.bestPracticesList} />
+                    )}
             </div>
         )
     }

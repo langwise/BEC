@@ -157,6 +157,9 @@ export interface DepartmentData {
   /** Best-practices PDFs surfaced on the Home tab. */
   bestPractices?: DocLink[];
 
+  /** Best-practices displayed as text (practice + year) instead of a PDF link. */
+  bestPracticesList?: { practice: string; year?: string }[];
+
   /** When true, the Best Practices block moves from the Home tab to "About Department". */
   bestPracticesUnderAbout?: boolean;
 
@@ -562,7 +565,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         groups.push({ subtitle: lab.name, text: lab.description, items: lab.features, images: labImages(lab), featureImages: lab.feature });
       }
     const tables = [
-      ...(content.achievementsUnderResearch ? achievementTables() : []),
+      ...(content.achievementsUnderResearch ? [...achievementTables(), ...patentsTables()] : []),
       ...(content.labsUnderFacilities ? infrastructureTables() : []),
     ];
     sections.push({
@@ -618,8 +621,9 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
-  // Patents — filed / published / granted.
-  if (content.patents?.length && !foldPublications) {
+  // Patents — filed / published / granted. Folded into the Research tab when
+  // achievements live there (achievementsUnderResearch); otherwise a standalone tab.
+  if (content.patents?.length && !foldPublications && !content.achievementsUnderResearch) {
     sections.push({
       id: "patents",
       type: "tables",
@@ -857,6 +861,14 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         ? ` Faculty Coordinators (2025–2026): ${assoc.coordinators.join(" and ")}.`
         : "";
       groups.push({ subtitle: assoc.name, text: `${assoc.about ?? ""}${coords}`.trim() });
+      if (assoc.events?.length)
+        groups.push({
+          subtitle: "Events Organised",
+          items: assoc.events.map((e) => ({
+            label: e.title,
+            value: [e.date, e.coordinators].filter(Boolean).join(" · "),
+          })),
+        });
       if (assoc.exicom?.length)
         groups.push({
           subtitle: "Association Exicoms (2025–2026)",
@@ -1174,6 +1186,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     },
     highlights: content?.highlights ?? defaultHighlights,
     bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
+    bestPracticesList: content?.bestPracticesList,
     bestPracticesUnderAbout: content?.bestPracticesUnderAbout,
     visionMissionOnHome: content?.visionMissionOnHome,
     homeGroupPhoto: content?.homeGroupPhoto

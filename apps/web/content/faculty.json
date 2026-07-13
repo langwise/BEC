@@ -120,9 +120,10 @@
         "photo": "departments/cse/faculty/netra-yaradoni.webp"
       },
       {
-        "name": "Shri. Manjunath Sholapur",
+        "name": "Prof. Manjunath Sholapur",
         "designation": "Assistant Professor",
-        "photo": "departments/cse/faculty/manjunath-sholapur.webp"
+        "photo": "departments/cse/faculty/manjunath-sholapur.webp",
+        "cv": "departments/cse/faculty/cv/manjunath-sholapur.pdf"
       }
     ],
     "ai-and-ml": [
@@ -260,15 +261,18 @@
       },
       {
         "name": "Prof. Apoorva Kulkarni",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "photo": "departments/eee/faculty/apoorva-kulkarni.webp"
       },
       {
         "name": "Dr. G. Suchitra",
-        "designation": "Associate Professor"
+        "designation": "Associate Professor",
+        "photo": "departments/eee/faculty/g-suchitra.webp"
       },
       {
         "name": "Prof. R. G. Patil",
-        "designation": "Associate Professor"
+        "designation": "Associate Professor",
+        "photo": "departments/eee/faculty/r-g-patil.webp"
       },
       {
         "name": "Prof. S. M. Iddalagi",

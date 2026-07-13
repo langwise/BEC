@@ -2797,6 +2797,225 @@
         {
           "title": "Online Alumni Meet — 141 registered, 99 attended from across the world (incl. USA & UK)",
           "date": "Apr 2021"
+        },
+        {
+          "title": "Deepotsava — Diya Decoration & Lantern Making",
+          "date": "Oct 2025",
+          "description": "The department opened its 2025–26 activity calendar with Deepotsava, a colourful festival of lights on 17 October 2025, where students showcased their creativity in diya decoration and lantern-making competitions.",
+          "images": [
+            {
+              "key": "departments/cse/activities/deepotsava.webp",
+              "caption": "Lamp-lighting at the Deepotsava inauguration"
+            }
+          ]
+        },
+        {
+          "title": "Code-Clash — Coding Competition",
+          "date": "Oct 2025",
+          "description": "A coding competition, Code-Clash, was conducted on 20 October 2025 for third-semester students.",
+          "details": [
+            "Rounds: Programming Quiz, Fill-in-the-Code, Reverse Coding, Integration, Debugging and a Crossword Puzzle, followed by live coding on HackerRank.",
+            "Participation: 140 students from the 3rd semester."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/code-clash.webp",
+              "caption": "Third-semester students at the Code-Clash contest"
+            }
+          ]
+        },
+        {
+          "title": "Arohana — Fresher's Day Celebration",
+          "date": "Nov 2025",
+          "description": "The department welcomed its second-year students with Arohana, a Fresher's Day celebration on 7 November 2025, featuring a range of technical and non-technical events.",
+          "images": [
+            {
+              "key": "departments/cse/activities/arohana.webp",
+              "caption": "Inaugural lamp-lighting at Arohana"
+            }
+          ]
+        },
+        {
+          "title": "Karnataka Vaibhav — Kannada Rajyotsava Celebration",
+          "date": "Nov 2025",
+          "description": "On the occasion of Karnataka Rajyotsava, the department celebrated Karnataka Vaibhav with cultural pride on 15 November 2025, organising Rangoli and Photography competitions.",
+          "images": [
+            {
+              "key": "departments/cse/activities/karnataka-vaibhav.webp",
+              "caption": "Students with their Rangoli entry at Karnataka Vaibhav"
+            }
+          ]
+        },
+        {
+          "title": "Idea Presentation — Technology at 2050: Envisioning the Future",
+          "date": "Nov 2025",
+          "description": "An Idea Presentation on the theme 'Technology at 2050 – Envisioning the Future' was held on 28 November 2025, with enthusiastic participation from fifth-semester students across CSE, AIML, ISE, ECE and EEE.",
+          "details": [
+            "Organised by Prof. S. N. Benkikeri and Prof. J. S. Mulimani."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/idea-presentation-2050.webp",
+              "caption": "The Idea Presentation session on 'Technology at 2050'"
+            }
+          ]
+        },
+        {
+          "title": "Aurora — Two-Day Sports Event",
+          "date": "Nov 2025",
+          "description": "A two-day sports event, Aurora, was organised for final-year students on 29–30 November 2025, with contests in cricket, volleyball, badminton, carrom, chess and more.",
+          "images": [
+            {
+              "key": "departments/cse/activities/aurora.webp",
+              "caption": "Final-year students competing at Aurora"
+            }
+          ]
+        },
+        {
+          "title": "Skill Development Programme on Agentic AI",
+          "date": "Dec 2025",
+          "description": "A Skill Development Programme on Agentic AI was conducted on 5 December 2025.",
+          "details": [
+            "Resource person: Mr. Ashish Zingade, Senior Consultant, Dynatrace.",
+            "Topics: Agentic AI and LLMs, Prompt Engineering, AI-driven software development, automation, and career opportunities.",
+            "Organised by Prof. V. B. Hunagund, Prof. Smitha K. and Dr. Shama P. S."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/sdp-agentic-ai.webp",
+              "caption": "The Skill Development Programme on Agentic AI"
+            }
+          ]
+        },
+        {
+          "title": "Project Exhibition & Contest",
+          "date": "Dec 2025",
+          "description": "A Project Exhibition and Contest for final-year students was held on 6 December 2025.",
+          "details": [
+            "Coordinated by Dr. V. B. Pagi and Prof. Netra Yaradoni."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/project-exhibition.webp",
+              "caption": "Prize distribution at the Project Exhibition & Contest"
+            }
+          ]
+        },
+        {
+          "title": "AI Tools for Innovators and Entrepreneurs",
+          "date": "Dec 2025",
+          "description": "In association with the IQAC, a session on 'AI Tools for Innovators and Entrepreneurs' was delivered by Dr. Vishwanath Kagawade on 30 December 2025.",
+          "details": [
+            "Organised by Prof. Smita K."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/ai-tools-session.webp",
+              "caption": "Session on AI tools for innovators and entrepreneurs"
+            }
+          ]
+        },
+        {
+          "title": "Paper Presentation Contest",
+          "date": "Jan 2026",
+          "description": "A Paper Presentation Contest exclusively for final-year CSE students was held on 6 January 2026, encouraging research-oriented learning and professional skill development.",
+          "details": [
+            "Organised by Prof. P. B. Madhavanavar and Prof. Shilpa P. Madhavanavar."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/paper-presentation.webp",
+              "caption": "Final-year students at the Paper Presentation Contest"
+            }
+          ]
+        },
+        {
+          "title": "'Coder of the Month' Initiative",
+          "date": "Jan 2026",
+          "description": "Launched in January 2026, the 'Coder of the Month' initiative encourages CSE students to code consistently on online platforms. Each month, students' coding activity and performance are reviewed and the top performers are recognised.",
+          "images": [
+            {
+              "key": "departments/cse/activities/coder-of-the-month.webp",
+              "caption": "The 'Coder of the Month' initiative"
+            }
+          ]
+        },
+        {
+          "title": "Robotic Process Automation (RPA) Workshop",
+          "date": "Feb 2026",
+          "description": "A Robotic Process Automation (RPA) workshop for third-year CSE students was held on 8 February 2026.",
+          "details": [
+            "Resource person: Mr. Prathik N., Software Engineer, Itron, Bangalore.",
+            "Covered RPA environment setup, automation tasks and mini-project applications.",
+            "Organised by Prof. K. S. Patil and Dr. Vasudha Bonal."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/rpa-workshop.webp",
+              "caption": "Felicitation of the resource person at the RPA workshop"
+            }
+          ]
+        },
+        {
+          "title": "Blind Coding Contest",
+          "date": "Feb 2026",
+          "description": "A Blind Coding Contest for CSE, ISE, AIML and ECE students was held on 28 February 2026. The event tested programming skills without screen visibility, emphasising logical thinking, memory and debugging.",
+          "details": [
+            "Organised by Dr. Vilas Naik, Prof. Basavaraj Malapur and Prof. Smita Gour."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/blind-coding.webp",
+              "caption": "Inauguration of the Blind Coding Contest"
+            }
+          ]
+        },
+        {
+          "title": "Frontend Foundation — One-Day Workshop",
+          "date": "Mar 2026",
+          "description": "A one-day workshop, Frontend Foundation, was organised for first-year CSE students on 28 March 2026, conducted by third-year students led by Sachin Mugali.",
+          "details": [
+            "Coordinated by Prof. Basavaraj Malapur."
+          ],
+          "images": [
+            {
+              "key": "departments/cse/activities/frontend-foundation.webp",
+              "caption": "First-year students at the Frontend Foundation workshop"
+            }
+          ]
+        },
+        {
+          "title": "Utkarsha 2K26 — Cultural Fest",
+          "date": "Apr 2026",
+          "description": "The department organised Utkarsha 2K26, a grand cultural fest, on 25 April 2026, featuring Short Film Making, Photography, E-Sports, Rangoli, Sketching, Dance, Singing, Drama and a Fashion Show.",
+          "images": [
+            {
+              "key": "departments/cse/activities/utkarsha-2k26.webp",
+              "caption": "A dance performance at Utkarsha 2K26"
+            }
+          ]
+        },
+        {
+          "title": "TechIgnite 3.0 — Technical Fest",
+          "date": "May 2026",
+          "description": "TechIgnite 3.0, a college-level technical fest, was held on 19–20 May 2026, with students from CSE, ISE, AIML, ECS and ECE competing in Byte-Battle, WebXcelerate, Triumphix, CipherQuest and Hacker Hunt.",
+          "images": [
+            {
+              "key": "departments/cse/activities/techignite-3.webp",
+              "caption": "Participants and organisers at TechIgnite 3.0"
+            }
+          ]
+        },
+        {
+          "title": "Smruti 2026 — Farewell",
+          "date": "Jun 2026",
+          "description": "The department bid farewell to its graduating students with Smruti 2026 on 13 June 2026.",
+          "images": [
+            {
+              "key": "departments/cse/activities/smruti-farewell.webp",
+              "caption": "Farewell group photograph at Smruti 2026"
+            }
+          ]
         }
       ],
       "associations": [
@@ -5372,7 +5591,7 @@
       ],
       "committeeGroups": [
         {
-          "title": "Board of Studies (2024-25)",
+          "title": "Board of Studies (2026-27)",
           "members": [
             {
               "name": "Dr. R. L. Naik",
@@ -5425,6 +5644,26 @@
             {
               "name": "Mr. B. S. Hadapad",
               "position": "Member — Assistant Professor, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Smt. Apoorva Kulkarni",
+              "position": "Member — Assistant Professor, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Ms. Nanditha G. Hiremath",
+              "position": "Student Member — USN 2BA23EE026, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Mr. Prathamesh Mutalikdesai",
+              "position": "Student Member — USN 2BA23EE032, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Mr. Parameshwar S. Dengi",
+              "position": "Student Member — USN 2BA24EE030, Dept. of E&EE, BEC"
+            },
+            {
+              "name": "Ms. Sneha S. Kumbar",
+              "position": "Student Member — USN 2BA24EE054, Dept. of E&EE, BEC"
             },
             {
               "name": "Dr. Basanagouda Ronad",
@@ -5660,12 +5899,100 @@
           "usage": "Smart-grid modelling and simulation (PRDC, Bengaluru)"
         }
       ],
+      "distinguishedAlumni": [
+        {
+          "name": "Mr. Girish G. Dixit",
+          "designation": "Group Director — Flight Control Systems (FIETE, FASI)",
+          "organization": "Aeronautical Development Agency, Ministry of Defence, Govt. of India, Bengaluru · Class of 1983"
+        },
+        {
+          "name": "Mr. Sagar Halbhavi",
+          "designation": "Special Officer (Retd.)",
+          "organization": "Visvesvaraya Technological University, Belagavi · Class of 1984"
+        },
+        {
+          "name": "Mr. Shirish Divgi",
+          "designation": "Managing Director",
+          "organization": "Plastics Machinery Manufacturers Association of India · Class of 1985"
+        },
+        {
+          "name": "Mr. Mahesh Bellad",
+          "designation": "Managing Director",
+          "organization": "Online Instruments (India) Pvt. Ltd. / Mahabell Industries, Mumbai · Class of 1985"
+        },
+        {
+          "name": "Dr. Sudharshana Reddy H. R.",
+          "designation": "Regional Director",
+          "organization": "Visvesvaraya Technological University, Bengaluru Region · Class of 1989"
+        },
+        {
+          "name": "Mr. Vinayak Hegde",
+          "designation": "Vice President & Delivery Head",
+          "organization": "Infosys, Mysuru · Class of 1993"
+        },
+        {
+          "name": "Mr. Suresh C. Bommireddy",
+          "designation": "Senior IT Leader",
+          "organization": "GE, Bengaluru · Class of 1996"
+        },
+        {
+          "name": "Dr. Rajesh Saiju",
+          "designation": "Professor (Dr.-Ing.)",
+          "organization": "University of Applied Sciences Flensburg, Germany · Class of 1996"
+        },
+        {
+          "name": "Mr. V. A. Kulkarni",
+          "designation": "Professor & Principal",
+          "organization": "KLS's V. D. Institute of Technology, Haliyal · Class of 1996"
+        },
+        {
+          "name": "Mr. Rahul Kulkarni",
+          "designation": "Senior Solution Architect",
+          "organization": "HP Enterprise, Bengaluru · Class of 1999"
+        },
+        {
+          "name": "Mr. Prasad Jigajinni",
+          "designation": "Advanced Lead Engineer",
+          "organization": "Wabtec Corporation, Bengaluru · Class of 1999"
+        },
+        {
+          "name": "Mr. Jayaprakash Sabarad",
+          "designation": "Engineering Technical Leader",
+          "organization": "Wabtec India Industrial Pvt. Ltd., Bengaluru · Class of 2002"
+        },
+        {
+          "name": "Mr. Prathap Ghorapade",
+          "designation": "Senior Technical Manager",
+          "organization": "Texas Instruments India Pvt. Ltd., Bengaluru · Class of 2003"
+        },
+        {
+          "name": "Mr. Hanamanthgouda F. Ronad",
+          "designation": "Mixed-Signal Design Verification Engineer",
+          "organization": "Texas Instruments Inc., Dallas, USA · Class of 2005"
+        },
+        {
+          "name": "Mr. K. G. Hiremath",
+          "designation": "Chief Engineer",
+          "organization": "KPTCL, Divisional Office, Bagalkot · Class of 2010"
+        },
+        {
+          "name": "Mr. Kapil Verma",
+          "designation": "Senior Manager, Supply Chain Improvement",
+          "organization": "CEAT Tyres, Mumbai · Class of 2010"
+        }
+      ],
       "associations": [
         {
           "name": "IEEE Power and Energy Society (PES) Student Branch Chapter",
           "about": "Established in 2016 in the EEE department (Chapter 35261A) to organize social and professional activities that strengthen and enrich the community within the department.",
           "coordinators": [
             "Prof. Sangamesh Y. Goudappanavar"
+          ],
+          "photo": "departments/eee/association/ieee-pes-volunteers.webp",
+          "photoCaption": "IEEE PES Student Branch Chapter faculty and student volunteers, Department of E&EE",
+          "gallery": [
+            "departments/eee/association/vigama-farewell-1.webp",
+            "departments/eee/association/vigama-farewell-2.webp"
           ]
         },
         {
@@ -5743,8 +6070,8 @@
       "sectionDocuments": {
         "governance": [
           {
-            "title": "Board of Studies Members (2025-2028)",
-            "file": "departments/eee/docs/board-of-studies-members.pdf"
+            "title": "Board of Studies Members (2026-27)",
+            "file": "departments/eee/docs/bos-members-2026-27.pdf"
           },
           {
             "title": "Board of Studies — Signed Proceedings (2025)",
@@ -5942,7 +6269,33 @@
           "date": "22 Mar 2025"
         },
         {
-          "title": "Alumni Mentorship Program (EE Seminar Hall)"
+          "title": "Alumni Webinar: HVDC Transmission - Future Scope and Challenges - Mr. Bharath H. K. (System Studies Engineer, Quest Global, Bengaluru)",
+          "date": "28 Nov 2025",
+          "description": "Faculty coordinator: Prof. S. S. Tambakad, Asst. Professor, Dept. of EEE, BEC, Bagalkote."
+        },
+        {
+          "title": "Alumni Webinar: Software Defined Vehicle - Mr. Shreeshail Beelagi (Engineering Group Manager, TCS, Bengaluru)",
+          "date": "14 Nov 2025",
+          "description": "Faculty coordinator: Dr. B. F. Ronad, Assoc. Professor, Dept. of EEE, BEC, Bagalkote."
+        },
+        {
+          "title": "Industry-Academia Conclave on Sustainable Power System and Energy Integration: Bridging Academia with Industry",
+          "date": "28 Feb 2026",
+          "description": "Resource persons: Dr. Chandrashekar Reddy Atla, Mr. K. B. V. Ramkumar and Mr. Punith Bhurat. Faculty coordinator: Dr. S. Y. Goudappanavar, Asst. Professor, Dept. of EEE, BEC, Bagalkote. Student team leads: Mr. Bharatesh, Ms. Vaishnavi Amate."
+        },
+        {
+          "title": "INKSPIRE Drawing Competition (IEEE PES Day) - Innovating Today, Energizing Tomorrow",
+          "date": "28 Mar 2026",
+          "description": "Resource person and faculty coordinator: Prof. Mahantesh Chikkadesai, Asst. Professor, Dept. of EEE, BEC, Bagalkote. Student team leads: Mr. Shrikanth, Ms. Nanditha Hiremath."
+        },
+        {
+          "title": "Demonstration of Renewable Energy Devices in SCADA, Renewable Energy Laboratory and Energy Park",
+          "date": "12 Dec 2025",
+          "description": "Outreach for students from Govt. Higher Secondary School, Mushtigeri, Badami Taluq, Bagalkote. Faculty coordinators: Dr. S. Y. Goudappanavar, Dr. B. F. Ronad, Mr. M. L. Chikkadesai."
+        },
+        {
+          "title": "Alumni Mentorship Program (EE Seminar Hall)",
+          "description": "A departmental initiative connecting distinguished alumni from industry, academia and entrepreneurship with current students. Alumni mentors are paired with groups of students to provide guidance, share professional experiences and offer career insights."
         },
         {
           "title": "Sports: Cricket - Runners Up, VTU Kalaburagi Division Cricket Tournament, RYMEC Bellary (Veerbhadragouda Patil)",
@@ -7586,40 +7939,6 @@
         "Active industry linkages and internships, with the student association RISE conducting webinars, training programmes and technical events.",
         "Four faculty members are recognised as research supervisors under VTU, Belagavi."
       ],
-      "activities": [
-        {
-          "title": "Technical Talk — Digital Modernization and Digital Marketing (Shri Mohmmad Jalihal, Insystel Technology Solutions, Pune)",
-          "date": "23-06-2021"
-        },
-        {
-          "title": "Staff Development Programme — Revisiting C (Prof. S. S. Gujarati)",
-          "date": "07–22 May 2021"
-        },
-        {
-          "title": "Training Programme — Advanced C Programming (Prof. S. S. Gujarati)",
-          "date": "26 Apr – 04 May 2021"
-        },
-        {
-          "title": "Skill Development Programme — ASP.NET and XML (Km. Leena Araluswami, SmarTee iT Solutions, Hubli)",
-          "date": "19–21 Mar 2021"
-        },
-        {
-          "title": "Celebration — Subhash Chandra Bose Jayanti",
-          "date": "23-01-2021"
-        },
-        {
-          "title": "Celebration — Swami Vivekananda Jayanti",
-          "date": "12-01-2021"
-        },
-        {
-          "title": "Webinar — Ideation (alumnus Shri Aniruddha Kulkarni, USA)",
-          "date": "01-12-2020"
-        },
-        {
-          "title": "Webinar — How to Start a STARTUP (alumni Mr. Mandar R. Mutalikdesai & Mr. Vinay Bhardwaj)",
-          "date": "08-11-2020"
-        }
-      ],
       "associations": [
         {
           "name": "RISE — Rays of Information Science Engineers (Student Association of ISE)",
@@ -7784,6 +8103,28 @@
             "departments/ise/rise/outreach-13.webp",
             "departments/ise/rise/outreach-14.webp",
             "departments/ise/rise/outreach-15.webp"
+          ],
+          "events": [
+            {
+              "title": "INCEPTA 2025",
+              "date": "15/10/2025",
+              "coordinators": "Prof. G. B. Shettar, Prof. S. S. Hiremath"
+            },
+            {
+              "title": "Annual Sports Fest",
+              "date": "13/10/2025 – 15/10/2025",
+              "coordinators": ""
+            },
+            {
+              "title": "TECHNOPHILIA 3.0",
+              "date": "01/04/2026 – 02/04/2026",
+              "coordinators": ""
+            },
+            {
+              "title": "Byte & Bite",
+              "date": "30/05/2026",
+              "coordinators": ""
+            }
           ]
         }
       ],
@@ -7938,13 +8279,13 @@
         "research": "Research Centre — Dr. A. P. J. Abdul Kalam Lab (VTU Recognised Research Centre)",
         "facilities": "Infrastructure",
         "staff": "Technical and Supporting Staff",
-        "activities": "RISE — Rays of Information Science Engineers (Student Association)"
+        "association": "Student Association"
       },
       "sectionNavLabels": {
         "governance": "Board Members",
         "research": "Research Centre",
         "staff": "Technical and Supporting Staff",
-        "activities": "RISE Association"
+        "association": "Student Association"
       },
       "hideInfrastructureQuantity": true,
       "curriculumGroups": [
@@ -8165,13 +8506,6 @@
           "quote": "About the college: well disciplined and well maintained with a huge campus. About the ISE department: well curriculum-oriented — the practicals and theory provided here make students industry-ready."
         }
       ],
-      "bestPractices": [
-        {
-          "title": "Best Practices",
-          "file": "departments/ise/docs/best-practices.pdf"
-        }
-      ],
-      "bestPracticesUnderAbout": true,
       "visionMissionOnHome": true,
       "sectionDocuments": {
         "research": [
@@ -8195,38 +8529,27 @@
           }
         ]
       },
-      "consolidateResearch": true,
-      "publicationsUnderAchievements": true,
       "researchAreas": [
         {
           "supervisor": "Dr. S. R. Patil",
-          "area": "Image processing and pattern recognition"
+          "area": "Image processing and pattern recognition",
+          "university": "VTU"
         },
         {
           "supervisor": "Dr. S. P. Bangarashetti",
-          "area": "Image processing and pattern recognition"
+          "area": "Image processing and pattern recognition",
+          "university": "VTU"
         },
         {
           "supervisor": "Dr. Lokesh Bhajantri",
-          "area": "Wireless sensor networks and ubiquitous networks, IoT and cloud computing"
+          "area": "Wireless sensor networks and ubiquitous networks, IoT and cloud computing",
+          "university": "VTU"
         },
         {
           "supervisor": "Dr. Shivanand Pujar",
-          "area": "Image Processing"
+          "area": "Image Processing",
+          "university": "VTU"
         }
-      ],
-      "researchAreasList": [
-        "Image processing and pattern recognition",
-        "Wireless sensor networks and ubiquitous networks",
-        "Vehicular ad-hoc networks",
-        "IoT and cloud computing",
-        "Data mining and machine/deep learning"
-      ],
-      "researchFacilities": [
-        "e-Resources and digital library access",
-        "National and international journals",
-        "Audio and video facilities",
-        "Reprographic facilities"
       ],
       "phdsAwarded": [
         {
@@ -8304,124 +8627,68 @@
           "status": "Registered 2021"
         }
       ],
-      "publications": [
-        {
-          "category": "Journal Papers",
-          "years": [
-            {
-              "year": "2023–24",
-              "items": [
-                "Sadhana P. Bangarashetti. “Customer Spending Prediction on E-Commerce Website.” Grenze International Journal of Engineering and Technology (GIJET), pp. 118-122, June 2024.",
-                "Gangadharaiah, S., Bhajantri, L. B. “Secure Data Dissemination and Routing in Internet of Things.” International Journal of Information Technology, pp. 1-17, 2024. ISSN 2511-2112.",
-                "Bhajantri, L. B., Ayyannavar, V. V. “Cognitive Agent Based Fault Tolerance in Ubiquitous Networks: A Machine Learning Approach.” International Journal of Information Technology, 16(4), pp. 2363-2377, 2024. ISSN 2511-2112.",
-                "Aditi Kolki, Bagyashree M. C., Panjali Sataraddi, Shreya Katti, Roopa B. Math, Girish B. Shettar. “Survey on Crop Fertilizer Advisor.” International Journal of Advanced Research in Science, Communication and Technology, 4(6), pp. 636-638, 2024. ISSN 2581-9429.",
-                "Anushree M. Zalaki, Lakhnan Hulakund, Sahana Batakurki, Siddu Hiremath, P. S. Puranik. “Fraud Detection of PAN Card using Machine Learning.” International Journal of Research in Engineering, Science and Management, 7, pp. 86-89, May 2024. ISSN 2581-5792.",
-                "Sandeep Kugali. “Design and Development of Automatic Juice Vending Machine.” International Journal of All Research Education and Scientific Methods (IJARESM), Vol. 10, Issue 5, pp. 4680-4685, May 2024. ISSN 2455-6211.",
-                "Mujawar, T. N., Bhajantri, L. B., Sutagundar, A. V. “Hierarchical Access Structure-based Scheme with Outsourcing and Revocation Mechanism for Cloud Environment.” Journal of Telecommunications and Information Technology, 4, pp. 83-92, 2023. ISSN 1899-8852.",
-                "Basavaraj G. Kumbar, Lokesh B. Bhajantri. “Convolutional Neural Network and Fog Computing Approach for Smart Industry.” International Journal of Research and Analysis in Science and Engineering, 4(5), pp. 737-745, 2024. ISSN 2582-8118.",
-                "S. N. Benkikeri, Lokesh B. Bhajantri. “Text-to-Video Generator using Stable Diffusion Model for Dynamic Video Content Creation.” International Journal of Research and Analysis in Science and Engineering, 4(5), pp. 815-823, 2024. ISSN 2582-8118.",
-                "P. K. Deshpande. “A Survey on Placement Management Android Application.” International Journal of Research in Engineering, Science and Management, 7, pp. 35-38, 2024. ISSN 2581-5792.",
-                "P. K. Deshpande. “Placement Management Android Application.” International Journal of Research in Engineering, Science and Management, 7, pp. 101-106, 2024. ISSN 2581-5792.",
-                "P. K. Deshpande. “Face Recognition Attendance System.” International Journal of Research in Engineering, Science and Management, 7, pp. 116-119, 2024. ISSN 2581-5792.",
-                "V. S. Patil. “Creating a News Video Dataset for HEVC Codec Evaluation: Considerations and Best Practices.” Journal of Propulsion Technology, Vol. 45, No. 5, pp. 1-8, 2024.",
-                "V. S. Patil. “NewsFlash: Dynamic Highlight Generator for NEWS Videos.” AES Transactions, Vol. 56, No. 10, pp. 479-482, 2024. ISSN 2096-3246.",
-                "V. S. Patil, Amogh, Soumya, Vikas. “Gym Management System.” International Journal of Novel Research and Development (IJNRD), Vol. 9, Oct 2024. ISSN 2456-4184.",
-                "Ananya Ilkal, Nikhat Itagi, Shrinidhi Lokapur, Deepa I. K. “Event Management System.” International Journal of Novel Research and Development (IJNRD), 9(8), 2024. ISSN 2456-4184.",
-                "Sadhana P. Bangarashetti, Pavan Kunchur. “WhatsApp Based Student Internal Marks Reporting System.” International Journal of Science and Research (IJSR), Vol. 13, pp. 362-365, Feb 2024. ISSN 2319-7064.",
-                "Sadhana P. Bangarashetti. “Multiple Health Disease Prediction.” International Journal of Research in Engineering, Science and Management, Vol. 7, pp. 161-167, May 2024. ISSN 2581-5792.",
-                "Roopa B. Math, Mahantesh M. Ganganallimath. “Applications of Six Sigma to Improve the Passing Percentage of an Engineering Course.” Journal of Mines, Metals and Fuels, 71(6), pp. 848-856, 2023. ISSN 0022-2755."
-              ]
-            },
-            {
-              "year": "2022–23",
-              "items": [
-                "Vidya S. Bennur, Ashok V. Sutagundar, Lokesh B. Bhajantri. “Agent based Localization using Mobile Sink in Wireless Sensor Networks.” International Journal of Sensors Wireless Communications and Control, pp. 1-6, 2022.",
-                "Lokesh B. Bhajantri, Tabassum N. Mujawar. “The Trusted Hierarchical Access Structure-Based Encryption Scheme for Cloud Computing.” International Journal of Cloud Applications and Computing, IGI Global, 12 & 1, pp. 1-17, 2022. ISSN 2156-1834.",
-                "Dr. S. R. Patil, Kishor Parvatikar, Prathiksha Chetana, Bhagyawant Biradar, Vidyashri Mudagal. “An Implementation of self driving Car.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:55 Issue:01:2022, pp. 347-351, 2022. ISSN 0493-2137.",
-                "Dr. S. R. Patil, Kishor Parvatikar, Prathiksha Chetana, Bhagyawant Biradar, Vidyashri Mudagal. “A Review on Self Driving Cars.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:55 Issue:01:2022, pp. 326-334, 2022. ISSN 0493-2137.",
-                "Lokesh B. Bhajantri, Tabassum N. Mujawar. “An Attribute based Encryption Method using Outsourced Decryption and Hierarchical Access Structure.” Journal of Information Technology and Telecommunication, 4, pp. 75-81, 2022. ISSN 1899-8852.",
-                "Dr. Lokesh B. Bhajantri Gangadharaiah S. “Hybrid Centralized Peer to Peer Architecture for Resource Discovery and Secure Communication in Internet of Things.” International Journal on Advanced Science, Engineering and Information Technology, 13 & 2, pp. 726-735, April 2023. ISSN 2088-5334.",
-                "Chetana R Shivanagi, Afak R Makandar, Amanli T, Prasad K kadapatti, Vinodkumar Poleshi. “A Survey On AI Based Proctoring System For Online Tests.” International Journal Of Scientific Development And Research (IJSDR), 8 &5, pp. 967-969, May 2023. ISSN 2455-2631.",
-                "Sandeep Kugali, Pooja Mavinakai, Pooja ragi, Sneha Patil, Vidya Murteli. “A Survey On Vehicle Safety and Alert system.” International Journal Of Scientific Development And Research (IJSDR), 8 & 3, pp. 213-221, 2023. ISSN 2455-2631.",
-                "P. K. Deshpande, Sharik sameera Mulla, Anjana Umarji, Aishwarya Sangapur, Saniha Hunur. “IoT based Smart object Detector: A Survey.” International Journal Of Scientific Development And Research (IJSDR), 8 & 3, pp. 50-57, 2023. ISSN 2455-2631.",
-                "P. K. Deshpande, Poonam Patil, Aishwarya Kannalli, Ptrachi Solankure. “A Survey on Driver Drowsiness detection System.” International Journal Of Scientific Development And Research (IJSDR), 8 & 3, pp. 838-442, 2023. ISSN 2455-2631.",
-                "Deepa Kalapannavar, Aishwarya K, Rashmi Angadi, Yashodha Y, Kaveri Angadi. “Anti-Poaching Alarm System for valuable Trees in the forest.” International Journal Of Scientific Development And Research (IJSDR), 8 & 3, pp. 873-878, 2023. ISSN 2455-2631."
-              ]
-            },
-            {
-              "year": "2021–22",
-              "items": [
-                "Sudha Ayatti, Gouri Khadabadi, S.P. Bangarshetti, Pavan N. Kunchur. “All in One Card: A Knowledgeable Tool.” JNNCE Journal of Engineering & Management, Volume 5, Issue No.1, pp. 1-8, 2021. ISSN 2582-0079.",
-                "Lokesh B. Bhajantri, Ramesh M. Kagalkar, Pundalik Ranjolekar. “Convolution Neural Network Model Based Human Wearable Smart Ring System: Agent Approach.” International Journal of Electronics and Telecommunications, Polish Academy of Sciences, Vol.67, Issue No. 4, pp. 673-678, 2021. ISSN 2300-1933.",
-                "Vidya S. Bennur, Ashok V. Sutagundar, Lokesh B. Bhajantri. “Agent based Localization using Mobile Sink in Wireless Sensor Networks.” International Journal of Sensors Wireless Communications and Control, Vol.2, Issue No. 4, pp. 1-17, 2022. ISSN 2210-3287.",
-                "Savitri Patil, Shobha R. Patil. “Image Filtering Techniques for Noise Removal-Review.” Mukt Shabd Journal, Vol.11, Issue No. 6, pp. 894-898, 2022. ISSN 2347-3150.",
-                "Veena patil & Dr. Shobha Patil. “An Empirical Survey on Uterine Cancer Tissue Classification using Histopathological Images.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:5 Issue No.1, pp. 391-404, 2022. ISSN 0493-2137.",
-                "Dr. S. R. Patil, Kishor Parvatikar, Prathiksha Chetana, Bhagyawant Biradar, Vidyashri Mudagal. “An Implementation of self driving Car.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:55 Issue No. 1, pp. 347-352, 2022. ISSN 0493-2137.",
-                "Dr. S. R. Patil, Kishor Parvatikar, Prathiksha Chetana, Bhagyawant Biradar, Vidyashri Mudagal. “A Review on Self Driving Cars.” Tianjin Daxue/Journal of Tianjin University Science and Technology, Vol:55 Issue 01, pp. 326-334, 2022. ISSN 0493-2137.",
-                "Vijayalaxmi S.Patil, Dr.Suvarna Nandyal. “Entropy Coding for H.264 Video Compression.” International Journal of Scientific Research, Vol:11 Issue 01, pp. 42-45, 2022.",
-                "Pankaja Patil, Gouri Khadabadi, Sudha V Sulakhe, Pavan Kunchur, Sadhana Bangarashetti, Pranav Mutalik. “IoT based Vehicle Health Monitoring System.” Grenze International Journal of Engineering and Technology, Vol:7 Issue 01, pp. 191-196, 2021. ISSN 2395-5295.",
-                "Ranjana.Battur, Arundhati Nelli, Pavan Kunchur, Sadhana Bangarashetti, Nelson Lobo. “Sign Language Interpreter using Convolutional Neural Network.” Grenze International Journal of Engineering and Technology, Vol:8 Issue 01, pp. 241-245, 2021. ISSN 2395-5295.",
-                "Lokesh B. Bhajantri, Tabassum N. Mujawar. “An Attribute based Encryption Method using Outsourced Decryption and Hierarchical Access Structure.” Journal of Information Technology and Telecommunication, Vo.4, pp. 75-81, 2022. ISSN 1899-8852.",
-                "Shobha Patil, Aneesh Purohit, Prajwal Hiremath, Satish kali, Vinayak R.G. “Intelligent Tourist Guide.” International Journal of Innovative Research in Engineering, Vol-4, Issue 3, pp. 28-30, May 2023. ISSN 2582-8746.",
-                "Vijayalaxmi.Patil, Spoorti U, Laxmi Shinde, Veena Neelanayak, Muskan H. “Online Law Android App.” International Journal of Research in Engineering and Science (IJRES), Vol. 11, Issue-2, pp. 368-371, Feb, 2023. ISSN 2320-9356.",
-                "Vijayalaxmi.Patil, Spoorti U, Laxmi Shinde, Veena Neelanayak, Muskan H. “Implementation of Law Android App.” International Journal of Research in Engineering and Science (IJRES), Vol. 11, Issue-6, pp. 183-187, Jun, 2023. ISSN 2320-9364."
-              ]
-            }
-          ]
-        },
-        {
-          "category": "Conference Papers",
-          "years": [
-            {
-              "year": "2023–24",
-              "items": [
-                "Lokesh B. Bhajantri, Basavaraj G. Kumbar. “Context Aware Resource Discovery in Fog Computing: Agent Approach.” Second IEEE International Conference on Advances in Information Technology (ICAIT-2024), AIT, Chikkamagaluru, Karnataka, India, pp. 1-5, 2024.",
-                "Lokesh B. Bhajantri, Mohammed Rehan, Bandenawaz F. B. “Artificial Intelligence and Machine Learning Approach Recommendation System in Internet of Medical Things.” International Conference on Intelligent Algorithms for Computational Intelligence Systems (IACIS-2024), Hassan, India, pp. 1-6, 2024.",
-                "V. S. Patil. “Video Enhancement Algorithm using Pre- and Post-Processing for Compressed Videos.” International Conference for Advancement in Technology (ICONAT), Goa, India, 2023.",
-                "Raghavendra Jadhav, Sadhana P. Bangarashetti. “Impact of Lumpy Skin Disease Virus on Indian Cattle: A Review of Mitigation Strategies.” International Conference on Sustainable Solutions in Engineering & Technology (SSET-24), pp. 92, Aug 2024. ISSN 2582-8188.",
-                "Sudha V. S., Sadhana P. Bangarashetti. “Brain Tumour Detection using AI and ML Techniques.” International Conference on Sustainable Solutions in Engineering & Technology (SSET-24), pp. 79, Aug 2024. ISSN 2582-8188."
-              ]
-            },
-            {
-              "year": "2022–23",
-              "items": [
-                "Girish B. Shettar, Dr. Anil D. Devangavi. “Edge Computing: An overview.” Thirteen International Conference on Computational Intelligence and Information Technology, pp. 6, 2023."
-              ]
-            },
-            {
-              "year": "2021–22",
-              "items": [
-                "Lokesh B. Bhajantri, Vasudha V. Ayyanavar. “Fault Analysis and Identification in Ubiquitous Networks using Cognitive Agents Approach.” IEEE 2022 International Conference on Electronics and Renewable Systems (ICEARS), Tuticorin, India., pp. 713-719. ISSN 6654-8425.",
-                "Lokesh B. Bhajantri, Tabassum M. Mujawar. “Efficient Direct and Immediate User Revocable Attribute Based Encryption Scheme.” 5th International Conference on Intelligent Sustainable System (ICISS 2022), SCAD College of Engineering and Technology Feb. 17-18 2022, Tirunelveli, India.",
-                "Lokesh Bhajantri, Nikhil Kadadevar, Anup Jeeragal, Vinayak Jeeragal and Iranna Jamdar. “A Survey on Cognitive Internet of Things Based Prediction of Covid-19 Patient.” Second International Conference on Sentimental Analysis and Deep Learning (ICSADL 2022), Department of Electronics and Computer Engineering, Institute of Engineering, Tribhuvan University, Nepal.",
-                "Vijayalaxmi S.Patil, Dr.Suvarna Nandyal. “Intra Prediction in H.265.HEVC to improve the PSNR using Gradient Calculation.” International Conference on Computational Intelligence, Data Science and Cloud Computing, Institute of Engineering & Management, Kolkata, India, pp. 1-2."
-              ]
-            }
-          ]
-        }
-      ],
       "patents": [
         {
           "title": "AI and IoT based Agriculture Crop Cutting Device",
-          "inventors": "Dr. Lokesh B. Bhajantri, Dr. Manjula A. Sutagundar, Prof. Vasudha Ayyanavar, Dr. Daneshwari Hatti",
           "applicationNumber": "390551-001",
+          "inventors": "Dr. Lokesh B. Bhajantri, Dr. Manjula A. Sutagundar, Prof. Vasudha Ayyanavar, Dr. Daneshwari Hatti",
           "filed": "18/07/2023",
-          "status": "Applied — awaiting technical examination"
+          "status": "Granted"
         },
         {
-          "title": "An Application for Divyang to use Voice Mail",
-          "inventors": "Dr. Lokesh B. Bhajantri",
+          "title": "An Application for Divyang to Use Voice Mail",
           "applicationNumber": "202241022232 A",
+          "inventors": "Dr. Lokesh B. Bhajantri",
           "filed": "13/04/2022",
           "published": "29/04/2022",
           "status": "Published"
         },
         {
           "title": "Food Analysis Using Chemical Sensor",
+          "applicationNumber": "202241003611 A",
           "inventors": "Dr. Sadhana P. Bangarashetti",
-          "applicationNumber": "202241003611",
           "filed": "21/01/2022",
           "published": "04/02/2022",
+          "status": "Published"
+        },
+        {
+          "title": "IoT with AI Based Approach for Electrical Groups Control",
+          "applicationNumber": "202241042199 A",
+          "inventors": "Dr. Sadhana P. Bangarashetti",
+          "filed": "22/07/2022",
+          "published": "29/07/2022",
+          "status": "Published"
+        },
+        {
+          "title": "Privacy Preserving Disease Prediction with Cryptographic ML",
+          "applicationNumber": "202441004882 A",
+          "inventors": "Dr. Sadhana P. Bangarashetti",
+          "filed": "24/01/2024",
+          "published": "09/02/2024",
+          "status": "Published"
+        },
+        {
+          "title": "Wearable Safety System for Real Time Human Emergency",
+          "applicationNumber": "202041023818 A",
+          "inventors": "Dr. Lokesh B. Bhajantri",
+          "filed": "06/06/2020",
+          "published": "12/06/2020",
+          "status": "Published"
+        },
+        {
+          "title": "IoT Based Poultry Management System",
+          "applicationNumber": "202241034718 A",
+          "inventors": "Dr. Lokesh B. Bhajantri",
+          "filed": "17/06/2022",
+          "published": "24/06/2022",
+          "status": "Published"
+        },
+        {
+          "title": "Key Frame Extraction for HEVC-Based Video Compression",
+          "applicationNumber": "202541056051",
+          "inventors": "Prof. Vijayalaxmi S. Patil",
+          "filed": "10/06/2025",
+          "published": "20/06/2025",
           "status": "Published"
         }
       ],
@@ -8783,6 +9050,188 @@
           "name": "Max-Plus",
           "version": "2.10.2",
           "usage": "Application"
+        }
+      ],
+      "programsOfferedCount": 2,
+      "nbaAccredited": true,
+      "achievementsUnderResearch": true,
+      "bestPracticesList": [
+        {
+          "practice": "Project Exhibition",
+          "year": "2018-19"
+        },
+        {
+          "practice": "Plantation",
+          "year": "2018-19"
+        },
+        {
+          "practice": "Financial assistance to attend Conferences, Workshops, Competitions, etc.",
+          "year": "2018-19"
+        },
+        {
+          "practice": "Best Outgoing Student",
+          "year": "2019-20"
+        },
+        {
+          "practice": "Awarding Gold Medal to Class Topper",
+          "year": "2019-20"
+        },
+        {
+          "practice": "Subject Topper",
+          "year": "2019-20"
+        },
+        {
+          "practice": "Student Mentoring",
+          "year": "2020-21"
+        },
+        {
+          "practice": "Group Learning",
+          "year": "2019-21"
+        },
+        {
+          "practice": "Pre-Placement Training",
+          "year": "2019-21"
+        },
+        {
+          "practice": "Encouraging students to take up innovative projects and apply for funding",
+          "year": "2018-19"
+        }
+      ],
+      "activityTables": [
+        {
+          "title": "Academic Year 2024-25",
+          "columns": [
+            "Event Details",
+            "Date",
+            "Coordinator(s)"
+          ],
+          "rows": [
+            [
+              "Aptitude Grooming Sessions in online mode for 6th semester students — Mr. Arun G. N., Technical Trainer, Theta Dynamics Pvt. Ltd., Belgavi",
+              "07/07/2024",
+              "Prof. P. K. Deshpande, Prof. S. S. Hiremath"
+            ],
+            [
+              "Guest Lecture on “The Impact of Risk Tolerance on Entrepreneurial Success”, organized under IIC 6.0 in association with the ISE Department",
+              "11/07/2024",
+              "Prof. C. R. Shivanagi"
+            ],
+            [
+              "Skill Sprint Workshop for 4th semester students, by Alumni",
+              "27/07/2024",
+              "Prof. S. N. Kugali, Prof. G. B. Shettar"
+            ],
+            [
+              "A Three-Day Workshop on IoT-Based Application Development",
+              "04/12/2024 – 06/12/2024",
+              "Prof. G. B. Shettar"
+            ],
+            [
+              "Two-Day Project Exhibition",
+              "21/01/2025 – 22/01/2025",
+              "Prof. G. B. Shettar"
+            ],
+            [
+              "One-Day Student Development Programme (SDP) on “Innovation with Ease and Clarity”",
+              "02/01/2025",
+              "Dr. S. R. Patil"
+            ],
+            [
+              "Three-Day Student Development Programme (SDP) on “Cyber Crimes and Computer Forensics”",
+              "20/03/2025 – 22/03/2025",
+              "Prof. P. K. Deshpande, Prof. D. I. Kalappanavar"
+            ],
+            [
+              "One-Day Technical Talk on “Mastering Skills for IT Placements and Career Success”",
+              "04/04/2025",
+              "Prof. S. N. Kugali"
+            ],
+            [
+              "“Innovatex” One-Day Hackathon Programme organized by the ISE Department",
+              "05/04/2025",
+              "Prof. P. V. Kulkarni"
+            ],
+            [
+              "Five-Day SDP on “Skillful Engineering: Harnessing Soft and Technical Competencies”",
+              "03/02/2025 – 07/05/2025",
+              "Prof. P. K. Deshpande"
+            ],
+            [
+              "One-Day Technical Talk on “How to Get Placement” at Arista Company, Bangalore",
+              "10/05/2025",
+              "Prof. P. V. Kulkarni, Prof. P. R. Muttannavar"
+            ],
+            [
+              "Four-Day Pre-Placement Training Programme for 6th Semester Students — Ms. Rakhi Pote & Ms. Krishnaprasad Kulkarni, Theta Dynamics Pvt. Ltd., Belgavi",
+              "27/06/2024 – 30/06/2024",
+              "Prof. P. K. Deshpande"
+            ],
+            [
+              "Technical Talk on “How to Get Placement in Click Crawl Media Company”",
+              "11/01/2025",
+              "Prof. G. B. Shettar"
+            ],
+            [
+              "One-Day Competition on “Poster Presentation of Ideas” for 2nd and 3rd year students of all branches",
+              "05/03/2025",
+              "Prof. P. V. Kulkarni"
+            ]
+          ]
+        },
+        {
+          "title": "Academic Year 2025-26",
+          "columns": [
+            "Event Details",
+            "Date",
+            "Coordinator(s)"
+          ],
+          "rows": [
+            [
+              "A Session on “How to Prepare for Placements” in online mode",
+              "19/08/2025",
+              "Prof. P. K. Deshpande"
+            ],
+            [
+              "Student Development Programme on “Agentic AI for Smart Healthcare and Medical Technologies”",
+              "01/09/2025 – 05/09/2025",
+              "Prof. D. I. Kallappanavar"
+            ],
+            [
+              "Student Development Programme on “Generative AI Exploration”",
+              "27/10/2025 – 29/10/2025",
+              "Prof. S. M. Pattanshetti, Prof. V. S. Patil"
+            ],
+            [
+              "A Student Development Programme on “Mastering Cloud Fundamentals with AWS”",
+              "03/11/2025 – 15/11/2025",
+              "Dr. S. P. Bangarashetti, Prof. G. B. Shettar"
+            ],
+            [
+              "Student Development Programme on “Full Stack Development”",
+              "06/11/2025 – 10/11/2025",
+              "Prof. P. R. Muttannavar, Prof. M. R. Patil"
+            ],
+            [
+              "Session on Higher Studies Abroad — “Beyond Boundaries, Beyond Dreams: A New Vision for Studying Abroad”",
+              "18/11/2025",
+              "Dr. S. R. Patil, Prof. P. K. Deshpande"
+            ],
+            [
+              "A Student Development Programme on “AI and ML Implementation with Agentic AI Space”",
+              "28/01/2026 – 31/01/2026",
+              "Prof. P. S. Puranik, Prof. G. M. Patil"
+            ],
+            [
+              "A Student Development Programme on “Byte by Byte — Climbing the Python Ladder”",
+              "04/02/2026 – 06/02/2026",
+              "Dr. S. P. Bangarashetti, Prof. S. N. Kugali"
+            ],
+            [
+              "One-Week Faculty Development Programme (FDP) on “Empowering Educators through Cutting-Edge Technologies in Software Development”",
+              "10/02/2026 – 14/02/2026",
+              "Prof. R. B. Math, Prof. C. R. Shivanagi"
+            ]
+          ]
         }
       ]
     },
