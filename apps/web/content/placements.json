@@ -4245,6 +4245,21 @@
           "batch": "2024-2025",
           "companies": [
             {
+              "company": "Palo Alto Networks",
+              "count": "1",
+              "package": "37"
+            },
+            {
+              "company": "Volvo Group",
+              "count": "1",
+              "package": "15"
+            },
+            {
+              "company": "ZS Associates",
+              "count": "1",
+              "package": "7"
+            },
+            {
               "company": "Infosys",
               "count": "13",
               "package": ""
@@ -4281,6 +4296,27 @@
             }
           ],
           "students": [
+            {
+              "name": "Suryaditya",
+              "company": "Palo Alto Networks",
+              "mode": "",
+              "lpa": "37",
+              "usn": ""
+            },
+            {
+              "name": "Shrivatsa Vaman Gudi",
+              "company": "Volvo Group",
+              "mode": "",
+              "lpa": "15",
+              "usn": ""
+            },
+            {
+              "name": "Nishita Naragund",
+              "company": "ZS Associates",
+              "mode": "",
+              "lpa": "7",
+              "usn": ""
+            },
             {
               "name": "Karthik Uday Mudhol",
               "company": "Infosys",
@@ -4552,7 +4588,20 @@
           ]
         }
       ],
-      "yearWise": []
+      "yearWise": [
+        {
+          "year": "2025",
+          "percent": "88.88"
+        },
+        {
+          "year": "2024",
+          "percent": "82.08"
+        },
+        {
+          "year": "2023",
+          "percent": "98.24"
+        }
+      ]
     }
   }
 }

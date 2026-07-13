@@ -128,42 +128,52 @@
     ],
     "ai-and-ml": [
       {
-        "name": "Dr. Anil D. Devanagavi",
-        "designation": "Professor & Head"
+        "name": "Dr. Bharati M. Reshmi",
+        "designation": "Professor & Head",
+        "photo": "governance/hod/aiml/dr-b-m-reshmi.webp",
+        "cv": "departments/aiml/faculty/cv/bharati-m-reshmi.pdf"
       },
       {
-        "name": "Dr. B. M. Reshmi",
-        "designation": "Associate Professor"
-      },
-      {
-        "name": "Dr. Vishwanath Kagawade",
+        "name": "Dr. Vishwanath C. Kagawade",
         "designation": "Associate Professor",
-        "cv": "departments/aiml/faculty/cv/vishwanath-kagawade.pdf",
-        "photo": "departments/aiml/faculty/vishwanath-kagawade.webp"
+        "photo": "departments/aiml/faculty/vishwanath-kagawade.webp",
+        "cv": "departments/aiml/faculty/cv/vishwanath-kagawade.pdf"
       },
       {
-        "name": "Anita G Kori",
+        "name": "Anita G. Kori",
         "designation": "Assistant Professor",
-        "cv": "departments/aiml/faculty/cv/anita-g-kori.pdf",
-        "photo": "departments/aiml/faculty/anita-g-kori.webp"
+        "photo": "departments/aiml/faculty/anita-g-kori.webp",
+        "cv": "departments/aiml/faculty/cv/anita-g-kori.pdf"
       },
       {
-        "name": "Jayasheela D Kallaganiger",
+        "name": "Jayasheela D. Kallaganiger",
         "designation": "Assistant Professor",
-        "cv": "departments/aiml/faculty/cv/jayasheela-d-kallaganiger.pdf",
-        "photo": "departments/aiml/faculty/jayasheela-d-kallaganiger.webp"
+        "photo": "departments/aiml/faculty/jayasheela-d-kallaganiger.webp",
+        "cv": "departments/aiml/faculty/cv/jayasheela-d-kallaganiger.pdf"
       },
       {
-        "name": "Lakshmi P Kolur",
+        "name": "Lakshmi P. Kolur",
         "designation": "Assistant Professor",
-        "cv": "departments/aiml/faculty/cv/lakshmi-p-kolur.pdf",
-        "photo": "departments/aiml/faculty/lakshmi-p-kolur.webp"
+        "photo": "departments/aiml/faculty/lakshmi-p-kolur.webp",
+        "cv": "departments/aiml/faculty/cv/lakshmi-p-kolur.pdf"
       },
       {
-        "name": "Laxmi Muttappanavar",
+        "name": "Laxmi M. Muttappanavar",
         "designation": "Assistant Professor",
-        "cv": "departments/aiml/faculty/cv/laxmi-muttappanavar.pdf",
-        "photo": "departments/aiml/faculty/laxmi-muttappanavar.webp"
+        "photo": "departments/aiml/faculty/laxmi-muttappanavar.webp",
+        "cv": "departments/aiml/faculty/cv/laxmi-muttappanavar.pdf"
+      },
+      {
+        "name": "Ashok S. Patil",
+        "designation": "Assistant Professor",
+        "photo": "departments/aiml/faculty/ashok-s-patil.webp",
+        "cv": "departments/aiml/faculty/cv/ashok-s-patil.pdf"
+      },
+      {
+        "name": "Brahmanand Reddy",
+        "designation": "Assistant Professor",
+        "photo": "departments/aiml/faculty/brahmanand-reddy.webp",
+        "cv": "departments/aiml/faculty/cv/brahmanand-reddy.pdf"
       }
     ],
     "automobile-engg": [

@@ -5,7 +5,39 @@
       "name": "Artificial Intelligence & Machine Learning",
       "assetSlug": "aiml",
       "tagline": "Competent, socially and ethically responsible professionals in AI & Machine Learning through education, research and innovation.",
-      "overview": "The department stands tall in both infrastructure and qualified, committed faculty. Housed in a picturesque building with a seminar hall, department library, faculty rooms and four computer laboratories equipped with 150+ state-of-the-art systems, it offers a pervasive, high-quality wired and Wi-Fi network and a wide range of application software (from databases and DTP to 3D animation and multimedia tools). The faculty pursue research in areas including Artificial Intelligence, Machine Learning, Vehicular Ad-hoc Networks (VANET), Image Processing, Computer Networks, Mobile Computing, Natural Language Processing and Pattern Recognition, and have published books and papers in refereed journals and reputed conferences. The department has attracted more than ₹1.11 crore in sponsored infrastructure and research funding, and regularly conducts faculty, student and other development programmes.",
+      "established": "2020",
+      "intake": "60",
+      "overview": "Established in 2020 with an initial intake of 60 students, the Department of Artificial Intelligence and Machine Learning was founded to offer quality education in one of the fastest-growing areas of technology. The department provides a strong academic foundation in AI, Machine Learning, Data Science and related fields through a curriculum that blends theoretical knowledge with practical learning.\n\nThe department emphasises innovation, critical thinking and hands-on experience through modern laboratories, research activities and industry-oriented initiatives. Faculty members are actively involved in research and guide doctoral scholars, fostering a vibrant culture of learning and knowledge creation.\n\nStudents are encouraged to participate in research projects, internships, hackathons and technical events that enhance their professional skills and problem-solving abilities. Through academic excellence, ethical values and experiential learning, the department strives to nurture competent, innovative and socially responsible professionals ready to contribute to the evolving technological landscape.",
+      "quickFacts": {
+        "facts": [
+          {
+            "label": "Faculty",
+            "value": "08"
+          },
+          {
+            "label": "Doctorates",
+            "value": "02"
+          },
+          {
+            "label": "Ph.D. Pursuing",
+            "value": "02"
+          },
+          {
+            "label": "Technical Staff",
+            "value": "03"
+          }
+        ],
+        "researchAreas": [
+          "Medical Image Analysis",
+          "Computer Vision",
+          "Deep Learning & Explainable AI",
+          "Biometrics & Document Analysis",
+          "Smart Agriculture",
+          "IoT & Robotics",
+          "Digital Image Processing",
+          "VANET"
+        ]
+      },
       "vision": "To develop competent, social and ethically responsible professionals in Artificial Intelligence and Machine Learning through excellence in education, research and innovation.",
       "mission": [
         "Develop globally competent AIML professionals to address real-world problems.",
@@ -13,13 +45,64 @@
         "Cultivate a multidisciplinary environment that encourages collaboration and lifelong learning.",
         "Foster a culture of research, innovation and entrepreneurship."
       ],
+      "highlights": [
+        "Established in 2020; offers a 4-year B.E. in Artificial Intelligence & Machine Learning with an intake of 60.",
+        "Centre of Excellence in Computer Vision, IoT & Robotics — Bosch fundus camera and Dell Precision GPU workstations powering deep-learning research.",
+        "₹20 Lakh CSR research grant (City Union Bank) plus two NAIN 2.0 startup grants of ₹5 Lakh each (EEPD and SafePrint).",
+        "Highest placement package of ₹37 LPA at Palo Alto Networks; 88.88% placements in 2025.",
+        "Active research output in medical image analysis, biometrics and smart agriculture, published in IEEE, Elsevier, Springer, Wiley/IET and World Scientific."
+      ],
+      "bestPracticesList": [
+        {
+          "practice": "Student Development Programmes (SDPs)"
+        },
+        {
+          "practice": "Internal Hackathons"
+        },
+        {
+          "practice": "Buddy System (Peer Learning)"
+        },
+        {
+          "practice": "Micro Projects"
+        },
+        {
+          "practice": "Flipped Classes, Seminars and Quizzes"
+        },
+        {
+          "practice": "Infosys Spoken Tutorials, Job-Simulation & Springboard Certifications"
+        },
+        {
+          "practice": "Expert Talks"
+        },
+        {
+          "practice": "Personality Development Courses"
+        }
+      ],
       "programsOffered": [
         "B.E. — Artificial Intelligence & Machine Learning"
+      ],
+      "programStructure": [
+        "4-year B.E. programme (8 semesters) under the VTU NEP 2025-26 scheme — 160 credits.",
+        "Revised scheme and syllabus approved in the 8th Board of Studies meeting (30 June 2026)."
+      ],
+      "peos": [
+        {
+          "code": "PEO1",
+          "text": "Graduates will be able to develop high-quality AI and ML solutions for various application domains under realistic constraints, applying professional engineering skills."
+        },
+        {
+          "code": "PEO2",
+          "text": "Demonstrate the importance of life-long learning through advanced degrees, professional development, specialised certifications and other professional activities related globally to engineering and society."
+        },
+        {
+          "code": "PEO3",
+          "text": "Engage in sustainable research and innovation through teamwork, ethical behaviour, proactive involvement and effective communication."
+        }
       ],
       "psos": [
         {
           "code": "PSO1",
-          "text": "Apply the fundamentals of mathematics, science and engineering to understand, analyze and develop AI-based complex systems."
+          "text": "Apply the fundamentals of mathematics, science and engineering knowledge to understand, analyze and develop AI-based complex systems."
         },
         {
           "code": "PSO2",
@@ -27,236 +110,1028 @@
         },
         {
           "code": "PSO3",
-          "text": "Demonstrate the ability to lead and work toward an innovative career path and engage in lifelong learning with moral values."
+          "text": "Demonstrate the ability to lead and work towards an innovative career path and engage in lifelong learning with moral values."
         }
       ],
-      "highlights": [
-        "Four computer laboratories equipped with 150+ state-of-the-art systems and high-speed wired/Wi-Fi networking.",
-        "Research strengths in AI, Machine Learning, VANET, Image Processing, NLP and Pattern Recognition.",
-        "More than ₹1.11 crore received in sponsored infrastructure and research funding.",
-        "Regular faculty, student and skill-development programmes in Information Technology."
-      ],
-      "labs": [
+      "pos": [
         {
-          "name": "Computer Laboratories",
-          "description": "Four laboratories with 150+ systems running Windows, Linux and Solaris, plus a broad suite of application and multimedia software including 3D Max."
+          "code": "PO1",
+          "text": "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialisation (WK1 to WK4) to develop solutions to complex engineering problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Problem Analysis: Identify, formulate, review research literature and analyse complex engineering problems, reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)"
+        },
+        {
+          "code": "PO3",
+          "text": "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems, components or processes to meet identified needs with consideration for public health and safety, whole-life cost, net-zero carbon, culture, society and environment. (WK5)"
+        },
+        {
+          "code": "PO4",
+          "text": "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge, including design of experiments, modelling, analysis and interpretation of data to provide valid conclusions. (WK8)"
+        },
+        {
+          "code": "PO5",
+          "text": "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling, recognising their limitations, to solve complex engineering problems. (WK2, WK6)"
+        },
+        {
+          "code": "PO6",
+          "text": "The Engineer and the World: Analyse and evaluate societal and environmental aspects while solving complex engineering problems for their impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, WK7)"
+        },
+        {
+          "code": "PO7",
+          "text": "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national and international laws. (WK9)"
+        },
+        {
+          "code": "PO8",
+          "text": "Individual and Collaborative Team Work: Function effectively as an individual, and as a member or leader in diverse and multi-disciplinary teams."
+        },
+        {
+          "code": "PO9",
+          "text": "Communication: Communicate effectively and inclusively within the engineering community and society at large — comprehend and write effective reports and design documentation, and make effective presentations considering cultural, language and learning differences."
+        },
+        {
+          "code": "PO10",
+          "text": "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making, and apply these to one's own work as a member and leader in a team, to manage projects in multidisciplinary environments."
+        },
+        {
+          "code": "PO11",
+          "text": "Life-Long Learning: Recognise the need for, and have the preparation and ability for (i) independent and life-long learning, (ii) adaptability to new and emerging technologies and (iii) critical thinking in the broadest context of technological change. (WK8)"
         }
+      ],
+      "wk": [
+        {
+          "code": "WK1",
+          "text": "A systematic, theory-based understanding of the natural sciences applicable to the discipline and awareness of relevant social sciences."
+        },
+        {
+          "code": "WK2",
+          "text": "Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed analysis and modelling applicable to the discipline."
+        },
+        {
+          "code": "WK3",
+          "text": "A systematic, theory-based formulation of engineering fundamentals required in the engineering discipline."
+        },
+        {
+          "code": "WK4",
+          "text": "Engineering specialist knowledge that provides theoretical frameworks and bodies of knowledge for the accepted practice areas in the engineering discipline; much is at the forefront of the discipline."
+        },
+        {
+          "code": "WK5",
+          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, reuse of resources, net-zero carbon and similar concepts, that supports engineering design and operations in a practice area."
+        },
+        {
+          "code": "WK6",
+          "text": "Knowledge of engineering practice (technology) in the practice areas in the engineering discipline."
+        },
+        {
+          "code": "WK7",
+          "text": "Knowledge of the role of engineering in society and identified issues in engineering practice in the discipline, such as the professional responsibility of an engineer to public safety and sustainable development."
+        },
+        {
+          "code": "WK8",
+          "text": "Engagement with selected knowledge in the current research literature of the discipline; awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
+        },
+        {
+          "code": "WK9",
+          "text": "Ethics, inclusive behaviour and conduct. Knowledge of professional ethics, responsibilities and norms of engineering practice; awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
+        }
+      ],
+      "consolidateResearch": true,
+      "researchAreasList": [
+        "Medical Image Analysis — AI-based diagnosis of retinal diseases, diabetic retinopathy, glaucoma, pneumonia, brain tumours and other healthcare applications using Deep Learning and Explainable AI.",
+        "Biometrics & Document Analysis — intelligent systems for face recognition, fingerprint recognition, signature verification, OCR, handwritten document analysis and digital document authentication.",
+        "Smart Agriculture — AI applications for crop disease detection, yield prediction, soil analysis, precision farming and smart irrigation using computer vision and IoT.",
+        "Centre of Excellence in Computer Vision, IoT and Robotics — developing AI-driven solutions for healthcare, agriculture and intelligent automation."
       ],
       "researchAreas": [
         {
-          "supervisor": "Dr. Anil D. Devangavi",
-          "area": "Vehicular Ad-hoc Networks (VANET), Artificial Intelligence"
-        },
-        {
-          "supervisor": "Dr. B. M. Reshmi",
+          "supervisor": "Dr. Bharati M. Reshmi",
           "area": "Medical Image Analysis, Machine Learning"
         },
         {
-          "supervisor": "Dr. Vishwanath Kagawade",
-          "area": "Digital Image Processing"
+          "supervisor": "Dr. Vishwanath C. Kagawade",
+          "area": "Digital Image Processing, Biometrics"
+        },
+        {
+          "supervisor": "Dr. Anil D. Devangavi",
+          "area": "Vehicular Ad-hoc Networks (VANET), Artificial Intelligence"
         }
       ],
       "researchScholars": [
         {
           "scholar": "Girish Shetter",
           "guide": "Dr. Anil D. Devangavi",
-          "title": "Ph.D (registered 2021)",
-          "status": "Course work ongoing"
+          "title": "Ph.D. · Registered 2021",
+          "status": "Course work"
         },
         {
           "scholar": "Vinayak Telsang",
           "guide": "Dr. Anil D. Devangavi",
-          "title": "Ph.D (registered 2021)",
-          "status": "Pre-Comprehensive completed"
+          "title": "Ph.D. · Registered 2021",
+          "status": "Pursuing"
         },
         {
           "scholar": "Shiddalingesh Hiremath",
           "guide": "Dr. Anil D. Devangavi",
-          "title": "Ph.D (registered 2023)",
-          "status": "RAC formed"
+          "title": "Ph.D. · Registered 2023",
+          "status": "Pursuing"
         },
         {
           "scholar": "Sandeep Kugali",
           "guide": "Dr. Anil D. Devangavi",
-          "title": "Ph.D (registered 2023)",
-          "status": "RAC formed"
+          "title": "Ph.D. · Registered 2023",
+          "status": "Pursuing"
         },
         {
           "scholar": "Sushmadevi Wodeyar",
-          "guide": "Dr. B. M. Reshmi",
-          "title": "Ph.D (registered 2019)",
+          "guide": "Dr. Bharati M. Reshmi",
+          "title": "Ph.D. · Registered 2019",
           "status": "Course work completed"
         },
         {
           "scholar": "Kachi Anvesh",
-          "guide": "Dr. B. M. Reshmi",
-          "title": "Ph.D (registered 2021)",
-          "status": "Pre-Comprehensive completed"
-        },
-        {
-          "scholar": "Priyannka Tuppad",
-          "guide": "Dr. B. M. Reshmi",
-          "title": "Ph.D (registered 2021)",
-          "status": "Course work completed"
+          "guide": "Dr. Bharati M. Reshmi",
+          "title": "Ph.D. · Registered 2021",
+          "status": "Pursuing"
         },
         {
           "scholar": "Jayasheela Kallaganiger",
-          "guide": "Dr. B. M. Reshmi",
-          "title": "Ph.D (registered 2024)",
-          "status": "Course work ongoing"
+          "guide": "Dr. Bharati M. Reshmi",
+          "title": "Ph.D. · Registered 2024",
+          "status": "Pursuing"
         },
         {
           "scholar": "Mahantesh Shivalingappa Devoor",
-          "guide": "Dr. Vishwanath Kagawade",
-          "title": "Ph.D (registered 2023)",
-          "status": "Course work ongoing"
+          "guide": "Dr. Vishwanath C. Kagawade",
+          "title": "Ph.D. · Registered 2023",
+          "status": "Pursuing"
         },
         {
           "scholar": "Rubina",
-          "guide": "Dr. Vishwanath Kagawade",
-          "title": "Ph.D (registered 2023)",
-          "status": "Course work ongoing"
+          "guide": "Dr. Vishwanath C. Kagawade",
+          "title": "Ph.D. · Registered 2023",
+          "status": "Pursuing"
         },
         {
           "scholar": "Sujatha P.",
-          "guide": "Dr. Vishwanath Kagawade",
-          "title": "Ph.D (registered 2024)",
-          "status": "Course work ongoing"
+          "guide": "Dr. Vishwanath C. Kagawade",
+          "title": "Ph.D. · Registered 2024",
+          "status": "Pursuing"
         }
       ],
-      "committeeGroups": [
+      "researchGrants": [
         {
-          "title": "Board of Studies",
-          "members": [
+          "title": "Explainable Early Patient Deterioration Detection (EEPD) — student startup",
+          "agency": "Government of Karnataka — NAIN 2.0 (New Age Innovation Network)",
+          "year": "2025-26",
+          "amount": "₹5 Lakh",
+          "investigators": "Mentor: Dr. Bharati M. Reshmi"
+        },
+        {
+          "title": "SafePrint — student startup",
+          "agency": "Government of Karnataka — NAIN 2.0 (New Age Innovation Network)",
+          "year": "2025-26",
+          "amount": "₹5 Lakh",
+          "investigators": "Mentor: Dr. Vishwanath C. Kagawade"
+        },
+        {
+          "title": "Development of Heterogeneous Cluster-Based Parallel and Accelerated Algorithms for Video Analytics in IoT Framework",
+          "agency": "City Union Bank Ltd., Bagalkote (CSR)",
+          "year": "Sanctioned 18 Jan 2025",
+          "amount": "₹20 Lakh",
+          "investigators": "PI: Dr. Vishwanath Kagawade; Co-PI: Dr. Mahabaleshwar S. Kakkasageri (ECE)"
+        }
+      ],
+      "labs": [
+        {
+          "name": "Centre of Excellence — Computer Vision Laboratory",
+          "description": "A state-of-the-art research and development environment for exploring advanced applications of AI, Machine Learning, Deep Learning and Computer Vision, supporting curriculum-based learning, interdisciplinary research and industry-oriented projects in medical image analysis, biometrics, document image analysis, agriculture, smart surveillance, robotics and intelligent automation.",
+          "features": [
+            "Bosch Portable Fundus Camera — high-resolution retinal imaging for early detection of diabetic retinopathy, glaucoma and age-related macular degeneration.",
+            "Dell Precision 5820 Tower GPU Workstations — Intel Xeon W-series, up to 512 GB ECC DDR4, high-end GPUs; TensorFlow, PyTorch, OpenCV, Keras and CUDA.",
+            "Applications: deep learning, computer vision, image & video analytics, object detection, generative AI and large-scale model training."
+          ],
+          "images": [
+            "departments/aiml/labs/coe-01.webp",
+            "departments/aiml/labs/coe-02.webp",
+            "departments/aiml/labs/coe-03.webp",
+            "departments/aiml/labs/coe-04.webp"
+          ],
+          "feature": true
+        },
+        {
+          "name": "Centre of Excellence — IoT Laboratory",
+          "description": "A hands-on environment where students, researchers and faculty design, develop and deploy IoT solutions, equipped with embedded systems, sensors, communication modules, robotics platforms and cloud technologies for experiential learning and industry-driven innovation.",
+          "features": [
+            "Hardware platforms: Arduino Mega, Raspberry Pi 3/4, ESP8266 & ESP32, NodeMCU Wi-Fi modules.",
+            "Sensors: MQ-2/8/9/135 gas, DHT22, soil moisture, rain, ultrasonic, IR, LDR, load cell, GPS, RFID, ADXL345 accelerometer, NPK and colour sensors.",
+            "Robotics & automation: robot chassis kits, DC/servo motors, L293N motor driver, pick-and-place modules.",
+            "Communication & software: GSM, Bluetooth, ZigBee, Wi-Fi, I2C; Arduino IDE, Raspberry Pi OS, Python, Node-RED, MQTT, ThingSpeak and Blynk IoT platform."
+          ],
+          "images": [
+            "departments/aiml/labs/coe-05.webp",
+            "departments/aiml/labs/coe-06.webp"
+          ]
+        }
+      ],
+      "publications": [
+        {
+          "category": "Journal Publications",
+          "years": [
             {
-              "name": "Dr. A. D. Devangavi",
-              "position": "Chairman — Professor and Head, Dept. of AI & ML, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. S. R. Mahadev Prasanna",
-              "position": "VTU Nominee — Professor, Dean (R&D), IIT Dharwad"
-            },
-            {
-              "name": "Dr. Ravindra S. Hegadi",
-              "position": "Subject Expert (outside University) — HoD, CSE, Central University of Karnataka, Kalaburgi"
-            },
-            {
-              "name": "Dr. Annapurna D.",
-              "position": "Subject Expert (outside University) — Professor, PES University & Head, Dept. of CSE and ISE, PES (VTU)"
-            },
-            {
-              "name": "Dr. Bharati Malakareddi",
-              "position": "Expert from outside the College — Professor & Head, Dept. of AIML, BMSIT, Bengaluru"
-            },
-            {
-              "name": "Dr. V. B. Pagi",
-              "position": "Member — Professor and Head, CSE, BEC Bagalkote"
-            },
-            {
-              "name": "Smt. S. S. Yendigeri",
-              "position": "Member — Associate Professor, CSE, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. S. M. Hatture",
-              "position": "Member — Associate Professor, CSE, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. B. M. Reshmi",
-              "position": "Member — Associate Professor, AI & ML, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. Vishwanath Kagawade",
-              "position": "Member — Associate Professor, AI & ML, BEC Bagalkote"
-            },
-            {
-              "name": "Dr. Ramesh Wadawadagi",
-              "position": "Member — Associate Professor, AI & ML, BEC Bagalkote"
-            },
-            {
-              "name": "Mr. Nandakishore Kulkarni",
-              "position": "Member — Data Analytics Specialist, Philips India Ltd., Bengaluru"
-            },
-            {
-              "name": "Suryaditya",
-              "position": "Student Member"
-            },
-            {
-              "name": "Krutika Sangamesh Badiger",
-              "position": "Student Member"
+              "items": [
+                "Vinayak A. Telsang, Mahabaleshwar S. Kakkasageri, Anil D. Devangavi, \"Blockchain-Based Device Authentication in Edge Computing Using Quantum Approach\", Jordanian Journal of Computers and Information Technology (JJCIT), Vol. 11, No. 1, pp. 100-116, 2025.",
+                "Vinayak A. Telsang, Mahabaleshwar S. Kakkasageri, Anil D. Devangavi, \"Intrusion Detection Analysis using Deep Learning Models in IoT\", International Journal of Research and Analysis in Science and Engineering, Vol. 5, Issue 5, 2024.",
+                "Bharati M. Reshmi, K. Anvesh, et al., \"A Federated Faster R-CNN Framework With Contour Detection and Grad-CAM for Interpretable Multi-Class Retinal Disease Diagnosis in Fundus Images\", IET Image Processing, Vol. 20, Issue 1, Article e70383, Wiley/IET, January 2026.",
+                "K. Anvesh, S. Hariharan, B. M. Reshmi, et al., \"A Robust Deep Learning Model Selection with Data Augmentation for Automatic Detection of Tessellated Fundus Images and Explainable Artificial Intelligence Based Interpretation\", Engineering Applications of Artificial Intelligence, Vol. 161, Article 112316, Elsevier, December 2025.",
+                "K. Anvesh, B. M. Reshmi, \"Optimising CNN Architecture for Accurate Detection of Tessellated Retinal Disease Using Fundus Images\", Journal of Information & Knowledge Management, Vol. 24, Issue 05, Article 2550050, World Scientific, October 2025.",
+                "K. Anvesh, B. M. Reshmi, et al., \"A Novel Approach Deep Learning Framework for Automatic Detection of Diseases in Retinal Fundus Images\", Computer Modeling in Engineering & Sciences (CMES), Vol. 143, Issue 2, p. 1485, Tech Science Press, May 2025.",
+                "I. S. Rajesh, B. M. Reshmi, A. Bharathi Malakreddy, Shavantrevva Bilakeri, \"Automatic Detection of Hard Exudate in Color Retinal Fundus Image and Diabetic Maculopathy Grading\", IEEE Access, Vol. 13, pp. 6618-6631, IEEE, January 2025.",
+                "G. Pushpa, M. Chaitra, Lakshmi P. Kolur, et al., \"An Advanced AI Framework for Mental Health Diagnostics Using BERT with Gated Recurrent Units and Convolutional Neural Networks\", International Information and Engineering Technology Association (IIETA), Vol. 30, No. 1, January 2025.",
+                "B. M. Reshmi, Nagaraj Kalligud, Krutika Badiger, Sakshi Sonagaj, Sindurani Giraddi, \"SmartSight: Android-Based Retinal Disease Detection using Retinal Fundus Images with XAI\", International Journal of Research and Analysis in Science and Engineering, Vol. 4, No. 5 (SSET-2024), August 2024.",
+                "B. M. Reshmi, \"Advanced Classification of Fundus Tessellation Using EfficientNet and Grad-CAM\", International Journal of Research and Analysis in Science and Engineering, Vol. 4, No. 5 (SSET-2024), August 2024.",
+                "Bharati M. Reshmi, I. S. Rajesh, \"A Novel Method for Automatic Identification of Fovea Location and its Centre in Colour Retinal Fundus Images\", International Journal of Medical Engineering and Informatics, Vol. 13, No. 2, pp. 103-110, 2021.",
+                "I. S. Rajesh, A. Bharathi Malakreddy, Bharati M. Reshmi, \"A Review on Automatic Identification of Fovea in Retinal Fundus Images\", International Journal of Medical Engineering and Informatics, Vol. 12, No. 2, pp. 169-179, 2020.",
+                "G. G. Rajput, B. M. Reshmi, \"Automatic Detection of Optic Disc based on Mathematical Morphology using Retinal Fundus Images\", IJCA Proceedings on National Conference on Digital Image and Signal Processing (DISP 2015), 2(2):1-5.",
+                "G. G. Rajput, B. M. Reshmi, Sidramappa C, \"Automatic Detection of Fovea Center using Mathematical Morphology in Fundus Images\", International Journal of Machine Intelligence, Vol. 3(4), 2011.",
+                "S. S. Manvi, B. M. Reshmi, Bhagyajyoti, \"An Agent Based Intrusion Detection Model for Mobile Ad-hoc Networks\", Mobile Information Systems, Vol. 2(4), IOS Press, 2006.",
+                "Anil D. Devangavi, \"Overview of OLAP Cubes: Importance, Build Considerations and Querying with MDX\", International Journal of Computers and Technology (IJCT), Vol. 9, No. 1, June 2013.",
+                "Anil D. Devangavi, \"Fuzzy Logic Concepts and Decisions\", IFRSA’s International Journal of Computing (IIJC), Vol. 3, No. 4, October 2013.",
+                "Anil D. Devangavi, \"A Comparative Study on Architectural Styles from the Perspective of Network-Based Hypermedia Systems\", International Journal of Engineering and Innovative Technology (IJEIT), Vol. 4, No. 7, January 2015.",
+                "Anil D. Devangavi, Rajendra Gupta, \"Multi-Agent System for Secured and Reliable Routing in VANET\", International Journal of Research and Scientific Innovation (IJRSI), Vol. 4, No. 7, January 2015.",
+                "Anil D. Devangavi, Rajendra Gupta, \"Multi Agent Based Context Aware Multicast Routing in VANET\", International Journal of Computer Sciences and Engineering (IJCSE), Vol. 5, No. 10, pp. 26-37, October 2017.",
+                "Anil D. Devangavi, Rajendra Gupta, \"Multipath Routing in VANET: Multi-Agent Based Approach\", International Journal on Future Revolution in Computer Science & Communication Engineering (IJFRCSCE), Vol. 3, No. 11, pp. 475-481, November 2017.",
+                "Anil D. Devangavi, Rajendra Gupta, \"Adaptive Congestion Controlled Multipath Routing in VANET\", IGI Global International Journal of Agent Technology Systems, Vol. 9, Article 3, 2017.",
+                "Vishwanath C. Kagawade, Shanmukhappa A. Angadi, \"A New Scheme of Polar Fast Fourier Transform Code for Iris Recognition through Symbolic Modelling Approach\", Expert Systems with Applications, Elsevier, 2022.",
+                "Vishwanath C. Kagawade, Shanmukhappa A. Angadi, \"Savitzky-Golay Filter Energy Features-Based Approach to Face Recognition using Symbolic Modeling\", Pattern Analysis and Applications, Springer London, 2021.",
+                "Vishwanath C. Kagawade, Shanmukhappa A. Angadi, \"Fusion of Frequency Domain Features of Face and Iris Traits for Person Identification\", Journal of The Institution of Engineers (India): Series B, Springer India, 2021.",
+                "Vishwanath C. Kagawade, Shanmukhappa A. Angadi, \"VISA: A Multimodal Database of Face and Iris Traits\", Multimedia Tools and Applications, Vol. 80, pp. 21615-21650, Springer US, 2021.",
+                "Vishwanath C. Kagawade, Shanmukhappa A. Angadi, \"Multi-directional Local Gradient Descriptor: A New Feature Descriptor for Face Recognition\", Image and Vision Computing, Vol. 83-84, pp. 39-50, Elsevier, 2019.",
+                "Shanmukhappa A. Angadi, Vishwanath C. Kagawade, \"A Robust Face Recognition Approach through Symbolic Modeling of Polar FFT Features\", Pattern Recognition, Vol. 71C, pp. 235-248, Elsevier, 2017.",
+                "Shanmukhappa Angadi, Vishwanath Kagawade, \"Face Recognition through Symbolic Modeling and Analysis of Segmented Face Images using Savitzky-Golay Filter Features\", International Journal of Technology and Science, Vol. IX, Issue 1, pp. 50-55, 2016.",
+                "Vishwanath Kagawade, K. Chandrasekhar, Jayashri G. Ghantimath, \"A Deep Learning Model for Bird Sound Recognition\", International Journal of Research and Analysis in Science and Engineering, Vol. 4, No. 5 (SSET-2024), August 2024.",
+                "Vishwanath Kagawade, Shweta I. Haigar, \"Big Data Based Security Analytics for Protecting the Virtualized Infrastructure in Cloud Computing\", International Journal of Research and Analysis in Science and Engineering, Vol. 4, No. 5 (SSET-2024), August 2024.",
+                "Vishwanath Kagawade, Rubina M., \"Comparative Study on Automated Kidney Stone Detection using Different Techniques\", International Journal of Research and Analysis in Science and Engineering, Vol. 4, No. 5 (SSET-2024), August 2024.",
+                "C. S. Vijayashree, Vishwanath C. Kagawade, T. Vasudev, \"Estimation of Tilt in Characters and Correction for Better Readability by OCR Systems\", International Journal of Computer Applications, Vol. 90, No. 13, March 2014.",
+                "Shrinivas D. Desai, Jayasheela D. K., \"Android Based Mobile App as a Solution to Transportation Logistic\", International Journal of Advanced Trends in Computer Science and Engineering (IJATCSE), Vol. 2, No. 5, pp. 15-21, September 2013.",
+                "Jayasheela D. K., Shrinivas D. Desai, \"Advanced Maximum Likelihood Statistical Estimation for Incomplete Data Sets in CT System\", International Journal of Technology in Computer Science & Engineering, Vol. 2(1), pp. 128-137, 2015.",
+                "Ananthraj V. A., Jayasheela D. K., Anupama S. N., \"Art Quest\", GRD Journals - Global Research and Development Journal for Engineering, Vol. 2, Issue 1, 2016.",
+                "Jayasheela D. K., Anupama S. N., Navyashree Jamagoud, \"Tune In College Website\", International Journal of Advances in Computer Science and Technology (WARSE), Vol. 5, No. 12, 2016.",
+                "Jayasheela D. K., Sudha Gidamallanavar, \"Pocket Transitional Manager\", GRD Journals - Global Research and Development Journal for Engineering, Vol. 2, Issue 9, 2017.",
+                "Praveen Itagi, Jayasheela D. K., Anupama S. N., Puneeth N. T., \"Python is Currently on a Hot Streak in Programming Language\", IJSRD - International Journal for Scientific Research & Development, Vol. 6, Issue 04, 2018.",
+                "Jayasheela D. K., Anupama S. N., Anil Roshan C. Malekar, \"Smart Trip Sharing: Android Application Based on Locality\", GRD Journals, Vol. 4, Issue 2, 2019.",
+                "Sushanth, Anupama S. N., Jayasheela D. K., \"Educate Youth: Android App for Fund Donation\", IJIRST - International Journal for Innovative Research in Science & Technology, Vol. 5, Issue 8, 2019.",
+                "Nagaraj B. Kalligudd, Chetana Srinivas, \"A Literature Survey on Road Accident Automobile Detection Using Image Processing and IoT\", International Journal of Computer Sciences and Engineering, Vol. 7(15), May 2019.",
+                "Nagaraj B. Kalligudd, \"Design and Implementation of Road Safety and Vehicle Surveillance System using Image Processing with IoT\", International Journal of Computer Sciences and Engineering, Vol. 7, Special Issue 15, May 2019.",
+                "Laxmi M. Muttappanavar, Praveen Challagidad, \"Intrusion Detection on Cloud using Hybrid Machine Learning Techniques\", International Journal of Computer Engineering and Applications (IJCEA), May 2018.",
+                "Girish Wali, Anita Kori, Chetan Bulla, \"Market Risk Assessment Using Deep Learning Model and Fog Computing Infrastructure\", International Journal of Advances in Engineering Architecture Science and Technology, Vol. 2, Issue 1, pp. 31-42, 2024.",
+                "Anita Kori, Nagaraj Gadagin, \"Gradient Boosting for Interpretable Risk Assessment in Finance: A Study on Feature Importance and Model Explainability\", International Journal of Research Publication and Reviews, Vol. 5, Issue 11, pp. 5322-5335, November 2024.",
+                "Anita Kori, Chetan Bulla, \"AI-Powered Real-Time Analytics for Liquidity Risk Assessment in Banking Sector\", International Research Journal of Education and Technology, Vol. 6, Issue 10, 2024.",
+                "Nagaraj Gadagin, Anita Kori, \"Reliable Machine Learning and Intelligent Computing for Complex Financial Systems\", International Journal of Scientific Research & Engineering Trends, Vol. 10, Issue 6, 2024.",
+                "Anita Kori, Nagaraj Gadagin, \"Blockchain-Based AI Models for Credit Scoring and Risk Assessment using Fog Computing Infrastructure\", International Journal of Research Publication and Reviews, Vol. 5, No. 11, 2024."
+              ]
             }
           ]
         },
         {
-          "title": "Board of Examiners",
+          "category": "Conference Publications",
+          "years": [
+            {
+              "items": [
+                "Bharati M. Reshmi, K. Anvesh, S. K. Prashanth, et al., \"A Novel Hybrid Approach for Preprocessing and Contour Detection of Tessellated Fundus Images\", 2026 IEEE International Conference on Intelligent Systems, Smart and Green Technologies (ICISSGT), pp. 1-6, IEEE, February 2026.",
+                "Kachi Anvesh, Bharati M. Reshmi, et al., \"AI Based Model for the Creation of Chatbots to Help in the Instructional Process\", 2024 2nd International Conference on Computing and Data Analytics (ICCDA), Shinas, Oman, pp. 1-6, IEEE, November 2024.",
+                "Manisha Bagewadi, B. M. Reshmi, Nagaraj Kalligud, et al., \"SmartSight: Android-Based Retinal Disease Detection using Retinal Fundus Images with XAI\", 8th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS), Bangalore, pp. 1-6, IEEE, November 2024.",
+                "Kachi Anvesh, Bharati M. Reshmi, et al., \"A Precision Tessellated Fundus Detection: Leveraging Color and Texture Features with SVM Classification\", International Conference on Machine Learning, IoT and Big Data, pp. 77-89, Springer Nature Singapore, March 2024.",
+                "Kachi Anvesh, Bharati M. Reshmi, \"Accurate Classification of Tessellated Retinal Disease with Deep Learning Model\", 2024 International Conference on Emerging Smart Computing and Informatics (ESCI), Pune, March 2024.",
+                "Krutika Badiger, Sakshi Sonagaj, Sindurani Giraddi, B. M. Reshmi, \"Kannada Text Summarization\", 2024 International Conference on Intelligent and Innovative Technologies in Computing, Electrical and Electronics (IITCEE), Bangalore, January 2024.",
+                "G. G. Rajput, Bharati M. R., Rajesh I. S., \"Automatic Detection and Grading of Diabetic Maculopathy using Fundus Images\", International Conference on Computational Intelligence and Data Science (ICCIDS 2019), Elsevier Procedia Computer Science, Vol. 167, pp. 57-66, 2020.",
+                "Rajesh I. S., A. Bharathi Malakreddy, Reshmi B. M., \"A Comprehensive Review on Automatic Diagnosis of Diabetic Maculopathy in Retinal Fundus Images\", SIRS 2018, Communications in Computer and Information Science, Vol. 968, pp. 410-420, Springer, Singapore.",
+                "Rajesh I. S., Bharati M. Reshmi, Bharathi M. A., \"Automatic Hard Exudates Identification in Color Retinal Fundus Images\", 10th INDIACom-2016: 3rd International Conference on Computing for Sustainable Global Development, BVICAM, Delhi, pp. 2041-2046, 2016.",
+                "Ramya, Bharati Reshmi, \"A Review on Automatic Detection of Diabetic Retinopathy using Retinal Fundus Images\", 2nd International Conference on Adaptive Computational Intelligence, GSSS Institute of Technology, Mysore, December 2020.",
+                "B. M. Reshmi, S. S. Manvi, \"Masquerade Detection by using Activity Patterns\", First European Conference on Computer Network Defence, University of Glamorgan, Wales, UK, December 2005.",
+                "B. M. Reshmi, S. S. Manvi, \"An Agent Based Intrusion Detection Framework for Local Area Networks\", National Conference on Devices, Intelligent Systems and Communications, MAHE, Manipal, September 2005.",
+                "Vinayak A. Telsang, M. S. Kakkasageri, A. D. Devangavi, \"Edge Computing Devices Authentication using Quantum Computing\", 15th International Conference on Computing Communication and Networking Technologies (ICCCNT), Kamand, pp. 1-6, IEEE, June 2024.",
+                "Anil D. Devangavi, Rajendra Gupta, \"Routing Protocols in VANET: A Survey\", IEEE International Conference on Smart Technologies for Smart Nation (SmartTechCon 2017), pp. 163-167, August 2017.",
+                "Anil D. Devangavi, Rajendra Gupta, \"Bezier Curve based Multipath Routing in VANET\", IEEE Second International Conference on Advances in Electronics, Computers and Communications (ICAECC), February 2018.",
+                "Shanmukhappa A. Angadi, Vishwanath C. Kagawade, \"Detection of Face Spoofing using Multiple Texture Descriptors\", International Conference on Computational Techniques, Electronics and Mechanical Systems (CTEMS’18), Belagavi, IEEE, December 2018.",
+                "Shanmukhappa A. Angadi, Vishwanath C. Kagawade, \"Face and Iris Wavelet Feature Fusion through Canonical Correlation Analysis for Person Identification\", ICEECCOT, GSSSIETW, Mysore, IEEE, December 2018.",
+                "Shanmukhappa Angadi, Vishwanath C. Kagawade, \"Face Recognition Through Symbolic Data Modeling of Local Directional Gradient\", ERCICA 2016, Springer, Singapore.",
+                "Shanmukhappa Angadi, Vishwanath C. Kagawade, \"Iris Recognition using Savitzky-Golay Filter Energy Feature through Symbolic Data Modeling\", 6th IEEE International Conference on Advances in Computing, Communications and Informatics (ICACCI 2017), Manipal University, September 2017.",
+                "C. S. Janadri, B. G. Sheeparamatti, V. Kagawade, \"Multiclass Classification of Kirlian Images using SVM Technique\", 2017 International Conference on Advances in Computing, Communications and Informatics (ICACCI), pp. 2246-2250, IEEE, 2017.",
+                "Kagawade V. C., Vijayashree C. S., Vasudev T., \"Transformation of Artistic Form Text to Linear Form Text for OCR Systems using Radon Transform\", ERCST, Lecture Notes in Electrical Engineering, Vol. 248, Springer, New Delhi, 2014.",
+                "Jayasheela D. K., \"Advanced Maximum Likelihood Statistical Estimation for Incomplete Data Sets in CT System\", National Conference, VTU, Belagavi, 2012.",
+                "Laxmi M. Muttappanavar, Praveen Challagidad, \"Intrusion Detection on Cloud using Hybrid Machine Learning Techniques\", 7th National Conference on Recent Advances in Technology and Engineering (RATE-2018), Bangalore.",
+                "Lakshmi P. Kolur, Pushpa, \"Cooperative Relaying in MIMO Ad-hoc Networks for Fast Communication\", National Conference on Emerging Technologies in Computer Science, April 2014.",
+                "Lakshmi P. Kolur, Sunita R., \"Face Controlled Computer\", International Conference on Technology Management for Green Environment, September 2013."
+              ]
+            }
+          ]
+        }
+      ],
+      "patents": [
+        {
+          "title": "Digital Visitors Counter for Social Distancing",
+          "inventors": "Dr. Sunanda Biradar, Dr. Prema Badiger, Dr. Mukta Bannur, Dr. Bharati Reshmi, Sumangala Biradar, Dr. Rohini Bhoosnurmath, Dr. Sharan Badiger",
+          "filed": "03 Apr 2021",
+          "published": "16 Apr 2021",
+          "status": "Published (Publication No. 16/2021)"
+        }
+      ],
+      "committeeGroups": [
+        {
+          "title": "Board of Studies — 8th BoS (2025-26)",
           "members": [
             {
-              "name": "Dr. A. D. Devangavi",
-              "position": "Chairman — Professor and Head, Dept. of AI & ML, BEC Bagalkote"
+              "name": "Dr. Bharati Reshmi",
+              "position": "Chairman — Professor & Head, AI & ML, BEC Bagalkote"
             },
             {
-              "name": "Dr. B. M. Reshmi",
+              "name": "Dr. Rajendra Hegadi",
+              "position": "VTU Nominee — Associate Professor, Data Science & Intelligent Systems, IIIT Dharwad"
+            },
+            {
+              "name": "Dr. Prema T. Akkasaligar",
+              "position": "Subject Expert (outside University) — Professor, CSE, KLE Technological University's Dr. M. S. S. Campus, Belagavi"
+            },
+            {
+              "name": "Dr. Dheeraj D.",
+              "position": "Subject Expert (outside University) — Associate Professor, CSE (Digital Transformation), CoE AI & Decentralized Technologies, Atria University, Bangalore"
+            },
+            {
+              "name": "Prof. Pushpa B. Patil",
+              "position": "Expert from outside the College — Professor & Head, CSE (Data Science), BLDEA's V. P. Dr. P. G. H. CET, Vijayapura"
+            },
+            {
+              "name": "Dr. Vishwanath C. Kagawade",
               "position": "Member — Associate Professor, AI & ML, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Jayasheela D. Kallaganiger",
+              "position": "Member — Assistant Professor, AI & ML, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Lakshmi P. Kolur",
+              "position": "Member — Assistant Professor, AI & ML, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Anita G. Kori",
+              "position": "Member — Assistant Professor, AI & ML, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Laxmi M. Muttappanavar",
+              "position": "Member — Assistant Professor, AI & ML, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Ashok Patil",
+              "position": "Member — Assistant Professor, AI & ML, BEC Bagalkote"
+            },
+            {
+              "name": "Prof. Brahmanand Reddy",
+              "position": "Member — Assistant Professor, AI & ML, BEC Bagalkote"
+            },
+            {
+              "name": "Mr. Shrivatsa Gudi",
+              "position": "Industry Representative — AI Data Scientist, Volvo Group, Bangalore"
+            },
+            {
+              "name": "Ms. Anaga",
+              "position": "Student Member — 7th Semester"
+            },
+            {
+              "name": "Mr. Sohail",
+              "position": "Student Member — 7th Semester"
+            }
+          ]
+        }
+      ],
+      "infrastructureItems": [
+        {
+          "name": "Shrinivasa Ramanujan Laboratory",
+          "specification": "30 desktops — Intel Core i7-14700 (2.10 GHz), 16 GB RAM, Windows 11/10 Pro; Konica Minolta 205i printer, Epson EB-E01 projector, 1 Gbps Wi-Fi leased line.",
+          "quantity": "30 systems"
+        },
+        {
+          "name": "Aryabhata Laboratory",
+          "specification": "30 desktops — Intel Core i5-14500 (2.60 GHz), 16 GB RAM, 477 GB SSD, Intel Arc A380 (6 GB) graphics; Epson EB-E01 projector, 1 Gbps Wi-Fi. Software: Geany, Keil µVision5, VS Code, Jupyter Notebook, Dev-C++, wgnuplot.",
+          "quantity": "30 systems"
+        },
+        {
+          "name": "N. R. Narayana Murthy Laboratory",
+          "specification": "30 desktops — Intel Core i7-14700 (2.10 GHz), 16 GB RAM, Windows 11 Pro; Epson EB-E01 projector, 1 Gbps Wi-Fi. Software: Geany, MongoDB, VS Code, Jupyter Notebook, Oracle DB, Eclipse, Anaconda3.",
+          "quantity": "30 systems"
+        },
+        {
+          "name": "Classrooms",
+          "specification": "Spacious NEP-compliant classrooms.",
+          "quantity": "02"
+        },
+        {
+          "name": "Seminar Hall",
+          "specification": "With LCD projector for seminars, expert talks and presentations.",
+          "quantity": "01"
+        }
+      ],
+      "softwareItems": [
+        {
+          "name": "Visual Studio Code, Jupyter Notebook, Anaconda3",
+          "usage": "AI/ML & data-science programming"
+        },
+        {
+          "name": "Oracle Database, MongoDB",
+          "usage": "Database management systems"
+        },
+        {
+          "name": "Eclipse, Geany, Dev-C++, Keil µVision5",
+          "usage": "Programming & embedded development"
+        },
+        {
+          "name": "Arduino IDE, Node-RED, ThingSpeak, Blynk",
+          "usage": "IoT development platforms"
+        }
+      ],
+      "activityTables": [
+        {
+          "title": "Student Internships (2025-26)",
+          "columns": [
+            "Name",
+            "USN",
+            "Company"
+          ],
+          "rows": [
+            [
+              "Sahana P Hunur",
+              "2BA22AI035",
+              "Infobellit"
+            ],
+            [
+              "Suhas V Sugalli",
+              "2BA22AI048",
+              "Tech Fortune Technologies"
+            ],
+            [
+              "Rahulgouda Patil",
+              "2BA22AI029",
+              "Armorcode Inc."
+            ],
+            [
+              "Sahana Siddappa Jirli",
+              "2BA22AI037",
+              "IIIT Dharwad"
+            ],
+            [
+              "Parth B Ishwarappagol",
+              "2BA22AI022",
+              "IIIT Dharwad"
+            ],
+            [
+              "Krutika Kanchani",
+              "2BA22AI015",
+              "Sharp Software Development India Pvt. Ltd."
+            ],
+            [
+              "Rakesh Itnal",
+              "2BA22AI030",
+              "IAST Software Solutions"
+            ],
+            [
+              "Shankar M Darur",
+              "2BA22AI007",
+              "Agribid.ai"
+            ],
+            [
+              "Praveenkumar Pattar",
+              "2BA22AI053",
+              "SuprMentr Technologies Pvt. Ltd."
+            ],
+            [
+              "Chinmayee P. S.",
+              "2BA22AI005",
+              "IIIT Dharwad"
+            ],
+            [
+              "Ibrahim Indikar",
+              "2BA22AI010",
+              "Tech Fortune"
+            ],
+            [
+              "Nikita V. Patil",
+              "2BA22AI019",
+              "Tech Fortune Technologies"
+            ],
+            [
+              "Aishwarya Adahalli",
+              "2BA22AI001",
+              "Robowaves / QSpiders"
+            ],
+            [
+              "Pooja Haddannavar",
+              "2BA22AI023",
+              "Robowaves"
+            ],
+            [
+              "Prerana Umadi",
+              "2BA22AI026",
+              "IIT Dharwad"
+            ],
+            [
+              "Aditya",
+              "2BA23AI400",
+              "SuprMentr"
+            ],
+            [
+              "Digvijayram V. Mirajkar",
+              "2BA22AI008",
+              "IIT Dharwad"
+            ],
+            [
+              "S. Vijaya Kumar",
+              "2BA22AI034",
+              "IIIT Dharwad"
+            ],
+            [
+              "Suhas Mokhashi",
+              "2BA22AI047",
+              "IIIT Dharwad"
+            ],
+            [
+              "Chetan Subhas Araballi",
+              "2BA23AI401",
+              "Tyrolit"
+            ],
+            [
+              "Vivek S. Hosur",
+              "2BA22AI052",
+              "Tech Fortune"
+            ],
+            [
+              "Prashant Hadapad",
+              "2BA22AI025",
+              "Tech Fortune"
+            ],
+            [
+              "Ranjita Jigalikoppa",
+              "2BA22AI032",
+              "IIIT Dharwad"
+            ],
+            [
+              "Soumya Basappa Mattikoppa",
+              "2BA22AI043",
+              "IIIT Dharwad"
+            ],
+            [
+              "Ishwarappa Mullur",
+              "2BA22AI011",
+              "Tech Fortune"
+            ],
+            [
+              "Rugved C. Sangulkar",
+              "2BA22AI033",
+              "Tech Fortune Technologies"
+            ],
+            [
+              "Sahana S. Sankanurmath",
+              "2BA22AI036",
+              "Incanto Dynamics Private Limited"
+            ],
+            [
+              "Chirag Malagi",
+              "2BA22AI006",
+              "IIIT Dharwad"
+            ],
+            [
+              "Varsha",
+              "2BA22AI050",
+              "Robowaves / QSpiders"
+            ],
+            [
+              "Shravana Mahesh Solapurmath",
+              "2BA22AI041",
+              "IIIT Dharwad"
+            ],
+            [
+              "Srusthi Vitthal Shintre",
+              "2BA23AI405",
+              "IIIT Dharwad"
+            ],
+            [
+              "Varsha Galagali",
+              "2BA23AI406",
+              "MindMatrix"
+            ],
+            [
+              "Vinayak D. Badiger",
+              "2BA22AI051",
+              "IIT Dharwad"
+            ],
+            [
+              "Navya Karikatti",
+              "2BA22AI108",
+              "QSpiders, Rajajinagar, Bengaluru"
+            ],
+            [
+              "Nagaratna Mankani",
+              "-",
+              "IIIT Dharwad"
+            ],
+            [
+              "Pooja Venkatesh Dhariyappanavar",
+              "2BA22AI024",
+              "IIIT Dharwad"
+            ],
+            [
+              "Bhavani Mallikarjuna Limbikai",
+              "2BA22AI003",
+              "IIIT Dharwad"
+            ],
+            [
+              "Srushti S. Sankannavar",
+              "2BA22AI045",
+              "IIIT Dharwad"
+            ]
+          ]
+        },
+        {
+          "title": "Expert Talks (2025-26)",
+          "columns": [
+            "Topic",
+            "Speaker",
+            "Date & Venue"
+          ],
+          "rows": [
+            [
+              "Trustworthy AI for Inclusive and Sustainable Development",
+              "Dr. Bharathi M. A., Professor (AI & ML) & Head — Research & Consultancy, BMS Institute of Technology & Management, Bangalore",
+              "7 Feb 2026, Gallery Hall"
+            ],
+            [
+              "Corporate to Care: The AI Revolution",
+              "Prathik N., Staff Software Engineer, ITRON Inc., Bangalore",
+              "7 Feb 2026, Gallery Hall"
+            ]
+          ]
+        },
+        {
+          "title": "Industry Visits (2025-26)",
+          "columns": [
+            "Programme",
+            "Faculty Participants",
+            "Date & Venue"
+          ],
+          "rows": [
+            [
+              "One-day Immersive Programme at TCS",
+              "Dr. Bharati M. Reshmi, Dr. Vishwanath Kagawade",
+              "4 Feb 2026, TCS Bangalore"
+            ],
+            [
+              "Wipro-WCF Training on Advanced Java Full Stack (Spring Boot, Spring Security, Microservices, DevOps)",
+              "Dr. Vishwanath Kagawade",
+              "9-20 Feb 2026, Wipro Ltd., Chennai"
+            ],
+            [
+              "Guest lecture on Healthcare Innovation & Technology Commercialisation (NRDC)",
+              "Prof. Jayasheela D. K., Dr. Bharati Reshmi",
+              "23 Jun 2026, S. N. Medical College, Bagalkote"
+            ],
+            [
+              "Technical study visit to study NSDC Laboratory establishment",
+              "Dr. Vishwanath Kagawade",
+              "23 Jun 2026, Maharaja Institute of Technology, Mysuru"
+            ]
+          ]
+        }
+      ],
+      "achievementTables": [
+        {
+          "title": "Student Achievements (2025-26)",
+          "columns": [
+            "Student(s)",
+            "Sem",
+            "Date",
+            "Event",
+            "Achievement"
+          ],
+          "rows": [
+            [
+              "Rohan Dangi, Varsha K. Khavatakoppa, Anjana R. Pujari, Amruta S. Bhadakambi, Rushab P. Pattar",
+              "4",
+              "Apr 2026",
+              "NAIN 2.0 - SafePrint",
+              "₹5 Lakh Funding"
+            ],
+            [
+              "Chinmay R. M, Poorvi I. Hulasur, Vaishnavi Bidnoor",
+              "6, 4",
+              "Apr 2026",
+              "NAIN 2.0 - EEPD",
+              "₹5 Lakh Funding"
+            ],
+            [
+              "Gouri S. K, Madhu V. H, Poorvi Patil, Saniya M. K",
+              "4",
+              "Apr 2026",
+              "Hackathon - Colosseum 2026",
+              "1st Place"
+            ],
+            [
+              "Rohan Dangi",
+              "4",
+              "Apr 2026",
+              "Hackathon - IDEAFORGE",
+              "1st Place"
+            ],
+            [
+              "Rohan Dangi",
+              "4",
+              "Apr 2026",
+              "Hackathon - KSHITIJ",
+              "1st Prize"
+            ],
+            [
+              "Sandesh Joshi, Sneha Patil, Housabai Bhosale, Shankar Dharawad, Pavan P",
+              "6",
+              "Apr 2026",
+              "HackWithInfy",
+              "Round 1 Cleared"
+            ],
+            [
+              "Krutika Kanchani, Shiv Pawadashetti, Rugved Sangulkar",
+              "8, 6, 8",
+              "Mar 2026",
+              "WAVE 3.0 Hackathon (AIRA)",
+              "Top 6 Position"
+            ],
+            [
+              "Amrutha B. Bendigeri, Anmol M. Karajagi, Swayam S. Rudraksi, Sakshi N. Gadad, Poorvi P. Biradar, Naveen Yadahalli",
+              "1",
+              "Mar 2026",
+              "National Science Day Exhibition",
+              "1st Prize"
+            ],
+            [
+              "Chinmay R. M",
+              "6",
+              "Feb 2026",
+              "IIT Ropar AI Certification",
+              "Completed"
+            ],
+            [
+              "Chinmay R. M",
+              "6",
+              "Jan 2026",
+              "MSME Registration",
+              "Registered"
+            ],
+            [
+              "Sahana J, Soumya M, Sudha P, Suman K",
+              "7",
+              "17 Nov 2025",
+              "Project Expo",
+              "1st Prize"
+            ],
+            [
+              "Apeksha K. K, Keerti N, Shreya M, Navya K",
+              "7",
+              "17 Nov 2025",
+              "Project Expo",
+              "2nd Prize"
+            ],
+            [
+              "Sameer P, Appaji M, Chinmay R. M, Shiva Y. P, Girish V. P, Prasanna S. A, Sohail I. H, Deepa M",
+              "5",
+              "13 Nov 2025",
+              "Project Exhibition",
+              "1st Prize"
+            ],
+            [
+              "Meghan A, Poorvi A, Shahnna S, Bhoomi A, Preeti K, Shraddha",
+              "5",
+              "13 Nov 2025",
+              "Project Exhibition",
+              "2nd Prize"
+            ],
+            [
+              "Samarth A, Navin H, Sandesh J, Shankar D",
+              "5",
+              "13 Nov 2025",
+              "Project Exhibition",
+              "3rd Prize"
+            ],
+            [
+              "Gouri S. K, Poorvi P. Biradar, Madhu V. H, Keertana K., Saniya M. K",
+              "3",
+              "Dec 2025",
+              "IIT Bombay TechFest",
+              "Participation"
+            ],
+            [
+              "Vivek S. Hosur, Naveen Havaldar",
+              "6, 4",
+              "Mar 2025",
+              "VTU Cricket Tournament",
+              "Winners"
+            ],
+            [
+              "Rakesh Itnal",
+              "6",
+              "Apr 2025",
+              "VTU Kho-Kho",
+              "Winner"
+            ],
+            [
+              "Shravana M, Varsha N",
+              "7",
+              "Oct 2025",
+              "Cultural - Dance",
+              "1st Prize"
+            ],
+            [
+              "Chitrapata Ramayan Team (Shravana M. Solapurmath & team)",
+              "-",
+              "Nov 2025",
+              "Cultural - Skit (KALARAVA)",
+              "1st Prize"
+            ]
+          ]
+        },
+        {
+          "title": "Student Research Publication (2025-26)",
+          "columns": [
+            "Student(s)",
+            "Paper",
+            "Venue",
+            "Date"
+          ],
+          "rows": [
+            [
+              "Chinnu Kumbar, Rakshita Chimmalagi, Aliza Pathan",
+              "XAI-Driven Glaucoma Detection on Android Devices Using Retinal Fundus Photography",
+              "International Conference on Digital Technology and Engineering (ICDTE-2025), R.V. Institute of Technology and Management, Bengaluru (Springer)",
+              "16-17 Oct 2025"
+            ]
+          ]
+        },
+        {
+          "title": "Faculty Achievements & Recognitions (2025-26)",
+          "columns": [
+            "Faculty",
+            "Highlights",
+            "Period"
+          ],
+          "rows": [
+            [
+              "Dr. Bharati M. Reshmi",
+              "Awarded copyright for an AI-based retinal disease detection framework; paper accepted at IEEE ICISSGT-2025; Faculty Mentor, NAIN 2.0 (EEPD); Coordinator, WAVE 3.0 National Hackathon; Judge, 5th ISTE Karnataka State Level Student Convention.",
+              "2025-26"
+            ],
+            [
+              "Dr. Vishwanath C. Kagawade",
+              "Faculty Mentor, NAIN 2.0 (SafePrint); completed Wipro-WCF Advanced Java Full Stack training; Power BI certification & dashboards course; resource person for AI & Industry 4.0 and Faculty Pedagogy programmes.",
+              "2025-26"
+            ],
+            [
+              "Prof. Jayasheela D. Kallaganiger",
+              "Qualified KSET and completed Ph.D. course-work examination; presented paper at ICDTE-2025; coordinated TECHTRONIX 2.0 and multiple SDPs.",
+              "2025-26"
+            ],
+            [
+              "Prof. Lakshmi P. Kolur",
+              "NPTEL 'Python for Data Science' (Elite); coordinated TECHTRONIX 2.0 and WAVE 3.0; organised IIC programme 'AI for Atmanirbhar Bharat' (MIC-AICTE).",
+              "2025-26"
+            ],
+            [
+              "Prof. Anita G. Kori",
+              "Published paper at ICAMMP-2025 (Taylor & Francis); coordinated National Science Day Exhibition and several SDPs; judge for KSHITIJ 2026 and IEEE IDEAFORGE.",
+              "2025-26"
+            ],
+            [
+              "Prof. Laxmi M. Muttappanavar",
+              "Published a Kannada poem in Udayavani; resource person for a guest lecture on Applications of AI; coordinated SDPs on Competitive Programming and Web Technologies.",
+              "2025-26"
+            ],
+            [
+              "Prof. Ashok S. Patil",
+              "Completed FDPs on Advanced Research Paper Writing, Quantum Computing Foundations, and Research Writing; coordinated project exhibitions.",
+              "2025-26"
+            ],
+            [
+              "Prof. Brahmanand Reddy",
+              "Completed IIT Dharwad National Capacity Building Programme and IIT Bombay Machine Learning workshop (TechFest); supported the National Science Day Exhibition.",
+              "2025-26"
+            ]
+          ]
+        }
+      ],
+      "associations": [
+        {
+          "name": "Association of Intelligent Minds (AIM)",
+          "about": "The official student association of the Department of Artificial Intelligence and Machine Learning, AIM is a vibrant platform for fostering technical excellence, innovation, research, entrepreneurship, leadership and collaborative learning. It organises expert talks, workshops, hackathons, coding competitions, project exhibitions, paper presentations, industrial visits, student development programmes, innovation challenges, startup initiatives and community outreach, encouraging students to apply AI and ML to real-world problems in healthcare, agriculture, smart cities, robotics and intelligent automation. Through engagement with industry experts, alumni and professional bodies, AIM bridges the gap between academia and industry to develop technically competent, socially responsible and globally competitive AI professionals.",
+          "coordinators": [
+            "Prof. Lakshmi P. Kolur"
+          ],
+          "exicom": [
+            {
+              "name": "Vikas Amarappagol",
+              "position": "Student Coordinator"
+            },
+            {
+              "name": "Shankar Dharwad",
+              "position": "Student Coordinator"
             }
           ]
         }
       ],
       "mous": [
         {
-          "partner": "ExcelR Edtech Pvt. Ltd. (ExcelR — Raising Excellence)",
+          "partner": "ExcelR Edtech Pvt. Ltd.",
           "since": "Dec 2023"
         }
       ],
-      "infrastructureItems": [
+      "contact": {
+        "name": "Dr. Bharati M. Reshmi",
+        "designation": "Professor & Head, Department of AI & ML"
+      },
+      "sectionTitles": {
+        "activity-programs": "Industry Connect",
+        "achievements": "Achievements",
+        "governance": "Board of Studies"
+      },
+      "sectionNavLabels": {
+        "activity-programs": "Industry Connect",
+        "achievements": "Achievements",
+        "governance": "Board of Studies"
+      },
+      "newsletters": [
         {
-          "name": "Srinivasa Ramanujan Lab",
-          "specification": "HP 280 G9, Intel Core i7 14th Gen, 16 GB DDR4 RAM, 512 GB SSD; with Epson E01 projector and Konica Minolta 205i printer",
-          "quantity": "30 systems"
+          "title": "Issue 9 — June 2026",
+          "file": "departments/aiml/newsletters/aiml-newsletter-jun-2026.pdf"
         },
         {
-          "name": "N. R. Narayana Murthy Lab",
-          "specification": "HP 280 G9, Intel Core i7 14th Gen, 16 GB DDR4 RAM, 512 GB SSD; with Epson E01 projector",
-          "quantity": "30 systems"
+          "title": "Issue 8 — May 2026",
+          "file": "departments/aiml/newsletters/aiml-newsletter-may-2026.pdf"
         },
         {
-          "name": "Computer Lab (New)",
-          "specification": "HP 280 G9, Intel Core i5 14th Gen, 16 GB DDR4 RAM, 512 GB SSD; with Epson E01 projector",
-          "quantity": "30 systems"
+          "title": "Issue 7 — April 2026",
+          "file": "departments/aiml/newsletters/aiml-newsletter-apr-2026.pdf"
         },
         {
-          "name": "Workstations",
-          "specification": "Intel Xeon W-2223 CPU @ 3.6 GHz, 64 GB RAM, Windows 11 Pro for Workstations (64-bit)",
-          "quantity": "2"
+          "title": "Issue 6 — March 2026",
+          "file": "departments/aiml/newsletters/aiml-newsletter-mar-2026.pdf"
         },
         {
-          "name": "Classrooms",
-          "quantity": "2"
+          "title": "Issue 5 — February 2026",
+          "file": "departments/aiml/newsletters/aiml-newsletter-feb-2026.pdf"
         },
         {
-          "name": "Seminar Hall",
-          "specification": "With LCD projector",
-          "quantity": "1"
+          "title": "Issue 4 — January 2026",
+          "file": "departments/aiml/newsletters/aiml-newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "Issue 3 — December 2025",
+          "file": "departments/aiml/newsletters/aiml-newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "Issue 2 — November 2025",
+          "file": "departments/aiml/newsletters/aiml-newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "Issue 1 — October 2025",
+          "file": "departments/aiml/newsletters/aiml-newsletter-oct-2025.pdf"
         }
       ],
-      "associations": [
+      "facilitiesGallery": [
         {
-          "name": "AIM Association",
-          "about": "A student association focused on promoting and implementing creative and forward-thinking ideas and solutions. Members come together to share knowledge and expertise to generate new and groundbreaking concepts and approaches, fostering an environment that encourages out-of-the-box thinking through brainstorming sessions, hackathons and collaborative events. Objectives: encourage students' interest in innovative and technical areas; develop interpersonal and technical skills; promote interaction between students, faculty and the outside world; and enhance team spirit and ethics.",
-          "coordinators": [
-            "Dr. Anil D. Devangavi (Faculty Coordinator)"
+          "title": "Laboratories, Classrooms & Seminar Hall",
+          "images": [
+            "departments/aiml/facilities/lab-01.webp",
+            "departments/aiml/facilities/lab-02.webp",
+            "departments/aiml/facilities/lab-03.webp",
+            "departments/aiml/facilities/lab-04.webp",
+            "departments/aiml/facilities/lab-05.webp",
+            "departments/aiml/facilities/lab-06.webp",
+            "departments/aiml/facilities/lab-07.webp",
+            "departments/aiml/facilities/lab-08.webp"
           ]
         }
       ],
-      "contact": {
-        "name": "Dr. A. D. Devangavi",
-        "designation": "Professor and Head, Department of AI & ML",
-        "phone": "+91-9342186108",
-        "email": ""
-      },
-      "documents": [
+      "placementImages": [
         {
-          "title": "AI & ML Department Profile (2024-25)",
-          "file": "departments/aiml/docs/aiml-department-profile-2024-25.pdf"
+          "title": "Top Placements 2025-26",
+          "images": [
+            "departments/aiml/placements/top-2025-01.webp",
+            "departments/aiml/placements/top-2025-02.webp",
+            "departments/aiml/placements/top-2025-03.webp"
+          ]
         }
+      ],
+      "homeGroupPhoto": "departments/aiml/home-group.webp",
+      "homeGroupPhotoCaption": "Department of Artificial Intelligence & Machine Learning",
+      "galleryExclude": [
+        "/labs/",
+        "/facilities/",
+        "/placements/",
+        "home-group"
       ]
     },
     "automobile-engg": {
