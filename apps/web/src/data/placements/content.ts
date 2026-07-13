@@ -3,9 +3,14 @@ import { asset } from "@/lib/assets";
 export const placementContent = {
   brochureHref: asset("placements/brochure.pdf"),
   policyHref: asset("placements/placement-policy.pdf"),
-  recruiterFormSrc: "",
+  registerEmail: "placements@becbgk.edu",
+  stats: [
+    { value: "₹4.0 LPA", label: "Average Package" },
+    { value: "450", label: "Placement Offers (2026)" },
+    { value: "130+", label: "Recruiters" },
+  ],
   accreditation: [
-    { label: "NIRF", value: "150–250 band", note: "Rank band, last 4 years" },
+    { label: "NIRF", value: "150–250 band", note: "Rank band (data up to 2023 only)" },
     { label: "NBA", value: "100% UG", note: "& 50% of PG programs accredited" },
     { label: "NAAC", value: "'A' Grade", note: "3.34 on a 4-point scale" },
     { label: "AICTE–CII", value: "Gold", note: "Industry-linked survey category" },
@@ -19,21 +24,18 @@ export const placementContent = {
       phone: "8904095779",
     },
     {
-      name: "Dr. Chayalakshmi C. L.",
-      role: "Assistant Placement Officer",
-      scope: "General enquiry",
-      phone: "9902678858",
-    },
-    {
       name: "Dr. Santosh B. Kumbalavati",
       role: "Assistant Placement Officer",
       scope: "Internship providers",
+      email: "sbkumbalavati@gmail.com",
       phone: "9986339066",
+      photo: "placements/team/dr-santosh-b-kumbalavati.webp",
     },
     {
       name: "Prof. Brijmohan A. Vyas",
       role: "Assistant Placement Officer",
       scope: "PG & UG students",
+      email: "brijmohanvyas11@gmail.com",
       phone: "9743391794",
     },
     {
@@ -41,12 +43,6 @@ export const placementContent = {
       role: "Assistant Placement Officer",
       scope: "Training providers",
       phone: "7204313650",
-    },
-    {
-      name: "Prof. Rajshekhar Malagihal",
-      role: "Assistant Placement Officer",
-      scope: "Training providers",
-      phone: "8884561762",
     },
   ],
   home: {
@@ -127,7 +123,13 @@ export const placementContent = {
         title: "Slot - 3: Standard Offer",
         ctc: "3.0 Lakhs - 5.49 Lakhs",
         duration: "10-15 Days (Week 3 & 4)",
-        description: "Companies offering CTC less than 5.49 Lakhs per annum. Selected students may still be eligible for higher priority slots if rules permit.",
+        description: "Companies offering CTC between 3.0 Lakhs and 5.49 Lakhs per annum. Selected students remain eligible for higher priority slots as per rules.",
+      },
+      {
+        title: "Slot - 4: Core / Product Company Offer",
+        ctc: "Any CTC",
+        duration: "Flexible schedule",
+        description: "Core and product companies with any CTC can participate in placement drives at any time convenient to the college and the companies. A student may select either their highest offer or a core/product company offer.",
       },
     ],
     generalRules: [
@@ -135,6 +137,7 @@ export const placementContent = {
       "A particular slot may span over multiple days with multiple sessions.",
       "Placement Registration is valid for ONE ACADEMIC YEAR ONLY.",
       "Backlogs: Students with 4 or more backlogs are not permitted to register.",
+      "A student needs to select either the highest offer or a core/product company offer.",
       "Attendance for Pre-Placement Talks (PPT) is compulsory for interested students.",
       "Formal Dress Code is strictly mandatory for all placement activities.",
       "Malpractice or disciplinary violation leads to immediate disqualification for the year.",

@@ -77,11 +77,16 @@ export function HeroBanner() {
             >
               {/* Image Background */}
               <div className="absolute inset-0 w-full h-full">
+                {slide.fit === "contain" && (
+                  <div aria-hidden className="absolute inset-0 bg-white" />
+                )}
                 <Image
                   src={slide.image}
                   alt={slide.title}
                   fill
-                  className="object-cover"
+                  className={cn(
+                    slide.fit === "contain" ? "object-contain" : "object-cover"
+                  )}
                   priority={index === 0}
                 />
                 {/* Subtle bottom scrim — just enough for text legibility */}

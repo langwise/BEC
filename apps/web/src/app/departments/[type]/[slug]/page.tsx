@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { DepartmentLayout } from "@/components/academics/departments/department-layout";
+import { DepartmentHeroCarousel } from "@/components/academics/departments/hero-carousel";
 import { getDepartmentData } from "@/data/department/department";
 import { getDepartmentContent } from "@/content/departments";
 import { departmentCategories } from "@/data/departments-catalog";
@@ -83,7 +84,13 @@ export default async function DepartmentPage({
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-100/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         </div> */}
 
-      {dept.heroImage ? (
+      {dept.heroImages && dept.heroImages.length > 1 ? (
+        <DepartmentHeroCarousel
+          images={dept.heroImages}
+          name={dept.name}
+          tagline={dept.tagline}
+        />
+      ) : dept.heroImage ? (
         <section className="relative w-full overflow-hidden border-b border-stone-200 bg-stone-900">
           <div className="relative h-[300px] sm:h-[380px] md:h-[460px] lg:h-[520px]">
             <Image

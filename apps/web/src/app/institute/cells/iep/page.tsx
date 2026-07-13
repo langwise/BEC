@@ -37,6 +37,41 @@ const governmentLinks = [
   },
 ];
 
+const mission = [
+  "Establish an incubation centre with a multidisciplinary environment.",
+  "Nurture aspiring entrepreneurial minds to transform innovative ideas into feasible commercial entities.",
+  "Provide a platform to engage in innovation and start-up activities — trainings, conferences, workshops, seminars and competitions.",
+  "Promote business aligned with the region's unique areas of opportunity.",
+  "Promote start-ups in the key thrust areas of engineering and technology by strengthening industry–institute collaboration.",
+];
+
+const provisions = [
+  {
+    title: "Governance & funding",
+    points: [
+      "A dedicated Technology & Business Incubation Cell (TBIC) drives the campus entrepreneurial ecosystem and serves as the Single Point of Contact (SPOC).",
+      "A minimum 1% of the total annual institutional budget is allocated to a separate 'Entrepreneurship Fund' for innovation and start-up activities.",
+      "Funds are raised from DST, DBT, AICTE, BIRAC, Startup India and other agencies, CSR (Sec. 135, Companies Act 2013), alumni and sponsorships.",
+    ],
+  },
+  {
+    title: "For student entrepreneurs",
+    points: [
+      "Students may set up start-ups (including social start-ups) or intern part-time while studying, and earn academic credits for innovative prototypes and business models.",
+      "A start-up may be opted for in place of a mini/major project, seminar or summer training, with a semester/year academic break permitted under TBIC approval.",
+      "Exam eligibility relaxations and campus accommodation are available to incubatees with due permission from the TBIC.",
+    ],
+  },
+  {
+    title: "Equity, IPR & faculty norms",
+    points: [
+      "For services, infrastructure, mentorship, seed funds and IPR use, the institute may take 2%–9.5% equity in a start-up, with a 3-month cooling period under the compulsory-equity model.",
+      "IPR developed using institute facilities/funds is jointly owned by inventors and the institute; royalties are capped at 4% of sale price (1–2% for pure software) when licensed to an incubated company.",
+      "Faculty start-ups may use only technologies originating within BEC; incubated faculty start-up revenue is shared 70% faculty / 30% institute, with sabbatical/leave provisions for executive roles held beyond three months.",
+    ],
+  },
+];
+
 export default function IepPage() {
   return (
     <main className="bg-background text-foreground">
@@ -61,7 +96,8 @@ export default function IepPage() {
                 line with guidelines given in the NISP 2019 policy document. The
                 policy at BEC aims to provide services, support and facilities
                 available for potential innovators and entrepreneurs to excel in
-                the field of innovation and entrepreneurship.
+                the field of innovation and entrepreneurship. The current text
+                reflects the revised 2026 edition of the policy.
               </p>
             </div>
           </div>
@@ -77,6 +113,53 @@ export default function IepPage() {
           </div>
         </div>
 
+        <div className="grid gap-6 lg:grid-cols-2">
+          <div className="rounded-md border border-stone-200 bg-white p-6 shadow-sm">
+            <h3 className="text-lg font-semibold text-gray-900">Vision</h3>
+            <p className="mt-4 text-base leading-relaxed text-gray-700 text-justify">
+              To develop an indigenous, innovative entrepreneurial ecosystem for
+              sustainable start-ups that address societal needs.
+            </p>
+          </div>
+          <div className="rounded-md border border-stone-200 bg-white p-6 shadow-sm">
+            <h3 className="text-lg font-semibold text-gray-900">Mission</h3>
+            <ul className="mt-4 space-y-3">
+              {mission.map((item) => (
+                <li key={item} className="flex gap-3 text-sm leading-relaxed text-gray-700">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="space-y-8">
+          <SectionHeading
+            eyebrow="What the policy offers"
+            title="Key provisions"
+            description="Highlights from the BEC Innovation & Entrepreneurship Policy (Revised 2026) for student and faculty innovators."
+          />
+          <div className="grid gap-4 md:grid-cols-3">
+            {provisions.map((group) => (
+              <div
+                key={group.title}
+                className="flex h-full flex-col rounded-md border border-stone-200 bg-white p-6 shadow-sm"
+              >
+                <h3 className="text-base font-semibold text-gray-900">{group.title}</h3>
+                <ul className="mt-4 space-y-3">
+                  {group.points.map((point) => (
+                    <li key={point} className="flex gap-3 text-sm leading-relaxed text-gray-700 text-justify">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="space-y-8">
           <SectionHeading
             eyebrow="Documents"
@@ -89,8 +172,8 @@ export default function IepPage() {
                 label: "Policy Downloads",
                 documents: [
                   {
-                    title: "BEC Innovation and Entrepreneurship Policy",
-                    url: asset("documents/cells/iic/bec-ie-policy.pdf"),
+                    title: "BEC Innovation & Entrepreneurship Policy (Revised 2026)",
+                    url: asset("documents/cells/iic/bec-ie-policy-2026.pdf"),
                   },
                   {
                     title: "MoE National Innovation and Startup Policy 2019",

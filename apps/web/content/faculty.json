@@ -658,19 +658,26 @@
       {
         "name": "Dr. S. K. Patil",
         "designation": "Associate Professor & Head",
-        "photo": "governance/hod/chemistry/dr-s-k-patil.webp"
+        "photo": "governance/hod/chemistry/dr-s-k-patil.webp",
+        "cv": "departments/chemistry/faculty/cv/s-k-patil.pdf"
       },
       {
         "name": "Dr. P. L. Timmanagoudar",
-        "designation": "Professor"
+        "designation": "Professor",
+        "photo": "departments/chemistry/faculty/p-l-timmanagoudar.webp",
+        "cv": "departments/chemistry/faculty/cv/p-l-timmanagoudar.pdf"
       },
       {
         "name": "Dr. V. R. Kattimani",
-        "designation": "Professor (CAS)"
+        "designation": "Professor (CAS)",
+        "photo": "departments/chemistry/faculty/v-r-kattimani.webp",
+        "cv": "departments/chemistry/faculty/cv/v-r-kattimani.pdf"
       },
       {
         "name": "Smt. K. M. Shettar",
-        "designation": "Assistant Professor"
+        "designation": "Assistant Professor",
+        "photo": "departments/chemistry/faculty/keerti-m-shettar.webp",
+        "cv": "departments/chemistry/faculty/cv/keerti-m-shettar.pdf"
       }
     ],
     "pg/biotechnology": [

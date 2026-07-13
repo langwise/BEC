@@ -11,7 +11,7 @@ export const metadata = pageMetadata({
 });
 
 const contactDetails = {
-  name: "Mr. Basavaraj Endigeri",
+  name: "Prof. Basavaraj Endigeri",
   role: "Alumni Secretary",
   org: "BECAA, Basaveshwar Engineering College (A)",
   address: "Bagalkote - 587 102",
@@ -43,7 +43,7 @@ const objectives = [
 const committeeMembers = [
   { name: "Dr. B. R. Hiremath", role: "President", designation: "Principal" },
   { name: "Shri. B. R. Endigeri", role: "Secretary", designation: "Asst. Prof." },
-  { name: "Shri. R. A. Patil", role: "Member", designation: "Assoc. Prof." },
+  { name: "Dr. C. M. Veerendra Kumar", role: "Member", designation: "Assoc. Prof." },
   { name: "Shri. S. M. Pharsiyawar", role: "Member", designation: "Assoc. Prof." },
   { name: "Smt. Shardha P.", role: "Member", designation: "Assoc. Prof." },
   { name: "Shri. M. G. Kambalimath", role: "Member", designation: "Asst. Prof." },

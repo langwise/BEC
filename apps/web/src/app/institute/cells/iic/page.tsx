@@ -264,8 +264,8 @@ export default function IicPage() {
               {
                 documents: [
                   {
-                    title: "Start-up Policy 2019",
-                    url: asset("documents/cells/iic/iic-startup-policy-2019.pdf"),
+                    title: "BEC Innovation & Entrepreneurship Policy (Revised 2026)",
+                    url: asset("documents/cells/iic/bec-ie-policy-2026.pdf"),
                   },
                   {
                     title: "Karnataka Startup Portal",

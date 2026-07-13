@@ -80,8 +80,8 @@ export function RtiContent() {
                                             76187 81963
                                         </p>
                                         <p className="flex items-center gap-2 text-gray-700">
-                                            <span className="font-medium w-20 text-xs uppercase tracking-wide text-gray-500">Fax:</span>
-                                            76187 81963
+                                            <span className="font-medium w-20 text-xs uppercase tracking-wide text-gray-500">Email:</span>
+                                            <a href="mailto:becprincipal@yahoo.com" className="text-primary hover:underline break-all">becprincipal@yahoo.com</a>
                                         </p>
                                     </div>
                                 </CardContent>
@@ -112,12 +112,6 @@ export function RtiContent() {
                                         <p className="font-semibold text-gray-900 text-base">Joint Director (Administration)</p>
                                         <p className="text-gray-600">Director of Technical Education,</p>
                                         <p className="text-gray-600">Bangalore.</p>
-                                    </div>
-                                    <div className="pt-2 border-t border-stone-100 space-y-1">
-                                        <p className="flex items-center gap-2 text-gray-700">
-                                            <span className="font-medium w-20 text-xs uppercase tracking-wide text-gray-500">Contact No:</span>
-                                            080-22256810
-                                        </p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -152,8 +146,8 @@ export function RtiContent() {
                                             76187 81963
                                         </p>
                                         <p className="flex items-center gap-2 text-gray-700">
-                                            <span className="font-medium w-24 text-xs uppercase tracking-wide text-gray-500">ಫ್ಯಾಕ್ಸ್:</span>
-                                            76187 81963
+                                            <span className="font-medium w-24 text-xs uppercase tracking-wide text-gray-500">ಇಮೇಲ್:</span>
+                                            <a href="mailto:becprincipal@yahoo.com" className="text-primary hover:underline break-all">becprincipal@yahoo.com</a>
                                         </p>
                                     </div>
                                 </CardContent>
@@ -189,12 +183,6 @@ export function RtiContent() {
                                         <p className="font-semibold text-gray-900 text-base">ಜಂಟಿ ನಿರ್ದೇಶಕರು (ಆಡಳಿತ)</p>
                                         <p className="text-gray-600">ಪ್ರಾದೇಶಿಕ ತಾಂತ್ರಿಕ ನಿರ್ದೇಶನಾಲಯ,</p>
                                         <p className="text-gray-600">ಬೆಂಗಳೂರು-1</p>
-                                    </div>
-                                    <div className="pt-2 border-t border-stone-100 space-y-1">
-                                        <p className="flex items-center gap-2 text-gray-700">
-                                            <span className="font-medium w-24 text-xs uppercase tracking-wide text-gray-500">ದೂರವಾಣಿ ಸಂಖ್ಯೆ:</span>
-                                            080-22256810
-                                        </p>
                                     </div>
                                 </CardContent>
                             </Card>

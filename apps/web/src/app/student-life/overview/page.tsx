@@ -143,7 +143,7 @@ export default function StudentLifeOverviewPage() {
               hostels and a community radio station.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link href="/student-life/hostels">
+              <Link href="/hostel">
                 <Button>Explore Hostels</Button>
               </Link>
               <Link href="/student-life/activities">

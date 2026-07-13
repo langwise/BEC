@@ -61,6 +61,50 @@
             ],
             "description": "Full-bleed hero image (asset key on R2) shown at the top of the department page, home-hero style."
           },
+          "heroImages": {
+            "type": "array",
+            "description": "Rolling hero carousel (arrows + autoplay). When 2+ keys are given, renders instead of the single heroImage.",
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "./_schema/asset-keys.json"
+                }
+              ]
+            }
+          },
+          "mouImages": {
+            "type": "array",
+            "description": "MoU signing photos (asset keys) shown as a gallery under the MoUs section.",
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "./_schema/asset-keys.json"
+                }
+              ]
+            }
+          },
+          "researchGallery": {
+            "type": "array",
+            "description": "Research-laboratory photo galleries shown under the Research section.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["images"],
+              "properties": {
+                "title": { "type": "string" },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "./_schema/asset-keys.json"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
           "infrastructureGallerySlug": {
             "type": "string",
             "description": "Explicit R2 folder under departments/<infrastructureGallerySlug>/ for verified infrastructure photos. Use this for PG departments instead of assetSlug fallback."

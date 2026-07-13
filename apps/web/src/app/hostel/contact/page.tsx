@@ -5,9 +5,27 @@ import { Phone, MapPin, UserCircle } from "lucide-react";
 export const metadata = pageMetadata({
     title: "Hostel Contact & Wardens",
     description:
-        "Contact BEC Bagalkote's hostel administration for admission inquiries — reach Deputy Chief Warden Dr. P. L. Timmanagoudar and the Chief Warden at the Vidyagiri campus.",
-    path: "/academics/hostel/contact",
+        "Contact BEC Bagalkote's hostel administration for admission inquiries — reach the Boys and Girls Hostel Deputy Chief Wardens and the Chief Warden at the Vidyagiri campus.",
+    path: "/hostel/contact",
 });
+
+const contacts = [
+    {
+        role: "Deputy Chief Warden — Boys Hostel",
+        name: "Dr. P. L. Timmanagoudar",
+        phone: "+91 94486 93600",
+    },
+    {
+        role: "Deputy Chief Warden — Girls Hostel",
+        name: "Dr. Shobha R. Patil",
+        phone: "+91 94495 34202",
+    },
+    {
+        role: "Chief Warden",
+        name: "Dr. B. R. Hiremath",
+        detail: "Principal",
+    },
+];
 
 export default function HostelContactPage() {
     return (
@@ -26,31 +44,28 @@ export default function HostelContactPage() {
                     <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6 hover:shadow-md transition-shadow h-full">
                         <h2 className="text-xl font-bold text-primary mb-6 flex items-center gap-2">
                             <Phone className="w-5 h-5" />
-                            Warden's Office
+                            Warden&apos;s Office
                         </h2>
                         <div className="space-y-4">
-                            <div className="p-4 bg-white rounded-xl flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-orange-100 text-primary flex items-center justify-center shrink-0">
-                                    <UserCircle className="w-6 h-6" />
+                            {contacts.map((c) => (
+                                <div key={c.role} className="p-4 bg-white rounded-xl flex items-start gap-4">
+                                    <div className="w-10 h-10 rounded-full bg-orange-100 text-primary flex items-center justify-center shrink-0">
+                                        <UserCircle className="w-6 h-6" />
+                                    </div>
+                                    <div>
+                                        <p className="text-xs text-gray-500 font-medium uppercase tracking-wider">{c.role}</p>
+                                        <p className="font-bold text-gray-900">{c.name}</p>
+                                        {c.detail ? (
+                                            <p className="text-sm text-gray-500">{c.detail}</p>
+                                        ) : null}
+                                        {c.phone ? (
+                                            <a href={`tel:${c.phone.replace(/[^+\d]/g, "")}`} className="text-primary font-medium hover:underline">
+                                                {c.phone}
+                                            </a>
+                                        ) : null}
+                                    </div>
                                 </div>
-                                <div>
-                                    <p className="text-xs text-gray-500 font-medium uppercase tracking-wider">Deputy Chief Warden</p>
-                                    <p className="font-bold text-gray-900">Dr. P. L. Timmanagoudar</p>
-                                    <a href="tel:+919448693600" className="text-primary font-medium hover:underline">
-                                        +91 94486 93600
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="p-4 bg-white rounded-xl flex items-start gap-4">
-                                <div className="w-10 h-10 rounded-full bg-orange-100 text-primary flex items-center justify-center shrink-0">
-                                    <UserCircle className="w-6 h-6" />
-                                </div>
-                                <div>
-                                    <p className="text-xs text-gray-500 font-medium uppercase tracking-wider">Chief Warden</p>
-                                    <p className="font-bold text-gray-900">Dr. B. R. Hiremath</p>
-                                    <p className="text-sm text-gray-500">Principal</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </FadeIn>

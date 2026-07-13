@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -22,8 +22,22 @@ import { navigationData } from "@/data/navigation";
 import { NavigationItem } from "@/types/navigation";
 import { isGroup, isLink } from "@/utils/navigation-gaurd";
 
+const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [logoHeight, setLogoHeight] = useState<number>();
+  const brandTextRef = useRef<HTMLDivElement>(null);
+
+  useIsomorphicLayoutEffect(() => {
+    const el = brandTextRef.current;
+    if (!el) return;
+    const update = () => setLogoHeight(el.getBoundingClientRect().height);
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-muted">
@@ -35,33 +49,33 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between gap-2 sm:gap-4 py-2 sm:py-3">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 sm:gap-6 lg:gap-9 min-w-0 flex-1">
+          <a href="/" className="flex min-w-0 flex-1 items-center gap-5 sm:gap-7 lg:gap-9">
             <img
-              src="/logo-bg-removed.png"
+              src="/logo-crest.png"
               alt="Basaveshwar Engineering College, Bagalkote logo"
-              className="object-contain h-20 sm:h-28 md:h-32 lg:h-40 w-auto shrink-0 -ml-2 sm:-ml-6 lg:-ml-12"
+              style={logoHeight ? { height: `${logoHeight}px` } : undefined}
+              className="h-12 max-h-24 w-auto shrink-0 object-contain -ml-2 sm:-ml-4 lg:-ml-6 md:h-24 md:max-h-none lg:h-28"
             />
-            <div className="flex flex-col justify-center min-w-0">
-              <span className="text-[0.6rem] sm:text-sm lg:text-base font-semibold uppercase tracking-wide text-foreground leading-tight">
+            <div ref={brandTextRef} className="flex flex-col justify-center min-w-0">
+              <span className="text-sm font-semibold uppercase tracking-wide text-foreground leading-tight">
                 B.V.V. Sangha&apos;s
               </span>
               <div className="w-fit">
-                <span className="block text-[0.7rem] sm:text-base lg:text-xl font-bold text-primary leading-tight">
+                <span className="block text-base sm:text-xl lg:text-2xl font-bold text-primary leading-tight">
                   Basaveshwar Engineering College, Bagalkote
                 </span>
-                <span className="block text-[0.55rem] sm:text-xs lg:text-sm font-semibold italic uppercase tracking-wide text-foreground leading-tight text-right">
+                <span className="block text-right text-[11px] font-semibold italic uppercase tracking-wide text-foreground/80 leading-tight">
                   ESTD: 1963
                 </span>
-                <span className="hidden md:block w-0 min-w-full text-xs lg:text-sm font-medium text-foreground/90 leading-snug mt-0.5 text-justify">
-                  [A Government Aided Autonomous College,
-                  Recognized by AICTE, Permanently Affiliated to Visvesvaraya
-                  Technological University, Belagavi &amp; Accredited by NAAC with
-                  &apos;A&apos; Grade from 2024 to 2029] <br/ >
-                  <span className="block text-base lg:text-base font-bold text-primary leading-tight">
-                  S. Nijalingappa Vidyanagar, Bagalkote - 587 102, Karnataka, India
-                  </span>
-                </span>
               </div>
+              <span className="mt-0.5 block max-w-2xl text-[10px] font-medium text-foreground/85 leading-snug md:text-xs">
+                [A Government Aided Autonomous College, Recognized by AICTE, Permanently
+                Affiliated to Visvesvaraya Technological University, Belagavi &amp;
+                Accredited by NAAC with &apos;A&apos; Grade from 2024 to 2029]
+              </span>
+              <span className="block text-[10px] font-bold text-primary leading-tight md:text-xs">
+                S. Nijalingappa Vidyanagar, Bagalkote - 587 102, Karnataka, India
+              </span>
             </div>
           </a>
 

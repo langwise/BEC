@@ -2,14 +2,16 @@
   "$schema": "./home.schema.json",
   "hero": [
     {
-      "image": "institute/group-photos/cine1638.webp",
-      "title": "World-Class Infrastructure",
-      "description": "Experience a campus designed for innovation and growth."
+      "image": "institute/campus/campus-front.webp",
+      "title": "A Legacy of Excellence Since 1963",
+      "description": "A premier technical institution nurturing engineers across a vibrant 93-acre campus.",
+      "fit": "contain"
     },
     {
-      "image": "institute/group-photos/cine1619.webp",
-      "title": "Together We Grow",
-      "description": "Collaboration and camaraderie at the heart of every batch."
+      "image": "placements/placed-students-2025.webp",
+      "title": "Where Careers Take Off",
+      "description": "Celebrating the 2025 batch of placed students and their bright futures ahead.",
+      "fit": "contain"
     },
     {
       "image": "institute/group-photos/cine1614.webp",

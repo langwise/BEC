@@ -82,7 +82,6 @@ export const navigationData: NavigationItem[] = [
     groupsFirst: true,
     items: [
       // { title: "Research", href: "/research" },
-      { title: "First-Year Syllabus", href: "/academics/first-year" },
       {
         title: "Programmes",
         items: [
@@ -91,11 +90,9 @@ export const navigationData: NavigationItem[] = [
           { title: "MBA", href: "/academics/programmes/mba" },
           { title: "MCA", href: "/academics/programmes/mca" },
           { title: "M.Sc.(Engg.)/Ph.D", href: "/academics/programmes/phd" },
+          { title: "First-Year Syllabus", href: "/academics/first-year" },
         ],
       },
-      { title: "Documents to Submit", href: "/academics/documents" },
-      { title: "Scholarship Details", href: "/academics/scholarships" },
-      { title: "Hostel Admissions", href: "/academics/hostel" },
     ],
   },
 
@@ -121,6 +118,8 @@ export const navigationData: NavigationItem[] = [
       { title: "Ph.D / M.Sc.(Engg.)", href: "/admissions/phd" },
       { title: "MBA", href: "/admissions/mba" },
       { title: "MCA", href: "/admissions/mca" },
+      { title: "Documents to Submit", href: "/academics/documents" },
+      { title: "Scholarships", href: "/academics/scholarships" },
       { title: "Contact", href: "/admissions/contact" },
     ],
   },
@@ -144,7 +143,7 @@ export const navigationData: NavigationItem[] = [
   // 9. Hostels
   {
     title: "Hostels",
-    href: "/student-life/hostels",
+    href: "/hostel",
   },
 
   // 10. Student Life

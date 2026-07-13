@@ -516,6 +516,7 @@
     "biotechnology": {
       "name": "Biotechnology",
       "assetSlug": "biotechnology",
+      "heroImage": "departments/biotechnology/cine2100.webp",
       "tagline": "A centre for academic excellence in biotechnology and innovative research for a sustainable future.",
       "established": "2002",
       "intake": "30",
@@ -557,6 +558,10 @@
         {
           "code": "PSO2",
           "text": "Graduates will be able to design, optimize and manage bioprocesses for the development of bio-based products, ensuring quality, safety and regulatory compliance in the industries."
+        },
+        {
+          "code": "PSO3",
+          "text": "Graduates will be able to integrate bioethics, entrepreneurship and environmental awareness to enhance technical skills in biotechnology applications."
         }
       ],
       "highlights": [
@@ -1350,6 +1355,10 @@
           "file": "departments/civil/docs/scheme-syllabus-2025-26.pdf"
         },
         {
+          "title": "Scheme of Teaching & Examination — UG (effective AY 2024-25)",
+          "file": "departments/civil/docs/scheme-syllabus-2024-25.pdf"
+        },
+        {
           "title": "19th Board of Studies — Panel of Experts (2025-2028)",
           "file": "departments/civil/docs/bos-panel-of-experts-2025-28.pdf"
         }
@@ -1487,28 +1496,28 @@
               "position": "Chairman — Associate Professor, BEC Bagalkote"
             },
             {
-              "name": "Dr. S. Sireesh",
-              "position": "VTU Nominee — Professor (GT), IIT Hyderabad"
+              "name": "Dr. Ramesh Nayaka",
+              "position": "VTU Nominee — Assistant Professor (Structural Engineering & Materials), IIT Dharwad"
             },
             {
-              "name": "Dr. M. Sekhar",
-              "position": "External Member — Professor, Indian Institute of Science, Bengaluru"
+              "name": "Dr. Prashanth M. H.",
+              "position": "External Member — Associate Professor (Structural Engineering), NIT Karnataka, Surathkal"
             },
             {
-              "name": "Dr. Ramaseshu D.",
-              "position": "External Member — Professor, NIT Warangal"
+              "name": "Dr. Amaranth Hegade",
+              "position": "External Member — Associate Professor (Geotechnical Engineering), IIT Dharwad"
             },
             {
-              "name": "Dr. Basavaraju Manu",
-              "position": "External Member — Associate Professor, NIT Karnataka, Surathkal"
+              "name": "Dr. B. M. Doddamani",
+              "position": "External Member — Associate Professor (Water Resources & Environmental Engineering), NIT Karnataka, Surathkal"
             },
             {
-              "name": "Dr. Abdul Razaq Honnutagi",
-              "position": "Alumni — Director, Anjuman-I-Islam's Kalsekar Technical Campus, Mumbai"
+              "name": "Anoop S. Koparde",
+              "position": "Member from Industry — General Manager (QS & PMO), Adarsh Group, Bangalore"
             },
             {
-              "name": "Dr. Pranesh",
-              "position": "Member from Industry — Chief Design Engineer, Abhaya Associates, Bengaluru"
+              "name": "Mr. Mahesh P. Shettar",
+              "position": "Alumni — Entrepreneur"
             },
             {
               "name": "Dr. B. R. Hiremath",
@@ -4855,6 +4864,55 @@
       "name": "Electrical & Electronics Engineering",
       "assetSlug": "eee",
       "heroImage": "departments/eee/hero-building.webp",
+      "heroImages": [
+        "departments/eee/hero-building.webp",
+        "departments/eee/hero/slide-1.webp",
+        "departments/eee/hero/slide-2.webp",
+        "departments/eee/hero/slide-3.webp",
+        "departments/eee/hero/slide-4.webp",
+        "departments/eee/hero/slide-5.webp",
+        "departments/eee/hero/slide-6.webp",
+        "departments/eee/hero/slide-7.webp",
+        "departments/eee/hero/slide-8.webp"
+      ],
+      "newsletters": [
+        {
+          "title": "E-Wave — November 2025 (Inaugural Issue)",
+          "file": "departments/eee/newsletters/2025-11-a.pdf"
+        },
+        {
+          "title": "E-Wave — November 2025",
+          "file": "departments/eee/newsletters/2025-11-b.pdf"
+        },
+        {
+          "title": "E-Wave — December 2025",
+          "file": "departments/eee/newsletters/2025-12.pdf"
+        },
+        {
+          "title": "E-Wave — January 2026",
+          "file": "departments/eee/newsletters/2026-01.pdf"
+        },
+        {
+          "title": "E-Wave — February 2026",
+          "file": "departments/eee/newsletters/2026-02.pdf"
+        },
+        {
+          "title": "E-Wave — March 2026",
+          "file": "departments/eee/newsletters/2026-03.pdf"
+        },
+        {
+          "title": "E-Wave — April 2026",
+          "file": "departments/eee/newsletters/2026-04.pdf"
+        },
+        {
+          "title": "E-Wave — May 2026",
+          "file": "departments/eee/newsletters/2026-05.pdf"
+        },
+        {
+          "title": "E-Wave — June 2026",
+          "file": "departments/eee/newsletters/2026-06.pdf"
+        }
+      ],
       "facultyGroupPhoto": "departments/eee/cine1772.webp",
       "facultyGroupPhotoCaption": "Teaching Faculty",
       "staffGroupPhoto": "departments/eee/cine1775.webp",
@@ -5433,6 +5491,34 @@
           "since": "2024"
         }
       ],
+      "mouImages": [
+        "departments/eee/mous/mou-1.webp",
+        "departments/eee/mous/mou-2.webp",
+        "departments/eee/mous/mou-3.webp",
+        "departments/eee/mous/mou-4.webp",
+        "departments/eee/mous/mou-5.webp",
+        "departments/eee/mous/mou-7.webp"
+      ],
+      "researchGallery": [
+        {
+          "title": "SCADA Laboratory",
+          "images": [
+            "departments/eee/research/lab-1.webp",
+            "departments/eee/research/lab-5.webp"
+          ]
+        },
+        {
+          "title": "Energy Park & Renewable Energy Systems Laboratory",
+          "images": [
+            "departments/eee/research/lab-2.webp",
+            "departments/eee/research/lab-3.webp",
+            "departments/eee/research/lab-8.webp",
+            "departments/eee/research/lab-4.webp",
+            "departments/eee/research/lab-6.webp",
+            "departments/eee/research/lab-10.webp"
+          ]
+        }
+      ],
       "infrastructureItems": [
         {
           "name": "Wind Turbine Generator",
@@ -5664,6 +5750,24 @@
             "title": "Board of Studies — Signed Proceedings (2025)",
             "file": "departments/eee/docs/bos-proceedings-2025.pdf"
           }
+        ],
+        "research": [
+          {
+            "title": "SCADA Lab — Details",
+            "file": "departments/eee/docs/scada-lab.pdf"
+          },
+          {
+            "title": "Energy Park Lab — Details",
+            "file": "departments/eee/docs/energy-park-lab.pdf"
+          },
+          {
+            "title": "Renewable Energy Systems (RES) Lab — Details",
+            "file": "departments/eee/docs/res-lab.pdf"
+          },
+          {
+            "title": "Research Labs (RLN & BSH) — Details",
+            "file": "departments/eee/docs/rln-bsh-labs.pdf"
+          }
         ]
       },
       "pos": [
@@ -5759,6 +5863,36 @@
         "research": "Research & Facilities"
       },
       "activities": [
+        {
+          "title": "Department Events & Field Visits",
+          "description": "Highlights from recent departmental events, guest sessions and student field visits to renewable-energy installations.",
+          "images": [
+            {
+              "key": "departments/eee/events/event-1.webp",
+              "caption": "Students on a field visit to a solar-thermal installation"
+            },
+            {
+              "key": "departments/eee/events/event-2.webp",
+              "caption": "Students observing a solar water-heating / pumping demonstration"
+            },
+            {
+              "key": "departments/eee/events/event-3.webp",
+              "caption": "Field visit — rooftop solar PV installation"
+            },
+            {
+              "key": "departments/eee/events/event-4.webp",
+              "caption": "Students at a solar-collector demonstration"
+            },
+            {
+              "key": "departments/eee/events/event-5.webp",
+              "caption": "Inauguration of a department programme on energy systems"
+            },
+            {
+              "key": "departments/eee/events/event-6.webp",
+              "caption": "Student project team"
+            }
+          ]
+        },
         {
           "title": "SDP: Solar PV Design using PV-Syst & Google SketchUp (Resource person: Mr. Madan Mohan K, MD, HIEE, Hyderabad)",
           "date": "13-15 Feb 2025"
@@ -9463,6 +9597,7 @@
     "chemistry": {
       "name": "Chemistry",
       "assetSlug": "chemistry",
+      "heroImage": "departments/chemistry/hero-building.webp",
       "tagline": "Foundational chemistry for engineering — teaching, research and innovation.",
       "overview": "The Department of Chemistry serves as a crucial stepping stone in shaping young minds for successful engineering careers. The courses offered during the first year provide a strong scientific and analytical foundation, enabling students to understand core engineering concepts and develop the problem-solving skills essential for their future studies.\n\nThe department offers courses that emphasize the application of basic sciences to engineering, fostering innovation, critical thinking, and a multidisciplinary approach to learning. These courses help students build a solid understanding of fundamental principles while preparing them to meet the challenges of modern engineering and technology.\n\nThe department is supported by highly qualified, experienced, and dedicated faculty members who strive to create an engaging and dynamic learning environment. Through effective teaching methodologies and continuous mentoring, faculty members inspire students to achieve academic excellence and adapt successfully to the engineering curriculum.\n\nBeyond academics, students are encouraged to actively participate in various co-curricular and extracurricular activities that contribute to their overall personality development. The department places strong emphasis on practical learning, enabling students to acquire hands-on experience and develop the skills required for their professional growth.\n\nWe are committed to providing a healthy, supportive, and student-friendly atmosphere that nurtures confidence, creativity, leadership, and lifelong learning. The Department of Chemistry aims to equip students with the knowledge, skills, and values necessary to excel in their chosen engineering disciplines and become responsible professionals and citizens.",
       "about": "The Department of Chemistry serves as a foundational pillar in engineering education by imparting essential scientific knowledge and fostering analytical and problem-solving skills among undergraduate students. The department is committed to providing quality education through an outcome-based teaching–learning process that aligns with the vision and mission of the institution and supports the holistic development of future engineers.",
@@ -9487,7 +9622,7 @@
         "name": "Dr. S. K. Patil",
         "designation": "Associate Professor & Head",
         "phone": "+91-9448766350",
-        "email": ""
+        "email": "bechodche1963@gmail.com"
       },
       "programsOffered": [
         "Applied Chemistry for Computer Science and Engineering Stream : 1BCHS102C/202C",

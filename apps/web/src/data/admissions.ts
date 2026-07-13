@@ -107,7 +107,7 @@ export const ADMISSION_RELATED_LINKS = [
   {
     title: "Hostel Admission",
     desc: "Boys' and girls' hostel facilities and applications",
-    href: "/academics/hostel",
+    href: "/hostel",
   },
   {
     title: "Academic Calendar",

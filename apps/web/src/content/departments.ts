@@ -9,6 +9,8 @@ export type DepartmentContent = {
   assetSlug?: string;
   /** Asset key for a full-bleed hero image shown at the top of the department page (like the home hero). */
   heroImage?: string;
+  /** Asset keys for a rolling hero carousel (arrows + autoplay), shown instead of the single heroImage when 2+ are given. */
+  heroImages?: string[];
   infrastructureGallerySlug?: string;
   established?: string;
   intake?: string;
@@ -156,6 +158,10 @@ export type DepartmentContent = {
     gallery?: string[];
   }[];
   mous?: { partner: string; location?: string; since?: string }[];
+  /** Asset keys for MoU signing photos, shown as a gallery under the MoUs section. */
+  mouImages?: string[];
+  /** Research-laboratory photo galleries shown under the Research section (title + asset keys). */
+  researchGallery?: { title?: string; images: string[] }[];
   contact?: { name?: string; designation?: string; phone?: string; email?: string };
   additionalContacts?: { name: string; designation?: string; phone?: string; email?: string }[];
   documents?: { title: string; file: string }[];

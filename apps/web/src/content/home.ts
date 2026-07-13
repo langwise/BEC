@@ -6,6 +6,7 @@ export type HeroSlide = {
   image: string;
   title: string;
   description: string;
+  fit: "cover" | "contain";
 };
 
 export type AboutContent = {
@@ -27,6 +28,7 @@ export const heroSlides: HeroSlide[] = data.hero.map((slide, index) => ({
   image: asset(slide.image),
   title: slide.title,
   description: slide.description,
+  fit: "fit" in slide && slide.fit === "contain" ? "contain" : "cover",
 }));
 
 export const aboutContent: AboutContent = {

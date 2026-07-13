@@ -21,6 +21,40 @@ export default function NirfPage() {
       />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18">
+        <div className="mb-14 md:mb-18">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">
+            Ranking Journey
+          </h2>
+          <p className="mt-4 max-w-4xl text-base leading-relaxed text-gray-600 text-justify">
+            BEC Bagalkot has consistently demonstrated excellence at the national
+            level through its notable performance in the National Institutional
+            Ranking Framework (NIRF) rankings. The institute was placed in the
+            201–250 rank band in India during 2019–2020, followed by the 251–300
+            rank band during 2021–2022. Further strengthening its reputation for
+            fostering creativity and entrepreneurship, BEC Bagalkot secured the
+            151st rank in the Innovation Category in 2023.
+          </p>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { period: "2019–2020", value: "201–250", label: "Rank Band, India" },
+              { period: "2021–2022", value: "251–300", label: "Rank Band, India" },
+              { period: "2023", value: "151", label: "Innovation Category" },
+            ].map((item) => (
+              <div
+                key={item.period}
+                className="rounded-xl border border-muted bg-stone-50/50 p-6"
+              >
+                <p className="text-sm font-medium text-gray-500">{item.period}</p>
+                <p className="mt-2 text-3xl font-bold tracking-tight text-primary">
+                  {item.value}
+                </p>
+                <p className="mt-1 text-sm text-gray-600">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <DocumentDirectory
           groups={[
             {

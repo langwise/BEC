@@ -3,8 +3,7 @@ import { PageHeader } from "@/components/placements/page-header";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { ExternalLink, GraduationCap, FileText } from "lucide-react";
-import { asset } from "@/lib/assets";
+import { ExternalLink, GraduationCap } from "lucide-react";
 
 const scholarshipData = [
     { id: 1, particulars: "SC/ST Scholarship (SSP)", department: "Social Welfare Dept. & Tribal Welfare Dept. Govt. of Karnataka", website: "https://ssp.postmatric.karnataka.gov.in" },
@@ -160,22 +159,6 @@ export default function ScholarshipsPage() {
                                     </div>
                                 </CardContent>
                             </Card>
-
-                            <a
-                                href={asset("documents/sc-st-bcm/sc-st-bcm-2025-26.pdf")}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-4 bg-white border border-stone-200 rounded-xl p-5 shadow-xs hover:border-primary/40 hover:shadow-sm transition-all group"
-                            >
-                                <div className="p-3 bg-primary/10 text-primary rounded-lg shrink-0">
-                                    <FileText className="w-6 h-6" />
-                                </div>
-                                <div className="min-w-0">
-                                    <p className="font-bold text-gray-900 group-hover:text-primary transition-colors">BEC SC/ST/BCM Cell</p>
-                                    <p className="text-sm text-gray-500">Cell information document (2025-26) — PDF</p>
-                                </div>
-                                <ExternalLink className="w-4 h-4 text-gray-400 ml-auto shrink-0" />
-                            </a>
                         </div>
                     </FadeIn>
                 </section>

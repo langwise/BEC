@@ -1,11 +1,9 @@
-import Image from "next/image";
-
 import { pageMetadata } from "@/lib/seo";
-import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
 import { PhotoGallery } from "@/components/common/photo-gallery";
-import { asset, assetsUnder } from "@/lib/assets";
-import { Radio, Mic2, Users, Signal, Mail, Phone } from "lucide-react";
+import { assetsUnder } from "@/lib/assets";
+import { RadioHero } from "@/components/common/radio-hero";
+import { Radio, Mic2, Users, Signal, Mail, Phone, User } from "lucide-react";
 
 export const metadata = pageMetadata({
   title: "BEC Dhwani 90.4 FM",
@@ -46,25 +44,9 @@ const facts = [
 export default function BECFMPage() {
   return (
     <main className="bg-background text-foreground">
-      <PageHero
-        eyebrow="Community Radio"
-        title="BEC Dhwani 90.4 FM"
-        description="The community radio station of Basaveshwar Engineering College — the voice of the campus and its neighbouring communities. Inaugurated in 2020, it is the first radio station in Bagalkote."
-        badges={[{ label: "90.4 FM" }, { label: "Since 2020", tone: "outline" }]}
-      />
+      <RadioHero />
 
       <section className="container mx-auto max-w-6xl px-4 lg:px-6 py-14 md:py-18 space-y-16">
-        <div className="relative aspect-21/9 w-full overflow-hidden rounded-md border border-stone-200 bg-stone-100 shadow-sm">
-          <Image
-            src={asset("student-life/bec-fm/cine0978.webp")}
-            alt="A radio jockey on air at the BEC Dhwani 90.4 FM studio, Basaveshwar Engineering College"
-            fill
-            priority
-            sizes="(max-width: 1024px) 100vw, 1100px"
-            className="object-cover"
-          />
-        </div>
-
         <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr] lg:items-center">
           <div className="space-y-6">
             <SectionHeading
@@ -92,31 +74,42 @@ export default function BECFMPage() {
             </div>
           </div>
 
-          <div className="rounded-md border border-stone-200 bg-white p-6 shadow-sm md:p-8">
-            <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-900">
-              <Signal className="h-5 w-5 text-primary" />
-              Tune In
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-gray-600">
-              Tune your radio to{" "}
-              <span className="font-semibold text-gray-900">90.4 FM</span> across
-              the Bagalkote region, or reach the station directly.
-            </p>
-            <div className="mt-4 space-y-2">
-              <a
-                href="mailto:becbgk.fm@gmail.com"
-                className="flex items-center gap-3 rounded-md bg-stone-50 p-3 text-sm text-gray-700 transition-colors hover:text-primary"
-              >
-                <Mail className="h-4 w-4 text-primary" />
-                becbgk.fm@gmail.com
-              </a>
-              <a
-                href="tel:+919448789302"
-                className="flex items-center gap-3 rounded-md bg-stone-50 p-3 text-sm text-gray-700 transition-colors hover:text-primary"
-              >
-                <Phone className="h-4 w-4 text-primary" />
-                +91 94487 89302
-              </a>
+          <div className="space-y-4">
+            <div className="rounded-md border border-stone-200 bg-white p-6 shadow-sm md:p-7">
+              <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-900">
+                <Signal className="h-5 w-5 text-primary" />
+                Tune In
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                Press play at the top of the page to stream live, tune your radio
+                to <span className="font-semibold text-gray-900">90.4 FM</span>{" "}
+                across the Bagalkote region, or reach the station directly.
+              </p>
+              <div className="mt-4 space-y-2">
+                <div className="flex items-center gap-3 rounded-md bg-stone-50 p-3 text-sm text-gray-700">
+                  <User className="h-4 w-4 shrink-0 text-primary" />
+                  <span>
+                    <span className="font-medium text-gray-900">
+                      Bharath Badiger
+                    </span>
+                    <span className="text-gray-500"> · Station Contact</span>
+                  </span>
+                </div>
+                <a
+                  href="tel:+919483620120"
+                  className="flex items-center gap-3 rounded-md bg-stone-50 p-3 text-sm text-gray-700 transition-colors hover:text-primary"
+                >
+                  <Phone className="h-4 w-4 shrink-0 text-primary" />
+                  +91 94836 20120
+                </a>
+                <a
+                  href="mailto:becbgk.fm@gmail.com"
+                  className="flex items-center gap-3 rounded-md bg-stone-50 p-3 text-sm text-gray-700 transition-colors hover:text-primary"
+                >
+                  <Mail className="h-4 w-4 shrink-0 text-primary" />
+                  becbgk.fm@gmail.com
+                </a>
+              </div>
             </div>
           </div>
         </div>

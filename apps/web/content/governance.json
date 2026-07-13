@@ -180,87 +180,88 @@
   },
   "bog": [
     {
-      "name": "Prof. S. R. Gudisagar",
+      "name": "Dr. R. N. Herkal",
       "role": "Chairman",
-      "affiliation": "Development Officer, B.V.V Sangha",
+      "affiliation": "Director (Technical Education), B.V.V. Sangha & Professor, Department of Civil Engineering, Basaveshwar Engineering College, Bagalkote",
       "category": "chair"
     },
     {
-      "name": "Prof. N. G. Karur",
+      "name": "Dr. Meena Chandavarkar",
       "role": "Member",
-      "affiliation": "Administrative Officer, B.V.V Sangha",
+      "affiliation": "Chief Advisor, B.V.V. Sangha, Bagalkote & Former Vice Chancellor, Karnataka State Akkamahadevi Women's University, Vijayapura",
       "category": "sangha"
     },
     {
-      "name": "Sri. Shivaram G. Hegade",
+      "name": "Shri Kumar S. Jigajinni",
       "role": "Member",
-      "affiliation": "Chartered Accountant",
-      "category": "industry"
+      "affiliation": "Chartered Accountant & Honorable Member, B.V.V. Sangha, Bagalkote",
+      "category": "sangha"
     },
     {
-      "name": "Dr. B. R. Srinivasmurthy",
+      "name": "Shri Rudrappa S. Akkimardi",
       "role": "Member",
-      "affiliation": "Emeritus Professor, IISc Bangalore",
-      "category": "academia"
+      "affiliation": "Honorable Member, B.V.V. Sangha, Bagalkote",
+      "category": "sangha"
     },
     {
-      "name": "Dr. Krishna Venkatesh",
+      "name": "Prof. V. R. Shirol",
       "role": "Member",
-      "affiliation": "VTU Nominee",
-      "category": "nominee"
+      "affiliation": "Administrative Officer, B.V.V. Sangha, Bagalkote",
+      "category": "sangha"
     },
     {
-      "name": "Prof. ShyamSundar Patnaik",
+      "name": "Dr. K. Chandrasekhar",
       "role": "Member",
-      "affiliation": "UGC Nominee",
-      "category": "nominee"
-    },
-    {
-      "name": "Dr. L. S. Ganesh",
-      "role": "Invitee",
-      "affiliation": "Professor, DMS, IIT Madras Chennai",
-      "category": "invitee"
-    },
-    {
-      "name": "Dr. V. B. Pagi",
-      "role": "Member",
-      "affiliation": "Professor, Department of Computer Science Engineering, BEC",
+      "affiliation": "Controller of Examinations & Professor, Department of Physics, Basaveshwar Engineering College, Bagalkote",
       "category": "faculty",
-      "photo": "governance/hod/cse/dr-v-b-pagi.webp"
+      "photo": "governance/hod/coe/dr-chandrashekhar-k.webp"
     },
     {
-      "name": "Dr. C. M. Veerendrakumar",
+      "name": "Dr. P. N. Kulkarni",
       "role": "Member",
-      "affiliation": "Associate Professor, Department of Automobile Engineering, BEC",
+      "affiliation": "Dean (Academics) & Associate Professor, Department of Electronics & Communication Engineering, Basaveshwar Engineering College, Bagalkote",
+      "category": "faculty",
+      "photo": "governance/deans/dr-p-n-kulkarni.webp"
+    },
+    {
+      "name": "Shri Ananth S. Onkar",
+      "role": "Member",
+      "affiliation": "Office Superintendent, Basaveshwar Engineering College, Bagalkote",
       "category": "faculty"
     },
     {
-      "name": "Prof. T. G. Seetharam",
-      "role": "Invitee",
-      "affiliation": "Director, IIT Guwahati",
-      "category": "invitee"
+      "name": "Shri R. S. Hiremath",
+      "role": "Member",
+      "affiliation": "Founder & Managing Director, Flexitron, Bengaluru",
+      "category": "industry"
     },
     {
-      "name": "DTE State Govt., Govt. of Karnataka, Bangalore",
+      "name": "Dr. G. T. Raju",
       "role": "Member",
-      "affiliation": "Directorate of Technical Education Nominee",
+      "affiliation": "VTU, Belagavi Nominee — Member, Academic Senate, VTU & Principal, S.J.C. Institute of Technology, Chikkaballapur",
+      "category": "nominee"
+    },
+    {
+      "name": "Dr. Muniraju M.",
+      "role": "Member",
+      "affiliation": "DTE, Karnataka Government Nominee — Principal, Government Engineering College, Haveri",
       "category": "government"
     },
     {
       "name": "Dr. B. R. Hiremath",
-      "role": "Ex-officio Member Secretary",
+      "role": "Member Secretary",
       "affiliation": "Principal, Basaveshwar Engineering College, Bagalkote",
       "category": "member-secretary",
       "photo": "governance/principal/cine2151.webp"
     },
     {
-      "name": "M. Tech. Students – 2 Nos.",
+      "name": "PG Students – 2 Nos. (01 Male & 01 Female)",
       "role": "Invitee",
       "affiliation": "Postgraduate student representatives",
       "category": "students"
     },
     {
-      "name": "B.E. Students – 2 Nos.",
+      "name": "UG Students – 2 Nos. (01 Male & 01 Female)",
       "role": "Invitee",
       "affiliation": "Undergraduate student representatives",
       "category": "students"

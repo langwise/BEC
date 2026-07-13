@@ -93,6 +93,7 @@ const libraryServices = [
 ];
 
 const galleryImages = [
+  { src: asset("facilities/library/cine1128.webp"), alt: "Central Library reading area" },
   { src: asset("facilities/library/cine1145.webp"), alt: "Book stacks in the Central Library" },
   { src: asset("facilities/library/cine1235.webp"), alt: "Reading hall with study tables" },
   { src: asset("facilities/library/cine1239.webp"), alt: "Students studying in the reading hall" },
@@ -130,8 +131,8 @@ export default function LibraryPage() {
             </div>
             <div className="relative aspect-4/3 overflow-hidden rounded-lg border border-stone-200 shadow-sm">
               <Image
-                src={asset("facilities/library/cine1145.webp")}
-                alt="Book stacks at the BEC Central Library"
+                src={asset("facilities/library/cine1141.webp")}
+                alt="BEC Central Library interior"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 560px"

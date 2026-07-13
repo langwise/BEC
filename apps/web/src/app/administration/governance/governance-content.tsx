@@ -388,7 +388,7 @@ export function GovernanceContent() {
         <div className="container mx-auto max-w-6xl px-4 lg:px-6 space-y-8">
           <SectionHeading
             title="Board of Governors"
-            description="Official Board of Governors composition. Filter by category to skim core members, nominees, invitees, and student representatives."
+            description="Official Board of Governors composition for the term 18 June 2026 – 17 June 2028. Filter by category to skim core members, nominees, invitees, and student representatives."
           />
 
           <div className="rounded-sm border border-stone-200 bg-white p-3 shadow-sm md:p-4">

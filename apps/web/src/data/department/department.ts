@@ -135,6 +135,9 @@ export interface DepartmentData {
   /** Optional full-bleed hero image shown at the top of the page (home-hero style). */
   heroImage?: SectionImage;
 
+  /** Optional rolling hero carousel (2+ images) shown instead of the single heroImage. */
+  heroImages?: SectionImage[];
+
   overview: HeaderBlock;
   vision: HeaderBlock;
   mission: HeaderBlock;
@@ -536,6 +539,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     !content.consolidateResearch &&
     (content.researchAreas?.length ||
       content.labs?.length ||
+      content.researchGallery?.length ||
       (content.achievementsUnderResearch && hasAchievements()))
   ) {
     const groups: ContentGroup[] = [];
@@ -546,6 +550,12 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           label: r.supervisor,
           value: `${r.area}${r.university ? ` · ${r.university}` : ""}`,
         })),
+      });
+    for (const g of content.researchGallery ?? [])
+      groups.push({
+        subtitle: g.title,
+        images: g.images.map((key) => ({ src: asset(key), alt: g.title ?? `${content.name} research laboratory` })),
+        largeImages: true,
       });
     if (!content.labsUnderFacilities)
       for (const lab of content.labs ?? []) {
@@ -900,6 +910,17 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           ),
         },
       ],
+      imageGroups: content.mouImages?.length
+        ? [
+            {
+              title: "MoU Signings",
+              images: content.mouImages.map((key) => ({
+                src: asset(key),
+                alt: `${content.name} — MoU signing`,
+              })),
+            },
+          ]
+        : undefined,
     });
   }
 
@@ -1093,6 +1114,13 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     heroImage: content?.heroImage
       ? { src: asset(content.heroImage), alt: `${name} — department building` }
       : undefined,
+    heroImages:
+      content?.heroImages && content.heroImages.length > 1
+        ? content.heroImages.map((key, i) => ({
+            src: asset(key),
+            alt: `${name} — photo ${i + 1}`,
+          }))
+        : undefined,
     quickStats: content ? quickStats(contentKey, content) : undefined,
     quickFacts:
       content?.quickFacts?.facts?.length && content.quickFacts.researchAreas?.length

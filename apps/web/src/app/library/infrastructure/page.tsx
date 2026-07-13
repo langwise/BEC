@@ -22,6 +22,7 @@ export const metadata = pageMetadata({
 });
 
 const spaceImages = [
+  { src: asset("facilities/library/cine1128.webp"), alt: "Central Library reading area" },
   { src: asset("facilities/library/cine1235.webp"), alt: "Reading hall with study tables" },
   { src: asset("facilities/library/cine1239.webp"), alt: "Students studying in the reading hall" },
   { src: asset("facilities/library/cine1145.webp"), alt: "Book stacks in the Central Library" },

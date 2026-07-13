@@ -14,7 +14,7 @@ export function OrganizationJsonLd() {
     legalName: ORG.legalName,
     alternateName: ORG.alternateName,
     url: SITE_URL,
-    logo: absoluteUrl("/logo.png"),
+    logo: absoluteUrl("/logo-crest.png"),
     foundingDate: ORG.foundingYear,
     parentOrganization: { "@type": "Organization", name: ORG.parentOrganization },
     ...(ORG.email ? { email: ORG.email } : {}),
