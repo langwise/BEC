@@ -1538,6 +1538,7 @@ export const manifest = {
   "departments/mba/faculty/cv/vaibhav-deshpande.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/mba/faculty/cv/vaibhav-deshpande.pdf",
   "departments/mba/faculty/madhuri-kasat.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/mba/faculty/madhuri-kasat.webp",
   "departments/mba/faculty/rajeshwari-tapashetti.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/mba/faculty/rajeshwari-tapashetti.webp",
+  "departments/mba/faculty/rashmi-honnur-updated.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/mba/faculty/rashmi-honnur-updated.webp",
   "departments/mba/faculty/rashmi-honnur.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/mba/faculty/rashmi-honnur.webp",
   "departments/mba/faculty/v-c-patil.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/mba/faculty/v-c-patil.webp",
   "departments/mba/faculty/v-s-puranik.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/mba/faculty/v-s-puranik.webp",
