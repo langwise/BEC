@@ -13,7 +13,7 @@ export const SITE_SHORT_NAME = "BEC Bagalkote";
 
 /** Source-verified institutional facts (footer, About, BVV Sangha pages). */
 export const ORG = {
-  legalName: "Basaveshwar Engineering College (Autonomous), Bagalkote",
+  legalName: "Basaveshwar Engineering College , Bagalkote",
   alternateName: ["BEC", "BEC Bagalkote", "Basaveshwar Engineering College"],
   foundingYear: "1963",
   parentOrganization: "B.V.V. Sangha",

@@ -114,7 +114,7 @@ export default function StaffProfilePage() {
         workshops: [
           "One day “Orientation Program to The Library And Information Science Professionals Of B.V.V.Sangha’s Institutions, Bagalkote”, 2014",
           "3 days International Conference on Knowledge Management and Organization in the Digital Era “ICKMODE” Sri Siddaganga Institute of Technology Tumkur, 2013",
-          "One week Short Term Training program on “Trends in Information Communication Technology and It’s Impact on Engineering College Libraries” Basaveshwar Engineering College (Autonomous), Bagalkote Library and Information Centre 2009."
+          "One week Short Term Training program on “Trends in Information Communication Technology and It’s Impact on Engineering College Libraries” Basaveshwar Engineering College , Bagalkote Library and Information Centre 2009."
         ]
       },
       hasDetails: true

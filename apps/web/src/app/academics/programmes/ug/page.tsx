@@ -8,13 +8,13 @@ import { asset } from "@/lib/assets";
 export const metadata = pageMetadata({
   title: "B.E. Undergraduate Programmes",
   description:
-    "BEC Bagalkote offers 4-year B.E. programmes across 11 disciplines with 990 total seats — admitted via Karnataka CET, COMED-K or JEE Main. NAAC 'A' grade, NBA accredited.",
+    "BEC Bagalkote offers 4-year B.E. programmes across 10 disciplines with 990 total seats — admitted via Karnataka CET, COMED-K or JEE Main. NAAC 'A' grade, NBA accredited.",
   path: "/academics/programmes/ug",
 });
 
 const ugData = {
   title: "Under Graduate (B.E.)",
-  description: "Build a strong foundation in engineering with our comprehensive 4-year undergraduate programmes across 11 disciplines.",
+  description: "Build a strong foundation in engineering with our comprehensive 4-year undergraduate programmes across 10 disciplines.",
   highlights: [
       "NAAC 'A' Grade Accredited",
       "NBA Recognized Programmes",
@@ -34,7 +34,7 @@ const ugData = {
       { name: "Artificial Intelligence & Machine Learning", intake: "60" },
       { name: "Electronics & Computer Engineering", intake: "60" },
       { name: "Industrial & Production Engineering", intake: "30" },
-      { name: "Automobile Engineering", intake: "30" },
+      //{ name: "Automobile Engineering", intake: "30" },
       { name: "Biotechnology", intake: "30" },
   ],
   collegeCodes: "Aided: E031  ·  Un-Aided (KEA): E049  ·  COMED-K: E024",
@@ -94,7 +94,7 @@ export default function UGProgrammePage() {
       <section className="space-y-8">
         <div className="prose prose-lg prose-orange max-w-none text-gray-600">
             <p className="text-justify">
-                Basaveshwar Engineering College offers Bachelor of Engineering programmes in 11 disciplines, providing students with a strong foundation in engineering principles and practical skills. Our NAAC 'A' accredited and NBA recognized programmes prepare students for successful careers in industry and research.
+                Basaveshwar Engineering College offers Bachelor of Engineering programmes in 10 disciplines, providing students with a strong foundation in engineering principles and practical skills. Our NAAC 'A' accredited and NBA recognized programmes prepare students for successful careers in industry and research.
             </p>
         </div>
 

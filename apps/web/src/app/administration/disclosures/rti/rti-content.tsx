@@ -48,7 +48,7 @@ export function RtiContent() {
                 <div className="space-y-4">
                     <p className="text-base text-gray-700 leading-relaxed max-w-4xl text-justify">
                         The Right to Information Act, 2005 empowers citizens to access information under the control of public authorities.
-                        Basaveshwar Engineering College (Autonomous) is committed to transparency and compliance with the Act.
+                        Basaveshwar Engineering College  is committed to transparency and compliance with the Act.
                     </p>
                 </div>
 

@@ -33,7 +33,7 @@ export function VisionMissionSection() {
                 Our Vision
               </h3>
               <p className="text-2xl md:text-3xl text-gray-200 font-medium leading-relaxed max-w-4xl mx-auto">
-                &quot;{visionMission.vision}&quot;
+                {visionMission.vision}
               </p>
             </div>
           </div>

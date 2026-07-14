@@ -121,7 +121,7 @@ const timelinePhases = [
       },
       {
         year: "Present",
-        text: "Thriving 93-acre autonomous campus offering 11 UG and 8 PG programmes, with 10 departments recognised as VTU-approved R&D centres and state-of-the-art industry-collaborative facilities."
+        text: "Thriving 93-acre autonomous campus offering 10 UG and 8 PG programmes, with 10 departments recognised as VTU-approved R&D centres and state-of-the-art industry-collaborative facilities."
       }
     ]
   }

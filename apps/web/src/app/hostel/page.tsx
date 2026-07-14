@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import Image from "next/image";
 import { FadeIn } from "@/components/animations/fade-in";
 import {
   Users,
@@ -8,6 +9,7 @@ import {
   CheckCircle2,
   LayoutDashboard,
   Phone,
+  ImageIcon,
 } from "lucide-react";
 import {
   Table,
@@ -18,6 +20,24 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Card } from "@/components/ui/card";
+import { PhotoGallery } from "@/components/common/photo-gallery";
+import { asset } from "@/lib/assets";
+
+const galleryImages = [
+  { key: "mess-dining", caption: "Mess & dining hall" },
+  { key: "mess-kitchen", caption: "Hostel kitchen" },
+  { key: "mess-serving", caption: "Mess serving counter" },
+  { key: "gym", caption: "Multi-gym" },
+  { key: "ro-water-plant", caption: "RO drinking-water plant" },
+  { key: "generator", caption: "Power-backup generator" },
+  { key: "volleyball-ground", caption: "Volleyball ground" },
+  { key: "office", caption: "Hostel office" },
+  { key: "warden-room", caption: "Warden's office" },
+].map(({ key, caption }) => ({
+  src: asset(`facilities/hostels/common/${key}.webp`),
+  alt: `${caption} at Basaveshwar Engineering College hostels`,
+  caption,
+}));
 
 export const metadata = pageMetadata({
   title: "Student Hostels",
@@ -34,11 +54,24 @@ export default function HostelPage() {
           About Hostel
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed text-justify">
-          Basaveshwar Engineering College (Autonomous), Bagalkote provides
+          Basaveshwar Engineering College , Bagalkote provides
           excellent hostel facilities for boys and girls with a focus on student
           welfare, safety, and a conducive atmosphere for learning.
         </p>
       </div>
+
+      <FadeIn>
+        <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl border border-stone-200 shadow-xs sm:aspect-2/1">
+          <Image
+            src={asset("facilities/hostels/common/mess-hall.webp")}
+            alt="Students dining in the hostel mess at Basaveshwar Engineering College, Bagalkote"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+            className="object-cover"
+          />
+        </div>
+      </FadeIn>
 
       <div className="h-px w-full bg-linear-to-r from-transparent via-gray-200 to-transparent my-8" />
 
@@ -201,6 +234,18 @@ export default function HostelPage() {
               </TableBody>
             </Table>
           </Card>
+        </FadeIn>
+      </section>
+
+      <div className="h-px w-full bg-linear-to-r from-transparent via-gray-200 to-transparent my-8" />
+
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 text-primary mb-4">
+          <ImageIcon className="w-6 h-6" />
+          <h2 className="text-xl font-bold">Glimpses of Hostel Life</h2>
+        </div>
+        <FadeIn delay={0.1}>
+          <PhotoGallery images={galleryImages} />
         </FadeIn>
       </section>
 

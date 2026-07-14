@@ -14,10 +14,10 @@ export const metadata = {
   ...pageMetadata({
     title: "Basaveshwar Engineering College, Bagalkote",
     description:
-      "Basaveshwar Engineering College (Autonomous), Bagalkote — a B.V.V. Sangha institution established in 1963, affiliated to VTU, offering UG, PG and Ph.D. programmes across engineering, science and management.",
+      "Basaveshwar Engineering College , Bagalkote — a B.V.V. Sangha institution established in 1963, affiliated to VTU, offering UG, PG and Ph.D. programmes across engineering, science and management.",
     path: "/",
   }),
-  title: { absolute: "Basaveshwar Engineering College (Autonomous), Bagalkote" },
+  title: { absolute: "Basaveshwar Engineering College , Bagalkote" },
 };
 
 export default function Home() {

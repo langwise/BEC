@@ -8,7 +8,6 @@ import {
   Building2,
   Users,
   FileText,
-  Calendar,
   Clock,
   GraduationCap,
   CheckCircle2,
@@ -31,11 +30,6 @@ const examNav = [
     title: "BEC Rules and Regulations",
     href: "/academics/examinations/rules",
     icon: FileText,
-  },
-  {
-    title: "Calendar of Events",
-    href: "/academics/examinations/calendar",
-    icon: Calendar,
   },
   {
     title: "SEE Time Table",

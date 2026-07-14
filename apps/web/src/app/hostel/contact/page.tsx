@@ -78,7 +78,7 @@ export default function HostelContactPage() {
                         </h2>
                         <div className="p-4 bg-white rounded-xl">
                             <p className="text-gray-700 leading-relaxed">
-                                Basaveshwar Engineering College (Autonomous)<br />
+                                Basaveshwar Engineering College <br />
                                 Vidyagiri, Bagalkote &ndash; 587 102<br />
                                 Karnataka, India
                             </p>

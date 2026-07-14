@@ -6,7 +6,7 @@ export const programmes = [
     title: "Undergraduate Programmes",
     description:
       "B.E. programmes in Civil, Mechanical, Electrical, CSE, ECE, ISE and more, preparing students for successful engineering careers.",
-    count: "11 B.E. Programmes",
+    count: "10 B.E. Programmes",
     href: "/academics/programmes/ug",
   },
   {

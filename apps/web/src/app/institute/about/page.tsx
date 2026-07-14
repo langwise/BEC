@@ -8,7 +8,7 @@ import AboutContent from "./about-content";
 export const metadata: Metadata = pageMetadata({
   title: "About BEC Bagalkote",
   description:
-    "Founded 1963 on a 93-acre campus, BEC Bagalkote is an autonomous, NAAC & NBA accredited institution offering 11 UG and 8 PG programmes with 180+ faculty (43% PhDs) and 3,200+ students.",
+    "Founded 1963 on a 93-acre campus, BEC Bagalkote is an autonomous, NAAC & NBA accredited institution offering 10 UG and 8 PG programmes with 180+ faculty (43% PhDs) and 3,200+ students.",
   path: "/institute/about",
 });
 
@@ -26,7 +26,7 @@ const FAQS = [
   {
     question: "What programmes does BEC Bagalkote offer?",
     answer:
-      "BEC offers 11 undergraduate B.E. programmes and 8 postgraduate M.Tech programmes, along with MBA, MCA and Ph.D. research programmes across engineering, management and the sciences.",
+      "BEC offers 10 undergraduate B.E. programmes and 8 postgraduate M.Tech programmes, along with MBA, MCA and Ph.D. research programmes across engineering, management and the sciences.",
   },
   {
     question: "When was BEC Bagalkote established and who runs it?",

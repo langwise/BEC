@@ -22,6 +22,26 @@ const albums = [
     description: "Moments from across the Vidyagiri campus — academics, events, festivals and everyday student life.",
     prefix: "gallery/life-at-bec/campus/",
     altBase: "Basaveshwar Engineering College campus",
+    exclude: [
+      "cine0091",
+      "cine0894",
+      "cine0899",
+      "cine1063",
+      "cine1149",
+      "cine1229",
+      "cine1250",
+      "cine1456",
+      "cine1515",
+      "cine1524",
+      "cine1540",
+      "cine1555",
+      "cine1708",
+      "cine1731",
+      "cine1734",
+      "cine1735",
+      "cine1830",
+      "cine2007",
+    ],
   },
 ];
 
@@ -35,10 +55,12 @@ export default function GalleryPage() {
   const populated = albums
     .map((album) => ({
       ...album,
-      images: assetsUnder(album.prefix).map((src, index) => ({
-        src,
-        alt: `${album.altBase} ${index + 1}`,
-      })),
+      images: assetsUnder(album.prefix)
+        .filter((src) => !album.exclude?.some((key) => src.includes(key)))
+        .map((src, index) => ({
+          src,
+          alt: `${album.altBase} ${index + 1}`,
+        })),
     }))
     .filter((album) => album.images.length > 0);
 

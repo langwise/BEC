@@ -24,9 +24,10 @@ export default function NetajiBlockPage() {
             <FadeIn>
                 <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl border border-stone-200 shadow-xs sm:aspect-2/1">
                     <Image
-                        src={asset("facilities/hostels/netaji-block/nblock.webp")}
-                        alt="Netaji Block boys hostel at Basaveshwar Engineering College"
+                        src={asset("facilities/hostels/netaji-block/building.webp")}
+                        alt="Netaji Subhashchandra Bose Block boys hostel at Basaveshwar Engineering College"
                         fill
+                        priority
                         sizes="(max-width: 768px) 100vw, 768px"
                         className="object-cover"
                     />

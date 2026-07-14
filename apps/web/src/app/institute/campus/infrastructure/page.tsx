@@ -98,7 +98,7 @@ export default function InfrastructurePage() {
           <div className="mt-10 overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 shadow-sm">
             <div className="relative aspect-16/9">
               <Image
-                src={asset("institute/group-photos/cine1643.webp")}
+                src={asset("institute/campus/campus-front.webp")}
                 alt="The main building of Basaveshwar Engineering College on its 93-acre campus"
                 fill
                 priority

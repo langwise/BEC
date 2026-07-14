@@ -1,8 +1,19 @@
 import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { FadeIn } from "@/components/animations/fade-in";
-import { Building2, Users, Zap, CheckCircle2 } from "lucide-react";
+import { Building2, Users, Zap, CheckCircle2, ImageIcon } from "lucide-react";
+import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset } from "@/lib/assets";
+
+const galleryImages = [
+    { key: "entrance", caption: "Block entrance", alt: "Sir M. Visvesavaraya Block hostel entrance" },
+    { key: "room-study", caption: "Students in their room", alt: "Students studying in a Sir M. Visvesavaraya Block hostel room" },
+    { key: "room", caption: "Hostel room", alt: "Four-bed room in the Sir M. Visvesavaraya Block hostel" },
+].map(({ key, caption, alt }) => ({
+    src: asset(`facilities/hostels/v-block/${key}.webp`),
+    alt: `${alt} at Basaveshwar Engineering College`,
+    caption,
+}));
 
 export const metadata = pageMetadata({
     title: "Sir M. Visvesavaraya Block",
@@ -24,9 +35,10 @@ export default function VBlockPage() {
             <FadeIn>
                 <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl border border-stone-200 shadow-xs sm:aspect-2/1">
                     <Image
-                        src={asset("facilities/hostels/v-block/vblock.webp")}
+                        src={asset("facilities/hostels/v-block/building.webp")}
                         alt="Sir M. Visvesavaraya Block boys hostel at Basaveshwar Engineering College"
                         fill
+                        priority
                         sizes="(max-width: 768px) 100vw, 768px"
                         className="object-cover"
                     />
@@ -92,6 +104,18 @@ export default function VBlockPage() {
                             </div>
                         ))}
                     </div>
+                </FadeIn>
+            </section>
+
+            <div className="h-px w-full bg-linear-to-r from-transparent via-gray-200 to-transparent my-8" />
+
+            <section className="space-y-6">
+                <div className="flex items-center gap-3 text-primary mb-4">
+                    <ImageIcon className="w-6 h-6" />
+                    <h2 className="text-xl font-bold">Inside the Block</h2>
+                </div>
+                <FadeIn delay={0.1}>
+                    <PhotoGallery images={galleryImages} />
                 </FadeIn>
             </section>
         </div>

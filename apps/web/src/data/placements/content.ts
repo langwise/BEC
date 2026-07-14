@@ -57,7 +57,7 @@ export const placementContent = {
     highlights: [
       "Autonomous Status granted by VTU and UGC in 2007",
       "91 Acres of elevated campus",
-      "11 Undergraduate Programs",
+      "10 Undergraduate Programs",
       "8 Postgraduate Programs including MBA",
     ],
     contact: {

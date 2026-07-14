@@ -4,13 +4,13 @@ import { FadeIn } from "../animations/fade-in";
 
 // Figures verified against becbgk.edu and NIRF 2025 data:
 // students 3,282 & faculty 189 (NIRF), 43% faculty with PhDs (Placement page),
-// 11 UG ("11 disciplines", Admissions) & 8 PG, 10 R&D centres, 93.18 acres,
+// 10 UG ("11 disciplines", Admissions) & 8 PG, 10 R&D centres, 93.18 acres,
 // established 1963 (About page).
 const stats = [
   { value: "4,000+", label: "Students on Campus" },
-  { value: "180+", label: "Faculty Members" },
-  { value: "50%", label: "Faculty with PhDs" },
-  { value: "11", label: "Undergraduate Programmes" },
+  { value: "200+", label: "Faculty Members" },
+  { value: "89", label: "Faculty with PhDs" },
+  { value: "10", label: "Undergraduate Programmes" },
   { value: "3", label: "Postgraduate Programmes" },
   { value: "10", label: "Research Centres" },
   { value: "93+", label: "Acres of Campus" },

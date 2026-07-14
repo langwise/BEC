@@ -53,7 +53,7 @@ export default function AboutContent() {
     {
       year: "1968",
       title: "Government Recognition",
-      desc: "Received grant-in-aid code",
+      desc: "Received college as grant-in-aid",
     },
     {
       year: "1983-2003",
@@ -121,7 +121,7 @@ export default function AboutContent() {
     {
       icon: GraduationCap,
       title: "Academic Programs",
-      desc: "11 UG & 3 PG Programmes",
+      desc: "10 UG & 3 PG Programmes",
     },
     {
       icon: Building2,
@@ -216,7 +216,7 @@ export default function AboutContent() {
                   </span>{" "}
                   is a premier technical institution located in North Karnataka.
                   Started in 1963, the college has grown tremendously over the
-                  years and currently has 11 UG, 3 PG and 10 Research Centers
+                  years and currently has 10 UG, 3 PG and 10 Research Centers
                   recognized by VTU, Belagavi.
                 </p>
                 <p>
@@ -303,7 +303,7 @@ export default function AboutContent() {
                   Our Vision
                 </h3>
                 <p className="text-2xl md:text-3xl text-gray-200 font-medium leading-relaxed max-w-4xl mx-auto">
-                  &quot;{visionMission.vision}&quot;
+                  {visionMission.vision}
                 </p>
               </div>
             </div>
@@ -375,7 +375,7 @@ export default function AboutContent() {
             {/* Central Line */}
             <motion.div
               transition={{ duration: 1.5, ease: "easeInOut" }}
-              className="absolute left-4 lg:left-1/2 top-0 w-0.5 lg:-ml-px bg-orange-200/50 h-full"
+              className="absolute left-4 lg:left-1/2 top-0 w-0.5 lg:-ml-px bg-orange-300 h-full"
             />
 
             <div className="space-y-12">
@@ -396,7 +396,7 @@ export default function AboutContent() {
                         index % 2 !== 0 && "lg:items-end lg:text-right"
                       )}
                     >
-                      <div className="text-5xl font-bold text-orange-200 select-none mb-2">
+                      <div className="text-5xl font-bold text-primary select-none mb-2">
                         {milestone.year}
                       </div>
                       <div className="relative">

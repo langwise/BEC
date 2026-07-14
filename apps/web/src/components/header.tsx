@@ -53,7 +53,7 @@ export function Header() {
             <img
               src="/logo-crest.png"
               alt="Basaveshwar Engineering College, Bagalkote logo"
-              style={logoHeight ? { height: `${logoHeight}px` } : undefined}
+              style={logoHeight ? { height: `${logoHeight * 1.25}px` } : undefined}
               className="h-12 max-h-24 w-auto shrink-0 object-contain -ml-2 sm:-ml-4 lg:-ml-6 md:h-24 md:max-h-none lg:h-28"
             />
             <div ref={brandTextRef} className="flex flex-col justify-center min-w-0">
@@ -68,12 +68,12 @@ export function Header() {
                   ESTD: 1963
                 </span>
               </div>
-              <span className="mt-0.5 block max-w-2xl text-[10px] font-medium text-foreground/85 leading-snug md:text-xs">
+              <span className="mt-0.5 hidden max-w-2xl text-[10px] font-medium text-foreground/85 leading-snug md:block md:text-xs">
                 [A Government Aided Autonomous College, Recognized by AICTE, Permanently
                 Affiliated to Visvesvaraya Technological University, Belagavi &amp;
                 Accredited by NAAC with &apos;A&apos; Grade from 2024 to 2029]
               </span>
-              <span className="block text-[10px] font-bold text-primary leading-tight md:text-xs">
+              <span className="hidden text-[10px] font-bold text-primary leading-tight md:block md:text-xs">
                 S. Nijalingappa Vidyanagar, Bagalkote - 587 102, Karnataka, India
               </span>
             </div>

@@ -32,7 +32,6 @@ const internalResources = [
 const documentLinks = [
   { label: "AICTE EoA Report", href: asset("documents/aicte/eoa-report-2025-26.pdf") },
   { label: "Strategic Plan", href: asset("documents/strategic-plan/institutional-strategic-plan.pdf") },
-  { label: "Syllabus (All Branches)", href: asset("documents/syllabus/all-semester-syllabus.pdf") },
   { label: "NPTEL Local Chapter", href: asset("documents/nptel/local-chapter.pdf") },
   { label: "Spoken Tutorial", href: asset("documents/spoken-tutorial/courses-offered-2023.pdf") },
   { label: "Internal Complaints (CICC)", href: asset("documents/cicc/cicc-policy-2026.pdf") },
@@ -210,7 +209,7 @@ export function Footer() {
         <div className="border-t border-secondary-foreground/20 mt-6 pt-6 text-center text-sm text-secondary-foreground/70">
           <p>
             &copy; {new Date().getFullYear()} Basaveshwar Engineering College
-            (Autonomous), Bagalkote. All rights reserved.
+            , Bagalkote. All rights reserved.
           </p>
         </div>
       </div>

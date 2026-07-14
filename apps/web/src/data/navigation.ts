@@ -93,6 +93,7 @@ export const navigationData: NavigationItem[] = [
           { title: "First-Year Syllabus", href: "/academics/first-year" },
         ],
       },
+      { title: "Academic Calendar", href: "/academics/calendar" },
     ],
   },
 
