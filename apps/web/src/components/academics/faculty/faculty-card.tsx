@@ -16,6 +16,8 @@ import { ChevronRight, ExternalLink } from "lucide-react";
 
 interface FacultyCardProps {
   member: FacultyMember;
+  /** Horizontal card with a small portrait instead of the full-width photo. */
+  compact?: boolean;
 }
 
 function initials(name: string): string {
@@ -30,10 +32,12 @@ function Portrait({
   member,
   sizes,
   className,
+  initialsClassName,
 }: {
   member: FacultyMember;
   sizes: string;
   className?: string;
+  initialsClassName?: string;
 }) {
   if (member.photoUrl) {
     return (
@@ -48,17 +52,44 @@ function Portrait({
   }
   return (
     <div className="flex h-full w-full items-center justify-center">
-      <span className="text-4xl font-semibold tracking-wide text-stone-300">
+      <span className={cn("text-4xl font-semibold tracking-wide text-stone-300", initialsClassName)}>
         {initials(member.name)}
       </span>
     </div>
   );
 }
 
-export function FacultyCard({ member }: FacultyCardProps) {
+export function FacultyCard({ member, compact = false }: FacultyCardProps) {
   const hasCv = !!member.cvUrl;
 
-  const card = (
+  const card = compact ? (
+    <Card
+      className={cn(
+        "group flex h-full flex-row items-center gap-4 overflow-hidden rounded-xl border-stone-200 p-3 shadow-sm transition-all",
+        hasCv && "hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md",
+      )}
+    >
+      <div className="relative h-24 w-20 shrink-0 overflow-hidden rounded-lg bg-stone-100">
+        <Portrait
+          member={member}
+          sizes="80px"
+          className="transition-transform duration-500 group-hover:scale-[1.03]"
+          initialsClassName="text-xl"
+        />
+      </div>
+      <div className="min-w-0 flex-1">
+        <h3 className="text-base font-semibold leading-snug text-gray-900 transition-colors group-hover:text-primary">
+          {member.name}
+        </h3>
+        <p className="mt-0.5 text-sm leading-snug text-gray-600">
+          {member.designation}
+        </p>
+      </div>
+      {hasCv && (
+        <ChevronRight className="h-5 w-5 shrink-0 text-stone-300 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-primary" />
+      )}
+    </Card>
+  ) : (
     <Card
       className={cn(
         "group flex h-full flex-col overflow-hidden rounded-xl border-stone-200 p-0 shadow-sm transition-all",

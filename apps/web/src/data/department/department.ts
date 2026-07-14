@@ -80,7 +80,7 @@ export type DepartmentSection =
       attachments?: DocLink[];
       embeds?: DocLink[];
     }
-  | { id?: string; type: "faculty-list"; title: string; faculty: FacultyMember[]; groupPhoto?: SectionImage; attachments?: DocLink[]; embeds?: DocLink[] }
+  | { id?: string; type: "faculty-list"; title: string; faculty: FacultyMember[]; compact?: boolean; groupPhoto?: SectionImage; attachments?: DocLink[]; embeds?: DocLink[] }
   | {
       id?: string;
       type: "documents";
@@ -103,8 +103,9 @@ export type DepartmentSection =
       tables: DataTable[];
       /** A group photo banner shown above the tables (e.g. the supporting-staff photo). */
       groupPhoto?: SectionImage;
-      /** Captioned photo galleries shown above the tables (e.g. Facilities: classrooms/labs/library/campus). */
-      imageGroups?: { title?: string; images: SectionImage[] }[];
+      /** Captioned photo galleries shown above the tables (e.g. Facilities: classrooms/labs/library/campus).
+       * `natural` renders the group's images uncropped at intrinsic aspect ratio (infographics/collages). */
+      imageGroups?: { title?: string; images: SectionImage[]; natural?: boolean }[];
       /** Placement-offers bar chart shown above the tables (e.g. CSE year-wise offers). */
       placementChart?: PlacementOffersChart;
       attachments?: DocLink[];
@@ -153,6 +154,9 @@ export interface DepartmentData {
   quickFacts?: { facts: { label: string; value: string }[]; researchAreas: string[] };
 
   highlights: string[];
+
+  /** Milestones bullet list shown under Vision & Mission on the About tab. */
+  milestones?: HeaderBlock;
 
   /** Best-practices PDFs surfaced on the Home tab. */
   bestPractices?: DocLink[];
@@ -405,6 +409,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       type: "faculty-list",
       title: heading("faculty", "Teaching Faculty"),
       faculty,
+      compact: content.facultyCompact,
       groupPhoto: content.facultyGroupPhoto
         ? {
             src: asset(content.facultyGroupPhoto),
@@ -423,6 +428,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       id: "staff",
       type: "faculty-list",
       title: heading("staff", "Supporting Staff"),
+      compact: content.facultyCompact,
       faculty: content.supportingStaff.map((m) => ({
         name: m.name,
         designation: m.designation,
@@ -779,6 +785,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       imageGroups: content.placementImages
         ?.map((g) => ({
           title: g.title,
+          natural: true,
           images: g.images.map((key) => ({
             src: asset(key),
             alt: g.title ?? `${content.name} placements`,
@@ -1185,6 +1192,13 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
       icon: "target",
     },
     highlights: content?.highlights ?? defaultHighlights,
+    milestones: content?.milestones?.items?.length
+      ? {
+          title: content.milestones.title ?? "Milestones",
+          items: content.milestones.items,
+          icon: "award",
+        }
+      : undefined,
     bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
     bestPracticesList: content?.bestPracticesList,
     bestPracticesUnderAbout: content?.bestPracticesUnderAbout,

@@ -129,8 +129,8 @@
     "ai-and-ml": [
       {
         "name": "Dr. Bharati M. Reshmi",
-        "designation": "Professor & Head",
-        "photo": "governance/hod/aiml/dr-b-m-reshmi.webp",
+        "designation": "Associate Professor & Head",
+        "photo": "departments/aiml/faculty/bharati-m-reshmi.webp",
         "cv": "departments/aiml/faculty/cv/bharati-m-reshmi.pdf"
       },
       {
@@ -138,12 +138,6 @@
         "designation": "Associate Professor",
         "photo": "departments/aiml/faculty/vishwanath-kagawade.webp",
         "cv": "departments/aiml/faculty/cv/vishwanath-kagawade.pdf"
-      },
-      {
-        "name": "Anita G. Kori",
-        "designation": "Assistant Professor",
-        "photo": "departments/aiml/faculty/anita-g-kori.webp",
-        "cv": "departments/aiml/faculty/cv/anita-g-kori.pdf"
       },
       {
         "name": "Jayasheela D. Kallaganiger",
@@ -156,6 +150,12 @@
         "designation": "Assistant Professor",
         "photo": "departments/aiml/faculty/lakshmi-p-kolur.webp",
         "cv": "departments/aiml/faculty/cv/lakshmi-p-kolur.pdf"
+      },
+      {
+        "name": "Anita G. Kori",
+        "designation": "Assistant Professor",
+        "photo": "departments/aiml/faculty/anita-g-kori.webp",
+        "cv": "departments/aiml/faculty/cv/anita-g-kori.pdf"
       },
       {
         "name": "Laxmi M. Muttappanavar",
@@ -369,7 +369,6 @@
         "designation": "Professor",
         "cv": "departments/physics/faculty/cv/jayashri-g-ghantimath.pdf"
       },
-      
       {
         "name": "Shriram S. Bopardekar",
         "designation": "Associate Professor",
@@ -386,7 +385,6 @@
         "designation": "Assistant Professor",
         "cv": "departments/physics/faculty/cv/aishwarya-nadgir.pdf"
       }
-      
     ],
     "civil-engg": [
       {

@@ -53,6 +53,8 @@ export type DepartmentContent = {
   /** Monthly department newsletters, rendered as a documents section. */
   newsletters?: { title: string; file: string }[];
   highlights?: string[];
+  /** Department milestones, shown under Vision & Mission on the About tab. */
+  milestones?: { title?: string; items: string[] };
   researchAreas?: { supervisor: string; area: string; university?: string }[];
   /** Major research areas/domains as plain bullets (distinct from supervisor→area pairs). */
   researchAreasList?: string[];
@@ -212,6 +214,8 @@ export type DepartmentContent = {
   groupSupportingStaff?: boolean;
   /** Render Supporting Staff as photo cards (like teaching faculty) instead of tables. */
   staffCards?: boolean;
+  /** Render faculty/staff cards in a compact layout with a small portrait instead of the full-width photo. */
+  facultyCompact?: boolean;
   /** Placements: show only summary/recruiter tables, hide per-student name lists. */
   placementsSummaryOnly?: boolean;
   /** Asset-key substrings to drop from the infrastructure gallery (e.g. stray portrait shots). */

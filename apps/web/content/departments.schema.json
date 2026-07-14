@@ -292,6 +292,25 @@
               "type": "string"
             }
           },
+          "milestones": {
+            "type": "object",
+            "description": "Department milestones, shown under Vision & Mission on the About tab.",
+            "required": [
+              "items"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "researchAreas": {
             "type": "array",
             "description": "Research supervisors and their areas of specialization.",
@@ -393,6 +412,10 @@
           "staffCards": {
             "type": "boolean",
             "description": "Render Supporting Staff as photo cards (like teaching faculty) instead of tables."
+          },
+          "facultyCompact": {
+            "type": "boolean",
+            "description": "Render faculty/staff cards in a compact layout with a small portrait instead of the full-width photo."
           },
           "supportingStaff": {
             "type": "array",

@@ -309,7 +309,7 @@ function GroupPhotoBanner({ image }: { image: { src: string; alt: string; captio
 }
 
 /** Captioned photo galleries (e.g. Facilities: classrooms / labs / library / campus). */
-function ImageGroups({ groups }: { groups: { title?: string; images: { src: string; alt: string }[] }[] }) {
+function ImageGroups({ groups }: { groups: { title?: string; images: { src: string; alt: string }[]; natural?: boolean }[] }) {
   return (
     <div className="space-y-8">
       {groups.map((group, i) => (
@@ -319,7 +319,11 @@ function ImageGroups({ groups }: { groups: { title?: string; images: { src: stri
               {group.title}
             </h3>
           )}
-          <PhotoGallery images={group.images} centered large />
+          {group.natural ? (
+            <PhotoGallery images={group.images} natural />
+          ) : (
+            <PhotoGallery images={group.images} centered large />
+          )}
         </div>
       ))}
     </div>
@@ -481,6 +485,15 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     </>
                 )}
 
+                {/* Milestones — bullet list directly under Vision & Mission */}
+                {dept.milestones && (
+                    <ContentSection
+                        title={dept.milestones.title}
+                        items={dept.milestones.items}
+                        icon={dept.milestones.icon}
+                    />
+                )}
+
                 {/* Core values (per-department, e.g. IPE) — bullet list after the mission */}
                 {dept.overview.items && dept.overview.items.length > 0 && (
                     <ContentSection
@@ -538,7 +551,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                      <h2 className="text-2xl font-bold text-gray-900">{activeSection.title}</h2>
                      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
                          {activeSection.faculty.map((member, fIndex) => (
-                             <FacultyCard key={fIndex} member={member} />
+                             <FacultyCard key={fIndex} member={member} compact={activeSection.compact} />
                          ))}
                      </div>
                      {activeSection.groupPhoto && <GroupPhotoBanner image={activeSection.groupPhoto} />}

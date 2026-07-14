@@ -5,11 +5,27 @@
         "title": "No. of Placement Offers",
         "yAxisLabel": "No. of Placement Offers",
         "points": [
-          { "year": "2022", "offers": 183 },
-          { "year": "2023", "offers": 100 },
-          { "year": "2024", "offers": 124 },
-          { "year": "2025", "offers": 154 },
-          { "year": "2026", "offers": 72, "note": "on going" }
+          {
+            "year": "2022",
+            "offers": 183
+          },
+          {
+            "year": "2023",
+            "offers": 100
+          },
+          {
+            "year": "2024",
+            "offers": 124
+          },
+          {
+            "year": "2025",
+            "offers": 154
+          },
+          {
+            "year": "2026",
+            "offers": 72,
+            "note": "on going"
+          }
         ]
       },
       "yearWise": [
@@ -4240,354 +4256,6 @@
       "batches": []
     },
     "ai-and-ml": {
-      "batches": [
-        {
-          "batch": "2024-2025",
-          "companies": [
-            {
-              "company": "Palo Alto Networks",
-              "count": "1",
-              "package": "37"
-            },
-            {
-              "company": "Volvo Group",
-              "count": "1",
-              "package": "15"
-            },
-            {
-              "company": "ZS Associates",
-              "count": "1",
-              "package": "7"
-            },
-            {
-              "company": "Infosys",
-              "count": "13",
-              "package": ""
-            },
-            {
-              "company": "TCS Ninja",
-              "count": "3",
-              "package": ""
-            },
-            {
-              "company": "Infosys Internship",
-              "count": "3",
-              "package": ""
-            },
-            {
-              "company": "Barracuda Internship",
-              "count": "2",
-              "package": ""
-            },
-            {
-              "company": "Cognizant (GenC)",
-              "count": "1",
-              "package": ""
-            },
-            {
-              "company": "HCLTech",
-              "count": "1",
-              "package": ""
-            },
-            {
-              "company": "Tech Mahindra",
-              "count": "1",
-              "package": ""
-            }
-          ],
-          "students": [
-            {
-              "name": "Suryaditya",
-              "company": "Palo Alto Networks",
-              "mode": "",
-              "lpa": "37",
-              "usn": ""
-            },
-            {
-              "name": "Shrivatsa Vaman Gudi",
-              "company": "Volvo Group",
-              "mode": "",
-              "lpa": "15",
-              "usn": ""
-            },
-            {
-              "name": "Nishita Naragund",
-              "company": "ZS Associates",
-              "mode": "",
-              "lpa": "7",
-              "usn": ""
-            },
-            {
-              "name": "Karthik Uday Mudhol",
-              "company": "Infosys",
-              "lpa": "8.24",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Karthik Uday Mudhol",
-              "company": "Cognizant (GenC)",
-              "lpa": "8.24",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Aliza Rizwan Pathan",
-              "company": "TCS Ninja",
-              "lpa": "8.01",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Hrishikesh Jakanur",
-              "company": "TCS Ninja",
-              "lpa": "8.1",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Vishal S Nala",
-              "company": "TCS Ninja",
-              "lpa": "7.4",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Adwitiya Rajeev Patil",
-              "company": "Infosys",
-              "lpa": "7.87",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Amruta Mallappa Hosur",
-              "company": "Infosys",
-              "lpa": "8.12",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Arpita Mallikarjun Patil",
-              "company": "Infosys",
-              "lpa": "7.22",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Chetan Jayathirth Deshpande",
-              "company": "Infosys",
-              "lpa": "7.54",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Chinnu Veeraabhadra Kumbar",
-              "company": "Infosys",
-              "lpa": "8.78",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Harish G Rolli",
-              "company": "Infosys",
-              "lpa": "7.73",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Hrishikesh N Jakanur",
-              "company": "Infosys",
-              "lpa": "8.1",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Mohanrao Kulkarni",
-              "company": "Infosys",
-              "lpa": "8.39",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Shrikar Purohit",
-              "company": "Infosys",
-              "lpa": "8.52",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Veeresh Basalingappa Pattanad",
-              "company": "Infosys",
-              "lpa": "8.21",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Vidya Basayya Lakkundimath",
-              "company": "Infosys",
-              "lpa": "7.1",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Vishal S Nala",
-              "company": "Infosys",
-              "lpa": "7.4",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Harish G Rolli",
-              "company": "Infosys",
-              "mode": "Internship",
-              "lpa": "7.73",
-              "usn": ""
-            },
-            {
-              "name": "Mohanrao Kulkarni",
-              "company": "Infosys",
-              "mode": "Internship",
-              "lpa": "8.39",
-              "usn": ""
-            },
-            {
-              "name": "Soumya Ashok Pattanad",
-              "company": "Infosys",
-              "mode": "Internship",
-              "lpa": "7.94",
-              "usn": ""
-            },
-            {
-              "name": "Veeresh Basalingappa Pattanad",
-              "company": "Barracuda",
-              "mode": "Internship",
-              "lpa": "8.21",
-              "usn": ""
-            },
-            {
-              "name": "Shreeraksha G Chulki",
-              "company": "Barracuda",
-              "mode": "Internship",
-              "lpa": "8.85",
-              "usn": ""
-            },
-            {
-              "name": "Rakshita Julapi",
-              "company": "HCLTech",
-              "lpa": "8.78",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Vishal S Nala",
-              "company": "Tech Mahindra",
-              "lpa": "7.56",
-              "usn": "",
-              "mode": ""
-            }
-          ]
-        },
-        {
-          "batch": "2023-2024",
-          "companies": [
-            {
-              "company": "Accenture",
-              "count": "2",
-              "package": ""
-            },
-            {
-              "company": "Tata Consultancy Services",
-              "count": "2",
-              "package": ""
-            },
-            {
-              "company": "Barracuda",
-              "count": "2",
-              "package": ""
-            },
-            {
-              "company": "Capgemini",
-              "count": "1",
-              "package": ""
-            },
-            {
-              "company": "iBind",
-              "count": "1",
-              "package": ""
-            },
-            {
-              "company": "Cognizant",
-              "count": "1",
-              "package": ""
-            }
-          ],
-          "students": [
-            {
-              "name": "Aishwarya Basavaraj Bani",
-              "company": "Capgemini",
-              "lpa": "4.25",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Rakshita Padmaraj Dhanpal",
-              "company": "Tata Consultancy Services",
-              "lpa": "3.36",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Nishita",
-              "company": "iBind",
-              "lpa": "7.1",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Arun Indi",
-              "company": "Barracuda",
-              "lpa": "8.58",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Makineni Aditya Vardhan",
-              "company": "Barracuda",
-              "lpa": "8.58",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Mohammad Islampur",
-              "company": "Tata Consultancy Services",
-              "lpa": "3.36",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Krutika Badiger",
-              "company": "Accenture",
-              "lpa": "4.5",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Sakshi Sonagaj",
-              "company": "Cognizant",
-              "lpa": "4.01",
-              "usn": "",
-              "mode": ""
-            },
-            {
-              "name": "Anita B M",
-              "company": "Accenture",
-              "lpa": "4.5",
-              "usn": "",
-              "mode": ""
-            }
-          ]
-        }
-      ],
       "yearWise": [
         {
           "year": "2025",
@@ -4600,6 +4268,321 @@
         {
           "year": "2023",
           "percent": "98.24"
+        }
+      ],
+      "batches": [
+        {
+          "batch": "2025-26",
+          "companies": [
+            {
+              "company": "Cognizant Gen C Next",
+              "count": "1",
+              "package": "6.75"
+            },
+            {
+              "company": "Infosys, Digital Specialist Engineer",
+              "count": "1",
+              "package": "6.25"
+            },
+            {
+              "company": "Cognizant Gen C",
+              "count": "8",
+              "package": "4.02"
+            },
+            {
+              "company": "Infosys",
+              "count": "3",
+              "package": "3.60"
+            },
+            {
+              "company": "TCS Ninja",
+              "count": "5",
+              "package": "3.36"
+            },
+            {
+              "company": "Vstand4U",
+              "count": "3",
+              "package": ""
+            },
+            {
+              "company": "Tech Fortune",
+              "count": "3",
+              "package": ""
+            },
+            {
+              "company": "Qspider",
+              "count": "14",
+              "package": ""
+            }
+          ],
+          "students": [
+            {
+              "name": "Rugved C Sangulkar",
+              "usn": "2BA22AI033",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C Next",
+              "lpa": "6.75"
+            },
+            {
+              "name": "Parth Basanagouda Ishwarappagol",
+              "usn": "2BA22AI022",
+              "mode": "Fulltime Offer",
+              "company": "Infosys, Digital Specialist Engineer",
+              "lpa": "6.25"
+            },
+            {
+              "name": "Ishwarappa Mullur",
+              "usn": "2BA22AI011",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C",
+              "lpa": "4.02"
+            },
+            {
+              "name": "Parth Basanagouda Ishwarappagol",
+              "usn": "2BA22AI022",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C",
+              "lpa": "4.02"
+            },
+            {
+              "name": "Praveenkumar Pattar",
+              "usn": "2BA22AI053",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C",
+              "lpa": "4.02"
+            },
+            {
+              "name": "Prerana Umadi",
+              "usn": "2BA22AI026",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C",
+              "lpa": "4.02"
+            },
+            {
+              "name": "Rugved C Sangulkar",
+              "usn": "2BA22AI033",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C",
+              "lpa": "4.02"
+            },
+            {
+              "name": "S Vijaya Kumar",
+              "usn": "2BA22AI034",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C",
+              "lpa": "4.02"
+            },
+            {
+              "name": "Suhas Mokhashi",
+              "usn": "2BA22AI047",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C",
+              "lpa": "4.02"
+            },
+            {
+              "name": "Suman Basavaraj Kamatar",
+              "usn": "2BA22AI049",
+              "mode": "Fulltime Offer",
+              "company": "Cognizant Gen C",
+              "lpa": "4.02"
+            },
+            {
+              "name": "S Vijaya Kumar",
+              "usn": "2BA22AI034",
+              "mode": "Fulltime Offer",
+              "company": "Infosys",
+              "lpa": "3.60"
+            },
+            {
+              "name": "Om Shahapur",
+              "usn": "2BA22AI021",
+              "mode": "Fulltime Offer",
+              "company": "Infosys",
+              "lpa": "3.60"
+            },
+            {
+              "name": "Suhas V Sugalli",
+              "usn": "2BA22AI048",
+              "mode": "Fulltime Offer",
+              "company": "Infosys",
+              "lpa": "3.60"
+            },
+            {
+              "name": "Parth Basanagouda Ishwarappagol",
+              "usn": "2BA22AI022",
+              "mode": "Fulltime Offer",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Praveenkumar Pattar",
+              "usn": "2BA22AI053",
+              "mode": "Fulltime Offer",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Rugved C Sangulkar",
+              "usn": "2BA22AI033",
+              "mode": "Fulltime Offer",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Sudha Suresh Patil",
+              "usn": "2BA22AI046",
+              "mode": "Fulltime Offer",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Suman Basavaraj Kamatar",
+              "usn": "2BA22AI049",
+              "mode": "Fulltime Offer",
+              "company": "TCS Ninja",
+              "lpa": "3.36"
+            },
+            {
+              "name": "Rahulgouda Patil",
+              "usn": "2BA22AI029",
+              "mode": "CSR",
+              "company": "Vstand4U",
+              "lpa": ""
+            },
+            {
+              "name": "Vivek Sudheerkumar Hosur",
+              "usn": "2BA22AI052",
+              "mode": "CSR",
+              "company": "Vstand4U",
+              "lpa": ""
+            },
+            {
+              "name": "Shivani Shashidhar Murshilli",
+              "usn": "2BA23AI404",
+              "mode": "CSR",
+              "company": "Vstand4U",
+              "lpa": ""
+            },
+            {
+              "name": "Nikita V Patil",
+              "usn": "2BA22AI019",
+              "mode": "CSR",
+              "company": "Tech Fortune",
+              "lpa": ""
+            },
+            {
+              "name": "Chinmayee P S",
+              "usn": "2BA22AI005",
+              "mode": "CSR",
+              "company": "Tech Fortune",
+              "lpa": ""
+            },
+            {
+              "name": "Vivek Sudheerkumar Hosur",
+              "usn": "2BA22AI052",
+              "mode": "CSR",
+              "company": "Tech Fortune",
+              "lpa": ""
+            },
+            {
+              "name": "Aishwarya Adahalli",
+              "usn": "2BA22AI001",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Apeksha K Kencharaddiyavar",
+              "usn": "2BA22AI002",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Chirag Malagi",
+              "usn": "2BA22AI006",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Kevali Shravankumar Dhanapal",
+              "usn": "2BA22AI014",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Krutika Jagadish Kanchani",
+              "usn": "2BA22AI015",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Navya Karikatti",
+              "usn": "2BA22AI018",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Rahulgouda Patil",
+              "usn": "2BA22AI029",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Vivek Sudheerkumar Hosur",
+              "usn": "2BA22AI052",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Praveenkumar Pattar",
+              "usn": "2BA22AI053",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Keerti Rangappa Nandi",
+              "usn": "2BA22AI013",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Pooja Parashuramappa Haddannavar",
+              "usn": "2BA22AI023",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Sahana S Sankanurmath",
+              "usn": "2BA22AI036",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Varsha",
+              "usn": "2BA22AI050",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            },
+            {
+              "name": "Om Dinesh Belgali",
+              "usn": "2BA23AI403",
+              "mode": "CSR",
+              "company": "Qspider",
+              "lpa": ""
+            }
+          ]
         }
       ]
     }

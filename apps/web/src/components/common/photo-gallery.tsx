@@ -22,6 +22,7 @@ export function PhotoGallery({
   centered = false,
   feature = false,
   large = false,
+  natural = false,
 }: {
   images: GalleryImage[];
   className?: string;
@@ -41,8 +42,35 @@ export function PhotoGallery({
    * moderate bump for per-lab infrastructure photos without going full-width.
    */
   large?: boolean;
+  /**
+   * Render each image full-width at its intrinsic aspect ratio (no fixed-ratio
+   * crop) — for infographics and captioned collages where cropping loses content.
+   */
+  natural?: boolean;
 }) {
   if (!images.length) return null;
+
+  if (natural) {
+    return (
+      <div className={cn("flex flex-col gap-4", className)}>
+        {images.map((image, index) => (
+          <figure key={`${image.src}-${index}`} className="w-full max-w-3xl">
+            <div className="overflow-hidden rounded-lg border border-stone-200 bg-white">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={1600}
+                height={1000}
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="h-auto w-full"
+              />
+            </div>
+            {image.caption && <Caption>{image.caption}</Caption>}
+          </figure>
+        ))}
+      </div>
+    );
+  }
 
   if (feature) {
     return (
