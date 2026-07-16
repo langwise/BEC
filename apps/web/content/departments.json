@@ -11876,6 +11876,17 @@
           ]
         }
       ],
+      "sectionOrder": [
+        "home",
+        "about",
+        "faculty",
+        "curriculum",
+        "governance",
+        "research",
+        "activities",
+        "photo-gallery",
+        "contact"
+      ],
       "sectionTitles": {
         "infrastructure": "Photo Gallery"
       },
