@@ -282,20 +282,6 @@
         "designation": "Assistant Professor",
         "cv": "departments/eee/faculty/cv/apoorva-kulkarni.pdf",
         "photo": "departments/eee/faculty/apoorva-kulkarni.webp"
-      },
-      {
-        "name": "Dr. G. Suchitra",
-        "designation": "Associate Professor",
-        "photo": "departments/eee/faculty/g-suchitra.webp"
-      },
-      {
-        "name": "Prof. R. G. Patil",
-        "designation": "Associate Professor",
-        "photo": "departments/eee/faculty/r-g-patil.webp"
-      },
-      {
-        "name": "Prof. S. M. Iddalagi",
-        "designation": "Assistant Professor"
       }
     ],
     "mathematics": [
