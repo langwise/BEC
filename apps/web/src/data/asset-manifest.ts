@@ -1522,6 +1522,7 @@ export const manifest = {
   "departments/ip/docs/time-table-2023-24.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/ip/docs/time-table-2023-24.pdf",
   "departments/ip/docs/time-table-even-2025-26.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/ip/docs/time-table-even-2025-26.pdf",
   "departments/ip/docs/time-table-odd-2025-26.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/ip/docs/time-table-odd-2025-26.pdf",
+  "departments/ip/docs/time-table-vii-sem-odd-2026-27.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/ip/docs/time-table-vii-sem-odd-2026-27.pdf",
   "departments/ip/faculty/c-m-javalagi.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/ip/faculty/c-m-javalagi.webp",
   "departments/ip/faculty/cv/c-m-javalagi.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/ip/faculty/cv/c-m-javalagi.pdf",
   "departments/ip/faculty/cv/d-g-mallapur.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/departments/ip/faculty/cv/d-g-mallapur.pdf",
