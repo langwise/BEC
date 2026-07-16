@@ -427,6 +427,14 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                     </div>
                 )}
                 {dept.quickFacts && <QuickFacts quickFacts={dept.quickFacts} />}
+                {/* Programs / PEOs / POs / WK / PSOs — relocated here when there is no Academics tab */}
+                {dept.academicGroups && dept.academicGroups.length > 0 && (
+                    <ContentSection
+                        title="Academics"
+                        groups={dept.academicGroups}
+                        icon="book"
+                    />
+                )}
                 {/* HoD message + lead photo — relocated under About when Vision & Mission are on Home */}
                 {!dept.visionMissionOnHome && dept.hodMessage && (
                     <HodMessageBlock hodMessage={dept.hodMessage} />
@@ -437,8 +445,18 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                         className={dept.hodMessage ? "mt-8 mb-12" : "-mt-4 mb-12"}
                     />
                 )}
+                {/* Milestones stand in for Highlights on Home when milestonesOnHome is set */}
+                {dept.milestonesOnHome && dept.milestones && (
+                    <ContentSection
+                        title={dept.milestones.title}
+                        items={dept.milestones.items}
+                        icon={dept.milestones.icon}
+                    />
+                )}
                 {/* Highlights — hidden on Home when moved under About */}
-                {!dept.visionMissionOnHome && <HighlightsBlock highlights={dept.highlights} />}
+                {!dept.visionMissionOnHome && !dept.milestonesOnHome && (
+                    <HighlightsBlock highlights={dept.highlights} />
+                )}
                 {!dept.bestPracticesUnderAbout &&
                     (dept.bestPractices?.length || dept.bestPracticesList?.length) && (
                         <BestPracticesBlock documents={dept.bestPractices} list={dept.bestPracticesList} />
@@ -489,7 +507,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                 )}
 
                 {/* Milestones — bullet list directly under Vision & Mission */}
-                {dept.milestones && (
+                {!dept.milestonesOnHome && dept.milestones && (
                     <ContentSection
                         title={dept.milestones.title}
                         items={dept.milestones.items}

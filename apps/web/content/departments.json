@@ -8,6 +8,7 @@
       "established": "2020",
       "intake": "60",
       "overview": "Established in 2020 with an initial intake of 60 students, the Department of Artificial Intelligence and Machine Learning was founded to offer quality education in one of the fastest-growing areas of technology. The department provides a strong academic foundation in AI, Machine Learning, Data Science, and related fields through a curriculum that blends theoretical knowledge with practical learning.\n\nThe department emphasizes innovation, critical thinking, and hands-on experience through modern laboratories, research activities, and industry-oriented initiatives. Faculty members are actively involved in research and guide doctoral scholars, fostering a vibrant culture of learning and knowledge creation.\n\nStudents are encouraged to participate in research projects, internships, hackathons, and technical events that enhance their professional skills and problem-solving abilities. Through academic excellence, ethical values, and experiential learning, the department strives to nurture competent, innovative, and socially responsible professionals ready to contribute to the evolving technological landscape.",
+      "highlights": [],
       "quickFacts": {
         "facts": [
           {
@@ -15,20 +16,20 @@
             "value": "B.E. 4 Years"
           },
           {
-            "label": "Intake",
-            "value": "60"
-          },
-          {
-            "label": "Faculty",
-            "value": "08"
-          },
-          {
             "label": "Doctorates",
             "value": "02"
           },
           {
-            "label": "Ph.D. Pursuing",
+            "label": "Intake",
+            "value": "60"
+          },
+          {
+            "label": "Ph.D Pursuing",
             "value": "02"
+          },
+          {
+            "label": "No. of Faculty",
+            "value": "08"
           },
           {
             "label": "Technical Staff",
@@ -43,7 +44,6 @@
         "Cultivate a multidisciplinary environment that encourages collaboration and lifelong learning.",
         "Foster a culture of research, innovation and entrepreneurship."
       ],
-      "highlights": [],
       "programsOffered": [
         "B.E. — Artificial Intelligence & Machine Learning"
       ],
@@ -221,109 +221,21 @@
               "position": "Member — Assistant Professor, AI & ML, BEC, Bagalkot"
             },
             {
+              "name": "Mr. Shrivatsa Gudi",
+              "position": "Representative from Industry — AI Data Scientist, Volvo Group, Bangalore"
+            },
+            {
               "name": "Prof. Ashok Patil",
               "position": "Member — Assistant Professor, AI & ML, BEC, Bagalkot"
             },
             {
               "name": "Prof. Brahmananda Reddy",
               "position": "Member — Assistant Professor, AI & ML, BEC, Bagalkot"
-            },
-            {
-              "name": "Mr. Shrivatsa Gudi",
-              "position": "Representative from Industry — AI Data Scientist, Volvo Group, Bangalore"
-            },
-            {
-              "name": "Ms. Anaga",
-              "position": "Student Member — 7th Semester"
-            },
-            {
-              "name": "Mrs. Sohail",
-              "position": "Student Member — 7th Semester"
             }
           ]
         }
       ],
       "facultyCompact": true,
-      "consolidateResearch": true,
-      "researchAreasList": [
-        "Medical Image Analysis — AI-based diagnosis of retinal diseases, diabetic retinopathy, glaucoma, pneumonia, brain tumors, and other healthcare applications using Deep Learning and Explainable AI.",
-        "Biometrics & Document Analysis — intelligent systems for face recognition, fingerprint recognition, signature verification, OCR, handwritten document analysis, and digital document authentication.",
-        "Smart Agriculture — AI applications for crop disease detection, yield prediction, soil analysis, precision farming, and smart irrigation using computer vision and IoT.",
-        "Faculty and students actively publish research in reputed journals and conferences, secure research grants, undertake interdisciplinary projects, and promote innovation through the Centre of Excellence (CoE) in Computer Vision, IoT, and Robotics — developing AI-driven solutions for healthcare, agriculture, and intelligent automation."
-      ],
-      "researchAreas": [
-        {
-          "supervisor": "Dr. B. M. Reshmi",
-          "area": "Medical Image Analysis, Machine Learning — research guide since 2018 (Ph.D. 2017) · 4 Ph.D. candidates"
-        },
-        {
-          "supervisor": "Dr. Vishwanath Kagawade",
-          "area": "Digital Image Processing — research guide since 2023 (Ph.D. 2020) · 3 Ph.D. candidates"
-        },
-        {
-          "supervisor": "Dr. Anil D. Devangavi",
-          "area": "Vehicular Adhoc Networks, Artificial Intelligence — research guide since 2021 (Ph.D. 2018) · 4 Ph.D. candidates"
-        }
-      ],
-      "researchAchievements": [
-        "56 journal publications and 33 conference publications by department faculty (department publication record; 47 international and 3 national journals, 30 international and 3 national conferences).",
-        "Dr. Anil D. Devangavi — 9 journal and 4 conference publications.",
-        "Dr. B. M. Reshmi — 14 journal and 15 conference publications.",
-        "Dr. Vishwanath Kagawade — 11 journal and 8 conference publications.",
-        "Jayasheela D. K. — 8 journal and 1 conference publications.",
-        "Lakshmi Kolur — 1 journal and 3 conference publications.",
-        "Anita Kori — 9 journal publications.",
-        "Laxmi Muttappanavar — 1 journal and 1 conference publication.",
-        "Nagaraj B. Kalligudd — 3 journal and 1 conference publications."
-      ],
-      "researchScholars": [],
-      "researchGrants": [],
-      "labs": [
-        {
-          "name": "Centre of Excellence — Computer Vision Laboratory",
-          "description": "A state-of-the-art research and development environment for students, faculty, and researchers to explore advanced applications of AI, Machine Learning, Deep Learning, and Computer Vision. The laboratory supports curriculum-based learning, interdisciplinary research, innovation, and industry-oriented projects in domains such as medical image analysis, biometrics, document image analysis, agriculture, smart surveillance, robotics, and intelligent automation.",
-          "features": [
-            "Bosch Portable Fundus Camera — specialized retinal imaging device capturing high-resolution fundus images, used extensively for research on early detection of diabetic retinopathy, glaucoma, age-related macular degeneration, and other ophthalmic disorders.",
-            "Dell Precision 5820 Tower GPU Workstations — Intel Xeon W-series, up to 512 GB ECC DDR4, high-end GPU support, NVMe SSD with RAID — enabling deep-learning model training with TensorFlow, PyTorch, OpenCV, Keras, and CUDA.",
-            "Supports AI-based medical image analysis, biometric recognition, precision agriculture, smart surveillance, robotics and autonomous vision applications, UG/PG research projects, industry-sponsored and funded research, hackathons, and startup development."
-          ],
-          "images": [
-            "departments/aiml/labs/coe-01.webp",
-            "departments/aiml/labs/coe-02.webp",
-            "departments/aiml/labs/coe-03.webp",
-            "departments/aiml/labs/coe-04.webp"
-          ]
-        },
-        {
-          "name": "Centre of Excellence — IoT Laboratory",
-          "description": "A state-of-the-art environment where students, researchers, and faculty design, develop, and deploy innovative IoT solutions. Equipped with advanced embedded systems, sensors, communication modules, robotics platforms, and cloud technologies, the laboratory supports experiential learning, interdisciplinary research, and industry-driven innovation.",
-          "features": [
-            "Hardware platforms: Arduino Mega development boards, Raspberry Pi 3/4 systems, ESP8266 & ESP32 boards, NodeMCU Wi-Fi modules.",
-            "Sensors: MQ-2/MQ-8/MQ-9/MQ-135 gas sensors, DHT22 temperature & humidity, soil moisture, rain, ultrasonic, IR, LDR, load cell, GPS module, RFID reader & tags, ADXL345 accelerometer, NPK and color sensors.",
-            "Robotics & automation: robot chassis kits, DC and servo motors, L293N motor drivers, pick-and-place modules; communication via GSM, Bluetooth, ZigBee, Wi-Fi and I2C.",
-            "Computing & software: Arduino IDE, Raspberry Pi OS, Python, Node-RED, MQTT, ThingSpeak, Blynk IoT platform — supporting Industry 4.0 applications, mini & major projects, hackathons, workshops, and product development."
-          ],
-          "images": [
-            "departments/aiml/labs/coe-05.webp",
-            "departments/aiml/labs/coe-06.webp"
-          ]
-        },
-        {
-          "name": "Research Grants, Patents & Copyright — Records",
-          "description": "Sanction records and certificates: NAIN 2.0 startup grant felicitations, published patent records, and the registered copyright certificate.",
-          "images": [
-            "departments/aiml/research/nain-grant-01.webp",
-            "departments/aiml/research/nain-grant-02.webp",
-            "departments/aiml/research/patent-1-record.webp",
-            "departments/aiml/research/patent-1-details.webp",
-            "departments/aiml/research/patent-2-record.webp",
-            "departments/aiml/research/copyright-certificate.webp"
-          ]
-        }
-      ],
-      "publications": [],
-      "patents": [],
-      "achievementTables": [],
       "placementImages": [
         {
           "title": "Top Placements",
@@ -331,48 +243,6 @@
             "departments/aiml/placements/top-2025-01.webp",
             "departments/aiml/placements/top-2025-02.webp",
             "departments/aiml/placements/top-2025-03.webp"
-          ]
-        }
-      ],
-      "infrastructureItems": [
-        {
-          "name": "Lab 1 — Shrinivasa Ramanujan Laboratory",
-          "specification": "30 desktops — Intel Core i7-14700 (2.10 GHz), 16 GB RAM, Windows 11 Pro / Windows 10 Pro; Konica Minolta 205i printer; Epson EB-E01 projector; Wi-Fi enabled (1 Gbps internet leased line)",
-          "quantity": "30 systems"
-        },
-        {
-          "name": "Lab 2 — Aryabhata Laboratory",
-          "specification": "30 desktops — Intel Core i5-14500 (2.60 GHz), 16 GB RAM, 477 GB SSD, Intel Arc A380 (6 GB) graphics; Epson EB-E01 projector; Wi-Fi enabled (1 Gbps internet leased line)",
-          "quantity": "30 systems"
-        },
-        {
-          "name": "Lab 3 — N R Narayan Murthy Laboratory",
-          "specification": "30 desktops — Intel Core i7-14700 (2.10 GHz), 16 GB RAM, Windows 11 Pro; Epson EB-E01 projector; Wi-Fi enabled (1 Gbps internet leased line)",
-          "quantity": "30 systems"
-        }
-      ],
-      "softwareItems": [
-        {
-          "name": "Geany, Keil uVision5, Visual Studio Code, Jupyter Notebook, Dev-C++, wgnuplot",
-          "usage": "Aryabhata Laboratory"
-        },
-        {
-          "name": "Geany, MongoDB, Visual Studio Code, Jupyter Notebook, Oracle Database, Eclipse, Anaconda3",
-          "usage": "N R Narayan Murthy Laboratory"
-        }
-      ],
-      "facilitiesGallery": [
-        {
-          "title": "Laboratories, Classrooms & Seminar Hall",
-          "images": [
-            "departments/aiml/facilities/lab-01.webp",
-            "departments/aiml/facilities/lab-02.webp",
-            "departments/aiml/facilities/lab-03.webp",
-            "departments/aiml/facilities/lab-04.webp",
-            "departments/aiml/facilities/lab-05.webp",
-            "departments/aiml/facilities/lab-06.webp",
-            "departments/aiml/facilities/lab-07.webp",
-            "departments/aiml/facilities/lab-08.webp"
           ]
         }
       ],
@@ -388,302 +258,6 @@
             "Infosys Spoken Tutorials, Job Simulation Certifications and Infosys Springboard Certifications",
             "Expert Talks",
             "Personality Development Courses"
-          ]
-        }
-      ],
-      "activityTables": [
-        {
-          "title": "Student Internships (2025-26)",
-          "columns": [
-            "Sl. No.",
-            "Name",
-            "USN",
-            "Internship Company"
-          ],
-          "rows": [
-            [
-              "1",
-              "Sahana P Hunur",
-              "2BA22AI035",
-              "Infobellit"
-            ],
-            [
-              "2",
-              "Suhas V Sugalli",
-              "2BA22AI048",
-              "Tech Fortune Technologies"
-            ],
-            [
-              "3",
-              "Rahulgouda Patil",
-              "2BA22AI029",
-              "Armorcode Inc."
-            ],
-            [
-              "4",
-              "Sahana Siddappa Jirli",
-              "2BA22AI037",
-              "IIIT Dharwad"
-            ],
-            [
-              "5",
-              "Parth B Ishwarappagol",
-              "2BA22AI022",
-              "IIIT Dharwad"
-            ],
-            [
-              "6",
-              "Krutika Kanchani",
-              "2BA22AI015",
-              "Sharp Software Development India Pvt. Ltd."
-            ],
-            [
-              "7",
-              "Rakesh Itnal",
-              "2BA22AI030",
-              "IAST Software Solutions"
-            ],
-            [
-              "8",
-              "Shankar M Darur",
-              "2BA22AI007",
-              "Agribid.ai"
-            ],
-            [
-              "9",
-              "Praveenkumar Pattar",
-              "2BA22AI053",
-              "SuprMentr Technologies Pvt. Ltd."
-            ],
-            [
-              "10",
-              "Chinmayee P. S.",
-              "2BA22AI005",
-              "IIIT Dharwad"
-            ],
-            [
-              "11",
-              "Ibrahim Indikar",
-              "2BA22AI010",
-              "Tech Fortune"
-            ],
-            [
-              "12",
-              "Nikita V. Patil",
-              "2BA22AI019",
-              "Tech Fortune Technologies"
-            ],
-            [
-              "13",
-              "Aishwarya Adahalli",
-              "2BA22AI001",
-              "Robowaves / QSpiders"
-            ],
-            [
-              "14",
-              "Pooja Haddannavar",
-              "2BA22AI023",
-              "Robowaves"
-            ],
-            [
-              "15",
-              "Prerana Umadi",
-              "2BA22AI026",
-              "IIT Dharwad"
-            ],
-            [
-              "16",
-              "Aditya",
-              "2BA23AI400",
-              "SuprMentr"
-            ],
-            [
-              "17",
-              "Digvijayram V. Mirajkar",
-              "2BA22AI008",
-              "IIT Dharwad"
-            ],
-            [
-              "18",
-              "S. Vijaya Kumar",
-              "2BA22AI034",
-              "IIIT Dharwad"
-            ],
-            [
-              "19",
-              "Suhas Mokhashi",
-              "2BA22AI047",
-              "IIIT"
-            ],
-            [
-              "20",
-              "Chetan Subhas Araballi",
-              "2BA23AI401",
-              "Tyrolit"
-            ],
-            [
-              "21",
-              "Vivek S. Hosur",
-              "2BA22AI052",
-              "Tech Fortune"
-            ],
-            [
-              "22",
-              "Prashant Hadapad",
-              "2BA22AI025",
-              "Tech Fortune"
-            ],
-            [
-              "23",
-              "Ranjita Jigalikoppa",
-              "2BA22AI032",
-              "IIIT Dharwad"
-            ],
-            [
-              "24",
-              "Soumya Basappa Mattikoppa",
-              "2BA22AI043",
-              "IIIT Dharwad"
-            ],
-            [
-              "25",
-              "Ishwarappa Mullur",
-              "2BA22AI011",
-              "Tech Fortune"
-            ],
-            [
-              "26",
-              "Rugved C. Sangulkar",
-              "2BA22AI033",
-              "Tech Fortune Technologies"
-            ],
-            [
-              "27",
-              "Sahana S. Sankanurmath",
-              "2BA22AI036",
-              "Incanto Dynamics Private Limited"
-            ],
-            [
-              "28",
-              "Chirag Malagi",
-              "2BA22AI006",
-              "IIIT Dharwad"
-            ],
-            [
-              "29",
-              "Varsha",
-              "2BA22AI050",
-              "Robowaves / QSpiders"
-            ],
-            [
-              "30",
-              "Shravana Mahesh Solapurmath",
-              "2BA22AI041",
-              "IIIT Dharwad"
-            ],
-            [
-              "31",
-              "Srusthi Vitthal Shintre",
-              "2BA23AI405",
-              "IIITD"
-            ],
-            [
-              "32",
-              "Varsha Galagali",
-              "2BA23AI406",
-              "MindMatrix"
-            ],
-            [
-              "33",
-              "Vinayak D. Badiger",
-              "2BA22AI051",
-              "IIT Dharwad"
-            ],
-            [
-              "34",
-              "Navya Karikatti",
-              "2BA22AI108",
-              "QSpiders, Rajajinagar, Bengaluru"
-            ],
-            [
-              "35",
-              "Nagaratna Mankani",
-              "7019950911",
-              "IIIT Dharwad"
-            ],
-            [
-              "36",
-              "Pooja Venkatesh Dhariyappanavar",
-              "2BA22AI024",
-              "IIIT Dharwad"
-            ],
-            [
-              "37",
-              "Bhavani Mallikarjuna Limbikai",
-              "2BA22AI003",
-              "IIIT Dharwad"
-            ],
-            [
-              "38",
-              "Srushti S. Sankannavar",
-              "2BA22AI045",
-              "IIIT Dharwad"
-            ]
-          ]
-        },
-        {
-          "title": "Expert Talks (2025-26)",
-          "columns": [
-            "Topic",
-            "Speaker",
-            "Date & Venue"
-          ],
-          "rows": [
-            [
-              "Trustworthy AI for Inclusive and Sustainable Development",
-              "Dr. Bharathi M. A. — Professor (AI & ML), Head, Research & Consultancy, BMS Institute of Technology & Management, Bangalore",
-              "7th February 2026 — Gallery Hall"
-            ],
-            [
-              "Corporate to Care: The AI Revolution",
-              "Prathik N. — Staff Software Engineer, ITRON Inc., Bangalore",
-              "7th February 2026 — Gallery Hall"
-            ]
-          ]
-        },
-        {
-          "title": "Industry Visits & Immersion Programmes (2025-26)",
-          "columns": [
-            "Programme",
-            "Organisation / Venue",
-            "Date",
-            "Faculty Participants"
-          ],
-          "rows": [
-            [
-              "One-day Immersive Program at the TCS office",
-              "TCS, Bangalore",
-              "4th February 2026",
-              "Dr. Bharati M. Reshmi, Dr. Vishwanath Kagawade"
-            ],
-            [
-              "Wipro-WCF Training Program on Advanced Java Full Stack (Spring Boot, Spring Security, Spring Cloud, Microservices, DevOps)",
-              "Wipro Limited, Chennai",
-              "9th-20th February 2026",
-              "Dr. Vishwanath Kagawade"
-            ],
-            [
-              "Guest lecture by Shri Amitabh Mishra, Deputy General Manager (Biopharma), NRDC New Delhi — healthcare innovation, business prospects and regulatory aspects of healthcare technology commercialization",
-              "Medical Education Hall, S.N. Medical College, Bagalkot",
-              "23rd June 2026",
-              "Prof. Jayasheela D. K., Dr. Bharati Reshmi"
-            ],
-            [
-              "Technical study visit to study the establishment and implementation of the NSDC (National Skill Development Corporation) Laboratory",
-              "Maharaja Institute of Technology (MIT), Mysuru",
-              "23rd June 2026",
-              "Dr. Vishwanath Kagawade"
-            ]
           ]
         }
       ],
@@ -750,27 +324,9 @@
         "designation": "Associate Professor & Head, Department of Artificial Intelligence and Machine Learning"
       },
       "sectionDocuments": {
-        "research": [
-          {
-            "title": "Centre of Excellence (PDF)",
-            "file": "departments/aiml/docs/aiml-centre-of-excellence.pdf"
-          },
-          {
-            "title": "Research Grants 2025-26 (PDF)",
-            "file": "departments/aiml/docs/aiml-research-grants.pdf"
-          },
-          {
-            "title": "Patents & Copyrights (PDF)",
-            "file": "departments/aiml/docs/aiml-patents-copyrights.pdf"
-          },
-          {
-            "title": "Student Research Publications (PDF)",
-            "file": "departments/aiml/docs/aiml-student-research-publications.pdf"
-          }
-        ],
         "activities": [
           {
-            "title": "Best Practices & Quality Initiatives 2025-26 — full report (PDF)",
+            "title": "Best Practices and Quality Initiatives 2025-26 — full report (PDF)",
             "file": "departments/aiml/docs/aiml-best-practices-2025-26.pdf"
           }
         ],
@@ -783,35 +339,107 @@
       },
       "customSections": [
         {
+          "id": "research",
+          "title": "Research and Development",
+          "label": "Research",
+          "icon": "flask",
+          "content": "The Department of Artificial Intelligence and Machine Learning is actively engaged in multidisciplinary research addressing real-world challenges through AI-driven solutions. The department's major research focus areas include:",
+          "items": [
+            "Medical Image Analysis: AI-based diagnosis of retinal diseases, diabetic retinopathy, glaucoma, pneumonia, brain tumors, and other healthcare applications using Deep Learning and Explainable AI.",
+            "Biometrics & Document Analysis: Intelligent systems for face recognition, fingerprint recognition, signature verification, OCR, handwritten document analysis, and digital document authentication.",
+            "Smart Agriculture: AI applications for crop disease detection, yield prediction, soil analysis, precision farming, and smart irrigation using computer vision and IoT.",
+            "Faculty and students actively publish research in reputed journals and conferences, secure research grants, undertake interdisciplinary projects, and promote innovation through the Centre of Excellence (CoE) in Computer Vision, IoT, and Robotics, developing AI-driven solutions for healthcare, agriculture, and intelligent automation."
+          ],
+          "documents": [
+            {
+              "title": "Publications (PDF)",
+              "file": "departments/aiml/docs/aiml-student-research-publications.pdf"
+            },
+            {
+              "title": "COE (PDF)",
+              "file": "departments/aiml/docs/aiml-centre-of-excellence.pdf"
+            },
+            {
+              "title": "Research Grants (PDF)",
+              "file": "departments/aiml/docs/aiml-research-grants.pdf"
+            },
+            {
+              "title": "Patents and Copy Rights (PDF)",
+              "file": "departments/aiml/docs/aiml-patents-copyrights.pdf"
+            }
+          ]
+        },
+        {
           "id": "achievements",
-          "title": "Achievements (2025-26)",
+          "title": "Achievements",
           "label": "Achievements",
           "icon": "award",
           "documents": [
             {
-              "title": "Faculty Achievements 2025-26 — with photos (PDF)",
+              "title": "Faculty Achievements 2025-26 (PDF)",
               "file": "departments/aiml/docs/aiml-faculty-achievements-2025-26.pdf"
             },
             {
-              "title": "Student Achievements 2025-26 — with photos (PDF)",
+              "title": "Student Achievements 2025-26 (PDF)",
               "file": "departments/aiml/docs/aiml-student-achievements-2025-26.pdf"
+            }
+          ]
+        },
+        {
+          "id": "infrastructure",
+          "title": "Infrastructure",
+          "label": "Infrastructure",
+          "icon": "building-2",
+          "documents": [
+            {
+              "title": "Laboratories, Classrooms and Seminar Halls (PDF)",
+              "file": "departments/aiml/docs/aiml-infrastructure.pdf"
+            }
+          ]
+        },
+        {
+          "id": "industry-connect",
+          "title": "Industry Connect",
+          "label": "Industry Connect",
+          "icon": "handshake",
+          "documents": [
+            {
+              "title": "Expert Talks (PDF)",
+              "file": "departments/aiml/docs/aiml-expert-talks.pdf"
+            },
+            {
+              "title": "Industry Visit (PDF)",
+              "file": "departments/aiml/docs/aiml-industry-visit.pdf"
+            },
+            {
+              "title": "Internship_Details_Table (PDF)",
+              "file": "departments/aiml/docs/aiml-internship-details.pdf"
             }
           ]
         }
       ],
       "sectionTitles": {
+        "curriculum": "Syllabus",
         "governance": "Board of Studies",
-        "research-achievements": "Research Scholars & Grants",
-        "activities": "Best Practices & Quality Initiatives",
-        "activity-programs": "Industry Connect",
-        "achievements": "Achievements (2025-26)"
+        "activities": "Best Practices and Quality Initiatives",
+        "newsletters": "News letter",
+        "association": "Dept. Association",
+        "photo-gallery": "Gallery"
       },
       "sectionNavLabels": {
-        "governance": "Board of Studies",
-        "research-achievements": "Scholars & Grants",
-        "activities": "Best Practices",
-        "activity-programs": "Industry Connect",
-        "achievements": "Achievements"
+        "home": "Overview",
+        "faculty": "Faculty",
+        "research": "Research",
+        "placements": "Placements",
+        "achievements": "Achievements",
+        "infrastructure": "Infrastructure",
+        "curriculum": "Syllabus",
+        "governance": "BoS",
+        "activities": "Best Practices and Quality Initiatives",
+        "newsletters": "News letter",
+        "industry-connect": "Industry Connect",
+        "association": "Dept. Association",
+        "photo-gallery": "Gallery"
       },
       "galleryExclude": [
         "/labs/",
@@ -819,7 +447,30 @@
         "/placements/",
         "/research/",
         "/activities/"
-      ]
+      ],
+      "hideQuickStats": true,
+      "milestonesOnHome": true,
+      "academicsOnHome": true,
+      "visionMissionOnHome": true,
+      "sectionOrder": [
+        "home",
+        "faculty",
+        "research",
+        "placements",
+        "achievements",
+        "infrastructure",
+        "curriculum",
+        "governance",
+        "activities",
+        "newsletters",
+        "industry-connect",
+        "association",
+        "photo-gallery"
+      ],
+      "sectionIcons": {
+        "home": "home",
+        "curriculum": "file-text"
+      }
     },
     "automobile-engg": {
       "name": "Automobile Engineering",
@@ -1079,7 +730,7 @@
       "name": "Biotechnology",
       "assetSlug": "biotechnology",
       "heroImage": "departments/biotechnology/cine2100.webp",
-      "tagline": "A centre for academic excellence in biotechnology and innovative research for a sustainable future.",
+      "tagline": "Craft an exceptional career trajectory in biotechnology",
       "established": "2002",
       "intake": "30",
       "overview": "The Department of Biotechnology was established in 2002 and is engaged in effective teaching-learning, basic research and technology-based training and service to society. It offers a 4-year B.E. in Biotechnology (intake 30) and is supported by well-equipped independent laboratories, classrooms, a seminar hall and library. The department has been recognised as an R&D (Ph.D.) Research Centre by VTU Belagavi since 2011, with seven faculty holding Ph.D. degrees and active research in food processing, biofuels technology, bioremediation, fermentation technology and molecular biology. It hosts a Bioenergy Research, Information and Demonstration Centre (BRIDC) in association with KSBDB, GoK and a Food Testing Laboratory supported by KITS, Government of Karnataka, and partners with industry to provide students opportunities for internships and projects.",
@@ -1218,12 +869,14 @@
           "file": "departments/biotechnology/docs/syllabus-7th-8th-sem-2026-27.pdf"
         }
       ],
-      "overviewImage": "departments/biotechnology/hod/bharati-s-meti.webp",
-      "overviewImageCaption": "Dr. (Smt.) Bharati S. Meti — Professor & Head, Department of Biotechnology",
       "newsletters": [
         {
           "title": "Biotech Times — Issue: May 2026",
           "file": "departments/biotechnology/newsletters/biotech-times-may-2026.pdf"
+        },
+        {
+          "title": "Biotech Times — Issue: April 2026",
+          "file": "departments/biotechnology/newsletters/biotech-times-april-2026.pdf"
         }
       ],
       "infrastructureItems": [
@@ -1287,12 +940,6 @@
             "departments/biotechnology/placements/placement-data-2.webp",
             "departments/biotechnology/placements/placement-companies.webp"
           ]
-        },
-        {
-          "title": "Lead Industry Interactions",
-          "images": [
-            "departments/biotechnology/placements/industry-interactions.webp"
-          ]
         }
       ],
       "activities": [
@@ -1300,50 +947,336 @@
           "title": "Environmental Day Celebration",
           "description": "Tree plantation drive under the concept of one plant, one student, in combination with one school student and one engineering student, held at BEC Campus and at Amrita International School, Navanagar, Bagalkote.",
           "images": [
-            { "key": "departments/biotechnology/activities/environmental-day/env-01.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-02.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-03.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-04.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-05.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-06.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-07.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-08.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-09.webp" },
-            { "key": "departments/biotechnology/activities/environmental-day/env-10.webp" }
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-01.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-02.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-03.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-04.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-05.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-06.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-07.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-08.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-09.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-10.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/environmental-day/env-11.webp"
+            }
+          ]
+        },
+        {
+          "title": "Industrial & Research Institute Visits",
+          "description": "Students of the Department of Biotechnology undertake industrial and research-institute visits to keep abreast of technological developments in the biotechnology, food and pharmaceutical industries.",
+          "images": [
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-01.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-02.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-03.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-04.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-05.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-06.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-07.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-08.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-09.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-10.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-11.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-12.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-13.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-14.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-15.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/iv-16.webp"
+            }
           ]
         },
         {
           "title": "Industrial Visits",
-          "description": "Students of the Department of Biotechnology undertake industrial and research-institute visits to keep abreast of technological developments in biotechnology, food and pharmaceutical industries.",
+          "date": "2024-25",
+          "details": [
+            "Bengaluru Bioinnovation Centre, Bengaluru — 23 to 26 July 2024",
+            "Institute of Bioinformatics and Applied Biotechnology (IBAB), Bengaluru — 23 to 26 July 2024",
+            "CSIR — Central Food Technological Research Institute (CFTRI), Mysore — 23 to 26 July 2024",
+            "Oligo Lifesciences, Bengaluru — 23 to 26 July 2024",
+            "Radiant Technologies, Bengaluru — 23 to 26 July 2024"
+          ],
           "images": [
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-01.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-02.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-03.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-04.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-05.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-06.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-07.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-08.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-09.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-10.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-11.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-12.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-13.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-14.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-15.webp" },
-            { "key": "departments/biotechnology/activities/industrial-visit/iv-16.webp" }
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-01.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-02.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-03.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-04.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-05.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-06.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-07.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-08.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-09.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-10.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-11.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-12.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-13.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-14.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-15.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-16.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-17.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-18.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-19.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-20.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-21.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-22.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-23.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-24.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-25.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2024-25/iv-26.webp"
+            }
+          ]
+        },
+        {
+          "title": "Industrial Training — BiOZEEN, Bengaluru",
+          "date": "July 2024",
+          "description": "BiOZEEN conducted a one-day workshop on Biopharmaceutical Manufacturing for the students of Basaveshwar Engineering College, giving them insights into biopharmaceutical manufacturing operations.",
+          "images": [
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/biozeen-2024/iv-01.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/biozeen-2024/iv-02.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/biozeen-2024/iv-03.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/biozeen-2024/iv-04.webp"
+            }
+          ]
+        },
+        {
+          "title": "Industrial Visits",
+          "date": "2023-24",
+          "details": [
+            "Nandini Dairy, Vidyagiri, Bagalkote — 19 October 2023",
+            "K. J. Somaiya Institute of Applied Agricultural Research (KIAAR) — 17 October 2023",
+            "Bioethanol production plant, Godavari Sugars and Biorefineries Limited, Sameerwadi — 17 October 2023",
+            "Effluent Treatment Plant, Godavari Sugars and Biorefineries Limited, Sameerwadi — 17 October 2023",
+            "Wintage Winery, Mudhol — 17 October 2023"
+          ],
+          "images": [
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-01.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-02.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-03.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-04.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-05.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-06.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-07.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-08.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-09.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-10.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-11.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-12.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-13.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2023-24/iv-14.webp"
+            }
+          ]
+        },
+        {
+          "title": "Industrial Visits",
+          "date": "2022-23",
+          "details": [
+            "Bengaluru Bio Innovation Centre, Bengaluru — 27 to 29 October 2022",
+            "UNIBIC, Bengaluru — 27 to 29 October 2022",
+            "Defence Food Research Laboratory (DFRL), Mysore — 27 to 29 October 2022",
+            "Kemwell, Bengaluru — 27 to 29 October 2022"
+          ],
+          "images": [
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2022-23/iv-01.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2022-23/iv-02.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2022-23/iv-03.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/industrial-visit/2022-23/iv-04.webp"
+            }
           ]
         },
         {
           "title": "Student Activities & Achievements",
           "description": "Students actively participate in and present at conferences, competitions and technical events, earning awards and recognition.",
           "images": [
-            { "key": "departments/biotechnology/activities/student-achievements/st-01.webp" },
-            { "key": "departments/biotechnology/activities/student-achievements/st-02.webp" },
-            { "key": "departments/biotechnology/activities/student-achievements/st-03.webp" },
-            { "key": "departments/biotechnology/activities/student-achievements/st-04.webp" },
-            { "key": "departments/biotechnology/activities/student-achievements/st-05.webp" },
-            { "key": "departments/biotechnology/activities/student-achievements/st-06.webp" }
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-01.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-02.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-03.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-04.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-05.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-06.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-07.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-08.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-09.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-10.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-11.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-12.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-13.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-14.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-15.webp"
+            },
+            {
+              "key": "departments/biotechnology/activities/student-achievements/st-16.webp"
+            }
           ]
         }
       ],
@@ -1365,7 +1298,6 @@
         "/hod/",
         "/placements/"
       ],
-      "about": "The Department of Biotechnology was established at Basaveshwar Engineering College in 2002, focusing on impactful teaching, research, and community service. The Department offers various programs including UG, PG Diploma, PG, and Ph.D., and has been recognized as an R&D center by VTU Belagavi since 2011.\n\nThe field of biotechnology stands at the intersection of engineering and technological advancement, encompassing diverse domains such as biopharmaceutical development, industrial applications, and environmental solutions. Central to this discipline is the application of genetic technologies across animal and plant biotechnology, as well as innovations in cell and tissue engineering. The COVID-19 pandemic underscored the critical role of biotechnology, with bio-pharmaceutical companies racing to develop vaccines and therapeutics, illuminating the industry's impact on public health. As of 2023, India emerges as a significant player in the global biotechnology landscape, ranking among the top twelve destinations for biotech innovation and holding the position as the largest biotechnology hub in the Asia Pacific region. The Indian biotechnology sector is valued at over USD 92 billion, with the bio-pharmaceutical industry leading in biosimilars, having the highest number approved in the domestic market. Moreover, the global bio-pharmaceutical market is projected to see remarkable growth, expanding from USD 274.10 billion in 2020 to an anticipated USD 703.28 billion by 2027, indicating a growing recognition of biotechnology's pivotal role in addressing contemporary challenges in healthcare and the environment.",
       "committeeGroups": [
         {
           "title": "Board of Studies (2025-2028)",
@@ -1998,7 +1930,24 @@
             "amount": "5.00"
           }
         ]
-      }
+      },
+      "heroImages": [
+        "departments/biotechnology/cine2100.webp",
+        "departments/biotechnology/facilities/equip-fermenter.webp",
+        "departments/biotechnology/facilities/equip-gel-doc.webp",
+        "departments/biotechnology/facilities/equip-hplc.webp",
+        "departments/biotechnology/facilities/equip-lyophilizer.webp",
+        "departments/biotechnology/facilities/equip-pcr.webp"
+      ],
+      "nbaAccredited": true,
+      "hodMessage": {
+        "message": "The Department of Biotechnology was established at Basaveshwar Engineering College in 2002, focusing on impactful teaching, research, and community service. The Department offers various programs including UG, PG Diploma, PG, and Ph.D., and has been recognized as an R&D center by VTU Belagavi since 2011.\n\nThe field of biotechnology stands at the intersection of engineering and technological advancement, encompassing diverse domains such as biopharmaceutical development, industrial applications, and environmental solutions. Central to this discipline is the application of genetic technologies across animal and plant biotechnology, as well as innovations in cell and tissue engineering. The COVID-19 pandemic underscored the critical role of biotechnology, with bio-pharmaceutical companies racing to develop vaccines and therapeutics, illuminating the industry's impact on public health. As of 2023, India emerges as a significant player in the global biotechnology landscape, ranking among the top twelve destinations for biotech innovation and holding the position as the largest biotechnology hub in the Asia Pacific region. The Indian biotechnology sector is valued at over USD 92 billion, with the bio-pharmaceutical industry leading in biosimilars, having the highest number approved in the domestic market. Moreover, the global bio-pharmaceutical market is projected to see remarkable growth, expanding from USD 274.10 billion in 2020 to an anticipated USD 703.28 billion by 2027, indicating a growing recognition of biotechnology's pivotal role in addressing contemporary challenges in healthcare and the environment.",
+        "name": "Dr. (Smt.) Bharati S. Meti",
+        "designation": "Professor & Head, Department of Biotechnology",
+        "image": "departments/biotechnology/hod/bharati-s-meti.webp"
+      },
+      "homeGroupPhoto": "departments/biotechnology/placements/industry-interactions.webp",
+      "homeGroupPhotoCaption": "Lead Industry Interactions"
     },
     "civil-engg": {
       "name": "Civil Engineering",
@@ -10317,7 +10266,9 @@
         }
       ],
       "chronicleImage": "departments/mechanical/chronicle.webp",
-      "galleryExclude": ["chronicle"],
+      "galleryExclude": [
+        "chronicle"
+      ],
       "sectionNavLabels": {
         "home": "About Department",
         "about": "Vision and Mission",

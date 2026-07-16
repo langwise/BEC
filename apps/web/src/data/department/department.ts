@@ -158,8 +158,14 @@ export interface DepartmentData {
 
   highlights: string[];
 
-  /** Milestones bullet list shown under Vision & Mission on the About tab. */
+  /** Milestones bullet list shown under Vision & Mission on the About tab, or on Home when milestonesOnHome is set. */
   milestones?: HeaderBlock;
+
+  /** When true, Milestones render on the Home tab (in place of the Highlights block) instead of under About. */
+  milestonesOnHome?: boolean;
+
+  /** Programs / PEOs / POs / WK / PSOs relocated onto the Home overview (no separate Academics tab). */
+  academicGroups?: ContentGroup[];
 
   /** Best-practices PDFs surfaced on the Home tab. */
   bestPractices?: DocLink[];
@@ -250,6 +256,29 @@ function academicOutcomeGroups(content: DepartmentContent): ContentGroup[] {
     groups.push({
       subtitle: "Programme Specific Outcomes (PSOs)",
       items: content.psos.map((p) => `${p.code}: ${p.text}`),
+    });
+  return groups;
+}
+
+/** Programs, PEOs/PSOs, WK and POs as content groups — shared by the Academics section and the academicsOnHome relocation. */
+function academicsGroups(content: DepartmentContent): ContentGroup[] {
+  const groups: ContentGroup[] = [];
+  if (content.programsOffered?.length)
+    groups.push({ subtitle: "Programs Offered", items: content.programsOffered });
+  if (content.coursesOffered?.length)
+    groups.push({ subtitle: "Courses Offered", items: content.coursesOffered });
+  if (content.programStructure?.length)
+    groups.push({ subtitle: "Programme Structure", items: content.programStructure });
+  if (!content.peosPsosUnderAbout) groups.push(...academicOutcomeGroups(content));
+  if (content.wk?.length)
+    groups.push({
+      subtitle: "Knowledge and Attitude Profile (WK)",
+      items: content.wk.map((p) => `${p.code}: ${p.text}`),
+    });
+  if (content.pos?.length)
+    groups.push({
+      subtitle: "Programme Outcomes (POs)",
+      items: content.pos.map((p) => `${p.code}: ${p.text}`),
     });
   return groups;
 }
@@ -354,24 +383,8 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
 
   // Academics — programs, PEOs, PSOs. When peosPsosUnderAbout is set, the PEOs/PSOs
   // move to the "About Department" tab instead (see academicOutcomeGroups / the about block).
-  const groups: ContentGroup[] = [];
-  if (content.programsOffered?.length)
-    groups.push({ subtitle: "Programs Offered", items: content.programsOffered });
-  if (content.coursesOffered?.length)
-    groups.push({ subtitle: "Courses Offered", items: content.coursesOffered });
-  if (content.programStructure?.length)
-    groups.push({ subtitle: "Programme Structure", items: content.programStructure });
-  if (!content.peosPsosUnderAbout) groups.push(...academicOutcomeGroups(content));
-  if (content.wk?.length)
-    groups.push({
-      subtitle: "Knowledge and Attitude Profile (WK)",
-      items: content.wk.map((p) => `${p.code}: ${p.text}`),
-    });
-  if (content.pos?.length)
-    groups.push({
-      subtitle: "Programme Outcomes (POs)",
-      items: content.pos.map((p) => `${p.code}: ${p.text}`),
-    });
+  // When academicsOnHome is set, the whole lot renders under the Home overview instead.
+  const groups = content.academicsOnHome ? [] : academicsGroups(content);
   if (groups.length)
     sections.push({ id: "academics", type: "content", title: heading("academics", "Academics"), icon: "book", groups });
 
@@ -741,7 +754,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
 
   // Placements — year-wise summary, recruiters & packages, student-wise detail
   const placements = getDepartmentPlacements(contentKey);
-  if (placements && (placements.yearWise.length || placements.batches.length)) {
+  if (placements && (placements.yearWise.length || placements.batches?.length)) {
     const tables: DataTable[] = [];
     if (placements.yearWise.length) {
       const summary = dropEmptyColumns(
@@ -759,7 +772,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       );
       tables.push({ title: "Year-wise Placement Summary", ...summary });
     }
-    for (const batch of placements.batches) {
+    for (const batch of placements.batches ?? []) {
       if (batch.companies.length) {
         const recruiters = dropEmptyColumns(
           ["Company", "Package (LPA)", "Students Placed"],
@@ -879,10 +892,12 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   if (content.associations?.length) {
     const groups: ContentGroup[] = [];
     for (const assoc of content.associations) {
-      const coords = assoc.coordinators?.length
-        ? ` Faculty Coordinators (2025–2026): ${assoc.coordinators.join(" and ")}.`
-        : "";
-      groups.push({ subtitle: assoc.name, text: `${assoc.about ?? ""}${coords}`.trim() });
+      groups.push({ subtitle: assoc.name, text: assoc.about });
+      if (assoc.coordinators?.length)
+        groups.push({
+          subtitle: "Faculty Coordinators (2025–2026)",
+          items: assoc.coordinators,
+        });
       if (assoc.events?.length)
         groups.push({
           subtitle: "Events Organised",
@@ -1150,6 +1165,17 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     }
   }
 
+  // sectionOrder is an explicit whitelist: only the listed ids survive, in the
+  // order given. Without it the nav falls back to the order sections were built in.
+  const order = content?.sectionOrder;
+  const rank = (id: string) => order!.indexOf(id);
+  const orderedSidebar = order
+    ? sidebar.filter((s) => rank(s.id) !== -1).sort((a, b) => rank(a.id) - rank(b.id))
+    : sidebar;
+  const orderedSections = order
+    ? sections.filter((s) => s.id && rank(s.id) !== -1).sort((a, b) => rank(a.id!) - rank(b.id!))
+    : sections;
+
   return {
     name,
     tagline: content?.tagline ?? "Excellence in Education & Innovation",
@@ -1166,10 +1192,13 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     chronicleImage: content?.chronicleImage
       ? { src: asset(content.chronicleImage), alt: `Chronicle of the ${name} Department` }
       : undefined,
-    quickStats: content ? quickStats(contentKey, content) : undefined,
+    quickStats: content && !content.hideQuickStats ? quickStats(contentKey, content) : undefined,
     quickFacts:
-      content?.quickFacts?.facts?.length && content.quickFacts.researchAreas?.length
-        ? { facts: content.quickFacts.facts, researchAreas: content.quickFacts.researchAreas }
+      content?.quickFacts?.facts?.length || content?.quickFacts?.researchAreas?.length
+        ? {
+            facts: content.quickFacts?.facts ?? [],
+            researchAreas: content.quickFacts?.researchAreas ?? [],
+          }
         : undefined,
     overview: {
       title: "Overview",
@@ -1225,6 +1254,8 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
           icon: "award",
         }
       : undefined,
+    milestonesOnHome: content?.milestonesOnHome,
+    academicGroups: content?.academicsOnHome ? academicsGroups(content) : undefined,
     bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
     bestPracticesList: content?.bestPracticesList,
     bestPracticesUnderAbout: content?.bestPracticesUnderAbout,
@@ -1236,7 +1267,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
           caption: content.homeGroupPhotoCaption,
         }
       : undefined,
-    sidebar,
-    sections,
+    sidebar: orderedSidebar,
+    sections: orderedSections,
   };
 }

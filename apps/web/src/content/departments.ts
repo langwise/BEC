@@ -202,6 +202,12 @@ export type DepartmentContent = {
   bestPracticesList?: { practice: string; year?: string }[];
   /** Move the Best Practices block out of the Home tab and under "About Department". */
   bestPracticesUnderAbout?: boolean;
+  /**
+   * Explicit whitelist + ordering of sidebar entries, by section id ("home" and
+   * "about" included). Ids absent from the list are dropped entirely; without it
+   * the nav falls back to the order sections happen to be built in.
+   */
+  sectionOrder?: string[];
   /** Per-department section heading overrides, keyed by section id. */
   sectionTitles?: Record<string, string>;
   /** Per-department sidebar label overrides, keyed by section id. */
@@ -214,6 +220,12 @@ export type DepartmentContent = {
   visionMissionOnHome?: boolean;
   /** Move the Programme Educational Objectives (PEOs) and Programme Specific Outcomes (PSOs) out of the Academics section and under "About Department". */
   peosPsosUnderAbout?: boolean;
+  /** Drop the Academics tab and render its groups (programs, PEOs, POs, WK, PSOs) under the Home overview instead. */
+  academicsOnHome?: boolean;
+  /** Hide the "at a glance" stats row on Home (e.g. when the Quick Facts panel replaces it). */
+  hideQuickStats?: boolean;
+  /** Show Milestones on the Home tab, in place of the Highlights block, instead of under "About Department". */
+  milestonesOnHome?: boolean;
   /** Split Supporting Staff into "Technical Staff" (instructors) and "Supporting Staff" (helpers/peons). */
   groupSupportingStaff?: boolean;
   /** Render Supporting Staff as photo cards (like teaching faculty) instead of tables. */

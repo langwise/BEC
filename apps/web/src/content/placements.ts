@@ -40,7 +40,8 @@ export type PlacementOffersChart = {
 
 export type DepartmentPlacements = {
   yearWise: PlacementYear[];
-  batches: PlacementBatch[];
+  /** Per-batch recruiter/student detail. Omitted for departments that publish only the year-wise percentages. */
+  batches?: PlacementBatch[];
   offersChart?: PlacementOffersChart;
 };
 
