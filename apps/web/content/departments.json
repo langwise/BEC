@@ -11458,9 +11458,15 @@
       "name": "Mathematics",
       "assetSlug": "maths",
       "heroImage": "departments/maths/hero-building.webp",
+      "facultyGroupPhoto": "departments/maths/cine1965.webp",
+      "facultyGroupPhotoCaption": "Teaching Faculty",
+      "staffGroupPhoto": "departments/maths/cine1968.webp",
+      "staffGroupPhotoCaption": "Faculty and Supporting Staff",
       "galleryExclude": [
         "hero-building",
-        "cine2025"
+        "cine2025",
+        "cine1965",
+        "cine1968"
       ],
       "tagline": "A foundational teaching-learning centre imparting mathematical knowledge and computational thinking across all engineering disciplines.",
       "established": "1963",
