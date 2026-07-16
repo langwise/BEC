@@ -29,6 +29,24 @@ export function Header() {
   const [logoHeight, setLogoHeight] = useState<number>();
   const brandTextRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLElement>(null);
+  const codesRef = useRef<HTMLDetailsElement>(null);
+
+  useEffect(() => {
+    const el = codesRef.current;
+    if (!el) return;
+    const onPointerDown = (event: PointerEvent) => {
+      if (el.open && !el.contains(event.target as Node)) el.open = false;
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (el.open && event.key === "Escape") el.open = false;
+    };
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, []);
 
   useIsomorphicLayoutEffect(() => {
     const el = brandTextRef.current;
@@ -100,31 +118,41 @@ export function Header() {
           </a>
 
           {/* Institution codes */}
-          <div className="hidden lg:flex shrink-0 items-start gap-x-6 rounded-lg border border-primary/20 bg-white px-5 py-3 text-sm font-bold leading-tight shadow-sm">
-            <div className="grid grid-cols-[auto_auto] gap-x-3 gap-y-1">
-              <span className="col-span-2 mb-1 font-extrabold uppercase tracking-wide text-xs text-primary">
-                CET Code
-              </span>
-              <span className="uppercase text-foreground">Aided</span>
-              <span className="text-left font-bold tabular-nums text-foreground">E031</span>
-              <span className="uppercase text-foreground">Unaided</span>
-              <span className="text-left font-bold tabular-nums text-foreground">E049</span>
+          <details
+            ref={codesRef}
+            className="group/codes relative hidden shrink-0 lg:block"
+          >
+            <summary className="flex cursor-pointer list-none items-center gap-1.5 rounded-md border border-primary/20 bg-white px-3 py-2 text-sm font-bold text-primary shadow-sm hover:bg-primary/[0.04] [&::-webkit-details-marker]:hidden">
+              CET &amp; Other Codes
+              <ChevronDown className="h-4 w-4 shrink-0 transition-transform group-open/codes:rotate-180" />
+            </summary>
+
+            <div className="absolute right-0 top-full z-50 mt-2 flex items-start gap-x-6 rounded-lg border border-primary/20 bg-white px-5 py-3 text-sm font-bold leading-tight shadow-lg">
+              <div className="grid grid-cols-[auto_auto] gap-x-3 gap-y-1">
+                <span className="col-span-2 mb-1 font-extrabold uppercase tracking-wide text-xs text-primary">
+                  CET Code
+                </span>
+                <span className="uppercase text-foreground">Aided</span>
+                <span className="text-left font-bold tabular-nums text-foreground">E031</span>
+                <span className="uppercase text-foreground">Unaided</span>
+                <span className="text-left font-bold tabular-nums text-foreground">E049</span>
+              </div>
+              <div className="w-px self-stretch bg-primary/15" />
+              <div className="grid grid-cols-[auto_auto] gap-x-3 gap-y-1">
+                <span className="col-span-2 mb-1 font-extrabold uppercase tracking-wide text-xs text-primary">
+                  Other Codes
+                </span>
+                <span className="uppercase text-foreground">COMEDK</span>
+                <span className="text-left font-bold tabular-nums text-foreground">E024</span>
+                <span className="uppercase text-foreground">MBA</span>
+                <span className="text-left font-bold tabular-nums text-foreground">B124</span>
+                <span className="uppercase text-foreground">M.Tech.</span>
+                <span className="text-left font-bold tabular-nums text-foreground">T810</span>
+                <span className="uppercase text-foreground">MCA</span>
+                <span className="text-left font-bold tabular-nums text-foreground">C408MC</span>
+              </div>
             </div>
-            <div className="w-px self-stretch bg-primary/15" />
-            <div className="grid grid-cols-[auto_auto] gap-x-3 gap-y-1">
-              <span className="col-span-2 mb-1 font-extrabold uppercase tracking-wide text-xs text-primary">
-                Other Codes
-              </span>
-              <span className="uppercase text-foreground">COMEDK</span>
-              <span className="text-left font-bold tabular-nums text-foreground">E024</span>
-              <span className="uppercase text-foreground">MBA</span>
-              <span className="text-left font-bold tabular-nums text-foreground">B124</span>
-              <span className="uppercase text-foreground">M.Tech.</span>
-              <span className="text-left font-bold tabular-nums text-foreground">T810</span>
-              <span className="uppercase text-foreground">MCA</span>
-              <span className="text-left font-bold tabular-nums text-foreground">C408MC</span>
-            </div>
-          </div>
+          </details>
 
           {/* Mobile Menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>

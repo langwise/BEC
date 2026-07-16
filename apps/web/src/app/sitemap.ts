@@ -2,7 +2,13 @@ import type { MetadataRoute } from "next";
 import { readdirSync } from "node:fs";
 import { join } from "node:path";
 import { SITE_URL } from "@/lib/seo";
-import { departmentCategories } from "@/data/departments-catalog";
+import {
+  DEFAULT_DEPARTMENT_SECTION,
+  departmentCategories,
+  departmentHref,
+  departmentSectionHref,
+} from "@/data/departments-catalog";
+import { getDepartmentData } from "@/data/department/department";
 
 const APP_DIR = join(process.cwd(), "src", "app");
 
@@ -45,14 +51,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
+  // Every department section is its own prerendered URL, so list them all —
+  // the base entry already covers the section served at the department root.
   const departmentEntries: MetadataRoute.Sitemap = departmentCategories.flatMap(
     (category) =>
-      category.departments.map((dept) => ({
-        url: `${SITE_URL}/departments/${category.key}/${dept.slug}`,
-        lastModified,
-        changeFrequency: "monthly" as const,
-        priority: 0.7,
-      })),
+      category.departments.flatMap((entry) => {
+        const { sidebar } = getDepartmentData(category.key, entry.slug);
+        const base = departmentHref(category.key, entry.slug);
+        const defaultId = sidebar[0]?.id ?? DEFAULT_DEPARTMENT_SECTION;
+        return sidebar.map((item, index) => ({
+          url: `${SITE_URL}${departmentSectionHref(base, item.id, defaultId)}`,
+          lastModified,
+          changeFrequency: "monthly" as const,
+          priority: index === 0 ? 0.7 : 0.6,
+        }));
+      }),
   );
 
   return [...staticEntries, ...departmentEntries];

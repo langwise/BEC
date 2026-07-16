@@ -1250,6 +1250,13 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
         title: "About the Department",
         content: content?.about,
         icon: "graduation-cap",
+        image: content?.aboutImage
+          ? {
+              src: asset(content.aboutImage),
+              alt: content.aboutImageCaption ?? `${name} — faculty and staff`,
+              caption: content.aboutImageCaption,
+            }
+          : undefined,
         groups: outcomeGroups.length ? outcomeGroups : undefined,
       };
     })(),

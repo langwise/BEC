@@ -1,8 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import { departmentSectionHref } from "@/data/departments-catalog";
 import {
   Home,
   GraduationCap,
@@ -21,8 +23,6 @@ import {
   Image as ImageIcon,
   LucideIcon,
 } from "lucide-react";
-
-export const DEPT_PANEL_ID = "dept-panel";
 
 // Map string identifiers to icon components
 const iconMap: Record<string, LucideIcon> = {
@@ -52,7 +52,10 @@ interface SidebarItem {
 interface DepartmentSidebarProps {
     items?: SidebarItem[];
     activeId: string;
-    onSelect: (id: string) => void;
+    /** Department root, e.g. /departments/ug/civil-engg. */
+    basePath: string;
+    /** The section served at basePath itself, which therefore has no URL segment. */
+    defaultId: string;
 }
 
 const defaultItems: SidebarItem[] = [
@@ -66,75 +69,44 @@ const defaultItems: SidebarItem[] = [
   { id: "board", label: "Board of Studies", icon: "clipboard" },
 ];
 
-/** The sections are one panel swapped in place, so this is a tab interface:
- *  roving tabindex, arrow/Home/End keys, and automatic activation per APG. */
-function TabList({
+/** Each section is its own URL, so this is a set of links rather than an ARIA
+ *  tablist: they are natively focusable and `aria-current` marks the one you're on.
+ *  Only one of the two variants is ever visible, so both may carry the same label. */
+function SectionLinks({
   items,
   activeId,
-  onSelect,
-  idPrefix,
+  basePath,
+  defaultId,
   variant,
   className,
 }: DepartmentSidebarProps & {
   items: SidebarItem[];
-  idPrefix: string;
   variant: "sidebar" | "chip";
   className?: string;
 }) {
-  const refs = useRef<Record<string, HTMLButtonElement | null>>({});
-
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
-    const index = items.findIndex((item) => item.id === activeId);
-    let next: number;
-    switch (event.key) {
-      case "ArrowDown":
-      case "ArrowRight":
-        next = (index + 1) % items.length;
-        break;
-      case "ArrowUp":
-      case "ArrowLeft":
-        next = (index - 1 + items.length) % items.length;
-        break;
-      case "Home":
-        next = 0;
-        break;
-      case "End":
-        next = items.length - 1;
-        break;
-      default:
-        return;
-    }
-    event.preventDefault();
-    const nextId = items[next].id;
-    onSelect(nextId);
-    refs.current[nextId]?.focus();
-  };
+  const router = useRouter();
 
   return (
-    <div
-      role="tablist"
-      aria-orientation={variant === "sidebar" ? "vertical" : "horizontal"}
-      aria-label="Department sections"
-      onKeyDown={handleKeyDown}
-      className={className}
-    >
+    <nav aria-label="Department sections" className={className}>
       {items.map((item) => {
         const Icon = iconMap[item.icon] || Home; // Fallback to Home if icon not found
         const isActive = activeId === item.id;
+        const href = departmentSectionHref(basePath, item.id, defaultId);
 
         return (
-          <motion.button
+          <Link
             key={item.id}
-            ref={(el) => {
-              refs.current[item.id] = el;
-            }}
-            id={`${idPrefix}-${item.id}`}
-            type="button"
-            role="tab"
-            aria-selected={isActive}
-            aria-controls={DEPT_PANEL_ID}
-            tabIndex={isActive ? 0 : -1}
-            onClick={() => onSelect(item.id)}
+            href={href}
+            aria-current={isActive ? "page" : undefined}
+            // Every section carries the whole department payload, so prefetching a
+            // full menu on sight would cost ~1MB on a connection least able to
+            // afford it. Fetch on intent instead — router.prefetch dedupes.
+            prefetch={false}
+            onMouseEnter={() => router.prefetch(href)}
+            onFocus={() => router.prefetch(href)}
+            // Switching section keeps your place on the page; the layout pulls the
+            // view back only when the section start has scrolled out of reach.
+            scroll={false}
             className={cn(
               "group flex shrink-0 items-center text-sm font-medium transition-all duration-200",
               "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
@@ -162,22 +134,27 @@ function TabList({
                 className="w-1.5 h-1.5 rounded-full bg-white shrink-0 ml-2"
               />
             )}
-          </motion.button>
+          </Link>
         );
       })}
-    </div>
+    </nav>
   );
 }
 
-export default function DepartmentSidebar({ items = defaultItems, activeId, onSelect }: DepartmentSidebarProps) {
+export default function DepartmentSidebar({
+  items = defaultItems,
+  activeId,
+  basePath,
+  defaultId,
+}: DepartmentSidebarProps) {
   return (
     <>
       {/* Mobile / tablet: every section visible at once, wrapped instead of stacked */}
-      <TabList
+      <SectionLinks
         items={items}
         activeId={activeId}
-        onSelect={onSelect}
-        idPrefix="dept-tab-compact"
+        basePath={basePath}
+        defaultId={defaultId}
         variant="chip"
         className="flex flex-wrap gap-2 lg:hidden"
       />
@@ -189,11 +166,11 @@ export default function DepartmentSidebar({ items = defaultItems, activeId, onSe
             Department Menu
           </h2>
 
-          <TabList
+          <SectionLinks
             items={items}
             activeId={activeId}
-            onSelect={onSelect}
-            idPrefix="dept-tab"
+            basePath={basePath}
+            defaultId={defaultId}
             variant="sidebar"
             className={cn(
               "flex min-h-0 flex-1 flex-col space-y-1 overflow-y-auto overscroll-contain pr-2",

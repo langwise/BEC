@@ -1,8 +1,8 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import DepartmentSidebar, { DEPT_PANEL_ID } from "@/components/academics/departments/sidebar";
+import DepartmentSidebar from "@/components/academics/departments/sidebar";
 import type { DataTable, DepartmentData, DocLink } from "@/data/department/department";
 import ContentSection from "@/components/academics/departments/content";
 import ContactSection from "@/components/academics/departments/contact-section";
@@ -15,6 +15,10 @@ import { PlacementOffersChart } from "@/components/academics/departments/placeme
 
 interface DepartmentLayoutProps {
   dept: DepartmentData;
+  /** Sidebar id of the section the URL resolves to. */
+  activeSectionId: string;
+  /** Department root, e.g. /departments/ug/civil-engg. */
+  basePath: string;
 }
 
 /** A responsive grid of downloadable PDF links, reused across sections. */
@@ -400,29 +404,33 @@ function DepartmentTables({ title, tables }: { title?: string; tables: DataTable
   );
 }
 
-export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
-  const [activeTab, setActiveTab] = useState(dept.sidebar[0]?.id || "home");
+export function DepartmentLayout({ dept, activeSectionId, basePath }: DepartmentLayoutProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const activeLabel = dept.sidebar.find((item) => item.id === activeTab)?.label;
+  const isInitialRender = useRef(true);
 
-  const handleSelect = (id: string) => {
-    setActiveTab(id);
+  // Arriving on a shared section link should leave the page at the top, so only a
+  // section switch adjusts scroll — and only when the section start has already
+  // scrolled out of reach, since jumping from deep inside a long section is
+  // disorienting.
+  useEffect(() => {
+    if (isInitialRender.current) {
+      isInitialRender.current = false;
+      return;
+    }
     const el = containerRef.current;
     if (!el) return;
     const headerHeight =
       parseFloat(
         getComputedStyle(document.documentElement).getPropertyValue("--header-h"),
       ) || 0;
-    // Only pull the page back when the section start has already scrolled out of
-    // reach; smooth-scrolling from deep inside a long section is disorienting.
     if (el.getBoundingClientRect().top < headerHeight) {
       el.scrollIntoView({ block: "start", behavior: "instant" });
     }
-  };
+  }, [activeSectionId]);
 
   const renderContent = () => {
     // 1. HOME tab (Overview + Highlights)
-    if (activeTab === "home") {
+    if (activeSectionId === "home") {
         return (
             <div className="space-y-4">
                 {dept.chronicleImage && (
@@ -507,7 +515,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
 
     // 2. VISION/MISSION (Often mapped to 'about' or separate tabs)
     // Let's assume 'about' shows Vision + Mission
-    if (activeTab === "about") {
+    if (activeSectionId === "about") {
         return (
              <div className="grid grid-cols-1 gap-8">
                 {dept.about?.content && (
@@ -517,6 +525,8 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
                         icon={dept.about.icon}
                     />
                 )}
+
+                {dept.about?.image && <OverviewPhoto image={dept.about.image} className="-mt-2" />}
 
                 {dept.visionMissionOnHome ? (
                     <>
@@ -572,8 +582,8 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     }
 
     // 3. DYNAMIC SECTIONS
-    // Find a section that matches the activeTab ID
-    const activeSection = dept.sections?.find(s => s.id === activeTab);
+    // Find a section that matches the active section ID
+    const activeSection = dept.sections?.find(s => s.id === activeSectionId);
 
     if (activeSection) {
          if (activeSection.type === "content") {
@@ -688,7 +698,7 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     // 4. FALLBACK
     return (
         <div className="p-12 text-center bg-white rounded-2xl border border-dashed border-gray-200">
-            <p className="text-gray-500">Content for <span className="font-semibold text-gray-700">&ldquo;{activeTab}&rdquo;</span> will be updated soon.</p>
+            <p className="text-gray-500">Content for <span className="font-semibold text-gray-700">&ldquo;{activeSectionId}&rdquo;</span> will be updated soon.</p>
         </div>
     )
   }
@@ -698,24 +708,17 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
             ref={containerRef}
             className="flex flex-col lg:flex-row gap-8 lg:gap-12 scroll-mt-[var(--header-h)]"
         >
-            {/* Sidebar with Controled State */}
+            {/* Sidebar — each section is a link to its own URL */}
             <DepartmentSidebar
                 items={dept.sidebar}
-                activeId={activeTab}
-                onSelect={handleSelect}
+                activeId={activeSectionId}
+                basePath={basePath}
+                defaultId={dept.sidebar[0]?.id ?? "home"}
             />
 
             {/* Main Content Area */}
             <main className="flex-1 min-w-0">
-                <div
-                    id={DEPT_PANEL_ID}
-                    role="tabpanel"
-                    aria-label={activeLabel ? `${activeLabel} section` : undefined}
-                    tabIndex={0}
-                    className="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
-                >
-                    {renderContent()}
-                </div>
+                {renderContent()}
             </main>
         </div>
   );

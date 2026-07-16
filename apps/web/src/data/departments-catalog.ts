@@ -67,9 +67,26 @@ export const departmentCategories: DepartmentCategory[] = [
   },
 ];
 
-/** Canonical URL for a department detail page. */
-export function departmentHref(type: DepartmentType, slug: string): string {
-  return `/departments/${type}/${slug}`;
+/** The section served at a department's base URL, so it carries no path segment. */
+export const DEFAULT_DEPARTMENT_SECTION = "home";
+
+/** Section URL under a department's base path — the default section has no segment. */
+export function departmentSectionHref(
+  basePath: string,
+  section: string,
+  defaultSection: string = DEFAULT_DEPARTMENT_SECTION,
+): string {
+  return section === defaultSection ? basePath : `${basePath}/${section}`;
+}
+
+/** Canonical URL for a department detail page, or one of its sections. */
+export function departmentHref(
+  type: DepartmentType,
+  slug: string,
+  section?: string,
+): string {
+  const base = `/departments/${type}/${slug}`;
+  return section ? departmentSectionHref(base, section) : base;
 }
 
 export const totalDepartments = departmentCategories.reduce(

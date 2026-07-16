@@ -31,6 +31,10 @@ export type DepartmentContent = {
   /** Message from the Head of Department, shown on the Home tab. */
   hodMessage?: { message?: string; name?: string; designation?: string; image?: string };
   about?: string;
+  /** Asset key for a lead image shown above the "About Department" body (e.g. the teaching-faculty group photo). */
+  aboutImage?: string;
+  /** Caption rendered below the about lead image (e.g. "Teaching Faculty"). */
+  aboutImageCaption?: string;
   vision?: string;
   mission?: string[];
   programsOffered?: string[];
