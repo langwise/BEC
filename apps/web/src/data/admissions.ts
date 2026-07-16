@@ -88,7 +88,10 @@ export const MANAGEMENT_QUOTA_CONTACT = {
     name: "Admission Section",
     org: "Basaveshwar Engineering College ",
     address: "Vidyagiri, Bagalkote – 587 102",
-    phones: ["9902684833"],
+    contacts: [
+      { name: "Prof. B. S. Haravi", phone: "9449517099" },
+      { name: "Mr. Vijayakumar Karani", phone: "9902684833" },
+    ],
   },
 } as const;
 
@@ -146,7 +149,7 @@ export const admissionProgrammes: AdmissionProgramme[] = [
     ],
     entranceNote:
       "For management admissions, candidates may appear for any one of CET, COMED-K, JEE or the entrance examination conducted by the college.",
-    feeYear: "2025-26",
+    feeYear: "2026-27",
     feeLines: [
       { quota: "Government Quota", courses: "Aided Courses", fee: "KEA + VTU Fees + College Other Fees" },
       { quota: "Government Quota", courses: "Un-Aided Courses", fee: "KEA + VTU Fees + College Other Fees" },
@@ -159,22 +162,22 @@ export const admissionProgrammes: AdmissionProgramme[] = [
       {
         title: "BE I Year — Management Quota Fee Structure",
         desc: "Academic Year 2026-27 — image",
-        key: "documents/admissions/ug-management-fee-2025-26.jpeg",
+        key: "documents/admissions/be-1st-year-management-fee-2026-27.webp",
       },
       {
         title: "BE II Year (Diploma Lateral Entry) — Management Quota Fee Structure",
         desc: "Academic Year 2026-27 — image",
-        key: "documents/admissions/ug-management-fee-2025-26.jpeg",
+        key: "documents/admissions/be-2nd-year-lateral-entry-management-fee-2026-27.webp",
       },
       {
         title: "College & VTU Fees",
-        desc: "Tuition and VTU fee schedule — PDF",
-        key: "documents/admissions/ug-vtu-and-college-fee.pdf",
+        desc: "Tuition and VTU fee schedule — image (AY 2026-27)",
+        key: "documents/admissions/college-and-vtu-fees-2026-27.webp",
       },
       {
         title: "College Other Fees",
-        desc: "Additional college fees — PDF",
-        key: "documents/admissions/ug-college-other-fee.pdf",
+        desc: "Additional college fees — image (AY 2026-27)",
+        key: "documents/admissions/college-other-fees-2026-27.webp",
       },
     ],
     intakeTables: [
@@ -195,13 +198,15 @@ export const admissionProgrammes: AdmissionProgramme[] = [
         title: "Un-Aided Courses",
         code: "KEA Code: E049 · COMED-K Code: E024",
         rows: [
-          { branch: "Biotechnology", intake: 30},
+          { branch: "Artificial Intelligence & Machine Learning", intake: 60 },
+          { branch: "Biotechnology", intake: 30 },
           { branch: "Civil Engineering", intake: 60 },
           { branch: "Computer Science & Engineering", intake: 150 },
           { branch: "Electronics & Communication Engineering", intake: 60 },
+          { branch: "Electrical & Electronics Engineering", intake: 30 },
+          { branch: "Electronics & Computer Engineering", intake: 60 },
           { branch: "Information Science & Engineering", intake: 180 },
-          { branch: "Artificial Intelligence & Machine Learning", intake: 60 },
-          { branch: "Electronics & Computer Engineering", intake: 60 }
+          { branch: "Mechanical Engineering", intake: 30 },
         ],
         total: 660,
       },
@@ -213,11 +218,11 @@ export const admissionProgrammes: AdmissionProgramme[] = [
     title: "Post Graduate (M.Tech)",
     credential: "Master of Technology (M.Tech)",
     duration: "2 Years",
-    seats: "72 sanctioned seats",
+    seats: "18 sanctioned seats",
     description:
-      "Two-year M.Tech programmes in four specializations under Civil and Mechanical Engineering, admitted through PGCET or GATE.",
+      "Two-year M.Tech programme in Structural Engineering under Civil Engineering, admitted through PGCET or GATE.",
     intro:
-      "M.Tech postgraduate programmes are offered in four specializations under Civil and Mechanical Engineering. Admissions are conducted through PGCET or GATE, or the entrance examination conducted by the college for management-quota seats.",
+      "The M.Tech postgraduate programme is offered in Structural Engineering under Civil Engineering. Admissions are conducted through PGCET or GATE, or the entrance examination conducted by the college for management-quota seats.",
     eligibility: [
       "Passed the prescribed qualifying examination (as specified in Annexure-I) with not less than 50% of marks in aggregate of all the semesters / years of the degree examination.",
       "For candidates from Karnataka belonging to SC / ST / Category-I: the aggregate marks shall not be less than 45%.",
@@ -229,7 +234,7 @@ export const admissionProgrammes: AdmissionProgramme[] = [
     ],
     entranceNote:
       "For management admissions, candidates may appear for any one of PGCET, GATE or the entrance examination conducted by the college.",
-    feeYear: "2025-26",
+    feeYear: "2026-27",
     feeLines: [
       { quota: "Government Quota", courses: "Un-Aided Courses", fee: "KEA + VTU Fees + College Other Fees" },
       { quota: "Management Quota", courses: "Un-Aided Courses", fee: "Management Fees + VTU Fees + College Other Fees" },
@@ -240,11 +245,8 @@ export const admissionProgrammes: AdmissionProgramme[] = [
         code: "College Code: T810",
         rows: [
           { department: "Civil Engineering", branch: "Structural Engineering", intake: 18 },
-          { department: "Civil Engineering", branch: "Geo-Technical Engineering", intake: 18 },
-          { department: "Civil Engineering", branch: "Environmental Engineering", intake: 18 },
-          { department: "Mechanical Engineering", branch: "Machine Design", intake: 18 },
         ],
-        total: 72,
+        total: 18,
       },
     ],
   },

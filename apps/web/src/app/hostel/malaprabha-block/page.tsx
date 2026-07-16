@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import Image from "next/image";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Building2, Users, Zap, CheckCircle2, ImageIcon } from "lucide-react";
 import { PhotoGallery } from "@/components/common/photo-gallery";
@@ -19,10 +20,22 @@ const galleryImages = [
     "cine0513.webp",
     "cine0509.webp",
     "cine0495.webp",
+    "wardens.webp",
+    "manager.webp",
 ].map((file, index) => ({
     src: asset(`facilities/hostels/girls/${file}`),
     alt: `Malaprabha Ladies Hostel at Basaveshwar Engineering College ${index + 1}`,
 }));
+
+const committeeMembers = [
+    { sl: 1, name: "Shri B. C. Kengapur", designation: "Committee Chairman" },
+    { sl: 2, name: "Dr. B. R. Hiremath, Principal", designation: "Chief Warden" },
+    { sl: 3, name: "Dr. Shobha R. Patil", designation: "Deputy Chief Warden" },
+    { sl: 4, name: "Smt. Sunita Tambakad", designation: "Warden" },
+    { sl: 5, name: "Smt. Sudha K. S.", designation: "Warden" },
+    { sl: 6, name: "Dr. Manjula Sutagundar", designation: "Warden" },
+    { sl: 7, name: "Smt. Vijayalaxmi Patil", designation: "Warden" },
+];
 
 export default function MalaprabhaBlockPage() {
     return (
@@ -33,6 +46,19 @@ export default function MalaprabhaBlockPage() {
                     Girls Hostel
                 </p>
             </div>
+
+            <FadeIn>
+                <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl border border-stone-200 shadow-xs sm:aspect-2/1">
+                    <Image
+                        src={asset("facilities/hostels/girls/malaprabha-hostel.webp")}
+                        alt="Malaprabha Ladies Hostel at Basaveshwar Engineering College"
+                        fill
+                        priority
+                        sizes="(max-width: 768px) 100vw, 768px"
+                        className="object-cover"
+                    />
+                </div>
+            </FadeIn>
 
             <div className="h-px w-full bg-linear-to-r from-transparent via-gray-200 to-transparent my-8" />
 
@@ -67,6 +93,52 @@ export default function MalaprabhaBlockPage() {
                                     <p className="font-bold text-gray-900">374 Rooms</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </FadeIn>
+            </section>
+
+            <div className="h-px w-full bg-linear-to-r from-transparent via-gray-200 to-transparent my-8" />
+
+            <section className="space-y-6">
+                <div className="flex items-center gap-3 text-primary mb-4">
+                    <Users className="w-6 h-6" />
+                    <h2 className="text-xl font-bold">Hostel Committee &amp; Wardens</h2>
+                </div>
+                <FadeIn delay={0.1}>
+                    <div className="rounded-2xl border border-stone-200 overflow-hidden shadow-xs bg-white">
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-sm text-left">
+                                <thead className="bg-orange-50/50 text-primary font-semibold border-b border-stone-100">
+                                    <tr>
+                                        <th className="px-6 py-4 w-16 text-center hidden md:table-cell">
+                                            Sl. No.
+                                        </th>
+                                        <th className="px-6 py-4">Name</th>
+                                        <th className="px-6 py-4 text-right">Designation</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-stone-100">
+                                    {committeeMembers.map((member) => (
+                                        <tr
+                                            key={member.sl}
+                                            className="hover:bg-orange-50/30 transition-colors"
+                                        >
+                                            <td className="px-6 py-4 text-center font-medium text-gray-500 hidden md:table-cell">
+                                                {member.sl}
+                                            </td>
+                                            <td className="px-6 py-4 font-medium text-gray-900">
+                                                {member.name}
+                                            </td>
+                                            <td className="px-6 py-4 text-right text-gray-600 border-l border-dashed border-stone-100">
+                                                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary">
+                                                    {member.designation}
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </FadeIn>

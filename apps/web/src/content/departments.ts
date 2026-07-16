@@ -11,6 +11,8 @@ export type DepartmentContent = {
   heroImage?: string;
   /** Asset keys for a rolling hero carousel (arrows + autoplay), shown instead of the single heroImage when 2+ are given. */
   heroImages?: string[];
+  /** Asset key for a "Department Chronicle" timeline graphic shown as a full-width banner at the top of the Home tab, before the overview. */
+  chronicleImage?: string;
   infrastructureGallerySlug?: string;
   established?: string;
   intake?: string;
@@ -133,6 +135,8 @@ export type DepartmentContent = {
     members: { name: string; position: string }[];
   }[];
   infrastructureItems?: { name: string; specification?: string; quantity?: string }[];
+  /** Plain list of research-laboratory names shown as a leading table in the Facilities section. */
+  researchLaboratories?: string[];
   softwareItems?: { name: string; version?: string; usage?: string }[];
   activities?: {
     title: string;

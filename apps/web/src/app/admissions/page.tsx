@@ -35,7 +35,7 @@ const programmeIcons: Record<string, LucideIcon> = {
 
 const quickFacts = [
   { label: "B.E. Disciplines", value: "10", detail: "990 sanctioned seats" },
-  { label: "M.Tech Specializations", value: "4", detail: "College Code T810" },
+  { label: "M.Tech Specializations", value: "1", detail: "College Code T810" },
   { label: "Research Centres", value: "9", detail: "Ph.D / M.Sc. (Engg.)" },
   { label: "Autonomous Institute", value: "Since 1963", detail: "VTU-affiliated" },
 ];

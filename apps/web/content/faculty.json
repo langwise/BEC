@@ -226,17 +226,26 @@
       {
         "name": "Dr. Raghuram L. Naik",
         "designation": "Professor (CAS) & HoD",
+        "cv": "departments/eee/faculty/cv/raghuram-l-naik.pdf",
         "photo": "governance/hod/eee/dr-r-l-naik.webp"
-      },
-      {
-        "name": "Dr. Basanagouda Ronad",
-        "designation": "Associate Professor",
-        "photo": "departments/eee/faculty/basanagouda-ronad.webp"
       },
       {
         "name": "Prof. Rajshekhar S. Allurkar",
         "designation": "Associate Professor",
+        "cv": "departments/eee/faculty/cv/rajshekhar-s-allurkar.pdf",
         "photo": "departments/eee/faculty/rajshekhar-s-allurkar.webp"
+      },
+      {
+        "name": "Dr. Basanagouda Ronad",
+        "designation": "Associate Professor",
+        "cv": "departments/eee/faculty/cv/basanagouda-ronad.pdf",
+        "photo": "departments/eee/faculty/basanagouda-ronad.webp"
+      },
+      {
+        "name": "Prof. Sunita S. Tambakad",
+        "designation": "Assistant Professor",
+        "cv": "departments/eee/faculty/cv/sunita-s-tambakad.pdf",
+        "photo": "departments/eee/faculty/sunita-s-tambakad.webp"
       },
       {
         "name": "Dr. Sangamesh Y. Goudappanavar",
@@ -245,33 +254,33 @@
         "photo": "departments/eee/faculty/sangamesh-y-goudappanavar.webp"
       },
       {
-        "name": "Prof. Mahantesh L. Chikkadesai",
-        "designation": "Assistant Professor",
-        "photo": "departments/eee/faculty/mahantesh-l-chikkadesai.webp"
-      },
-      {
-        "name": "Prof. Basavaraju S. Hadapad",
-        "designation": "Assistant Professor",
-        "photo": "departments/eee/faculty/basavaraju-s-hadapad.webp"
-      },
-      {
         "name": "Prof. Shivakumar G. Nayak",
         "designation": "Assistant Professor",
+        "cv": "departments/eee/faculty/cv/shivakumar-g-nayak.pdf",
         "photo": "departments/eee/faculty/shivakumar-g-nayak.webp"
       },
       {
         "name": "Prof. Santhoshkumar S. Kandagal",
         "designation": "Assistant Professor",
+        "cv": "departments/eee/faculty/cv/santhoshkumar-s-kandagal.pdf",
         "photo": "departments/eee/faculty/santhoshkumar-s-kandagal.webp"
       },
       {
-        "name": "Prof. Sunita S. Tambakad",
+        "name": "Prof. Basavaraju S. Hadapad",
         "designation": "Assistant Professor",
-        "photo": "departments/eee/faculty/sunita-s-tambakad.webp"
+        "cv": "departments/eee/faculty/cv/basavaraju-s-hadapad.pdf",
+        "photo": "departments/eee/faculty/basavaraju-s-hadapad.webp"
+      },
+      {
+        "name": "Prof. Mahantesh L. Chikkadesai",
+        "designation": "Assistant Professor",
+        "cv": "departments/eee/faculty/cv/mahantesh-l-chikkadesai.pdf",
+        "photo": "departments/eee/faculty/mahantesh-l-chikkadesai.webp"
       },
       {
         "name": "Prof. Apoorva Kulkarni",
         "designation": "Assistant Professor",
+        "cv": "departments/eee/faculty/cv/apoorva-kulkarni.pdf",
         "photo": "departments/eee/faculty/apoorva-kulkarni.webp"
       },
       {
@@ -360,14 +369,15 @@
       },
       {
         "name": "Dr. K. Chandrasekhar",
-        "designation": "Professor",
+        "designation": "Professor and COE",
         "cv": "departments/physics/faculty/cv/k-chandrasekhar.pdf",
         "photo": "departments/physics/faculty/k-chandrasekhar.webp"
       },
       {
         "name": "Dr. Jayashri G. Ghantimath",
         "designation": "Professor",
-        "cv": "departments/physics/faculty/cv/jayashri-g-ghantimath.pdf"
+        "cv": "departments/physics/faculty/cv/jayashri-g-ghantimath.pdf",
+        "photo": "departments/physics/faculty/jayashri-g-ghantimath.webp"
       },
       {
         "name": "Shriram S. Bopardekar",
@@ -378,12 +388,14 @@
       {
         "name": "Dr. Vibha",
         "designation": "Assistant Professor",
-        "cv": "departments/physics/faculty/cv/vibha.pdf"
+        "cv": "departments/physics/faculty/cv/vibha.pdf",
+        "photo": "departments/physics/faculty/vibha.webp"
       },
       {
         "name": "Dr. Aishwarya Nadgir",
         "designation": "Assistant Professor",
-        "cv": "departments/physics/faculty/cv/aishwarya-nadgir.pdf"
+        "cv": "departments/physics/faculty/cv/aishwarya-nadgir.pdf",
+        "photo": "departments/physics/faculty/aishwarya-nadgir.webp"
       }
     ],
     "civil-engg": [
@@ -861,36 +873,43 @@
       {
         "name": "Dr. Bharati S. Meti",
         "designation": "Professor & Head",
+        "photo": "departments/biotechnology/faculty/bharati-s-meti.webp",
         "cv": "departments/biotechnology/faculty/cv/bharati-s-meti.pdf"
       },
       {
         "name": "Dr. Sharada S. B.",
         "designation": "Associate Professor",
+        "photo": "departments/biotechnology/faculty/sharada-p.webp",
         "cv": "departments/biotechnology/faculty/cv/sharada-p.pdf"
       },
       {
         "name": "Dr. Madhumala Y.",
         "designation": "Assistant Professor",
+        "photo": "departments/biotechnology/faculty/madhumala-y.webp",
         "cv": "departments/biotechnology/faculty/cv/madhumala-y.pdf"
       },
       {
         "name": "Dr. Preeti S. Kumarmath",
         "designation": "Assistant Professor",
+        "photo": "departments/biotechnology/faculty/preeti-s-kumarmath.webp",
         "cv": "departments/biotechnology/faculty/cv/preeti-s-kumarmath.pdf"
       },
       {
         "name": "Dr. Shilpa K. Jigajinni",
         "designation": "Assistant Professor",
+        "photo": "departments/biotechnology/faculty/shilpa-k-jigajinni.webp",
         "cv": "departments/biotechnology/faculty/cv/shilpa-k-jigajinni.pdf"
       },
       {
         "name": "Dr. Jayachandra S. Yaradoddi",
         "designation": "Assistant Professor",
+        "photo": "departments/biotechnology/faculty/jayachandra-s-yaradoddi.webp",
         "cv": "departments/biotechnology/faculty/cv/jayachandra-s-yaradoddi.pdf"
       },
       {
         "name": "Dr. Basavaraj S. Nainegali",
         "designation": "Assistant Professor",
+        "photo": "departments/biotechnology/faculty/basavaraj-s-nainegali.webp",
         "cv": "departments/biotechnology/faculty/cv/basavaraj-s-nainegali.pdf"
       }
     ],
@@ -1033,12 +1052,14 @@
       {
         "name": "Dr. V. V. Kuppast",
         "designation": "Professor",
-        "cv": "departments/mechanical/faculty/cv/v-v-kuppast.pdf"
+        "cv": "departments/mechanical/faculty/cv/v-v-kuppast.pdf",
+        "photo": "departments/mechanical/faculty/v-v-kuppast.webp"
       },
       {
         "name": "Prof. S. B. Wadawadagi",
         "designation": "Associate Professor",
-        "cv": "departments/mechanical/faculty/cv/s-b-wadawadagi.pdf"
+        "cv": "departments/mechanical/faculty/cv/s-b-wadawadagi.pdf",
+        "photo": "departments/mechanical/faculty/s-b-wadawadagi.webp"
       },
       {
         "name": "Dr. H. M. Kadlimatti",
@@ -1049,7 +1070,8 @@
       {
         "name": "Prof. V. P. Girisagar",
         "designation": "Associate Professor",
-        "cv": "departments/mechanical/faculty/cv/v-p-girisagar.pdf"
+        "cv": "departments/mechanical/faculty/cv/v-p-girisagar.pdf",
+        "photo": "departments/mechanical/faculty/v-p-girisagar.webp"
       },
       {
         "name": "Dr. S. G. Sarganachari",
@@ -1078,7 +1100,8 @@
       {
         "name": "Prof. G. H. Rathod",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/g-h-rathod.pdf"
+        "cv": "departments/mechanical/faculty/cv/g-h-rathod.pdf",
+        "photo": "departments/mechanical/faculty/g-h-rathod.webp"
       },
       {
         "name": "Dr. S. M. Jigajinni",
@@ -1089,12 +1112,14 @@
       {
         "name": "Prof. M. C. Goudar",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/m-c-goudar.pdf"
+        "cv": "departments/mechanical/faculty/cv/m-c-goudar.pdf",
+        "photo": "departments/mechanical/faculty/m-c-goudar.webp"
       },
       {
         "name": "Prof. M. M. G. Math",
         "designation": "Associate Professor",
-        "cv": "departments/mechanical/faculty/cv/m-m-g-math.pdf"
+        "cv": "departments/mechanical/faculty/cv/m-m-g-math.pdf",
+        "photo": "departments/mechanical/faculty/m-m-g-math.webp"
       },
       {
         "name": "Prof. H. R. Patil",
@@ -1105,47 +1130,56 @@
       {
         "name": "Prof. Vivekanand B. S.",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/vivekanand-b-s.pdf"
+        "cv": "departments/mechanical/faculty/cv/vivekanand-b-s.pdf",
+        "photo": "departments/mechanical/faculty/vivekanand-b-s.webp"
       },
       {
         "name": "Prof. R. S. Matti",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/r-s-matti.pdf"
+        "cv": "departments/mechanical/faculty/cv/r-s-matti.pdf",
+        "photo": "departments/mechanical/faculty/r-s-matti.webp"
       },
       {
         "name": "Prof. K. D. Aswale",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/k-d-aswale.pdf"
+        "cv": "departments/mechanical/faculty/cv/k-d-aswale.pdf",
+        "photo": "departments/mechanical/faculty/k-d-aswale.webp"
       },
       {
         "name": "Prof. S. J. Sanjay",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/s-j-sanjay.pdf"
+        "cv": "departments/mechanical/faculty/cv/s-j-sanjay.pdf",
+        "photo": "departments/mechanical/faculty/s-j-sanjay.webp"
       },
       {
         "name": "Dr. R. S. Naik",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/r-s-naik.pdf"
+        "cv": "departments/mechanical/faculty/cv/r-s-naik.pdf",
+        "photo": "departments/mechanical/faculty/r-s-naik.webp"
       },
       {
         "name": "Dr. A. N. Sonnad",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/a-n-sonnad.pdf"
+        "cv": "departments/mechanical/faculty/cv/a-n-sonnad.pdf",
+        "photo": "departments/mechanical/faculty/a-n-sonnad.webp"
       },
       {
         "name": "Prof. P. C. Kolur",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/p-c-kolur.pdf"
+        "cv": "departments/mechanical/faculty/cv/p-c-kolur.pdf",
+        "photo": "departments/mechanical/faculty/p-c-kolur.webp"
       },
       {
         "name": "Prof. S. S. Davanageri",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/s-s-davanageri.pdf"
+        "cv": "departments/mechanical/faculty/cv/s-s-davanageri.pdf",
+        "photo": "departments/mechanical/faculty/s-s-davanageri.webp"
       },
       {
         "name": "Prof. P. B. Bhajantri",
         "designation": "Assistant Professor",
-        "cv": "departments/mechanical/faculty/cv/p-b-bhajantri.pdf"
+        "cv": "departments/mechanical/faculty/cv/p-b-bhajantri.pdf",
+        "photo": "departments/mechanical/faculty/p-b-bhajantri.webp"
       },
       {
         "name": "Rajath M. Handi",
@@ -1162,7 +1196,8 @@
       {
         "name": "Dr. M. S. Hebbal",
         "designation": "Professor (Contractual)",
-        "cv": "departments/mechanical/faculty/cv/m-s-hebbal.pdf"
+        "cv": "departments/mechanical/faculty/cv/m-s-hebbal.pdf",
+        "photo": "departments/mechanical/faculty/m-s-hebbal.webp"
       }
     ],
     "humanities": [

@@ -390,6 +390,9 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
     if (activeTab === "home") {
         return (
             <div className="space-y-4">
+                {dept.chronicleImage && (
+                    <GroupPhotoBanner image={dept.chronicleImage} />
+                )}
                 <ContentSection
                     title={dept.overview.title}
                     content={dept.overview.content}

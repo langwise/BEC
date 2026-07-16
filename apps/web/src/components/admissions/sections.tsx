@@ -244,27 +244,40 @@ export function ManagementQuotaContact() {
     <section className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
       <SectionHeader icon={Phone} title="Contact for Management Quota Seats" />
       <div className="grid sm:grid-cols-2 gap-4">
-        {offices.map((office) => (
-          <div key={office.name} className="rounded-xl border border-gray-200 bg-gray-50/60 p-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">
-              {office.name}
-            </p>
-            <p className="font-semibold text-gray-900">{office.org}</p>
-            <p className="text-sm text-gray-600 mt-1">{office.address}</p>
-            <div className="mt-3 space-y-1">
-              {office.phones.map((phone) => (
-                <a
-                  key={phone}
-                  href={`tel:${phone.replace(/[^+\d]/g, "")}`}
-                  className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors"
-                >
-                  <Phone className="w-3.5 h-3.5 text-gray-400" />
-                  {phone}
-                </a>
-              ))}
+        {offices.map((office) => {
+          const contacts =
+            "contacts" in office
+              ? office.contacts
+              : office.phones.map((phone) => ({ name: null, phone }));
+          return (
+            <div key={office.name} className="rounded-xl border border-gray-200 bg-gray-50/60 p-6">
+              <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2">
+                {office.name}
+              </p>
+              <p className="font-semibold text-gray-900">{office.org}</p>
+              <p className="text-sm text-gray-600 mt-1">{office.address}</p>
+              <div className="mt-3 space-y-1">
+                {contacts.map((contact) => (
+                  <a
+                    key={contact.phone}
+                    href={`tel:${contact.phone.replace(/[^+\d]/g, "")}`}
+                    className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-gray-400" />
+                    {contact.name ? (
+                      <span>
+                        <span className="font-semibold text-gray-900">{contact.name}</span>
+                        <span className="text-gray-500"> · {contact.phone}</span>
+                      </span>
+                    ) : (
+                      contact.phone
+                    )}
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );

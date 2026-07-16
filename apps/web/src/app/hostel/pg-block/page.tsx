@@ -1,6 +1,15 @@
 import { pageMetadata } from "@/lib/seo";
 import { FadeIn } from "@/components/animations/fade-in";
-import { Building2, Users, Zap, CheckCircle2 } from "lucide-react";
+import { Building2, Users, Zap, CheckCircle2, Phone } from "lucide-react";
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from "@/components/ui/table";
+import { Card } from "@/components/ui/card";
 
 export const metadata = pageMetadata({
     title: "PG Boys Hostel",
@@ -79,6 +88,67 @@ export default function PGBlockPage() {
                             </div>
                         ))}
                     </div>
+                </FadeIn>
+            </section>
+
+            <div className="h-px w-full bg-linear-to-r from-transparent via-gray-200 to-transparent my-8" />
+
+            <section className="space-y-6">
+                <div className="flex items-center gap-3 text-primary mb-4">
+                    <Building2 className="w-6 h-6" />
+                    <h2 className="text-xl font-bold">Faculty in Charge</h2>
+                </div>
+                <FadeIn delay={0.2}>
+                    <Card className="bg-white border-stone-200 shadow-sm overflow-hidden text-sm">
+                        <Table>
+                            <TableHeader>
+                                <TableRow className="bg-orange-50/50 hover:bg-orange-50/50">
+                                    <TableHead className="font-bold text-primary border-b border-orange-100">
+                                        Designation
+                                    </TableHead>
+                                    <TableHead className="font-bold text-primary border-b border-orange-100">
+                                        Name
+                                    </TableHead>
+                                    <TableHead className="font-bold text-primary border-b border-orange-100">
+                                        Mobile
+                                    </TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {[
+                                    { role: "Chief Warden", name: "Dr. B.R Hiremath", phone: null },
+                                    { role: "Deputy Chief Warden", name: "Dr. P. L. Timmanagoudar", phone: "+91 94486 93600" },
+                                    { role: "Warden / Networking facility", name: "Dr. Mahabaleshwar S. K.", phone: "+91 94828 61933" },
+                                    { role: "Warden", name: "Prof. B. A. Vyas", phone: "+91 97433 91794" },
+                                ].map((faculty) => (
+                                    <TableRow
+                                        key={faculty.name}
+                                        className="hover:bg-orange-50/30 transition-colors border-b border-stone-100 last:border-0"
+                                    >
+                                        <TableCell className="font-semibold text-gray-900">
+                                            {faculty.role}
+                                        </TableCell>
+                                        <TableCell className="text-gray-700">
+                                            {faculty.name}
+                                        </TableCell>
+                                        <TableCell className="text-gray-600">
+                                            {faculty.phone ? (
+                                                <a
+                                                    href={`tel:${faculty.phone.replace(/[^+\d]/g, "")}`}
+                                                    className="inline-flex items-center gap-1.5 text-primary hover:underline"
+                                                >
+                                                    <Phone className="w-3.5 h-3.5" />
+                                                    {faculty.phone}
+                                                </a>
+                                            ) : (
+                                                "—"
+                                            )}
+                                        </TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </Card>
                 </FadeIn>
             </section>
         </div>

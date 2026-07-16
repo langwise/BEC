@@ -8,21 +8,15 @@ import Link from "next/link";
 export const metadata = pageMetadata({
     title: "Academic Calendar of Events",
     description:
-        "Download BEC Bagalkote's academic calendar of events for BE, M.Tech and MBA programmes across odd and even semesters, including the latest 2024-25 schedules.",
+        "Download BEC Bagalkote's academic calendar of events for BE programmes across all semesters, including the latest 2025-26 schedules.",
     path: "/academics/calendar",
 });
 
 const events = [
-    { title: "Academic Calender, Even Semester (IV, VI & VIII Sem BE) 2024-25", link: asset("documents/calendar/academic-calender-odd-semester-iv-vi-viii-ug-20250215-13320622.pdf"), isNew: true },
-    { title: "Academic Calender, Odd Semester (I Sem BE), 2024-25", link: asset("documents/calendar/academic-calender-odd-semester-i-iii-v-vii-ug-i-iii-pg20250215-13292427.pdf"), isNew: true },
-    { title: "2023-24 Odd VII_Sem_B.E._Calender_of_Events", link: asset("documents/calendar/calendar-of-events-be-vii-sem-2023-24.pdf") },
-    { title: "2023-24 Odd I_Sem_B.E._Calender_of_Events", link: asset("documents/calendar/calendar-of-events-be-i-sem-2023-24.pdf") },
-    { title: "2023-24 Odd III and V Sem_B.E._Calender_of_Events", link: asset("documents/calendar/calendar-of-events-be-iii-and-v-sem-2023-24.pdf") },
-    { title: "2023-24 Odd III Sem M.Tech and MBA Calender_of_Events", link: asset("documents/calendar/calendar-of-events-iii-sem-m-tech-mba.pdf") },
-    { title: "2022-23 Even II_and_IV_Sem_B.E._Calender_of_Events", link: asset("documents/calendar/2022-23-even-ii-and-iv-sem-b-e-calender-of-events.pdf") },
-    { title: "2022-23 Even IV_Semester_MBA_and_M.Tech_Calender_of_Events", link: asset("documents/calendar/2022-23-even-iv-semester-mba-and-m-tech-calender-of-events.pdf") },
-    { title: "2022-23 Even VI_and_VIII_Sem_B.E._Calender_of_Events", link: asset("documents/calendar/2022-23-even-vi-and-viii-sem-b-e-calender-of-events.pdf") },
-    { title: "2022-23 Odd Semester M.Tech/MBA Calendar of Events", link: asset("documents/calendar/academi-calendar-mba-mtech-odd-sem-2022-23.pdf") },
+    { title: "I & III Semester BE — 2025-26", link: asset("documents/calendar/2025-26-be-i-and-iii-sem-calendar-of-events.pdf"), isNew: true },
+    { title: "II & IV Semester BE — 2025-26", link: asset("documents/calendar/2025-26-be-ii-and-iv-sem-calendar-of-events.pdf"), isNew: true },
+    { title: "V & VII Semester BE — 2025-26", link: asset("documents/calendar/2025-26-be-v-and-vii-sem-calendar-of-events.pdf"), isNew: true },
+    { title: "VI & VIII Semester BE — 2025-26", link: asset("documents/calendar/2025-26-be-vi-and-viii-sem-calendar-of-events.pdf"), isNew: true },
 ];
 
 export default function CalendarPage() {
@@ -36,7 +30,7 @@ export default function CalendarPage() {
             <div className="container mx-auto px-4 py-12 lg:py-16 relative z-10 space-y-12">
                 <PageHeader
                     title="Academic Calendar of Events"
-                    description="Schedule of academic events and milestones for BE, M.Tech and MBA programmes across odd and even semesters."
+                    description="Schedule of academic events and milestones for BE programmes across all semesters."
                 />
 
                 <section className="space-y-6">

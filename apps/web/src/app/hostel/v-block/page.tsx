@@ -1,7 +1,16 @@
 import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { FadeIn } from "@/components/animations/fade-in";
-import { Building2, Users, Zap, CheckCircle2, ImageIcon } from "lucide-react";
+import { Building2, Users, Zap, CheckCircle2, ImageIcon, Phone } from "lucide-react";
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from "@/components/ui/table";
+import { Card } from "@/components/ui/card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { asset } from "@/lib/assets";
 
@@ -35,7 +44,7 @@ export default function VBlockPage() {
             <FadeIn>
                 <div className="relative aspect-16/10 w-full overflow-hidden rounded-2xl border border-stone-200 shadow-xs sm:aspect-2/1">
                     <Image
-                        src={asset("facilities/hostels/v-block/building.webp")}
+                        src={asset("facilities/hostels/netaji-block/building.webp")}
                         alt="Sir M. Visvesavaraya Block boys hostel at Basaveshwar Engineering College"
                         fill
                         priority
@@ -116,6 +125,67 @@ export default function VBlockPage() {
                 </div>
                 <FadeIn delay={0.1}>
                     <PhotoGallery images={galleryImages} />
+                </FadeIn>
+            </section>
+
+            <div className="h-px w-full bg-linear-to-r from-transparent via-gray-200 to-transparent my-8" />
+
+            <section className="space-y-6">
+                <div className="flex items-center gap-3 text-primary mb-4">
+                    <Building2 className="w-6 h-6" />
+                    <h2 className="text-xl font-bold">Faculty in Charge</h2>
+                </div>
+                <FadeIn delay={0.2}>
+                    <Card className="bg-white border-stone-200 shadow-sm overflow-hidden text-sm">
+                        <Table>
+                            <TableHeader>
+                                <TableRow className="bg-orange-50/50 hover:bg-orange-50/50">
+                                    <TableHead className="font-bold text-primary border-b border-orange-100">
+                                        Designation
+                                    </TableHead>
+                                    <TableHead className="font-bold text-primary border-b border-orange-100">
+                                        Name
+                                    </TableHead>
+                                    <TableHead className="font-bold text-primary border-b border-orange-100">
+                                        Mobile
+                                    </TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {[
+                                    { role: "Chief Warden", name: "Dr. B.R Hiremath", phone: null },
+                                    { role: "Deputy Chief Warden", name: "Dr. P. L. Timmanagoudar", phone: "+91 94486 93600" },
+                                    { role: "Warden", name: "Prof. B. S. Vivekananda", phone: "+91 94802 34598" },
+                                    { role: "Warden", name: "Prof. B. R. Endigeri", phone: "+91 98456 57310" },
+                                ].map((faculty) => (
+                                    <TableRow
+                                        key={faculty.name}
+                                        className="hover:bg-orange-50/30 transition-colors border-b border-stone-100 last:border-0"
+                                    >
+                                        <TableCell className="font-semibold text-gray-900">
+                                            {faculty.role}
+                                        </TableCell>
+                                        <TableCell className="text-gray-700">
+                                            {faculty.name}
+                                        </TableCell>
+                                        <TableCell className="text-gray-600">
+                                            {faculty.phone ? (
+                                                <a
+                                                    href={`tel:${faculty.phone.replace(/[^+\d]/g, "")}`}
+                                                    className="inline-flex items-center gap-1.5 text-primary hover:underline"
+                                                >
+                                                    <Phone className="w-3.5 h-3.5" />
+                                                    {faculty.phone}
+                                                </a>
+                                            ) : (
+                                                "—"
+                                            )}
+                                        </TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </Card>
                 </FadeIn>
             </section>
         </div>

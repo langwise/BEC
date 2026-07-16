@@ -7,8 +7,7 @@ export const naacCertification: DocumentGroup[] = [
     documents: [
         { title: "Self-Study Report (SSR) — Cycle 2", url: asset("documents/naac/criteria/ssr-cycle-2.pdf") },
         { title: "Institutional Information for Quality Assessment (IIQA) — 4 Nov 2022", url: asset("documents/naac/documents/iiqa-4nov2022.pdf") },
-        { title: "NAAC Quality Profile", url: asset("documents/naac/documents/naac-quality-profile.pdf") },
-        { title: "NAAC Accreditation Certificate", url: asset("documents/naac/documents/naac-accrediatation.pdf") },
+        { title: "NAAC Certificate — Cycle 2 (valid up to 16 January 2029)", url: asset("documents/naac/documents/naac-certificate-cycle2-2029.pdf") },
     ],
   },
 ];

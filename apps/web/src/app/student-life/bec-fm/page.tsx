@@ -90,9 +90,9 @@ export default function BECFMPage() {
                   <User className="h-4 w-4 shrink-0 text-primary" />
                   <span>
                     <span className="font-medium text-gray-900">
-                      Bharath Badiger
+                      Bharath B Badiger
                     </span>
-                    <span className="text-gray-500"> · Station Contact</span>
+                    <span className="text-gray-500"> · Station Manager</span>
                   </span>
                 </div>
                 <a
@@ -101,6 +101,24 @@ export default function BECFMPage() {
                 >
                   <Phone className="h-4 w-4 shrink-0 text-primary" />
                   +91 94836 20120
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=atc.basaveshwarradio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 rounded-md bg-stone-50 p-3 text-sm text-gray-700 transition-colors hover:text-primary"
+                >
+                  <Radio className="h-4 w-4 shrink-0 text-primary" />
+                  Android app
+                </a>
+                <a
+                  href="https://apps.apple.com/my/developer/atc-labs/id1240201510"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 rounded-md bg-stone-50 p-3 text-sm text-gray-700 transition-colors hover:text-primary"
+                >
+                  <Signal className="h-4 w-4 shrink-0 text-primary" />
+                  iOS app
                 </a>
                 <a
                   href="mailto:becbgk.fm@gmail.com"

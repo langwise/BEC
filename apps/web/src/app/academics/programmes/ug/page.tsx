@@ -59,9 +59,9 @@ const ugData = {
       { quota: "Management Quota", type: "Aided/Unaided", desc: "Mgmt Fees + VTU + College Fees" },
   ],
   feeDocuments: [
-      { title: "College & VTU Fees", desc: "Tuition and VTU fee schedule — PDF", href: asset("documents/admissions/ug-vtu-and-college-fee.pdf") },
-      { title: "College Other Fees", desc: "Additional college fee schedule — PDF", href: asset("documents/admissions/ug-college-other-fee.pdf") },
-      { title: "Management Quota Fee Structure", desc: "BE 1st year & Diploma lateral entry, AY 2025-26", href: asset("documents/admissions/ug-management-fee-2025-26.jpeg") },
+      { title: "College & VTU Fees", desc: "Tuition and VTU fee schedule — image (AY 2026-27)", href: asset("documents/admissions/college-and-vtu-fees-2026-27.webp") },
+      { title: "College Other Fees", desc: "Additional college fee schedule — image (AY 2026-27)", href: asset("documents/admissions/college-other-fees-2026-27.webp") },
+      { title: "Management Quota Fee Structure", desc: "BE 1st year, AY 2026-27", href: asset("documents/admissions/be-1st-year-management-fee-2026-27.webp") },
   ],
 };
 

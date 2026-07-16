@@ -24,6 +24,14 @@ export default function FirstYearSyllabusPage() {
         <DocumentDirectory
           groups={[
             {
+              label: "2026–27 Scheme & Syllabus",
+              documents: [
+                { title: "Scheme of Teaching 1st Semester 2026-27", url: asset("documents/first-year/scheme-of-teaching-1st-semester-2026-27.pdf") },
+                { title: "Scheme of Teaching 2nd Semester 2026-27", url: asset("documents/first-year/scheme-of-teaching-2nd-semester-2026-27.pdf") },
+                { title: "First Year Syllabus 2026-27", url: asset("documents/first-year/first-year-syllabus-2026-27.pdf") },
+              ],
+            },
+            {
               label: "2023–24 Scheme & Syllabus",
               documents: [
                 { title: "Civil Stream", url: asset("documents/first-year/first-year-syllabus-civil-2023-24-9-9-2023.pdf") },

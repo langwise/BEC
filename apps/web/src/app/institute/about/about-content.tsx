@@ -28,7 +28,7 @@ export default function AboutContent() {
     { label: "Campus Size", value: "93 Acres", icon: Trophy },
     { label: "Alumni", value: "Global", icon: Users },
     { label: "Students", value: "3,500+", icon: GraduationCap },
-    { label: "Faculty", value: "180+", sub: "55% PhDs", icon: Award },
+    { label: "Faculty", value: "200", sub: "43% PhDs", icon: Award },
     { label: "Research Centers", value: "10", icon: BookOpen },
   ];
 
@@ -246,11 +246,11 @@ export default function AboutContent() {
                 <p>
                   With a highly qualified, experienced, and dedicated{" "}
                   <span className="font-semibold text-gray-900">
-                    faculty strength of over 180
+                    faculty strength of over 200
                   </span>
                   , with{" "}
                   <span className="font-semibold text-primary">
-                  55% of them holding PhD’s
+                  43% of them holding PhD’s
                   </span>
                   , supported by nearly 200 staff members, the college offers an
                   unbeatable ambience and superior quality of education for its

@@ -139,6 +139,9 @@ export interface DepartmentData {
   /** Optional rolling hero carousel (2+ images) shown instead of the single heroImage. */
   heroImages?: SectionImage[];
 
+  /** Optional "Department Chronicle" banner shown at the top of the Home tab, before the overview. */
+  chronicleImage?: SectionImage;
+
   overview: HeaderBlock;
   vision: HeaderBlock;
   mission: HeaderBlock;
@@ -819,13 +822,25 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       icon: "building-2",
       groups,
     });
-  } else if (content.infrastructureItems?.length || content.softwareItems?.length) {
+  } else if (
+    content.infrastructureItems?.length ||
+    content.softwareItems?.length ||
+    content.researchLaboratories?.length
+  ) {
+    const facilityTables = infrastructureTables();
+    if (content.researchLaboratories?.length) {
+      facilityTables.unshift({
+        title: "Research Laboratories",
+        columns: ["Laboratory"],
+        rows: content.researchLaboratories.map((name) => [name]),
+      });
+    }
     sections.push({
       id: "facilities",
       type: "tables",
       title: heading("facilities", "Infrastructure Details"),
       icon: "building-2",
-      tables: infrastructureTables(),
+      tables: facilityTables,
       imageGroups: content.facilitiesGallery
         ?.map((g) => ({
           title: g.title,
@@ -1086,10 +1101,18 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
 
   const sections = content ? buildSections(contentKey, content) : [];
 
-  // Sidebar derived from the content that actually exists.
-  const sidebar = [{ id: "home", label: "Home", icon: "home" }];
+  // Sidebar derived from the content that actually exists. The Home/About labels
+  // accept per-department overrides (e.g. Mechanical relabels them
+  // "About Department" / "Vision and Mission").
+  const sidebar = [
+    { id: "home", label: content?.sectionNavLabels?.home ?? "Home", icon: content?.sectionIcons?.home ?? "home" },
+  ];
   if (content?.about || content?.vision || content?.mission?.length || content?.peosPsosUnderAbout)
-    sidebar.push({ id: "about", label: "About Department", icon: "graduation-cap" });
+    sidebar.push({
+      id: "about",
+      label: content?.sectionNavLabels?.about ?? "About Department",
+      icon: content?.sectionIcons?.about ?? "graduation-cap",
+    });
   const sectionLabels: Record<string, { label: string; icon: string }> = {
     academics: { label: "Academics", icon: "file-text" },
     curriculum: { label: "Curriculum", icon: "file-text" },
@@ -1140,6 +1163,9 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
             alt: `${name} — photo ${i + 1}`,
           }))
         : undefined,
+    chronicleImage: content?.chronicleImage
+      ? { src: asset(content.chronicleImage), alt: `Chronicle of the ${name} Department` }
+      : undefined,
     quickStats: content ? quickStats(contentKey, content) : undefined,
     quickFacts:
       content?.quickFacts?.facts?.length && content.quickFacts.researchAreas?.length
