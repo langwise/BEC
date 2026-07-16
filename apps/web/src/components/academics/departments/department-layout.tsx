@@ -2,12 +2,12 @@
 
 import { useRef, useState } from "react";
 import Image from "next/image";
-import DepartmentSidebar from "@/components/academics/departments/sidebar";
+import DepartmentSidebar, { DEPT_PANEL_ID } from "@/components/academics/departments/sidebar";
 import type { DataTable, DepartmentData, DocLink } from "@/data/department/department";
 import ContentSection from "@/components/academics/departments/content";
 import ContactSection from "@/components/academics/departments/contact-section";
 import TestimonialsSection from "@/components/academics/departments/testimonials";
-import { CheckCircle2, FileText, Download } from "lucide-react";
+import { CheckCircle2, ChevronDown, FileText, Download } from "lucide-react";
 import { FacultyCard } from "@/components/academics/faculty/faculty-card";
 import { PhotoGallery } from "@/components/common/photo-gallery";
 import { QuickFacts } from "@/components/academics/departments/quick-facts";
@@ -330,47 +330,69 @@ function ImageGroups({ groups }: { groups: { title?: string; images: { src: stri
   );
 }
 
+function DataGrid({ table, framed = true }: { table: DataTable; framed?: boolean }) {
+  return (
+    <div
+      className={
+        framed
+          ? "overflow-x-auto rounded-md border border-stone-200 bg-white shadow-sm"
+          : "overflow-x-auto border-t border-stone-200"
+      }
+    >
+      <table className="min-w-full divide-y divide-stone-200 text-sm">
+        <thead className="bg-primary/5">
+          <tr>
+            {table.columns.map((column) => (
+              <th
+                key={column}
+                scope="col"
+                className="min-w-[160px] px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-primary"
+              >
+                {column}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-stone-100 bg-white">
+          {table.rows.map((row, rowIndex) => (
+            <tr key={`${table.title}-${rowIndex}`} className="align-top">
+              {row.map((cell, cellIndex) => (
+                <td
+                  key={`${table.title}-${rowIndex}-${cellIndex}`}
+                  className="min-w-[180px] px-4 py-3 leading-relaxed text-stone-700 first:font-medium first:text-gray-900"
+                >
+                  {cell || "-"}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 function DepartmentTables({ title, tables }: { title?: string; tables: DataTable[] }) {
   return (
     <section className="space-y-6">
       {title ? <h2 className="text-2xl font-bold text-gray-900">{title}</h2> : null}
       <div className="space-y-8">
-        {tables.map((table) => (
-          <div key={table.title} className="space-y-3">
-            <h3 className="text-base font-semibold text-primary">{table.title}</h3>
-            <div className="overflow-x-auto rounded-md border border-stone-200 bg-white shadow-sm">
-              <table className="min-w-full divide-y divide-stone-200 text-sm">
-                <thead className="bg-primary/5">
-                  <tr>
-                    {table.columns.map((column) => (
-                      <th
-                        key={column}
-                        scope="col"
-                        className="min-w-[160px] px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-primary"
-                      >
-                        {column}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-stone-100 bg-white">
-                  {table.rows.map((row, rowIndex) => (
-                    <tr key={`${table.title}-${rowIndex}`} className="align-top">
-                      {row.map((cell, cellIndex) => (
-                        <td
-                          key={`${table.title}-${rowIndex}-${cellIndex}`}
-                          className="min-w-[180px] px-4 py-3 leading-relaxed text-stone-700 first:font-medium first:text-gray-900"
-                        >
-                          {cell || "-"}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+        {tables.map((table) =>
+          table.collapsed ? (
+            <details key={table.title} className="group/table rounded-md border border-stone-200 bg-white shadow-sm">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-base font-semibold text-primary hover:bg-primary/5">
+                <span>{table.title}</span>
+                <ChevronDown className="h-4 w-4 shrink-0 transition-transform group-open/table:rotate-180" />
+              </summary>
+              <DataGrid table={table} framed={false} />
+            </details>
+          ) : (
+            <div key={table.title} className="space-y-3">
+              <h3 className="text-base font-semibold text-primary">{table.title}</h3>
+              <DataGrid table={table} />
             </div>
-          </div>
-        ))}
+          ),
+        )}
       </div>
     </section>
   );
@@ -379,10 +401,21 @@ function DepartmentTables({ title, tables }: { title?: string; tables: DataTable
 export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
   const [activeTab, setActiveTab] = useState(dept.sidebar[0]?.id || "home");
   const containerRef = useRef<HTMLDivElement>(null);
+  const activeLabel = dept.sidebar.find((item) => item.id === activeTab)?.label;
 
   const handleSelect = (id: string) => {
     setActiveTab(id);
-    containerRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const el = containerRef.current;
+    if (!el) return;
+    const headerHeight =
+      parseFloat(
+        getComputedStyle(document.documentElement).getPropertyValue("--header-h"),
+      ) || 0;
+    // Only pull the page back when the section start has already scrolled out of
+    // reach; smooth-scrolling from deep inside a long section is disorienting.
+    if (el.getBoundingClientRect().top < headerHeight) {
+      el.scrollIntoView({ block: "start", behavior: "instant" });
+    }
   };
 
   const renderContent = () => {
@@ -659,7 +692,10 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
   }
 
   return (
-        <div ref={containerRef} className="flex flex-col lg:flex-row gap-8 lg:gap-12 scroll-mt-24">
+        <div
+            ref={containerRef}
+            className="flex flex-col lg:flex-row gap-8 lg:gap-12 scroll-mt-[var(--header-h)]"
+        >
             {/* Sidebar with Controled State */}
             <DepartmentSidebar
                 items={dept.sidebar}
@@ -669,7 +705,15 @@ export function DepartmentLayout({ dept }: DepartmentLayoutProps) {
 
             {/* Main Content Area */}
             <main className="flex-1 min-w-0">
-                {renderContent()}
+                <div
+                    id={DEPT_PANEL_ID}
+                    role="tabpanel"
+                    aria-label={activeLabel ? `${activeLabel} section` : undefined}
+                    tabIndex={0}
+                    className="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+                >
+                    {renderContent()}
+                </div>
             </main>
         </div>
   );
