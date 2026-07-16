@@ -578,6 +578,10 @@
               }
             }
           },
+          "activitiesUnderAssociation": {
+            "type": "boolean",
+            "description": "When true, the activities render at the end of the Association section and no standalone Activities tab is shown."
+          },
           "activityTables": {
             "type": "array",
             "description": "Department activity programmes (SDPs, FDPs, workshops) rendered as titled tables under an \"Activities\" section.",
@@ -684,6 +688,10 @@
               },
               "email": {
                 "type": "string"
+              },
+              "photo": {
+                "type": "string",
+                "description": "Asset key for the contact's photo, shown alongside their details."
               }
             }
           },

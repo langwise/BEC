@@ -3209,9 +3209,58 @@
       "placementsSummaryOnly": true,
       "achievementsUnderResearch": true,
       "galleryExclude": [
+        "/activities/",
         "cine1451",
         "cine1479",
-        "cine1482"
+        "cine1482",
+        "cine1455",
+        "cine1458",
+        "cine1466",
+        "cine1471",
+        "cine1474",
+        "gallery/g18.webp",
+        "gallery/g21.webp",
+        "gallery/g27.webp",
+        "gallery/g43.webp",
+        "gallery/g48.webp",
+        "gallery/g04.webp",
+        "gallery/g14.webp",
+        "gallery/g16.webp",
+        "gallery/g39.webp",
+        "gallery/g10.webp",
+        "gallery/g12.webp",
+        "gallery/g15.webp",
+        "gallery/g24.webp",
+        "gallery/g41.webp",
+        "gallery/g49.webp",
+        "gallery/g34.webp",
+        "gallery/g19.webp"
+      ],
+      "facilitiesGallery": [
+        {
+          "title": "Computing Laboratories",
+          "images": [
+            "departments/cse/cine1455.webp",
+            "departments/cse/cine1458.webp",
+            "departments/cse/gallery/g21.webp",
+            "departments/cse/gallery/g27.webp",
+            "departments/cse/gallery/g43.webp"
+          ]
+        },
+        {
+          "title": "AI–Cybersecurity Research Workstation",
+          "images": [
+            "departments/cse/cine1466.webp",
+            "departments/cse/cine1471.webp"
+          ]
+        },
+        {
+          "title": "Classrooms",
+          "images": [
+            "departments/cse/gallery/g18.webp",
+            "departments/cse/gallery/g48.webp"
+          ]
+        }
       ],
       "overview": "The Department of Computer Science and Engineering was established in 1983. It offers B.E. programme in Computer Science and Engineering with an intake of 180 students, along with M.Sc. (Engineering by Research) and Ph.D. programmes. The department has highly qualified and well-experienced faculty committed to imparting quality technical education in IT and research. Its primary objectives include developing innovative skills, enriching academics through quality teaching-learning processes, building student confidence and inculcating entrepreneurial abilities — producing professionals with ethical values and societal concern.",
       "vision": "To be a Centre of Excellence in IT Education, Research and Innovation, crafting competent professionals catering to the needs of society with moral and ethical values.",
@@ -3399,28 +3448,16 @@
       ],
       "labs": [
         {
-          "name": "Multimedia, Vision Computing and Intelligent Systems Lab",
-          "description": "Develops algorithms and systems for processing and understanding multimedia data including images, video and audio."
+          "name": "AI and CybersecurityWorkstation HP Z4 G5, Intel Xeon W5-2455X (12 cores, 30 MB Cache,3.2 GHz, 32 GB DDRS RAM, 1 TB SSD, NVIDIA 16 GB Professional GPU",
+          "description": ""
         },
         {
-          "name": "Wireless and Mobile Computing Lab",
-          "description": "Builds practical understanding of wireless communication and mobile computing, with hands-on design and analysis of mobile networks."
+          "name": "Modern computing labs equipped with 12th",
+          "description": "14th Gen Intel Core i5/i7 HP desktops, multimedia projectors and air-conditioning."
         },
         {
-          "name": "Data Mining and Information Systems Lab",
-          "description": "Develops and refines techniques for extracting useful knowledge from large datasets for better decision-making and insights."
-        },
-        {
-          "name": "Learning Resources Lab",
-          "description": "Supports student learning through hands-on activities, experimentation and the application of knowledge."
-        },
-        {
-          "name": "Computing Labs — Dijkstra, Charles Babbage, Kernighan & Ritchie, Kalpana Chawla, Alan Turing & C. V. Raman",
-          "description": "Modern computing labs equipped with 12th – 14th Gen Intel Core i5/i7 HP desktops, multimedia projectors and air-conditioning."
-        },
-        {
-          "name": "AI and Cybersecurity Workstation",
-          "description": "HP Z4 G5, Intel Xeon W5-2455X (12 cores, 30 MB Cache, 3.2 GHz), 32 GB DDR5 RAM, 1 TB SSD, NVIDIA 16 GB Professional GPU."
+          "name": "Computing Labs",
+          "description": "Dijkstra, Charles Babbage, Kernighan & Ritchie, Kalpana Chawla, Alan Turing & C. V. Raman"
         }
       ],
       "activities": [
@@ -3672,6 +3709,7 @@
           ]
         }
       ],
+      "activitiesUnderAssociation": true,
       "associations": [
         {
           "name": "FOCUS — Forum of Computer Science Students",
@@ -3685,7 +3723,8 @@
       "contact": {
         "name": "Dr. V. B. Pagi",
         "designation": "Professor & Head, Computer Science & Engineering",
-        "email": ""
+        "email": "veereshpagi@gmail.com",
+        "photo": "departments/cse/faculty/veerappa-b-pagi.webp"
       },
       "documents": [
         {
@@ -3928,16 +3967,16 @@
           "guide": "Dr. LokeshBhajantri",
           "title": "Cognitive Agent Baseddata Synchronizationand Fault Tolerance inUbiquitous Network",
           "year": "2025"
-        }
-      ],
-      "researchScholars": [
+        },
         {
           "scholar": "VEENA PATIL",
           "usn": "2BA16PEJ09",
           "guide": "Dr. S. R. PATIL",
           "title": "Automatic Detection of Cancerous Cells in Histopathological Images of Uterine Tissue",
           "status": "Colloquium Completed"
-        },
+        }
+      ],
+      "researchScholars": [
         {
           "scholar": "PRASHANT BALURGI",
           "usn": "2BA15PEJ02",

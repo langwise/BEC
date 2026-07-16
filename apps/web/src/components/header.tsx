@@ -28,6 +28,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [logoHeight, setLogoHeight] = useState<number>();
   const brandTextRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
 
   useIsomorphicLayoutEffect(() => {
     const el = brandTextRef.current;
@@ -39,8 +40,27 @@ export function Header() {
     return () => observer.disconnect();
   }, []);
 
+  // Anything that pins below the header (sidebars, anchor navs, scroll-margin)
+  // reads --header-h rather than hardcoding a guess.
+  useIsomorphicLayoutEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const update = () =>
+      document.documentElement.style.setProperty(
+        "--header-h",
+        `${Math.round(el.getBoundingClientRect().height)}px`,
+      );
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 w-full bg-white border-b border-muted">
+    <header
+      ref={headerRef}
+      className="sticky top-0 z-50 w-full bg-white border-b border-muted"
+    >
       {/* Top strip */}
       <div className="bg-primary h-2" />
 

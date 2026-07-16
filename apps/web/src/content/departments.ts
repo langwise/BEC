@@ -149,6 +149,8 @@ export type DepartmentContent = {
   }[];
   /** Department activity programmes (SDPs, FDPs, workshops) rendered as titled tables under an "Activities" section. */
   activityTables?: { title: string; columns: string[]; rows: string[][] }[];
+  /** When true, `activities` render at the end of the Association section and no standalone "Activities" tab is emitted. */
+  activitiesUnderAssociation?: boolean;
   associations?: {
     name: string;
     about?: string;
@@ -170,7 +172,7 @@ export type DepartmentContent = {
   mouImages?: string[];
   /** Research-laboratory photo galleries shown under the Research section (title + asset keys). */
   researchGallery?: { title?: string; images: string[] }[];
-  contact?: { name?: string; designation?: string; phone?: string; email?: string };
+  contact?: { name?: string; designation?: string; phone?: string; email?: string; photo?: string };
   additionalContacts?: { name: string; designation?: string; phone?: string; email?: string }[];
   documents?: { title: string; file: string }[];
   /** Curriculum shown as labelled sub-tabs (e.g. Scheme of Teaching & Examinations / Syllabus).

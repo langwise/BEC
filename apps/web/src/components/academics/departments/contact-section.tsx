@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Mail, Phone, User } from "lucide-react";
 import { iconMap } from "./icons";
 
@@ -8,6 +9,7 @@ interface ContactPerson {
   designation?: string;
   phone?: string;
   email?: string;
+  photo?: { src: string; alt: string };
 }
 
 interface ContactSectionProps {
@@ -20,9 +22,21 @@ function ContactCard({ person }: { person: ContactPerson }) {
   return (
     <div className="flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-orange-200 hover:shadow-md">
       <div className="flex items-center gap-4">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-primary">
-          <User className="h-6 w-6" />
-        </div>
+        {person.photo ? (
+          <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl border border-stone-200 bg-orange-50">
+            <Image
+              src={person.photo.src}
+              alt={person.photo.alt}
+              fill
+              sizes="80px"
+              className="object-cover object-top"
+            />
+          </div>
+        ) : (
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-primary">
+            <User className="h-6 w-6" />
+          </div>
+        )}
         <div className="min-w-0">
           {person.name && (
             <h3 className="text-lg font-bold leading-snug text-gray-900">{person.name}</h3>

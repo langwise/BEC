@@ -46,6 +46,8 @@ export interface DataTable {
   title: string;
   columns: string[];
   rows: string[][];
+  /** Render behind a collapsed disclosure (long rosters that would otherwise bury the section). */
+  collapsed?: boolean;
 }
 
 /** A header block (Overview / Vision / Mission) — text and/or a bullet list. */
@@ -126,7 +128,7 @@ export type DepartmentSection =
       type: "contact";
       title: string;
       icon?: string;
-      people: { name?: string; designation?: string; phone?: string; email?: string }[];
+      people: { name?: string; designation?: string; phone?: string; email?: string; photo?: SectionImage }[];
     };
 
 export interface DepartmentData {
@@ -781,6 +783,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         tables.push({
           title: `Recruiters & Packages — ${batch.batch} (${batch.companies.length})`,
           ...recruiters,
+          collapsed: true,
         });
       }
       if (batch.students.length && !content.placementsSummaryOnly) {
@@ -864,12 +867,13 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   }
 
   // Activities & events
+  const foldActivitiesIntoAssociation = Boolean(content.activitiesUnderAssociation && content.associations?.length);
+  const activityGroups: ContentGroup[] = [];
   if (content.activities?.length) {
-    const groups: ContentGroup[] = [];
     const richActivities = content.activities.filter((a) => a.details?.length || a.images?.length);
     const simpleActivities = content.activities.filter((a) => !a.details?.length && !a.images?.length);
     if (simpleActivities.length)
-      groups.push({
+      activityGroups.push({
         subtitle: "Recent Events & Activities",
         items: simpleActivities.map((a) => ({
           label: a.title,
@@ -877,7 +881,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         })),
       });
     for (const a of richActivities) {
-      groups.push({
+      activityGroups.push({
         subtitle: a.date ? `${a.title} (${a.date})` : a.title,
         text: a.description,
         items: a.details,
@@ -885,10 +889,17 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         largeImages: true,
       });
     }
-    sections.push({ id: "activities", type: "content", title: heading("activities", "Activities"), icon: "calendar", groups });
+    if (!foldActivitiesIntoAssociation)
+      sections.push({
+        id: "activities",
+        type: "content",
+        title: heading("activities", "Activities"),
+        icon: "calendar",
+        groups: activityGroups,
+      });
   }
 
-  // Student associations & forums — their own section, separate from activities.
+  // Student associations & forums — their own section, unless activitiesUnderAssociation folds the activities in.
   if (content.associations?.length) {
     const groups: ContentGroup[] = [];
     for (const assoc of content.associations) {
@@ -919,11 +930,19 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           images: assoc.gallery.map((key) => ({ src: asset(key), alt: `${assoc.name} activity` })),
         });
     }
+    if (foldActivitiesIntoAssociation) groups.push(...activityGroups);
     const assocPhoto = content.associations.find((a) => a.photo);
     const groupPhoto = assocPhoto?.photo
       ? { src: asset(assocPhoto.photo), alt: assocPhoto.photoCaption ?? assocPhoto.name, caption: assocPhoto.photoCaption }
       : undefined;
-    sections.push({ id: "association", type: "content", title: heading("association", "Association"), icon: "users", groups, groupPhoto });
+    sections.push({
+      id: "association",
+      type: "content",
+      title: heading("association", foldActivitiesIntoAssociation ? "Association & Activities" : "Association"),
+      icon: "users",
+      groups,
+      groupPhoto,
+    });
   }
 
   // Activity programmes (SDPs, FDPs, workshops) — one titled table per category.
@@ -980,19 +999,19 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       ? []
       : getDepartmentGallery(content.assetSlug);
   // Drop any stray portrait/staff shots the department asked to exclude.
-  const gallery = content.galleryExclude?.length
-    ? galleryAll.filter((url) => !content.galleryExclude!.some((k) => url.includes(k)))
-    : galleryAll;
+  const excluded = (url: string) => content.galleryExclude?.some((k) => url.includes(k)) ?? false;
   // Curated photos from the department's gallery/ subfolder, appended in key
   // order after the auto-derived scene photos.
   const extraSlug = content.infrastructureGallerySlug ?? content.assetSlug;
   const galleryImages = [
-    ...gallery,
+    ...galleryAll,
     ...(contentKey.startsWith("pg/") ? [] : getDepartmentGalleryExtra(extraSlug)),
-  ].map((src, i) => ({
-    src,
-    alt: `${content.name} — facilities photo ${i + 1}`,
-  }));
+  ]
+    .filter((url) => !excluded(url))
+    .map((src, i) => ({
+      src,
+      alt: `${content.name} — facilities photo ${i + 1}`,
+    }));
   // Named labs (title + caption + images) render as content blocks. The loose
   // department photos go to a dedicated "Photo Gallery" section (added below,
   // after Newsletters), so Infrastructure keeps only the labs.
@@ -1062,9 +1081,15 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     content.additionalContacts?.length
   ) {
     const c = content.contact;
-    const people: { name?: string; designation?: string; phone?: string; email?: string }[] = [];
+    const people: { name?: string; designation?: string; phone?: string; email?: string; photo?: SectionImage }[] = [];
     if (c && (c.name || c.phone || c.email)) {
-      people.push({ name: c.name, designation: c.designation, phone: c.phone, email: c.email });
+      people.push({
+        name: c.name,
+        designation: c.designation,
+        phone: c.phone,
+        email: c.email,
+        photo: c.photo ? { src: asset(c.photo), alt: c.name ?? "Head of Department" } : undefined,
+      });
     }
     if (content.additionalContacts?.length) people.push(...content.additionalContacts);
     sections.push({
@@ -1146,7 +1171,10 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     placements: { label: "Placements", icon: "briefcase" },
     facilities: { label: "Facilities", icon: "building-2" },
     activities: { label: "Activities", icon: "calendar" },
-    association: { label: "Association", icon: "users" },
+    association: {
+      label: content?.activitiesUnderAssociation && content?.activities?.length ? "Association & Activities" : "Association",
+      icon: "users",
+    },
     "activity-programs": { label: "Activities", icon: "calendar" },
     mou: { label: "MoUs", icon: "handshake" },
     infrastructure: { label: "Infrastructure", icon: "building-2" },
