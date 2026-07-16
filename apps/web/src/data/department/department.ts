@@ -150,7 +150,7 @@ export interface DepartmentData {
   about?: HeaderBlock;
 
   /** Message from the Head of Department, shown on the Home tab. */
-  hodMessage?: { message: string; name?: string; designation?: string; image?: { src: string; alt: string } };
+  hodMessage?: { message?: string; name?: string; designation?: string; image?: { src: string; alt: string } };
 
   /** Optional "at a glance" stats row shown on the Home tab. */
   quickStats?: { label: string; value: string }[];

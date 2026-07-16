@@ -1,6 +1,8 @@
 import { pageMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/common/page-hero";
 import { SectionHeading } from "@/components/common/section-heading";
+import { DocumentDirectory } from "@/components/common/document-directory";
+import { asset } from "@/lib/assets";
 import { Globe, GraduationCap, Briefcase, HeartHandshake, Mail, Phone, Users } from "lucide-react";
 
 export const metadata = pageMetadata({
@@ -145,6 +147,27 @@ export default function AlumniPage() {
             and HSK Hospital, Bagalkote (June 2021) — a reflection of the enduring
             spirit of service instilled at BEC.
           </p>
+        </div>
+
+        <div className="space-y-8">
+          <SectionHeading
+            eyebrow="Reports"
+            title="Association Activity Report"
+            description="A consolidated record of alumni achievements, placement contributions, reunions, technical talks and campus visits."
+          />
+          <DocumentDirectory
+            groups={[
+              {
+                documents: [
+                  {
+                    title: "BEC Alumni Association — Activity Report (July 2026)",
+                    url: asset("documents/alumni/report-july-2026.pdf"),
+                    meta: "PDF · 1.8 MB",
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
 
         <div className="space-y-8">

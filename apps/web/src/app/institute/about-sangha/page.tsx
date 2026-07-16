@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -219,6 +219,45 @@ export default function AboutSanghaPage() {
                       >
                         Download PDF ↗
                       </a>
+                </CardContent>
+            </Card>
+
+            <Card className="rounded-sm border-stone-200 shadow-sm">
+                <CardContent className="pt-6">
+                    <h4 className="font-semibold text-gray-900 mb-2">Contact B.V.V. Sangha</h4>
+                    <p className="text-sm text-gray-600 mb-4 text-justify">
+                        For queries addressed to the Sangha office and the Chairman.
+                    </p>
+                    <div className="space-y-2.5">
+                        <a
+                            href="mailto:bvvschairman@gmail.com"
+                            className="flex items-center gap-2.5 text-sm text-gray-700 transition-colors hover:text-primary"
+                        >
+                            <Mail className="size-4 shrink-0 text-primary" />
+                            <span className="break-all">bvvschairman@gmail.com</span>
+                        </a>
+                        <a
+                            href="tel:+918354220659"
+                            className="flex items-center gap-2.5 text-sm text-gray-700 transition-colors hover:text-primary"
+                        >
+                            <Phone className="size-4 shrink-0 text-primary" />
+                            08354-220659
+                        </a>
+                        <a
+                            href="tel:+918884452964"
+                            className="flex items-center gap-2.5 text-sm text-gray-700 transition-colors hover:text-primary"
+                        >
+                            <Phone className="size-4 shrink-0 text-primary" />
+                            +91 88844 52964
+                        </a>
+                        <a
+                            href="tel:+918884452965"
+                            className="flex items-center gap-2.5 text-sm text-gray-700 transition-colors hover:text-primary"
+                        >
+                            <Phone className="size-4 shrink-0 text-primary" />
+                            +91 88844 52965
+                        </a>
+                    </div>
                 </CardContent>
             </Card>
           </div>

@@ -176,9 +176,11 @@ function HodMessageBlock({ hodMessage }: { hodMessage: NonNullable<DepartmentDat
           </div>
         )}
         <div className="min-w-0 flex-1">
-          <p className="whitespace-pre-line leading-relaxed text-gray-700 text-justify">{hodMessage.message}</p>
+          {hodMessage.message && (
+            <p className="whitespace-pre-line leading-relaxed text-gray-700 text-justify">{hodMessage.message}</p>
+          )}
           {hodMessage.name && (
-            <div className="mt-5">
+            <div className={hodMessage.message ? "mt-5" : undefined}>
               <p className="font-semibold text-gray-900">{hodMessage.name}</p>
               {hodMessage.designation && (
                 <p className="mt-0.5 text-sm text-gray-500">{hodMessage.designation}</p>

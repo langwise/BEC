@@ -29,7 +29,7 @@ export type DepartmentContent = {
   /** Caption rendered below the overview lead image (e.g. "Teaching Faculty"). */
   overviewImageCaption?: string;
   /** Message from the Head of Department, shown on the Home tab. */
-  hodMessage?: { message: string; name?: string; designation?: string; image?: string };
+  hodMessage?: { message?: string; name?: string; designation?: string; image?: string };
   about?: string;
   vision?: string;
   mission?: string[];

@@ -13,19 +13,29 @@ export const metadata = pageMetadata({
 });
 
 const galleryImages = [
-    "cine0540.webp",
-    "cine0547.webp",
-    "cine0562.webp",
-    "cine0593.webp",
-    "cine0513.webp",
-    "cine0509.webp",
-    "cine0495.webp",
-    "wardens.webp",
-    "manager.webp",
-].map((file, index) => ({
-    src: asset(`facilities/hostels/girls/${file}`),
-    alt: `Malaprabha Ladies Hostel at Basaveshwar Engineering College ${index + 1}`,
-}));
+    ...[
+        "cine0540.webp",
+        "cine0547.webp",
+        "cine0562.webp",
+        "cine0593.webp",
+        "cine0513.webp",
+        "cine0509.webp",
+        "cine0495.webp",
+    ].map((file, index) => ({
+        src: asset(`facilities/hostels/girls/${file}`),
+        alt: `Malaprabha Ladies Hostel at Basaveshwar Engineering College ${index + 1}`,
+    })),
+    {
+        src: asset("facilities/hostels/girls/wardens.webp"),
+        alt: "Wardens of the Malaprabha Ladies Hostel at Basaveshwar Engineering College",
+        caption: "Hostel wardens",
+    },
+    {
+        src: asset("facilities/hostels/girls/manager.webp"),
+        alt: "Managers of the Malaprabha Ladies Hostel at Basaveshwar Engineering College",
+        caption: "Hostel managers",
+    },
+];
 
 const committeeMembers = [
     { sl: 1, name: "Shri B. C. Kengapur", designation: "Committee Chairman" },

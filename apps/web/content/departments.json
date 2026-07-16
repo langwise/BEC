@@ -10520,6 +10520,44 @@
           "file": "departments/mechanical/docs/scheme-syllabus-2022-23.pdf"
         }
       ],
+      "newsletters": [
+        {
+          "title": "Mech-Connect — June 2026",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-jun-2026.pdf"
+        },
+        {
+          "title": "Mech-Connect — May 2026",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-may-2026.pdf"
+        },
+        {
+          "title": "Mech-Connect — April 2026",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-apr-2026.pdf"
+        },
+        {
+          "title": "Mech-Connect — March 2026",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "Mech-Connect — February 2026",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "Mech-Connect — January 2026",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "Mech-Connect — December 2025",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "Mech-Connect — November 2025",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-nov-2025.pdf"
+        },
+        {
+          "title": "Mech-Connect — September–October 2025 (Inaugural Issue)",
+          "file": "departments/mechanical/newsletters/mechanical-newsletter-sep-oct-2025.pdf"
+        }
+      ],
       "staffCards": true,
       "supportingStaff": [
         {
@@ -10638,136 +10676,136 @@
           "title": "Board of Studies",
           "members": [
             {
-              "name": "Dr. V. V. Kuppast — Professor & Head, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Chairperson"
+              "name": "Dr. V. V. Kuppast",
+              "position": "Chairperson — Professor & Head, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. G. H. Rathod — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Coordinator"
+              "name": "Prof. G. H. Rathod",
+              "position": "Coordinator — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. D. Mallikarjuna Reddy — Professor Grade 1, VIT, Vellore",
-              "position": "Subject Expert (VTU Nominee)"
+              "name": "Dr. D. Mallikarjuna Reddy",
+              "position": "Subject Expert (VTU Nominee) — Professor Grade 1, VIT, Vellore"
             },
             {
-              "name": "Dr. Somashekara M. A. — Associate Professor & Head, IIT, Dharwad",
-              "position": "Subject Expert (Outside the VTU)"
+              "name": "Dr. Somashekara M. A.",
+              "position": "Subject Expert (Outside the VTU) — Associate Professor & Head, IIT, Dharwad"
             },
             {
-              "name": "Dr. Madeva Nagaral — Manager (Design), HAL, Bangalore",
-              "position": "Subject Expert (Outside the VTU)"
+              "name": "Dr. Madeva Nagaral",
+              "position": "Subject Expert (Outside the VTU) — Manager (Design), HAL, Bangalore"
             },
             {
-              "name": "Dr. S. Gomathy Venkateshwaran — Chief Executive Officer, Fuego Health and Furniture LLP, Bengaluru",
-              "position": "Industry Representative"
+              "name": "Dr. S. Gomathy Venkateshwaran",
+              "position": "Industry Representative — Chief Executive Officer, Fuego Health and Furniture LLP, Bengaluru"
             },
             {
-              "name": "Mr. Bharath R. — Head PPC and Manufacturing Excellence, Tata Hitachi Construction Machinery Co. Pvt. Ltd., Dharwad",
-              "position": "Industry Representative"
+              "name": "Mr. Bharath R.",
+              "position": "Industry Representative — Head PPC and Manufacturing Excellence, Tata Hitachi Construction Machinery Co. Pvt. Ltd., Dharwad"
             },
             {
-              "name": "Dr. Vijayakumar Hiremath — Director and CEO, CADMAXX Aeronautics Pvt. Ltd., Bengaluru",
-              "position": "Industry Representative"
+              "name": "Dr. Vijayakumar Hiremath",
+              "position": "Industry Representative — Director and CEO, CADMAXX Aeronautics Pvt. Ltd., Bengaluru"
             },
             {
-              "name": "Mr. Vinayak Kotikal — General Manager, Bosch India, Chennai",
-              "position": "Alumni Representative"
+              "name": "Mr. Vinayak Kotikal",
+              "position": "Alumni Representative — General Manager, Bosch India, Chennai"
             },
             {
-              "name": "Mr. Balachandra Bingi — Senior Manager, Odin School Edutech Pvt. Ltd, Hyderabad",
-              "position": "Alumni Representative"
+              "name": "Mr. Balachandra Bingi",
+              "position": "Alumni Representative — Senior Manager, Odin School Edutech Pvt. Ltd, Hyderabad"
             },
             {
-              "name": "Prof. S. B. Wadawadgi — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. S. B. Wadawadgi",
+              "position": "Member — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. H. M. Kadlimatti — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Dr. H. M. Kadlimatti",
+              "position": "Member — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. V. P. Girisagar — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. V. P. Girisagar",
+              "position": "Member — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. S. G. Saraganachari — Professor (CAS), Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Dr. S. G. Saraganachari",
+              "position": "Member — Professor (CAS), Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. R. V. Kurahatti — Professor (CAS), Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Dr. R. V. Kurahatti",
+              "position": "Member — Professor (CAS), Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. S. C. Yali — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. S. C. Yali",
+              "position": "Member — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. M. M. G. Math — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. M. M. G. Math",
+              "position": "Member — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. H. R. Patil — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. H. R. Patil",
+              "position": "Member — Associate Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. B. R. Endigeri — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. B. R. Endigeri",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. S. M. Jigajinni — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Dr. S. M. Jigajinni",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. M. C. Goudar — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Dr. M. C. Goudar",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. B. S. Vivekanand — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. B. S. Vivekanand",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. K. D. Aswale — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. K. D. Aswale",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. R. S. Naik — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Dr. R. S. Naik",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. A. N. Sonnad — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Dr. A. N. Sonnad",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. P. C. Kolur — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. P. C. Kolur",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. S. S. Davanageri — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. S. S. Davanageri",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. P. B. Bajantri — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. P. B. Bajantri",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. R. S. Matti — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. R. S. Matti",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Prof. S. J. Sanjay — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Prof. S. J. Sanjay",
+              "position": "Member — Assistant Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Dr. M. S. Hebbal — Professor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Dr. M. S. Hebbal",
+              "position": "Member — Professor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Mr. Jagadish Honnihal — Instructor, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Mr. Jagadish Honnihal",
+              "position": "Member — Instructor, Dept. of Mechanical Engineering, BEC, Bagalkote"
             },
             {
-              "name": "Mr. Huchesh Bugati — Final Year Student, Dept. of Mechanical Engineering, BEC, Bagalkote",
-              "position": "Member"
+              "name": "Mr. Huchesh Bugati",
+              "position": "Member — Final Year Student, Dept. of Mechanical Engineering, BEC, Bagalkote"
             }
           ]
         },
@@ -10775,12 +10813,12 @@
           "title": "Board of Examiners",
           "members": [
             {
-              "name": "Dr. V. V. Kuppast — Professor (CAS) & Head, Dept. of Mechanical Engineering, Basaveshwar Engineering College, Bagalkote",
-              "position": "Chairman"
+              "name": "Dr. V. V. Kuppast",
+              "position": "Chairman — Professor (CAS) & Head, Dept. of Mechanical Engineering, Basaveshwar Engineering College, Bagalkote"
             },
             {
-              "name": "Dr. R. S. Naik — Assistant Professor, Dept. of Mechanical Engineering, Basaveshwar Engineering College, Bagalkote",
-              "position": "Coordinator"
+              "name": "Dr. R. S. Naik",
+              "position": "Coordinator — Assistant Professor, Dept. of Mechanical Engineering, Basaveshwar Engineering College, Bagalkote"
             }
           ]
         }
@@ -10894,7 +10932,17 @@
       "tagline": "A centre of excellence for education and research in physics.",
       "established": "1963",
       "visionMissionOnHome": true,
-      "overview": "The Physics department was started with the inception of the college in 1963 and has well-equipped laboratories. Students excel under the guidance of qualified and dedicated staff, and faculty and student development programmes are organised regularly. The department has been a recognised Research Centre of VTU, Belagavi since 2013, with research focused on material science and magnetoelectric composites. At present six faculty and four supporting staff work in the department, actively engaged in teaching undergraduate students and pursuing research.",
+      "overview": "The Department of Physics serves as the foundation of engineering education. Established in 1963 with the inception of the college, it has well-equipped laboratories where students excel under the guidance of qualified and dedicated staff, and faculty and student development programmes are organised regularly. The department has been a recognised Research Centre of VTU, Belagavi since 2013, with research focused on material science and magnetoelectric composites. At present six faculty and four supporting staff work in the department, actively engaged in teaching undergraduate students and pursuing research.",
+      "overviewImage": "departments/physics/cine1960.webp",
+      "overviewImageCaption": "Department Faculty & Supporting Staff",
+      "galleryExclude": [
+        "cine1960"
+      ],
+      "hodMessage": {
+        "name": "Prof. Ratnaprabha P. Araganji",
+        "designation": "Associate Professor & Head, Department of Physics",
+        "image": "departments/physics/faculty/ratnaprabha-p-araganji.webp"
+      },
       "vision": "To be recognized as a centre of excellence for education and research in the field of physics.",
       "mission": [
         "Pursue excellence by imparting education in physics through a student-centric, dynamic teaching-learning process.",
@@ -17523,8 +17571,33 @@
     "mba": {
       "name": "Master of Business Administration (MBA)",
       "assetSlug": "mba",
-      "facultyGroupPhoto": "departments/mba/cine2185.webp",
-      "facultyGroupPhotoCaption": "Teaching Faculty",
+      "visionMissionOnHome": true,
+      "overviewImage": "departments/mba/cine2185.webp",
+      "overviewImageCaption": "Teaching Faculty",
+      "galleryExclude": [
+        "infrastructure-lab"
+      ],
+      "sectionOrder": [
+        "home",
+        "about",
+        "academics",
+        "curriculum",
+        "faculty",
+        "staff",
+        "governance",
+        "research",
+        "research-achievements",
+        "alumni",
+        "placements",
+        "facilities",
+        "activities",
+        "association",
+        "mou",
+        "life-at-doms",
+        "photo-gallery",
+        "newsletters",
+        "contact"
+      ],
       "hodMessage": {
         "message": "Welcome to the Department of Master of Business Administration (MBA), Basaveshwar Engineering College, Bagalkot.\n\nOur MBA program is committed to nurturing competent, ethical, and innovative management professionals who can excel in today's dynamic global business environment. We strive to provide a balanced blend of academic excellence, industry exposure, research orientation, and value-based education that empowers students to become future-ready leaders and entrepreneurs.\n\nThe department adopts a student-centric approach to learning through case studies, experiential learning, live projects, internships, industry interactions, seminars, workshops, certification programs, and management fests. Our experienced faculty members are dedicated to developing students' analytical, decision-making, communication, leadership, and entrepreneurial skills.\n\nWe believe that management education extends beyond classrooms. Therefore, we encourage students to actively participate in co-curricular and extracurricular activities, social initiatives, innovation, and lifelong learning. Strong industry collaborations and placement support further ensure that our graduates are well-prepared to meet the evolving demands of organizations.\n\nAt Basaveshwar Engineering College, we are committed to creating an environment that fosters integrity, professionalism, innovation, and social responsibility. We invite aspiring students, parents, alumni, recruiters, and other stakeholders to explore the opportunities offered by our department and join us in our pursuit of excellence in management education.\n\nI warmly welcome you to the Department of MBA and wish you a rewarding and successful academic journey.",
         "name": "Dr. Vinod S. Puranik",
@@ -17621,19 +17694,35 @@
       ],
       "newsletters": [
         {
-          "title": "MBA Newsletter — November 2025",
+          "title": "Insight — November 2025",
           "file": "departments/mba/newsletters/mba-newsletter-nov-2025.pdf"
         },
         {
-          "title": "MBA Newsletter — April 2026",
+          "title": "Insight — 3rd Edition, December 2025",
+          "file": "departments/mba/newsletters/mba-newsletter-dec-2025.pdf"
+        },
+        {
+          "title": "Insight — 4th Edition, January 2026",
+          "file": "departments/mba/newsletters/mba-newsletter-jan-2026.pdf"
+        },
+        {
+          "title": "Insight — 5th Edition, February 2026",
+          "file": "departments/mba/newsletters/mba-newsletter-feb-2026.pdf"
+        },
+        {
+          "title": "Insight — 6th Edition, March 2026",
+          "file": "departments/mba/newsletters/mba-newsletter-mar-2026.pdf"
+        },
+        {
+          "title": "Insight — 7th Edition, April 2026",
           "file": "departments/mba/newsletters/mba-newsletter-apr-2026.pdf"
         },
         {
-          "title": "MBA Newsletter — May 2026",
+          "title": "Insight — 8th Edition, May 2026",
           "file": "departments/mba/newsletters/mba-newsletter-may-2026.pdf"
         },
         {
-          "title": "MBA Newsletter — June 2026",
+          "title": "Insight — 9th Edition, June 2026",
           "file": "departments/mba/newsletters/mba-newsletter-jun-2026.pdf"
         }
       ],

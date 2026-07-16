@@ -221,15 +221,12 @@
           },
           "hodMessage": {
             "type": "object",
-            "description": "Message from the Head of Department, shown on the Home tab.",
-            "required": [
-              "message"
-            ],
+            "description": "Head of Department block. Renders the byline and photo alone when no message is supplied.",
             "additionalProperties": false,
             "properties": {
               "message": {
                 "type": "string",
-                "description": "The HOD's message body."
+                "description": "The HOD's message body. Omit to show only the photo and byline."
               },
               "name": {
                 "type": "string",
