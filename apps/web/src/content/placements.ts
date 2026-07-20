@@ -29,7 +29,14 @@ export type PlacementBatch = {
 };
 
 /** A single bar in the placement-offers chart. */
-export type PlacementOffersPoint = { year: string; offers: number; note?: string };
+export type PlacementOffersPoint = {
+  year: string;
+  offers?: number;
+  note?: string;
+  students?: number;
+  placed?: number;
+  higherStudy?: number;
+};
 
 /** Year-wise placement-offers bar chart (department's own published figures). */
 export type PlacementOffersChart = {

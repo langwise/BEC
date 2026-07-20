@@ -101,6 +101,12 @@ export default async function DepartmentPage({
     notFound();
   }
 
+  // Check if this section has a redirectUrl configured
+  const resolvedSection = dept.sections?.find((s) => s.id === resolved.id);
+  if (resolvedSection && "redirectUrl" in resolvedSection && resolvedSection.redirectUrl) {
+    redirect(resolvedSection.redirectUrl);
+  }
+
   // The default section is reachable at the base URL; keep one URL per section.
   if (resolved.isDefault && section?.length) {
     redirect(departmentHref(type as DepartmentType, slug));

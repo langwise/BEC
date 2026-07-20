@@ -166,15 +166,17 @@ function BestPracticesBlock({
 function HodMessageBlock({ hodMessage }: { hodMessage: NonNullable<DepartmentData["hodMessage"]> }) {
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8">
-      <h2 className="mb-6 text-2xl font-bold tracking-tight text-gray-900">Head of the Department</h2>
+      <h2 className="mb-6 text-2xl font-bold tracking-tight text-gray-900">
+        {hodMessage.title ?? "Head of the Department"}
+      </h2>
       <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-8">
         {hodMessage.image && (
-          <div className="relative mx-auto aspect-[3/4] w-40 shrink-0 overflow-hidden rounded-xl bg-stone-100 shadow-sm ring-1 ring-stone-200 sm:mx-0 sm:w-44">
+          <div className="relative mx-auto aspect-[900/777] w-56 shrink-0 overflow-hidden rounded-xl bg-stone-100 shadow-sm ring-1 ring-stone-200 sm:mx-0 sm:w-64">
             <Image
               src={hodMessage.image.src}
               alt={hodMessage.image.alt}
               fill
-              sizes="(min-width: 640px) 176px, 160px"
+              sizes="(min-width: 640px) 256px, 224px"
               className="object-cover object-top"
             />
           </div>
@@ -365,7 +367,7 @@ function DataGrid({ table, framed = true }: { table: DataTable; framed?: boolean
               {row.map((cell, cellIndex) => (
                 <td
                   key={`${table.title}-${rowIndex}-${cellIndex}`}
-                  className="min-w-[180px] px-4 py-3 leading-relaxed text-stone-700 first:font-medium first:text-gray-900"
+                  className="min-w-[180px] px-4 py-3 leading-relaxed text-stone-700 first:font-medium first:text-gray-900 whitespace-pre-line"
                 >
                   {cell || "-"}
                 </td>
@@ -478,14 +480,14 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                         icon="book"
                     />
                 )}
-                {/* HoD message + lead photo — relocated under About when Vision & Mission are on Home */}
-                {!dept.visionMissionOnHome && dept.hodMessage && (
+                {/* HoD message + lead photo — relocated under About when Vision & Mission are on Home or hodMessageUnderAbout is true */}
+                {((!dept.visionMissionOnHome && !dept.hodMessageUnderAbout) || dept.hideAboutTab) && dept.hodMessage && (
                     <HodMessageBlock hodMessage={dept.hodMessage} />
                 )}
-                {!dept.visionMissionOnHome && dept.overview.image && (
+                {((!dept.visionMissionOnHome && (!dept.hodMessageUnderAbout || dept.overviewImageOnHome)) || dept.hideAboutTab) && dept.overview.image && (
                     <OverviewPhoto
                         image={dept.overview.image}
-                        className={dept.hodMessage ? "mt-8 mb-12" : "-mt-4 mb-12"}
+                        className={`${(dept.hodMessage && !dept.hodMessageUnderAbout) ? "mt-8 mb-12" : "-mt-4 mb-12"} ${dept.slug === "civil-engg" ? "max-w-4xl mx-auto" : ""}`}
                     />
                 )}
                 {/* Milestones stand in for Highlights on Home when milestonesOnHome is set */}
@@ -497,7 +499,7 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                     />
                 )}
                 {/* Highlights — hidden on Home when moved under About */}
-                {!dept.visionMissionOnHome && !dept.milestonesOnHome && (
+                {(!dept.visionMissionOnHome || dept.hideAboutTab) && !dept.milestonesOnHome && (
                     <HighlightsBlock highlights={dept.highlights} />
                 )}
                 {!dept.bestPracticesUnderAbout &&
@@ -518,6 +520,13 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
     if (activeSectionId === "about") {
         return (
              <div className="grid grid-cols-1 gap-8">
+                {dept.hodMessageUnderAbout && dept.hodMessage && (
+                    <HodMessageBlock hodMessage={dept.hodMessage} />
+                )}
+                {dept.hodMessageUnderAbout && !dept.overviewImageOnHome && dept.overview.image && (
+                    <OverviewPhoto image={dept.overview.image} />
+                )}
+
                 {dept.about?.content && (
                     <ContentSection
                         title={dept.about.title}
@@ -530,7 +539,7 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
 
                 {dept.visionMissionOnHome ? (
                     <>
-                        {dept.hodMessage && <HodMessageBlock hodMessage={dept.hodMessage} />}
+                        {!dept.hodMessageUnderAbout && dept.hodMessage && <HodMessageBlock hodMessage={dept.hodMessage} />}
                         {dept.overview.image && <OverviewPhoto image={dept.overview.image} />}
                         <HighlightsBlock highlights={dept.highlights} />
                     </>
@@ -577,6 +586,21 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                     (dept.bestPractices?.length || dept.bestPracticesList?.length) && (
                         <BestPracticesBlock documents={dept.bestPractices} list={dept.bestPracticesList} />
                     )}
+
+                {dept.groupPhotosUnderAbout && (
+                    <div className="space-y-8 pt-4">
+                        {dept.facultyGroupPhoto && (
+                            <div className={dept.slug === "civil-engg" ? "max-w-3xl mx-auto" : "max-w-xl mx-auto"}>
+                                <GroupPhotoBanner image={dept.facultyGroupPhoto} />
+                            </div>
+                        )}
+                        {dept.staffGroupPhoto && dept.slug !== "civil-engg" && (
+                            <div className="max-w-xl mx-auto">
+                                <GroupPhotoBanner image={dept.staffGroupPhoto} />
+                            </div>
+                        )}
+                    </div>
+                )}
             </div>
         )
     }
@@ -636,15 +660,15 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
          }
          if (activeSection.type === "tables") {
              return (
-                 <div className="space-y-8">
-                     {activeSection.placementChart && (
-                         <PlacementOffersChart chart={activeSection.placementChart} />
-                     )}
-                     {activeSection.imageGroups && activeSection.imageGroups.length > 0 && (
-                         <ImageGroups groups={activeSection.imageGroups} />
-                     )}
-                     <DepartmentTables title={activeSection.title} tables={activeSection.tables} />
-                     {activeSection.groupPhoto && <GroupPhotoBanner image={activeSection.groupPhoto} />}
+                  <div className="space-y-8">
+                      {activeSection.placementChart && (
+                          <PlacementOffersChart chart={activeSection.placementChart} />
+                      )}
+                      <DepartmentTables title={activeSection.title} tables={activeSection.tables} />
+                      {activeSection.imageGroups && activeSection.imageGroups.length > 0 && (
+                          <ImageGroups groups={activeSection.imageGroups} />
+                      )}
+                      {activeSection.groupPhoto && <GroupPhotoBanner image={activeSection.groupPhoto} />}
                      <SectionEmbeds documents={activeSection.embeds} />
                      <SectionAttachments documents={activeSection.attachments} />
                  </div>

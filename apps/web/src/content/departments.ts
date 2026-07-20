@@ -29,7 +29,7 @@ export type DepartmentContent = {
   /** Caption rendered below the overview lead image (e.g. "Teaching Faculty"). */
   overviewImageCaption?: string;
   /** Message from the Head of Department, shown on the Home tab. */
-  hodMessage?: { message?: string; name?: string; designation?: string; image?: string };
+  hodMessage?: { title?: string; message?: string; name?: string; designation?: string; image?: string };
   about?: string;
   /** Asset key for a lead image shown above the "About Department" body (e.g. the teaching-faculty group photo). */
   aboutImage?: string;
@@ -108,9 +108,19 @@ export type DepartmentContent = {
   phdsAwarded?: { scholar: string; guide: string; title: string; year: string }[];
   researchScholars?: { scholar: string; usn?: string; guide: string; title?: string; status: string }[];
   researchGrants?: { title: string; agency: string; year: string; amount: string; investigators: string }[];
-  labs?: { name: string; description?: string; features?: string[]; images?: string[]; feature?: boolean }[];
+  labs?: {
+    name: string;
+    description?: string;
+    features?: string[];
+    images?: string[];
+    feature?: boolean;
+    items?: (string | { label: string; value?: string; image?: string })[];
+    table?: { title: string; columns: string[]; rows: string[][] };
+  }[];
   /** When true, the Ph.D.s/Scholars/Grants tables render inside the Research tab and no standalone "Research Achievements" tab is emitted. */
   achievementsUnderResearch?: boolean;
+  /** When true, removes the Research / Research Achievements tab entirely. */
+  hideResearchTab?: boolean;
   /** When true, `labs` render on the Facilities tab and the equipment/software tables move into the Research tab instead. */
   labsUnderFacilities?: boolean;
   /** Labs shown under the Infrastructure tab (title + caption + images), separate from `labs` which render under Research. */
@@ -139,6 +149,9 @@ export type DepartmentContent = {
     members: { name: string; position: string }[];
   }[];
   infrastructureItems?: { name: string; specification?: string; quantity?: string }[];
+  /** Free-form tables shown under the Facilities tab (Infrastructure Details). */
+  facilitiesTables?: { title: string; columns: string[]; rows: string[][] }[];
+  laboratories?: { name: string; area?: string }[];
   /** Plain list of research-laboratory names shown as a leading table in the Facilities section. */
   researchLaboratories?: string[];
   softwareItems?: { name: string; version?: string; usage?: string }[];
@@ -161,15 +174,21 @@ export type DepartmentContent = {
     /** Group photo of the association's office bearers, shown as a captioned banner at the end of the section. */
     photo?: string;
     photoCaption?: string;
-    coordinators?: string[];
+    coordinators?: (string | { name: string; designation?: string; email?: string; phone?: string; photo?: string })[];
     /** Student executive committee (exicom) — office bearers and the positions they hold. */
-    exicom?: { name: string; position: string }[];
+    exicom?: { name: string; position: string; photo?: string }[];
     /** Coordinator teams listed by category (e.g. Technical, Program, Sports, Cultural, Media). */
-    exicomGroups?: { title: string; members: string[] }[];
+    exicomGroups?: {
+      title: string;
+      members?: (string | { label: string; value?: string; image?: string })[];
+      table?: { title: string; columns: string[]; rows: string[][] };
+    }[];
     /** Asset keys for an activity-highlights photo gallery shown at the end of the section. */
     gallery?: string[];
     /** Events organised by the association (name + date + coordinators), shown as a list. */
     events?: { title: string; date?: string; coordinators?: string }[];
+    contact?: { name: string; designation?: string; department?: string; college?: string; location?: string; email?: string; phone?: string; photo?: string };
+    documents?: { title: string; file: string }[];
   }[];
   mous?: { partner: string; location?: string; since?: string }[];
   /** Asset keys for MoU signing photos, shown as a gallery under the MoUs section. */
@@ -199,6 +218,29 @@ export type DepartmentContent = {
     icon?: string;
     content?: string;
     items?: string[];
+    groups?: {
+      subtitle?: string;
+      text?: string;
+      items?: (string | { label: string; value?: string })[];
+      images?: string[];
+      featureImages?: boolean;
+      largeImages?: boolean;
+      table?: {
+        title: string;
+        columns: string[];
+        rows: string[][];
+        collapsed?: boolean;
+      };
+    }[];
+    tables?: {
+      title: string;
+      columns: string[];
+      rows: string[][];
+      collapsed?: boolean;
+    }[];
+    groupPhoto?: string;
+    groupPhotoCaption?: string;
+    redirectUrl?: string;
     embeds?: { title: string; file: string }[];
     documents?: { title: string; file: string }[];
   }[];
@@ -208,6 +250,14 @@ export type DepartmentContent = {
   bestPracticesList?: { practice: string; year?: string }[];
   /** Move the Best Practices block out of the Home tab and under "About Department". */
   bestPracticesUnderAbout?: boolean;
+  /** Move the HoD message and lead photo out of the Home tab and under "About Department". */
+  hodMessageUnderAbout?: boolean;
+  /** Move the faculty & staff group photos to the About Department tab. */
+  groupPhotosUnderAbout?: boolean;
+  /** When true, keeps the overview image on the Home tab even if the HOD message is moved to About. */
+  overviewImageOnHome?: boolean;
+  /** When true, removes the About Department tab/sidebar link entirely. */
+  hideAboutTab?: boolean;
   /**
    * Explicit whitelist + ordering of sidebar entries, by section id ("home" and
    * "about" included). Ids absent from the list are dropped entirely; without it

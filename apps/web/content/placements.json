@@ -4180,6 +4180,30 @@
           "percent": "75"
         }
       ],
+      "offersChart": {
+        "title": "Students' Placement",
+        "yAxisLabel": "Number of Students",
+        "points": [
+          {
+            "year": "2023-24",
+            "students": 110,
+            "placed": 81,
+            "higherStudy": 1
+          },
+          {
+            "year": "2022-23",
+            "students": 103,
+            "placed": 77,
+            "higherStudy": 1
+          },
+          {
+            "year": "2021-22",
+            "students": 125,
+            "placed": 86,
+            "higherStudy": 4
+          }
+        ]
+      },
       "batches": []
     },
     "mba": {
