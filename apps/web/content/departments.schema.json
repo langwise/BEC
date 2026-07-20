@@ -224,6 +224,10 @@
             "description": "Head of Department block. Renders the byline and photo alone when no message is supplied.",
             "additionalProperties": false,
             "properties": {
+              "title": {
+                "type": "string",
+                "description": "Optional title for the HOD message block."
+              },
               "message": {
                 "type": "string",
                 "description": "The HOD's message body. Omit to show only the photo and byline."
@@ -376,6 +380,14 @@
             "type": "boolean",
             "description": "When true, the Ph.D.s/Scholars/Grants tables render inside the Research tab and no standalone Research Achievements tab is shown."
           },
+          "hideResearchTab": {
+            "type": "boolean",
+            "description": "When true, removes the Research / Research Achievements tab entirely."
+          },
+          "hideAboutTab": {
+            "type": "boolean",
+            "description": "When true, removes the About Department tab/sidebar link entirely."
+          },
           "infrastructureLabs": {
             "type": "array",
             "description": "Labs shown under the Infrastructure tab (title + caption + images), separate from `labs` which render under Research.",
@@ -496,6 +508,39 @@
                 },
                 "quantity": {
                   "type": "string"
+                }
+              }
+            }
+          },
+          "facilitiesTables": {
+            "type": "array",
+            "description": "Free-form tables shown under the Facilities tab (Infrastructure Details).",
+            "items": {
+              "type": "object",
+              "required": [
+                "title",
+                "columns",
+                "rows"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "columns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "rows": {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -776,6 +821,138 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "groups": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "subtitle": {
+                        "type": "string"
+                      },
+                      "text": {
+                        "type": "string"
+                      },
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "required": ["label"],
+                              "additionalProperties": false,
+                              "properties": {
+                                "label": {
+                                  "type": "string"
+                                },
+                                "value": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "images": {
+                        "type": "array",
+                        "items": {
+                          "allOf": [
+                            {
+                              "$ref": "./_schema/asset-keys.json"
+                            }
+                          ]
+                        }
+                      },
+                      "featureImages": {
+                        "type": "boolean"
+                      },
+                      "largeImages": {
+                        "type": "boolean"
+                      },
+                      "table": {
+                        "type": "object",
+                        "required": ["title", "columns", "rows"],
+                        "additionalProperties": false,
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "columns": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "rows": {
+                            "type": "array",
+                            "items": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "collapsed": {
+                            "type": "boolean"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "tables": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["title", "columns", "rows"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "columns": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "rows": {
+                        "type": "array",
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "collapsed": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                },
+                "groupPhoto": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ],
+                  "description": "Image asset key on R2 (autocompletes)."
+                },
+                 "groupPhotoCaption": {
+                  "type": "string"
+                },
+                "redirectUrl": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ],
+                  "description": "Redirection target key on R2 (autocompletes)."
                 },
                 "embeds": {
                   "type": "array",

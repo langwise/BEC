@@ -233,7 +233,7 @@
         "name": "Prof. Rajshekhar S. Allurkar",
         "designation": "Associate Professor",
         "cv": "departments/eee/faculty/cv/rajshekhar-s-allurkar.pdf",
-        "photo": "departments/eee/faculty/rajshekhar-s-allurkar.webp"
+        "photo": "departments/eee/faculty/rajshekhar-s-allurkar-v2.webp"
       },
       {
         "name": "Dr. Basanagouda Ronad",
@@ -282,6 +282,11 @@
         "designation": "Assistant Professor",
         "cv": "departments/eee/faculty/cv/apoorva-kulkarni.pdf",
         "photo": "departments/eee/faculty/apoorva-kulkarni.webp"
+      },
+      {
+        "name": "Prof. S. M. Iddalagi",
+        "designation": "Associate Professor",
+        "photo": "departments/eee/faculty/s-m-iddalagi.webp"
       }
     ],
     "mathematics": [
@@ -440,7 +445,8 @@
       },
       {
         "name": "Mr. B. S. Haravi",
-        "designation": "Associate Professor"
+        "designation": "Associate Professor",
+        "photo": "departments/civil/faculty/b-s-haravi.webp"
       },
       {
         "name": "Mr. Sunilkumar.M. Kalagudi",
@@ -487,17 +493,20 @@
       {
         "name": "Mr. D. B. Sajjanar",
         "designation": "Assistant Professor",
-        "photo": "departments/civil/faculty/d-b-sajjanar.webp"
+        "photo": "departments/civil/faculty/d-b-sajjanar.webp",
+        "cv": "departments/civil/faculty/cv/d-b-sajjanar.pdf"
       },
       {
         "name": "Mr. Kiran Koraddi",
         "designation": "Assistant Professor",
-        "photo": "departments/civil/faculty/kiran-koraddi.webp"
+        "photo": "departments/civil/faculty/kiran-koraddi.webp",
+        "cv": "departments/civil/faculty/cv/kiran-koraddi.pdf"
       },
       {
-        "name": "Mr. Kushnappa K",
+        "name": "Mr. Kushnappa B Kenchakanavar",
         "designation": "Assistant Professor",
-        "photo": "departments/civil/faculty/kushnappa-k.webp"
+        "photo": "departments/civil/faculty/kushnappa-k.webp",
+        "cv": "departments/civil/faculty/cv/kushnappa-k.pdf"
       },
       {
         "name": "Mr. Shashikant A Kambali",
@@ -528,6 +537,12 @@
         "designation": "Assistant Professor",
         "cv": "departments/civil/faculty/cv/shrishail-b-chiniwalar.pdf",
         "photo": "departments/civil/faculty/shrishail-b-chiniwalar.webp"
+      },
+      {
+        "name": "Mr. Gurubasav Hiremath",
+        "designation": "Assistant Professor",
+        "photo": "departments/civil/faculty/gurubasav-hiremath.webp",
+        "cv": "departments/civil/faculty/cv/gurubasav-hiremath.pdf"
       }
     ],
     "electronics-and-communication-engg": [

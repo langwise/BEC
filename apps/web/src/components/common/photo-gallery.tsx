@@ -8,6 +8,8 @@ export type GalleryImage = {
   alt: string;
   /** Optional caption rendered below the photo. When omitted the tile shows no caption. */
   caption?: string;
+  /** Custom object position class for Next.js Image, e.g. object-top, object-[center_top] */
+  objectPosition?: string;
 };
 
 /**
@@ -54,14 +56,14 @@ export function PhotoGallery({
     return (
       <div className={cn("flex flex-col gap-4", className)}>
         {images.map((image, index) => (
-          <figure key={`${image.src}-${index}`} className="w-full max-w-3xl">
+          <figure key={`${image.src}-${index}`} className="w-full max-w-none">
             <div className="overflow-hidden rounded-lg border border-stone-200 bg-white">
               <Image
                 src={image.src}
                 alt={image.alt}
                 width={1600}
                 height={1000}
-                sizes="(max-width: 768px) 100vw, 768px"
+                sizes="(max-width: 768px) 100vw, 1200px"
                 className="h-auto w-full"
               />
             </div>
@@ -76,14 +78,17 @@ export function PhotoGallery({
     return (
       <div className={cn("flex flex-col gap-4", className)}>
         {images.map((image, index) => (
-          <figure key={`${image.src}-${index}`} className="w-full max-w-3xl">
+          <figure key={`${image.src}-${index}`} className="w-full max-w-none">
             <div className="group relative aspect-3/2 w-full overflow-hidden rounded-lg border border-stone-200 bg-stone-100">
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
                 sizes="(max-width: 768px) 100vw, 768px"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className={cn(
+                  "object-cover transition-transform duration-500 group-hover:scale-105",
+                  image.objectPosition,
+                )}
               />
             </div>
             {image.caption && <Caption>{image.caption}</Caption>}
@@ -110,7 +115,10 @@ export function PhotoGallery({
                 alt={image.alt}
                 fill
                 sizes={large ? "(max-width: 640px) 50vw, 50vw" : "(max-width: 640px) 50vw, 33vw"}
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className={cn(
+                  "object-cover transition-transform duration-500 group-hover:scale-105",
+                  image.objectPosition,
+                )}
               />
             </div>
             {image.caption && <Caption>{image.caption}</Caption>}
@@ -135,7 +143,10 @@ export function PhotoGallery({
               alt={image.alt}
               fill
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 360px"
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className={cn(
+                "object-cover transition-transform duration-500 group-hover:scale-105",
+                image.objectPosition,
+              )}
             />
           </div>
           {image.caption && <Caption>{image.caption}</Caption>}

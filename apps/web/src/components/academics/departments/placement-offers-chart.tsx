@@ -6,6 +6,7 @@ import {
   CartesianGrid,
   Cell,
   LabelList,
+  Legend,
   ResponsiveContainer,
   XAxis,
   YAxis,
@@ -97,7 +98,10 @@ function YearTick({ x = 0, y = 0, payload, points }: {
 
 export function PlacementOffersChart({ chart }: { chart: PlacementOffersChartData }) {
   const notes = chart.points.map((p) => p.note);
-  const max = Math.max(...chart.points.map((p) => p.offers), 0);
+  const isMulti = chart.points.length > 0 && "students" in chart.points[0];
+  const max = isMulti
+    ? Math.max(...chart.points.flatMap((p: any) => [p.students || 0, p.placed || 0, p.higherStudy || 0]), 0)
+    : Math.max(...chart.points.map((p) => p.offers || 0), 0);
   const niceMax = Math.max(20, Math.ceil(max / 20) * 20);
   const ticks = Array.from({ length: niceMax / 20 + 1 }, (_, i) => i * 20);
 
@@ -112,8 +116,8 @@ export function PlacementOffersChart({ chart }: { chart: PlacementOffersChartDat
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={chart.points}
-            margin={{ top: 48, right: 12, bottom: 8, left: 8 }}
-            barCategoryGap="28%"
+            margin={{ top: 24, right: 12, bottom: 8, left: 8 }}
+            barCategoryGap={isMulti ? "15%" : "28%"}
           >
             <defs>
               {PALETTE.map((c, i) => (
@@ -155,12 +159,30 @@ export function PlacementOffersChart({ chart }: { chart: PlacementOffersChartDat
                   : undefined
               }
             />
-            <Bar dataKey="offers" radius={[6, 6, 0, 0]} isAnimationActive={false} maxBarSize={90}>
-              {chart.points.map((_, i) => (
-                <Cell key={i} fill={`url(#placement-bar-${i % PALETTE.length})`} />
-              ))}
-              <LabelList dataKey="offers" content={<Callout notes={notes} />} />
-            </Bar>
+            {isMulti && <Legend verticalAlign="top" height={48} wrapperStyle={{ fontSize: 13, fontWeight: 600, paddingBottom: 16 }} />}
+            {isMulti && (
+              <Bar name="Total no. of students" dataKey="students" fill="#2F7FEA" radius={[4, 4, 0, 0]} maxBarSize={30} isAnimationActive={false}>
+                <LabelList dataKey="students" position="top" style={{ fill: '#374151', fontSize: 12, fontWeight: 700 }} />
+              </Bar>
+            )}
+            {isMulti && (
+              <Bar name="Placed" dataKey="placed" fill="#F37926" radius={[4, 4, 0, 0]} maxBarSize={30} isAnimationActive={false}>
+                <LabelList dataKey="placed" position="top" style={{ fill: '#374151', fontSize: 12, fontWeight: 700 }} />
+              </Bar>
+            )}
+            {isMulti && (
+              <Bar name="Higher study" dataKey="higherStudy" fill="#A1A1A1" radius={[4, 4, 0, 0]} maxBarSize={30} isAnimationActive={false}>
+                <LabelList dataKey="higherStudy" position="top" style={{ fill: '#374151', fontSize: 12, fontWeight: 700 }} />
+              </Bar>
+            )}
+            {!isMulti && (
+              <Bar dataKey="offers" radius={[6, 6, 0, 0]} isAnimationActive={false} maxBarSize={90}>
+                {chart.points.map((_, i) => (
+                  <Cell key={i} fill={`url(#placement-bar-${i % PALETTE.length})`} />
+                ))}
+                <LabelList dataKey="offers" content={<Callout notes={notes} />} />
+              </Bar>
+            )}
           </BarChart>
         </ResponsiveContainer>
       </div>

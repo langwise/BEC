@@ -23,8 +23,8 @@ function resolveAssetUrl(key?: string): string | undefined {
 
 import { getDepartmentPlacements, type PlacementOffersChart } from "@/content/placements";
 
-/** A two-part list entry — primary label + muted secondary detail (no dash-joining). */
-export type GroupItem = string | { label: string; value?: string };
+/** A two-part list entry — primary label + muted secondary detail (no dash-joining) + optional photo. */
+export type GroupItem = string | { label: string; value?: string; image?: string };
 
 /** A photo with alt text (and optional highlighted caption), used for inline galleries and banners. */
 export type SectionImage = { src: string; alt: string; caption?: string };
@@ -40,6 +40,7 @@ export interface ContentGroup {
   featureImages?: boolean;
   /** Render this group's images at a moderate bump (2 per row) instead of small grid tiles. */
   largeImages?: boolean;
+  table?: DataTable;
 }
 
 export interface DataTable {
@@ -81,6 +82,7 @@ export type DepartmentSection =
       icon?: string;
       attachments?: DocLink[];
       embeds?: DocLink[];
+      redirectUrl?: string;
     }
   | { id?: string; type: "faculty-list"; title: string; faculty: FacultyMember[]; compact?: boolean; groupPhoto?: SectionImage; attachments?: DocLink[]; embeds?: DocLink[] }
   | {
@@ -132,6 +134,7 @@ export type DepartmentSection =
     };
 
 export interface DepartmentData {
+  slug: string;
   name: string;
   tagline: string;
 
@@ -150,7 +153,7 @@ export interface DepartmentData {
   about?: HeaderBlock;
 
   /** Message from the Head of Department, shown on the Home tab. */
-  hodMessage?: { message?: string; name?: string; designation?: string; image?: { src: string; alt: string } };
+  hodMessage?: { title?: string; message?: string; name?: string; designation?: string; image?: { src: string; alt: string } };
 
   /** Optional "at a glance" stats row shown on the Home tab. */
   quickStats?: { label: string; value: string }[];
@@ -178,13 +181,27 @@ export interface DepartmentData {
   /** When true, the Best Practices block moves from the Home tab to "About Department". */
   bestPracticesUnderAbout?: boolean;
 
+  /** When true, the HoD message and lead photo move under "About Department". */
+  hodMessageUnderAbout?: boolean;
+
   /** When true, Home shows Vision & Mission after the overview, and the HoD message, lead photo and Highlights move under "About Department". */
   visionMissionOnHome?: boolean;
+
+  /** When true, teaching faculty & supporting staff group photos move to About Department tab. */
+  groupPhotosUnderAbout?: boolean;
+  facultyGroupPhoto?: SectionImage;
+  staffGroupPhoto?: SectionImage;
+
+  /** When true, keeps overview image on Home page instead of moving to About. */
+  overviewImageOnHome?: boolean;
+
+  /** When true, removes the About Department tab/sidebar link entirely. */
+  hideAboutTab?: boolean;
 
   /** Captioned group-photo banner shown at the very end of the Home tab (e.g. the graduating batch). */
   homeGroupPhoto?: SectionImage;
 
-  sidebar: { id: string; label: string; icon: string }[];
+  sidebar: { id: string; label: string; icon: string; externalUrl?: string }[];
 
   sections?: DepartmentSection[];
 }
@@ -272,15 +289,15 @@ function academicsGroups(content: DepartmentContent): ContentGroup[] {
   if (content.programStructure?.length)
     groups.push({ subtitle: "Programme Structure", items: content.programStructure });
   if (!content.peosPsosUnderAbout) groups.push(...academicOutcomeGroups(content));
-  if (content.wk?.length)
-    groups.push({
-      subtitle: "Knowledge and Attitude Profile (WK)",
-      items: content.wk.map((p) => `${p.code}: ${p.text}`),
-    });
   if (content.pos?.length)
     groups.push({
       subtitle: "Programme Outcomes (POs)",
       items: content.pos.map((p) => `${p.code}: ${p.text}`),
+    });
+  if (content.wk?.length)
+    groups.push({
+      subtitle: "Knowledge and Attitude Profile (WK)",
+      items: content.wk.map((p) => `${p.code}: ${p.text}`),
     });
   return groups;
 }
@@ -325,6 +342,16 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   // and the inline-under-Research layout (content.labsUnderFacilities).
   const infrastructureTables = (): DataTable[] => {
     const tables: DataTable[] = [];
+    if (content.laboratories?.length) {
+      tables.push({
+        title: "Infrastructure Details",
+        columns: ["Laboratory", "Area"],
+        rows: content.laboratories.map((lab) => [
+          lab.name,
+          lab.area ?? "",
+        ]),
+      });
+    }
     if (content.infrastructureItems?.length) {
       const hideQty = content.hideInfrastructureQuantity;
       tables.push({
@@ -428,7 +455,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       title: heading("faculty", "Teaching Faculty"),
       faculty,
       compact: content.facultyCompact,
-      groupPhoto: content.facultyGroupPhoto
+      groupPhoto: (content.facultyGroupPhoto && !content.groupPhotosUnderAbout)
         ? {
             src: asset(content.facultyGroupPhoto),
             alt: `${content.name} — teaching faculty`,
@@ -564,6 +591,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   // folded in (content.achievementsUnderResearch).
   if (
     !content.consolidateResearch &&
+    !content.hideResearchTab &&
     (content.researchAreas?.length ||
       content.labs?.length ||
       content.researchGallery?.length ||
@@ -830,20 +858,33 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       text: lab.description,
       images: labImages(lab),
       featureImages: lab.feature,
+      items: lab.items,
+      table: lab.table,
     }));
+    if (content.facilitiesTables?.length) {
+      for (const t of content.facilitiesTables) {
+        groups.push({
+          table: t,
+        });
+      }
+    }
     sections.push({
       id: "facilities",
       type: "content",
-      title: heading("facilities", "Laboratories"),
+      title: heading("facilities", "Laboratories & Research Facilities"),
       icon: "building-2",
       groups,
     });
   } else if (
+    content.facilitiesTables?.length ||
+    content.laboratories?.length ||
     content.infrastructureItems?.length ||
     content.softwareItems?.length ||
     content.researchLaboratories?.length
   ) {
-    const facilityTables = infrastructureTables();
+    const facilityTables = content.facilitiesTables?.length
+      ? [...content.facilitiesTables]
+      : infrastructureTables();
     if (content.researchLaboratories?.length) {
       facilityTables.unshift({
         title: "Research Laboratories",
@@ -906,8 +947,16 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       groups.push({ subtitle: assoc.name, text: assoc.about });
       if (assoc.coordinators?.length)
         groups.push({
-          subtitle: "Faculty Coordinators (2025–2026)",
-          items: assoc.coordinators,
+          subtitle: "Faculty Coordinators",
+          items: assoc.coordinators.map((c) =>
+            typeof c === "string"
+              ? { label: c }
+              : {
+                  label: c.name,
+                  value: [c.designation, c.email ? `Email: ${c.email}` : "", c.phone ? `Contact: ${c.phone}` : ""].filter(Boolean).join(" · "),
+                  image: c.photo ? asset(c.photo) : undefined,
+                },
+          ),
         });
       if (assoc.events?.length)
         groups.push({
@@ -920,14 +969,59 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       if (assoc.exicom?.length)
         groups.push({
           subtitle: "Association Exicoms (2025–2026)",
-          items: assoc.exicom.map((m) => ({ label: m.name, value: m.position })),
+          items: assoc.exicom.map((m) => ({
+            label: m.name,
+            value: m.position,
+            image: m.photo ? asset(m.photo) : undefined,
+          })),
         });
       for (const g of assoc.exicomGroups ?? [])
-        groups.push({ subtitle: g.title, items: g.members });
+        groups.push({
+          subtitle: g.title,
+          items: g.members?.map((m) =>
+            typeof m === "string"
+              ? { label: m }
+              : {
+                  label: m.label,
+                  value: m.value,
+                  image: m.image ? asset(m.image) : undefined,
+                },
+          ),
+          table: g.table,
+        });
       if (assoc.gallery?.length)
         groups.push({
           subtitle: "Activity Highlights",
           images: assoc.gallery.map((key) => ({ src: asset(key), alt: `${assoc.name} activity` })),
+        });
+      if (assoc.documents?.length) {
+        groups.push({
+          subtitle: "Reports & Documents",
+          items: assoc.documents.map((d) => ({
+            label: d.title,
+            value: asset(d.file),
+          })),
+        });
+      }
+      if (assoc.contact)
+        groups.push({
+          subtitle: "Chapter Contact & Inquiries",
+          items: [
+            {
+              label: assoc.contact.name,
+              value: [
+                assoc.contact.designation,
+                assoc.contact.department,
+                assoc.contact.college,
+                assoc.contact.location,
+                assoc.contact.email ? `Email: ${assoc.contact.email}` : undefined,
+                assoc.contact.phone ? `Phone: ${assoc.contact.phone}` : undefined,
+              ]
+                .filter(Boolean)
+                .join("\n"),
+              image: assoc.contact.photo ? asset(assoc.contact.photo) : undefined,
+            },
+          ],
         });
     }
     if (foldActivitiesIntoAssociation) groups.push(...activityGroups);
@@ -935,12 +1029,15 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     const groupPhoto = assocPhoto?.photo
       ? { src: asset(assocPhoto.photo), alt: assocPhoto.photoCaption ?? assocPhoto.name, caption: assocPhoto.photoCaption }
       : undefined;
+    const assocDocs = content.associations.flatMap((a) => a.documents ?? []);
+    const docLinks = resolveDocuments(assocDocs);
     sections.push({
       id: "association",
       type: "content",
-      title: heading("association", foldActivitiesIntoAssociation ? "Association & Activities" : "Association"),
+      title: heading("association", foldActivitiesIntoAssociation ? "Association & Activities" : "Associations"),
       icon: "users",
       groups,
+      attachments: docLinks?.length ? docLinks : undefined,
       groupPhoto,
     });
   }
@@ -1050,7 +1147,32 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     for (const cs of content.customSections) {
       const embeds = resolveDocuments(cs.embeds);
       const attachments = resolveDocuments(cs.documents);
-      if (!cs.content && !cs.items?.length && !embeds.length && !attachments.length) continue;
+      const tables = cs.tables?.map((t) => ({
+        title: t.title,
+        columns: t.columns,
+        rows: t.rows,
+        collapsed: t.collapsed,
+      }));
+      const groups = cs.groups?.map((g) => ({
+        subtitle: g.subtitle,
+        text: g.text,
+        items: g.items,
+        images: g.images?.map((key) => ({ src: asset(key), alt: g.subtitle ?? cs.title })),
+        featureImages: g.featureImages,
+        largeImages: g.largeImages,
+        table: g.table ? {
+          title: g.table.title,
+          columns: g.table.columns,
+          rows: g.table.rows,
+          collapsed: g.table.collapsed,
+        } : undefined,
+      }));
+      const groupPhoto = cs.groupPhoto
+        ? { src: asset(cs.groupPhoto), alt: cs.title, caption: cs.groupPhotoCaption }
+        : undefined;
+      const redirectUrl = cs.redirectUrl ? asset(cs.redirectUrl) : undefined;
+
+      if (!cs.content && !cs.items?.length && !embeds.length && !attachments.length && !tables && !groups && !cs.redirectUrl) continue;
       sections.push({
         id: cs.id,
         type: "content",
@@ -1058,6 +1180,10 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         content: cs.content,
         items: cs.items,
         icon: cs.icon ?? "calendar",
+        groups,
+        tables,
+        groupPhoto,
+        redirectUrl,
         ...(embeds.length ? { embeds } : {}),
         ...(attachments.length ? { attachments } : {}),
       });
@@ -1144,10 +1270,10 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
   // Sidebar derived from the content that actually exists. The Home/About labels
   // accept per-department overrides (e.g. Mechanical relabels them
   // "About Department" / "Vision and Mission").
-  const sidebar = [
+  const sidebar: { id: string; label: string; icon: string; externalUrl?: string }[] = [
     { id: "home", label: content?.sectionNavLabels?.home ?? "Home", icon: content?.sectionIcons?.home ?? "home" },
   ];
-  if (content?.about || content?.vision || content?.mission?.length || content?.peosPsosUnderAbout)
+  if ((content?.about || content?.vision || content?.mission?.length || content?.peosPsosUnderAbout) && !content?.hideAboutTab)
     sidebar.push({
       id: "about",
       label: content?.sectionNavLabels?.about ?? "About Department",
@@ -1189,7 +1315,8 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     if (meta) {
       const label = (section.id && content?.sectionNavLabels?.[section.id]) || meta.label;
       const icon = (section.id && content?.sectionIcons?.[section.id]) || meta.icon;
-      sidebar.push({ id: section.id!, label, icon });
+      const externalUrl = section.type === "content" && section.redirectUrl ? section.redirectUrl : undefined;
+      sidebar.push({ id: section.id!, label, icon, externalUrl });
     }
   }
 
@@ -1262,6 +1389,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     })(),
     hodMessage: content?.hodMessage
       ? {
+          title: content.hodMessage.title,
           message: content.hodMessage.message,
           name: content.hodMessage.name,
           designation: content.hodMessage.designation,
@@ -1294,7 +1422,25 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
     bestPracticesList: content?.bestPracticesList,
     bestPracticesUnderAbout: content?.bestPracticesUnderAbout,
-    visionMissionOnHome: content?.visionMissionOnHome,
+    hodMessageUnderAbout: content?.hodMessageUnderAbout,
+    visionMissionOnHome: content?.visionMissionOnHome || content?.hideAboutTab,
+    groupPhotosUnderAbout: content?.groupPhotosUnderAbout,
+    overviewImageOnHome: content?.overviewImageOnHome,
+    hideAboutTab: content?.hideAboutTab,
+    facultyGroupPhoto: content?.facultyGroupPhoto
+      ? {
+          src: asset(content.facultyGroupPhoto),
+          alt: content.facultyGroupPhotoCaption ?? `${name} — teaching faculty`,
+          caption: content.facultyGroupPhotoCaption,
+        }
+      : undefined,
+    staffGroupPhoto: content?.staffGroupPhoto
+      ? {
+          src: asset(content.staffGroupPhoto),
+          alt: content.staffGroupPhotoCaption ?? `${name} — supporting staff`,
+          caption: content.staffGroupPhotoCaption,
+        }
+      : undefined,
     homeGroupPhoto: content?.homeGroupPhoto
       ? {
           src: asset(content.homeGroupPhoto),
@@ -1302,6 +1448,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
           caption: content.homeGroupPhotoCaption,
         }
       : undefined,
+    slug: contentKey,
     sidebar: orderedSidebar,
     sections: orderedSections,
   };
