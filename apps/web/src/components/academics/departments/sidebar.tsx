@@ -21,6 +21,7 @@ import {
   Handshake,
   Award,
   Image as ImageIcon,
+  ExternalLink,
   LucideIcon,
 } from "lucide-react";
 
@@ -47,6 +48,7 @@ interface SidebarItem {
     id: string;
     label: string;
     icon: string;
+    externalUrl?: string;
 }
 
 interface DepartmentSidebarProps {
@@ -93,6 +95,56 @@ function SectionLinks({
         const isActive = activeId === item.id;
         const href = departmentSectionHref(basePath, item.id, defaultId);
 
+        const linkClassName = cn(
+          "group flex shrink-0 items-center text-sm font-medium transition-all duration-200",
+          "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+          variant === "sidebar"
+            ? "w-full justify-between rounded-lg px-4 py-3 text-left"
+            : "gap-2 rounded-full border px-3.5 py-2",
+          isActive
+            ? variant === "sidebar"
+              ? "bg-primary text-white shadow-md shadow-orange-200"
+              : "border-primary bg-primary text-white"
+            : variant === "sidebar"
+              ? "text-gray-600 hover:bg-orange-50 hover:text-primary"
+              : "border-stone-200 bg-white text-gray-600 hover:border-primary/40 hover:text-primary",
+        );
+
+        const innerContent = (
+          <>
+            <div className={cn("flex min-w-0 items-center", variant === "sidebar" ? "gap-3" : "gap-2")}>
+                <Icon className={cn("w-4 h-4 shrink-0", isActive ? "text-white" : "text-gray-400 group-hover:text-primary")} />
+                <span className={variant === "sidebar" ? "truncate" : "whitespace-nowrap"}>
+                  {item.label}
+                </span>
+                {item.externalUrl && (
+                  <ExternalLink className={cn("w-3 h-3 shrink-0", isActive ? "text-white/70" : "text-gray-400 group-hover:text-primary")} />
+                )}
+            </div>
+            {variant === "sidebar" && isActive && (
+              <motion.div
+                layoutId="dept-nav-indicator"
+                className="w-1.5 h-1.5 rounded-full bg-white shrink-0 ml-2"
+              />
+            )}
+          </>
+        );
+
+        // External URLs open in a new tab
+        if (item.externalUrl) {
+          return (
+            <a
+              key={item.id}
+              href={item.externalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClassName}
+            >
+              {innerContent}
+            </a>
+          );
+        }
+
         return (
           <Link
             key={item.id}
@@ -107,33 +159,9 @@ function SectionLinks({
             // Switching section keeps your place on the page; the layout pulls the
             // view back only when the section start has scrolled out of reach.
             scroll={false}
-            className={cn(
-              "group flex shrink-0 items-center text-sm font-medium transition-all duration-200",
-              "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
-              variant === "sidebar"
-                ? "w-full justify-between rounded-lg px-4 py-3 text-left"
-                : "gap-2 rounded-full border px-3.5 py-2",
-              isActive
-                ? variant === "sidebar"
-                  ? "bg-primary text-white shadow-md shadow-orange-200"
-                  : "border-primary bg-primary text-white"
-                : variant === "sidebar"
-                  ? "text-gray-600 hover:bg-orange-50 hover:text-primary"
-                  : "border-stone-200 bg-white text-gray-600 hover:border-primary/40 hover:text-primary",
-            )}
+            className={linkClassName}
           >
-            <div className={cn("flex min-w-0 items-center", variant === "sidebar" ? "gap-3" : "gap-2")}>
-                <Icon className={cn("w-4 h-4 shrink-0", isActive ? "text-white" : "text-gray-400 group-hover:text-primary")} />
-                <span className={variant === "sidebar" ? "truncate" : "whitespace-nowrap"}>
-                  {item.label}
-                </span>
-            </div>
-            {variant === "sidebar" && isActive && (
-              <motion.div
-                layoutId="dept-nav-indicator"
-                className="w-1.5 h-1.5 rounded-full bg-white shrink-0 ml-2"
-              />
-            )}
+            {innerContent}
           </Link>
         );
       })}

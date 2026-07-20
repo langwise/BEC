@@ -13,18 +13,6 @@ export const metadata = pageMetadata({
 });
 
 const galleryImages = [
-    ...[
-        "cine0540.webp",
-        "cine0547.webp",
-        "cine0562.webp",
-        "cine0593.webp",
-        "cine0513.webp",
-        "cine0509.webp",
-        "cine0495.webp",
-    ].map((file, index) => ({
-        src: asset(`facilities/hostels/girls/${file}`),
-        alt: `Malaprabha Ladies Hostel at Basaveshwar Engineering College ${index + 1}`,
-    })),
     {
         src: asset("facilities/hostels/girls/wardens.webp"),
         alt: "Wardens of the Malaprabha Ladies Hostel at Basaveshwar Engineering College",
@@ -34,7 +22,19 @@ const galleryImages = [
         src: asset("facilities/hostels/girls/manager.webp"),
         alt: "Managers of the Malaprabha Ladies Hostel at Basaveshwar Engineering College",
         caption: "Hostel managers",
+        objectPosition: "object-top",
     },
+    ...[
+        "cine0540.webp",
+        "cine0547.webp",
+        "cine0562.webp",
+        "cine0593.webp",
+        "cine0509.webp",
+        "room-highres.png",
+    ].map((file, index) => ({
+        src: asset(`facilities/hostels/girls/${file}`),
+        alt: `Malaprabha Ladies Hostel at Basaveshwar Engineering College ${index + 1}`,
+    })),
 ];
 
 const committeeMembers = [
@@ -192,7 +192,7 @@ export default function MalaprabhaBlockPage() {
                     <section className="space-y-6">
                         <div className="flex items-center gap-3 text-primary mb-4">
                             <ImageIcon className="w-6 h-6" />
-                            <h2 className="text-xl font-bold">Inside the Hostel</h2>
+                            <h2 className="text-xl font-bold">Photo Gallery</h2>
                         </div>
                         <FadeIn delay={0.1}>
                             <PhotoGallery images={galleryImages} />

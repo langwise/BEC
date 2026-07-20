@@ -343,13 +343,6 @@
           "title": "Research and Development",
           "label": "Research",
           "icon": "flask",
-          "content": "The Department of Artificial Intelligence and Machine Learning is actively engaged in multidisciplinary research addressing real-world challenges through AI-driven solutions. The department's major research focus areas include:",
-          "items": [
-            "Medical Image Analysis: AI-based diagnosis of retinal diseases, diabetic retinopathy, glaucoma, pneumonia, brain tumors, and other healthcare applications using Deep Learning and Explainable AI.",
-            "Biometrics & Document Analysis: Intelligent systems for face recognition, fingerprint recognition, signature verification, OCR, handwritten document analysis, and digital document authentication.",
-            "Smart Agriculture: AI applications for crop disease detection, yield prediction, soil analysis, precision farming, and smart irrigation using computer vision and IoT.",
-            "Faculty and students actively publish research in reputed journals and conferences, secure research grants, undertake interdisciplinary projects, and promote innovation through the Centre of Excellence (CoE) in Computer Vision, IoT, and Robotics, developing AI-driven solutions for healthcare, agriculture, and intelligent automation."
-          ],
           "documents": [
             {
               "title": "Publications (PDF)",
@@ -707,22 +700,48 @@
           "email": "cmveerendra@gmail.com"
         }
       ],
-      "documents": [
+      "curriculumGroups": [
         {
-          "title": "List of Publications (Journals & Conferences)",
-          "file": "departments/au/docs/auto-publications.pdf"
+          "title": "Scheme & Syllabus",
+          "documents": [
+            {
+              "title": "Scheme for Automobile 25-26",
+              "file": "departments/au/docs/auto-scheme-2025-26.pdf"
+            },
+            {
+              "title": "Scheme for Automobile 24-25",
+              "file": "departments/au/docs/auto-scheme-2024-25.pdf"
+            },
+            {
+              "title": "Syllabus - III to VII Semester (2025-26 Admitted Batch)",
+              "file": "departments/au/docs/auto-syllabus-2025-26.pdf"
+            },
+            {
+              "title": "Syllabus - III to VII Semester (2024-25 Admitted Batch)",
+              "file": "departments/au/docs/auto-syllabus-2024-25.pdf"
+            },
+            {
+              "title": "Scheme & Syllabus — III & IV Semester (2019-20, 175 Credits)",
+              "file": "departments/au/docs/syllabus-iii-iv-2019-20.pdf"
+            }
+          ]
         },
         {
-          "title": "Alumni Testimonials",
-          "file": "departments/au/docs/auto-alumni.pdf"
-        },
-        {
-          "title": "Scheme & Syllabus — III & IV Semester (2019-20, 175 Credits)",
-          "file": "departments/au/docs/syllabus-iii-iv-2019-20.pdf"
-        },
-        {
-          "title": "Student Association (AESA) Events",
-          "file": "departments/au/docs/association-events.pdf"
+          "title": "Publications & Reports",
+          "documents": [
+            {
+              "title": "List of Publications (Journals & Conferences)",
+              "file": "departments/au/docs/auto-publications.pdf"
+            },
+            {
+              "title": "Alumni Testimonials",
+              "file": "departments/au/docs/auto-alumni.pdf"
+            },
+            {
+              "title": "Student Association (AESA) Events",
+              "file": "departments/au/docs/association-events.pdf"
+            }
+          ]
         }
       ]
     },
@@ -775,6 +794,90 @@
         {
           "code": "PSO3",
           "text": "Graduates will be able to integrate bioethics, entrepreneurship and environmental awareness to enhance technical skills in biotechnology applications."
+        }
+      ],
+      "pos": [
+        {
+          "code": "PO1",
+          "text": "Engineering Knowledge: Apply knowledge of mathematics, natural science, computing, engineering fundamentals and an engineering specialization as specified in WK1 to WK4 respectively to develop to the solution of complex engineering problems."
+        },
+        {
+          "code": "PO2",
+          "text": "Problem Analysis: Identify, formulate, review research literature and analyze complex engineering problems reaching substantiated conclusions with consideration for sustainable development. (WK1 to WK4)"
+        },
+        {
+          "code": "PO3",
+          "text": "Design/Development of Solutions: Design creative solutions for complex engineering problems and design/develop systems/components/processes to meet identified needs with consideration for the public health and safety, whole-life cost, net zero carbon, culture, society and environment as required. (WK5)"
+        },
+        {
+          "code": "PO4",
+          "text": "Conduct Investigations of Complex Problems: Conduct investigations of complex engineering problems using research-based knowledge including design of experiments, modelling, analysis & interpretation of data to provide valid conclusions. (WK8)."
+        },
+        {
+          "code": "PO5",
+          "text": "Engineering Tool Usage: Create, select and apply appropriate techniques, resources and modern engineering & IT tools, including prediction and modelling recognizing their limitations to solve complex engineering problems. (WK2 and WK6)"
+        },
+        {
+          "code": "PO6",
+          "text": "The Engineer and The World: Analyze and evaluate societal and environmental aspects while solving complex engineering problems for its impact on sustainability with reference to economy, health, safety, legal framework, culture and environment. (WK1, WK5, and WK7)."
+        },
+        {
+          "code": "PO7",
+          "text": "Ethics: Apply ethical principles and commit to professional ethics, human values, diversity and inclusion; adhere to national & international laws. (WK9)"
+        },
+        {
+          "code": "PO8",
+          "text": "Individual and Collaborative Team work: Function effectively as an individual, and as a member or leader in diverse/multi-disciplinary teams."
+        },
+        {
+          "code": "PO9",
+          "text": "Communication: Communicate effectively and inclusively within the engineering community and society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations considering cultural, language, and learning differences"
+        },
+        {
+          "code": "PO10",
+          "text": "Project Management and Finance: Apply knowledge and understanding of engineering management principles and economic decision-making and apply these to one’s own work, as a member and leader in a team, and to manage projects and in multidisciplinary environments."
+        },
+        {
+          "code": "PO11",
+          "text": "Life-Long Learning: Recognize the need for, and have the preparation and ability for i) independent and life-long learning ii) adaptability to new and emerging technologies and iii) critical thinking in the broadest context of technological change. (WK8)"
+        }
+      ],
+      "wk": [
+        {
+          "code": "WK1",
+          "text": "A systematic, theory-based understanding of the natural sciences applicable to the discipline and awareness of relevant social sciences."
+        },
+        {
+          "code": "WK2",
+          "text": "Conceptually-based mathematics, numerical analysis, data analysis, statistics and formal aspects of computer and information science to support detailed analysis and modelling applicable to the discipline."
+        },
+        {
+          "code": "WK3",
+          "text": "A systematic, theory-based formulation of engineering fundamentals required in the engineering discipline."
+        },
+        {
+          "code": "WK4",
+          "text": "Engineering specialist knowledge that provides theoretical frameworks and bodies of knowledge for the accepted practice areas in the engineering discipline; much is at the forefront of the discipline."
+        },
+        {
+          "code": "WK5",
+          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, re-use of resources, net zero carbon, and similar concepts, that supports engineering design and operations in a practice area."
+        },
+        {
+          "code": "WK6",
+          "text": "Knowledge of engineering practice (technology) in the practice areas in the engineering discipline."
+        },
+        {
+          "code": "WK7",
+          "text": "Knowledge of the role of engineering in society and identified issues in engineering practice in the discipline, such as the professional responsibility of an engineer to public safety and sustainable development."
+        },
+        {
+          "code": "WK8",
+          "text": "Engagement with selected knowledge in the current research literature of the discipline, awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
+        },
+        {
+          "code": "WK9",
+          "text": "Ethics, inclusive behavior and conduct. Knowledge of professional ethics, responsibilities and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
         }
       ],
       "highlights": [
@@ -837,22 +940,6 @@
       },
       "documents": [
         {
-          "title": "PEOs, PSOs & POs (2025)",
-          "file": "departments/biotechnology/docs/peo-pso-po-2025.pdf"
-        },
-        {
-          "title": "Department Association",
-          "file": "departments/biotechnology/docs/department-association.pdf"
-        },
-        {
-          "title": "Research Centre",
-          "file": "departments/biotechnology/docs/research-centre.pdf"
-        },
-        {
-          "title": "Best Practices",
-          "file": "departments/biotechnology/docs/best-practices.pdf"
-        },
-        {
           "title": "Scheme of Teaching & Examination (2026-27)",
           "file": "departments/biotechnology/docs/scheme-2026-27.pdf"
         },
@@ -867,6 +954,22 @@
         {
           "title": "VII & VIII Semester — Syllabus (2026-27)",
           "file": "departments/biotechnology/docs/syllabus-7th-8th-sem-2026-27.pdf"
+        },
+        {
+          "title": "Scheme of Teaching & Examination (2025-26)",
+          "file": "departments/biotechnology/docs/scheme-2025-26.pdf"
+        },
+        {
+          "title": "III & IV Semester — Syllabus (2025-26)",
+          "file": "departments/biotechnology/docs/syllabus-3rd-4th-sem-2025-26.pdf"
+        },
+        {
+          "title": "V & VI Semester — Syllabus (2025-26)",
+          "file": "departments/biotechnology/docs/syllabus-5th-6th-sem-2025-26.pdf"
+        },
+        {
+          "title": "VII & VIII Semester — Syllabus (2025-26)",
+          "file": "departments/biotechnology/docs/syllabus-7th-8th-sem-2025-26.pdf"
         }
       ],
       "newsletters": [
@@ -877,6 +980,142 @@
         {
           "title": "Biotech Times — Issue: April 2026",
           "file": "departments/biotechnology/newsletters/biotech-times-april-2026.pdf"
+        }
+      ],
+      "facilitiesTables": [
+        {
+          "title": "Details of Academic Facilities",
+          "columns": [
+            "Sl. No",
+            "Academic Facilities",
+            "Numbers"
+          ],
+          "rows": [
+            [
+              "1",
+              "Class Rooms",
+              "3"
+            ],
+            [
+              "2",
+              "Laboratories",
+              "5"
+            ],
+            [
+              "3",
+              "Seminar Hall",
+              "1"
+            ]
+          ]
+        },
+        {
+          "title": "Details of Laboratories",
+          "columns": [
+            "Sl. No.",
+            "Name of the Laboratory",
+            "Total area of Laboratory Available",
+            "Major equipments"
+          ],
+          "rows": [
+            [
+              "1",
+              "a) Biochemistry\nb) Cell & Genetics\nc) Microbiology\nd) Molecular Biology & Immunotechnology\nd) Genetic Engineering",
+              "93 Sq. Mt.",
+              "1. Colorimeter\n2. DQ-3 Water Distillation unit\n3. Electric Balance\n4. Colony Counter\n5. Hot air Oven\n6. Binocular Microscopes\n7. Laminar Air Flow\n8. BOD Incubator\n9. Vertical Slab Gel-Electrophoresis\n10. Sub Marine Gel-Electrophoresis\n11. Trans-illuminator\n12. Orion pH meter\n13. Cyclomixer\n14. Magnetic Stirrer\n15. Cooling Centrifuge\n16. Digital colorimeter\n17. PCR\n18. Micro Oven (Hot Air Oven)\n19. Water Bath\n20. Simple Distillation Units"
+            ],
+            [
+              "2",
+              "Unit Operations Laboratory",
+              "58 Sq. Mt.",
+              "1. Pressure Drop in Packed Bed\n2. Heat Transfer in Packed bed\n3. Convective Mass Transfer coefficient\n4. Wetted wall column\n5. Diffusivity measurement Appts\n6. Tray Dryer"
+            ],
+            [
+              "3",
+              "Bioinformatics & Biostatistics Laboratory",
+              "56 Sq. Mt.",
+              "1. 15-Computers with accessories,\n2. 5KVA-UPS with 12V Battery\n3. GCG Software."
+            ],
+            [
+              "4",
+              "Bioprocess Control & Instrumentation Laboratory",
+              "93 Sq. Mt.",
+              "1. Two Tank interacting System,\n2. Two Tank Non- Interacting System\n3. Time Constant of Thermometer\n4. Temperature Control Trainer (Comp.)\n5. Pressure control Trainer (Comp.)\n6. Flow control Trainer (Comp.)\n7. Air Compressor (1 HP)"
+            ],
+            [
+              "5",
+              "Biokinetics & Enzyme Technology Laboratory",
+              "93 Sq. Mt.",
+              "1. Mixed Flow Reactor\n2. Plug Flow Reactor\n3. Colorimeter\n4. Electric Balance"
+            ],
+            [
+              "6",
+              "a) Upstream Processing Laboratory\n\nb) Downstream Processing Laboratory",
+              "93 Sq. Mt.",
+              "1. UV-VIS- Spectrophotometer\n2. Cross Flow Cassette\n3. Fermentor\n4. Micropipettes\n5. Digital colorimeter\n6. Thin Layer Chromatography\n7. Autoclave\n8. Orbital Shaking Incubator\n9. Laboratory Blender"
+            ],
+            [
+              "7",
+              "Bioprocess & Biochemical Engineering Laboratory",
+              "60 Sq. Mt.",
+              "1. Ultra Sonicator\n2. HPLC (Binary Analytical System)"
+            ],
+            [
+              "8",
+              "Food Testing Laboratory",
+              "93 Sq. Mt.",
+              "1. Rotary Vacuum Flash Evaporator\n2. UV Visible Double beam Spectrophotometer\n3. Hot Air Oven\n4. High Speed Cooling Centrifuge\n5. Digital Electronic Weighing Balance\n6. Digital Refractometer\n7. Quartz Double Distillation Unit\n8. Viscometer/Rheometer\n9. Autoclave\n10. Bomb Caloriemeter\n11. Texture Analyser\n12. Pilot Scale Spray Dryer Unit\n13. Laminar Air Flow\n14. Orbital Shaking Incubator\n15. Kjeldahl’s apparatus\n16. Dietary Fiber Analyser"
+            ]
+          ]
+        },
+        {
+          "title": "Research",
+          "columns": [
+            "Laboratory",
+            "Total Area",
+            "Major Equipment"
+          ],
+          "rows": [
+            [
+              "Biochemistry / Cell & Genetics / Microbiology / Molecular Biology & Immunotechnology / Genetic Engineering Laboratory",
+              "93 Sq. Mt.",
+              "Colorimeter, DQ-3 Water Distillation unit, Electric Balance, Colony Counter, Hot air Oven, Binocular Microscopes, Laminar Air Flow, BOD Incubator, Vertical Slab Gel-Electrophoresis, Sub Marine Gel-Electrophoresis, Trans-illuminator, Orion pH meter, Cyclomixer, Magnetic Stirrer, Cooling Centrifuge, Digital colorimeter, PCR, Micro Oven (Hot Air Oven), Water Bath, Simple Distillation Units."
+            ],
+            [
+              "Unit Operations Laboratory",
+              "58 Sq. Mt.",
+              "Pressure Drop in Packed Bed, Heat Transfer in Packed bed, Convective Mass Transfer coefficient, Wetted wall column, Diffusivity measurement Appts, Tray Dryer."
+            ],
+            [
+              "Bioinformatics & Biostatistics Laboratory",
+              "56 Sq. Mt.",
+              "15 Computers with accessories, 5KVA-UPS with 12V Battery, GCG Software."
+            ],
+            [
+              "Bioprocess Control & Instrumentation Laboratory",
+              "93 Sq. Mt.",
+              "Two Tank interacting System, Two Tank Non-Interacting System, Time Constant of Thermometer, Temperature Control Trainer (Comp.), Pressure control Trainer (Comp.), Flow control Trainer (Comp.), Air Compressor (1 HP)."
+            ],
+            [
+              "Biokinetics & Enzyme Technology Laboratory",
+              "93 Sq. Mt.",
+              "Mixed Flow Reactor, Plug Flow Reactor, Colorimeter, Electric Balance."
+            ],
+            [
+              "Upstream Processing & Downstream Processing Laboratory",
+              "93 Sq. Mt.",
+              "UV-VIS Spectrophotometer, Cross Flow Cassette, Fermentor, Micropipettes, Digital colorimeter, Thin Layer Chromatography, Autoclave, Orbital Shaking Incubator, Laboratory Blender."
+            ],
+            [
+              "Bioprocess & Biochemical Engineering Laboratory",
+              "60 Sq. Mt.",
+              "Ultra Sonicator, HPLC (Binary Analytical System)."
+            ],
+            [
+              "Food Testing Laboratory",
+              "93 Sq. Mt.",
+              "Rotary Vacuum Flash Evaporator, UV Visible Double beam Spectrophotometer, Hot Air Oven, High Speed Cooling Centrifuge, Digital Electronic Weighing Balance, Digital Refractometer, Quartz Double Distillation Unit, Viscometer/Rheometer, Autoclave, Bomb Caloriemeter, Texture Analyser, Pilot Scale Spray Dryer Unit, Laminar Air Flow, Orbital Shaking Incubator, Kjeldahl's apparatus, Dietary Fiber Analyser."
+            ]
+          ]
         }
       ],
       "infrastructureItems": [
@@ -1940,8 +2179,11 @@
         "departments/biotechnology/facilities/equip-pcr.webp"
       ],
       "nbaAccredited": true,
+      "hideAboutTab": true,
+      "hideResearchTab": true,
       "hodMessage": {
-        "message": "The Department of Biotechnology was established at Basaveshwar Engineering College in 2002, focusing on impactful teaching, research, and community service. The Department offers various programs including UG, PG Diploma, PG, and Ph.D., and has been recognized as an R&D center by VTU Belagavi since 2011.\n\nThe field of biotechnology stands at the intersection of engineering and technological advancement, encompassing diverse domains such as biopharmaceutical development, industrial applications, and environmental solutions. Central to this discipline is the application of genetic technologies across animal and plant biotechnology, as well as innovations in cell and tissue engineering. The COVID-19 pandemic underscored the critical role of biotechnology, with bio-pharmaceutical companies racing to develop vaccines and therapeutics, illuminating the industry's impact on public health. As of 2023, India emerges as a significant player in the global biotechnology landscape, ranking among the top twelve destinations for biotech innovation and holding the position as the largest biotechnology hub in the Asia Pacific region. The Indian biotechnology sector is valued at over USD 92 billion, with the bio-pharmaceutical industry leading in biosimilars, having the highest number approved in the domestic market. Moreover, the global bio-pharmaceutical market is projected to see remarkable growth, expanding from USD 274.10 billion in 2020 to an anticipated USD 703.28 billion by 2027, indicating a growing recognition of biotechnology's pivotal role in addressing contemporary challenges in healthcare and the environment.",
+        "title": "HOD’s Message",
+        "message": "The field of biotechnology stands at the intersection of engineering and technological advancement, encompassing diverse domains such as biopharmaceutical development, industrial applications, and environmental solutions. Central to this discipline is the application of genetic technologies across animal and plant biotechnology, as well as innovations in cell and tissue engineering. The COVID-19 pandemic underscored the critical role of biotechnology, with bio-pharmaceutical companies racing to develop vaccines and therapeutics, illuminating the industry's impact on public health. As of 2023, India emerges as a significant player in the global biotechnology landscape, ranking among the top twelve destinations for biotech innovation and holding the position as the largest biotechnology hub in the Asia Pacific region. The Indian biotechnology sector is valued at over USD 92 billion, with the bio-pharmaceutical industry leading in biosimilars, having the highest number approved in the domestic market. Moreover, the global bio-pharmaceutical market is projected to see remarkable growth, expanding from USD 274.10 billion in 2020 to an anticipated USD 703.28 billion by 2027, indicating a growing recognition of biotechnology's pivotal role in addressing contemporary challenges in healthcare and the environment.",
         "name": "Dr. (Smt.) Bharati S. Meti",
         "designation": "Professor & Head, Department of Biotechnology",
         "image": "departments/biotechnology/hod/bharati-s-meti.webp"
@@ -1952,9 +2194,81 @@
     "civil-engg": {
       "name": "Civil Engineering",
       "assetSlug": "civil",
+      "heroImage": "departments/civil/hero-building.webp",
       "tagline": "A centre of excellence in teaching, research and innovation, shaping globally competent civil engineers for a sustainable society.",
       "established": "1963",
       "intake": "120",
+      "overviewImage": "departments/civil/dept-building.webp",
+      "overviewImageCaption": "Department of Civil Engineering",
+      "hodMessageUnderAbout": true,
+      "groupPhotosUnderAbout": true,
+      "overviewImageOnHome": true,
+      "sectionTitles": {
+        "achievements": "Research Activities"
+      },
+      "sectionNavLabels": {
+        "achievements": "Research Activities"
+      },
+      "hideInfrastructureQuantity": true,
+      "laboratories": [
+        {
+          "name": "Geo-Technical Lab",
+          "area": "Area 185 sq.m"
+        },
+        {
+          "name": "Advanced Geo-Technical Lab",
+          "area": "Area 216 sq.m"
+        },
+        {
+          "name": "Advanced Structural Engineering Lab",
+          "area": "Area 493 sq.m (1+1)"
+        },
+        {
+          "name": "Basic Materials Testing Lab",
+          "area": "Area 215 sq.m"
+        },
+        {
+          "name": "Fluid Mechanics and Hydraulics Lab",
+          "area": "Area 134 sq.m"
+        },
+        {
+          "name": "Environmental Engineering Lab",
+          "area": "Area 160 sq.m"
+        },
+        {
+          "name": "Surveying Lab",
+          "area": "Area 71 sq.m"
+        },
+        {
+          "name": "Highway Materials Testing Lab",
+          "area": "Area 155 sq.m"
+        },
+        {
+          "name": "Concrete Testing Lab",
+          "area": "Area 95 sq.m"
+        },
+        {
+          "name": "Engineering Geology Lab",
+          "area": "Area 43 sq.m"
+        },
+        {
+          "name": "Computer Centre",
+          "area": "Area 60 sq.m"
+        }
+      ],
+      "infrastructureItems": [],
+      "homeGroupPhoto": "departments/civil/passed-out-batch.webp",
+      "homeGroupPhotoCaption": "2022-26 Passed Out Batch",
+      "hodMessage": {
+        "message": "Welcome to Civil Engineering at BEC. Since its inception, the department has been committed to nurturing engineers who design, build, and sustain the infrastructure that shapes society. Our academic and research activities span structural engineering, geotechnical engineering, transportation, environmental engineering, water resources, surveying, and emerging areas in sustainable construction and smart infrastructure.\n\nOur students learn through practical exposure, fieldwork, laboratory experiments, design projects, and industry interaction—because civil engineering is best understood by applying knowledge to real-world challenges. We expect dedication, innovation, and professional integrity, and in return, our faculty provide the mentorship, resources, and opportunities needed for academic and personal growth.\n\nThis department is yours to shape with your ideas, commitment, and ambition—and we are here to support you every step of the way.",
+        "name": "Dr. S H Sanni",
+        "designation": "Professor & Head",
+        "image": "departments/civil/hod.webp"
+      },
+      "facultyGroupPhoto": "departments/civil/teaching-faculty.webp",
+      "facultyGroupPhotoCaption": "Teaching Faculty",
+      "staffGroupPhoto": "departments/civil/staff-group.webp",
+      "staffGroupPhotoCaption": "Supporting Staff",
       "overview": "The Civil Engineering Department is one of the pioneering departments since the inception of the college in 1963. It is engaged in imparting quality education and producing outstanding graduates through qualified faculty and state-of-the-art infrastructure. The department offers a 4-year B.E. (intake 120) and 2-year M.Tech. programme in Structural Engineering with intake 18. It has been recognised as a Research Centre by VTU since 2003 and as a QIP Research Centre (Ph.D.) by AICTE, New Delhi since 2012, and is a State Resource Centre for training in Earthquake Engineering under NPCBEERM. The department has organised conferences, seminars and workshops, fetched research grants worth ₹183 lakhs, and provides consultancy services for various government and private agencies.",
       "vision": "To be a center of excellence in teaching, research, and innovation, shaping globally competent Civil Engineers toward the sustainable development of society.",
       "mission": [
@@ -1970,16 +2284,16 @@
       ],
       "peos": [
         {
-          "code": "PEO1",
-          "text": "Apply civil engineering principles to design sustainable infrastructure, utilizing modern tools and ensuring safety."
+          "code": "PEO 1",
+          "text": "Graduates will apply civil engineering principles to design sustainable infrastructure, utilizing modern tools and ensuring safety."
         },
         {
-          "code": "PEO2",
-          "text": "Possess strong communication and teamwork skills to collaborate effectively in diverse environments."
+          "code": "PEO 2",
+          "text": "Graduates will possess strong communication and teamwork skills to collaborate effectively in diverse environments."
         },
         {
-          "code": "PEO3",
-          "text": "Engage in continuous professional development, upholding ethical practices and adapting to evolving technologies as responsible leaders in civil engineering."
+          "code": "PEO 3",
+          "text": "Graduates will engage in continuous professional development, upholding ethical practices, and adapting to evolving technologies as responsible leaders in civil engineering."
         }
       ],
       "psos": [
@@ -1989,7 +2303,7 @@
         },
         {
           "code": "PSO2",
-          "text": "Specialize in foundation and superstructure engineering for residential, commercial, public, industrial buildings and infrastructure projects."
+          "text": "Specialize in foundation and superstructure engineering for residential, commercial, public, industrial buildings, and infrastructural projects."
         },
         {
           "code": "PSO3",
@@ -2061,7 +2375,7 @@
         },
         {
           "code": "WK5",
-          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, re-use of resources, net zero carbon, and similar concepts, that supports engineering design and operations in a practice area."
+          "text": "Knowledge, including efficient resource use, environmental impacts, whole-life cost, reuse of resources, net zero carbon and similar concepts, that supports engineering design and operations in a practice area."
         },
         {
           "code": "WK6",
@@ -2073,11 +2387,11 @@
         },
         {
           "code": "WK8",
-          "text": "Engagement with selected knowledge in the current research literature of the discipline, awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
+          "text": "Engagement with selected knowledge in the current research literature of the discipline, and awareness of the power of critical thinking and creative approaches to evaluate emerging issues."
         },
         {
           "code": "WK9",
-          "text": "Ethics, inclusive behavior and conduct. Knowledge of professional ethics, responsibilities, and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
+          "text": "Ethics, inclusive behaviour and conduct. Knowledge of professional ethics, responsibilities and norms of engineering practice. Awareness of the need for diversity by reason of ethnicity, gender, age, physical ability etc. with mutual understanding and respect, and of inclusive attitudes."
         }
       ],
       "highlights": [
@@ -2090,19 +2404,831 @@
       ],
       "labs": [
         {
-          "name": "Structural Engineering Lab"
+          "name": "Advance Geotechnical Engineering Laboratory",
+          "description": "Area: 216 m². Equipped with electromechanical servo-actuated automatic ring shear, cyclic triaxial, and automatic oedometer consolidation testing machines. Supports advanced research in soil mechanics, residual shear strength, dynamic soil properties, stress paths, and consolidation characteristics.",
+          "images": [
+            "departments/civil/labs/advance-gt-1.webp",
+            "departments/civil/labs/advance-gt-2.webp",
+            "departments/civil/labs/advance-gt-3.webp",
+            "departments/civil/labs/advance-gt-4.webp"
+          ],
+          "items": [
+            "Automatic Ring Shear Testing Machine — Electromechanical servo-actuated, 1,200 kPa max vertical stress, 1,000 kPa max horizontal stress, USB data output.",
+            "Automatic Oedometer Testing Machine (ACE EmS) — Electromechanical servo-actuation, 20 kN max vertical force, closed-loop PID control.",
+            "Cyclic Triaxial Testing Machine — 15 kN dynamic load, 10 kN static load, 16-bit ADC controller, automated UU/CU/CD and liquefaction testing."
+          ]
         },
         {
-          "name": "Geo-Technical Engineering Lab"
+          "name": "Geotechnical Engineering Laboratory",
+          "description": "Area: 185 m². Enables comprehensive physical and engineering testing of soil properties including grain size distribution, Atterberg limits, permeability, compaction, direct shear, unconfined compression, and triaxial shear testing to determine bearing capacity and slope stability.",
+          "images": [
+            "departments/civil/labs/gt-1.webp",
+            "departments/civil/labs/gt-2.webp",
+            "departments/civil/labs/gt-3.webp"
+          ],
+          "table": {
+            "title": "Geotechnical Engineering Laboratory — Equipment Roster",
+            "columns": [
+              "Sl. No.",
+              "Name of Equipment",
+              "Supplier",
+              "Year of Purchase",
+              "Total Amount (INR)"
+            ],
+            "rows": [
+              [
+                "1",
+                "Automatic Ring Shear Testing Machine",
+                "Chir-Ayu Controls Pvt. Ltd., Vadodara",
+                "2023",
+                "18,32,269.00"
+              ],
+              [
+                "2",
+                "Automatic Oedometer Testing Machine (Consolidation Equipment)",
+                "Chir-Ayu Controls Pvt. Ltd., Vadodara",
+                "2023",
+                "8,21,312.00"
+              ],
+              [
+                "3",
+                "Cyclic Triaxial Testing Machine",
+                "Chir-Ayu Controls Pvt. Ltd., Vadodara",
+                "2019",
+                "53,81,250.00"
+              ],
+              [
+                "4",
+                "Triaxial Testing Machine",
+                "AIMIL Pvt. Ltd., New Delhi",
+                "2017",
+                "20,25,000.00"
+              ],
+              [
+                "5",
+                "Weighing Machine (15 kg capacity)",
+                "AIMIL Pvt. Ltd., New Delhi",
+                "2018",
+                "4,000.00"
+              ],
+              [
+                "6",
+                "Permeability Apparatus",
+                "AIMIL Pvt. Ltd., New Delhi",
+                "2014",
+                "4,500.00"
+              ],
+              [
+                "7",
+                "Split Spoon Sampler",
+                "Hydraulic & Engg. Instruments, New Delhi",
+                "2014",
+                "7,200.00"
+              ],
+              [
+                "8",
+                "Vane Shear Apparatus (Motorized)",
+                "Hydraulic & Engg. Instruments, New Delhi",
+                "2014",
+                "24,000.00"
+              ],
+              [
+                "9",
+                "Rapid Moisture Meter",
+                "Hydraulic & Engg. Instruments, New Delhi",
+                "2014",
+                "7,200.00"
+              ],
+              [
+                "10",
+                "Liquid Limit Device",
+                "AIMIL Pvt. Ltd., New Delhi",
+                "2007",
+                "8,200.00"
+              ],
+              [
+                "11",
+                "Sand Pouring Cylinder Apparatus",
+                "AIMIL Pvt. Ltd., New Delhi",
+                "2007",
+                "6,620.00"
+              ],
+              [
+                "12",
+                "Shrinkage Limit Device",
+                "AIMIL Pvt. Ltd., New Delhi",
+                "2007",
+                "5,250.00"
+              ],
+              [
+                "13",
+                "Compaction Mould",
+                "AIMIL Pvt. Ltd., New Delhi",
+                "2007",
+                "17,340.00"
+              ],
+              [
+                "14",
+                "Triaxial Compression Test Apparatus",
+                "Lawrence & Mayo, Bangalore",
+                "1970",
+                "2,634.00"
+              ],
+              [
+                "15",
+                "Shear Box Test Apparatus",
+                "Toshniwala, Madras",
+                "1979",
+                "4,015.00"
+              ],
+              [
+                "16",
+                "Consolidation Test Apparatus (with 2 Dial Gauges)",
+                "Nitiraj Engineers, Hubli",
+                "1967",
+                "3,167.00"
+              ]
+            ]
+          }
         },
         {
-          "name": "Environmental Engineering Lab"
+          "name": "Structural Engineering Laboratory",
+          "description": "Area: 493 m² (1+1). Features heavy loading frames (100-ton capacity), servo-hydraulic actuators (500 kN), compression load cells, demountable mechanical strain gauges, data acquisition systems, vibrating tables, and automatic compression and flexure testing machines.",
+          "images": [
+            "departments/civil/labs/structural-1.webp"
+          ],
+          "table": {
+            "title": "Structural Engineering Laboratory — Equipment Roster",
+            "columns": [
+              "Sl. No.",
+              "Name of Equipment",
+              "Supplier",
+              "Purchased Under",
+              "Year of Purchase",
+              "Total Amount (INR)"
+            ],
+            "rows": [
+              [
+                "1",
+                "Loading Frame 100-Ton Capacity",
+                "-",
+                "Consultancy",
+                "1990",
+                "5,00,488.00"
+              ],
+              [
+                "2",
+                "Ribbon Mixer (Capacity 200 L)",
+                "Deepa Engineers",
+                "TEQIP-I",
+                "2007",
+                "2,08,125.00"
+              ],
+              [
+                "3",
+                "Compression Load Cell 20T (without digital display)",
+                "Hydraulic & Engg. Instruments",
+                "TEQIP-I",
+                "2007",
+                "98,000.00"
+              ],
+              [
+                "4",
+                "Demountable Mechanical Strain Gauge",
+                "Hydraulic & Engg. Instruments",
+                "TEQIP-I",
+                "2007",
+                "22,000.00"
+              ],
+              [
+                "5",
+                "LVDT ±50mm",
+                "Hydraulic & Engg. Instruments",
+                "TEQIP-I",
+                "2007",
+                "64,000.00"
+              ],
+              [
+                "6",
+                "Vibrating Table 1m × 1m",
+                "Hydraulic & Engg. Instruments",
+                "TEQIP-I",
+                "2007",
+                "1,03,500.00"
+              ],
+              [
+                "7",
+                "Automatic Compression (3000 kN) and Flexure (500 kN) Testing Machine",
+                "Hydraulic & Engg. Instruments",
+                "TEQIP-I",
+                "2007",
+                "8,43,750.00"
+              ],
+              [
+                "8",
+                "Data Acquisition System",
+                "Dewetron",
+                "TEQIP-I",
+                "2010",
+                "3,17,240.00"
+              ],
+              [
+                "9",
+                "Metra Accelerometer (4 Nos.)",
+                "Dewetron",
+                "-",
+                "2010",
+                "1,38,432.00"
+              ],
+              [
+                "10",
+                "Servo Hydraulic Actuator (500 kN) with Accessories",
+                "Hydraulic & Engg. Instruments",
+                "TEQIP-II",
+                "2013",
+                "60,39,875.00"
+              ],
+              [
+                "11",
+                "Concrete Mixer with 3HP Electrical Motor",
+                "Unitech Industries",
+                "VTU",
+                "2016",
+                "1,05,800.00"
+              ],
+              [
+                "12",
+                "Needle Vibrator Electrical Handy Vibrator (35mm dia, 1.5m)",
+                "Unitech Industries",
+                "Consultancy",
+                "2016",
+                "15,341.00"
+              ],
+              [
+                "13",
+                "Loading Frame 100-Ton Capacity",
+                "MCS Mechatronics",
+                "TEQIP-II",
+                "2017",
+                "18,16,000.00"
+              ],
+              [
+                "14",
+                "60 kVA 3-Phase AC 36-480 V Stabilizer",
+                "Perfect Technologies",
+                "TEQIP-III",
+                "2018",
+                "2,10,335.00"
+              ],
+              [
+                "15",
+                "Gantry Girder",
+                "Star Industries",
+                "TEQIP-I",
+                "2019",
+                "8,99,999.00"
+              ],
+              [
+                "16",
+                "Crack Opening Displacement Gauge with Digital Camera",
+                "Measure India Corp. Pvt. Ltd.",
+                "TEQIP-III",
+                "2019",
+                "2,30,100.00"
+              ],
+              [
+                "17",
+                "Servo Controlled Compression (3000 kN) and Flexure (300 kN) Machine",
+                "Chir-Ayu Controls Pvt. Ltd.",
+                "TEQIP-III",
+                "2019",
+                "19,43,813.00"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Environmental Engineering Laboratory",
+          "description": "Area: 160 m². Equipped for physical, chemical, and biological analysis of water and wastewater. Features research-grade TOC analyzer, UV spectrophotometer, flame photometer, digital conductivity/TDS meters, muffle furnace, hot air oven, deep freezer, and BOD incubators.",
+          "images": [
+            "departments/civil/labs/environmental-1.webp",
+            "departments/civil/labs/environmental-2.webp"
+          ],
+          "items": [
+            "Research Equipment: Total Organic Carbon (TOC) Analyzer (SWAN Environmental, ₹15,00,000), UV Spectrophotometer, Flame Photometer.",
+            "Regular Lab Equipment: BOD Incubator, Distillation Unit (Horizontal & Quartz), Digital Nephelo/Turbidity Meter, Digital pH Meter, Digital Conductivity/TDS Meter, COD Apparatus, Muffle Furnace, Hot Air Oven, Deep Freezer, Precision Gold Balance."
+          ],
+          "table": {
+            "title": "Environmental Engineering Laboratory — Equipment Roster",
+            "columns": [
+              "Sl. No.",
+              "Name of Equipment",
+              "Supplier",
+              "Year of Purchase",
+              "Total Amount (INR)"
+            ],
+            "rows": [
+              [
+                "1",
+                "Total Organic Carbon (TOC) Analyser",
+                "SWAN Environmental Pvt. Ltd., Hyderabad",
+                "2013",
+                "15,00,000.00"
+              ],
+              [
+                "2",
+                "Muffle Furnace",
+                "Institutional Network Scheme",
+                "2025",
+                "1,32,500.00"
+              ],
+              [
+                "3",
+                "Deep Freezer",
+                "Institutional Network Scheme",
+                "2025",
+                "1,48,000.00"
+              ],
+              [
+                "4",
+                "Hot Air Oven",
+                "Institutional Network Scheme",
+                "2025",
+                "72,500.00"
+              ],
+              [
+                "5",
+                "BOD Incubator",
+                "NRI Technologies, Bangalore",
+                "2013",
+                "79,578.00"
+              ],
+              [
+                "6",
+                "Digital Conductivity Meter with Cell",
+                "Systronics Ltd., Ahmedabad",
+                "2018",
+                "44,634.00"
+              ],
+              [
+                "7",
+                "Balance Precision Gold",
+                "Institutional Network Scheme",
+                "2025",
+                "28,500.00"
+              ],
+              [
+                "8",
+                "Flame Photometer Elico Digital Twin Channel PPM",
+                "Bijapur Scientific Traders, Bijapur",
+                "1992",
+                "25,200.00"
+              ],
+              [
+                "9",
+                "Digital Nephelo / Turbidity Meter",
+                "Systronics Ltd., Ahmedabad",
+                "2017",
+                "21,063.00"
+              ],
+              [
+                "10",
+                "Elico Digital Spectrophotometer Model CL-2",
+                "Elico Pvt. Ltd., Bangalore",
+                "1992",
+                "19,749.00"
+              ],
+              [
+                "11",
+                "COD Apparatus",
+                "Gokul Traders & Distributors, Madras",
+                "1992",
+                "19,292.00"
+              ],
+              [
+                "12",
+                "9027 MK-4 Digital pH Meter",
+                "Systronics Ltd., Ahmedabad",
+                "2017",
+                "9,027.00"
+              ],
+              [
+                "13",
+                "Elico Nephelometer",
+                "Elico Pvt. Ltd., Bangalore",
+                "1992",
+                "6,300.00"
+              ],
+              [
+                "14",
+                "Elico Digital Conductivity Meter",
+                "Elico Pvt. Ltd., Bangalore",
+                "1992",
+                "5,760.00"
+              ],
+              [
+                "15",
+                "Jackson Turbidity Meter (Tube & Candle)",
+                "Lab Instruments, Bombay",
+                "1976",
+                "3,150.00"
+              ],
+              [
+                "16",
+                "Heating Mantle with Regulator",
+                "Scientific Electronic, Bombay",
+                "1992",
+                "2,280.00"
+              ],
+              [
+                "17",
+                "National Analytical Balance with Weights",
+                "Universal Instruments, Bangalore",
+                "1978",
+                "2,065.35"
+              ],
+              [
+                "18",
+                "Quartz Distillation Unit",
+                "Complimentary",
+                "2025",
+                "Complimentary"
+              ]
+            ]
+          }
+        },
+        {
+          "name": "Basic Materials & Concrete Testing Laboratory (BMCT Lab)",
+          "description": "Area: 215 m². Provides testing facilities for building materials, aggregates, and concrete, including compressive testing, cement consistency, setting time, workability, and concrete mix design experiments.",
+          "images": [
+            "departments/civil/labs/bmct-1.webp",
+            "departments/civil/labs/bmct-2.webp"
+          ]
+        },
+        {
+          "name": "Concrete Testing Laboratory",
+          "description": "Area: 95 m². Supports advanced concrete technology experiments, curing, compression and flexural tests on structural components and standard cubes/cylinders.",
+          "images": []
+        },
+        {
+          "name": "Fluid Mechanics Laboratory",
+          "description": "Area: 134 m². Equipped with setups for verifying fluid mechanics theorems, flow measurement devices (venturimeters, orifices), friction loss in pipes, and turbine performance characteristics.",
+          "images": [
+            "departments/civil/labs/fm-1.webp",
+            "departments/civil/labs/fm-2.webp"
+          ]
+        },
+        {
+          "name": "Engineering Geology Laboratory",
+          "description": "Area: 43 m². Facilitates study of mineralogy, petrology, geological maps, and structural geology. Equipped with a collection of mineral and rock specimens, structural models, and petrological microscopes.",
+          "images": [
+            "departments/civil/labs/geology-1.webp",
+            "departments/civil/labs/geology-2.webp"
+          ]
+        },
+        {
+          "name": "Surveying Practice Laboratory",
+          "description": "Area: 71 m². Equipped with modern surveying instruments including total stations, electronic theodolites, auto-levels, plane tables, and GPS equipment to train students in map making, contouring, and site layouts.",
+          "images": [
+            "departments/civil/labs/survey-1.webp"
+          ]
+        },
+        {
+          "name": "Computer Laboratory",
+          "description": "Area: 60 m². Equipped with high-performance computing systems and drafting software (such as AutoCAD, STAAD Pro, and ETABS) to train students in computer-aided design, structural analysis, and structural detailing.",
+          "images": [
+            "departments/civil/labs/computer-1.webp"
+          ]
+        },
+        {
+          "name": "Highway & Concrete Laboratory (Transportation Engineering Lab)",
+          "description": "Area: 155 m². Equipped for characterization of highway materials (bitumen and aggregates), pavement thickness design, aggregate impact value, shape tests, penetration, and ductility of bitumen.",
+          "images": [
+            "departments/civil/labs/highway-1.webp",
+            "departments/civil/labs/highway-2.webp",
+            "departments/civil/labs/highway-3.webp"
+          ]
         }
       ],
       "associations": [
         {
-          "name": "Association of Civil Engineering",
-          "about": "Every student and faculty member of the department is a member of the association, which conducts technical events, seminars, presentations, project exhibitions and sports activities through the year, providing a platform for students to organise events and inculcate self-learning."
+          "name": "Association of Civil Engineering (ACE)",
+          "about": "Every student of the department and faculty are members of the association, which conducts various technical events and sports activities for faculties and students throughout the year. Formed at the department level with teacher and student representatives, ACE provides a platform for students to organize Seminars, Paper Presentations, Project Exhibitions, and Sports tuned to Program Educational Objectives (PEOs), inculcating a self-learning process in the student community.",
+          "coordinators": [
+            "Prof. G. R. Patil — Faculty Coordinator (AY 2025–26 & AY 2024–25)"
+          ],
+          "exicom": [
+            {
+              "name": "Prateek M",
+              "position": "Boys Student Representative (2025–26)"
+            },
+            {
+              "name": "Priyanka Kurabar",
+              "position": "Girls Student Representative (2025–26)"
+            },
+            {
+              "name": "Pragathi Badiger",
+              "position": "Cultural Co-ordinator (2025–26)"
+            },
+            {
+              "name": "Abhishek Pawar",
+              "position": "Finance Co-ordinator (2025–26)"
+            },
+            {
+              "name": "Shivam Petakar",
+              "position": "Venue Co-ordinator (2025–26)"
+            },
+            {
+              "name": "Chandrakanth",
+              "position": "Food Co-ordinator (2025–26)"
+            },
+            {
+              "name": "Abhishek Patil",
+              "position": "Media Co-ordinator (2025–26)"
+            },
+            {
+              "name": "Shivukumar",
+              "position": "Technical Co-ordinator (2025–26)"
+            },
+            {
+              "name": "Kiran Dharamasagar",
+              "position": "Assistant ACE Co-ordinator (2025–26)"
+            }
+          ],
+          "exicomGroups": [
+            {
+              "title": "Association Office Bearers (AY 2024–25)",
+              "members": [
+                "Shambavi Meharwadi & Tarun Naik — Student Representatives",
+                "Nandita & Zeeshan — Cultural Co-ordinators",
+                "Aiman & Ganesh — Finance Co-ordinators",
+                "Sukanya & Vishal — Venue Co-ordinators",
+                "Abhishek & Vijayalakshmi — Food Co-ordinators",
+                "Sanjana & Akshay — Media Co-ordinators",
+                "Rukmini & Mohanish — Technical Co-ordinators",
+                "Megha & Rajshekhar — Assistant ACE Co-ordinators"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bureau of Indian Standards (BIS) Student Chapter",
+          "about": "The BIS Student Chapter at Basaveshwar Engineering College serves as a platform for students to understand the significance of Indian Standards (IS Codes) in engineering design, manufacturing, construction, testing, and industrial practices. Through academic and co-curricular activities, students gain exposure to national standards, quality management practices, and the role of BIS in promoting excellence and sustainable development. The chapter actively encourages students to adopt standardized engineering practices, participate in BIS initiatives, and develop a quality-conscious approach towards professional engineering.",
+          "coordinators": [
+            {
+              "name": "Dr. Santhosh M. Malkapur",
+              "designation": "Professor and Mentor · Department of Civil Engineering",
+              "email": "malkapursanthosh@gmail.com",
+              "phone": "9945417886",
+              "photo": "departments/civil/faculty/santhosh-m-malkapur.webp"
+            },
+            {
+              "name": "Dr. Shreeshail B. Heggond",
+              "designation": "Associate Professor and Mentor · Department of Civil Engineering",
+              "email": "shreeshailbh.16@gmail.com",
+              "phone": "8793351791",
+              "photo": "departments/civil/faculty/shreeshail-heggond.webp"
+            }
+          ],
+          "exicomGroups": [
+            {
+              "title": "Vision",
+              "members": [
+                "To develop technically competent engineers with a strong understanding of standardization, quality, safety and sustainable engineering practices in accordance with Indian Standards."
+              ]
+            },
+            {
+              "title": "Mission",
+              "members": [
+                "To promote awareness of Indian Standards among students.",
+                "To encourage the use of BIS standards in engineering education and projects.",
+                "To organize activities that enhance knowledge of quality assurance and standardization.",
+                "To strengthen academia-industry interaction through BIS initiatives.",
+                "To prepare students for professional engineering practices aligned with national and international standards."
+              ]
+            },
+            {
+              "title": "Student Coordinators",
+              "table": {
+                "title": "Student Coordinators (AY 2024–25)",
+                "columns": [
+                  "Sl. No.",
+                  "Name of Student",
+                  "Year of Study",
+                  "Position"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "Mohanish M Darbar",
+                    "4th Year",
+                    "Leader"
+                  ],
+                  [
+                    "2",
+                    "Mohammed Rimaz Kalburgi",
+                    "4th Year",
+                    "Core Member"
+                  ],
+                  [
+                    "3",
+                    "Abhishek R Revankar",
+                    "4th Year",
+                    "Core Member"
+                  ],
+                  [
+                    "4",
+                    "Rukmini Shivappa Murakachitti",
+                    "4th Year",
+                    "Core Member"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Activities Conducted",
+              "table": {
+                "title": "Activities Conducted under BIS Student Chapter",
+                "columns": [
+                  "Sl. No.",
+                  "Programme / Event Name",
+                  "Date",
+                  "Participants"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "Site Visit — on Quality",
+                    "08-08-2024",
+                    "34 Students"
+                  ],
+                  [
+                    "2",
+                    "Technical Quiz — Kaun Banega IS Codepati",
+                    "10-12-2024",
+                    "68 Students"
+                  ]
+                ]
+              }
+            },
+            {
+              "title": "Chapter Objectives",
+              "members": [
+                "Create awareness about the activities and role of the Bureau of Indian Standards.",
+                "Familiarize students with important Indian Standards and their applications.",
+                "Promote quality culture in engineering education.",
+                "Organize expert lectures, workshops, seminars, quizzes, and competitions.",
+                "Encourage innovation based on standardized engineering practices.",
+                "Facilitate interaction with BIS officials and industry experts."
+              ]
+            },
+            {
+              "title": "Major Indian Standards Covered (IS Codes)",
+              "members": [
+                "IS 456 — Plain and Reinforced Concrete",
+                "IS 800 — Steel Structures",
+                "IS 875 — Design Loads",
+                "IS 10262 — Concrete Mix Proportioning",
+                "IS 383 — Aggregates",
+                "IS 1893 — Earthquake Resistant Design"
+              ]
+            },
+            {
+              "title": "Student Benefits",
+              "members": [
+                "Learn about Indian Standards and their practical applications.",
+                "Improve technical knowledge through expert interactions.",
+                "Participate in BIS competitions and national-level events.",
+                "Develop quality and safety awareness.",
+                "Enhance employability through industry-relevant knowledge.",
+                "Access BIS learning resources and standards."
+              ]
+            }
+          ],
+          "gallery": [
+            "departments/civil/bis-activity-01.webp",
+            "departments/civil/bis-activity-02.webp",
+            "departments/civil/bis-activity-03.webp",
+            "departments/civil/bis-activity-04.webp",
+            "departments/civil/bis-activity-05.webp"
+          ],
+          "documents": [
+            {
+              "title": "Kaun Banega IS Code Pati — Technical Quiz Competition Activity Report",
+              "file": "departments/civil/docs/bis-kaun-banega-is-code-pati-report.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Indian Concrete Institute (ICI) Student Chapter",
+          "about": "The Indian Concrete Institute (ICI) Student Chapter at Basaveshwar Engineering College, Bagalkote, serves as a professional platform for nurturing future civil engineers by bridging the gap between classroom learning and engineering practice. The chapter promotes excellence in concrete technology, construction practices, research, innovation, quality assurance, and sustainable infrastructure through technical activities and industry engagement.\n\nThe chapter provides opportunities for students to interact with practicing engineers, researchers, academicians, contractors, consultants, and material manufacturers through expert lectures, workshops, industrial visits, technical competitions, and conferences. It also encourages students to develop practical knowledge in concrete materials, structural design, durability, quality control, repair and rehabilitation, and emerging construction technologies, aligning with the broader mission of ICI to disseminate knowledge and strengthen industry-academia collaboration.",
+          "coordinators": [
+            {
+              "name": "Dr. Santhosh M. Malkapur",
+              "designation": "Professor and Mentor · Department of Civil Engineering",
+              "email": "malkapursanthosh@gmail.com",
+              "phone": "9945417886",
+              "photo": "departments/civil/faculty/santhosh-m-malkapur.webp"
+            },
+            {
+              "name": "Mr. Ramesh H. Baragani",
+              "designation": "Assistant Professor and Mentor · Department of Civil Engineering",
+              "email": "rameshbaragani@gmail.com",
+              "phone": "9834168182",
+              "photo": "departments/civil/faculty/ramesh-baragani.webp"
+            }
+          ],
+          "exicomGroups": [
+            {
+              "title": "Vision",
+              "members": [
+                "To develop competent civil engineers with strong technical expertise in concrete technology, sustainable construction, and professional engineering practices through continuous learning and industry collaboration."
+              ]
+            },
+            {
+              "title": "Mission",
+              "members": [
+                "To promote awareness and understanding of concrete technology and its applications.",
+                "To bridge the gap between academic learning and industry practices.",
+                "To encourage research, innovation, and sustainable construction practices.",
+                "To organize technical activities that enhance professional competence.",
+                "To foster collaboration with industry experts, researchers, and professional organizations."
+              ]
+            },
+            {
+              "title": "Chapter Objectives",
+              "members": [
+                "Promote the advancement of concrete construction and allied technologies.",
+                "Familiarize students with modern materials, construction techniques, and quality control practices.",
+                "Organize expert lectures, workshops, seminars, and technical training programmes.",
+                "Encourage participation in technical competitions, conferences, and ICI FEST.",
+                "Facilitate industrial visits to major construction and infrastructure projects.",
+                "Promote research, innovation, and publication in concrete technology.",
+                "Enhance students' professional ethics, leadership, and employability through interaction with industry experts."
+              ]
+            },
+            {
+              "title": "Student Competitions & Challenges",
+              "members": [
+                "Concrete Mix Design Competition",
+                "Cube Casting and Testing Competition",
+                "Technical Paper Presentation",
+                "Poster Presentation",
+                "Technical Quiz",
+                "Concrete Canoe / Innovation Challenge",
+                "ICI FEST and other regional/national competitions"
+              ]
+            },
+            {
+              "title": "Technical Areas & Specializations Covered",
+              "members": [
+                "Concrete Materials and Mix Design",
+                "High-Performance and High-Strength Concrete",
+                "Self-Compacting Concrete",
+                "Fibre Reinforced Concrete",
+                "Geopolymer Concrete",
+                "Green and Sustainable Concrete",
+                "Durability of Concrete Structures",
+                "Repair, Rehabilitation and Retrofitting",
+                "Non-Destructive Testing (NDT)",
+                "Quality Control and Quality Assurance",
+                "Concrete Construction Practices",
+                "3D Concrete Printing",
+                "Digital Construction and Smart Infrastructure"
+              ]
+            },
+            {
+              "title": "Student Benefits",
+              "members": [
+                "Interact with leading professionals in concrete construction.",
+                "Participate in national conferences, seminars, workshops, and training programmes.",
+                "Gain practical exposure through industrial visits and laboratory demonstrations.",
+                "Access ICI technical publications and learning resources.",
+                "Participate in ICI FEST and other technical competitions.",
+                "Avail concessional registration fees for ICI events.",
+                "Build professional networks and enhance employability."
+              ]
+            }
+          ],
+          "gallery": [
+            "departments/civil/ici-activity-01.webp"
+          ],
+          "contact": {
+            "name": "Dr. Santhosh M. Malkapur",
+            "designation": "Faculty Coordinator · Indian Concrete Institute (ICI) Student Chapter",
+            "department": "Department of Civil Engineering",
+            "college": "Basaveshwar Engineering College (Autonomous)",
+            "location": "Bagalkot – 587103",
+            "email": "malkapursanthosh@gmail.com",
+            "phone": "9945417886",
+            "photo": "departments/civil/faculty/santhosh-m-malkapur.webp"
+          },
+          "documents": [
+            {
+              "title": "Indian Concrete Institute (ICI) Student Chapter — Official Member Roster",
+              "file": "departments/civil/docs/ici-student-members-list.pdf"
+            }
+          ]
         }
       ],
       "contact": {
@@ -2126,6 +3252,10 @@
         }
       ],
       "newsletters": [
+        {
+          "title": "Civil Express — 2025",
+          "file": "departments/civil/docs/2025-civil-express.pdf"
+        },
         {
           "title": "Civil Insight Newsletter — June 2026",
           "file": "departments/civil/newsletters/civil-newsletter-jun-2026.pdf"
@@ -2189,10 +3319,6 @@
       },
       "supportingStaff": [
         {
-          "name": "Sri. S. M. Teggi",
-          "designation": "Instructor"
-        },
-        {
           "name": "Sri. G. S. Rathod",
           "designation": "Assistant Instructor"
         },
@@ -2213,23 +3339,15 @@
           "designation": "Helper"
         },
         {
-          "name": "Sri. B. H. Yadahalli",
-          "designation": "Helper"
-        },
-        {
-          "name": "Sri. G. G. Kudagi",
-          "designation": "Mechanic"
-        },
-        {
-          "name": "Sri. H. Y. Meti",
-          "designation": "Mechanic"
+          "name": "Sri. S. M. Teggi",
+          "designation": "Instructor"
         },
         {
           "name": "Sri. G. S. Kadagadkai",
           "designation": "Instructor"
         },
         {
-          "name": "Sri. M. N. Suliganvi",
+          "name": "Smt. K. P. Biradar",
           "designation": "Instructor"
         },
         {
@@ -2241,15 +3359,56 @@
           "designation": "Assistant Instructor"
         },
         {
-          "name": "Sri. Santosh Bisali",
-          "designation": "Peon"
+          "name": "Sri. G. G. Kudagi",
+          "designation": "Mechanic"
         },
         {
-          "name": "Sri. Netra Malawad",
-          "designation": "Peon"
+          "name": "Sri. H. Y. Meti",
+          "designation": "Mechanic"
+        },
+        {
+          "name": "Sri. B. H. Yadahalli",
+          "designation": "Helper"
         }
       ],
       "committeeGroups": [
+        {
+          "title": "Board of Studies (BOS) (2025-2028)",
+          "members": [
+            {
+              "name": "Dr. S. H. Sanni",
+              "position": "HoD/BoS Chairman"
+            },
+            {
+              "name": "Dr. Ramesh Nayaka",
+              "position": "VTU Nominee"
+            },
+            {
+              "name": "Dr. Prashanth M. H.",
+              "position": "External Member"
+            },
+            {
+              "name": "Dr. Amaranth Hegade",
+              "position": "External Member"
+            },
+            {
+              "name": "Mr. Anoop S. Koparde",
+              "position": "Industry Expert"
+            },
+            {
+              "name": "Mr. Mahesh P. Shettar",
+              "position": "Alumni"
+            },
+            {
+              "name": "Dr. Gangadhar B. Megeri",
+              "position": "BoS Co-ordinator"
+            },
+            {
+              "name": "All teaching faculty members of Civil Engineering department, BEC Bagalkote",
+              "position": "Members"
+            }
+          ]
+        },
         {
           "title": "Board of Examiners",
           "members": [
@@ -2611,159 +3770,104 @@
           "status": "Registered"
         }
       ],
-      "hideInfrastructureQuantity": true,
-      "infrastructureItems": [
-        {
-          "name": "Geo-Technical Lab",
-          "specification": "Area 185 sq.m"
-        },
-        {
-          "name": "Advanced Geo-Technical Lab",
-          "specification": "Area 216 sq.m"
-        },
-        {
-          "name": "Advanced Structural Engineering Lab",
-          "specification": "Area 493 sq.m (1+1)"
-        },
-        {
-          "name": "Basic Materials Testing Lab",
-          "specification": "Area 215 sq.m"
-        },
-        {
-          "name": "Fluid Mechanics and Hydraulics Lab",
-          "specification": "Area 134 sq.m"
-        },
-        {
-          "name": "Environmental Engineering Lab",
-          "specification": "Area 160 sq.m"
-        },
-        {
-          "name": "Surveying Lab",
-          "specification": "Area 71 sq.m"
-        },
-        {
-          "name": "Highway Materials Testing Lab",
-          "specification": "Area 155 sq.m"
-        },
-        {
-          "name": "Concrete Testing Lab",
-          "specification": "Area 95 sq.m"
-        },
-        {
-          "name": "Engineering Geology Lab",
-          "specification": "Area 43 sq.m"
-        },
-        {
-          "name": "Computer Centre",
-          "specification": "Area 60 sq.m"
-        },
-        {
-          "name": "Electromechanical Servo-Actuated Automatic Ring Shear Machine",
-          "specification": "Evaluates residual shear strength of soils for different shear rates",
-          "quantity": "1"
-        },
-        {
-          "name": "Automatic Oedometer (Consolidation) Machine",
-          "specification": "Servo-actuated; measures consolidation characteristics of soil",
-          "quantity": "1"
-        },
-        {
-          "name": "Servo Hydraulic Actuator (500 kN)",
-          "specification": "Load-controlled mode to simulate structural loading environments",
-          "quantity": "1"
-        },
-        {
-          "name": "Servo Compression Testing Machine (3000 kN)",
-          "specification": "Determines compressive strength",
-          "quantity": "1"
-        },
-        {
-          "name": "Servo Hydraulic Flexure Testing Machine (500 kN)",
-          "specification": "Determines flexural strength",
-          "quantity": "1"
-        },
-        {
-          "name": "Universal Testing Machine (500 kN)",
-          "specification": "Determines tensile strength",
-          "quantity": "1"
-        },
-        {
-          "name": "Non-Destructive Testing (NDT) Equipment",
-          "specification": "Assesses concrete quality without damaging the component",
-          "quantity": "1"
-        },
-        {
-          "name": "Rapid Chloride Penetration Test (RCPT) Setup",
-          "specification": "Evaluates resistance of concrete to chloride ion penetration",
-          "quantity": "1"
-        },
-        {
-          "name": "Cyclic and Static Triaxial Testing Apparatus",
-          "specification": "Determines strength of soil under cyclic and static loading",
-          "quantity": "1"
-        },
-        {
-          "name": "TOC Analyzer",
-          "specification": "Measures total organic carbon in liquid/water samples",
-          "quantity": "1"
-        },
-        {
-          "name": "BOD Incubator and COD Package",
-          "specification": "Determination of biochemical oxygen demand",
-          "quantity": "1"
-        },
-        {
-          "name": "Atomic Absorption Spectrometer (Solar 929)",
-          "specification": "Analyses compounds in water",
-          "quantity": "1"
-        },
-        {
-          "name": "UV/VIS Scanning Spectrophotometer",
-          "specification": "Determination of different analytes",
-          "quantity": "1"
-        },
-        {
-          "name": "Gas Chromatograph",
-          "specification": "Separates and analyses vaporizable compounds",
-          "quantity": "1"
-        },
-        {
-          "name": "Kjeldahl Apparatus",
-          "specification": "Organic nitrogen and protein content determination",
-          "quantity": "1"
-        },
-        {
-          "name": "Pile Load Test Setup",
-          "specification": "Determines ultimate bearing capacity",
-          "quantity": "1"
-        },
-        {
-          "name": "Plate Load Test Assembly",
-          "specification": "Determines bearing capacity and settlement",
-          "quantity": "1"
-        },
-        {
-          "name": "Direct Shear Test Apparatus",
-          "specification": "Determines shear strength of soil",
-          "quantity": "1"
-        },
-        {
-          "name": "Total Stations",
-          "specification": "Surveying",
-          "quantity": "4"
-        },
-        {
-          "name": "Shake Tables",
-          "specification": "Horizontal (eccentric) and vertical base-motion units for dynamic testing",
-          "quantity": "2"
-        },
-        {
-          "name": "Meander River Model",
-          "specification": "Simulates equilibrium river-bed topography and planimetric changes",
-          "quantity": "1"
-        }
-      ],
       "activities": [
+        {
+          "title": "National Level 'Stick Span' Competition — IISc Bangalore",
+          "date": "24.02.2024",
+          "description": "Civil Engineering students participated in the National Level 'Stick Span' Competition held at IISc Bangalore and won 3rd Prize with Rs. 3,000/- cash prize.",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-01.webp",
+              "caption": "National Level 'Stick Span' Competition Winners at IISc Bangalore"
+            }
+          ]
+        },
+        {
+          "title": "National Level PRAXIS – 2024 — KLECET Chikkodi",
+          "date": "29.02.2024 to 01.03.2024",
+          "description": "50 students participated in PRAXIS – 2024 winning 1st, 2nd & 3rd prize in Technical Quiz, 1st prize in Concrete Cube Strength, and 2nd prize in Nrityam (Dance) receiving total cash prize of Rs. 11,000/-.",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-02.webp",
+              "caption": "PRAXIS – 2024 Winners & Participants at KLECET Chikkodi"
+            }
+          ]
+        },
+        {
+          "title": "Department Soil Day Celebration",
+          "date": "05.12.2023",
+          "description": "Soil Day Celebration organized by the Department of Civil Engineering with faculty and student participation.",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-03.webp",
+              "caption": "Soil Day Celebration at BEC Civil Engineering Department"
+            }
+          ]
+        },
+        {
+          "title": "Sports Title — Kalaburagi Division (2022–2023)",
+          "date": "2022–2023",
+          "description": "Civil Engineering students participated and won the overall Sports Title at Kalaburagi Division 2022–2023.",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-04.webp",
+              "caption": "Overall Sports Title Winners — Kalaburagi Division 2022-23"
+            }
+          ]
+        },
+        {
+          "title": "VTU Zonal Cricket & Basketball Championships",
+          "date": "2021–2022",
+          "description": "Winners of VTU Kalaburagi zonal Cricket tournament at RYMEC Bellary (2021–22) and VTU Zonal Basketball held at PDIT Hospet (10-12-2021).",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-05.webp",
+              "caption": "VTU Zonal Cricket & Basketball Champions"
+            }
+          ]
+        },
+        {
+          "title": "VTU Zonal Throwball Championship",
+          "date": "06.06.2022",
+          "description": "Winners of VTU Zonal Throwball tournament held at BLDE Vijayapur on 06.06.2022.",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-06.webp",
+              "caption": "VTU Zonal Throwball Champions at BLDE Vijayapur"
+            }
+          ]
+        },
+        {
+          "title": "Technical Talks, Site Visits & GATE Awareness (2023–2024)",
+          "date": "2023–2024",
+          "description": "Technical talk by UltraTech Cements, pre-stressed concrete members site visit, Hidkal Dam technical tour, GATE Awareness program by Dr. Tarun (IISc Bangalore), and inauguration of department sports activities.",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-07.webp",
+              "caption": "Technical Talks, Site Visits & GATE Awareness (2023-24)"
+            }
+          ]
+        },
+        {
+          "title": "Students' Involvement in Survey Project",
+          "description": "Field survey project training and hands-on instrument handling for Civil Engineering students.",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-08.webp",
+              "caption": "Students Engaged in Field Surveying Project"
+            }
+          ]
+        },
+        {
+          "title": "Students' Technical Tour — Aqueduct, Dams & Industrial Visit",
+          "description": "Technical tour covering construction of aqueduct across Alamatti left bank canal, Alamatti dam, Narayanpur dam, and Bagalkote Cement factory.",
+          "images": [
+            {
+              "key": "departments/civil/student-activities-09.webp",
+              "caption": "Technical Tour — Alamatti & Narayanpur Dams and Bagalkote Cement Factory"
+            }
+          ]
+        },
         {
           "title": "International Conference on Sustainable Solutions in Engineering and Technology",
           "date": "29-30 August 2024"
@@ -2775,14 +3879,6 @@
         {
           "title": "Paper presentation by 4 students at National Level Conference, IIT Bombay",
           "date": "15-17 February 2024"
-        },
-        {
-          "title": "Third Prize (Rs. 3000) at National Level Stick Span Competition, IISc Bangalore",
-          "date": "24 February 2024"
-        },
-        {
-          "title": "Participation by 50 students at National Level PRAXIS-2024, KLECET Chikodi (cash prizes totalling Rs. 11,000)",
-          "date": "29 February - 1 March 2024"
         }
       ],
       "researchAchievements": [
@@ -3270,13 +4366,1238 @@
           ]
         }
       ],
-      "sectionTitles": {
-        "achievements": "Research Activities"
-      },
-      "sectionNavLabels": {
-        "achievements": "Research Activities"
-      },
-      "nbaAccredited": true
+      "nbaAccredited": true,
+      "labsUnderFacilities": false,
+      "facilitiesTables": [
+        {
+          "title": "Laboratory Areas & Infrastructure Summary",
+          "columns": [
+            "Sl. No.",
+            "Laboratory Name",
+            "Floor Area"
+          ],
+          "rows": [
+            [
+              "1",
+              "Advanced Structural Engineering Laboratory",
+              "493 sq.m (1+1)"
+            ],
+            [
+              "2",
+              "Advanced Geo-Technical Laboratory",
+              "216 sq.m"
+            ],
+            [
+              "3",
+              "Basic Materials Testing Laboratory (BMCT Lab)",
+              "215 sq.m"
+            ],
+            [
+              "4",
+              "Geo-Technical Engineering Laboratory",
+              "185 sq.m"
+            ],
+            [
+              "5",
+              "Environmental Engineering Laboratory",
+              "160 sq.m"
+            ],
+            [
+              "6",
+              "Highway Materials Testing Laboratory",
+              "155 sq.m"
+            ],
+            [
+              "7",
+              "Fluid Mechanics and Hydraulics Laboratory",
+              "134 sq.m"
+            ],
+            [
+              "8",
+              "Concrete Testing Laboratory",
+              "95 sq.m"
+            ],
+            [
+              "9",
+              "Surveying Practice Laboratory",
+              "71 sq.m"
+            ],
+            [
+              "10",
+              "Computer Centre / CAD Laboratory",
+              "60 sq.m"
+            ],
+            [
+              "11",
+              "Engineering Geology Laboratory",
+              "43 sq.m"
+            ]
+          ]
+        },
+        {
+          "title": "Major Infrastructure & Specialised Testing Equipment Overview",
+          "columns": [
+            "Equipment / Facility Name",
+            "Key Specification & Capability",
+            "Quantity"
+          ],
+          "rows": [
+            [
+              "Electromechanical Servo-Actuated Automatic Ring Shear Machine",
+              "Evaluates residual shear strength of soils for different shear rates",
+              "1"
+            ],
+            [
+              "Automatic Oedometer (Consolidation) Machine",
+              "Servo-actuated; measures 1D consolidation characteristics of soil",
+              "1"
+            ],
+            [
+              "Servo Hydraulic Actuator (500 kN)",
+              "Load-controlled dynamic mode to simulate structural loading environments",
+              "1"
+            ],
+            [
+              "Servo Compression Testing Machine (3000 kN)",
+              "Determines high-strength concrete compressive strength",
+              "1"
+            ],
+            [
+              "Servo Hydraulic Flexure Testing Machine (500 kN / 300 kN)",
+              "Determines flexural strength and fracture toughness",
+              "1"
+            ],
+            [
+              "Universal Testing Machine (500 kN)",
+              "Determines tensile strength and stress-strain behaviour of steel",
+              "1"
+            ],
+            [
+              "Non-Destructive Testing (NDT) Equipment",
+              "Assesses concrete quality and structural integrity non-destructively",
+              "1"
+            ],
+            [
+              "Rapid Chloride Penetration Test (RCPT) Setup",
+              "Evaluates resistance of concrete to chloride ion penetration",
+              "1"
+            ],
+            [
+              "Cyclic and Static Triaxial Testing Apparatus",
+              "Determines strength, dynamic modulus and liquefaction of soil under cyclic loading",
+              "1"
+            ],
+            [
+              "Total Organic Carbon (TOC) Analyzer",
+              "Measures total organic carbon in liquid and wastewater samples",
+              "1"
+            ],
+            [
+              "BOD Incubator and COD Package",
+              "Determination of biochemical and chemical oxygen demand",
+              "1"
+            ],
+            [
+              "Atomic Absorption Spectrometer (Solar 929)",
+              "Analyses trace heavy metal compounds in water samples",
+              "1"
+            ],
+            [
+              "UV/VIS Scanning Spectrophotometer",
+              "Determination of different chemical analytes in environmental samples",
+              "1"
+            ],
+            [
+              "Gas Chromatograph",
+              "Separates and analyses vaporizable organic compounds",
+              "1"
+            ],
+            [
+              "Kjeldahl Apparatus",
+              "Organic nitrogen and protein content determination",
+              "1"
+            ],
+            [
+              "Pile Load Test Setup",
+              "Determines ultimate bearing capacity of deep pile foundations",
+              "1"
+            ],
+            [
+              "Plate Load Test Assembly",
+              "Determines safe bearing capacity and settlement of shallow foundations",
+              "1"
+            ],
+            [
+              "Direct Shear Test Apparatus",
+              "Determines shear strength parameters (cohesion and friction angle)",
+              "1"
+            ],
+            [
+              "Total Stations & Electronic Theodolites",
+              "Modern surveying, site mapping, and layout engineering",
+              "4"
+            ],
+            [
+              "Shake Tables (Base Motion Units)",
+              "Horizontal (eccentric) and vertical base-motion units for dynamic testing",
+              "2"
+            ],
+            [
+              "Meander River Model",
+              "Simulates equilibrium river-bed topography and planimetric changes",
+              "1"
+            ]
+          ]
+        },
+        {
+          "title": "Geotechnical Engineering Laboratory — Complete Equipment Roster",
+          "columns": [
+            "Sl. No.",
+            "Name of Equipment",
+            "Supplier",
+            "Year of Purchase",
+            "Total Amount (INR)"
+          ],
+          "rows": [
+            [
+              "1",
+              "Automatic Ring Shear Testing Machine",
+              "Chir-Ayu Controls Pvt. Ltd., Vadodara",
+              "2023",
+              "18,32,269.00"
+            ],
+            [
+              "2",
+              "Automatic Oedometer Testing Machine (Consolidation Equipment)",
+              "Chir-Ayu Controls Pvt. Ltd., Vadodara",
+              "2023",
+              "8,21,312.00"
+            ],
+            [
+              "3",
+              "Cyclic Triaxial Testing Machine",
+              "Chir-Ayu Controls Pvt. Ltd., Vadodara",
+              "2019",
+              "53,81,250.00"
+            ],
+            [
+              "4",
+              "Triaxial Testing Machine",
+              "AIMIL Pvt. Ltd., New Delhi",
+              "2017",
+              "20,25,000.00"
+            ],
+            [
+              "5",
+              "Weighing Machine (15 kg capacity)",
+              "AIMIL Pvt. Ltd., New Delhi",
+              "2018",
+              "4,000.00"
+            ],
+            [
+              "6",
+              "Permeability Apparatus",
+              "AIMIL Pvt. Ltd., New Delhi",
+              "2014",
+              "4,500.00"
+            ],
+            [
+              "7",
+              "Split Spoon Sampler",
+              "Hydraulic & Engg. Instruments, New Delhi",
+              "2014",
+              "7,200.00"
+            ],
+            [
+              "8",
+              "Vane Shear Apparatus (Motorized)",
+              "Hydraulic & Engg. Instruments, New Delhi",
+              "2014",
+              "24,000.00"
+            ],
+            [
+              "9",
+              "Rapid Moisture Meter",
+              "Hydraulic & Engg. Instruments, New Delhi",
+              "2014",
+              "7,200.00"
+            ],
+            [
+              "10",
+              "Liquid Limit Device",
+              "AIMIL Pvt. Ltd., New Delhi",
+              "2007",
+              "8,200.00"
+            ],
+            [
+              "11",
+              "Sand Pouring Cylinder Apparatus",
+              "AIMIL Pvt. Ltd., New Delhi",
+              "2007",
+              "6,620.00"
+            ],
+            [
+              "12",
+              "Shrinkage Limit Device",
+              "AIMIL Pvt. Ltd., New Delhi",
+              "2007",
+              "5,250.00"
+            ],
+            [
+              "13",
+              "Compaction Mould",
+              "AIMIL Pvt. Ltd., New Delhi",
+              "2007",
+              "17,340.00"
+            ],
+            [
+              "14",
+              "Triaxial Compression Test Apparatus",
+              "Lawrence & Mayo, Bangalore",
+              "1970",
+              "2,634.00"
+            ],
+            [
+              "15",
+              "Shear Box Test Apparatus",
+              "Toshniwala, Madras",
+              "1979",
+              "4,015.00"
+            ],
+            [
+              "16",
+              "Consolidation Test Apparatus (with 2 Dial Gauges)",
+              "Nitiraj Engineers, Hubli",
+              "1967",
+              "3,167.00"
+            ]
+          ]
+        },
+        {
+          "title": "Structural Engineering Laboratory — Complete Equipment Roster",
+          "columns": [
+            "Sl. No.",
+            "Name of Equipment",
+            "Supplier",
+            "Purchased Under",
+            "Year of Purchase",
+            "Total Amount (INR)"
+          ],
+          "rows": [
+            [
+              "1",
+              "Loading Frame 100-Ton Capacity",
+              "-",
+              "Consultancy",
+              "1990",
+              "5,00,488.00"
+            ],
+            [
+              "2",
+              "Ribbon Mixer (Capacity 200 L)",
+              "Deepa Engineers",
+              "TEQIP-I",
+              "2007",
+              "2,08,125.00"
+            ],
+            [
+              "3",
+              "Compression Load Cell 20T (without digital display)",
+              "Hydraulic & Engg. Instruments",
+              "TEQIP-I",
+              "2007",
+              "98,000.00"
+            ],
+            [
+              "4",
+              "Demountable Mechanical Strain Gauge",
+              "Hydraulic & Engg. Instruments",
+              "TEQIP-I",
+              "2007",
+              "22,000.00"
+            ],
+            [
+              "5",
+              "LVDT ±50mm",
+              "Hydraulic & Engg. Instruments",
+              "TEQIP-I",
+              "2007",
+              "64,000.00"
+            ],
+            [
+              "6",
+              "Vibrating Table 1m × 1m",
+              "Hydraulic & Engg. Instruments",
+              "TEQIP-I",
+              "2007",
+              "1,03,500.00"
+            ],
+            [
+              "7",
+              "Automatic Compression (3000 kN) and Flexure (500 kN) Testing Machine",
+              "Hydraulic & Engg. Instruments",
+              "TEQIP-I",
+              "2007",
+              "8,43,750.00"
+            ],
+            [
+              "8",
+              "Data Acquisition System",
+              "Dewetron",
+              "TEQIP-I",
+              "2010",
+              "3,17,240.00"
+            ],
+            [
+              "9",
+              "Metra Accelerometer (4 Nos.)",
+              "Dewetron",
+              "-",
+              "2010",
+              "1,38,432.00"
+            ],
+            [
+              "10",
+              "Servo Hydraulic Actuator (500 kN) with Accessories",
+              "Hydraulic & Engg. Instruments",
+              "TEQIP-II",
+              "2013",
+              "60,39,875.00"
+            ],
+            [
+              "11",
+              "Concrete Mixer with 3HP Electrical Motor",
+              "Unitech Industries",
+              "VTU",
+              "2016",
+              "1,05,800.00"
+            ],
+            [
+              "12",
+              "Needle Vibrator Electrical Handy Vibrator (35mm dia, 1.5m)",
+              "Unitech Industries",
+              "Consultancy",
+              "2016",
+              "15,341.00"
+            ],
+            [
+              "13",
+              "Loading Frame 100-Ton Capacity",
+              "MCS Mechatronics",
+              "TEQIP-II",
+              "2017",
+              "18,16,000.00"
+            ],
+            [
+              "14",
+              "60 kVA 3-Phase AC 36-480 V Stabilizer",
+              "Perfect Technologies",
+              "TEQIP-III",
+              "2018",
+              "2,10,335.00"
+            ],
+            [
+              "15",
+              "Gantry Girder",
+              "Star Industries",
+              "TEQIP-I",
+              "2019",
+              "8,99,999.00"
+            ],
+            [
+              "16",
+              "Crack Opening Displacement Gauge with Digital Camera",
+              "Measure India Corp. Pvt. Ltd.",
+              "TEQIP-III",
+              "2019",
+              "2,30,100.00"
+            ],
+            [
+              "17",
+              "Servo Controlled Compression (3000 kN) and Flexure (300 kN) Machine",
+              "Chir-Ayu Controls Pvt. Ltd.",
+              "TEQIP-III",
+              "2019",
+              "19,43,813.00"
+            ]
+          ]
+        },
+        {
+          "title": "Environmental Engineering Laboratory — Complete Equipment Roster",
+          "columns": [
+            "Sl. No.",
+            "Name of Equipment",
+            "Supplier",
+            "Year of Purchase",
+            "Total Amount (INR)"
+          ],
+          "rows": [
+            [
+              "1",
+              "Total Organic Carbon (TOC) Analyser",
+              "SWAN Environmental Pvt. Ltd., Hyderabad",
+              "2013",
+              "15,00,000.00"
+            ],
+            [
+              "2",
+              "Muffle Furnace",
+              "Institutional Network Scheme",
+              "2025",
+              "1,32,500.00"
+            ],
+            [
+              "3",
+              "Deep Freezer",
+              "Institutional Network Scheme",
+              "2025",
+              "1,48,000.00"
+            ],
+            [
+              "4",
+              "Hot Air Oven",
+              "Institutional Network Scheme",
+              "2025",
+              "72,500.00"
+            ],
+            [
+              "5",
+              "BOD Incubator",
+              "NRI Technologies, Bangalore",
+              "2013",
+              "79,578.00"
+            ],
+            [
+              "6",
+              "Digital Conductivity Meter with Cell",
+              "Systronics Ltd., Ahmedabad",
+              "2018",
+              "44,634.00"
+            ],
+            [
+              "7",
+              "Balance Precision Gold",
+              "Institutional Network Scheme",
+              "2025",
+              "28,500.00"
+            ],
+            [
+              "8",
+              "Flame Photometer Elico Digital Twin Channel PPM",
+              "Bijapur Scientific Traders, Bijapur",
+              "1992",
+              "25,200.00"
+            ],
+            [
+              "9",
+              "Digital Nephelo / Turbidity Meter",
+              "Systronics Ltd., Ahmedabad",
+              "2017",
+              "21,063.00"
+            ],
+            [
+              "10",
+              "Elico Digital Spectrophotometer Model CL-2",
+              "Elico Pvt. Ltd., Bangalore",
+              "1992",
+              "19,749.00"
+            ],
+            [
+              "11",
+              "COD Apparatus",
+              "Gokul Traders & Distributors, Madras",
+              "1992",
+              "19,292.00"
+            ],
+            [
+              "12",
+              "9027 MK-4 Digital pH Meter",
+              "Systronics Ltd., Ahmedabad",
+              "2017",
+              "9,027.00"
+            ],
+            [
+              "13",
+              "Elico Nephelometer",
+              "Elico Pvt. Ltd., Bangalore",
+              "1992",
+              "6,300.00"
+            ],
+            [
+              "14",
+              "Elico Digital Conductivity Meter",
+              "Elico Pvt. Ltd., Bangalore",
+              "1992",
+              "5,760.00"
+            ],
+            [
+              "15",
+              "Jackson Turbidity Meter (Tube & Candle)",
+              "Lab Instruments, Bombay",
+              "1976",
+              "3,150.00"
+            ],
+            [
+              "16",
+              "Heating Mantle with Regulator",
+              "Scientific Electronic, Bombay",
+              "1992",
+              "2,280.00"
+            ],
+            [
+              "17",
+              "National Analytical Balance with Weights",
+              "Universal Instruments, Bangalore",
+              "1978",
+              "2,065.35"
+            ],
+            [
+              "18",
+              "Quartz Distillation Unit",
+              "Complimentary",
+              "2025",
+              "Complimentary"
+            ]
+          ]
+        },
+        {
+          "title": "Major R&D Equipment Specifications & Research Applications",
+          "columns": [
+            "Equipment Name",
+            "Supplier & Year",
+            "Cost (INR)",
+            "Key Specifications",
+            "Research Applications"
+          ],
+          "rows": [
+            [
+              "Automatic Ring Shear Testing Machine",
+              "Chir-Ayu Controls Pvt. Ltd. (2023)",
+              "18,32,269.00",
+              "Electromechanical servo-actuated, 220-100 V, 1200 kPa max vertical stress, 1000 kPa max horizontal stress, HMI touch screen, USB TXT output.",
+              "Evaluates residual shear strength of soils for different shear rates and landslide hazard assessment."
+            ],
+            [
+              "Automatic Oedometer Testing Machine (Consolidation)",
+              "Chir-Ayu Controls Pvt. Ltd. (2023)",
+              "8,21,312.00",
+              "ACE EmS Electromechanical Servo-actuation (no dead weights/compressor), 20 kN max vertical force, 10mm settlement transducer, closed-loop PID control.",
+              "Measures 1D consolidation characteristics, swelling, and secondary consolidation rate of soils."
+            ],
+            [
+              "Cyclic Triaxial Testing Machine",
+              "Chir-Ayu Controls Pvt. Ltd. (2019)",
+              "53,81,250.00",
+              "Electromechanical servo actuation, 15 kN dynamic load, 10 kN static load, 16-bit ADC channels, Ethernet interface.",
+              "Determines shear modulus, damping properties, liquefaction resistance of sand/silt, stress path tests, and UU/CU/CD triaxial testing."
+            ],
+            [
+              "Triaxial Testing Machine",
+              "AIMIL Pvt. Ltd. (2017)",
+              "20,25,000.00",
+              "Motorised 30 speeds, 50 kN (5,000 kgf) load frame (AIM-064).",
+              "Measures shear strength of saturated and unsaturated soil samples, pore-water pressure, and degree of saturation."
+            ],
+            [
+              "Total Organic Carbon (TOC) Analyzer",
+              "SWAN Environmental Pvt. Ltd. (2013)",
+              "15,00,000.00",
+              "High-precision carbon analysis system for liquid samples.",
+              "Determination of total organic carbon in industrial wastewater, environmental monitoring, and water purification research."
+            ],
+            [
+              "Servo Hydraulic Actuator (500 kN)",
+              "Hydraulic & Engg. Instruments (2013)",
+              "60,39,875.00",
+              "High-capacity servo-hydraulic dynamic actuator with digital feedback control.",
+              "Dynamic loading, fatigue testing of RC beams/columns, structural connections, and earthquake simulation."
+            ],
+            [
+              "Servo Controlled Compression (3000 kN) & Flexure (300 kN) Machine",
+              "Chir-Ayu Controls Pvt. Ltd. (2019)",
+              "19,43,813.00",
+              "High-rigidity load frame, automatic closed-loop rate control for compression (3000 kN) and flexure (300 kN).",
+              "High-strength concrete cube/cylinder testing, flexural toughness of fibre-reinforced concrete, and geopolymer blocks."
+            ]
+          ]
+        },
+        {
+          "title": "Sponsored R&D Projects & Research Grants Received",
+          "columns": [
+            "Sl. No.",
+            "Investigator(s)",
+            "Title of Project",
+            "Sanctioning Authority",
+            "Sanction Ref. & Year",
+            "Amount (INR)",
+            "Status"
+          ],
+          "rows": [
+            [
+              "1",
+              "PI: Dr. Jayalatha N.A. | Co-PI: Dr. G.B. Megeri",
+              "Removal of Veterinary Pharmaceuticals from Wastewater using Low-Cost Produced Biosurfactant",
+              "VGST (Karnataka)",
+              "VRN/004636/23-24 (2024-25)",
+              "20,00,000.00",
+              "Received"
+            ],
+            [
+              "2",
+              "PI: Dr. Santhosh M. Malkapur | Co-PI: Dr. Shankar H. Sanni",
+              "Centre for Evaluating Thermal and Acoustic Performance of Building Materials",
+              "VGST (Karnataka)",
+              "2024-25",
+              "20,00,000.00",
+              "Submitted"
+            ],
+            [
+              "3",
+              "Dr. Jayalatha N.A.",
+              "Removal of Veterinary Pharmaceuticals from Wastewater using Low-Cost Produced Biosurfactant",
+              "DST-SERB",
+              "15-Oct-2022",
+              "30,00,000.00",
+              "Submitted"
+            ],
+            [
+              "4",
+              "Dr. Adarsh S. Chatra",
+              "Landslide Early Warning System Using Deterministic and Probabilistic Modelling of Hillslopes",
+              "VGST (Karnataka)",
+              "25-May-2023",
+              "20,00,000.00",
+              "Submitted"
+            ],
+            [
+              "5",
+              "Dr. Santhosh M. Malkapur",
+              "Centre for Evaluating Thermal Performance of Building Materials and Buildings",
+              "VGST (Karnataka)",
+              "25-May-2023",
+              "20,00,000.00",
+              "Submitted"
+            ],
+            [
+              "6",
+              "Dr. Jayalatha N.A.",
+              "Faster Reduction of Sugarcane Industry Process Wastewater Load using Microalgae and Enrichment of Biofertilizer",
+              "DST-SERB",
+              "01-Mar-2023",
+              "20,00,000.00",
+              "Submitted"
+            ],
+            [
+              "7",
+              "Dr. Jayalatha N.A.",
+              "Forecasting of Floods in Ghataprabha River Basin using Ensemble of Artificial Neural Network Algorithms",
+              "DST-SERB",
+              "15-Mar-2023",
+              "20,00,000.00",
+              "Submitted"
+            ],
+            [
+              "8",
+              "Prof. G.M. Hiremath",
+              "Domestic Wastewater Treatment by Graphene",
+              "KSCST",
+              "7.1.01/SPP/953 (2020)",
+              "4,000.00",
+              "Completed"
+            ],
+            [
+              "9",
+              "Dr. M.M. Hanamasagar",
+              "An Experimental Study on Effect of Replacement of River Sand by Steel Slag and M-Sand on Concrete Strength",
+              "KSCST",
+              "44S_BE_1927 (2021)",
+              "5,000.00",
+              "Completed"
+            ],
+            [
+              "10",
+              "Dr. Parameshwar N. Hiremath",
+              "Comparative Study on Durability of Conventional Concrete and HPC in Environmental Conditions",
+              "KSCST",
+              "44S_MTECH_054 (2021)",
+              "6,000.00",
+              "Completed"
+            ],
+            [
+              "11",
+              "Dr. M.M. Hanamasagar",
+              "Experimental Studies on Assessment of Basic Compressive Stress of Stabilized Compressed Mud Block Masonry",
+              "KSCST",
+              "7.1.01/SPP/91 (2022)",
+              "7,000.00",
+              "Completed"
+            ],
+            [
+              "12",
+              "Prof. S.M. Kalagudi | Dr. P.G. Rakaraddi",
+              "Reclamation and Reuse of Greywater by Construction of Wetlands",
+              "KSCST",
+              "7.1.01/SPP/91 (2022)",
+              "7,000.00",
+              "Completed"
+            ],
+            [
+              "13",
+              "Dr. Veena S. Soraganvi | Dr. Jayalatha N.A.",
+              "Sustainable Waste Disposal System for a Rural Area",
+              "KSCST",
+              "7.1.01/SPP/91 (2022)",
+              "6,000.00",
+              "Completed"
+            ],
+            [
+              "14",
+              "Prof. Seema Shringeri",
+              "Experimental Study on Geosynthetic Encased Stone Column with Different Soil",
+              "KSCST",
+              "7.1.01/SPP/91 (2022)",
+              "6,000.00",
+              "Completed"
+            ],
+            [
+              "15",
+              "Dr. Santhosh M. Malkapur",
+              "Low-Cost Building Blocks Using Locally Available Materials",
+              "KSCST",
+              "7.1.01/SPP/91 (2022)",
+              "6,000.00",
+              "Completed"
+            ],
+            [
+              "16",
+              "Dr. Santhosh M. Malkapur",
+              "Studies on Use of Crumb Rubber in Concrete for Acoustical Insulation Purposes",
+              "KSCST",
+              "7.1.01/SPP/91 (2022)",
+              "6,000.00",
+              "Completed"
+            ],
+            [
+              "17",
+              "Dr. S.H. Sanni | Prof. G.S. Hiremath",
+              "A Comprehensive Study on Moment Resisted Connections Under Dynamic Loading",
+              "KSCST",
+              "7.1.01/SPP/91 (2022)",
+              "10,000.00",
+              "Completed"
+            ],
+            [
+              "18",
+              "Dr. Veena S. Soraganvi",
+              "Treatment of Distillery Spent Wash by Integrated Anaerobic Digestion and Solar Photocatalysis",
+              "KSCST",
+              "46S_BE_4140 (2023)",
+              "5,000.00",
+              "Completed"
+            ],
+            [
+              "19",
+              "Dr. B.R. Hiremath",
+              "Catalytic Micropyrolysis of Waste Plastics into Crude Oil",
+              "KSCST",
+              "46S_BE_5252 (2023)",
+              "6,000.00",
+              "Completed"
+            ],
+            [
+              "20",
+              "Dr. B.R. Hiremath",
+              "Treatment of Textile Wastewater by Electrocoagulation Process Using Perforated Aluminium Electrodes",
+              "KSCST",
+              "46S_BE_5470 (2023)",
+              "5,000.00",
+              "Completed"
+            ],
+            [
+              "21",
+              "Dr. Jayalatha N.A.",
+              "Performance of Horizontal Subsurface Flow Constructed Wetland for Household Wastewater Treatment",
+              "KSCST & IWWA",
+              "47S_BE_3619 & IWWA/2024/16",
+              "15,500.00",
+              "Completed"
+            ],
+            [
+              "22",
+              "Prof. Seema Shringeri",
+              "Performance of Geo-Synthetic Encased Single and Group of Stone Column with Layered Soil",
+              "KSCST",
+              "47S_BE_3549 (2024)",
+              "5,000.00",
+              "Completed"
+            ],
+            [
+              "23",
+              "Dr. B.R. Hiremath | Dr. Madhumala",
+              "Removal of Heavy Metals from Wastewater by Bioremediation Method Using Microalgae",
+              "IWWA",
+              "IWWA/SRPP/2024/41",
+              "4,000.00",
+              "Completed"
+            ],
+            [
+              "24",
+              "Dr. Jayalatha N.A. | Dr. G.B. Megeri",
+              "Microbial Fuel Cell Construction for Sustainable Bio-Energy Generation and Wastewater Treatment",
+              "KSCST & IWWA",
+              "47S_MTech_0029 & IWWA/2024/06",
+              "11,000.00",
+              "Completed"
+            ],
+            [
+              "25",
+              "Dr. Srinivas F.C.",
+              "Design of Traffic Signal Alert Device to Reduce Road Accidents at Critical Sight Distances",
+              "KSCST",
+              "48S_BE_4074 (2024)",
+              "4,500.00",
+              "Pursuing"
+            ]
+          ]
+        }
+      ],
+      "facilitiesGallery": [
+        {
+          "title": "Advance Geotechnical Engineering Laboratory",
+          "images": [
+            "departments/civil/labs/advance-gt-1.webp",
+            "departments/civil/labs/advance-gt-2.webp",
+            "departments/civil/labs/advance-gt-3.webp",
+            "departments/civil/labs/advance-gt-4.webp"
+          ]
+        },
+        {
+          "title": "Geotechnical Engineering Laboratory",
+          "images": [
+            "departments/civil/labs/gt-1.webp",
+            "departments/civil/labs/gt-2.webp",
+            "departments/civil/labs/gt-3.webp"
+          ]
+        },
+        {
+          "title": "Structural Engineering Laboratory",
+          "images": [
+            "departments/civil/labs/structural-1.webp"
+          ]
+        },
+        {
+          "title": "Environmental Engineering Laboratory",
+          "images": [
+            "departments/civil/labs/environmental-1.webp",
+            "departments/civil/labs/environmental-2.webp"
+          ]
+        },
+        {
+          "title": "Basic Materials & Concrete Testing Laboratory (BMCT Lab)",
+          "images": [
+            "departments/civil/labs/bmct-1.webp",
+            "departments/civil/labs/bmct-2.webp"
+          ]
+        },
+        {
+          "title": "Fluid Mechanics Laboratory",
+          "images": [
+            "departments/civil/labs/fm-1.webp",
+            "departments/civil/labs/fm-2.webp"
+          ]
+        },
+        {
+          "title": "Engineering Geology Laboratory",
+          "images": [
+            "departments/civil/labs/geology-1.webp",
+            "departments/civil/labs/geology-2.webp"
+          ]
+        },
+        {
+          "title": "Surveying Practice Laboratory",
+          "images": [
+            "departments/civil/labs/survey-1.webp"
+          ]
+        },
+        {
+          "title": "Computer Laboratory",
+          "images": [
+            "departments/civil/labs/computer-1.webp"
+          ]
+        },
+        {
+          "title": "Highway & Concrete Laboratory",
+          "images": [
+            "departments/civil/labs/highway-1.webp",
+            "departments/civil/labs/highway-2.webp",
+            "departments/civil/labs/highway-3.webp"
+          ]
+        }
+      ],
+      "customSections": [
+        {
+          "id": "consultancy",
+          "title": "Consultancy Services",
+          "label": "Consultancy",
+          "icon": "briefcase",
+          "content": "The Department of Civil Engineering offers professional consultancy and testing services to Government Departments, Public Sector Undertakings, Industries, Private Organizations, Architects, Builders, Contractors, and Individual Clients. Supported by experienced faculty members, modern laboratories, and advanced testing equipment, the department delivers reliable, technically sound, and cost-effective engineering solutions in accordance with relevant Indian Standards (IS Codes), IRC, MoRTH, BIS, CPCB, and other applicable specifications.\n\nOur consultancy activities integrate academic expertise with practical engineering applications, ensuring quality, safety, sustainability, and innovation in infrastructure development.",
+          "groups": [
+            {
+              "subtitle": "Why Choose Our Consultancy Services?",
+              "items": [
+                "Experienced Faculty Experts in Specialized Civil Engineering Domains",
+                "Well-Equipped and Modern Laboratories",
+                "Testing as per Relevant IS Codes and Standard Specifications",
+                "Reliable, Accurate, and Timely Reports",
+                "Cost-Effective Consultancy Solutions",
+                "Technical Support for Government, Industry, and Private Clients",
+                "Commitment to Quality, Safety, and Sustainable Infrastructure"
+              ]
+            },
+            {
+              "subtitle": "1. Construction Material Testing",
+              "text": "The department provides comprehensive laboratory testing services for construction materials used in buildings, roads, bridges, and other infrastructure projects. All tests are performed using calibrated equipment under the supervision of qualified faculty members.",
+              "items": [
+                "Applications: Quality Control during Construction",
+                "Applications: Material Certification",
+                "Applications: Third-Party Inspection",
+                "Applications: Project Approval and Compliance"
+              ],
+              "table": {
+                "title": "Material Testing Services Offered",
+                "columns": [
+                  "Material Category",
+                  "Tests & Parameters Offered"
+                ],
+                "rows": [
+                  [
+                    "Cement Testing",
+                    "Standard Consistency, Initial & Final Setting Time, Soundness, Compressive Strength, Fineness"
+                  ],
+                  [
+                    "Aggregate Testing",
+                    "Sieve Analysis, Specific Gravity & Water Absorption, Flakiness & Elongation Index, Aggregate Crushing Value, Aggregate Impact Value, Los Angeles Abrasion Test"
+                  ],
+                  [
+                    "Concrete Testing",
+                    "Workability Tests (Slump, Compaction Factor), Compressive Strength, Split Tensile Strength, Flexural Strength, Rebound Hammer Test, Ultrasonic Pulse Velocity (UPV)"
+                  ],
+                  [
+                    "Steel Testing",
+                    "Tensile Strength, Yield Strength, Elongation"
+                  ],
+                  [
+                    "Brick, Block and Tile Testing",
+                    "Compressive Strength, Water Absorption, Efflorescence"
+                  ],
+                  [
+                    "Bituminous Material Testing",
+                    "Penetration, Softening Point, Ductility, Marshall Stability"
+                  ]
+                ]
+              }
+            },
+            {
+              "subtitle": "2. Structural Engineering Services",
+              "text": "The department offers consultancy in planning, analysis, design, evaluation, and rehabilitation of civil engineering structures using modern design software and relevant design codes.",
+              "items": [
+                "Areas Covered: Residential & Institutional Buildings",
+                "Areas Covered: Commercial Complexes & Industrial Structures",
+                "Areas Covered: Water Tanks & Retaining Structures",
+                "Areas Covered: Bridges and Culverts"
+              ],
+              "table": {
+                "title": "Structural Services Offered",
+                "columns": [
+                  "Design & Assessment Services",
+                  "Testing & Review Services"
+                ],
+                "rows": [
+                  [
+                    "Structural Analysis and Design of RCC and Steel Structures",
+                    "Non-Destructive Testing (NDT)"
+                  ],
+                  [
+                    "Structural Proof Checking",
+                    "Rehabilitation and Retrofitting Recommendations"
+                  ],
+                  [
+                    "Foundation Design",
+                    "Quantity Estimation and Cost Analysis"
+                  ],
+                  [
+                    "Structural Stability Certification",
+                    "Preparation of Structural Drawings"
+                  ],
+                  [
+                    "Condition Assessment of Existing Structures",
+                    "Technical Review of Structural Designs"
+                  ]
+                ]
+              }
+            },
+            {
+              "subtitle": "3. Geotechnical Engineering Services",
+              "text": "The Geotechnical Engineering Laboratory provides investigation, testing, and foundation recommendations for safe and economical infrastructure development.",
+              "items": [
+                "Applications: Building Foundations & Embankments",
+                "Applications: Highway Projects & Pavement Design",
+                "Applications: Industrial Structures & Retaining Walls"
+              ],
+              "table": {
+                "title": "Geotechnical Services Offered",
+                "columns": [
+                  "Investigation & Recommendations",
+                  "Laboratory Soil Testing"
+                ],
+                "rows": [
+                  [
+                    "Soil Investigation & Boring Services",
+                    "Grain Size Analysis & Atterberg Limits"
+                  ],
+                  [
+                    "Collection of Disturbed and Undisturbed Samples",
+                    "Specific Gravity & Field Density Test"
+                  ],
+                  [
+                    "Standard Penetration Test (SPT)",
+                    "Compaction Test & Permeability Test"
+                  ],
+                  [
+                    "Safe Bearing Capacity (SBC) Evaluation",
+                    "Direct Shear Test & Unconfined Compression Test"
+                  ],
+                  [
+                    "Foundation Type Recommendations",
+                    "Consolidation Test & California Bearing Ratio (CBR)"
+                  ]
+                ]
+              }
+            },
+            {
+              "subtitle": "4. Environmental Engineering Services (Water & Wastewater)",
+              "text": "The Environmental Engineering Laboratory provides testing, monitoring, and consultancy services for water quality assessment, wastewater analysis, and environmental management.",
+              "items": [
+                "Applications: Municipal & Rural Water Supply Schemes",
+                "Applications: Educational Institutions & Residential Layouts",
+                "Applications: Industrial Effluent Monitoring"
+              ],
+              "table": {
+                "title": "Environmental Services Offered",
+                "columns": [
+                  "Water Quality Testing",
+                  "Wastewater Analysis & Consultancy"
+                ],
+                "rows": [
+                  [
+                    "Physical Parameters (pH, Turbidity, TDS)",
+                    "Domestic Wastewater Characterization"
+                  ],
+                  [
+                    "Chemical Parameters (Hardness, Chlorides, Alkalinity)",
+                    "Industrial Effluent Analysis"
+                  ],
+                  [
+                    "Sulphates, Fluoride, Dissolved Oxygen (DO)",
+                    "Treated Water Quality Assessment"
+                  ],
+                  [
+                    "Biological Oxygen Demand (BOD)",
+                    "Water Supply & Wastewater Treatment Recommendations"
+                  ],
+                  [
+                    "Chemical Oxygen Demand (COD)",
+                    "Rainwater Harvesting Advisory & Environmental Monitoring"
+                  ]
+                ]
+              }
+            },
+            {
+              "subtitle": "5. Transportation Engineering Services",
+              "text": "The Transportation Engineering Laboratory offers consultancy for pavement materials, traffic studies, and transportation planning.",
+              "items": [
+                "Applications: National and State Highways",
+                "Applications: Urban and Rural Roads",
+                "Applications: Smart City Projects & Industrial Infrastructure"
+              ],
+              "table": {
+                "title": "Transportation Services Offered",
+                "columns": [
+                  "Traffic Studies & Pavement Evaluation",
+                  "Pavement Material Testing"
+                ],
+                "rows": [
+                  [
+                    "Traffic Volume, Speed and Delay Studies",
+                    "Bitumen Testing & Bituminous Mix Evaluation"
+                  ],
+                  [
+                    "Parking Surveys & Traffic Impact Assessment",
+                    "Aggregate Testing for Pavements"
+                  ],
+                  [
+                    "Road Safety Audits & Accident Analysis",
+                    "Marshall Stability Test"
+                  ],
+                  [
+                    "Road Geometric Design Review",
+                    "Density and Compaction Tests"
+                  ]
+                ]
+              }
+            },
+            {
+              "subtitle": "Contact for Consultancy Services",
+              "text": "For consultancy requests, material testing, technical assistance, or project-related inquiries, please contact the Department. Our faculty members will be pleased to provide professional engineering solutions tailored to your project requirements.",
+              "items": [
+                {
+                  "label": "Department of Civil Engineering",
+                  "value": "Basaveshwar Engineering College (Autonomous), Bagalkote – 587103, Karnataka"
+                },
+                {
+                  "label": "Email",
+                  "value": "civil@becbgk.edu"
+                }
+              ]
+            }
+          ],
+          "groupPhoto": "departments/civil/consultancy-amount.webp",
+          "groupPhotoCaption": "Year Wise Consultancy Amount Received (Last 13 Years)"
+        },
+        {
+          "id": "alumni",
+          "title": "Alumni",
+          "label": "Alumni",
+          "icon": "users",
+          "redirectUrl": "departments/civil/docs/distinguished-alumni.pdf"
+        }
+      ],
+      "sectionOrder": [
+        "home",
+        "about",
+        "academics",
+        "curriculum",
+        "faculty",
+        "staff",
+        "governance",
+        "research",
+        "research-achievements",
+        "achievements",
+        "placements",
+        "facilities",
+        "activities",
+        "association",
+        "mou",
+        "newsletters",
+        "photo-gallery",
+        "alumni",
+        "consultancy",
+        "contact"
+      ],
+      "mouImages": [
+        "departments/civil/mou-medini-technology.webp",
+        "departments/civil/mou-walmi-dharwad.webp"
+      ]
     },
     "computer-science-and-engg": {
       "name": "Computer Science and Engineering",
@@ -6012,7 +8333,7 @@
       "peos": [
         {
           "code": "PEO1",
-          "text": "Graduates will be able to pursue a professional career."
+          "text": "The graduates will be able to design solutions to industrial challenges."
         },
         {
           "code": "PEO2",
@@ -6048,6 +8369,7 @@
         }
       ],
       "bestPracticesUnderAbout": true,
+      "hodMessageUnderAbout": true,
       "researchAreas": [
         {
           "supervisor": "Dr. R. L. Naik",
@@ -7563,8 +9885,8 @@
               "2023-24"
             ],
             [
-              "Mr. Pramachand Hanchinal, Mr. Basangouda, Ms. Veeen S Gidaganti, Mr. Vinay B Hosamani",
-              "Dr. Basanagouda Ronad",
+              "Mr. Pramachand Hanchinal, Mr. Basangouda, Ms. Veen S Gidaganti, Mr. Vinay B Hosamani",
+              "Dr. Sangamesh Y. Goudappanavar",
               "Development and Fabrication of VAWTG Blades Using Natural Fibers for Domestic Usage",
               "KSCST Project",
               "Rs. 6000",
@@ -7572,7 +9894,7 @@
             ],
             [
               "Mr. Nagaraj, Mr. Nagaraj Bhovi, Ms. Pooja Patil, Mr. Rahul Patil",
-              "Dr. Basanagouda Ronad",
+              "Prof. Vikas Jainkeri",
               "Analysis of Lead Acid Battery for Determination of State of Charge Based on Machine Learning",
               "KSCST Project",
               "Rs. 5000",
