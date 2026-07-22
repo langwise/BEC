@@ -39,15 +39,19 @@ function resolveSection(dept: DepartmentData, section?: string[]) {
   return { id: item.id, label: item.label, isDefault: item.id === defaultId };
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return departmentCategories.flatMap((category) =>
     category.departments.flatMap((entry) => {
       const { sidebar } = getDepartmentData(category.key, entry.slug);
       const base = { type: category.key, slug: entry.slug };
-      // The first sidebar entry lives at the base URL, so it gets no segment.
+      // The first sidebar entry lives at the base URL; its explicit segment is
+      // still generated so the built page can redirect it there (dynamicParams
+      // is false, so anything not listed here 404s without a server render).
       return [
         { ...base, section: [] as string[] },
-        ...sidebar.slice(1).map((item) => ({ ...base, section: [item.id] })),
+        ...sidebar.map((item) => ({ ...base, section: [item.id] })),
       ];
     }),
   );

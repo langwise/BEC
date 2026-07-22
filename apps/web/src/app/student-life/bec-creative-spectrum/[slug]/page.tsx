@@ -9,7 +9,8 @@ import {
 } from "lucide-react";
 import { detailedClubs } from "../clubs-data";
 
-// Define static parameters for Next.js build-time pre-rendering
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return detailedClubs.map((club) => ({
     slug: club.id,
