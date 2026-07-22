@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { type ComponentProps, useEffect, useLayoutEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -23,6 +25,22 @@ import { NavigationItem } from "@/types/navigation";
 import { isGroup, isLink } from "@/utils/navigation-gaurd";
 
 const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
+// Client-side navigation with prefetch on intent instead of viewport — same
+// idiom as the departments sidebar, keeps per-page edge requests down.
+function IntentLink({ href, ...props }: ComponentProps<typeof Link>) {
+  const router = useRouter();
+  const prefetch = () => router.prefetch(href.toString());
+  return (
+    <Link
+      href={href}
+      prefetch={false}
+      onMouseEnter={prefetch}
+      onFocus={prefetch}
+      {...props}
+    />
+  );
+}
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -87,7 +105,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between gap-2 sm:gap-4 py-2 sm:py-3">
           {/* Logo */}
-          <a href="/" className="flex min-w-0 flex-1 items-center gap-5 sm:gap-7 lg:gap-9">
+          <IntentLink href="/" className="flex min-w-0 flex-1 items-center gap-5 sm:gap-7 lg:gap-9">
             <img
               src="/logo-crest.png"
               alt="Basaveshwar Engineering College, Bagalkote logo"
@@ -115,7 +133,7 @@ export function Header() {
                 S. Nijalingappa Vidyanagar, Bagalkote - 587 102, Karnataka, India
               </span>
             </div>
-          </a>
+          </IntentLink>
 
           {/* Institution codes */}
           <details
@@ -172,13 +190,14 @@ export function Header() {
                 {navigationData.map((item) => (
                   <div key={item.title} className="border-b border-muted py-2">
                     {!item.items && item.href ? (
-                      <a
+                      <Link
                         href={item.href}
+                        prefetch={false}
                         className="block py-2 font-medium hover:text-primary"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {item.title}
-                      </a>
+                      </Link>
                     ) : (
                     <details className="group/mobile-nav">
                       <summary className="flex items-center justify-between cursor-pointer py-2 font-medium">
@@ -204,25 +223,27 @@ export function Header() {
 
                                 <div className="ml-4 mt-1 space-y-1 border-l pl-2">
                                   {sub.items.map((nested) => (
-                                    <a
+                                    <Link
                                       key={nested.title}
                                       href={nested.href}
+                                      prefetch={false}
                                       className="block text-sm py-1 text-muted-foreground hover:text-primary"
                                       onClick={() => setMobileMenuOpen(false)}
                                     >
                                       {nested.title}
-                                    </a>
+                                    </Link>
                                   ))}
                                 </div>
                               </details>
                             ) : (
-                              <a
+                              <Link
                                 href={sub.href}
+                                prefetch={false}
                                 className="block text-sm py-1 text-muted-foreground hover:text-primary"
                                 onClick={() => setMobileMenuOpen(false)}
                               >
                                 {sub.title}
-                              </a>
+                              </Link>
                             )}
                           </div>
                         ))}
@@ -247,7 +268,7 @@ export function Header() {
                 {navigationData.map((item: NavigationItem, index: number) => (
                   <NavigationMenuItem key={item.title}>
                     {!item.items && item.href ? (
-                      <a
+                      <IntentLink
                         href={item.href}
                         className={cn(
                           navigationMenuTriggerStyle(),
@@ -255,7 +276,7 @@ export function Header() {
                         )}
                       >
                         {item.title}
-                      </a>
+                      </IntentLink>
                     ) : (
                       <>
                     <NavigationMenuTrigger className="text-sm font-medium bg-transparent text-primary-foreground h-12 px-4">
@@ -274,12 +295,14 @@ export function Header() {
                               {item.items.filter(isLink).map((link) => (
                                 <NavigationMenuLink
                                   key={link.title}
-                                  href={link.href}
+                                  asChild
                                   className="block rounded-md p-4 hover:bg-white hover:text-primary transition-colors"
                                 >
-                                  <div className="text-sm font-medium">
-                                    {link.title}
-                                  </div>
+                                  <IntentLink href={link.href}>
+                                    <div className="text-sm font-medium">
+                                      {link.title}
+                                    </div>
+                                  </IntentLink>
                                 </NavigationMenuLink>
                               ))}
                             </div>
@@ -302,10 +325,12 @@ export function Header() {
                                     {group.items.map((nested) => (
                                       <li key={nested.title}>
                                         <NavigationMenuLink
-                                          href={nested.href}
+                                          asChild
                                           className="block rounded-md px-4 py-2.5 text-sm hover:bg-white hover:text-primary transition-colors"
                                         >
-                                          {nested.title}
+                                          <IntentLink href={nested.href}>
+                                            {nested.title}
+                                          </IntentLink>
                                         </NavigationMenuLink>
                                       </li>
                                     ))}
@@ -323,12 +348,14 @@ export function Header() {
                                 .map((nested) => (
                                   <NavigationMenuLink
                                     key={nested.title}
-                                    href={nested.href}
+                                    asChild
                                     className="block rounded-md p-4 hover:bg-white hover:text-primary transition-colors"
                                   >
-                                    <div className="text-sm font-medium">
-                                      {nested.title}
-                                    </div>
+                                    <IntentLink href={nested.href}>
+                                      <div className="text-sm font-medium">
+                                        {nested.title}
+                                      </div>
+                                    </IntentLink>
                                   </NavigationMenuLink>
                                 ))}
                             </div>
