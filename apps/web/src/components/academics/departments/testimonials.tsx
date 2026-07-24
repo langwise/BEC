@@ -2,6 +2,7 @@
 
 import { Quote } from "lucide-react";
 import { iconMap } from "./icons";
+import EeeMentorshipProgram from "./eee-mentorship";
 
 type Testimonial = {
   name: string;
@@ -33,11 +34,13 @@ export default function TestimonialsSection({
   icon,
   testimonials,
   distinguished,
+  slug,
 }: {
   title: string;
   icon?: string;
   testimonials: Testimonial[];
   distinguished?: Distinguished[];
+  slug?: string;
 }) {
   const Icon = icon ? iconMap[icon] : null;
 
@@ -93,12 +96,12 @@ export default function TestimonialsSection({
 
       {distinguished && distinguished.length > 0 && (
         <div>
-          <h3 className="mb-6 text-lg font-semibold text-gray-900">Our Distinguished Alumni</h3>
+          <h3 className="mb-6 text-lg font-semibold text-gray-950">Our Distinguished Alumni</h3>
           <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
             {distinguished.map((a, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center rounded-2xl border border-stone-200 bg-white p-4 text-center shadow-sm"
+                className="flex flex-col items-center rounded-2xl border border-stone-200 bg-white p-4 text-center shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-stone-200 bg-primary/10 text-xl font-semibold text-primary">
                   {a.photo ? (
@@ -120,6 +123,8 @@ export default function TestimonialsSection({
           </div>
         </div>
       )}
+
+      {slug === "electrical-and-electronics-engg" && <EeeMentorshipProgram />}
     </div>
   );
 }
