@@ -10,7 +10,7 @@ const R2_BASE = process.env.NEXT_PUBLIC_R2_BASE_URL || "https://pub-11b7012f1df5
 export function asset(key: AssetKey | (string & {})): string {
   const url = (manifest as Record<string, string>)[key];
   if (url) return url;
-  if (key.startsWith("http")) return key;
+  if (key.startsWith("http") || key.startsWith("/")) return key;
   return `${R2_BASE}/${key.replace(/^\//, "")}`;
 }
 

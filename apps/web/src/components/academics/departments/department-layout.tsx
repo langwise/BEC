@@ -557,6 +557,14 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                             items={dept.mission.items}
                             icon={dept.mission.icon}
                         />
+
+                        {dept.groupPhotosUnderAbout && dept.facultyGroupPhoto && (
+                            <div className="pt-4">
+                                <div className={dept.slug === "civil-engg" ? "max-w-3xl mx-auto" : "max-w-xl mx-auto"}>
+                                    <GroupPhotoBanner image={dept.facultyGroupPhoto} />
+                                </div>
+                            </div>
+                        )}
                     </>
                 )}
 
@@ -589,12 +597,12 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
 
                 {dept.groupPhotosUnderAbout && (
                     <div className="space-y-8 pt-4">
-                        {dept.facultyGroupPhoto && (
+                        {dept.facultyGroupPhoto && dept.visionMissionOnHome && (
                             <div className={dept.slug === "civil-engg" ? "max-w-3xl mx-auto" : "max-w-xl mx-auto"}>
                                 <GroupPhotoBanner image={dept.facultyGroupPhoto} />
                             </div>
                         )}
-                        {dept.staffGroupPhoto && dept.slug !== "civil-engg" && (
+                        {dept.staffGroupPhoto && dept.slug !== "civil-engg" && dept.slug !== "electrical-and-electronics-engg" && (
                             <div className="max-w-xl mx-auto">
                                 <GroupPhotoBanner image={dept.staffGroupPhoto} />
                             </div>
@@ -690,6 +698,7 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                      icon={activeSection.icon}
                      testimonials={activeSection.testimonials}
                      distinguished={activeSection.distinguished}
+                     slug={dept.slug}
                  />
              )
          }
