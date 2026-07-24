@@ -5334,6 +5334,80 @@
           ]
         }
       ],
+      "distinguishedAlumni": [
+        {
+          "name": "Dr. G. R. Dodagoudar",
+          "designation": "Professor",
+          "organization": "Dept of Civil Engineering, IIT Madras",
+          "photo": "/departments/civil/alumni/gr-dodagoudar.jpeg"
+        },
+        {
+          "name": "Dr. Ramesh Nayak",
+          "designation": "Assistant Professor",
+          "organization": "Dept of Civil Engineering, IIT Dharwad",
+          "photo": "/departments/civil/alumni/ramesh-nayak.jpeg"
+        },
+        {
+          "name": "Dr. Lohitkumar Nainegali",
+          "designation": "Assistant Professor",
+          "organization": "Dept of Civil Engineering, NIT Surathkal",
+          "photo": "/departments/civil/alumni/lohitkumar-nainegali.jpeg"
+        },
+        {
+          "name": "Dr. Abdulrazak Honnutagi",
+          "designation": "Director IQAC",
+          "organization": "SECAB Institutions, Vijayapur",
+          "photo": "/departments/civil/alumni/abdulrazak-honnutagi.jpeg"
+        },
+        {
+          "name": "Rtd. Colonel",
+          "designation": "Ministry of Defense",
+          "organization": "Indian Army",
+          "photo": "/departments/civil/alumni/rtd-colonel.jpeg"
+        },
+        {
+          "name": "Mr. Ashok L. Vasnad",
+          "designation": "Chief Engineer",
+          "organization": "Irrigation Dept, Govt. of Karnataka",
+          "photo": "/departments/civil/alumni/ashok-l-vasnad.jpeg"
+        },
+        {
+          "name": "Mr. Nagappa Hebbi",
+          "designation": "AGM, Surat Metro",
+          "organization": "Gujarat Metro Rail Corporation Ltd",
+          "photo": "/departments/civil/alumni/nagappa-hebbi.jpeg"
+        },
+        {
+          "name": "Mr. Sunilkumar Madabhavi",
+          "designation": "Chief Engineer, CPSU",
+          "organization": "Mumbai Port Trust Mumbai",
+          "photo": "/departments/civil/alumni/sunilkumar-madabhavi.jpeg"
+        },
+        {
+          "name": "Prof. B. Y. Bandiwaddar",
+          "designation": "Professor",
+          "organization": "Water and Land Management Institute (WALMI) Dharwad",
+          "photo": "/departments/civil/alumni/by-bandiwaddar.jpeg"
+        },
+        {
+          "name": "Mr. H. D. Dasar",
+          "designation": "Super-Intendent Engineer",
+          "organization": "R&R, UKP, GoK",
+          "photo": "/departments/civil/alumni/h-d-dasar.jpeg"
+        },
+        {
+          "name": "Er. Arun Kumar K",
+          "designation": "President Technical Organization",
+          "organization": "Dilip Buildcon Ltd, Bhopal",
+          "photo": "/departments/civil/alumni/arun-kumar-k.jpeg"
+        },
+        {
+          "name": "Mr. Vinaykumar S. Mathad",
+          "designation": "Deputy General Manager",
+          "organization": "E I Technologies Private Limited, Bengaluru",
+          "photo": "/departments/civil/alumni/vinaykumar-s-mathad.jpeg"
+        }
+      ],
       "customSections": [
         {
           "id": "consultancy",
@@ -5563,13 +5637,6 @@
           ],
           "groupPhoto": "departments/civil/consultancy-amount.webp",
           "groupPhotoCaption": "Year Wise Consultancy Amount Received (Last 13 Years)"
-        },
-        {
-          "id": "alumni",
-          "title": "Alumni",
-          "label": "Alumni",
-          "icon": "users",
-          "redirectUrl": "departments/civil/docs/distinguished-alumni.pdf"
         }
       ],
       "sectionOrder": [
@@ -8168,6 +8235,7 @@
       "visionMissionOnHome": true
     },
     "electrical-and-electronics-engg": {
+      "groupPhotosUnderAbout": true,
       "name": "Electrical & Electronics Engineering",
       "assetSlug": "eee",
       "heroImage": "departments/eee/hero-building.webp",
