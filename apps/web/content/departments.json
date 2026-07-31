@@ -8236,11 +8236,13 @@
     },
     "electrical-and-electronics-engg": {
       "groupPhotosUnderAbout": true,
+      "intake": "60",
+      "nbaAccredited": true,
       "name": "Electrical & Electronics Engineering",
       "assetSlug": "eee",
-      "heroImage": "departments/eee/hero-building.webp",
+      "heroImage": "departments/eee/hero-building-new.webp",
       "heroImages": [
-        "departments/eee/hero-building.webp",
+        "departments/eee/hero-building-new.webp",
         "departments/eee/hero/slide-1.webp",
         "departments/eee/hero/slide-2.webp",
         "departments/eee/hero/slide-3.webp",
@@ -8434,6 +8436,18 @@
         {
           "title": "Best Practices",
           "file": "departments/eee/docs/best-practices.pdf"
+        },
+        {
+          "title": "Alumni Webinar Series",
+          "file": "departments/eee/docs/alumni-webinar-series.pdf"
+        },
+        {
+          "title": "Course Project",
+          "file": "departments/eee/docs/course-project.pdf"
+        },
+        {
+          "title": "Outreach Activities",
+          "file": "departments/eee/docs/outreach-activities.pdf"
         }
       ],
       "bestPracticesUnderAbout": true,
@@ -11312,11 +11326,14 @@
       "facultyGroupPhotoCaption": "Teaching Faculty",
       "staffGroupPhoto": "departments/ise/cine1497.webp",
       "staffGroupPhotoCaption": "Technical and Supporting Staff",
+      "homeGroupPhoto": "departments/ise/graduating-batch-22-26.webp",
+      "homeGroupPhotoCaption": "Graduating Batch 22-26",
       "galleryExclude": [
         "cine1490",
         "cine1497",
         "cine1505",
-        "hero-building"
+        "hero-building",
+        "graduating-batch-22-26"
       ],
       "tagline": "A global premier centre of education and research in Information Science and Engineering.",
       "established": "1999",
@@ -12254,7 +12271,7 @@
           "designation": "Instructor"
         },
         {
-          "name": "Shri. G. B. Gadded",
+          "name": "Shri. D. S. Gadad",
           "designation": "Instructor"
         },
         {
