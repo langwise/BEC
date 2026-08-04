@@ -1,9 +1,12 @@
+import { asset } from "@/lib/assets";
+
 export interface NewsAnnouncementsItem {
   id: number;
   date: string;
   title: string;
   pinned?: boolean;
   href: string;
+  images?: readonly { src: string; alt: string }[];
 }
 
 const RESULTS_PORTAL = "http://119.161.97.238:8080/Autonomous/";
@@ -89,13 +92,30 @@ export const newsData: NewsAnnouncementsItem[] = [
 export const announcementsData: NewsAnnouncementsItem[] = [
   {
     id: 1,
+    date: "AUG 01, 2026",
+    title: "16th Graduation Day at Basaveshwar Engineering College, Bagalkote",
+    pinned: true,
+    href: "#",
+    images: [
+      {
+        src: asset("announcements/16th-graduation-day-brochure.jpeg"),
+        alt: "16th Graduation Day brochure cover and college highlights",
+      },
+      {
+        src: asset("announcements/16th-graduation-day-schedule.jpeg"),
+        alt: "16th Graduation Day programme schedule and dignitaries",
+      },
+    ],
+  },
+  {
+    id: 2,
     date: "A.Y. 2026–27",
     title: "Admissions open now for A.Y. 2026–27",
     pinned: true,
     href: "/admissions",
   },
   {
-    id: 2,
+    id: 3,
     date: "JUL 13, 2026",
     title:
       "Six-day Students Development Programme on “Quant Edge: Skills for Success” (13.07.2026 to 18.07.2026)",
@@ -103,21 +123,21 @@ export const announcementsData: NewsAnnouncementsItem[] = [
     href: "#",
   },
   {
-    id: 3,
+    id: 4,
     date: "JUN 20, 2026",
     title:
       "Open Day at Basaveshwar Engineering College, Bagalkot (20th June 2026)",
     href: "#",
   },
   {
-    id: 4,
+    id: 5,
     date: "2025–26 EVEN SEM",
     title:
       "Results Announced: BE VI Regular SEE and Reregistered & Reappear Examinations",
     href: RESULTS_PORTAL,
   },
   {
-    id: 5,
+    id: 6,
     date: "2025–26 EVEN SEM",
     title:
       "Results Announced: BE VIII Regular Semester and Reregistered & Reappear courses SEE Examinations",

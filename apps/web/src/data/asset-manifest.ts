@@ -10,6 +10,8 @@ export const manifest = {
   "administration/ict-team/kupendrakumar-h-b.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/administration/ict-team/kupendrakumar-h-b.webp",
   "administration/ict-team/prashant-kalhal.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/administration/ict-team/prashant-kalhal.webp",
   "administration/ict-team/santosh-mani.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/administration/ict-team/santosh-mani.webp",
+  "announcements/16th-graduation-day-brochure.jpeg": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/announcements/16th-graduation-day-brochure.jpeg",
+  "announcements/16th-graduation-day-schedule.jpeg": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/announcements/16th-graduation-day-schedule.jpeg",
   "cells/iic/achievements/1-iic-bec-bagalkot-is-recognized-as-one-of-the-three-best-performing-institution-innovation-council-from-south-west-zone-swro.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/iic/achievements/1-iic-bec-bagalkot-is-recognized-as-one-of-the-three-best-performing-institution-innovation-council-from-south-west-zone-swro.webp",
   "cells/iic/achievements/3-team-we-asclepius-won-smart-india-hackathon-2020-in-software-edition.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/iic/achievements/3-team-we-asclepius-won-smart-india-hackathon-2020-in-software-edition.webp",
   "cells/iic/achievements/iic-certificate-2023-24.webp": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/cells/iic/achievements/iic-certificate-2023-24.webp",

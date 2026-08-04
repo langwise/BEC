@@ -24,10 +24,10 @@ const committee = [
     contact: "9448693600",
   },
   {
-    name: "Prof. V. D. Holla",
+    name: "Dr. P. N. Kulkarni",
     role: "Squad Coordinator",
-    designation: "Anti-Ragging Squad, E & E Engineering",
-    contact: "9342647037",
+    designation: "Professor and Dean Academics",
+    contact: "9449767888",
   },
 ];
 
