@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Pin, ExternalLink } from "lucide-react";
 
 import type { NewsAnnouncementsItem } from "@/data/home/news-announcements";
@@ -53,6 +54,27 @@ function ItemRow({ item }: { item: NewsAnnouncementsItem }) {
           title
         )}
       </div>
+      {item.images?.length ? (
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          {item.images.map((image) => (
+            <a
+              key={image.src}
+              href={image.src}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="overflow-hidden rounded-md border border-stone-200 bg-stone-50"
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={1600}
+                height={1236}
+                className="h-auto w-full transition-transform hover:scale-[1.02]"
+              />
+            </a>
+          ))}
+        </div>
+      ) : null}
     </li>
   );
 }
