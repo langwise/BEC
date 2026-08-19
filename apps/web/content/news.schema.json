@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BEC news and announcements",
+  "description": "The two streams shown on the home page and at /news and /announcements. Array order is the published order; `pinned` items are held at the top of their stream.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "news": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Either an ISO date (\"2026-06-12\"), rendered as \"JUN 12, 2026\", or a free-text period label used verbatim (\"A.Y. 2026-27\", \"2025-26 EVEN SEM\")."
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "link": {
+            "description": "What opens when the item is clicked, in one of three forms: an attached file on R2 (\"documents/news/notice-k3f9wq.pdf\"), a site path (\"/admissions\"), or a full URL. Leave it out and the item renders as plain text.",
+            "type": "string",
+            "minLength": 1
+          },
+          "pinned": {
+            "description": "Hold this item at the top of its stream, above the date order.",
+            "type": "boolean"
+          },
+          "images": {
+            "description": "Scans shown beneath the item, side by side on a wide screen. Each opens full size in a new tab.",
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ]
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "What the picture shows, for a reader using a screen reader and for when it fails to load."
+                }
+              },
+              "required": [
+                "key",
+                "alt"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "date",
+          "title"
+        ],
+        "additionalProperties": false
+      },
+      "description": "The News stream: /news and the left column of the home page section."
+    },
+    "announcements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Either an ISO date (\"2026-06-12\"), rendered as \"JUN 12, 2026\", or a free-text period label used verbatim (\"A.Y. 2026-27\", \"2025-26 EVEN SEM\")."
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "link": {
+            "description": "What opens when the item is clicked, in one of three forms: an attached file on R2 (\"documents/news/notice-k3f9wq.pdf\"), a site path (\"/admissions\"), or a full URL. Leave it out and the item renders as plain text.",
+            "type": "string",
+            "minLength": 1
+          },
+          "pinned": {
+            "description": "Hold this item at the top of its stream, above the date order.",
+            "type": "boolean"
+          },
+          "images": {
+            "description": "Scans shown beneath the item, side by side on a wide screen. Each opens full size in a new tab.",
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ]
+                },
+                "alt": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "What the picture shows, for a reader using a screen reader and for when it fails to load."
+                }
+              },
+              "required": [
+                "key",
+                "alt"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "date",
+          "title"
+        ],
+        "additionalProperties": false
+      },
+      "description": "The Announcements stream: /announcements and the right column of the home page section."
+    }
+  },
+  "required": [
+    "news",
+    "announcements"
+  ],
+  "additionalProperties": false
+}

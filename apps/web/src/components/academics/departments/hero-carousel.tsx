@@ -20,7 +20,7 @@ export function DepartmentHeroCarousel({
 }: {
   images: SectionImage[];
   name: string;
-  tagline: string;
+  tagline?: string;
 }) {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
@@ -78,9 +78,11 @@ export function DepartmentHeroCarousel({
               <h1 className="text-3xl font-semibold leading-tight text-balance text-white [text-shadow:0_2px_18px_rgba(0,0,0,0.65)] md:text-4xl lg:text-5xl">
                 {name}
               </h1>
-              <p className="max-w-2xl text-base leading-relaxed text-white/90 [text-shadow:0_1px_12px_rgba(0,0,0,0.7)] md:text-lg">
-                {tagline}
-              </p>
+              {tagline && (
+                <p className="max-w-2xl text-base leading-relaxed text-white/90 [text-shadow:0_1px_12px_rgba(0,0,0,0.7)] md:text-lg">
+                  {tagline}
+                </p>
+              )}
             </div>
           </div>
         </div>
