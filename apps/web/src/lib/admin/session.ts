@@ -36,10 +36,20 @@ export async function endSession(): Promise<void> {
   (await cookies()).delete(COOKIE);
 }
 
-/** The current session, or null. Never throws — use in route handlers to 401. */
+/**
+ * The current session, or null. Never throws — use in route handlers to 401.
+ *
+ * The cookie is read *before* anything can short-circuit, because reading it is
+ * what marks the calling page dynamic. Checking `isAdminConfigured()` first made
+ * that bailout conditional on an environment variable: a build that could not
+ * see `ADMIN_PASSWORD` never reached `cookies()`, so `/admin` was prerendered as
+ * static, and the same route then hit `cookies()` at runtime — where the
+ * password *is* set — and died with DYNAMIC_SERVER_USAGE. A page's rendering
+ * mode must not depend on which env vars happened to exist at build time.
+ */
 export async function getSession(): Promise<AdminSession | null> {
-  if (!isAdminConfigured()) return null;
   const token = (await cookies()).get(COOKIE)?.value;
+  if (!isAdminConfigured()) return null;
   return token ? verifySessionToken(token) : null;
 }
 

@@ -5,6 +5,13 @@ import { getSession } from "@/lib/admin/session";
 
 export const metadata: Metadata = { title: "Sign in" };
 
+/**
+ * Reads the session cookie to bounce an Editor who is already signed in, so it
+ * can never be prerendered — a static copy would show the form to everybody,
+ * for ever.
+ */
+export const dynamic = "force-dynamic";
+
 export default async function AdminLoginPage() {
   if (await getSession()) redirect("/admin");
 
