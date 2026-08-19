@@ -12,6 +12,13 @@ import { UnsavedChangesProvider } from "@/lib/admin/unsaved-changes";
  * outside the group so it does not redirect to itself. This guard covers pages;
  * route handlers under /api/admin guard themselves with `getSession()`.
  */
+
+/**
+ * Declared here rather than on each page: segment config applies to the whole
+ * subtree, so a screen added later cannot forget it. Every page under this
+ * layout reads the session cookie, and none of them may be prerendered.
+ */
+export const dynamic = "force-dynamic";
 export default async function AuthedAdminLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
