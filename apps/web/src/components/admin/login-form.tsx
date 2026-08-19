@@ -32,10 +32,6 @@ export function LoginForm() {
           placeholder="e.g. Shivanand Kulkarni"
           className="h-11"
         />
-        <p className="text-muted-foreground text-xs">
-          Recorded with every change you publish, so the college knows who
-          changed what.
-        </p>
       </div>
 
       <div className="space-y-2">

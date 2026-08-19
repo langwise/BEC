@@ -31,7 +31,7 @@ export function evaluateSignIn(input: {
   if (name.length < 2) {
     return {
       ok: false,
-      error: "Please enter your name — it is recorded with every change you publish.",
+      error: "Please enter your name.",
     };
   }
   if (name.length > MAX_NAME_LENGTH) {
