@@ -2,9 +2,9 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Pin, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { Pin, ChevronLeft, ChevronRight, ArrowRight, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { newsData, announcementsData } from "@/data/home/news-announcements";
+import { newsItems, announcementItems, type NewsListItem } from "@/content/news";
 import { FadeIn } from "../animations/fade-in";
 import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -26,6 +26,28 @@ const slideVariants = {
   }),
 };
 
+/**
+ * An item with no link is plain text, not a link to "#" — that was how the old
+ * hardcoded data spelled "no link", and it shipped dead links to screen readers.
+ */
+function ItemTitle({ item }: { item: NewsListItem }) {
+  const className =
+    "text-[15px] font-semibold text-gray-800 leading-snug line-clamp-2";
+  if (!item.href) return <span className={className}>{item.title}</span>;
+  return (
+    <Link
+      href={item.href}
+      {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      className={cn(className, "transition-colors hover:text-primary")}
+    >
+      {item.title}
+      {item.attachment ? (
+        <FileText className="ml-1.5 inline h-3.5 w-3.5 -translate-y-px text-primary" />
+      ) : null}
+    </Link>
+  );
+}
+
 function EmptyState({ label }: { label: string }) {
   return (
     <div className="flex min-h-[380px] lg:h-[420px] flex-col items-center justify-center text-center">
@@ -45,11 +67,11 @@ export function NewsAnnouncementsSection() {
   const [annDirection, setAnnDirection] = React.useState<"forward" | "backward">("forward");
 
   // Split Pinned and Unpinned items
-  const pinnedNews = React.useMemo(() => newsData.filter((item) => item.pinned), []);
-  const unpinnedNews = React.useMemo(() => newsData.filter((item) => !item.pinned), []);
+  const pinnedNews = React.useMemo(() => newsItems.filter((item) => item.pinned), []);
+  const unpinnedNews = React.useMemo(() => newsItems.filter((item) => !item.pinned), []);
 
-  const pinnedAnn = React.useMemo(() => announcementsData.filter((item) => item.pinned), []);
-  const unpinnedAnn = React.useMemo(() => announcementsData.filter((item) => !item.pinned), []);
+  const pinnedAnn = React.useMemo(() => announcementItems.filter((item) => item.pinned), []);
+  const unpinnedAnn = React.useMemo(() => announcementItems.filter((item) => !item.pinned), []);
 
   // Calculate pages based on unpinned items
   const totalNewsPages = Math.ceil(unpinnedNews.length / UNPINNED_ITEMS_PER_PAGE);
@@ -102,12 +124,12 @@ export function NewsAnnouncementsSection() {
                 </div>
 
                 <div className="space-y-6 min-h-[380px]">
-                  {newsData.length === 0 && <EmptyState label="news" />}
+                  {newsItems.length === 0 && <EmptyState label="news" />}
                   {/* Pinned News (Static) */}
                   <div className="space-y-6">
                     {pinnedNews.map((item) => (
                       <div
-                        key={item.id}
+                        key={`${item.date}-${item.title}`}
                         className="border-b border-gray-100 pb-5 lg:h-[86px]"
                       >
                         <div className="text-[11px] font-bold tracking-wider text-muted-foreground uppercase mb-1.5">
@@ -115,12 +137,7 @@ export function NewsAnnouncementsSection() {
                         </div>
                         <div className="flex gap-2.5 items-start">
                           <Pin className="h-4 w-4 text-green-600 fill-green-600 rotate-[45deg] shrink-0 mt-1" />
-                          <Link
-                            href={item.href}
-                            className="text-[15px] font-semibold text-gray-800 hover:text-primary transition-colors leading-snug line-clamp-2"
-                          >
-                            {item.title}
-                          </Link>
+                          <ItemTitle item={item} />
                         </div>
                       </div>
                     ))}
@@ -141,7 +158,7 @@ export function NewsAnnouncementsSection() {
                       >
                         {currentUnpinnedNews.map((item, index) => (
                           <div
-                            key={item.id}
+                            key={`${item.date}-${item.title}`}
                             className={cn(
                               "border-b border-gray-100 pb-5 lg:h-[86px]",
                               index === currentUnpinnedNews.length - 1 && "border-b-0 pb-0"
@@ -151,12 +168,7 @@ export function NewsAnnouncementsSection() {
                               {item.date}
                             </div>
                             <div className="flex gap-2.5 items-start">
-                              <Link
-                                href={item.href}
-                                className="text-[15px] font-semibold text-gray-800 hover:text-primary transition-colors leading-snug line-clamp-2"
-                              >
-                                {item.title}
-                              </Link>
+                              <ItemTitle item={item} />
                             </div>
                           </div>
                         ))}
@@ -220,14 +232,14 @@ export function NewsAnnouncementsSection() {
                 </div>
 
                 <div className="space-y-6 min-h-[380px]">
-                  {announcementsData.length === 0 && (
+                  {announcementItems.length === 0 && (
                     <EmptyState label="announcements" />
                   )}
                   {/* Pinned Announcements (Static) */}
                   <div className="space-y-6">
                     {pinnedAnn.map((item) => (
                       <div
-                        key={item.id}
+                        key={`${item.date}-${item.title}`}
                         className="border-b border-gray-100 pb-5 lg:h-[86px]"
                       >
                         <div className="text-[11px] font-bold tracking-wider text-muted-foreground uppercase mb-1.5">
@@ -235,12 +247,7 @@ export function NewsAnnouncementsSection() {
                         </div>
                         <div className="flex gap-2.5 items-start">
                           <Pin className="h-4 w-4 text-green-600 fill-green-600 rotate-[45deg] shrink-0 mt-1" />
-                          <Link
-                            href={item.href}
-                            className="text-[15px] font-semibold text-gray-800 hover:text-primary transition-colors leading-snug line-clamp-2"
-                          >
-                            {item.title}
-                          </Link>
+                          <ItemTitle item={item} />
                         </div>
                       </div>
                     ))}
@@ -261,7 +268,7 @@ export function NewsAnnouncementsSection() {
                       >
                         {currentUnpinnedAnn.map((item, index) => (
                           <div
-                            key={item.id}
+                            key={`${item.date}-${item.title}`}
                             className={cn(
                               "border-b border-gray-100 pb-5 lg:h-[86px]",
                               index === currentUnpinnedAnn.length - 1 && "border-b-0 pb-0"
@@ -271,12 +278,7 @@ export function NewsAnnouncementsSection() {
                               {item.date}
                             </div>
                             <div className="flex gap-2.5 items-start">
-                              <Link
-                                href={item.href}
-                                className="text-[15px] font-semibold text-gray-800 hover:text-primary transition-colors leading-snug line-clamp-2"
-                              >
-                                {item.title}
-                              </Link>
+                              <ItemTitle item={item} />
                             </div>
                           </div>
                         ))}

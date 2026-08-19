@@ -1,0 +1,184 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BEC placements content",
+  "description": "Per-department placement records keyed by department content key. src/content/placements.ts serves them to the department Placements tab.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "departments": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "yearWise": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "year": {
+                  "type": "string"
+                },
+                "students": {
+                  "type": "string"
+                },
+                "offers": {
+                  "type": "string"
+                },
+                "onCampus": {
+                  "type": "string"
+                },
+                "offCampus": {
+                  "type": "string"
+                },
+                "placed": {
+                  "type": "string"
+                },
+                "percent": {
+                  "type": "string"
+                },
+                "companies": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "year"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "batches": {
+            "description": "Per-batch recruiter/student detail. Omitted for departments that publish only the year-wise percentages.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "batch": {
+                  "type": "string"
+                },
+                "companies": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "company": {
+                        "type": "string"
+                      },
+                      "package": {
+                        "type": "string"
+                      },
+                      "count": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "company",
+                      "package",
+                      "count"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "students": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "usn": {
+                        "type": "string"
+                      },
+                      "mode": {
+                        "type": "string"
+                      },
+                      "company": {
+                        "type": "string"
+                      },
+                      "lpa": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "usn",
+                      "mode",
+                      "company",
+                      "lpa"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "batch",
+                "companies",
+                "students"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "offersChart": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "yAxisLabel": {
+                "type": "string"
+              },
+              "points": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "year": {
+                      "type": "string"
+                    },
+                    "offers": {
+                      "type": "number"
+                    },
+                    "note": {
+                      "type": "string"
+                    },
+                    "students": {
+                      "type": "number"
+                    },
+                    "placed": {
+                      "type": "number"
+                    },
+                    "higherStudy": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "year"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "points"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "yearWise"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Map of department content key -> placement record."
+    }
+  },
+  "required": [
+    "departments"
+  ],
+  "additionalProperties": false
+}

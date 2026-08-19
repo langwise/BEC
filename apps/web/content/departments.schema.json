@@ -1,305 +1,362 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "BEC departments content",
-  "description": "Per-department content keyed by the URL slug used in /programs/departments/<type>/<slug>. Only `name` is required; fill the rest as content arrives. Departments with just `name` + `assetSlug` still render (overview placeholder + photo gallery).",
+  "description": "Per-department content keyed by the URL slug used in /departments/<type>/<slug>. Only `name` is required; fill the rest as content arrives.",
   "type": "object",
-  "required": [
-    "departments"
-  ],
-  "additionalProperties": false,
-  "$defs": {
-    "codedItem": {
-      "type": "object",
-      "description": "A labelled statement, e.g. a PEO or PSO.",
-      "required": [
-        "code",
-        "text"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "code": {
-          "type": "string",
-          "description": "Short label, e.g. \"PSO1\"."
-        },
-        "text": {
-          "type": "string"
-        }
-      }
-    }
-  },
   "properties": {
     "$schema": {
       "type": "string"
     },
     "departments": {
       "type": "object",
-      "description": "Map of URL slug -> department content.",
+      "propertyNames": {
+        "type": "string"
+      },
       "additionalProperties": {
         "type": "object",
-        "required": [
-          "name"
-        ],
-        "additionalProperties": false,
         "properties": {
           "name": {
-            "type": "string",
-            "description": "Full display name."
+            "type": "string"
           },
           "tagline": {
-            "type": "string",
-            "description": "One-line subtitle shown under the page title."
+            "type": "string"
           },
           "assetSlug": {
-            "type": "string",
-            "description": "R2 folder under departments/<assetSlug>/ whose photos build the Infrastructure gallery. Omit if no photos exist yet."
+            "description": "R2 folder slug under departments/ for photos (not an asset key).",
+            "type": "string"
           },
-          "heroImage": {
+          "hero": {
+            "description": "Full-bleed hero at the top of the department page. One image renders it still; two or more render a rolling carousel with arrows and autoplay.",
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "./_schema/asset-keys.json"
+                }
+              ]
+            }
+          },
+          "chronicleImage": {
+            "description": "Asset key for a \"Department Chronicle\" timeline graphic shown as a full-width banner at the top of the Home tab, before the overview.",
             "allOf": [
               {
                 "$ref": "./_schema/asset-keys.json"
               }
-            ],
-            "description": "Full-bleed hero image (asset key on R2) shown at the top of the department page, home-hero style."
-          },
-          "heroImages": {
-            "type": "array",
-            "description": "Rolling hero carousel (arrows + autoplay). When 2+ keys are given, renders instead of the single heroImage.",
-            "items": {
-              "allOf": [
-                {
-                  "$ref": "./_schema/asset-keys.json"
-                }
-              ]
-            }
-          },
-          "mouImages": {
-            "type": "array",
-            "description": "MoU signing photos (asset keys) shown as a gallery under the MoUs section.",
-            "items": {
-              "allOf": [
-                {
-                  "$ref": "./_schema/asset-keys.json"
-                }
-              ]
-            }
-          },
-          "researchGallery": {
-            "type": "array",
-            "description": "Research-laboratory photo galleries shown under the Research section.",
-            "items": {
-              "type": "object",
-              "additionalProperties": false,
-              "required": ["images"],
-              "properties": {
-                "title": { "type": "string" },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "allOf": [
-                      {
-                        "$ref": "./_schema/asset-keys.json"
-                      }
-                    ]
-                  }
-                }
-              }
-            }
+            ]
           },
           "infrastructureGallerySlug": {
-            "type": "string",
-            "description": "Explicit R2 folder under departments/<infrastructureGallerySlug>/ for verified infrastructure photos. Use this for PG departments instead of assetSlug fallback."
+            "type": "string"
           },
           "established": {
+            "type": "string"
+          },
+          "degree": {
+            "description": "The degree this department admits to. Labels the Intake quick-stat (\"B.E. Intake\"); the Science & Humanities departments award none and leave it unset.",
             "type": "string",
-            "description": "Year the department was established, e.g. \"1983\"."
+            "enum": [
+              "B.E.",
+              "M.Tech.",
+              "MCA",
+              "MBA"
+            ]
           },
           "intake": {
-            "type": "string",
-            "description": "Sanctioned UG intake, e.g. \"180\"."
+            "type": "string"
           },
-          "nbaAccredited": {
-            "type": "boolean",
-            "description": "When true, surfaces an \"NBA Accredited\" card in the Home quick-stats row."
-          },
-          "overview": {
-            "type": "string",
-            "description": "Department overview paragraph (Home tab)."
-          },
-          "overviewImage": {
-            "allOf": [
-              {
-                "$ref": "./_schema/asset-keys.json"
-              }
-            ],
-            "description": "Image asset key on R2 shown above the Home overview (e.g. the department group photo)."
-          },
-          "overviewImageCaption": {
-            "type": "string",
-            "description": "Caption rendered below the overview lead image (e.g. \"Teaching Faculty\")."
-          },
-          "facultyGroupPhoto": {
-            "allOf": [
-              {
-                "$ref": "./_schema/asset-keys.json"
-              }
-            ],
-            "description": "Group photo of the teaching faculty, shown as a banner above the Faculty grid."
-          },
-          "facultyGroupPhotoCaption": {
-            "type": "string",
-            "description": "Highlighted caption rendered below the teaching-faculty group photo (e.g. \"Teaching Faculty\")."
-          },
-          "staffGroupPhoto": {
-            "allOf": [
-              {
-                "$ref": "./_schema/asset-keys.json"
-              }
-            ],
-            "description": "Group photo of the supporting staff, shown as a banner above the Supporting Staff tables."
-          },
-          "staffGroupPhotoCaption": {
-            "type": "string",
-            "description": "Highlighted caption rendered below the supporting-staff group photo (e.g. \"Supporting Staff\")."
-          },
-          "placementsPhoto": {
-            "allOf": [
-              {
-                "$ref": "./_schema/asset-keys.json"
-              }
-            ],
-            "description": "Group photo of placed students, shown as a captioned banner at the end of the Placements section."
-          },
-          "placementsPhotoCaption": {
-            "type": "string",
-            "description": "Highlighted caption rendered below the placements group photo (e.g. \"Placed Students 25-26\")."
-          },
-          "homeGroupPhoto": {
-            "allOf": [
-              {
-                "$ref": "./_schema/asset-keys.json"
-              }
-            ],
-            "description": "Group photo shown as a captioned banner at the very end of the department Home tab (e.g. the graduating batch)."
-          },
-          "homeGroupPhotoCaption": {
-            "type": "string",
-            "description": "Highlighted caption rendered below the Home-tab group photo (e.g. \"Graduating Batch 22-26\")."
-          },
-          "facilitiesGallery": {
-            "type": "array",
-            "description": "Categorised facility photos (classrooms, labs, library, campus), shown as captioned galleries on the Facilities tab.",
-            "items": {
-              "type": "object",
-              "required": [
-                "images"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "title": {
-                  "type": "string",
-                  "description": "Caption for this group of photos (e.g. Classrooms, Library)."
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "allOf": [
-                      {
-                        "$ref": "./_schema/asset-keys.json"
-                      }
-                    ]
-                  }
+          "quickFacts": {
+            "description": "Department-specific \"Quick Facts\" panel shown on the Home tab. Only rendered when set.",
+            "type": "object",
+            "properties": {
+              "facts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "researchAreas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
                 }
               }
-            }
+            },
+            "additionalProperties": false
           },
-          "galleryExclude": {
-            "type": "array",
-            "description": "Asset-key substrings to drop from the generic Infrastructure gallery (e.g. shots already placed under Research/Facilities).",
-            "items": {
-              "type": "string"
-            }
+          "nbaAccredited": {
+            "description": "When true, surfaces an \"NBA Accredited\" card in the Home quick-stats row.",
+            "type": "boolean"
+          },
+          "overview": {
+            "type": "string"
+          },
+          "overviewPhoto": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "allOf": [
+                  {
+                    "$ref": "./_schema/asset-keys.json"
+                  }
+                ]
+              },
+              "caption": {
+                "description": "Shown beneath the photo, e.g. \"Teaching Faculty\".",
+                "type": "string"
+              },
+              "alt": {
+                "description": "What the photo shows, for a screen reader. Only needed where the surrounding page's own wording would describe it wrongly.",
+                "type": "string"
+              },
+              "width": {
+                "description": "Overrides the layout's default width for this photo.",
+                "type": "string",
+                "enum": [
+                  "narrow",
+                  "medium",
+                  "wide",
+                  "full"
+                ]
+              }
+            },
+            "required": [
+              "key"
+            ],
+            "additionalProperties": false,
+            "description": "Lead image shown above the Home overview (e.g. the department group photo)."
           },
           "hodMessage": {
+            "description": "Message from the Head of Department, shown on the Home tab.",
             "type": "object",
-            "description": "Head of Department block. Renders the byline and photo alone when no message is supplied.",
-            "additionalProperties": false,
             "properties": {
               "title": {
-                "type": "string",
-                "description": "Optional title for the HOD message block."
+                "type": "string"
               },
               "message": {
-                "type": "string",
-                "description": "The HOD's message body. Omit to show only the photo and byline."
+                "type": "string"
               },
               "name": {
-                "type": "string",
-                "description": "Name of the HOD (byline)."
+                "type": "string"
               },
               "designation": {
-                "type": "string",
-                "description": "Designation of the HOD (byline)."
+                "type": "string"
               },
               "image": {
                 "allOf": [
                   {
                     "$ref": "./_schema/asset-keys.json"
                   }
-                ],
-                "description": "Image asset key on R2 for the HOD's photo."
+                ]
               }
-            }
+            },
+            "additionalProperties": false
+          },
+          "about": {
+            "type": "string"
+          },
+          "aboutPhoto": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "allOf": [
+                  {
+                    "$ref": "./_schema/asset-keys.json"
+                  }
+                ]
+              },
+              "caption": {
+                "description": "Shown beneath the photo, e.g. \"Teaching Faculty\".",
+                "type": "string"
+              },
+              "alt": {
+                "description": "What the photo shows, for a screen reader. Only needed where the surrounding page's own wording would describe it wrongly.",
+                "type": "string"
+              },
+              "width": {
+                "description": "Overrides the layout's default width for this photo.",
+                "type": "string",
+                "enum": [
+                  "narrow",
+                  "medium",
+                  "wide",
+                  "full"
+                ]
+              }
+            },
+            "required": [
+              "key"
+            ],
+            "additionalProperties": false,
+            "description": "Lead image shown above the \"About Department\" body (e.g. the teaching-faculty group photo)."
           },
           "vision": {
-            "type": "string",
-            "description": "Vision statement (About tab)."
+            "type": "string"
           },
           "mission": {
             "type": "array",
-            "description": "Mission points (About tab), one per bullet.",
             "items": {
               "type": "string"
             }
           },
           "programsOffered": {
             "type": "array",
-            "description": "Programs the department offers (B.E., M.Tech, Ph.D., ...).",
             "items": {
               "type": "string"
             }
           },
           "programsOfferedCount": {
-            "type": "integer",
-            "description": "Overrides the 'Programs Offered' stat count when bullets expand one programme into multiple recognition tracks. Defaults to programsOffered length."
+            "description": "Overrides the \"Programs Offered\" stat count when the listed bullets expand a single programme into multiple recognition tracks (e.g. one Ph.D. shown as its VTU and AICTE-QIP variants). Defaults to programsOffered.length when unset.",
+            "type": "number"
+          },
+          "coursesOffered": {
+            "description": "Courses taught by the department (distinct from degree programmes), shown as a separate \"Courses Offered\" list under Academics.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "programStructure": {
+            "description": "Programme structure facts (duration, semesters, total credits) shown under Academics.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "peos": {
             "type": "array",
-            "description": "Programme Educational Objectives.",
             "items": {
-              "$ref": "#/$defs/codedItem"
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "description": "Short label, e.g. \"PSO1\"."
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "text"
+              ],
+              "additionalProperties": false
             }
           },
           "psos": {
             "type": "array",
-            "description": "Programme Specific Outcomes.",
             "items": {
-              "$ref": "#/$defs/codedItem"
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "description": "Short label, e.g. \"PSO1\"."
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "text"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "pos": {
+            "description": "Programme Outcomes — rendered alongside PEOs/PSOs in the Academics section.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "description": "Short label, e.g. \"PSO1\"."
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "text"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "wk": {
+            "description": "Knowledge and Attitude Profile (WK) — rendered alongside PEOs/PSOs/POs.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string",
+                  "description": "Short label, e.g. \"PSO1\"."
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "text"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "values": {
+            "description": "Core values shown as a bullet list under the Home overview (e.g. IPE).",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "newsletters": {
+            "description": "Monthly department newsletters, rendered as a documents section.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "file": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "title",
+                "file"
+              ],
+              "additionalProperties": false
             }
           },
           "highlights": {
             "type": "array",
-            "description": "Short bullet highlights shown on the Home tab.",
             "items": {
               "type": "string"
             }
           },
           "milestones": {
-            "type": "object",
             "description": "Department milestones, shown under Vision & Mission on the About tab.",
-            "required": [
-              "items"
-            ],
-            "additionalProperties": false,
+            "type": "object",
             "properties": {
               "title": {
                 "type": "string"
@@ -310,18 +367,13 @@
                   "type": "string"
                 }
               }
-            }
+            },
+            "additionalProperties": false
           },
           "researchAreas": {
             "type": "array",
-            "description": "Research supervisors and their areas of specialization.",
             "items": {
               "type": "object",
-              "required": [
-                "supervisor",
-                "area"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "supervisor": {
                   "type": "string"
@@ -332,18 +384,459 @@
                 "university": {
                   "type": "string"
                 }
+              },
+              "required": [
+                "supervisor",
+                "area"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "researchAchievements": {
+            "description": "Achievements that do not fit a table — patents granted, best-paper awards. Rendered as bullets under \"Research Achievements\".",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "publications": {
+            "description": "Year-wise research output grouped by category (journals, books, chapters, conferences).",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string"
+                },
+                "years": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "year": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      },
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "items"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "category",
+                "years"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "achievementTables": {
+            "description": "Free-form awards/achievements tables (faculty awards, student projects, participations, chapter awards).",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "columns": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "rows": {
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "collapsed": {
+                  "description": "Render behind a collapsed disclosure (long rosters that would otherwise bury the section).",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "title",
+                "columns",
+                "rows"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "studentAchievements": {
+            "description": "Student achievements — month-wise narrative highlights, plus optional Best Outgoing Students and alumni-entrepreneur tables.",
+            "type": "object",
+            "properties": {
+              "months": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "items"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "bestOutgoing": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "year": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "year"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "entrepreneurs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "organization": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ],
+                  "additionalProperties": false
+                }
               }
+            },
+            "additionalProperties": false
+          },
+          "startups": {
+            "description": "Incubated startups — companies registered and grants received.",
+            "type": "object",
+            "properties": {
+              "companies": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "founders": {
+                      "type": "string"
+                    },
+                    "domain": {
+                      "type": "string"
+                    },
+                    "established": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "founders",
+                    "domain",
+                    "established"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "grants": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "startup": {
+                      "type": "string"
+                    },
+                    "project": {
+                      "type": "string"
+                    },
+                    "year": {
+                      "type": "string"
+                    },
+                    "agency": {
+                      "type": "string"
+                    },
+                    "amount": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "startup",
+                    "project",
+                    "year",
+                    "agency",
+                    "amount"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "distinguishedAlumni": {
+            "description": "Distinguished alumni — gallery of name + designation + organization, with an optional portrait (initials shown when absent).",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "designation": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "photo": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "testimonials": {
+            "description": "Alumni testimonials — rendered as quote cards under an \"Alumni\" section.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "designation": {
+                  "type": "string"
+                },
+                "organization": {
+                  "type": "string"
+                },
+                "photo": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "name",
+                "quote"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "alumniRecords": {
+            "description": "Alumni record PDFs — rendered as a downloadable \"Alumni Records\" section.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "file": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "title",
+                "file"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "patents": {
+            "description": "Patents filed/published/granted — rendered as a table on the Research page.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "applicationNumber": {
+                  "type": "string"
+                },
+                "inventors": {
+                  "type": "string"
+                },
+                "area": {
+                  "type": "string"
+                },
+                "filed": {
+                  "type": "string"
+                },
+                "published": {
+                  "type": "string"
+                },
+                "awarded": {
+                  "type": "string"
+                },
+                "awardNumber": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "title"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "phdsAwarded": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "scholar": {
+                  "type": "string"
+                },
+                "guide": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "string"
+                },
+                "usn": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "scholar",
+                "guide",
+                "title"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "researchScholars": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "scholar": {
+                  "type": "string"
+                },
+                "usn": {
+                  "type": "string"
+                },
+                "guide": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "scholar",
+                "guide",
+                "status"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "researchGrants": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "agency": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "string"
+                },
+                "investigators": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "title",
+                "agency",
+                "year",
+                "amount",
+                "investigators"
+              ],
+              "additionalProperties": false
             }
           },
           "labs": {
             "type": "array",
-            "description": "Research / specialized laboratories.",
             "items": {
               "type": "object",
-              "required": [
-                "name"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "name": {
                   "type": "string"
@@ -353,14 +846,12 @@
                 },
                 "features": {
                   "type": "array",
-                  "description": "Feature/capability bullets rendered as a list under this lab on the Research tab.",
                   "items": {
                     "type": "string"
                   }
                 },
                 "images": {
                   "type": "array",
-                  "description": "Photo asset keys on R2 for this lab, shown as a grid under it on the Research tab.",
                   "items": {
                     "allOf": [
                       {
@@ -370,33 +861,86 @@
                   }
                 },
                 "feature": {
-                  "type": "boolean",
-                  "description": "Render this lab's image(s) large (single column) instead of small grid tiles — for showcase labs like a Centre of Excellence."
+                  "type": "boolean"
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          },
+                          "image": {
+                            "allOf": [
+                              {
+                                "$ref": "./_schema/asset-keys.json"
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "label"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                },
+                "table": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "columns": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "rows": {
+                      "type": "array",
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "collapsed": {
+                      "description": "Render behind a collapsed disclosure (long rosters that would otherwise bury the section).",
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "columns",
+                    "rows"
+                  ],
+                  "additionalProperties": false
                 }
-              }
-            }
-          },
-          "achievementsUnderResearch": {
-            "type": "boolean",
-            "description": "When true, the Ph.D.s/Scholars/Grants tables render inside the Research tab and no standalone Research Achievements tab is shown."
-          },
-          "hideResearchTab": {
-            "type": "boolean",
-            "description": "When true, removes the Research / Research Achievements tab entirely."
-          },
-          "hideAboutTab": {
-            "type": "boolean",
-            "description": "When true, removes the About Department tab/sidebar link entirely."
-          },
-          "infrastructureLabs": {
-            "type": "array",
-            "description": "Labs shown under the Infrastructure tab (title + caption + images), separate from `labs` which render under Research.",
-            "items": {
-              "type": "object",
+              },
               "required": [
                 "name"
               ],
-              "additionalProperties": false,
+              "additionalProperties": false
+            }
+          },
+          "infrastructureLabs": {
+            "description": "Labs shown under the Infrastructure tab (title + caption + images), separate from `labs` which render under Research.",
+            "type": "array",
+            "items": {
+              "type": "object",
               "properties": {
                 "name": {
                   "type": "string"
@@ -406,7 +950,6 @@
                 },
                 "images": {
                   "type": "array",
-                  "description": "Photo asset keys on R2 for this lab, shown as a grid under it on the Infrastructure tab.",
                   "items": {
                     "allOf": [
                       {
@@ -415,27 +958,209 @@
                     ]
                   }
                 }
-              }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
             }
           },
-          "staffCards": {
-            "type": "boolean",
-            "description": "Render Supporting Staff as photo cards (like teaching faculty) instead of tables."
+          "facultyGroupPhoto": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "allOf": [
+                  {
+                    "$ref": "./_schema/asset-keys.json"
+                  }
+                ]
+              },
+              "caption": {
+                "description": "Shown beneath the photo, e.g. \"Teaching Faculty\".",
+                "type": "string"
+              },
+              "alt": {
+                "description": "What the photo shows, for a screen reader. Only needed where the surrounding page's own wording would describe it wrongly.",
+                "type": "string"
+              },
+              "width": {
+                "description": "Overrides the layout's default width for this photo.",
+                "type": "string",
+                "enum": [
+                  "narrow",
+                  "medium",
+                  "wide",
+                  "full"
+                ]
+              }
+            },
+            "required": [
+              "key"
+            ],
+            "additionalProperties": false,
+            "description": "Group photo of the teaching faculty, shown as a banner above the Faculty grid."
           },
-          "facultyCompact": {
-            "type": "boolean",
-            "description": "Render faculty/staff cards in a compact layout with a small portrait instead of the full-width photo."
+          "staffGroupPhoto": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "allOf": [
+                  {
+                    "$ref": "./_schema/asset-keys.json"
+                  }
+                ]
+              },
+              "caption": {
+                "description": "Shown beneath the photo, e.g. \"Teaching Faculty\".",
+                "type": "string"
+              },
+              "alt": {
+                "description": "What the photo shows, for a screen reader. Only needed where the surrounding page's own wording would describe it wrongly.",
+                "type": "string"
+              },
+              "width": {
+                "description": "Overrides the layout's default width for this photo.",
+                "type": "string",
+                "enum": [
+                  "narrow",
+                  "medium",
+                  "wide",
+                  "full"
+                ]
+              }
+            },
+            "required": [
+              "key"
+            ],
+            "additionalProperties": false,
+            "description": "Group photo of the supporting staff, shown as a banner above the Supporting Staff tables."
+          },
+          "placementsPhoto": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "allOf": [
+                  {
+                    "$ref": "./_schema/asset-keys.json"
+                  }
+                ]
+              },
+              "caption": {
+                "description": "Shown beneath the photo, e.g. \"Teaching Faculty\".",
+                "type": "string"
+              },
+              "alt": {
+                "description": "What the photo shows, for a screen reader. Only needed where the surrounding page's own wording would describe it wrongly.",
+                "type": "string"
+              },
+              "width": {
+                "description": "Overrides the layout's default width for this photo.",
+                "type": "string",
+                "enum": [
+                  "narrow",
+                  "medium",
+                  "wide",
+                  "full"
+                ]
+              }
+            },
+            "required": [
+              "key"
+            ],
+            "additionalProperties": false,
+            "description": "Group photo of placed students, shown as a captioned banner at the end of the Placements section."
+          },
+          "placementImages": {
+            "description": "Placement infographics (e.g. year-wise placement data, training structure) shown above the Placements tables.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "./_schema/asset-keys.json"
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "images"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "homeGroupPhoto": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "allOf": [
+                  {
+                    "$ref": "./_schema/asset-keys.json"
+                  }
+                ]
+              },
+              "caption": {
+                "description": "Shown beneath the photo, e.g. \"Teaching Faculty\".",
+                "type": "string"
+              },
+              "alt": {
+                "description": "What the photo shows, for a screen reader. Only needed where the surrounding page's own wording would describe it wrongly.",
+                "type": "string"
+              },
+              "width": {
+                "description": "Overrides the layout's default width for this photo.",
+                "type": "string",
+                "enum": [
+                  "narrow",
+                  "medium",
+                  "wide",
+                  "full"
+                ]
+              }
+            },
+            "required": [
+              "key"
+            ],
+            "additionalProperties": false,
+            "description": "Group photo shown as a captioned banner at the very end of the department Home tab (e.g. the graduating batch)."
+          },
+          "facilitiesGallery": {
+            "description": "Categorised facility photos (classrooms, labs, library, campus), shown as captioned galleries on the Facilities tab.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "./_schema/asset-keys.json"
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "images"
+              ],
+              "additionalProperties": false
+            }
           },
           "supportingStaff": {
             "type": "array",
-            "description": "Supporting staff records from legacy department pages.",
             "items": {
               "type": "object",
-              "required": [
-                "name",
-                "designation"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "name": {
                   "type": "string"
@@ -448,22 +1173,28 @@
                     {
                       "$ref": "./_schema/asset-keys.json"
                     }
-                  ],
-                  "description": "Portrait asset key on R2 (used when staffCards is enabled)."
+                  ]
+                },
+                "role": {
+                  "description": "Which table this person appears in when `groupSupportingStaff` splits the roster. Ignored otherwise.",
+                  "type": "string",
+                  "enum": [
+                    "technical",
+                    "supporting"
+                  ]
                 }
-              }
+              },
+              "required": [
+                "name",
+                "designation"
+              ],
+              "additionalProperties": false
             }
           },
           "committeeGroups": {
             "type": "array",
-            "description": "Department board memberships such as BOS and BOE.",
             "items": {
               "type": "object",
-              "required": [
-                "title",
-                "members"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "title": {
                   "type": "string"
@@ -472,33 +1203,44 @@
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": [
-                      "name",
-                      "position"
-                    ],
-                    "additionalProperties": false,
                     "properties": {
                       "name": {
                         "type": "string"
                       },
                       "position": {
+                        "type": "string",
+                        "description": "The seat held, e.g. \"Chairman\" or \"Member\"."
+                      },
+                      "affiliation": {
+                        "description": "Designation and institution, shown as a third column. A group where nobody has one renders two columns.",
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "phone": {
                         "type": "string"
                       }
-                    }
+                    },
+                    "required": [
+                      "name",
+                      "position"
+                    ],
+                    "additionalProperties": false
                   }
                 }
-              }
+              },
+              "required": [
+                "title",
+                "members"
+              ],
+              "additionalProperties": false
             }
           },
           "infrastructureItems": {
             "type": "array",
-            "description": "Major equipment rows from legacy infrastructure pages.",
             "items": {
               "type": "object",
-              "required": [
-                "name"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "name": {
                   "type": "string"
@@ -509,20 +1251,18 @@
                 "quantity": {
                   "type": "string"
                 }
-              }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
             }
           },
           "facilitiesTables": {
-            "type": "array",
             "description": "Free-form tables shown under the Facilities tab (Infrastructure Details).",
+            "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "title",
-                "columns",
-                "rows"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "title": {
                   "type": "string"
@@ -541,19 +1281,49 @@
                       "type": "string"
                     }
                   }
+                },
+                "collapsed": {
+                  "description": "Render behind a collapsed disclosure (long rosters that would otherwise bury the section).",
+                  "type": "boolean"
                 }
-              }
+              },
+              "required": [
+                "title",
+                "columns",
+                "rows"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "laboratories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "area": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "researchLaboratories": {
+            "description": "Plain list of research-laboratory names shown as a leading table in the Facilities section.",
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           },
           "softwareItems": {
             "type": "array",
-            "description": "Software rows from legacy infrastructure pages.",
             "items": {
               "type": "object",
-              "required": [
-                "name"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "name": {
                   "type": "string"
@@ -564,45 +1334,39 @@
                 "usage": {
                   "type": "string"
                 }
-              }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
             }
           },
           "activities": {
             "type": "array",
-            "description": "Recent events, workshops, talks and department activities.",
             "items": {
               "type": "object",
-              "required": [
-                "title"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "title": {
                   "type": "string"
                 },
                 "date": {
-                  "type": "string",
-                  "description": "Free-text date, e.g. \"Mar 2025\"."
+                  "type": "string"
                 },
                 "description": {
                   "type": "string"
                 },
                 "details": {
+                  "description": "Labelled facts (resource person, participants, budget, outcomes…) shown as bullets.",
                   "type": "array",
-                  "description": "Labelled facts about the event (e.g. Resource person, Participants, Budget, Outcomes). Rendered as a bullet list under the description.",
                   "items": {
                     "type": "string"
                   }
                 },
                 "images": {
-                  "type": "array",
                   "description": "Captioned event photos rendered as a gallery under the activity.",
+                  "type": "array",
                   "items": {
                     "type": "object",
-                    "required": [
-                      "key"
-                    ],
-                    "additionalProperties": false,
                     "properties": {
                       "key": {
                         "allOf": [
@@ -614,27 +1378,25 @@
                       "caption": {
                         "type": "string"
                       }
-                    }
+                    },
+                    "required": [
+                      "key"
+                    ],
+                    "additionalProperties": false
                   }
                 }
-              }
+              },
+              "required": [
+                "title"
+              ],
+              "additionalProperties": false
             }
           },
-          "activitiesUnderAssociation": {
-            "type": "boolean",
-            "description": "When true, the activities render at the end of the Association section and no standalone Activities tab is shown."
-          },
           "activityTables": {
-            "type": "array",
             "description": "Department activity programmes (SDPs, FDPs, workshops) rendered as titled tables under an \"Activities\" section.",
+            "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "title",
-                "columns",
-                "rows"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "title": {
                   "type": "string"
@@ -653,19 +1415,24 @@
                       "type": "string"
                     }
                   }
+                },
+                "collapsed": {
+                  "description": "Render behind a collapsed disclosure (long rosters that would otherwise bury the section).",
+                  "type": "boolean"
                 }
-              }
+              },
+              "required": [
+                "title",
+                "columns",
+                "rows"
+              ],
+              "additionalProperties": false
             }
           },
           "associations": {
             "type": "array",
-            "description": "Student forums / professional associations run by the department.",
             "items": {
               "type": "object",
-              "required": [
-                "name"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "name": {
                   "type": "string"
@@ -674,50 +1441,348 @@
                   "type": "string"
                 },
                 "photo": {
-                  "allOf": [
-                    {
-                      "$ref": "./_schema/asset-keys.json"
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "allOf": [
+                        {
+                          "$ref": "./_schema/asset-keys.json"
+                        }
+                      ]
+                    },
+                    "caption": {
+                      "description": "Shown beneath the photo, e.g. \"Teaching Faculty\".",
+                      "type": "string"
+                    },
+                    "alt": {
+                      "description": "What the photo shows, for a screen reader. Only needed where the surrounding page's own wording would describe it wrongly.",
+                      "type": "string"
+                    },
+                    "width": {
+                      "description": "Overrides the layout's default width for this photo.",
+                      "type": "string",
+                      "enum": [
+                        "narrow",
+                        "medium",
+                        "wide",
+                        "full"
+                      ]
                     }
+                  },
+                  "required": [
+                    "key"
                   ],
+                  "additionalProperties": false,
                   "description": "Group photo of the association's office bearers, shown as a captioned banner at the end of the section."
-                },
-                "photoCaption": {
-                  "type": "string",
-                  "description": "Highlighted caption rendered below the association photo (e.g. \"ACME Office Bearers\")."
                 },
                 "coordinators": {
                   "type": "array",
                   "items": {
-                    "type": "string"
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "designation": {
+                            "type": "string"
+                          },
+                          "email": {
+                            "type": "string"
+                          },
+                          "phone": {
+                            "type": "string"
+                          },
+                          "photo": {
+                            "allOf": [
+                              {
+                                "$ref": "./_schema/asset-keys.json"
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "name"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
                   }
                 },
                 "exicom": {
+                  "description": "Student executive committee (exicom) — office bearers and the positions they hold.",
                   "type": "array",
-                  "description": "Student executive committee (exicom) office bearers.",
                   "items": {
                     "type": "object",
-                    "required": [
-                      "name",
-                      "position"
-                    ],
-                    "additionalProperties": false,
                     "properties": {
                       "name": {
                         "type": "string"
                       },
                       "position": {
                         "type": "string"
+                      },
+                      "photo": {
+                        "allOf": [
+                          {
+                            "$ref": "./_schema/asset-keys.json"
+                          }
+                        ]
                       }
+                    },
+                    "required": [
+                      "name",
+                      "position"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "exicomGroups": {
+                  "description": "Coordinator teams listed by category (e.g. Technical, Program, Sports, Cultural, Media).",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "members": {
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "label": {
+                                  "type": "string"
+                                },
+                                "value": {
+                                  "type": "string"
+                                },
+                                "image": {
+                                  "allOf": [
+                                    {
+                                      "$ref": "./_schema/asset-keys.json"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "label"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      },
+                      "table": {
+                        "type": "object",
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "columns": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "rows": {
+                            "type": "array",
+                            "items": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "collapsed": {
+                            "description": "Render behind a collapsed disclosure (long rosters that would otherwise bury the section).",
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "title",
+                          "columns",
+                          "rows"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "title"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "gallery": {
+                  "description": "Asset keys for an activity-highlights photo gallery shown at the end of the section.",
+                  "type": "array",
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "./_schema/asset-keys.json"
+                      }
+                    ]
+                  }
+                },
+                "events": {
+                  "description": "Events organised by the association (name + date + coordinators), shown as a list.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "date": {
+                        "type": "string"
+                      },
+                      "coordinators": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "title"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "contact": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "designation": {
+                      "type": "string"
+                    },
+                    "department": {
+                      "type": "string"
+                    },
+                    "college": {
+                      "type": "string"
+                    },
+                    "location": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "phone": {
+                      "type": "string"
+                    },
+                    "photo": {
+                      "allOf": [
+                        {
+                          "$ref": "./_schema/asset-keys.json"
+                        }
+                      ]
                     }
+                  },
+                  "required": [
+                    "name"
+                  ],
+                  "additionalProperties": false
+                },
+                "documents": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "file": {
+                        "allOf": [
+                          {
+                            "$ref": "./_schema/asset-keys.json"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "title",
+                      "file"
+                    ],
+                    "additionalProperties": false
                   }
                 }
-              }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "mous": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "partner": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "since": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "partner"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "mouImages": {
+            "description": "Asset keys for MoU signing photos, shown as a gallery under the MoUs section.",
+            "type": "array",
+            "items": {
+              "allOf": [
+                {
+                  "$ref": "./_schema/asset-keys.json"
+                }
+              ]
+            }
+          },
+          "researchGallery": {
+            "description": "Research-laboratory photo galleries shown under the Research section (title + asset keys).",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "allOf": [
+                      {
+                        "$ref": "./_schema/asset-keys.json"
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "images"
+              ],
+              "additionalProperties": false
             }
           },
           "contact": {
             "type": "object",
-            "description": "Head of Department / department contact shown on the page.",
-            "additionalProperties": false,
             "properties": {
               "name": {
                 "type": "string"
@@ -732,20 +1797,19 @@
                 "type": "string"
               },
               "photo": {
-                "type": "string",
-                "description": "Asset key for the contact's photo, shown alongside their details."
+                "allOf": [
+                  {
+                    "$ref": "./_schema/asset-keys.json"
+                  }
+                ]
               }
-            }
+            },
+            "additionalProperties": false
           },
           "additionalContacts": {
             "type": "array",
-            "description": "Additional department contact people shown on legacy pages.",
             "items": {
               "type": "object",
-              "required": [
-                "name"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "name": {
                   "type": "string"
@@ -759,19 +1823,17 @@
                 "email": {
                   "type": "string"
                 }
-              }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
             }
           },
           "documents": {
             "type": "array",
-            "description": "Curriculum / syllabus PDFs (Scheme & Syllabus, BoS, course plans). Rendered as the 'Curriculum' download section.",
             "items": {
               "type": "object",
-              "required": [
-                "title",
-                "file"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "title": {
                   "type": "string"
@@ -781,37 +1843,172 @@
                     {
                       "$ref": "./_schema/asset-keys.json"
                     }
-                  ],
-                  "description": "PDF asset key on R2 (autocompletes)."
+                  ]
                 }
+              },
+              "required": [
+                "title",
+                "file"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "curriculumGroups": {
+            "description": "Curriculum shown as labelled sub-tabs (e.g. Scheme of Teaching & Examinations / Syllabus). A tab holds either a flat `documents` grid, or `sections` — labelled blocks each with their own grid.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "documents": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "file": {
+                        "allOf": [
+                          {
+                            "$ref": "./_schema/asset-keys.json"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "title",
+                      "file"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "sections": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": "string"
+                      },
+                      "documents": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "file": {
+                              "allOf": [
+                                {
+                                  "$ref": "./_schema/asset-keys.json"
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "title",
+                            "file"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "title",
+                      "documents"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "title"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "sectionDocuments": {
+            "description": "Extra PDFs attached to a specific section, keyed by section id (research, mou, facilities, faculty…).",
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "file": {
+                    "allOf": [
+                      {
+                        "$ref": "./_schema/asset-keys.json"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "title",
+                  "file"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "sectionEmbeds": {
+            "description": "PDFs embedded inline (rendered in a viewer) under a specific section, keyed by section id.",
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "file": {
+                    "allOf": [
+                      {
+                        "$ref": "./_schema/asset-keys.json"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "title",
+                  "file"
+                ],
+                "additionalProperties": false
               }
             }
           },
           "customSections": {
+            "description": "Free-form extra sections (own sidebar tab) with intro copy, inline-embedded PDFs and/or download links.",
             "type": "array",
-            "description": "Free-form extra sections, each its own sidebar tab: intro copy plus inline-embedded PDFs and/or download links (e.g. 'Life at DOMS').",
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "title"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "id": {
-                  "type": "string",
-                  "description": "Unique section/tab id (kebab-case)."
+                  "type": "string"
                 },
                 "title": {
                   "type": "string"
                 },
                 "label": {
-                  "type": "string",
-                  "description": "Sidebar label; falls back to title."
+                  "description": "Sidebar label; falls back to `title`.",
+                  "type": "string"
                 },
                 "icon": {
-                  "type": "string",
-                  "description": "Section/sidebar icon key (e.g. calendar, image, users)."
+                  "type": "string"
                 },
                 "content": {
                   "type": "string"
@@ -826,7 +2023,6 @@
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "additionalProperties": false,
                     "properties": {
                       "subtitle": {
                         "type": "string"
@@ -839,20 +2035,30 @@
                         "items": {
                           "anyOf": [
                             {
-                              "type": "string"
+                              "type": "string",
+                              "minLength": 1
                             },
                             {
                               "type": "object",
-                              "required": ["label"],
-                              "additionalProperties": false,
                               "properties": {
                                 "label": {
                                   "type": "string"
                                 },
                                 "value": {
                                   "type": "string"
+                                },
+                                "image": {
+                                  "allOf": [
+                                    {
+                                      "$ref": "./_schema/asset-keys.json"
+                                    }
+                                  ]
                                 }
-                              }
+                              },
+                              "required": [
+                                "label"
+                              ],
+                              "additionalProperties": false
                             }
                           ]
                         }
@@ -875,8 +2081,6 @@
                       },
                       "table": {
                         "type": "object",
-                        "required": ["title", "columns", "rows"],
-                        "additionalProperties": false,
                         "properties": {
                           "title": {
                             "type": "string"
@@ -897,19 +2101,25 @@
                             }
                           },
                           "collapsed": {
+                            "description": "Render behind a collapsed disclosure (long rosters that would otherwise bury the section).",
                             "type": "boolean"
                           }
-                        }
+                        },
+                        "required": [
+                          "title",
+                          "columns",
+                          "rows"
+                        ],
+                        "additionalProperties": false
                       }
-                    }
+                    },
+                    "additionalProperties": false
                   }
                 },
                 "tables": {
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["title", "columns", "rows"],
-                    "additionalProperties": false,
                     "properties": {
                       "title": {
                         "type": "string"
@@ -930,40 +2140,60 @@
                         }
                       },
                       "collapsed": {
+                        "description": "Render behind a collapsed disclosure (long rosters that would otherwise bury the section).",
                         "type": "boolean"
                       }
-                    }
+                    },
+                    "required": [
+                      "title",
+                      "columns",
+                      "rows"
+                    ],
+                    "additionalProperties": false
                   }
                 },
                 "groupPhoto": {
-                  "allOf": [
-                    {
-                      "$ref": "./_schema/asset-keys.json"
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "allOf": [
+                        {
+                          "$ref": "./_schema/asset-keys.json"
+                        }
+                      ]
+                    },
+                    "caption": {
+                      "description": "Shown beneath the photo, e.g. \"Teaching Faculty\".",
+                      "type": "string"
+                    },
+                    "alt": {
+                      "description": "What the photo shows, for a screen reader. Only needed where the surrounding page's own wording would describe it wrongly.",
+                      "type": "string"
+                    },
+                    "width": {
+                      "description": "Overrides the layout's default width for this photo.",
+                      "type": "string",
+                      "enum": [
+                        "narrow",
+                        "medium",
+                        "wide",
+                        "full"
+                      ]
                     }
+                  },
+                  "required": [
+                    "key"
                   ],
-                  "description": "Image asset key on R2 (autocompletes)."
-                },
-                 "groupPhotoCaption": {
-                  "type": "string"
+                  "additionalProperties": false,
+                  "description": "A captioned photo."
                 },
                 "redirectUrl": {
-                  "allOf": [
-                    {
-                      "$ref": "./_schema/asset-keys.json"
-                    }
-                  ],
-                  "description": "Redirection target key on R2 (autocompletes)."
+                  "type": "string"
                 },
                 "embeds": {
                   "type": "array",
-                  "description": "PDFs rendered inline in a viewer.",
                   "items": {
                     "type": "object",
-                    "required": [
-                      "title",
-                      "file"
-                    ],
-                    "additionalProperties": false,
                     "properties": {
                       "title": {
                         "type": "string"
@@ -973,22 +2203,20 @@
                           {
                             "$ref": "./_schema/asset-keys.json"
                           }
-                        ],
-                        "description": "PDF asset key on R2 (autocompletes)."
+                        ]
                       }
-                    }
+                    },
+                    "required": [
+                      "title",
+                      "file"
+                    ],
+                    "additionalProperties": false
                   }
                 },
                 "documents": {
                   "type": "array",
-                  "description": "PDFs rendered as download links.",
                   "items": {
                     "type": "object",
-                    "required": [
-                      "title",
-                      "file"
-                    ],
-                    "additionalProperties": false,
                     "properties": {
                       "title": {
                         "type": "string"
@@ -998,25 +2226,29 @@
                           {
                             "$ref": "./_schema/asset-keys.json"
                           }
-                        ],
-                        "description": "PDF asset key on R2 (autocompletes)."
+                        ]
                       }
-                    }
+                    },
+                    "required": [
+                      "title",
+                      "file"
+                    ],
+                    "additionalProperties": false
                   }
                 }
-              }
+              },
+              "required": [
+                "id",
+                "title"
+              ],
+              "additionalProperties": false
             }
           },
-          "alumniRecords": {
+          "bestPractices": {
+            "description": "Best-practices PDFs surfaced on the department Home tab.",
             "type": "array",
-            "description": "Alumni record PDFs. Rendered as a downloadable 'Alumni Records' section.",
             "items": {
               "type": "object",
-              "required": [
-                "title",
-                "file"
-              ],
-              "additionalProperties": false,
               "properties": {
                 "title": {
                   "type": "string"
@@ -1026,14 +2258,173 @@
                     {
                       "$ref": "./_schema/asset-keys.json"
                     }
-                  ],
-                  "description": "PDF asset key on R2 (autocompletes)."
+                  ]
                 }
+              },
+              "required": [
+                "title",
+                "file"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "bestPracticesList": {
+            "description": "Best practices shown as text (practice + year) on the Home tab, instead of a PDF link.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "practice": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "practice"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "alumniMentorship": {
+            "description": "Render the Alumni Mentorship Program block under Alumni. Its copy still lives in components/academics/departments/eee-mentorship.tsx — only the department that runs the programme is content-controlled.",
+            "type": "boolean"
+          },
+          "layout": {
+            "description": "Where this department's blocks appear. Nothing here changes what the department says — only which tab a block lands on, what a section is called, and which tabs exist at all.",
+            "type": "object",
+            "properties": {
+              "achievementsUnderResearch": {
+                "description": "When true, the Ph.D.s/Scholars/Grants tables render inside the Research tab and no standalone \"Research Achievements\" tab is emitted.",
+                "type": "boolean"
+              },
+              "hideResearchTab": {
+                "description": "When true, removes the Research / Research Achievements tab entirely.",
+                "type": "boolean"
+              },
+              "labsUnderFacilities": {
+                "description": "When true, `labs` render on the Facilities tab and the equipment/software tables move into the Research tab instead.",
+                "type": "boolean"
+              },
+              "activitiesUnderAssociation": {
+                "description": "When true, `activities` render at the end of the Association section and no standalone \"Activities\" tab is emitted.",
+                "type": "boolean"
+              },
+              "bestPracticesUnderAbout": {
+                "description": "Move the Best Practices block out of the Home tab and under \"About Department\".",
+                "type": "boolean"
+              },
+              "hodMessageUnderAbout": {
+                "description": "Move the HoD message and lead photo out of the Home tab and under \"About Department\".",
+                "type": "boolean"
+              },
+              "groupPhotosUnderAbout": {
+                "description": "Move the teaching-faculty group photo to the About Department tab.",
+                "type": "boolean"
+              },
+              "overviewPhotoOnHome": {
+                "description": "When true, keeps the overview photo on the Home tab even if the HOD message is moved to About.",
+                "type": "boolean"
+              },
+              "hideAboutTab": {
+                "description": "When true, removes the About Department tab/sidebar link entirely.",
+                "type": "boolean"
+              },
+              "sectionOrder": {
+                "description": "Explicit whitelist + ordering of sidebar entries, by section id (\"home\" and \"about\" included). Ids absent from the list are dropped entirely; without it the nav falls back to the order sections happen to be built in.",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sectionTitles": {
+                "description": "Per-department section heading overrides, keyed by section id.",
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "sectionNavLabels": {
+                "description": "Per-department sidebar label overrides, keyed by section id.",
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "sectionIcons": {
+                "description": "Per-department section icon overrides (sidebar + heading), keyed by section id.",
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "hideInfrastructureQuantity": {
+                "description": "Drop the \"Quantity\" column from the infrastructure/equipment table for this department.",
+                "type": "boolean"
+              },
+              "visionMissionOnHome": {
+                "description": "Show Vision & Mission on the Home tab (after the overview) and move the HoD message, lead photo and Highlights under \"About Department\".",
+                "type": "boolean"
+              },
+              "academicsOnHome": {
+                "description": "Drop the Academics tab and render its groups (programs, PEOs, POs, WK, PSOs) under the Home overview instead.",
+                "type": "boolean"
+              },
+              "hideQuickStats": {
+                "description": "Hide the \"at a glance\" stats row on Home (e.g. when the Quick Facts panel replaces it).",
+                "type": "boolean"
+              },
+              "milestonesOnHome": {
+                "description": "Show Milestones on the Home tab, in place of the Highlights block, instead of under \"About Department\".",
+                "type": "boolean"
+              },
+              "groupSupportingStaff": {
+                "description": "Split Supporting Staff into \"Technical Staff\" and \"Supporting Staff\", by each person's `role`.",
+                "type": "boolean"
+              },
+              "staffCards": {
+                "description": "Render Supporting Staff as photo cards (like teaching faculty) instead of tables.",
+                "type": "boolean"
+              },
+              "facultyCompact": {
+                "description": "Render faculty/staff cards in a compact layout with a small portrait instead of the full-width photo.",
+                "type": "boolean"
+              },
+              "placementsSummaryOnly": {
+                "description": "Placements: show only summary/recruiter tables, hide per-student name lists.",
+                "type": "boolean"
               }
+            },
+            "additionalProperties": false
+          },
+          "galleryExclude": {
+            "description": "Asset-key substrings to drop from the infrastructure gallery (e.g. stray portrait shots).",
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           }
-        }
-      }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Map of content key (URL slug, or type/slug for PG) -> department content."
     }
-  }
+  },
+  "required": [
+    "departments"
+  ],
+  "additionalProperties": false
 }

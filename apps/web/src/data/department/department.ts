@@ -7,19 +7,16 @@ import {
   resolveDocuments,
   type DepartmentContent,
 } from "@/content/departments";
-import { asset } from "@/lib/assets";
+import { asset, assetUrl } from "@/lib/assets";
+import type { Photo, PhotoWidth } from "@/content/schema/shared";
 import { getDepartmentFaculty } from "@/content/faculty";
 
 /**
- * Resolve an asset key to its R2 URL only if it exists on R2. `asset()` falls
- * back to a same-origin `/key` path for unknown keys — for a portrait that means
- * a broken image, so return undefined instead and let the card show initials.
+ * A portrait, or nothing — never a URL that 404s. `assetUrl` is the strict half
+ * of the pair (see lib/assets.ts); an unknown key returns undefined here and
+ * the card shows the person's initials instead of a broken image.
  */
-function resolveAssetUrl(key?: string): string | undefined {
-  if (!key) return undefined;
-  const url = asset(key);
-  return url.startsWith("http") ? url : undefined;
-}
+const resolveAssetUrl = assetUrl;
 
 import { getDepartmentPlacements, type PlacementOffersChart } from "@/content/placements";
 
@@ -27,7 +24,26 @@ import { getDepartmentPlacements, type PlacementOffersChart } from "@/content/pl
 export type GroupItem = string | { label: string; value?: string; image?: string };
 
 /** A photo with alt text (and optional highlighted caption), used for inline galleries and banners. */
-export type SectionImage = { src: string; alt: string; caption?: string };
+export type SectionImage = { src: string; alt: string; caption?: string; width?: PhotoWidth };
+
+/**
+ * Turn a content photo into a renderable one. `alt` is the calling block's
+ * description of what it puts there — "the graduating batch", "the faculty" —
+ * and is right for almost every photo, which is why it is not content.
+ *
+ * Where it is wrong, the content says so. A department that puts an
+ * industry-visit photograph in the block meant for a group shot would otherwise
+ * have a screen reader announce a graduating batch that is not in the picture,
+ * and no amount of editing the page could fix it.
+ *
+ * The caption is deliberately *not* a fallback: a screen reader reads both, so
+ * an alt that repeats the caption says the same words twice and describes the
+ * image not at all.
+ */
+function sectionImage(photo: Photo | undefined, alt: string): SectionImage | undefined {
+  if (!photo) return undefined;
+  return { src: asset(photo.key), alt: photo.alt ?? alt, caption: photo.caption, width: photo.width };
+}
 
 /** A labelled sub-block inside a content section (subheading + text and/or bullets). */
 export interface ContentGroup {
@@ -58,7 +74,7 @@ export interface HeaderBlock {
   items?: string[];
   icon: string;
   /** Optional lead image rendered above the block's body (e.g. the department group photo). */
-  image?: { src: string; alt: string; caption?: string };
+  image?: SectionImage;
   /** Labelled sub-blocks rendered below the body (e.g. PEOs/PSOs relocated under "About Department"). */
   groups?: ContentGroup[];
 }
@@ -136,20 +152,20 @@ export type DepartmentSection =
 export interface DepartmentData {
   slug: string;
   name: string;
-  tagline: string;
+  tagline?: string;
 
-  /** Optional full-bleed hero image shown at the top of the page (home-hero style). */
-  heroImage?: SectionImage;
-
-  /** Optional rolling hero carousel (2+ images) shown instead of the single heroImage. */
-  heroImages?: SectionImage[];
+  /** Full-bleed hero at the top of the page: one image renders still, 2+ roll. */
+  hero?: SectionImage[];
 
   /** Optional "Department Chronicle" banner shown at the top of the Home tab, before the overview. */
   chronicleImage?: SectionImage;
 
+  /** Every block here is present only when the department wrote one — there are
+   * no stand-in strings, so a missing Vision leaves the block out rather than
+   * promising one "soon". */
   overview: HeaderBlock;
-  vision: HeaderBlock;
-  mission: HeaderBlock;
+  vision?: HeaderBlock;
+  mission?: HeaderBlock;
   about?: HeaderBlock;
 
   /** Message from the Head of Department, shown on the Home tab. */
@@ -161,7 +177,7 @@ export interface DepartmentData {
   /** Department-specific "Quick Facts" panel (facts + research areas). Only set per-department. */
   quickFacts?: { facts: { label: string; value: string }[]; researchAreas: string[] };
 
-  highlights: string[];
+  highlights?: string[];
 
   /** Milestones bullet list shown under Vision & Mission on the About tab, or on Home when milestonesOnHome is set. */
   milestones?: HeaderBlock;
@@ -187,16 +203,19 @@ export interface DepartmentData {
   /** When true, Home shows Vision & Mission after the overview, and the HoD message, lead photo and Highlights move under "About Department". */
   visionMissionOnHome?: boolean;
 
-  /** When true, teaching faculty & supporting staff group photos move to About Department tab. */
+  /** When true, the teaching-faculty group photo moves to the About Department tab. */
   groupPhotosUnderAbout?: boolean;
   facultyGroupPhoto?: SectionImage;
   staffGroupPhoto?: SectionImage;
 
-  /** When true, keeps overview image on Home page instead of moving to About. */
-  overviewImageOnHome?: boolean;
+  /** When true, keeps the overview photo on Home instead of moving it to About. */
+  overviewPhotoOnHome?: boolean;
 
   /** When true, removes the About Department tab/sidebar link entirely. */
   hideAboutTab?: boolean;
+
+  /** When true, the Alumni section carries the Alumni Mentorship Program block. */
+  alumniMentorship?: boolean;
 
   /** Captioned group-photo banner shown at the very end of the Home tab (e.g. the graduating batch). */
   homeGroupPhoto?: SectionImage;
@@ -206,24 +225,10 @@ export interface DepartmentData {
   sections?: DepartmentSection[];
 }
 
-const defaultHighlights = [
-  "Modern labs & research facilities",
-  "Highly qualified faculty",
-  "Strong industry partnerships",
-  "Hands-on learning ecosystem",
-];
-
-function titleCase(slug: string): string {
-  return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-}
-
-// The intake stat is program-specific — UG departments enrol B.E. students,
-// whereas PG/MBA/MCA entries report their own programme's intake.
-function intakeLabel(contentKey: string): string {
-  if (contentKey.startsWith("pg/")) return "M.Tech. Intake";
-  if (contentKey === "mca") return "MCA Intake";
-  if (contentKey === "mba") return "MBA Intake";
-  return "B.E. Intake";
+// The intake stat is programme-specific — a B.E. department and an MBA report
+// intakes into different degrees, so the department says which it admits to.
+function intakeLabel(content: DepartmentContent): string {
+  return content.degree ? `${content.degree} Intake` : "Intake";
 }
 
 function quickStats(
@@ -232,7 +237,7 @@ function quickStats(
 ): { label: string; value: string }[] {
   const stats: { label: string; value: string }[] = [];
   if (content.established) stats.push({ label: "Established", value: content.established });
-  if (content.intake) stats.push({ label: intakeLabel(contentKey), value: content.intake });
+  if (content.intake) stats.push({ label: intakeLabel(content), value: content.intake });
   if (content.researchAreas?.length)
     stats.push({ label: "Research Supervisors", value: String(content.researchAreas.length) });
   if (content.programsOffered?.length)
@@ -288,7 +293,7 @@ function academicsGroups(content: DepartmentContent): ContentGroup[] {
     groups.push({ subtitle: "Courses Offered", items: content.coursesOffered });
   if (content.programStructure?.length)
     groups.push({ subtitle: "Programme Structure", items: content.programStructure });
-  if (!content.peosPsosUnderAbout) groups.push(...academicOutcomeGroups(content));
+  groups.push(...academicOutcomeGroups(content));
   if (content.pos?.length)
     groups.push({
       subtitle: "Programme Outcomes (POs)",
@@ -306,18 +311,18 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   const sections: DepartmentSection[] = [];
 
   // Per-department section heading override (falls back to the shared default).
-  const heading = (id: string, def: string) => content.sectionTitles?.[id] ?? def;
+  const heading = (id: string, def: string) => content.layout?.sectionTitles?.[id] ?? def;
 
   // Research achievements (Ph.D.s awarded, registered scholars, sponsored grants)
   // as data tables — shared by the standalone "Research Achievements" tab and the
-  // inline-under-Research layout (content.achievementsUnderResearch).
+  // inline-under-Research layout (content.layout?.achievementsUnderResearch).
   const achievementTables = (): DataTable[] => {
     const tables: DataTable[] = [];
     if (content.phdsAwarded?.length) {
       tables.push({
         title: `Ph.D.s Awarded (${content.phdsAwarded.length})`,
-        columns: ["Research Scholar", "Guide", "Thesis Title", content.consolidateResearch ? "Registered Year" : "Year"],
-        rows: content.phdsAwarded.map((p) => [p.scholar, p.guide, p.title, p.year]),
+        columns: ["Research Scholar", "Guide", "Thesis Title", "Year"],
+        rows: content.phdsAwarded.map((p) => [p.scholar, p.guide, p.title, p.year ?? ""]),
       });
     }
     if (content.researchScholars?.length) {
@@ -337,9 +342,14 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     return tables;
   };
   const hasAchievements = () =>
-    Boolean(content.phdsAwarded?.length || content.researchScholars?.length || content.researchGrants?.length);
+    Boolean(
+      content.phdsAwarded?.length ||
+        content.researchScholars?.length ||
+        content.researchGrants?.length ||
+        content.researchAchievements?.length,
+    );
   // Major-equipment + software tables — shared by the standalone Facilities tab
-  // and the inline-under-Research layout (content.labsUnderFacilities).
+  // and the inline-under-Research layout (content.layout?.labsUnderFacilities).
   const infrastructureTables = (): DataTable[] => {
     const tables: DataTable[] = [];
     if (content.laboratories?.length) {
@@ -353,7 +363,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       });
     }
     if (content.infrastructureItems?.length) {
-      const hideQty = content.hideInfrastructureQuantity;
+      const hideQty = content.layout?.hideInfrastructureQuantity;
       tables.push({
         title: "Major Equipment",
         columns: hideQty
@@ -405,15 +415,14 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     const groups: ContentGroup[] = [];
     for (const cat of content.publications ?? []) {
       groups.push({ subtitle: cat.category });
-      for (const y of cat.years) groups.push({ subtitle: y.year, items: y.items });
+      for (const y of cat.years) groups.push({ subtitle: y.year ?? undefined, items: y.items });
     }
     return groups;
   };
 
-  // Academics — programs, PEOs, PSOs. When peosPsosUnderAbout is set, the PEOs/PSOs
-  // move to the "About Department" tab instead (see academicOutcomeGroups / the about block).
-  // When academicsOnHome is set, the whole lot renders under the Home overview instead.
-  const groups = content.academicsOnHome ? [] : academicsGroups(content);
+  // Academics — programs, PEOs, PSOs. When academicsOnHome is set, the whole lot
+  // renders under the Home overview instead.
+  const groups = content.layout?.academicsOnHome ? [] : academicsGroups(content);
   if (groups.length)
     sections.push({ id: "academics", type: "content", title: heading("academics", "Academics"), icon: "book", groups });
 
@@ -454,46 +463,35 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       type: "faculty-list",
       title: heading("faculty", "Teaching Faculty"),
       faculty,
-      compact: content.facultyCompact,
-      groupPhoto: (content.facultyGroupPhoto && !content.groupPhotosUnderAbout)
-        ? {
-            src: asset(content.facultyGroupPhoto),
-            alt: `${content.name} — teaching faculty`,
-            caption: content.facultyGroupPhotoCaption,
-          }
-        : undefined,
+      compact: content.layout?.facultyCompact,
+      groupPhoto: content.layout?.groupPhotosUnderAbout
+        ? undefined
+        : sectionImage(content.facultyGroupPhoto, `${content.name} — teaching faculty`),
     });
   }
 
   // Supporting staff. Rendered either as photo cards (staffCards) or as tables,
   // optionally split into "Technical Staff" (instructors) and "Supporting Staff"
   // (helpers / peons / drivers) grouped by designation.
-  if (content.supportingStaff?.length && content.staffCards) {
+  if (content.supportingStaff?.length && content.layout?.staffCards) {
     sections.push({
       id: "staff",
       type: "faculty-list",
       title: heading("staff", "Supporting Staff"),
-      compact: content.facultyCompact,
+      compact: content.layout?.facultyCompact,
       faculty: content.supportingStaff.map((m) => ({
         name: m.name,
         designation: m.designation,
         photoUrl: resolveAssetUrl(m.photo),
       })),
-      groupPhoto: content.staffGroupPhoto
-        ? {
-            src: asset(content.staffGroupPhoto),
-            alt: `${content.name} — supporting staff`,
-            caption: content.staffGroupPhotoCaption,
-          }
-        : undefined,
+      groupPhoto: sectionImage(content.staffGroupPhoto, `${content.name} — supporting staff`),
     });
   } else if (content.supportingStaff?.length) {
     const staffRow = (m: { name: string; designation: string }) => [m.name, m.designation];
     let tables: DataTable[];
-    if (content.groupSupportingStaff) {
-      const isSupport = (d: string) => /peon|helper|attender|sweeper|driver|watch|garden|clean/i.test(d);
-      const technical = content.supportingStaff.filter((m) => !isSupport(m.designation));
-      const support = content.supportingStaff.filter((m) => isSupport(m.designation));
+    if (content.layout?.groupSupportingStaff) {
+      const technical = content.supportingStaff.filter((m) => m.role !== "supporting");
+      const support = content.supportingStaff.filter((m) => m.role === "supporting");
       tables = [
         technical.length && {
           title: "Technical Staff",
@@ -521,19 +519,13 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       title: heading("staff", "Supporting Staff"),
       icon: "users",
       tables,
-      groupPhoto: content.staffGroupPhoto
-        ? {
-            src: asset(content.staffGroupPhoto),
-            alt: `${content.name} — supporting staff`,
-            caption: content.staffGroupPhotoCaption,
-          }
-        : undefined,
+      groupPhoto: sectionImage(content.staffGroupPhoto, `${content.name} — supporting staff`),
     });
   }
 
-  // Board of Studies / Board of Examiners. Positions are authored as
-  // "Role — Designation & Affiliation"; when an em dash is present, split it into
-  // a dedicated third column so the role and affiliation don't crowd one cell.
+  // Board of Studies / Board of Examiners. A group whose members carry an
+  // affiliation gets a third column for it, so the seat and the institution
+  // don't crowd one cell.
   if (content.committeeGroups?.length) {
     sections.push({
       id: "governance",
@@ -541,61 +533,30 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
       title: heading("governance", "Board Members"),
       icon: "clipboard",
       tables: content.committeeGroups.map((group) => {
-        const split = group.members.some((m) => m.position.includes("—"));
+        const affiliated = group.members.some((m) => m.affiliation);
         return {
           title: group.title,
-          columns: split
+          columns: affiliated
             ? ["Name of the Member", "Position", "Designation & Affiliation"]
             : ["Name of the Member", "Position"],
-          rows: group.members.map((member) => {
-            if (!split) return [member.name, member.position];
-            const i = member.position.indexOf("—");
-            return i === -1
-              ? [member.name, member.position, ""]
-              : [member.name, member.position.slice(0, i).trim(), member.position.slice(i + 1).trim()];
-          }),
+          rows: group.members.map((member) =>
+            affiliated
+              ? [member.name, member.position, member.affiliation ?? ""]
+              : [member.name, member.position],
+          ),
         };
       }),
     });
   }
 
-  // Consolidated Research Centre — supervisors, areas, scholars, grants,
-  // facilities and achievements all under one tab.
-  if (
-    content.consolidateResearch &&
-    (content.researchAreas?.length ||
-      content.researchScholars?.length ||
-      content.labs?.length ||
-      content.researchFacilities?.length ||
-      content.researchAchievements?.length)
-  ) {
-    const groups: ContentGroup[] = [];
-    if (content.researchAreas?.length)
-      groups.push({
-        subtitle: "Research Supervisors",
-        items: content.researchAreas.map((r) => ({ label: r.supervisor, value: r.area })),
-      });
-    if (content.researchAreasList?.length)
-      groups.push({ subtitle: "Research Areas", items: content.researchAreasList });
-    if (content.researchFacilities?.length)
-      groups.push({ subtitle: "Research Facilities", items: content.researchFacilities });
-    if (content.researchAchievements?.length)
-      groups.push({ subtitle: "Research Achievements", items: content.researchAchievements });
-    for (const lab of content.labs ?? []) {
-      groups.push({ subtitle: lab.name, text: lab.description, items: lab.features, images: labImages(lab) });
-    }
-    sections.push({ id: "research", type: "content", title: heading("research", "Research"), icon: "flask", groups });
-  }
-
   // Research — research guides + labs, optionally with the achievement tables
-  // folded in (content.achievementsUnderResearch).
+  // folded in (content.layout?.achievementsUnderResearch).
   if (
-    !content.consolidateResearch &&
-    !content.hideResearchTab &&
+    !content.layout?.hideResearchTab &&
     (content.researchAreas?.length ||
       content.labs?.length ||
       content.researchGallery?.length ||
-      (content.achievementsUnderResearch && hasAchievements()))
+      (content.layout?.achievementsUnderResearch && hasAchievements()))
   ) {
     const groups: ContentGroup[] = [];
     if (content.researchAreas?.length)
@@ -612,13 +573,13 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
         images: g.images.map((key) => ({ src: asset(key), alt: g.title ?? `${content.name} research laboratory` })),
         largeImages: true,
       });
-    if (!content.labsUnderFacilities)
+    if (!content.layout?.labsUnderFacilities)
       for (const lab of content.labs ?? []) {
         groups.push({ subtitle: lab.name, text: lab.description, items: lab.features, images: labImages(lab), featureImages: lab.feature });
       }
     const tables = [
-      ...(content.achievementsUnderResearch ? [...achievementTables(), ...patentsTables()] : []),
-      ...(content.labsUnderFacilities ? infrastructureTables() : []),
+      ...(content.layout?.achievementsUnderResearch ? [...achievementTables(), ...patentsTables()] : []),
+      ...(content.layout?.labsUnderFacilities ? infrastructureTables() : []),
     ];
     sections.push({
       id: "research",
@@ -630,40 +591,29 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
-  // Research achievements — Ph.D.s awarded, registered scholars, sponsored grants.
-  // Skipped when folded into the Research tab (content.achievementsUnderResearch).
-  // With publicationsUnderAchievements, publications and patents fold in here too.
-  const foldPublications = Boolean(content.publicationsUnderAchievements);
-  if (
-    !content.achievementsUnderResearch &&
-    (hasAchievements() || (foldPublications && (content.publications?.length || content.patents?.length)))
-  ) {
-    const groups = foldPublications ? publicationGroups() : [];
-    const tables = achievementTables();
-    if (foldPublications) tables.push(...patentsTables());
+  // Research achievements — Ph.D.s awarded, registered scholars, sponsored grants,
+  // plus any written-out achievements (patents granted, best-paper awards) that do
+  // not fit a table. Skipped when folded into the Research tab
+  // (content.layout?.achievementsUnderResearch).
+  if (!content.layout?.achievementsUnderResearch && hasAchievements()) {
     const title = heading("research-achievements", "Research Achievements");
-    if (groups.length) {
-      sections.push({
-        id: "research-achievements",
-        type: "content",
-        title,
-        icon: "clipboard",
-        groups,
-        tables: tables.length ? tables : undefined,
-      });
-    } else {
-      sections.push({
-        id: "research-achievements",
-        type: "tables",
-        title,
-        icon: "clipboard",
-        tables,
-      });
-    }
+    const tables = achievementTables();
+    sections.push(
+      content.researchAchievements?.length
+        ? {
+            id: "research-achievements",
+            type: "content",
+            title,
+            icon: "clipboard",
+            groups: [{ subtitle: "Awards, Patents and Recognitions", items: content.researchAchievements }],
+            tables: tables.length ? tables : undefined,
+          }
+        : { id: "research-achievements", type: "tables", title, icon: "clipboard", tables },
+    );
   }
 
   // Publications — year-wise research output grouped by category.
-  if (content.publications?.length && !foldPublications) {
+  if (content.publications?.length) {
     sections.push({
       id: "publications",
       type: "content",
@@ -675,7 +625,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
 
   // Patents — filed / published / granted. Folded into the Research tab when
   // achievements live there (achievementsUnderResearch); otherwise a standalone tab.
-  if (content.patents?.length && !foldPublications && !content.achievementsUnderResearch) {
+  if (content.patents?.length && !content.layout?.achievementsUnderResearch) {
     sections.push({
       id: "patents",
       type: "tables",
@@ -814,7 +764,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           collapsed: true,
         });
       }
-      if (batch.students.length && !content.placementsSummaryOnly) {
+      if (batch.students.length && !content.layout?.placementsSummaryOnly) {
         tables.push({
           title: `Students Placed — ${batch.batch} (${batch.students.length} offers)`,
           columns: ["Student", "USN", "Mode", "Company", "LPA"],
@@ -839,20 +789,14 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           })),
         }))
         .filter((g) => g.images.length),
-      groupPhoto: content.placementsPhoto
-        ? {
-            src: asset(content.placementsPhoto),
-            alt: content.placementsPhotoCaption ?? `${content.name} — placed students`,
-            caption: content.placementsPhotoCaption,
-          }
-        : undefined,
+      groupPhoto: sectionImage(content.placementsPhoto, `${content.name} — placed students`),
     });
   }
 
   // Facilities — laboratories rendered as content blocks when labs are routed
-  // here (content.labsUnderFacilities); otherwise the legacy equipment/software
+  // here (content.layout?.labsUnderFacilities); otherwise the legacy equipment/software
   // tables.
-  if (content.labsUnderFacilities && content.labs?.length) {
+  if (content.layout?.labsUnderFacilities && content.labs?.length) {
     const groups: ContentGroup[] = content.labs.map((lab) => ({
       subtitle: lab.name,
       text: lab.description,
@@ -908,7 +852,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   }
 
   // Activities & events
-  const foldActivitiesIntoAssociation = Boolean(content.activitiesUnderAssociation && content.associations?.length);
+  const foldActivitiesIntoAssociation = Boolean(content.layout?.activitiesUnderAssociation && content.associations?.length);
   const activityGroups: ContentGroup[] = [];
   if (content.activities?.length) {
     const richActivities = content.activities.filter((a) => a.details?.length || a.images?.length);
@@ -1026,9 +970,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     }
     if (foldActivitiesIntoAssociation) groups.push(...activityGroups);
     const assocPhoto = content.associations.find((a) => a.photo);
-    const groupPhoto = assocPhoto?.photo
-      ? { src: asset(assocPhoto.photo), alt: assocPhoto.photoCaption ?? assocPhoto.name, caption: assocPhoto.photoCaption }
-      : undefined;
+    const groupPhoto = sectionImage(assocPhoto?.photo, assocPhoto?.name ?? "");
     const assocDocs = content.associations.flatMap((a) => a.documents ?? []);
     const docLinks = resolveDocuments(assocDocs);
     sections.push({
@@ -1090,11 +1032,11 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   }
 
   // Infrastructure gallery (R2 photos)
-  const galleryAll = content.infrastructureGallerySlug
-    ? getDepartmentGallery(content.infrastructureGallerySlug)
-    : contentKey.startsWith("pg/")
-      ? []
-      : getDepartmentGallery(content.assetSlug);
+  // Both loaders return nothing for a department with no asset folder of its
+  // own, which is how a programme that shares its parent's building opts out.
+  const galleryAll = getDepartmentGallery(
+    content.infrastructureGallerySlug ?? content.assetSlug,
+  );
   // Drop any stray portrait/staff shots the department asked to exclude.
   const excluded = (url: string) => content.galleryExclude?.some((k) => url.includes(k)) ?? false;
   // Curated photos from the department's gallery/ subfolder, appended in key
@@ -1102,7 +1044,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   const extraSlug = content.infrastructureGallerySlug ?? content.assetSlug;
   const galleryImages = [
     ...galleryAll,
-    ...(contentKey.startsWith("pg/") ? [] : getDepartmentGalleryExtra(extraSlug)),
+    ...getDepartmentGalleryExtra(extraSlug),
   ]
     .filter((url) => !excluded(url))
     .map((src, i) => ({
@@ -1167,9 +1109,7 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
           collapsed: g.table.collapsed,
         } : undefined,
       }));
-      const groupPhoto = cs.groupPhoto
-        ? { src: asset(cs.groupPhoto), alt: cs.title, caption: cs.groupPhotoCaption }
-        : undefined;
+      const groupPhoto = sectionImage(cs.groupPhoto, cs.title);
       const redirectUrl = cs.redirectUrl ? asset(cs.redirectUrl) : undefined;
 
       if (!cs.content && !cs.items?.length && !embeds.length && !attachments.length && !tables && !groups && !cs.redirectUrl) continue;
@@ -1250,9 +1190,9 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
   }
 
   // Per-department section icon overrides (sidebar + heading), keyed by section id.
-  if (content.sectionIcons) {
+  if (content.layout?.sectionIcons) {
     for (const section of sections) {
-      const override = section.id ? content.sectionIcons[section.id] : undefined;
+      const override = section.id ? content.layout?.sectionIcons[section.id] : undefined;
       if (override) (section as { icon?: string }).icon = override;
     }
   }
@@ -1263,21 +1203,32 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
 export function getDepartmentData(type: string, slug: string): DepartmentData {
   const contentKey = getDepartmentContentKey(slug, type);
   const content = getDepartmentContent(slug, type);
-  const name = content?.name ?? `Department of ${titleCase(slug)}`;
+  // The catalog and departments.json are 1:1, and both callers iterate the
+  // catalog. A routed department with no content used to render invented
+  // placeholders — a name derived from the slug, "overview will be updated
+  // soon", four generic highlights — which is worse than not shipping the page.
+  // Fail at the build, where the drift actually is.
+  if (!content) {
+    throw new Error(
+      `No content for the "${slug}" department under "${type}". ` +
+        `Add "${contentKey}" to content/departments.json, or drop the entry from src/data/departments-catalog.ts.`,
+    );
+  }
+  const name = content.name;
 
-  const sections = content ? buildSections(contentKey, content) : [];
+  const sections = buildSections(contentKey, content);
 
   // Sidebar derived from the content that actually exists. The Home/About labels
   // accept per-department overrides (e.g. Mechanical relabels them
   // "About Department" / "Vision and Mission").
   const sidebar: { id: string; label: string; icon: string; externalUrl?: string }[] = [
-    { id: "home", label: content?.sectionNavLabels?.home ?? "Home", icon: content?.sectionIcons?.home ?? "home" },
+    { id: "home", label: content.layout?.sectionNavLabels?.home ?? "Home", icon: content.layout?.sectionIcons?.home ?? "home" },
   ];
-  if ((content?.about || content?.vision || content?.mission?.length || content?.peosPsosUnderAbout) && !content?.hideAboutTab)
+  if ((content.about || content.vision || content.mission?.length) && !content.layout?.hideAboutTab)
     sidebar.push({
       id: "about",
-      label: content?.sectionNavLabels?.about ?? "About Department",
-      icon: content?.sectionIcons?.about ?? "graduation-cap",
+      label: content.layout?.sectionNavLabels?.about ?? "About Department",
+      icon: content.layout?.sectionIcons?.about ?? "graduation-cap",
     });
   const sectionLabels: Record<string, { label: string; icon: string }> = {
     academics: { label: "Academics", icon: "file-text" },
@@ -1298,7 +1249,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     facilities: { label: "Facilities", icon: "building-2" },
     activities: { label: "Activities", icon: "calendar" },
     association: {
-      label: content?.activitiesUnderAssociation && content?.activities?.length ? "Association & Activities" : "Association",
+      label: content.layout?.activitiesUnderAssociation && content.activities?.length ? "Association & Activities" : "Association",
       icon: "users",
     },
     "activity-programs": { label: "Activities", icon: "calendar" },
@@ -1307,14 +1258,14 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     "photo-gallery": { label: "Photo Gallery", icon: "image" },
     contact: { label: "Contact", icon: "users-round" },
   };
-  for (const cs of content?.customSections ?? []) {
+  for (const cs of content.customSections ?? []) {
     sectionLabels[cs.id] = { label: cs.label ?? cs.title, icon: cs.icon ?? "calendar" };
   }
   for (const section of sections) {
     const meta = section.id ? sectionLabels[section.id] : undefined;
     if (meta) {
-      const label = (section.id && content?.sectionNavLabels?.[section.id]) || meta.label;
-      const icon = (section.id && content?.sectionIcons?.[section.id]) || meta.icon;
+      const label = (section.id && content.layout?.sectionNavLabels?.[section.id]) || meta.label;
+      const icon = (section.id && content.layout?.sectionIcons?.[section.id]) || meta.icon;
       const externalUrl = section.type === "content" && section.redirectUrl ? section.redirectUrl : undefined;
       sidebar.push({ id: section.id!, label, icon, externalUrl });
     }
@@ -1322,7 +1273,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
 
   // sectionOrder is an explicit whitelist: only the listed ids survive, in the
   // order given. Without it the nav falls back to the order sections were built in.
-  const order = content?.sectionOrder;
+  const order = content.layout?.sectionOrder;
   const rank = (id: string) => order!.indexOf(id);
   const orderedSidebar = order
     ? sidebar.filter((s) => rank(s.id) !== -1).sort((a, b) => rank(a.id) - rank(b.id))
@@ -1333,23 +1284,19 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
 
   return {
     name,
-    tagline: content?.tagline ?? "Excellence in Education & Innovation",
-    heroImage: content?.heroImage
-      ? { src: asset(content.heroImage), alt: `${name} — department building` }
-      : undefined,
-    heroImages:
-      content?.heroImages && content.heroImages.length > 1
-        ? content.heroImages.map((key, i) => ({
-            src: asset(key),
-            alt: `${name} — photo ${i + 1}`,
-          }))
-        : undefined,
-    chronicleImage: content?.chronicleImage
+    tagline: content.tagline,
+    hero: content.hero?.map((key, i) => ({
+      src: asset(key),
+      // A lone hero is the building shot every department leads with; in a
+      // carousel the photos are miscellaneous, so they are numbered instead.
+      alt: content.hero!.length > 1 ? `${name} — photo ${i + 1}` : `${name} — department building`,
+    })),
+    chronicleImage: content.chronicleImage
       ? { src: asset(content.chronicleImage), alt: `Chronicle of the ${name} Department` }
       : undefined,
-    quickStats: content && !content.hideQuickStats ? quickStats(contentKey, content) : undefined,
+    quickStats: content && !content.layout?.hideQuickStats ? quickStats(contentKey, content) : undefined,
     quickFacts:
-      content?.quickFacts?.facts?.length || content?.quickFacts?.researchAreas?.length
+      content.quickFacts?.facts?.length || content.quickFacts?.researchAreas?.length
         ? {
             facts: content.quickFacts?.facts ?? [],
             researchAreas: content.quickFacts?.researchAreas ?? [],
@@ -1357,37 +1304,20 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
         : undefined,
     overview: {
       title: "Overview",
-      content:
-        content?.overview ??
-        "Department overview will be updated soon. Explore the available sections from the menu.",
-      items: content?.values,
+      content: content.overview,
+      items: content.values,
       icon: "book",
-      image: content?.overviewImage
-        ? {
-            src: asset(content.overviewImage),
-            alt: content.overviewImageCaption ?? `${name} — faculty and staff`,
-            caption: content.overviewImageCaption,
-          }
-        : undefined,
+      image: sectionImage(content.overviewPhoto, name),
     },
-    about: (() => {
-      const outcomeGroups = content?.peosPsosUnderAbout ? academicOutcomeGroups(content) : [];
-      if (!content?.about && !outcomeGroups.length) return undefined;
-      return {
-        title: "About the Department",
-        content: content?.about,
-        icon: "graduation-cap",
-        image: content?.aboutImage
-          ? {
-              src: asset(content.aboutImage),
-              alt: content.aboutImageCaption ?? `${name} — faculty and staff`,
-              caption: content.aboutImageCaption,
-            }
-          : undefined,
-        groups: outcomeGroups.length ? outcomeGroups : undefined,
-      };
-    })(),
-    hodMessage: content?.hodMessage
+    about: content.about
+      ? {
+          title: "About the Department",
+          content: content.about,
+          icon: "graduation-cap",
+          image: sectionImage(content.aboutPhoto, name),
+        }
+      : undefined,
+    hodMessage: content.hodMessage
       ? {
           title: content.hodMessage.title,
           message: content.hodMessage.message,
@@ -1398,56 +1328,32 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
             : undefined,
         }
       : undefined,
-    vision: {
-      title: "Vision",
-      content: content?.vision ?? "Vision statement will be updated soon.",
-      icon: "eye",
-    },
-    mission: {
-      title: "Mission",
-      content: content?.mission?.length ? undefined : "Mission statement will be updated soon.",
-      items: content?.mission,
-      icon: "target",
-    },
-    highlights: content?.highlights ?? defaultHighlights,
-    milestones: content?.milestones?.items?.length
+    vision: content.vision ? { title: "Vision", content: content.vision, icon: "eye" } : undefined,
+    mission: content.mission?.length
+      ? { title: "Mission", items: content.mission, icon: "target" }
+      : undefined,
+    highlights: content.highlights,
+    milestones: content.milestones?.items?.length
       ? {
           title: content.milestones.title ?? "Milestones",
           items: content.milestones.items,
           icon: "award",
         }
       : undefined,
-    milestonesOnHome: content?.milestonesOnHome,
-    academicGroups: content?.academicsOnHome ? academicsGroups(content) : undefined,
+    milestonesOnHome: content.layout?.milestonesOnHome,
+    academicGroups: content.layout?.academicsOnHome ? academicsGroups(content) : undefined,
     bestPractices: content ? resolveDocuments(content.bestPractices) : undefined,
-    bestPracticesList: content?.bestPracticesList,
-    bestPracticesUnderAbout: content?.bestPracticesUnderAbout,
-    hodMessageUnderAbout: content?.hodMessageUnderAbout,
-    visionMissionOnHome: content?.visionMissionOnHome || content?.hideAboutTab,
-    groupPhotosUnderAbout: content?.groupPhotosUnderAbout,
-    overviewImageOnHome: content?.overviewImageOnHome,
-    hideAboutTab: content?.hideAboutTab,
-    facultyGroupPhoto: content?.facultyGroupPhoto
-      ? {
-          src: asset(content.facultyGroupPhoto),
-          alt: content.facultyGroupPhotoCaption ?? `${name} — teaching faculty`,
-          caption: content.facultyGroupPhotoCaption,
-        }
-      : undefined,
-    staffGroupPhoto: content?.staffGroupPhoto
-      ? {
-          src: asset(content.staffGroupPhoto),
-          alt: content.staffGroupPhotoCaption ?? `${name} — supporting staff`,
-          caption: content.staffGroupPhotoCaption,
-        }
-      : undefined,
-    homeGroupPhoto: content?.homeGroupPhoto
-      ? {
-          src: asset(content.homeGroupPhoto),
-          alt: content.homeGroupPhotoCaption ?? `${name} — graduating batch`,
-          caption: content.homeGroupPhotoCaption,
-        }
-      : undefined,
+    bestPracticesList: content.bestPracticesList,
+    bestPracticesUnderAbout: content.layout?.bestPracticesUnderAbout,
+    hodMessageUnderAbout: content.layout?.hodMessageUnderAbout,
+    visionMissionOnHome: content.layout?.visionMissionOnHome || content.layout?.hideAboutTab,
+    groupPhotosUnderAbout: content.layout?.groupPhotosUnderAbout,
+    overviewPhotoOnHome: content.layout?.overviewPhotoOnHome,
+    hideAboutTab: content.layout?.hideAboutTab,
+    alumniMentorship: content.alumniMentorship,
+    facultyGroupPhoto: sectionImage(content.facultyGroupPhoto, `${name} — teaching faculty`),
+    staffGroupPhoto: sectionImage(content.staffGroupPhoto, `${name} — supporting staff`),
+    homeGroupPhoto: sectionImage(content.homeGroupPhoto, `${name} — graduating batch`),
     slug: contentKey,
     sidebar: orderedSidebar,
     sections: orderedSections,

@@ -1,5 +1,9 @@
 import data from "@content/governance.json";
 import { asset } from "@/lib/assets";
+import type { GovernanceContent } from "./schema/governance";
+
+// Cast, not parse — see the note in home.ts (this module reaches client chunks).
+const content = data as GovernanceContent;
 
 export type Person = {
   name?: string;
@@ -85,63 +89,57 @@ function photo(key?: string): string | undefined {
 }
 
 export const principal: Principal = {
-  name: data.principal.name,
-  role: data.principal.role,
-  photo: asset(data.principal.photo),
-  email: data.principal.email,
+  name: content.principal.name,
+  role: content.principal.role,
+  photo: asset(content.principal.photo),
+  email: content.principal.email,
 };
 
-export const deans: Person[] = data.deans.map((dean) => ({
+export const deans: Person[] = content.deans.map((dean) => ({
   ...dean,
-  photo: photo("photo" in dean ? dean.photo : undefined),
+  photo: photo(dean.photo),
 }));
 
-export const officers: Person[] = data.officers.map((officer) => ({
+export const officers: Person[] = content.officers.map((officer) => ({
   ...officer,
   photo: photo(officer.photo),
 }));
 
-export const hods: Hod[] = data.hods.map((hod) => ({
+export const hods: Hod[] = content.hods.map((hod) => ({
   ...hod,
   photo: photo(hod.photo),
 }));
 
-export const bogMembers: BogMember[] = (
-  data.bog as { name: string; role: string; affiliation: string; category: string; photo?: string }[]
-).map((member) => ({
+export const bogMembers: BogMember[] = content.bog.map((member) => ({
   name: member.name,
   role: member.role,
   affiliation: member.affiliation,
-  category: member.category as BogCategory,
+  category: member.category,
   photo: photo(member.photo),
 }));
 
 export const sangha: Sangha = {
-  intro: data.sangha.intro,
-  groupPhoto: asset(data.sangha.groupPhoto),
+  intro: content.sangha.intro,
+  groupPhoto: asset(content.sangha.groupPhoto),
   chairman: {
-    name: data.sangha.chairman.name,
-    role: data.sangha.chairman.role,
-    photo: asset(data.sangha.chairman.photo),
-    messageHref: data.sangha.chairman.messageHref,
+    name: content.sangha.chairman.name,
+    role: content.sangha.chairman.role,
+    photo: asset(content.sangha.chairman.photo),
+    messageHref: content.sangha.chairman.messageHref,
   },
   secretary: {
-    name: data.sangha.secretary.name,
-    role: data.sangha.secretary.role,
-    photo: photo(data.sangha.secretary.photo),
+    name: content.sangha.secretary.name,
+    role: content.sangha.secretary.role,
+    photo: photo(content.sangha.secretary.photo),
   },
-  members: (data.sangha.members as { name: string; role: string; photo?: string }[]).map(
-    (member) => ({
-      name: member.name,
-      role: member.role,
-      photo: photo(member.photo),
-    }),
-  ),
-  council: (data.sangha.council as { name: string; role: string; invitee?: boolean }[]).map(
-    (member) => ({
-      name: member.name,
-      role: member.role,
-      invitee: member.invitee,
-    }),
-  ),
+  members: content.sangha.members.map((member) => ({
+    name: member.name,
+    role: member.role,
+    photo: photo(member.photo),
+  })),
+  council: content.sangha.council.map((member) => ({
+    name: member.name,
+    role: member.role,
+    invitee: member.invitee,
+  })),
 };

@@ -5,13 +5,14 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "start": "turbo run start"
+    "start": "turbo run start",
+    "test": "turbo run test"
   },
   "devDependencies": {
     "turbo": "^2.6.1"
   },
   "packageManager": "pnpm@10.23.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=22.18"
   }
 }

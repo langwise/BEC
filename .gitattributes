@@ -1,0 +1,5 @@
+# The Admin publishes content edits as git commits and always writes
+# LF (apps/web/src/content/format.ts). A JSON file stored with CRLF would make an
+# Editor's one-line change land as a whole-file rewrite, so JSON is pinned to LF
+# regardless of the platform it was last edited on.
+*.json text eol=lf

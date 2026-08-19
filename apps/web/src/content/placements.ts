@@ -1,4 +1,5 @@
 import data from "@content/placements.json";
+import type { PlacementsContent } from "./schema/placements";
 
 /** Year-wise placement summary row (matches the college's own status table). */
 export type PlacementYear = {
@@ -52,7 +53,10 @@ export type DepartmentPlacements = {
   offersChart?: PlacementOffersChart;
 };
 
-const byDepartment = data.departments as Record<string, DepartmentPlacements>;
+// Cast, not parse — see the note in home.ts (this module reaches client chunks
+// via placement-offers-chart.tsx).
+const byDepartment: Record<string, DepartmentPlacements> = (data as PlacementsContent)
+  .departments;
 
 /** Placement record for a department by its content key, or undefined if none. */
 export function getDepartmentPlacements(key: string): DepartmentPlacements | undefined {

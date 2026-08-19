@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import DepartmentSidebar from "@/components/academics/departments/sidebar";
-import type { DataTable, DepartmentData, DocLink } from "@/data/department/department";
+import type { DataTable, DepartmentData, DocLink, SectionImage } from "@/data/department/department";
+import type { PhotoWidth } from "@/content/schema/shared";
 import ContentSection from "@/components/academics/departments/content";
 import ContactSection from "@/components/academics/departments/contact-section";
 import TestimonialsSection from "@/components/academics/departments/testimonials";
@@ -104,7 +105,7 @@ function DocumentsSection({
 }
 
 /** Department Highlights card — shown on Home or (per-department) under "About". */
-function HighlightsBlock({ highlights }: { highlights: string[] }) {
+function HighlightsBlock({ highlights }: { highlights?: string[] }) {
   if (!highlights?.length) return null;
   return (
     <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
@@ -210,16 +211,31 @@ function PhotoCaption({ children }: { children: string }) {
   );
 }
 
+/**
+ * The max-width a photo can ask for. Departments whose group shots are
+ * panoramas set `width` in content; "full" and the absence of a width both mean
+ * "as wide as the column".
+ */
+const PHOTO_WIDTH: Record<PhotoWidth, string> = {
+  narrow: "max-w-xl mx-auto",
+  medium: "max-w-3xl mx-auto",
+  wide: "max-w-4xl mx-auto",
+  full: "",
+};
+
+const widthClass = (width: PhotoWidth | undefined, fallback: PhotoWidth = "full") =>
+  PHOTO_WIDTH[width ?? fallback];
+
 /** Department lead photo (e.g. the group photo) — shown on Home or, per-department, under "About". */
 function OverviewPhoto({
   image,
   className,
 }: {
-  image: { src: string; alt: string; caption?: string };
+  image: SectionImage;
   className?: string;
 }) {
   return (
-    <figure className={className}>
+    <figure className={[className, widthClass(image.width)].filter(Boolean).join(" ") || undefined}>
       <div className="relative aspect-3/2 w-full overflow-hidden rounded-2xl border border-gray-100 shadow-sm">
         <Image
           src={image.src}
@@ -456,19 +472,23 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                     </div>
                 )}
                 {/* Vision & Mission directly after the overview (per-department) */}
-                {dept.visionMissionOnHome && (
+                {dept.visionMissionOnHome && (dept.vision || dept.mission) && (
                     <div className="grid grid-cols-1 gap-4">
-                        <ContentSection
-                            title={dept.vision.title}
-                            content={dept.vision.content}
-                            icon={dept.vision.icon}
-                        />
-                        <ContentSection
-                            title={dept.mission.title}
-                            content={dept.mission.content}
-                            items={dept.mission.items}
-                            icon={dept.mission.icon}
-                        />
+                        {dept.vision && (
+                            <ContentSection
+                                title={dept.vision.title}
+                                content={dept.vision.content}
+                                icon={dept.vision.icon}
+                            />
+                        )}
+                        {dept.mission && (
+                            <ContentSection
+                                title={dept.mission.title}
+                                content={dept.mission.content}
+                                items={dept.mission.items}
+                                icon={dept.mission.icon}
+                            />
+                        )}
                     </div>
                 )}
                 {dept.quickFacts && <QuickFacts quickFacts={dept.quickFacts} />}
@@ -484,10 +504,10 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                 {((!dept.visionMissionOnHome && !dept.hodMessageUnderAbout) || dept.hideAboutTab) && dept.hodMessage && (
                     <HodMessageBlock hodMessage={dept.hodMessage} />
                 )}
-                {((!dept.visionMissionOnHome && (!dept.hodMessageUnderAbout || dept.overviewImageOnHome)) || dept.hideAboutTab) && dept.overview.image && (
+                {((!dept.visionMissionOnHome && (!dept.hodMessageUnderAbout || dept.overviewPhotoOnHome)) || dept.hideAboutTab) && dept.overview.image && (
                     <OverviewPhoto
                         image={dept.overview.image}
-                        className={`${(dept.hodMessage && !dept.hodMessageUnderAbout) ? "mt-8 mb-12" : "-mt-4 mb-12"} ${dept.slug === "civil-engg" ? "max-w-4xl mx-auto" : ""}`}
+                        className={(dept.hodMessage && !dept.hodMessageUnderAbout) ? "mt-8 mb-12" : "-mt-4 mb-12"}
                     />
                 )}
                 {/* Milestones stand in for Highlights on Home when milestonesOnHome is set */}
@@ -523,7 +543,7 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                 {dept.hodMessageUnderAbout && dept.hodMessage && (
                     <HodMessageBlock hodMessage={dept.hodMessage} />
                 )}
-                {dept.hodMessageUnderAbout && !dept.overviewImageOnHome && dept.overview.image && (
+                {dept.hodMessageUnderAbout && !dept.overviewPhotoOnHome && dept.overview.image && (
                     <OverviewPhoto image={dept.overview.image} />
                 )}
 
@@ -545,22 +565,26 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                     </>
                 ) : (
                     <>
-                        <ContentSection
-                            title={dept.vision.title}
-                            content={dept.vision.content}
-                            icon={dept.vision.icon}
-                        />
+                        {dept.vision && (
+                            <ContentSection
+                                title={dept.vision.title}
+                                content={dept.vision.content}
+                                icon={dept.vision.icon}
+                            />
+                        )}
 
-                        <ContentSection
-                            title={dept.mission.title}
-                            content={dept.mission.content}
-                            items={dept.mission.items}
-                            icon={dept.mission.icon}
-                        />
+                        {dept.mission && (
+                            <ContentSection
+                                title={dept.mission.title}
+                                content={dept.mission.content}
+                                items={dept.mission.items}
+                                icon={dept.mission.icon}
+                            />
+                        )}
 
                         {dept.groupPhotosUnderAbout && dept.facultyGroupPhoto && (
                             <div className="pt-4">
-                                <div className={dept.slug === "civil-engg" ? "max-w-3xl mx-auto" : "max-w-xl mx-auto"}>
+                                <div className={widthClass(dept.facultyGroupPhoto.width, "narrow")}>
                                     <GroupPhotoBanner image={dept.facultyGroupPhoto} />
                                 </div>
                             </div>
@@ -595,18 +619,11 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                         <BestPracticesBlock documents={dept.bestPractices} list={dept.bestPracticesList} />
                     )}
 
-                {dept.groupPhotosUnderAbout && (
+                {dept.groupPhotosUnderAbout && dept.facultyGroupPhoto && dept.visionMissionOnHome && (
                     <div className="space-y-8 pt-4">
-                        {dept.facultyGroupPhoto && dept.visionMissionOnHome && (
-                            <div className={dept.slug === "civil-engg" ? "max-w-3xl mx-auto" : "max-w-xl mx-auto"}>
-                                <GroupPhotoBanner image={dept.facultyGroupPhoto} />
-                            </div>
-                        )}
-                        {dept.staffGroupPhoto && dept.slug !== "civil-engg" && dept.slug !== "electrical-and-electronics-engg" && (
-                            <div className="max-w-xl mx-auto">
-                                <GroupPhotoBanner image={dept.staffGroupPhoto} />
-                            </div>
-                        )}
+                        <div className={widthClass(dept.facultyGroupPhoto.width, "narrow")}>
+                            <GroupPhotoBanner image={dept.facultyGroupPhoto} />
+                        </div>
                     </div>
                 )}
             </div>
@@ -698,7 +715,7 @@ export function DepartmentLayout({ dept, activeSectionId, basePath }: Department
                      icon={activeSection.icon}
                      testimonials={activeSection.testimonials}
                      distinguished={activeSection.distinguished}
-                     slug={dept.slug}
+                     alumniMentorship={dept.alumniMentorship}
                  />
              )
          }
