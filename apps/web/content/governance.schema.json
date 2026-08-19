@@ -2,152 +2,428 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "BEC governance / leadership content",
   "type": "object",
-  "required": ["principal", "deans", "officers", "hods", "sangha", "bog"],
-  "additionalProperties": false,
-  "$defs": {
-    "assetKey": {
-      "allOf": [{ "$ref": "./_schema/asset-keys.json" }],
-      "description": "Photo key (autocompletes from the assets uploaded to R2)."
-    }
-  },
   "properties": {
-    "$schema": { "type": "string" },
+    "$schema": {
+      "type": "string"
+    },
     "principal": {
       "type": "object",
-      "description": "The Principal / Member Secretary shown in the leadership banner.",
-      "required": ["name", "role", "photo"],
-      "additionalProperties": false,
       "properties": {
-        "name": { "type": "string" },
-        "role": { "type": "string" },
-        "photo": { "$ref": "#/$defs/assetKey" },
-        "email": { "type": "string" }
-      }
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "photo": {
+          "allOf": [
+            {
+              "$ref": "./_schema/asset-keys.json"
+            }
+          ]
+        },
+        "email": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "photo"
+      ],
+      "additionalProperties": false,
+      "description": "The Principal / Member Secretary shown in the leadership banner."
     },
     "deans": {
       "type": "array",
-      "description": "Deans rendered in the #deans section.",
       "items": {
         "type": "object",
-        "required": ["role"],
-        "additionalProperties": false,
         "properties": {
-          "role": { "type": "string", "description": "Portfolio, e.g. \"Dean Academic\"." },
-          "name": { "type": "string" },
-          "photo": { "$ref": "#/$defs/assetKey" },
-          "email": { "type": "string" },
-          "phone": { "type": "string" },
-          "focus": { "type": "string", "description": "Short description of the portfolio." },
-          "link": { "type": "object", "description": "Optional CTA link rendered on the card (e.g. to the Research page).", "required": ["href", "label"], "additionalProperties": false, "properties": { "href": { "type": "string" }, "label": { "type": "string" } } },
-          "roleBadges": { "type": "array", "description": "Multiple role badges, each optionally linking to its own page. Overrides the single 'role' badge on the card.", "items": { "type": "object", "required": ["label"], "additionalProperties": false, "properties": { "label": { "type": "string" }, "link": { "type": "object", "required": ["href", "label"], "additionalProperties": false, "properties": { "href": { "type": "string" }, "label": { "type": "string" } } } } } },
-          "placeholder": { "type": "boolean", "description": "Set true while the person is unconfirmed; renders a 'to be updated' badge." },
-          "verify": { "type": "boolean", "description": "Set true when the name/role mapping is a best-guess that a coordinator should confirm." }
-        }
-      }
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "photo": {
+            "allOf": [
+              {
+                "$ref": "./_schema/asset-keys.json"
+              }
+            ]
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "focus": {
+            "type": "string"
+          },
+          "link": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href",
+              "label"
+            ],
+            "additionalProperties": false
+          },
+          "roleBadges": {
+            "description": "Multiple role badges, each optionally linking to its own page.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "object",
+                  "properties": {
+                    "href": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "href",
+                    "label"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "label"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "placeholder": {
+            "type": "boolean"
+          },
+          "verify": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "role"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Deans rendered in the #deans section."
     },
     "officers": {
       "type": "array",
-      "description": "Other key institutional officers (Controller of Examinations, Librarian, etc.).",
       "items": {
         "type": "object",
-        "required": ["role"],
-        "additionalProperties": false,
         "properties": {
-          "role": { "type": "string" },
-          "name": { "type": "string" },
-          "photo": { "$ref": "#/$defs/assetKey" },
-          "email": { "type": "string" },
-          "focus": { "type": "string" },
-          "placeholder": { "type": "boolean" },
-          "verify": { "type": "boolean" }
-        }
-      }
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "photo": {
+            "allOf": [
+              {
+                "$ref": "./_schema/asset-keys.json"
+              }
+            ]
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "focus": {
+            "type": "string"
+          },
+          "link": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "href",
+              "label"
+            ],
+            "additionalProperties": false
+          },
+          "roleBadges": {
+            "description": "Multiple role badges, each optionally linking to its own page.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "object",
+                  "properties": {
+                    "href": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "href",
+                    "label"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "label"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "placeholder": {
+            "type": "boolean"
+          },
+          "verify": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "role"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Other statutory officers (CoE, Librarian…)."
     },
     "hods": {
       "type": "array",
-      "description": "Heads of Department for the #hods directory.",
       "items": {
         "type": "object",
-        "required": ["department"],
-        "additionalProperties": false,
         "properties": {
-          "department": { "type": "string" },
-          "name": { "type": "string" },
-          "title": { "type": "string" },
-          "photo": { "$ref": "#/$defs/assetKey" },
-          "email": { "type": "string" },
-          "placeholder": { "type": "boolean", "description": "Set true (and omit name/photo) for departments whose HOD is not yet confirmed." }
-        }
-      }
+          "department": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "photo": {
+            "allOf": [
+              {
+                "$ref": "./_schema/asset-keys.json"
+              }
+            ]
+          },
+          "email": {
+            "type": "string"
+          },
+          "placeholder": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "department"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Heads of Department, in display order."
     },
     "sangha": {
       "type": "object",
-      "description": "B.V.V. Sangha (parent trust) leadership shown above the Board of Governors.",
-      "required": ["groupPhoto", "chairman", "council"],
-      "additionalProperties": false,
       "properties": {
-        "intro": { "type": "string" },
-        "groupPhoto": { "$ref": "#/$defs/assetKey" },
+        "intro": {
+          "type": "string"
+        },
+        "groupPhoto": {
+          "allOf": [
+            {
+              "$ref": "./_schema/asset-keys.json"
+            }
+          ]
+        },
         "chairman": {
           "type": "object",
-          "description": "Chairman of B.V.V. Sangha, featured at the top of the section.",
-          "required": ["name", "role", "photo"],
-          "additionalProperties": false,
           "properties": {
-            "name": { "type": "string" },
-            "role": { "type": "string" },
-            "photo": { "$ref": "#/$defs/assetKey" },
-            "messageHref": { "type": "string", "description": "Optional link to the Chairman's message page." }
-          }
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo": {
+              "allOf": [
+                {
+                  "$ref": "./_schema/asset-keys.json"
+                }
+              ]
+            },
+            "messageHref": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "role",
+            "photo"
+          ],
+          "additionalProperties": false
+        },
+        "secretary": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "photo": {
+              "allOf": [
+                {
+                  "$ref": "./_schema/asset-keys.json"
+                }
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "role"
+          ],
+          "additionalProperties": false
         },
         "members": {
           "type": "array",
-          "description": "B.V.V. Sangha office bearers shown as photo cards (each confirmed by a provided photo).",
           "items": {
             "type": "object",
-            "required": ["name", "role"],
-            "additionalProperties": false,
             "properties": {
-              "name": { "type": "string" },
-              "role": { "type": "string" },
-              "photo": { "$ref": "#/$defs/assetKey" }
-            }
+              "name": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              },
+              "photo": {
+                "allOf": [
+                  {
+                    "$ref": "./_schema/asset-keys.json"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "role"
+            ],
+            "additionalProperties": false
           }
         },
         "council": {
           "type": "array",
-          "description": "B.V.V. Sangha Governing Council Members (name + designation).",
           "items": {
             "type": "object",
-            "required": ["name", "role"],
-            "additionalProperties": false,
             "properties": {
-              "name": { "type": "string" },
-              "role": { "type": "string" },
-              "invitee": { "type": "boolean", "description": "Set true for special invitees listed separately from members." }
-            }
+              "name": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              },
+              "invitee": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "name",
+              "role"
+            ],
+            "additionalProperties": false
           }
         }
-      }
+      },
+      "required": [
+        "groupPhoto",
+        "chairman",
+        "secretary",
+        "members",
+        "council"
+      ],
+      "additionalProperties": false,
+      "description": "The B.V.V. Sangha parent-trust block."
     },
     "bog": {
       "type": "array",
-      "description": "Board of Governors members for the #bog section.",
       "items": {
         "type": "object",
-        "required": ["name", "role", "affiliation", "category"],
-        "additionalProperties": false,
         "properties": {
-          "name": { "type": "string" },
-          "role": { "type": "string" },
-          "affiliation": { "type": "string" },
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "affiliation": {
+            "type": "string"
+          },
           "category": {
             "type": "string",
-            "enum": ["chair", "sangha", "nominee", "industry", "academia", "faculty", "invitee", "government", "member-secretary", "students"]
+            "enum": [
+              "chair",
+              "sangha",
+              "nominee",
+              "industry",
+              "academia",
+              "faculty",
+              "invitee",
+              "government",
+              "member-secretary",
+              "students"
+            ]
           },
-          "photo": { "$ref": "#/$defs/assetKey" }
-        }
-      }
+          "photo": {
+            "allOf": [
+              {
+                "$ref": "./_schema/asset-keys.json"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "role",
+          "affiliation",
+          "category"
+        ],
+        "additionalProperties": false
+      },
+      "description": "Board of Governors members, grouped by category on the page."
     }
-  }
+  },
+  "required": [
+    "principal",
+    "deans",
+    "officers",
+    "hods",
+    "sangha",
+    "bog"
+  ],
+  "additionalProperties": false
 }

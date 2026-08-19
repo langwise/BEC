@@ -10,16 +10,15 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseManifest } from "../src/lib/asset-manifest-io.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const manifestPath = join(here, "..", "src", "data", "asset-manifest.ts");
 const outPath = resolve(here, process.argv[2] ?? "../../../../data/asset-browser.html");
 
-const text = readFileSync(manifestPath, "utf8");
-const entries = [...text.matchAll(/^\s*"([^"]+)":\s*"([^"]+)"/gm)].map((m) => ({
-  key: m[1],
-  url: m[2],
-}));
+const entries = Object.entries(parseManifest(readFileSync(manifestPath, "utf8"))).map(
+  ([key, url]) => ({ key, url }),
+);
 
 const groups = new Map();
 for (const e of entries) {

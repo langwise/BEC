@@ -1,18 +1,14 @@
 import data from "@content/faculty.json";
 import { asset } from "@/lib/assets";
 import type { FacultyMember } from "@/types/faculty";
+import { facultyContentSchema, type FacultyEntry } from "./schema/faculty";
+import { parseContent } from "./schema/shared";
 
-/** Author-friendly flat faculty record (see content/faculty.schema.json). */
-type FacultyEntry = {
-  name: string;
-  designation: string;
-  /** Portrait asset key on R2. */
-  photo?: string;
-  /** Full profile / CV PDF asset key on R2. */
-  cv?: string;
-};
-
-const byDepartment = data.departments as Record<string, FacultyEntry[]>;
+const byDepartment: Record<string, FacultyEntry[]> = parseContent(
+  "faculty.json",
+  facultyContentSchema,
+  data,
+).departments;
 
 /**
  * Resolve an asset key to its R2 URL, but only if it actually exists on R2.

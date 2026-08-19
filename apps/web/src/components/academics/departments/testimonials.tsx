@@ -34,13 +34,14 @@ export default function TestimonialsSection({
   icon,
   testimonials,
   distinguished,
-  slug,
+  alumniMentorship,
 }: {
   title: string;
   icon?: string;
   testimonials: Testimonial[];
   distinguished?: Distinguished[];
-  slug?: string;
+  /** Renders the Alumni Mentorship Program block below the testimonials. */
+  alumniMentorship?: boolean;
 }) {
   const Icon = icon ? iconMap[icon] : null;
 
@@ -124,7 +125,7 @@ export default function TestimonialsSection({
         </div>
       )}
 
-      {slug === "electrical-and-electronics-engg" && <EeeMentorshipProgram />}
+      {alumniMentorship && <EeeMentorshipProgram />}
     </div>
   );
 }

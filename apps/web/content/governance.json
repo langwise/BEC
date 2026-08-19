@@ -21,8 +21,20 @@
       "email": "mahabalesh_sk@yahoo.co.in",
       "focus": "Research, innovation, consultancy & ICT infrastructure",
       "roleBadges": [
-        { "label": "Dean (R&D)", "link": { "href": "/research", "label": "View Research & Development" } },
-        { "label": "Dean (ICT)", "link": { "href": "/institute/dean-ict", "label": "View Dean (ICT) Office" } }
+        {
+          "label": "Dean (R&D)",
+          "link": {
+            "href": "/research",
+            "label": "View Research & Development"
+          }
+        },
+        {
+          "label": "Dean (ICT)",
+          "link": {
+            "href": "/institute/dean-ict",
+            "label": "View Dean (ICT) Office"
+          }
+        }
       ]
     },
     {
@@ -158,19 +170,61 @@
       }
     ],
     "council": [
-      { "name": "Dr. Veeranna C. Charantimath", "role": "Chairman" },
-      { "name": "Sri. Mahesh N. Athani", "role": "Member" },
-      { "name": "Sri. Andanappa M. Shettar", "role": "Member" },
-      { "name": "Sri. Chennabasavaraj V. Koti", "role": "Member" },
-      { "name": "Sri. Rajendra M. Tapashetti", "role": "Member" },
-      { "name": "Sri. Channayya P. Balulmath", "role": "Member" },
-      { "name": "Sri. Basavaraj M. Talikoti", "role": "Member" },
-      { "name": "Sri. Rudrappa S. Akkimaradi", "role": "Member" },
-      { "name": "Sri. Gurusiddappa (Kumar) G. Yalligutti", "role": "Member" },
-      { "name": "Dr. B. R. Hiremath", "role": "Principal, Member Secretary" },
-      { "name": "Prof. V. R. Shirol", "role": "Administrative Officer, B.V.V. Sangha, Bagalkot", "invitee": true },
-      { "name": "Dr. V. S. Katagihallimath", "role": "Administrative Officer, B.V.V. Sangha, Bagalkot", "invitee": true },
-      { "name": "Dr. R. N. Herkal", "role": "Director of Technical Institutions, B.V.V. Sangha, Bagalkot", "invitee": true }
+      {
+        "name": "Dr. Veeranna C. Charantimath",
+        "role": "Chairman"
+      },
+      {
+        "name": "Sri. Mahesh N. Athani",
+        "role": "Member"
+      },
+      {
+        "name": "Sri. Andanappa M. Shettar",
+        "role": "Member"
+      },
+      {
+        "name": "Sri. Chennabasavaraj V. Koti",
+        "role": "Member"
+      },
+      {
+        "name": "Sri. Rajendra M. Tapashetti",
+        "role": "Member"
+      },
+      {
+        "name": "Sri. Channayya P. Balulmath",
+        "role": "Member"
+      },
+      {
+        "name": "Sri. Basavaraj M. Talikoti",
+        "role": "Member"
+      },
+      {
+        "name": "Sri. Rudrappa S. Akkimaradi",
+        "role": "Member"
+      },
+      {
+        "name": "Sri. Gurusiddappa (Kumar) G. Yalligutti",
+        "role": "Member"
+      },
+      {
+        "name": "Dr. B. R. Hiremath",
+        "role": "Principal, Member Secretary"
+      },
+      {
+        "name": "Prof. V. R. Shirol",
+        "role": "Administrative Officer, B.V.V. Sangha, Bagalkot",
+        "invitee": true
+      },
+      {
+        "name": "Dr. V. S. Katagihallimath",
+        "role": "Administrative Officer, B.V.V. Sangha, Bagalkot",
+        "invitee": true
+      },
+      {
+        "name": "Dr. R. N. Herkal",
+        "role": "Director of Technical Institutions, B.V.V. Sangha, Bagalkot",
+        "invitee": true
+      }
     ]
   },
   "bog": [

@@ -12,6 +12,9 @@ import { getDepartmentData } from "@/data/department/department";
 
 const APP_DIR = join(process.cwd(), "src", "app");
 
+/** Real routes that are deliberately never advertised to crawlers. */
+const UNLISTED_SEGMENTS = new Set(["admin", "api"]);
+
 /**
  * Walk src/app collecting every static route (a directory containing page.tsx),
  * skipping dynamic segments, route groups and private folders. Keeps the sitemap
@@ -22,11 +25,15 @@ function staticRoutes(dir = APP_DIR, base = ""): string[] {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
     if (!entry.isDirectory()) continue;
     const name = entry.name;
-    if (name.startsWith("[") || name.startsWith("_") || name.startsWith("(")) {
+    if (name.startsWith("[") || name.startsWith("_")) continue;
+    if (UNLISTED_SEGMENTS.has(name)) continue;
+    const full = join(dir, name);
+    // Route groups — `(site)` — organise files without adding a URL segment.
+    if (name.startsWith("(")) {
+      routes.push(...staticRoutes(full, base));
       continue;
     }
     const path = `${base}/${name}`;
-    const full = join(dir, name);
     if (readdirSync(full).includes("page.tsx")) routes.push(path);
     routes.push(...staticRoutes(full, path));
   }

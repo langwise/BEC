@@ -1,4 +1,5 @@
 {
+  "$schema": "./placements.schema.json",
   "departments": {
     "computer-science-and-engg": {
       "offersChart": {

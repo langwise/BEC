@@ -1,26 +1,17 @@
-import Link from "next/link";
 import Image from "next/image";
-import { Pin, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { Pin, ExternalLink, FileText } from "lucide-react";
 
-import type { NewsAnnouncementsItem } from "@/data/home/news-announcements";
+import type { NewsListItem } from "@/content/news";
 import { cn } from "@/lib/utils";
 
-function isExternal(href: string) {
-  return /^https?:\/\//i.test(href);
-}
-
-function hasLink(href: string) {
-  return href !== "#" && href.trim() !== "";
-}
-
-function ItemRow({ item }: { item: NewsAnnouncementsItem }) {
-  const external = isExternal(item.href);
-  const linked = hasLink(item.href);
-
+function ItemRow({ item }: { item: NewsListItem }) {
   const title = (
     <span className="text-[15px] md:text-base font-semibold leading-snug text-gray-800">
       {item.title}
-      {external ? (
+      {item.attachment ? (
+        <FileText className="ml-1.5 inline h-3.5 w-3.5 -translate-y-px text-primary" />
+      ) : item.external ? (
         <ExternalLink className="ml-1.5 inline h-3.5 w-3.5 -translate-y-px text-primary" />
       ) : null}
     </span>
@@ -40,10 +31,10 @@ function ItemRow({ item }: { item: NewsAnnouncementsItem }) {
         {item.pinned ? (
           <Pin className="mt-1 h-4 w-4 shrink-0 rotate-[45deg] fill-green-600 text-green-600" />
         ) : null}
-        {linked ? (
+        {item.href ? (
           <Link
             href={item.href}
-            {...(external
+            {...(item.external
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
             className="transition-colors hover:text-primary"
@@ -64,6 +55,9 @@ function ItemRow({ item }: { item: NewsAnnouncementsItem }) {
               rel="noopener noreferrer"
               className="overflow-hidden rounded-md border border-stone-200 bg-stone-50"
             >
+              {/* Scans arrive at whatever size the college sent; the intrinsic
+                  size is unknown here, so these are declared at a portrait-ish
+                  ratio and left to scale to the column. */}
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -79,7 +73,7 @@ function ItemRow({ item }: { item: NewsAnnouncementsItem }) {
   );
 }
 
-export function NewsList({ items }: { items: NewsAnnouncementsItem[] }) {
+export function NewsList({ items }: { items: NewsListItem[] }) {
   const pinned = items.filter((item) => item.pinned);
   const rest = items.filter((item) => !item.pinned);
   const ordered = [...pinned, ...rest];
@@ -94,8 +88,8 @@ export function NewsList({ items }: { items: NewsAnnouncementsItem[] }) {
 
   return (
     <ul className="divide-y divide-transparent">
-      {ordered.map((item) => (
-        <ItemRow key={item.id} item={item} />
+      {ordered.map((item, index) => (
+        <ItemRow key={`${item.date}-${item.title}-${index}`} item={item} />
       ))}
     </ul>
   );

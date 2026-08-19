@@ -1,0 +1,91 @@
+{
+  "$schema": "./news.schema.json",
+  "news": [
+    {
+      "date": "2026-06-12",
+      "title": "IEEE Power and Energy Society (PES) organized “Ethnic and Cultural Activity”"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Institute Innovation Council with Civil Engineering organized “Tips & Tricks for Productive Research”"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "KEA UGCET Seat Allotment Manthana 2026 programme conducted at our institution (25.05.2026 to 30.05.2026)"
+    },
+    {
+      "date": "2026-05-23",
+      "title": "Department of ECS conducted CIRCUTECH 2026"
+    },
+    {
+      "date": "2026-05-22",
+      "title": "IEEE Power and Energy Society (PES) organized Tech-Talk on Power System Hardware Simulator"
+    },
+    {
+      "date": "2026-05-16",
+      "title": "BEC Creative Spectrum presents Colosseum-26 (16–17 May 2026)"
+    },
+    {
+      "date": "2026-05-13",
+      "title": "Institution’s Innovation Council 8.0 & EDC with Department of Management Studies organized Business Plan Competition – 2026"
+    },
+    {
+      "date": "2026-05-04",
+      "title": "IEEE Power and Energy Society (PES) organized Alumni Seminar on “Abroad Education in Germany”"
+    },
+    {
+      "date": "2026-04-30",
+      "title": "BEC Cricket Team secured runners-up position in the VTU Kalaburagi Division Cricket Tournament"
+    },
+    {
+      "date": "2026-04-21",
+      "title": "Department of AIML with Association of Intelligence Minds (AIM) organized TECHTRONIX 2.0 – The Ultimate Tech Fest (21 & 22 April 2026)"
+    },
+    {
+      "date": "2026-03-13",
+      "title": "WAVE 3.0 National Level Hackathon conducted at our institution (13–14 March 2026)"
+    }
+  ],
+  "announcements": [
+    {
+      "date": "2026-08-01",
+      "title": "16th Graduation Day at Basaveshwar Engineering College, Bagalkote",
+      "pinned": true,
+      "images": [
+        {
+          "key": "announcements/16th-graduation-day-brochure.jpeg",
+          "alt": "16th Graduation Day brochure cover and college highlights"
+        },
+        {
+          "key": "announcements/16th-graduation-day-schedule.jpeg",
+          "alt": "16th Graduation Day programme schedule and dignitaries"
+        }
+      ]
+    },
+    {
+      "date": "A.Y. 2026–27",
+      "title": "Admissions open now for A.Y. 2026–27",
+      "link": "/admissions",
+      "pinned": true
+    },
+    {
+      "date": "2026-07-13",
+      "title": "Six-day Students Development Programme on “Quant Edge: Skills for Success” (13.07.2026 to 18.07.2026)",
+      "pinned": true
+    },
+    {
+      "date": "2026-06-20",
+      "title": "Open Day at Basaveshwar Engineering College, Bagalkot (20th June 2026)"
+    },
+    {
+      "date": "2025–26 EVEN SEM",
+      "title": "Results Announced: BE VI Regular SEE and Reregistered & Reappear Examinations",
+      "link": "http://119.161.97.238:8080/Autonomous/"
+    },
+    {
+      "date": "2025–26 EVEN SEM",
+      "title": "Results Announced: BE VIII Regular Semester and Reregistered & Reappear courses SEE Examinations",
+      "link": "http://119.161.97.238:8080/Autonomous/"
+    }
+  ]
+}
