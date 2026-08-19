@@ -1,7 +1,7 @@
 /**
  * The one canonical on-disk format for content/*.json.
  *
- * It exists because a Publish is a git commit (ADR 0001) and the git history is
+ * It exists because a Publish is a git commit and the git history is
  * the audit trail: if the Admin wrote JSON in a different shape from what is
  * already committed, every save would reformat the whole file and bury the real
  * change. Both writers — the Admin's publish path and the `format-content`

@@ -3,7 +3,7 @@ import { apiError, unauthorized } from "@/lib/admin/api";
 import { publishContentFile, readContentFile } from "@/lib/admin/publish";
 import { getSession } from "@/lib/admin/session";
 
-/** Read a content file as it stands at repo HEAD (ADR 0001), never from this bundle. */
+/** Read a content file as it stands at repo HEAD, never from this bundle. */
 export async function GET(
   _request: Request,
   { params }: { params: Promise<{ file: string }> },

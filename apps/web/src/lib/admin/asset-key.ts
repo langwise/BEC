@@ -1,5 +1,5 @@
 /**
- * Minting the key a new upload lands at (ADR 0003: keys are immutable).
+ * Minting the key a new upload lands at — keys are immutable.
  *
  * Replacing a photo never overwrites bytes at an existing key — R2's public
  * URLs are cached hard, and an in-place swap would show the old picture for an

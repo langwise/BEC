@@ -1,5 +1,5 @@
 /**
- * The write path for every Publish (ADR 0001: content edits are git commits).
+ * The write path for every Publish: content edits are git commits.
  *
  * Reads come from repo HEAD rather than the deployed bundle, so an Editor who
  * saves twice in a row sees their first edit in the second form instead of the
@@ -176,7 +176,7 @@ async function commitOnce(
 /**
  * Commit `files` to the branch in one commit.
  *
- * Last-write-wins by design (ADR 0001): if someone else commits between our
+ * Last-write-wins by design: if someone else commits between our
  * read and our ref update, GitHub rejects the non-fast-forward and we simply
  * rebuild the commit on the new head — our version of these files wins, and
  * files we did not touch keep their newer content. No conflict UX, deliberately.

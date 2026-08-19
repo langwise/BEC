@@ -1,8 +1,8 @@
 import { createHash, createHmac, scryptSync, timingSafeEqual } from "node:crypto";
 
 /**
- * Password check and session-token crypto for the Admin (ADR 0002: one shared
- * password, no per-user identity).
+ * Password check and session-token crypto for the Admin — one shared password,
+ * no per-user identity.
  *
  * Deliberately free of `next/headers` so it can be exercised on its own; the
  * cookie layer that uses it lives in `session.ts`.

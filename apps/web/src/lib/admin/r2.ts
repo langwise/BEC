@@ -100,7 +100,7 @@ const PRESIGN_TTL_SECONDS = 10 * 60;
 
 /**
  * A URL the browser can PUT one specific object to, without the bytes passing
- * through the function (ADR 0004). PDFs need this: Vercel caps request bodies
+ * through the function. PDFs need this: Vercel caps request bodies
  * at 4.5 MB and a scanned notice has nothing to shrink.
  *
  * The signature covers the key, the content type **and the exact byte count**,

@@ -85,7 +85,7 @@ export function mergeScopedEntry({
 
 /**
  * Conventional-commit subject plus the Editor's name in the body — the whole of
- * ADR 0002's attribution. The name is flattened first so it cannot inject extra
+ * the Admin's attribution. The name is flattened first so it cannot inject extra
  * lines (or a fake trailer) into the message.
  */
 export function contentCommitMessage(file: string, editorName: string): string {

@@ -48,7 +48,7 @@ for (const { file, schema } of contentFiles) {
 
   // The Admin publishes through src/content/format.ts, so a file stored in any
   // other shape would turn the Editor's next one-line edit into a whole-file
-  // reformat and destroy the git history as an audit trail (ADR 0001).
+  // reformat and destroy the git history as an audit trail.
   if (!isCanonicallyFormatted(text)) {
     failed = true;
     console.error(`UNFORMATTED content/${file}`);

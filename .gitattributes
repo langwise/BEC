@@ -1,4 +1,4 @@
-# The Admin publishes content edits as git commits (ADR 0001) and always writes
+# The Admin publishes content edits as git commits and always writes
 # LF (apps/web/src/content/format.ts). A JSON file stored with CRLF would make an
 # Editor's one-line change land as a whole-file rewrite, so JSON is pinned to LF
 # regardless of the platform it was last edited on.

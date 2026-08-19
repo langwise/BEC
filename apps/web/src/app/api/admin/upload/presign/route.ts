@@ -6,7 +6,7 @@ import { assetExists, presignPut } from "@/lib/admin/r2";
 import { getSession } from "@/lib/admin/session";
 
 /**
- * Where a PDF upload starts (ADR 0004). The file itself never touches this
+ * Where a PDF upload starts. The file itself never touches this
  * function — Vercel's 4.5 MB body cap makes that impossible for scanned
  * notices, and a PDF is stored as-is anyway, so there is nothing a server-side
  * pass would do to it. This route decides the key and hands back a URL the

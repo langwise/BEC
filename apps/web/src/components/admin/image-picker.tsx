@@ -339,7 +339,7 @@ function PickerBody({
   /**
    * Two transports behind one button. An image goes through the function so
    * sharp can convert it; a PDF is presigned straight to R2, because the
-   * function's request body caps out at 4.5 MB (ADR 0004). Both hand back a
+   * function's request body caps out at 4.5 MB. Both hand back a
    * key that is on R2 but not yet in the manifest — the Publish that
    * references it is what registers it.
    */

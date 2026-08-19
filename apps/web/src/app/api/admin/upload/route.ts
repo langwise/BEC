@@ -7,8 +7,8 @@ import { assetExists, putAsset } from "@/lib/admin/r2";
 import { getSession } from "@/lib/admin/session";
 
 /**
- * Image upload (ADR 0004: images come through the function, PDFs will go
- * presigned). sharp needs the Node runtime, and a large photo through convert
+ * Image upload — images come through the function, PDFs go presigned.
+ * sharp needs the Node runtime, and a large photo through convert
  * plus a bucket PUT can outlast the default 10s.
  */
 export const runtime = "nodejs";
@@ -73,7 +73,7 @@ export async function POST(request: Request) {
         fileName: file.name || "photo",
         extension: "webp",
       });
-      // Keys are immutable (ADR 0003) — a collision must never overwrite
+      // Keys are immutable — a collision must never overwrite
       // someone else's picture, so re-roll the suffix rather than proceed.
       if (!registered.has(candidate) && !(await assetExists(candidate))) {
         key = candidate;

@@ -3,7 +3,7 @@
  * read from repo HEAD.
  *
  * HEAD rather than this deployment's own bundled manifest, for the same reason
- * content is read from HEAD (ADR 0001): an upload commits the manifest and the
+ * content is read from HEAD: an upload commits the manifest and the
  * reference together, so an editor who uploaded a photo two minutes ago must be
  * able to find it again before the next deploy finishes rolling out.
  */

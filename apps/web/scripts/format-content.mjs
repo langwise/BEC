@@ -5,7 +5,7 @@
 //   pnpm --filter web format-content
 //   pnpm --filter web format-content --check    # exit 1 instead of writing
 //
-// This matters because a Publish from the Admin is a git commit (ADR 0001) and
+// This matters because a Publish from the Admin is a git commit and
 // the git history is the audit trail. The Admin serialises through
 // src/content/format.ts; if a file on disk is shaped differently — CRLF, a
 // stray blank line, prettier-style inline objects — the first Publish would

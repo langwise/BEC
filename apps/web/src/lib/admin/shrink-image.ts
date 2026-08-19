@@ -3,7 +3,7 @@
 /**
  * Getting a photo under Vercel's request-body cap before it is sent.
  *
- * The cap is 4.5 MB and not configurable (ADR 0004), while a modern phone
+ * The cap is 4.5 MB and not configurable, while a modern phone
  * photo is routinely 6–12 MB. So the browser resizes first — but only when it
  * has to: a file that already fits is sent untouched, because the server
  * re-encodes to WebP anyway and shrinking here first would put a second lossy

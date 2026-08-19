@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * The browser half of a PDF upload (ADR 0004): ask the Admin for a key and a
+ * The browser half of a PDF upload: ask the Admin for a key and a
  * signed URL, then PUT the file straight to R2. Two round trips, but the bytes
  * never pass through a function that would refuse anything over 4.5 MB.
  */

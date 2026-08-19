@@ -4,8 +4,8 @@
  * A gallery is not a content file. Nothing lists its photos: the page calls
  * `assetsUnder("some/prefix/")` and the *manifest* decides what is in it. So
  * adding a photo to a gallery means registering its key, and removing one means
- * unregistering it — the bytes are untouched either way (ADR 0003 keys are
- * immutable, and the cleanup screen is what eventually deletes anything).
+ * unregistering it — the bytes are untouched either way. Keys are immutable,
+ * and the cleanup screen is what eventually deletes anything.
  *
  * The registry is hand-maintained, for the same reason [10] chose a hand-kept
  * protected-prefix list: a prefix carries a label, a page and a reason, none of
