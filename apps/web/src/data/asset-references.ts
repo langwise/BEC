@@ -323,6 +323,7 @@ export const SOURCE_KEYS: readonly string[] = [
   "documents/naac/redvv/4-3-3-summary.pdf",
   "documents/naac/redvv/5-4-2-summary.pdf",
   "documents/nba/nba-civil-cse-ece-mech-2025-2028.pdf",
+  "documents/nba/nba-data-capturing-points-2025.pdf",
   "documents/nba/nba-eee-bt-2022-2025.pdf",
   "documents/nba/nba-ise-2023-2026.pdf",
   "documents/news/notice-k3f9wq.pdf",
