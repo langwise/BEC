@@ -34,6 +34,15 @@ export default function NbaPage() {
                 { title: "Electrical & Electronics Engineering and Biotechnology — 2022–23 to 30 June 2025", url: asset("documents/nba/nba-eee-bt-2022-2025.pdf") },
               ],
             },
+            {
+              label: "Data Capturing Points",
+              description:
+                "Data capturing points of the programmes applied for NBA accreditation (Tier I, UG Engineering), submitted on 10 March 2025.",
+              documents: [
+                { title: "Biotechnology", url: asset("departments/biotechnology/docs/nba-data-capturing-points-2025.pdf") },
+                { title: "Electrical & Electronics Engineering", url: asset("departments/eee/docs/nba-data-capturing-points-2025.pdf") },
+              ],
+            },
           ]}
         />
       </section>
