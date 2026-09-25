@@ -2555,6 +2555,7 @@ export const manifest = {
   "documents/nba/ee-bt-extension-compliance-22-23.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/documents/nba/ee-bt-extension-compliance-22-23.pdf",
   "documents/nba/ee-ei-bt-accreditition-21-22.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/documents/nba/ee-ei-bt-accreditition-21-22.pdf",
   "documents/nba/nba-civil-cse-ece-mech-2025-2028.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/documents/nba/nba-civil-cse-ece-mech-2025-2028.pdf",
+  "documents/nba/nba-data-capturing-points-2025.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/documents/nba/nba-data-capturing-points-2025.pdf",
   "documents/nba/nba-eee-bt-2022-2025.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/documents/nba/nba-eee-bt-2022-2025.pdf",
   "documents/nba/nba-ise-2023-2026.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/documents/nba/nba-ise-2023-2026.pdf",
   "documents/nirf/nirf-20-engg-submitted.pdf": "https://pub-11b7012f1df548e482ac3763e2712496.r2.dev/documents/nirf/nirf-20-engg-submitted.pdf",

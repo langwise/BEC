@@ -39,8 +39,7 @@ export default function NbaPage() {
               description:
                 "Data capturing points of the programmes applied for NBA accreditation (Tier I, UG Engineering), submitted on 10 March 2025.",
               documents: [
-                { title: "Biotechnology", url: asset("departments/biotechnology/docs/nba-data-capturing-points-2025.pdf") },
-                { title: "Electrical & Electronics Engineering", url: asset("departments/eee/docs/nba-data-capturing-points-2025.pdf") },
+                { title: "Biotechnology and Electrical & Electronics Engineering", url: asset("documents/nba/nba-data-capturing-points-2025.pdf") },
               ],
             },
           ]}
