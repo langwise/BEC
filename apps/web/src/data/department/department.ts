@@ -1031,6 +1031,20 @@ function buildSections(contentKey: string, content: DepartmentContent): Departme
     });
   }
 
+  // NBA accreditation records for the programme — its own tab, straight after
+  // MoUs, so the accreditation paperwork sits with the department rather than
+  // only on the institute-wide /accreditation/nba page.
+  const nbaDocuments = resolveDocuments(content.nbaDocuments);
+  if (nbaDocuments.length) {
+    sections.push({
+      id: "nba",
+      type: "documents",
+      title: heading("nba", "NBA"),
+      icon: "award",
+      documents: nbaDocuments,
+    });
+  }
+
   // Infrastructure gallery (R2 photos)
   // Both loaders return nothing for a department with no asset folder of its
   // own, which is how a programme that shares its parent's building opts out.
@@ -1254,6 +1268,7 @@ export function getDepartmentData(type: string, slug: string): DepartmentData {
     },
     "activity-programs": { label: "Activities", icon: "calendar" },
     mou: { label: "MoUs", icon: "handshake" },
+    nba: { label: "NBA", icon: "award" },
     infrastructure: { label: "Infrastructure", icon: "building-2" },
     "photo-gallery": { label: "Photo Gallery", icon: "image" },
     contact: { label: "Contact", icon: "users-round" },

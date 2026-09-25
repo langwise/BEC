@@ -1755,6 +1755,30 @@
               ]
             }
           },
+          "nbaDocuments": {
+            "description": "NBA accreditation records for this programme (SAR data-capturing points, certificates), rendered as an \"NBA\" documents section immediately after MoUs.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "file": {
+                  "allOf": [
+                    {
+                      "$ref": "./_schema/asset-keys.json"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "title",
+                "file"
+              ],
+              "additionalProperties": false
+            }
+          },
           "researchGallery": {
             "description": "Research-laboratory photo galleries shown under the Research section (title + asset keys).",
             "type": "array",

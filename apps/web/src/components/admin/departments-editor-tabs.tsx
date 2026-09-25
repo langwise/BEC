@@ -682,6 +682,14 @@ export function ActivitiesTab({ value, set, folder }: TabProps) {
         uploadFolder={folder("mou")}
         onChange={(mouImages) => set("mouImages", mouImages)}
       />
+
+      <DocsField
+        label="NBA"
+        hint="NBA accreditation records for this programme. Shown as their own NBA tab, straight after MoUs."
+        value={value.nbaDocuments}
+        uploadFolder={folder("docs")}
+        onChange={(nbaDocuments) => set("nbaDocuments", nbaDocuments)}
+      />
     </div>
   );
 }
