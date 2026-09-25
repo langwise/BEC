@@ -623,6 +623,12 @@ export const departmentSchema = z.strictObject({
     .array(assetKey())
     .optional()
     .describe("Asset keys for MoU signing photos, shown as a gallery under the MoUs section."),
+  nbaDocuments: z
+    .array(docRef)
+    .optional()
+    .describe(
+      'NBA accreditation records for this programme (SAR data-capturing points, certificates), rendered as an "NBA" documents section immediately after MoUs.',
+    ),
   researchGallery: z
     .array(titledImages)
     .optional()
