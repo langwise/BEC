@@ -174,7 +174,7 @@ export function Header() {
 
           {/* Mobile Menu */}
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-            <SheetTrigger asChild className="lg:hidden shrink-0">
+            <SheetTrigger asChild className="xl:hidden shrink-0">
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
               </Button>
@@ -259,8 +259,9 @@ export function Header() {
       </div>
       </div>
 
-      {/* Row 2: full-width desktop navigation */}
-      <div className="hidden lg:block bg-primary text-primary-foreground">
+      {/* Row 2: full-width desktop navigation. The top-level tabs need ~1190px
+          at xl padding, so below xl they live in the mobile sheet instead. */}
+      <div className="hidden xl:block bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <nav className="relative">
             <NavigationMenu viewport={false} className="max-w-none w-full justify-start">
@@ -272,14 +273,14 @@ export function Header() {
                         href={item.href}
                         className={cn(
                           navigationMenuTriggerStyle(),
-                          "h-12 bg-transparent text-primary-foreground"
+                          "h-12 px-3 2xl:px-4 bg-transparent text-primary-foreground"
                         )}
                       >
                         {item.title}
                       </IntentLink>
                     ) : (
                       <>
-                    <NavigationMenuTrigger className="text-sm font-medium bg-transparent text-primary-foreground h-12 px-4">
+                    <NavigationMenuTrigger className="text-sm font-medium bg-transparent text-primary-foreground h-12 px-3 2xl:px-4">
                       {item.title}
                     </NavigationMenuTrigger>
 
