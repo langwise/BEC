@@ -169,4 +169,10 @@ export const navigationData: NavigationItem[] = [
       { title: "Achievements", href: "/student-life/achievements" },
     ],
   },
+
+  // 11. NBA — top-level tab mandated by NBA for the Data Capturing Summary link
+  {
+    title: "NBA",
+    href: "/accreditation/nba",
+  },
 ];
